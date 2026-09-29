@@ -149,6 +149,32 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [remaining <= 0]);
 
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey || confirm) return;
+      if ((e.target as HTMLElement)?.tagName === "TEXTAREA") return;
+      const cur = exam.questionIds[exam.current];
+      const question = byId.get(cur);
+      const ans = exam.answers[cur];
+      if (e.key === "Enter") {
+        e.preventDefault();
+        updateExam({ current: Math.min(total - 1, exam.current + 1) });
+      } else if (question?.type === "mc") {
+        const n = Number(e.key);
+        const order = exam.optionOrder[cur] ?? question.options.map((o) => o.id);
+        if (n >= 1 && n <= order.length) {
+          const id = order[n - 1];
+          const sel = ans?.kind === "mc" ? ans.selected : [];
+          setExamAnswer(cur, { kind: "mc", selected: sel.includes(id) ? sel.filter((x) => x !== id) : [...sel, id] });
+        }
+      } else if (question?.type === "tf" && (e.key === "t" || e.key === "f")) {
+        setExamAnswer(cur, { kind: "tf", value: e.key === "t" });
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [exam, byId, confirm, total, updateExam, setExamAnswer]);
+
   const go = (i: number) => {
     updateExam({ current: Math.max(0, Math.min(total - 1, i)) });
     setShowNav(false);
@@ -435,7 +461,12 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
             <Chip>mit Teilpunkten {pct(sc.partialScore)}</Chip>
             <Chip>{formatClock(record.durationSec)} Min</Chip>
             {isBest && exams.length > 1 && <Chip className="border-good/40 text-good">Neuer Bestwert</Chip>}
-            {pendingShort.length > 0 && <Chip>Kurzantwort wird bewertet …</Chip>}
+            {pendingShort.length > 0 &&
+              (pendingShort.every((id) => aiUnavailable.includes(id)) ? (
+                <Chip className="border-warn/40 text-warn">Kurzantwort: Selbstbewertung offen ↓</Chip>
+              ) : (
+                <Chip>Kurzantwort wird bewertet …</Chip>
+              ))}
           </div>
           <div className="mt-5 grid gap-2.5">
             {groups.map((g) => {
@@ -527,7 +558,7 @@ function ReviewItem({
 }) {
   const a = record.answers[q.id];
   const r = record.results[q.id];
-  const [open, setOpen] = useState(r === false);
+  const [open, setOpen] = useState(r !== true);
 
   return (
     <div className="card overflow-hidden">

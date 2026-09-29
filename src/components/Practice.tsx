@@ -302,7 +302,7 @@ function Session({
           <Button onClick={next} className="min-w-40 shadow-soft">
             Weiter <ArrowRight className="size-4" /> <span className="kbd ml-1 hidden border-white/30 bg-transparent text-inherit sm:inline-flex">↵</span>
           </Button>
-        ) : q.type === "tf" ? null : (
+        ) : q.type === "tf" || (q.type === "short" && revealed) ? null : (
           <Button
             onClick={() => void check()}
             disabled={(q.type === "mc" && !selected.length) || (q.type === "short" && (pending || revealed || !text.trim()))}
