@@ -3,6 +3,8 @@
 Lern-App für meine Uni-Fächer: Kapitel mit Level, Karteikarten, Übungsfragen mit Spaced Repetition,
 Kapiteltests und ein Abschlusstest im Prüfungsformat. Konzept: [KONZEPT.md](KONZEPT.md).
 
+**Live:** https://learning-app-steel-delta.vercel.app
+
 ## Lokal starten
 
 ```bash
