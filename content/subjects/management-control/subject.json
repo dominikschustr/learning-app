@@ -1,0 +1,15 @@
+{
+  "id": "management-control",
+  "name": "Management Control",
+  "short": "MC",
+  "color": "#2F5BEA",
+  "description": "Midterm-Vorbereitung: Control-Probleme, Kontrollarten, Levers of Control, MCS als Paket.",
+  "demo": true,
+  "lectures": [
+    { "id": "l01", "title": "Control Problems & Control Alternatives" },
+    { "id": "l02", "title": "Results & Action Controls" },
+    { "id": "l03", "title": "Personnel & Cultural Controls, Levers of Control" },
+    { "id": "l04", "title": "Tightness, Costs & MCS as a Package" }
+  ],
+  "examFormat": { "name": "Midterm", "minutes": 42, "short": 1, "mc": 13, "tf": 6 }
+}

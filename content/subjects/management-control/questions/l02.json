@@ -1,0 +1,80 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-l02-01",
+    "lecture": "l02",
+    "difficulty": 1,
+    "prompt": "Which elements are part of implementing a results control system?",
+    "options": [
+      { "id": "a", "text": "Defining performance dimensions" },
+      { "id": "b", "text": "Measuring performance on these dimensions" },
+      { "id": "c", "text": "Setting performance targets" },
+      { "id": "d", "text": "Providing rewards linked to performance" },
+      { "id": "e", "text": "Pre-action reviews of spending proposals" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Results controls consist of four steps: define dimensions, measure, set targets, reward. Pre-action reviews are an action control."
+  },
+  {
+    "type": "mc",
+    "id": "mc-l02-02",
+    "lecture": "l02",
+    "difficulty": 2,
+    "prompt": "Results controls work effectively only if …",
+    "options": [
+      { "id": "a", "text": "the organization knows what results are desired" },
+      { "id": "b", "text": "the employees have significant influence over those results" },
+      { "id": "c", "text": "the results can be measured effectively" },
+      { "id": "d", "text": "the organization knows exactly which actions lead to those results" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "The three feasibility conditions for results controls are: knowing the desired results, controllability, and effective measurement. Knowing the desirable actions is a condition for action controls."
+  },
+  {
+    "type": "mc",
+    "id": "mc-l02-03",
+    "lecture": "l02",
+    "difficulty": 2,
+    "prompt": "Which of the following are qualities of an effective performance measure?",
+    "options": [
+      { "id": "a", "text": "Precise" },
+      { "id": "b", "text": "Objective" },
+      { "id": "c", "text": "Timely" },
+      { "id": "d", "text": "Understandable" },
+      { "id": "e", "text": "As complex as possible to prevent manipulation" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Effective measures are precise, objective, timely and understandable (and cost-efficient). Complexity hurts understandability."
+  },
+  {
+    "type": "mc",
+    "id": "mc-l02-04",
+    "lecture": "l02",
+    "difficulty": 1,
+    "prompt": "Which of the following are forms of action controls?",
+    "options": [
+      { "id": "a", "text": "Behavioural constraints (e.g. passwords, segregation of duties)" },
+      { "id": "b", "text": "Pre-action reviews (e.g. budget approvals)" },
+      { "id": "c", "text": "Action accountability (e.g. codes of conduct, audits)" },
+      { "id": "d", "text": "Redundancy (e.g. backup systems)" },
+      { "id": "e", "text": "Bonus plans based on profit" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "The four types of action controls are behavioural constraints, pre-action reviews, action accountability and redundancy. Profit-based bonuses are results controls."
+  },
+  {
+    "type": "mc",
+    "id": "mc-l02-05",
+    "lecture": "l02",
+    "difficulty": 3,
+    "prompt": "The controllability principle states that employees should be held accountable only for what they can control. Which of the following are typical uncontrollable factors?",
+    "options": [
+      { "id": "a", "text": "Economic and competitive factors (e.g. exchange rates)" },
+      { "id": "b", "text": "Acts of nature (e.g. storms)" },
+      { "id": "c", "text": "Interdependencies with other units" },
+      { "id": "d", "text": "The manager's own pricing decisions" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Economic/competitive factors, acts of nature and interdependencies are classic uncontrollables. Own pricing decisions are clearly within the manager's control."
+  }
+]

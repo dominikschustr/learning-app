@@ -1,0 +1,63 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-l03-01",
+    "lecture": "l03",
+    "difficulty": 1,
+    "prompt": "Which of the following are personnel controls?",
+    "options": [
+      { "id": "a", "text": "Selection and placement" },
+      { "id": "b", "text": "Training" },
+      { "id": "c", "text": "Job design and provision of necessary resources" },
+      { "id": "d", "text": "Codes of conduct" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Personnel controls build on employees' natural tendencies to control themselves: selection & placement, training, job design & resources. Codes of conduct are cultural controls."
+  },
+  {
+    "type": "mc",
+    "id": "mc-l03-02",
+    "lecture": "l03",
+    "difficulty": 2,
+    "prompt": "Which of the following are instruments of cultural control?",
+    "options": [
+      { "id": "a", "text": "Codes of conduct" },
+      { "id": "b", "text": "Group rewards" },
+      { "id": "c", "text": "Intra-organizational transfers" },
+      { "id": "d", "text": "Physical and social arrangements" },
+      { "id": "e", "text": "Tone at the top" }
+    ],
+    "correct": ["a", "b", "c", "d", "e"],
+    "explanation": "All five are cultural controls: they shape shared norms and values and rely on mutual monitoring within the group."
+  },
+  {
+    "type": "mc",
+    "id": "mc-l03-03",
+    "lecture": "l03",
+    "difficulty": 2,
+    "prompt": "According to Simons' Levers of Control, which levers are used to FRAME the strategic domain and inspire/limit search behaviour?",
+    "options": [
+      { "id": "a", "text": "Belief systems" },
+      { "id": "b", "text": "Boundary systems" },
+      { "id": "c", "text": "Diagnostic control systems" },
+      { "id": "d", "text": "Interactive control systems" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Belief systems (core values, inspire) and boundary systems (risks to avoid, limit) frame the strategic domain. Diagnostic and interactive systems deal with performance variables and strategic uncertainties."
+  },
+  {
+    "type": "mc",
+    "id": "mc-l03-04",
+    "lecture": "l03",
+    "difficulty": 3,
+    "prompt": "Which statements describe INTERACTIVE control systems (Simons)?",
+    "options": [
+      { "id": "a", "text": "Top management uses them to personally and regularly involve themselves in subordinates' decisions" },
+      { "id": "b", "text": "They focus on strategic uncertainties and stimulate dialogue and learning" },
+      { "id": "c", "text": "They are used to monitor critical performance variables by exception" },
+      { "id": "d", "text": "They can trigger the emergence of new strategies" }
+    ],
+    "correct": ["a", "b", "d"],
+    "explanation": "Interactive systems focus attention on strategic uncertainties, involve top management personally, and enable emergent strategy. Monitoring by exception describes diagnostic control systems."
+  }
+]

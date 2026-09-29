@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --surface-2: #f1eee7;
+  --ink: #1b1915;
+  --ink-2: #4a463f;
+  --muted: #7a746a;
+  --line: #e6e1d7;
+  --line-strong: #d6cfc2;
+  --accent: #2f5bea;
+  --good: #16865b;
+  --good-soft: #e3f4ec;
+  --bad: #d4462f;
+  --bad-soft: #fbe9e5;
+  --warn: #c07a0c;
+  --warn-soft: #fbf0db;
+  --flame: #ee6a22;
+  --shadow: 0 1px 2px rgb(27 25 21 / 0.04), 0 4px 16px rgb(27 25 21 / 0.05);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #121110;
+  --surface: #1b1a18;
+  --surface-2: #242220;
+  --ink: #f3f0ea;
+  --ink-2: #cfc9bf;
+  --muted: #9d968a;
+  --line: #2e2b27;
+  --line-strong: #3d3934;
+  --accent: #6d8cff;
+  --good: #3cc48a;
+  --good-soft: #15291f;
+  --bad: #f06a52;
+  --bad-soft: #321a15;
+  --warn: #e7a43a;
+  --warn-soft: #30230f;
+  --flame: #ff8a4a;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.25);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-flame: var(--flame);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-display), ui-serif, Georgia, serif;
+  --shadow-soft: var(--shadow);
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-feature-settings: "cv11", "ss01";
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.display {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.kbd {
+  display: inline-flex;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.3rem;
+  border: 1px solid var(--line-strong);
+  border-bottom-width: 2px;
+  border-radius: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--surface);
+}
+
+.flip-scene {
+  perspective: 1600px;
+}
+.flip-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.flip-inner[data-flipped="true"] {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner {
+    transition: none;
+  }
+}
