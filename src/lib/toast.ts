@@ -56,3 +56,14 @@ export function announce(e: AnswerEvent) {
     push({ kind: "achievement", title: a.title, body: a.description, icon: a.icon });
   }
 }
+
+/** Mehrere Events (z. B. Prüfungsabgabe) zu einer Ankündigung zusammenfassen. */
+export function announceAll(events: AnswerEvent[]) {
+  const seen = new Set<string>();
+  announce({
+    xp: events.reduce((s, e) => s + e.xp, 0),
+    levelUp: events.reduce<number | null>((m, e) => (e.levelUp && e.levelUp > (m ?? 0) ? e.levelUp : m), null),
+    goalReached: events.some((e) => e.goalReached),
+    achievements: events.flatMap((e) => e.achievements).filter((a) => !seen.has(a.id) && !!seen.add(a.id)),
+  });
+}
