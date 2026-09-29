@@ -61,8 +61,9 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   { id: "streak-7", title: "Wochenwerk", description: "7 Tage Streak", icon: "calendar-check" },
   { id: "cards-50", title: "Kartenstapler", description: "50 Karteikarten gelernt", icon: "layers" },
   { id: "mastered-25", title: "Sitzt!", description: "25 Fragen in Box 4 oder höher", icon: "brain" },
-  { id: "exam-1", title: "Generalprobe", description: "Erste Prüfungssimulation abgeschlossen", icon: "file-check" },
-  { id: "exam-80", title: "Prüfungsreif", description: "Simulation mit mindestens 80 %", icon: "trophy" },
+  { id: "chapter-test", title: "Kapitel geknackt", description: "Kapiteltest mit mindestens 80 %", icon: "file-check" },
+  { id: "exam-1", title: "Generalprobe", description: "Ersten Abschlusstest abgeschlossen", icon: "file-check" },
+  { id: "exam-80", title: "Prüfungsreif", description: "Abschlusstest mit mindestens 80 %", icon: "trophy" },
   { id: "blitz-15", title: "Blitzmerker", description: "15 richtige in einer Blitzrunde", icon: "timer" },
   { id: "level-5", title: "Aufsteiger", description: "Level 5 erreicht", icon: "trending-up" },
 ];

@@ -21,7 +21,28 @@ function pickSpread(questions: Question[], n: number): Question[] {
   return out;
 }
 
-export function createExam(subjectId: string, format: ExamFormat, questions: Question[], now: number): ActiveExam {
+/** Format eines Kapiteltests: kleiner als die Prüfung, gleiche Zeit pro Frage. */
+export function chapterFormat(
+  questions: Pick<Question, "lecture" | "type">[],
+  lecture: string,
+  full: ExamFormat,
+): ExamFormat {
+  const of = (t: QuestionType) => questions.filter((q) => q.lecture === lecture && q.type === t).length;
+  const short = Math.min(1, of("short"));
+  const mc = Math.min(6, of("mc"));
+  const tf = Math.min(4, of("tf"));
+  const perQuestion = full.minutes / (full.short + full.mc + full.tf);
+  return { name: "Kapiteltest", short, mc, tf, minutes: Math.max(1, Math.round((short + mc + tf) * perQuestion)) };
+}
+
+export function createExam(
+  subjectId: string,
+  format: ExamFormat,
+  allQuestions: Question[],
+  now: number,
+  lecture?: string,
+): ActiveExam {
+  const questions = lecture ? allQuestions.filter((q) => q.lecture === lecture) : allQuestions;
   const of = (t: QuestionType) => questions.filter((q) => q.type === t);
   const picked = [
     ...pickSpread(of("short"), format.short),
@@ -30,6 +51,7 @@ export function createExam(subjectId: string, format: ExamFormat, questions: Que
   ];
   return {
     subjectId,
+    lecture,
     questionIds: picked.map((q) => q.id),
     optionOrder: Object.fromEntries(picked.map((q) => [q.id, optionOrder(q)])),
     answers: {},
@@ -71,6 +93,7 @@ export function gradeExam(exam: ActiveExam, byId: Map<string, Question>, now: nu
   return {
     id: `exam-${now}`,
     subjectId: exam.subjectId,
+    lecture: exam.lecture,
     finishedAt: now,
     durationSec: Math.min(exam.minutes * 60, Math.round((now - exam.startedAt) / 1000)),
     questionIds: exam.questionIds,

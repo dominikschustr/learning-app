@@ -68,6 +68,6 @@ export function getSummaries(): SubjectSummary[] {
   return getAllContent().map(({ subject, questions, cards }) => ({
     subject,
     items: questions.map((q) => ({ id: q.id, type: q.type, lecture: q.lecture })),
-    cardIds: cards.map((c) => c.id),
+    cards: cards.map((c) => ({ id: c.id, lecture: c.lecture })),
   }));
 }

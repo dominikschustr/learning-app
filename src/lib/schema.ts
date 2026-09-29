@@ -83,7 +83,7 @@ export type SubjectContent = {
 export type SubjectSummary = {
   subject: Subject;
   items: { id: string; type: QuestionType; lecture: string }[];
-  cardIds: string[];
+  cards: { id: string; lecture: string }[];
 };
 
 /** Prüft Querverweise, die zod allein nicht sieht. Gibt Fehlermeldungen zurück. */

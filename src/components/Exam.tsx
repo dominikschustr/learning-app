@@ -16,10 +16,10 @@ import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { createExam, gradeExam, isAnswered } from "@/lib/exam";
+import { chapterFormat, createExam, gradeExam, isAnswered } from "@/lib/exam";
 import { XP } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
-import type { Question, SubjectContent } from "@/lib/schema";
+import type { Lecture, Question, SubjectContent } from "@/lib/schema";
 import { SHORT_PASS, gradeMC } from "@/lib/scoring";
 import { examScore, useApp, useHydrated, type ActiveExam, type AnswerEvent, type ExamRecord, type ShortGrade } from "@/lib/store";
 import { announceAll, celebrate } from "@/lib/toast";
@@ -29,35 +29,43 @@ import { Bar, Button, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
 export function Exam({ content }: { content: SubjectContent }) {
   const hydrated = useHydrated();
-  const reviewId = useSearchParams().get("review");
+  const params = useSearchParams();
+  const reviewId = params.get("review");
+  const chapter = params.get("chapter");
   const active = useApp((s) => (s.activeExam?.subjectId === content.subject.id ? s.activeExam : null));
   const record = useApp((s) => (reviewId ? s.exams.find((e) => e.id === reviewId) : undefined));
 
   if (!hydrated) return <Skeleton className="h-96" />;
   if (record) return <Result content={content} record={record} />;
   if (active) return <Running content={content} exam={active} />;
-  return <Intro content={content} />;
+  const lecture = content.subject.lectures.find((l) => l.id === chapter);
+  return <Intro key={lecture?.id ?? "all"} content={content} lecture={lecture} />;
 }
 
-function Intro({ content }: { content: SubjectContent }) {
+function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lecture }) {
   const { subject, questions } = content;
-  const f = subject.examFormat;
+  const f = lecture ? chapterFormat(questions, lecture.id, subject.examFormat) : subject.examFormat;
   const startExam = useApp((s) => s.startExam);
   const allExams = useApp((s) => s.exams);
-  const exams = allExams.filter((e) => e.subjectId === subject.id);
+  const exams = allExams.filter((e) => e.subjectId === subject.id && e.lecture === lecture?.id);
   const best = exams.reduce((b, e) => Math.max(b, examScore(e).score), 0);
   const total = f.short + f.mc + f.tf;
+  const pool = lecture ? questions.filter((q) => q.lecture === lecture.id).length : questions.length;
 
   return (
     <div className="mx-auto max-w-2xl">
-      <Link href={`/s/${subject.id}`} className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink">
-        <ArrowLeft className="size-4" /> {subject.name}
+      <Link
+        href={lecture ? `/s/${subject.id}/c/${lecture.id}` : `/s/${subject.id}`}
+        className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink"
+      >
+        <ArrowLeft className="size-4" /> {lecture ? lecture.title : subject.name}
       </Link>
-      <p className="eyebrow mt-8">Prüfungssimulation</p>
-      <h1 className="display mt-2 text-5xl sm:text-6xl">{f.name}-Probelauf</h1>
+      <p className="eyebrow mt-8">{lecture ? `Kapiteltest · ${lecture.title}` : `Abschlusstest · ${f.name}`}</p>
+      <h1 className="display mt-2 text-5xl sm:text-6xl">{lecture ? "Kapiteltest" : `${f.name}-Probelauf`}</h1>
       <p className="mt-3 text-muted">
-        Wie in der echten Prüfung: {total} Fragen, {f.minutes} Minuten, kein Feedback bis zur Abgabe. Die Fragen werden
-        zufällig aus {questions.length} Fragen gezogen und über alle Vorlesungen verteilt.
+        {lecture
+          ? `${total} Fragen nur aus diesem Kapitel, ${f.minutes} Minuten, kein Feedback bis zur Abgabe. Mit mindestens 80 % erreichst du das Kapitel-Level „Gemeistert“.`
+          : `Wie in der echten Prüfung: ${total} Fragen, ${f.minutes} Minuten, kein Feedback bis zur Abgabe. Die Fragen werden zufällig aus ${pool} Fragen gezogen – jedes der ${subject.lectures.length} Kapitel ist vertreten.`}
       </p>
 
       <div className="mt-8 grid grid-cols-3 gap-3">
@@ -91,9 +99,9 @@ function Intro({ content }: { content: SubjectContent }) {
       <div className="mt-8 flex flex-wrap items-center gap-3">
         <Button
           className="h-12 px-7 text-base"
-          onClick={() => startExam(createExam(subject.id, f, questions, Date.now()))}
+          onClick={() => startExam(createExam(subject.id, f, questions, Date.now(), lecture?.id))}
         >
-          <Play className="size-4" /> Simulation starten
+          <Play className="size-4" /> {lecture ? "Kapiteltest starten" : "Abschlusstest starten"}
         </Button>
         {best > 0 && <Chip>Bestwert {pct(best)}</Chip>}
       </div>
@@ -381,7 +389,9 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
   const byId = useMemo(() => new Map(content.questions.map((q) => [q.id, q])), [content.questions]);
   const updateExamRecord = useApp((s) => s.updateExamRecord);
   const allExams = useApp((s) => s.exams);
-  const exams = allExams.filter((e) => e.subjectId === subject.id);
+  const exams = allExams.filter((e) => e.subjectId === subject.id && e.lecture === record.lecture);
+  const lecture = subject.lectures.find((l) => l.id === record.lecture);
+  const back = lecture ? `${base}/c/${lecture.id}` : base;
   const [onlyWrong, setOnlyWrong] = useState(false);
   const [aiUnavailable, setAiUnavailable] = useState<string[]>([]);
 
@@ -434,8 +444,8 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
 
   return (
     <div className="mx-auto max-w-3xl space-y-8">
-      <Link href={base} className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink">
-        <ArrowLeft className="size-4" /> {subject.name}
+      <Link href={back} className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink">
+        <ArrowLeft className="size-4" /> {lecture ? lecture.title : subject.name}
       </Link>
 
       <section className="card grid gap-6 p-6 sm:grid-cols-[auto_1fr] sm:p-8">
@@ -453,7 +463,7 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
           </ProgressRing>
         </div>
         <div className="flex flex-col justify-center">
-          <p className="eyebrow">Auswertung {subject.examFormat.name}</p>
+          <p className="eyebrow">{lecture ? `Auswertung Kapiteltest · ${lecture.title}` : `Auswertung Abschlusstest · ${subject.examFormat.name}`}</p>
           <h1 className="display mt-1 text-4xl">
             {sc.correct} von {sc.total} richtig
           </h1>
@@ -486,8 +496,21 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
         </div>
       </section>
 
+      {lecture ? (
+        <section className="flex flex-wrap gap-2">
+          {sc.score >= 0.8 ? (
+            <Chip className="h-11 border-good/40 px-4 text-sm text-good">Bestanden – Kapitel-Level „Gemeistert“ möglich</Chip>
+          ) : (
+            <Chip className="h-11 px-4 text-sm">Für „Gemeistert“ brauchst du mindestens 80 %</Chip>
+          )}
+          <ButtonLink href={`${base}/practice?mode=lecture&lecture=${lecture.id}`}>Kapitel weiter üben</ButtonLink>
+          <ButtonLink variant="secondary" href={`${base}/exam?chapter=${lecture.id}`}>
+            Neuer Kapiteltest
+          </ButtonLink>
+        </section>
+      ) : (
       <section className="card p-6">
-        <h2 className="display text-2xl">Nach Vorlesung</h2>
+        <h2 className="display text-2xl">Nach Kapitel</h2>
         <div className="mt-4 grid gap-3">
           {subject.lectures.map((l) => {
             const s = stat(record.questionIds.filter((id) => byId.get(id)?.lecture === l.id));
@@ -507,10 +530,11 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
         <div className="mt-6 flex flex-wrap gap-2">
           <ButtonLink href={`${base}/practice?mode=weak`}>Schwächen trainieren</ButtonLink>
           <ButtonLink variant="secondary" href={`${base}/exam`}>
-            Neue Simulation
+            Neuer Abschlusstest
           </ButtonLink>
         </div>
       </section>
+      )}
 
       <section>
         <div className="mb-3 flex items-end justify-between">

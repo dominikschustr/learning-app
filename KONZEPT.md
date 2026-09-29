@@ -23,7 +23,7 @@ Erster Anwendungsfall: **Management Control – Midterm**.
 | Kurzantwort | 1 | *define*, *state* oder *explain* |
 | Multiple Choice | 13 | mehrere Antworten können richtig sein |
 | True / False | 6 | Aussage bewerten |
-| **Summe** | **21** | **≈ 42 Minuten** |
+| **Summe** | **20** (laut Angabe 21 – Format in `subject.json` anpassbar) | **≈ 42 Minuten** |
 
 Das Format ist pro Fach in `subject.json` hinterlegt (`examFormat`) und damit für andere
 Fächer anpassbar.
@@ -96,7 +96,24 @@ content/subjects/management-control/
   **Fallback** ohne Key oder bei Quota-Limit: Selbstbewertung – Musterlösung anzeigen,
   ich hake ab, welche Kernpunkte ich getroffen habe.
 
-## 5. Lernmodi
+## 5. Kapitel, Level & Lernmodi
+
+**Jedes Key-Messages-Dokument ist ein Kapitel** (S1a, S1b, S1c, S2a, S2b, S3&4) mit eigenem Level:
+
+| Level | Name | Bedingung (Sicherheit = 80 % Fragen + 20 % Karteikarten) |
+| --- | --- | --- |
+| 0 | Neu | noch nichts beantwortet |
+| 1 | Entdeckt | erste Antworten |
+| 2 | Grundlagen | ≥ 30 % |
+| 3 | Fortgeschritten | ≥ 50 % |
+| 4 | Sicher | ≥ 70 % |
+| 5 | Gemeistert | ≥ 85 % **und** Kapiteltest ≥ 80 % |
+
+Die Fach-Seite zeigt einen **Lernpfad**: Kapitel 1–6, am Ende der **Abschlusstest** im Prüfungsformat,
+der aus allen sechs Kapiteln Fragen zieht (gleichmäßig verteilt, jedes Kapitel ist vertreten).
+
+Jede Kapitelseite bietet: Karteikarten, Üben (nur dieses Kapitel) und einen **Kapiteltest**
+(bis zu 1 Kurzantwort + 6 MC + 4 True/False, gleiche Zeit pro Frage wie in der Prüfung).
 
 | Modus | Was passiert |
 | --- | --- |
@@ -104,7 +121,8 @@ content/subjects/management-control/
 | **Üben nach Vorlesung** | Fragen einer Vorlesung, sofortiges Feedback mit Erklärung |
 | **Wiederholung** | alle heute fälligen Fragen (Spaced Repetition) |
 | **Schwächen-Training** | Fragen mit der niedrigsten Sicherheit / zuletzt falsch |
-| **Midterm-Simulation** | 1 + 13 + 6 Fragen zufällig, 42-Min-Countdown, markieren & springen, Abgabe → Auswertung pro Vorlesung |
+| **Kapiteltest** | Test nur aus einem Kapitel, ohne Feedback bis zur Abgabe; ≥ 80 % schaltet „Gemeistert“ frei |
+| **Abschlusstest (Midterm)** | 1 + 13 + 6 Fragen aus allen Kapiteln, 42-Min-Countdown, markieren & springen, Auswertung pro Kapitel |
 | **Blitzrunde** | 60 Sekunden True/False am Stück, Combo-Multiplikator |
 
 ## 6. Spaced Repetition & Score
@@ -157,5 +175,6 @@ content/subjects/management-control/
 5. Midterm-Simulation mit Timer + Auswertung
 6. Kurzantwort-Bewertung via Gemini (+ Fallback)
 7. Gamification (XP, Level, Streak, Achievements, Blitzrunde)
-8. Echte Inhalte aus den Vorlesungsdokumenten (ersetzen das Demo-Set)
-9. Deployment auf Vercel
+8. Echte Inhalte aus den Key Messages S1a–S3&4 (118 Fragen, 78 Karten) ✓
+9. Kapitel mit Level, Kapiteltests, Lernpfad mit Abschlusstest ✓
+10. Deployment auf Vercel

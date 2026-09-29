@@ -4,19 +4,20 @@ import {
   ArrowLeft,
   ArrowRight,
   Brain,
-  FileText,
   Info,
   Layers,
   Play,
   RotateCcw,
   Target,
+  Trophy,
   Zap,
 } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
-import { examScore, useApp, useHydrated } from "@/lib/store";
+import { chapterBests, examScore, useApp, useHydrated } from "@/lib/store";
+import { LevelBadge } from "./ChapterView";
 import { useNow } from "@/lib/useNow";
 import { alpha, pct } from "@/lib/utils";
 import { Bar, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
@@ -47,13 +48,14 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const { subject } = summary;
   const s = useApp();
   const now = useNow();
-  const st = subjectStats(summary, s.items, s.cards, now);
+  const st = subjectStats(summary, s.items, s.cards, now, chapterBests(s.exams, subject.id));
   const f = subject.examFormat;
   const base = `/s/${subject.id}`;
-  const exams = s.exams.filter((e) => e.subjectId === subject.id).toReversed();
+  const exams = s.exams.filter((e) => e.subjectId === subject.id && !e.lecture).toReversed();
   const best = exams.reduce((b, e) => Math.max(b, examScore(e).score), 0);
   const active = s.activeExam?.subjectId === subject.id ? s.activeExam : null;
-  const weakest = [...st.lectures].filter((l) => l.total).sort((a, b) => a.mastery - b.mastery)[0];
+  const weakest = [...st.lectures].filter((l) => l.total).sort((a, b) => a.combined - b.combined)[0];
+  const mastered = st.lectures.filter((l) => l.level.level === 5).length;
 
   const modes = [
     {
@@ -76,13 +78,6 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       title: "Schwächen-Training",
       text: "Deine unsichersten Fragen",
       meta: st.seen ? "gezielt" : "erst nach ein paar Fragen",
-    },
-    {
-      href: `${base}/exam`,
-      icon: FileText,
-      title: `${f.name}-Simulation`,
-      text: `${f.short + f.mc + f.tf} Fragen · ${f.minutes} Min`,
-      meta: best ? `Bestwert ${pct(best)}` : "noch keine",
     },
     {
       href: `${base}/blitz`,
@@ -122,10 +117,10 @@ function Inner({ summary }: { summary: SubjectSummary }) {
 
       {active && (
         <Link
-          href={`${base}/exam`}
+          href={active.lecture ? `${base}/exam?chapter=${active.lecture}` : `${base}/exam`}
           className="flex items-center gap-3 rounded-2xl border border-accent/30 bg-surface p-4 text-sm font-semibold text-accent"
         >
-          <Play className="size-4" /> Laufende Simulation fortsetzen
+          <Play className="size-4" /> Laufenden {active.lecture ? "Kapiteltest" : "Abschlusstest"} fortsetzen
           <ArrowRight className="ml-auto size-4" />
         </Link>
       )}
@@ -166,69 +161,110 @@ function Inner({ summary }: { summary: SubjectSummary }) {
               <Brain className="size-4" /> Empfohlene Session
             </ButtonLink>
             {weakest && st.seen > 0 && (
-              <ButtonLink variant="secondary" href={`${base}/practice?mode=lecture&lecture=${weakest.id}`}>
-                Schwächste Vorlesung üben
+              <ButtonLink variant="secondary" href={`${base}/c/${weakest.id}`}>
+                Schwächstes Kapitel üben
               </ButtonLink>
             )}
           </div>
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-3 lg:grid-cols-5">
-        {modes.map((m, i) => (
-          <motion.div
-            key={m.title}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.04 }}
-            className={i === 3 ? "col-span-2 lg:col-span-1" : undefined}
-          >
-            <Link href={m.href} className="card group flex h-full flex-col p-4 transition hover:-translate-y-0.5">
-              <span
-                className="grid size-10 place-items-center rounded-xl"
-                style={{ background: alpha(subject.color, 0.1), color: subject.color }}
+      <section>
+        <div className="mb-4 flex items-end justify-between gap-4">
+          <div>
+            <h2 className="display text-3xl">Lernpfad</h2>
+            <p className="text-sm text-muted">Ein Kapitel pro Key-Messages-Dokument – jedes mit eigenem Level.</p>
+          </div>
+          <Chip>
+            {mastered}/{st.lectures.length} gemeistert
+          </Chip>
+        </div>
+        <ol className="relative space-y-3">
+          <span className="absolute bottom-6 left-[2.35rem] top-6 w-px bg-line-strong sm:left-[2.6rem]" aria-hidden />
+          {st.lectures.map((l, i) => {
+            const [code, ...rest] = l.title.split(" · ");
+            return (
+              <motion.li
+                key={l.id}
+                initial={{ opacity: 0, x: -8 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.04 }}
+                className="relative"
               >
-                <m.icon className="size-5" />
+                <Link
+                  href={`${base}/c/${l.id}`}
+                  className="card group flex items-center gap-4 p-3 pr-5 transition hover:-translate-y-0.5 sm:p-4"
+                >
+                  <span className="rounded-full bg-surface">
+                    <LevelBadge ch={l} color={subject.color} />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="eyebrow block">
+                      Kapitel {i + 1} · {code}
+                    </span>
+                    <span className="block truncate font-semibold sm:text-lg">{rest.join(" · ") || l.title}</span>
+                    <span className="mt-0.5 block text-xs text-muted">
+                      Level {l.level.level} · {l.level.name}
+                      {l.testBest > 0 && ` · Kapiteltest ${pct(l.testBest)}`}
+                    </span>
+                  </span>
+                  <ArrowRight className="size-4 shrink-0 text-muted transition group-hover:translate-x-0.5" />
+                </Link>
+              </motion.li>
+            );
+          })}
+          <motion.li
+            initial={{ opacity: 0, x: -8 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: st.lectures.length * 0.04 }}
+            className="relative"
+          >
+            <Link
+              href={`${base}/exam`}
+              className="group flex items-center gap-4 rounded-[1.25rem] bg-ink p-3 pr-5 text-bg transition hover:-translate-y-0.5 sm:p-4"
+            >
+              <span className="grid size-14 shrink-0 place-items-center rounded-full bg-bg/10">
+                <Trophy className="size-6" />
               </span>
-              <span className="mt-3 font-semibold leading-tight">{m.title}</span>
-              <span className="text-sm text-muted">{m.text}</span>
-              <span className="mt-auto pt-3 text-xs font-semibold text-ink-2">{m.meta}</span>
+              <span className="min-w-0 flex-1">
+                <span className="block text-[0.72rem] font-semibold uppercase tracking-[0.08em] opacity-60">
+                  Abschlusstest · {f.name}
+                </span>
+                <span className="block font-semibold sm:text-lg">Fragen aus allen {st.lectures.length} Kapiteln</span>
+                <span className="mt-0.5 block text-xs opacity-70">
+                  {f.short + f.mc + f.tf} Fragen · {f.minutes} Min{best ? ` · Bestwert ${pct(best)}` : ""}
+                </span>
+              </span>
+              <ArrowRight className="size-4 shrink-0 opacity-70 transition group-hover:translate-x-0.5" />
             </Link>
-          </motion.div>
-        ))}
+          </motion.li>
+        </ol>
       </section>
 
       <section>
-        <h2 className="display mb-3 text-3xl">Vorlesungen</h2>
-        <div className="card divide-y divide-line">
-          {st.lectures.map((l, i) => (
-            <div key={l.id} className="flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:gap-5 sm:p-5">
-              <span className="display w-8 text-3xl text-muted">{String(i + 1).padStart(2, "0")}</span>
-              <div className="min-w-0 flex-1">
-                <p className="font-semibold">{l.title}</p>
-                <div className="mt-2 flex items-center gap-3">
-                  <Bar value={l.mastery} color={subject.color} className="max-w-xs" />
-                  <span className="shrink-0 text-xs tabular-nums text-muted">
-                    {Math.round(l.mastery * 100)} % · {l.seen}/{l.total} gesehen
-                  </span>
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <ButtonLink variant="secondary" className="h-9 px-4" href={`${base}/cards?lecture=${l.id}`}>
-                  Karten
-                </ButtonLink>
-                <ButtonLink className="h-9 px-4" href={`${base}/practice?mode=lecture&lecture=${l.id}`} aria-disabled={!l.total}>
-                  Üben
-                </ButtonLink>
-              </div>
-            </div>
+        <h2 className="display mb-3 text-2xl">Freies Training</h2>
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+          {modes.map((m, i) => (
+            <motion.div key={m.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
+              <Link href={m.href} className="card group flex h-full flex-col p-4 transition hover:-translate-y-0.5">
+                <span
+                  className="grid size-10 place-items-center rounded-xl"
+                  style={{ background: alpha(subject.color, 0.1), color: subject.color }}
+                >
+                  <m.icon className="size-5" />
+                </span>
+                <span className="mt-3 font-semibold leading-tight">{m.title}</span>
+                <span className="text-sm text-muted">{m.text}</span>
+                <span className="mt-auto pt-3 text-xs font-semibold text-ink-2">{m.meta}</span>
+              </Link>
+            </motion.div>
           ))}
         </div>
       </section>
 
       {exams.length > 0 && (
         <section>
-          <h2 className="display mb-3 text-3xl">Simulationen</h2>
+          <h2 className="display mb-3 text-3xl">Abschlusstests</h2>
           <div className="card divide-y divide-line">
             {exams.slice(0, 8).map((e) => {
               const sc = examScore(e);

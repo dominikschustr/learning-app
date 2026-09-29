@@ -46,6 +46,7 @@ function Deck({
 }) {
   const { subject } = content;
   const base = `/s/${subject.id}`;
+  const home = lecture ? `${base}/c/${lecture}` : base;
   const reviewCard = useApp((s) => s.reviewCard);
 
   const [deck] = useState<Card[]>(() => {
@@ -128,8 +129,8 @@ function Deck({
           <Button variant="secondary" onClick={() => onRestart()}>
             Neuer Stapel
           </Button>
-          <ButtonLink variant="ghost" href={base}>
-            Zur Übersicht
+          <ButtonLink variant="ghost" href={home}>
+            Zurück
           </ButtonLink>
         </div>
       </div>
@@ -140,7 +141,7 @@ function Deck({
 
   return (
     <div className="mx-auto max-w-2xl">
-      <SessionBar exitHref={base} progress={index / deck.length} xp={xp} color={subject.color} />
+      <SessionBar exitHref={home} progress={index / deck.length} xp={xp} color={subject.color} />
       <div className="mb-4 flex justify-between text-xs text-muted">
         <span>Karteikarten · {lectureTitle}</span>
         <span className="tabular-nums">

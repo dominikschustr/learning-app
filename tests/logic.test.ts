@@ -68,3 +68,16 @@ describe("Level & Combo", () => {
     expect(comboBonus(50)).toBe(10);
   });
 });
+
+import { chapterLevel } from "@/lib/progress";
+
+describe("chapterLevel", () => {
+  it("steigt mit der Sicherheit, Level 5 nur mit bestandenem Kapiteltest", () => {
+    expect(chapterLevel(0, 0).level).toBe(0);
+    expect(chapterLevel(0.05, 0).level).toBe(1);
+    expect(chapterLevel(0.55, 0).level).toBe(3);
+    expect(chapterLevel(0.95, 0.5).level).toBe(4);
+    expect(chapterLevel(0.95, 0.5).hint).toContain("Kapiteltest");
+    expect(chapterLevel(0.95, 0.8).level).toBe(5);
+  });
+});

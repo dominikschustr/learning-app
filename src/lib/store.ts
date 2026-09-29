@@ -22,6 +22,8 @@ export type ShortGrade = {
 
 export type ActiveExam = {
   subjectId: string;
+  /** gesetzt = Kapiteltest, sonst Abschlusstest über alle Kapitel */
+  lecture?: string;
   questionIds: string[];
   optionOrder: Record<string, string[]>;
   answers: Record<string, ExamAnswer>;
@@ -34,6 +36,7 @@ export type ActiveExam = {
 export type ExamRecord = {
   id: string;
   subjectId: string;
+  lecture?: string;
   finishedAt: number;
   durationSec: number;
   questionIds: string[];
@@ -131,8 +134,9 @@ function unlocked(d: Data, now: number): string[] {
     "streak-7": d.streak.best >= 7,
     "cards-50": cardsKnown >= 50,
     "mastered-25": mastered >= 25,
-    "exam-1": d.exams.length > 0,
-    "exam-80": d.exams.some((e) => examScore(e).score >= 0.8),
+    "exam-1": d.exams.some((e) => !e.lecture),
+    "exam-80": d.exams.some((e) => !e.lecture && examScore(e).score >= 0.8),
+    "chapter-test": d.exams.some((e) => e.lecture && examScore(e).score >= 0.8),
     "blitz-15": Object.values(d.blitzBest).some((b) => b >= 15),
     "level-5": levelInfo(d.xp).level >= 5,
   };
@@ -272,4 +276,14 @@ export function useHydrated(): boolean {
     () => useApp.persist.hasHydrated(),
     () => false,
   );
+}
+
+/** Bester Kapiteltest-Score je Kapitel eines Fachs. */
+export function chapterBests(exams: ExamRecord[], subjectId: string): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const e of exams) {
+    if (e.subjectId !== subjectId || !e.lecture) continue;
+    out[e.lecture] = Math.max(out[e.lecture] ?? 0, examScore(e).score);
+  }
+  return out;
 }

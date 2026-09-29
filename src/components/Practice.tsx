@@ -57,6 +57,7 @@ function Session({
 }) {
   const { subject } = content;
   const base = `/s/${subject.id}`;
+  const home = lecture ? `${base}/c/${lecture}` : base;
   const answer = useApp((s) => s.answer);
 
   const [queue, setQueue] = useState<Entry[]>(() => {
@@ -225,7 +226,7 @@ function Session({
         outcomes={outcomes}
         xp={sessionXp}
         bestCombo={bestCombo}
-        base={base}
+        base={home}
         onRestart={onRestart}
         onRetry={(qs) => setRetryMode(qs)}
       />
@@ -237,7 +238,7 @@ function Session({
 
   return (
     <div className="mx-auto max-w-2xl">
-      <SessionBar exitHref={base} progress={index / queue.length} combo={combo} xp={sessionXp} color={subject.color} />
+      <SessionBar exitHref={home} progress={index / queue.length} combo={combo} xp={sessionXp} color={subject.color} />
 
       <div className="mb-4 flex items-center justify-between text-xs text-muted">
         <span>
