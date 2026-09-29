@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, FileText, Layers, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, FileText, Layers, ScrollText, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { chapterFormat } from "@/lib/exam";
@@ -52,7 +52,19 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
 
   const byType = (t: QuestionType) => summary.items.filter((i) => i.lecture === chapterId && i.type === t).length;
 
+  const hasText = summary.texts.includes(chapterId);
   const actions = [
+    ...(hasText
+      ? [
+          {
+            href: `${base}/c/${chapterId}/text`,
+            icon: ScrollText,
+            title: "Nachlesen",
+            text: "Key Messages, Definitionen & Denkanstöße im Original",
+            meta: "Originaltext",
+          },
+        ]
+      : []),
     {
       href: `${base}/cards?lecture=${chapterId}`,
       icon: Layers,
@@ -136,7 +148,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         </div>
       </section>
 
-      <section className="grid gap-3 sm:grid-cols-3">
+      <section className={cn("grid gap-3 sm:grid-cols-2", actions.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4")}>
         {actions.map((a, i) => (
           <motion.div key={a.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
             <Link href={a.href} className="card group flex h-full flex-col p-5 transition hover:-translate-y-0.5">

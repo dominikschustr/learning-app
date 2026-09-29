@@ -1,0 +1,139 @@
+{
+  "lecture": "s34",
+  "title": "Sessions 3&4- Dashboards and KPIs for performance management",
+  "source": "KM S3&4 Dashboards(1).docx",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Dashboards are expected to measure performance in a \"balanced\" way, to integrate a long-term perspective, to present performance in line with the strategy, and to facilitate managers’ decision-making."
+        },
+        {
+          "kind": "item",
+          "text": "The indicators chosen for the dashboard must be preceded by the construction of a performance model, as most expectations regarding dashboards are based on the development of a quality model. A dashboard cannot be built by simply listing indicators and choosing from among them."
+        },
+        {
+          "kind": "item",
+          "text": "A good dashboard for steering an entity includes a list of indicators that accurately reflects the dimensions of the entity's performance model: it includes both indicators linked to the goals and indicators related to the main lines of action. This allows managers to have a balanced, longer-term, more operational representation of performance."
+        },
+        {
+          "kind": "item",
+          "text": "Dashboards should, above all, be adapted to their intended use (principle of relevance): this can include management or reporting use. In the case of management use, a choice has to be made between boosting or monitoring use because dashboards have different characteristics depending on the use."
+        },
+        {
+          "kind": "item",
+          "text": "Performance boosting use involves focusing managers’ attention on a few priorities. The dimensions of the performance model are thus selective, and choices are made from the general strategic areas and the cyclical priorities. The indicators used for boosting are therefore limited in number and are monitored directly and systematically by managers. These indicators are subject to frequent change, as the priorities they reflect evolve."
+        },
+        {
+          "kind": "item",
+          "text": "Monitoring is used to ensure that the organisation is under control. The indicators are more varied and balanced with regard to the entity’s different goals and lines of action. This does not exclude certain choices from being made as a model cannot claim to be exhaustive and as the indicators must remain consistent with the strategy. Consequently, the number of indicators is higher than for performance boosting use, and aim to cover the key dimensions of the performance model. They are more recurrent in nature and can be assessed against pre-established values, which means that only abnormal deviations are brought to the attention of managers. Management controllers are heavily involved in monitoring them."
+        },
+        {
+          "kind": "item",
+          "text": "Any indicator can be potentially used for any type of use."
+        },
+        {
+          "kind": "item",
+          "text": "In practice, it is unusual to have separate dashboards for each type of use. Therefore, an entity's dashboard usually contains indicators that serve several functions: performance boosting and reporting use, or monitoring and reporting use."
+        },
+        {
+          "kind": "item",
+          "text": "It is important to have a tool that can build the performance model in a structured way. Two modelling approach tools - the strategy map and the O/CPV framework - are based on common principles that aim to promote a balanced representation of performance: the way objectives are formulated, causal links, the possibility to link objectives to several other objectives, and the identification of two levels of concepts (expected results and action levers)."
+        },
+        {
+          "kind": "item",
+          "text": "The O/CPV framework organises the performance dimensions into two categories: objectives and action variables. The OVAR method framework does not use a predefined framework method to create the content of each of these categories (contrary to other types of performance models, like the strategy map in the Balanced Scorecard method)."
+        },
+        {
+          "kind": "item",
+          "text": "In the OVAR method, indicators should be selected for each objective and for each action variable."
+        },
+        {
+          "kind": "item",
+          "text": "For each objective and each CPV, it is useful to distinguish between lag indicators, which focus on the expected result, and lead indicators, which focus on the levers for achieving these results."
+        },
+        {
+          "kind": "item",
+          "text": "To facilitate management decision-making, a scoreboard must also be effective, i.e. it must deliver the indicators within a short timeframe and present them in an easily readable form (graphs, colour codes, etc.)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "measure chosen to quantify a performance objective (linked to a goal or a line of action) by focusing on the means adopted to achieve the objective. It is distinct from a result indicator.",
+          "term": "Action indicator (lead indicator)"
+        },
+        {
+          "kind": "item",
+          "text": "denomination of the main lines of action in the OVAR method.",
+          "term": "Critical Performance Variable"
+        },
+        {
+          "kind": "item",
+          "text": "a structured set of financial and non-financial performance indicators that are useful to managers, and the values these indicators assume over a defined period.",
+          "term": "Dashboard"
+        },
+        {
+          "kind": "item",
+          "text": "indicators are used to monitor all key parameters of the entity's performance.",
+          "term": "Monitoring use"
+        },
+        {
+          "kind": "item",
+          "text": "A form of performance model representing the priority objectives in the form of a double entry table - objectives and critical performance variable - and indicating with crosses the causal links between the critical performance variables and objectives.",
+          "term": "O/CPV framework"
+        },
+        {
+          "kind": "item",
+          "text": "Operational translation of a performance dimension in the form of a type of result to be achieved (def. session 1). An objective can be determined in terms of a goal (where we want to go), but also in terms of a line of action (how we want to get there) (see Session 2). That said, in the OVAR method, the term objective (which corresponds to the O in the OVAR acronym) has a more restricted meaning because only the first dimension (operational translation of a goal) is retained.",
+          "term": "Objective"
+        },
+        {
+          "kind": "item",
+          "text": "method for constructing a dashboard, initiated by M. Fiol and H. Jordan, that offers a visualisation of the performance model in the form of a framework linking objectives (O), Critical Performance Variables (Variable d'Action in French) and Responsibilities (R).",
+          "term": "OVAR"
+        },
+        {
+          "kind": "item",
+          "text": "within an entity, indicators aim to focus attention on a few priorities.",
+          "term": "Performance boosting use"
+        },
+        {
+          "kind": "item",
+          "text": "a measure chosen to quantify a performance objective (linked to a goal or a line of action) by directly discerning the result expected for this objective. It is distinct from an action indicator.",
+          "term": "Result indicator (lag indicator)"
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "At a given responsibility level, should there be one or more dashboards?"
+        },
+        {
+          "kind": "item",
+          "text": "In large groups, how can we combine the different dashboards?"
+        },
+        {
+          "kind": "item",
+          "text": "In the dashboard at level n, which indicators should be deployed from level n-1?"
+        },
+        {
+          "kind": "item",
+          "text": "In the dashboard at level n, which indicators should be reported to level n+1?"
+        },
+        {
+          "kind": "item",
+          "text": "Is it relevant to evaluate a manager using all the indicators of his or her dashboard?"
+        }
+      ]
+    }
+  ]
+}

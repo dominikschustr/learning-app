@@ -1,0 +1,123 @@
+{
+  "lecture": "s1b",
+  "title": "Session 1b- Responsibility centres: basic typology",
+  "source": "KM S1b-Responsibility centres(1).docx",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Responsibility Accounting is a measurement system devoted to the performance of responsibility centres. The measures constructed for this system are financial in nature."
+        },
+        {
+          "kind": "item",
+          "text": "Responsibility Accounting is a medium through which managers clarify the expected contribution of responsibility centres to the overall objectives of the organisation (span of accountability), and then assess their performance. As such, it is one of the components of management reporting, which also allows managers to analyse the overall performance by a responsibility centre."
+        },
+        {
+          "kind": "item",
+          "text": "Responsibility Accounting is also useful at local level, enabling managers in charge of responsibility centres to identify the boundaries of their responsibility and to guide the operational actions accordingly."
+        },
+        {
+          "kind": "item",
+          "text": "Responsibility Accounting subdivides the components of the entity’s overall return on investment performance into responsibility centres. It distinguishes between cost, revenue, profit, and investment centres."
+        },
+        {
+          "kind": "item",
+          "text": "This typology was designed to emphasise the contribution of local managers to the organisation’s financial objectives."
+        },
+        {
+          "kind": "item",
+          "text": "The four types of responsibility centre are distinguished by the degree of controllability that each centre has on expenses, income, and assets. In accordance with the principle of controllability, a different type of performance measurement shall be retained for each of them: cost indicator for a cost centre, revenue indicator for a revenue centre, profitability indicator for a profit centre, and return on investment indicator for an investment centre."
+        },
+        {
+          "kind": "item",
+          "text": "The principle of controllability is one of the principles for delimiting the boundaries of a responsibility centre. It prescribes that the performance measure used to set its objectives and evaluate its results (span of accountability) should be adjusted to its degree of controllability (span of control)."
+        },
+        {
+          "kind": "item",
+          "text": "The typology of responsibility centres is generally too coarse to reflect the actual decision-making power within organisations. The span of controllability of costs, revenues, and assets may be partial, so the \"typical\" indicator for each responsibility centre needs to be adjusted in a more nuanced way to align with factors that are controlled by the centre. A tailor-made approach is thus essential."
+        },
+        {
+          "kind": "item",
+          "text": "In addition, in practice, responsibility centres are sometimes hybrid versions of the four basic types. Again, the measurement system should be adjusted accordingly."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "principle whereby a responsibility centre’s span of accountability should be adjusted to its span of control.",
+          "term": "Controllability principle"
+        },
+        {
+          "kind": "item",
+          "text": "an entity of the organisational structure that the group's leaders have placed under the authority of a manager to whom they have delegated more or less decision-making power and to whom they have set the performance targets to be achieved.",
+          "term": "Responsibility centre"
+        },
+        {
+          "kind": "item",
+          "text": "a responsibility centre that can act on costs, but not on revenues or assets.",
+          "term": "Cost centre"
+        },
+        {
+          "kind": "item",
+          "text": "a responsibility centre that can act on costs, revenues, and assets.",
+          "term": "Investment centre"
+        },
+        {
+          "kind": "item",
+          "text": "a responsibility centre that can act on costs and revenues, but not on assets.",
+          "term": "Profit centre"
+        },
+        {
+          "kind": "item",
+          "text": "A responsibility centre that can act on revenues, but not on the cost of products & services sold, nor on assets.",
+          "term": "Revenue centre"
+        },
+        {
+          "kind": "item",
+          "text": "Performance indicators used to set objectives and evaluate the results of a responsibility centre.",
+          "term": "Span of accountability"
+        },
+        {
+          "kind": "item",
+          "text": "extent to which a responsibility centre can control the performance dimensions of its activity (costs, revenues, assets, etc.)",
+          "term": "Span of control"
+        },
+        {
+          "kind": "item",
+          "text": "A system for measuring the performance of an organisation's responsibility centres from a financial perspective.",
+          "term": "Responsibility Accounting"
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "What are the other Responsibility Accounting principles?"
+        },
+        {
+          "kind": "item",
+          "text": "In real life, identifying responsibilities can be complex (matrix organizations, shared responsibilities, etc.). How would you design a relevant measurement system in such contexts?"
+        },
+        {
+          "kind": "item",
+          "text": "How does Responsibility Accounting articulate with other « accounting-type » measurement systems (Cost accounting, Financial accounting)?"
+        },
+        {
+          "kind": "item",
+          "text": "How can Responsibility Accounting principles be extended to non-financial measurement systems?"
+        },
+        {
+          "kind": "item",
+          "text": "Beyond its role for Business Unit managers, Responsibility Accounting is one of the main tools of managerial reporting: what are its roles in this perspective and what are the corresponding issues?"
+        }
+      ]
+    }
+  ]
+}

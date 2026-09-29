@@ -63,6 +63,26 @@ export const QuestionSchema = z.discriminatedUnion("type", [
 
 export const CardSchema = z.object({ ...base, front: z.string().min(1), back: z.string().min(1) });
 
+/** Originaltext eines Key-Messages-Dokuments (erzeugt von scripts/import_texts.py). */
+export const TextSchema = z.object({
+  lecture: id,
+  title: z.string(),
+  source: z.string(),
+  sections: z.array(
+    z.object({
+      heading: z.string(),
+      blocks: z.array(
+        z.object({
+          kind: z.enum(["item", "para"]),
+          text: z.string(),
+          term: z.string().optional(),
+          children: z.array(z.string()).optional(),
+        }),
+      ),
+    }),
+  ),
+});
+
 export type Lecture = z.infer<typeof LectureSchema>;
 export type ExamFormat = z.infer<typeof ExamFormatSchema>;
 export type Subject = z.infer<typeof SubjectSchema>;
@@ -72,6 +92,7 @@ export type ShortQuestion = z.infer<typeof ShortQuestionSchema>;
 export type Question = z.infer<typeof QuestionSchema>;
 export type QuestionType = Question["type"];
 export type Card = z.infer<typeof CardSchema>;
+export type LectureText = z.infer<typeof TextSchema>;
 
 export type SubjectContent = {
   subject: Subject;
@@ -84,6 +105,8 @@ export type SubjectSummary = {
   subject: Subject;
   items: { id: string; type: QuestionType; lecture: string }[];
   cards: { id: string; lecture: string }[];
+  /** Kapitel, für die ein Lesetext hinterlegt ist */
+  texts: string[];
 };
 
 /** Prüft Querverweise, die zod allein nicht sieht. Gibt Fehlermeldungen zurück. */

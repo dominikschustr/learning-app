@@ -1,0 +1,52 @@
+{
+  "lecture": "s2a",
+  "title": "Session 2a- Evaluating financial-type indicators for management control",
+  "source": "KM S2a-Evaluating Financial-type indic(1).docx",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "para",
+          "text": "The many advantages of financial indicators make them essential measures of company performance:"
+        },
+        {
+          "kind": "item",
+          "text": "They provide a very concise measure of performance."
+        },
+        {
+          "kind": "item",
+          "text": "When based on accounting figures, financial indicators are relatively reliable"
+        },
+        {
+          "kind": "item",
+          "text": "They can easily be aggregated and/or compared"
+        },
+        {
+          "kind": "item",
+          "text": "They are inexpensive and are simple to compute."
+        },
+        {
+          "kind": "para",
+          "text": "However, Measurement systems that include only financial indicators have a number of limitations:"
+        },
+        {
+          "kind": "item",
+          "text": "By definition, they measure performance on financial aspects alone, which may give a very partial, or even an inappropriate view of performance in some organisations."
+        },
+        {
+          "kind": "item",
+          "text": "As they measure performance in a concise way, they do not provide an understanding of the causes of any discrepancies and therefore provide little guidance on the corrective actions needed when goals are not achieved."
+        },
+        {
+          "kind": "item",
+          "text": "They run the risk of focusing managers' attention on short-term results to the detriment of medium and long-term performance."
+        },
+        {
+          "kind": "item",
+          "text": "Measuring the financial consequences of actions taken, financial indicators are poor at predicting future performance."
+        }
+      ]
+    }
+  ]
+}

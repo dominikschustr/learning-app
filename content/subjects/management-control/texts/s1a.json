@@ -1,0 +1,168 @@
+{
+  "lecture": "s1a",
+  "title": "Session 1a- Management control: an overview",
+  "source": "KM S1a-IntroMC.docx",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Management control is a dynamic performance management process. Here, the term \"control\" has a broad meaning."
+        },
+        {
+          "kind": "item",
+          "text": "Management control is the responsibility of managers. It therefore goes beyond the sole remit of the management controller whose role is to support managers in the design and implementation of the management system (business partner role)."
+        },
+        {
+          "kind": "item",
+          "text": "The management control process is carried out primarily within each of the responsibility centres that make up the organisation (a department, a division, or even the organisation itself). It is an autonomous control process, designed to monitor the entity's performance."
+        },
+        {
+          "kind": "item",
+          "text": "Management control is not just for large organisations. SMEs are also concerned, even if the management system is sometimes in a more simplified form."
+        },
+        {
+          "kind": "item",
+          "text": "The performance management process comprises two main phases: a phase upstream of the action, the planning phase, and a phase downstream of the action, the monitoring (and analysis) phase of the results. Analysis of the results can lead to feedback on planning, which is why it is referred to as a regulation \"cycle\"."
+        },
+        {
+          "kind": "item",
+          "text": "The control cycle is based on measurement systems, i.e., sets of indicators, which structure each of the two phases, the planning phase and the monitoring and analysis phase."
+        },
+        {
+          "kind": "item",
+          "text": "Measurement systems are constructs. The fundamental qualities expected of measurements are validity with respect to the objective, reliability, and ease of implementation. In addition, measurement systems must adhere to the principle of relevance, meaning they must be aligned with their intended use. Pursuing relevance implies that measurement systems are diverse, with their design varying depending on the purpose they are meant to serve."
+        },
+        {
+          "kind": "item",
+          "text": "Building a measurement system implies defining the relevant performance dimensions in a more qualitative way beforehand, i.e., to make relevant performance dimensions explicit. They can be financial and/or non-financial. Measurement systems are therefore tailor-made for each organisation."
+        },
+        {
+          "kind": "item",
+          "text": "Management control is not just for profit-seeking companies. It is useful in organisations that have a wide range of performance objectives."
+        },
+        {
+          "kind": "item",
+          "text": "At the level of an entity, the control cycle fulfils two functions: regulation and learning."
+        },
+        {
+          "kind": "item",
+          "text": "Within an entity, performance management can be carried out at different levels of granularity: we can be interested in the entity's overall performance (global or overall view) or in that of more detailed sub-groups of the entity (analytical view). Management accounting is a useful measurement system for analysing the entity's performance by business segment, and financial accounting for breaking it down by legal entity."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "a performance management process carried out locally by “local” managers in charge of responsibility centres. It differs from the management control carried out by managers at higher hierarchical levels.",
+          "term": "Autonomous control"
+        },
+        {
+          "kind": "item",
+          "text": "a subdivision of an organisation's or a responsibility centre's overall activity (product, type of market, etc.) which can be evaluated with regard to management decisions (development of a business, withdrawal from a business, resource allocation, etc.).",
+          "term": "Business segment"
+        },
+        {
+          "kind": "item",
+          "text": "the dynamics of managing an organisation’s performance, consisting of two main phases: i) planning, and ii) monitoring and analysis of results.",
+          "term": "Control cycle"
+        },
+        {
+          "kind": "item",
+          "text": "one of the key qualities of a measurement, which includes the cost of producing the measurement, its timely delivery, and its ease of interpretation.",
+          "term": "Ease of implementation"
+        },
+        {
+          "kind": "item",
+          "text": "a measurement system on which financial accounting is mostly based on. It enables to produce the consolidated financial statements of a group, by aggregating each legal entity's individual financial statements. Consolidated financial statement answers third-party reporting purposes. Because of this, it is often equated with external reporting. However, financial accounting also enables executives of organisational entities to manage the accounting and tax issues of the legal entities under their responsibility, and therefore contributes to management reporting, albeit in a more marginal way.",
+          "term": "Financial reporting"
+        },
+        {
+          "kind": "item",
+          "text": "a measure chosen to monitor achievement of an objective. It allows the objective to be set and the result to be evaluated.",
+          "term": "Indicator"
+        },
+        {
+          "kind": "item",
+          "text": "a legal subdivision within a group which is required to publish statutory financial statements (company accounts).",
+          "term": "Legal entity"
+        },
+        {
+          "kind": "item",
+          "text": "process of updating the qualitative dimensions of performance underlying the measurement system.",
+          "term": "Learning loop"
+        },
+        {
+          "kind": "item",
+          "text": "principle according to which only unfavourable gaps between objectives and the results achieved lead to special monitoring by managers. By extension: the principle that management should only intervene in an entity's operational decisions if the entity's performance objectives are at risk.",
+          "term": "Management by exception"
+        },
+        {
+          "kind": "item",
+          "text": "a process involving devices and practices that enable an organisation to set performance objectives and to effectively oversee their progressive achievement. In other words, it is a performance steering process.",
+          "term": "Management control"
+        },
+        {
+          "kind": "item",
+          "text": "a measurement system used to inform managers about the performance of parts of the organisation for management control purposes. It differs from external reporting, which is intended for users outside the organisation.",
+          "term": "Management reporting"
+        },
+        {
+          "kind": "item",
+          "text": "a set of indicators to assess performance for a given purpose.",
+          "term": "Measurement system"
+        },
+        {
+          "kind": "item",
+          "text": "operational translation of a performance dimension in the form of a type of result to be achieved.",
+          "term": "Objective"
+        },
+        {
+          "kind": "item",
+          "text": "a process of taking into account the results obtained to update action plans or targets set during planning, with a view to improving performance.",
+          "term": "Regulation"
+        },
+        {
+          "kind": "item",
+          "text": "A measurement (or measurement system) can serve multiple uses. It must therefore be adapted to the specific use for which it is intended.",
+          "term": "Relevance"
+        },
+        {
+          "kind": "item",
+          "text": "the extent to which a measurement can quantify a result with a limited margin of error.",
+          "term": "Reliability"
+        },
+        {
+          "kind": "item",
+          "text": "an entity of the organisational structure that the group's leaders have placed under the authority of a manager to whom they have delegated more or less decision-making power and to whom they have set the performance targets to be achieved",
+          "term": "Responsibility centre"
+        },
+        {
+          "kind": "item",
+          "text": "the ability of a measurement to accurately reflect the phenomenon being measured or the intention underlying the objective being pursued",
+          "term": "Validity with respect to the objective"
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "In large groups, how can we articulate the operational control process at the level of units with a more strategic and global performance management process? Which additional functions does management control fulfill? This is the issue of vertical coordination and strategic alignment."
+        },
+        {
+          "kind": "item",
+          "text": "In large groups, how can horizontal coordination between responsibility centres be organized? How are internal transactions and transfer pricing monitored? This is one of the most difficult issues in management control."
+        },
+        {
+          "kind": "item",
+          "text": "In large groups, human stakes are high behind measurement systems, due to their important role in managers’ motivation and evaluation. What are the various approaches to orienting behavior (results control, cultural control, etc.) and how are they implemented in concrete terms?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "lecture": "s1c",
+  "title": "Session 1c- Financial performance and related indicators",
+  "source": "KM S1c-Financial indic and MC(1).docx",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Financial indicators are designed to quantify the overall financial performance of an organisation/responsibility centre."
+        },
+        {
+          "kind": "item",
+          "text": "The terms \"quantitative indicator\" and \"financial indicator\" should not be confused, as is sometimes the case. A quantitative indicator refers to a representation of performance in the form of numbers, as opposed to \"qualitative indicators\" of performance that represent performance in other forms (smiley faces, arrows, etc.). Financial indicators are by definition quantitative, but there are also quantitative indicators of non-financial performance (number of defective products, customer satisfaction rate, absenteeism rate, etc.)."
+        },
+        {
+          "kind": "item",
+          "text": "Financial indicators are of interest to users outside the organisation/entity (financial analysts, existing or potential shareholders, bankers, works council, etc.), but are also used by managers for internal management purposes."
+        },
+        {
+          "kind": "item",
+          "text": "There are several categories of financial indicators which reflect different types of financial performance:",
+          "children": [
+            "Activity indicators: turnover, growth rate. These indicators focus on the ability to generate revenue.",
+            "Profitability indicators: net income, operating income, NOPAT, EBIT, operating profit margin, EBITDA, etc.. These indicators measure an organisation's capacity to generate revenues that exceed the costs entailed;",
+            "Return on investment indicators: ROE, ROCE, etc. These present a level of profitability relative to the capital invested to obtain the income;",
+            "Value creation indicators: MVA, TSR, EVA. These compare financial performance with the return on risk associated with an investment in the organisation;",
+            "Cash flow indicators: EBITDA, operating cash flow, NCF. These provide information on the financing needs of activities, or their capacity to generate cash."
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "The breakdown of net income into interim results provides a better understanding of how this income is obtained."
+        },
+        {
+          "kind": "item",
+          "text": "Profitability ratios are more comparable than profitability expressed in numerical value (as it takes the size of the company into account)."
+        },
+        {
+          "kind": "item",
+          "text": "Return-on-investment indicators provide a more comprehensive view of financial performance than profitability indicators as they combine turnover, profit, and capital."
+        },
+        {
+          "kind": "item",
+          "text": "The DuPont de Nemours formula shows the two levers of return on investment: operating profit margin on the one hand, and assets turnover ratio (sales divided by capital employed) on the other."
+        },
+        {
+          "kind": "item",
+          "text": "Return on investment indicators have limitations and can be difficult to use: the ratio formalism and the way capital is valued in the denominator can generate decision biases."
+        },
+        {
+          "kind": "item",
+          "text": "Value creation indicators offer a more complete view of financial performance than profitability and return on investment indicators as they take into account the risk borne by investors who have provided the company with capital."
+        },
+        {
+          "kind": "item",
+          "text": "More complex in their construction, value creation indicators pose further problems of implementation, comparison, and interpretation. In particular, the market values of a company's assets not only depend on the evolution of the company's specific performance variables, but also reflect investors' expectations at macro-sectoral and macro-economic levels."
+        },
+        {
+          "kind": "item",
+          "text": "When they incorporate non-accounting references and information, such as the cost of capital employed and/or the company’s market value or equity, they give a more complete measurement of the company’s performance for its shareholders."
+        },
+        {
+          "kind": "item",
+          "text": "More comprehensive indicators have greater validity, but often pose reliability problems. Consequently, a compromise between reliability and the validity of financial indicators often needs to be found."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "a measure of the organisation's financial performance primarily based on data taken from the organisation's financial reporting system.",
+          "term": "Financial indicator"
+        },
+        {
+          "kind": "item",
+          "text": "the ability of a company to generate income in excess of the cost of the resources consumed, thus generating a positive income (i.e., profit).",
+          "term": "Profitability"
+        },
+        {
+          "kind": "item",
+          "text": "the ability of a company to generate sufficient profit in relation to the capital used to generate this profit. A distinction is made between return on equity, which is assessed from the point of view of shareholders, and operating return on investment, which is assessed from the point of view of the company's managers. The former is generally measured by ROE, the latter by ROCE.",
+          "term": "Return on investment"
+        },
+        {
+          "kind": "para",
+          "text": "the ability of a company to offer investors a return on investment above the opportunity cost of the amount of their investment in the company.",
+          "term": "Value creation for the shareholders"
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The way each financial indicator is calculated raises technical difficulties that should be taken into account when guiding managers’ decisions."
+        },
+        {
+          "kind": "item",
+          "text": "What are the pros and cons of using non-accounting data to calculate financial indicators?"
+        }
+      ]
+    }
+  ]
+}

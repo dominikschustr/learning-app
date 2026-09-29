@@ -30,6 +30,8 @@ Pro Fach ein Ordner unter `content/subjects/<fach>/`:
 - `subject.json` – Name, Farbe, Kapitel (`lectures`), Prüfungsformat
 - `questions/*.json` – Fragen (`mc`, `tf`, `short`), Schema in `src/lib/schema.ts`
 - `cards/*.json` – Karteikarten
+- `texts/<kapitel>.json` – Originaltext zum Nachlesen, erzeugt mit
+  `python3 scripts/import_texts.py "Key Messages" content/subjects/management-control/texts`
 
 Die Quelldokumente liegen in `Key Messages/`. Neue Dokumente → Claude erstellt daraus Fragen und Karten
 als JSON → `npm test` prüft sie → commit.

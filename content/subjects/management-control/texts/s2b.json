@@ -1,0 +1,130 @@
+{
+  "lecture": "s2b",
+  "title": "Session 2b- Defining and modelling performance",
+  "source": "KM S2b Performance(1).docx",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "A management control system cannot be built without first explaining the performance dimensions for the organisation concerned, which are always specific to the organisation."
+        },
+        {
+          "kind": "item",
+          "text": "Building a management control system means that the system must first have explicit goals. To this end, we need to identify the stakeholders that matter to the organisational entity, and then the expectations of these stakeholders."
+        },
+        {
+          "kind": "item",
+          "text": "The diversity of stakeholder expectations reminds us that goals cannot be reduced to profit or shareholder value. The performance management process can thus be applied to different types of goals and entities/organisations."
+        },
+        {
+          "kind": "item",
+          "text": "Identifying an entity's stakeholders is not easy: there are generally various stakeholders, their expectations are sometimes ambiguous or contradictory, and their relative importance is difficult to assess precisely. The relative importance of stakeholders depends on the type of organisation (private company, public institution, association, etc.) or entity (functional or operational department), the institutional context, and the sector(s) in which the entity operates. The balance between stakeholders is also dynamic: the relative importance of each stakeholder may change."
+        },
+        {
+          "kind": "item",
+          "text": "Clarifying the goals leads to arbitration, and hence to management decisions."
+        },
+        {
+          "kind": "item",
+          "text": "The definition of performance implies taking the consumption of resources induced by the activity into account (i.e., its cost) in addition to clarifying the entity's goals."
+        },
+        {
+          "kind": "item",
+          "text": "More broadly, setting performance goals involves defining the main lines of action to achieve them, with actions on cost being only one of these potential areas. This is the aim of performance modelling."
+        },
+        {
+          "kind": "item",
+          "text": "A performance model is a manager's subjective representation of the cause-and-effect links between the goals and the lines of action. As these representations may vary from one manager to the next, the aim is to encourage the convergence of representations, both vertically and horizontally. It also involves being able to change this representation if necessary (learning function)."
+        },
+        {
+          "kind": "item",
+          "text": "A performance model is a simplification of reality. While this is sometimes seen as an impoverishment, it makes it much easier for managers to understand the cause-and-effect relation between the goals and the lines of action."
+        },
+        {
+          "kind": "item",
+          "text": "Performance modelling has an impact not only on the actors' representations, but also on their behaviour; it is performative. Vigilance is needed in view of the risks of performative bias."
+        },
+        {
+          "kind": "item",
+          "text": "To be relevant, the lines of action (and therefore the performance model) need to be consistent with the strategic lines of the organisation. These include the key success factors of the sector of activity and the strategic positioning chosen by the leaders who organise and prioritise the directions of organisational action in a relatively stable manner. The lines of action must also be consistent with more cyclical priorities."
+        },
+        {
+          "kind": "item",
+          "text": "The literature notes that in practice, aligning management control indicators with a strategy is not as simple as it seems, and it stresses the importance of a prior performance modelling approach to achieve this."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The areas that the entity's management seeks to achieve, defined in qualitative terms.",
+          "term": "Goals"
+        },
+        {
+          "kind": "item",
+          "text": "Potential ways of achieving a goal.",
+          "term": "Lines of action"
+        },
+        {
+          "kind": "item",
+          "text": "A schematic representation of the cause-and-effect relationships between different aggregates, usually based on a mathematical formalism.",
+          "term": "Model"
+        },
+        {
+          "kind": "item",
+          "text": "Operational translation of a goal or a line of action into a result to be achieved. This definition refines the definition seen in the introduction (see Session 1a). It indicates that an objective can be determined with regard to a goal (where we want to go), but also a line of action (how we want to get there).",
+          "term": "Objective"
+        },
+        {
+          "kind": "item",
+          "text": "the goals pursued by an entity and the lines of action chosen to achieve them.",
+          "term": "Performance"
+        },
+        {
+          "kind": "item",
+          "text": "A schematic representation of the goals that make sense at a given time for the entity, the lines of action chosen to achieve them, and the cause-and-effect relationships between the lines of action and the goals.",
+          "term": "Performance model"
+        },
+        {
+          "kind": "item",
+          "text": "a group or individual liable to affect, or be affected by the achievement of the entity's objectives (Freeman, 1984)",
+          "term": "Stakeholder"
+        },
+        {
+          "kind": "item",
+          "text": "priority action guidelines established by the leaders to achieve the goals, resulting from the choice of positioning, key success factors imposed by the sector of activity, and the organisation's more cyclical priorities.",
+          "term": "Strategy"
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "What are the different kinds of models in management control ?"
+        },
+        {
+          "kind": "item",
+          "text": "What is not easily modelled is often considered as not very legitimate. To what extent can modelling distort performance?"
+        },
+        {
+          "kind": "item",
+          "text": "A model cannot encompass all dimensions of an organisation's performance. It necessarily results from a simplification of reality. How to balance the pros of such a simplification (clarifying the priorities) with the cons (reduced vision)?"
+        },
+        {
+          "kind": "item",
+          "text": "What roles does modeling play in large corporate corporate groups?"
+        },
+        {
+          "kind": "item",
+          "text": "Does performance modeling reflect managerial representations or does it orient them? To what extent is such modelling « performative »?"
+        }
+      ]
+    }
+  ]
+}

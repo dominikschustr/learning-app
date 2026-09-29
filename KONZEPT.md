@@ -112,7 +112,7 @@ content/subjects/management-control/
 Die Fach-Seite zeigt einen **Lernpfad**: Kapitel 1–6, am Ende der **Abschlusstest** im Prüfungsformat,
 der aus allen sechs Kapiteln Fragen zieht (gleichmäßig verteilt, jedes Kapitel ist vertreten).
 
-Jede Kapitelseite bietet: Karteikarten, Üben (nur dieses Kapitel) und einen **Kapiteltest**
+Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Messages, Definitionen als Glossar und „To go further“), Karteikarten, Üben (nur dieses Kapitel) und einen **Kapiteltest**
 (bis zu 1 Kurzantwort + 6 MC + 4 True/False, gleiche Zeit pro Frage wie in der Prüfung).
 
 | Modus | Was passiert |
