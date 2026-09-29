@@ -1,0 +1,6 @@
+[
+  { "id": "c-s2a-01", "lecture": "s2a", "front": "4 advantages of financial indicators", "back": "1) Very concise\n2) Relatively reliable (accounting-based)\n3) Easy to aggregate and compare\n4) Inexpensive and simple to compute" },
+  { "id": "c-s2a-02", "lecture": "s2a", "front": "4 limitations of purely financial measurement systems", "back": "1) Partial / inappropriate view of performance\n2) No causes of discrepancies → little guidance on corrective action\n3) Short-termism\n4) Poor at predicting future performance" },
+  { "id": "c-s2a-03", "lecture": "s2a", "front": "Why little guidance on corrective action?", "back": "Because they measure performance concisely, financial indicators do not reveal the causes of gaps." },
+  { "id": "c-s2a-04", "lecture": "s2a", "front": "Why poor at predicting the future?", "back": "They measure the financial consequences of actions already taken (backward-looking)." }
+]

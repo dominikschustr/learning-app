@@ -1,0 +1,247 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s2b-01",
+    "lecture": "s2b",
+    "difficulty": 1,
+    "prompt": "Before building a management control system, what must be done first?",
+    "options": [
+      { "id": "a", "text": "Make the system's goals explicit" },
+      { "id": "b", "text": "Identify the stakeholders that matter to the entity" },
+      { "id": "c", "text": "Identify the expectations of these stakeholders" },
+      { "id": "d", "text": "Choose the dashboard software and its colour codes" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Performance dimensions are specific to each organisation: explicit goals come first, derived from relevant stakeholders and their expectations."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-02",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "Why is identifying an entity's stakeholders difficult?",
+    "options": [
+      { "id": "a", "text": "There are generally many different stakeholders." },
+      { "id": "b", "text": "Their expectations are sometimes ambiguous or contradictory." },
+      { "id": "c", "text": "Their relative importance is difficult to assess precisely." },
+      { "id": "d", "text": "The balance between stakeholders is dynamic and can change." },
+      { "id": "e", "text": "Stakeholders are legally defined for each type of company." }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Multiple stakeholders, ambiguous/contradictory expectations, hard-to-assess and changing importance make identification difficult."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-03",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "The relative importance of stakeholders depends on …",
+    "options": [
+      { "id": "a", "text": "the type of organisation (private company, public institution, association …)" },
+      { "id": "b", "text": "the type of entity (functional or operational department)" },
+      { "id": "c", "text": "the institutional context" },
+      { "id": "d", "text": "the sector(s) in which the entity operates" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "All four factors shape the relative importance of stakeholders."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-04",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "Which statements about a performance model are correct?",
+    "options": [
+      { "id": "a", "text": "It is a manager's subjective representation of the cause-and-effect links between goals and lines of action." },
+      { "id": "b", "text": "It aims to encourage the convergence of representations, vertically and horizontally." },
+      { "id": "c", "text": "It is an objective representation that is identical for all managers." },
+      { "id": "d", "text": "It should be changeable when necessary (learning function)." }
+    ],
+    "correct": ["a", "b", "d"],
+    "explanation": "Performance models are subjective; since representations differ between managers, modelling aims for convergence and must remain open to change."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-05",
+    "lecture": "s2b",
+    "difficulty": 3,
+    "prompt": "Performance modelling is described as \"performative\". What does this mean?",
+    "options": [
+      { "id": "a", "text": "It affects the actors' representations of performance." },
+      { "id": "b", "text": "It influences the actors' behaviour." },
+      { "id": "c", "text": "Vigilance is needed because of the risk of performative bias." },
+      { "id": "d", "text": "It is a neutral mirror of reality that does not change anything." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "A model does not just describe performance – it shapes how people see and act on it (what is not modelled may appear less legitimate)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-06",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "To be relevant, lines of action (and thus the performance model) must be consistent with …",
+    "options": [
+      { "id": "a", "text": "the key success factors of the sector of activity" },
+      { "id": "b", "text": "the strategic positioning chosen by the leaders" },
+      { "id": "c", "text": "more cyclical priorities" },
+      { "id": "d", "text": "the indicators used by competitors" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Lines of action must fit the strategy (key success factors + chosen positioning) and cyclical priorities."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-07",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "Which definitions from Session 2b are correct?",
+    "options": [
+      { "id": "a", "text": "Goals: the areas management seeks to achieve, defined in qualitative terms." },
+      { "id": "b", "text": "Lines of action: potential ways of achieving a goal." },
+      { "id": "c", "text": "Objective: operational translation of a goal or a line of action into a result to be achieved." },
+      { "id": "d", "text": "Performance: only the financial results achieved by the entity." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Performance = the goals pursued and the lines of action chosen to achieve them – not only financial results."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-08",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "Defining performance implies taking into account …",
+    "options": [
+      { "id": "a", "text": "the entity's goals" },
+      { "id": "b", "text": "the lines of action chosen to achieve them" },
+      { "id": "c", "text": "the consumption of resources induced by the activity (its cost)" },
+      { "id": "d", "text": "shareholder value only" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Performance includes goals, lines of action, and the cost of resources consumed; goals cannot be reduced to shareholder value."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-09",
+    "lecture": "s2b",
+    "difficulty": 3,
+    "prompt": "A performance model is a simplification of reality. Which statements are correct?",
+    "options": [
+      { "id": "a", "text": "Simplification makes it easier for managers to understand the cause-and-effect relations between goals and lines of action." },
+      { "id": "b", "text": "Simplification can be seen as an impoverishment (reduced vision)." },
+      { "id": "c", "text": "A good model encompasses all dimensions of an organisation's performance." },
+      { "id": "d", "text": "What is not easily modelled may be considered less legitimate." }
+    ],
+    "correct": ["a", "b", "d"],
+    "explanation": "No model can be exhaustive; the trade-off is clarity of priorities vs. reduced vision."
+  },
+
+  {
+    "type": "tf",
+    "id": "tf-s2b-01",
+    "lecture": "s2b",
+    "statement": "An organisation's goals can be reduced to profit or shareholder value.",
+    "answer": false,
+    "explanation": "The diversity of stakeholder expectations shows goals cannot be reduced to profit or shareholder value."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-02",
+    "lecture": "s2b",
+    "statement": "The balance between stakeholders is dynamic: the relative importance of each stakeholder may change.",
+    "answer": true,
+    "explanation": "Stated explicitly in the key messages."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-03",
+    "lecture": "s2b",
+    "statement": "Clarifying the goals leads to arbitration, and hence to management decisions.",
+    "answer": true,
+    "explanation": "Choosing between stakeholder expectations requires arbitration."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-04",
+    "lecture": "s2b",
+    "statement": "According to Freeman (1984), a stakeholder is a group or individual liable to affect, or be affected by, the achievement of the entity's objectives.",
+    "answer": true,
+    "explanation": "Freeman's definition."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-05",
+    "lecture": "s2b",
+    "statement": "The literature shows that aligning management control indicators with strategy is simple in practice.",
+    "answer": false,
+    "explanation": "It is not as simple as it seems – prior performance modelling is important to achieve alignment."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-06",
+    "lecture": "s2b",
+    "statement": "An objective can be determined with regard to a goal (where we want to go) but also with regard to a line of action (how we want to get there).",
+    "answer": true,
+    "explanation": "Session 2b refines the definition of objective from Session 1a."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-07",
+    "lecture": "s2b",
+    "statement": "Actions on cost are the only relevant line of action for achieving performance goals.",
+    "answer": false,
+    "explanation": "Actions on cost are only one of the potential lines of action."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-08",
+    "lecture": "s2b",
+    "statement": "The performance dimensions of a management control system are always specific to the organisation concerned.",
+    "answer": true,
+    "explanation": "An MCS cannot be built without first explaining the organisation-specific performance dimensions."
+  },
+
+  {
+    "type": "short",
+    "id": "sa-s2b-01",
+    "lecture": "s2b",
+    "verb": "define",
+    "prompt": "Define a performance model.",
+    "modelAnswer": "A performance model is a schematic representation of the goals that make sense for the entity at a given time, the lines of action chosen to achieve them, and the cause-and-effect relationships between the lines of action and the goals. It is a manager's subjective and simplified representation, which should converge across managers and be updated when necessary.",
+    "keyPoints": [
+      "Schematic representation of the goals (at a given time)",
+      "Lines of action chosen to achieve them",
+      "Cause-and-effect relationships between lines of action and goals",
+      "Subjective / simplified representation (convergence, learning)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s2b-02",
+    "lecture": "s2b",
+    "verb": "explain",
+    "prompt": "Explain why a management control system cannot be built without first identifying stakeholders and their expectations.",
+    "modelAnswer": "An MCS needs explicit goals, and the performance dimensions are specific to each organisation. Goals are derived from the stakeholders that matter to the entity and their expectations; since these are diverse, goals cannot be reduced to profit or shareholder value. Stakeholders are numerous, their expectations may be ambiguous or contradictory and their relative importance varies (type of organisation, entity, context, sector) and changes over time, so clarifying goals requires arbitration – i.e. management decisions – before indicators can be chosen.",
+    "keyPoints": [
+      "MCS needs explicit, organisation-specific goals",
+      "Goals derive from relevant stakeholders and their expectations",
+      "Goals not reducible to profit / shareholder value",
+      "Stakeholder expectations ambiguous/contradictory, importance varies and is dynamic",
+      "Clarifying goals requires arbitration / management decisions"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s2b-03",
+    "lecture": "s2b",
+    "verb": "explain",
+    "prompt": "Explain what it means that performance modelling is \"performative\" and why this calls for vigilance.",
+    "modelAnswer": "Performance modelling does not only describe performance: it shapes the actors' representations and therefore their behaviour. What is included in the model gains attention and legitimacy, while what is not easily modelled may be neglected. Because the model is a simplification, this can bias behaviour (performative bias), so managers must stay vigilant and be ready to revise the model (learning).",
+    "keyPoints": [
+      "Model influences actors' representations",
+      "Model influences actors' behaviour",
+      "Simplification: what is not modelled may be neglected / seen as less legitimate",
+      "Risk of performative bias → vigilance / revise the model"
+    ]
+  }
+]

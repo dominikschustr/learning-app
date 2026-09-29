@@ -1,0 +1,23 @@
+[
+  { "id": "c-s1a-01", "lecture": "s1a", "front": "Management control", "back": "A process involving devices and practices that enable an organisation to set performance objectives and to effectively oversee their progressive achievement – a performance steering process." },
+  { "id": "c-s1a-02", "lecture": "s1a", "front": "Role of the management controller", "back": "Management control is the responsibility of managers. The controller supports them in designing and implementing the management system (business partner role)." },
+  { "id": "c-s1a-03", "lecture": "s1a", "front": "Control cycle", "back": "The dynamics of managing performance in two main phases:\n1) planning (upstream of the action)\n2) monitoring and analysis of results (downstream)\nResults feed back into planning." },
+  { "id": "c-s1a-04", "lecture": "s1a", "front": "Two functions of the control cycle", "back": "Regulation – update action plans/targets based on results.\nLearning – update the qualitative performance dimensions (learning loop)." },
+  { "id": "c-s1a-05", "lecture": "s1a", "front": "Autonomous control", "back": "Performance management carried out locally by the managers in charge of responsibility centres – distinct from control by higher hierarchical levels." },
+  { "id": "c-s1a-06", "lecture": "s1a", "front": "Measurement system", "back": "A set of indicators to assess performance for a given purpose. A construct, tailor-made for each organisation." },
+  { "id": "c-s1a-07", "lecture": "s1a", "front": "Indicator", "back": "A measure chosen to monitor achievement of an objective. It allows the objective to be set and the result to be evaluated." },
+  { "id": "c-s1a-08", "lecture": "s1a", "front": "Objective (Session 1a)", "back": "Operational translation of a performance dimension in the form of a type of result to be achieved." },
+  { "id": "c-s1a-09", "lecture": "s1a", "front": "3 fundamental qualities of a measurement", "back": "1) Validity with respect to the objective\n2) Reliability\n3) Ease of implementation\n+ principle of relevance" },
+  { "id": "c-s1a-10", "lecture": "s1a", "front": "Validity with respect to the objective", "back": "Ability of a measurement to accurately reflect the phenomenon measured or the intention underlying the objective." },
+  { "id": "c-s1a-11", "lecture": "s1a", "front": "Reliability", "back": "Extent to which a measurement can quantify a result with a limited margin of error." },
+  { "id": "c-s1a-12", "lecture": "s1a", "front": "Ease of implementation", "back": "Cost of producing the measurement, its timely delivery and its ease of interpretation." },
+  { "id": "c-s1a-13", "lecture": "s1a", "front": "Relevance", "back": "A measurement can serve multiple uses, so it must be adapted to the specific use for which it is intended → measurement systems are diverse." },
+  { "id": "c-s1a-14", "lecture": "s1a", "front": "Regulation", "back": "Taking the results obtained into account to update action plans or targets set during planning, with a view to improving performance." },
+  { "id": "c-s1a-15", "lecture": "s1a", "front": "Learning loop", "back": "Process of updating the qualitative dimensions of performance underlying the measurement system." },
+  { "id": "c-s1a-16", "lecture": "s1a", "front": "Management by exception", "back": "Only unfavourable gaps between objectives and results lead to special monitoring. By extension: management intervenes only if the entity's objectives are at risk." },
+  { "id": "c-s1a-17", "lecture": "s1a", "front": "Management reporting vs. external reporting", "back": "Management reporting informs managers about the performance of parts of the organisation (control purposes). External reporting targets users outside the organisation." },
+  { "id": "c-s1a-18", "lecture": "s1a", "front": "Financial reporting", "back": "Basis of financial accounting: aggregates the legal entities' statements into consolidated statements (third-party reporting). Contributes marginally to management reporting." },
+  { "id": "c-s1a-19", "lecture": "s1a", "front": "Global vs. analytical view", "back": "Global: the entity's overall performance. Analytical: sub-groups.\nManagement accounting → by business segment.\nFinancial accounting → by legal entity." },
+  { "id": "c-s1a-20", "lecture": "s1a", "front": "Business segment", "back": "A subdivision of an organisation's or responsibility centre's activity (product, market …) that can be evaluated for management decisions (develop, withdraw, allocate resources)." },
+  { "id": "c-s1a-21", "lecture": "s1a", "front": "Legal entity", "back": "A legal subdivision within a group that must publish statutory financial statements (company accounts)." }
+]

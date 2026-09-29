@@ -1,0 +1,15 @@
+[
+  { "id": "c-s2b-01", "lecture": "s2b", "front": "First step in building an MCS", "back": "Make goals explicit: identify the stakeholders that matter to the entity, then their expectations. Performance dimensions are always organisation-specific." },
+  { "id": "c-s2b-02", "lecture": "s2b", "front": "Stakeholder (Freeman, 1984)", "back": "A group or individual liable to affect, or be affected by, the achievement of the entity's objectives." },
+  { "id": "c-s2b-03", "lecture": "s2b", "front": "Why is stakeholder identification difficult?", "back": "Many stakeholders; ambiguous or contradictory expectations; relative importance hard to assess and dynamic (depends on type of organisation/entity, institutional context, sector)." },
+  { "id": "c-s2b-04", "lecture": "s2b", "front": "Goals", "back": "The areas that the entity's management seeks to achieve, defined in qualitative terms." },
+  { "id": "c-s2b-05", "lecture": "s2b", "front": "Lines of action", "back": "Potential ways of achieving a goal. Actions on cost are only one of them." },
+  { "id": "c-s2b-06", "lecture": "s2b", "front": "Objective (Session 2b)", "back": "Operational translation of a goal (where we want to go) OR a line of action (how we get there) into a result to be achieved." },
+  { "id": "c-s2b-07", "lecture": "s2b", "front": "Performance", "back": "The goals pursued by an entity and the lines of action chosen to achieve them (including the resources consumed)." },
+  { "id": "c-s2b-08", "lecture": "s2b", "front": "Performance model", "back": "A schematic representation of the goals that make sense at a given time, the lines of action chosen, and the cause-and-effect links between them." },
+  { "id": "c-s2b-09", "lecture": "s2b", "front": "Model (general)", "back": "A schematic representation of cause-and-effect relationships between aggregates, usually based on a mathematical formalism." },
+  { "id": "c-s2b-10", "lecture": "s2b", "front": "Subjectivity of performance models", "back": "A manager's subjective representation → aim for convergence (vertical & horizontal) and allow change (learning function)." },
+  { "id": "c-s2b-11", "lecture": "s2b", "front": "Performative modelling", "back": "Modelling shapes actors' representations AND behaviour → risk of performative bias, vigilance needed." },
+  { "id": "c-s2b-12", "lecture": "s2b", "front": "Strategy", "back": "Priority action guidelines set by leaders to achieve the goals – resulting from the chosen positioning, the sector's key success factors and cyclical priorities." },
+  { "id": "c-s2b-13", "lecture": "s2b", "front": "Relevance of lines of action", "back": "Must be consistent with the strategy (key success factors + strategic positioning) and with cyclical priorities." }
+]

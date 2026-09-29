@@ -1,0 +1,16 @@
+[
+  { "id": "c-s34-01", "lecture": "s34", "front": "Dashboard", "back": "A structured set of financial and non-financial performance indicators useful to managers, and the values these indicators assume over a defined period." },
+  { "id": "c-s34-02", "lecture": "s34", "front": "4 expectations of dashboards", "back": "Balanced · long-term perspective · in line with strategy · facilitate decision-making" },
+  { "id": "c-s34-03", "lecture": "s34", "front": "Dashboard ← performance model", "back": "Indicators must be preceded by a performance model; include indicators for goals AND main lines of action. Never just list indicators and pick." },
+  { "id": "c-s34-04", "lecture": "s34", "front": "Performance boosting use", "back": "Focus attention on a few priorities: few indicators, monitored directly and systematically by managers, changing frequently." },
+  { "id": "c-s34-05", "lecture": "s34", "front": "Monitoring use", "back": "Ensure the organisation is under control: more, varied, balanced indicators; recurrent; pre-established values → only abnormal deviations escalated; controllers heavily involved." },
+  { "id": "c-s34-06", "lecture": "s34", "front": "Dashboards in practice", "back": "Separate dashboards per use are unusual – one dashboard usually serves several functions (boosting + reporting, or monitoring + reporting). Any indicator can serve any use." },
+  { "id": "c-s34-07", "lecture": "s34", "front": "OVAR", "back": "Dashboard method by M. Fiol & H. Jordan linking Objectives (O), Critical Performance Variables / Variables d'Action (VA) and Responsibilities (R)." },
+  { "id": "c-s34-08", "lecture": "s34", "front": "O/CPV framework", "back": "Double-entry table of priority objectives × critical performance variables; crosses show causal links. No predefined framework for the content (unlike the strategy map)." },
+  { "id": "c-s34-09", "lecture": "s34", "front": "Critical Performance Variable (CPV)", "back": "Name of the main lines of action in the OVAR method." },
+  { "id": "c-s34-10", "lecture": "s34", "front": "Objective in OVAR", "back": "Restricted meaning: only the operational translation of a goal (lines of action are the CPVs)." },
+  { "id": "c-s34-11", "lecture": "s34", "front": "Lag (result) indicator", "back": "Quantifies an objective by directly capturing the expected result." },
+  { "id": "c-s34-12", "lecture": "s34", "front": "Lead (action) indicator", "back": "Quantifies an objective by focusing on the means / levers adopted to achieve it." },
+  { "id": "c-s34-13", "lecture": "s34", "front": "Common principles: strategy map & O/CPV", "back": "Formulation of objectives · causal links · linking an objective to several others · two levels (expected results & action levers)." },
+  { "id": "c-s34-14", "lecture": "s34", "front": "Effective dashboard", "back": "Delivers indicators within a short timeframe, in an easily readable form (graphs, colour codes …)." }
+]

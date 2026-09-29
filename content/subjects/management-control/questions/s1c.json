@@ -1,0 +1,265 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s1c-01",
+    "lecture": "s1c",
+    "difficulty": 1,
+    "prompt": "Which of the following are categories of financial indicators?",
+    "options": [
+      { "id": "a", "text": "Activity indicators" },
+      { "id": "b", "text": "Profitability indicators" },
+      { "id": "c", "text": "Return on investment indicators" },
+      { "id": "d", "text": "Value creation indicators" },
+      { "id": "e", "text": "Cash flow indicators" },
+      { "id": "f", "text": "Customer satisfaction indicators" }
+    ],
+    "correct": ["a", "b", "c", "d", "e"],
+    "explanation": "The five categories are activity, profitability, ROI, value creation and cash flow. Customer satisfaction is a (quantitative) non-financial indicator."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-02",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "Which of the following are profitability indicators?",
+    "options": [
+      { "id": "a", "text": "Net income" },
+      { "id": "b", "text": "EBIT" },
+      { "id": "c", "text": "Operating profit margin" },
+      { "id": "d", "text": "ROCE" },
+      { "id": "e", "text": "TSR" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Net income, operating income, NOPAT, EBIT, operating profit margin and EBITDA measure profitability. ROCE is an ROI indicator, TSR a value creation indicator."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-03",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "Which of the following are return on investment indicators?",
+    "options": [
+      { "id": "a", "text": "ROE" },
+      { "id": "b", "text": "ROCE" },
+      { "id": "c", "text": "EVA" },
+      { "id": "d", "text": "Turnover growth rate" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "ROE and ROCE relate profit to the capital invested. EVA is a value creation indicator; growth rate an activity indicator."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-04",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "Which of the following are value creation indicators?",
+    "options": [
+      { "id": "a", "text": "MVA" },
+      { "id": "b", "text": "TSR" },
+      { "id": "c", "text": "EVA" },
+      { "id": "d", "text": "NOPAT" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "MVA, TSR and EVA compare performance with the return required for the investors' risk. NOPAT is a profitability indicator."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-05",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "Which of the following are cash flow indicators?",
+    "options": [
+      { "id": "a", "text": "EBITDA" },
+      { "id": "b", "text": "Operating cash flow" },
+      { "id": "c", "text": "NCF (net cash flow)" },
+      { "id": "d", "text": "Turnover" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "EBITDA, operating cash flow and NCF inform about financing needs or the capacity to generate cash. (EBITDA is listed both as profitability and cash flow indicator.) Turnover is an activity indicator."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-06",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "The DuPont de Nemours formula shows the two levers of return on investment. Which are they?",
+    "options": [
+      { "id": "a", "text": "Operating profit margin" },
+      { "id": "b", "text": "Asset turnover ratio (sales / capital employed)" },
+      { "id": "c", "text": "Equity ratio" },
+      { "id": "d", "text": "Cost of capital" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "ROI = operating profit margin × asset turnover (sales / capital employed)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-07",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "Which statements about quantitative and financial indicators are correct?",
+    "options": [
+      { "id": "a", "text": "Financial indicators are by definition quantitative." },
+      { "id": "b", "text": "All quantitative indicators are financial indicators." },
+      { "id": "c", "text": "The number of defective products is a quantitative indicator of non-financial performance." },
+      { "id": "d", "text": "Smiley faces or arrows are qualitative representations of performance." }
+    ],
+    "correct": ["a", "c", "d"],
+    "explanation": "Quantitative ≠ financial. Financial indicators are quantitative, but there are also quantitative non-financial indicators (defects, satisfaction rate, absenteeism)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-08",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "prompt": "Which statements about value creation indicators are correct?",
+    "options": [
+      { "id": "a", "text": "They take into account the risk borne by investors who provided capital." },
+      { "id": "b", "text": "They pose further problems of implementation, comparison and interpretation." },
+      { "id": "c", "text": "Market values reflect not only company-specific performance but also investors' macro-sectoral and macro-economic expectations." },
+      { "id": "d", "text": "They are based exclusively on accounting data." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Value creation indicators incorporate non-accounting references (cost of capital, market value) – more complete, but harder to implement and interpret."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-09",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "prompt": "Which statements about return on investment indicators are correct?",
+    "options": [
+      { "id": "a", "text": "They give a more comprehensive view than profitability indicators because they combine turnover, profit and capital." },
+      { "id": "b", "text": "The ratio formalism and the valuation of capital in the denominator can generate decision biases." },
+      { "id": "c", "text": "ROE assesses return from the shareholders' point of view, ROCE from the managers' (operating) point of view." },
+      { "id": "d", "text": "They take into account the risk borne by investors." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Taking investor risk into account is what distinguishes value creation indicators from ROI indicators."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-10",
+    "lecture": "s1c",
+    "difficulty": 1,
+    "prompt": "Who uses financial indicators?",
+    "options": [
+      { "id": "a", "text": "Financial analysts" },
+      { "id": "b", "text": "Existing or potential shareholders and bankers" },
+      { "id": "c", "text": "The works council" },
+      { "id": "d", "text": "Managers, for internal management purposes" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Financial indicators interest external users and are also used by managers internally."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-11",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "prompt": "Regarding validity and reliability of financial indicators, which statements are correct?",
+    "options": [
+      { "id": "a", "text": "More comprehensive indicators tend to have greater validity." },
+      { "id": "b", "text": "More comprehensive indicators often pose reliability problems." },
+      { "id": "c", "text": "A compromise between validity and reliability often needs to be found." },
+      { "id": "d", "text": "The more comprehensive an indicator, the more reliable it is." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Validity and reliability are in tension: comprehensive indicators (e.g. value creation) are more valid but less reliable."
+  },
+
+  {
+    "type": "tf",
+    "id": "tf-s1c-01",
+    "lecture": "s1c",
+    "statement": "Profitability ratios are more comparable than profitability expressed as an absolute value, because they take the size of the company into account.",
+    "answer": true,
+    "explanation": "Ratios neutralise size effects."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-02",
+    "lecture": "s1c",
+    "statement": "\"Quantitative indicator\" and \"financial indicator\" are synonyms.",
+    "answer": false,
+    "explanation": "There are quantitative non-financial indicators (e.g. absenteeism rate)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-03",
+    "lecture": "s1c",
+    "statement": "Turnover and growth rate are profitability indicators.",
+    "answer": false,
+    "explanation": "They are activity indicators – they focus on the ability to generate revenue."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-04",
+    "lecture": "s1c",
+    "statement": "Breaking net income down into interim results gives a better understanding of how the income is obtained.",
+    "answer": true,
+    "explanation": "Interim results (e.g. EBITDA, EBIT, operating income) show where the income comes from."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-05",
+    "lecture": "s1c",
+    "statement": "The market value of a company's assets depends only on the evolution of the company's own performance variables.",
+    "answer": false,
+    "explanation": "It also reflects investors' expectations at macro-sectoral and macro-economic levels."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-06",
+    "lecture": "s1c",
+    "statement": "Value creation for shareholders means offering investors a return above the opportunity cost of their investment in the company.",
+    "answer": true,
+    "explanation": "Definition of value creation for shareholders."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-07",
+    "lecture": "s1c",
+    "statement": "Profitability is the ability of a company to generate sufficient profit in relation to the capital used to generate this profit.",
+    "answer": false,
+    "explanation": "That is return on investment. Profitability = generating income in excess of the cost of resources consumed."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-08",
+    "lecture": "s1c",
+    "statement": "Financial indicators are only of interest to users outside the organisation.",
+    "answer": false,
+    "explanation": "Managers also use them for internal management purposes."
+  },
+
+  {
+    "type": "short",
+    "id": "sa-s1c-01",
+    "lecture": "s1c",
+    "verb": "explain",
+    "prompt": "Explain the DuPont de Nemours formula and what it shows about return on investment.",
+    "modelAnswer": "The DuPont formula decomposes return on investment into two levers: ROI = operating profit margin (profit / sales) × asset turnover ratio (sales / capital employed). It shows that ROI can be improved either by increasing the margin earned on each unit of sales or by generating more sales with the capital employed.",
+    "keyPoints": [
+      "Decomposition of return on investment",
+      "Lever 1: operating profit margin (profit / sales)",
+      "Lever 2: asset turnover (sales / capital employed)",
+      "ROI = margin × turnover – improvement via either lever"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1c-02",
+    "lecture": "s1c",
+    "verb": "explain",
+    "prompt": "Explain why value creation indicators give a more complete view of financial performance than profitability and ROI indicators, and what drawbacks they have.",
+    "modelAnswer": "Value creation indicators (MVA, TSR, EVA) compare financial performance with the return required for the risk borne by investors, using non-accounting information such as the cost of capital or market value. This makes them more complete (more valid) from the shareholders' point of view. However, they are more complex to build and pose problems of implementation, comparison and interpretation – e.g. market values also reflect macro-sectoral and macro-economic expectations – so they are often less reliable. A compromise between validity and reliability is needed.",
+    "keyPoints": [
+      "Take into account the risk borne by investors / cost of capital",
+      "Use non-accounting information (market value, cost of capital)",
+      "More complete / valid view for shareholders",
+      "Drawbacks: complexity, implementation, comparison, interpretation problems (reliability)",
+      "Market values reflect macro expectations, not only company performance"
+    ]
+  }
+]

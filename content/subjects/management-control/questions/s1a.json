@@ -1,0 +1,286 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s1a-01",
+    "lecture": "s1a",
+    "difficulty": 1,
+    "prompt": "Which of the following statements about management control are correct?",
+    "options": [
+      { "id": "a", "text": "It is a dynamic performance management (steering) process." },
+      { "id": "b", "text": "It is the sole responsibility of the management controller." },
+      { "id": "c", "text": "The management controller supports managers in designing and implementing the management system (business partner role)." },
+      { "id": "d", "text": "The term \"control\" has a broad meaning here and is not limited to verification." }
+    ],
+    "correct": ["a", "c", "d"],
+    "explanation": "Management control is a dynamic performance steering process and the responsibility of managers. The controller supports them as a business partner – it is not the controller's sole remit."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-02",
+    "lecture": "s1a",
+    "difficulty": 1,
+    "prompt": "The control cycle (performance management process) consists of which main phases?",
+    "options": [
+      { "id": "a", "text": "A planning phase upstream of the action" },
+      { "id": "b", "text": "A monitoring and analysis phase of the results downstream of the action" },
+      { "id": "c", "text": "An external audit phase of the financial statements" },
+      { "id": "d", "text": "A strategy formulation phase carried out by the board" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "The control cycle has two main phases: planning (before the action) and monitoring/analysis of results (after the action). Analysis can feed back into planning – hence the term \"cycle\"."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-03",
+    "lecture": "s1a",
+    "difficulty": 1,
+    "prompt": "Which are the fundamental qualities expected of measurements in a measurement system?",
+    "options": [
+      { "id": "a", "text": "Validity with respect to the objective" },
+      { "id": "b", "text": "Reliability" },
+      { "id": "c", "text": "Ease of implementation" },
+      { "id": "d", "text": "Exhaustiveness (covering every aspect of performance)" },
+      { "id": "e", "text": "Being identical across all organisations" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "The three fundamental qualities are validity with respect to the objective, reliability and ease of implementation. In addition, measurement systems must respect the principle of relevance (adapted to their use)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-04",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "The quality \"ease of implementation\" of a measurement includes …",
+    "options": [
+      { "id": "a", "text": "the cost of producing the measurement" },
+      { "id": "b", "text": "its timely delivery" },
+      { "id": "c", "text": "its ease of interpretation" },
+      { "id": "d", "text": "its ability to quantify a result with a limited margin of error" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Ease of implementation = cost, timeliness and ease of interpretation. Quantifying a result with a limited margin of error is the definition of reliability."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-05",
+    "lecture": "s1a",
+    "difficulty": 1,
+    "prompt": "At the level of an entity, which functions does the control cycle fulfil?",
+    "options": [
+      { "id": "a", "text": "Regulation" },
+      { "id": "b", "text": "Learning" },
+      { "id": "c", "text": "External reporting to shareholders" },
+      { "id": "d", "text": "Legal compliance of the statutory accounts" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "The control cycle fulfils two functions at entity level: regulation (updating action plans/targets based on results) and learning (updating the qualitative performance dimensions)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-06",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "Which statements about measurement systems are correct?",
+    "options": [
+      { "id": "a", "text": "Measurement systems are constructs." },
+      { "id": "b", "text": "One universal measurement system should serve all purposes in an organisation." },
+      { "id": "c", "text": "Their design varies depending on the purpose they are meant to serve (principle of relevance)." },
+      { "id": "d", "text": "Relevant performance dimensions should first be made explicit in a qualitative way." },
+      { "id": "e", "text": "They may contain financial and/or non-financial dimensions." }
+    ],
+    "correct": ["a", "c", "d", "e"],
+    "explanation": "Measurement systems are tailor-made constructs. Pursuing relevance implies that they are diverse, because each must be adapted to its intended use – there is no single universal system."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-07",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "Which statements describe the principle of management by exception?",
+    "options": [
+      { "id": "a", "text": "Only unfavourable gaps between objectives and results lead to special monitoring by managers." },
+      { "id": "b", "text": "Management should only intervene in an entity's operational decisions if its performance objectives are at risk." },
+      { "id": "c", "text": "Managers review every indicator in detail every period." },
+      { "id": "d", "text": "Favourable gaps automatically trigger a revision of the targets upwards." }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Management by exception: only unfavourable gaps call for special attention; by extension, higher management only intervenes when the entity's objectives are at risk."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-08",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "Regarding the granularity of performance management, which statements are correct?",
+    "options": [
+      { "id": "a", "text": "One can look at the entity's overall performance (global view) or at sub-groups (analytical view)." },
+      { "id": "b", "text": "Management accounting is useful for analysing performance by business segment." },
+      { "id": "c", "text": "Financial accounting is useful for breaking performance down by legal entity." },
+      { "id": "d", "text": "Financial accounting is the main tool for analysing performance by business segment." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Management accounting → analysis by business segment; financial accounting → breakdown by legal entity."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-09",
+    "lecture": "s1a",
+    "difficulty": 3,
+    "prompt": "Which statements about management reporting and financial reporting are correct?",
+    "options": [
+      { "id": "a", "text": "Management reporting informs managers about the performance of parts of the organisation for control purposes." },
+      { "id": "b", "text": "Consolidated financial statements mainly answer third-party (external) reporting purposes." },
+      { "id": "c", "text": "Financial accounting does not contribute to management reporting at all." },
+      { "id": "d", "text": "Financial reporting aggregates the individual financial statements of each legal entity." }
+    ],
+    "correct": ["a", "b", "d"],
+    "explanation": "Financial accounting also helps executives manage accounting and tax issues of their legal entities, so it contributes to management reporting – just more marginally."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-10",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "Which statements about autonomous control are correct?",
+    "options": [
+      { "id": "a", "text": "It is carried out locally by the managers in charge of responsibility centres." },
+      { "id": "b", "text": "It differs from the control exercised by managers at higher hierarchical levels." },
+      { "id": "c", "text": "It is designed to monitor the entity's own performance." },
+      { "id": "d", "text": "It is carried out by external auditors." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "The management control process runs primarily within each responsibility centre as an autonomous control process led by local managers."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-11",
+    "lecture": "s1a",
+    "difficulty": 1,
+    "prompt": "In which kinds of organisations is management control useful?",
+    "options": [
+      { "id": "a", "text": "Large groups" },
+      { "id": "b", "text": "SMEs (possibly in a simplified form)" },
+      { "id": "c", "text": "Non-profit organisations with a wide range of performance objectives" },
+      { "id": "d", "text": "Public institutions" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Management control is neither limited to large nor to profit-seeking organisations; it is useful wherever performance objectives are pursued."
+  },
+
+  {
+    "type": "tf",
+    "id": "tf-s1a-01",
+    "lecture": "s1a",
+    "statement": "Management control is only relevant for large organisations.",
+    "answer": false,
+    "explanation": "SMEs are also concerned, even if their management system is sometimes more simplified."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-02",
+    "lecture": "s1a",
+    "statement": "The analysis of results can lead to feedback on planning, which is why the process is called a regulation \"cycle\".",
+    "answer": true,
+    "explanation": "Planning → action → monitoring/analysis → feedback to planning."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-03",
+    "lecture": "s1a",
+    "statement": "Reliability is the ability of a measurement to accurately reflect the phenomenon being measured or the intention underlying the objective.",
+    "answer": false,
+    "explanation": "That is validity with respect to the objective. Reliability = quantifying a result with a limited margin of error."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-04",
+    "lecture": "s1a",
+    "statement": "The learning loop is the process of updating the qualitative dimensions of performance that underlie the measurement system.",
+    "answer": true,
+    "explanation": "Learning updates the performance dimensions themselves; regulation updates action plans or targets."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-05",
+    "lecture": "s1a",
+    "statement": "Regulation means taking the results obtained into account to update action plans or targets, with a view to improving performance.",
+    "answer": true,
+    "explanation": "This is the definition of regulation in the control cycle."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-06",
+    "lecture": "s1a",
+    "statement": "The performance dimensions underlying a measurement system must always be financial.",
+    "answer": false,
+    "explanation": "Performance dimensions can be financial and/or non-financial; measurement systems are tailor-made."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-07",
+    "lecture": "s1a",
+    "statement": "An indicator is a measure chosen to monitor the achievement of an objective; it allows the objective to be set and the result to be evaluated.",
+    "answer": true,
+    "explanation": "Definition of an indicator from Session 1a."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-08",
+    "lecture": "s1a",
+    "statement": "The control cycle is based on measurement systems that structure both the planning phase and the monitoring and analysis phase.",
+    "answer": true,
+    "explanation": "Sets of indicators structure each of the two phases."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-09",
+    "lecture": "s1a",
+    "statement": "Management reporting is mainly intended for users outside the organisation.",
+    "answer": false,
+    "explanation": "That describes external reporting. Management reporting informs managers for management control purposes."
+  },
+
+  {
+    "type": "short",
+    "id": "sa-s1a-01",
+    "lecture": "s1a",
+    "verb": "define",
+    "prompt": "Define management control.",
+    "modelAnswer": "Management control is a process involving devices and practices that enable an organisation to set performance objectives and to effectively oversee their progressive achievement – in other words, a (dynamic) performance steering process. It is the responsibility of managers, supported by the management controller.",
+    "keyPoints": [
+      "Process of devices and practices",
+      "Setting performance objectives",
+      "Overseeing their progressive achievement (performance steering)",
+      "Responsibility of managers (controller as support / business partner)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1a-02",
+    "lecture": "s1a",
+    "verb": "explain",
+    "prompt": "Explain the control cycle and the two functions it fulfils at the level of an entity.",
+    "modelAnswer": "The control cycle is the dynamics of managing performance in two phases: planning (upstream of the action, setting objectives) and monitoring and analysis of results (downstream). Both phases are structured by measurement systems. Results feed back into planning. It fulfils two functions: regulation – using results to update action plans or targets – and learning – updating the qualitative performance dimensions underlying the measurement system (learning loop).",
+    "keyPoints": [
+      "Planning phase (upstream of the action)",
+      "Monitoring and analysis of results (downstream)",
+      "Feedback of results into planning (cycle), based on measurement systems",
+      "Regulation: update action plans / targets",
+      "Learning: update the qualitative performance dimensions"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1a-03",
+    "lecture": "s1a",
+    "verb": "state",
+    "prompt": "State the three fundamental qualities expected of measurements and the additional principle measurement systems must adhere to.",
+    "modelAnswer": "1) Validity with respect to the objective – accurately reflecting the phenomenon/intention measured. 2) Reliability – quantifying a result with a limited margin of error. 3) Ease of implementation – cost, timely delivery, ease of interpretation. In addition, the principle of relevance: a measurement system must be adapted to its intended use.",
+    "keyPoints": [
+      "Validity with respect to the objective",
+      "Reliability",
+      "Ease of implementation",
+      "Principle of relevance (adapted to intended use)"
+    ]
+  }
+]

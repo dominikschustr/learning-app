@@ -3,13 +3,15 @@
   "name": "Management Control",
   "short": "MC",
   "color": "#2F5BEA",
-  "description": "Midterm-Vorbereitung: Control-Probleme, Kontrollarten, Levers of Control, MCS als Paket.",
-  "demo": true,
+  "description": "Midterm: Control-Zyklus, Responsibility Centres, finanzielle Indikatoren, Performance-Modelle, Dashboards & OVAR.",
+  "demo": false,
   "lectures": [
-    { "id": "l01", "title": "Control Problems & Control Alternatives" },
-    { "id": "l02", "title": "Results & Action Controls" },
-    { "id": "l03", "title": "Personnel & Cultural Controls, Levers of Control" },
-    { "id": "l04", "title": "Tightness, Costs & MCS as a Package" }
+    { "id": "s1a", "title": "S1a · Management control: an overview" },
+    { "id": "s1b", "title": "S1b · Responsibility centres" },
+    { "id": "s1c", "title": "S1c · Financial performance & indicators" },
+    { "id": "s2a", "title": "S2a · Evaluating financial-type indicators" },
+    { "id": "s2b", "title": "S2b · Defining & modelling performance" },
+    { "id": "s34", "title": "S3&4 · Dashboards & KPIs" }
   ],
   "examFormat": { "name": "Midterm", "minutes": 42, "short": 1, "mc": 13, "tf": 6 }
 }

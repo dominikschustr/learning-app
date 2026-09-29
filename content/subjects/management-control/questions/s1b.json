@@ -1,0 +1,239 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s1b-01",
+    "lecture": "s1b",
+    "difficulty": 1,
+    "prompt": "Which types of responsibility centres does Responsibility Accounting distinguish?",
+    "options": [
+      { "id": "a", "text": "Cost centre" },
+      { "id": "b", "text": "Revenue centre" },
+      { "id": "c", "text": "Profit centre" },
+      { "id": "d", "text": "Investment centre" },
+      { "id": "e", "text": "Value centre" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "The basic typology has four types: cost, revenue, profit and investment centres. \"Value centre\" is not part of it."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-02",
+    "lecture": "s1b",
+    "difficulty": 1,
+    "prompt": "A profit centre can act on …",
+    "options": [
+      { "id": "a", "text": "costs" },
+      { "id": "b", "text": "revenues" },
+      { "id": "c", "text": "assets" }
+    ],
+    "correct": ["a", "b"],
+    "shuffle": false,
+    "explanation": "A profit centre controls costs and revenues but not assets. Only an investment centre also acts on assets."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-03",
+    "lecture": "s1b",
+    "difficulty": 2,
+    "prompt": "Which statements about a revenue centre are correct?",
+    "options": [
+      { "id": "a", "text": "It can act on revenues." },
+      { "id": "b", "text": "It can act on the cost of the products and services sold." },
+      { "id": "c", "text": "It can act on assets." },
+      { "id": "d", "text": "Following the controllability principle, it is typically assessed with a revenue indicator." }
+    ],
+    "correct": ["a", "d"],
+    "explanation": "A revenue centre acts on revenues, but neither on the cost of products & services sold nor on assets – so a revenue indicator fits."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-04",
+    "lecture": "s1b",
+    "difficulty": 2,
+    "prompt": "According to the controllability principle, which pairings of responsibility centre and typical indicator are correct?",
+    "options": [
+      { "id": "a", "text": "Cost centre – cost indicator" },
+      { "id": "b", "text": "Revenue centre – profitability indicator" },
+      { "id": "c", "text": "Profit centre – profitability indicator" },
+      { "id": "d", "text": "Investment centre – return on investment indicator" }
+    ],
+    "correct": ["a", "c", "d"],
+    "explanation": "Cost → cost indicator, revenue → revenue indicator, profit → profitability indicator, investment → ROI indicator."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-05",
+    "lecture": "s1b",
+    "difficulty": 2,
+    "prompt": "Which statements about the controllability principle are correct?",
+    "options": [
+      { "id": "a", "text": "A responsibility centre's span of accountability should be adjusted to its span of control." },
+      { "id": "b", "text": "It is one of the principles for delimiting the boundaries of a responsibility centre." },
+      { "id": "c", "text": "Managers should be evaluated on the group's overall results, regardless of what they control." },
+      { "id": "d", "text": "It determines which type of performance measure is retained for each type of responsibility centre." }
+    ],
+    "correct": ["a", "b", "d"],
+    "explanation": "Controllability: evaluate (span of accountability) only on what the centre can control (span of control)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-06",
+    "lecture": "s1b",
+    "difficulty": 1,
+    "prompt": "Which statements about Responsibility Accounting are correct?",
+    "options": [
+      { "id": "a", "text": "It is a measurement system devoted to the performance of responsibility centres." },
+      { "id": "b", "text": "Its measures are financial in nature." },
+      { "id": "c", "text": "It is one of the components of management reporting." },
+      { "id": "d", "text": "It is mainly designed for external reporting to investors." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Responsibility Accounting measures responsibility-centre performance from a financial perspective and is part of management (not external) reporting."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-07",
+    "lecture": "s1b",
+    "difficulty": 2,
+    "prompt": "What is Responsibility Accounting used for?",
+    "options": [
+      { "id": "a", "text": "Clarifying the expected contribution of responsibility centres to the organisation's overall objectives" },
+      { "id": "b", "text": "Assessing the performance of responsibility centres" },
+      { "id": "c", "text": "Helping local managers identify the boundaries of their responsibility and guide operational actions" },
+      { "id": "d", "text": "Computing the tax charge of each legal entity" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "It serves top management (clarify contributions, assess performance) and local managers (know their boundaries, guide actions). Tax issues belong to financial accounting."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-08",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "prompt": "Which statements describe the limits of the basic typology of responsibility centres in practice?",
+    "options": [
+      { "id": "a", "text": "It is generally too coarse to reflect the actual decision-making power within organisations." },
+      { "id": "b", "text": "The controllability of costs, revenues and assets may only be partial." },
+      { "id": "c", "text": "Responsibility centres are sometimes hybrid versions of the four basic types." },
+      { "id": "d", "text": "The typical indicator of each type should always be applied unchanged." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Because controllability is often partial and centres can be hybrids, the \"typical\" indicator must be adjusted – a tailor-made approach is essential."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-09",
+    "lecture": "s1b",
+    "difficulty": 2,
+    "prompt": "Which statements about span of control and span of accountability are correct?",
+    "options": [
+      { "id": "a", "text": "Span of accountability = the performance indicators used to set objectives and evaluate the results of a responsibility centre." },
+      { "id": "b", "text": "Span of control = the extent to which a responsibility centre can control the performance dimensions of its activity." },
+      { "id": "c", "text": "Span of control = the indicators on which the manager is evaluated." },
+      { "id": "d", "text": "Ideally, the span of accountability matches the span of control." }
+    ],
+    "correct": ["a", "b", "d"],
+    "explanation": "Accountability = what you are measured on; control = what you can influence. The controllability principle aligns the two."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1b-10",
+    "lecture": "s1b",
+    "difficulty": 1,
+    "prompt": "An investment centre …",
+    "options": [
+      { "id": "a", "text": "can act on costs" },
+      { "id": "b", "text": "can act on revenues" },
+      { "id": "c", "text": "can act on assets" },
+      { "id": "d", "text": "is typically evaluated with a return on investment indicator" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "An investment centre controls costs, revenues and assets and is therefore evaluated with an ROI-type indicator."
+  },
+
+  {
+    "type": "tf",
+    "id": "tf-s1b-01",
+    "lecture": "s1b",
+    "statement": "A cost centre can act on costs and revenues, but not on assets.",
+    "answer": false,
+    "explanation": "That is a profit centre. A cost centre can act on costs only."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1b-02",
+    "lecture": "s1b",
+    "statement": "Responsibility Accounting subdivides the components of the entity's overall return on investment performance into responsibility centres.",
+    "answer": true,
+    "explanation": "It breaks down ROI performance into cost, revenue, profit and investment centres."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1b-03",
+    "lecture": "s1b",
+    "statement": "The span of control refers to the performance indicators used to set objectives and evaluate a responsibility centre.",
+    "answer": false,
+    "explanation": "That is the span of accountability. Span of control = what the centre can actually control."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1b-04",
+    "lecture": "s1b",
+    "statement": "The typology of responsibility centres was designed to emphasise the contribution of local managers to the organisation's financial objectives.",
+    "answer": true,
+    "explanation": "This is the stated purpose of the typology."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1b-05",
+    "lecture": "s1b",
+    "statement": "The measures constructed for Responsibility Accounting are mainly non-financial.",
+    "answer": false,
+    "explanation": "Responsibility Accounting measures are financial in nature."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1b-06",
+    "lecture": "s1b",
+    "statement": "A responsibility centre is an organisational entity placed under the authority of a manager who has been delegated decision-making power and given performance targets.",
+    "answer": true,
+    "explanation": "Definition of a responsibility centre."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1b-07",
+    "lecture": "s1b",
+    "statement": "Because real organisations are complex, the measurement system for a hybrid responsibility centre should be adjusted rather than simply using the typical indicator.",
+    "answer": true,
+    "explanation": "Hybrid centres and partial controllability require a tailor-made approach."
+  },
+
+  {
+    "type": "short",
+    "id": "sa-s1b-01",
+    "lecture": "s1b",
+    "verb": "define",
+    "prompt": "Define the controllability principle and explain its link to span of control and span of accountability.",
+    "modelAnswer": "The controllability principle states that a responsibility centre's span of accountability (the indicators used to set its objectives and evaluate its results) should be adjusted to its span of control (the extent to which it can control the performance dimensions of its activity: costs, revenues, assets). It is a principle for delimiting responsibility centres and determines which indicator is used for each type.",
+    "keyPoints": [
+      "Span of accountability adjusted to span of control",
+      "Span of accountability = indicators to set objectives / evaluate results",
+      "Span of control = what the centre can control (costs, revenues, assets)",
+      "Determines the indicator per responsibility centre / delimits its boundaries"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1b-02",
+    "lecture": "s1b",
+    "verb": "state",
+    "prompt": "State the four types of responsibility centres, what each can act on, and the typical indicator for each.",
+    "modelAnswer": "Cost centre: acts on costs only → cost indicator. Revenue centre: acts on revenues (not on cost of goods sold or assets) → revenue indicator. Profit centre: acts on costs and revenues, not assets → profitability indicator. Investment centre: acts on costs, revenues and assets → return on investment indicator.",
+    "keyPoints": [
+      "Cost centre – costs – cost indicator",
+      "Revenue centre – revenues – revenue indicator",
+      "Profit centre – costs & revenues – profitability indicator",
+      "Investment centre – costs, revenues & assets – ROI indicator"
+    ]
+  }
+]

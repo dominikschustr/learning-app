@@ -1,0 +1,17 @@
+[
+  { "id": "c-s1c-01", "lecture": "s1c", "front": "Financial indicator", "back": "A measure of the organisation's financial performance based primarily on data from the financial reporting system." },
+  { "id": "c-s1c-02", "lecture": "s1c", "front": "Quantitative ≠ financial", "back": "Quantitative = expressed in numbers (vs. qualitative: smileys, arrows). Financial indicators are always quantitative, but there are quantitative non-financial indicators (defects, satisfaction rate, absenteeism)." },
+  { "id": "c-s1c-03", "lecture": "s1c", "front": "5 categories of financial indicators", "back": "1) Activity\n2) Profitability\n3) Return on investment\n4) Value creation\n5) Cash flow" },
+  { "id": "c-s1c-04", "lecture": "s1c", "front": "Activity indicators", "back": "Turnover, growth rate – ability to generate revenue." },
+  { "id": "c-s1c-05", "lecture": "s1c", "front": "Profitability indicators", "back": "Net income, operating income, NOPAT, EBIT, operating profit margin, EBITDA – capacity to generate revenues exceeding costs." },
+  { "id": "c-s1c-06", "lecture": "s1c", "front": "Return on investment indicators", "back": "ROE, ROCE – profitability relative to the capital invested to obtain the income." },
+  { "id": "c-s1c-07", "lecture": "s1c", "front": "Value creation indicators", "back": "MVA, TSR, EVA – compare financial performance with the return required for the risk of investing in the organisation." },
+  { "id": "c-s1c-08", "lecture": "s1c", "front": "Cash flow indicators", "back": "EBITDA, operating cash flow, NCF – financing needs or capacity to generate cash." },
+  { "id": "c-s1c-09", "lecture": "s1c", "front": "Profitability (definition)", "back": "Ability of a company to generate income in excess of the cost of the resources consumed (positive income / profit)." },
+  { "id": "c-s1c-10", "lecture": "s1c", "front": "Return on investment (definition)", "back": "Ability to generate sufficient profit relative to the capital used.\nROE: shareholders' view (return on equity).\nROCE: managers' / operating view." },
+  { "id": "c-s1c-11", "lecture": "s1c", "front": "Value creation for shareholders", "back": "Ability to offer investors a return above the opportunity cost of their investment in the company." },
+  { "id": "c-s1c-12", "lecture": "s1c", "front": "DuPont de Nemours formula", "back": "ROI = operating profit margin × asset turnover (sales / capital employed) – the two levers of return on investment." },
+  { "id": "c-s1c-13", "lecture": "s1c", "front": "Limits of ROI indicators", "back": "The ratio formalism and the valuation of capital in the denominator can generate decision biases." },
+  { "id": "c-s1c-14", "lecture": "s1c", "front": "Limits of value creation indicators", "back": "Complex to build; problems of implementation, comparison, interpretation. Market values also reflect macro-sectoral / macro-economic expectations." },
+  { "id": "c-s1c-15", "lecture": "s1c", "front": "Validity vs. reliability trade-off", "back": "More comprehensive indicators are more valid but often less reliable → a compromise must be found." }
+]

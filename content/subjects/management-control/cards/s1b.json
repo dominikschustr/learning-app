@@ -1,0 +1,13 @@
+[
+  { "id": "c-s1b-01", "lecture": "s1b", "front": "Responsibility centre", "back": "An organisational entity placed under the authority of a manager who has been delegated (more or less) decision-making power and given performance targets." },
+  { "id": "c-s1b-02", "lecture": "s1b", "front": "Responsibility Accounting", "back": "A system for measuring the performance of an organisation's responsibility centres from a financial perspective. Part of management reporting." },
+  { "id": "c-s1b-03", "lecture": "s1b", "front": "Cost centre", "back": "Can act on costs, but not on revenues or assets.\n→ cost indicator" },
+  { "id": "c-s1b-04", "lecture": "s1b", "front": "Revenue centre", "back": "Can act on revenues, but not on the cost of products & services sold, nor on assets.\n→ revenue indicator" },
+  { "id": "c-s1b-05", "lecture": "s1b", "front": "Profit centre", "back": "Can act on costs and revenues, but not on assets.\n→ profitability indicator" },
+  { "id": "c-s1b-06", "lecture": "s1b", "front": "Investment centre", "back": "Can act on costs, revenues and assets.\n→ return on investment indicator" },
+  { "id": "c-s1b-07", "lecture": "s1b", "front": "Controllability principle", "back": "A responsibility centre's span of accountability should be adjusted to its span of control." },
+  { "id": "c-s1b-08", "lecture": "s1b", "front": "Span of accountability", "back": "The performance indicators used to set objectives and evaluate the results of a responsibility centre." },
+  { "id": "c-s1b-09", "lecture": "s1b", "front": "Span of control", "back": "The extent to which a responsibility centre can control the performance dimensions of its activity (costs, revenues, assets …)." },
+  { "id": "c-s1b-10", "lecture": "s1b", "front": "Two uses of Responsibility Accounting", "back": "Top management: clarify the expected contribution of each centre and assess its performance.\nLocal managers: identify the boundaries of their responsibility and guide operational actions." },
+  { "id": "c-s1b-11", "lecture": "s1b", "front": "Limits of the RC typology", "back": "Too coarse for real decision power; controllability often partial; hybrid centres exist → adjust the \"typical\" indicator, tailor-made approach." }
+]

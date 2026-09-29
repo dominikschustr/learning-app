@@ -1,0 +1,319 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s34-01",
+    "lecture": "s34",
+    "difficulty": 1,
+    "prompt": "What are dashboards expected to do?",
+    "options": [
+      { "id": "a", "text": "Measure performance in a balanced way" },
+      { "id": "b", "text": "Integrate a long-term perspective" },
+      { "id": "c", "text": "Present performance in line with the strategy" },
+      { "id": "d", "text": "Facilitate managers' decision-making" },
+      { "id": "e", "text": "List every indicator available in the information system" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Balanced, long-term, strategy-aligned and decision-oriented. A dashboard is not an exhaustive list of indicators."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-02",
+    "lecture": "s34",
+    "difficulty": 2,
+    "prompt": "Which statements about building a good dashboard are correct?",
+    "options": [
+      { "id": "a", "text": "The choice of indicators must be preceded by the construction of a performance model." },
+      { "id": "b", "text": "It includes indicators linked to the goals." },
+      { "id": "c", "text": "It includes indicators related to the main lines of action." },
+      { "id": "d", "text": "It is built by listing all possible indicators and choosing among them." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "A dashboard reflects the performance model (goals + lines of action). Simply listing and picking indicators does not work."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-03",
+    "lecture": "s34",
+    "difficulty": 2,
+    "prompt": "Which characteristics describe the PERFORMANCE BOOSTING use of a dashboard?",
+    "options": [
+      { "id": "a", "text": "It focuses managers' attention on a few priorities." },
+      { "id": "b", "text": "The indicators are limited in number." },
+      { "id": "c", "text": "The indicators are monitored directly and systematically by managers." },
+      { "id": "d", "text": "The indicators change frequently as priorities evolve." },
+      { "id": "e", "text": "Only abnormal deviations from pre-established values are brought to managers' attention." }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Reporting only abnormal deviations against pre-established values characterises MONITORING use."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-04",
+    "lecture": "s34",
+    "difficulty": 2,
+    "prompt": "Which characteristics describe the MONITORING use of a dashboard?",
+    "options": [
+      { "id": "a", "text": "Indicators are more varied and balanced across the entity's goals and lines of action." },
+      { "id": "b", "text": "The number of indicators is higher than for performance boosting." },
+      { "id": "c", "text": "Indicators are recurrent and assessed against pre-established values; only abnormal deviations are escalated." },
+      { "id": "d", "text": "Management controllers are heavily involved." },
+      { "id": "e", "text": "Indicators change frequently to reflect new priorities." }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Frequent change is typical of boosting. Monitoring indicators are more numerous, balanced and recurrent."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-05",
+    "lecture": "s34",
+    "difficulty": 3,
+    "prompt": "The strategy map and the O/CPV framework share common principles that promote a balanced representation of performance. Which are they?",
+    "options": [
+      { "id": "a", "text": "The way objectives are formulated" },
+      { "id": "b", "text": "Causal links" },
+      { "id": "c", "text": "The possibility to link an objective to several other objectives" },
+      { "id": "d", "text": "Two levels of concepts: expected results and action levers" },
+      { "id": "e", "text": "A predefined set of perspectives for the content" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "A predefined framework is used by the strategy map (Balanced Scorecard) but NOT by OVAR – so it is not a common principle."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-06",
+    "lecture": "s34",
+    "difficulty": 1,
+    "prompt": "What does the acronym OVAR stand for?",
+    "options": [
+      { "id": "a", "text": "Objectives" },
+      { "id": "b", "text": "Variables d'Action (Critical Performance Variables)" },
+      { "id": "c", "text": "Responsibilities" },
+      { "id": "d", "text": "Value added" },
+      { "id": "e", "text": "Reporting" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "OVAR = Objectifs, Variables d'Action, Responsabilités (Fiol & Jordan)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-07",
+    "lecture": "s34",
+    "difficulty": 2,
+    "prompt": "Which statements about lead and lag indicators are correct?",
+    "options": [
+      { "id": "a", "text": "A lag (result) indicator focuses on the expected result." },
+      { "id": "b", "text": "A lead (action) indicator focuses on the levers / means for achieving the result." },
+      { "id": "c", "text": "For each objective and each CPV it is useful to distinguish lag and lead indicators." },
+      { "id": "d", "text": "A lag indicator is another name for an action indicator." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Lag = result indicator; lead = action indicator."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-08",
+    "lecture": "s34",
+    "difficulty": 1,
+    "prompt": "To facilitate decision-making, an effective dashboard must …",
+    "options": [
+      { "id": "a", "text": "deliver the indicators within a short timeframe" },
+      { "id": "b", "text": "present them in an easily readable form (graphs, colour codes …)" },
+      { "id": "c", "text": "contain as many indicators as possible" },
+      { "id": "d", "text": "only contain financial indicators" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Effectiveness = timeliness + readability."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-09",
+    "lecture": "s34",
+    "difficulty": 2,
+    "prompt": "Which statements about the uses of dashboards are correct?",
+    "options": [
+      { "id": "a", "text": "Dashboards should above all be adapted to their intended use (principle of relevance)." },
+      { "id": "b", "text": "Uses include management use (boosting or monitoring) and reporting use." },
+      { "id": "c", "text": "In practice, an entity's dashboard usually combines several functions (e.g. boosting + reporting)." },
+      { "id": "d", "text": "In practice, entities usually have a separate dashboard for each type of use." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "It is unusual to have separate dashboards for each use; dashboards usually serve several functions."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-10",
+    "lecture": "s34",
+    "difficulty": 3,
+    "prompt": "Which statements about the OVAR method are correct?",
+    "options": [
+      { "id": "a", "text": "It was initiated by M. Fiol and H. Jordan." },
+      { "id": "b", "text": "It does not use a predefined framework to create the content of objectives and action variables." },
+      { "id": "c", "text": "Indicators should be selected for each objective and for each action variable." },
+      { "id": "d", "text": "In OVAR, \"objective\" also covers lines of action." },
+      { "id": "e", "text": "It links objectives, critical performance variables and responsibilities." }
+    ],
+    "correct": ["a", "b", "c", "e"],
+    "explanation": "In OVAR, \"objective\" has a restricted meaning: only the operational translation of a goal – lines of action are the CPVs."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-11",
+    "lecture": "s34",
+    "difficulty": 2,
+    "prompt": "A dashboard is defined as …",
+    "options": [
+      { "id": "a", "text": "a structured set of performance indicators" },
+      { "id": "b", "text": "containing financial and non-financial indicators" },
+      { "id": "c", "text": "useful to managers, with the values the indicators assume over a defined period" },
+      { "id": "d", "text": "the legally required report to shareholders" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Definition: a structured set of financial and non-financial indicators useful to managers, and their values over a defined period."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-12",
+    "lecture": "s34",
+    "difficulty": 3,
+    "prompt": "In the O/CPV framework …",
+    "options": [
+      { "id": "a", "text": "priority objectives and critical performance variables are presented in a double-entry table" },
+      { "id": "b", "text": "crosses indicate causal links between CPVs and objectives" },
+      { "id": "c", "text": "performance dimensions are organised into objectives and action variables" },
+      { "id": "d", "text": "each CPV can be linked to only one objective" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "The O/CPV table allows linking a CPV to several objectives (and vice versa)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s34-13",
+    "lecture": "s34",
+    "difficulty": 3,
+    "prompt": "A good dashboard reflecting both goals and lines of action gives managers a representation of performance that is …",
+    "options": [
+      { "id": "a", "text": "more balanced" },
+      { "id": "b", "text": "more long-term" },
+      { "id": "c", "text": "more operational" },
+      { "id": "d", "text": "purely financial" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Combining goal-related and action-related indicators gives a balanced, longer-term, more operational view."
+  },
+
+  {
+    "type": "tf",
+    "id": "tf-s34-01",
+    "lecture": "s34",
+    "statement": "A dashboard can be built by simply listing indicators and choosing from among them.",
+    "answer": false,
+    "explanation": "The choice of indicators must be preceded by a performance model."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s34-02",
+    "lecture": "s34",
+    "statement": "Any indicator can potentially be used for any type of use.",
+    "answer": true,
+    "explanation": "Stated in the key messages – the use, not the indicator, defines its role."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s34-03",
+    "lecture": "s34",
+    "statement": "In practice, it is common to have a separate dashboard for each type of use.",
+    "answer": false,
+    "explanation": "It is unusual; dashboards usually serve several functions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s34-04",
+    "lecture": "s34",
+    "statement": "A monitoring dashboard usually contains fewer indicators than a performance boosting dashboard.",
+    "answer": false,
+    "explanation": "Monitoring uses more indicators to cover the key dimensions; boosting focuses on a few priorities."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s34-05",
+    "lecture": "s34",
+    "statement": "Indicators used for performance boosting are subject to frequent change, as the priorities they reflect evolve.",
+    "answer": true,
+    "explanation": "Boosting follows the cyclical priorities."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s34-06",
+    "lecture": "s34",
+    "statement": "Like the strategy map of the Balanced Scorecard, the OVAR method uses a predefined framework for the content of objectives and action variables.",
+    "answer": false,
+    "explanation": "OVAR does NOT use a predefined framework – unlike the strategy map."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s34-07",
+    "lecture": "s34",
+    "statement": "A lead indicator focuses on the expected result of an objective.",
+    "answer": false,
+    "explanation": "That is a lag (result) indicator. A lead (action) indicator focuses on the means/levers."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s34-08",
+    "lecture": "s34",
+    "statement": "\"Critical Performance Variable\" is the name given to the main lines of action in the OVAR method.",
+    "answer": true,
+    "explanation": "CPV = Variable d'Action."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s34-09",
+    "lecture": "s34",
+    "statement": "Management controllers are heavily involved in the monitoring use of dashboards.",
+    "answer": true,
+    "explanation": "Monitoring relies on recurrent indicators and pre-established values tracked by controllers."
+  },
+
+  {
+    "type": "short",
+    "id": "sa-s34-01",
+    "lecture": "s34",
+    "verb": "explain",
+    "prompt": "Explain the difference between the performance boosting use and the monitoring use of a dashboard.",
+    "modelAnswer": "Performance boosting focuses managers' attention on a few priorities selected from the strategic areas and cyclical priorities: few indicators, monitored directly and systematically by managers, changing frequently as priorities evolve. Monitoring aims to ensure the organisation is under control: more numerous, varied and balanced indicators covering the key dimensions of the performance model, recurrent and assessed against pre-established values so that only abnormal deviations reach managers (management by exception); controllers are heavily involved.",
+    "keyPoints": [
+      "Boosting: focus on a few priorities, few indicators",
+      "Boosting: monitored directly/systematically by managers, change frequently",
+      "Monitoring: ensure the organisation is under control; more, varied, balanced indicators",
+      "Monitoring: recurrent, pre-established values, only abnormal deviations escalated",
+      "Monitoring: management controllers heavily involved"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s34-02",
+    "lecture": "s34",
+    "verb": "define",
+    "prompt": "Define lag (result) indicators and lead (action) indicators.",
+    "modelAnswer": "A lag or result indicator is a measure chosen to quantify a performance objective (linked to a goal or a line of action) by directly capturing the result expected for that objective. A lead or action indicator quantifies a performance objective by focusing on the means adopted to achieve it, i.e. the levers. For each objective and CPV it is useful to have both.",
+    "keyPoints": [
+      "Lag / result indicator: directly measures the expected result",
+      "Lead / action indicator: measures the means / levers used to achieve it",
+      "Both quantify a performance objective (goal or line of action)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s34-03",
+    "lecture": "s34",
+    "verb": "explain",
+    "prompt": "Explain the OVAR method and its O/CPV framework.",
+    "modelAnswer": "OVAR, initiated by Fiol and Jordan, is a method for building a dashboard that visualises the performance model as a framework linking Objectives (O), Critical Performance Variables / action variables (VA) and Responsibilities (R). The O/CPV framework is a double-entry table of priority objectives and CPVs in which crosses indicate the causal links between CPVs and objectives. Unlike the strategy map, it uses no predefined framework for its content. Indicators are then selected for each objective and each CPV, distinguishing lag and lead indicators.",
+    "keyPoints": [
+      "Objectives, (critical performance) action variables, responsibilities",
+      "O/CPV: double-entry table, crosses = causal links",
+      "No predefined framework (unlike strategy map / BSC)",
+      "Indicators for each objective and each CPV (lag and lead)"
+    ]
+  }
+]
