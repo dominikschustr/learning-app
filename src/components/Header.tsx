@@ -8,6 +8,7 @@ import { useApp, useHydrated, visibleStreak } from "@/lib/store";
 import { useSync } from "@/lib/sync";
 import { useNow } from "@/lib/useNow";
 import { cn } from "@/lib/utils";
+import { Logo } from "./Logo";
 
 export function Header() {
   const hydrated = useHydrated();
@@ -20,10 +21,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/80 backdrop-blur-md">
       <div className="mx-auto flex h-14 max-w-5xl items-center gap-3 px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="grid size-7 place-items-center rounded-lg bg-ink text-bg">
-            <span className="display text-lg leading-none">L</span>
-          </span>
+        <Link href="/" className="group flex items-center gap-2">
+          <Logo className="size-8 drop-shadow-[0_2px_6px_rgb(76_91_255/0.35)]" />
           <span className="display text-2xl">Lernwerk</span>
         </Link>
 
