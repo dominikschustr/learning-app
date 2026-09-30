@@ -4,8 +4,9 @@ import { useSyncExternalStore } from "react";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { ACHIEVEMENTS, levelInfo, type AchievementDef } from "./gamification";
+import { mergeSync, totals, type Counter, type SyncData } from "./merge";
 import { review, type ItemState } from "./srs";
-import { addDays, dayKey, itemKey } from "./utils";
+import { addDays, dayKey, itemKey, randomId } from "./utils";
 
 export type ExamAnswer =
   | { kind: "mc"; selected: string[] }
@@ -52,6 +53,11 @@ export type ExamRecord = {
 export type Streak = { current: number; best: number; lastDay: string | null };
 
 type Data = {
+  /** Kennung dieses Geräts (für die geräteübergreifende Synchronisation) */
+  deviceId: string;
+  /** XP und Aktivität je Gerät; xp/activity sind deren Summe */
+  counters: Record<string, Counter>;
+  dailyGoalAt: number;
   items: Record<string, ItemState>;
   cards: Record<string, ItemState>;
   xp: number;
@@ -87,6 +93,8 @@ type Actions = {
   discardExam(): void;
   setBlitzBest(subjectId: string, score: number): void;
   setDailyGoal(goal: number): void;
+  /** Übernimmt einen zusammengeführten Stand aus der Synchronisation. */
+  applySync(data: SyncData<ExamRecord>): void;
   importData(data: unknown): boolean;
   reset(): void;
 };
@@ -94,6 +102,9 @@ type Actions = {
 export type AppState = Data & Actions;
 
 const initial: Data = {
+  deviceId: "",
+  counters: {},
+  dailyGoalAt: 0,
   items: {},
   cards: {},
   xp: 0,
@@ -143,6 +154,45 @@ function unlocked(d: Data, now: number): string[] {
   return Object.keys(checks).filter((id) => checks[id] && !d.achievements[id]);
 }
 
+/** Stellt sicher, dass es eine Geräte-id gibt und XP/Aktivität in den Gerätezählern stecken. */
+export function withDevice(d: Data): Data {
+  const deviceId = d.deviceId || randomId(12);
+  const counters = { ...(d.counters ?? {}) };
+  const counted = totals(counters);
+  if (counted.xp !== d.xp || Object.keys(counted.activity).length !== Object.keys(d.activity ?? {}).length) {
+    // Altbestand (vor der Synchronisation) oder Import: Differenz diesem Gerät zuschreiben
+    const own = counters[deviceId] ?? { xp: 0, activity: {} };
+    const activity = { ...own.activity };
+    for (const [day, n] of Object.entries(d.activity ?? {})) {
+      const missing = n - (counted.activity[day] ?? 0);
+      if (missing > 0) activity[day] = (activity[day] ?? 0) + missing;
+    }
+    counters[deviceId] = { xp: own.xp + Math.max(0, d.xp - counted.xp), activity };
+  }
+  return { ...d, deviceId, counters, ...totals(counters) };
+}
+
+/** Der Teil des Zustands, der zwischen Geräten synchronisiert wird. */
+export function syncSnapshot(s: Data): SyncData<ExamRecord> {
+  return {
+    deviceId: s.deviceId,
+    counters: s.counters,
+    xp: s.xp,
+    activity: s.activity,
+    items: s.items,
+    cards: s.cards,
+    streak: s.streak,
+    dailyGoal: s.dailyGoal,
+    dailyGoalAt: s.dailyGoalAt,
+    bestCombo: s.bestCombo,
+    achievements: s.achievements,
+    exams: s.exams,
+    blitzBest: s.blitzBest,
+  };
+}
+
+export { mergeSync };
+
 export function examScore(e: Pick<ExamRecord, "questionIds" | "results" | "partial">) {
   const total = e.questionIds.length || 1;
   const correct = e.questionIds.filter((id) => e.results[id]).length;
@@ -156,20 +206,36 @@ export const useApp = create<AppState>()(
       /** Gemeinsamer Abschluss jeder Aktivität: XP, Streak, Tagesziel, Achievements. */
       function commit(patch: Partial<Data>, xp: number, activity: number): AnswerEvent {
         const now = Date.now();
-        const before = get();
+        const before = withDevice(get());
         const today = dayKey(now);
         const prevToday = before.activity[today] ?? 0;
+        const own = before.counters[before.deviceId] ?? { xp: 0, activity: {} };
+        const counters = {
+          ...before.counters,
+          [before.deviceId]: {
+            xp: own.xp + xp,
+            activity: activity > 0 ? { ...own.activity, [today]: (own.activity[today] ?? 0) + activity } : own.activity,
+          },
+        };
         const next: Data = {
           ...before,
           ...patch,
-          xp: before.xp + xp,
+          counters,
+          ...totals(counters),
           streak: activity > 0 ? nextStreak(before.streak, now) : before.streak,
-          activity: activity > 0 ? { ...before.activity, [today]: prevToday + activity } : before.activity,
         };
         const newIds = unlocked(next, now);
         const achievements = { ...next.achievements };
         for (const id of newIds) achievements[id] = now;
-        set({ ...patch, xp: next.xp, streak: next.streak, activity: next.activity, achievements });
+        set({
+          ...patch,
+          deviceId: next.deviceId,
+          counters,
+          xp: next.xp,
+          streak: next.streak,
+          activity: next.activity,
+          achievements,
+        });
 
         const levelBefore = levelInfo(before.xp).level;
         const levelAfter = levelInfo(next.xp).level;
@@ -229,15 +295,20 @@ export const useApp = create<AppState>()(
         },
 
         setDailyGoal(goal) {
-          set({ dailyGoal: Math.max(5, Math.min(200, Math.round(goal))) });
+          set({ dailyGoal: Math.max(5, Math.min(200, Math.round(goal))), dailyGoalAt: Date.now() });
         },
 
         importData(data) {
           if (!data || typeof data !== "object") return false;
           const d = (data as { state?: unknown }).state ?? data;
           if (!d || typeof d !== "object" || !("items" in d) || !("xp" in d)) return false;
-          set({ ...initial, ...(d as Partial<Data>) });
+          const { deviceId } = withDevice(get());
+          set(withDevice({ ...initial, ...(d as Partial<Data>), deviceId, activeExam: null }));
           return true;
+        },
+
+        applySync(data) {
+          set({ ...data, deviceId: get().deviceId || data.deviceId });
         },
 
         reset() {
@@ -247,7 +318,9 @@ export const useApp = create<AppState>()(
     },
     {
       name: "lernwerk-v1",
-      version: 1,
+      version: 2,
+      // v1 → v2: Gerätezähler für die Synchronisation anlegen
+      migrate: (persisted) => withDevice({ ...initial, ...(persisted as Partial<Data>) }) as AppState,
       storage: createJSONStorage(() => localStorage),
       skipHydration: true,
       partialize: (s) => {

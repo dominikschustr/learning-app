@@ -3,7 +3,9 @@
 import { Download, Minus, Plus, Trash2, Upload } from "lucide-react";
 import { useRef, useState } from "react";
 import { exportData, useApp, useHydrated } from "@/lib/store";
+import { disconnectSync, useSync } from "@/lib/sync";
 import { dayKey } from "@/lib/utils";
+import { SyncSettings } from "./SyncSettings";
 import { Button, Skeleton } from "./ui";
 
 export function SettingsView() {
@@ -12,6 +14,7 @@ export function SettingsView() {
   const setDailyGoal = useApp((s) => s.setDailyGoal);
   const importData = useApp((s) => s.importData);
   const reset = useApp((s) => s.reset);
+  const syncKey = useSync((s) => s.key);
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState<string | null>(null);
 
@@ -42,6 +45,8 @@ export function SettingsView() {
     <div className="mx-auto max-w-2xl space-y-6">
       <h1 className="display text-5xl">Einstellungen</h1>
 
+      <SyncSettings />
+
       <section className="card p-6">
         <h2 className="text-lg font-semibold">Tagesziel</h2>
         <p className="text-sm text-muted">Beantwortete Fragen und Karteikarten pro Tag.</p>
@@ -59,8 +64,7 @@ export function SettingsView() {
       <section className="card p-6">
         <h2 className="text-lg font-semibold">Backup</h2>
         <p className="text-sm text-muted">
-          Dein Fortschritt liegt nur in diesem Browser. Mit einem Backup kannst du ihn sichern oder auf ein anderes Gerät
-          übertragen.
+          Zusätzlich zur Synchronisation kannst du deinen Fortschritt als Datei sichern und wieder importieren.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Button onClick={download}>
@@ -91,7 +95,11 @@ export function SettingsView() {
           variant="secondary"
           className="mt-4 text-bad"
           onClick={() => {
-            if (window.confirm("Wirklich den gesamten Fortschritt löschen? Das lässt sich nicht rückgängig machen.")) {
+            const warning = syncKey
+              ? "Fortschritt auf diesem Gerät löschen? Das Gerät wird dabei von der Synchronisation getrennt – der Stand in der Cloud und auf deinen anderen Geräten bleibt erhalten."
+              : "Wirklich den gesamten Fortschritt löschen? Das lässt sich nicht rückgängig machen.";
+            if (window.confirm(warning)) {
+              if (syncKey) disconnectSync();
               reset();
               setMsg("Fortschritt zurückgesetzt.");
             }

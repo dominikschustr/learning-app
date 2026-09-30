@@ -162,8 +162,13 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 - **Framer Motion** (Animation), **Zustand** mit `persist` (Fortschritt in localStorage),
   **zod** (Content-Validierung), **lucide-react** (Icons), **canvas-confetti**
 - **API-Route** `/api/grade` → Gemini für Kurzantworten
-- **Speicherung:** nur im Browser. Export/Import des Fortschritts als JSON-Datei (Backup,
-  Gerätewechsel).
+- **Speicherung:** lokal im Browser **und** – wenn aktiviert – synchronisiert über alle Geräte
+  (Laptop ↔ Handy). Kein Login: Das erste Gerät erzeugt einen geheimen Sync-Schlüssel, weitere Geräte
+  werden per QR-Code/Link gekoppelt. Der Stand liegt im privaten Vercel-Blob-Store (`/api/sync`,
+  Dateiname = SHA-256 des Schlüssels, bedingtes Schreiben per ETag).
+  Zusammenführen ohne Datenverlust: XP und Aktivität zählt jedes Gerät separat (Summe = Gesamtwert),
+  pro Frage/Karte gewinnt der zuletzt geübte Stand, Tests und Achievements werden vereinigt, die Streak
+  wird aus den gemeinsamen Lerntagen berechnet. Export/Import als JSON bleibt als Backup.
 - **Deployment:** privates GitHub-Repo → Vercel. `GEMINI_API_KEY` als Env-Var.
 
 ## 10. Roadmap

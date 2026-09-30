@@ -2,14 +2,19 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
-import { useApp } from "@/lib/store";
+import { useApp, useHydrated } from "@/lib/store";
+import { startAutoSync, useSync } from "@/lib/sync";
 import { useToasts } from "@/lib/toast";
 import { Icon } from "./Icon";
 
 export function Providers({ children }: { children: React.ReactNode }) {
+  const hydrated = useHydrated();
   useEffect(() => {
+    void useSync.persist.rehydrate();
     void useApp.persist.rehydrate();
   }, []);
+  // Automatische Synchronisation erst, wenn der lokale Stand geladen ist
+  useEffect(() => (hydrated ? startAutoSync() : undefined), [hydrated]);
 
   return (
     <>

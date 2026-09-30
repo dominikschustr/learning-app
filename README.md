@@ -47,4 +47,11 @@ Optional. Ohne Key bewertest du Kurzantworten selbst anhand der Kernpunkte.
 ## Deployment (Vercel)
 
 Privates GitHub-Repo mit Vercel verbinden (*Add New → Project → Import*), Framework wird automatisch erkannt.
-Jeder Push auf `main` deployt neu. Der Lernfortschritt liegt nur im Browser – Backup über *Einstellungen → Exportieren*.
+Jeder Push auf `main` deployt neu.
+
+## Geräte synchronisieren
+
+*Einstellungen → Geräte synchronisieren → Aktivieren* auf dem ersten Gerät, dann den QR-Code mit dem Handy
+scannen und „Verbinden“ tippen. Danach gleicht sich der Lernstand automatisch ab (nach Änderungen, beim
+Wechsel zurück in die App, wenn das Gerät wieder online ist). Speicher: privater Vercel-Blob-Store,
+Variable `BLOB_READ_WRITE_TOKEN` (lokal via `vercel env pull .env.local`).
