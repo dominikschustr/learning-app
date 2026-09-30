@@ -149,7 +149,7 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 
 - **Hell & clean**, Editorial-Anmutung: viel Weißraum, warmes Off-White, eine kräftige
   Akzentfarbe pro Fach, feine Linien statt schwerer Schatten.
-- **Typografie:** Serif für Headlines (Instrument Serif), Inter für UI und Fragen.
+- **Typografie:** eine Schrift für alles (Inter). Rollen: Seitentitel `display text-4xl sm:text-5xl`, Abschnittstitel `display text-2xl`, Kartentitel `text-lg font-semibold`, Kennzahlen `display` + `tabular-nums`, Labels `eyebrow`.
 - **Dark Mode** per Umschalter (folgt standardmäßig dem System).
 - **Bewegung:** dezent – Karten-Flip, weiche Übergänge zwischen Fragen, Fortschrittsringe,
   Konfetti nur bei echten Erfolgen.

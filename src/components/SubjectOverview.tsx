@@ -101,7 +101,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         >
           {subject.short}
         </span>
-        <h1 className="display mt-3 text-5xl sm:text-6xl">{subject.name}</h1>
+        <h1 className="display text-4xl sm:text-5xl mt-3">{subject.name}</h1>
         <p className="mt-2 max-w-2xl text-muted">{subject.description}</p>
       </header>
 
@@ -129,14 +129,14 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         <div className="flex justify-center">
           <ProgressRing value={st.readiness} size={176} stroke={12} color={subject.color}>
             <span>
-              <span className="display block text-6xl">{Math.round(st.readiness * 100)}</span>
+              <span className="display block text-5xl tabular-nums">{Math.round(st.readiness * 100)}</span>
               <span className="eyebrow">Prozent</span>
             </span>
           </ProgressRing>
         </div>
         <div className="flex flex-col justify-center">
           <p className="eyebrow">Prognose {f.name}</p>
-          <h2 className="display mt-1 text-4xl">{readinessLabel(st.readiness)}</h2>
+          <h2 className="display mt-1 text-3xl">{readinessLabel(st.readiness)}</h2>
           <p className="mt-2 max-w-md text-sm text-muted">
             Geschätzter Score, wenn die Prüfung jetzt wäre: deine Sicherheit pro Fragetyp, gewichtet wie in der
             Prüfung ({f.short} Kurzantwort · {f.mc} Multiple Choice · {f.tf} True/False).
@@ -172,7 +172,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       <section>
         <div className="mb-4 flex items-end justify-between gap-4">
           <div>
-            <h2 className="display text-3xl">Lernpfad</h2>
+            <h2 className="display text-2xl">Lernpfad</h2>
             <p className="text-sm text-muted">Ein Kapitel pro Key-Messages-Dokument – jedes mit eigenem Level.</p>
           </div>
           <Chip>
@@ -264,7 +264,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
 
       {exams.length > 0 && (
         <section>
-          <h2 className="display mb-3 text-3xl">Abschlusstests</h2>
+          <h2 className="display mb-3 text-2xl">Abschlusstests</h2>
           <div className="card divide-y divide-line">
             {exams.slice(0, 8).map((e) => {
               const sc = examScore(e);
@@ -275,7 +275,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
                   className="flex items-center gap-4 p-4 hover:bg-surface-2/60"
                 >
                   <span
-                    className="display w-16 text-3xl tabular-nums"
+                    className="display w-16 text-2xl tabular-nums"
                     style={{ color: sc.score >= 0.8 ? "var(--good)" : sc.score >= 0.5 ? "var(--ink)" : "var(--bad)" }}
                   >
                     {Math.round(sc.score * 100)}

@@ -23,7 +23,7 @@ export function Header() {
       <div className="mx-auto flex h-14 max-w-5xl items-center gap-3 px-4 sm:px-6">
         <Link href="/" className="group flex items-center gap-2">
           <Logo className="size-8 drop-shadow-[0_2px_6px_rgb(76_91_255/0.35)]" />
-          <span className="display text-2xl">Lernwerk</span>
+          <span className="display text-xl">Lernwerk</span>
         </Link>
 
         <div className={cn("ml-auto flex items-center gap-1.5 transition-opacity", hydrated ? "opacity-100" : "opacity-0")}>

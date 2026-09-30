@@ -46,7 +46,7 @@ export function ReadingView({
         <p className="eyebrow flex items-center gap-2">
           <ScrollText className="size-3.5" /> Kapitel {chapterIndex + 1} · Nachlesen
         </p>
-        <h1 className="display mt-2 text-5xl leading-[1.05] sm:text-6xl">{title}</h1>
+        <h1 className="display text-4xl sm:text-5xl mt-2">{title}</h1>
         <p className="mt-3 text-sm text-muted">Originaltext aus „{text.source}“</p>
       </header>
 
@@ -104,7 +104,7 @@ function SectionView({ id, section, color }: { id: string; section: Section; col
   if (kind === "def") {
     return (
       <section id={id} className="scroll-mt-32">
-        <h2 className="display text-4xl">{heading}</h2>
+        <h2 className="display text-2xl">{heading}</h2>
         <dl className="mt-6 grid gap-3">
           {section.blocks.map((b, i) => (
             <div
@@ -124,7 +124,7 @@ function SectionView({ id, section, color }: { id: string; section: Section; col
   if (kind === "further") {
     return (
       <section id={id} className="scroll-mt-32">
-        <h2 className="display text-4xl">{heading}</h2>
+        <h2 className="display text-2xl">{heading}</h2>
         <ul className="mt-6 space-y-3">
           {section.blocks.map((b, i) => (
             <li key={i} className="flex gap-3 rounded-2xl bg-surface-2 p-4 leading-relaxed text-ink-2">
@@ -140,7 +140,7 @@ function SectionView({ id, section, color }: { id: string; section: Section; col
   let n = 0;
   return (
     <section id={id} className="scroll-mt-32">
-      <h2 className="display text-4xl">{heading}</h2>
+      <h2 className="display text-2xl">{heading}</h2>
       <div className="mt-6 space-y-5">
         {section.blocks.map((b, i) =>
           b.kind === "para" ? (

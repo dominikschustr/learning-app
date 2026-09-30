@@ -103,7 +103,7 @@ function Deck({
   if (!deck.length) {
     return (
       <div className="mx-auto max-w-lg py-16 text-center">
-        <h1 className="display text-4xl">Keine Karteikarten</h1>
+        <h1 className="display text-4xl sm:text-5xl">Keine Karteikarten</h1>
         <p className="mt-2 text-muted">Für diese Auswahl gibt es noch keine Karten.</p>
         <ButtonLink className="mt-6" href={base}>
           Zurück
@@ -116,7 +116,7 @@ function Deck({
     return (
       <div className="mx-auto max-w-lg py-10 text-center">
         <p className="eyebrow">Stapel durch</p>
-        <h1 className="display mt-2 text-5xl">
+        <h1 className="display text-4xl sm:text-5xl mt-2">
           {knownCount} von {deck.length} gewusst
         </h1>
         <p className="mt-3 text-muted">+{xp} XP · Karten, die du nicht wusstest, kommen bald wieder.</p>
@@ -167,7 +167,7 @@ function Deck({
           >
             <div className="flip-face card absolute inset-0 flex flex-col p-8">
               <span className="eyebrow">Begriff</span>
-              <p className="display my-auto text-center text-4xl sm:text-5xl">{card.front}</p>
+              <p className="display my-auto text-center text-3xl sm:text-4xl">{card.front}</p>
               <span className="text-center text-xs text-muted">
                 Tippen zum Umdrehen <span className="kbd ml-1 hidden sm:inline-flex">Leertaste</span>
               </span>

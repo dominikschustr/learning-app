@@ -1,16 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
-const serif = Instrument_Serif({
-  variable: "--font-serif-display",
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-});
 
 export const metadata: Metadata = {
   title: { default: "Lernwerk", template: "%s · Lernwerk" },
@@ -29,7 +23,7 @@ const themeScript = `(function(){try{var t=localStorage.getItem("lernwerk-theme"
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="de" suppressHydrationWarning className={`${inter.variable} ${serif.variable} h-full antialiased`}>
+    <html lang="de" suppressHydrationWarning className={`${inter.variable} h-full antialiased`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>

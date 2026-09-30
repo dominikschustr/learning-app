@@ -25,7 +25,7 @@ export function LevelBadge({ ch, color, size = 56 }: { ch: ChapterStats; color: 
       {done ? (
         <Trophy className="text-good" style={{ width: size / 2.6, height: size / 2.6 }} />
       ) : (
-        <span className="font-bold tabular-nums" style={{ fontSize: size / 3 }}>
+        <span className="display tabular-nums" style={{ fontSize: size / 3 }}>
           {ch.level.level}
         </span>
       )}
@@ -99,7 +99,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           <p className="eyebrow">
             Kapitel {index + 1} von {subject.lectures.length} · {code}
           </p>
-          <h1 className="display mt-2 text-5xl sm:text-6xl">{title}</h1>
+          <h1 className="display text-4xl sm:text-5xl mt-2">{title}</h1>
           <p className="mt-2 text-sm text-muted">
             {byType("mc")} Multiple Choice · {byType("tf")} True/False · {byType("short")} Kurzantwort · {ch.cards} Karten
           </p>
@@ -112,7 +112,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         </div>
         <div className="flex flex-col justify-center">
           <p className="eyebrow">Kapitel-Level {ch.level.level} / 5</p>
-          <h2 className="display mt-1 text-4xl">{ch.level.name}</h2>
+          <h2 className="display mt-1 text-3xl">{ch.level.name}</h2>
           <p className="mt-2 text-sm text-ink-2">{ch.level.hint}</p>
 
           <div className="mt-5 flex gap-1.5">
@@ -171,14 +171,14 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
 
       {tests.length > 0 && (
         <section>
-          <h2 className="display mb-3 text-3xl">Kapiteltests</h2>
+          <h2 className="display mb-3 text-2xl">Kapiteltests</h2>
           <div className="card divide-y divide-line">
             {tests.slice(0, 6).map((e) => {
               const sc = examScore(e);
               return (
                 <Link key={e.id} href={`${base}/exam?review=${e.id}`} className="flex items-center gap-4 p-4 hover:bg-surface-2/60">
                   <span
-                    className="display w-14 text-3xl tabular-nums"
+                    className="display w-14 text-2xl tabular-nums"
                     style={{ color: sc.score >= 0.8 ? "var(--good)" : sc.score >= 0.5 ? "var(--ink)" : "var(--bad)" }}
                   >
                     {Math.round(sc.score * 100)}

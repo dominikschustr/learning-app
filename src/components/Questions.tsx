@@ -193,7 +193,7 @@ export function ShortResult({
           )}
         >
           <div className="flex items-center gap-3">
-            <span className="display text-4xl">{grade.score}</span>
+            <span className="display text-3xl tabular-nums">{grade.score}</span>
             <span className="text-sm">
               <span className="block font-semibold">
                 {grade.score >= SHORT_PASS ? "Gut – zählt als richtig" : "Noch nicht ausreichend"}

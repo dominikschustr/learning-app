@@ -52,7 +52,7 @@ export function Blitz({ content }: { content: SubjectContent }) {
     return (
       <div className="mx-auto max-w-xl py-6 text-center">
         <p className="eyebrow">Zeit ist um</p>
-        <h1 className="display mt-2 text-7xl">{score}</h1>
+        <h1 className="display mt-2 text-7xl tabular-nums">{score}</h1>
         <p className="mt-1 text-muted">
           richtige Antworten · {log.length} gesamt · Rekord {Math.max(best, score)}
         </p>
@@ -93,7 +93,7 @@ export function Blitz({ content }: { content: SubjectContent }) {
         <span className="mx-auto grid size-16 place-items-center rounded-2xl bg-warn-soft text-flame">
           <Zap className="size-8" fill="currentColor" />
         </span>
-        <h1 className="display mt-5 text-6xl">Blitzrunde</h1>
+        <h1 className="display text-4xl sm:text-5xl mt-5">Blitzrunde</h1>
         <p className="mx-auto mt-3 max-w-sm text-muted">
           {SECONDS} Sekunden, so viele True/False-Aussagen wie möglich. Ab 5 richtigen in Folge gibt es doppelte XP.
         </p>
@@ -195,7 +195,7 @@ function Run({
   return (
     <div className="mx-auto max-w-xl">
       <div className="mb-6 flex items-center gap-3">
-        <span className={cn("display w-14 text-4xl tabular-nums", left <= 10 && "text-bad")}>{Math.max(0, left)}</span>
+        <span className={cn("display w-14 text-3xl tabular-nums", left <= 10 && "text-bad")}>{Math.max(0, left)}</span>
         <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-surface-2">
           <div
             className="h-full rounded-full bg-flame"
@@ -205,7 +205,7 @@ function Run({
         <span className="inline-flex items-center gap-1 text-sm font-bold text-flame">
           <Flame className="size-4" fill={combo >= 5 ? "currentColor" : "none"} /> {combo}
         </span>
-        <span className="w-10 text-right text-lg font-bold tabular-nums">{score}</span>
+        <span className="w-10 text-right display text-lg tabular-nums">{score}</span>
       </div>
 
       <AnimatePresence mode="popLayout">

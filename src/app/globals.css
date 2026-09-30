@@ -62,7 +62,6 @@
   --color-warn-soft: var(--warn-soft);
   --color-flame: var(--flame);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-serif-display), ui-serif, Georgia, serif;
   --shadow-soft: var(--shadow);
 }
 
@@ -87,11 +86,12 @@ body {
   box-shadow: var(--shadow);
 }
 
+/* Einheitliche Typo: eine Schrift (Inter), Überschriften & Kennzahlen fett und eng. */
 .display {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-wrap: balance;
 }
 
 .eyebrow {

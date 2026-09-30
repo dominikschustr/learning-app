@@ -61,7 +61,7 @@ function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lectur
         <ArrowLeft className="size-4" /> {lecture ? lecture.title : subject.name}
       </Link>
       <p className="eyebrow mt-8">{lecture ? `Kapiteltest · ${lecture.title}` : `Abschlusstest · ${f.name}`}</p>
-      <h1 className="display mt-2 text-5xl sm:text-6xl">{lecture ? "Kapiteltest" : `${f.name}-Probelauf`}</h1>
+      <h1 className="display text-4xl sm:text-5xl mt-2">{lecture ? "Kapiteltest" : `${f.name}-Probelauf`}</h1>
       <p className="mt-3 text-muted">
         {lecture
           ? `${total} Fragen nur aus diesem Kapitel, ${f.minutes} Minuten, kein Feedback bis zur Abgabe. Mit mindestens 80 % erreichst du das Kapitel-Level „Gemeistert“.`
@@ -75,7 +75,7 @@ function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lectur
           [f.tf, "True / False", ""],
         ].map(([n, label, hint]) => (
           <div key={label} className="card p-4">
-            <p className="display text-4xl">{n}</p>
+            <p className="display text-3xl tabular-nums">{n}</p>
             <p className="mt-1 text-sm font-semibold">{label}</p>
             {hint && <p className="text-xs text-muted">{hint}</p>}
           </div>
@@ -355,7 +355,7 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
               className="card w-full max-w-sm p-6"
               onClick={(e) => e.stopPropagation()}
             >
-              <h2 className="display text-3xl">Abgeben?</h2>
+              <h2 className="display text-2xl">Abgeben?</h2>
               {answered < total ? (
                 <p className="mt-2 flex gap-2 text-sm text-ink-2">
                   <AlertTriangle className="mt-0.5 size-4 shrink-0 text-warn" />
@@ -457,14 +457,14 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
             color={sc.score >= 0.8 ? "var(--good)" : sc.score >= 0.5 ? subject.color : "var(--bad)"}
           >
             <span>
-              <span className="display block text-6xl">{Math.round(sc.score * 100)}</span>
+              <span className="display block text-5xl tabular-nums">{Math.round(sc.score * 100)}</span>
               <span className="eyebrow">Prozent</span>
             </span>
           </ProgressRing>
         </div>
         <div className="flex flex-col justify-center">
           <p className="eyebrow">{lecture ? `Auswertung Kapiteltest · ${lecture.title}` : `Auswertung Abschlusstest · ${subject.examFormat.name}`}</p>
-          <h1 className="display mt-1 text-4xl">
+          <h1 className="display text-4xl sm:text-5xl mt-1">
             {sc.correct} von {sc.total} richtig
           </h1>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -538,7 +538,7 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
 
       <section>
         <div className="mb-3 flex items-end justify-between">
-          <h2 className="display text-3xl">Alle Fragen</h2>
+          <h2 className="display text-2xl">Alle Fragen</h2>
           <label className="flex cursor-pointer items-center gap-2 text-sm text-ink-2">
             <input type="checkbox" checked={onlyWrong} onChange={(e) => setOnlyWrong(e.target.checked)} className="accent-[var(--accent)]" />
             nur falsche

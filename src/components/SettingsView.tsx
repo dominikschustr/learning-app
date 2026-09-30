@@ -43,7 +43,7 @@ export function SettingsView() {
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <h1 className="display text-5xl">Einstellungen</h1>
+      <h1 className="display text-4xl sm:text-5xl">Einstellungen</h1>
 
       <SyncSettings />
 
@@ -54,7 +54,7 @@ export function SettingsView() {
           <Button variant="secondary" className="size-11 px-0" onClick={() => setDailyGoal(dailyGoal - 5)} aria-label="weniger">
             <Minus className="size-4" />
           </Button>
-          <span className="display w-20 text-center text-5xl tabular-nums">{dailyGoal}</span>
+          <span className="display w-20 text-center text-4xl tabular-nums">{dailyGoal}</span>
           <Button variant="secondary" className="size-11 px-0" onClick={() => setDailyGoal(dailyGoal + 5)} aria-label="mehr">
             <Plus className="size-4" />
           </Button>

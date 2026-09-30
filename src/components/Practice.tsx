@@ -200,7 +200,7 @@ function Session({
     return (
       <div className="mx-auto max-w-lg py-16 text-center">
         <PartyPopper className="mx-auto size-12 text-good" />
-        <h1 className="display mt-4 text-4xl">
+        <h1 className="display text-4xl sm:text-5xl mt-4">
           {mode === "due" ? "Nichts fällig" : mode === "weak" ? "Keine Schwächen gefunden" : "Keine Fragen"}
         </h1>
         <p className="mt-2 text-muted">
@@ -343,7 +343,7 @@ function Summary({
   return (
     <div className="mx-auto max-w-xl py-6 text-center">
       <p className="eyebrow">Session abgeschlossen</p>
-      <h1 className="display mt-2 text-5xl">
+      <h1 className="display text-4xl sm:text-5xl mt-2">
         {acc >= 0.9 ? "Hervorragend!" : acc >= 0.7 ? "Stark gemacht." : acc >= 0.5 ? "Guter Fortschritt." : "Dranbleiben!"}
       </h1>
       <div className="mt-8 grid grid-cols-3 gap-3">
@@ -353,7 +353,7 @@ function Summary({
           ["Beste Combo", String(bestCombo)],
         ].map(([label, value]) => (
           <div key={label} className="card p-4">
-            <p className="display text-3xl">{value}</p>
+            <p className="display text-3xl tabular-nums">{value}</p>
             <p className="eyebrow mt-1">{label}</p>
           </div>
         ))}

@@ -46,15 +46,15 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
     <div className="space-y-10">
       <section>
         <p className="eyebrow">{greeting(new Date(now).getHours())}</p>
-        <h1 className="display mt-2 text-5xl sm:text-6xl">
-          Was lernen wir <em className="text-accent">heute</em>?
+        <h1 className="display text-4xl sm:text-5xl mt-2">
+          Was lernen wir <span className="text-accent">heute</span>?
         </h1>
       </section>
 
       <section className="grid gap-4 sm:grid-cols-3">
         <div className="card flex items-center gap-5 p-5">
           <ProgressRing value={today / s.dailyGoal} size={84} stroke={8} color="var(--good)">
-            <span className="text-lg font-bold">{today}</span>
+            <span className="display text-lg tabular-nums">{today}</span>
           </ProgressRing>
           <div>
             <p className="eyebrow">Tagesziel</p>
@@ -85,7 +85,7 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
             <p className="eyebrow">Level {lvl.level}</p>
             <p className="text-sm text-muted">{s.xp} XP</p>
           </div>
-          <p className="display text-3xl">{titleFor(lvl.level)}</p>
+          <p className="display text-2xl">{titleFor(lvl.level)}</p>
           <Bar value={lvl.progress} />
           <p className="text-xs text-muted">
             {lvl.needed - lvl.into} XP bis Level {lvl.level + 1}
@@ -95,7 +95,7 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
 
       <section>
         <div className="mb-4 flex items-end justify-between">
-          <h2 className="display text-3xl">Deine Fächer</h2>
+          <h2 className="display text-2xl">Deine Fächer</h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {summaries.map((summary, i) => {
@@ -128,7 +128,7 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
                         </span>
                         {subject.demo && <Chip>Demo-Inhalte</Chip>}
                       </div>
-                      <h3 className="display mt-3 text-3xl">{subject.name}</h3>
+                      <h3 className="display mt-3 text-2xl">{subject.name}</h3>
                       <p className="mt-1 line-clamp-2 text-sm text-muted">{subject.description}</p>
                       <div className="mt-4 flex flex-wrap gap-2">
                         <Chip>
@@ -141,7 +141,7 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
                     </div>
                     <ProgressRing value={st.readiness} size={96} stroke={8} color={subject.color}>
                       <span>
-                        <span className="block text-xl font-bold">{Math.round(st.readiness * 100)}</span>
+                        <span className="display block text-xl tabular-nums">{Math.round(st.readiness * 100)}</span>
                         <span className="block text-[10px] font-semibold uppercase tracking-wider text-muted">
                           Readiness
                         </span>
