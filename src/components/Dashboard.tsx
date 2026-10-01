@@ -1,8 +1,9 @@
 "use client";
 
-import { ArrowRight, Check, Flame } from "lucide-react";
-import { motion } from "motion/react";
+import { ArrowRight, Check, Flame, Lock } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
+import { useState } from "react";
 import { ACHIEVEMENTS, levelInfo, titleFor } from "@/lib/gamification";
 import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
@@ -39,7 +40,6 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
   const s = useApp();
   const now = useNow();
   const today = s.activity[dayKey(now)] ?? 0;
-  const progress = achievementProgress(s, now);
   const unlockedCount = ACHIEVEMENTS.filter((a) => s.achievements[a.id]).length;
   const lvl = levelInfo(s.xp);
   const streak = visibleStreak(s.streak, now);
@@ -160,7 +160,7 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
         </div>
       </section>
 
-      <section className="grid items-start gap-4 lg:grid-cols-[auto_1fr]">
+      <section className="grid gap-4 lg:grid-cols-[1fr_1.1fr]">
         <div className="card p-6">
           <h2 className="display text-2xl">Aktivität</h2>
           <p className="mb-4 text-sm text-muted">Beantwortete Fragen und Karten pro Tag</p>
@@ -173,53 +173,126 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
               {unlockedCount} / {ACHIEVEMENTS.length}
             </span>
           </div>
-          <p className="text-sm text-muted">So schaltest du sie frei – mit deinem aktuellen Stand.</p>
-          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-            {ACHIEVEMENTS.map((a) => {
-              const at = s.achievements[a.id];
-              const value = a.id === "daily-goal" ? today : (progress[a.id] ?? 0);
-              const target = a.id === "daily-goal" ? s.dailyGoal : a.target;
-              return (
-                <li
-                  key={a.id}
-                  className={cn(
-                    "flex gap-3 rounded-xl border p-3",
-                    at ? "border-warn/30 bg-warn-soft" : "border-line",
-                  )}
-                >
-                  <span
-                    className={cn(
-                      "grid size-9 shrink-0 place-items-center rounded-full",
-                      at ? "bg-surface text-warn" : "bg-surface-2 text-muted",
-                    )}
-                  >
-                    <Icon name={a.icon} className="size-4" />
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="flex items-baseline justify-between gap-2">
-                      <span className="text-sm font-semibold">{a.title}</span>
-                      {at ? (
-                        <Check className="size-4 shrink-0 text-warn" />
-                      ) : (
-                        <span className="shrink-0 text-xs font-semibold tabular-nums text-muted">
-                          {Math.min(value, target)} / {target}
-                          {a.unit === "%" && " %"}
-                        </span>
-                      )}
-                    </span>
-                    <span className="block text-xs leading-snug text-muted">
-                      {at
-                        ? `${a.description} · ${new Date(at).toLocaleDateString("de-DE", { day: "numeric", month: "short" })}`
-                        : a.howTo}
-                    </span>
-                    {!at && <Bar value={value / target} className="mt-2 h-1.5" />}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
+          <Achievements
+            unlocked={s.achievements}
+            progress={{ ...achievementProgress(s, now), "daily-goal": today }}
+            targets={{ "daily-goal": s.dailyGoal }}
+          />
         </div>
       </section>
+    </div>
+  );
+}
+
+/** Kompakte Kacheln; Antippen zeigt, wie man das Achievement freischaltet, und den Fortschritt. */
+function Achievements({
+  unlocked,
+  progress,
+  targets,
+}: {
+  unlocked: Record<string, number>;
+  progress: Record<string, number>;
+  /** abweichende Zielwerte für die Anzeige (z. B. Tagesziel) */
+  targets: Record<string, number>;
+}) {
+  const [openId, setOpenId] = useState<string | null>(null);
+  const open = ACHIEVEMENTS.find((a) => a.id === openId);
+
+  return (
+    <>
+      <div className="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4">
+        {ACHIEVEMENTS.map((a) => {
+          const got = !!unlocked[a.id];
+          const active = a.id === openId;
+          return (
+            <button
+              key={a.id}
+              type="button"
+              aria-expanded={active}
+              onClick={() => setOpenId(active ? null : a.id)}
+              className={cn(
+                "flex flex-col items-center gap-1.5 rounded-xl border p-2.5 text-center transition",
+                got ? "border-warn/30 bg-warn-soft" : "border-line",
+                !got && !active && "opacity-55 hover:opacity-80",
+                active && "ring-2 ring-accent/40",
+              )}
+            >
+              <span
+                className={cn(
+                  "grid size-9 place-items-center rounded-full",
+                  got ? "bg-surface text-warn" : "bg-surface-2 text-muted",
+                )}
+              >
+                {got ? <Icon name={a.icon} className="size-4" /> : <Lock className="size-3.5" />}
+              </span>
+              <span className="text-[11px] font-semibold leading-tight">{a.title}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            key={open.id}
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2 }}
+            className="overflow-hidden"
+          >
+            <AchievementDetail
+              a={open}
+              at={unlocked[open.id]}
+              value={progress[open.id] ?? 0}
+              target={targets[open.id] ?? open.target}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
+
+function AchievementDetail({
+  a,
+  at,
+  value,
+  target,
+}: {
+  a: (typeof ACHIEVEMENTS)[number];
+  at?: number;
+  value: number;
+  target: number;
+}) {
+  return (
+    <div className="mt-3 flex gap-3 rounded-xl bg-surface-2 p-4">
+      <span
+        className={cn(
+          "grid size-10 shrink-0 place-items-center rounded-full",
+          at ? "bg-warn-soft text-warn" : "bg-surface text-muted",
+        )}
+      >
+        <Icon name={a.icon} className="size-5" />
+      </span>
+      <div className="min-w-0 flex-1">
+        <p className="flex items-baseline justify-between gap-2">
+          <span className="font-semibold">{a.title}</span>
+          {at ? (
+            <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-warn">
+              <Check className="size-3.5" />
+              {new Date(at).toLocaleDateString("de-DE", { day: "numeric", month: "short", year: "numeric" })}
+            </span>
+          ) : (
+            <span className="shrink-0 text-xs font-semibold tabular-nums text-muted">
+              {Math.min(value, target)} / {target}
+              {a.unit === "%" && " %"}
+            </span>
+          )}
+        </p>
+        <p className="text-sm text-ink-2">{at ? a.description : a.howTo}</p>
+        {!at && <Bar value={value / target} className="mt-2.5 h-1.5" />}
+      </div>
     </div>
   );
 }
