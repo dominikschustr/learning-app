@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Bookmark, PartyPopper, RotateCcw } from "lucide-react";
+import { ArrowRight, Bookmark, PartyPopper, RotateCcw, SkipForward } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
@@ -80,6 +80,7 @@ function Session({
   const [combo, setCombo] = useState(0);
   const [bestCombo, setBestCombo] = useState(0);
   const [sessionXp, setSessionXp] = useState(0);
+  const [skipped, setSkipped] = useState(0);
   const [lastXp, setLastXp] = useState({ amount: 0, n: 0 });
 
   // Antwortzustand der aktuellen Frage
@@ -165,6 +166,14 @@ function Session({
 
   const canContinue = revealed && (entry?.q.type !== "short" || !!shortGrade);
 
+  /** Frage auslassen: zählt weder als richtig noch als falsch, Lernstand bleibt unverändert. */
+  const skip = useCallback(() => {
+    if (!entry || revealed || pending) return;
+    setSkipped((n) => n + 1);
+    setCombo(0);
+    next();
+  }, [entry, revealed, pending, next]);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!entry) return;
@@ -182,6 +191,10 @@ function Session({
         useApp.getState().toggleMark(markKey("q", subject.id, entry.q.id));
         return;
       }
+      if (e.key === "s") {
+        skip();
+        return;
+      }
       if (revealed) return;
       const q = entry.q;
       if (q.type === "mc") {
@@ -197,7 +210,7 @@ function Session({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [entry, revealed, canContinue, next, check, pickTf, subject.id]);
+  }, [entry, revealed, canContinue, next, check, pickTf, subject.id, skip]);
 
   if (retryMode) {
     return <Session content={content} mode={mode} onRestart={onRestart} only={retryMode} />;
@@ -253,6 +266,7 @@ function Session({
         outcomes={outcomes}
         xp={sessionXp}
         bestCombo={bestCombo}
+        skipped={skipped}
         base={home}
         subjectId={subject.id}
         onRestart={onRestart}
@@ -329,7 +343,12 @@ function Session({
         </motion.div>
       </AnimatePresence>
 
-      <div className="sticky bottom-4 mt-8 flex justify-end">
+      <div className="sticky bottom-4 mt-8 flex items-center justify-end gap-2">
+        {!revealed && !pending && (
+          <Button variant="ghost" onClick={skip} className="mr-auto text-muted">
+            <SkipForward className="size-4" /> Überspringen <span className="kbd ml-1 hidden sm:inline-flex">S</span>
+          </Button>
+        )}
         {canContinue ? (
           <Button onClick={next} className="min-w-40 shadow-soft">
             Weiter <ArrowRight className="size-4" /> <span className="kbd ml-1 hidden border-white/30 bg-transparent text-inherit sm:inline-flex">↵</span>
@@ -352,6 +371,7 @@ function Summary({
   outcomes,
   xp,
   bestCombo,
+  skipped,
   base,
   subjectId,
   onRestart,
@@ -360,6 +380,7 @@ function Summary({
   outcomes: Outcome[];
   xp: number;
   bestCombo: number;
+  skipped: number;
   base: string;
   subjectId: string;
   onRestart: () => void;
@@ -377,11 +398,24 @@ function Summary({
     <div className="mx-auto max-w-xl py-6 text-center">
       <p className="eyebrow">Session abgeschlossen</p>
       <h1 className="display text-4xl sm:text-5xl mt-2">
-        {acc >= 0.9 ? "Hervorragend!" : acc >= 0.7 ? "Stark gemacht." : acc >= 0.5 ? "Guter Fortschritt." : "Dranbleiben!"}
+        {!outcomes.length
+          ? "Session beendet"
+          : acc >= 0.9
+            ? "Hervorragend!"
+            : acc >= 0.7
+              ? "Stark gemacht."
+              : acc >= 0.5
+                ? "Guter Fortschritt."
+                : "Dranbleiben!"}
       </h1>
+      {skipped > 0 && (
+        <p className="mt-2 text-sm text-muted">
+          {skipped} {skipped === 1 ? "Frage" : "Fragen"} übersprungen – sie kommen in einer späteren Session wieder.
+        </p>
+      )}
       <div className="mt-8 grid grid-cols-3 gap-3">
         {[
-          ["Treffer", pct(acc)],
+          ["Treffer", outcomes.length ? pct(acc) : "–"],
           ["XP", `+${xp}`],
           ["Beste Combo", String(bestCombo)],
         ].map(([label, value]) => (

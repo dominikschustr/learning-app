@@ -1,6 +1,6 @@
 "use client";
 
-import { Bookmark, Check, RotateCcw, Undo2 } from "lucide-react";
+import { Bookmark, Check, RotateCcw, SkipForward, Undo2 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
@@ -73,6 +73,7 @@ function Deck({
   const [flipped, setFlipped] = useState(false);
   const [unknown, setUnknown] = useState<Card[]>([]);
   const [xp, setXp] = useState(0);
+  const [skipped, setSkipped] = useState(0);
 
   const card = deck[index];
   const done = index >= deck.length;
@@ -91,10 +92,19 @@ function Deck({
     [card, flipped, reviewCard, subject.id],
   );
 
+  /** Karte auslassen, ohne sie zu bewerten. */
+  const skip = useCallback(() => {
+    if (!card) return;
+    setSkipped((n) => n + 1);
+    setFlipped(false);
+    setIndex((i) => i + 1);
+  }, [card]);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       if (e.key === "m" && card) useApp.getState().toggleMark(markKey("c", subject.id, card.id));
+      else if (e.key === "s") skip();
       else if (e.key === " " || e.key === "Enter") {
         e.preventDefault();
         setFlipped((f) => !f);
@@ -103,12 +113,13 @@ function Deck({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [rate, card, subject.id]);
+  }, [rate, card, subject.id, skip]);
 
-  const knownCount = deck.length - unknown.length;
+  const rated = deck.length - skipped;
+  const knownCount = rated - unknown.length;
   useEffect(() => {
-    if (done && deck.length && knownCount / deck.length >= 0.8) celebrate();
-  }, [done, deck.length, knownCount]);
+    if (done && rated && knownCount / rated >= 0.8) celebrate();
+  }, [done, rated, knownCount]);
 
   if (!deck.length) {
     return (
@@ -132,7 +143,7 @@ function Deck({
       <div className="mx-auto max-w-lg py-10 text-center">
         <p className="eyebrow">Stapel durch</p>
         <h1 className="display text-4xl sm:text-5xl mt-2">
-          {knownCount} von {deck.length} gewusst
+          {knownCount} von {rated} gewusst
         </h1>
         <p className="mt-3 text-muted">+{xp} XP · Karten, die du nicht wusstest, kommen bald wieder.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-2">
@@ -211,6 +222,11 @@ function Deck({
         </Button>
         <Button variant="secondary" disabled={!flipped} onClick={() => rate(true)} className="h-14 text-base">
           <Check className="size-4 text-good" /> Gewusst <span className="kbd hidden sm:inline-flex">2</span>
+        </Button>
+      </div>
+      <div className="mt-3 flex justify-center">
+        <Button variant="ghost" onClick={skip} className="text-muted">
+          <SkipForward className="size-4" /> Überspringen <span className="kbd ml-1 hidden sm:inline-flex">S</span>
         </Button>
       </div>
     </div>
