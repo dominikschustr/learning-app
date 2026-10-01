@@ -17,6 +17,7 @@ function base(deviceId: string, patch: Partial<SyncData> = {}): SyncData {
     achievements: {},
     exams: [],
     blitzBest: {},
+    marks: {},
     ...patch,
   };
 }
@@ -74,6 +75,16 @@ describe("mergeSync", () => {
     const b = base("b", { dailyGoal: 50, dailyGoalAt: 20 });
     expect(mergeSync(a, b).dailyGoal).toBe(50);
     expect(mergeSync(b, a).dailyGoal).toBe(50);
+  });
+
+  it("übernimmt Lesezeichen, auch das spätere Entfernen auf einem anderen Gerät", () => {
+    const a = base("a", { marks: { "q:mc:x": { on: true, at: 10 }, "q:mc:y": { on: true, at: 10 } } });
+    const b = base("b", { marks: { "q:mc:x": { on: false, at: 20 }, "c:mc:k": { on: true, at: 5 } } });
+    for (const m of [mergeSync(a, b).marks, mergeSync(b, a).marks]) {
+      expect(m["q:mc:x"].on).toBe(false);
+      expect(m["q:mc:y"].on).toBe(true);
+      expect(m["c:mc:k"].on).toBe(true);
+    }
   });
 });
 

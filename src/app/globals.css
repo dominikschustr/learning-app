@@ -79,43 +79,46 @@ body {
   background: color-mix(in srgb, var(--accent) 22%, transparent);
 }
 
-.card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 1.25rem;
-  box-shadow: var(--shadow);
-}
+/* In der components-Ebene, damit Tailwind-Utilities (z. B. hidden, border-…) sie überschreiben können. */
+@layer components {
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow);
+  }
 
-/* Einheitliche Typo: eine Schrift (Inter), Überschriften & Kennzahlen fett und eng. */
-.display {
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  text-wrap: balance;
-}
+  /* Einheitliche Typo: eine Schrift (Inter), Überschriften & Kennzahlen fett und eng. */
+  .display {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    text-wrap: balance;
+  }
 
-.eyebrow {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
+  .eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
 
-.kbd {
-  display: inline-flex;
-  min-width: 1.35rem;
-  height: 1.35rem;
-  align-items: center;
-  justify-content: center;
-  padding: 0 0.3rem;
-  border: 1px solid var(--line-strong);
-  border-bottom-width: 2px;
-  border-radius: 0.35rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--muted);
-  background: var(--surface);
+  .kbd {
+    display: inline-flex;
+    min-width: 1.35rem;
+    height: 1.35rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.3rem;
+    border: 1px solid var(--line-strong);
+    border-bottom-width: 2px;
+    border-radius: 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--surface);
+  }
 }
 
 .flip-scene {

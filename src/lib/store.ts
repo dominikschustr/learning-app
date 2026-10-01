@@ -4,7 +4,7 @@ import { useSyncExternalStore } from "react";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { ACHIEVEMENTS, levelInfo, type AchievementDef } from "./gamification";
-import { mergeSync, totals, type Counter, type SyncData } from "./merge";
+import { mergeSync, totals, type Counter, type Mark, type SyncData } from "./merge";
 import { review, type ItemState } from "./srs";
 import { addDays, dayKey, itemKey, randomId } from "./utils";
 
@@ -69,6 +69,8 @@ type Data = {
   exams: ExamRecord[];
   activeExam: ActiveExam | null;
   blitzBest: Record<string, number>;
+  /** Lesezeichen für Fragen (q:…) und Karteikarten (c:…), siehe markKey */
+  marks: Record<string, Mark>;
 };
 
 export type AnswerEvent = { xp: number; levelUp: number | null; achievements: AchievementDef[]; goalReached: boolean };
@@ -93,6 +95,7 @@ type Actions = {
   discardExam(): void;
   setBlitzBest(subjectId: string, score: number): void;
   setDailyGoal(goal: number): void;
+  toggleMark(key: string): void;
   /** Übernimmt einen zusammengeführten Stand aus der Synchronisation. */
   applySync(data: SyncData<ExamRecord>): void;
   importData(data: unknown): boolean;
@@ -116,6 +119,7 @@ const initial: Data = {
   exams: [],
   activeExam: null,
   blitzBest: {},
+  marks: {},
 };
 
 function nextStreak(streak: Streak, now: number): Streak {
@@ -188,10 +192,25 @@ export function syncSnapshot(s: Data): SyncData<ExamRecord> {
     achievements: s.achievements,
     exams: s.exams,
     blitzBest: s.blitzBest,
+    marks: s.marks,
   };
 }
 
 export { mergeSync };
+
+export type MarkKind = "q" | "c";
+
+export function markKey(kind: MarkKind, subjectId: string, id: string): string {
+  return `${kind}:${itemKey(subjectId, id)}`;
+}
+
+/** ids der markierten Fragen bzw. Karten eines Fachs */
+export function markedIds(marks: Record<string, Mark>, kind: MarkKind, subjectId: string): Set<string> {
+  const prefix = `${kind}:${itemKey(subjectId, "")}`;
+  const out = new Set<string>();
+  for (const [k, m] of Object.entries(marks)) if (m.on && k.startsWith(prefix)) out.add(k.slice(prefix.length));
+  return out;
+}
 
 export function examScore(e: Pick<ExamRecord, "questionIds" | "results" | "partial">) {
   const total = e.questionIds.length || 1;
@@ -296,6 +315,11 @@ export const useApp = create<AppState>()(
 
         setDailyGoal(goal) {
           set({ dailyGoal: Math.max(5, Math.min(200, Math.round(goal))), dailyGoalAt: Date.now() });
+        },
+
+        toggleMark(key) {
+          const marks = get().marks;
+          set({ marks: { ...marks, [key]: { on: !marks[key]?.on, at: Date.now() } } });
         },
 
         importData(data) {

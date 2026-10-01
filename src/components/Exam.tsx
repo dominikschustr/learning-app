@@ -24,6 +24,7 @@ import { SHORT_PASS, gradeMC } from "@/lib/scoring";
 import { examScore, useApp, useHydrated, type ActiveExam, type AnswerEvent, type ExamRecord, type ShortGrade } from "@/lib/store";
 import { announceAll, celebrate } from "@/lib/toast";
 import { cn, formatClock, pct } from "@/lib/utils";
+import { MarkButton } from "./MarkButton";
 import { MCView, ShortInput, ShortResult, TFView } from "./Questions";
 import { Bar, Button, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
@@ -88,7 +89,7 @@ function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lectur
           pro Frage. Bei Zeitablauf wird automatisch abgegeben.
         </li>
         <li className="flex gap-2">
-          <Flag className="mt-0.5 size-4 shrink-0 text-muted" /> Unsichere Fragen markieren und später zurückspringen.
+          <Flag className="mt-0.5 size-4 shrink-0 text-muted" /> Unsichere Fragen mit der Fahne kennzeichnen und vor der Abgabe zurückspringen.
         </li>
         <li className="flex gap-2">
           <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-muted" /> Multiple Choice zählt nur bei exakt richtiger
@@ -586,7 +587,8 @@ function ReviewItem({
 
   return (
     <div className="card overflow-hidden">
-      <button type="button" onClick={() => setOpen((o) => !o)} className="flex w-full items-start gap-3 p-4 text-left">
+      <div className="flex items-start pr-3">
+      <button type="button" onClick={() => setOpen((o) => !o)} className="flex min-w-0 flex-1 items-start gap-3 p-4 text-left">
         {r === null ? (
           <span className="mt-0.5 size-5 shrink-0 animate-pulse rounded-full bg-surface-2" />
         ) : r ? (
@@ -599,6 +601,8 @@ function ReviewItem({
           <span className="font-medium">{q.type === "tf" ? q.statement : q.prompt}</span>
         </span>
       </button>
+      <MarkButton kind="q" subjectId={record.subjectId} id={q.id} label={false} className="mt-3" />
+      </div>
       {open && (
         <div className="border-t border-line p-4">
           {q.type === "mc" && (

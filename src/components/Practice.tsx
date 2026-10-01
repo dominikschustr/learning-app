@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, PartyPopper, RotateCcw } from "lucide-react";
+import { ArrowRight, Bookmark, PartyPopper, RotateCcw } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
@@ -9,10 +9,11 @@ import { gradeShortAnswer, selfGrade } from "@/lib/grade";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
 import type { Question, SubjectContent } from "@/lib/schema";
 import { SHORT_PASS, gradeMC, gradeTF, type MCResult } from "@/lib/scoring";
-import { useApp, useHydrated, type ShortGrade } from "@/lib/store";
+import { markKey, markedIds, useApp, useHydrated, type ShortGrade } from "@/lib/store";
 import { announce, celebrate } from "@/lib/toast";
 import { refreshNow } from "@/lib/useNow";
 import { pct } from "@/lib/utils";
+import { MarkButton } from "./MarkButton";
 import { Explanation, MCView, ShortInput, ShortResult, TFView } from "./Questions";
 import { SessionBar, XpFloat } from "./SessionBar";
 import { Button, ButtonLink, Skeleton } from "./ui";
@@ -20,7 +21,7 @@ import { Button, ButtonLink, Skeleton } from "./ui";
 type Entry = { q: Question; order: string[]; retry: boolean };
 type Outcome = { q: Question; correct: boolean };
 
-const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture"];
+const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked"];
 
 export function Practice({ content }: { content: SubjectContent }) {
   const hydrated = useHydrated();
@@ -70,6 +71,7 @@ function Session({
         items: useApp.getState().items,
         now: Date.now(),
         lecture,
+        marked: markedIds(useApp.getState().marks, "q", subject.id),
       });
     return qs.map((q) => ({ q, order: optionOrder(q), retry: false }));
   });
@@ -175,7 +177,12 @@ function Session({
         else void check();
         return;
       }
-      if (e.metaKey || e.ctrlKey || e.altKey || inText || revealed) return;
+      if (e.metaKey || e.ctrlKey || e.altKey || inText) return;
+      if (e.key === "m") {
+        useApp.getState().toggleMark(markKey("q", subject.id, entry.q.id));
+        return;
+      }
+      if (revealed) return;
       const q = entry.q;
       if (q.type === "mc") {
         const n = Number(e.key);
@@ -190,13 +197,33 @@ function Session({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [entry, revealed, canContinue, next, check, pickTf]);
+  }, [entry, revealed, canContinue, next, check, pickTf, subject.id]);
 
   if (retryMode) {
     return <Session content={content} mode={mode} onRestart={onRestart} only={retryMode} />;
   }
 
   if (!queue.length) {
+    if (mode === "marked") {
+      return (
+        <div className="mx-auto max-w-lg py-16 text-center">
+          <Bookmark className="mx-auto size-12 text-accent" />
+          <h1 className="display text-4xl sm:text-5xl mt-4">Nichts markiert</h1>
+          <p className="mt-2 text-muted">
+            Tippe beim Üben oder in der Test-Auswertung auf „Markieren“ (oder drücke M) – die Frage landet dann hier
+            zum gezielten Wiederholen.
+          </p>
+          <div className="mt-6 flex justify-center gap-2">
+            <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>
+              Jetzt üben
+            </ButtonLink>
+            <ButtonLink variant="secondary" href={home}>
+              Zurück
+            </ButtonLink>
+          </div>
+        </div>
+      );
+    }
     return (
       <div className="mx-auto max-w-lg py-16 text-center">
         <PartyPopper className="mx-auto size-12 text-good" />
@@ -227,6 +254,7 @@ function Session({
         xp={sessionXp}
         bestCombo={bestCombo}
         base={home}
+        subjectId={subject.id}
         onRestart={onRestart}
         onRetry={(qs) => setRetryMode(qs)}
       />
@@ -240,12 +268,15 @@ function Session({
     <div className="mx-auto max-w-2xl">
       <SessionBar exitHref={home} progress={index / queue.length} combo={combo} xp={sessionXp} color={subject.color} />
 
-      <div className="mb-4 flex items-center justify-between text-xs text-muted">
-        <span>
+      <div className="mb-4 flex items-center justify-between gap-3 text-xs text-muted">
+        <span className="min-w-0">
           {only ? "Fehler wiederholen" : MODE_TITLE[mode]} · {lectureTitle}
         </span>
-        <span className="tabular-nums">
-          {index + 1} / {queue.length}
+        <span className="flex shrink-0 items-center gap-2">
+          <span className="tabular-nums">
+            {index + 1} / {queue.length}
+          </span>
+          <MarkButton kind="q" subjectId={subject.id} id={q.id} shortcut="M" />
         </span>
       </div>
 
@@ -322,6 +353,7 @@ function Summary({
   xp,
   bestCombo,
   base,
+  subjectId,
   onRestart,
   onRetry,
 }: {
@@ -329,6 +361,7 @@ function Summary({
   xp: number;
   bestCombo: number;
   base: string;
+  subjectId: string;
   onRestart: () => void;
   onRetry: (qs: Question[]) => void;
 }) {
@@ -362,11 +395,13 @@ function Summary({
       {mistakes.length > 0 && (
         <div className="card mt-6 p-5 text-left">
           <p className="font-semibold">Diese Fragen solltest du dir nochmal ansehen</p>
+          <p className="text-sm text-muted">Mit dem Lesezeichen merkst du sie dir für später vor.</p>
           <ul className="mt-3 space-y-2 text-sm text-ink-2">
             {mistakes.map((q) => (
-              <li key={q.id} className="flex gap-2">
-                <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-bad" />
-                {q.type === "tf" ? q.statement : q.prompt}
+              <li key={q.id} className="flex items-start gap-2">
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-bad" />
+                <span className="flex-1 pt-1">{q.type === "tf" ? q.statement : q.prompt}</span>
+                <MarkButton kind="q" subjectId={subjectId} id={q.id} label={false} />
               </li>
             ))}
           </ul>

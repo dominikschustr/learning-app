@@ -124,6 +124,7 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 | **Kapiteltest** | Test nur aus einem Kapitel, ohne Feedback bis zur Abgabe; ≥ 80 % schaltet „Gemeistert“ frei |
 | **Abschlusstest (Midterm)** | 1 + 13 + 6 Fragen aus allen Kapiteln, 42-Min-Countdown, markieren & springen, Auswertung pro Kapitel |
 | **Blitzrunde** | 60 Sekunden True/False am Stück, Combo-Multiplikator |
+| **Markierte Fragen / Karten** | Per Lesezeichen (Button oder Taste M) gemerkte Fragen und Karteikarten gezielt wiederholen – pro Fach oder Kapitel; wird zwischen Geräten synchronisiert |
 
 ## 6. Spaced Repetition & Score
 

@@ -3,6 +3,7 @@
 import {
   ArrowLeft,
   ArrowRight,
+  Bookmark,
   Brain,
   Info,
   Layers,
@@ -16,7 +17,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
-import { chapterBests, examScore, useApp, useHydrated } from "@/lib/store";
+import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { LevelBadge } from "./ChapterView";
 import { useNow } from "@/lib/useNow";
 import { alpha, pct } from "@/lib/utils";
@@ -56,6 +57,10 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const active = s.activeExam?.subjectId === subject.id ? s.activeExam : null;
   const weakest = [...st.lectures].filter((l) => l.total).sort((a, b) => a.combined - b.combined)[0];
   const mastered = st.lectures.filter((l) => l.level.level === 5).length;
+  const qIds = new Set(summary.items.map((i) => i.id));
+  const cIds = new Set(summary.cards.map((c) => c.id));
+  const markedQ = [...markedIds(s.marks, "q", subject.id)].filter((id) => qIds.has(id)).length;
+  const markedC = [...markedIds(s.marks, "c", subject.id)].filter((id) => cIds.has(id)).length;
 
   const modes = [
     {
@@ -85,6 +90,20 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       title: "Blitzrunde",
       text: "60 Sek. True/False",
       meta: s.blitzBest[subject.id] ? `Rekord ${s.blitzBest[subject.id]}` : "noch kein Rekord",
+    },
+    {
+      href: `${base}/practice?mode=marked`,
+      icon: Bookmark,
+      title: "Markierte Fragen",
+      text: "Deine Lesezeichen gezielt üben",
+      meta: markedQ ? `${markedQ} markiert` : "noch keine markiert",
+    },
+    {
+      href: `${base}/cards?marked=1`,
+      icon: Bookmark,
+      title: "Markierte Karten",
+      text: "Gemerkte Karteikarten wiederholen",
+      meta: markedC ? `${markedC} markiert` : "noch keine markiert",
     },
   ];
 
@@ -243,7 +262,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
 
       <section>
         <h2 className="display mb-3 text-2xl">Freies Training</h2>
-        <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
           {modes.map((m, i) => (
             <motion.div key={m.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
               <Link href={m.href} className="card group flex h-full flex-col p-4 transition hover:-translate-y-0.5">

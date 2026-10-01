@@ -1,12 +1,12 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, FileText, Layers, ScrollText, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Bookmark, FileText, Layers, ScrollText, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { chapterFormat } from "@/lib/exam";
 import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
 import type { QuestionType, SubjectSummary } from "@/lib/schema";
-import { chapterBests, examScore, useApp, useHydrated } from "@/lib/store";
+import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { useNow } from "@/lib/useNow";
 import { alpha, cn, pct } from "@/lib/utils";
 import { Bar, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
@@ -53,6 +53,10 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const byType = (t: QuestionType) => summary.items.filter((i) => i.lecture === chapterId && i.type === t).length;
 
   const hasText = summary.texts.includes(chapterId);
+  const qMarks = markedIds(s.marks, "q", subject.id);
+  const cMarks = markedIds(s.marks, "c", subject.id);
+  const markedQ = summary.items.filter((i) => i.lecture === chapterId && qMarks.has(i.id)).length;
+  const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
   const actions = [
     ...(hasText
       ? [
@@ -168,6 +172,36 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           </motion.div>
         ))}
       </section>
+
+      {(markedQ > 0 || markedC > 0) && (
+        <section className="card flex flex-wrap items-center gap-3 p-4">
+          <span
+            className="grid size-10 shrink-0 place-items-center rounded-xl bg-accent/10 text-accent"
+          >
+            <Bookmark className="size-5" fill="currentColor" />
+          </span>
+          <span className="flex-1 text-sm">
+            <span className="block font-semibold">Deine Lesezeichen in diesem Kapitel</span>
+            <span className="text-muted">
+              {[markedQ && `${markedQ} ${markedQ === 1 ? "Frage" : "Fragen"}`, markedC && `${markedC} ${markedC === 1 ? "Karte" : "Karten"}`]
+                .filter(Boolean)
+                .join(" · ")}
+            </span>
+          </span>
+          <span className="flex flex-wrap gap-2">
+            {markedQ > 0 && (
+              <ButtonLink variant="secondary" href={`${base}/practice?mode=marked&lecture=${chapterId}`}>
+                Fragen üben
+              </ButtonLink>
+            )}
+            {markedC > 0 && (
+              <ButtonLink variant="secondary" href={`${base}/cards?marked=1&lecture=${chapterId}`}>
+                Karten wiederholen
+              </ButtonLink>
+            )}
+          </span>
+        </section>
+      )}
 
       {tests.length > 0 && (
         <section>

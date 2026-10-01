@@ -41,7 +41,7 @@ export function Header() {
             title={`${lvl.into} / ${lvl.needed} XP bis Level ${lvl.level + 1}`}
             className="relative inline-flex h-8 items-center gap-2 overflow-hidden rounded-full border border-line bg-surface pl-2.5 pr-3 text-sm font-semibold"
           >
-            <span className="text-accent">Lv {lvl.level}</span>
+            <span className="whitespace-nowrap text-accent">Lv {lvl.level}</span>
             <span className="hidden text-muted sm:inline">{xp} XP</span>
             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-surface-2">
               <span className="block h-full bg-accent" style={{ width: `${lvl.progress * 100}%` }} />

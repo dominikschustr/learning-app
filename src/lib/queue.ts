@@ -2,13 +2,14 @@ import type { Question } from "./schema";
 import { isDue, weakness, type ItemState } from "./srs";
 import { itemKey, shuffle } from "./utils";
 
-export type PracticeMode = "smart" | "due" | "weak" | "lecture";
+export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked";
 
 export const MODE_TITLE: Record<PracticeMode, string> = {
   smart: "Empfohlene Session",
   due: "Wiederholung",
   weak: "Schwächen-Training",
   lecture: "Vorlesung üben",
+  marked: "Markierte Fragen",
 };
 
 const SESSION_SIZE = 12;
@@ -21,10 +22,12 @@ export function buildQueue(opts: {
   items: Record<string, ItemState>;
   now: number;
   lecture?: string;
+  /** ids der markierten Fragen (für mode "marked") */
+  marked?: Set<string>;
 }): Question[] {
   const { mode, subjectId, items, now } = opts;
   const st = (q: Question) => items[itemKey(subjectId, q.id)];
-  const questions = mode === "lecture" ? opts.questions.filter((q) => q.lecture === opts.lecture) : opts.questions;
+  const questions = opts.lecture ? opts.questions.filter((q) => q.lecture === opts.lecture) : opts.questions;
 
   const due = questions.filter((q) => isDue(st(q), now)).sort((a, b) => weakness(st(b)) - weakness(st(a)));
   const unseen = shuffle(questions.filter((q) => !st(q)));
@@ -37,6 +40,8 @@ export function buildQueue(opts: {
   switch (mode) {
     case "due":
       return due.slice(0, 30);
+    case "marked":
+      return shuffle(questions.filter((q) => opts.marked?.has(q.id)));
     case "weak":
       return weak.slice(0, SESSION_SIZE);
     case "lecture": {

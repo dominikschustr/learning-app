@@ -7,9 +7,13 @@ import { addDays, dayKey } from "./utils";
  * - XP und Aktivität zählt jedes Gerät separat (counters), die Summe ist der Gesamtwert.
  * - Pro Frage/Karte gewinnt der zuletzt geübte Stand.
  * - Tests und Achievements werden vereinigt, Bestwerte als Maximum übernommen.
+ * - Lesezeichen: pro Frage/Karte gewinnt das zuletzt gesetzte oder entfernte.
  */
 
 export type Counter = { xp: number; activity: Record<string, number> };
+
+/** Lesezeichen; on: false bleibt stehen, damit das Entfernen auf andere Geräte übertragen wird. */
+export type Mark = { on: boolean; at: number };
 
 export type ExamLike = { id: string; results: Record<string, boolean | null> };
 
@@ -27,6 +31,7 @@ export type SyncData<E extends ExamLike = ExamLike> = {
   achievements: Record<string, number>;
   exams: E[];
   blitzBest: Record<string, number>;
+  marks: Record<string, Mark>;
 };
 
 function mergeRecord<T>(a: Record<string, T>, b: Record<string, T>, pick: (x: T, y: T) => T): Record<string, T> {
@@ -95,5 +100,6 @@ export function mergeSync<E extends ExamLike>(local: SyncData<E>, remote: SyncDa
     achievements: mergeRecord(local.achievements ?? {}, remote.achievements ?? {}, Math.min),
     exams: [...exams.values()].sort((a, b) => a.id.localeCompare(b.id)),
     blitzBest: mergeRecord(local.blitzBest ?? {}, remote.blitzBest ?? {}, Math.max),
+    marks: mergeRecord(local.marks ?? {}, remote.marks ?? {}, (x, y) => (y.at > x.at ? y : x)),
   };
 }

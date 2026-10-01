@@ -153,7 +153,8 @@ export function startAutoSync(): () => void {
   const unsubApp = useApp.subscribe((s, prev) => {
     if (applying || !useSync.getState().key) return;
     if (s.xp !== prev.xp || s.items !== prev.items || s.cards !== prev.cards || s.exams !== prev.exams ||
-      s.achievements !== prev.achievements || s.dailyGoal !== prev.dailyGoal || s.blitzBest !== prev.blitzBest) {
+      s.achievements !== prev.achievements || s.dailyGoal !== prev.dailyGoal || s.blitzBest !== prev.blitzBest ||
+      s.marks !== prev.marks) {
       schedule(4000);
     }
   });
