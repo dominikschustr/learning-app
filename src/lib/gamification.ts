@@ -48,22 +48,28 @@ export function titleFor(level: number): string {
 export type AchievementDef = {
   id: string;
   title: string;
+  /** Was erreicht wurde (Toast, freigeschaltete Kachel) */
   description: string;
+  /** Wie man es erreicht (gesperrte Kachel) */
+  howTo: string;
   icon: string;
+  /** Zielwert für die Fortschrittsanzeige; unit "%" = Prozentwert */
+  target: number;
+  unit?: "%";
 };
 
 export const ACHIEVEMENTS: AchievementDef[] = [
-  { id: "first-answer", title: "Erste Schritte", description: "Erste Frage beantwortet", icon: "footprints" },
-  { id: "combo-5", title: "Im Flow", description: "5 richtige Antworten in Folge", icon: "waves" },
-  { id: "combo-10", title: "Unaufhaltsam", description: "10 richtige Antworten in Folge", icon: "zap" },
-  { id: "daily-goal", title: "Tagessoll", description: "Tagesziel erreicht", icon: "target" },
-  { id: "streak-3", title: "Dranbleiber", description: "3 Tage Streak", icon: "flame" },
-  { id: "streak-7", title: "Wochenwerk", description: "7 Tage Streak", icon: "calendar-check" },
-  { id: "cards-50", title: "Kartenstapler", description: "50 Karteikarten gelernt", icon: "layers" },
-  { id: "mastered-25", title: "Sitzt!", description: "25 Fragen in Box 4 oder höher", icon: "brain" },
-  { id: "chapter-test", title: "Kapitel geknackt", description: "Kapiteltest mit mindestens 80 %", icon: "file-check" },
-  { id: "exam-1", title: "Generalprobe", description: "Ersten Abschlusstest abgeschlossen", icon: "file-check" },
-  { id: "exam-80", title: "Prüfungsreif", description: "Abschlusstest mit mindestens 80 %", icon: "trophy" },
-  { id: "blitz-15", title: "Blitzmerker", description: "15 richtige in einer Blitzrunde", icon: "timer" },
-  { id: "level-5", title: "Aufsteiger", description: "Level 5 erreicht", icon: "trending-up" },
+  { id: "first-answer", title: "Erste Schritte", description: "Erste Frage beantwortet", howTo: "Beantworte deine erste Frage oder Karteikarte.", icon: "footprints", target: 1 },
+  { id: "combo-5", title: "Im Flow", description: "5 richtige Antworten in Folge", howTo: "Beantworte beim Üben 5 Fragen hintereinander richtig.", icon: "waves", target: 5 },
+  { id: "combo-10", title: "Unaufhaltsam", description: "10 richtige Antworten in Folge", howTo: "Beantworte beim Üben 10 Fragen hintereinander richtig.", icon: "zap", target: 10 },
+  { id: "daily-goal", title: "Tagessoll", description: "Tagesziel erreicht", howTo: "Schaffe an einem Tag dein Tagesziel an Fragen und Karten.", icon: "target", target: 1 },
+  { id: "streak-3", title: "Dranbleiber", description: "3 Tage Streak", howTo: "Lerne an 3 Tagen hintereinander.", icon: "flame", target: 3 },
+  { id: "streak-7", title: "Wochenwerk", description: "7 Tage Streak", howTo: "Lerne an 7 Tagen hintereinander.", icon: "calendar-check", target: 7 },
+  { id: "cards-50", title: "Kartenstapler", description: "50 Karteikarten gelernt", howTo: "Bewerte insgesamt 50 Karteikarten mit „Gewusst“.", icon: "layers", target: 50 },
+  { id: "mastered-25", title: "Sitzt!", description: "25 Fragen sicher gelernt", howTo: "Beantworte 25 Fragen so oft über mehrere Tage richtig, dass sie als sicher gelten (Box 4+).", icon: "brain", target: 25 },
+  { id: "chapter-test", title: "Kapitel geknackt", description: "Kapiteltest mit mindestens 80 %", howTo: "Schaffe in einem Kapiteltest mindestens 80 %.", icon: "file-check", target: 80, unit: "%" },
+  { id: "exam-1", title: "Generalprobe", description: "Ersten Abschlusstest abgeschlossen", howTo: "Schließe einen Abschlusstest über alle Kapitel ab.", icon: "file-check", target: 1 },
+  { id: "exam-80", title: "Prüfungsreif", description: "Abschlusstest mit mindestens 80 %", howTo: "Schaffe im Abschlusstest mindestens 80 %.", icon: "trophy", target: 80, unit: "%" },
+  { id: "blitz-15", title: "Blitzmerker", description: "15 richtige in einer Blitzrunde", howTo: "Beantworte in einer Blitzrunde (60 Sek.) 15 Aussagen richtig.", icon: "timer", target: 15 },
+  { id: "level-5", title: "Aufsteiger", description: "Level 5 erreicht", howTo: "Sammle XP bis Level 5 – jede Antwort zählt.", icon: "trending-up", target: 5 },
 ];

@@ -1,14 +1,14 @@
 "use client";
 
-import { ArrowRight, Flame, Lock } from "lucide-react";
+import { ArrowRight, Check, Flame } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { ACHIEVEMENTS, levelInfo, titleFor } from "@/lib/gamification";
 import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
-import { useApp, useHydrated, visibleStreak } from "@/lib/store";
+import { achievementProgress, useApp, useHydrated, visibleStreak } from "@/lib/store";
 import { useNow } from "@/lib/useNow";
-import { alpha, dayKey } from "@/lib/utils";
+import { alpha, cn, dayKey } from "@/lib/utils";
 import { Heatmap } from "./Heatmap";
 import { Icon } from "./Icon";
 import { Bar, Chip, ProgressRing, Skeleton } from "./ui";
@@ -39,6 +39,8 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
   const s = useApp();
   const now = useNow();
   const today = s.activity[dayKey(now)] ?? 0;
+  const progress = achievementProgress(s, now);
+  const unlockedCount = ACHIEVEMENTS.filter((a) => s.achievements[a.id]).length;
   const lvl = levelInfo(s.xp);
   const streak = visibleStreak(s.streak, now);
 
@@ -158,7 +160,7 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
         </div>
       </section>
 
-      <section className="grid gap-4 lg:grid-cols-[1fr_1.1fr]">
+      <section className="grid items-start gap-4 lg:grid-cols-[auto_1fr]">
         <div className="card p-6">
           <h2 className="display text-2xl">Aktivität</h2>
           <p className="mb-4 text-sm text-muted">Beantwortete Fragen und Karten pro Tag</p>
@@ -167,30 +169,55 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
         <div className="card p-6">
           <div className="flex items-baseline justify-between">
             <h2 className="display text-2xl">Achievements</h2>
-            <span className="text-sm text-muted">
-              {Object.keys(s.achievements).length} / {ACHIEVEMENTS.length}
+            <span className="text-sm text-muted tabular-nums">
+              {unlockedCount} / {ACHIEVEMENTS.length}
             </span>
           </div>
-          <div className="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4">
+          <p className="text-sm text-muted">So schaltest du sie frei – mit deinem aktuellen Stand.</p>
+          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
             {ACHIEVEMENTS.map((a) => {
-              const got = !!s.achievements[a.id];
+              const at = s.achievements[a.id];
+              const value = a.id === "daily-goal" ? today : (progress[a.id] ?? 0);
+              const target = a.id === "daily-goal" ? s.dailyGoal : a.target;
               return (
-                <div
+                <li
                   key={a.id}
-                  title={`${a.title}: ${a.description}`}
-                  className={
-                    "flex flex-col items-center gap-1.5 rounded-xl border p-2.5 text-center " +
-                    (got ? "border-warn/30 bg-warn-soft" : "border-line opacity-55")
-                  }
+                  className={cn(
+                    "flex gap-3 rounded-xl border p-3",
+                    at ? "border-warn/30 bg-warn-soft" : "border-line",
+                  )}
                 >
-                  <span className={"grid size-9 place-items-center rounded-full " + (got ? "bg-surface text-warn" : "bg-surface-2 text-muted")}>
-                    {got ? <Icon name={a.icon} className="size-4" /> : <Lock className="size-3.5" />}
+                  <span
+                    className={cn(
+                      "grid size-9 shrink-0 place-items-center rounded-full",
+                      at ? "bg-surface text-warn" : "bg-surface-2 text-muted",
+                    )}
+                  >
+                    <Icon name={a.icon} className="size-4" />
                   </span>
-                  <span className="text-[11px] font-semibold leading-tight">{a.title}</span>
-                </div>
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-baseline justify-between gap-2">
+                      <span className="text-sm font-semibold">{a.title}</span>
+                      {at ? (
+                        <Check className="size-4 shrink-0 text-warn" />
+                      ) : (
+                        <span className="shrink-0 text-xs font-semibold tabular-nums text-muted">
+                          {Math.min(value, target)} / {target}
+                          {a.unit === "%" && " %"}
+                        </span>
+                      )}
+                    </span>
+                    <span className="block text-xs leading-snug text-muted">
+                      {at
+                        ? `${a.description} · ${new Date(at).toLocaleDateString("de-DE", { day: "numeric", month: "short" })}`
+                        : a.howTo}
+                    </span>
+                    {!at && <Bar value={value / target} className="mt-2 h-1.5" />}
+                  </span>
+                </li>
               );
             })}
-          </div>
+          </ul>
         </div>
       </section>
     </div>

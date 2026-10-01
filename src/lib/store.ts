@@ -136,26 +136,31 @@ export function visibleStreak(streak: Streak, now: number): number {
   return alive ? streak.current : 0;
 }
 
-function unlocked(d: Data, now: number): string[] {
-  const totalAnswers = Object.values(d.activity).reduce((a, b) => a + b, 0);
-  const cardsKnown = Object.values(d.cards).reduce((a, c) => a + c.correct, 0);
-  const mastered = Object.values(d.items).filter((i) => i.box >= 4).length;
-  const checks: Record<string, boolean> = {
-    "first-answer": totalAnswers > 0,
-    "combo-5": d.bestCombo >= 5,
-    "combo-10": d.bestCombo >= 10,
-    "daily-goal": (d.activity[dayKey(now)] ?? 0) >= d.dailyGoal,
-    "streak-3": d.streak.best >= 3,
-    "streak-7": d.streak.best >= 7,
-    "cards-50": cardsKnown >= 50,
-    "mastered-25": mastered >= 25,
-    "exam-1": d.exams.some((e) => !e.lecture),
-    "exam-80": d.exams.some((e) => !e.lecture && examScore(e).score >= 0.8),
-    "chapter-test": d.exams.some((e) => e.lecture && examScore(e).score >= 0.8),
-    "blitz-15": Object.values(d.blitzBest).some((b) => b >= 15),
-    "level-5": levelInfo(d.xp).level >= 5,
+type AchievementInput = Pick<Data, "activity" | "cards" | "items" | "bestCombo" | "dailyGoal" | "streak" | "exams" | "blitzBest" | "xp">;
+
+/** Aktueller Stand je Achievement, vergleichbar mit dessen target. */
+export function achievementProgress(d: AchievementInput, now: number): Record<string, number> {
+  const best = (exams: ExamRecord[]) => Math.floor(exams.reduce((b, e) => Math.max(b, examScore(e).score), 0) * 100 + 1e-9);
+  return {
+    "first-answer": Object.values(d.activity).reduce((a, b) => a + b, 0),
+    "combo-5": d.bestCombo,
+    "combo-10": d.bestCombo,
+    "daily-goal": (d.activity[dayKey(now)] ?? 0) >= d.dailyGoal ? 1 : 0,
+    "streak-3": d.streak.best,
+    "streak-7": d.streak.best,
+    "cards-50": Object.values(d.cards).reduce((a, c) => a + c.correct, 0),
+    "mastered-25": Object.values(d.items).filter((i) => i.box >= 4).length,
+    "exam-1": d.exams.filter((e) => !e.lecture).length,
+    "exam-80": best(d.exams.filter((e) => !e.lecture)),
+    "chapter-test": best(d.exams.filter((e) => e.lecture)),
+    "blitz-15": Math.max(0, ...Object.values(d.blitzBest)),
+    "level-5": levelInfo(d.xp).level,
   };
-  return Object.keys(checks).filter((id) => checks[id] && !d.achievements[id]);
+}
+
+function unlocked(d: Data, now: number): string[] {
+  const p = achievementProgress(d, now);
+  return ACHIEVEMENTS.filter((a) => (p[a.id] ?? 0) >= a.target && !d.achievements[a.id]).map((a) => a.id);
 }
 
 /** Stellt sicher, dass es eine Geräte-id gibt und XP/Aktivität in den Gerätezählern stecken. */
