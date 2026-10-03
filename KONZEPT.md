@@ -181,6 +181,6 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 5. Midterm-Simulation mit Timer + Auswertung
 6. Kurzantwort-Bewertung via Gemini (+ Fallback)
 7. Gamification (XP, Level, Streak, Achievements, Blitzrunde)
-8. Echte Inhalte aus den Key Messages S1a–S3&4 (118 Fragen, 78 Karten) ✓
+8. Echte Inhalte aus den Key Messages S1a–S3&4 (118 Fragen, 78 Karten) ✓ – später auf 246 Fragen erweitert, die jede Key Message, Definition und jeden Denkanstoß abdecken
 9. Kapitel mit Level, Kapiteltests, Lernpfad mit Abschlusstest ✓
 10. Deployment auf Vercel

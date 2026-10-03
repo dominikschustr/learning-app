@@ -166,7 +166,6 @@
     "correct": ["a", "b", "c", "d"],
     "explanation": "Management control is neither limited to large nor to profit-seeking organisations; it is useful wherever performance objectives are pursued."
   },
-
   {
     "type": "tf",
     "id": "tf-s1a-01",
@@ -239,7 +238,6 @@
     "answer": false,
     "explanation": "That describes external reporting. Management reporting informs managers for management control purposes."
   },
-
   {
     "type": "short",
     "id": "sa-s1a-01",
@@ -281,6 +279,332 @@
       "Reliability",
       "Ease of implementation",
       "Principle of relevance (adapted to intended use)"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-12",
+    "lecture": "s1a",
+    "difficulty": 1,
+    "prompt": "Which statements describe a responsibility centre?",
+    "options": [
+      { "id": "a", "text": "An entity of the organisational structure placed under the authority of a manager" },
+      { "id": "b", "text": "The group's leaders have delegated more or less decision-making power to its manager" },
+      { "id": "c", "text": "Performance targets to be achieved have been set for its manager" },
+      { "id": "d", "text": "It must always be a separate legal entity" },
+      { "id": "e", "text": "It can be a department, a division or even the organisation itself" }
+    ],
+    "correct": ["a", "b", "c", "e"],
+    "explanation": "A responsibility centre is an organisational (not necessarily legal) unit under a manager with delegated decision power and performance targets – from a department up to the whole organisation."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-13",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "Which statements about a business segment are correct?",
+    "options": [
+      { "id": "a", "text": "It is a subdivision of an organisation's or a responsibility centre's overall activity, e.g. by product or type of market." },
+      { "id": "b", "text": "It can be evaluated with regard to management decisions such as developing or withdrawing from a business or allocating resources." },
+      { "id": "c", "text": "It is required to publish statutory financial statements." },
+      { "id": "d", "text": "Performance by business segment is mainly analysed with financial accounting." }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Business segments are activity subdivisions relevant for management decisions; they are analysed with management accounting. Publishing statutory accounts is a feature of legal entities."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-14",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "Which statements about a legal entity are correct?",
+    "options": [
+      { "id": "a", "text": "It is a legal subdivision within a group." },
+      { "id": "b", "text": "It is required to publish statutory financial statements (company accounts)." },
+      { "id": "c", "text": "Financial accounting is a useful measurement system for breaking performance down by legal entity." },
+      { "id": "d", "text": "It is defined as a subdivision of activity by product or market." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Legal entities publish company accounts; financial accounting breaks performance down by legal entity, whereas management accounting analyses business segments."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-15",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "Which statements correctly link performance dimensions, objectives, indicators and measurement systems?",
+    "options": [
+      { "id": "a", "text": "An objective is the operational translation of a performance dimension in the form of a type of result to be achieved." },
+      { "id": "b", "text": "An indicator is a measure chosen to monitor the achievement of an objective." },
+      { "id": "c", "text": "A measurement system is a set of indicators to assess performance for a given purpose." },
+      { "id": "d", "text": "Relevant performance dimensions are only defined after the indicators have been chosen." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "The logic runs from qualitatively defined performance dimensions to objectives, then to indicators that are combined into measurement systems – not the other way round."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-16",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "A sales indicator is calculated very precisely, but it does not capture the intention behind the objective of building long-term customer relationships. Which quality of the measurement is lacking?",
+    "options": [
+      { "id": "a", "text": "Validity with respect to the objective" },
+      { "id": "b", "text": "Reliability" },
+      { "id": "c", "text": "Ease of implementation" }
+    ],
+    "correct": ["a"],
+    "explanation": "Validity is the ability of a measurement to accurately reflect the phenomenon measured or the intention underlying the objective. Precision (limited margin of error) is reliability, which is given here."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-17",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "A measure can only be estimated with a large margin of error. Which quality of the measurement is weak?",
+    "options": [
+      { "id": "a", "text": "Reliability" },
+      { "id": "b", "text": "Validity with respect to the objective" },
+      { "id": "c", "text": "Ease of implementation" }
+    ],
+    "correct": ["a"],
+    "explanation": "Reliability is the extent to which a measurement can quantify a result with a limited margin of error."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-18",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "What does the principle of relevance imply for measurement systems?",
+    "options": [
+      { "id": "a", "text": "A measurement can serve multiple uses." },
+      { "id": "b", "text": "A measurement must be adapted to the specific use for which it is intended." },
+      { "id": "c", "text": "Measurement systems are diverse; their design varies with their purpose." },
+      { "id": "d", "text": "One standard set of indicators should be used for every purpose to ensure comparability." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Relevance means aligning measurements with their intended use, which is why measurement systems are diverse and tailor-made."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-19",
+    "lecture": "s1a",
+    "difficulty": 3,
+    "prompt": "Which statements about financial reporting and financial accounting are correct?",
+    "options": [
+      { "id": "a", "text": "Financial reporting is often equated with external reporting." },
+      { "id": "b", "text": "Financial accounting enables executives to manage the accounting and tax issues of the legal entities under their responsibility." },
+      { "id": "c", "text": "Financial accounting contributes to management reporting, albeit in a more marginal way." },
+      { "id": "d", "text": "Financial accounting is the primary measurement system for analysing performance by business segment." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Consolidated statements serve third parties, so financial reporting is equated with external reporting, but it also marginally supports management reporting. Segment analysis relies on management accounting."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-20",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "Which issues does management control raise specifically in large groups (\"to go further\")?",
+    "options": [
+      { "id": "a", "text": "Vertical coordination and strategic alignment between the operational control of units and global performance management" },
+      { "id": "b", "text": "Horizontal coordination between responsibility centres, e.g. internal transactions and transfer pricing" },
+      { "id": "c", "text": "Orienting managers' behaviour, e.g. through results control or cultural control" },
+      { "id": "d", "text": "Abolishing measurement systems because they demotivate managers" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Large groups face vertical coordination, horizontal coordination (transfer pricing) and behavioural issues – measurement systems matter a lot for motivation and evaluation, but are not abolished."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-21",
+    "lecture": "s1a",
+    "difficulty": 2,
+    "prompt": "After analysing a negative gap, a manager revises the action plan and the targets for the next period. Which function of the control cycle does this illustrate?",
+    "options": [
+      { "id": "a", "text": "Regulation" },
+      { "id": "b", "text": "Learning" },
+      { "id": "c", "text": "External reporting" }
+    ],
+    "correct": ["a"],
+    "explanation": "Regulation takes the results obtained into account to update action plans or targets. Learning would mean updating the qualitative performance dimensions behind the measurement system."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1a-22",
+    "lecture": "s1a",
+    "difficulty": 3,
+    "prompt": "Management realises that customer loyalty, not just sales volume, is a key dimension of performance and redesigns its indicators accordingly. Which function of the control cycle does this illustrate?",
+    "options": [
+      { "id": "a", "text": "Learning (learning loop)" },
+      { "id": "b", "text": "Regulation" },
+      { "id": "c", "text": "Management by exception" }
+    ],
+    "correct": ["a"],
+    "explanation": "The learning loop updates the qualitative dimensions of performance underlying the measurement system."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-10",
+    "lecture": "s1a",
+    "statement": "Transfer pricing and the monitoring of internal transactions are issues of horizontal coordination between responsibility centres.",
+    "answer": true,
+    "explanation": "Horizontal coordination between responsibility centres, including internal transactions and transfer pricing, is one of the most difficult issues in management control.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-11",
+    "lecture": "s1a",
+    "statement": "Vertical coordination and strategic alignment concern how the operational control process of units is articulated with a more strategic and global performance management process.",
+    "answer": true,
+    "explanation": "This is the 'to go further' issue of vertical coordination in large groups.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-12",
+    "lecture": "s1a",
+    "statement": "Measurement systems are standardised and can be transferred unchanged from one organisation to another.",
+    "answer": false,
+    "explanation": "Measurement systems are constructs built on the organisation's relevant performance dimensions – they are tailor-made for each organisation."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-13",
+    "lecture": "s1a",
+    "statement": "A business segment is a legal subdivision of a group that must publish statutory financial statements.",
+    "answer": false,
+    "explanation": "That is a legal entity. A business segment is a subdivision of activity (product, market type …) relevant for management decisions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-14",
+    "lecture": "s1a",
+    "statement": "Under management by exception, favourable gaps between objectives and results are the main trigger for special monitoring by managers.",
+    "answer": false,
+    "explanation": "Only unfavourable gaps lead to special monitoring."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-15",
+    "lecture": "s1a",
+    "statement": "Validity with respect to the objective is the extent to which a measurement can quantify a result with a limited margin of error.",
+    "answer": false,
+    "explanation": "That is reliability. Validity is the ability to accurately reflect the phenomenon measured or the intention underlying the objective."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-16",
+    "lecture": "s1a",
+    "statement": "Relevance means that a measurement must be adapted to the specific use for which it is intended.",
+    "answer": true,
+    "explanation": "Because a measurement can serve multiple uses, it must be aligned with its intended use."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-17",
+    "lecture": "s1a",
+    "statement": "Autonomous control is carried out by managers at higher hierarchical levels on behalf of the responsibility centres.",
+    "answer": false,
+    "explanation": "Autonomous control is carried out locally by the managers in charge of the responsibility centres; it differs from control by higher hierarchical levels."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-18",
+    "lecture": "s1a",
+    "statement": "In management control, \"control\" means only checking compliance after the fact.",
+    "answer": false,
+    "explanation": "The term 'control' has a broad meaning: management control is a dynamic performance management (steering) process."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-19",
+    "lecture": "s1a",
+    "statement": "Human stakes behind measurement systems are high in large groups because these systems play an important role in managers' motivation and evaluation.",
+    "answer": true,
+    "explanation": "That is why approaches to orient behaviour (results control, cultural control …) matter.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1a-20",
+    "lecture": "s1a",
+    "statement": "The planning phase takes place downstream of the action, the monitoring phase upstream.",
+    "answer": false,
+    "explanation": "It is the other way round: planning is upstream of the action, monitoring and analysis of results downstream."
+  },
+  {
+    "type": "short",
+    "id": "sa-s1a-04",
+    "lecture": "s1a",
+    "verb": "define",
+    "difficulty": 1,
+    "prompt": "Define a responsibility centre.",
+    "modelAnswer": "A responsibility centre is an entity of the organisational structure that the group's leaders have placed under the authority of a manager, to whom they have delegated more or less decision-making power and for whom they have set performance targets to be achieved (e.g. a department, a division or the organisation itself).",
+    "keyPoints": [
+      "Entity of the organisational structure",
+      "Placed under the authority of a manager",
+      "Delegated (more or less) decision-making power",
+      "Performance targets set for the manager"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1a-05",
+    "lecture": "s1a",
+    "verb": "define",
+    "difficulty": 2,
+    "prompt": "Define the principle of management by exception.",
+    "modelAnswer": "Management by exception is the principle that only unfavourable gaps between objectives and results achieved lead to special monitoring by managers. By extension, management should only intervene in an entity's operational decisions if the entity's performance objectives are at risk.",
+    "keyPoints": [
+      "Only unfavourable gaps between objectives and results",
+      "Trigger special monitoring by managers",
+      "By extension: intervene only if performance objectives are at risk"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1a-06",
+    "lecture": "s1a",
+    "verb": "explain",
+    "difficulty": 2,
+    "prompt": "Explain the difference between management reporting and external (financial) reporting.",
+    "modelAnswer": "Management reporting is a measurement system that informs managers about the performance of parts of the organisation for management control purposes. External reporting is intended for users outside the organisation; financial reporting produces the consolidated financial statements of a group by aggregating the legal entities' statements and is therefore often equated with external reporting, although financial accounting also contributes marginally to management reporting.",
+    "keyPoints": [
+      "Management reporting: informs managers about performance of parts of the organisation",
+      "Used for management control purposes (internal)",
+      "External reporting: for users outside the organisation",
+      "Financial reporting / consolidated statements mostly serve external purposes",
+      "Financial accounting contributes only marginally to management reporting"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1a-07",
+    "lecture": "s1a",
+    "verb": "explain",
+    "difficulty": 2,
+    "prompt": "Explain the principle of relevance and what it implies for the design of measurement systems.",
+    "modelAnswer": "A measurement or measurement system can serve multiple uses, so it must be adapted to the specific use for which it is intended. Pursuing relevance implies that measurement systems are diverse: their design varies with the purpose they serve, and they are tailor-made for each organisation based on its explicitly defined performance dimensions.",
+    "keyPoints": [
+      "Measurements can serve multiple uses",
+      "Must be adapted/aligned to the intended use",
+      "Measurement systems are therefore diverse",
+      "Design varies with purpose / tailor-made for each organisation"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1a-08",
+    "lecture": "s1a",
+    "verb": "state",
+    "difficulty": 1,
+    "prompt": "State the definitions of validity with respect to the objective and of reliability.",
+    "modelAnswer": "Validity with respect to the objective is the ability of a measurement to accurately reflect the phenomenon being measured or the intention underlying the objective pursued. Reliability is the extent to which a measurement can quantify a result with a limited margin of error.",
+    "keyPoints": [
+      "Validity: accurately reflects the phenomenon measured / the intention behind the objective",
+      "Reliability: quantifies a result with a limited margin of error"
     ]
   }
 ]

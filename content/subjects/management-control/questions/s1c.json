@@ -167,7 +167,6 @@
     "correct": ["a", "b", "c"],
     "explanation": "Validity and reliability are in tension: comprehensive indicators (e.g. value creation) are more valid but less reliable."
   },
-
   {
     "type": "tf",
     "id": "tf-s1c-01",
@@ -232,7 +231,6 @@
     "answer": false,
     "explanation": "Managers also use them for internal management purposes."
   },
-
   {
     "type": "short",
     "id": "sa-s1c-01",
@@ -260,6 +258,319 @@
       "More complete / valid view for shareholders",
       "Drawbacks: complexity, implementation, comparison, interpretation problems (reliability)",
       "Market values reflect macro expectations, not only company performance"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-12",
+    "lecture": "s1c",
+    "difficulty": 1,
+    "prompt": "Which statements correctly describe what each category of financial indicators focuses on?",
+    "options": [
+      { "id": "a", "text": "Activity indicators: the ability to generate revenue" },
+      { "id": "b", "text": "Profitability indicators: the capacity to generate revenues that exceed the costs entailed" },
+      { "id": "c", "text": "Return on investment indicators: profitability relative to the capital invested to obtain the income" },
+      { "id": "d", "text": "Cash flow indicators: the risk borne by investors" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Cash flow indicators inform on financing needs and the capacity to generate cash; risk borne by investors is what value creation indicators take into account."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-13",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "What do value creation indicators (MVA, TSR, EVA) compare?",
+    "options": [
+      { "id": "a", "text": "Financial performance with the return on risk associated with an investment in the organisation" },
+      { "id": "b", "text": "Turnover of the current year with that of the previous year" },
+      { "id": "c", "text": "Net income with operating income" },
+      { "id": "d", "text": "Cash inflows with cash outflows" }
+    ],
+    "correct": ["a"],
+    "explanation": "Value creation indicators compare financial performance with the return required for the risk of investing in the organisation."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-14",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "What information do cash flow indicators (EBITDA, operating cash flow, NCF) provide?",
+    "options": [
+      { "id": "a", "text": "The financing needs of activities" },
+      { "id": "b", "text": "The capacity of activities to generate cash" },
+      { "id": "c", "text": "The market value of the company's equity" },
+      { "id": "d", "text": "The customer satisfaction rate" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Cash flow indicators show financing needs and the capacity to generate cash."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-15",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "Which indicator appears in the course both among profitability indicators and among cash flow indicators?",
+    "options": [
+      { "id": "a", "text": "EBITDA" },
+      { "id": "b", "text": "ROE" },
+      { "id": "c", "text": "TSR" },
+      { "id": "d", "text": "Turnover" }
+    ],
+    "correct": ["a"],
+    "explanation": "EBITDA is listed both as a profitability indicator and as a cash flow indicator."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-16",
+    "lecture": "s1c",
+    "difficulty": 1,
+    "prompt": "Which of the following are quantitative indicators of non-financial performance?",
+    "options": [
+      { "id": "a", "text": "Number of defective products" },
+      { "id": "b", "text": "Customer satisfaction rate" },
+      { "id": "c", "text": "Absenteeism rate" },
+      { "id": "d", "text": "Operating income" },
+      { "id": "e", "text": "A smiley face on a dashboard" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "These are numbers but not financial measures. Operating income is financial; a smiley is a qualitative representation."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-17",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "Which of the following are activity indicators?",
+    "options": [
+      { "id": "a", "text": "Turnover" },
+      { "id": "b", "text": "Growth rate" },
+      { "id": "c", "text": "EBIT" },
+      { "id": "d", "text": "ROCE" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Activity indicators (turnover, growth rate) focus on the ability to generate revenue."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-18",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "You want to compare the profitability of two companies of very different size. What does the course recommend?",
+    "options": [
+      { "id": "a", "text": "Use profitability ratios rather than absolute profit figures" },
+      { "id": "b", "text": "Compare net income in absolute value only" },
+      { "id": "c", "text": "Compare turnover only" }
+    ],
+    "correct": ["a"],
+    "explanation": "Ratios are more comparable than profitability in numerical value because they take the size of the company into account."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-19",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "prompt": "A business unit has an operating profit margin of 10 % and an asset turnover ratio (sales / capital employed) of 1.5. According to the DuPont formula, what is its operating return on investment?",
+    "options": [
+      { "id": "a", "text": "15 %" },
+      { "id": "b", "text": "11.5 %" },
+      { "id": "c", "text": "6.7 %" },
+      { "id": "d", "text": "25 %" }
+    ],
+    "correct": ["a"],
+    "explanation": "ROI = operating profit margin × asset turnover = 10 % × 1.5 = 15 % (operating profit / capital employed)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-20",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "Which statements about return on investment are correct?",
+    "options": [
+      { "id": "a", "text": "It is the ability to generate sufficient profit in relation to the capital used to generate it." },
+      { "id": "b", "text": "Return on equity is assessed from the shareholders' point of view and generally measured by ROE." },
+      { "id": "c", "text": "Operating return on investment is assessed from the managers' point of view and generally measured by ROCE." },
+      { "id": "d", "text": "ROCE measures return from the shareholders' point of view." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "ROE = shareholders' perspective; ROCE = operating perspective of the company's managers."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-21",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "prompt": "What happens when financial indicators incorporate non-accounting references such as the cost of capital or the company's market value?",
+    "options": [
+      { "id": "a", "text": "They give a more complete measurement of the company's performance for its shareholders." },
+      { "id": "b", "text": "They tend to gain validity but may lose reliability." },
+      { "id": "c", "text": "They become simpler to implement and interpret." },
+      { "id": "d", "text": "They no longer depend on investors' expectations." }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Including cost of capital or market values makes indicators more complete (more valid) but harder to implement, compare and interpret, and market values reflect investors' expectations."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s1c-22",
+    "lecture": "s1c",
+    "difficulty": 2,
+    "prompt": "What is a financial indicator according to the course definition?",
+    "options": [
+      { "id": "a", "text": "A measure of the organisation's financial performance primarily based on data taken from its financial reporting system" },
+      { "id": "b", "text": "Any indicator expressed in numbers" },
+      { "id": "c", "text": "A qualitative assessment of performance by managers" }
+    ],
+    "correct": ["a"],
+    "explanation": "Financial indicators are based on financial reporting data; not every numerical indicator is financial."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-09",
+    "lecture": "s1c",
+    "statement": "EBITDA is listed among both profitability indicators and cash flow indicators.",
+    "answer": true,
+    "explanation": "EBITDA appears in both lists in the course.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-10",
+    "lecture": "s1c",
+    "statement": "Return on investment indicators provide a more comprehensive view of financial performance than profitability indicators, because they combine turnover, profit and capital.",
+    "answer": true,
+    "explanation": "That is why they are more comprehensive – though they have their own limits (ratio formalism, valuation of capital)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-11",
+    "lecture": "s1c",
+    "statement": "Value creation indicators are simpler to construct and interpret than return on investment indicators.",
+    "answer": false,
+    "explanation": "They are more complex to construct and pose further problems of implementation, comparison and interpretation."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-12",
+    "lecture": "s1c",
+    "statement": "NOPAT is a value creation indicator.",
+    "answer": false,
+    "explanation": "NOPAT is listed among profitability indicators; value creation indicators are MVA, TSR and EVA.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-13",
+    "lecture": "s1c",
+    "statement": "Cash flow indicators provide information on the financing needs of activities or their capacity to generate cash.",
+    "answer": true,
+    "explanation": "That is the purpose of indicators such as EBITDA, operating cash flow and NCF."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-14",
+    "lecture": "s1c",
+    "statement": "Financial indicators quantify the overall financial performance of an organisation or a responsibility centre.",
+    "answer": true,
+    "explanation": "That is their purpose according to the key messages."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-15",
+    "lecture": "s1c",
+    "statement": "ROE is assessed from the point of view of the company's managers, ROCE from the point of view of shareholders.",
+    "answer": false,
+    "explanation": "It is the opposite: ROE reflects the shareholders' view, ROCE the operating view of managers.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-16",
+    "lecture": "s1c",
+    "statement": "How each financial indicator is calculated raises technical difficulties that should be taken into account when guiding managers' decisions.",
+    "answer": true,
+    "explanation": "This is one of the 'to go further' points of the session."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s1c-17",
+    "lecture": "s1c",
+    "statement": "A more comprehensive financial indicator is always more reliable.",
+    "answer": false,
+    "explanation": "More comprehensive indicators have greater validity but often pose reliability problems – a compromise is needed."
+  },
+  {
+    "type": "short",
+    "id": "sa-s1c-03",
+    "lecture": "s1c",
+    "verb": "define",
+    "difficulty": 1,
+    "prompt": "Define profitability.",
+    "modelAnswer": "Profitability is the ability of a company to generate income in excess of the cost of the resources consumed, thus generating a positive income (profit).",
+    "keyPoints": [
+      "Ability to generate income",
+      "In excess of the cost of resources consumed",
+      "Results in a positive income / profit"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1c-04",
+    "lecture": "s1c",
+    "verb": "define",
+    "difficulty": 2,
+    "prompt": "Define return on investment and distinguish ROE from ROCE.",
+    "modelAnswer": "Return on investment is the ability of a company to generate sufficient profit in relation to the capital used to generate this profit. Return on equity is assessed from the shareholders' point of view and is generally measured by ROE; operating return on investment is assessed from the point of view of the company's managers and is generally measured by ROCE.",
+    "keyPoints": [
+      "Profit relative to the capital used to generate it",
+      "ROE: shareholders' point of view (return on equity)",
+      "ROCE: managers' / operating point of view (capital employed)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1c-05",
+    "lecture": "s1c",
+    "verb": "explain",
+    "difficulty": 1,
+    "prompt": "Explain the difference between a quantitative indicator and a financial indicator.",
+    "modelAnswer": "A quantitative indicator represents performance in the form of numbers, as opposed to qualitative indicators that use other forms (smiley faces, arrows, etc.). Financial indicators are by definition quantitative, but not all quantitative indicators are financial: there are quantitative indicators of non-financial performance such as the number of defective products, the customer satisfaction rate or the absenteeism rate.",
+    "keyPoints": [
+      "Quantitative = performance expressed in numbers",
+      "Qualitative = other forms (smileys, arrows)",
+      "Financial indicators are always quantitative",
+      "Not all quantitative indicators are financial (examples of non-financial quantitative indicators)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1c-06",
+    "lecture": "s1c",
+    "verb": "state",
+    "difficulty": 1,
+    "prompt": "State the five categories of financial indicators, with one example each.",
+    "modelAnswer": "Activity indicators (e.g. turnover, growth rate); profitability indicators (e.g. net income, EBIT, operating profit margin); return on investment indicators (e.g. ROE, ROCE); value creation indicators (e.g. EVA, MVA, TSR); cash flow indicators (e.g. operating cash flow, NCF, EBITDA).",
+    "keyPoints": [
+      "Activity (turnover, growth rate)",
+      "Profitability (net income, EBIT, margin …)",
+      "Return on investment (ROE, ROCE)",
+      "Value creation (MVA, TSR, EVA)",
+      "Cash flow (EBITDA, operating cash flow, NCF)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s1c-07",
+    "lecture": "s1c",
+    "verb": "explain",
+    "difficulty": 2,
+    "prompt": "Explain the trade-off between validity and reliability of financial indicators.",
+    "modelAnswer": "More comprehensive financial indicators (e.g. ROI or value creation indicators that include capital, the cost of capital or market values) have greater validity because they capture performance more completely, but they often pose reliability problems (valuation of capital, market values influenced by investors' expectations, complex construction). Consequently a compromise between validity and reliability often needs to be found.",
+    "keyPoints": [
+      "More comprehensive indicators = greater validity",
+      "But often reliability problems",
+      "Examples: capital valuation, market values / non-accounting data",
+      "A compromise between validity and reliability is needed"
     ]
   }
 ]

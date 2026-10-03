@@ -61,7 +61,6 @@
     "correct": ["a", "c"],
     "explanation": "Financial indicators are backward-looking (consequences of past actions). They are relatively reliable and easy to aggregate."
   },
-
   {
     "type": "tf",
     "id": "tf-s2a-01",
@@ -102,7 +101,6 @@
     "answer": true,
     "explanation": "Reliability is one of their advantages."
   },
-
   {
     "type": "short",
     "id": "sa-s2a-01",
@@ -116,6 +114,157 @@
       "Limitation: partial / inappropriate view of performance",
       "Limitation: no causes → little guidance on corrective action",
       "Limitation: short-termism and poor prediction of future performance"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2a-05",
+    "lecture": "s2a",
+    "difficulty": 2,
+    "prompt": "To meet this year's profit target, a division manager cuts maintenance, training and R&D spending. Which limitation of financial-only measurement systems does this illustrate?",
+    "options": [
+      { "id": "a", "text": "The risk of focusing managers' attention on short-term results to the detriment of medium- and long-term performance" },
+      { "id": "b", "text": "The high cost of computing financial indicators" },
+      { "id": "c", "text": "The difficulty of aggregating financial indicators" }
+    ],
+    "correct": ["a"],
+    "explanation": "Financial indicators can push managers towards short-term results at the expense of medium- and long-term performance."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2a-06",
+    "lecture": "s2a",
+    "difficulty": 2,
+    "prompt": "For a hospital or a non-profit organisation, measuring performance only with financial indicators …",
+    "options": [
+      { "id": "a", "text": "may give a very partial view of performance" },
+      { "id": "b", "text": "may even give an inappropriate view of performance" },
+      { "id": "c", "text": "captures all relevant performance dimensions" },
+      { "id": "d", "text": "is impossible, because financial indicators cannot be computed there" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "By definition financial indicators measure financial aspects only, which can be very partial or even inappropriate in some organisations."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2a-07",
+    "lecture": "s2a",
+    "difficulty": 2,
+    "prompt": "The conciseness of financial indicators is …",
+    "options": [
+      { "id": "a", "text": "an advantage: they provide a very concise measure of performance" },
+      { "id": "b", "text": "a limitation: they do not reveal the causes of discrepancies" },
+      { "id": "c", "text": "irrelevant for management control" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Conciseness is double-edged: concise summary of performance, but little understanding of causes and corrective actions."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2a-08",
+    "lecture": "s2a",
+    "difficulty": 2,
+    "prompt": "Which advantages of financial indicators relate to the qualities expected of measurements (validity, reliability, ease of implementation)?",
+    "options": [
+      { "id": "a", "text": "Relative reliability when based on accounting figures" },
+      { "id": "b", "text": "Ease of implementation: inexpensive and simple to compute" },
+      { "id": "c", "text": "Perfect validity for every performance objective" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Financial indicators score well on reliability and ease of implementation, but their validity can be limited because they only capture financial aspects."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2a-09",
+    "lecture": "s2a",
+    "difficulty": 1,
+    "prompt": "A group wants to compare and consolidate the performance of its 12 divisions in a single figure. Which advantage of financial indicators is useful here?",
+    "options": [
+      { "id": "a", "text": "They can easily be aggregated and/or compared." },
+      { "id": "b", "text": "They predict future performance well." },
+      { "id": "c", "text": "They explain the causes of discrepancies." }
+    ],
+    "correct": ["a"],
+    "explanation": "Financial indicators are easy to aggregate and compare across units."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2a-06",
+    "lecture": "s2a",
+    "statement": "Financial indicators measure performance on financial aspects alone.",
+    "answer": true,
+    "explanation": "That is why, by definition, they may give a partial or even inappropriate view of performance in some organisations."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2a-07",
+    "lecture": "s2a",
+    "statement": "Financial indicators provide strong guidance on which corrective actions are needed when goals are not achieved.",
+    "answer": false,
+    "explanation": "Being concise, they do not explain the causes of discrepancies and therefore give little guidance on corrective actions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2a-08",
+    "lecture": "s2a",
+    "statement": "Financial indicators can easily be aggregated and compared.",
+    "answer": true,
+    "explanation": "This is one of their key advantages."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2a-09",
+    "lecture": "s2a",
+    "statement": "Because of their limitations, financial indicators are of little use for measuring company performance.",
+    "answer": false,
+    "explanation": "Their many advantages make them essential measures of performance; the limits concern measurement systems that include only financial indicators.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2a-10",
+    "lecture": "s2a",
+    "statement": "Financial indicators are leading indicators of future performance.",
+    "answer": false,
+    "explanation": "They measure the financial consequences of actions already taken and are poor at predicting future performance.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2a-11",
+    "lecture": "s2a",
+    "statement": "Measurement systems that include only financial indicators have limitations even though financial indicators themselves have many advantages.",
+    "answer": true,
+    "explanation": "Advantages: concise, relatively reliable, easy to aggregate/compare, cheap. Limits appear when they are used alone."
+  },
+  {
+    "type": "short",
+    "id": "sa-s2a-02",
+    "lecture": "s2a",
+    "verb": "explain",
+    "difficulty": 2,
+    "prompt": "Explain why measurement systems based only on financial indicators may lead to short-termism.",
+    "modelAnswer": "Financial indicators measure the financial consequences of actions already taken, typically over short periods. If managers are steered and evaluated only on them, they may favour actions that improve short-term results (e.g. cutting R&D, training or maintenance) to the detriment of medium- and long-term performance, which financial indicators are poor at anticipating.",
+    "keyPoints": [
+      "Financial indicators measure past/short-term financial consequences",
+      "Managers' attention focused on short-term results",
+      "Detriment of medium- and long-term performance",
+      "Poor at predicting future performance"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s2a-03",
+    "lecture": "s2a",
+    "verb": "explain",
+    "difficulty": 1,
+    "prompt": "Explain why financial indicators give little guidance for corrective action when goals are not achieved.",
+    "modelAnswer": "Financial indicators measure performance in a very concise way: they signal that a gap exists but do not provide an understanding of the causes of the discrepancy. Without knowing the operational drivers behind the gap, managers get little guidance on the corrective actions needed.",
+    "keyPoints": [
+      "Concise measure of performance",
+      "Signal the gap but not its causes",
+      "No understanding of operational drivers",
+      "Hence little guidance on corrective actions"
     ]
   }
 ]

@@ -135,7 +135,6 @@
     "correct": ["a", "b", "d"],
     "explanation": "No model can be exhaustive; the trade-off is clarity of priorities vs. reduced vision."
   },
-
   {
     "type": "tf",
     "id": "tf-s2b-01",
@@ -200,7 +199,6 @@
     "answer": true,
     "explanation": "An MCS cannot be built without first explaining the organisation-specific performance dimensions."
   },
-
   {
     "type": "short",
     "id": "sa-s2b-01",
@@ -242,6 +240,251 @@
       "Model influences actors' behaviour",
       "Simplification: what is not modelled may be neglected / seen as less legitimate",
       "Risk of performative bias → vigilance / revise the model"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-10",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "A retailer wants to \"increase customer loyalty\", plans to \"improve delivery punctuality\" and sets \"98 % on-time deliveries by Q4\". How are these classified?",
+    "options": [
+      { "id": "a", "text": "\"Increase customer loyalty\" is a goal." },
+      { "id": "b", "text": "\"Improve delivery punctuality\" is a line of action." },
+      { "id": "c", "text": "\"98 % on-time deliveries by Q4\" is an objective." },
+      { "id": "d", "text": "\"Improve delivery punctuality\" is a goal, because it is qualitative." }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Goals are qualitative areas to achieve (where we want to go), lines of action are ways of achieving them (how), and objectives translate a goal or line of action into a result to be achieved."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-11",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "Which statements about strategy, as defined in Session 2b, are correct?",
+    "options": [
+      { "id": "a", "text": "Strategy consists of priority action guidelines established by the leaders to achieve the goals." },
+      { "id": "b", "text": "It results from the choice of positioning." },
+      { "id": "c", "text": "It reflects the key success factors imposed by the sector of activity." },
+      { "id": "d", "text": "It also reflects the organisation's more cyclical priorities." },
+      { "id": "e", "text": "It is defined by the management controller alone." }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Strategy = leaders' priority action guidelines, shaped by positioning, sector key success factors and cyclical priorities."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-12",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "What is the aim of performance modelling?",
+    "options": [
+      { "id": "a", "text": "Defining the main lines of action to achieve the performance goals" },
+      { "id": "b", "text": "Representing the cause-and-effect relationships between lines of action and goals" },
+      { "id": "c", "text": "Restricting performance management to actions on cost" },
+      { "id": "d", "text": "Producing the statutory financial statements" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "Performance modelling defines the main lines of action and their causal links to goals; actions on cost are only one possible area."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-13",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "In management control terms, what is a model (in general)?",
+    "options": [
+      { "id": "a", "text": "A schematic representation of the cause-and-effect relationships between different aggregates" },
+      { "id": "b", "text": "Usually based on a mathematical formalism" },
+      { "id": "c", "text": "An exact and complete copy of reality" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "A model is a schematic representation of causal relations between aggregates, usually formalised mathematically – always a simplification."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-14",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "Why should a performance model encourage convergence of representations \"vertically and horizontally\"?",
+    "options": [
+      { "id": "a", "text": "Because performance models are subjective and may vary from one manager to the next" },
+      { "id": "b", "text": "So that managers at different hierarchical levels share a common view of cause-and-effect links (vertical)" },
+      { "id": "c", "text": "So that managers of different units at the same level share a common view (horizontal)" },
+      { "id": "d", "text": "Because a performance model is objective and therefore identical for everyone anyway" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Since models are subjective, convergence across levels (vertical) and across units (horizontal) aligns managers' representations."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-15",
+    "lecture": "s2b",
+    "difficulty": 3,
+    "prompt": "According to the literature cited in Session 2b, what helps to align management control indicators with strategy?",
+    "options": [
+      { "id": "a", "text": "A prior performance modelling approach" },
+      { "id": "b", "text": "Copying the indicators of the market leader" },
+      { "id": "c", "text": "Relying solely on financial indicators" }
+    ],
+    "correct": ["a"],
+    "explanation": "Aligning indicators with strategy is not as simple as it seems; a prior performance modelling approach is stressed as important."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-16",
+    "lecture": "s2b",
+    "difficulty": 3,
+    "prompt": "Which questions does Session 2b raise to go further on performance modelling?",
+    "options": [
+      { "id": "a", "text": "What are the different kinds of models in management control?" },
+      { "id": "b", "text": "To what extent can modelling distort performance, since what is not easily modelled is often seen as less legitimate?" },
+      { "id": "c", "text": "Does performance modelling reflect managerial representations or orient them?" },
+      { "id": "d", "text": "Why should performance models never be changed once defined?" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "The open questions concern kinds of models, distortion through modelling, the role of models in large groups and their performative nature. Models should be changeable (learning function)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s2b-17",
+    "lecture": "s2b",
+    "difficulty": 2,
+    "prompt": "To which kinds of goals and organisations can the performance management process be applied?",
+    "options": [
+      { "id": "a", "text": "Different types of goals, not only profit or shareholder value" },
+      { "id": "b", "text": "Different types of entities and organisations" },
+      { "id": "c", "text": "Only profit-seeking companies" }
+    ],
+    "correct": ["a", "b"],
+    "explanation": "The diversity of stakeholder expectations shows goals cannot be reduced to profit; the process applies to many goals and organisations."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-09",
+    "lecture": "s2b",
+    "statement": "Performance is defined as the goals pursued by an entity and the lines of action chosen to achieve them.",
+    "answer": true,
+    "explanation": "That is the Session 2b definition of performance."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-10",
+    "lecture": "s2b",
+    "statement": "A model is usually based on a mathematical formalism.",
+    "answer": true,
+    "explanation": "A model is a schematic representation of cause-and-effect relationships between aggregates, usually based on a mathematical formalism.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-11",
+    "lecture": "s2b",
+    "statement": "Goals are defined in quantitative terms, objectives in qualitative terms.",
+    "answer": false,
+    "explanation": "Goals are defined in qualitative terms; objectives are their operational translation into results to be achieved."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-12",
+    "lecture": "s2b",
+    "statement": "A performance model represents the goals that make sense at a given time for the entity.",
+    "answer": true,
+    "explanation": "A performance model is time-bound and should be changed if necessary (learning function).",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-13",
+    "lecture": "s2b",
+    "statement": "The lines of action must only be consistent with the long-term strategic positioning, not with more cyclical priorities.",
+    "answer": false,
+    "explanation": "They must also be consistent with more cyclical priorities.",
+    "difficulty": 2
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-14",
+    "lecture": "s2b",
+    "statement": "Performance modelling only affects how actors represent performance, not how they behave.",
+    "answer": false,
+    "explanation": "Modelling is performative: it also affects behaviour, hence the risk of performative bias."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-15",
+    "lecture": "s2b",
+    "statement": "Defining performance requires taking into account the consumption of resources induced by the activity, i.e. its cost.",
+    "answer": true,
+    "explanation": "In addition to clarifying goals, the cost of the activity must be considered."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s2b-16",
+    "lecture": "s2b",
+    "statement": "The stakeholders that matter and their relative importance are the same for every organisation.",
+    "answer": false,
+    "explanation": "They depend on the type of organisation or entity, the institutional context and the sector, and they change over time."
+  },
+  {
+    "type": "short",
+    "id": "sa-s2b-04",
+    "lecture": "s2b",
+    "verb": "define",
+    "difficulty": 1,
+    "prompt": "Define a stakeholder (Freeman, 1984).",
+    "modelAnswer": "A stakeholder is a group or individual liable to affect, or be affected by, the achievement of the entity's objectives.",
+    "keyPoints": [
+      "Group or individual",
+      "Can affect the achievement of the entity's objectives",
+      "Or be affected by it"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s2b-05",
+    "lecture": "s2b",
+    "verb": "define",
+    "difficulty": 2,
+    "prompt": "Define goals, lines of action and objective, and show how they are related.",
+    "modelAnswer": "Goals are the areas that the entity's management seeks to achieve, defined in qualitative terms (where we want to go). Lines of action are potential ways of achieving a goal (how we want to get there). An objective is the operational translation of a goal or a line of action into a result to be achieved.",
+    "keyPoints": [
+      "Goals: qualitative areas management seeks to achieve",
+      "Lines of action: potential ways of achieving a goal",
+      "Objective: operational translation into a result to be achieved",
+      "Objectives can relate to a goal or to a line of action"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s2b-06",
+    "lecture": "s2b",
+    "verb": "explain",
+    "difficulty": 2,
+    "prompt": "Explain the advantages and drawbacks of a performance model being a simplification of reality.",
+    "modelAnswer": "A performance model cannot encompass all dimensions of performance. Simplification makes it much easier for managers to understand the cause-and-effect relations between goals and lines of action and to clarify priorities. On the other hand it can be seen as an impoverishment (reduced vision): what is not easily modelled may be considered less legitimate, and modelling can distort performance. The pros and cons must therefore be balanced.",
+    "keyPoints": [
+      "Model cannot capture all dimensions",
+      "Pro: easier understanding of cause-and-effect / clarifies priorities",
+      "Con: impoverishment / reduced vision",
+      "What is hard to model risks being seen as less legitimate (distortion)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s2b-07",
+    "lecture": "s2b",
+    "verb": "explain",
+    "difficulty": 2,
+    "prompt": "Explain why the lines of action and the performance model must be consistent with the organisation's strategy.",
+    "modelAnswer": "To be relevant, the lines of action must follow the strategic lines of the organisation: the key success factors of the sector, the strategic positioning chosen by the leaders, which prioritise the directions of action in a relatively stable way, and more cyclical priorities. Since aligning management control indicators with strategy is difficult in practice, a prior performance modelling approach is important to achieve it.",
+    "keyPoints": [
+      "Relevance requires consistency with strategy",
+      "Key success factors of the sector",
+      "Strategic positioning chosen by leaders",
+      "More cyclical priorities",
+      "Alignment is hard in practice → prior performance modelling"
     ]
   }
 ]

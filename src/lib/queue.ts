@@ -13,6 +13,8 @@ export const MODE_TITLE: Record<PracticeMode, string> = {
 };
 
 const SESSION_SIZE = 12;
+/** Fragen pro Kapitel-Übung */
+export const LECTURE_SIZE = 15;
 
 /** Stellt die Fragen einer Übungssession zusammen. */
 export function buildQueue(opts: {
@@ -45,8 +47,10 @@ export function buildQueue(opts: {
     case "weak":
       return weak.slice(0, SESSION_SIZE);
     case "lecture": {
+      // Vorrang: fällig → neu → unsicher → Rest; neue und übrige Fragen werden zufällig gezogen,
+      // daher bekommt jeder Durchgang eine andere Auswahl und der ganze Pool wird nach und nach abgedeckt.
       const rest = shuffle(questions.filter((q) => st(q) && !isDue(st(q), now)));
-      return unique([...due, ...unseen, ...rest]);
+      return shuffle(unique([...due, ...unseen, ...weak, ...rest]).slice(0, LECTURE_SIZE));
     }
     case "smart": {
       const picked = unique([...due.slice(0, 6), ...unseen.slice(0, SESSION_SIZE), ...weak]).slice(0, SESSION_SIZE);

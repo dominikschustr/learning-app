@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, BookOpen, Bookmark, FileText, Layers, ScrollText
 import { motion } from "motion/react";
 import Link from "next/link";
 import { chapterFormat } from "@/lib/exam";
+import { LECTURE_SIZE } from "@/lib/queue";
 import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
 import type { QuestionType, SubjectSummary } from "@/lib/schema";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
@@ -80,7 +81,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
       href: `${base}/practice?mode=lecture&lecture=${chapterId}`,
       icon: BookOpen,
       title: "Üben",
-      text: `${ch.total} Fragen mit sofortigem Feedback`,
+      text: `Je Durchgang ${Math.min(LECTURE_SIZE, ch.total)} wechselnde aus ${ch.total} Fragen, mit sofortigem Feedback`,
       meta: `${ch.seen}/${ch.total} gesehen`,
     },
     {
