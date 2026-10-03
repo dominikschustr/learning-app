@@ -12,6 +12,8 @@ export type ItemState = {
   wrong: number;
   lastCorrect: boolean;
   lastSeen: number;
+  /** Beim allerersten Versuch richtig? (fehlt bei Ständen von vor dieser Erfassung) */
+  firstCorrect?: boolean;
 };
 
 const MINUTE = 60_000;
@@ -35,7 +37,28 @@ export function review(prev: ItemState | undefined, correct: boolean, now: numbe
     wrong: (prev?.wrong ?? 0) + (correct ? 0 : 1),
     lastCorrect: correct,
     lastSeen: now,
+    firstCorrect: prev ? firstTry(prev) : correct,
   };
+}
+
+/** Beim ersten Versuch richtig? Ältere Stände ohne Erfassung: richtig, solange nie falsch beantwortet. */
+export function firstTry(state: ItemState): boolean {
+  return state.firstCorrect ?? state.wrong === 0;
+}
+
+/** Bearbeitungsstand einer Frage/Karte für die Kapitelstatistik. */
+export type ItemStatus = "new" | "first" | "recovered" | "wrong";
+
+export function itemStatus(state: ItemState | undefined): ItemStatus {
+  if (!state || state.seen === 0) return "new";
+  if (!state.lastCorrect) return "wrong";
+  return firstTry(state) ? "first" : "recovered";
+}
+
+export function statusCounts(states: (ItemState | undefined)[]): Record<ItemStatus, number> {
+  const out: Record<ItemStatus, number> = { new: 0, first: 0, recovered: 0, wrong: 0 };
+  for (const s of states) out[itemStatus(s)]++;
+  return out;
 }
 
 export function mastery(state: ItemState | undefined): number {

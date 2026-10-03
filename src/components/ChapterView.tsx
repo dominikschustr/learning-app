@@ -9,7 +9,8 @@ import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
 import type { QuestionType, SubjectSummary } from "@/lib/schema";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { useNow } from "@/lib/useNow";
-import { alpha, cn, pct } from "@/lib/utils";
+import { statusCounts, type ItemState, type ItemStatus } from "@/lib/srs";
+import { alpha, cn, itemKey, pct } from "@/lib/utils";
 import { Bar, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
 export function ChapterView({ summary, chapterId }: { summary: SubjectSummary; chapterId: string }) {
@@ -153,6 +154,30 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         </div>
       </section>
 
+      <section>
+        <h2 className="display mb-3 text-2xl">Dein Stand</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <StatusCard
+            title="Übungsfragen"
+            states={summary.items.filter((i) => i.lecture === chapterId).map((i) => s.items[itemKey(subject.id, i.id)])}
+            labels={QUESTION_LABELS}
+            color={subject.color}
+            newHref={`${base}/practice?mode=new&lecture=${chapterId}`}
+            wrongHref={`${base}/practice?mode=wrong&lecture=${chapterId}`}
+            noun={["Frage", "Fragen"]}
+          />
+          <StatusCard
+            title="Karteikarten"
+            states={summary.cards.filter((c) => c.lecture === chapterId).map((c) => s.cards[itemKey(subject.id, c.id)])}
+            labels={CARD_LABELS}
+            color={subject.color}
+            newHref={`${base}/cards?filter=new&lecture=${chapterId}`}
+            wrongHref={`${base}/cards?filter=wrong&lecture=${chapterId}`}
+            noun={["Karte", "Karten"]}
+          />
+        </div>
+      </section>
+
       <section className={cn("grid gap-3 sm:grid-cols-2", actions.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4")}>
         {actions.map((a, i) => (
           <motion.div key={a.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
@@ -253,6 +278,101 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           </ButtonLink>
         )}
       </nav>
+    </div>
+  );
+}
+
+const QUESTION_LABELS: Record<ItemStatus, string> = {
+  first: "Direkt richtig",
+  recovered: "Nach Fehler richtig",
+  wrong: "Zuletzt falsch",
+  new: "Noch nicht bearbeitet",
+};
+
+const CARD_LABELS: Record<ItemStatus, string> = {
+  first: "Direkt gewusst",
+  recovered: "Später gewusst",
+  wrong: "Zuletzt nicht gewusst",
+  new: "Noch nicht bearbeitet",
+};
+
+const STATUS_ORDER: ItemStatus[] = ["first", "recovered", "wrong", "new"];
+
+/** Aufteilung der Fragen/Karten eines Kapitels nach Bearbeitungsstand, mit Direktstart für neue und falsche. */
+function StatusCard({
+  title,
+  states,
+  labels,
+  color,
+  newHref,
+  wrongHref,
+  noun,
+}: {
+  title: string;
+  states: (ItemState | undefined)[];
+  labels: Record<ItemStatus, string>;
+  color: string;
+  newHref: string;
+  wrongHref: string;
+  noun: [string, string];
+}) {
+  const counts = statusCounts(states);
+  const total = states.length;
+  const seen = total - counts.new;
+  const colors: Record<ItemStatus, string> = {
+    first: "var(--good)",
+    recovered: color,
+    wrong: "var(--bad)",
+    new: "var(--line-strong)",
+  };
+  const n = (k: number) => `${k} ${k === 1 ? noun[0] : noun[1]}`;
+
+  return (
+    <div className="card flex flex-col p-5">
+      <div className="flex items-baseline justify-between gap-3">
+        <h3 className="text-lg font-semibold">{title}</h3>
+        <span className="text-sm tabular-nums text-muted">
+          {seen} / {total} gesehen
+        </span>
+      </div>
+
+      <div className="mt-3 flex h-3 gap-0.5 overflow-hidden rounded-full bg-surface-2" aria-hidden>
+        {STATUS_ORDER.map((k) =>
+          counts[k] ? (
+            <div
+              key={k}
+              className="h-full transition-[width] duration-700"
+              style={{ width: `${(counts[k] / Math.max(1, total)) * 100}%`, background: colors[k] }}
+            />
+          ) : null,
+        )}
+      </div>
+
+      <ul className="mt-4 grid gap-x-4 gap-y-2 text-sm lg:grid-cols-2">
+        {STATUS_ORDER.map((k) => (
+          <li key={k} className="flex items-center gap-2">
+            <span className="size-2.5 shrink-0 rounded-full" style={{ background: colors[k] }} />
+            <span className="min-w-0 flex-1 truncate text-ink-2">{labels[k]}</span>
+            <span className="font-semibold tabular-nums">{counts[k]}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-auto flex flex-wrap gap-2 pt-4">
+        {counts.new > 0 && (
+          <ButtonLink variant="secondary" href={newHref}>
+            Nur neue · {n(counts.new)}
+          </ButtonLink>
+        )}
+        {counts.wrong > 0 && (
+          <ButtonLink variant="secondary" href={wrongHref}>
+            Falsche wiederholen · {counts.wrong}
+          </ButtonLink>
+        )}
+        {!counts.new && !counts.wrong && (
+          <p className="text-sm text-good">Alles bearbeitet und zuletzt richtig.</p>
+        )}
+      </div>
     </div>
   );
 }

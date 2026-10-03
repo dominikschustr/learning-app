@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { LECTURE_SIZE, buildQueue } from "@/lib/queue";
 import type { Question } from "@/lib/schema";
-import { review } from "@/lib/srs";
+import { itemStatus, review } from "@/lib/srs";
 import { itemKey } from "@/lib/utils";
 
 const pool: Question[] = Array.from({ length: 40 }, (_, i) => ({
@@ -37,5 +37,33 @@ describe("buildQueue – Kapitel-Übung", () => {
       const q = buildQueue({ mode: "lecture", subjectId: "s", questions: pool, items, now, lecture: "a" });
       expect(q.map((x) => x.id)).toContain("tf-3");
     }
+  });
+});
+
+describe("Bearbeitungsstand", () => {
+  it("unterscheidet neu, direkt richtig, nach Fehler richtig und zuletzt falsch", () => {
+    const first = review(undefined, true, 0);
+    const recovered = review(review(undefined, false, 0), true, 1);
+    const relapsed = review(first, false, 2);
+    expect(itemStatus(undefined)).toBe("new");
+    expect(itemStatus(first)).toBe("first");
+    expect(itemStatus(recovered)).toBe("recovered");
+    expect(itemStatus(relapsed)).toBe("wrong");
+    // bleibt "direkt richtig", wenn nach dem Rückfall wieder richtig
+    expect(itemStatus(review(relapsed, true, 3))).toBe("first");
+    // Altbestand ohne firstCorrect: nie falsch → direkt richtig
+    expect(itemStatus({ ...recovered, firstCorrect: undefined, wrong: 0 })).toBe("first");
+  });
+
+  it("Modi „new“ und „wrong“ wählen nur passende Fragen", () => {
+    const items = {
+      [itemKey("s", "tf-0")]: review(undefined, true, 0),
+      [itemKey("s", "tf-1")]: review(undefined, false, 0),
+    };
+    const opts = { subjectId: "s", questions: pool, items, now: 1, lecture: "a" };
+    const fresh = buildQueue({ ...opts, mode: "new" });
+    expect(fresh.some((q) => q.id === "tf-0" || q.id === "tf-1")).toBe(false);
+    expect(fresh.length).toBe(LECTURE_SIZE);
+    expect(buildQueue({ ...opts, mode: "wrong" }).map((q) => q.id)).toEqual(["tf-1"]);
   });
 });

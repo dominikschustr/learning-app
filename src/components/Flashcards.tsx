@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { XP } from "@/lib/gamification";
 import type { Card, SubjectContent } from "@/lib/schema";
-import { isDue } from "@/lib/srs";
+import { isDue, itemStatus } from "@/lib/srs";
 import { markKey, markedIds, useApp, useHydrated } from "@/lib/store";
 import { announce, celebrate } from "@/lib/toast";
 import { refreshNow } from "@/lib/useNow";
@@ -17,20 +17,29 @@ import { Button, ButtonLink, Skeleton } from "./ui";
 
 const DECK_SIZE = 20;
 
+type DeckFilter = "new" | "wrong" | "marked";
+
+const FILTER_TITLE: Record<DeckFilter, string> = {
+  new: "Neue Karten",
+  wrong: "Nicht gewusste Karten",
+  marked: "Markierte Karten",
+};
+
 export function Flashcards({ content }: { content: SubjectContent }) {
   const hydrated = useHydrated();
   const params = useSearchParams();
   const lecture = params.get("lecture") ?? undefined;
-  const marked = params.get("marked") === "1";
+  const raw = params.get("filter") ?? (params.get("marked") === "1" ? "marked" : null);
+  const filter: DeckFilter | undefined = raw === "new" || raw === "wrong" || raw === "marked" ? raw : undefined;
   const [run, setRun] = useState<{ n: number; only?: Card[] }>({ n: 0 });
 
   if (!hydrated) return <Skeleton className="h-96" />;
   return (
     <Deck
-      key={`${lecture}-${marked}-${run.n}`}
+      key={`${lecture}-${filter}-${run.n}`}
       content={content}
       lecture={lecture}
-      marked={marked}
+      filter={filter}
       only={run.only}
       onRestart={(only) => setRun((r) => ({ n: r.n + 1, only }))}
     />
@@ -40,14 +49,14 @@ export function Flashcards({ content }: { content: SubjectContent }) {
 function Deck({
   content,
   lecture,
-  marked,
+  filter,
   only,
   onRestart,
 }: {
   content: SubjectContent;
   lecture?: string;
-  /** nur markierte Karten */
-  marked: boolean;
+  /** nur neue, zuletzt nicht gewusste oder markierte Karten */
+  filter?: DeckFilter;
   only?: Card[];
   onRestart: (only?: Card[]) => void;
 }) {
@@ -62,8 +71,10 @@ function Deck({
     const now = Date.now();
     const st = (c: Card) => states[itemKey(subject.id, c.id)];
     const marks = markedIds(useApp.getState().marks, "c", subject.id);
-    const pool = content.cards.filter((c) => (!lecture || c.lecture === lecture) && (!marked || marks.has(c.id)));
-    if (marked) return shuffle(pool);
+    const pool = content.cards.filter((c) => !lecture || c.lecture === lecture);
+    if (filter === "marked") return shuffle(pool.filter((c) => marks.has(c.id)));
+    if (filter === "new") return shuffle(pool.filter((c) => !st(c))).slice(0, DECK_SIZE);
+    if (filter === "wrong") return shuffle(pool.filter((c) => itemStatus(st(c)) === "wrong"));
     const due = pool.filter((c) => isDue(st(c), now));
     const fresh = pool.filter((c) => !st(c));
     const rest = pool.filter((c) => st(c) && !isDue(st(c), now)).sort((a, b) => st(a).due - st(b).due);
@@ -124,12 +135,24 @@ function Deck({
   if (!deck.length) {
     return (
       <div className="mx-auto max-w-lg py-16 text-center">
-        {marked && <Bookmark className="mx-auto mb-4 size-12 text-accent" />}
-        <h1 className="display text-4xl sm:text-5xl">{marked ? "Keine Karten markiert" : "Keine Karteikarten"}</h1>
+        {filter === "marked" && <Bookmark className="mx-auto mb-4 size-12 text-accent" />}
+        <h1 className="display text-4xl sm:text-5xl">
+          {filter === "marked"
+            ? "Keine Karten markiert"
+            : filter === "new"
+              ? "Alle Karten schon gesehen"
+              : filter === "wrong"
+                ? "Keine offenen Karten"
+                : "Keine Karteikarten"}
+        </h1>
         <p className="mt-2 text-muted">
-          {marked
+          {filter === "marked"
             ? "Tippe bei einer Karteikarte auf das Lesezeichen (oder drücke M) – sie landet dann hier zum Wiederholen."
-            : "Für diese Auswahl gibt es noch keine Karten."}
+            : filter === "new"
+              ? "Du hast jede Karte hier mindestens einmal bearbeitet."
+              : filter === "wrong"
+                ? "Alle bearbeiteten Karten hast du zuletzt gewusst."
+                : "Für diese Auswahl gibt es noch keine Karten."}
         </p>
         <ButtonLink className="mt-6" href={base}>
           Zurück
@@ -170,7 +193,7 @@ function Deck({
       <SessionBar exitHref={home} progress={index / deck.length} xp={xp} color={subject.color} />
       <div className="mb-4 flex items-center justify-between gap-3 text-xs text-muted">
         <span className="min-w-0">
-          {marked ? "Markierte Karten" : "Karteikarten"} · {lectureTitle}
+          {filter ? FILTER_TITLE[filter] : "Karteikarten"} · {lectureTitle}
         </span>
         <span className="flex shrink-0 items-center gap-2">
           <span className="tabular-nums">

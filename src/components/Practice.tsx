@@ -21,7 +21,7 @@ import { Button, ButtonLink, Skeleton } from "./ui";
 type Entry = { q: Question; order: string[]; retry: boolean };
 type Outcome = { q: Question; correct: boolean };
 
-const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked"];
+const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong"];
 
 export function Practice({ content }: { content: SubjectContent }) {
   const hydrated = useHydrated();
@@ -241,18 +241,32 @@ function Session({
       <div className="mx-auto max-w-lg py-16 text-center">
         <PartyPopper className="mx-auto size-12 text-good" />
         <h1 className="display text-4xl sm:text-5xl mt-4">
-          {mode === "due" ? "Nichts fällig" : mode === "weak" ? "Keine Schwächen gefunden" : "Keine Fragen"}
+          {mode === "due"
+            ? "Nichts fällig"
+            : mode === "weak"
+              ? "Keine Schwächen gefunden"
+              : mode === "new"
+                ? "Alles schon gesehen"
+                : mode === "wrong"
+                  ? "Nichts falsch"
+                  : "Keine Fragen"}
         </h1>
         <p className="mt-2 text-muted">
           {mode === "due"
             ? "Alles, was du gelernt hast, sitzt gerade. Lerne neue Fragen oder komm später wieder."
             : mode === "weak"
               ? "Beantworte erst ein paar Fragen – dann weiß die App, wo du unsicher bist."
-              : "Für diese Auswahl gibt es noch keine Fragen."}
+              : mode === "new"
+                ? "Du hast jede Frage hier mindestens einmal bearbeitet. Weiter geht es mit Wiederholung und Kapiteltest."
+                : mode === "wrong"
+                  ? "Keine Frage ist gerade als falsch beantwortet markiert – stark!"
+                  : "Für diese Auswahl gibt es noch keine Fragen."}
         </p>
         <div className="mt-6 flex justify-center gap-2">
-          <ButtonLink href={`${base}/practice?mode=smart`}>Empfohlene Session</ButtonLink>
-          <ButtonLink variant="secondary" href={base}>
+          <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>
+            {lecture ? "Kapitel üben" : "Empfohlene Session"}
+          </ButtonLink>
+          <ButtonLink variant="secondary" href={home}>
             Zurück
           </ButtonLink>
         </div>
