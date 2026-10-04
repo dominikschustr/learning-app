@@ -3,7 +3,7 @@
 Lern-App für meine Uni-Fächer: Kapitel mit Level, Karteikarten, Übungsfragen mit Spaced Repetition,
 Kapiteltests und ein Abschlusstest im Prüfungsformat. Konzept: [KONZEPT.md](KONZEPT.md).
 
-**Live:** https://learning-app-steel-delta.vercel.app
+**Live:** https://lernwerk-app.vercel.app (auch https://learning-app-steel-delta.vercel.app) – teilbar: jede Person hat ihren eigenen Lernstand im eigenen Browser.
 
 ## Lokal starten
 
