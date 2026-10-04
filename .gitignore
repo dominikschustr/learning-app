@@ -17,3 +17,8 @@ next-env.d.ts
 .DS_Store
 npm-debug.log*
 coverage/
+
+# von der Vercel-CLI abgelegte Agent-Skills (Upstash-Doku)
+.agents/
+.claude/skills/
+skills-lock.json

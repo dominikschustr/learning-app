@@ -38,9 +38,10 @@ function guard(req: Request): { db: Redis; key: string } | Response {
 export async function GET(req: Request) {
   const g = guard(req);
   if (g instanceof Response) return g;
-  const r = await g.db.hmget<Record<string, string | null>>(g.key, "v", "d");
-  if (!r?.v || !r?.d) return Response.json({ data: null, etag: null }, { headers: noStore });
-  return Response.json({ data: JSON.parse(r.d), etag: String(r.v) }, { headers: noStore });
+  // ohne automatische Deserialisierung liefert HMGET die Werte als Liste in Feldreihenfolge
+  const [v, d] = (await g.db.hmget(g.key, "v", "d")) as unknown as [string | null, string | null];
+  if (!v || !d) return Response.json({ data: null, etag: null }, { headers: noStore });
+  return Response.json({ data: JSON.parse(d), etag: String(v) }, { headers: noStore });
 }
 
 export async function PUT(req: Request) {
