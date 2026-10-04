@@ -53,5 +53,15 @@ Jeder Push auf `main` deployt neu.
 
 *Einstellungen → Geräte synchronisieren → Aktivieren* auf dem ersten Gerät, dann den QR-Code mit dem Handy
 scannen und „Verbinden“ tippen. Danach gleicht sich der Lernstand automatisch ab (nach Änderungen, beim
-Wechsel zurück in die App, wenn das Gerät wieder online ist). Speicher: privater Vercel-Blob-Store,
-Variable `BLOB_READ_WRITE_TOKEN` (lokal via `vercel env pull .env.local`).
+Wechsel zurück in die App, wenn das Gerät wieder online ist). Speicher: Upstash Redis (Free-Plan über den
+Vercel Marketplace, 500.000 Befehle/Monat; pro Synchronisation 1–2 Befehle), Variablen `KV_REST_API_URL` und
+`KV_REST_API_TOKEN` (lokal via `vercel env pull .env.local`).
+
+Einrichtung (einmalig, bestätigt die Upstash-Nutzungsbedingungen, ohne automatisches Hochstufen in einen Bezahlplan):
+
+```bash
+npx vercel@latest integration add upstash/upstash-kv --plan free --name learning-app-sync -m primaryRegion=fra1 -m autoUpgrade=false
+```
+
+Vorher lag der Stand in Vercel Blob; dessen Hobby-Kontingent (2.000 Schreibvorgänge/Monat) reichte für das
+Speichern nach jeder Antwort nicht aus.

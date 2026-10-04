@@ -165,8 +165,9 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 - **API-Route** `/api/grade` → Gemini für Kurzantworten
 - **Speicherung:** lokal im Browser **und** – wenn aktiviert – synchronisiert über alle Geräte
   (Laptop ↔ Handy). Kein Login: Das erste Gerät erzeugt einen geheimen Sync-Schlüssel, weitere Geräte
-  werden per QR-Code/Link gekoppelt. Der Stand liegt im privaten Vercel-Blob-Store (`/api/sync`,
-  Dateiname = SHA-256 des Schlüssels, bedingtes Schreiben per ETag).
+  werden per QR-Code/Link gekoppelt. Der Stand liegt in Upstash Redis (`/api/sync`,
+  Schlüssel = SHA-256 des Sync-Schlüssels, bedingtes Schreiben per Versionsnummer). Gespeichert wird
+  gebündelt (20 s nach der letzten Änderung, sofort beim Verlassen der App), damit das Free-Kontingent reicht.
   Zusammenführen ohne Datenverlust: XP und Aktivität zählt jedes Gerät separat (Summe = Gesamtwert),
   pro Frage/Karte gewinnt der zuletzt geübte Stand, Tests und Achievements werden vereinigt, die Streak
   wird aus den gemeinsamen Lerntagen berechnet. Export/Import als JSON bleibt als Backup.

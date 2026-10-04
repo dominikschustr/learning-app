@@ -155,7 +155,7 @@ export function startAutoSync(): () => void {
     if (s.xp !== prev.xp || s.items !== prev.items || s.cards !== prev.cards || s.exams !== prev.exams ||
       s.achievements !== prev.achievements || s.dailyGoal !== prev.dailyGoal || s.blitzBest !== prev.blitzBest ||
       s.marks !== prev.marks) {
-      schedule(4000);
+      schedule(20_000);
     }
   });
   // Neues Verbinden → sofort
