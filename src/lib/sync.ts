@@ -154,7 +154,7 @@ export function startAutoSync(): () => void {
     if (applying || !useSync.getState().key) return;
     if (s.xp !== prev.xp || s.items !== prev.items || s.cards !== prev.cards || s.exams !== prev.exams ||
       s.achievements !== prev.achievements || s.dailyGoal !== prev.dailyGoal || s.blitzBest !== prev.blitzBest ||
-      s.marks !== prev.marks) {
+      s.marks !== prev.marks || s.profile !== prev.profile) {
       schedule(20_000);
     }
   });

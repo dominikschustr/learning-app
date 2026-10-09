@@ -63,5 +63,16 @@ Einrichtung (einmalig, bestätigt die Upstash-Nutzungsbedingungen, ohne automati
 npx vercel@latest integration add upstash/upstash-kv --plan free --name learning-app-sync -m primaryRegion=fra1 -m autoUpgrade=false
 ```
 
+## Rangliste
+
+Unter */leaderboard* (Pokal-Symbol oben) vergleichen sich alle, die beitreten: Level/XP, Antworten heute
+(mit Tagesziel) und Streak. Beitreten ist freiwillig und nur mit selbst gewähltem Namen; gemeldet wird nur
+dieser kleine Eintrag, nicht der Lernstand. Bei aktiver Synchronisation gilt die Teilnahme für alle Geräte.
+
+Nutzt dieselbe Upstash-Datenbank wie die Synchronisation, es ist nichts weiter einzurichten. Kosten: gemeldet
+wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur wenn sich etwas geändert hat),
+geladen nur beim Öffnen der Rangliste – je 1 Redis-Befehl und 1 Funktionsaufruf. Wer nicht teilnimmt,
+verursacht keine Anfragen.
+
 Vorher lag der Stand in Vercel Blob; dessen Hobby-Kontingent (2.000 Schreibvorgänge/Monat) reichte für das
 Speichern nach jeder Antwort nicht aus.
