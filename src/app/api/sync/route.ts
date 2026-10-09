@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
-import { Redis } from "@upstash/redis";
+import type { Redis } from "@upstash/redis";
+import { redis } from "@/lib/redis";
 
 /**
  * Geräteübergreifende Synchronisation des Lernstands.
@@ -12,10 +13,6 @@ import { Redis } from "@upstash/redis";
 
 const MAX_BYTES = 1_000_000;
 const noStore = { "cache-control": "no-store" };
-
-const url = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL;
-const token = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN;
-const redis = url && token ? new Redis({ url, token, automaticDeserialization: false }) : null;
 
 /** Schreibt nur, wenn die Version noch der erwarteten entspricht ("" = Eintrag darf noch nicht existieren). */
 const COMPARE_AND_SET = `

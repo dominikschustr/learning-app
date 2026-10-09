@@ -4,7 +4,7 @@ import { useSyncExternalStore } from "react";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { ACHIEVEMENTS, levelInfo, type AchievementDef } from "./gamification";
-import { mergeSync, totals, type Counter, type Mark, type SyncData } from "./merge";
+import { mergeSync, totals, type Counter, type Mark, type Profile, type SyncData } from "./merge";
 import { review, type ItemState } from "./srs";
 import { addDays, dayKey, itemKey, randomId } from "./utils";
 
@@ -71,6 +71,8 @@ type Data = {
   blitzBest: Record<string, number>;
   /** Lesezeichen für Fragen (q:…) und Karteikarten (c:…), siehe markKey */
   marks: Record<string, Mark>;
+  /** Teilnahme an der Rangliste (null = nie beigetreten) */
+  profile: Profile | null;
 };
 
 export type AnswerEvent = { xp: number; levelUp: number | null; achievements: AchievementDef[]; goalReached: boolean };
@@ -96,6 +98,8 @@ type Actions = {
   setBlitzBest(subjectId: string, score: number): void;
   setDailyGoal(goal: number): void;
   toggleMark(key: string): void;
+  /** Rangliste beitreten, umbenennen (on: true) oder austreten (on: false). */
+  setProfile(input: { name?: string; on: boolean }): void;
   /** Übernimmt einen zusammengeführten Stand aus der Synchronisation. */
   applySync(data: SyncData<ExamRecord>): void;
   importData(data: unknown): boolean;
@@ -120,6 +124,7 @@ const initial: Data = {
   activeExam: null,
   blitzBest: {},
   marks: {},
+  profile: null,
 };
 
 function nextStreak(streak: Streak, now: number): Streak {
@@ -198,6 +203,7 @@ export function syncSnapshot(s: Data): SyncData<ExamRecord> {
     exams: s.exams,
     blitzBest: s.blitzBest,
     marks: s.marks,
+    profile: s.profile,
   };
 }
 
@@ -325,6 +331,18 @@ export const useApp = create<AppState>()(
         toggleMark(key) {
           const marks = get().marks;
           set({ marks: { ...marks, [key]: { on: !marks[key]?.on, at: Date.now() } } });
+        },
+
+        setProfile({ name, on }) {
+          const prev = get().profile;
+          set({
+            profile: {
+              id: prev?.id || randomId(16),
+              name: (name ?? prev?.name ?? "").trim(),
+              on,
+              at: Math.max(Date.now(), (prev?.at ?? 0) + 1),
+            },
+          });
         },
 
         importData(data) {

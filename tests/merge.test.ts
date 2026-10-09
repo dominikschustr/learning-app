@@ -86,6 +86,20 @@ describe("mergeSync", () => {
       expect(m["c:mc:k"].on).toBe(true);
     }
   });
+
+  it("übernimmt das zuletzt geänderte Ranglisten-Profil, auch das Austreten", () => {
+    const joined = { id: "a".repeat(22), name: "Anna", on: true, at: 100 };
+    const left = { ...joined, on: false, at: 200 };
+    expect(mergeSync(base("a", { profile: joined }), base("b")).profile).toEqual(joined);
+    expect(mergeSync(base("a"), base("b", { profile: joined })).profile).toEqual(joined);
+    expect(mergeSync(base("a", { profile: joined }), base("b", { profile: left })).profile).toEqual(left);
+    expect(mergeSync(base("a", { profile: left }), base("b", { profile: joined })).profile).toEqual(left);
+    // gleichzeitig auf zwei Geräten beigetreten: beide Reihenfolgen ergeben dasselbe
+    const other = { id: "b".repeat(22), name: "Anna (Handy)", on: true, at: 100 };
+    expect(mergeSync(base("a", { profile: joined }), base("b", { profile: other })).profile).toEqual(
+      mergeSync(base("b", { profile: other }), base("a", { profile: joined })).profile,
+    );
+  });
 });
 
 describe("streakFromActivity", () => {

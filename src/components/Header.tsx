@@ -1,6 +1,6 @@
 "use client";
 
-import { Cloud, CloudOff, Flame, Loader2, Monitor, Moon, Settings, Sun } from "lucide-react";
+import { Cloud, CloudOff, Flame, Loader2, Monitor, Moon, Settings, Sun, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import { levelInfo } from "@/lib/gamification";
@@ -49,6 +49,14 @@ export function Header() {
           </span>
           <SyncBadge />
           <ThemeToggle />
+          <Link
+            href="/leaderboard"
+            aria-label="Rangliste"
+            title="Rangliste"
+            className="grid size-8 place-items-center rounded-full text-ink-2 hover:bg-surface-2"
+          >
+            <Trophy className="size-4" />
+          </Link>
           <Link
             href="/settings"
             aria-label="Einstellungen"

@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
+import { startAutoPublish } from "@/lib/leaderboard";
 import { useApp, useHydrated } from "@/lib/store";
 import { startAutoSync, useSync } from "@/lib/sync";
 import { useToasts } from "@/lib/toast";
@@ -15,6 +16,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   }, []);
   // Automatische Synchronisation erst, wenn der lokale Stand geladen ist
   useEffect(() => (hydrated ? startAutoSync() : undefined), [hydrated]);
+  useEffect(() => (hydrated ? startAutoPublish() : undefined), [hydrated]);
 
   return (
     <>

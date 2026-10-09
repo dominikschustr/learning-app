@@ -8,12 +8,19 @@ import { addDays, dayKey } from "./utils";
  * - Pro Frage/Karte gewinnt der zuletzt geübte Stand.
  * - Tests und Achievements werden vereinigt, Bestwerte als Maximum übernommen.
  * - Lesezeichen: pro Frage/Karte gewinnt das zuletzt gesetzte oder entfernte.
+ * - Ranglisten-Profil: das zuletzt geänderte gewinnt.
  */
 
 export type Counter = { xp: number; activity: Record<string, number> };
 
 /** Lesezeichen; on: false bleibt stehen, damit das Entfernen auf andere Geräte übertragen wird. */
 export type Mark = { on: boolean; at: number };
+
+/**
+ * Teilnahme an der Rangliste. id ist geheim (nur der SHA-256 davon ist öffentlich), damit niemand
+ * fremde Einträge überschreiben kann. on: false bleibt stehen, damit das Austreten synchronisiert wird.
+ */
+export type Profile = { id: string; name: string; on: boolean; at: number };
 
 export type ExamLike = { id: string; results: Record<string, boolean | null> };
 
@@ -32,6 +39,7 @@ export type SyncData<E extends ExamLike = ExamLike> = {
   exams: E[];
   blitzBest: Record<string, number>;
   marks: Record<string, Mark>;
+  profile?: Profile | null;
 };
 
 function mergeRecord<T>(a: Record<string, T>, b: Record<string, T>, pick: (x: T, y: T) => T): Record<string, T> {
@@ -69,6 +77,11 @@ export function streakFromActivity(activity: Record<string, number>, prevBest = 
   return { current: run, best: Math.max(best, prevBest), lastDay: days[days.length - 1] };
 }
 
+function newerProfile(a: Profile | null | undefined, b: Profile | null | undefined): Profile | null {
+  if (!a || !b) return a ?? b ?? null;
+  return b.at > a.at || (b.at === a.at && b.id > a.id) ? b : a;
+}
+
 const graded = (e: ExamLike) => Object.values(e.results).filter((r) => r !== null).length;
 
 export function mergeSync<E extends ExamLike>(local: SyncData<E>, remote: SyncData<E>): SyncData<E> {
@@ -101,5 +114,6 @@ export function mergeSync<E extends ExamLike>(local: SyncData<E>, remote: SyncDa
     exams: [...exams.values()].sort((a, b) => a.id.localeCompare(b.id)),
     blitzBest: mergeRecord(local.blitzBest ?? {}, remote.blitzBest ?? {}, Math.max),
     marks: mergeRecord(local.marks ?? {}, remote.marks ?? {}, (x, y) => (y.at > x.at ? y : x)),
+    profile: newerProfile(local.profile, remote.profile),
   };
 }
