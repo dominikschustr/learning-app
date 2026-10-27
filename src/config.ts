@@ -5,6 +5,6 @@
  * Einrichtung: siehe README → „Synchronisation und Rangliste einrichten“.
  */
 export const FIREBASE = {
-  projectId: "",
-  apiKey: "",
+  projectId: "lernwerk-92c20",
+  apiKey: "AIzaSyDLTfZ6vEGrm0_X7H0mZJ-63uNXXLGYWFc",
 };
