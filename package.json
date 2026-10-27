@@ -9,7 +9,7 @@
     "lint": "eslint",
     "test": "vitest run",
     "new-subject": "node scripts/new-subject.mjs",
-    "test:rules": "firebase emulators:exec --only firestore --project demo-lernwerk \"NEXT_PUBLIC_FIRESTORE_EMULATOR=127.0.0.1:8080 vitest run tests/firestore.test.ts\""
+    "test:rules": "firebase emulators:exec --only firestore --project demo-lernwerk \"NEXT_PUBLIC_FIREBASE_PROJECT_ID=demo-lernwerk NEXT_PUBLIC_FIRESTORE_EMULATOR=127.0.0.1:8080 vitest run tests/firestore.test.ts\""
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
