@@ -1,0 +1,55 @@
+rules_version = '2';
+
+// Regeln für Lernwerk (Synchronisation und Rangliste). In der Firebase-Konsole unter
+// Firestore Database → Regeln komplett einfügen und „Veröffentlichen“. Siehe README.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Lernstand eines Nutzers. Dokument-id = SHA-256 des geheimen Sync-Schlüssels.
+    // Nur gezielter Zugriff, kein Auflisten: wer den Schlüssel nicht kennt, findet nichts.
+    match /sync/{h} {
+      allow get, delete: if h.matches('^[0-9a-f]{64}$');
+      allow create, update: if h.matches('^[0-9a-f]{64}$')
+        && request.resource.data.keys().hasOnly(['d'])
+        && request.resource.data.d is string
+        && request.resource.data.d.size() < 1000000;
+    }
+
+    // Rangliste: für alle lesbar; ändern nur mit Eigentumsnachweis.
+    match /leaderboard/{id} {
+      allow read: if true;
+      allow create, update: if owner(id) && validEntry(request.resource.data);
+      allow delete: if owner(id);
+    }
+
+    // Eigentumsnachweis: enthält den geheimen Schlüssel, dessen Hash die Eintrags-id ergibt.
+    // Muss in derselben Anfrage geschrieben werden wie die Änderung am Eintrag (at == Anfragezeit). Nie lesbar.
+    match /leaderboardKeys/{id} {
+      allow create, update: if request.resource.data.keys().hasOnly(['s', 'at'])
+        && request.resource.data.s is string
+        && request.resource.data.s.matches('^[A-Za-z0-9_-]{22}$')
+        && request.resource.data.at == request.time
+        && hashing.sha256('lb:' + request.resource.data.s).toHexString().lower()[0:16] == id;
+    }
+
+    function owner(id) {
+      return getAfter(/databases/$(database)/documents/leaderboardKeys/$(id)).data.at == request.time;
+    }
+
+    function isDay(v) {
+      return v is string && v.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$');
+    }
+
+    function validEntry(e) {
+      return e.keys().hasOnly(['name', 'xp', 'today', 'day', 'goal', 'streak', 'streakDay', 'at'])
+        && e.name is string && e.name.size() >= 1 && e.name.size() <= 24
+        && e.xp is int && e.xp >= 0 && e.xp <= 10000000
+        && e.today is int && e.today >= 0 && e.today <= 100000
+        && isDay(e.day)
+        && e.goal is int && e.goal >= 1 && e.goal <= 1000
+        && e.streak is int && e.streak >= 0 && e.streak <= 100000
+        && (e.streakDay == null || isDay(e.streakDay))
+        && e.at == request.time;
+    }
+  }
+}

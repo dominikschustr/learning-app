@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Wandelt Key-Messages-Dokumente (.docx) in Lesetexte für die App um.
+"""Wandelt Vorlesungsdokumente (.docx) in Lesetexte für die App um.
 
-Aufruf:  python3 scripts/import_texts.py "Key Messages" content/subjects/management-control/texts
+Aufruf:  python3 scripts/import_texts.py <fach-id>
+         liest content/subjects/<fach-id>/sources/*.docx und schreibt content/subjects/<fach-id>/texts/
+         (oder mit zwei Pfaden: python3 scripts/import_texts.py <quellordner> <zielordner>)
 
-Die Kapitel-id wird aus dem Dateinamen abgeleitet: "KM S1a-…" → s1a, "KM S3&4 …" → s34.
+Die Kapitel-id kommt aus dem Dateinamen:
+- Dateiname beginnt mit einer Kapitel-id aus subject.json, z. B. "l01.docx" oder "l01 Einführung.docx" → l01
+- Key-Messages-Schema von Management Control: "KM S1a-…" → s1a, "KM S3&4 …" → s34
 Nur Python-Standardbibliothek.
 """
 
@@ -17,7 +21,11 @@ from xml.etree import ElementTree as ET
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 
 
-def lecture_id(name: str) -> str | None:
+def lecture_id(name: str, known: set[str] | None = None) -> str | None:
+    stem = Path(name).stem.lower()
+    for lid in sorted(known or (), key=len, reverse=True):
+        if stem == lid or re.match(rf"^{re.escape(lid)}[\s_.-]", stem):
+            return lid
     m = re.search(r"S(\d)\s*([a-z]|&\s*\d)", name)
     if not m:
         return None
@@ -107,10 +115,17 @@ def convert(path: Path) -> dict:
 
 
 def main():
-    src, dest = Path(sys.argv[1]), Path(sys.argv[2])
+    if len(sys.argv) == 2:
+        subject = Path("content/subjects") / sys.argv[1]
+        src, dest = subject / "sources", subject / "texts"
+        known = {l["id"] for l in json.loads((subject / "subject.json").read_text(encoding="utf-8"))["lectures"]}
+    elif len(sys.argv) == 3:
+        src, dest, known = Path(sys.argv[1]), Path(sys.argv[2]), set()
+    else:
+        sys.exit(__doc__)
     dest.mkdir(parents=True, exist_ok=True)
     for f in sorted(src.glob("*.docx")):
-        lid = lecture_id(f.name)
+        lid = lecture_id(f.name, known)
         if not lid:
             print(f"übersprungen (keine Kapitel-id): {f.name}")
             continue

@@ -1,7 +1,8 @@
 "use client";
 
-import { Download, Minus, Plus, Trash2, Upload } from "lucide-react";
+import { Check, Download, KeyRound, Minus, Plus, Trash2, Upload } from "lucide-react";
 import { useRef, useState } from "react";
+import { setGeminiKey, useGeminiKey } from "@/lib/grade";
 import { exportData, useApp, useHydrated } from "@/lib/store";
 import { disconnectSync, useSync } from "@/lib/sync";
 import { dayKey } from "@/lib/utils";
@@ -61,6 +62,8 @@ export function SettingsView() {
         </div>
       </section>
 
+      <AiSettings />
+
       <section className="card p-6">
         <h2 className="text-lg font-semibold">Backup</h2>
         <p className="text-sm text-muted">
@@ -109,5 +112,55 @@ export function SettingsView() {
         </Button>
       </section>
     </div>
+  );
+}
+
+function AiSettings() {
+  const saved = useGeminiKey();
+  const [input, setInput] = useState("");
+
+  return (
+    <section className="card p-6">
+      <h2 className="text-lg font-semibold">KI-Bewertung</h2>
+      <p className="text-sm text-muted">
+        Optional: Kurzantworten von Google Gemini bewerten lassen statt selbst. Dafür brauchst du einen eigenen,
+        kostenlosen API-Key aus{" "}
+        <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer" className="font-medium text-accent underline">
+          Google AI Studio
+        </a>{" "}
+        (keine Abrechnung aktivieren). Der Key bleibt nur in diesem Browser.
+      </p>
+      {saved ? (
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <span className="inline-flex items-center gap-2 text-sm font-medium text-good">
+            <Check className="size-4" /> Aktiv (Key …{saved.slice(-4)})
+          </span>
+          <Button variant="ghost" onClick={() => setGeminiKey("")}>
+            Entfernen
+          </Button>
+        </div>
+      ) : (
+        <form
+          className="mt-4 flex flex-wrap gap-2"
+          onSubmit={(e) => {
+            e.preventDefault();
+            setGeminiKey(input);
+            setInput("");
+          }}
+        >
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            type="password"
+            autoComplete="off"
+            placeholder="API-Key einfügen"
+            className="h-11 min-w-0 flex-1 rounded-full border border-line-strong bg-surface px-4 text-sm outline-none focus:border-accent"
+          />
+          <Button type="submit" variant="secondary" disabled={!input.trim()}>
+            <KeyRound className="size-4" /> Speichern
+          </Button>
+        </form>
+      )}
+    </section>
   );
 }

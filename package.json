@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "new-subject": "node scripts/new-subject.mjs",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-lernwerk \"NEXT_PUBLIC_FIRESTORE_EMULATOR=127.0.0.1:8080 vitest run tests/firestore.test.ts\""
   },
   "dependencies": {
-    "@upstash/redis": "^1.39.0",
     "canvas-confetti": "^1.9.4",
     "lucide-react": "^1.48.0",
     "motion": "^13.4.6",

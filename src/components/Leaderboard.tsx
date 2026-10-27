@@ -4,6 +4,7 @@ import { Flame, Loader2, LogOut, Pencil, RefreshCw, Trophy, UserPlus } from "luc
 import { motion } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { titleFor } from "@/lib/gamification";
+import { boardId } from "@/lib/cloud";
 import { joinBoard, leaveBoard, loadBoard, renameOnBoard, useBoard } from "@/lib/leaderboard";
 import { NAME_MAX, rankEntries, statsFrom, type Entry, type Row, type SortBy } from "@/lib/ranking";
 import { useApp, useHydrated } from "@/lib/store";
@@ -51,17 +52,31 @@ function LeaderboardInner() {
   }, []);
 
   // Eigene Zeile immer mit dem aktuellen lokalen Stand, auch bevor die nächste Meldung raus ist
-  const myId = board.me ?? "local";
+  const myId = joined ? boardId(joined.id) : null;
   const rows = useMemo(() => {
     let entries: Entry[] = board.entries;
-    if (joined) {
+    if (joined && myId) {
       const own: Entry = { ...statsFrom(s, joined.name, now), id: myId, at: now };
       entries = [...entries.filter((e) => e.id !== myId), own];
-    } else if (board.me) {
-      entries = entries.filter((e) => e.id !== board.me);
     }
     return rankEntries(entries, by, now);
-  }, [board.entries, board.me, joined, s, by, now, myId]);
+  }, [board.entries, joined, s, by, now, myId]);
+
+  if (board.status === "unavailable") {
+    return (
+      <div className="mx-auto max-w-2xl space-y-6">
+        <h1 className="display text-4xl sm:text-5xl">Rangliste</h1>
+        <div className="card p-8 text-center">
+          <Trophy className="mx-auto size-8 text-muted" />
+          <p className="mt-3 font-semibold">Noch nicht eingerichtet</p>
+          <p className="text-sm text-muted">
+            Für die Rangliste braucht die App ein kostenloses Firebase-Projekt. Die Anleitung steht in der README unter
+            „Synchronisation und Rangliste einrichten“.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
@@ -122,7 +137,7 @@ function LeaderboardInner() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: Math.min(i, 10) * 0.03 }}
             >
-              <RowView row={r} by={by} me={r.id === myId && !!joined} now={now} />
+              <RowView row={r} by={by} me={r.id === myId} now={now} />
             </motion.li>
           ))}
         </ol>

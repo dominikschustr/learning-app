@@ -55,12 +55,22 @@ function loadSubject(dir: string): SubjectContent {
   return content;
 }
 
-export const getAllContent = cache((): SubjectContent[] =>
+/** Alle Fächer inklusive Entwürfe (für die Prüfung der Inhalte). */
+export const loadAllContent = cache((): SubjectContent[] =>
   fs
     .readdirSync(ROOT, { withFileTypes: true })
     .filter((d) => d.isDirectory() && fs.existsSync(path.join(ROOT, d.name, "subject.json")))
-    .map((d) => loadSubject(d.name)),
+    .map((d) => {
+      const content = loadSubject(d.name);
+      if (content.subject.id !== d.name) {
+        throw new Error(`Content: Ordner "${d.name}" passt nicht zur id "${content.subject.id}" in subject.json`);
+      }
+      return content;
+    }),
 );
+
+/** Fächer, die in der App erscheinen (ohne Entwürfe). */
+export const getAllContent = cache((): SubjectContent[] => loadAllContent().filter((c) => !c.subject.draft));
 
 export function getSubjectContent(id: string): SubjectContent | undefined {
   return getAllContent().find((c) => c.subject.id === id);
@@ -70,7 +80,7 @@ export function getSubjectContent(id: string): SubjectContent | undefined {
 export const getTexts = cache((subjectId: string): LectureText[] => {
   const dir = path.join(ROOT, subjectId, "texts");
   if (!fs.existsSync(dir)) return [];
-  const lectures = new Set(getSubjectContent(subjectId)?.subject.lectures.map((l) => l.id));
+  const lectures = new Set(loadAllContent().find((c) => c.subject.id === subjectId)?.subject.lectures.map((l) => l.id));
   return fs
     .readdirSync(dir)
     .filter((f) => f.endsWith(".json"))

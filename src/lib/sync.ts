@@ -2,6 +2,7 @@
 
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
+import { cloudConfigured, isSyncKey, syncDelete, syncGet, syncPut } from "./cloud";
 import type { SyncData } from "./merge";
 import { mergeSync, syncSnapshot, useApp, withDevice, type ExamRecord } from "./store";
 import { randomId } from "./utils";
@@ -27,25 +28,17 @@ export const useSync = create<SyncState>()(
   }),
 );
 
-export const isValidKey = (k: string) => /^[A-Za-z0-9_-]{43}$/.test(k);
+export const isValidKey = isSyncKey;
+
+/** Basispfad der App (GitHub Pages: /<repo>), siehe next.config.ts */
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export function pairingLink(key: string): string {
-  return `${window.location.origin}/settings#sync=${key}`;
+  return `${window.location.origin}${BASE_PATH}/settings/#sync=${key}`;
 }
 
 /** Wendet einen zusammengeführten Stand an, ohne dabei selbst einen neuen Sync auszulösen. */
 let applying = false;
-
-type Remote = { data: SyncData<ExamRecord> | null; etag: string | null };
-
-async function request(method: "GET" | "PUT" | "DELETE", key: string, body?: unknown): Promise<Response> {
-  return fetch("/api/sync", {
-    method,
-    headers: { "x-sync-key": key, ...(body ? { "content-type": "application/json" } : {}) },
-    body: body ? JSON.stringify(body) : undefined,
-    cache: "no-store",
-  });
-}
 
 let running: Promise<void> | null = null;
 let again = false;
@@ -79,14 +72,12 @@ async function syncOnce() {
   useSync.setState({ status: "syncing", error: null });
 
   try {
+    if (!cloudConfigured()) {
+      useSync.setState({ status: "unavailable", error: "Die Synchronisation ist noch nicht eingerichtet." });
+      return;
+    }
     for (let attempt = 0; attempt < 4; attempt++) {
-      const res = await request("GET", key);
-      if (res.status === 503) {
-        useSync.setState({ status: "unavailable", error: "Die Synchronisation ist auf dem Server noch nicht eingerichtet." });
-        return;
-      }
-      if (!res.ok) throw new Error(`Laden fehlgeschlagen (${res.status})`);
-      const remote = (await res.json()) as Remote;
+      const remote = await syncGet<SyncData<ExamRecord>>(key);
 
       const local = syncSnapshot(withDevice(useApp.getState()));
       const merged = remote.data ? mergeSync(local, remote.data) : local;
@@ -104,15 +95,16 @@ async function syncOnce() {
         return;
       }
 
-      const put = await request("PUT", key, { data: { ...merged, deviceId: "cloud" }, etag: remote.etag });
-      if (put.status === 409) continue; // anderes Gerät war schneller → neu laden und zusammenführen
-      if (!put.ok) throw new Error(`Speichern fehlgeschlagen (${put.status})`);
+      const etag = await syncPut(key, { ...merged, deviceId: "cloud" }, remote.etag);
+      if (etag === null) continue; // anderes Gerät war schneller → neu laden und zusammenführen
       useSync.setState({ status: "idle", lastSync: Date.now() });
       return;
     }
     throw new Error("Zu viele gleichzeitige Änderungen – bitte gleich nochmal versuchen.");
   } catch (e) {
-    useSync.setState({ status: navigator.onLine ? "error" : "offline", error: (e as Error).message });
+    // fetch wirft TypeError, wenn das Netz fehlt
+    const offline = !navigator.onLine || e instanceof TypeError;
+    useSync.setState({ status: offline ? "offline" : "error", error: (e as Error).message });
   }
 }
 
@@ -136,7 +128,7 @@ export function disconnectSync() {
 /** Cloud-Stand löschen und trennen (z. B. beim Zurücksetzen). */
 export async function deleteRemote() {
   const { key } = useSync.getState();
-  if (key) await request("DELETE", key).catch(() => undefined);
+  if (key) await syncDelete(key).catch(() => undefined);
   disconnectSync();
 }
 
