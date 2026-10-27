@@ -2,6 +2,7 @@
 
 import { Check, Cloud, CloudOff, Copy, Link2, Loader2, RefreshCw, Smartphone, Unplug } from "lucide-react";
 import { useEffect, useState, useSyncExternalStore } from "react";
+import { cloudConfigured } from "@/lib/cloud";
 import { connectSync, disconnectSync, enableSync, isValidKey, pairingLink, syncNow, useSync } from "@/lib/sync";
 import { useNow } from "@/lib/useNow";
 import { cn } from "@/lib/utils";
@@ -88,7 +89,7 @@ export function SyncSettings() {
         {key && <SyncStatusLine />}
       </div>
 
-      {hashKey && hashKey !== key && (
+      {cloudConfigured() && hashKey && hashKey !== key && (
         <div className="mt-4 rounded-2xl border border-accent/30 bg-accent/5 p-4">
           <p className="flex items-center gap-2 font-semibold">
             <Link2 className="size-4 text-accent" /> Kopplungslink erkannt
@@ -117,7 +118,12 @@ export function SyncSettings() {
         </div>
       )}
 
-      {hashKey && hashKey !== key ? null : !key ? (
+      {!cloudConfigured() ? (
+        <p className="mt-4 rounded-2xl bg-surface-2 p-4 text-sm text-ink-2">
+          Noch nicht eingerichtet: Für Synchronisation und Rangliste braucht die App ein kostenloses Firebase-Projekt.
+          Die Anleitung steht in der README unter „Synchronisation und Rangliste einrichten“.
+        </p>
+      ) : hashKey && hashKey !== key ? null : !key ? (
         <div className="mt-5 grid gap-5 sm:grid-cols-2">
           <div className="rounded-2xl border border-line p-4">
             <p className="font-semibold">Erstes Gerät</p>

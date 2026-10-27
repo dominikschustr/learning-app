@@ -1,7 +1,8 @@
 "use client";
 
 import { create } from "zustand";
-import { statsFrom, type Entry } from "./ranking";
+import { boardDelete, boardId, boardList, boardUpsert, cloudConfigured } from "./cloud";
+import { statsFrom, StatsSchema, type Entry } from "./ranking";
 import { useApp, type AppState } from "./store";
 
 /**
@@ -13,14 +14,12 @@ type BoardStatus = "idle" | "loading" | "error" | "unavailable";
 
 type BoardState = {
   entries: Entry[];
-  /** öffentliche id des eigenen Eintrags */
-  me: string | null;
   status: BoardStatus;
   error: string | null;
   loadedAt: number | null;
 };
 
-export const useBoard = create<BoardState>(() => ({ entries: [], me: null, status: "idle", error: null, loadedAt: null }));
+export const useBoard = create<BoardState>(() => ({ entries: [], status: "idle", error: null, loadedAt: null }));
 
 /** Zuletzt gemeldeter Stand dieses Geräts, um unnötige Anfragen zu sparen. */
 type Published = { secret: string; payload: string };
@@ -42,40 +41,33 @@ function writePublished(p: Published | null) {
   } catch {}
 }
 
-async function request(method: "GET" | "PUT" | "DELETE", secret: string | null, body?: unknown): Promise<Response> {
-  return fetch("/api/leaderboard", {
-    method,
-    headers: { ...(secret ? { "x-lb-key": secret } : {}), ...(body ? { "content-type": "application/json" } : {}) },
-    body: body ? JSON.stringify(body) : undefined,
-    cache: "no-store",
-    // Melden beim Verlassen der Seite soll noch ankommen
-    keepalive: method !== "GET",
-  });
-}
-
 const activeProfile = (s: AppState) => (s.profile?.on && s.profile.name ? s.profile : null);
 
+/** Öffentliche id des eigenen Eintrags (null = nicht dabei). */
+export function myBoardId(s: AppState): string | null {
+  const p = activeProfile(s);
+  return p ? boardId(p.id) : null;
+}
+
 export async function loadBoard() {
+  if (!cloudConfigured()) {
+    useBoard.setState({ status: "unavailable", error: "Die Rangliste ist noch nicht eingerichtet." });
+    return;
+  }
   if (typeof navigator !== "undefined" && !navigator.onLine) {
     useBoard.setState({ status: "error", error: "Offline – die Rangliste lädt, sobald du wieder online bist." });
     return;
   }
   useBoard.setState({ status: "loading", error: null });
   try {
-    const res = await request("GET", activeProfile(useApp.getState())?.id ?? null);
-    if (res.status === 503) {
-      useBoard.setState({ status: "unavailable", error: "Die Rangliste ist auf dem Server noch nicht eingerichtet." });
-      return;
-    }
-    if (!res.ok) throw new Error(`Laden fehlgeschlagen (${res.status})`);
-    const { entries, me } = (await res.json()) as { entries: Entry[]; me: string | null };
-    useBoard.setState({ entries, me, status: "idle", loadedAt: Date.now() });
+    useBoard.setState({ entries: await boardList(), status: "idle", loadedAt: Date.now() });
   } catch (e) {
     useBoard.setState({ status: "error", error: (e as Error).message });
   }
 }
 
 async function publishOnce() {
+  if (!cloudConfigured()) return;
   const s = useApp.getState();
   const profile = activeProfile(s);
   const last = readPublished();
@@ -83,24 +75,21 @@ async function publishOnce() {
   if (!profile) {
     // ausgetreten (auch auf einem anderen Gerät) oder zurückgesetzt → eigenen Eintrag entfernen
     if (last) {
-      const res = await request("DELETE", last.secret);
-      if (res.ok) writePublished(null);
-      useBoard.setState((b) => ({ me: null, entries: b.entries.filter((e) => e.id !== b.me) }));
+      await boardDelete(last.secret);
+      writePublished(null);
+      const id = boardId(last.secret);
+      useBoard.setState((b) => ({ entries: b.entries.filter((e) => e.id !== id) }));
     }
     return;
   }
 
-  const stats = statsFrom(s, profile.name, Date.now());
+  const stats = StatsSchema.parse(statsFrom(s, profile.name, Date.now()));
   const payload = JSON.stringify(stats);
   if (last?.secret === profile.id && last.payload === payload) return;
 
   const replaces = last && last.secret !== profile.id ? last.secret : undefined;
-  const res = await request("PUT", profile.id, { ...stats, replaces });
-  if (res.status === 409) throw new Error("Die Rangliste ist voll.");
-  if (!res.ok) throw new Error(`Melden fehlgeschlagen (${res.status})`);
-  const { id } = (await res.json()) as { id: string };
+  await boardUpsert(profile.id, stats, replaces);
   writePublished({ secret: profile.id, payload });
-  useBoard.setState({ me: id });
 }
 
 let running: Promise<void> | null = null;

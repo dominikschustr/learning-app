@@ -19,6 +19,8 @@ export const SubjectSchema = z.object({
   color: z.string().regex(/^#[0-9a-fA-F]{6}$/),
   description: z.string().default(""),
   demo: z.boolean().default(false),
+  /** Entwurf: wird geprüft, erscheint aber noch nicht in der App (z. B. solange Fragen fehlen). */
+  draft: z.boolean().default(false),
   lectures: z.array(LectureSchema).min(1),
   examFormat: ExamFormatSchema,
 });
@@ -130,6 +132,7 @@ export function checkContent({ subject, questions, cards }: SubjectContent): str
     }
   }
 
+  if (subject.draft) return errors;
   const count = (t: QuestionType) => questions.filter((q) => q.type === t).length;
   const f = subject.examFormat;
   if (count("short") < f.short || count("mc") < f.mc || count("tf") < f.tf) {

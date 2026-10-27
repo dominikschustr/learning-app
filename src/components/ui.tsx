@@ -12,7 +12,7 @@ const variants: Record<Variant, string> = {
 };
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full px-5 h-11 text-sm font-semibold transition " +
+  "inline-flex items-center justify-center gap-2 rounded-full px-5 h-11 text-sm font-semibold transition [&_svg]:shrink-0 " +
   "active:scale-[0.98] disabled:pointer-events-none disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
 export function Button({
