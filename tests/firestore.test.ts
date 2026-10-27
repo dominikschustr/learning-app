@@ -66,7 +66,7 @@ describe.skipIf(!EMULATOR)("Firestore-Regeln", () => {
     expect(written).toBeTruthy();
     const r1 = await cloud.syncGet<{ xp: number }>(key);
     expect(r1.data).toEqual({ xp: 1 });
-    console.log("etag aus Schreiben/Lesen:", written, r1.etag);
+    expect(r1.etag).toBe(written);
 
     // zweites Gerät mit veraltetem Stand → Konflikt statt Überschreiben
     expect(await cloud.syncPut(key, { xp: 2 }, null)).toBeNull();
@@ -78,6 +78,21 @@ describe.skipIf(!EMULATOR)("Firestore-Regeln", () => {
 
     await cloud.syncDelete(key);
     expect((await cloud.syncGet(key)).data).toBeNull();
+  });
+
+  it("Synchronisation: Versionen lassen sich nicht überspringen", async () => {
+    const key = syncKey("v");
+    await cloud.syncPut(key, { xp: 1 }, null);
+    const doc = `projects/${PROJECT}/databases/(default)/documents/sync/${(await import("@/lib/sha256")).sha256(key)}`;
+    const patch = (v: number) =>
+      fetch(`http://${EMULATOR}/v1/${doc}`, {
+        method: "PATCH",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ fields: { d: { stringValue: "{}" }, v: { integerValue: String(v) } } }),
+      }).then((r) => r.status);
+    expect(await patch(1)).toBe(403);
+    expect(await patch(5)).toBe(403);
+    expect(await patch(2)).toBe(200);
   });
 
   it("Synchronisation: niemand kann die Lernstände auflisten", async () => {

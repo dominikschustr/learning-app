@@ -7,12 +7,20 @@ service cloud.firestore {
 
     // Lernstand eines Nutzers. Dokument-id = SHA-256 des geheimen Sync-Schlüssels.
     // Nur gezielter Zugriff, kein Auflisten: wer den Schlüssel nicht kennt, findet nichts.
+    // v ist die Versionsnummer: jede Änderung muss genau die nächste Version schreiben, sonst war ein
+    // anderes Gerät schneller und die App lädt neu und führt zusammen.
     match /sync/{h} {
       allow get, delete: if h.matches('^[0-9a-f]{64}$');
-      allow create, update: if h.matches('^[0-9a-f]{64}$')
-        && request.resource.data.keys().hasOnly(['d'])
-        && request.resource.data.d is string
-        && request.resource.data.d.size() < 1000000;
+      allow create: if validSync() && request.resource.data.v == 1;
+      allow update: if validSync() && request.resource.data.v == resource.data.v + 1;
+
+      function validSync() {
+        return h.matches('^[0-9a-f]{64}$')
+          && request.resource.data.keys().hasOnly(['d', 'v'])
+          && request.resource.data.d is string
+          && request.resource.data.d.size() < 1000000
+          && request.resource.data.v is int;
+      }
     }
 
     // Rangliste: für alle lesbar; ändern nur mit Eigentumsnachweis.

@@ -64,33 +64,35 @@ const syncDoc = (key: string) => doc(`sync/${sha256(key)}`);
 
 export type Remote<T> = { data: T | null; etag: string | null };
 
+type SyncFields = { d?: { stringValue?: string }; v?: { integerValue?: string } };
+
 export async function syncGet<T>(key: string): Promise<Remote<T>> {
   const res = await call("GET", syncDoc(key));
   if (res.status === 404) return { data: null, etag: null };
   if (!res.ok) return fail(res, "Laden");
-  const json = (await res.json()) as { fields?: { d?: { stringValue?: string } }; updateTime: string };
+  const json = (await res.json()) as { fields?: SyncFields };
   const d = json.fields?.d?.stringValue;
-  return { data: d ? (JSON.parse(d) as T) : null, etag: json.updateTime };
+  return { data: d ? (JSON.parse(d) as T) : null, etag: json.fields?.v?.integerValue ?? null };
 }
 
-/** Schreibt nur, wenn sich der Stand seit etag nicht geändert hat; null = Konflikt (neu laden und zusammenführen). */
+/**
+ * Schreibt die nächste Version (etag = gelesene Versionsnummer, null = Dokument gibt es noch nicht).
+ * Die Regeln lassen nur Version + 1 zu; hat ein anderes Gerät inzwischen geschrieben, wird abgelehnt.
+ * null = Konflikt (neu laden und zusammenführen).
+ */
 export async function syncPut(key: string, data: unknown, etag: string | null): Promise<string | null> {
   const json = JSON.stringify(data);
   if (json.length > 900_000) throw new CloudError("Der Lernstand ist zu groß für die Synchronisation.", 413);
-  const res = await call(
-    "PATCH",
-    syncDoc(key),
-    etag ? { "currentDocument.updateTime": etag } : { "currentDocument.exists": "false" },
-    { fields: { d: { stringValue: json } } },
-  );
-  // Vorbedingung verletzt: anderes Gerät war schneller
-  if (res.status === 400 || res.status === 404 || res.status === 409) {
-    const err = (await res.json().catch(() => null)) as { error?: { status?: string } } | null;
-    if (["FAILED_PRECONDITION", "ALREADY_EXISTS", "NOT_FOUND", "ABORTED"].includes(err?.error?.status ?? "")) return null;
-    throw new CloudError(`Speichern fehlgeschlagen (${res.status})`, res.status);
+  const v = (etag ? Number(etag) : 0) + 1;
+  const res = await call("PATCH", syncDoc(key), {}, { fields: { d: { stringValue: json }, v: { integerValue: String(v) } } });
+  if (res.ok) return String(v);
+  if (res.status === 403) {
+    // abgelehnt: entweder war ein anderes Gerät schneller (Version passt nicht mehr) oder die Regeln fehlen
+    const now = await syncGet(key).catch(() => null);
+    if (now && now.etag !== etag) return null;
+    throw new CloudError("Zugriff verweigert – sind die Firestore-Regeln veröffentlicht?", 403);
   }
-  if (!res.ok) return fail(res, "Speichern");
-  return ((await res.json()) as { updateTime: string }).updateTime;
+  return fail(res, "Speichern");
 }
 
 export async function syncDelete(key: string): Promise<void> {
