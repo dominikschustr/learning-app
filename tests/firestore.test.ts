@@ -61,16 +61,20 @@ describe.skipIf(!EMULATOR)("Firestore-Regeln", () => {
     const key = syncKey("k");
     expect(await cloud.syncGet(key)).toEqual({ data: null, etag: null });
 
-    const e1 = await cloud.syncPut(key, { xp: 1 }, null);
-    expect(e1).toBeTruthy();
-    expect(await cloud.syncGet(key)).toEqual({ data: { xp: 1 }, etag: e1 });
+    // wie in der App: Stand laden, mit dessen etag schreiben
+    const written = await cloud.syncPut(key, { xp: 1 }, null);
+    expect(written).toBeTruthy();
+    const r1 = await cloud.syncGet<{ xp: number }>(key);
+    expect(r1.data).toEqual({ xp: 1 });
+    console.log("etag aus Schreiben/Lesen:", written, r1.etag);
 
     // zweites Gerät mit veraltetem Stand → Konflikt statt Überschreiben
     expect(await cloud.syncPut(key, { xp: 2 }, null)).toBeNull();
-    const e2 = await cloud.syncPut(key, { xp: 3 }, e1);
-    expect(e2).toBeTruthy();
-    expect(await cloud.syncPut(key, { xp: 4 }, e1)).toBeNull();
-    expect((await cloud.syncGet(key)).data).toEqual({ xp: 3 });
+    expect(await cloud.syncPut(key, { xp: 3 }, r1.etag)).toBeTruthy();
+    expect(await cloud.syncPut(key, { xp: 4 }, r1.etag)).toBeNull();
+    const r2 = await cloud.syncGet<{ xp: number }>(key);
+    expect(r2.data).toEqual({ xp: 3 });
+    expect(await cloud.syncPut(key, { xp: 5 }, r2.etag)).toBeTruthy();
 
     await cloud.syncDelete(key);
     expect((await cloud.syncGet(key)).data).toBeNull();
