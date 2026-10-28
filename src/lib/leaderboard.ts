@@ -1,16 +1,18 @@
 "use client";
 
 import { create } from "zustand";
-import { boardDelete, boardId, boardList, boardUpsert, cloudConfigured } from "./cloud";
+import { getIdToken, useAuth } from "./auth";
+import { cloudConfigured, userList, userPut } from "./cloud";
 import { statsFrom, StatsSchema, type Entry } from "./ranking";
-import { useApp, type AppState } from "./store";
+import { useApp } from "./store";
+import { syncNow } from "./sync";
 
 /**
- * Rangliste auf dem Client: eigenen Stand melden (nur bei Teilnahme, gebündelt und nur bei Änderungen)
- * und die Liste laden (nur beim Öffnen der Ranglisten-Seite).
+ * Rangliste: jedes Konto meldet seinen Stand (gebündelt und nur bei Änderungen) nach users/{uid};
+ * die Liste wird beim Öffnen der Ranglisten-Seite geladen.
  */
 
-type BoardStatus = "idle" | "loading" | "error" | "unavailable";
+type BoardStatus = "idle" | "loading" | "error";
 
 type BoardState = {
   entries: Entry[];
@@ -22,74 +24,47 @@ type BoardState = {
 export const useBoard = create<BoardState>(() => ({ entries: [], status: "idle", error: null, loadedAt: null }));
 
 /** Zuletzt gemeldeter Stand dieses Geräts, um unnötige Anfragen zu sparen. */
-type Published = { secret: string; payload: string };
+type Published = { uid: string; payload: string };
 const PUBLISHED_KEY = "lernwerk-leaderboard";
 
 function readPublished(): Published | null {
   try {
     const p = JSON.parse(localStorage.getItem(PUBLISHED_KEY) ?? "null") as Published | null;
-    return p && typeof p.secret === "string" ? p : null;
+    return p && typeof p.uid === "string" ? p : null;
   } catch {
     return null;
   }
 }
 
-function writePublished(p: Published | null) {
+export function writePublished(p: Published | null) {
   try {
     if (p) localStorage.setItem(PUBLISHED_KEY, JSON.stringify(p));
     else localStorage.removeItem(PUBLISHED_KEY);
   } catch {}
 }
 
-const activeProfile = (s: AppState) => (s.profile?.on && s.profile.name ? s.profile : null);
-
-/** Öffentliche id des eigenen Eintrags (null = nicht dabei). */
-export function myBoardId(s: AppState): string | null {
-  const p = activeProfile(s);
-  return p ? boardId(p.id) : null;
-}
-
 export async function loadBoard() {
-  if (!cloudConfigured()) {
-    useBoard.setState({ status: "unavailable", error: "Die Rangliste ist noch nicht eingerichtet." });
-    return;
-  }
   if (typeof navigator !== "undefined" && !navigator.onLine) {
     useBoard.setState({ status: "error", error: "Offline – die Rangliste lädt, sobald du wieder online bist." });
     return;
   }
   useBoard.setState({ status: "loading", error: null });
   try {
-    useBoard.setState({ entries: await boardList(), status: "idle", loadedAt: Date.now() });
+    useBoard.setState({ entries: await userList(await getIdToken()), status: "idle", loadedAt: Date.now() });
   } catch (e) {
     useBoard.setState({ status: "error", error: (e as Error).message });
   }
 }
 
 async function publishOnce() {
-  if (!cloudConfigured()) return;
-  const s = useApp.getState();
-  const profile = activeProfile(s);
-  const last = readPublished();
-
-  if (!profile) {
-    // ausgetreten (auch auf einem anderen Gerät) oder zurückgesetzt → eigenen Eintrag entfernen
-    if (last) {
-      await boardDelete(last.secret);
-      writePublished(null);
-      const id = boardId(last.secret);
-      useBoard.setState((b) => ({ entries: b.entries.filter((e) => e.id !== id) }));
-    }
-    return;
-  }
-
-  const stats = StatsSchema.parse(statsFrom(s, profile.name, Date.now()));
+  const session = useAuth.getState().session;
+  if (!session || !cloudConfigured()) return;
+  const stats = StatsSchema.parse(statsFrom(useApp.getState(), session.name, Date.now()));
   const payload = JSON.stringify(stats);
-  if (last?.secret === profile.id && last.payload === payload) return;
-
-  const replaces = last && last.secret !== profile.id ? last.secret : undefined;
-  await boardUpsert(profile.id, stats, replaces);
-  writePublished({ secret: profile.id, payload });
+  const last = readPublished();
+  if (last?.uid === session.uid && last.payload === payload) return;
+  await userPut(session.uid, await getIdToken(), stats);
+  writePublished({ uid: session.uid, payload });
 }
 
 let running: Promise<void> | null = null;
@@ -116,22 +91,6 @@ export function publishNow(): Promise<void> {
 
 const quietly = () => void publishNow().catch(() => undefined);
 
-export async function joinBoard(name: string) {
-  useApp.getState().setProfile({ name, on: true });
-  await publishNow();
-  await loadBoard();
-}
-
-export async function renameOnBoard(name: string) {
-  useApp.getState().setProfile({ name, on: true });
-  await publishNow();
-}
-
-export async function leaveBoard() {
-  useApp.getState().setProfile({ on: false });
-  await publishNow();
-}
-
 let timer: ReturnType<typeof setTimeout> | undefined;
 
 /** Startet das automatische Melden. Gibt eine Aufräumfunktion zurück. */
@@ -141,13 +100,19 @@ export function startAutoPublish(): () => void {
     timer = setTimeout(quietly, ms);
   };
 
-  const unsub = useApp.subscribe((s, prev) => {
-    if (s.profile !== prev.profile) return schedule(0);
-    if (!activeProfile(s)) return;
+  const unsubApp = useApp.subscribe((s, prev) => {
+    if (!useAuth.getState().session) return;
     // Lernen → gesammelt melden; beim Verlassen der Seite wird sofort gemeldet
     if (s.xp !== prev.xp || s.activity !== prev.activity || s.dailyGoal !== prev.dailyGoal || s.streak !== prev.streak) {
       schedule(60_000);
     }
+  });
+  // Anmelden → erst synchronisieren (sonst würde ein Gerät mit altem Stand die Rangliste zurücksetzen),
+  // Umbenennen → gleich melden
+  const unsubAuth = useAuth.subscribe((s, prev) => {
+    if (!s.session) return;
+    if (s.session.uid !== prev.session?.uid) void syncNow().then((ok) => ok && quietly());
+    else if (s.session.name !== prev.session?.name) schedule(0);
   });
 
   const onHide = () => {
@@ -157,11 +122,12 @@ export function startAutoPublish(): () => void {
     }
   };
   document.addEventListener("visibilitychange", onHide);
-  quietly();
+  if (useAuth.getState().session) void syncNow().then((ok) => ok && quietly());
 
   return () => {
     clearTimeout(timer);
-    unsub();
+    unsubApp();
+    unsubAuth();
     document.removeEventListener("visibilitychange", onHide);
   };
 }

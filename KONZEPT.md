@@ -163,17 +163,16 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 - **Framer Motion** (Animation), **Zustand** mit `persist` (Fortschritt in localStorage),
   **zod** (Content-Validierung), **lucide-react** (Icons), **canvas-confetti**
 - **Statische Seite** (`output: "export"`), kein eigener Server; Gemini wird direkt aus dem Browser angefragt
-- **Speicherung:** lokal im Browser **und** – wenn aktiviert – synchronisiert über alle Geräte
-  (Laptop ↔ Handy). Kein Login: Das erste Gerät erzeugt einen geheimen Sync-Schlüssel, weitere Geräte
-  werden per QR-Code/Link gekoppelt. Der Stand liegt in Firestore (Firebase, kostenloser Spark-Plan),
-  angesprochen direkt aus dem Browser (`src/lib/cloud.ts`, Dokument-id = SHA-256 des Sync-Schlüssels,
-  bedingtes Schreiben über den Änderungszeitpunkt). `firestore.rules` verhindert das Auflisten. Gespeichert wird
-  gebündelt (20 s nach der letzten Änderung, sofort beim Verlassen der App).
+- **Konten:** Firebase Authentication (E-Mail + Passwort, REST-API, `src/lib/auth.ts`). Ohne Anmeldung zeigt die
+  App nur den Anmeldebildschirm.
+- **Speicherung:** lokal im Browser **und** im Konto (Firestore `progress/{uid}`, `src/lib/cloud.ts`), damit alle
+  Geräte denselben Stand haben. Bedingtes Schreiben über eine Versionsnummer, die `firestore.rules` erzwingt.
+  Gespeichert wird gebündelt (20 s nach der letzten Änderung, sofort beim Verlassen der App).
   Zusammenführen ohne Datenverlust: XP und Aktivität zählt jedes Gerät separat (Summe = Gesamtwert),
   pro Frage/Karte gewinnt der zuletzt geübte Stand, Tests und Achievements werden vereinigt, die Streak
   wird aus den gemeinsamen Lerntagen berechnet. Export/Import als JSON bleibt als Backup.
-- **Rangliste:** freiwillig, Eintrag mit Name, XP, Tagesstand, Tagesziel und Streak in Firestore; ändern darf
-  nur, wer den geheimen Ranglisten-Schlüssel kennt (Nachweis über `firestore.rules`).
+- **Rangliste:** jedes Konto meldet Name, XP, Tagesstand, Tagesziel und Streak nach `users/{uid}`; alle
+  Angemeldeten sehen alle Einträge, ändern kann jedes Konto nur den eigenen.
 - **Deployment:** GitHub Actions → GitHub Pages (`.github/workflows/deploy.yml`), kostenlos und unbegrenzt
   für öffentliche Repos.
 

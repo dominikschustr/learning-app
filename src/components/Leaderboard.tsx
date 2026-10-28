@@ -1,15 +1,16 @@
 "use client";
 
-import { Flame, Loader2, LogOut, Pencil, RefreshCw, Trophy, UserPlus } from "lucide-react";
+import { Flame, RefreshCw, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { titleFor } from "@/lib/gamification";
-import { boardId } from "@/lib/cloud";
-import { joinBoard, leaveBoard, loadBoard, renameOnBoard, useBoard } from "@/lib/leaderboard";
-import { NAME_MAX, rankEntries, statsFrom, type Entry, type Row, type SortBy } from "@/lib/ranking";
+import Link from "next/link";
+import { useAuth } from "@/lib/auth";
+import { loadBoard, useBoard } from "@/lib/leaderboard";
+import { rankEntries, statsFrom, type Entry, type Row, type SortBy } from "@/lib/ranking";
 import { useApp, useHydrated } from "@/lib/store";
 import { useNow } from "@/lib/useNow";
-import { cn, dayKey } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { Bar, Button, Chip, Skeleton } from "./ui";
 
 const SORTS: { id: SortBy; label: string }[] = [
@@ -36,7 +37,7 @@ function LeaderboardInner() {
   const board = useBoard();
   const now = useNow();
   const [by, setBy] = useState<SortBy>("xp");
-  const joined = s.profile?.on && s.profile.name ? s.profile : null;
+  const session = useAuth((a) => a.session);
 
   // Laden beim Öffnen und beim Zurückkehren in die App (höchstens alle 30 s)
   useEffect(() => {
@@ -52,31 +53,16 @@ function LeaderboardInner() {
   }, []);
 
   // Eigene Zeile immer mit dem aktuellen lokalen Stand, auch bevor die nächste Meldung raus ist
-  const myId = joined ? boardId(joined.id) : null;
+  const myId = session?.uid ?? null;
   const rows = useMemo(() => {
     let entries: Entry[] = board.entries;
-    if (joined && myId) {
-      const own: Entry = { ...statsFrom(s, joined.name, now), id: myId, at: now };
-      entries = [...entries.filter((e) => e.id !== myId), own];
+    if (session) {
+      const own: Entry = { ...statsFrom(s, session.name, now), id: session.uid, at: now };
+      entries = [...entries.filter((e) => e.id !== session.uid), own];
     }
     return rankEntries(entries, by, now);
-  }, [board.entries, joined, s, by, now, myId]);
-
-  if (board.status === "unavailable") {
-    return (
-      <div className="mx-auto max-w-2xl space-y-6">
-        <h1 className="display text-4xl sm:text-5xl">Rangliste</h1>
-        <div className="card p-8 text-center">
-          <Trophy className="mx-auto size-8 text-muted" />
-          <p className="mt-3 font-semibold">Noch nicht eingerichtet</p>
-          <p className="text-sm text-muted">
-            Für die Rangliste braucht die App ein kostenloses Firebase-Projekt. Die Anleitung steht in der README unter
-            „Synchronisation und Rangliste einrichten“.
-          </p>
-        </div>
-      </div>
-    );
-  }
+  }, [board.entries, session, s, by, now]);
+  const mine = rows.find((r) => r.id === myId);
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
@@ -97,7 +83,16 @@ function LeaderboardInner() {
         </Button>
       </section>
 
-      {joined ? <Membership name={joined.name} /> : <JoinCard />}
+      {mine && session && (
+        <section className="card flex flex-wrap items-center justify-between gap-3 px-5 py-4">
+          <p className="text-sm text-ink-2">
+            <span className="font-semibold text-ink">{session.name}</span> – Platz {mine.rank} von {rows.length}
+          </p>
+          <Link href="/settings/#konto" className="text-sm font-medium text-accent hover:underline">
+            Namen ändern
+          </Link>
+        </section>
+      )}
 
       <div role="tablist" aria-label="Sortierung" className="inline-flex rounded-full border border-line bg-surface p-1">
         {SORTS.map((o) => (
@@ -125,7 +120,7 @@ function LeaderboardInner() {
         <div className="card p-8 text-center">
           <Trophy className="mx-auto size-8 text-muted" />
           <p className="mt-3 font-semibold">Noch niemand dabei</p>
-          <p className="text-sm text-muted">Tritt als Erste:r bei und teile den Link zur App mit deinen Kommiliton:innen.</p>
+          <p className="text-sm text-muted">Teile den Link zur App mit deinen Kommiliton:innen.</p>
         </div>
       ) : (
         <ol className="card divide-y divide-line overflow-hidden">
@@ -144,8 +139,8 @@ function LeaderboardInner() {
       )}
 
       <p className="text-xs text-muted">
-        „Heute“ zählt beantwortete Fragen und Karteikarten seit Mitternacht, „Streak“ die Lerntage in Folge. Die
-        Rangliste aktualisiert sich, wenn du sie öffnest.
+        Hier stehen alle, die ein Konto haben. „Heute“ zählt beantwortete Fragen und Karteikarten seit Mitternacht,
+        „Streak“ die Lerntage in Folge. Die Rangliste aktualisiert sich, wenn du sie öffnest.
       </p>
     </div>
   );
@@ -233,121 +228,5 @@ function Stat({
       <p className={cn("tabular-nums", active ? "text-lg font-bold" : "text-sm font-semibold text-ink-2")}>{value}</p>
       <p className={cn("text-[11px] tabular-nums text-muted", subClass)}>{sub}</p>
     </div>
-  );
-}
-
-function NameForm({
-  initial = "",
-  submitLabel,
-  icon,
-  onSubmit,
-  onCancel,
-}: {
-  initial?: string;
-  submitLabel: string;
-  icon: React.ReactNode;
-  onSubmit: (name: string) => Promise<void>;
-  onCancel?: () => void;
-}) {
-  const [name, setName] = useState(initial);
-  const [busy, setBusy] = useState(false);
-  const [msg, setMsg] = useState<string | null>(null);
-  const clean = name.trim();
-
-  return (
-    <form
-      className="mt-3"
-      onSubmit={(e) => {
-        e.preventDefault();
-        if (!clean) return;
-        setBusy(true);
-        setMsg(null);
-        onSubmit(clean)
-          .catch((err: Error) => setMsg(err.message))
-          .finally(() => setBusy(false));
-      }}
-    >
-      <div className="flex flex-wrap gap-2">
-        <input
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          maxLength={NAME_MAX}
-          placeholder="Dein Name oder Spitzname"
-          autoComplete="nickname"
-          className="h-11 min-w-0 flex-1 rounded-full border border-line-strong bg-surface px-4 text-sm outline-none focus:border-accent"
-        />
-        <Button type="submit" disabled={busy || !clean}>
-          {busy ? <Loader2 className="size-4 animate-spin" /> : icon} {submitLabel}
-        </Button>
-        {onCancel && (
-          <Button variant="ghost" onClick={onCancel}>
-            Abbrechen
-          </Button>
-        )}
-      </div>
-      {msg && <p className="mt-2 text-sm text-bad">{msg}</p>}
-    </form>
-  );
-}
-
-function JoinCard() {
-  return (
-    <section className="card p-6">
-      <h2 className="text-lg font-semibold">Mitmachen</h2>
-      <p className="text-sm text-muted">
-        Vergleiche Level, Tagesstand und Streak mit allen, die Lernwerk nutzen. Sichtbar sind nur dein Name, XP, deine
-        Antworten heute, dein Tagesziel und deine Streak – nicht dein Lernstand.
-      </p>
-      <NameForm submitLabel="Beitreten" icon={<UserPlus className="size-4" />} onSubmit={joinBoard} />
-    </section>
-  );
-}
-
-function Membership({ name }: { name: string }) {
-  const [editing, setEditing] = useState(false);
-  const now = useNow();
-  const today = useApp((s) => s.activity[dayKey(now)] ?? 0);
-
-  if (editing) {
-    return (
-      <section className="card p-6">
-        <h2 className="text-lg font-semibold">Namen ändern</h2>
-        <NameForm
-          initial={name}
-          submitLabel="Speichern"
-          icon={<Pencil className="size-4" />}
-          onSubmit={async (n) => {
-            await renameOnBoard(n);
-            setEditing(false);
-          }}
-          onCancel={() => setEditing(false)}
-        />
-      </section>
-    );
-  }
-
-  return (
-    <section className="card flex flex-wrap items-center justify-between gap-3 px-5 py-4">
-      <p className="text-sm text-ink-2">
-        Du bist dabei als <span className="font-semibold text-ink">{name}</span>
-        {today === 0 && <span className="text-muted"> – heute noch keine Antwort</span>}
-      </p>
-      <div className="flex gap-1">
-        <Button variant="ghost" className="h-9 px-3" onClick={() => setEditing(true)}>
-          <Pencil className="size-4" /> Umbenennen
-        </Button>
-        <Button
-          variant="ghost"
-          className="h-9 px-3"
-          onClick={() => {
-            if (window.confirm("Aus der Rangliste austreten? Dein Eintrag wird gelöscht, dein Lernstand bleibt.")) {
-              void leaveBoard().catch(() => undefined);
-            }
-          }}
-        >
-          <LogOut className="size-4" /> Austreten
-        </Button>
-      </div>
-    </section>
   );
 }
