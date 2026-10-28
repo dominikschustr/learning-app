@@ -70,23 +70,19 @@ export function Header() {
   );
 }
 
-/** Kleiner Sync-Status im Header, nur wenn die Synchronisation aktiv ist. */
+/** Kleiner Sync-Status im Header, führt zum Konto in den Einstellungen. */
 function SyncBadge() {
-  const key = useSync((s) => s.key);
   const status = useSync((s) => s.status);
-  if (!key) return null;
   const Icon = status === "syncing" ? Loader2 : status === "idle" ? Cloud : CloudOff;
   const label = {
-    off: "Aus",
     idle: "Synchronisiert",
     syncing: "Synchronisiere …",
     offline: "Offline",
     error: "Sync-Fehler",
-    unavailable: "Sync nicht verfügbar",
   }[status];
   return (
     <Link
-      href="/settings#sync"
+      href="/settings/#konto"
       title={label}
       aria-label={label}
       className={cn(

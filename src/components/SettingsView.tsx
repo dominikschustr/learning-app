@@ -4,9 +4,9 @@ import { Check, Download, KeyRound, Minus, Plus, Trash2, Upload } from "lucide-r
 import { useRef, useState } from "react";
 import { setGeminiKey, useGeminiKey } from "@/lib/grade";
 import { exportData, useApp, useHydrated } from "@/lib/store";
-import { disconnectSync, useSync } from "@/lib/sync";
+import { resetProgress } from "@/lib/account";
 import { dayKey } from "@/lib/utils";
-import { SyncSettings } from "./SyncSettings";
+import { AccountSettings } from "./AccountSettings";
 import { Button, Skeleton } from "./ui";
 
 export function SettingsView() {
@@ -14,8 +14,6 @@ export function SettingsView() {
   const dailyGoal = useApp((s) => s.dailyGoal);
   const setDailyGoal = useApp((s) => s.setDailyGoal);
   const importData = useApp((s) => s.importData);
-  const reset = useApp((s) => s.reset);
-  const syncKey = useSync((s) => s.key);
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState<string | null>(null);
 
@@ -46,7 +44,7 @@ export function SettingsView() {
     <div className="mx-auto max-w-2xl space-y-6">
       <h1 className="display text-4xl sm:text-5xl">Einstellungen</h1>
 
-      <SyncSettings />
+      <AccountSettings />
 
       <section className="card p-6">
         <h2 className="text-lg font-semibold">Tagesziel</h2>
@@ -93,19 +91,18 @@ export function SettingsView() {
 
       <section className="card border-bad/30 p-6">
         <h2 className="text-lg font-semibold">Zurücksetzen</h2>
-        <p className="text-sm text-muted">Löscht XP, Streak, Achievements und den gesamten Lernfortschritt.</p>
+        <p className="text-sm text-muted">
+          Löscht XP, Streak, Achievements und den gesamten Lernfortschritt deines Kontos – auf allen Geräten. Konto und
+          Name bleiben.
+        </p>
         <Button
           variant="secondary"
           className="mt-4 text-bad"
           onClick={() => {
-            const warning = syncKey
-              ? "Fortschritt auf diesem Gerät löschen? Das Gerät wird dabei von der Synchronisation getrennt – der Stand in der Cloud und auf deinen anderen Geräten bleibt erhalten."
-              : "Wirklich den gesamten Fortschritt löschen? Das lässt sich nicht rückgängig machen.";
-            if (window.confirm(warning)) {
-              if (syncKey) disconnectSync();
-              reset();
-              setMsg("Fortschritt zurückgesetzt.");
-            }
+            if (!window.confirm("Wirklich den gesamten Fortschritt löschen – auf allen Geräten? Das lässt sich nicht rückgängig machen.")) return;
+            resetProgress()
+              .then(() => setMsg("Fortschritt zurückgesetzt."))
+              .catch((e: Error) => setMsg(`Zurücksetzen fehlgeschlagen: ${e.message}`));
           }}
         >
           <Trash2 className="size-4" /> Fortschritt löschen
