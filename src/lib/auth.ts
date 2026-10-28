@@ -129,7 +129,13 @@ export async function signUp(name: string, email: string, password: string): Pro
 
 export async function signIn(email: string, password: string): Promise<Session> {
   const r = await identity<TokenResponse>("signInWithPassword", { email: email.trim(), password, returnSecureToken: true });
-  const session = toSession(r, r.displayName || r.email.split("@")[0]);
+  // die Antwort enthält den Namen nicht immer → nachschlagen
+  let name = r.displayName;
+  if (!name) {
+    const look = await identity<{ users?: { displayName?: string }[] }>("lookup", { idToken: r.idToken });
+    name = look.users?.[0]?.displayName;
+  }
+  const session = toSession(r, name || r.email.split("@")[0]);
   useAuth.setState({ session });
   return session;
 }
