@@ -75,3 +75,89 @@ export function rankEntries(entries: Entry[], by: SortBy, now: number): Row[] {
   });
   return rows;
 }
+
+/** Wert, nach dem gerade sortiert wird. */
+export function sortValue(r: Row, by: SortBy): number {
+  return by === "xp" ? r.xp : by === "today" ? r.todayNow : r.streakNow;
+}
+
+export type League = { id: string; name: string; minLevel: number; color: string };
+
+/** Ligen nach Level – farbige Stufen über den Titeln. */
+export const LEAGUES: League[] = [
+  { id: "bronze", name: "Bronze", minLevel: 1, color: "#b8733a" },
+  { id: "silver", name: "Silber", minLevel: 3, color: "#8a94a3" },
+  { id: "gold", name: "Gold", minLevel: 5, color: "#d4a017" },
+  { id: "platinum", name: "Platin", minLevel: 8, color: "#3fa7b5" },
+  { id: "diamond", name: "Diamant", minLevel: 12, color: "#6c63ff" },
+  { id: "legend", name: "Legende", minLevel: 17, color: "#e0457b" },
+];
+
+export function leagueFor(level: number): League {
+  return [...LEAGUES].reverse().find((l) => level >= l.minLevel)!;
+}
+
+/** Höchster erreichter Streak-Meilenstein (für das Flammen-Abzeichen). */
+export const STREAK_MILESTONES = [3, 7, 14, 30, 100] as const;
+
+export function streakMilestone(streak: number): number | null {
+  return [...STREAK_MILESTONES].reverse().find((m) => streak >= m) ?? null;
+}
+
+export type Duel = {
+  /** Person direkt vor dir (null = du führst) */
+  ahead: { row: Row; gap: number } | null;
+  /** Person direkt hinter dir (null = du bist Letzte:r) */
+  behind: { row: Row; gap: number } | null;
+};
+
+/**
+ * Wie weit bis zum nächsten Platz, wie knapp hinter dir? gap ahead = so viel brauchst du,
+ * um vorbeizuziehen (bei Gleichstand 1); gap behind = Vorsprung.
+ */
+export function duel(rows: Row[], myId: string, by: SortBy): Duel | null {
+  const i = rows.findIndex((r) => r.id === myId);
+  if (i < 0) return null;
+  const me = rows[i];
+  const mine = sortValue(me, by);
+  const ahead = rows.slice(0, i).reverse().find((r) => r.rank < me.rank) ?? null;
+  const behind = rows.slice(i + 1).find((r) => r.rank > me.rank) ?? null;
+  return {
+    ahead: ahead && { row: ahead, gap: sortValue(ahead, by) - mine + 1 },
+    behind: behind && { row: behind, gap: mine - sortValue(behind, by) },
+  };
+}
+
+/** Gemeinsamer Tagesstand aller: Antworten heute, wie viele ihr Ziel geschafft haben. */
+export function teamDay(rows: Row[]) {
+  const active = rows.filter((r) => r.todayNow > 0);
+  return {
+    answers: rows.reduce((s, r) => s + r.todayNow, 0),
+    goal: active.reduce((s, r) => s + r.goal, 0),
+    active: active.length,
+    done: rows.filter((r) => r.todayNow >= r.goal).length,
+  };
+}
+
+/** Platz je Person beim letzten Besuch (pro Sortierung), um Auf- und Abstiege zu zeigen. */
+export type Seen = Record<string, number>;
+
+export function snapshot(rows: Row[]): Seen {
+  return Object.fromEntries(rows.map((r) => [r.id, r.rank]));
+}
+
+/** Plätze gewonnen (+) oder verloren (−) seit dem letzten Besuch; undefined = neu oder unverändert unbekannt. */
+export function movement(prev: Seen | null, row: Row): number | undefined {
+  const before = prev?.[row.id];
+  return before === undefined ? undefined : before - row.rank;
+}
+
+/** Wen du seit dem letzten Besuch überholt hast und wer dich überholt hat. */
+export function overtakes(prev: Seen | null, rows: Row[], myId: string) {
+  const me = rows.find((r) => r.id === myId);
+  const was = prev?.[myId];
+  if (!me || was === undefined) return { passed: [] as Row[], passedBy: [] as Row[] };
+  const passed = rows.filter((r) => r.id !== myId && prev![r.id] !== undefined && prev![r.id] < was && r.rank > me.rank);
+  const passedBy = rows.filter((r) => r.id !== myId && prev![r.id] !== undefined && prev![r.id] > was && r.rank < me.rank);
+  return { passed, passedBy };
+}

@@ -69,7 +69,13 @@ function Toaster() {
             </span>
             <span className="min-w-0">
               <span className="eyebrow block">
-                {t.kind === "achievement" ? "Achievement freigeschaltet" : t.kind === "level" ? "Level-Up" : "Geschafft"}
+                {t.kind === "achievement"
+                  ? "Achievement freigeschaltet"
+                  : t.kind === "level"
+                    ? "Level-Up"
+                    : t.kind === "rank"
+                      ? "Rangliste"
+                      : "Geschafft"}
               </span>
               <span className="block font-semibold">{t.title}</span>
               {t.body && <span className="block text-sm text-muted">{t.body}</span>}

@@ -5,7 +5,7 @@ import type { AnswerEvent } from "./store";
 
 export type Toast = {
   id: number;
-  kind: "achievement" | "level" | "goal" | "info";
+  kind: "achievement" | "level" | "goal" | "info" | "rank";
   title: string;
   body?: string;
   icon?: string;

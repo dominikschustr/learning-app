@@ -100,6 +100,8 @@ type Actions = {
   updateExamRecord(id: string, patch: Partial<ExamRecord>): void;
   discardExam(): void;
   setBlitzBest(subjectId: string, score: number): void;
+  /** Schaltet Ranglisten-Achievements frei; gibt die neu freigeschalteten zurück. */
+  unlockBoardAchievements(ids: string[]): AchievementDef[];
   setDailyGoal(goal: number): void;
   toggleMark(key: string): void;
   /** Übernimmt einen zusammengeführten Stand aus der Synchronisation. */
@@ -142,7 +144,11 @@ export function visibleStreak(streak: Streak, now: number): number {
   return alive ? streak.current : 0;
 }
 
-type AchievementInput = Pick<Data, "activity" | "cards" | "items" | "bestCombo" | "dailyGoal" | "streak" | "exams" | "blitzBest" | "xp">;
+type AchievementInput = Pick<Data, "activity" | "cards" | "items" | "bestCombo" | "dailyGoal" | "streak" | "exams" | "blitzBest" | "xp"> &
+  Partial<Pick<Data, "achievements">>;
+
+/** Achievements, die die Rangliste freischaltet (nicht aus dem eigenen Lernstand berechenbar). */
+export const BOARD_ACHIEVEMENTS = ["rank-overtake", "rank-podium", "rank-day-1"] as const;
 
 /** Aktueller Stand je Achievement, vergleichbar mit dessen target. */
 export function achievementProgress(d: AchievementInput, now: number): Record<string, number> {
@@ -161,6 +167,7 @@ export function achievementProgress(d: AchievementInput, now: number): Record<st
     "chapter-test": best(d.exams.filter((e) => e.lecture)),
     "blitz-15": Math.max(0, ...Object.values(d.blitzBest)),
     "level-5": levelInfo(d.xp).level,
+    ...Object.fromEntries(BOARD_ACHIEVEMENTS.map((id) => [id, d.achievements?.[id] ? 1 : 0])),
   };
 }
 
@@ -339,6 +346,16 @@ export const useApp = create<AppState>()(
         setBlitzBest(subjectId, score) {
           const prev = get().blitzBest[subjectId] ?? 0;
           if (score > prev) set({ blitzBest: { ...get().blitzBest, [subjectId]: score } });
+        },
+
+        unlockBoardAchievements(ids) {
+          const have = get().achievements;
+          const fresh = ACHIEVEMENTS.filter((a) => ids.includes(a.id) && !have[a.id]);
+          if (fresh.length) {
+            const now = Date.now();
+            set({ achievements: { ...have, ...Object.fromEntries(fresh.map((a) => [a.id, now])) } });
+          }
+          return fresh;
         },
 
         setDailyGoal(goal) {

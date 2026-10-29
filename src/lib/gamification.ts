@@ -71,5 +71,8 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   { id: "exam-1", title: "Generalprobe", description: "Ersten Abschlusstest abgeschlossen", howTo: "Schließe einen Abschlusstest über alle Kapitel ab.", icon: "file-check", target: 1 },
   { id: "exam-80", title: "Prüfungsreif", description: "Abschlusstest mit mindestens 80 %", howTo: "Schaffe im Abschlusstest mindestens 80 %.", icon: "trophy", target: 80, unit: "%" },
   { id: "blitz-15", title: "Blitzmerker", description: "15 richtige in einer Blitzrunde", howTo: "Beantworte in einer Blitzrunde (60 Sek.) 15 Aussagen richtig.", icon: "timer", target: 15 },
+  { id: "rank-overtake", title: "Überholmanöver", description: "Jemanden in der Rangliste überholt", howTo: "Zieh in der Level-Rangliste an jemandem vorbei, der beim letzten Besuch vor dir lag.", icon: "rocket", target: 1 },
+  { id: "rank-podium", title: "Aufs Treppchen", description: "Top 3 der Level-Rangliste", howTo: "Erreiche Platz 1–3 der Level-Rangliste (mit mindestens 4 Teilnehmenden).", icon: "medal", target: 1 },
+  { id: "rank-day-1", title: "Tagessieg", description: "Platz 1 bei „Heute“", howTo: "Beantworte an einem Tag die meisten Fragen und Karten (mindestens 3 sind heute aktiv).", icon: "crown", target: 1 },
   { id: "level-5", title: "Aufsteiger", description: "Level 5 erreicht", howTo: "Sammle XP bis Level 5 – jede Antwort zählt.", icon: "trending-up", target: 5 },
 ];
