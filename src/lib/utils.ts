@@ -18,6 +18,20 @@ export function dayKey(date: Date | number = Date.now()): string {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 }
 
+/** Montag (lokal) der Woche von `date` als YYYY-MM-DD – Schlüssel der Wochenliga. */
+export function weekKey(date: Date | number = Date.now()): string {
+  const d = new Date(date);
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+  return dayKey(d);
+}
+
+/** Beginn der nächsten Woche (Montag 0:00 lokal) in ms. */
+export function nextWeekStart(date: Date | number = Date.now()): number {
+  const [y, m, d] = weekKey(date).split("-").map(Number);
+  return new Date(y, m - 1, d + 7).getTime();
+}
+
 export function addDays(date: Date | number, days: number): Date {
   const d = new Date(date);
   d.setDate(d.getDate() + days);

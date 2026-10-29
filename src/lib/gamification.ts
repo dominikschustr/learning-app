@@ -73,6 +73,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   { id: "blitz-15", title: "Blitzmerker", description: "15 richtige in einer Blitzrunde", howTo: "Beantworte in einer Blitzrunde (60 Sek.) 15 Aussagen richtig.", icon: "timer", target: 15 },
   { id: "rank-overtake", title: "Überholmanöver", description: "Jemanden in der Rangliste überholt", howTo: "Zieh in der Level-Rangliste an jemandem vorbei, der beim letzten Besuch vor dir lag.", icon: "rocket", target: 1 },
   { id: "rank-podium", title: "Aufs Treppchen", description: "Top 3 der Level-Rangliste", howTo: "Erreiche Platz 1–3 der Level-Rangliste (mit mindestens 4 Teilnehmenden).", icon: "medal", target: 1 },
+  { id: "rank-week-podium", title: "Wochen-Treppchen", description: "Top 3 der Wochenliga", howTo: "Lande in der Wochenliga auf Platz 1–3 (mit mindestens 4 Aktiven in der Woche).", icon: "medal", target: 1 },
   { id: "rank-day-1", title: "Tagessieg", description: "Platz 1 bei „Heute“", howTo: "Beantworte an einem Tag die meisten Fragen und Karten (mindestens 3 sind heute aktiv).", icon: "crown", target: 1 },
   { id: "level-5", title: "Aufsteiger", description: "Level 5 erreicht", howTo: "Sammle XP bis Level 5 – jede Antwort zählt.", icon: "trending-up", target: 5 },
 ];

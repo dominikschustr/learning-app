@@ -21,6 +21,8 @@ const stats = (patch = {}) => ({
   goal: 30,
   streak: 3,
   streakDay: "2026-10-28",
+  weekXp: 180,
+  week: "2026-10-26",
   ...patch,
 });
 
@@ -110,6 +112,14 @@ describe.skipIf(!EMULATOR || !AUTH)("Konten und Firestore-Regeln", () => {
     await expect(cloud.userPut(uid, token, stats({ name: "x".repeat(25) }))).rejects.toThrow();
     await expect(cloud.userPut(uid, token, stats({ xp: -1 }))).rejects.toThrow();
     await expect(cloud.userPut(uid, token, stats({ day: "heute" }))).rejects.toThrow();
+    await expect(cloud.userPut(uid, token, stats({ weekXp: -5 }))).rejects.toThrow();
+    await expect(cloud.userPut(uid, token, stats({ week: "KW44" }))).rejects.toThrow();
+  });
+
+  it("Rangliste: Einträge ohne Wochenliga (ältere App-Versionen) bleiben erlaubt", async () => {
+    await cloud.userPut(ben.uid, ben.token, stats({ name: "Ben" }), true);
+    const e = (await cloud.userList(anna.token)).find((x) => x.id === ben.uid);
+    expect(e).toMatchObject({ name: "Ben", weekXp: 0, week: null });
   });
 
   it("Konto löschen: Lernstand, Eintrag und Konto sind weg", async () => {

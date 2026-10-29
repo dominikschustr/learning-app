@@ -41,7 +41,8 @@ service cloud.firestore {
     }
 
     function validUser(e) {
-      return e.keys().hasOnly(['name', 'xp', 'today', 'day', 'goal', 'streak', 'streakDay', 'at'])
+      // weekXp/week (Wochenliga) sind optional, damit ältere App-Versionen weiter melden können
+      return e.keys().hasOnly(['name', 'xp', 'today', 'day', 'goal', 'streak', 'streakDay', 'weekXp', 'week', 'at'])
         && e.name is string && e.name.size() >= 1 && e.name.size() <= 24
         && e.xp is int && e.xp >= 0 && e.xp <= 10000000
         && e.today is int && e.today >= 0 && e.today <= 100000
@@ -49,6 +50,8 @@ service cloud.firestore {
         && e.goal is int && e.goal >= 1 && e.goal <= 1000
         && e.streak is int && e.streak >= 0 && e.streak <= 100000
         && (e.streakDay == null || isDay(e.streakDay))
+        && (!('weekXp' in e) || (e.weekXp is int && e.weekXp >= 0 && e.weekXp <= 10000000))
+        && (!('week' in e) || e.week == null || isDay(e.week))
         && e.at == request.time;
     }
   }

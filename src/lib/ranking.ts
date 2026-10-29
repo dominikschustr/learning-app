@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { levelInfo } from "./gamification";
-import { addDays, dayKey } from "./utils";
+import { weekXp, type Counter } from "./merge";
+import { addDays, dayKey, weekKey } from "./utils";
 
 /**
  * Rangliste: jede teilnehmende Person meldet ihren Stand (Level/XP, Tagesstand, Streak).
@@ -23,6 +24,9 @@ export const StatsSchema = z.object({
   goal: z.number().int().min(1).max(1000),
   streak: z.number().int().min(0).max(100_000),
   streakDay: day.nullable(),
+  /** XP der Woche `week` (Montag der Woche); fehlt bei Einträgen von vor der Wochenliga */
+  weekXp: z.number().int().min(0).max(10_000_000).default(0),
+  week: day.nullable().default(null),
 });
 
 export type Stats = z.infer<typeof StatsSchema>;
@@ -30,7 +34,7 @@ export type Stats = z.infer<typeof StatsSchema>;
 /** Gespeicherter Eintrag; id ist öffentlich (Hash des geheimen Schlüssels). */
 export type Entry = Stats & { id: string; at: number };
 
-export type SortBy = "xp" | "today" | "streak";
+export type SortBy = "xp" | "week" | "today" | "streak";
 
 export type Row = Entry & {
   rank: number;
@@ -38,10 +42,18 @@ export type Row = Entry & {
   /** Tagesstand bezogen auf heute (0, wenn die Person heute noch nichts gemeldet hat) */
   todayNow: number;
   streakNow: number;
+  /** Wochen-XP bezogen auf die aktuelle Woche (0, wenn aus einer früheren Woche) */
+  weekNow: number;
 };
 
 export function statsFrom(
-  s: { xp: number; activity: Record<string, number>; dailyGoal: number; streak: { current: number; lastDay: string | null } },
+  s: {
+    xp: number;
+    activity: Record<string, number>;
+    dailyGoal: number;
+    streak: { current: number; lastDay: string | null };
+    counters?: Record<string, Counter>;
+  },
   name: string,
   now: number,
 ): Stats {
@@ -54,6 +66,8 @@ export function statsFrom(
     goal: s.dailyGoal,
     streak: s.streak.current,
     streakDay: s.streak.lastDay,
+    weekXp: weekXp(s.counters ?? {}, now),
+    week: weekKey(now),
   };
 }
 
@@ -61,14 +75,16 @@ export function statsFrom(
 export function rankEntries(entries: Entry[], by: SortBy, now: number): Row[] {
   const today = dayKey(now);
   const yesterday = dayKey(addDays(now, -1));
+  const week = weekKey(now);
   const rows = entries.map((e) => ({
     ...e,
     rank: 0,
     level: levelInfo(e.xp).level,
     todayNow: e.day === today ? e.today : 0,
     streakNow: e.streakDay === today || e.streakDay === yesterday ? e.streak : 0,
+    weekNow: e.week === week ? e.weekXp : 0,
   }));
-  const key = (r: Row) => (by === "xp" ? r.xp : by === "today" ? r.todayNow : r.streakNow);
+  const key = (r: Row) => sortValue(r, by);
   rows.sort((a, b) => key(b) - key(a) || b.xp - a.xp || a.name.localeCompare(b.name, "de"));
   rows.forEach((r, i) => {
     r.rank = i > 0 && key(rows[i - 1]) === key(r) ? rows[i - 1].rank : i + 1;
@@ -78,7 +94,7 @@ export function rankEntries(entries: Entry[], by: SortBy, now: number): Row[] {
 
 /** Wert, nach dem gerade sortiert wird. */
 export function sortValue(r: Row, by: SortBy): number {
-  return by === "xp" ? r.xp : by === "today" ? r.todayNow : r.streakNow;
+  return by === "xp" ? r.xp : by === "week" ? r.weekNow : by === "today" ? r.todayNow : r.streakNow;
 }
 
 export type League = { id: string; name: string; minLevel: number; color: string };

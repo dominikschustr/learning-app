@@ -1,5 +1,5 @@
 import type { ItemState } from "./srs";
-import { addDays, dayKey } from "./utils";
+import { addDays, dayKey, weekKey } from "./utils";
 
 /**
  * Zusammenführen des Lernstands zweier Geräte.
@@ -10,7 +10,8 @@ import { addDays, dayKey } from "./utils";
  * - Lesezeichen: pro Frage/Karte gewinnt das zuletzt gesetzte oder entfernte.
  */
 
-export type Counter = { xp: number; activity: Record<string, number> };
+/** xpDays: XP je Tag (seit der Wochenliga; ältere Zähler haben es nicht). */
+export type Counter = { xp: number; activity: Record<string, number>; xpDays?: Record<string, number> };
 
 /** Lesezeichen; on: false bleibt stehen, damit das Entfernen auf andere Geräte übertragen wird. */
 export type Mark = { on: boolean; at: number };
@@ -53,6 +54,19 @@ export function totals(counters: Record<string, Counter>): Pick<SyncData, "xp" |
   return { xp, activity };
 }
 
+/** XP aller Geräte in der Woche von `now` (Montag bis Sonntag). */
+export function weekXp(counters: Record<string, Counter>, now: number): number {
+  const week = weekKey(now);
+  let sum = 0;
+  for (const c of Object.values(counters)) {
+    for (const [day, xp] of Object.entries(c.xpDays ?? {})) {
+      const [y, m, d] = day.split("-").map(Number);
+      if (weekKey(new Date(y, m - 1, d)) === week) sum += xp;
+    }
+  }
+  return sum;
+}
+
 /** Streak aus den Lerntagen: aktuelle Serie bis zum letzten Lerntag und längste Serie. */
 export function streakFromActivity(activity: Record<string, number>, prevBest = 0): SyncData["streak"] {
   const days = Object.keys(activity)
@@ -75,6 +89,7 @@ export function mergeSync<E extends ExamLike>(local: SyncData<E>, remote: SyncDa
   const counters = mergeRecord(local.counters ?? {}, remote.counters ?? {}, (x, y) => ({
     xp: Math.max(x.xp, y.xp),
     activity: mergeRecord(x.activity, y.activity, Math.max),
+    xpDays: mergeRecord(x.xpDays ?? {}, y.xpDays ?? {}, Math.max),
   }));
   const { xp, activity } = totals(counters);
 

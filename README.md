@@ -75,9 +75,11 @@ er sich automatisch ab (nach Änderungen, beim Wechsel zurück in die App, wenn 
 Beim Abmelden wird der Stand zuerst hochgeladen und dann vom Gerät entfernt.
 
 Unter *Rangliste* (Pokal-Symbol oben) stehen alle Konten mit Level/XP, Antworten heute (mit Tagesziel) und
-Streak – dazu Siegertreppchen, Ligen nach Level (Bronze bis Legende), Streak-Abzeichen, „Dein Duell“ mit den Plätzen
+Streak sowie die **Wochenliga** (XP von Montag bis Sonntag, Neustart jeden Montag um 0 Uhr) – dazu Siegertreppchen, Ligen nach Level (Bronze bis Legende), Streak-Abzeichen, „Dein Duell“ mit den Plätzen
 vor und hinter dir, ein gemeinsames Tagesziel aller, Auf-/Abstiegspfeile und Überhol-Meldungen seit dem letzten Besuch
-(gemerkt auf dem Gerät) sowie drei Ranglisten-Achievements. Dafür werden keine zusätzlichen Daten gespeichert. Gemeldet wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur bei Änderungen),
+(gemerkt auf dem Gerät) sowie vier Ranglisten-Achievements. Für die Wochenliga meldet jedes Konto zusätzlich `weekXp` und `week` (Montag der
+Woche); die XP je Tag werden dafür pro Gerät mitgezählt und synchronisiert. **Nach diesem Update `firestore.rules`
+einmal neu in der Firebase-Konsole einfügen** – bis dahin meldet die App automatisch ohne Wochenfelder weiter. Gemeldet wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur bei Änderungen),
 geladen nur beim Öffnen der Rangliste. Name ändern, abmelden und Konto löschen unter *Einstellungen*.
 
 ## Umzug von der alten Vercel-Adresse

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDown, ArrowUp, Crown, Flame, RefreshCw, Swords, Trophy, Users } from "lucide-react";
+import { ArrowDown, ArrowUp, CalendarClock, Crown, Flame, RefreshCw, Swords, Trophy, Users } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { titleFor } from "@/lib/gamification";
@@ -26,20 +26,21 @@ import {
 import { useApp, useHydrated } from "@/lib/store";
 import { announce, celebrate, useToasts } from "@/lib/toast";
 import { useNow } from "@/lib/useNow";
-import { alpha, cn, dayKey } from "@/lib/utils";
+import { alpha, cn, dayKey, nextWeekStart, weekKey } from "@/lib/utils";
 import { Bar, Button, Chip, Skeleton } from "./ui";
 
 const SORTS: { id: SortBy; label: string }[] = [
+  { id: "week", label: "Woche" },
   { id: "xp", label: "Level" },
   { id: "today", label: "Heute" },
   { id: "streak", label: "Streak" },
 ];
 
-const UNIT: Record<SortBy, [string, string]> = { xp: ["XP", "XP"], today: ["Antwort", "Antworten"], streak: ["Tag", "Tage"] };
+const UNIT: Record<SortBy, [string, string]> = { xp: ["XP", "XP"], week: ["XP", "XP"], today: ["Antwort", "Antworten"], streak: ["Tag", "Tage"] };
 const unit = (by: SortBy, n: number) => `${n} ${UNIT[by][n === 1 ? 0 : 1]}`;
 
 /** Plätze beim letzten Besuch je Sortierung (nur auf diesem Gerät), für Auf-/Abstiege und Überhol-Meldungen. */
-type SeenStore = { day: string; ranks: Partial<Record<SortBy, Seen>> };
+type SeenStore = { day: string; week?: string; ranks: Partial<Record<SortBy, Seen>> };
 const SEEN_KEY = "lernwerk-board-seen";
 
 function readSeen(): SeenStore | null {
@@ -73,7 +74,7 @@ function LeaderboardInner() {
   const s = useApp();
   const board = useBoard();
   const now = useNow();
-  const [by, setBy] = useState<SortBy>("xp");
+  const [by, setBy] = useState<SortBy>("week");
   const session = useAuth((a) => a.session);
 
   // Laden beim Öffnen und beim Zurückkehren in die App (höchstens alle 30 s)
@@ -112,10 +113,17 @@ function LeaderboardInner() {
     const t = Date.now();
     const bySort = Object.fromEntries(SORTS.map((o) => [o.id, rankEntries(entries, o.id, t)])) as Record<SortBy, Row[]>;
     const before = readSeen();
-    // „Heute“ beginnt jeden Tag neu – Vergleich nur innerhalb desselben Tages
-    const prev: SeenStore | null = before && { ...before, ranks: { ...before.ranks, ...(before.day !== dayKey(t) ? { today: undefined } : {}) } };
+    // „Heute“ beginnt jeden Tag neu, die Wochenliga jeden Montag – Vergleich nur innerhalb desselben Zeitraums
+    const prev: SeenStore | null = before && {
+      ...before,
+      ranks: {
+        ...before.ranks,
+        ...(before.day !== dayKey(t) ? { today: undefined } : {}),
+        ...(before.week !== weekKey(t) ? { week: undefined } : {}),
+      },
+    };
     setPrevSeen(prev);
-    writeSeen({ day: dayKey(t), ranks: Object.fromEntries(SORTS.map((o) => [o.id, snapshot(bySort[o.id])])) });
+    writeSeen({ day: dayKey(t), week: weekKey(t), ranks: Object.fromEntries(SORTS.map((o) => [o.id, snapshot(bySort[o.id])])) });
 
     const { push } = useToasts.getState();
     const { passed, passedBy } = overtakes(prev?.ranks.xp ?? null, bySort.xp, session.uid);
@@ -132,6 +140,8 @@ function LeaderboardInner() {
     if (passed.length) unlock.push("rank-overtake");
     const meXp = bySort.xp.find((r) => r.id === session.uid);
     if (meXp && bySort.xp.length >= 4 && meXp.rank <= 3) unlock.push("rank-podium");
+    const meWeek = bySort.week.find((r) => r.id === session.uid);
+    if (meWeek && meWeek.weekNow > 0 && meWeek.rank <= 3 && bySort.week.filter((r) => r.weekNow > 0).length >= 4) unlock.push("rank-week-podium");
     const meToday = bySort.today.find((r) => r.id === session.uid);
     if (meToday && meToday.rank === 1 && meToday.todayNow > 0 && teamDay(bySort.today).active >= 3) unlock.push("rank-day-1");
     const fresh = useApp.getState().unlockBoardAchievements(unlock);
@@ -192,6 +202,7 @@ function LeaderboardInner() {
 
       {board.error && <p className="text-sm text-bad">{board.error}</p>}
 
+      {by === "week" && <WeekCard rows={rows} now={now} myId={myId} />}
       {myId && rows.length > 1 && <DuelCard rows={rows} myId={myId} by={by} />}
       {showPodium && <Podium rows={rows} by={by} myId={myId} />}
 
@@ -221,7 +232,8 @@ function LeaderboardInner() {
 
       <p className="text-xs text-muted">
         Hier stehen alle, die ein Konto haben. „Heute“ zählt beantwortete Fragen und Karteikarten seit Mitternacht,
-        „Streak“ die Lerntage in Folge. Die Liga richtet sich nach deinem Level (Bronze ab 1, Silber ab 3, Gold ab 5,
+        „Streak“ die Lerntage in Folge. Die Wochenliga zählt die XP von Montag bis Sonntag und startet jeden Montag
+        um 0 Uhr neu. Die Liga richtet sich nach deinem Level (Bronze ab 1, Silber ab 3, Gold ab 5,
         Platin ab 8, Diamant ab 12, Legende ab 17). Pfeile zeigen Auf- und Abstiege seit deinem letzten Besuch.
       </p>
     </div>
@@ -296,6 +308,7 @@ function RowView({ row, by, me, now, moved }: { row: Row; by: SortBy; me: boolea
       </div>
 
       <div className="flex shrink-0 items-center gap-3 text-right sm:gap-5">
+        <Stat label="Woche" active={by === "week"} value={String(row.weekNow)} sub="XP Woche" />
         <Stat label="Level" active={by === "xp"} value={`Lv ${row.level}`} sub={`${row.xp} XP`} />
         <Stat
           label="Heute"
@@ -410,7 +423,7 @@ function DuelCard({ rows, myId, by }: { rows: Row[]; myId: string; by: SortBy })
   const me = rows.find((r) => r.id === myId);
   if (!d || !me) return null;
   const mine = sortValue(me, by);
-  const hint = by === "xp" && d.ahead ? ` – etwa ${Math.ceil(d.ahead.gap / 10)} richtige Antworten` : "";
+  const hint = (by === "xp" || by === "week") && d.ahead ? ` – etwa ${Math.ceil(d.ahead.gap / 10)} richtige Antworten` : "";
   return (
     <section className="card space-y-3 px-5 py-4">
       <p className="eyebrow flex items-center gap-1.5">
@@ -471,6 +484,51 @@ function TeamCard({ rows }: { rows: Row[] }) {
         </>
       ) : (
         <p className="mt-2 text-sm text-muted">Heute hat noch niemand gelernt – sei die erste Person auf dem Treppchen.</p>
+      )}
+    </section>
+  );
+}
+
+function countdown(ms: number): string {
+  const h = Math.max(0, Math.floor(ms / 3_600_000));
+  const d = Math.floor(h / 24);
+  return d > 0 ? `${d} ${d === 1 ? "Tag" : "Tage"} ${h % 24} Std.` : `${h} Std. ${Math.max(0, Math.floor(ms / 60_000) % 60)} Min.`;
+}
+
+/** Wochenliga: Restzeit bis Montag, Zahl der Aktiven, dein Platz in der Woche. */
+function WeekCard({ rows, now, myId }: { rows: Row[]; now: number; myId: string | null }) {
+  const active = rows.filter((r) => r.weekNow > 0);
+  const me = rows.find((r) => r.id === myId);
+  const leader = active[0];
+  return (
+    <section className="card px-5 py-4">
+      <div className="flex items-center justify-between gap-3">
+        <p className="eyebrow flex items-center gap-1.5">
+          <CalendarClock className="size-3.5" /> Wochenliga
+        </p>
+        <p className="text-xs text-muted">Neustart in {countdown(nextWeekStart(now) - now)}</p>
+      </div>
+      <p className="mt-2 text-sm">
+        {active.length === 0 ? (
+          "Diese Woche hat noch niemand XP gesammelt – hol dir Platz 1."
+        ) : (
+          <>
+            <span className="font-semibold">{active.length}</span> {active.length === 1 ? "Person sammelt" : "Personen sammeln"} diese Woche XP
+            {leader && leader.id !== myId && (
+              <>
+                {" "}· vorne liegt <span className="font-semibold">{leader.name}</span> mit {leader.weekNow} XP
+              </>
+            )}
+            .
+          </>
+        )}
+      </p>
+      {me && (
+        <p className="mt-1 text-xs text-muted">
+          {me.weekNow > 0
+            ? `Du: ${me.weekNow} XP diese Woche, Platz ${me.rank}. Die ersten drei kommen aufs Wochen-Treppchen.`
+            : "Du hast diese Woche noch keine XP – schon eine Übungsrunde bringt dich ins Feld."}
+        </p>
       )}
     </section>
   );

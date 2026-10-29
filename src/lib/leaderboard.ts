@@ -2,7 +2,7 @@
 
 import { create } from "zustand";
 import { getIdToken, useAuth } from "./auth";
-import { cloudConfigured, userList, userPut } from "./cloud";
+import { CloudError, cloudConfigured, userList, userPut } from "./cloud";
 import { statsFrom, StatsSchema, type Entry } from "./ranking";
 import { useApp } from "./store";
 import { syncNow } from "./sync";
@@ -63,7 +63,14 @@ async function publishOnce() {
   const payload = JSON.stringify(stats);
   const last = readPublished();
   if (last?.uid === session.uid && last.payload === payload) return;
-  await userPut(session.uid, await getIdToken(), stats);
+  const token = await getIdToken();
+  try {
+    await userPut(session.uid, token, stats);
+  } catch (e) {
+    // Firestore-Regeln ohne Wochenliga lehnen die neuen Felder ab → wie bisher ohne sie melden
+    if (!(e instanceof CloudError) || e.status !== 403) throw e;
+    await userPut(session.uid, token, stats, true);
+  }
   writePublished({ uid: session.uid, payload });
 }
 

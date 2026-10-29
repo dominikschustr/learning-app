@@ -148,7 +148,7 @@ type AchievementInput = Pick<Data, "activity" | "cards" | "items" | "bestCombo" 
   Partial<Pick<Data, "achievements">>;
 
 /** Achievements, die die Rangliste freischaltet (nicht aus dem eigenen Lernstand berechenbar). */
-export const BOARD_ACHIEVEMENTS = ["rank-overtake", "rank-podium", "rank-day-1"] as const;
+export const BOARD_ACHIEVEMENTS = ["rank-overtake", "rank-podium", "rank-week-podium", "rank-day-1"] as const;
 
 /** Aktueller Stand je Achievement, vergleichbar mit dessen target. */
 export function achievementProgress(d: AchievementInput, now: number): Record<string, number> {
@@ -269,6 +269,7 @@ export const useApp = create<AppState>()(
           [before.deviceId]: {
             xp: own.xp + xp,
             activity: activity > 0 ? { ...own.activity, [today]: (own.activity[today] ?? 0) + activity } : own.activity,
+            xpDays: xp > 0 ? { ...own.xpDays, [today]: (own.xpDays?.[today] ?? 0) + xp } : own.xpDays,
           },
         };
         const next: Data = {
