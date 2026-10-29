@@ -1,0 +1,51 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p2-01",
+    "lecture": "s07",
+    "case": "ralph-fortnite",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Based on the conjoint analysis results, what are the most important features for each cluster? Please provide the calculation and your thought process.",
+    "modelAnswer": "Relative importance = range of an attribute's part-worths (best − worst level), compared across attributes.\nCluster 1: outlet 0.19, design 0.45, target 0.56 − (−0.97) = 1.53, price 0.32 − (−0.24) = 0.56 → target (≈56%).\nCluster 2: outlet 0.65, design 1.10, target 1.35, price 0 − (−2.01) = 2.01 → price (≈39%).\nCluster 3: outlet 0.36, design 0.65, target 1.62 − (−0.12) = 1.74, price 0 − (−0.76) = 0.76 → target (≈49%).\nCluster 4: outlet 0.02, design 0.96, target 1.12 − (−0.12) = 1.24, price 0.97 − (−0.45) = 1.42 → price (≈39%).\nTwo clusters (1 and 3) are driven by the target/gender design, two (2 and 4) by price.",
+    "keyPoints": [
+      "Method: range (max − min) per attribute",
+      "Cluster 1: target",
+      "Cluster 2: price",
+      "Cluster 3: target",
+      "Cluster 4: price"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-02",
+    "lecture": "s07",
+    "case": "ralph-fortnite",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Suppose Ralph launches a collaboration product that is both virtual and physical, a classic polo with a gender-neutral style, priced at €100. Which segment would be the most suitable to target? Show your calculations.",
+    "modelAnswer": "Total utility = intercept + part-worths of the chosen levels (virtual & offline, polo = 0, gender neutral, €100):\nC1 = 1.21 + 0.19 + 0 + 0.56 − 0.24 = 1.72\nC2 = 2.15 + 0.65 + 0 + 1.35 − 1.13 = 3.02\nC3 = 3.02 + 0.36 + 0 + 1.62 − 0.76 = 4.24\nC4 = 1.07 + 0.02 + 0 − 0.12 − 0.45 = 0.52\n→ Cluster 3 has the highest utility and is the most suitable target (it also values the gender-neutral design most).",
+    "keyPoints": [
+      "Utility = intercept + part-worths",
+      "C1 1.72, C2 3.02",
+      "C3 4.24, C4 0.52",
+      "Target Cluster 3"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-03",
+    "lecture": "s07",
+    "case": "ralph-fortnite",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Compared to the previous answer, if Ralph sold the same product at €150, would the ideal target segment remain the same? Is it a good idea to increase the price?",
+    "modelAnswer": "At €150: C1 = 1.21 + 0.19 + 0.56 + 0.32 = 2.28; C2 = 2.15 + 0.65 + 1.35 − 2.01 = 2.14; C3 = 3.02 + 0.36 + 1.62 − 0.37 = 4.63; C4 = 1.07 + 0.02 − 0.12 + 0.97 = 1.94. Cluster 3 remains the best target, and its utility even increases (4.24 → 4.63) because the perceived utility loss at €150 (−0.37) is smaller than at €100 (−0.76). In a luxury/brand context a higher price signals quality, so increasing the price to €150 is a good idea for Cluster 3.",
+    "keyPoints": [
+      "Recalculate utilities at €150",
+      "Cluster 3 still highest (4.63)",
+      "Utility loss at €150 smaller than at €100",
+      "Price increase is a good idea (luxury signal)"
+    ]
+  }
+]

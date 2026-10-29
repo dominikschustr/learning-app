@@ -1,0 +1,453 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-p4-01",
+    "lecture": "s09",
+    "case": "coffeeco-regression",
+    "difficulty": 2,
+    "prompt": "Which variable(s) have a significant impact on daily revenue? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temperature"
+      },
+      {
+        "id": "b",
+        "text": "Promo"
+      },
+      {
+        "id": "c",
+        "text": "Price"
+      },
+      {
+        "id": "d",
+        "text": "Weekend"
+      },
+      {
+        "id": "e",
+        "text": "App users"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "p < 0.05: temperature (0.012), promo (0.001), weekend (0.000). Price (0.210) and app users (0.074) are not significant at the 5% level.",
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-02",
+    "lecture": "s09",
+    "case": "coffeeco-regression",
+    "difficulty": 3,
+    "prompt": "Forecast the revenue of a store on a Saturday with a promotion, 20 °C, a latte price of 3.80 € and 1,500 app users nearby.",
+    "options": [
+      {
+        "id": "a",
+        "text": "1,090 €"
+      },
+      {
+        "id": "b",
+        "text": "909 €"
+      },
+      {
+        "id": "c",
+        "text": "1,220 €"
+      },
+      {
+        "id": "d",
+        "text": "830 €"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only significant variables plus the intercept: 820 − 6.5 × 20 + 140 + 260 = 820 − 130 + 400 = 1,090 €. (909 € wrongly adds price and app users; 1,220 € ignores temperature; 830 € forgets the weekend.)",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-03",
+    "lecture": "s09",
+    "case": "coffeeco-regression",
+    "difficulty": 2,
+    "prompt": "How do you interpret the coefficient of promo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On promotion days revenue is on average 140 € higher than on other days, all else equal"
+      },
+      {
+        "id": "b",
+        "text": "Each additional promotion raises revenue by 140%"
+      },
+      {
+        "id": "c",
+        "text": "Promotions explain 140 € of the variance"
+      },
+      {
+        "id": "d",
+        "text": "Promotions are not significant"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Promo is a dummy: its coefficient is the difference between promotion days (1) and other days (0), ceteris paribus.",
+    "single": true
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-01",
+    "lecture": "s09",
+    "case": "coffeeco-regression",
+    "difficulty": 2,
+    "statement": "A temperature increase of 10 °C is associated with about 65 € lower daily revenue, all else equal.",
+    "answer": true,
+    "explanation": "−6.5 € per °C × 10 = −65 €; temperature is significant (p = 0.012)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-02",
+    "lecture": "s09",
+    "case": "coffeeco-regression",
+    "difficulty": 1,
+    "statement": "CoffeeCo should lower its latte price because price has a negative coefficient.",
+    "answer": false,
+    "explanation": "Price is not significant (p = 0.210) – no recommendation can be based on it."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-04",
+    "lecture": "s06",
+    "case": "viu-led",
+    "difficulty": 1,
+    "prompt": "What is the annual cost of buying halogen lamps for the hotel?",
+    "options": [
+      {
+        "id": "a",
+        "text": "600 × 4 € = 2,400 €"
+      },
+      {
+        "id": "b",
+        "text": "600 × 2 × 4 € = 4,800 €"
+      },
+      {
+        "id": "c",
+        "text": "600 × 4 × 4 € = 9,600 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Each position needs 2 halogen lamps per year: 600 × 2 × 4 € = 4,800 €.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-05",
+    "lecture": "s06",
+    "case": "viu-led",
+    "difficulty": 2,
+    "prompt": "What is the VIU of one LED lamp considering only the halogen lamps it replaces?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4 €"
+      },
+      {
+        "id": "b",
+        "text": "8 €"
+      },
+      {
+        "id": "c",
+        "text": "16 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "An LED lasts 2 years = 4 halogen lamps: 4 × 4 € = 16 €.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-06",
+    "lecture": "s06",
+    "case": "viu-led",
+    "difficulty": 3,
+    "prompt": "What is the VIU of one LED lamp including the electricity savings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "31 €"
+      },
+      {
+        "id": "b",
+        "text": "46 €"
+      },
+      {
+        "id": "c",
+        "text": "56 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Electricity saving 20 − 5 = 15 € per year × 2 years = 30 €. VIU = 16 € + 30 € = 46 €.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-07",
+    "lecture": "s06",
+    "case": "viu-led",
+    "difficulty": 3,
+    "prompt": "What is the VIU of one LED lamp including electricity AND labour savings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "48 €"
+      },
+      {
+        "id": "b",
+        "text": "52 €"
+      },
+      {
+        "id": "c",
+        "text": "54 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Over 2 years: 4 halogen replacements × 2 € = 8 € vs 1 LED replacement × 2 € = 2 € → labour saving 6 €. VIU = 16 + 30 + 6 = 52 €.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-08",
+    "lecture": "s06",
+    "case": "viu-led",
+    "difficulty": 2,
+    "prompt": "The supplier asks 45 € per LED lamp. What do you recommend, based on the full VIU?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buy the LED lamps"
+      },
+      {
+        "id": "b",
+        "text": "Do NOT buy the LED lamps"
+      },
+      {
+        "id": "c",
+        "text": "You cannot give a sufficient answer based on your calculations"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The price (45 €) is below the maximum willingness to pay (52 €): the hotel saves 7 € per lamp over its lifetime. Without energy and labour savings (16 €), the LED would look far too expensive.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-09",
+    "lecture": "s03",
+    "case": "trend-sleep",
+    "difficulty": 2,
+    "prompt": "What are the drivers of change fuelling this trend? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Burnout from always-on work and blurred work–life boundaries"
+      },
+      {
+        "id": "b",
+        "text": "Wearables that measure sleep quality"
+      },
+      {
+        "id": "c",
+        "text": "Urban transition – denser, noisier cities"
+      },
+      {
+        "id": "d",
+        "text": "Aging population"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Triggers: post-pandemic burnout and sleep-tracking wearables. Shift: urban transition. Aging is not mentioned – stick to the text."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-10",
+    "lecture": "s03",
+    "case": "trend-sleep",
+    "difficulty": 2,
+    "prompt": "What new consumer expectations are created by this trend? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brands actively protect and improve consumers' rest"
+      },
+      {
+        "id": "b",
+        "text": "Brands prove their rest benefits with data"
+      },
+      {
+        "id": "c",
+        "text": "Cheaper hotel rooms"
+      },
+      {
+        "id": "d",
+        "text": "Faster delivery of mattresses"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "The text names protecting/improving rest and proving it with data. The other options are not supported by the text."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-11",
+    "lecture": "s03",
+    "case": "trend-sleep",
+    "difficulty": 2,
+    "prompt": "What are the basic needs satisfied by this trend? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Health and wellbeing"
+      },
+      {
+        "id": "b",
+        "text": "Status (rest as a status symbol, scores shared with friends)"
+      },
+      {
+        "id": "c",
+        "text": "Belonging to a local community"
+      },
+      {
+        "id": "d",
+        "text": "Saving money"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Rest addresses health/wellbeing and, according to the text, has become a status symbol. Community and saving money are not in the text."
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-01",
+    "lecture": "s07",
+    "case": "fithub",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Based on segment size and growth only, how would you classify the four segments and what does this mean for the new premium membership?",
+    "modelAnswer": "Young professionals: largest segment (35%) with solid growth (4%) → star. Seniors: smallest (15%) but fastest growth (6%) → question mark / rising star. Families: large (30%) but slow growth (1%) → cash cow. Students: small (20%) and slow (2%) → dog. A new premium product should focus on growing segments – young professionals and especially seniors, if their growth continues.",
+    "keyPoints": [
+      "Young professionals ≈ star",
+      "Seniors ≈ question mark / rising star (fast growth)",
+      "Families ≈ cash cow, students ≈ dog",
+      "Implication: focus on growing segments"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-02",
+    "lecture": "s08",
+    "case": "fithub",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Calculate the customer lifetime value per segment (lifetime in months = 1 / (1 − retention rate)). Which segment is the most valuable?",
+    "modelAnswer": "Monthly margin = fee × 60%; lifetime = 1/(1 − Rr); CLV = margin × lifetime − CAC.\nStudents: 15 € × 1/(1 − 0.80) = 15 × 5 = 75 − 40 = 35 €.\nYoung professionals: 27 × 10 = 270 − 120 = 150 €.\nFamilies: 36 × 4 = 144 − 100 = 44 €.\nSeniors: 21 × 20 = 420 − 150 = 270 €.\nSeniors are the most valuable segment thanks to their very high retention, despite the highest acquisition cost.",
+    "keyPoints": [
+      "Margin = 60% of fee; lifetime = 1/(1 − Rr)",
+      "Students 35 €, Young professionals 150 €",
+      "Families 44 €, Seniors 270 €",
+      "Seniors most valuable"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-03",
+    "lecture": "s07",
+    "case": "fithub",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "What is the best combination of product levels for each segment? Show your calculations.",
+    "modelAnswer": "Highest part-worth per attribute + baseline:\nStudents: 24/7, group classes, app, 39 € → 3.10 + 1.60 + 0.80 + 1.20 = 6.70.\nYoung professionals: 24/7, personal coaching, app, 39 € → 3.60 + 1.90 + 1.70 + 0.80 = 8.00.\nFamilies: 24/7, group classes, app, 39 € → 4.00 + 0.20 + 1.40 + 0.50 = 6.10.\nSeniors: 6 am–10 pm, personal coaching, app, 39 € → 3.80 + 0 + 2.60 + 0.30 = 6.70.",
+    "keyPoints": [
+      "Students: 24/7, group, app, 39 € = 6.70",
+      "Young professionals: 24/7, coaching, app, 39 € = 8.00",
+      "Families: 24/7, group, app, 39 € = 6.10",
+      "Seniors: standard hours, coaching, app, 39 € = 6.70"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-04",
+    "lecture": "s07",
+    "case": "fithub",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "What is the most important attribute for each segment? Show your calculations.",
+    "modelAnswer": "Range = best − worst part-worth per attribute.\nStudents: hours 1.60, training 0.80, app 1.20, price 3.40 → price.\nYoung professionals: hours 1.90, training 1.70, app 0.80, price 1.30 → opening hours.\nFamilies: hours 0.20, training 1.40, app 0.50, price 2.60 → price.\nSeniors: hours 0.30, training 2.60, app 0.30, price 1.00 → training (personal coaching).",
+    "keyPoints": [
+      "Method: range per attribute",
+      "Students: price",
+      "Young professionals: opening hours",
+      "Families: price",
+      "Seniors: training / coaching"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-05",
+    "lecture": "s07",
+    "case": "fithub",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Considering all information in the case, which segment(s) should FitHub target with the premium membership, with which features and at what price?",
+    "modelAnswer": "Primary target: seniors. They have the highest CLV (270 €), the fastest growth (6%), value FitHub's true advantage – personal coaching – most (range 2.60) and are the least price-sensitive: their best product at 59 € still yields 3.80 + 2.60 + 0.30 − 1.00 = 5.70, above the midpoint of the scale. Offer standard opening hours, personal coaching and the app at 59 €. Secondary target: young professionals (largest segment, CLV 150 €) with 24/7 access + coaching + app; at 59 € their utility is 8.00 − 1.30 = 6.70. Students and families are price-driven with low CLV and should not be the focus of a premium product.",
+    "keyPoints": [
+      "Seniors as primary target (CLV, growth, coaching)",
+      "Low price sensitivity → 59 € still above midpoint",
+      "Young professionals as secondary target (24/7 + coaching)",
+      "Students/families price-driven, low CLV"
+    ]
+  }
+]

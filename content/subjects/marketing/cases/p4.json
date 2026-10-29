@@ -1,0 +1,232 @@
+[
+  {
+    "id": "coffeeco-regression",
+    "title": "CoffeeCo – what drives daily store revenue?",
+    "text": [
+      "You are the marketing manager of CoffeeCo, a chain of coffee shops, and want to forecast daily revenue per store (in €) from one year of store-day data.",
+      "Independent variables: temperature (°C), promo (promotion day: no = 0, yes = 1), price (price of a latte in €), weekend (Mon–Fri = 0, Sat/Sun = 1), app_users (loyalty-app users living near the store, in hundreds).",
+      "Revenue = β0 + β1·temperature + β2·promo + β3·price + β4·weekend + β5·app_users. The overall model has an R² of 58% and is statistically significant."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Coefficient",
+          "P>|t| (p-value)"
+        ],
+        "rows": [
+          [
+            "_cons (intercept)",
+            "820.0",
+            "0.000"
+          ],
+          [
+            "Temperature",
+            "−6.5",
+            "0.012"
+          ],
+          [
+            "Promo",
+            "140.0",
+            "0.001"
+          ],
+          [
+            "Price",
+            "−95.0",
+            "0.210"
+          ],
+          [
+            "Weekend",
+            "260.0",
+            "0.000"
+          ],
+          [
+            "App users",
+            "12.0",
+            "0.074"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "viu-led",
+    "title": "Value-in-use: LED spotlights for a hotel",
+    "text": [
+      "A hotel uses 600 halogen spotlights. It pays 4 € per halogen lamp, and each lamp lasts 6 months.",
+      "A supplier offers an LED spotlight that lasts 2 years. Over a year, a halogen lamp consumes electricity worth 20 €, an LED lamp electricity worth 5 €.",
+      "Every replacement of a lamp (halogen or LED) causes 2 € of labour cost for the maintenance team."
+    ],
+    "tables": []
+  },
+  {
+    "id": "trend-sleep",
+    "title": "Trend report extract: \"The Rest Economy\"",
+    "text": [
+      "Rest is the new status symbol. After years of always-on work and blurred boundaries between office and home since the pandemic, burned-out professionals are investing in sleep like never before. Smart rings and watches now measure sleep quality every night, and their scores are proudly shared with friends.",
+      "City dwellers in ever-denser, noisier metropolitan areas book \"sleep retreats\": hotels offer sleep concierges, soundproof rooms and pillow menus. Mattress brands sell subscriptions that adapt firmness to your data.",
+      "Consumers increasingly expect the brands around them – from hotels to employers – to actively protect and improve their rest, and to prove it with data.",
+      "Source: fictitious trend report written for practice."
+    ],
+    "tables": []
+  },
+  {
+    "id": "fithub",
+    "title": "Mini case FitHub – a premium membership for a gym chain",
+    "text": [
+      "FitHub runs 40 gyms. With rising demand for guided training, it plans a new premium membership. Its true competitive advantages are its certified personal coaches and its training app. FitHub separates its members into four strategic segments.",
+      "Monthly margin = 60% of the monthly fee (the rest covers operating costs). Retention rates are monthly.",
+      "To decide on the product, FitHub ran a rating-based conjoint analysis (1–10 scale) with representative members of each segment."
+    ],
+    "tables": [
+      {
+        "caption": "Strategic segments",
+        "head": [
+          "",
+          "Students",
+          "Young professionals",
+          "Families",
+          "Seniors (50+)"
+        ],
+        "rows": [
+          [
+            "Segment size (share of target market)",
+            "20%",
+            "35%",
+            "30%",
+            "15%"
+          ],
+          [
+            "Average annual growth",
+            "2%",
+            "4%",
+            "1%",
+            "6%"
+          ]
+        ]
+      },
+      {
+        "caption": "Customer profitability",
+        "head": [
+          "",
+          "Students",
+          "Young professionals",
+          "Families",
+          "Seniors (50+)"
+        ],
+        "rows": [
+          [
+            "Monthly fee",
+            "25 €",
+            "45 €",
+            "60 €",
+            "35 €"
+          ],
+          [
+            "Monthly retention rate",
+            "80%",
+            "90%",
+            "75%",
+            "95%"
+          ],
+          [
+            "Acquisition cost",
+            "40 €",
+            "120 €",
+            "100 €",
+            "150 €"
+          ]
+        ]
+      },
+      {
+        "caption": "Conjoint part-worths",
+        "head": [
+          "Attribute – level",
+          "Students",
+          "Young professionals",
+          "Families",
+          "Seniors (50+)"
+        ],
+        "rows": [
+          [
+            "Opening hours – 6 am to 10 pm",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Opening hours – 24/7",
+            "1.60",
+            "1.90",
+            "0.20",
+            "−0.30"
+          ],
+          [
+            "Training – equipment only",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Training – group classes",
+            "0.80",
+            "0.90",
+            "1.40",
+            "2.10"
+          ],
+          [
+            "Training – personal coaching (2×/month)",
+            "0.40",
+            "1.70",
+            "0.60",
+            "2.60"
+          ],
+          [
+            "App – none",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "App – training plans",
+            "1.20",
+            "0.80",
+            "0.50",
+            "0.30"
+          ],
+          [
+            "Price per month – 39 €",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Price – 49 €",
+            "−1.90",
+            "−0.70",
+            "−1.20",
+            "−0.60"
+          ],
+          [
+            "Price – 59 €",
+            "−3.40",
+            "−1.30",
+            "−2.60",
+            "−1.00"
+          ],
+          [
+            "Baseline utility",
+            "3.10",
+            "3.60",
+            "4.00",
+            "3.80"
+          ]
+        ]
+      }
+    ]
+  }
+]

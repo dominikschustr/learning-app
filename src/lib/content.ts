@@ -6,10 +6,12 @@ import { z } from "zod";
 import {
   CardSchema,
   CaseSchema,
+  PaperSchema,
   QuestionSchema,
   SubjectSchema,
   TextSchema,
   checkContent,
+  paperItems,
   type LectureText,
   type SubjectContent,
   type SubjectSummary,
@@ -51,6 +53,7 @@ function loadSubject(dir: string): SubjectContent {
     questions: readDir(path.join(ROOT, dir, "questions"), QuestionSchema),
     cards: readDir(path.join(ROOT, dir, "cards"), CardSchema),
     cases: readDir(path.join(ROOT, dir, "cases"), CaseSchema),
+    papers: readDir(path.join(ROOT, dir, "exams"), PaperSchema),
   };
   const errors = checkContent(content);
   if (errors.length) throw new Error(`Content "${dir}":\n- ${errors.join("\n- ")}`);
@@ -105,10 +108,11 @@ export function getText(subjectId: string, lecture: string): LectureText | undef
 }
 
 export function getSummaries(): SubjectSummary[] {
-  return getAllContent().map(({ subject, questions, cards }) => ({
+  return getAllContent().map(({ subject, questions, cards, papers }) => ({
     subject,
     items: questions.map((q) => ({ id: q.id, type: q.type, lecture: q.lecture })),
     cards: cards.map((c) => ({ id: c.id, lecture: c.lecture })),
     texts: getTexts(subject.id).map((t) => t.lecture),
+    papers: papers.map((p) => ({ id: p.id, title: p.title, points: paperItems(p).reduce((s, i) => s + i.points, 0) })),
   }));
 }

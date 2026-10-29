@@ -1,5 +1,5 @@
 import { optionOrder } from "./queue";
-import type { ExamFormat, Question, QuestionType } from "./schema";
+import { paperItems, type ExamFormat, type Paper, type Question, type QuestionType } from "./schema";
 import { gradeMC, gradeTF } from "./scoring";
 import type { ActiveExam, ExamAnswer, ExamRecord } from "./store";
 import { shuffle } from "./utils";
@@ -79,6 +79,23 @@ export function createExam(
   };
 }
 
+/** Startet eine feste Probeklausur: Fragen und Optionen in der Reihenfolge des Klausurbogens. */
+export function createPaperExam(subjectId: string, paper: Paper, now: number): ActiveExam {
+  const items = paperItems(paper);
+  return {
+    subjectId,
+    paper: paper.id,
+    questionIds: items.map((i) => i.q),
+    optionOrder: {},
+    points: Object.fromEntries(items.map((i) => [i.q, i.points])),
+    answers: {},
+    flagged: [],
+    current: 0,
+    startedAt: now,
+    minutes: paper.minutes,
+  };
+}
+
 export function isAnswered(a: ExamAnswer | undefined): boolean {
   if (!a) return false;
   if (a.kind === "mc") return a.selected.length > 0;
@@ -119,5 +136,6 @@ export function gradeExam(exam: ActiveExam, byId: Map<string, Question>, now: nu
     results,
     partial,
     shortGrades: {},
+    ...(exam.paper ? { paper: exam.paper, points: exam.points } : {}),
   };
 }

@@ -45,6 +45,30 @@ export const CaseSchema = z.object({
     .default([]),
 });
 
+/** Feste Probeklausur im Aufbau der echten Prüfung: Teile → Aufgaben → Fragen mit Punkten. */
+export const PaperSchema = z.object({
+  id,
+  title: z.string().min(1),
+  subtitle: z.string().default(""),
+  minutes: z.number().int().positive(),
+  parts: z
+    .array(
+      z.object({
+        title: z.string().min(1),
+        instructions: z.string().default(""),
+        sections: z
+          .array(
+            z.object({
+              title: z.string().default(""),
+              items: z.array(z.object({ q: id, points: z.number().positive() })).min(1),
+            }),
+          )
+          .min(1),
+      }),
+    )
+    .min(1),
+});
+
 const base = { id, lecture: id, case: id.optional() };
 
 export const MCQuestionSchema = z.object({
@@ -117,6 +141,7 @@ export type Question = z.infer<typeof QuestionSchema>;
 export type QuestionType = Question["type"];
 export type Card = z.infer<typeof CardSchema>;
 export type Case = z.infer<typeof CaseSchema>;
+export type Paper = z.infer<typeof PaperSchema>;
 export type LectureText = z.infer<typeof TextSchema>;
 
 export type SubjectContent = {
@@ -124,6 +149,7 @@ export type SubjectContent = {
   questions: Question[];
   cards: Card[];
   cases: Case[];
+  papers: Paper[];
 };
 
 /** Leichte Übersicht für Dashboard/Readiness, ohne Fragetexte. */
@@ -133,10 +159,12 @@ export type SubjectSummary = {
   cards: { id: string; lecture: string }[];
   /** Kapitel, für die ein Lesetext hinterlegt ist */
   texts: string[];
+  /** Probeklausuren (nur Kopfdaten) */
+  papers: { id: string; title: string; points: number }[];
 };
 
 /** Prüft Querverweise, die zod allein nicht sieht. Gibt Fehlermeldungen zurück. */
-export function checkContent({ subject, questions, cards, cases }: SubjectContent): string[] {
+export function checkContent({ subject, questions, cards, cases, papers }: SubjectContent): string[] {
   const errors: string[] = [];
   const lectures = new Set(subject.lectures.map((l) => l.id));
   const caseIds = new Set(cases.map((c) => c.id));
@@ -147,6 +175,14 @@ export function checkContent({ subject, questions, cards, cases }: SubjectConten
     if (seen.has(item.id)) errors.push(`doppelte id "${item.id}"`);
     seen.add(item.id);
     if (!lectures.has(item.lecture)) errors.push(`${item.id}: unbekannte Vorlesung "${item.lecture}"`);
+  }
+
+  const questionIds = new Set(questions.map((q) => q.id));
+  if (new Set(papers.map((p) => p.id)).size !== papers.length) errors.push("doppelte Klausur-ids");
+  for (const p of papers) {
+    const ids = paperItems(p).map((i) => i.q);
+    if (new Set(ids).size !== ids.length) errors.push(`Klausur ${p.id}: Frage doppelt`);
+    for (const q of ids) if (!questionIds.has(q)) errors.push(`Klausur ${p.id}: unbekannte Frage "${q}"`);
   }
 
   for (const q of questions) {
@@ -170,4 +206,19 @@ export function checkContent({ subject, questions, cards, cases }: SubjectConten
     );
   }
   return errors;
+}
+
+/** Alle Fragen einer Probeklausur in Reihenfolge, mit Teil, Aufgabe und Teilfrage-Buchstabe. */
+export function paperItems(p: Paper) {
+  return p.parts.flatMap((part, pi) =>
+    part.sections.flatMap((section, si) =>
+      section.items.map((item, ii) => ({
+        ...item,
+        part: pi,
+        section: si,
+        /** a), b), … bei Aufgaben mit mehreren Teilfragen; 1), 2), … bei Aussagen ohne Aufgabentitel */
+        letter: section.items.length < 2 ? "" : section.title ? String.fromCharCode(97 + ii) : String(ii + 1),
+      })),
+    ),
+  );
 }

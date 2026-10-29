@@ -1,0 +1,157 @@
+[
+  {
+    "id": "concept-a",
+    "title": "Konzeptklausur A",
+    "subtitle": "Neue Aufgaben im Aufbau der Probeklausuren: Regression (CoffeeCo), Value-in-Use (LED-Lampen), Trendanalyse, Mini-Case FitHub (BCG, CLV, Conjoint).",
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part A – True/false questions on applied theory and frameworks",
+        "instructions": "True/false questions on all topics covered during the course. [2 points in total]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "tf-s03-07",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s04-08",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s05-09",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s06-10",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s07-01",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s08-14",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s09-13",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s10-02",
+                "points": 0.25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part B – Short exercises",
+        "instructions": "True/false and multiple answer questions [10 points in total]. Check whether a question says \"select all that apply\".",
+        "sections": [
+          {
+            "title": "Exercise 1 – Predictive model (CoffeeCo)",
+            "items": [
+              {
+                "q": "mc-p4-01",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p4-02",
+                "points": 1
+              },
+              {
+                "q": "mc-p4-03",
+                "points": 0.5
+              },
+              {
+                "q": "tf-p4-01",
+                "points": 0.5
+              },
+              {
+                "q": "tf-p4-02",
+                "points": 0.5
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Value-in-use (LED spotlights)",
+            "items": [
+              {
+                "q": "mc-p4-04",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p4-05",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p4-06",
+                "points": 1
+              },
+              {
+                "q": "mc-p4-07",
+                "points": 1
+              },
+              {
+                "q": "mc-p4-08",
+                "points": 1
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Trend analysis",
+            "items": [
+              {
+                "q": "mc-p4-09",
+                "points": 1
+              },
+              {
+                "q": "mc-p4-10",
+                "points": 1
+              },
+              {
+                "q": "mc-p4-11",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part C – Mini case: FitHub",
+        "instructions": "Open questions [8 points in total]. Present your calculations to support your answers.",
+        "sections": [
+          {
+            "title": "Mini case",
+            "items": [
+              {
+                "q": "sa-p4-01",
+                "points": 1
+              },
+              {
+                "q": "sa-p4-02",
+                "points": 2
+              },
+              {
+                "q": "sa-p4-03",
+                "points": 2
+              },
+              {
+                "q": "sa-p4-04",
+                "points": 1
+              },
+              {
+                "q": "sa-p4-05",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

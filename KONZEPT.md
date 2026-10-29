@@ -33,8 +33,11 @@ Fächer anpassbar.
 Aufbau wie die Probeklausuren (2019/20, 2023/24, 2025/26 und die Revision Session): Teil A True/False zu Theorie und
 Frameworks, Teil B Rechen- und Interpretationsaufgaben (Regression, VIU, Trend Canvas, Cluster, A/B-Test) als
 Single/Multiple Choice zu einer Fallbeschreibung mit Tabelle, Teil C Mini-Case (CLV, Conjoint, BCG/GE-Matrix) mit
-offenen Antworten. In der App: 10 True/False → 16 Multiple Choice → 4 Kurzantworten, 90 Minuten
-(`examFormat.order = ["tf", "mc", "short"]`). Fragen zum selben Fall stehen im Test hintereinander.
+offenen Antworten. Statt eines zufällig gezogenen Abschlusstests gibt es für Marketing **feste Probeklausuren** (`exams/`), jeweils mit
+Teil A (True/False), Teil B (Aufgaben mit Teilfragen a, b, c zu einer Fallbeschreibung) und Teil C (Mini-Case),
+bewertet nach Punkten wie in der Klausur: Nachbauten der Mock exams 2025/26, der Revision Session und der Klausur
+2019/20 sowie drei Konzeptklausuren mit neuen Fällen aus dem Folienstoff. Für die Readiness-Prognose gilt weiter
+`examFormat` (10 True/False, 16 Multiple Choice, 4 Kurzantworten, 90 Minuten).
 
 ## 3. Inhalte: vom Dokument zur Frage
 
@@ -198,3 +201,4 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 10. Deployment auf GitHub Pages, Rangliste, Vorbereitung für weitere Fächer (`content/README.md`)
 11. Zweites Fach **Marketing**: 10 Kapitel (eine Vorlesung je Kapitel), 369 Fragen, 141 Karten, 27 Fallstudien
     aus den Klausuraufgaben, Lesetexte als Folienzusammenfassung ✓
+12. Probeklausuren statt Zufallstest für Marketing: 6 Klausuren (3 Nachbauten, 3 Konzeptklausuren), Punkte je Teil ✓

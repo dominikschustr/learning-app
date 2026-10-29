@@ -1,0 +1,145 @@
+[
+  {
+    "id": "concept-c",
+    "title": "Konzeptklausur C",
+    "subtitle": "Neue Aufgaben: Umfragedaten & CX-Kennzahlen, Conjoint mit einem Befragten, Regression mit Dummies, Mini-Case Lumo (Trend Canvas, Cluster, GE/McKinsey, Datenethik).",
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part A – True/false questions on applied theory and frameworks",
+        "instructions": "True/false questions on all topics covered during the course. [2 points in total]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "tf-s05-01",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s06-14",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s07-05",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s08-03",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s09-04",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s10-12",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s01-03",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s02-03",
+                "points": 0.25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part B – Short exercises",
+        "instructions": "True/false and multiple answer questions [10 points in total]. Check whether a question says \"select all that apply\".",
+        "sections": [
+          {
+            "title": "Exercise 1 – Survey data and CX metrics",
+            "items": [
+              {
+                "q": "mc-p6-01",
+                "points": 1
+              },
+              {
+                "q": "mc-p6-02",
+                "points": 1
+              },
+              {
+                "q": "mc-p6-03",
+                "points": 1
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Conjoint analysis (e-scooter subscription)",
+            "items": [
+              {
+                "q": "mc-p6-04",
+                "points": 1
+              },
+              {
+                "q": "mc-p6-05",
+                "points": 1
+              },
+              {
+                "q": "tf-p6-01",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p6-06",
+                "points": 0.5
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Regression (online furniture shop)",
+            "items": [
+              {
+                "q": "mc-p6-07",
+                "points": 1
+              },
+              {
+                "q": "mc-p6-08",
+                "points": 1
+              },
+              {
+                "q": "mc-p6-09",
+                "points": 1.5
+              },
+              {
+                "q": "tf-p6-02",
+                "points": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part C – Mini case: Lumo",
+        "instructions": "Open questions [8 points in total]. Present your calculations to support your answers.",
+        "sections": [
+          {
+            "title": "Mini case",
+            "items": [
+              {
+                "q": "sa-p6-01",
+                "points": 2
+              },
+              {
+                "q": "sa-p6-02",
+                "points": 2
+              },
+              {
+                "q": "sa-p6-03",
+                "points": 2
+              },
+              {
+                "q": "sa-p6-04",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

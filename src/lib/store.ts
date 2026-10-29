@@ -32,6 +32,9 @@ export type ActiveExam = {
   current: number;
   startedAt: number;
   minutes: number;
+  /** gesetzt = feste Probeklausur (Punkte statt Anzahl richtiger Fragen) */
+  paper?: string;
+  points?: Record<string, number>;
 };
 
 export type ExamRecord = {
@@ -48,6 +51,9 @@ export type ExamRecord = {
   /** Frage-id → Teilpunkte 0–1 */
   partial: Record<string, number>;
   shortGrades: Record<string, ShortGrade>;
+  paper?: string;
+  /** Frage-id → erreichbare Punkte (nur bei Probeklausuren) */
+  points?: Record<string, number>;
 };
 
 export type Streak = { current: number; best: number; lastDay: string | null };
@@ -217,11 +223,28 @@ export function markedIds(marks: Record<string, Mark>, kind: MarkKind, subjectId
   return out;
 }
 
-export function examScore(e: Pick<ExamRecord, "questionIds" | "results" | "partial">) {
+/** Anteil der Punkte einer Frage: Kurzantworten nach Bewertung anteilig, sonst ganz oder gar nicht. */
+export function questionCredit(e: Pick<ExamRecord, "results" | "shortGrades">, id: string): number {
+  const g = e.shortGrades?.[id];
+  if (g) return g.score / 100;
+  return e.results[id] ? 1 : 0;
+}
+
+export function examScore(
+  e: Pick<ExamRecord, "questionIds" | "results" | "partial"> & Partial<Pick<ExamRecord, "points" | "shortGrades">>,
+) {
   const total = e.questionIds.length || 1;
   const correct = e.questionIds.filter((id) => e.results[id]).length;
   const partial = e.questionIds.reduce((s, id) => s + (e.partial[id] ?? (e.results[id] ? 1 : 0)), 0);
-  return { correct, total, score: correct / total, partialScore: partial / total };
+  if (e.points) {
+    const max = e.questionIds.reduce((s, id) => s + (e.points?.[id] ?? 0), 0) || 1;
+    const earned = e.questionIds.reduce(
+      (s, id) => s + (e.points?.[id] ?? 0) * questionCredit({ results: e.results, shortGrades: e.shortGrades ?? {} }, id),
+      0,
+    );
+    return { correct, total, score: earned / max, partialScore: earned / max, earned, max };
+  }
+  return { correct, total, score: correct / total, partialScore: partial / total, earned: correct, max: total };
 }
 
 export const useApp = create<AppState>()(

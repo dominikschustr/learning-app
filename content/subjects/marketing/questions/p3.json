@@ -1,0 +1,34 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p3-01",
+    "lecture": "s08",
+    "case": "ecom-segments",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Assuming the estimated customer lifetime is three months in both segments, which segment would you prefer and why?",
+    "modelAnswer": "Segment B. Its cumulative profit after three months is €1,920 versus €622 for Segment A. Although B's acquisition cost is twice as high (€500 vs €250), B retains customers much better (70% and 50% vs 60% and 20%; survival 35% vs 12% in month 3) and earns higher margins per month, so it creates far more value over the lifetime. Segment A loses most customers in month 3, so its profit collapses.",
+    "keyPoints": [
+      "Prefer Segment B",
+      "Cumulative profit 1,920 vs 622",
+      "Higher retention/survival of B",
+      "Higher CAC of B is outweighed"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-02",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Taking all the information together (Generation I trend and the regression results), would you recommend Playmobil to target Generation I or their parents for the next Christmas product launch? Explain your choice.",
+    "modelAnswer": "A combined approach with a clear priority is best argued: Generation I are the users and strong influencers – they influence $1.12 trillion of family spending, hold allowances and expect intuitive, interactive experiences – so the product (smaller, simpler box sets, possibly with interactive/digital elements) must appeal to them. Parents are the buyers of Christmas presents: billboard and TV advertising (significant drivers) mainly reach parents and families, and smaller boxes fit price-conscious gift buying. Recommendation: design for Gen I, communicate to parents through billboards/TV (and to kids where they are, within ethical limits for marketing to children).",
+    "keyPoints": [
+      "Gen I as users and influencers (spending influence, expectations)",
+      "Parents as buyers / payers of Christmas gifts",
+      "Link to regression: billboard/TV and smaller boxes",
+      "Clear recommendation with reasoning"
+    ]
+  }
+]

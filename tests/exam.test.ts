@@ -41,3 +41,43 @@ describe("toggleOption", () => {
     expect(toggleOption(single, ["b"], "b")).toEqual([]);
   });
 });
+
+import { createPaperExam } from "@/lib/exam";
+import { PaperSchema, paperItems } from "@/lib/schema";
+import { examScore } from "@/lib/store";
+
+const paper = PaperSchema.parse({
+  id: "p",
+  title: "Probeklausur",
+  minutes: 90,
+  parts: [
+    { title: "Part A – T/F", sections: [{ items: [{ q: "tf-1", points: 1 }, { q: "tf-2", points: 1 }] }] },
+    { title: "Part B – Exercises", sections: [{ title: "Exercise 1", items: [{ q: "mc-1", points: 2 }, { q: "sa-1", points: 4 }] }] },
+  ],
+});
+
+describe("Probeklausuren", () => {
+  it("nummeriert Aussagen mit Zahlen und Teilfragen einer Aufgabe mit Buchstaben", () => {
+    expect(paperItems(paper).map((i) => `${i.part}${i.letter}`)).toEqual(["01", "02", "1a", "1b"]);
+  });
+
+  it("übernimmt Reihenfolge und Punkte des Klausurbogens", () => {
+    const exam = createPaperExam("s", paper, 0);
+    expect(exam.questionIds).toEqual(["tf-1", "tf-2", "mc-1", "sa-1"]);
+    expect(exam.points).toEqual({ "tf-1": 1, "tf-2": 1, "mc-1": 2, "sa-1": 4 });
+    expect(exam.optionOrder).toEqual({});
+  });
+
+  it("bewertet nach Punkten, offene Fragen anteilig", () => {
+    const sc = examScore({
+      questionIds: ["tf-1", "tf-2", "mc-1", "sa-1"],
+      results: { "tf-1": true, "tf-2": false, "mc-1": true, "sa-1": false },
+      partial: {},
+      points: { "tf-1": 1, "tf-2": 1, "mc-1": 2, "sa-1": 4 },
+      shortGrades: { "sa-1": { score: 50, hit: [], missed: [], feedback: "", source: "self" } },
+    });
+    expect(sc.earned).toBe(5);
+    expect(sc.max).toBe(8);
+    expect(sc.score).toBeCloseTo(5 / 8);
+  });
+});

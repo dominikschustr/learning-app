@@ -1,0 +1,153 @@
+[
+  {
+    "id": "concept-b",
+    "title": "Konzeptklausur B",
+    "subtitle": "Neue Aufgaben: A/B-Tests & Fehlerarten, Clusteranalyse StreamCo, Social Listening Airlines, Mini-Case GreenBite (Kohorten-CLV, Akquisition, CRM).",
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part A – True/false questions on applied theory and frameworks",
+        "instructions": "True/false questions on all topics covered during the course. [2 points in total]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "tf-s04-10",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s05-11",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s06-12",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s07-03",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s08-01",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s09-02",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s10-04",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s01-01",
+                "points": 0.25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part B – Short exercises",
+        "instructions": "True/false and multiple answer questions [10 points in total]. Check whether a question says \"select all that apply\".",
+        "sections": [
+          {
+            "title": "Exercise 1 – A/B testing",
+            "items": [
+              {
+                "q": "tf-p5-01",
+                "points": 0.5
+              },
+              {
+                "q": "tf-p5-02",
+                "points": 0.5
+              },
+              {
+                "q": "tf-p5-03",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p5-01",
+                "points": 1
+              },
+              {
+                "q": "mc-p5-02",
+                "points": 1
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Cluster analysis (StreamCo)",
+            "items": [
+              {
+                "q": "mc-p5-03",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p5-04",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p5-05",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p5-06",
+                "points": 1
+              },
+              {
+                "q": "mc-p5-07",
+                "points": 1
+              },
+              {
+                "q": "tf-p5-04",
+                "points": 0.5
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Social listening",
+            "items": [
+              {
+                "q": "mc-p5-08",
+                "points": 1
+              },
+              {
+                "q": "mc-p5-09",
+                "points": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part C – Mini case: GreenBite",
+        "instructions": "Open questions [8 points in total]. Present your calculations to support your answers.",
+        "sections": [
+          {
+            "title": "Mini case",
+            "items": [
+              {
+                "q": "sa-p5-01",
+                "points": 3
+              },
+              {
+                "q": "sa-p5-02",
+                "points": 2
+              },
+              {
+                "q": "sa-p5-03",
+                "points": 1
+              },
+              {
+                "q": "sa-p5-04",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "id": "mock-2526",
+    "title": "Mock exam 2025/26 (Nachbau)",
+    "subtitle": "Wie die offizielle Probeklausur MM03: Adidas-Regression, VIU der ESCP-Chips, Trendanalyse, Mini-Case Polkaly. Exercise 3 nutzt einen anderen Trendtext.",
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part A – True/false questions on applied theory and frameworks",
+        "instructions": "True/false questions on all topics covered during the course. [2 points in total]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "tf-s01-01",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s02-02",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s03-03",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s04-04",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s05-05",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s06-06",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s07-07",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s08-08",
+                "points": 0.25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part B – Short exercises",
+        "instructions": "True/false and multiple answer questions [10 points in total]. Check whether a question says \"select all that apply\".",
+        "sections": [
+          {
+            "title": "Exercise 1 – Predictive model (Adidas)",
+            "items": [
+              {
+                "q": "mc-s09-01",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s09-02",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s09-03",
+                "points": 1
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Value-in-use (chips)",
+            "items": [
+              {
+                "q": "mc-s06-12",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s06-13",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s06-14",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s06-15",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s06-16",
+                "points": 1
+              },
+              {
+                "q": "mc-s06-17",
+                "points": 1
+              },
+              {
+                "q": "mc-s06-18",
+                "points": 1
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Trend analysis",
+            "items": [
+              {
+                "q": "mc-s03-14",
+                "points": 1
+              },
+              {
+                "q": "mc-s03-15",
+                "points": 1
+              },
+              {
+                "q": "mc-s03-16",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part C – Mini case: Polkaly",
+        "instructions": "Open questions [8 points in total]. Present your calculations to support your answers.",
+        "sections": [
+          {
+            "title": "Mini case",
+            "items": [
+              {
+                "q": "sa-s07-03",
+                "points": 1
+              },
+              {
+                "q": "sa-s08-02",
+                "points": 2
+              },
+              {
+                "q": "sa-s07-01",
+                "points": 2
+              },
+              {
+                "q": "sa-s07-02",
+                "points": 1
+              },
+              {
+                "q": "sa-s07-04",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

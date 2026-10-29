@@ -21,10 +21,11 @@ import { XP } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
 import type { Case, Lecture, Question, QuestionType, SubjectContent } from "@/lib/schema";
 import { SHORT_PASS, gradeMC, toggleOption } from "@/lib/scoring";
-import { examScore, useApp, useHydrated, type ActiveExam, type AnswerEvent, type ExamRecord, type ShortGrade } from "@/lib/store";
+import { examScore, questionCredit, useApp, useHydrated, type ActiveExam, type AnswerEvent, type ExamRecord, type ShortGrade } from "@/lib/store";
 import { announceAll, celebrate } from "@/lib/toast";
 import { cn, formatClock, pct } from "@/lib/utils";
 import { MarkButton } from "./MarkButton";
+import { PaperList, fmtPoints, paperSlots, slotLabel, type PaperSlot } from "./Papers";
 import { CaseContext, MCView, ShortInput, ShortResult, TFView, useCaseOf } from "./Questions";
 import { Bar, Button, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
@@ -40,6 +41,7 @@ export function Exam({ content }: { content: SubjectContent }) {
   if (record) return <Result content={content} record={record} />;
   if (active) return <Running content={content} exam={active} />;
   const lecture = content.subject.lectures.find((l) => l.id === chapter);
+  if (!lecture && content.papers.length) return <PaperList content={content} />;
   return <Intro key={lecture?.id ?? "all"} content={content} lecture={lecture} />;
 }
 
@@ -135,6 +137,8 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
   const { subject } = content;
   const byId = useMemo(() => new Map(content.questions.map((q) => [q.id, q])), [content.questions]);
   const caseOf = useCaseOf(content.cases);
+  const paper = content.papers.find((p) => p.id === exam.paper);
+  const slots = useMemo(() => paperSlots(paper), [paper]);
   const updateExam = useApp((s) => s.updateExam);
   const setExamAnswer = useApp((s) => s.setExamAnswer);
   const discardExam = useApp((s) => s.discardExam);
@@ -244,8 +248,12 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
               exit={{ height: 0, opacity: 0 }}
               className="overflow-hidden"
             >
-              <div className="grid grid-cols-7 gap-1.5 pt-3 sm:grid-cols-11">
+              {(paper ? paper.parts.map((p, pi) => ({ title: p.title, part: pi })) : [{ title: "", part: -1 }]).map((group) => (
+              <div key={group.part}>
+              {group.title && <p className="pt-3 text-xs font-semibold text-muted">{group.title}</p>}
+              <div className="grid grid-cols-7 gap-1.5 pt-2 sm:grid-cols-11">
                 {exam.questionIds.map((id, i) => {
+                  if (group.part >= 0 && slots.get(id)?.part !== group.part) return null;
                   const done = isAnswered(exam.answers[id]);
                   const fl = exam.flagged.includes(id);
                   return (
@@ -264,6 +272,8 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
                   );
                 })}
               </div>
+              </div>
+              ))}
               <p className="mt-2 flex gap-4 text-xs text-muted">
                 <span>■ beantwortet</span>
                 <span className="text-warn">● markiert</span>
@@ -273,8 +283,11 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
         </AnimatePresence>
       </div>
 
+      {slots.get(qid) && <SlotHeader slot={slots.get(qid)!} />}
       <div className="mb-3 flex items-center justify-between">
-        <span className="eyebrow">Frage {exam.current + 1}</span>
+        <span className="eyebrow">
+          {slots.get(qid) ? `${slotLabel(slots.get(qid)!)} · ${fmtPoints(slots.get(qid)!.points)} P.` : `Frage ${exam.current + 1}`}
+        </span>
         <button
           type="button"
           onClick={() =>
@@ -397,6 +410,16 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
   );
 }
 
+/** Teil und Aufgabe der aktuellen Frage, wie im Klausurbogen. */
+function SlotHeader({ slot }: { slot: PaperSlot }) {
+  return (
+    <div className="mb-4 rounded-2xl border border-line bg-surface px-4 py-3">
+      <p className="text-sm font-semibold">{slot.partTitle}</p>
+      {slot.instructions && <p className="mt-0.5 text-xs text-muted">{slot.instructions}</p>}
+    </div>
+  );
+}
+
 const grading = new Set<string>();
 
 function Result({ content, record }: { content: SubjectContent; record: ExamRecord }) {
@@ -406,7 +429,9 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
   const caseOf = useCaseOf(content.cases);
   const updateExamRecord = useApp((s) => s.updateExamRecord);
   const allExams = useApp((s) => s.exams);
-  const exams = allExams.filter((e) => e.subjectId === subject.id && e.lecture === record.lecture);
+  const exams = allExams.filter((e) => e.subjectId === subject.id && e.lecture === record.lecture && e.paper === record.paper);
+  const paper = content.papers.find((p) => p.id === record.paper);
+  const slots = useMemo(() => paperSlots(paper), [paper]);
   const lecture = subject.lectures.find((l) => l.id === record.lecture);
   const back = lecture ? `${base}/c/${lecture.id}` : base;
   const [onlyWrong, setOnlyWrong] = useState(false);
@@ -480,12 +505,18 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
           </ProgressRing>
         </div>
         <div className="flex flex-col justify-center">
-          <p className="eyebrow">{lecture ? `Auswertung Kapiteltest · ${lecture.title}` : `Auswertung Abschlusstest · ${subject.examFormat.name}`}</p>
+          <p className="eyebrow">
+            {lecture
+              ? `Auswertung Kapiteltest · ${lecture.title}`
+              : paper
+                ? `Auswertung · ${paper.title}`
+                : `Auswertung Abschlusstest · ${subject.examFormat.name}`}
+          </p>
           <h1 className="display text-4xl sm:text-5xl mt-1">
-            {sc.correct} von {sc.total} richtig
+            {paper ? `${fmtPoints(sc.earned)} von ${fmtPoints(sc.max)} Punkten` : `${sc.correct} von ${sc.total} richtig`}
           </h1>
           <div className="mt-2 flex flex-wrap gap-2">
-            <Chip>mit Teilpunkten {pct(sc.partialScore)}</Chip>
+            {paper ? <Chip>{sc.correct} von {sc.total} Fragen ganz richtig</Chip> : <Chip>mit Teilpunkten {pct(sc.partialScore)}</Chip>}
             <Chip>{formatClock(record.durationSec)} Min</Chip>
             {isBest && exams.length > 1 && <Chip className="border-good/40 text-good">Neuer Bestwert</Chip>}
             {pendingShort.length > 0 &&
@@ -496,7 +527,21 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
               ))}
           </div>
           <div className="mt-5 grid gap-2.5">
-            {groups.map((g) => {
+            {paper?.parts.map((p, pi) => {
+              const ids = record.questionIds.filter((id) => slots.get(id)?.part === pi);
+              const max = ids.reduce((s, id) => s + (record.points?.[id] ?? 0), 0);
+              const got = ids.reduce((s, id) => s + (record.points?.[id] ?? 0) * questionCredit(record, id), 0);
+              return (
+                <div key={pi} className="grid grid-cols-[7.5rem_1fr_4.5rem] items-center gap-3 text-sm">
+                  <span className="truncate text-ink-2">{p.title.split(/\s[–:-]\s/)[0]}</span>
+                  <Bar value={max ? got / max : 0} color={subject.color} />
+                  <span className="text-right tabular-nums text-muted">
+                    {fmtPoints(got)}/{fmtPoints(max)}
+                  </span>
+                </div>
+              );
+            })}
+            {!paper && groups.map((g) => {
               const s = stat(record.questionIds.filter((id) => byId.get(id)?.type === g.key));
               if (!s.total) return null;
               return (
@@ -547,7 +592,7 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
         <div className="mt-6 flex flex-wrap gap-2">
           <ButtonLink href={`${base}/practice?mode=weak`}>Schwächen trainieren</ButtonLink>
           <ButtonLink variant="secondary" href={`${base}/exam`}>
-            Neuer Abschlusstest
+            {paper ? "Andere Probeklausur" : "Neuer Abschlusstest"}
           </ButtonLink>
         </div>
       </section>
@@ -570,6 +615,7 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
             return (
               <ReviewItem
                 context={caseOf(q)}
+                slot={slots.get(id)}
                 key={id}
                 index={i}
                 q={q}
@@ -592,7 +638,9 @@ function ReviewItem({
   aiUnavailable,
   onSelfGrade,
   context,
+  slot,
 }: {
+  slot?: PaperSlot;
   index: number;
   q: Question;
   record: ExamRecord;
@@ -616,7 +664,11 @@ function ReviewItem({
           <XCircle className="mt-0.5 size-5 shrink-0 text-bad" />
         )}
         <span className="flex-1">
-          <span className="eyebrow block">Frage {index + 1}</span>
+          <span className="eyebrow block">
+            {slot
+              ? `${slotLabel(slot)} · ${r === null ? "–" : fmtPoints(slot.points * questionCredit(record, q.id))} / ${fmtPoints(slot.points)} P.`
+              : `Frage ${index + 1}`}
+          </span>
           <span className="font-medium">{q.type === "tf" ? q.statement : q.prompt}</span>
         </span>
       </button>

@@ -1,6 +1,27 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "lernwerk", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3000 }
+    {
+      "name": "lernwerk",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "port": 3000
+    },
+    {
+      "name": "lernwerk-offline",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "NEXT_PUBLIC_FIRESTORE_EMULATOR=127.0.0.1:9",
+        "NEXT_PUBLIC_AUTH_EMULATOR=127.0.0.1:9",
+        "NEXT_PUBLIC_FIREBASE_PROJECT_ID=demo-offline",
+        "npm",
+        "run",
+        "dev"
+      ],
+      "port": 3000
+    }
   ]
 }

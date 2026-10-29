@@ -1,0 +1,390 @@
+[
+  {
+    "type": "tf",
+    "id": "tf-p5-01",
+    "lecture": "s06",
+    "case": "ab-shop",
+    "difficulty": 1,
+    "statement": "You want to know whether a \"10% off\" banner or a \"free shipping\" banner on the homepage leads to more orders.",
+    "answer": true,
+    "explanation": "Two versions of one element, visitors randomly split, orders as KPI → classic A/B test."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p5-02",
+    "lecture": "s06",
+    "case": "ab-shop",
+    "difficulty": 2,
+    "statement": "You want to know whether customers in Spain spend more per order than customers in Italy.",
+    "answer": false,
+    "explanation": "Country is not something you can randomly assign – this is a comparison of existing groups (descriptive analysis or regression), not an A/B test."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p5-03",
+    "lecture": "s06",
+    "case": "ab-shop",
+    "difficulty": 1,
+    "statement": "You want to know whether sending your reminder email at 8 am instead of 6 pm increases the open rate.",
+    "answer": true,
+    "explanation": "One element (send time) varied between randomly split recipients, open rate as KPI."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-01",
+    "lecture": "s06",
+    "case": "ab-banner-result",
+    "difficulty": 2,
+    "prompt": "Which test fits which KPI? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Order placed yes/no – chi-square test"
+      },
+      {
+        "id": "b",
+        "text": "Average basket value – t-test"
+      },
+      {
+        "id": "c",
+        "text": "Order placed yes/no – t-test of means of a categorical variable"
+      },
+      {
+        "id": "d",
+        "text": "Average basket value – chi-square goodness-of-fit test"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Categorical KPI (choice) → chi-square; metric KPI compared between two groups → t-test."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-02",
+    "lecture": "s06",
+    "case": "ab-banner-result",
+    "difficulty": 2,
+    "prompt": "The test reports a significant difference in orders, but in reality the banners perform equally well. Which error occurred?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Type I error (α)"
+      },
+      {
+        "id": "b",
+        "text": "Type II error (β)"
+      },
+      {
+        "id": "c",
+        "text": "No error – the test is always right at α = 5%"
+      },
+      {
+        "id": "d",
+        "text": "Sampling error of the t-test"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Rejecting H0 (no difference) although it is true is a type I error; its probability is controlled by α = 5%.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-03",
+    "lecture": "s05",
+    "case": "streamco-clusters",
+    "difficulty": 1,
+    "prompt": "Which cluster is the least satisfied?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 1"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 2"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 3"
+      },
+      {
+        "id": "d",
+        "text": "Cluster 4"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Cluster 3 has the lowest satisfaction (3.2) – and the highest churn (41%).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-04",
+    "lecture": "s05",
+    "case": "streamco-clusters",
+    "difficulty": 2,
+    "prompt": "For the least satisfied cluster, which aspect is most relevant and should be the focus to improve their experience?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Live sports"
+      },
+      {
+        "id": "b",
+        "text": "Exclusive originals"
+      },
+      {
+        "id": "c",
+        "text": "Size of content library"
+      },
+      {
+        "id": "d",
+        "text": "None of the proposed options"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Cluster 3 rates live sports at 6.8 – far above all other aspects.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-05",
+    "lecture": "s05",
+    "case": "streamco-clusters",
+    "difficulty": 2,
+    "prompt": "Which statement best describes Cluster 2?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Price-sensitive subscribers with below-average satisfaction and high churn"
+      },
+      {
+        "id": "b",
+        "text": "Satisfied fans of exclusive originals"
+      },
+      {
+        "id": "c",
+        "text": "Older sports fans who rarely cancel"
+      },
+      {
+        "id": "d",
+        "text": "Young subscribers who value live sports"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Cluster 2: low price is most important (6.6), satisfaction 4.1, churn 34%.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-06",
+    "lecture": "s05",
+    "case": "streamco-clusters",
+    "difficulty": 3,
+    "prompt": "Which segments would you rate as HIGHLY attractive for StreamCo? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 1"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 2"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 3"
+      },
+      {
+        "id": "d",
+        "text": "Cluster 4"
+      }
+    ],
+    "correct": [
+      "a",
+      "d"
+    ],
+    "explanation": "Clusters 1 and 4: large/medium size, high satisfaction (5.8, 6.1) and low churn (12%, 8%), valuing content StreamCo can monetise. Cluster 2 is large but price-driven and churns; Cluster 3 is small, dissatisfied and churns most.",
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-07",
+    "lecture": "s05",
+    "case": "streamco-clusters",
+    "difficulty": 3,
+    "prompt": "Applying the GE/McKinsey matrix, which segment should StreamCo prioritise?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 1"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 4"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 2"
+      },
+      {
+        "id": "d",
+        "text": "Not enough information is provided to proceed with this decision"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The tables only describe segment attractiveness. The GE/McKinsey matrix also requires StreamCo's competitive strengths per segment.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "tf",
+    "id": "tf-p5-04",
+    "lecture": "s05",
+    "case": "streamco-clusters",
+    "difficulty": 1,
+    "statement": "Cluster 4 is the most loyal cluster.",
+    "answer": true,
+    "explanation": "Cluster 4 has the lowest churn (8%) and the highest satisfaction (6.1)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-08",
+    "lecture": "s04",
+    "case": "airlines-listening",
+    "difficulty": 2,
+    "prompt": "What are the sentiment ratios?",
+    "options": [
+      {
+        "id": "a",
+        "text": "AirNova 0.6 and SkyLine 3.0"
+      },
+      {
+        "id": "b",
+        "text": "AirNova 1.67 and SkyLine 0.33"
+      },
+      {
+        "id": "c",
+        "text": "AirNova 0.15 and SkyLine 0.30"
+      },
+      {
+        "id": "d",
+        "text": "AirNova 6.0 and SkyLine 3.0"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "AirNova: 9,000 / 15,000 = 0.6. SkyLine: 10,500 / 3,500 = 3.0.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-09",
+    "lecture": "s04",
+    "case": "airlines-listening",
+    "difficulty": 2,
+    "prompt": "Which conclusions are supported by the data? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "AirNova generates more buzz but has more negative than positive mentions"
+      },
+      {
+        "id": "b",
+        "text": "SkyLine's conversation is clearly more positive"
+      },
+      {
+        "id": "c",
+        "text": "AirNova should investigate which events triggered the negative mentions"
+      },
+      {
+        "id": "d",
+        "text": "SkyLine has the higher social media reach"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "AirNova: high volume and reach, ratio below 1 → a reputational issue worth investigating. SkyLine reaches fewer people (90 m vs 210 m) but more positively."
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-01",
+    "lecture": "s08",
+    "case": "greenbite",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Fill in the missing values for both cohorts. Show your calculations.",
+    "modelAnswer": "Instagram: Rr month 2 = (2,000 − 1,000)/2,000 = 50%; Rr month 3 = (1,000 − 600)/1,000 = 40%. Survival month 2 = 50%, month 3 = 50% × 40% = 20%. Profit month 2 = 36 × 50% = €18; month 3 = 36 × 20% = €7.20. Cumulative: 8 → 26 → €33.20.\nReferral: survival month 3 = 80% × 80% = 64%. Profit month 3 = 48 × 64% = €30.72. Cumulative month 3 = 39.80 + 30.72 = €70.52.",
+    "keyPoints": [
+      "Instagram Rr 50% / 40%, survival 50% / 20%",
+      "Instagram profit 18 and 7.20, cumulative 33.20",
+      "Referral survival month 3 = 64%",
+      "Referral profit 30.72, cumulative 70.52"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-02",
+    "lecture": "s08",
+    "case": "greenbite",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which acquisition channel creates more value per acquired customer, and why?",
+    "modelAnswer": "The referral channel: its cumulative profit per acquired customer after three months is €70.52 vs €33.20 for Instagram – more than double. Referred customers are cheaper to acquire (€25 vs €40) and much more loyal (retention 80% vs 50%/40%; survival 64% vs 20% in month 3). Instagram brings volume, but most of those customers leave quickly, so their value collapses after month 1.",
+    "keyPoints": [
+      "Referral more valuable (70.52 vs 33.20)",
+      "Lower acquisition cost of referral",
+      "Much higher retention/survival of referred customers",
+      "Instagram: volume but high churn"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-03",
+    "lecture": "s08",
+    "case": "greenbite",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "Calculate the acquisition rate and the acquisition cost per customer of the last Instagram campaign.",
+    "modelAnswer": "Acquisition rate = 1,600 / 40,000 × 100 = 4%. Acquisition cost = 48,000 € / 1,600 = 30 € per acquired customer (lower than the €40 assumed in the cohort table).",
+    "keyPoints": [
+      "Acquisition rate = 4%",
+      "Acquisition cost = 30 € per customer",
+      "Formulas: acquired/targeted; spend/acquired"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-04",
+    "lecture": "s08",
+    "case": "greenbite",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Using CRM and CLV logic, recommend two concrete actions for GreenBite.",
+    "modelAnswer": "1) Shift acquisition budget towards the referral program (e.g. higher referral rewards), since referred customers have a much higher CLV – as long as the reward stays well below their value. 2) Fight early churn of Instagram customers: onboarding in weeks 1–4 (recipe personalisation, pause instead of cancel, first-month loyalty perks), monitor churn signals and target retention offers at customers likely to leave. Also: segment customers by value and allocate retention effort to high-value ones; track CAC against CLV per channel.",
+    "keyPoints": [
+      "Invest more in referral (higher CLV)",
+      "Reduce early churn of Instagram cohort (onboarding/retention offers)",
+      "Allocate resources by customer value / compare CAC with CLV",
+      "Concrete, justified actions"
+    ]
+  }
+]

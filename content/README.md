@@ -85,7 +85,26 @@ aufeinander, und die KI-Bewertung bekommt den Fall mitgeliefert.
 }]
 ```
 
-Die Reihenfolge der Teile im Abschlusstest legt `examFormat.order` fest (Standard `["short", "mc", "tf"]`,
+`exams/*.json` – optional: feste **Probeklausuren** im Aufbau der echten Prüfung. Hat ein Fach Probeklausuren,
+ersetzen sie den zufällig gezogenen Abschlusstest (Kapiteltests bleiben). Jede Klausur besteht aus Teilen, die
+Teile aus Aufgaben, die Aufgaben aus Fragen (ids aus `questions/`) mit Punkten. Bewertet wird nach Punkten:
+True/False und Multiple Choice ganz oder gar nicht, Kurzantworten anteilig nach der Bewertung.
+
+```json
+[{
+  "id": "mock-2526", "title": "Mock exam 2025/26", "subtitle": "…", "minutes": 90,
+  "parts": [
+    { "title": "Part A – True/false questions", "instructions": "[2 points in total]",
+      "sections": [{ "items": [{ "q": "tf-s01-03", "points": 0.25 }] }] },
+    { "title": "Part B – Short exercises", "instructions": "[10 points in total]",
+      "sections": [{ "title": "Exercise 1 – Regression", "items": [{ "q": "mc-s09-01", "points": 0.5 }, { "q": "mc-s09-02", "points": 1 }] }] }
+  ]
+}]
+```
+
+Aufgaben mit mehreren Fragen werden a), b), … nummeriert, Aussagen ohne Aufgabentitel 1), 2), ….
+
+Die Reihenfolge der Teile im zufälligen Abschlusstest legt `examFormat.order` fest (Standard `["short", "mc", "tf"]`,
 Marketing z. B. `["tf", "mc", "short"]` wie die echte Klausur).
 
 `cards/l01.json`

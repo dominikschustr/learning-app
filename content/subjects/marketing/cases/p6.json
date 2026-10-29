@@ -1,0 +1,257 @@
+[
+  {
+    "id": "hotel-survey",
+    "title": "Hotel guest survey (400 respondents)",
+    "text": [
+      "A hotel group surveyed 400 guests after check-out. Besides the questions below, the dataset contains: booking channel (website / app / travel agency), length of stay in nights, satisfaction with breakfast (1–7 Likert scale) and stay frequency (first time / occasionally / regularly)."
+    ],
+    "tables": [
+      {
+        "caption": "NPS: \"How likely are you to recommend us?\" (0–10)",
+        "head": [
+          "Score group",
+          "0–6",
+          "7–8",
+          "9–10"
+        ],
+        "rows": [
+          [
+            "Respondents",
+            "80",
+            "120",
+            "200"
+          ]
+        ]
+      },
+      {
+        "caption": "CSAT: \"How satisfied were you with your stay?\" (1–5)",
+        "head": [
+          "Score",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "rows": [
+          [
+            "Respondents",
+            "12",
+            "28",
+            "60",
+            "180",
+            "120"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scooter-conjoint",
+    "title": "E-scooter subscription – one respondent's part-worths",
+    "text": [
+      "A mobility start-up tests e-scooter subscriptions with a conjoint study. The partial benefits of ONE respondent (points) are:"
+    ],
+    "tables": [
+      {
+        "head": [
+          "Attribute",
+          "Levels and partial benefits"
+        ],
+        "rows": [
+          [
+            "Range",
+            "20 km: 0 · 40 km: 12 · 60 km: 20"
+          ],
+          [
+            "Helmet included",
+            "no: 0 · yes: 6"
+          ],
+          [
+            "Insurance",
+            "basic: 0 · full: 10"
+          ],
+          [
+            "Price per month",
+            "19 €: 0 · 29 €: −14 · 39 €: −30"
+          ]
+        ]
+      },
+      {
+        "caption": "Offers on the market",
+        "head": [
+          "Offer",
+          "Range",
+          "Helmet",
+          "Insurance",
+          "Price"
+        ],
+        "rows": [
+          [
+            "A",
+            "60 km",
+            "no",
+            "basic",
+            "39 €"
+          ],
+          [
+            "B",
+            "40 km",
+            "yes",
+            "full",
+            "29 €"
+          ],
+          [
+            "C",
+            "20 km",
+            "yes",
+            "full",
+            "19 €"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "furniture-regression",
+    "title": "Online furniture shop – drivers of monthly regional revenue",
+    "text": [
+      "An online furniture shop explains monthly revenue per region (k€) with search engine advertising spend (SEA, k€), number of influencer posts, average delivery time (days) and region dummies. Region West is the baseline. R² = 0.71, adjusted R² = 0.68."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Coefficient",
+          "p-value"
+        ],
+        "rows": [
+          [
+            "Intercept",
+            "40.2",
+            "0.001"
+          ],
+          [
+            "SEA spend (k€)",
+            "2.8",
+            "0.000"
+          ],
+          [
+            "Influencer posts",
+            "0.9",
+            "0.180"
+          ],
+          [
+            "Delivery time (days)",
+            "−3.5",
+            "0.004"
+          ],
+          [
+            "Region North",
+            "6.1",
+            "0.031"
+          ],
+          [
+            "Region South",
+            "−1.2",
+            "0.640"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lumo",
+    "title": "Mini case Lumo – smart home security cameras",
+    "text": [
+      "Lumo sells AI-powered indoor and outdoor cameras with an optional cloud subscription (video storage, person recognition). Its competitive strength is its AI software; it has little experience in retail pricing battles.",
+      "Trend report extract (\"Safe at Home\"): Fear of burglary has risen with media coverage of break-ins, and more elderly parents live alone far from their children. At the same time, cheap AI chips have made person recognition affordable, and everyone controls their home from a smartphone. Consumers now expect security that is effortless to install, works without a technician – and does not turn their home into a data mine: privacy scandals of connected devices made headlines across Europe.",
+      "Lumo surveyed 1,200 households and ran a cluster analysis on the importance (1–7) of four product aspects."
+    ],
+    "tables": [
+      {
+        "caption": "Cluster analysis",
+        "head": [
+          "",
+          "C1 Tech enthusiasts (N=280)",
+          "C2 Families caring for elderly parents (N=360)",
+          "C3 Privacy sceptics (N=410)",
+          "C4 Bargain hunters (N=150)"
+        ],
+        "rows": [
+          [
+            "Privacy / data protection",
+            "3.2",
+            "5.1",
+            "6.8",
+            "3.5"
+          ],
+          [
+            "Low price",
+            "3.0",
+            "4.2",
+            "5.0",
+            "6.9"
+          ],
+          [
+            "AI features (person recognition)",
+            "6.6",
+            "4.0",
+            "2.2",
+            "3.1"
+          ],
+          [
+            "Ease of installation",
+            "4.1",
+            "6.7",
+            "4.4",
+            "5.0"
+          ],
+          [
+            "Purchase intention (1–7)",
+            "5.9",
+            "5.2",
+            "2.6",
+            "4.0"
+          ],
+          [
+            "Interested in cloud subscription",
+            "62%",
+            "48%",
+            "12%",
+            "9%"
+          ]
+        ]
+      },
+      {
+        "caption": "Weighted attractiveness scoring (ratings 1–5)",
+        "head": [
+          "Driver",
+          "Weight",
+          "C1",
+          "C2"
+        ],
+        "rows": [
+          [
+            "Segment size",
+            "0.3",
+            "3",
+            "4"
+          ],
+          [
+            "Purchase intention",
+            "0.4",
+            "5",
+            "4"
+          ],
+          [
+            "Subscription potential",
+            "0.3",
+            "5",
+            "4"
+          ]
+        ]
+      }
+    ]
+  }
+]

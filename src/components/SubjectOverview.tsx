@@ -247,11 +247,16 @@ function Inner({ summary }: { summary: SubjectSummary }) {
               </span>
               <span className="min-w-0 flex-1">
                 <span className="block text-[0.72rem] font-semibold uppercase tracking-[0.08em] opacity-60">
-                  Abschlusstest · {f.name}
+                  {summary.papers.length ? "Probeklausuren" : "Abschlusstest"} · {f.name}
                 </span>
-                <span className="block font-semibold sm:text-lg">Fragen aus allen {st.lectures.length} Kapiteln</span>
+                <span className="block font-semibold sm:text-lg">
+                  {summary.papers.length
+                    ? `${summary.papers.length} Klausuren im Aufbau der Altklausuren`
+                    : `Fragen aus allen ${st.lectures.length} Kapiteln`}
+                </span>
                 <span className="mt-0.5 block text-xs opacity-70">
-                  {f.short + f.mc + f.tf} Fragen · {f.minutes} Min{best ? ` · Bestwert ${pct(best)}` : ""}
+                  {summary.papers.length ? "Teil A, B und C mit Punkten" : `${f.short + f.mc + f.tf} Fragen`} · {f.minutes} Min
+                  {best ? ` · Bestwert ${pct(best)}` : ""}
                 </span>
               </span>
               <ArrowRight className="size-4 shrink-0 opacity-70 transition group-hover:translate-x-0.5" />
@@ -283,7 +288,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
 
       {exams.length > 0 && (
         <section>
-          <h2 className="display mb-3 text-2xl">Abschlusstests</h2>
+          <h2 className="display mb-3 text-2xl">{summary.papers.length ? "Geschriebene Klausuren" : "Abschlusstests"}</h2>
           <div className="card divide-y divide-line">
             {exams.slice(0, 8).map((e) => {
               const sc = examScore(e);
@@ -301,7 +306,9 @@ function Inner({ summary }: { summary: SubjectSummary }) {
                   </span>
                   <div className="flex-1 text-sm">
                     <p className="font-semibold">
-                      {sc.correct}/{sc.total} richtig
+                      {e.paper
+                        ? `${summary.papers.find((p) => p.id === e.paper)?.title ?? "Probeklausur"} · ${(Math.round(sc.earned * 100) / 100).toLocaleString("de-DE")}/${sc.max} P.`
+                        : `${sc.correct}/${sc.total} richtig`}
                       {sc.score === best && <Chip className="ml-2">Bestwert</Chip>}
                     </p>
                     <p className="text-muted">

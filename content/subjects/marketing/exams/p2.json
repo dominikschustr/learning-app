@@ -1,0 +1,149 @@
+[
+  {
+    "id": "mock-revision",
+    "title": "Mock exam aus der Revision Session (Nachbau)",
+    "subtitle": "Die in der Vorlesung besprochene Probeklausur: A/B-Testing, Shopping-Center-Cluster, H&M-Regression, Conjoint Ralph × Fortnite.",
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part A – True/false questions on applied theory and frameworks",
+        "instructions": "True/false questions on all topics covered during the course. [2 points in total]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "tf-s02-04",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s03-05",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s04-06",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s05-07",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s06-08",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s07-09",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s08-10",
+                "points": 0.25
+              },
+              {
+                "q": "tf-s09-11",
+                "points": 0.25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part B – Short exercises",
+        "instructions": "True/false and multiple answer questions [10 points in total]. Check whether a question says \"select all that apply\".",
+        "sections": [
+          {
+            "title": "Exercise 1 – A/B testing",
+            "items": [
+              {
+                "q": "tf-s06-17",
+                "points": 0.5
+              },
+              {
+                "q": "tf-s06-18",
+                "points": 0.5
+              },
+              {
+                "q": "tf-s06-19",
+                "points": 0.5
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Cluster analysis (shopping centre)",
+            "items": [
+              {
+                "q": "mc-s05-13",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s05-14",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s05-15",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s05-16",
+                "points": 0.5
+              },
+              {
+                "q": "mc-s05-18",
+                "points": 1
+              },
+              {
+                "q": "mc-s05-17",
+                "points": 1
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Regression (H&M)",
+            "items": [
+              {
+                "q": "mc-s10-07",
+                "points": 1
+              },
+              {
+                "q": "mc-s10-08",
+                "points": 1
+              },
+              {
+                "q": "tf-s10-09",
+                "points": 1.5
+              },
+              {
+                "q": "tf-s10-10",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part C – Mini case: Ralph × Fortnite",
+        "instructions": "Open questions [8 points in total]. Provide your calculations and thought process.",
+        "sections": [
+          {
+            "title": "Mini case",
+            "items": [
+              {
+                "q": "sa-p2-01",
+                "points": 3
+              },
+              {
+                "q": "sa-p2-02",
+                "points": 2.5
+              },
+              {
+                "q": "sa-p2-03",
+                "points": 2.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

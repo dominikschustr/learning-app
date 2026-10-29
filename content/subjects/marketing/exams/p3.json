@@ -1,0 +1,160 @@
+[
+  {
+    "id": "exam-1920",
+    "title": "Klausur 2019/20 (Nachbau)",
+    "subtitle": "Die Originalklausur vom April 2020 (90 Minuten, 90 Punkte): 15 Multiple-Choice-Fragen, Value-in-Use mit Z-Ringen, CLV-Kohortentabelle, Mini-Case Generation I & Playmobil.",
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part A – Multiple choice questions",
+        "instructions": "For each question, provide all applicable answers. [2 points each, 30 points in total]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-s06-01",
+                "points": 2
+              },
+              {
+                "q": "mc-s06-02",
+                "points": 2
+              },
+              {
+                "q": "mc-s01-04",
+                "points": 2
+              },
+              {
+                "q": "mc-s04-11",
+                "points": 2
+              },
+              {
+                "q": "mc-s01-13",
+                "points": 2
+              },
+              {
+                "q": "mc-s07-05",
+                "points": 2
+              },
+              {
+                "q": "mc-s01-03",
+                "points": 2
+              },
+              {
+                "q": "mc-s01-05",
+                "points": 2
+              },
+              {
+                "q": "mc-s03-03",
+                "points": 2
+              },
+              {
+                "q": "mc-s05-10",
+                "points": 2
+              },
+              {
+                "q": "mc-s04-09",
+                "points": 2
+              },
+              {
+                "q": "mc-s03-07",
+                "points": 2
+              },
+              {
+                "q": "mc-s06-04",
+                "points": 2
+              },
+              {
+                "q": "mc-s08-05",
+                "points": 2
+              },
+              {
+                "q": "mc-s01-12",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part B – Short questions",
+        "instructions": "Short answers please. [30 points in total]",
+        "sections": [
+          {
+            "title": "Question B.1 – Value-in-use (Z-rings / Y-rings)",
+            "items": [
+              {
+                "q": "mc-s06-19",
+                "points": 2
+              },
+              {
+                "q": "mc-s06-20",
+                "points": 6
+              },
+              {
+                "q": "sa-s06-02",
+                "points": 7
+              }
+            ]
+          },
+          {
+            "title": "Question B.2 – Customer value of two segments",
+            "items": [
+              {
+                "q": "mc-s08-16",
+                "points": 7
+              },
+              {
+                "q": "mc-s08-17",
+                "points": 2
+              },
+              {
+                "q": "sa-p3-01",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part C – Mini case: Generation I & Playmobil",
+        "instructions": "Open questions. [30 points in total]",
+        "sections": [
+          {
+            "title": "Mini case",
+            "items": [
+              {
+                "q": "sa-s03-01",
+                "points": 4
+              },
+              {
+                "q": "sa-s03-02",
+                "points": 6
+              },
+              {
+                "q": "mc-s10-04",
+                "points": 4
+              },
+              {
+                "q": "mc-s10-05",
+                "points": 3
+              },
+              {
+                "q": "mc-s10-06",
+                "points": 3
+              },
+              {
+                "q": "sa-s10-02",
+                "points": 4
+              },
+              {
+                "q": "sa-p3-02",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
