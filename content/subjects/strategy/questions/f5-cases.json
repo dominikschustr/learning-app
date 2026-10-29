@@ -1,0 +1,48 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m5-01",
+    "lecture": "f5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Run a VRIO analysis of three of Maison Brot's resources or capabilities and state the outcome for each.",
+    "modelAnswer": "Ovens: valuable but not rare (anyone can buy them) → competitive parity. Sourdough culture and bakers' tacit know-how: valuable (taste customers pay for), rare, inimitable (history, tacit knowledge, causal ambiguity), organized (apprenticeship training transmits it) → sustained advantage. Local brand: valuable and rare locally; hard to imitate because built over decades; organized through shops and consistent quality → sustained advantage locally (may not be VRIO in another city). Locations: valuable, rare-ish, but can be bought or matched over time → temporary advantage.",
+    "keyPoints": [
+      "Ovens → parity",
+      "Know-how/culture with V, R, I, O → sustained",
+      "Third resource with outcome",
+      "Uses case facts"
+    ],
+    "case": "mc-bakery"
+  },
+  {
+    "type": "short",
+    "id": "sa-m5-02",
+    "lecture": "f5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Map the retailer's activities onto Porter's value chain and identify which activities drive willingness-to-pay and which drive cost.",
+    "modelAnswer": "Primary: inbound logistics – receiving lenses and frames; operations – cutting and assembly in its own lab; outbound logistics – 48-hour shipping; marketing & sales – social media, online shop; service – home try-on and 30-day returns. Support: procurement (lens supplier), technology development (frame design, web platform), HRM (lab technicians), infrastructure. WTP drivers: in-house design, home try-on, fast delivery, returns, brand. Cost drivers: own lab and direct online sales (no shops, no middlemen) lower costs; try-on and returns raise them. The system combines lower prices with convenience.",
+    "keyPoints": [
+      "Correct primary activities",
+      "Support activities",
+      "WTP vs cost drivers identified"
+    ],
+    "case": "mc-value-chain"
+  },
+  {
+    "type": "short",
+    "id": "sa-m5-03",
+    "lecture": "f5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Use the concepts of threshold/distinctive resources and dynamic capabilities to explain the company's challenge.",
+    "modelAnswer": "In film photography, chemistry know-how, film manufacturing and retail distribution were distinctive resources (VRIO). With digital and smartphones, they lost value: chemistry became irrelevant, distribution through photo shops shrank; new threshold resources were sensors, software and electronics, and distinctive ones platforms and ecosystems. VRIO assumes stable markets. The company needed dynamic capabilities – sensing the shift, seizing digital opportunities and reconfiguring its resource base (new skills, business model) – but routines and success created blindness (link to awareness and Einstellung).",
+    "keyPoints": [
+      "Former distinctive resources",
+      "Shift of threshold/distinctive resources",
+      "Dynamic capabilities defined and applied"
+    ],
+    "case": "mc-dynamic"
+  }
+]

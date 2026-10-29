@@ -1,0 +1,149 @@
+[
+  {
+    "id": "competitive-dynamics",
+    "lecture": "f7",
+    "name": "Competitive dynamics model",
+    "origin": "Session 5",
+    "purpose": "Will a rival attack or respond?",
+    "parts": [
+      {
+        "label": "1. Competitor analysis",
+        "points": [
+          "Market similarity (overlap of markets)",
+          "Resource similarity (type and amount)",
+          "Both high → highest rivalry"
+        ]
+      },
+      {
+        "label": "2. Drivers of behaviour (AMA)",
+        "points": [
+          "Awareness – blind spots: sudden change, routines, success",
+          "Motivation – gain/loss (or personal, irrational)",
+          "Ability – resources to act"
+        ]
+      },
+      {
+        "label": "3. Competitive rivalry",
+        "points": [
+          "Likelihood of attack",
+          "Likelihood of response"
+        ]
+      },
+      {
+        "label": "4. Outcomes",
+        "points": [
+          "Market position",
+          "Financial performance"
+        ]
+      }
+    ],
+    "apply": [
+      "Go through market & resource similarity, then A, M, A",
+      "Conclude on likelihood and timing of response"
+    ],
+    "pitfalls": [],
+    "example": "Apple vs Samsung (smartphones), Apple vs Microsoft (operating systems)."
+  },
+  {
+    "id": "first-mover",
+    "lecture": "f7",
+    "name": "First-mover (dis)advantages",
+    "origin": "Session 5",
+    "purpose": "Is it better to move first or to be a fast second?",
+    "parts": [
+      {
+        "label": "Advantages",
+        "points": [
+          "High market shares",
+          "Customer loyalty",
+          "Authenticity (“since 1905”)"
+        ]
+      },
+      {
+        "label": "Disadvantages",
+        "points": [
+          "Uncertain demand",
+          "Innovation and learning costs",
+          "Lower initial quality",
+          "Path dependency, rigid routines"
+        ]
+      },
+      {
+        "label": "When",
+        "points": [
+          "Advantages in fast-moving markets",
+          "Not in slow-cycle markets → fast second"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "value-lines",
+    "lecture": "f7",
+    "name": "Interactive strategies on price & quality",
+    "origin": "D'Aveni",
+    "purpose": "How do competitive moves shift customer expectations?",
+    "parts": [
+      {
+        "label": "Players",
+        "points": [
+          "D = differentiating, M = mid-point, L = cost-leading, U = uncompetitive"
+        ]
+      },
+      {
+        "label": "Value line",
+        "points": [
+          "Price–perceived quality combinations customers accept"
+        ]
+      },
+      {
+        "label": "Dynamics",
+        "points": [
+          "D raises quality at same price → new value line; M and L must adapt",
+          "M cuts price at same quality → next value line; L and D must adapt",
+          "Laggards fall below the line → U"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "market-velocity",
+    "lecture": "f7",
+    "name": "Velocity of markets",
+    "origin": "Session 5",
+    "purpose": "How long can an advantage be protected?",
+    "parts": [
+      {
+        "label": "Slow-cycle",
+        "points": [
+          "Shielded from imitation, imitation costly",
+          "High barriers: fixed costs, complex processes, patents, history",
+          "Slow responses (space industry)"
+        ]
+      },
+      {
+        "label": "Standard-cycle",
+        "points": [
+          "In between"
+        ]
+      },
+      {
+        "label": "Fast-cycle",
+        "points": [
+          "Cheap imitation, low barriers",
+          "Advantage from adaptation (exploration, awareness, flexibility) and quickness",
+          "Smartphones, AI LLMs"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  }
+]

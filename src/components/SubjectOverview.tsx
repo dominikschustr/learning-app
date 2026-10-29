@@ -7,6 +7,7 @@ import {
   Brain,
   Info,
   Layers,
+  LayoutGrid,
   Play,
   RotateCcw,
   Target,
@@ -37,6 +38,12 @@ export function SubjectOverview({ summary }: { summary: SubjectSummary }) {
   return <Inner summary={summary} />;
 }
 
+const TYPES = [
+  ["mc", "Multiple Choice"],
+  ["tf", "True/False"],
+  ["short", "Kurzantwort"],
+] as const;
+
 function readinessLabel(r: number) {
   if (r < 0.25) return "Am Anfang";
   if (r < 0.5) return "Auf dem Weg";
@@ -62,7 +69,19 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const markedQ = [...markedIds(s.marks, "q", subject.id)].filter((id) => qIds.has(id)).length;
   const markedC = [...markedIds(s.marks, "c", subject.id)].filter((id) => cIds.has(id)).length;
 
+  const hasTf = summary.items.some((i) => i.type === "tf");
   const modes = [
+    ...(summary.frameworks.length
+      ? [
+          {
+            href: `${base}/frameworks`,
+            icon: LayoutGrid,
+            title: "Framework-Übersicht",
+            text: "Alle Frameworks als Steckbrief, mit Abfrage-Modus",
+            meta: `${summary.frameworks.length} Kapitel`,
+          },
+        ]
+      : []),
     {
       href: `${base}/cards`,
       icon: Layers,
@@ -84,13 +103,17 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       text: "Deine unsichersten Fragen",
       meta: st.seen ? "gezielt" : "erst nach ein paar Fragen",
     },
-    {
-      href: `${base}/blitz`,
-      icon: Zap,
-      title: "Blitzrunde",
-      text: "60 Sek. True/False",
-      meta: s.blitzBest[subject.id] ? `Rekord ${s.blitzBest[subject.id]}` : "noch kein Rekord",
-    },
+    ...(hasTf
+      ? [
+          {
+            href: `${base}/blitz`,
+            icon: Zap,
+            title: "Blitzrunde",
+            text: "60 Sek. True/False",
+            meta: s.blitzBest[subject.id] ? `Rekord ${s.blitzBest[subject.id]}` : "noch kein Rekord",
+          },
+        ]
+      : []),
     {
       href: `${base}/practice?mode=marked`,
       icon: Bookmark,
@@ -158,16 +181,10 @@ function Inner({ summary }: { summary: SubjectSummary }) {
           <h2 className="display mt-1 text-3xl">{readinessLabel(st.readiness)}</h2>
           <p className="mt-2 max-w-md text-sm text-muted">
             Geschätzter Score, wenn die Prüfung jetzt wäre: deine Sicherheit pro Fragetyp, gewichtet wie in der
-            Prüfung ({f.short} Kurzantwort · {f.mc} Multiple Choice · {f.tf} True/False).
+            Prüfung ({TYPES.filter(([t]) => f[t]).map(([t, label]) => `${f[t]} ${label}`).join(" · ")}).
           </p>
           <div className="mt-4 grid max-w-md gap-2.5">
-            {(
-              [
-                ["Multiple Choice", st.masteryByType.mc],
-                ["True / False", st.masteryByType.tf],
-                ["Kurzantwort", st.masteryByType.short],
-              ] as const
-            ).map(([label, v]) => (
+            {TYPES.filter(([t]) => f[t]).map(([t, label]) => [label, st.masteryByType[t]] as const).map(([label, v]) => (
               <div key={label} className="grid grid-cols-[7.5rem_1fr_2.5rem] items-center gap-3 text-sm">
                 <span className="text-ink-2">{label}</span>
                 <Bar value={v} color={subject.color} />

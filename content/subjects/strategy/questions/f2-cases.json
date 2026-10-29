@@ -1,0 +1,50 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m2-01",
+    "lecture": "f2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Assess the causal claim using the sources of endogeneity and propose how FitLoop could test it.",
+    "modelAnswer": "Reverse causation: users who are already motivated and loyal are the ones who join challenges. Omitted variable: intrinsic motivation, fitness level or free time drives both challenge participation and retention. Selection / survivorship bias: the sample includes only users still subscribed after 12 months – those who cancelled are missing. Measurement: what counts as “joining” a challenge? Test: a randomized experiment – randomly invite half of new users to challenges (A/B test) and compare cancellation rates.",
+    "keyPoints": [
+      "Reverse causation",
+      "Confounder (motivation)",
+      "Selection/survivorship in the sample",
+      "Randomized experiment"
+    ],
+    "case": "mc-app-data"
+  },
+  {
+    "type": "short",
+    "id": "sa-m2-02",
+    "lecture": "f2",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Identify at least four biases with the Kahneman, Lovallo & Sibony checklist and propose remedies.",
+    "modelAnswer": "Self-interest bias: bonuses of the deal team depend on closing → review with extra care. Saliency bias: one memorable 2015 analogy → ask for several comparable deals incl. failures (reference class). Anchoring / over-optimism: 25 % synergies from one case, single scenario → independent estimates, outside view, worst case. Groupthink: CEO states view first, no dissent → silence the leader, solicit dissent privately, red team. Possibly disaster neglect → premortem. Also the affect heuristic (CEO in love with the deal).",
+    "keyPoints": [
+      "Self-interest",
+      "Saliency / analogy",
+      "Anchoring / over-optimism",
+      "Groupthink / leader first",
+      "Concrete remedies"
+    ],
+    "case": "mc-merger"
+  },
+  {
+    "type": "short",
+    "id": "sa-m2-03",
+    "lecture": "f2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which biases related to expertise and information filtering are at work, and how could the company counter them?",
+    "modelAnswer": "Einstellung effect / cognitive entrenchment: her expertise makes her prioritize the known solution (better printed guides) over new, more appropriate ones. Confirmation bias: she relies on past evidence that fits her belief (“we have always seen that”) – selective exposure and retention. Possibly in-group favoritism (experts vs “strangers”) and dichotomous thinking (experts OR users). Countermeasures: bring in outside views and data on traveller behaviour, assign a red team to build the app case, run a small experiment, ask what a newcomer CEO would do.",
+    "keyPoints": [
+      "Einstellung / entrenchment",
+      "Confirmation bias mechanisms",
+      "Countermeasures (outside view, experiment, red team)"
+    ],
+    "case": "mc-expert"
+  }
+]

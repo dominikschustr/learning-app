@@ -1,0 +1,218 @@
+[
+  {
+    "id": "swot",
+    "lecture": "f5",
+    "name": "SWOT",
+    "origin": "Session 4",
+    "purpose": "What is the synthesis of internal and external analysis?",
+    "parts": [
+      {
+        "label": "Strengths / Weaknesses",
+        "points": [
+          "Internal and actual (“are”)",
+          "From the resource-based model"
+        ]
+      },
+      {
+        "label": "Opportunities / Threats",
+        "points": [
+          "External and potential (“could be”)",
+          "From environmental models (Five Forces, PESTEL)"
+        ]
+      }
+    ],
+    "apply": [
+      "Weight and prioritize each factor (−5 to +5)",
+      "Keep only factors valued by customers and different from competitors"
+    ],
+    "pitfalls": [
+      "Ambiguous, overlapping items",
+      "Using SWOT instead of a real industry and resource analysis"
+    ],
+    "example": ""
+  },
+  {
+    "id": "rbv",
+    "lecture": "f5",
+    "name": "Resource-based view",
+    "origin": "Wernerfelt (1984) · Barney (1991)",
+    "purpose": "Why do firms in the same industry perform differently?",
+    "parts": [
+      {
+        "label": "IO assumptions (top-down)",
+        "points": [
+          "Firms hold homogeneous resources",
+          "Resources are mobile → heterogeneity short-lived"
+        ]
+      },
+      {
+        "label": "RBV assumptions (bottom-up)",
+        "points": [
+          "Resources are heterogeneous",
+          "Imperfectly mobile → heterogeneity can last"
+        ]
+      },
+      {
+        "label": "Resources vs capabilities",
+        "points": [
+          "Resources = what we have (nouns): data, cash, skilled staff",
+          "Capabilities = what we do (verbs): using data, managing cash, training staff"
+        ]
+      },
+      {
+        "label": "Tangible vs intangible",
+        "points": [
+          "Tangible: capital, land, buildings, plant, equipment, supplies",
+          "Intangible: culture, knowledge, brand & reputation, IP"
+        ]
+      },
+      {
+        "label": "Threshold vs distinctive",
+        "points": [
+          "Threshold = needed for parity",
+          "Distinctive = needed for advantage",
+          "Both change as industries change"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "VfB Stuttgart: almost the same squad went from 16th to 2nd – capabilities (how resources are combined) beat a list of resources."
+  },
+  {
+    "id": "value-chain",
+    "lecture": "f5",
+    "name": "Value chain & value system",
+    "origin": "Porter (1985)",
+    "purpose": "Which activities create value and margin – and which should be done in-house?",
+    "parts": [
+      {
+        "label": "Primary activities",
+        "points": [
+          "Inbound logistics",
+          "Operations",
+          "Outbound logistics",
+          "Marketing & sales",
+          "Service"
+        ]
+      },
+      {
+        "label": "Support activities",
+        "points": [
+          "Procurement",
+          "Technology development",
+          "Human resource management",
+          "Firm infrastructure"
+        ]
+      },
+      {
+        "label": "Margin",
+        "points": [
+          "Created by the coordinated system of activities"
+        ]
+      },
+      {
+        "label": "Value system",
+        "points": [
+          "Suppliers' → firm's → customers' value chains",
+          "Where to maximize quality, minimize cost → make or buy"
+        ]
+      }
+    ],
+    "apply": [
+      "Locate the firm's key resources and capabilities in the chain",
+      "Ask which activities raise WTP and which lower cost"
+    ],
+    "pitfalls": [],
+    "example": "Dyson: R&D (≈50 % of net earnings), patents, direct stores and 72-hour helpdesk raise WTP; manufacturing in Malaysia lowers cost."
+  },
+  {
+    "id": "vrio",
+    "lecture": "f5",
+    "name": "VRIO",
+    "origin": "Barney (1991, 1995)",
+    "purpose": "Does a resource or capability give a sustained competitive advantage?",
+    "parts": [
+      {
+        "label": "V – Valuable",
+        "points": [
+          "Valued by customers, lets the firm respond to opportunities/threats",
+          "Stakeholders, not producers, qualify value"
+        ]
+      },
+      {
+        "label": "R – Rare",
+        "points": [
+          "Possessed by none or few competitors",
+          "Relative, not absolute"
+        ]
+      },
+      {
+        "label": "I – Inimitable",
+        "points": [
+          "Costly to imitate or substitute",
+          "Sources: causal ambiguity (“recipe”), culture & history, tacit knowledge"
+        ]
+      },
+      {
+        "label": "O – Organized",
+        "points": [
+          "Processes, structure, control, incentives to exploit it",
+          "Complementary capability (patent + production + sales force)"
+        ]
+      },
+      {
+        "label": "Outcomes",
+        "points": [
+          "No V → disadvantage",
+          "V → parity",
+          "V+R → temporary advantage",
+          "V+R+I without O → unexploited / temporary",
+          "V+R+I+O → sustained advantage"
+        ]
+      }
+    ],
+    "apply": [
+      "Pick specific resources from the case, not “good management”",
+      "Go through V, R, I, O with evidence and state where the chain breaks",
+      "Give the outcome"
+    ],
+    "pitfalls": [
+      "Forgetting O",
+      "VRIN → VRIO: N folded into I, O added",
+      "A resource VRIO in one industry may not be in another (Dyson in EVs)"
+    ],
+    "example": "Dyson in vacuums: brand, skills, innovation culture, patents = VRIO; funding = valuable only; engineers = V+R but imitable. In EVs only patents stayed VRIO → project abandoned 2019."
+  },
+  {
+    "id": "dynamic-capabilities",
+    "lecture": "f5",
+    "name": "Dynamic capabilities",
+    "origin": "Teece",
+    "purpose": "How does a firm stay ahead when its environment changes?",
+    "parts": [
+      {
+        "label": "Definition",
+        "points": [
+          "Ability to renew and recreate resources and capabilities for changing environments"
+        ]
+      },
+      {
+        "label": "Why needed",
+        "points": [
+          "VRIO assumes stable markets",
+          "Advantages get imitated, become common practice or redundant"
+        ]
+      },
+      {
+        "label": "What they do",
+        "points": [
+          "Create, extend or modify the resource base"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  }
+]

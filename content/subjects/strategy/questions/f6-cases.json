@@ -1,0 +1,49 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m6-01",
+    "lecture": "f6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Classify the three chains with Porter's generic strategies and discuss which one is most at risk of being stuck in the middle.",
+    "modelAnswer": "A: cost leadership – low cost, broad market (standardization, self check-in, many countries). B: focused differentiation – unique experience, high price, narrow niche (historic Tuscany boutique). C: broad market with mid-level price and features – at risk of being stuck in the middle: it cannot match A's costs and not B's uniqueness; it competes with many similar business hotels. It needs a clear choice (e.g. differentiation for business travellers through service and loyalty, or efficiency) or a value innovation.",
+    "keyPoints": [
+      "A cost leadership",
+      "B focused differentiation",
+      "C at risk, reason",
+      "Way out"
+    ],
+    "case": "mc-hotels"
+  },
+  {
+    "type": "short",
+    "id": "sa-m6-02",
+    "lecture": "f6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Describe the business model with value creation, value configuration and value capture.",
+    "modelAnswer": "Value creation: for consumers – cheap food and a sense of fighting waste; for shops – revenue from food that would be thrown away, new customers, image; for society – less food waste. Value configuration: a two-sided platform matching shops and users; app with geolocation and pick-up slots; no logistics of its own (users collect); network effects in cities. Value capture: commission per bag and annual shop fee; shops capture the remaining price; consumers capture the discount. Margin comes from scale with low variable costs.",
+    "keyPoints": [
+      "Creation for both sides",
+      "Configuration (platform, no logistics)",
+      "Capture (commission, fee) incl. other parties"
+    ],
+    "case": "mc-business-model"
+  },
+  {
+    "type": "short",
+    "id": "sa-m6-03",
+    "lecture": "f6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Identify the sources of the airline's cost advantage and one challenge to sustaining it.",
+    "modelAnswer": "Input costs: lower airport fees at secondary airports, bulk purchasing of aircraft and fuel. Economies of scale: 4,000 weekly flights spread fixed costs (maintenance, IT, marketing); one aircraft type for maintenance and training. Economies of learning: experienced crews perform fast turnarounds, raising aircraft utilization (experience curve). Challenges: labour regulation and pilot unions (labour is not a resource like capital), rising fuel prices, maintaining acceptable quality and safety, rivals copying the model.",
+    "keyPoints": [
+      "Input costs",
+      "Economies of scale",
+      "Experience curve",
+      "Challenge (labour, quality, imitation)"
+    ],
+    "case": "mc-cost-sources"
+  }
+]

@@ -107,6 +107,22 @@ Aufgaben mit mehreren Fragen werden a), b), … nummeriert, Aussagen ohne Aufgab
 Die Reihenfolge der Teile im zufälligen Abschlusstest legt `examFormat.order` fest (Standard `["short", "mc", "tf"]`,
 Marketing z. B. `["tf", "mc", "short"]` wie die echte Klausur).
 
+`frameworks/l01.json` – optional: **Framework-Steckbriefe** zum Auswendiglernen. Hat ein Fach welche, bekommt es die Seite
+„Framework-Übersicht“ (mit Abfrage-Modus, der die Bausteine verdeckt) und jedes betroffene Kapitel eine Kachel dorthin.
+
+```json
+[{
+  "id": "five-forces", "lecture": "l01", "name": "Five Forces", "origin": "Porter",
+  "purpose": "How attractive is the industry?",
+  "parts": [{ "label": "Rivalry", "points": ["Low growth", "High fixed costs"] }],
+  "apply": ["Rate each force with case facts"], "pitfalls": ["Growth ≠ attractiveness"],
+  "example": "Vacuum cleaners (Dyson case) …"
+}]
+```
+
+Ein Fach kann auch ganz ohne Multiple Choice und True/False auskommen (`"mc": 0, "tf": 0` in `examFormat`, z. B. Strategy):
+dann wird nur mit offenen Fragen geübt, Kapiteltests ziehen bis zu drei Kurzantworten, und die Blitzrunde entfällt.
+
 `cards/l01.json`
 
 ```json

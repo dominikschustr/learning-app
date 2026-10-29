@@ -1,0 +1,162 @@
+[
+  {
+    "id": "pestel",
+    "lecture": "f3",
+    "name": "PESTEL",
+    "origin": "Session 3",
+    "purpose": "Which macro-environmental trends and uncertainties shape the industry?",
+    "parts": [
+      {
+        "label": "Political",
+        "points": [
+          "Government stability, taxation, welfare policies, trade regulation"
+        ]
+      },
+      {
+        "label": "Economic",
+        "points": [
+          "GDP, inflation, disposable income, interest rates, exchange rates"
+        ]
+      },
+      {
+        "label": "Social",
+        "points": [
+          "Values and culture, lifestyle, consumerism, attitudes to work and leisure"
+        ]
+      },
+      {
+        "label": "Technological",
+        "points": [
+          "Research policy, new patents and products"
+        ]
+      },
+      {
+        "label": "Environmental",
+        "points": [
+          "Climate change, energy consumption, waste"
+        ]
+      },
+      {
+        "label": "Legal",
+        "points": [
+          "Legislative and regulatory constraints and changes"
+        ]
+      }
+    ],
+    "apply": [
+      "Scan: only factors that matter for THIS industry",
+      "Assess: impact and predictability (trend vs uncertainty → scenarios)",
+      "Translate: threat or opportunity – for whom?"
+    ],
+    "pitfalls": [
+      "Generic factors (“inflation”) without link to the industry",
+      "Forgetting to say whether a factor fosters or hinders, and for whom"
+    ],
+    "example": "US protectionism since 2025 · EU board gender quotas (2026) · end of zero interest rates (2022) · Gen Z drinks less alcohol · AI answers cut publishers' traffic · shorter snow seasons for ski resorts."
+  },
+  {
+    "id": "five-forces",
+    "lecture": "f3",
+    "name": "Five Forces",
+    "origin": "Porter",
+    "purpose": "How attractive is the industry – where is the value and who captures it?",
+    "parts": [
+      {
+        "label": "1. Rivalry among competitors",
+        "points": [
+          "Low concentration (balanced power)",
+          "Low growth",
+          "Low differentiation",
+          "High fixed costs"
+        ]
+      },
+      {
+        "label": "2. Threat of new entrants (low if barriers high)",
+        "points": [
+          "Scale & experience",
+          "Access to supply/distribution",
+          "Formal control: vertical integration, patents",
+          "Informal control: loyalty, networks, brand",
+          "Capital requirements",
+          "Legislation"
+        ]
+      },
+      {
+        "label": "3. Threat of substitutes",
+        "points": [
+          "Similar function, different nature, from outside the industry",
+          "Low switching costs (value for money)"
+        ]
+      },
+      {
+        "label": "4. Buyer power (immediate customers)",
+        "points": [
+          "Buyer concentration",
+          "Low switching costs / standardized products",
+          "Threat of backward integration"
+        ]
+      },
+      {
+        "label": "5. Supplier power",
+        "points": [
+          "Supplier concentration",
+          "High switching costs for buyers",
+          "Threat of forward integration",
+          "Differentiated supplier products"
+        ]
+      }
+    ],
+    "apply": [
+      "Rate each force low/medium/high with 2–3 case facts",
+      "Identify the right buyers and suppliers (users AND corporate clients; app stores, content creators …)",
+      "Conclude explicitly on attractiveness",
+      "Add an interdependence or limitation"
+    ],
+    "pitfalls": [
+      "Equating growth with attractiveness",
+      "Treating substitutes as rivals",
+      "Limits: industry level, forces interdependent and not prioritized, rigid boundaries, static"
+    ],
+    "example": "Vacuum cleaners (Dyson): rivalry high, entry high, substitutes moderate, suppliers high, buyers high → unattractive, yet Dyson earns high margins through differentiation."
+  },
+  {
+    "id": "industry-definition",
+    "lecture": "f3",
+    "name": "Defining the industry",
+    "origin": "Session 3",
+    "purpose": "What exactly is “the industry”?",
+    "parts": [
+      {
+        "label": "Definition",
+        "points": [
+          "A group of firms producing similar products and services"
+        ]
+      },
+      {
+        "label": "Problems",
+        "points": [
+          "Where are the boundaries?",
+          "Firms in several industries?",
+          "Similar according to which criteria?"
+        ]
+      },
+      {
+        "label": "Criteria",
+        "points": [
+          "Geography",
+          "Product segment",
+          "Position in the value chain"
+        ]
+      },
+      {
+        "label": "Dynamics",
+        "points": [
+          "Industries change and converge (FinTech, EdTech)"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "Airlines: Asia / Europe / North America; leisure / business / freight."
+  }
+]

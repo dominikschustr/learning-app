@@ -19,7 +19,7 @@ describe("Content", () => {
   });
 });
 
-import { getTexts } from "@/lib/content";
+import { getFrameworks, getTexts } from "@/lib/content";
 
 describe("Lesetexte", () => {
   it("alle Lesetexte gehören zu einem Kapitel ihres Fachs", () => {
@@ -40,5 +40,14 @@ describe("Fallstudien", () => {
       const used = new Set(c.questions.map((q) => q.case).filter(Boolean));
       for (const k of c.cases) expect(used, `${c.subject.id}: Fall ${k.id}`).toContain(k.id);
     }
+  });
+});
+
+describe("Framework-Steckbriefe", () => {
+  it("sind gültig und decken bei Strategy jedes Kapitel ab", () => {
+    for (const c of loadAllContent()) getFrameworks(c.subject.id);
+    const strategy = getAllContent().find((c) => c.subject.id === "strategy")!;
+    const lectures = new Set(getFrameworks("strategy").map((f) => f.lecture));
+    for (const l of strategy.subject.lectures) expect(lectures, l.id).toContain(l.id);
   });
 });

@@ -1,0 +1,229 @@
+[
+  {
+    "id": "life-cycle",
+    "lecture": "f4",
+    "name": "Industry life cycle",
+    "origin": "Session 3",
+    "purpose": "How do the forces change as the industry evolves?",
+    "parts": [
+      {
+        "label": "Introduction",
+        "points": [
+          "Low rivalry"
+        ]
+      },
+      {
+        "label": "Growth",
+        "points": [
+          "Low rivalry",
+          "Low buyer power",
+          "High supplier power"
+        ]
+      },
+      {
+        "label": "Shakeout",
+        "points": [
+          "High rivalry"
+        ]
+      },
+      {
+        "label": "Maturity",
+        "points": [
+          "High buyer power",
+          "Low threat of entry"
+        ]
+      },
+      {
+        "label": "Decline",
+        "points": [
+          "High rivalry"
+        ]
+      }
+    ],
+    "apply": [
+      "Place the industry with evidence (growth rates, exits, price wars)",
+      "Derive which forces will strengthen next"
+    ],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "strategic-groups",
+    "lecture": "f4",
+    "name": "Strategic groups",
+    "origin": "Session 3",
+    "purpose": "With whom does the firm really compete?",
+    "parts": [
+      {
+        "label": "Definition",
+        "points": [
+          "Organizations with similar strategic characteristics",
+          "Rivalry is most intense within groups"
+        ]
+      },
+      {
+        "label": "Scope of activities",
+        "points": [
+          "Product range",
+          "Geographical coverage",
+          "Number of segments",
+          "Distribution channels"
+        ]
+      },
+      {
+        "label": "Resource commitment",
+        "points": [
+          "Branding & marketing effort",
+          "Vertical integration",
+          "Quality",
+          "R&D / technological leadership",
+          "Size"
+        ]
+      },
+      {
+        "label": "Uses",
+        "points": [
+          "Real competitors",
+          "White spaces (opportunity) vs black holes (dead end)",
+          "Mobility barriers between groups"
+        ]
+      }
+    ],
+    "apply": [
+      "Pick two dimensions that really separate firms",
+      "Place the case firms, name the mobility barriers",
+      "Discuss empty spaces: white space or black hole?"
+    ],
+    "pitfalls": [],
+    "example": "Grocery retail: supermarkets · convenience stores · corner shops."
+  },
+  {
+    "id": "blue-ocean",
+    "lecture": "f4",
+    "name": "Blue Ocean & strategy canvas",
+    "origin": "Kim & Mauborgne (2005)",
+    "purpose": "How can a firm escape competition by creating new market space?",
+    "parts": [
+      {
+        "label": "Red vs blue ocean",
+        "points": [
+          "Red: existing market, competition maximized",
+          "Blue: new market space, competition minimized"
+        ]
+      },
+      {
+        "label": "Strategy canvas",
+        "points": [
+          "X-axis: critical success factors (CSFs)",
+          "Y-axis: perceived performance",
+          "Adequate (above minimal level to survive) on contested CSFs",
+          "Invest in new CSFs valued but unexplored"
+        ]
+      },
+      {
+        "label": "Value innovation",
+        "points": [
+          "Leap in value for customers + lower costs",
+          "Customers, not producers, define value"
+        ]
+      },
+      {
+        "label": "Reorientation",
+        "points": [
+          "From competitors to alternatives",
+          "From customers to noncustomers"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "Nintendo: competing on technology failed (N64, GameCube, 3DS, Wii U); value innovation won (DS, Wii, Switch, Pokémon Go). Apple Vision Pro: new market claim → niche."
+  },
+  {
+    "id": "errc",
+    "lecture": "f4",
+    "name": "Four actions framework (ERRC)",
+    "origin": "Kim & Mauborgne (2005)",
+    "purpose": "How to redraw the value curve?",
+    "parts": [
+      {
+        "label": "Eliminate",
+        "points": [
+          "Which factors the industry takes for granted should be eliminated?"
+        ]
+      },
+      {
+        "label": "Reduce",
+        "points": [
+          "Which factors should be reduced well below the industry standard?"
+        ]
+      },
+      {
+        "label": "Raise",
+        "points": [
+          "Which factors should be raised well above the industry standard?"
+        ]
+      },
+      {
+        "label": "Create",
+        "points": [
+          "Which factors should be created that the industry never offered?"
+        ]
+      }
+    ],
+    "apply": [
+      "Fill all four boxes with concrete case features",
+      "Check: does it lower costs AND raise value? Does it attract noncustomers?"
+    ],
+    "pitfalls": [],
+    "example": "CitizenM: eliminate restaurants · reduce room size and reception · raise low-cost construction · create 5* location/bed with 3* price (“affordable luxury”)."
+  },
+  {
+    "id": "red-ocean-traps",
+    "lecture": "f4",
+    "name": "Six red-ocean traps",
+    "origin": "Kim & Mauborgne (2015)",
+    "purpose": "Why do many “blue ocean” attempts stay red?",
+    "parts": [
+      {
+        "label": "1. Making existing customers happier",
+        "points": [
+          "→ focus on noncustomers"
+        ]
+      },
+      {
+        "label": "2. Treating market creation as a niche",
+        "points": [
+          "→ market creation de-segments"
+        ]
+      },
+      {
+        "label": "3. Confusing technology with market creation",
+        "points": [
+          "→ value innovation"
+        ]
+      },
+      {
+        "label": "4. Equating creative destruction with market creation",
+        "points": [
+          "→ new markets need not destroy old ones"
+        ]
+      },
+      {
+        "label": "5. Equating market creation with differentiation",
+        "points": [
+          "→ also lower costs and prices"
+        ]
+      },
+      {
+        "label": "6. Equating market creation with low cost",
+        "points": [
+          "→ also differentiation"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "WeWork: a “tech” label on a real-estate model – the Five Forces stayed the same."
+  }
+]

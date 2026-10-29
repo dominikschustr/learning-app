@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, Bookmark, FileText, Layers, ScrollText, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Bookmark, FileText, Layers, LayoutGrid, ScrollText, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { chapterFormat } from "@/lib/exam";
@@ -60,6 +60,17 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const markedQ = summary.items.filter((i) => i.lecture === chapterId && qMarks.has(i.id)).length;
   const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
   const actions = [
+    ...(summary.frameworks.includes(chapterId)
+      ? [
+          {
+            href: `${base}/frameworks#${chapterId}`,
+            icon: LayoutGrid,
+            title: "Frameworks",
+            text: "Steckbriefe zum Auswendiglernen, mit Abfrage-Modus",
+            meta: "Übersicht",
+          },
+        ]
+      : []),
     ...(hasText
       ? [
           {
@@ -107,7 +118,15 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           </p>
           <h1 className="display text-4xl sm:text-5xl mt-2">{title}</h1>
           <p className="mt-2 text-sm text-muted">
-            {byType("mc")} Multiple Choice · {byType("tf")} True/False · {byType("short")} Kurzantwort · {ch.cards} Karten
+            {[
+              [byType("mc"), "Multiple Choice"],
+              [byType("tf"), "True/False"],
+              [byType("short"), "Kurzantwort"],
+              [ch.cards, "Karten"],
+            ]
+              .filter(([n]) => n)
+              .map(([n, label]) => `${n} ${label}`)
+              .join(" · ")}
           </p>
         </div>
       </header>
@@ -178,7 +197,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         </div>
       </section>
 
-      <section className={cn("grid gap-3 sm:grid-cols-2", actions.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4")}>
+      <section className={cn("grid gap-3 sm:grid-cols-2", actions.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3")}>
         {actions.map((a, i) => (
           <motion.div key={a.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
             <Link href={a.href} className="card group flex h-full flex-col p-5 transition hover:-translate-y-0.5">

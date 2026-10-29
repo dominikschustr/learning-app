@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-hotels",
+    "title": "Mini-case: three hotel chains",
+    "text": [
+      "Chain A offers rooms at €39 with self check-in, standardized rooms and locations near motorways in 15 countries. Chain B runs 8 boutique hotels in historic buildings in Tuscany at €350 a night. Chain C offers mid-range business hotels at €140 in major European cities with restaurants, meeting rooms and spa."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-business-model",
+    "title": "Mini-case: Too Good To Go",
+    "text": [
+      "Too Good To Go is an app on which bakeries, restaurants and supermarkets sell surplus food at the end of the day in “surprise bags” at about a third of the normal price. The app takes a commission per bag and an annual fee from shops."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-cost-sources",
+    "title": "Mini-case: a budget airline's costs",
+    "text": [
+      "A budget airline flies only one aircraft type, operates 4,000 flights a week from secondary airports, has crews who have performed the same turnaround procedures for years, and buys fuel and aircraft in very large orders."
+    ],
+    "tables": []
+  }
+]

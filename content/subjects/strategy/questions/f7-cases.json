@@ -1,0 +1,50 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m7-01",
+    "lecture": "f7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Predict the leader's response using market similarity, resource similarity and the drivers awareness, motivation and ability.",
+    "modelAnswer": "Market similarity: high – same customers (owners of the leader's machines), same product. Resource similarity: low – the retailer has stores, scale in grocery and low costs; the leader has brand, boutiques, patents and design. Awareness: high (direct attack on core product). Motivation: very high – capsules are the profit engine. Ability: high – brand, legal resources (patents), boutique experience, possibility of new capsule formats or limited editions. Conclusion: a strong, fast response is likely – e.g. lawsuits, new capsule system, emphasis on premium quality and service rather than price cuts (which would cannibalize margins).",
+    "keyPoints": [
+      "Market similarity",
+      "Resource similarity",
+      "Awareness, motivation, ability",
+      "Conclusion with likely type of response"
+    ],
+    "case": "mc-response"
+  },
+  {
+    "type": "short",
+    "id": "sa-m7-02",
+    "lecture": "f7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Discuss in which case a first-mover strategy is more promising and why.",
+    "modelAnswer": "Ferries: slow-cycle market – imitation is slow and costly anyway, demand is uncertain, certification and learning costs are high, early ships may be of lower quality; customers buy rarely and can wait to see results → a fast second can learn from the pioneer's mistakes; first-mover advantages are weak (though early relationships with authorities may help). AI tutoring app: fast-cycle market – low barriers, quick imitation; first-mover advantages (market share, loyalty, data and brand) exist but are short-lived, so the firm must keep adapting quickly. Research: first-mover advantages appear mainly in fast-moving markets.",
+    "keyPoints": [
+      "Ferries = slow cycle, second-mover logic",
+      "First-mover disadvantages named",
+      "App = fast cycle, speed and adaptation",
+      "Research conclusion"
+    ],
+    "case": "mc-first-mover"
+  },
+  {
+    "type": "short",
+    "id": "sa-m7-03",
+    "lecture": "f7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain these moves with D'Aveni's value lines and their consequences for other players.",
+    "modelAnswer": "Move 1: by offering premium quality at mid-range prices, the Chinese maker shifts the value line – customers now expect more quality per euro; premium (D) and mid-range (M) players must improve quality or cut prices to stay on the line. Move 2: the mid-range brand cuts its price at constant quality – another shift; cost leaders (L) and differentiators (D) must adapt again. Players that do not respond fall below the value line and become uncompetitive (U). Competitive advantage is temporary in such dynamic markets.",
+    "keyPoints": [
+      "Value line concept",
+      "Move 1 effect",
+      "Move 2 effect",
+      "Uncompetitive laggards / temporary advantage"
+    ],
+    "case": "mc-value-line"
+  }
+]

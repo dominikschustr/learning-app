@@ -1,0 +1,288 @@
+[
+  {
+    "id": "perception",
+    "lecture": "f2",
+    "name": "Information perception",
+    "origin": "Session 2",
+    "purpose": "Why do decision-makers miss or misread information?",
+    "parts": [
+      {
+        "label": "Ambiguous cues",
+        "points": [
+          "We give meaning to cues",
+          "Meaning is shaped by experience, knowledge, expectations, identity",
+          "Perceptual illusions → false conclusions"
+        ]
+      },
+      {
+        "label": "Inattentional blindness – 4 causes",
+        "points": [
+          "Object seems unremarkable",
+          "Cognitive load (multitasking, tiredness)",
+          "Expectations block attention",
+          "Attentional capacities (expertise, situational factors)"
+        ]
+      },
+      {
+        "label": "Scarcity vs abundance",
+        "points": [
+          "Too much information → we filter out",
+          "Too little → we fill gaps with meaning"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "The moonwalking gorilla video; cell-phone users missing a unicycling clown (Hyman et al. 2010)."
+  },
+  {
+    "id": "bounded-rationality",
+    "lecture": "f2",
+    "name": "Bounded rationality & two systems",
+    "origin": "Simon (1956) · Kahneman (2011)",
+    "purpose": "How do people actually decide?",
+    "parts": [
+      {
+        "label": "Bounded rationality",
+        "points": [
+          "Satisficing: first satisfactory alternative",
+          "Not all alternatives evaluated",
+          "Heuristics save mental effort – usually work, not always accurate"
+        ]
+      },
+      {
+        "label": "System 1",
+        "points": [
+          "Fast, intuitive, associative, hunches"
+        ]
+      },
+      {
+        "label": "System 2",
+        "points": [
+          "Slow, deliberate, logical, scientific method"
+        ]
+      },
+      {
+        "label": "Key nuance",
+        "points": [
+          "Both run in parallel – both can be correct or biased"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "categorization",
+    "lecture": "f2",
+    "name": "Categorization biases",
+    "origin": "Session 2",
+    "purpose": "How does putting things into boxes bias judgement?",
+    "parts": [
+      {
+        "label": "Prototype",
+        "points": [
+          "Categories carry a typical member (“imagine a CEO”, “imagine a book”)"
+        ]
+      },
+      {
+        "label": "Conjunction fallacy (Linda)",
+        "points": [
+          "“Teller AND feminist” judged likelier than “teller”",
+          "P(A∧B) ≤ P(A)",
+          "Driven by representativeness"
+        ]
+      },
+      {
+        "label": "Out-group homogeneity",
+        "points": [
+          "“They are alike; we are diverse”"
+        ]
+      },
+      {
+        "label": "In-group favoritism",
+        "points": [
+          "Favour own group, even when randomly assigned",
+          "Social identity theory (Tajfel)"
+        ]
+      },
+      {
+        "label": "Dichotomous thinking (Oshio)",
+        "points": [
+          "Preference for dichotomy",
+          "Dichotomous belief",
+          "Profit-and-loss thinking"
+        ]
+      },
+      {
+        "label": "Low tolerance of ambiguity (Bochner)",
+        "points": [
+          "Need for categorization and certainty",
+          "Premature closure, rejection of the unusual"
+        ]
+      }
+    ],
+    "apply": [
+      "A diagnosis is a categorization and a decision is binary – but strategic problems are ambiguous: question each “this is like …”"
+    ],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "expertise-confirmation",
+    "lecture": "f2",
+    "name": "Expertise traps & confirmation bias",
+    "origin": "Dane (2010) · Pariser (2011)",
+    "purpose": "Why can experience make decisions worse?",
+    "parts": [
+      {
+        "label": "Cognitive entrenchment",
+        "points": [
+          "Experts have rich but stable schemas"
+        ]
+      },
+      {
+        "label": "Einstellung effect",
+        "points": [
+          "Prioritizing the known solution over new, better ones"
+        ]
+      },
+      {
+        "label": "Confirmation bias – 3 mechanisms",
+        "points": [
+          "Selective exposure",
+          "Selective perception",
+          "Selective retention",
+          "Filter bubble amplifies it"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "The Bear (TV series): the star chef reaches for fine dining, the solution he knows."
+  },
+  {
+    "id": "endogeneity",
+    "lecture": "f2",
+    "name": "Causal thinking: sources of endogeneity",
+    "origin": "Luca (2021) · Session 2",
+    "purpose": "Can we claim that A causes B?",
+    "parts": [
+      {
+        "label": "1. Simultaneity / reverse causation",
+        "points": [
+          "Does B cause A? (police budgets and crime)",
+          "Remedy: theory, temporal antecedence, experiments"
+        ]
+      },
+      {
+        "label": "2. Omitted (confounding) variable",
+        "points": [
+          "C drives both A and B → spurious correlation (ice cream & sunburn: heat)"
+        ]
+      },
+      {
+        "label": "3. Measurement error",
+        "points": [
+          "A or B badly measured (money? happiness?)"
+        ]
+      },
+      {
+        "label": "4. Selection bias",
+        "points": [
+          "Sampling · survivorship · attrition · non-response · volunteer · undercoverage"
+        ]
+      }
+    ],
+    "apply": [
+      "Ask how the data were generated",
+      "Name a plausible reverse cause, a confounder and a selection problem",
+      "Propose an experiment (A/B test, natural experiment)"
+    ],
+    "pitfalls": [],
+    "example": "Wald's WWII bombers: armour where returning planes were NOT hit. eBay ads mostly reached people who would have bought anyway."
+  },
+  {
+    "id": "kahneman-checklist",
+    "lecture": "f2",
+    "name": "Decision quality checklist",
+    "origin": "Kahneman, Lovallo & Sibony (2011)",
+    "purpose": "How should a reviewer check a team's recommendation for biases?",
+    "parts": [
+      {
+        "label": "Questions about the team (self)",
+        "points": [
+          "Self-interest",
+          "Affect heuristic (in love with the idea)",
+          "Groupthink (was dissent explored?)"
+        ]
+      },
+      {
+        "label": "Questions to the team",
+        "points": [
+          "Saliency (one analogy)",
+          "Confirmation (real alternatives?)",
+          "Availability (what is missing?)",
+          "Anchoring (where do the numbers come from?)",
+          "Halo effect",
+          "Sunk cost & endowment"
+        ]
+      },
+      {
+        "label": "Questions about the proposal",
+        "points": [
+          "Over-optimism / planning fallacy / competitor neglect → outside view",
+          "Disaster neglect → premortem",
+          "Loss aversion (too cautious?)"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [
+      "Thinking awareness removes bias – it does not",
+      "A reviewer who stated a preference early is no longer independent"
+    ],
+    "example": ""
+  },
+  {
+    "id": "groups",
+    "lecture": "f2",
+    "name": "Making groups smarter",
+    "origin": "Sunstein & Hastie (2014)",
+    "purpose": "Why do groups amplify errors, and how to fix it?",
+    "parts": [
+      {
+        "label": "Two mechanisms",
+        "points": [
+          "Informational signals",
+          "Reputational pressure"
+        ]
+      },
+      {
+        "label": "Four failure modes",
+        "points": [
+          "Amplified errors",
+          "Cascades",
+          "Polarization",
+          "Common-knowledge effect (hidden profiles)"
+        ]
+      },
+      {
+        "label": "Correctives",
+        "points": [
+          "Silence the leader",
+          "Prime critical thinking",
+          "Reward group success",
+          "Assign roles",
+          "Devil's advocate (weak)",
+          "Red team",
+          "Delphi / anonymous voting"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  }
+]

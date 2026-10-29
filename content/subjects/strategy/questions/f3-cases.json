@@ -1,0 +1,51 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m3-01",
+    "lecture": "f3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Assess the attractiveness of the e-bike sharing industry with Porter's Five Forces.",
+    "modelAnswer": "Rivalry: high – many operators, undifferentiated service, price competition, high fixed costs (fleet), bankruptcies. Threat of entry: moderate – capital is available, but city permits and caps on operators are a legal entry barrier, scale matters for density. Substitutes: high – public transport, scooters, own bikes, walking; switching costs near zero. Buyers: high power – price transparency through apps, no switching costs; cities as “buyers” of permits also powerful. Suppliers: fairly high – concentrated bike makers; cities control access. Conclusion: an unattractive industry; value is captured by suppliers, cities and users; only scale players or those with exclusive city contracts can earn profits.",
+    "keyPoints": [
+      "Rivalry",
+      "Entry barriers (permits, scale)",
+      "Substitutes",
+      "Buyers (users, cities)",
+      "Suppliers",
+      "Conclusion"
+    ],
+    "case": "mc-ebike"
+  },
+  {
+    "type": "short",
+    "id": "sa-m3-02",
+    "lecture": "f3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Apply PESTEL with the steps scan, assess and translate. Name at least one factor per relevant category.",
+    "modelAnswer": "Scan: Legal – EU ban on new combustion-engine cars from 2035, emission standards; Political – trade tensions and tariffs with China and the US, subsidies for EVs; Economic – interest rates and car demand, energy prices; Technological – shift to battery-electric drivetrains (no exhaust system); Social – urban attitudes towards cars, demand for sustainable mobility; Environmental – climate policy, CO₂ targets. Assess: the EV shift and the 2035 ban are high-impact, fairly predictable trends; tariffs and energy prices are uncertainties → scenarios. Translate: a major threat for exhaust-system makers, an opportunity for battery and power-electronics suppliers; the firm must redeploy capabilities (metal processing, thermal management).",
+    "keyPoints": [
+      "Industry-specific factors in several categories",
+      "Assess: trend vs uncertainty",
+      "Translate: threat/opportunity, for whom"
+    ],
+    "case": "mc-pestel-cars"
+  },
+  {
+    "type": "short",
+    "id": "sa-m3-03",
+    "lecture": "f3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Criticise the consultant's conclusion using the Five Forces and its limitations.",
+    "modelAnswer": "Growth ≠ attractiveness: the Five Forces show where value is captured. Supplier power is very high – three labels own most of the catalogue, content is differentiated and indispensable (they capture most revenue). Buyer power is high – low switching costs, similar catalogues. Rivalry is strong – big tech players bundle music as a complement (they can afford low margins). Entry barriers are moderate–high (licences, scale) but entrants are powerful firms. Limits: forces are interdependent (bundling links rivalry and buyer power), industry boundaries are blurred (music vs podcasts, video), the analysis is static. Conclusion: a growing but structurally unattractive industry for pure players.",
+    "keyPoints": [
+      "Growth is not attractiveness",
+      "Supplier power (labels)",
+      "Buyers/rivalry with bundling",
+      "Limitation of the model"
+    ],
+    "case": "mc-forces-limits"
+  }
+]

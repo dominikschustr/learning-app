@@ -28,7 +28,8 @@ export function chapterFormat(
   full: ExamFormat,
 ): ExamFormat {
   const of = (t: QuestionType) => questions.filter((q) => q.lecture === lecture && q.type === t).length;
-  const short = Math.min(1, of("short"));
+  // Prüfungen nur mit offenen Fragen: mehrere Kurzantworten statt einer
+  const short = Math.min(full.mc + full.tf ? 1 : 3, of("short"));
   const mc = Math.min(6, of("mc"));
   const tf = Math.min(4, of("tf"));
   const perQuestion = full.minutes / (full.short + full.mc + full.tf);

@@ -131,6 +131,24 @@ export const TextSchema = z.object({
   ),
 });
 
+/** Steckbrief eines Frameworks zum Auswendiglernen (frameworks/<kapitel>.json, optional). */
+export const FrameworkSchema = z.object({
+  id,
+  lecture: id,
+  name: z.string().min(1),
+  /** Autor/Quelle, z. B. „Porter (1979)“ */
+  origin: z.string().default(""),
+  /** Welche Frage beantwortet das Framework? */
+  purpose: z.string().min(1),
+  /** Die Bausteine, die man auswendig können muss */
+  parts: z.array(z.object({ label: z.string().min(1), points: z.array(z.string().min(1)).default([]) })).min(1),
+  /** Vorgehen im Case */
+  apply: z.array(z.string().min(1)).default([]),
+  pitfalls: z.array(z.string().min(1)).default([]),
+  /** Beispiel aus den Slides */
+  example: z.string().default(""),
+});
+
 export type Lecture = z.infer<typeof LectureSchema>;
 export type ExamFormat = z.infer<typeof ExamFormatSchema>;
 export type Subject = z.infer<typeof SubjectSchema>;
@@ -143,6 +161,7 @@ export type Card = z.infer<typeof CardSchema>;
 export type Case = z.infer<typeof CaseSchema>;
 export type Paper = z.infer<typeof PaperSchema>;
 export type LectureText = z.infer<typeof TextSchema>;
+export type Framework = z.infer<typeof FrameworkSchema>;
 
 export type SubjectContent = {
   subject: Subject;
@@ -159,6 +178,8 @@ export type SubjectSummary = {
   cards: { id: string; lecture: string }[];
   /** Kapitel, für die ein Lesetext hinterlegt ist */
   texts: string[];
+  /** Kapitel, für die Framework-Steckbriefe hinterlegt sind */
+  frameworks: string[];
   /** Probeklausuren (nur Kopfdaten) */
   papers: { id: string; title: string; points: number }[];
 };

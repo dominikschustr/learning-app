@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-app-data",
+    "title": "Mini-case: FitLoop analytics",
+    "text": [
+      "The analytics team of the fitness app FitLoop reports: “Users who join a group challenge cancel their subscription 50 % less often. Let's push every user into challenges.” The data come from all users still subscribed after 12 months."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-merger",
+    "title": "Mini-case: the Brightwell acquisition",
+    "text": [
+      "Brightwell's CEO wants to buy a rival for €2bn. The deal team, whose bonuses depend on closing deals, presents a single scenario with 25 % synergies, based on “a similar deal we did in 2015”. In the board meeting the CEO opens with: “I am convinced this is our future.” Nobody objects."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-expert",
+    "title": "Mini-case: the veteran publisher",
+    "text": [
+      "Henrike has run a printed travel-guide publisher for 25 years. Faced with falling sales, she proposes better paper, more maps and a bigger sales force for bookstores. Younger staff suggest an app with user reviews; she dismisses it: “Travellers trust experts, not strangers – we have always seen that.”"
+    ],
+    "tables": []
+  }
+]

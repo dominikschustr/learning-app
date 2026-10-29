@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-vi-fashion",
+    "title": "Mini-case: a fashion brand and its factories",
+    "text": [
+      "A Spanish fashion brand outsources all production to 300 suppliers in Asia. To react faster to trends, it considers buying two factories in Portugal and opening its own stores instead of selling through department stores."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-intl",
+    "title": "Mini-case: a German meal-kit company",
+    "text": [
+      "A German meal-kit company (recipes and ingredients delivered weekly) wants to expand to Japan or Austria."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-diversification",
+    "title": "Mini-case: a ski-wear brand's next step",
+    "text": [
+      "A ski-wear brand considers three growth options: (1) selling more jackets to existing customers through a loyalty programme, (2) launching hiking clothing for its customers, (3) opening a chain of mountain hotels."
+    ],
+    "tables": []
+  }
+]

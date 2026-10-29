@@ -6,12 +6,14 @@ import { z } from "zod";
 import {
   CardSchema,
   CaseSchema,
+  FrameworkSchema,
   PaperSchema,
   QuestionSchema,
   SubjectSchema,
   TextSchema,
   checkContent,
   paperItems,
+  type Framework,
   type LectureText,
   type SubjectContent,
   type SubjectSummary,
@@ -107,12 +109,25 @@ export function getText(subjectId: string, lecture: string): LectureText | undef
   return getTexts(subjectId).find((t) => t.lecture === lecture);
 }
 
+/** Framework-Steckbriefe: frameworks/<kapitel>.json, in Kapitelreihenfolge. */
+export const getFrameworks = cache((subjectId: string): Framework[] => {
+  const subject = loadAllContent().find((c) => c.subject.id === subjectId)?.subject;
+  const order = new Map(subject?.lectures.map((l, i) => [l.id, i]));
+  const list = readDir(path.join(ROOT, subjectId, "frameworks"), FrameworkSchema);
+  for (const f of list) {
+    if (!order.has(f.lecture)) throw new Error(`Content "${subjectId}": Framework ${f.id} – unbekanntes Kapitel "${f.lecture}"`);
+  }
+  if (new Set(list.map((f) => f.id)).size !== list.length) throw new Error(`Content "${subjectId}": doppelte Framework-ids`);
+  return list.toSorted((a, b) => order.get(a.lecture)! - order.get(b.lecture)!);
+});
+
 export function getSummaries(): SubjectSummary[] {
   return getAllContent().map(({ subject, questions, cards, papers }) => ({
     subject,
     items: questions.map((q) => ({ id: q.id, type: q.type, lecture: q.lecture })),
     cards: cards.map((c) => ({ id: c.id, lecture: c.lecture })),
     texts: getTexts(subject.id).map((t) => t.lecture),
+    frameworks: [...new Set(getFrameworks(subject.id).map((f) => f.lecture))],
     papers: papers.map((p) => ({ id: p.id, title: p.title, points: paperItems(p).reduce((s, i) => s + i.points, 0) })),
   }));
 }

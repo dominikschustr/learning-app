@@ -1,0 +1,49 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m1-01",
+    "lecture": "f1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the owner's problem with Porter's distinction between operational effectiveness and strategy, and suggest what a strategy would require.",
+    "modelAnswer": "The bistro improved operational effectiveness: same activities done better. Best practices diffuse, every rival adopted them, the productivity frontier moved for all → competitive convergence, no relative advantage. A strategy requires a unique position (e.g. needs-based: the best place for business lunches in the district; or variety-based: only regional Lyon cuisine), trade-offs (what not to offer – no dinner service, no international dishes) and fit among activities (suppliers, menu, staff skills and decor reinforcing each other), which makes the position hard to copy.",
+    "keyPoints": [
+      "Diagnosis: OE, not strategy",
+      "Competitive convergence / best practices diffuse",
+      "Unique position with type",
+      "Trade-offs and fit"
+    ],
+    "case": "mc-bistro"
+  },
+  {
+    "type": "short",
+    "id": "sa-m1-02",
+    "lecture": "f1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Use Mintzberg's five Ps and the distinction deliberate / emergent to describe Velo Nord's strategy.",
+    "modelAnswer": "Plan: racing bikes in Germany – an intended strategy that remained largely unrealized. Pattern: a consistent stream of cargo-bike repairs and rentals emerged without intention → emergent strategy. Position: now a niche as a family cargo-bike service provider. By writing it into the five-year plan, the emergent pattern becomes a deliberate plan (like Honda in the US). Perspective: a shift from a sports/performance view to a mobility-service view; it must be shared by staff for the new position to last.",
+    "keyPoints": [
+      "Unrealized plan",
+      "Emergent pattern",
+      "Position (niche)",
+      "Pattern turned into plan (Honda logic)"
+    ],
+    "case": "mc-honda"
+  },
+  {
+    "type": "short",
+    "id": "sa-m1-03",
+    "lecture": "f1",
+    "difficulty": 1,
+    "verb": "state",
+    "prompt": "Assign each question to a level of strategy and justify briefly.",
+    "modelAnswer": "(1) Corporate strategy – scope: new business (freight) and new geography (Poland), resource allocation across businesses. (2) Business strategy – how the bus business competes in its market against rivals. (3) Functional strategy – how HR implements the business and corporate strategies. The three levels need strategic integration (e.g. drivers needed for growth decided at corporate level).",
+    "keyPoints": [
+      "(1) corporate with reason",
+      "(2) business with reason",
+      "(3) functional with reason"
+    ],
+    "case": "mc-levels"
+  }
+]

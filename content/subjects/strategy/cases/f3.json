@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-ebike",
+    "title": "Mini-case: e-bike sharing in European cities",
+    "text": [
+      "E-bike sharing operators rent bikes by the minute via an app. Bikes are bought from three large Asian manufacturers; parking permits are granted by cities, which increasingly limit the number of operators. Users compare prices across apps in seconds; public transport, e-scooters, private bikes and walking are alternatives. Many operators raised venture capital and compete on price; some have gone bankrupt."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-pestel-cars",
+    "title": "Mini-case: a European car-parts supplier",
+    "text": [
+      "A German supplier of exhaust systems for combustion-engine cars wants to understand its macro-environment for the next ten years."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-forces-limits",
+    "title": "Mini-case: streaming music",
+    "text": [
+      "A consultant concludes: “The music-streaming industry grows 10 % a year, so it is very attractive.” The three largest labels own most of the music catalogue; users switch between Spotify, Apple Music and others easily; Apple, Amazon and Google bundle music with other services."
+    ],
+    "tables": []
+  }
+]

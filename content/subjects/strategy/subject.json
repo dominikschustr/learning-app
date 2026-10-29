@@ -3,18 +3,56 @@
   "name": "Strategy",
   "short": "STR",
   "color": "#C2410C",
-  "description": "Strategy (ESCP): Frameworks lernen und auf Fälle anwenden – Biases, PESTEL & Five Forces, Blue Ocean, VRIO & Value Chain, generische Strategien, Competitive Dynamics, Identity & Optimal Distinctiveness, Corporate Strategy.",
+  "description": "Strategy (ESCP): Frameworks auswendig lernen und auf Cases anwenden – Framework-Übersicht mit Abfrage-Modus, Mini-Cases je Kapitel und Probeklausuren im Format der Fallklausur.",
   "demo": false,
   "lectures": [
-    { "id": "f1", "title": "F1 · What is strategy? Definitions, levels & classic views" },
-    { "id": "f2", "title": "F2 · Strategic decision-making biases" },
-    { "id": "f3", "title": "F3 · External analysis: PESTEL & Five Forces" },
-    { "id": "f4", "title": "F4 · Life cycles, strategic groups & Blue Ocean" },
-    { "id": "f5", "title": "F5 · Internal analysis: SWOT, RBV, value chain & VRIO" },
-    { "id": "f6", "title": "F6 · Business models & generic strategies" },
-    { "id": "f7", "title": "F7 · Competitive dynamics" },
-    { "id": "f8", "title": "F8 · Identity, categories & optimal distinctiveness" },
-    { "id": "f9", "title": "F9 · Corporate strategy: integration & internationalization" }
+    {
+      "id": "f1",
+      "title": "F1 · What is strategy? Definitions, levels & classic views"
+    },
+    {
+      "id": "f2",
+      "title": "F2 · Strategic decision-making biases"
+    },
+    {
+      "id": "f3",
+      "title": "F3 · External analysis: PESTEL & Five Forces"
+    },
+    {
+      "id": "f4",
+      "title": "F4 · Life cycles, strategic groups & Blue Ocean"
+    },
+    {
+      "id": "f5",
+      "title": "F5 · Internal analysis: SWOT, RBV, value chain & VRIO"
+    },
+    {
+      "id": "f6",
+      "title": "F6 · Business models & generic strategies"
+    },
+    {
+      "id": "f7",
+      "title": "F7 · Competitive dynamics"
+    },
+    {
+      "id": "f8",
+      "title": "F8 · Identity, categories & optimal distinctiveness"
+    },
+    {
+      "id": "f9",
+      "title": "F9 · Corporate strategy: integration & internationalization"
+    }
   ],
-  "examFormat": { "name": "Final exam", "minutes": 120, "short": 6, "mc": 8, "tf": 8, "order": ["short", "mc", "tf"] }
+  "examFormat": {
+    "name": "Final exam",
+    "minutes": 120,
+    "short": 6,
+    "mc": 0,
+    "tf": 0,
+    "order": [
+      "short",
+      "mc",
+      "tf"
+    ]
+  }
 }

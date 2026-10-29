@@ -1,0 +1,261 @@
+[
+  {
+    "id": "strategy-statement",
+    "lecture": "f1",
+    "name": "Strategy & strategy statement",
+    "origin": "Session 1",
+    "purpose": "What is strategy, and what must a strategy statement say?",
+    "parts": [
+      {
+        "label": "Definition",
+        "points": [
+          "Strategy = the long-term direction (trajectory) of an organization",
+          "Three words: long-term · direction · organization"
+        ]
+      },
+      {
+        "label": "Why – purpose",
+        "points": [
+          "Mission and vision (expected future to create)",
+          "Values (moral principles)",
+          "Objectives (outcomes to achieve)"
+        ]
+      },
+      {
+        "label": "Where – industry & scope → corporate strategy",
+        "points": [
+          "Customer segments",
+          "Geography",
+          "Activities (vertical integration)"
+        ]
+      },
+      {
+        "label": "How – resources & capabilities → business strategy",
+        "points": [
+          "How the organization competes with what it has and does"
+        ]
+      }
+    ],
+    "apply": [
+      "Reconstruct the firm's Why / Where / How from the case",
+      "Check consistency: does the How support the Where and the Why?"
+    ],
+    "pitfalls": [],
+    "example": "L'Oréal (CEO interview 2025): strengths in Beauty Tech & AI, sustainability, culture; investments in R&I (> €1.3bn), emerging markets, Gen Z, men, boomers; goal: reach 2bn consumers."
+  },
+  {
+    "id": "levels",
+    "lecture": "f1",
+    "name": "Levels of strategy",
+    "origin": "Session 1",
+    "purpose": "At which level is a strategic decision taken?",
+    "parts": [
+      {
+        "label": "Corporate strategy",
+        "points": [
+          "Scope of the organization",
+          "Geographical scope, diversification, resource allocation to businesses"
+        ]
+      },
+      {
+        "label": "Business strategy",
+        "points": [
+          "How businesses compete in their markets",
+          "Innovation, scale, response to competition"
+        ]
+      },
+      {
+        "label": "Functional strategies",
+        "points": [
+          "How the components (marketing, operations, HR …) implement corporate and business strategy"
+        ]
+      },
+      {
+        "label": "Strategic integration",
+        "points": [
+          "The three levels must fit together"
+        ]
+      }
+    ],
+    "apply": [
+      "Classify the question: “where to compete?” = corporate, “how to compete?” = business"
+    ],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "porter-what-is-strategy",
+    "lecture": "f1",
+    "name": "What is strategy?",
+    "origin": "Porter (1996)",
+    "purpose": "Why is operational effectiveness not enough, and what makes a strategy sustainable?",
+    "parts": [
+      {
+        "label": "Operational effectiveness ≠ strategy",
+        "points": [
+          "OE = same activities done better (productivity frontier)",
+          "Best practices diffuse → competitive convergence"
+        ]
+      },
+      {
+        "label": "Unique position",
+        "points": [
+          "Variety-based (subset of products, Jiffy Lube)",
+          "Needs-based (most needs of one group, IKEA)",
+          "Access-based (customers reachable differently, rural cinemas)"
+        ]
+      },
+      {
+        "label": "Trade-offs",
+        "points": [
+          "Choose what NOT to do",
+          "Protect against straddlers (Continental Lite vs Southwest)"
+        ]
+      },
+      {
+        "label": "Fit among activities",
+        "points": [
+          "1st order: consistency",
+          "2nd order: activities reinforce each other",
+          "3rd order: optimization of effort",
+          "The whole system is hard to imitate"
+        ]
+      }
+    ],
+    "apply": [
+      "Name what the firm does differently (activities), not just better",
+      "Identify its trade-offs",
+      "Check whether a new move fits or blurs the activity system (growth trap)"
+    ],
+    "pitfalls": [
+      "Calling benchmarking or efficiency a “strategy”",
+      "Ignoring the growth trap: broadening the line blurs the position"
+    ],
+    "example": ""
+  },
+  {
+    "id": "mintzberg-5ps",
+    "lecture": "f1",
+    "name": "Five Ps for strategy",
+    "origin": "Mintzberg (1987)",
+    "purpose": "In which different senses can we speak of a strategy?",
+    "parts": [
+      {
+        "label": "Plan",
+        "points": [
+          "Consciously intended course of action, set in advance"
+        ]
+      },
+      {
+        "label": "Ploy",
+        "points": [
+          "A manoeuvre to outwit an opponent"
+        ]
+      },
+      {
+        "label": "Pattern",
+        "points": [
+          "Consistency in behaviour over time, intended or not"
+        ]
+      },
+      {
+        "label": "Position",
+        "points": [
+          "Location in the environment: niche, product-market domain"
+        ]
+      },
+      {
+        "label": "Perspective",
+        "points": [
+          "Shared way of seeing the world – the “personality”; hardest to change"
+        ]
+      },
+      {
+        "label": "Deliberate vs emergent",
+        "points": [
+          "Intended & realized = deliberate",
+          "Intended, not realized = unrealized",
+          "Realized without intention = emergent (Honda in the US)"
+        ]
+      }
+    ],
+    "apply": [
+      "Ask whether the firm's strategy was planned or emerged from practice",
+      "Check whether a new position is compatible with the perspective"
+    ],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "organizations",
+    "lecture": "f1",
+    "name": "Why organizations matter",
+    "origin": "Chandler · Perrow · Simon",
+    "purpose": "Why do organizations (and their boundaries) matter for strategy?",
+    "parts": [
+      {
+        "label": "Chandler – The Visible Hand",
+        "points": [
+          "Railroads & telegraph → markets could not coordinate the volumes",
+          "Advantage = throughput, not size",
+          "Investments: large plants, national distribution, management hierarchy",
+          "Structure follows strategy (multidivisional form)"
+        ]
+      },
+      {
+        "label": "Perrow – A Society of Organizations",
+        "points": [
+          "Organizations absorbed society",
+          "Kept gains, pushed costs onto workers, communities, the state",
+          "Alternative: networks of small specialized firms"
+        ]
+      },
+      {
+        "label": "Simon – Organizations and Markets",
+        "points": [
+          "Martian view: green areas (organizations), thin red lines (markets)",
+          "Authority, rewards, identification, coordination"
+        ]
+      },
+      {
+        "label": "So what",
+        "points": [
+          "Firm boundaries (internalize vs outsource) are strategic choices with economic and social consequences"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "performance",
+    "lecture": "f1",
+    "name": "Explaining organizational performance",
+    "origin": "Session 1",
+    "purpose": "Why are some organizations more successful than others – and why is that hard to answer?",
+    "parts": [
+      {
+        "label": "Competitive advantage",
+        "points": [
+          "Persistently higher profit (or potential) than rivals in the same market",
+          "Sources: cost structure, quality, branding …"
+        ]
+      },
+      {
+        "label": "Four challenges",
+        "points": [
+          "Relevant factors are hard to identify",
+          "Causality is hard to establish (endogeneity)",
+          "Performance is multi-dimensional (economic, social …)",
+          "Will the model hold over time and across places?"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [
+      "Measuring every organization by profit only (clubs, parties, churches, universities)"
+    ],
+    "example": "Performance of PSG, Goldman Sachs, ESCP, US parties, Tesla, the Church, Le Monde, TikTok is measured very differently."
+  }
+]

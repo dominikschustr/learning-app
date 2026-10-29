@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-bistro",
+    "title": "Mini-case: Bistro Lumière",
+    "text": [
+      "Bistro Lumière, a 40-seat restaurant in Lyon, copies the best practices of the city's top restaurants: a booking app, lean kitchen processes, the same seasonal menu trends. Costs fell 10 %, but so did those of all competitors, and margins are back where they were. The owner asks what went wrong."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-honda",
+    "title": "Mini-case: Velo Nord",
+    "text": [
+      "Velo Nord planned to sell racing bikes in Germany. Sales were poor, but its staff began repairing cargo bikes for local families, which became so popular that cargo-bike rentals and repairs now make up 70 % of revenue. Management has just written cargo bikes into its five-year plan."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-levels",
+    "title": "Mini-case: Nordbahn Group",
+    "text": [
+      "Nordbahn Group runs a regional train operator and a bus company. The board discusses three questions: (1) whether to buy a freight-rail company in Poland, (2) how the bus company should respond to cheap long-distance coaches, (3) how HR can recruit 200 train drivers next year."
+    ],
+    "tables": []
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "id": "business-model",
+    "lecture": "f6",
+    "name": "Business model",
+    "origin": "Session 5",
+    "purpose": "How does the firm create, deliver and capture value?",
+    "parts": [
+      {
+        "label": "Value creation",
+        "points": [
+          "What is offered to which customer segment – needs, solution"
+        ]
+      },
+      {
+        "label": "Value configuration",
+        "points": [
+          "How the value chain is organized to deliver it"
+        ]
+      },
+      {
+        "label": "Value capture",
+        "points": [
+          "Why the model generates a margin – revenue and cost sources"
+        ]
+      },
+      {
+        "label": "Created vs captured (Ryall 2013)",
+        "points": [
+          "A firm can create much value but keep little",
+          "Capture depends on credible alternatives of customers, suppliers, partners"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "Airbnb: value for guests and hosts · multi-sided platform · commissions for Airbnb, payments for hosts."
+  },
+  {
+    "id": "generic-strategies",
+    "lecture": "f6",
+    "name": "Generic strategies",
+    "origin": "Porter",
+    "purpose": "How does the business compete?",
+    "parts": [
+      {
+        "label": "Axis 1: cost vs value",
+        "points": [
+          "Cost advantage: structurally lower costs → lower prices or higher margins",
+          "Differentiation: unique value → higher WTP"
+        ]
+      },
+      {
+        "label": "Axis 2: broad vs narrow scope",
+        "points": [
+          "Market size by age, wealth, geography …"
+        ]
+      },
+      {
+        "label": "1. Cost leadership",
+        "points": [
+          "Low cost, broad market (McDonald's)"
+        ]
+      },
+      {
+        "label": "2. Differentiation",
+        "points": [
+          "High differentiation, broad market (Apple, Netflix)"
+        ]
+      },
+      {
+        "label": "3. Focused cost leadership",
+        "points": [
+          "Low cost, narrow market (local restaurant, fruit market)"
+        ]
+      },
+      {
+        "label": "4. Focused differentiation",
+        "points": [
+          "Differentiation, narrow often high-end market (Ladurée)"
+        ]
+      }
+    ],
+    "apply": [
+      "Classify the firm on both axes with evidence",
+      "Check that value chain and structure fit the choice"
+    ],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "cost-leadership",
+    "lecture": "f6",
+    "name": "Cost leadership – sources & structure",
+    "origin": "Session 5",
+    "purpose": "Where do structurally lower costs come from?",
+    "parts": [
+      {
+        "label": "Sources of lower costs",
+        "points": [
+          "Input costs (raw materials, labour)",
+          "Economies of scale (until diseconomies, U-shaped LRAC)",
+          "Economies of learning – experience curve (capital & labour productivity)"
+        ]
+      },
+      {
+        "label": "Typical structure",
+        "points": [
+          "Functional, simple reporting, few layers",
+          "Centralized staff on process improvement",
+          "Specialized jobs, operations = main function"
+        ]
+      },
+      {
+        "label": "Challenges",
+        "points": [
+          "Sustaining low costs over time and places",
+          "Acceptable quality",
+          "Human rights – labour is not a resource like capital"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "differentiation",
+    "lecture": "f6",
+    "name": "Differentiation – sources, structure & risks",
+    "origin": "Session 5",
+    "purpose": "How does a firm justify higher prices?",
+    "parts": [
+      {
+        "label": "Sources",
+        "points": [
+          "Material attributes: unique technology",
+          "Non-material attributes: service, reputation, brand"
+        ]
+      },
+      {
+        "label": "Typical structure",
+        "points": [
+          "Complex, flexible reporting",
+          "Marketing & product R&D as main functions",
+          "Less specialized jobs"
+        ]
+      },
+      {
+        "label": "Risks",
+        "points": [
+          "Innovation costly and risky",
+          "Costs still matter",
+          "Rivals deliver same value cheaper",
+          "WTP is not unlimited",
+          "Too different: no attention or no value"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "Juicero: $120m VC, $400–700 press – perceived value without substantial added value."
+  },
+  {
+    "id": "stuck-in-the-middle",
+    "lecture": "f6",
+    "name": "Stuck in the middle",
+    "origin": "Porter",
+    "purpose": "What happens without a clear choice between cost and value?",
+    "parts": [
+      {
+        "label": "Definition",
+        "points": [
+          "Unclear position between cost leadership and differentiation",
+          "AND bad performance as a result"
+        ]
+      },
+      {
+        "label": "Exceptions",
+        "points": [
+          "Compartmentalized activities",
+          "Innovative offer combining both (blue ocean) – usually temporary"
+        ]
+      },
+      {
+        "label": "Value logic",
+        "points": [
+          "Created value = WTP − cost",
+          "Cost advantage, value advantage, or dual advantage"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "JCPenney: could not beat Walmart on cost nor Macy's on value → near bankruptcy 2020."
+  },
+  {
+    "id": "gold-rush",
+    "lecture": "f6",
+    "name": "Three ways to play a gold rush",
+    "origin": "AI Wars case",
+    "purpose": "Where in a booming value chain should a firm position itself?",
+    "parts": [
+      {
+        "label": "Dig for gold",
+        "points": [
+          "Build and sell the best model (OpenAI, Anthropic, DeepMind)",
+          "Structurally costly"
+        ]
+      },
+      {
+        "label": "Sell shovels",
+        "points": [
+          "Supply inputs (Nvidia, TPUs, cloud)",
+          "Profit whoever wins"
+        ]
+      },
+      {
+        "label": "Make jewellery",
+        "points": [
+          "Own the complements (Meta, Chrome, Android, Workspace)",
+          "Want the gold cheap and abundant"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "Google tries all three and faces cannibalization of ad-funded search; gen-AI queries have real marginal costs (caps, tiers, routing, ads)."
+  }
+]

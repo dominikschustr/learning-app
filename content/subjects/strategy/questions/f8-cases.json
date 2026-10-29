@@ -1,0 +1,51 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m8-01",
+    "lecture": "f8",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Describe the company's identity with Albert & Whetten's attributes and evaluate the CEO's proposals.",
+    "modelAnswer": "Central: high-quality, durable outdoor gear with an environmental mission. Durable: founded by climbers in 1973, long history of repairs and donations. Distinctive: activism, repair service, refusal of discounts – unlike mainstream fashion brands. Proposals: Black Friday and fast fashion contradict central (durability), durable (anti-consumerism history) and distinctive attributes; audiences (loyal customers, employees, NGOs) may see them as inauthentic; growth comes at the cost of identity and differentiation. Alternative: growth consistent with identity – resale/repair platform, new outdoor categories, international expansion.",
+    "keyPoints": [
+      "Central",
+      "Durable",
+      "Distinctive",
+      "Evaluation: contradiction, audience reactions",
+      "Alternative consistent with identity"
+    ],
+    "case": "mc-identity"
+  },
+  {
+    "type": "short",
+    "id": "sa-m8-02",
+    "lecture": "f8",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the market's reaction with the categorical imperative and category spanning, and propose an orchestration.",
+    "modelAnswer": "The bank spans two categories (banking and consumer electronics). Categorical imperative (Zuckerman): audiences organized by category – bank analysts lack peers to value hardware (illegitimacy discount); tech reviewers apply the smartphone prototype and judge it against specialists (generalists evaluated lower). Demand side: confusion, perceived lack of commitment. Supply side: coordination costs, diluted resources. Orchestration: compensatory – conform on the banking core and move the hardware into a partnership with an established phone maker (familiar device, distinctive banking software) – or integrative: offer the assistant as an app on existing phones.",
+    "keyPoints": [
+      "Category spanning identified",
+      "Categorical imperative / illegitimacy discount",
+      "Prototype-based evaluation",
+      "Orchestration proposal"
+    ],
+    "case": "mc-spanner"
+  },
+  {
+    "type": "short",
+    "id": "sa-m8-03",
+    "lecture": "f8",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Using status and optimal distinctiveness, explain how the three schools are likely to be evaluated and which should be most cautious.",
+    "modelAnswer": "High-status school: secure position – deviation is read as visionary; audiences (students, rankings, recruiters) grant it legitimacy. Low-status/new school: little to lose, deviation helps to be noticed; in a novel category, experimentation is rewarded. Mid-ranked school: middle-status conformity (Phillips & Zuckerman) – its claim to quality is fragile, a non-standard degree may look like a lack of focus, so it should be most cautious. Optimal distinctiveness: be as different as legitimately possible – e.g. compensatory orchestration (conventional core MBA, distinctive elective track) and consider different stakeholders (rankings, employers, students).",
+    "keyPoints": [
+      "High status can deviate",
+      "Middle status conforms most → most cautious",
+      "Low status / new: little to lose",
+      "Optimal distinctiveness / orchestration"
+    ],
+    "case": "mc-status"
+  }
+]

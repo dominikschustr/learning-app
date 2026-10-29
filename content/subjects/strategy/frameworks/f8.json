@@ -1,0 +1,231 @@
+[
+  {
+    "id": "institutions",
+    "lecture": "f8",
+    "name": "Coping with uncertainty in markets",
+    "origin": "Karpik · Podolny",
+    "purpose": "How do audiences judge “what is it?” and “how good is it?”",
+    "parts": [
+      {
+        "label": "Complex / credence goods",
+        "points": [
+          "Quality hard to assess before experience"
+        ]
+      },
+      {
+        "label": "Formal rules",
+        "points": [
+          "Ownership rights, contract enforcement"
+        ]
+      },
+      {
+        "label": "Informal rules",
+        "points": [
+          "Routines, beliefs, social norms"
+        ]
+      },
+      {
+        "label": "Market intermediaries",
+        "points": [
+          "Reviews, ratings, rankings, certifications, accreditations, degrees"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "org-identity",
+    "lecture": "f8",
+    "name": "Organizational identity",
+    "origin": "Albert & Whetten (1985)",
+    "purpose": "Who are we as an organization?",
+    "parts": [
+      {
+        "label": "Centrality",
+        "points": [
+          "Attributes that make the organization what it is"
+        ]
+      },
+      {
+        "label": "Durability",
+        "points": [
+          "Attributes rooted in its history, enduring over time"
+        ]
+      },
+      {
+        "label": "Distinctiveness",
+        "points": [
+          "Attributes that separate it from similar organizations"
+        ]
+      },
+      {
+        "label": "Two positioning axes",
+        "points": [
+          "Horizontal: identity claim (features, categories)",
+          "Vertical: status claim (perceived quality, low/middle/high tier)"
+        ]
+      }
+    ],
+    "apply": [
+      "List central, durable and distinctive attributes from the case",
+      "Ask whether a move reinforces or contradicts them – and how each audience reacts"
+    ],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "categorical-imperative",
+    "lecture": "f8",
+    "name": "Categorical imperative",
+    "origin": "Zuckerman (1999)",
+    "purpose": "Why can being different be penalized?",
+    "parts": [
+      {
+        "label": "Two-stage valuation",
+        "points": [
+          "1. Conform to a category to get attention",
+          "2. Then differentiate to attract"
+        ]
+      },
+      {
+        "label": "Illegitimacy discount",
+        "points": [
+          "Firms spanning industries get less analyst coverage → lower valuation"
+        ]
+      },
+      {
+        "label": "Bias against creativity",
+        "points": [
+          "People desire but reject novel ideas (Mueller et al. 2012)"
+        ]
+      },
+      {
+        "label": "Generalists vs specialists",
+        "points": [
+          "Spanners usually evaluated lower",
+          "Softened by audience expertise/goals, actor's status, category novelty"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "category-spanning",
+    "lecture": "f8",
+    "name": "Category spanning & the ambiguity paradox",
+    "origin": "Oura Ring case",
+    "purpose": "Is combining several categories an asset or a liability?",
+    "parts": [
+      {
+        "label": "Liability",
+        "points": [
+          "Confusion at the point of sale",
+          "No stable price anchor",
+          "Discount from analysts lacking peers"
+        ]
+      },
+      {
+        "label": "Asset",
+        "points": [
+          "Broad appeal, several growth engines",
+          "Avoids head-on comparison (Apple Watch, jewellers)",
+          "Options to pivot, valued by VCs"
+        ]
+      },
+      {
+        "label": "Demand side",
+        "points": [
+          "+ resources for complex issues, diluted risk",
+          "− inattention, confusion, inauthenticity"
+        ]
+      },
+      {
+        "label": "Supply side",
+        "points": [
+          "+ economies of scope, market power, risk dilution",
+          "− diluted resources, coordination costs"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "Oura options: A sleep specialist · B clinical device · C luxury wearable · D create the smart-ring category · E one core, many frames."
+  },
+  {
+    "id": "optimal-distinctiveness",
+    "lecture": "f8",
+    "name": "Optimal distinctiveness",
+    "origin": "Deephouse (1999) · Zhao et al. (2017)",
+    "purpose": "How different should a firm be?",
+    "parts": [
+      {
+        "label": "Tension",
+        "points": [
+          "Differentiate for competitive advantage",
+          "Conform for legitimacy",
+          "“As different as legitimately possible”"
+        ]
+      },
+      {
+        "label": "Orchestration",
+        "points": [
+          "Integrative: familiar elements, distinctive combination",
+          "Compensatory: deviate strongly on one dimension, conform on another"
+        ]
+      },
+      {
+        "label": "Stakeholder multiplicity",
+        "points": [
+          "Customers, investors, regulators, employees judge differently"
+        ]
+      },
+      {
+        "label": "Temporality",
+        "points": [
+          "Early industry: experimentation rewarded",
+          "Mature industry: conformity pressure"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": "Askin & Mauskapf (2017): balanced songs most likely to be hits (inverted U). Berger & Packard (2018): lyrical differentiation helps, but depends on genre."
+  },
+  {
+    "id": "status-conformity",
+    "lecture": "f8",
+    "name": "Status & conformity",
+    "origin": "Phillips & Zuckerman (2001) · Durand & Kremp (2016)",
+    "purpose": "Who can afford to deviate?",
+    "parts": [
+      {
+        "label": "Categories hierarchize",
+        "points": [
+          "Membership signals who one is, worth and rank (Bourdieu)"
+        ]
+      },
+      {
+        "label": "Middle-status conformity",
+        "points": [
+          "High status: secure, can deviate",
+          "Middle status: conforms most",
+          "Low status: little to lose"
+        ]
+      },
+      {
+        "label": "Orchestras",
+        "points": [
+          "Organizations align to avoid penalties",
+          "Conductors conform selectively: Katims (low) original, Ormandy (middle) conventional, Stokowski (high) deviant"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-bakery",
+    "title": "Mini-case: Maison Brot",
+    "text": [
+      "Maison Brot is a chain of 12 bakeries in Munich. It owns a 60-year-old sourdough culture and a recipe know-how passed on by its master bakers, trains its own apprentices, has a beloved local brand and good shop locations, and recently bought new ovens that any competitor can buy."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-value-chain",
+    "title": "Mini-case: an online glasses retailer",
+    "text": [
+      "An online glasses retailer designs its frames in-house, buys lenses from a large supplier, cuts and assembles glasses in its own lab, ships within 48 hours, offers free home try-on of five frames and a 30-day return policy, and runs strong social-media marketing."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-dynamic",
+    "title": "Mini-case: Kodak-style photo company",
+    "text": [
+      "A photo company dominated film photography with world-class chemistry know-how, a strong brand and global retail distribution. Digital cameras and later smartphones made film obsolete within a decade."
+    ],
+    "tables": []
+  }
+]

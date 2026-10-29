@@ -210,3 +210,6 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
     Competitive dynamics, Identity & Optimal distinctiveness, Corporate strategy als Vorschau), 206 Fragen, 110 Karten,
     Framework-Zusammenfassungen mit Klausurtipps, 4 Probeklausuren im Aufbau der Fallklausur (Nachbau Dez. 2023
     Insight Timer und drei Konzeptklausuren mit fiktiven Fällen) ✓
+15. Strategy ohne Multiple Choice/True-False: Framework-Übersicht (46 Steckbriefe aus den Slides mit Bausteinen,
+    Vorgehen im Case, Fallen und Slide-Beispiel; Abfrage-Modus verdeckt die Bausteine), 27 Mini-Cases zum Anwenden,
+    insgesamt 76 offene Fragen; Kapiteltests mit bis zu drei Kurzantworten ✓

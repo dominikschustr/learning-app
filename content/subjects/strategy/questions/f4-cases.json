@@ -1,0 +1,48 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m4-01",
+    "lecture": "f4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Design GymNova's offer with the Eliminate–Reduce–Raise–Create grid and explain why it could be a blue ocean.",
+    "modelAnswer": "Eliminate: long contracts, pools, saunas, large machine floors, mirrors and show-off culture. Reduce: opening hours and club size (small neighbourhood studios), number of machines, price (about €35). Raise: personal guidance and coaching, friendliness, convenience (near home/work, no waiting). Create: fixed 30-minute guided circuit sessions, booking via app, community for beginners, maybe tracking of progress. Blue ocean: targets noncustomers (intimidated, time-poor people) rather than competing for existing gym users; lowers costs (small spaces, few machines) while raising value → value innovation, not a niche of the red ocean.",
+    "keyPoints": [
+      "E, R, R, C each with concrete features",
+      "Noncustomers",
+      "Lower cost + higher value (value innovation)"
+    ],
+    "case": "mc-gym"
+  },
+  {
+    "type": "short",
+    "id": "sa-m4-02",
+    "lecture": "f4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Draw a strategic group map with two dimensions, identify mobility barriers and discuss one empty space.",
+    "modelAnswer": "Dimensions (example): scope – number of outlets/geographical coverage; resource commitment – quality and vertical integration into roasting. Groups: global chains (many outlets, medium quality), specialty roasters (few outlets, high quality, integrated), bakery chains (many outlets, low quality/price), independents (one outlet, medium/variable). Mobility barriers: brand and capital for many outlets, roasting know-how and sourcing relations for specialty, real-estate access. Empty space: many outlets with specialty-level quality – white space if scalable (e.g. automation, central roasting) or black hole if quality cannot be maintained at scale.",
+    "keyPoints": [
+      "Two meaningful dimensions",
+      "Groups placed",
+      "Mobility barriers",
+      "Empty space: white space or black hole"
+    ],
+    "case": "mc-strategic-groups"
+  },
+  {
+    "type": "short",
+    "id": "sa-m4-03",
+    "lecture": "f4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Locate the industry in its life cycle and explain the consequences for the Five Forces and for a remaining start-up.",
+    "modelAnswer": "The industry moved from introduction/growth into a shakeout (stagnation, price cuts, exits), heading towards maturity. Consequences: rivalry rises (price competition, overcapacity); buyer power rises – supermarkets concentrate demand and integrate backwards with private labels; threat of entry falls (investors cautious); supplier power (pea protein, co-manufacturers) declines as demand slows. A remaining start-up needs a clear position: cost leadership with scale, or focused differentiation (taste, specific product, food service), or consolidation (merge, become supplier of private labels).",
+    "keyPoints": [
+      "Stage: shakeout with evidence",
+      "Changes in forces (rivalry, buyers, entry)",
+      "Strategic implication"
+    ],
+    "case": "mc-life-cycle"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "type": "short",
+    "id": "sa-m9-01",
+    "lecture": "f9",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Identify the two vertical-integration moves and discuss benefits and risks of each.",
+    "modelAnswer": "Buying factories = backward integration: + speed and control over quality and lead times (fast reaction to trends), less dependence on Asian suppliers, capture of the production margin; − capital and fixed costs, factory-management capabilities needed, less flexibility in volumes, higher labour costs in Portugal. Own stores = forward integration: + control of brand presentation, customer data, capture of retail margin, less power of department stores; − real-estate costs and risks, retail capabilities, conflict with department stores. Both fit a fast-fashion model if speed is the source of advantage.",
+    "keyPoints": [
+      "Backward identified with benefits/risks",
+      "Forward identified with benefits/risks",
+      "Link to source of advantage"
+    ],
+    "case": "mc-vi-fashion"
+  },
+  {
+    "type": "short",
+    "id": "sa-m9-02",
+    "lecture": "f9",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Use Yip's globalization drivers and the CAGE framework to compare the two options.",
+    "modelAnswer": "Drivers: market – demand for convenient home cooking exists in both, but tastes differ strongly in Japan; cost – recipes, software and brand can be reused, but logistics and sourcing are local, so scale benefits are limited; government – food-safety and import rules (stricter and more different in Japan); competitive – local rivals and global players already present. CAGE: Austria – low cultural, administrative (EU), geographic and economic distance → existing recipes, suppliers and logistics partly transferable. Japan – high cultural (cuisine, language), administrative, geographic distance → heavy adaptation, local partner or JV needed. Conclusion: Austria first; Japan only with a partner.",
+    "keyPoints": [
+      "Drivers applied",
+      "CAGE for Austria",
+      "CAGE for Japan",
+      "Conclusion / entry mode"
+    ],
+    "case": "mc-intl"
+  },
+  {
+    "type": "short",
+    "id": "sa-m9-03",
+    "lecture": "f9",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Classify the options with Ansoff's matrix and assess their relatedness to the core business.",
+    "modelAnswer": "(1) Market penetration – existing products, existing market; lowest risk. (2) Product development – new products for existing customers; related diversification, shares brand, design, sourcing and customers → synergies, also reduces winter dependence. (3) Diversification into hotels – new product and new business model; weakly related (shared brand and customer base, but different capabilities: hospitality, real estate), high capital needs → highest risk; the synergy test (worth more inside the group?) is doubtful.",
+    "keyPoints": [
+      "(1) penetration",
+      "(2) product development / related",
+      "(3) diversification, weak relatedness",
+      "Risk/synergy assessment"
+    ],
+    "case": "mc-diversification"
+  }
+]

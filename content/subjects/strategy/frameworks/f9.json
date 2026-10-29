@@ -1,0 +1,172 @@
+[
+  {
+    "id": "ansoff",
+    "lecture": "f9",
+    "name": "Directions of growth",
+    "origin": "Ansoff (preview)",
+    "purpose": "Where should the organization grow?",
+    "parts": [
+      {
+        "label": "Market penetration",
+        "points": [
+          "Existing products, existing markets"
+        ]
+      },
+      {
+        "label": "Product development",
+        "points": [
+          "New products, existing markets"
+        ]
+      },
+      {
+        "label": "Market development",
+        "points": [
+          "Existing products, new markets (countries, segments)"
+        ]
+      },
+      {
+        "label": "Diversification",
+        "points": [
+          "Related: shared resources/customers → synergies",
+          "Unrelated: few links, financial logic"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "vertical-integration",
+    "lecture": "f9",
+    "name": "Vertical integration",
+    "origin": "Corporate strategy (preview)",
+    "purpose": "Should the firm take over activities of its suppliers or buyers?",
+    "parts": [
+      {
+        "label": "Directions",
+        "points": [
+          "Backward: into suppliers' activities",
+          "Forward: into buyers'/distributors' activities"
+        ]
+      },
+      {
+        "label": "Benefits",
+        "points": [
+          "Control over quality and supply",
+          "Capture the stage's margin",
+          "Reduce supplier/buyer power",
+          "Protect distinctive resources",
+          "Entry barriers"
+        ]
+      },
+      {
+        "label": "Costs",
+        "points": [
+          "Capital and fixed costs",
+          "Less flexibility",
+          "Capabilities may not fit",
+          "Coordination costs",
+          "Employment obligations",
+          "Conflicts with partners and identity"
+        ]
+      },
+      {
+        "label": "Make or buy",
+        "points": [
+          "Make: specific assets, uncertainty, frequency, opportunism, core activity",
+          "Buy otherwise; or contracts, alliances, JVs"
+        ]
+      }
+    ],
+    "apply": [
+      "Name a concrete stage and label it backward/forward",
+      "Benefits vs costs with Five Forces and VRIO",
+      "Consequences for business model and identity"
+    ],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "yip-drivers",
+    "lecture": "f9",
+    "name": "Globalization drivers",
+    "origin": "Yip (preview)",
+    "purpose": "Why go international?",
+    "parts": [
+      {
+        "label": "Market drivers",
+        "points": [
+          "Similar needs, global customers, transferable marketing"
+        ]
+      },
+      {
+        "label": "Cost drivers",
+        "points": [
+          "Scale and learning, country cost advantages, development costs needing large markets"
+        ]
+      },
+      {
+        "label": "Government drivers",
+        "points": [
+          "Trade policy, regulation, standards, data rules (GDPR)"
+        ]
+      },
+      {
+        "label": "Competitive drivers",
+        "points": [
+          "Rivals already global, interdependent countries, follow customers"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [],
+    "example": ""
+  },
+  {
+    "id": "cage-entry",
+    "lecture": "f9",
+    "name": "CAGE distance & entry modes",
+    "origin": "Ghemawat (preview)",
+    "purpose": "Do our resources travel, and how do we enter?",
+    "parts": [
+      {
+        "label": "Cultural",
+        "points": [
+          "Language, religion, norms"
+        ]
+      },
+      {
+        "label": "Administrative",
+        "points": [
+          "Institutions, regulation, trade agreements"
+        ]
+      },
+      {
+        "label": "Geographic",
+        "points": [
+          "Physical distance, time zones"
+        ]
+      },
+      {
+        "label": "Economic",
+        "points": [
+          "Income levels, costs, infrastructure"
+        ]
+      },
+      {
+        "label": "Entry modes",
+        "points": [
+          "Export → licensing/franchising → alliance/JV → wholly owned subsidiary",
+          "More control = more commitment"
+        ]
+      }
+    ],
+    "apply": [
+      "VRIO abroad: which resources stay valuable, which need adaptation?",
+      "Choose an entry mode that fits distance and resources"
+    ],
+    "pitfalls": [],
+    "example": ""
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-identity",
+    "title": "Mini-case: Patagonia-style outdoor brand",
+    "text": [
+      "An outdoor clothing company founded by climbers in 1973 has always repaired used gear, donated 1 % of sales to environmental groups and avoided discount campaigns. A new CEO proposes a Black Friday sale and a fast-fashion line for teenagers to boost growth."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-spanner",
+    "title": "Mini-case: a bank that sells phones",
+    "text": [
+      "A digital bank launches its own smartphone with built-in banking and a “financial wellbeing” assistant. Analysts covering banks do not know how to value the hardware business; tech reviewers compare it with Apple and Samsung and find it average."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-status",
+    "title": "Mini-case: three business schools",
+    "text": [
+      "A top-3 business school launches a degree in “Business & Fine Arts”. A mid-ranked school and a recently founded school consider similar programmes."
+    ],
+    "tables": []
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-response",
+    "title": "Mini-case: a discounter's coffee capsules",
+    "text": [
+      "A discount retailer launches cheap compatible coffee capsules for a market leader's machines at 40 % lower prices. The leader sells capsules mainly through its own boutiques and website and earns most of its profit on capsules."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-first-mover",
+    "title": "Mini-case: two electric-ferry projects",
+    "text": [
+      "Two shipyards consider being first to launch electric passenger ferries: a slow-cycle market with 30-year ship lives, high certification costs and few customers (public transport authorities). A third firm considers launching the first AI tutoring app for school pupils, a market where new apps appear every month."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-value-line",
+    "title": "Mini-case: smartphone price-quality moves",
+    "text": [
+      "A Chinese smartphone maker offers the camera quality of premium phones at mid-range prices. A year later, a mid-range brand cuts prices by 20 % at constant quality."
+    ],
+    "tables": []
+  }
+]

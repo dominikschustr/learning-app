@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-gym",
+    "title": "Mini-case: GymNova",
+    "text": [
+      "Fitness clubs either offer premium clubs with pools and classes at €90/month or low-cost clubs with machines at €20/month. GymNova wants a new concept for people who have never joined a gym because they feel intimidated and lack time."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-strategic-groups",
+    "title": "Mini-case: European coffee shops",
+    "text": [
+      "Coffee shops include global chains (many outlets, standardized menu, strong brands), specialty roasters (few outlets, own roasting, high quality and price), bakery chains selling coffee on the side (low price, many outlets) and independent cafés (one outlet, varied quality)."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-life-cycle",
+    "title": "Mini-case: plant-based meat",
+    "text": [
+      "Plant-based meat grew fast between 2017 and 2021, with dozens of start-ups entering. Since 2022 sales have stagnated, prices have been cut, several brands have closed and supermarkets push their own private labels."
+    ],
+    "tables": []
+  }
+]
