@@ -36,7 +36,7 @@ export const TITLES: Title[] = [
   { minLevel: 1, name: "Erstsemester" },
   { minLevel: 3, name: "Tutorium-Stammgast" },
   { minLevel: 5, name: "Bibliotheks-Profi" },
-  { minLevel: 8, name: "Controlling-Nerd" },
+  { minLevel: 8, name: "Lern-Nerd" },
   { minLevel: 12, name: "Prüfungsschreck" },
   { minLevel: 17, name: "Lehrstuhl-Legende" },
 ];

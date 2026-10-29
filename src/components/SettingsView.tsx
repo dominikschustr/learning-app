@@ -1,11 +1,12 @@
 "use client";
 
-import { Download, Minus, Plus, Trash2, Upload } from "lucide-react";
+import { Check, Download, KeyRound, Minus, Plus, Trash2, Upload } from "lucide-react";
 import { useRef, useState } from "react";
+import { setGeminiKey, useGeminiKey } from "@/lib/grade";
 import { exportData, useApp, useHydrated } from "@/lib/store";
-import { disconnectSync, useSync } from "@/lib/sync";
+import { resetProgress } from "@/lib/account";
 import { dayKey } from "@/lib/utils";
-import { SyncSettings } from "./SyncSettings";
+import { AccountSettings } from "./AccountSettings";
 import { Button, Skeleton } from "./ui";
 
 export function SettingsView() {
@@ -13,8 +14,6 @@ export function SettingsView() {
   const dailyGoal = useApp((s) => s.dailyGoal);
   const setDailyGoal = useApp((s) => s.setDailyGoal);
   const importData = useApp((s) => s.importData);
-  const reset = useApp((s) => s.reset);
-  const syncKey = useSync((s) => s.key);
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState<string | null>(null);
 
@@ -45,7 +44,7 @@ export function SettingsView() {
     <div className="mx-auto max-w-2xl space-y-6">
       <h1 className="display text-4xl sm:text-5xl">Einstellungen</h1>
 
-      <SyncSettings />
+      <AccountSettings />
 
       <section className="card p-6">
         <h2 className="text-lg font-semibold">Tagesziel</h2>
@@ -60,6 +59,8 @@ export function SettingsView() {
           </Button>
         </div>
       </section>
+
+      <AiSettings />
 
       <section className="card p-6">
         <h2 className="text-lg font-semibold">Backup</h2>
@@ -90,24 +91,73 @@ export function SettingsView() {
 
       <section className="card border-bad/30 p-6">
         <h2 className="text-lg font-semibold">Zurücksetzen</h2>
-        <p className="text-sm text-muted">Löscht XP, Streak, Achievements und den gesamten Lernfortschritt.</p>
+        <p className="text-sm text-muted">
+          Löscht XP, Streak, Achievements und den gesamten Lernfortschritt deines Kontos – auf allen Geräten. Konto und
+          Name bleiben.
+        </p>
         <Button
           variant="secondary"
           className="mt-4 text-bad"
           onClick={() => {
-            const warning = syncKey
-              ? "Fortschritt auf diesem Gerät löschen? Das Gerät wird dabei von der Synchronisation getrennt – der Stand in der Cloud und auf deinen anderen Geräten bleibt erhalten."
-              : "Wirklich den gesamten Fortschritt löschen? Das lässt sich nicht rückgängig machen.";
-            if (window.confirm(warning)) {
-              if (syncKey) disconnectSync();
-              reset();
-              setMsg("Fortschritt zurückgesetzt.");
-            }
+            if (!window.confirm("Wirklich den gesamten Fortschritt löschen – auf allen Geräten? Das lässt sich nicht rückgängig machen.")) return;
+            resetProgress()
+              .then(() => setMsg("Fortschritt zurückgesetzt."))
+              .catch((e: Error) => setMsg(`Zurücksetzen fehlgeschlagen: ${e.message}`));
           }}
         >
           <Trash2 className="size-4" /> Fortschritt löschen
         </Button>
       </section>
     </div>
+  );
+}
+
+function AiSettings() {
+  const saved = useGeminiKey();
+  const [input, setInput] = useState("");
+
+  return (
+    <section className="card p-6">
+      <h2 className="text-lg font-semibold">KI-Bewertung</h2>
+      <p className="text-sm text-muted">
+        Optional: Kurzantworten von Google Gemini bewerten lassen statt selbst. Dafür brauchst du einen eigenen,
+        kostenlosen API-Key aus{" "}
+        <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer" className="font-medium text-accent underline">
+          Google AI Studio
+        </a>{" "}
+        (keine Abrechnung aktivieren). Der Key bleibt nur in diesem Browser.
+      </p>
+      {saved ? (
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <span className="inline-flex items-center gap-2 text-sm font-medium text-good">
+            <Check className="size-4" /> Aktiv (Key …{saved.slice(-4)})
+          </span>
+          <Button variant="ghost" onClick={() => setGeminiKey("")}>
+            Entfernen
+          </Button>
+        </div>
+      ) : (
+        <form
+          className="mt-4 flex flex-wrap gap-2"
+          onSubmit={(e) => {
+            e.preventDefault();
+            setGeminiKey(input);
+            setInput("");
+          }}
+        >
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            type="password"
+            autoComplete="off"
+            placeholder="API-Key einfügen"
+            className="h-11 min-w-0 flex-1 rounded-full border border-line-strong bg-surface px-4 text-sm outline-none focus:border-accent"
+          />
+          <Button type="submit" variant="secondary" disabled={!input.trim()}>
+            <KeyRound className="size-4" /> Speichern
+          </Button>
+        </form>
+      )}
+    </section>
   );
 }

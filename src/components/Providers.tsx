@@ -2,19 +2,29 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
+import { useAuth, useAuthHydrated } from "@/lib/auth";
+import { startAutoPublish } from "@/lib/leaderboard";
 import { useApp, useHydrated } from "@/lib/store";
-import { startAutoSync, useSync } from "@/lib/sync";
+import { startAutoSync } from "@/lib/sync";
 import { useToasts } from "@/lib/toast";
+import { AuthScreen } from "./AuthScreen";
 import { Icon } from "./Icon";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const hydrated = useHydrated();
+  const authHydrated = useAuthHydrated();
+  const signedIn = useAuth((s) => !!s.session);
   useEffect(() => {
-    void useSync.persist.rehydrate();
+    void useAuth.persist.rehydrate();
     void useApp.persist.rehydrate();
   }, []);
   // Automatische Synchronisation erst, wenn der lokale Stand geladen ist
   useEffect(() => (hydrated ? startAutoSync() : undefined), [hydrated]);
+  useEffect(() => (hydrated ? startAutoPublish() : undefined), [hydrated]);
+
+  // Die App gibt es nur mit Konto: bis die Sitzung geladen ist nichts zeigen, ohne Sitzung die Anmeldung
+  if (!authHydrated) return <div className="min-h-dvh" />;
+  if (!signedIn) return <AuthScreen />;
 
   return (
     <>

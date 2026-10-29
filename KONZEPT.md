@@ -43,7 +43,7 @@ Die App generiert **keine** Fragen selbst. Der Ablauf:
 1. Ich gebe Claude (Claude Code) das Dokument mit den Key Messages einer Vorlesung.
 2. Claude erstellt daraus Karteikarten und Fragen im Schema unten als JSON.
 3. Die JSON-Dateien landen in `content/subjects/<fach>/…`, werden beim Build validiert (zod).
-4. Commit + Push → Vercel deployt automatisch.
+4. Commit + Push auf `main` → GitHub Actions baut die Seite und veröffentlicht sie auf GitHub Pages.
 
 Ziel pro Vorlesung: ca. 6–10 MC, 5–8 True/False, 1–3 Kurzantworten, 8–15 Karteikarten.
 Damit ist der Pool deutlich größer als 21, und jede Simulation sieht anders aus.
@@ -100,7 +100,7 @@ content/subjects/management-control/
 - **Kurzantwort:** Ein kostenloses Modell (Google **Gemini Flash**, Free Tier) vergleicht
   meine Antwort mit Musterlösung und Kernpunkten und liefert
   `{ score 0–100, hit[], missed[], feedback }`. Ab 60 % gilt die Antwort als richtig.
-  Der API-Key liegt nur serverseitig (`GEMINI_API_KEY`, Vercel-Env-Var).
+  Den API-Key trägt jede Person selbst in den Einstellungen ein; er bleibt nur in ihrem Browser.
   **Fallback** ohne Key oder bei Quota-Limit: Selbstbewertung – Musterlösung anzeigen,
   ich hake ab, welche Kernpunkte ich getroffen habe.
 
@@ -170,16 +170,19 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 - **Next.js (App Router) + TypeScript + Tailwind CSS**
 - **Framer Motion** (Animation), **Zustand** mit `persist` (Fortschritt in localStorage),
   **zod** (Content-Validierung), **lucide-react** (Icons), **canvas-confetti**
-- **API-Route** `/api/grade` → Gemini für Kurzantworten
-- **Speicherung:** lokal im Browser **und** – wenn aktiviert – synchronisiert über alle Geräte
-  (Laptop ↔ Handy). Kein Login: Das erste Gerät erzeugt einen geheimen Sync-Schlüssel, weitere Geräte
-  werden per QR-Code/Link gekoppelt. Der Stand liegt in Upstash Redis (`/api/sync`,
-  Schlüssel = SHA-256 des Sync-Schlüssels, bedingtes Schreiben per Versionsnummer). Gespeichert wird
-  gebündelt (20 s nach der letzten Änderung, sofort beim Verlassen der App), damit das Free-Kontingent reicht.
+- **Statische Seite** (`output: "export"`), kein eigener Server; Gemini wird direkt aus dem Browser angefragt
+- **Konten:** Firebase Authentication (E-Mail + Passwort, REST-API, `src/lib/auth.ts`). Ohne Anmeldung zeigt die
+  App nur den Anmeldebildschirm.
+- **Speicherung:** lokal im Browser **und** im Konto (Firestore `progress/{uid}`, `src/lib/cloud.ts`), damit alle
+  Geräte denselben Stand haben. Bedingtes Schreiben über eine Versionsnummer, die `firestore.rules` erzwingt.
+  Gespeichert wird gebündelt (20 s nach der letzten Änderung, sofort beim Verlassen der App).
   Zusammenführen ohne Datenverlust: XP und Aktivität zählt jedes Gerät separat (Summe = Gesamtwert),
   pro Frage/Karte gewinnt der zuletzt geübte Stand, Tests und Achievements werden vereinigt, die Streak
   wird aus den gemeinsamen Lerntagen berechnet. Export/Import als JSON bleibt als Backup.
-- **Deployment:** privates GitHub-Repo → Vercel. `GEMINI_API_KEY` als Env-Var.
+- **Rangliste:** jedes Konto meldet Name, XP, Tagesstand, Tagesziel und Streak nach `users/{uid}`; alle
+  Angemeldeten sehen alle Einträge, ändern kann jedes Konto nur den eigenen.
+- **Deployment:** GitHub Actions → GitHub Pages (`.github/workflows/deploy.yml`), kostenlos und unbegrenzt
+  für öffentliche Repos.
 
 ## 10. Roadmap
 
@@ -192,6 +195,6 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 7. Gamification (XP, Level, Streak, Achievements, Blitzrunde)
 8. Echte Inhalte aus den Key Messages S1a–S3&4 (118 Fragen, 78 Karten) ✓ – später auf 246 Fragen erweitert, die jede Key Message, Definition und jeden Denkanstoß abdecken
 9. Kapitel mit Level, Kapiteltests, Lernpfad mit Abschlusstest ✓
-10. Deployment auf Vercel
+10. Deployment auf GitHub Pages, Rangliste, Vorbereitung für weitere Fächer (`content/README.md`)
 11. Zweites Fach **Marketing**: 10 Kapitel (eine Vorlesung je Kapitel), 369 Fragen, 141 Karten, 27 Fallstudien
     aus den Klausuraufgaben, Lesetexte als Folienzusammenfassung ✓

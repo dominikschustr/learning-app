@@ -1,6 +1,6 @@
 "use client";
 
-import { Cloud, CloudOff, Flame, Loader2, Monitor, Moon, Settings, Sun } from "lucide-react";
+import { Cloud, CloudOff, Flame, Loader2, Monitor, Moon, Settings, Sun, Trophy } from "lucide-react";
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import { levelInfo } from "@/lib/gamification";
@@ -50,6 +50,14 @@ export function Header() {
           <SyncBadge />
           <ThemeToggle />
           <Link
+            href="/leaderboard"
+            aria-label="Rangliste"
+            title="Rangliste"
+            className="grid size-8 place-items-center rounded-full text-ink-2 hover:bg-surface-2"
+          >
+            <Trophy className="size-4" />
+          </Link>
+          <Link
             href="/settings"
             aria-label="Einstellungen"
             className="grid size-8 place-items-center rounded-full text-ink-2 hover:bg-surface-2"
@@ -62,23 +70,19 @@ export function Header() {
   );
 }
 
-/** Kleiner Sync-Status im Header, nur wenn die Synchronisation aktiv ist. */
+/** Kleiner Sync-Status im Header, führt zum Konto in den Einstellungen. */
 function SyncBadge() {
-  const key = useSync((s) => s.key);
   const status = useSync((s) => s.status);
-  if (!key) return null;
   const Icon = status === "syncing" ? Loader2 : status === "idle" ? Cloud : CloudOff;
   const label = {
-    off: "Aus",
     idle: "Synchronisiert",
     syncing: "Synchronisiere …",
     offline: "Offline",
     error: "Sync-Fehler",
-    unavailable: "Sync nicht verfügbar",
   }[status];
   return (
     <Link
-      href="/settings#sync"
+      href="/settings/#konto"
       title={label}
       aria-label={label}
       className={cn(

@@ -1,9 +1,13 @@
 # Lernwerk
 
 Lern-App für meine Uni-Fächer: Kapitel mit Level, Karteikarten, Übungsfragen mit Spaced Repetition,
-Kapiteltests und ein Abschlusstest im Prüfungsformat. Konzept: [KONZEPT.md](KONZEPT.md).
+Kapiteltests, ein Abschlusstest im Prüfungsformat und eine Rangliste. Konzept: [KONZEPT.md](KONZEPT.md).
 
-**Live:** https://lernwerk-app.vercel.app (auch https://learning-app-steel-delta.vercel.app) – teilbar: jede Person hat ihren eigenen Lernstand im eigenen Browser.
+**Live:** https://dominikschustr.github.io/learning-app/ – jede Person hat ihren eigenen Lernstand im eigenen Browser.
+
+Die App ist eine statische Seite auf **GitHub Pages**: Jeder Push auf `main` baut sie über GitHub Actions neu
+und veröffentlicht sie. Für öffentliche Repos ist das kostenlos und ohne Kontingent. Konten, Synchronisation und
+Rangliste laufen über ein kostenloses Firebase-Projekt (siehe unten).
 
 ## Lokal starten
 
@@ -19,52 +23,63 @@ npm run dev
 | Befehl | Zweck |
 | --- | --- |
 | `npm run dev` | Entwicklungsserver |
-| `npm run build` | Produktions-Build (validiert alle Inhalte) |
-| `npm test` | Tests für Bewertung, Spaced Repetition, Level und Inhalte |
+| `npm run build` | Statische Seite nach `out/` bauen (validiert alle Inhalte) |
+| `npm test` | Tests für Bewertung, Spaced Repetition, Level, Rangliste und Inhalte |
 | `npm run lint` | ESLint |
+| `npm run new-subject -- <id> "<Name>" <Kürzel>` | Neues Fach anlegen (siehe [content/README.md](content/README.md)) |
+| `npm run test:rules` | Konten und Firestore-Regeln in den lokalen Firebase-Emulatoren testen (braucht Java und `firebase-tools`; läuft auch automatisch in GitHub Actions) |
 
-## Inhalte
+## Inhalte und neue Fächer
 
-Pro Fach ein Ordner unter `content/subjects/<fach>/`:
+Pro Fach ein Ordner unter `content/subjects/<fach>/` mit `subject.json`, Fragen, Karteikarten, Lesetexten und den
+Vorlesungsdokumenten in `sources/`. Ein neues Fach braucht keine Code-Änderung – Anleitung, Formate und ein
+fertiger Auftrag für Claude stehen in **[content/README.md](content/README.md)**.
 
-- `subject.json` – Name, Farbe, Kapitel (`lectures`), Prüfungsformat
-- `questions/*.json` – Fragen (`mc`, `tf`, `short`), Schema in `src/lib/schema.ts`
-- `cards/*.json` – Karteikarten
-- `cases/*.json` – Fallbeschreibungen mit Tabellen (wie in der Prüfung); Fragen verweisen per `"case": "<id>"` darauf.
-  MC-Fragen mit `"single": true` sind Single Choice, Kurzantworten können das Verb `calculate` haben.
-- `texts/<kapitel>.json` – Originaltext zum Nachlesen, erzeugt mit
-  `python3 scripts/import_texts.py "Key Messages" content/subjects/management-control/texts`
+## Einrichtung (einmalig)
 
-Die Quelldokumente liegen in `Key Messages/` (Management Control) bzw. lokal in `04_Marketing Kopie/` (Marketing,
-nicht im Repo). Bei Marketing sind die Lesetexte Zusammenfassungen der Vorlesungsfolien. Neue Dokumente → Claude erstellt daraus Fragen und Karten
-als JSON → `npm test` prüft sie → commit.
+### 1. GitHub Pages einschalten
 
-## KI-Bewertung der Kurzantworten
+Im Repository: **Settings → Pages → Build and deployment → Source: „GitHub Actions“**. Danach veröffentlicht
+jeder Push auf `main` die App (Fortschritt unter *Actions → Deploy*, dauert ca. 2 Minuten). Manuell neu
+veröffentlichen: *Actions → Deploy → Run workflow*.
 
-Optional. Ohne Key bewertest du Kurzantworten selbst anhand der Kernpunkte.
+### 2. Firebase einrichten (Konten, Synchronisation, Rangliste)
 
-1. In [Google AI Studio](https://aistudio.google.com/apikey) einen API-Key erstellen (Free Tier, keine Abrechnung aktivieren).
-2. Lokal: `.env.local` mit `GEMINI_API_KEY=…` anlegen (siehe `.env.example`).
-3. Auf Vercel: *Project → Settings → Environment Variables* → `GEMINI_API_KEY`.
+Die App läuft nur mit Konto. Konten, Lernstände und Rangliste liegen in einem kostenlosen Firebase-Projekt
+(Spark-Plan: keine Kreditkarte, ohne Abrechnungskonto keine Kosten). Das Projekt ist in
+[`src/config.ts`](src/config.ts) eingetragen (`projectId`, `apiKey` – nicht geheim, geschützt wird über die Regeln).
 
-## Deployment (Vercel)
+1. Auf [console.firebase.google.com](https://console.firebase.google.com) ein Projekt erstellen.
+2. **Authentication → Jetzt starten → Anmeldemethode → E-Mail-Adresse/Passwort** einschalten und speichern.
+3. **Firestore Database → Datenbank erstellen**: Standort in Europa, **Produktionsmodus**.
+4. Im Firestore-Tab **Regeln** den gesamten Inhalt von [`firestore.rules`](firestore.rules) einfügen und
+   **Veröffentlichen**. Nach jeder Änderung an `firestore.rules` hier erneut einfügen.
+5. Zahnrad → **Projekteinstellungen → Meine Apps → Web-App hinzufügen**, `projectId` und `apiKey` in
+   `src/config.ts` eintragen.
 
-Privates GitHub-Repo mit Vercel verbinden (*Add New → Project → Import*), Framework wird automatisch erkannt.
-Jeder Push auf `main` deployt neu.
+Was die Regeln sicherstellen: Den Lernstand (`progress/{uid}`) kann nur das eigene Konto lesen und schreiben;
+die Rangliste (`users/{uid}`: Name, XP, Tagesstand, Tagesziel, Streak) sehen alle Angemeldeten, ändern kann
+jedes Konto nur den eigenen Eintrag.
 
-## Geräte synchronisieren
+### 3. Optional: KI-Bewertung der Kurzantworten
 
-*Einstellungen → Geräte synchronisieren → Aktivieren* auf dem ersten Gerät, dann den QR-Code mit dem Handy
-scannen und „Verbinden“ tippen. Danach gleicht sich der Lernstand automatisch ab (nach Änderungen, beim
-Wechsel zurück in die App, wenn das Gerät wieder online ist). Speicher: Upstash Redis (Free-Plan über den
-Vercel Marketplace, 500.000 Befehle/Monat; pro Synchronisation 1–2 Befehle), Variablen `KV_REST_API_URL` und
-`KV_REST_API_TOKEN` (lokal via `vercel env pull .env.local`).
+Jede Person kann unter *Einstellungen → KI-Bewertung* einen eigenen, kostenlosen API-Key aus
+[Google AI Studio](https://aistudio.google.com/apikey) eintragen (keine Abrechnung aktivieren). Der Key bleibt
+nur in diesem Browser. Ohne Key bewertet man Kurzantworten selbst anhand der Kernpunkte.
 
-Einrichtung (einmalig, bestätigt die Upstash-Nutzungsbedingungen, ohne automatisches Hochstufen in einen Bezahlplan):
+## Konto, Synchronisation und Rangliste
 
-```bash
-npx vercel@latest integration add upstash/upstash-kv --plan free --name learning-app-sync -m primaryRegion=fra1 -m autoUpgrade=false
-```
+Beim ersten Öffnen registriert man sich mit Name, E-Mail-Adresse und Passwort (oder meldet sich an; „Passwort
+vergessen?“ schickt einen Link per E-Mail). Der Lernstand gehört zum Konto: Auf jedem Gerät anmelden, dann gleicht
+er sich automatisch ab (nach Änderungen, beim Wechsel zurück in die App, wenn das Gerät wieder online ist).
+Beim Abmelden wird der Stand zuerst hochgeladen und dann vom Gerät entfernt.
 
-Vorher lag der Stand in Vercel Blob; dessen Hobby-Kontingent (2.000 Schreibvorgänge/Monat) reichte für das
-Speichern nach jeder Antwort nicht aus.
+Unter *Rangliste* (Pokal-Symbol oben) stehen alle Konten mit Level/XP, Antworten heute (mit Tagesziel) und
+Streak. Gemeldet wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur bei Änderungen),
+geladen nur beim Öffnen der Rangliste. Name ändern, abmelden und Konto löschen unter *Einstellungen*.
+
+## Umzug von der alten Vercel-Adresse
+
+Der Lernstand liegt im Browser und hängt an der Adresse. Auf der alten Seite
+(lernwerk-app.vercel.app) unter *Einstellungen → Backup → Exportieren* sichern, auf der neuen Seite unter
+*Importieren* einlesen, nachdem du dich angemeldet hast – der importierte Stand wird mit deinem Konto zusammengeführt.
