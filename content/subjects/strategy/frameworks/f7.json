@@ -7,7 +7,7 @@
     "purpose": "Will a rival attack or respond?",
     "parts": [
       {
-        "label": "1. Competitor analysis",
+        "label": "Competitor analysis",
         "points": [
           "Market similarity (overlap of markets)",
           "Resource similarity (type and amount)",
@@ -15,7 +15,7 @@
         ]
       },
       {
-        "label": "2. Drivers of behaviour (AMA)",
+        "label": "Drivers (AMA)",
         "points": [
           "Awareness – blind spots: sudden change, routines, success",
           "Motivation – gain/loss (or personal, irrational)",
@@ -23,14 +23,14 @@
         ]
       },
       {
-        "label": "3. Competitive rivalry",
+        "label": "Competitive rivalry",
         "points": [
           "Likelihood of attack",
           "Likelihood of response"
         ]
       },
       {
-        "label": "4. Outcomes",
+        "label": "Outcomes",
         "points": [
           "Market position",
           "Financial performance"
@@ -42,7 +42,11 @@
       "Conclude on likelihood and timing of response"
     ],
     "pitfalls": [],
-    "example": "Apple vs Samsung (smartphones), Apple vs Microsoft (operating systems)."
+    "example": "Apple vs Samsung (smartphones), Apple vs Microsoft (operating systems).",
+    "visual": {
+      "type": "flow",
+      "count": 4
+    }
   },
   {
     "id": "first-mover",
@@ -78,7 +82,11 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "versus",
+      "count": 2
+    }
   },
   {
     "id": "value-lines",
@@ -144,6 +152,13 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "spectrum",
+      "x": [
+        "Slow: shielded",
+        "Fast: imitated quickly"
+      ]
+    }
   }
 ]

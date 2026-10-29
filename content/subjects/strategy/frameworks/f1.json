@@ -7,13 +7,6 @@
     "purpose": "What is strategy, and what must a strategy statement say?",
     "parts": [
       {
-        "label": "Definition",
-        "points": [
-          "Strategy = the long-term direction (trajectory) of an organization",
-          "Three words: long-term · direction · organization"
-        ]
-      },
-      {
         "label": "Why – purpose",
         "points": [
           "Mission and vision (expected future to create)",
@@ -34,6 +27,13 @@
         "points": [
           "How the organization competes with what it has and does"
         ]
+      },
+      {
+        "label": "Definition",
+        "points": [
+          "Strategy = the long-term direction (trajectory) of an organization",
+          "Three words: long-term · direction · organization"
+        ]
       }
     ],
     "apply": [
@@ -41,7 +41,11 @@
       "Check consistency: does the How support the Where and the Why?"
     ],
     "pitfalls": [],
-    "example": "L'Oréal (CEO interview 2025): strengths in Beauty Tech & AI, sustainability, culture; investments in R&I (> €1.3bn), emerging markets, Gen Z, men, boomers; goal: reach 2bn consumers."
+    "example": "L'Oréal (CEO interview 2025): strengths in Beauty Tech & AI, sustainability, culture; investments in R&I (> €1.3bn), emerging markets, Gen Z, men, boomers; goal: reach 2bn consumers.",
+    "visual": {
+      "type": "pillars",
+      "count": 3
+    }
   },
   {
     "id": "levels",
@@ -81,7 +85,11 @@
       "Classify the question: “where to compete?” = corporate, “how to compete?” = business"
     ],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "layers",
+      "count": 3
+    }
   },
   {
     "id": "porter-what-is-strategy",
@@ -90,13 +98,6 @@
     "origin": "Porter (1996)",
     "purpose": "Why is operational effectiveness not enough, and what makes a strategy sustainable?",
     "parts": [
-      {
-        "label": "Operational effectiveness ≠ strategy",
-        "points": [
-          "OE = same activities done better (productivity frontier)",
-          "Best practices diffuse → competitive convergence"
-        ]
-      },
       {
         "label": "Unique position",
         "points": [
@@ -120,6 +121,13 @@
           "3rd order: optimization of effort",
           "The whole system is hard to imitate"
         ]
+      },
+      {
+        "label": "Operational effectiveness ≠ strategy",
+        "points": [
+          "OE = same activities done better (productivity frontier)",
+          "Best practices diffuse → competitive convergence"
+        ]
       }
     ],
     "apply": [
@@ -131,7 +139,11 @@
       "Calling benchmarking or efficiency a “strategy”",
       "Ignoring the growth trap: broadening the line blurs the position"
     ],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "pillars",
+      "count": 3
+    }
   },
   {
     "id": "mintzberg-5ps",
@@ -184,7 +196,11 @@
       "Check whether a new position is compatible with the perspective"
     ],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "pillars",
+      "count": 5
+    }
   },
   {
     "id": "organizations",
@@ -226,7 +242,11 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "pillars",
+      "count": 3
+    }
   },
   {
     "id": "performance",

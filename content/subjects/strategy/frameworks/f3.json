@@ -52,7 +52,10 @@
       "Generic factors (“inflation”) without link to the industry",
       "Forgetting to say whether a factor fosters or hinders, and for whom"
     ],
-    "example": "US protectionism since 2025 · EU board gender quotas (2026) · end of zero interest rates (2022) · Gen Z drinks less alcohol · AI answers cut publishers' traffic · shorter snow seasons for ski resorts."
+    "example": "US protectionism since 2025 · EU board gender quotas (2026) · end of zero interest rates (2022) · Gen Z drinks less alcohol · AI answers cut publishers' traffic · shorter snow seasons for ski resorts.",
+    "visual": {
+      "type": "letters"
+    }
   },
   {
     "id": "five-forces",
@@ -62,7 +65,7 @@
     "purpose": "How attractive is the industry – where is the value and who captures it?",
     "parts": [
       {
-        "label": "1. Rivalry among competitors",
+        "label": "Rivalry among existing competitors",
         "points": [
           "Low concentration (balanced power)",
           "Low growth",
@@ -71,7 +74,7 @@
         ]
       },
       {
-        "label": "2. Threat of new entrants (low if barriers high)",
+        "label": "Threat of new entrants",
         "points": [
           "Scale & experience",
           "Access to supply/distribution",
@@ -82,14 +85,14 @@
         ]
       },
       {
-        "label": "3. Threat of substitutes",
+        "label": "Threat of substitutes",
         "points": [
           "Similar function, different nature, from outside the industry",
           "Low switching costs (value for money)"
         ]
       },
       {
-        "label": "4. Buyer power (immediate customers)",
+        "label": "Bargaining power of buyers",
         "points": [
           "Buyer concentration",
           "Low switching costs / standardized products",
@@ -97,7 +100,7 @@
         ]
       },
       {
-        "label": "5. Supplier power",
+        "label": "Bargaining power of suppliers",
         "points": [
           "Supplier concentration",
           "High switching costs for buyers",
@@ -117,7 +120,10 @@
       "Treating substitutes as rivals",
       "Limits: industry level, forces interdependent and not prioritized, rigid boundaries, static"
     ],
-    "example": "Vacuum cleaners (Dyson): rivalry high, entry high, substitutes moderate, suppliers high, buyers high → unattractive, yet Dyson earns high margins through differentiation."
+    "example": "Vacuum cleaners (Dyson): rivalry high, entry high, substitutes moderate, suppliers high, buyers high → unattractive, yet Dyson earns high margins through differentiation.",
+    "visual": {
+      "type": "forces"
+    }
   },
   {
     "id": "industry-definition",

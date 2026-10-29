@@ -170,26 +170,26 @@
     "purpose": "Can we claim that A causes B?",
     "parts": [
       {
-        "label": "1. Simultaneity / reverse causation",
+        "label": "Simultaneity / reverse causation",
         "points": [
           "Does B cause A? (police budgets and crime)",
           "Remedy: theory, temporal antecedence, experiments"
         ]
       },
       {
-        "label": "2. Omitted (confounding) variable",
+        "label": "Omitted (confounding) variable",
         "points": [
           "C drives both A and B → spurious correlation (ice cream & sunburn: heat)"
         ]
       },
       {
-        "label": "3. Measurement error",
+        "label": "Measurement error",
         "points": [
           "A or B badly measured (money? happiness?)"
         ]
       },
       {
-        "label": "4. Selection bias",
+        "label": "Selection bias",
         "points": [
           "Sampling · survivorship · attrition · non-response · volunteer · undercoverage"
         ]
@@ -201,7 +201,10 @@
       "Propose an experiment (A/B test, natural experiment)"
     ],
     "pitfalls": [],
-    "example": "Wald's WWII bombers: armour where returning planes were NOT hit. eBay ads mostly reached people who would have bought anyway."
+    "example": "Wald's WWII bombers: armour where returning planes were NOT hit. eBay ads mostly reached people who would have bought anyway.",
+    "visual": {
+      "type": "quad"
+    }
   },
   {
     "id": "kahneman-checklist",
@@ -243,7 +246,11 @@
       "Thinking awareness removes bias – it does not",
       "A reviewer who stated a preference early is no longer independent"
     ],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "pillars",
+      "count": 3
+    }
   },
   {
     "id": "groups",
@@ -283,6 +290,10 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "flow",
+      "count": 3
+    }
   }
 ]

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { Framework, Subject } from "@/lib/schema";
 import { alpha, cn } from "@/lib/utils";
+import { FrameworkVisual, visualCount } from "./FrameworkVisual";
 import { Button } from "./ui";
 
 /** Alle Framework-Steckbriefe eines Fachs, nach Kapiteln – mit Abfrage-Modus, der die Bausteine verdeckt. */
@@ -77,7 +78,31 @@ export function FrameworkOverview({ subject, frameworks }: { subject: Subject; f
         ))}
       </nav>
 
-      <div className="mt-10 space-y-16">
+      <section className="card mt-8 p-5 sm:p-6">
+        <p className="eyebrow">Auf einen Blick</p>
+        <div className="mt-4 grid gap-4 sm:grid-cols-3">
+          {chapters.map((l) => (
+            <div key={l.id} className="min-w-0">
+              <a href={`#${l.id}`} className="text-xs font-bold" style={{ color: subject.color }}>
+                {l.title.split(" · ")[0]} · {l.title.split(" · ").slice(1).join(" · ")}
+              </a>
+              <ul className="mt-1.5 space-y-0.5">
+                {frameworks
+                  .filter((f) => f.lecture === l.id)
+                  .map((f) => (
+                    <li key={f.id}>
+                      <a href={`#${f.id}`} className="text-sm text-ink-2 hover:text-ink hover:underline">
+                        {f.name}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="mt-12 space-y-16">
         {chapters.map((l) => {
           const [code, ...rest] = l.title.split(" · ");
           const list = frameworks.filter((f) => f.lecture === l.id);
@@ -128,6 +153,8 @@ function FrameworkCard({
   quiz: boolean;
   onReveal: () => void;
 }) {
+  const shownInVisual = visualCount(f);
+  const rest = f.parts.slice(shownInVisual);
   return (
     <article id={f.id} className="card scroll-mt-32 p-5 sm:p-6" style={{ borderTop: `4px solid ${color}` }}>
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -136,10 +163,14 @@ function FrameworkCard({
       </div>
       <p className="mt-2 leading-relaxed text-ink-2">{f.purpose}</p>
 
+      {f.visual && <FrameworkVisual parts={f.parts.slice(0, shownInVisual)} visual={f.visual} color={color} hidden={hidden} />}
+
       {hidden ? (
         <div className="mt-5 flex flex-wrap items-center gap-3 rounded-2xl border border-dashed border-line-strong p-4">
           <span className="flex-1 text-sm text-ink-2">
-            {f.parts.length} Bausteine – sag sie auf (mit Unterpunkten), dann aufdecken.
+            {f.visual
+              ? "Füll das Diagramm im Kopf aus (mit Unterpunkten), dann aufdecken."
+              : `${f.parts.length} Bausteine – sag sie auf (mit Unterpunkten), dann aufdecken.`}
           </span>
           <Button variant="secondary" onClick={onReveal}>
             <Eye className="size-4" /> Aufdecken
@@ -147,25 +178,27 @@ function FrameworkCard({
         </div>
       ) : (
         <>
-          <div className={cn("mt-5 grid gap-3", f.parts.length > 1 && "sm:grid-cols-2")}>
-            {f.parts.map((p, i) => (
-              <div key={i} className="rounded-2xl p-4" style={{ background: alpha(color, 0.06) }}>
-                <p className="font-semibold" style={{ color }}>
-                  {p.label}
-                </p>
-                {p.points.length > 0 && (
-                  <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-ink-2">
-                    {p.points.map((pt, j) => (
-                      <li key={j} className="flex gap-2">
-                        <span className="mt-2 size-1 shrink-0 rounded-full bg-ink-2" />
-                        {pt}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
+          {rest.length > 0 && (
+            <div className={cn("mt-5 grid gap-3", rest.length > 1 && "sm:grid-cols-2")}>
+              {rest.map((p, i) => (
+                <div key={i} className="rounded-2xl p-4" style={{ background: alpha(color, 0.06) }}>
+                  <p className="font-semibold" style={{ color }}>
+                    {p.label}
+                  </p>
+                  {p.points.length > 0 && (
+                    <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-ink-2">
+                      {p.points.map((pt, j) => (
+                        <li key={j} className="flex gap-2">
+                          <span className="mt-2 size-1 shrink-0 rounded-full bg-ink-2" />
+                          {pt}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
 
           {f.apply.length > 0 && (
             <div className="mt-5">

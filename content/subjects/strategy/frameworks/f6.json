@@ -34,7 +34,11 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": "Airbnb: value for guests and hosts · multi-sided platform · commissions for Airbnb, payments for hosts."
+    "example": "Airbnb: value for guests and hosts · multi-sided platform · commissions for Airbnb, payments for hosts.",
+    "visual": {
+      "type": "flow",
+      "count": 3
+    }
   },
   {
     "id": "generic-strategies",
@@ -43,19 +47,6 @@
     "origin": "Porter",
     "purpose": "How does the business compete?",
     "parts": [
-      {
-        "label": "Axis 1: cost vs value",
-        "points": [
-          "Cost advantage: structurally lower costs → lower prices or higher margins",
-          "Differentiation: unique value → higher WTP"
-        ]
-      },
-      {
-        "label": "Axis 2: broad vs narrow scope",
-        "points": [
-          "Market size by age, wealth, geography …"
-        ]
-      },
       {
         "label": "1. Cost leadership",
         "points": [
@@ -79,6 +70,19 @@
         "points": [
           "Differentiation, narrow often high-end market (Ladurée)"
         ]
+      },
+      {
+        "label": "Axis 1: cost vs value",
+        "points": [
+          "Cost advantage: structurally lower costs → lower prices or higher margins",
+          "Differentiation: unique value → higher WTP"
+        ]
+      },
+      {
+        "label": "Axis 2: broad vs narrow scope",
+        "points": [
+          "Market size by age, wealth, geography …"
+        ]
       }
     ],
     "apply": [
@@ -86,7 +90,19 @@
       "Check that value chain and structure fit the choice"
     ],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "quad",
+      "count": 4,
+      "x": [
+        "Lower cost",
+        "Differentiation"
+      ],
+      "y": [
+        "Broad target",
+        "Narrow target"
+      ]
+    }
   },
   {
     "id": "cost-leadership",
@@ -225,6 +241,9 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": "Google tries all three and faces cannibalization of ad-funded search; gen-AI queries have real marginal costs (caps, tiers, routing, ads)."
+    "example": "Google tries all three and faces cannibalization of ad-funded search; gen-AI queries have real marginal costs (caps, tiers, routing, ads).",
+    "visual": {
+      "type": "pillars"
+    }
   }
 ]

@@ -45,7 +45,10 @@
       "Derive which forces will strengthen next"
     ],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "curve"
+    }
   },
   {
     "id": "strategic-groups",
@@ -153,15 +156,15 @@
         ]
       },
       {
-        "label": "Reduce",
-        "points": [
-          "Which factors should be reduced well below the industry standard?"
-        ]
-      },
-      {
         "label": "Raise",
         "points": [
           "Which factors should be raised well above the industry standard?"
+        ]
+      },
+      {
+        "label": "Reduce",
+        "points": [
+          "Which factors should be reduced well below the industry standard?"
         ]
       },
       {
@@ -176,7 +179,10 @@
       "Check: does it lower costs AND raise value? Does it attract noncustomers?"
     ],
     "pitfalls": [],
-    "example": "CitizenM: eliminate restaurants · reduce room size and reception · raise low-cost construction · create 5* location/bed with 3* price (“affordable luxury”)."
+    "example": "CitizenM: eliminate restaurants · reduce room size and reception · raise low-cost construction · create 5* location/bed with 3* price (“affordable luxury”).",
+    "visual": {
+      "type": "quad"
+    }
   },
   {
     "id": "red-ocean-traps",

@@ -7,17 +7,31 @@
     "purpose": "What is the synthesis of internal and external analysis?",
     "parts": [
       {
-        "label": "Strengths / Weaknesses",
+        "label": "Strengths",
         "points": [
-          "Internal and actual (“are”)",
-          "From the resource-based model"
+          "Internal, actual (“are”)",
+          "Valued by customers, different from rivals"
         ]
       },
       {
-        "label": "Opportunities / Threats",
+        "label": "Weaknesses",
         "points": [
-          "External and potential (“could be”)",
-          "From environmental models (Five Forces, PESTEL)"
+          "Internal, actual",
+          "From the resource analysis"
+        ]
+      },
+      {
+        "label": "Opportunities",
+        "points": [
+          "External, potential (“could be”)",
+          "From PESTEL and Five Forces"
+        ]
+      },
+      {
+        "label": "Threats",
+        "points": [
+          "External, potential",
+          "From PESTEL and Five Forces"
         ]
       }
     ],
@@ -29,7 +43,18 @@
       "Ambiguous, overlapping items",
       "Using SWOT instead of a real industry and resource analysis"
     ],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "quad",
+      "x": [
+        "Positive",
+        "Negative"
+      ],
+      "y": [
+        "Internal",
+        "External"
+      ]
+    }
   },
   {
     "id": "rbv",
@@ -124,7 +149,11 @@
       "Ask which activities raise WTP and which lower cost"
     ],
     "pitfalls": [],
-    "example": "Dyson: R&D (≈50 % of net earnings), patents, direct stores and 72-hour helpdesk raise WTP; manufacturing in Malaysia lowers cost."
+    "example": "Dyson: R&D (≈50 % of net earnings), patents, direct stores and 72-hour helpdesk raise WTP; manufacturing in Malaysia lowers cost.",
+    "visual": {
+      "type": "valuechain",
+      "count": 3
+    }
   },
   {
     "id": "vrio",
@@ -164,11 +193,11 @@
       {
         "label": "Outcomes",
         "points": [
-          "No V → disadvantage",
-          "V → parity",
-          "V+R → temporary advantage",
-          "V+R+I without O → unexploited / temporary",
-          "V+R+I+O → sustained advantage"
+          "Competitive disadvantage",
+          "Competitive parity",
+          "Temporary competitive advantage",
+          "Unexploited (temporary) advantage",
+          "Sustained competitive advantage"
         ]
       }
     ],
@@ -182,7 +211,10 @@
       "VRIN → VRIO: N folded into I, O added",
       "A resource VRIO in one industry may not be in another (Dyson in EVs)"
     ],
-    "example": "Dyson in vacuums: brand, skills, innovation culture, patents = VRIO; funding = valuable only; engineers = V+R but imitable. In EVs only patents stayed VRIO → project abandoned 2019."
+    "example": "Dyson in vacuums: brand, skills, innovation culture, patents = VRIO; funding = valuable only; engineers = V+R but imitable. In EVs only patents stayed VRIO → project abandoned 2019.",
+    "visual": {
+      "type": "vrio"
+    }
   },
   {
     "id": "dynamic-capabilities",

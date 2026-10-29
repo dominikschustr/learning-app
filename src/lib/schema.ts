@@ -147,6 +147,30 @@ export const FrameworkSchema = z.object({
   pitfalls: z.array(z.string().min(1)).default([]),
   /** Beispiel aus den Slides */
   example: z.string().default(""),
+  /** Grafische Darstellung der ersten `count` Bausteine (Rest als Kacheln darunter) */
+  visual: z
+    .object({
+      type: z.enum([
+        "forces", // parts: Mitte, oben, unten, rechts, links
+        "quad", // 2×2; x = Spaltenköpfe, y = Zeilenköpfe
+        "flow", // Schritte mit Pfeilen
+        "pillars", // nebeneinander, ohne Pfeile
+        "layers", // geschichtet, von breit nach schmal
+        "letters", // Kacheln mit Anfangsbuchstaben (PESTEL, CAGE)
+        "curve", // Lebenszyklus-Kurve, je Baustein eine Phase
+        "valuechain", // parts: primäre, unterstützende Aktivitäten (points), Marge
+        "vrio", // parts: V, R, I, O, Ergebnisse (points je Stufe + Endergebnis)
+        "versus", // pro (grün) vs contra (rot)
+        "spectrum", // Bausteine auf einer Skala von x[0] nach x[1]
+        "hump", // umgekehrtes U: x/y = Achsen, marks = links, Gipfel, rechts
+        "vertical", // Wertsystem mit Rückwärts-/Vorwärtsintegration; marks = Lieferant, Firma, Kunde
+      ]),
+      count: z.number().int().min(0).optional(),
+      x: z.array(z.string()).optional(),
+      y: z.array(z.string()).optional(),
+      marks: z.array(z.string()).optional(),
+    })
+    .optional(),
 });
 
 export type Lecture = z.infer<typeof LectureSchema>;

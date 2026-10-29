@@ -7,12 +7,6 @@
     "purpose": "How do audiences judge “what is it?” and “how good is it?”",
     "parts": [
       {
-        "label": "Complex / credence goods",
-        "points": [
-          "Quality hard to assess before experience"
-        ]
-      },
-      {
         "label": "Formal rules",
         "points": [
           "Ownership rights, contract enforcement"
@@ -29,11 +23,21 @@
         "points": [
           "Reviews, ratings, rankings, certifications, accreditations, degrees"
         ]
+      },
+      {
+        "label": "Complex / credence goods",
+        "points": [
+          "Quality hard to assess before experience"
+        ]
       }
     ],
     "apply": [],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "pillars",
+      "count": 3
+    }
   },
   {
     "id": "org-identity",
@@ -73,7 +77,11 @@
       "Ask whether a move reinforces or contradicts them – and how each audience reacts"
     ],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "pillars",
+      "count": 3
+    }
   },
   {
     "id": "categorical-imperative",
@@ -121,19 +129,19 @@
     "purpose": "Is combining several categories an asset or a liability?",
     "parts": [
       {
-        "label": "Liability",
-        "points": [
-          "Confusion at the point of sale",
-          "No stable price anchor",
-          "Discount from analysts lacking peers"
-        ]
-      },
-      {
         "label": "Asset",
         "points": [
           "Broad appeal, several growth engines",
           "Avoids head-on comparison (Apple Watch, jewellers)",
           "Options to pivot, valued by VCs"
+        ]
+      },
+      {
+        "label": "Liability",
+        "points": [
+          "Confusion at the point of sale",
+          "No stable price anchor",
+          "Discount from analysts lacking peers"
         ]
       },
       {
@@ -153,7 +161,11 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": "Oura options: A sleep specialist · B clinical device · C luxury wearable · D create the smart-ring category · E one core, many frames."
+    "example": "Oura options: A sleep specialist · B clinical device · C luxury wearable · D create the smart-ring category · E one core, many frames.",
+    "visual": {
+      "type": "versus",
+      "count": 2
+    }
   },
   {
     "id": "optimal-distinctiveness",
@@ -193,7 +205,21 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": "Askin & Mauskapf (2017): balanced songs most likely to be hits (inverted U). Berger & Packard (2018): lyrical differentiation helps, but depends on genre."
+    "example": "Askin & Mauskapf (2017): balanced songs most likely to be hits (inverted U). Berger & Packard (2018): lyrical differentiation helps, but depends on genre.",
+    "visual": {
+      "type": "hump",
+      "x": [
+        "Differentiation from peers →"
+      ],
+      "y": [
+        "Success"
+      ],
+      "marks": [
+        "Too similar: overlooked",
+        "As different as legitimately possible",
+        "Too different: illegitimate"
+      ]
+    }
   },
   {
     "id": "status-conformity",
@@ -226,6 +252,20 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "hump",
+      "x": [
+        "Status →"
+      ],
+      "y": [
+        "Conformity"
+      ],
+      "marks": [
+        "Low status: little to lose, deviates",
+        "Middle status: conforms most",
+        "High status: secure, can deviate"
+      ]
+    }
   }
 ]

@@ -34,7 +34,18 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "quad",
+      "x": [
+        "Existing products",
+        "New products"
+      ],
+      "y": [
+        "Existing markets",
+        "New markets"
+      ]
+    }
   },
   {
     "id": "vertical-integration",
@@ -85,7 +96,15 @@
       "Consequences for business model and identity"
     ],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "vertical",
+      "marks": [
+        "Suppliers",
+        "Firm",
+        "Buyers"
+      ]
+    }
   },
   {
     "id": "yip-drivers",
@@ -121,7 +140,10 @@
     ],
     "apply": [],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "quad"
+    }
   },
   {
     "id": "cage-entry",
@@ -167,6 +189,10 @@
       "Choose an entry mode that fits distance and resources"
     ],
     "pitfalls": [],
-    "example": ""
+    "example": "",
+    "visual": {
+      "type": "letters",
+      "count": 4
+    }
   }
 ]
