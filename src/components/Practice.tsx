@@ -8,13 +8,13 @@ import { answerXp } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
 import type { Question, SubjectContent } from "@/lib/schema";
-import { SHORT_PASS, gradeMC, gradeTF, type MCResult } from "@/lib/scoring";
+import { SHORT_PASS, gradeMC, gradeTF, toggleOption, type MCResult } from "@/lib/scoring";
 import { markKey, markedIds, useApp, useHydrated, type ShortGrade } from "@/lib/store";
 import { announce, celebrate } from "@/lib/toast";
 import { refreshNow } from "@/lib/useNow";
 import { pct } from "@/lib/utils";
 import { MarkButton } from "./MarkButton";
-import { Explanation, MCView, ShortInput, ShortResult, TFView } from "./Questions";
+import { Explanation, MCView, ShortInput, ShortResult, TFView, useCaseOf } from "./Questions";
 import { SessionBar, XpFloat } from "./SessionBar";
 import { Button, ButtonLink, Skeleton } from "./ui";
 
@@ -57,6 +57,7 @@ function Session({
   only?: Question[];
 }) {
   const { subject } = content;
+  const caseOf = useCaseOf(content.cases);
   const base = `/s/${subject.id}`;
   const home = lecture ? `${base}/c/${lecture}` : base;
   const answer = useApp((s) => s.answer);
@@ -134,7 +135,7 @@ function Session({
     } else if (q.type === "short") {
       if (pending) return;
       setPending(true);
-      const g = await gradeShortAnswer(q, text);
+      const g = await gradeShortAnswer(q, text, caseOf(q));
       setPending(false);
       if (g) {
         setShortGrade(g);
@@ -143,7 +144,7 @@ function Session({
         setRevealed(true); // Selbstbewertung anzeigen
       }
     }
-  }, [entry, revealed, selected, finish, pending, text]);
+  }, [entry, revealed, selected, finish, pending, text, caseOf]);
 
   const pickTf = useCallback(
     (v: boolean) => {
@@ -201,7 +202,7 @@ function Session({
         const n = Number(e.key);
         if (n >= 1 && n <= entry.order.length) {
           const id = entry.order[n - 1];
-          setSelected((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id]));
+          setSelected((s) => toggleOption(q, s, id));
         }
       } else if (q.type === "tf") {
         if (e.key === "t" || e.key === "w" || e.key === "ArrowLeft") pickTf(true);
@@ -330,11 +331,14 @@ function Session({
               order={entry.order}
               selected={selected}
               verdicts={mc?.verdicts}
-              onToggle={(id) => setSelected((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id]))}
+              onToggle={(id) => setSelected((s) => toggleOption(q, s, id))}
+              context={caseOf(q)}
             />
           )}
-          {q.type === "tf" && <TFView q={q} value={tf} onChange={pickTf} revealed={revealed} />}
-          {q.type === "short" && <ShortInput q={q} text={text} onChange={setText} disabled={revealed || pending} />}
+          {q.type === "tf" && <TFView q={q} value={tf} onChange={pickTf} revealed={revealed} context={caseOf(q)} />}
+          {q.type === "short" && (
+            <ShortInput q={q} text={text} onChange={setText} disabled={revealed || pending} context={caseOf(q)} />
+          )}
 
           <div className="mt-6 space-y-4">
             {revealed && q.type === "mc" && mc && (

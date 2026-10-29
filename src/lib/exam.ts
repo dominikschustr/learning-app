@@ -32,7 +32,28 @@ export function chapterFormat(
   const mc = Math.min(6, of("mc"));
   const tf = Math.min(4, of("tf"));
   const perQuestion = full.minutes / (full.short + full.mc + full.tf);
-  return { name: "Kapiteltest", short, mc, tf, minutes: Math.max(1, Math.round((short + mc + tf) * perQuestion)) };
+  return {
+    name: "Kapiteltest",
+    short,
+    mc,
+    tf,
+    minutes: Math.max(1, Math.round((short + mc + tf) * perQuestion)),
+    order: full.order,
+  };
+}
+
+/** Fragen zum selben Fall stehen hintereinander, in der Reihenfolge des Pools (a, b, c …). */
+function groupByCase(picked: Question[], pool: Question[]): Question[] {
+  const rank = new Map(pool.map((q, i) => [q.id, i]));
+  const first = new Map<string, number>();
+  picked.forEach((q, i) => {
+    if (q.case && !first.has(q.case)) first.set(q.case, i);
+  });
+  const key = (q: Question, i: number) => (q.case ? first.get(q.case)! : i);
+  return picked
+    .map((q, i) => ({ q, i }))
+    .sort((a, b) => key(a.q, a.i) - key(b.q, b.i) || rank.get(a.q.id)! - rank.get(b.q.id)!)
+    .map(({ q }) => q);
 }
 
 export function createExam(
@@ -44,11 +65,7 @@ export function createExam(
 ): ActiveExam {
   const questions = lecture ? allQuestions.filter((q) => q.lecture === lecture) : allQuestions;
   const of = (t: QuestionType) => questions.filter((q) => q.type === t);
-  const picked = [
-    ...pickSpread(of("short"), format.short),
-    ...pickSpread(of("mc"), format.mc),
-    ...pickSpread(of("tf"), format.tf),
-  ];
+  const picked = format.order.flatMap((t) => groupByCase(pickSpread(of(t), format[t]), questions));
   return {
     subjectId,
     lecture,

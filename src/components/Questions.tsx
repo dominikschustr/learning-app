@@ -1,15 +1,70 @@
 "use client";
 
-import { Check, CheckCircle2, Circle, Loader2, Sparkles, X } from "lucide-react";
+import { Check, CheckCircle2, ChevronDown, Circle, FileText, Loader2, Sparkles, X } from "lucide-react";
 import { motion } from "motion/react";
-import { useState } from "react";
-import type { MCQuestion, ShortQuestion, TFQuestion } from "@/lib/schema";
+import { useCallback, useMemo, useState } from "react";
+import type { Case, MCQuestion, Question, ShortQuestion, TFQuestion } from "@/lib/schema";
 import { SHORT_PASS, type OptionVerdict } from "@/lib/scoring";
 import type { ShortGrade } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui";
 
-const VERB_LABEL = { define: "Define", state: "State", explain: "Explain" };
+const VERB_LABEL = { define: "Define", state: "State", explain: "Explain", calculate: "Calculate" };
+
+/** Liefert zu einer Frage ihre Fallbeschreibung (falls sie sich auf einen Fall bezieht). */
+export function useCaseOf(cases: Case[]) {
+  const byId = useMemo(() => new Map(cases.map((c) => [c.id, c])), [cases]);
+  return useCallback((q: Question) => (q.case ? byId.get(q.case) : undefined), [byId]);
+}
+
+/** Fallbeschreibung mit Tabellen über einer Frage, wie in der Prüfung. */
+export function CaseContext({ c }: { c: Case }) {
+  return (
+    <details open className="group mb-6 rounded-2xl border border-line bg-surface-2/60">
+      <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 text-sm font-semibold">
+        <FileText className="size-4 shrink-0 text-accent" />
+        <span className="flex-1">{c.title}</span>
+        <ChevronDown className="size-4 shrink-0 text-muted transition group-open:rotate-180" />
+      </summary>
+      <div className="space-y-4 border-t border-line px-4 pb-4 pt-3 text-sm leading-relaxed text-ink-2">
+        {c.text.map((p, i) => (
+          <p key={i} className="whitespace-pre-line">
+            {p}
+          </p>
+        ))}
+        {c.tables.map((t, i) => (
+          <div key={i}>
+            {t.caption && <p className="mb-1.5 font-semibold text-ink">{t.caption}</p>}
+            <div className="overflow-x-auto rounded-xl border border-line bg-surface">
+              <table className="w-full min-w-max text-left text-[0.8rem] tabular-nums">
+                <thead className="bg-accent/10 text-ink">
+                  <tr>
+                    {t.head.map((h, j) => (
+                      <th key={j} className="px-3 py-2 font-semibold">
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {t.rows.map((r, j) => (
+                    <tr key={j} className="border-t border-line even:bg-surface-2/50">
+                      {r.map((cell, k) => (
+                        <td key={k} className={cn("px-3 py-1.5", k === 0 && "font-medium text-ink")}>
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ))}
+      </div>
+    </details>
+  );
+}
 
 export function QuestionMeta({ kind, extra }: { kind: "mc" | "tf" | "short"; extra?: React.ReactNode }) {
   const label = { mc: "Multiple Choice", tf: "True / False", short: "Kurzantwort" }[kind];
@@ -27,17 +82,27 @@ export function MCView({
   selected,
   onToggle,
   verdicts,
+  context,
 }: {
   q: MCQuestion;
   order: string[];
   selected: string[];
   onToggle?: (id: string) => void;
   verdicts?: Record<string, OptionVerdict> | null;
+  context?: Case;
 }) {
   const byId = new Map(q.options.map((o) => [o.id, o]));
   return (
     <div>
-      <QuestionMeta kind="mc" extra={<span className="text-xs text-muted">· mehrere Antworten können richtig sein</span>} />
+      {context && <CaseContext c={context} />}
+      <QuestionMeta
+        kind="mc"
+        extra={
+          <span className="text-xs text-muted">
+            {q.single ? "· genau eine Antwort" : "· mehrere Antworten können richtig sein"}
+          </span>
+        }
+      />
       <h2 className="mt-3 text-xl font-semibold leading-snug sm:text-2xl">{q.prompt}</h2>
       <div className="mt-6 grid gap-2.5">
         {order.map((id, i) => {
@@ -63,7 +128,8 @@ export function MCView({
             >
               <span
                 className={cn(
-                  "mt-0.5 grid size-6 shrink-0 place-items-center rounded-md border-2 transition",
+                  "mt-0.5 grid size-6 shrink-0 place-items-center border-2 transition",
+                  q.single ? "rounded-full" : "rounded-md",
                   isSel ? "border-transparent bg-accent text-white" : "border-line-strong",
                   v === "hit" && "bg-good",
                   v === "wrong" && "bg-bad",
@@ -87,14 +153,17 @@ export function TFView({
   value,
   onChange,
   revealed,
+  context,
 }: {
   q: TFQuestion;
   value: boolean | null;
   onChange?: (v: boolean) => void;
   revealed?: boolean;
+  context?: Case;
 }) {
   return (
     <div>
+      {context && <CaseContext c={context} />}
       <QuestionMeta kind="tf" />
       <h2 className="mt-3 text-xl font-semibold leading-snug sm:text-2xl">{q.statement}</h2>
       <div className="mt-6 grid grid-cols-2 gap-3">
@@ -130,15 +199,18 @@ export function ShortInput({
   text,
   onChange,
   disabled,
+  context,
 }: {
   q: ShortQuestion;
   text: string;
   onChange?: (t: string) => void;
   disabled?: boolean;
+  context?: Case;
 }) {
   const words = text.trim() ? text.trim().split(/\s+/).length : 0;
   return (
     <div>
+      {context && <CaseContext c={context} />}
       <QuestionMeta
         kind="short"
         extra={
@@ -258,7 +330,7 @@ export function ShortResult({
 
       <details className="group rounded-2xl border border-line bg-surface p-4" open={!!grade}>
         <summary className="cursor-pointer text-sm font-semibold">Musterlösung</summary>
-        <p className="mt-2 text-sm leading-relaxed text-ink-2">{q.modelAnswer}</p>
+        <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-ink-2">{q.modelAnswer}</p>
       </details>
     </div>
   );

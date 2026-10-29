@@ -23,7 +23,8 @@ export function Blitz({ content }: { content: SubjectContent }) {
   const [log, setLog] = useState<Answered[]>([]);
   const { subject } = content;
   const best = useApp((s) => s.blitzBest[subject.id] ?? 0);
-  const tf = content.questions.filter((q): q is TFQuestion => q.type === "tf");
+  // Aussagen zu einer Fallbeschreibung brauchen deren Tabellen – in 60 Sekunden ungeeignet
+  const tf = content.questions.filter((q): q is TFQuestion => q.type === "tf" && !q.case);
 
   if (!hydrated) return <Skeleton className="h-96" />;
 

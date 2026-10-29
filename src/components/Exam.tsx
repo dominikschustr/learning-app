@@ -19,13 +19,13 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { chapterFormat, createExam, gradeExam, isAnswered } from "@/lib/exam";
 import { XP } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
-import type { Lecture, Question, SubjectContent } from "@/lib/schema";
-import { SHORT_PASS, gradeMC } from "@/lib/scoring";
+import type { Case, Lecture, Question, QuestionType, SubjectContent } from "@/lib/schema";
+import { SHORT_PASS, gradeMC, toggleOption } from "@/lib/scoring";
 import { examScore, useApp, useHydrated, type ActiveExam, type AnswerEvent, type ExamRecord, type ShortGrade } from "@/lib/store";
 import { announceAll, celebrate } from "@/lib/toast";
 import { cn, formatClock, pct } from "@/lib/utils";
 import { MarkButton } from "./MarkButton";
-import { MCView, ShortInput, ShortResult, TFView } from "./Questions";
+import { CaseContext, MCView, ShortInput, ShortResult, TFView, useCaseOf } from "./Questions";
 import { Bar, Button, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
 export function Exam({ content }: { content: SubjectContent }) {
@@ -41,6 +41,21 @@ export function Exam({ content }: { content: SubjectContent }) {
   if (active) return <Running content={content} exam={active} />;
   const lecture = content.subject.lectures.find((l) => l.id === chapter);
   return <Intro key={lecture?.id ?? "all"} content={content} lecture={lecture} />;
+}
+
+const PART_LABEL = { short: "Kurzantwort", mc: "Multiple Choice", tf: "True / False" } as const;
+
+/** Hinweis unter der Anzahl je Fragetyp, abgeleitet aus dem Fragenpool. */
+function partHint(t: QuestionType, questions: Question[]): string {
+  if (t === "short") {
+    const verbs = [...new Set(questions.flatMap((q) => (q.type === "short" ? [q.verb] : [])))];
+    return verbs.join(" / ");
+  }
+  if (t === "mc") {
+    const single = questions.some((q) => q.type === "mc" && q.single);
+    return single ? "eine oder mehrere richtig" : "mehrere richtig möglich";
+  }
+  return "";
 }
 
 function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lecture }) {
@@ -70,11 +85,7 @@ function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lectur
       </p>
 
       <div className="mt-8 grid grid-cols-3 gap-3">
-        {[
-          [f.short, "Kurzantwort", "define / state / explain"],
-          [f.mc, "Multiple Choice", "mehrere richtig möglich"],
-          [f.tf, "True / False", ""],
-        ].map(([n, label, hint]) => (
+        {f.order.map((t) => [f[t], PART_LABEL[t], partHint(t, questions)] as const).map(([n, label, hint]) => (
           <div key={label} className="card p-4">
             <p className="display text-3xl tabular-nums">{n}</p>
             <p className="mt-1 text-sm font-semibold">{label}</p>
@@ -123,6 +134,7 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
   const router = useRouter();
   const { subject } = content;
   const byId = useMemo(() => new Map(content.questions.map((q) => [q.id, q])), [content.questions]);
+  const caseOf = useCaseOf(content.cases);
   const updateExam = useApp((s) => s.updateExam);
   const setExamAnswer = useApp((s) => s.setExamAnswer);
   const discardExam = useApp((s) => s.discardExam);
@@ -174,7 +186,7 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
         if (n >= 1 && n <= order.length) {
           const id = order[n - 1];
           const sel = ans?.kind === "mc" ? ans.selected : [];
-          setExamAnswer(cur, { kind: "mc", selected: sel.includes(id) ? sel.filter((x) => x !== id) : [...sel, id] });
+          setExamAnswer(cur, { kind: "mc", selected: toggleOption(question, sel, id) });
         }
       } else if (question?.type === "tf" && (e.key === "t" || e.key === "f")) {
         setExamAnswer(cur, { kind: "tf", value: e.key === "t" });
@@ -292,8 +304,9 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
               selected={a?.kind === "mc" ? a.selected : []}
               onToggle={(id) => {
                 const sel = a?.kind === "mc" ? a.selected : [];
-                setExamAnswer(qid, { kind: "mc", selected: sel.includes(id) ? sel.filter((x) => x !== id) : [...sel, id] });
+                setExamAnswer(qid, { kind: "mc", selected: toggleOption(q, sel, id) });
               }}
+              context={caseOf(q)}
             />
           )}
           {q?.type === "tf" && (
@@ -301,6 +314,7 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
               q={q}
               value={a?.kind === "tf" ? a.value : null}
               onChange={(v) => setExamAnswer(qid, { kind: "tf", value: a?.kind === "tf" && a.value === v ? null : v })}
+              context={caseOf(q)}
             />
           )}
           {q?.type === "short" && (
@@ -308,6 +322,7 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
               q={q}
               text={a?.kind === "short" ? a.text : ""}
               onChange={(text) => setExamAnswer(qid, { kind: "short", text })}
+              context={caseOf(q)}
             />
           )}
         </motion.div>
@@ -388,6 +403,7 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
   const { subject } = content;
   const base = `/s/${subject.id}`;
   const byId = useMemo(() => new Map(content.questions.map((q) => [q.id, q])), [content.questions]);
+  const caseOf = useCaseOf(content.cases);
   const updateExamRecord = useApp((s) => s.updateExamRecord);
   const allExams = useApp((s) => s.exams);
   const exams = allExams.filter((e) => e.subjectId === subject.id && e.lecture === record.lecture);
@@ -420,7 +436,7 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
       const a = record.answers[id];
       if (q?.type !== "short" || a?.kind !== "short") continue;
       grading.add(`${record.id}:${id}`);
-      void gradeShortAnswer(q, a.text).then((g) => {
+      void gradeShortAnswer(q, a.text, caseOf(q)).then((g) => {
         if (g) applyGrade(id, g);
         else setAiUnavailable((u) => [...u, id]);
       });
@@ -553,6 +569,7 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
             if (onlyWrong && r !== false) return null;
             return (
               <ReviewItem
+                context={caseOf(q)}
                 key={id}
                 index={i}
                 q={q}
@@ -574,12 +591,14 @@ function ReviewItem({
   record,
   aiUnavailable,
   onSelfGrade,
+  context,
 }: {
   index: number;
   q: Question;
   record: ExamRecord;
   aiUnavailable: boolean;
   onSelfGrade: (hit: string[]) => void;
+  context?: Case;
 }) {
   const a = record.answers[q.id];
   const r = record.results[q.id];
@@ -612,19 +631,21 @@ function ReviewItem({
                 order={record.optionOrder[q.id] ?? q.options.map((o) => o.id)}
                 selected={a?.kind === "mc" ? a.selected : []}
                 verdicts={gradeMC(q, a?.kind === "mc" ? a.selected : []).verdicts}
+                context={context}
               />
               {q.explanation && <p className="mt-4 text-sm leading-relaxed text-ink-2">{q.explanation}</p>}
             </>
           )}
           {q.type === "tf" && (
             <>
-              <TFView q={q} value={a?.kind === "tf" ? a.value : null} revealed />
+              <TFView q={q} value={a?.kind === "tf" ? a.value : null} revealed context={context} />
               {a?.kind !== "tf" || a.value === null ? <p className="mt-3 text-sm text-bad">Nicht beantwortet.</p> : null}
               {q.explanation && <p className="mt-4 text-sm leading-relaxed text-ink-2">{q.explanation}</p>}
             </>
           )}
           {q.type === "short" && (
             <div className="space-y-4">
+              {context && <CaseContext c={context} />}
               <div className="rounded-2xl bg-surface-2 p-4 text-sm">
                 <p className="eyebrow mb-1">Deine Antwort</p>
                 <p className="whitespace-pre-wrap">{a?.kind === "short" && a.text.trim() ? a.text : "—"}</p>

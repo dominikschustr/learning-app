@@ -5,6 +5,7 @@ import { cache } from "react";
 import { z } from "zod";
 import {
   CardSchema,
+  CaseSchema,
   QuestionSchema,
   SubjectSchema,
   TextSchema,
@@ -49,6 +50,7 @@ function loadSubject(dir: string): SubjectContent {
     subject: parsed.data,
     questions: readDir(path.join(ROOT, dir, "questions"), QuestionSchema),
     cards: readDir(path.join(ROOT, dir, "cards"), CardSchema),
+    cases: readDir(path.join(ROOT, dir, "cases"), CaseSchema),
   };
   const errors = checkContent(content);
   if (errors.length) throw new Error(`Content "${dir}":\n- ${errors.join("\n- ")}`);

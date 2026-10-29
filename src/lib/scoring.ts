@@ -47,3 +47,9 @@ export function examReadiness(
   if (!total) return 0;
   return types.reduce((s, t) => s + format[t] * (masteryByType[t] ?? 0), 0) / total;
 }
+
+/** Neue Auswahl nach Klick auf eine Option – bei Single Choice ersetzt sie die bisherige. */
+export function toggleOption(q: MCQuestion, selected: string[], id: string): string[] {
+  if (selected.includes(id)) return selected.filter((x) => x !== id);
+  return q.single ? [id] : [...selected, id];
+}

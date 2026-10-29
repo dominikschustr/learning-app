@@ -6,8 +6,8 @@ import { z } from "zod";
  */
 
 const Body = z.object({
-  verb: z.enum(["define", "state", "explain"]),
-  prompt: z.string().min(1).max(2000),
+  verb: z.enum(["define", "state", "explain", "calculate"]),
+  prompt: z.string().min(1).max(8000),
   modelAnswer: z.string().min(1).max(4000),
   keyPoints: z.array(z.string().max(500)).min(1).max(12),
   answer: z.string().max(4000),
@@ -37,7 +37,8 @@ export async function POST(req: Request) {
   const instructions = `You are a fair but strict university examiner grading a short exam answer (task verb: "${b.verb}").
 Compare the STUDENT ANSWER with the MODEL ANSWER and the KEY POINTS.
 - A key point counts as hit if the student expresses its meaning, even in different words or in German.
-- "define" needs a precise definition, "state" needs the listed items, "explain" needs reasoning / the why.
+- "define" needs a precise definition, "state" needs the listed items, "explain" needs reasoning / the why,
+  "calculate" needs the correct result and the calculation steps (a correct method with a small arithmetic slip earns partial credit).
 - score 0–100 reflects how completely and correctly the key points are covered; penalise factual errors.
 - "hit" and "missed" must contain the KEY POINTS verbatim.
 - "feedback": 1–3 short sentences in German, concrete: what was good, what is missing or wrong.
