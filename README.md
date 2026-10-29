@@ -30,10 +30,13 @@ Pro Fach ein Ordner unter `content/subjects/<fach>/`:
 - `subject.json` – Name, Farbe, Kapitel (`lectures`), Prüfungsformat
 - `questions/*.json` – Fragen (`mc`, `tf`, `short`), Schema in `src/lib/schema.ts`
 - `cards/*.json` – Karteikarten
+- `cases/*.json` – Fallbeschreibungen mit Tabellen (wie in der Prüfung); Fragen verweisen per `"case": "<id>"` darauf.
+  MC-Fragen mit `"single": true` sind Single Choice, Kurzantworten können das Verb `calculate` haben.
 - `texts/<kapitel>.json` – Originaltext zum Nachlesen, erzeugt mit
   `python3 scripts/import_texts.py "Key Messages" content/subjects/management-control/texts`
 
-Die Quelldokumente liegen in `Key Messages/`. Neue Dokumente → Claude erstellt daraus Fragen und Karten
+Die Quelldokumente liegen in `Key Messages/` (Management Control) bzw. lokal in `04_Marketing Kopie/` (Marketing,
+nicht im Repo). Bei Marketing sind die Lesetexte Zusammenfassungen der Vorlesungsfolien. Neue Dokumente → Claude erstellt daraus Fragen und Karten
 als JSON → `npm test` prüft sie → commit.
 
 ## KI-Bewertung der Kurzantworten

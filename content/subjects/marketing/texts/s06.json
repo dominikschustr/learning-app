@@ -1,0 +1,107 @@
+{
+  "lecture": "s06",
+  "title": "Session 6 – Customer Journey: Acquisition",
+  "source": "06_DDM_Student Handout_2627.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The customer journey covers acquisition (session 6), conversion (session 7) and retention (session 8). Acquisition generates money to meet costs and reinvest and shows traction to investors, partners and influencers – while acquisition costs have risen by over 50% in five years."
+        },
+        {
+          "kind": "item",
+          "text": "The acquisition funnel runs from awareness, interest, consideration and intent to evaluation and purchase; web analytics measures can be mapped to its stages. KPIs to compare campaigns or website versions: click-through rate, conversion rate, cost per sale and return on ad investment."
+        },
+        {
+          "kind": "item",
+          "text": "CAC = marketing costs / customers acquired, for a specific campaign or time window; include all marketing-related costs. How much you can spend depends on the customer's value (CLV, session 8)."
+        },
+        {
+          "kind": "item",
+          "text": "A product is anything offered to satisfy a want or need – including services. Products have a core, tangible and augmented level; the product component model distinguishes physical, symbolic and service attributes plus legal conformity."
+        },
+        {
+          "kind": "item",
+          "text": "The new product development process: opportunity identification → design → testing → introduction → life cycle management, with GO/NO decisions at each step."
+        },
+        {
+          "kind": "item",
+          "text": "Customer value = benefits (functional, psychological, economic) − costs (monetary, perceived risk, inconvenience)."
+        },
+        {
+          "kind": "item",
+          "text": "Measures of customer value (Lilien et al., 2017):",
+          "children": [
+            "Objective: internal engineering assessment, indirect survey questions, value-in-use",
+            "Perceptual unconstrained: focus groups, direct survey questions, importance ratings",
+            "Perceptual constrained: conjoint analysis, benchmarking",
+            "Behavioural: choice models (multinomial logit), data mining"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Value-in-use is the maximum willingness to pay for a focal product given a reference. Compute the annual cost of the old solution (including downtime/shutdowns) and find the price at which the new solution costs the same."
+        },
+        {
+          "kind": "item",
+          "text": "Inferential statistics draws conclusions about a population from a sample. A test rejects or keeps H0 (no effect); type I error = rejecting a true H0 (α, usually 5%), type II error = keeping a false H0 (β)."
+        },
+        {
+          "kind": "item",
+          "text": "A/B (split) testing compares a control (A) and a challenger (B) on a KPI – e.g. CTA colour or placement. Benefits: more traffic, higher conversion, lower bounce rate, lower cart abandonment. Use a t-test for metric KPIs (willingness to buy) and a chi-square test for categorical KPIs (choice)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Customer acquisition cost (CAC)",
+          "text": "The cost associated with bringing a new customer to the business, such as marketing costs, events and advertising, for a specific campaign or time window."
+        },
+        {
+          "kind": "item",
+          "term": "Core product",
+          "text": "The part of a product that satisfies the customer's central underlying need or want."
+        },
+        {
+          "kind": "item",
+          "term": "Augmented product",
+          "text": "Enhancements of the tangible product through additional services and features."
+        },
+        {
+          "kind": "item",
+          "term": "Value-in-use",
+          "text": "The maximum willingness to pay for a focal product, given a reference product (e.g. previous version, main competitor)."
+        },
+        {
+          "kind": "item",
+          "term": "A/B testing",
+          "text": "A marketing experiment that splits the audience to test variations of a campaign and determine which performs better."
+        },
+        {
+          "kind": "item",
+          "term": "Type I error",
+          "text": "Rejecting the null hypothesis although it is correct (α)."
+        },
+        {
+          "kind": "item",
+          "term": "Type II error",
+          "text": "Not rejecting the null hypothesis although it is incorrect (β)."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "VIU appeared in every mock exam (chips, Z-rings). Always: annual old cost incl. shutdowns → equal to new cost → solve for price → compare with the offered price."
+        }
+      ]
+    }
+  ]
+}

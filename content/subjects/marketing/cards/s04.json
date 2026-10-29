@@ -1,0 +1,86 @@
+[
+  {
+    "id": "c-s04-01",
+    "lecture": "s04",
+    "front": "Text mining",
+    "back": "A branch of analytics that treats unstructured text information; e.g. automatic grouping of similar texts."
+  },
+  {
+    "id": "c-s04-02",
+    "lecture": "s04",
+    "front": "Data mining",
+    "back": "Exploration and analysis of data to uncover meaningful patterns or rules."
+  },
+  {
+    "id": "c-s04-03",
+    "lecture": "s04",
+    "front": "Predictive analytics",
+    "back": "Advanced analytics that predicts future outcomes from historical data using statistical modelling, data mining and machine learning. Uses: demand forecasting, supply chain, fraud detection, customer behaviour, healthcare, stock markets."
+  },
+  {
+    "id": "c-s04-04",
+    "lecture": "s04",
+    "front": "Social listening",
+    "back": "Identifying and assessing what is being said about a company, individual, product or brand on the internet."
+  },
+  {
+    "id": "c-s04-05",
+    "lecture": "s04",
+    "front": "Sentiment analysis",
+    "back": "Analysing online text to determine its emotional tone – positive, negative or neutral; how the author feels about a topic."
+  },
+  {
+    "id": "c-s04-06",
+    "lecture": "s04",
+    "front": "Visual mining",
+    "back": "Extracting trends, patterns, insights and knowledge from visual data with data mining, computer vision and data visualisation. >80% of visual imagery is untapped."
+  },
+  {
+    "id": "c-s04-07",
+    "lecture": "s04",
+    "front": "Text mining pipeline",
+    "back": "Tokenization → stop-word elimination → stemming/lemmatization → TF-IDF → NER, sentiment analysis, topic modelling & text classification."
+  },
+  {
+    "id": "c-s04-08",
+    "lecture": "s04",
+    "front": "Text mining success factors",
+    "back": "Data quality (garbage in, garbage out) · data cleansing · algorithm selection · scalability · model evaluation · ethical boundaries."
+  },
+  {
+    "id": "c-s04-09",
+    "lecture": "s04",
+    "front": "Data mining algorithms",
+    "back": "Association rules (items together) · clustering (group similar points) · classification (categorical labels) · regression (continuous values) · sequential patterns · neural networks · anomaly detection (fraud)."
+  },
+  {
+    "id": "c-s04-10",
+    "lecture": "s04",
+    "front": "Social listening process",
+    "back": "1 objectives (in-house) · 2 data collection · 3 analysis · 4 insights · 5 engagement & response (in-house) · 6 monitoring."
+  },
+  {
+    "id": "c-s04-11",
+    "lecture": "s04",
+    "front": "Sentiment analysis – applications",
+    "back": "Brand reputation monitoring · customer research & feedback · market research · crisis prevention/management · social media, financial, political analysis · customer service."
+  },
+  {
+    "id": "c-s04-12",
+    "lecture": "s04",
+    "front": "Sentiment ratio",
+    "back": "Positive mentions / negative mentions. Compare together with volume of mentions and (non-)social media reach."
+  },
+  {
+    "id": "c-s04-13",
+    "lecture": "s04",
+    "front": "Visual mining tools",
+    "back": "Dash Hudson (Vision AI + social listening, surfaces visual trends); YouScan (Visual Insights – image recognition in social posts, over half of which are images)."
+  },
+  {
+    "id": "c-s04-14",
+    "lecture": "s04",
+    "front": "Why TDVM matters for marketers",
+    "back": "Extract insights from text, data and visuals at scale → understand sentiments, preferences and behaviours → personalise, optimise campaigns, improve engagement and conversion."
+  }
+]

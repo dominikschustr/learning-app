@@ -1,0 +1,173 @@
+[
+  {
+    "id": "adidas-regression",
+    "title": "Adidas – predicting transaction value (mock exam 2023/24 & 2025/26)",
+    "text": [
+      "You are the marketing manager of Adidas and build a predictive model of future consumption from historical purchase data.",
+      "Dependent variable: total transaction value of the most recent purchase (€). Independent variables: gender (male = 0, female = 1), age at transaction, channel (offline = 0, online = 1), duration (days between purchases), social (follower on social media: no = 0, yes = 1).",
+      "Y = β0 + β1·gender + β2·age + β3·channel + β4·duration + β5·social. The overall model has an R² of 65% and is statistically significant."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Coefficient",
+          "P>|t| (p-value)"
+        ],
+        "rows": [
+          [
+            "_cons (intercept)",
+            "52.3",
+            "0.000"
+          ],
+          [
+            "Gender",
+            "12.7",
+            "0.002"
+          ],
+          [
+            "Age",
+            "1.4",
+            "0.030"
+          ],
+          [
+            "Channel",
+            "−23.1",
+            "0.004"
+          ],
+          [
+            "Duration",
+            "12.2",
+            "0.567"
+          ],
+          [
+            "Social",
+            "27.6",
+            "0.832"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "margarine",
+    "title": "Margarine sales in 10 sales areas (lecture example)",
+    "text": [
+      "A sales manager explains differences in margarine sales (packages per period) across 10 equally sized areas.",
+      "Simple regression: Sales = 39.534 + 18.881 · Visits.\nMultiple regression: Sales = 144.482 + 10.487 · Visits + 0.664 · Marketing investment.",
+      "Observation no. 6: 102 salesman visits, marketing investment 1,500, observed sales 2,278 packages."
+    ],
+    "tables": []
+  },
+  {
+    "id": "units-model",
+    "title": "Monthly unit sales: price, SEM and social media (lecture example)",
+    "text": [
+      "Twelve months of data: units sold per month, price per unit (€), spending on search engine marketing (SEM, €) and on social media campaigns (€). Three outlier months (7, 8, 9) suggest seasonal effects, so a seasonal dummy (b4) was added.",
+      "Units = b0 + b1·Price + b2·SEM + b3·Social media + b4·Season. R² = 0.99, adjusted R² = 0.98, F = 133.64 (p = 0.000)."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Coefficient",
+          "Std. error",
+          "t",
+          "p-value"
+        ],
+        "rows": [
+          [
+            "b0 (intercept)",
+            "1064.14",
+            "686.33",
+            "1.55",
+            "0.165"
+          ],
+          [
+            "b1 Price",
+            "−79.27",
+            "46.24",
+            "−1.71",
+            "0.130"
+          ],
+          [
+            "b2 SEM",
+            "0.472",
+            "0.153",
+            "3.08",
+            "0.018"
+          ],
+          [
+            "b3 Social media",
+            "1.380",
+            "0.562",
+            "2.45",
+            "0.044"
+          ],
+          [
+            "b4 Season",
+            "1534.58",
+            "153.85",
+            "9.98",
+            "0.000"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "startups",
+    "title": "Profit of 50 tech start-ups (lecture example)",
+    "text": [
+      "Data on 50 start-ups located in New York, California and Florida: profit, marketing spend, administration spend and state. Location enters as dummy variables (baseline: Florida). R² = 0.61, adjusted R² = 0.58."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Coefficient",
+          "Std. error",
+          "t",
+          "p-value"
+        ],
+        "rows": [
+          [
+            "Intercept",
+            "17,328.24",
+            "19,396.72",
+            "0.89",
+            "0.38"
+          ],
+          [
+            "Administration",
+            "0.32",
+            "0.13",
+            "2.43",
+            "0.02"
+          ],
+          [
+            "Marketing spend",
+            "0.25",
+            "0.03",
+            "8.00",
+            "0.00"
+          ],
+          [
+            "New York",
+            "5,579.47",
+            "9,207.09",
+            "0.61",
+            "0.55"
+          ],
+          [
+            "California",
+            "1,703.70",
+            "9,337.99",
+            "0.18",
+            "0.86"
+          ]
+        ]
+      }
+    ]
+  }
+]

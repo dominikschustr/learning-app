@@ -1,0 +1,45 @@
+[
+  {
+    "id": "brand24",
+    "title": "Social listening report – two smartphone brands (30 days)",
+    "text": [
+      "A marketing team extracted the following metrics from Brand24 reports for two competing brands over the same 30-day period. Sentiment ratio = positive mentions / negative mentions."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Metric",
+          "Brand Nova",
+          "Brand Orbit"
+        ],
+        "rows": [
+          [
+            "Volume of mentions",
+            "48,000",
+            "30,000"
+          ],
+          [
+            "Social media reach",
+            "120 m",
+            "95 m"
+          ],
+          [
+            "Non-social media reach",
+            "40 m",
+            "55 m"
+          ],
+          [
+            "Positive mentions",
+            "12,000",
+            "9,000"
+          ],
+          [
+            "Negative mentions",
+            "6,000",
+            "2,000"
+          ]
+        ]
+      }
+    ]
+  }
+]

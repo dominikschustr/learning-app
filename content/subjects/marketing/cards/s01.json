@@ -1,0 +1,110 @@
+[
+  {
+    "id": "c-s01-01",
+    "lecture": "s01",
+    "front": "Gut instinct vs. data (Marc Randolph)",
+    "back": "You need both: data gives certainty (red button does 2.7% better) but never tells you which of 16.7 million colours to test. Use data to inform intuition, explore and validate assumptions – less \"I think…\", more \"The data shows…\"."
+  },
+  {
+    "id": "c-s01-02",
+    "lecture": "s01",
+    "front": "Framework data & marketing analytics (Wedel & Kannan, 2016)",
+    "back": "Types of data → analytics and analytical methods → implementing data & analytics in companies; applications: personalisation, CRM, marketing mix, privacy & security."
+  },
+  {
+    "id": "c-s01-03",
+    "lecture": "s01",
+    "front": "Big Data (definition)",
+    "back": "The explosion in the quantity (and sometimes quality) of available and potentially relevant data, largely the result of advances in data recording and storage technology (Diebold, 2000). Big data is… data."
+  },
+  {
+    "id": "c-s01-04",
+    "lecture": "s01",
+    "front": "The 5 Vs of Big Data",
+    "back": "Volume, Velocity, Variety, Veracity, Value (Marr, 2014)."
+  },
+  {
+    "id": "c-s01-05",
+    "lecture": "s01",
+    "front": "Structured vs. unstructured data",
+    "back": "Structured: organised in predefined fields/tables (e.g. transactions). Unstructured: texts, images, videos, social posts – require sense-making (e.g. text mining) before analysis."
+  },
+  {
+    "id": "c-s01-06",
+    "lecture": "s01",
+    "front": "Data analytics",
+    "back": "The process of examining datasets to draw conclusions about the information they contain, increasingly with specialised systems and software."
+  },
+  {
+    "id": "c-s01-07",
+    "lecture": "s01",
+    "front": "Four types of analytics",
+    "back": "Descriptive – what happened?\nDiagnostic – why is it happening?\nPredictive – what is likely to happen?\nPrescriptive – so what / now what?\nInformation → insights → decision/action"
+  },
+  {
+    "id": "c-s01-08",
+    "lecture": "s01",
+    "front": "Research types",
+    "back": "Exploratory (ambiguous problem: \"sales decline – why?\")\nDescriptive (aware of problem: \"who buys our products?\")\nCausal (clearly defined problem: \"will a website change increase purchases?\")"
+  },
+  {
+    "id": "c-s01-09",
+    "lecture": "s01",
+    "front": "Methods by research type",
+    "back": "Exploratory: expert & pilot surveys, qualitative research, secondary data (qualitative).\nDescriptive: surveys, panels, observation, secondary data (quantitative).\nCausal: experiments (manipulate IVs, control others)."
+  },
+  {
+    "id": "c-s01-10",
+    "lecture": "s01",
+    "front": "Value creation through data (Mazzei & Noble, 2017)",
+    "back": "Data as a tool (internal capabilities), data as an industry (data products/DaaS), data as a strategy (data drives strategy, business models, ecosystems – e.g. Rolls-Royce)."
+  },
+  {
+    "id": "c-s01-11",
+    "lecture": "s01",
+    "front": "Starbucks Deep Brew",
+    "back": "Reinforcement-learning AI in the Starbucks app: selects the next-best offer and learns from each response. Shift: segment campaigns → individual real-time journey; short-term response → long-term value. Marketing becomes continuous profit optimisation."
+  },
+  {
+    "id": "c-s01-12",
+    "lecture": "s01",
+    "front": "Sephora agentic AI",
+    "back": "Virtual Artist (Smart Skin Scan) + AI Beauty Advisor that recommends routines, books appointments, offers discounts. Shift: reactive personalisation → autonomous digital sales agent; A/B testing → continuous real-time adaptation."
+  },
+  {
+    "id": "c-s01-13",
+    "lecture": "s01",
+    "front": "Surveillance capitalism (Zuboff)",
+    "back": "A new economic order claiming human experience as free raw material for hidden commercial practices of extraction, prediction and sales; behavioural modification; unprecedented concentration of wealth, knowledge and power; instrumentarian power."
+  },
+  {
+    "id": "c-s01-14",
+    "lecture": "s01",
+    "front": "Physical vs. information privacy",
+    "back": "Physical: efforts to seclude/conceal oneself are frustrated. Information: data, facts or conversations one wants to keep secret are acquired or disclosed."
+  },
+  {
+    "id": "c-s01-15",
+    "lecture": "s01",
+    "front": "GDPR – main features (May 2018)",
+    "back": "Clear language · affirmative consent (silence ≠ consent) · transparency (transfers outside EU, purpose, algorithmic decisions) · stronger rights (breach info, portability, access, deletion) · stronger enforcement (EDPB, fines)."
+  },
+  {
+    "id": "c-s01-16",
+    "lecture": "s01",
+    "front": "Digital Services Act",
+    "back": "\"Basic law for the Internet\": cookie banners, online ads, deleting illegal content, algorithmic transparency. Digital Services Board + national coordinators. Applies to digital services in the EU; strictest rules > 45 million monthly users."
+  },
+  {
+    "id": "c-s01-17",
+    "lecture": "s01",
+    "front": "Digital Republic (Susskind) – 4 principles",
+    "back": "Preservation (role of the state), Domination (reduce unaccountable power), Democracy (civic values in technology), Parsimony (restrain only if strictly necessary)."
+  },
+  {
+    "id": "c-s01-18",
+    "lecture": "s01",
+    "front": "Privacy paradox",
+    "back": "The gap between what people say/think they should do about privacy (concern) and what they actually do (sharing data, using data-hungry services)."
+  }
+]

@@ -1,0 +1,525 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s10-01",
+    "lecture": "s10",
+    "difficulty": 1,
+    "prompt": "Which conditions must hold for a causal effect of x on y (Antonakis et al., 2010)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "x must precede y temporally"
+      },
+      {
+        "id": "b",
+        "text": "x must be reliably correlated with y (beyond chance)"
+      },
+      {
+        "id": "c",
+        "text": "The relation between x and y must not be explained by other causes"
+      },
+      {
+        "id": "d",
+        "text": "x and y must be measured on the same scale"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Temporal order, reliable correlation and no alternative explanations."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-02",
+    "lecture": "s10",
+    "difficulty": 2,
+    "prompt": "Why must a regression coefficient sometimes be interpreted only as an association, not as a causal effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reverse causality / simultaneity – y may also influence x"
+      },
+      {
+        "id": "b",
+        "text": "Omitted variables that affect both x and y"
+      },
+      {
+        "id": "c",
+        "text": "The independent variable is (potentially) endogenous"
+      },
+      {
+        "id": "d",
+        "text": "The sample has more than 30 observations"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Only if x is exogenous (e.g. manipulated by an external force) can β be interpreted causally."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-03",
+    "lecture": "s10",
+    "difficulty": 2,
+    "prompt": "When can you derive policy (managerial) recommendations from a regression coefficient?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only when it represents a causal effect, i.e. the independent variable is exogenous"
+      },
+      {
+        "id": "b",
+        "text": "Whenever R² is above 50%"
+      },
+      {
+        "id": "c",
+        "text": "Whenever the coefficient is large"
+      },
+      {
+        "id": "d",
+        "text": "Never"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Recall: you can only derive policy implications from causal effects.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-04",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 3,
+    "prompt": "Which two elements have the strongest (significant) impact on monthly sales?",
+    "options": [
+      {
+        "id": "a",
+        "text": "outlet_number (1.31)"
+      },
+      {
+        "id": "b",
+        "text": "box_size (−0.89)"
+      },
+      {
+        "id": "c",
+        "text": "box_age (−1.08)"
+      },
+      {
+        "id": "d",
+        "text": "online_spend (0.18)"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "box_age has a larger coefficient but is NOT significant (p > 0.05). Among significant variables, outlet_number and box_size (negative) have the largest absolute coefficients – keeping in mind that units differ."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-05",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 2,
+    "prompt": "Based on the analysis, which advertising action would you recommend to Playmobil?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Invest more in billboard advertising"
+      },
+      {
+        "id": "b",
+        "text": "Invest more in online advertising"
+      },
+      {
+        "id": "c",
+        "text": "Stop TV advertising"
+      },
+      {
+        "id": "d",
+        "text": "Increase all channels equally"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Billboard (0.76, p < 0.01) has the strongest significant effect among channels, ahead of TV (0.45). Online spending is not significant.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-06",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 2,
+    "prompt": "Which product should Playmobil prioritise for the next addition to the series?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smaller boxes with fewer pieces"
+      },
+      {
+        "id": "b",
+        "text": "Larger boxes with more pieces"
+      },
+      {
+        "id": "c",
+        "text": "Boxes for older children"
+      },
+      {
+        "id": "d",
+        "text": "No recommendation possible on box size"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "box_size is significant and negative (−0.89, p < 0.001): fewer pieces are associated with higher sales. box_age is not significant, so no recommendation on age suitability.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-07",
+    "lecture": "s10",
+    "case": "hm-regression",
+    "difficulty": 2,
+    "prompt": "Which elements have the strongest impact on H&M's sales?",
+    "options": [
+      {
+        "id": "a",
+        "text": "outlet_number (2.12)"
+      },
+      {
+        "id": "b",
+        "text": "online_spend (1.39)"
+      },
+      {
+        "id": "c",
+        "text": "billboard_spend (0.03)"
+      },
+      {
+        "id": "d",
+        "text": "new_products (−0.21)"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Both are significant with the largest positive coefficients. new_products is not significant."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-08",
+    "lecture": "s10",
+    "case": "hm-regression",
+    "difficulty": 2,
+    "prompt": "Which advertising action would you recommend to H&M?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Invest more in online advertising"
+      },
+      {
+        "id": "b",
+        "text": "Invest more in billboards"
+      },
+      {
+        "id": "c",
+        "text": "Invest more in TV"
+      },
+      {
+        "id": "d",
+        "text": "Invest in new product launches"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "First check p-values (all three channels are significant), then compare the betas: online (1.39) > TV (0.31) > billboard (0.03).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-09",
+    "lecture": "s10",
+    "case": "grocery",
+    "difficulty": 2,
+    "prompt": "Using the refined grocery model, what is the predicted annual spending of a 45-year-old female customer who visits 37 times a year and is a loyalty programme member?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1,316.50 USD"
+      },
+      {
+        "id": "b",
+        "text": "1,136.50 USD"
+      },
+      {
+        "id": "c",
+        "text": "934.00 USD"
+      },
+      {
+        "id": "d",
+        "text": "1,271.50 USD"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "120 + 3.5 × 45 + 45 × 1 + 22 × 37 + 180 × 1 = 120 + 157.5 + 45 + 814 + 180 = 1,316.50.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-10",
+    "lecture": "s10",
+    "case": "grocery",
+    "difficulty": 2,
+    "prompt": "How do you interpret the coefficient of \"Female\" in the grocery model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Female customers spend on average 45 USD more per year than male customers, holding the other variables constant"
+      },
+      {
+        "id": "b",
+        "text": "Women make 45 more visits per year"
+      },
+      {
+        "id": "c",
+        "text": "45% of customers are female"
+      },
+      {
+        "id": "d",
+        "text": "Each additional female customer raises total store revenue by 45 USD"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A dummy coefficient compares the coded group (female = 1) with the baseline (male = 0), ceteris paribus.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-11",
+    "lecture": "s10",
+    "difficulty": 1,
+    "prompt": "Which steps belong to the grocery exercise workflow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Explore the data with descriptive statistics"
+      },
+      {
+        "id": "b",
+        "text": "Transform categorical variables (gender, loyalty, region) into dummies"
+      },
+      {
+        "id": "c",
+        "text": "Visualise visit frequency vs spending in a scatter plot"
+      },
+      {
+        "id": "d",
+        "text": "Formulate hypotheses, run the regression and check face validity"
+      },
+      {
+        "id": "e",
+        "text": "Run a conjoint analysis"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Then re-run a refined model and use it for prediction."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-01",
+    "lecture": "s10",
+    "difficulty": 1,
+    "statement": "Reverse causality means that the dependent variable may also influence the independent variable.",
+    "answer": true,
+    "explanation": "Simultaneity – e.g. firms open more outlets where sales are already high."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-02",
+    "lecture": "s10",
+    "difficulty": 1,
+    "statement": "Omitted variables can bias a regression coefficient so that it should only be interpreted as an association.",
+    "answer": true,
+    "explanation": "The independent variable is then endogenous."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-03",
+    "lecture": "s10",
+    "difficulty": 1,
+    "statement": "A regression coefficient can be interpreted causally if the independent variable is exogenous, e.g. manipulated by an external force.",
+    "answer": true,
+    "explanation": "As in an experiment."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-04",
+    "lecture": "s10",
+    "difficulty": 1,
+    "statement": "Spurious correlations show that two series can be strongly correlated without any causal link.",
+    "answer": true,
+    "explanation": "See tylervigen.com."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-05",
+    "lecture": "s10",
+    "difficulty": 1,
+    "statement": "Identifying causal effects helps to explain past events and to give appropriate policy recommendations.",
+    "answer": true,
+    "explanation": "From the causality section."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-06",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 1,
+    "statement": "In the Playmobil model, online advertising has a significant positive effect on sales.",
+    "answer": false,
+    "explanation": "online_spend: 0.18 with p > 0.05 – not significant."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-07",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 2,
+    "statement": "Because box_age has the largest absolute coefficient, Playmobil should design boxes for younger children.",
+    "answer": false,
+    "explanation": "box_age is not significant (p > 0.05) – no recommendation can be based on it."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-08",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 2,
+    "statement": "A key limitation of the Playmobil model is that the coefficients are not standardised and the variables are measured in different units.",
+    "answer": true,
+    "explanation": "Other limitations: no R² reported, possible omitted variables (price, competitors), seasonality and causality concerns."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-09",
+    "lecture": "s10",
+    "case": "hm-regression",
+    "difficulty": 2,
+    "statement": "The negative and significant coefficient of old_sales suggests a negative sales trend for H&M over the years.",
+    "answer": true,
+    "explanation": "As discussed in the revision session: the sales trend is declining, not increasing."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-10",
+    "lecture": "s10",
+    "case": "hm-regression",
+    "difficulty": 1,
+    "statement": "A major limitation of the H&M model is that the time frame of the dependent variable \"sales\" (monthly, quarterly, annual) is not defined.",
+    "answer": true,
+    "explanation": "Define the DV better; add product types, consumer data, trends and cycles, other spending categories."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-11",
+    "lecture": "s10",
+    "case": "grocery",
+    "difficulty": 1,
+    "statement": "In the grocery model, being a loyalty programme member is associated with 180 USD higher annual spending, all else equal.",
+    "answer": true,
+    "explanation": "Dummy coefficient for membership."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-12",
+    "lecture": "s10",
+    "difficulty": 2,
+    "statement": "In the movie exercise, adding predictors such as runtime and rating to budget should bring the forecast for \"1917\" closer to its actual box office.",
+    "answer": true,
+    "explanation": "Compare simple vs multiple regression forecasts with the actual revenue (365.2 million)."
+  },
+  {
+    "type": "short",
+    "id": "sa-s10-01",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Which two elements have the strongest impact on Playmobil's monthly sales, and what advertising and product actions would you recommend?",
+    "modelAnswer": "First check significance: outlet_number (1.31), billboard (0.76), TV (0.45) and box_size (−0.89) are significant; online_spend and box_age are not. The strongest significant effects are outlet_number (more retail outlets → more sales) and box_size (negative: bigger boxes → lower sales). Advertising: invest in billboards (strongest significant channel), then TV; online spending shows no significant effect. Product: prioritise smaller box sets with fewer pieces; no recommendation on age suitability because box_age is not significant.",
+    "keyPoints": [
+      "Check significance first",
+      "Strongest: outlet_number and box_size (negative)",
+      "Advertising: billboards (then TV), not online",
+      "Product: smaller boxes; box_age not significant"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s10-02",
+    "lecture": "s10",
+    "case": "playmobil",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "What are the limitations of the Playmobil regression, and how would you make the model more meaningful?",
+    "modelAnswer": "Limitations: units of the variables and of monthly sales are not defined and coefficients are not standardised, so sizes are hard to compare; no model fit (R²) is reported; important variables may be omitted (price, competitor activity, seasonality/holiday timing, product theme); causality is unclear (outlets and ad budgets may follow expected sales – reverse causality). Improvements: define the DV and units, standardise coefficients, report R², add price, seasonality and competitor controls, collect more data (e.g. per region/store) or run experiments to identify causal effects.",
+    "keyPoints": [
+      "Units/standardisation missing",
+      "No model fit reported",
+      "Omitted variables (price, seasonality, competition)",
+      "Causality/endogeneity concerns",
+      "Concrete improvements"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s10-03",
+    "lecture": "s10",
+    "case": "hm-regression",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Based on the H&M results: which elements have the strongest impact, which advertising action do you recommend, and is the sales trend positive or negative?",
+    "modelAnswer": "Strongest: outlet_number (2.12) and online_spend (1.39), both significant. Advertising: all three channels are significant, but online advertising has by far the largest beta (1.39 vs TV 0.31 and billboard 0.03), so invest more online. Trend: old_sales has a significant negative coefficient (−1.08), indicating a declining (negative) sales trend over the years. new_products is not significant and cannot be interpreted.",
+    "keyPoints": [
+      "outlet_number and online_spend strongest",
+      "Recommend online advertising",
+      "old_sales negative & significant → negative trend",
+      "new_products not significant"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s10-04",
+    "lecture": "s10",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain why a regression coefficient may not represent a causal effect and what this means for managerial recommendations.",
+    "modelAnswer": "A coefficient is only an association if the independent variable is endogenous: (1) reverse causality/simultaneity – y also affects x; (2) omitted variables influencing both x and y; spurious correlations can be highly significant. Causality requires temporal precedence, reliable correlation and no alternative explanation; a coefficient is causal if x is exogenous (e.g. manipulated in an experiment). Policy recommendations should only be derived from causal effects.",
+    "keyPoints": [
+      "Reverse causality / simultaneity",
+      "Omitted variables",
+      "Causal if x exogenous (experiment)",
+      "Recommendations only from causal effects"
+    ]
+  }
+]

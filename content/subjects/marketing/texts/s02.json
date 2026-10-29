@@ -1,0 +1,122 @@
+{
+  "lecture": "s02",
+  "title": "Session 2 – Descriptive Statistics & Visual Data Analysis",
+  "source": "02_DDM_Student Handout_2627.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Data are metric (numerical) or non-metric (categorical):",
+          "children": [
+            "Nominal: no hierarchy (gender, product categories, regions)",
+            "Ordinal: hierarchy (age groups, purchase frequency)",
+            "Interval: equal intervals, no true zero (Likert scales, NPS, brand attitude)",
+            "Ratio: equal intervals and a true zero (age, income, revenues, sales)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "A questionnaire is a series of structured, mostly closed-ended questions. Use clear, brief language, a natural flow, never lead the respondent, and open with the research purpose, anonymity/privacy and instructions. Content can cover facts, awareness, behaviour frequency, opinions, motivations, intentions, attitudes, demographics and psychographics."
+        },
+        {
+          "kind": "item",
+          "text": "Question types determine the variable type:",
+          "children": [
+            "Dichotomous (yes/no): nominal",
+            "Rank order: ordinal",
+            "Multiple choice – select one: nominal or ordinal; select many: nominal (add \"don't know\" / \"other\")",
+            "Likert scale (5, 7 or 9 points; semantic differential or matrix): metric interval"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Customer experience metrics:",
+          "children": [
+            "CSAT = satisfied customers (4 and 5) / responses × 100",
+            "NPS = % promoters (9–10) − % detractors (0–6) – measures loyalty",
+            "CES = customers agreeing (5, 6, 7) that the company made it easy / responses × 100"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Univariate descriptive statistics:",
+          "children": [
+            "Frequencies: absolute and relative (share of the sample)",
+            "Central tendency: mean (metric), median (not for nominal), mode (any variable)",
+            "Dispersion: variance (average squared deviation from the mean) and standard deviation (its square root, same unit) – metric only"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Bivariate/multivariate analysis examines two or more variables. The Pearson correlation coefficient (−1 to 1) shows direction and strength of a linear relationship between metric variables – not causation."
+        },
+        {
+          "kind": "item",
+          "text": "Visual data analysis helps people make sense of and interact with massive data sets; data visualisation converts raw data into easily understood pictures that enable fast and effective decisions (visual analytics process model, Keim et al., 2010)."
+        },
+        {
+          "kind": "item",
+          "text": "Organise and design visualisations deliberately:",
+          "children": [
+            "Five hat racks (LATCH): location, alphabet, time, category, hierarchy",
+            "Visual variables: size, orientation, shape, colour, value, texture",
+            "Check data source, statistics, aesthetics, coordinates (no cut scales), position, guides, geometry, colour-blind-friendly themes, manipulation"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Choose the chart by purpose:",
+          "children": [
+            "Bar: compare categories or change over time, positive and negative values, ≤ 10 bars",
+            "Pie: proportions, ≤ 6–7 categories",
+            "Line: continuous data over time, several series, trends",
+            "Area: part-to-whole and volume",
+            "Scatter: correlation and clustering; histogram: distribution",
+            "Gauge/bullet: performance against a target (KPIs, NPS); radar: compare several features"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "In Stata you work with the result window, command window, history and variables list, and save your commands in a do-file (Superstore dataset exercise)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Univariate analysis",
+          "text": "Analysis of a single variable (frequencies, central tendency, dispersion)."
+        },
+        {
+          "kind": "item",
+          "term": "Multivariate analysis",
+          "text": "Examines two (bivariate) or more variables; usually one dependent and several independent variables."
+        },
+        {
+          "kind": "item",
+          "term": "Mode",
+          "text": "The most frequent score of a variable – the highest bar in a histogram; computable for any variable."
+        },
+        {
+          "kind": "item",
+          "term": "Median",
+          "text": "The middle score of data arranged by magnitude; not computable for nominal variables."
+        },
+        {
+          "kind": "item",
+          "term": "Standard deviation",
+          "text": "Square root of the variance; measures how spread out observations are, in the unit of the mean."
+        },
+        {
+          "kind": "item",
+          "term": "Visual data analysis",
+          "text": "Procedures to present, navigate, aggregate and see details of data so that complex questions can be answered."
+        }
+      ]
+    }
+  ]
+}

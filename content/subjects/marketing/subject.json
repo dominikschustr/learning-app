@@ -1,0 +1,21 @@
+{
+  "id": "marketing",
+  "name": "Marketing",
+  "short": "MK",
+  "color": "#5B2BC4",
+  "description": "Data-driven Marketing (MM03): Analytics & Datenethik, Statistik, Trends, Text Mining, STP & Cluster, VIU & A/B-Tests, Conjoint, CLV, Regression.",
+  "demo": false,
+  "lectures": [
+    { "id": "s01", "title": "S1 · Data-driven decisions & data ethics" },
+    { "id": "s02", "title": "S2 · Descriptive statistics & visual data analysis" },
+    { "id": "s03", "title": "S3 · Understanding the marketplace & trends" },
+    { "id": "s04", "title": "S4 · Text, data & visual mining" },
+    { "id": "s05", "title": "S5 · Segmentation, targeting & positioning" },
+    { "id": "s06", "title": "S6 · Acquisition: customer value, VIU & A/B testing" },
+    { "id": "s07", "title": "S7 · Conversion: portfolio matrices & conjoint analysis" },
+    { "id": "s08", "title": "S8 · Retention: CRM & customer lifetime value" },
+    { "id": "s09", "title": "S9 · Regression analysis: fundamentals" },
+    { "id": "s10", "title": "S10 · Regression in practice & causality" }
+  ],
+  "examFormat": { "name": "Final Exam", "minutes": 90, "short": 4, "mc": 16, "tf": 10, "order": ["tf", "mc", "short"] }
+}

@@ -1,0 +1,99 @@
+{
+  "lecture": "s08",
+  "title": "Session 8 – Customer Journey: Retention and Relationship Management",
+  "source": "08_DDM_Session 8_Student Handout_2526.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Several trends make CRM important: rising cost of customer acquisition, greater demand for relationship-based marketing, declining brand loyalty and higher switching rates. Marketing moves from mass market to relevance."
+        },
+        {
+          "kind": "item",
+          "text": "CRM analyses marketing databases and uses communication technologies to maximise the lifetime value of each typical customer. It answers questions like: What is a customer worth? Who are our most valuable customers? Why do they churn? How should we allocate resources?"
+        },
+        {
+          "kind": "item",
+          "text": "A customer value-based approach maximises profit, increases ROMI, improves forecasting and resource allocation, raises firm value, reduces cost-to-serve for low-value customers, increases share of wallet and minimises churn among top segments."
+        },
+        {
+          "kind": "item",
+          "text": "Customer value for the firm comes not only from the current transaction but from repurchase (loyalty). Satisfaction is positively linked to retention, word of mouth, spending, price and firm performance (satisfaction–loyalty–profit chain)."
+        },
+        {
+          "kind": "item",
+          "text": "CLV is the present value of the future net cash flows of a (typical) customer: forward-looking, predictive rather than precise, computed with only relevant data and with different methods for different businesses."
+        },
+        {
+          "kind": "item",
+          "text": "CLV analytics combine three groups of metrics:",
+          "children": [
+            "Traditional: market share, sales growth",
+            "Acquisition: acquisition rate, acquisition cost",
+            "Activity: average inter-purchase time, retention/attrition rate, survival rate, lifetime duration"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Key formulas:",
+          "children": [
+            "Rr_t = customers buying in t (having bought in t−1) / customers buying in t−1; Rr = 1 − defection rate",
+            "Average lifetime = 1 / (1 − Rr) (constant retention)",
+            "SR_t = Rr_t × SR_(t−1)",
+            "CLV = lifetime revenues − acquisition costs (per client)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Maru Batting Centre case: compute acquisition costs per segment, break-even, CLV with discounting (lifetime ends when NPV of annual profit < ¥100), choose the most attractive segment and evaluate sponsorship and promotion options (response rate, retention, extra cost)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "CRM",
+          "text": "The practice of analysing and using marketing databases and communication technologies to maximise the lifetime value of each (typical) customer."
+        },
+        {
+          "kind": "item",
+          "term": "Customer lifetime value",
+          "text": "The present value of the future (net) cash flows associated with a particular customer."
+        },
+        {
+          "kind": "item",
+          "term": "Retention rate",
+          "text": "Proportion of customers who purchase in period t, given that they also purchased in period t−1."
+        },
+        {
+          "kind": "item",
+          "term": "Survival rate",
+          "text": "Proportion of customers that remain active until period t from the beginning of observing them."
+        },
+        {
+          "kind": "item",
+          "term": "Lifetime duration",
+          "text": "How long a customer has been associated with a firm."
+        },
+        {
+          "kind": "item",
+          "term": "Average inter-purchase time",
+          "text": "Average time elapsing between purchases."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "CLV calculations appeared in the 2019/20 exam (cohort table) and the Polkaly mini case – practise both formats and always write down your formula before the numbers."
+        }
+      ]
+    }
+  ]
+}

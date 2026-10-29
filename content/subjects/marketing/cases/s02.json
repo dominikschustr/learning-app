@@ -1,0 +1,83 @@
+[
+  {
+    "id": "cx-survey",
+    "title": "Customer experience survey – online shop (200 respondents)",
+    "text": [
+      "An online fashion shop surveyed 200 customers after their last purchase. The answer distributions for three questions are shown below.",
+      "CSAT question: \"How satisfied were you with your purchase?\" (1 = very dissatisfied … 5 = very satisfied)\nNPS question: \"How likely are you to recommend us to a friend?\" (0 … 10)\nCES statement: \"The company made it easy for me to handle my issue.\" (1 = strongly disagree … 7 = strongly agree)"
+    ],
+    "tables": [
+      {
+        "caption": "CSAT (1–5)",
+        "head": [
+          "Score",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "rows": [
+          [
+            "Respondents",
+            "10",
+            "15",
+            "35",
+            "80",
+            "60"
+          ]
+        ]
+      },
+      {
+        "caption": "NPS (0–10)",
+        "head": [
+          "Score group",
+          "0–6",
+          "7–8",
+          "9–10"
+        ],
+        "rows": [
+          [
+            "Respondents",
+            "50",
+            "60",
+            "90"
+          ]
+        ]
+      },
+      {
+        "caption": "CES (1–7)",
+        "head": [
+          "Score",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "rows": [
+          [
+            "Respondents",
+            "10",
+            "20",
+            "20",
+            "30",
+            "30",
+            "50",
+            "40"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "basket-values",
+    "title": "Basket sizes of eight customers",
+    "text": [
+      "A store manager records the number of items in the baskets of eight randomly selected customers: 2, 4, 4, 4, 5, 5, 7, 9."
+    ],
+    "tables": []
+  }
+]

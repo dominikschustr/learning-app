@@ -1,0 +1,50 @@
+[
+  {
+    "id": "c-s10-01",
+    "lecture": "s10",
+    "front": "Causal effect – conditions",
+    "back": "x precedes y in time · x reliably correlated with y · relation not explained by other causes (Antonakis et al., 2010)."
+  },
+  {
+    "id": "c-s10-02",
+    "lecture": "s10",
+    "front": "Endogeneity",
+    "back": "If x is (potentially) endogenous, β is only an association. Main reasons: reverse causality/simultaneity and omitted variables."
+  },
+  {
+    "id": "c-s10-03",
+    "lecture": "s10",
+    "front": "Exogeneity",
+    "back": "If x is exogenous (e.g. manipulated by an external force, as in an experiment), β can be interpreted causally – only then derive policy recommendations."
+  },
+  {
+    "id": "c-s10-04",
+    "lecture": "s10",
+    "front": "Regression exercises (S10)",
+    "back": "Airbnb NYC prices (marketing mix), grocery spending (dummies, prediction), movie box office (simple vs multiple regression forecast), Airbnb Melbourne (take-home)."
+  },
+  {
+    "id": "c-s10-05",
+    "lecture": "s10",
+    "front": "Interpreting a dummy coefficient",
+    "back": "Difference in Y between the coded group (1) and the baseline (0), holding other variables constant."
+  },
+  {
+    "id": "c-s10-06",
+    "lecture": "s10",
+    "front": "Playmobil (exam 2019)",
+    "back": "Significant: outlets 1.31, billboard 0.76, TV 0.45, box_size −0.89. Not: online, box_age. → billboards, smaller boxes; limitations: units, R², omitted variables, causality."
+  },
+  {
+    "id": "c-s10-07",
+    "lecture": "s10",
+    "front": "H&M (mock exam)",
+    "back": "Strongest: outlets 2.12, online 1.39 → invest online. old_sales −1.08 (sig.) → negative trend. Limitation: undefined time frame of \"sales\"."
+  },
+  {
+    "id": "c-s10-08",
+    "lecture": "s10",
+    "front": "Limitations of a regression model (checklist)",
+    "back": "Units/time frame of DV · no standardisation · no R² · omitted variables (price, seasonality, competitors) · causality (reverse, omitted) · face validity · more/better data."
+  }
+]

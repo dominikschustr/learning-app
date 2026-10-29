@@ -1,0 +1,92 @@
+[
+  {
+    "id": "c-s05-01",
+    "lecture": "s05",
+    "front": "STP approach",
+    "back": "Segmentation (identify segments) → Targeting (select segments) → Positioning (create competitive advantage). Better meets needs → loyalty → higher share and profitability, fewer resources needed over time."
+  },
+  {
+    "id": "c-s05-02",
+    "lecture": "s05",
+    "front": "Post-demographic segmentation",
+    "back": "Traditional demographics lose predictive power; people construct lifestyles and identities of their own choosing."
+  },
+  {
+    "id": "c-s05-03",
+    "lecture": "s05",
+    "front": "Market segmentation",
+    "back": "Identifying and grouping consumers into relatively homogeneous segments based on shared needs, characteristics, attitudes or behaviours, to target them with tailored strategies."
+  },
+  {
+    "id": "c-s05-04",
+    "lecture": "s05",
+    "front": "Segmentation – 4 phases",
+    "back": "I Planning & design (objectives, resources) · II Qualitative assessment (database review, deep needs) · III Quantitative measurement (sample, questionnaire, data) · IV Analysis & implementation (cluster analysis, profiling, database tools)."
+  },
+  {
+    "id": "c-s05-05",
+    "lecture": "s05",
+    "front": "Bases vs. descriptors",
+    "back": "Bases: variables that form segments (why they differ – needs, attitudes, behaviour). Descriptors: profile and reach segments (demographics, firmographics, values, purchase frequency)."
+  },
+  {
+    "id": "c-s05-06",
+    "lecture": "s05",
+    "front": "Cluster analysis",
+    "back": "Groups consumers on several variables: minimise distance within clusters, maximise distance between centroids. Robustness: split sample randomly in two, re-run, compare agreement."
+  },
+  {
+    "id": "c-s05-07",
+    "lecture": "s05",
+    "front": "Segment attractiveness criteria",
+    "back": "I Size & growth · II Structural characteristics (competition, saturation, protectability, environmental risk) · III Product-market fit (fit, relationship with other segments, profitability)."
+  },
+  {
+    "id": "c-s05-08",
+    "lecture": "s05",
+    "front": "Selecting target segments",
+    "back": "Single segment · selective specialisation · range of offerings to one segment · many offerings to many segments · full market coverage."
+  },
+  {
+    "id": "c-s05-09",
+    "lecture": "s05",
+    "front": "GE/McKinsey matrix – steps",
+    "back": "Specify & weight drivers → rate segments → weights × ratings → plot (attractiveness × company strengths) → sensitivity analysis."
+  },
+  {
+    "id": "c-s05-10",
+    "lecture": "s05",
+    "front": "GE/McKinsey strategies",
+    "back": "Strong: protect/refocus (low) · expand selectively (avg) · build preemptive position (high).\nMedium: strict cash flow (low) · preserve position (avg) · expand selectively (high).\nWeak: exit (low) · harvest (avg) · capitalize on attractiveness (high)."
+  },
+  {
+    "id": "c-s05-11",
+    "lecture": "s05",
+    "front": "Differentiation vs. positioning",
+    "back": "Differentiation: tangible/intangible differences vs competitors. Positioning: strategies to differentiate the offering in the minds of target customers – distinct, relevant, sustainable."
+  },
+  {
+    "id": "c-s05-12",
+    "lecture": "s05",
+    "front": "7 steps of positioning analysis",
+    "back": "Target segment → competitive offerings → differentiator dimensions → customer ratings → perceptual map → integrate preferences/choice/share → positioning statement."
+  },
+  {
+    "id": "c-s05-13",
+    "lecture": "s05",
+    "front": "Perceptual map",
+    "back": "Visual image of consumers' mental landscape: short distance = similar brands; axes = underlying dimensions; vectors = attributes. Easy to read, but oversimplifies."
+  },
+  {
+    "id": "c-s05-14",
+    "lecture": "s05",
+    "front": "Brand association map",
+    "back": "Network of associations around a brand (e.g. Nielsen, from consumer conversations); proximity = statistical correlation; no fixed axes; rich but subjective."
+  },
+  {
+    "id": "c-s05-15",
+    "lecture": "s05",
+    "front": "Exam pattern: cluster tables",
+    "back": "Least satisfied → lowest satisfaction score. Focus → highest importance scores of that cluster. Attractiveness → size, satisfaction, visit frequency. GE matrix needs company strengths – otherwise \"not enough information\"."
+  }
+]

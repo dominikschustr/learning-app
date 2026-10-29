@@ -1,0 +1,1017 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s06-01",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "Which are the first four stages of the customer acquisition funnel?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Awareness, Interest, Desire, Action"
+      },
+      {
+        "id": "b",
+        "text": "Awareness, Interest, Consideration, Intent"
+      },
+      {
+        "id": "c",
+        "text": "Awareness, Intent, Evaluation, Purchase"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The six-step acquisition funnel: awareness → interest → consideration → intent → evaluation → purchase. AIDA is a different (communication) model. Past exam question.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-02",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "Which statements about customer acquisition cost (CAC) are true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CAC is to be optimised"
+      },
+      {
+        "id": "b",
+        "text": "CAC is to be maximised"
+      },
+      {
+        "id": "c",
+        "text": "CAC has no time reference"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "CAC = marketing costs / customers acquired, calculated for a specific campaign or time window – so it has a time reference. Past exam question.",
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-03",
+    "lecture": "s06",
+    "difficulty": 1,
+    "prompt": "Why is customer acquisition important for a business?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It generates money to meet costs, pay employees and reinvest in growth"
+      },
+      {
+        "id": "b",
+        "text": "It shows evidence of traction to investors, partners and influencers"
+      },
+      {
+        "id": "c",
+        "text": "Acquisition costs have decreased strongly in recent years"
+      },
+      {
+        "id": "d",
+        "text": "It replaces the need for customer retention"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "The cost of acquiring customers increased by over 50% in five years (HubSpot) – which makes measuring CAC and CLV crucial."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-04",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "Which tools can be used to acquire customers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customer referrals"
+      },
+      {
+        "id": "b",
+        "text": "Search engine optimisation (SEO)"
+      },
+      {
+        "id": "c",
+        "text": "Social listening"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Referrals and SEO drive new customers directly; social listening helps identify and engage prospects. Past exam question.",
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-05",
+    "lecture": "s06",
+    "difficulty": 1,
+    "prompt": "Which statements describe the three product levels?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Core product – satisfies the central underlying need (\"a customer buys a three-inch hole, not a drill bit\")"
+      },
+      {
+        "id": "b",
+        "text": "Tangible product – features, styling, quality, brand name, packaging"
+      },
+      {
+        "id": "c",
+        "text": "Augmented product – additional services and features that enhance the experience"
+      },
+      {
+        "id": "d",
+        "text": "Core product – the warranty and installation services"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Warranties and installation are service attributes that augment the product."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-06",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "Which belong to the SYMBOLIC attributes in the product component model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brand name and trademark"
+      },
+      {
+        "id": "b",
+        "text": "Styling and packaging design"
+      },
+      {
+        "id": "c",
+        "text": "Price, quality and quality–price ratio"
+      },
+      {
+        "id": "d",
+        "text": "Repair, maintenance and warranties"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Repair, maintenance, warranties, installation, financing, spare parts and deliveries are service attributes."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-07",
+    "lecture": "s06",
+    "difficulty": 1,
+    "prompt": "In the customer value equation, which are COSTS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monetary costs"
+      },
+      {
+        "id": "b",
+        "text": "Perceived risk"
+      },
+      {
+        "id": "c",
+        "text": "Inconvenience"
+      },
+      {
+        "id": "d",
+        "text": "Psychological benefits"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Value = benefits (functional, psychological, economic) − costs (monetary, perceived risk, inconvenience)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-08",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "Which are objective measures of customer value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internal engineering assessment"
+      },
+      {
+        "id": "b",
+        "text": "Indirect survey questions"
+      },
+      {
+        "id": "c",
+        "text": "Value-in-use (VIU)"
+      },
+      {
+        "id": "d",
+        "text": "Focus groups"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Focus groups, direct survey questions and importance ratings are perceptual, unconstrained measures."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-09",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "Which measures of customer value are PERCEPTUAL?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focus groups"
+      },
+      {
+        "id": "b",
+        "text": "Importance ratings"
+      },
+      {
+        "id": "c",
+        "text": "Conjoint analysis"
+      },
+      {
+        "id": "d",
+        "text": "Benchmarking"
+      },
+      {
+        "id": "e",
+        "text": "Choice models"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Choice models (e.g. multinomial logit) and data mining are behavioural measures – they use past behaviour."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-10",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "Which are limitations of importance ratings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Respondents can rate everything as very important"
+      },
+      {
+        "id": "b",
+        "text": "No trade-offs, so willingness to pay is hard to determine"
+      },
+      {
+        "id": "c",
+        "text": "Rated items often do not drive actual choice behaviour"
+      },
+      {
+        "id": "d",
+        "text": "They require past purchase data"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Importance ratings are unconstrained; they do not need past purchase data."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-11",
+    "lecture": "s06",
+    "difficulty": 3,
+    "prompt": "Which statements on the comparison of customer value measures are correct (Lilien et al.)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Objective value measures are very costly per respondent but deliver very high insight"
+      },
+      {
+        "id": "b",
+        "text": "Behavioural value measures need past purchase data"
+      },
+      {
+        "id": "c",
+        "text": "Behavioural measures work well for lead users and in dynamic, changing markets"
+      },
+      {
+        "id": "d",
+        "text": "Unconstrained perceived measures are cheap but have low predictive power"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "Behavioural measures need past purchase data and are NOT good in dynamic markets or for lead users."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-12",
+    "lecture": "s06",
+    "case": "viu-chips",
+    "difficulty": 1,
+    "prompt": "What is the annual cost of the incumbent chips for ESCP?",
+    "options": [
+      {
+        "id": "a",
+        "text": "400 chips × 3 € = 1,200 €"
+      },
+      {
+        "id": "b",
+        "text": "400 chips × 2 changes per year × (6 € − 3 €) = 2,400 €"
+      },
+      {
+        "id": "c",
+        "text": "400 chips × 2 changes per year × 6 € = 4,800 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "ESCP pays 6 € per chip and replaces 400 chips twice a year. The supplier margin is irrelevant for the customer's cost.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-13",
+    "lecture": "s06",
+    "case": "viu-chips",
+    "difficulty": 2,
+    "prompt": "Which of the following is the VIU for the new chips (without shutdown costs)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "16 €"
+      },
+      {
+        "id": "b",
+        "text": "14 €"
+      },
+      {
+        "id": "c",
+        "text": "12 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "The new chip lasts a full year and replaces two old chips: 2 × 6 € = 12 €. The supplier's margins are distractors.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-14",
+    "lecture": "s06",
+    "case": "viu-chips",
+    "difficulty": 2,
+    "prompt": "Which of the following is the shutdown cost for the OLD chips per year?",
+    "options": [
+      {
+        "id": "a",
+        "text": "500 €"
+      },
+      {
+        "id": "b",
+        "text": "1,000 €"
+      },
+      {
+        "id": "c",
+        "text": "1,500 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Old chips: maintenance every 6 months → 2 shutdowns × 1,000 € = 2,000 € per year – not among the options.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-15",
+    "lecture": "s06",
+    "case": "viu-chips",
+    "difficulty": 1,
+    "prompt": "Which of the following is the shutdown cost for the NEW chips per year?",
+    "options": [
+      {
+        "id": "a",
+        "text": "500 €"
+      },
+      {
+        "id": "b",
+        "text": "1,000 €"
+      },
+      {
+        "id": "c",
+        "text": "1,500 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "New chips: maintenance every 12 months → 1 shutdown × 1,000 € = 1,000 € per year.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-16",
+    "lecture": "s06",
+    "case": "viu-chips",
+    "difficulty": 3,
+    "prompt": "Which of the following is the VIU for the new chips, including shutdown costs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "14.50 €"
+      },
+      {
+        "id": "b",
+        "text": "15.00 €"
+      },
+      {
+        "id": "c",
+        "text": "16.20 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Shutdown savings = 2,000 € − 1,000 € = 1,000 € per year, spread over 400 new chips = 2.50 € per chip. VIU = 12 € + 2.50 € = 14.50 €. Check: old total 4,800 + 2,000 = 6,800 € = 400 × VIU + 1,000 → VIU = 14.50 €.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-17",
+    "lecture": "s06",
+    "case": "viu-chips",
+    "difficulty": 2,
+    "prompt": "The lowest price ESCP can get for the new chips is 14 € per chip. What do you recommend, based on the VIU including shutdown costs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Purchase the new technology of chips"
+      },
+      {
+        "id": "b",
+        "text": "Do NOT purchase the new technology of chips"
+      },
+      {
+        "id": "c",
+        "text": "You cannot give a sufficient answer based on your calculations"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "VIU (14.50 €) is the maximum willingness to pay; the price (14 €) is below it, so ESCP saves 0.50 € per chip.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-18",
+    "lecture": "s06",
+    "case": "viu-chips",
+    "difficulty": 3,
+    "prompt": "Now assume that the shutdown costs increase from 1,000 € to 1,200 €. How does this affect the VIU of the new chips?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No proper answer is possible, based on the data"
+      },
+      {
+        "id": "b",
+        "text": "VIU will decrease, and ESCP should not purchase the new chips"
+      },
+      {
+        "id": "c",
+        "text": "VIU will increase, but not enough to justify the price per chip"
+      },
+      {
+        "id": "d",
+        "text": "VIU will increase, so that ESCP should purchase the new chips"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Savings = 2 × 1,200 − 1,200 = 1,200 € / 400 = 3 € → VIU = 12 + 3 = 15 € > 14 € price → purchase.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-19",
+    "lecture": "s06",
+    "case": "viu-rings",
+    "difficulty": 1,
+    "prompt": "What is the VIU of the Y-rings without shutdown costs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "8 €"
+      },
+      {
+        "id": "b",
+        "text": "16 €"
+      },
+      {
+        "id": "c",
+        "text": "28 €"
+      },
+      {
+        "id": "d",
+        "text": "32 €"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "One Y-ring replaces two Z-rings: 2 × 8 € = 16 €.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-20",
+    "lecture": "s06",
+    "case": "viu-rings",
+    "difficulty": 3,
+    "prompt": "What is the VIU of the Y-rings including shutdown costs of 3,000 € per shutdown?",
+    "options": [
+      {
+        "id": "a",
+        "text": "16 €"
+      },
+      {
+        "id": "b",
+        "text": "22 €"
+      },
+      {
+        "id": "c",
+        "text": "28 €"
+      },
+      {
+        "id": "d",
+        "text": "40 €"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Z-rings: 4 shutdowns × 3,000 = 12,000 €/year; Y-rings: 2 shutdowns = 6,000 €. Savings 6,000 € over 500 Y-rings per year (250 × 2) = 12 € per ring. VIU = 16 + 12 = 28 €.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-21",
+    "lecture": "s06",
+    "case": "web-kpis",
+    "difficulty": 3,
+    "prompt": "Which statements on the two website versions are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Version A has the higher click-through rate"
+      },
+      {
+        "id": "b",
+        "text": "Version B has the higher conversion rate"
+      },
+      {
+        "id": "c",
+        "text": "Version B has the lower ad cost per sale"
+      },
+      {
+        "id": "d",
+        "text": "Version A has the higher return on ad investment"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "CTR: A 6.49% vs B 5.28%. Conversion: A 0.375% vs B 0.46%. Cost per sale: A 24.00 € vs B ≈ 21.74 €. Revenue A = 75 × 108 = 8,100 €, ROI = (8,100 − 1,800)/1,800 = 3.50; revenue B = 92 × 98 = 9,016 €, ROI = (9,016 − 2,000)/2,000 ≈ 3.51 → B is (slightly) better."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-22",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "In hypothesis testing, which statements about errors are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A type I error (α) means rejecting H0 although it is correct"
+      },
+      {
+        "id": "b",
+        "text": "A type II error (β) means not rejecting H0 although it is incorrect"
+      },
+      {
+        "id": "c",
+        "text": "A test can control both errors simultaneously"
+      },
+      {
+        "id": "d",
+        "text": "Usually α is fixed (e.g. 5% in social sciences) and a test minimising β is used"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "A test cannot control both errors at the same time."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-23",
+    "lecture": "s06",
+    "difficulty": 3,
+    "prompt": "Which KPI and test fit together in the sustainable t-shirt A/B test?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Willingness to buy (intention, metric) – t-test"
+      },
+      {
+        "id": "b",
+        "text": "Choice (purchase yes/no, categorical) – chi-square test"
+      },
+      {
+        "id": "c",
+        "text": "Willingness to buy – chi-square goodness-of-fit test"
+      },
+      {
+        "id": "d",
+        "text": "Choice – regression R²"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "The t-test compares the means of two groups; the chi-square test compares observed vs expected frequencies (test of independence)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s06-24",
+    "lecture": "s06",
+    "difficulty": 1,
+    "prompt": "Which are benefits of A/B testing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increased website traffic"
+      },
+      {
+        "id": "b",
+        "text": "Higher conversion rate"
+      },
+      {
+        "id": "c",
+        "text": "Lower bounce rate"
+      },
+      {
+        "id": "d",
+        "text": "Lower cart abandonment"
+      },
+      {
+        "id": "e",
+        "text": "It never requires a control group"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "The control (A) is the existing version; the challenger (B) is the variation."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-01",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "CAC = marketing costs associated with a campaign / number of customers acquired from that campaign.",
+    "answer": true,
+    "explanation": "For an accurate CAC include all marketing-related costs (campaign spend, salaries, …)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-02",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "For marketers, services such as concerts or MBA programmes can also be products.",
+    "answer": true,
+    "explanation": "A product is anything offered for attention, acquisition, use or consumption that might satisfy a want or need."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-03",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "\"In the factory we make cosmetics; in the store we sell hope\" (Revlon) illustrates the augmented product.",
+    "answer": false,
+    "explanation": "It illustrates the CORE product – the underlying need or benefit."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-04",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "In the new product development process, testing includes pre-test and pre-launch forecasting and test marketing.",
+    "answer": true,
+    "explanation": "NPDP: opportunity identification → design → testing → introduction → life cycle management, with GO/NO decisions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-05",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Toyota's Lexus succeeded by offering European-style benefits at a price advantage and reduced perceived risk.",
+    "answer": true,
+    "explanation": "Benefits: engineering, safety, style, fit, finish. Costs: lower price than Mercedes, reduced perceived risk."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-06",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Value-in-use can be calculated as the maximum willingness to pay for a focal product, given a reference product.",
+    "answer": true,
+    "explanation": "Reference: e.g. the previous product version or the most important competitor."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-07",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Indirect survey questions focus on the worth of the entire product offering.",
+    "answer": false,
+    "explanation": "They focus on CHANGES (\"If we could increase the life of your cartridges by 20%, how much would it be worth to you?\")."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-08",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Focus groups bring five to ten customers together with a trained moderator; groupthink can lead to homogeneous results.",
+    "answer": true,
+    "explanation": "They aim to understand shared perceptions of a well-defined target group."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-09",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Conjoint analysis is a constrained perceptual measure of customer value.",
+    "answer": true,
+    "explanation": "Respondents rate systematically varied offerings, which forces trade-offs."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-10",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Benchmarking asks respondents how much more (or less) they would pay if features were added to (or removed from) a benchmark offering.",
+    "answer": true,
+    "explanation": "It determines willingness to pay per attribute."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-11",
+    "lecture": "s06",
+    "difficulty": 2,
+    "statement": "The multinomial logit model states that the purchase probability of brand A equals A's perceived benefit divided by the sum of perceived benefits of all brands.",
+    "answer": true,
+    "explanation": "A simple and powerful behavioural choice model."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-12",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Inferential statistics draws conclusions about a population based on a sample.",
+    "answer": true,
+    "explanation": "Two goals: estimation and hypothesis testing."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-13",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "The null hypothesis H0 is the hypothesis of an effect.",
+    "answer": false,
+    "explanation": "H0 is the hypothesis of NO effect; H1 is the hypothesised effect. The aim of a test is to reject H0."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-14",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "In an A/B test, the existing design is the control (version A) and the new design the challenger (version B).",
+    "answer": true,
+    "explanation": "Ideally the same share of visitors sees each version."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-15",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Testing different product photos or where shipping costs are displayed can lower shopping cart abandonment.",
+    "answer": true,
+    "explanation": "40–75% of e-commerce customers leave items in their cart."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-16",
+    "lecture": "s06",
+    "difficulty": 1,
+    "statement": "Google and Facebook routinely divert a fraction of users, without telling them, to slightly different page versions and compare their behaviour.",
+    "answer": true,
+    "explanation": "A/B testing turns design questions into data-driven matters – discussed in the context of surveillance capitalism."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-17",
+    "lecture": "s06",
+    "case": "ab-decisions",
+    "difficulty": 1,
+    "statement": "You want to know if the design of your rebranded newsletter generates a higher click-through rate than your old newsletter.",
+    "answer": true,
+    "explanation": "Two versions of the same element, one KPI → classic A/B test."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-18",
+    "lecture": "s06",
+    "case": "ab-decisions",
+    "difficulty": 2,
+    "statement": "You want to know if your female customers are more likely to buy your new t-shirt than male customers are to buy your new shoes.",
+    "answer": false,
+    "explanation": "You compare different products AND different groups – not two versions of one element. Likelihood across customer characteristics calls for regression, not an A/B test."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-19",
+    "lecture": "s06",
+    "case": "ab-decisions",
+    "difficulty": 1,
+    "statement": "You want to know if changing your checkout button colour from grey to dark blue increases the share of people who proceed with checkout.",
+    "answer": true,
+    "explanation": "One element varied, randomised split, conversion as KPI."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-20",
+    "lecture": "s06",
+    "case": "viu-chips",
+    "difficulty": 1,
+    "statement": "The new chips should be bought at 14 € because their VIU including shutdown costs is 14.50 €.",
+    "answer": true,
+    "explanation": "Price below VIU → value for ESCP."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s06-21",
+    "lecture": "s06",
+    "case": "viu-rings",
+    "difficulty": 1,
+    "statement": "A purchase price of 25 € per Y-ring is justified when shutdown costs are considered.",
+    "answer": true,
+    "explanation": "VIU incl. shutdowns = 28 € > 25 €. Without shutdowns (VIU 16 €) it would not be."
+  },
+  {
+    "type": "short",
+    "id": "sa-s06-01",
+    "lecture": "s06",
+    "case": "viu-rings",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Determine the VIU of the Y-rings (a) without and (b) with shutdown costs of 3,000 € per shutdown. Show your calculations.",
+    "modelAnswer": "a) Z-rings are changed 4× per year → 4 × 8 € = 32 € per ring position and year. A Y-ring lasts twice as long (changed 2× per year), so one Y-ring replaces two Z-rings: VIU = 2 × 8 € = 16 €.\nb) Annual cost with Z-rings: 250 × 4 × 8 € = 8,000 € + 4 shutdowns × 3,000 € = 12,000 € → 20,000 €. With Y-rings: 250 × 2 × VIU + 2 × 3,000 € = 500 × VIU + 6,000 €. Indifference: 500 × VIU + 6,000 = 20,000 → VIU = 28 €.",
+    "keyPoints": [
+      "VIU without shutdowns = 16 €",
+      "Z-ring shutdown costs 12,000 € vs Y-ring 6,000 € per year",
+      "Savings 6,000 € / 500 rings = 12 € per ring",
+      "VIU with shutdowns = 28 €"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s06-02",
+    "lecture": "s06",
+    "case": "viu-rings",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Explain the (high) difference between the two VIU results and whether a price of 25 € per Y-ring justifies a purchase.",
+    "modelAnswer": "The first VIU only reflects the material cost replaced by the longer lifespan (2 × 8 € = 16 €). The second VIU also includes the downtime costs avoided: each extra shutdown costs 3,000 €, far more than the rings themselves, so halving the number of shutdowns adds 12 € of value per ring (28 €). At 25 € the purchase is justified: the price is below the maximum willingness to pay of 28 €, saving 3 € per ring (1,500 € per year). Without counting shutdowns, 25 € would look too expensive – showing why VIU must include all usage costs.",
+    "keyPoints": [
+      "First VIU only material cost (16 €)",
+      "Second VIU includes avoided shutdown costs (28 €)",
+      "Shutdown costs are large relative to ring price",
+      "25 € < 28 € → purchase is justified"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s06-03",
+    "lecture": "s06",
+    "case": "web-kpis",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Calculate click-through rate, conversion rate, ad cost per sale and return on ad investment for both website versions. Which one performs better?",
+    "modelAnswer": "A: CTR = 1,298/20,000 = 6.49%; conversion = 75/20,000 = 0.375%; cost per sale = 1,800/75 = 24.00 €; revenue = 75 × 108 = 8,100 €; ROI = (8,100 − 1,800)/1,800 = 3.50 (350%).\nB: CTR = 1,056/20,000 = 5.28%; conversion = 92/20,000 = 0.46%; cost per sale = 2,000/92 ≈ 21.74 €; revenue = 92 × 98 = 9,016 €; ROI = (9,016 − 2,000)/2,000 ≈ 3.51 (351%).\nVersion B performs (slightly) better on the bottom-line KPIs (conversion, cost per sale, ROI) although A generates more clicks.",
+    "keyPoints": [
+      "CTR A 6.49%, B 5.28%",
+      "Conversion A 0.375%, B 0.46%",
+      "Cost per sale A 24 €, B ≈ 21.74 €",
+      "ROI A 3.50, B ≈ 3.51 → B better"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s06-04",
+    "lecture": "s06",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain type I and type II errors and how a statistical test deals with them.",
+    "modelAnswer": "A type I error (α) occurs when H0 is rejected although it is correct – we believe in an effect that does not exist. A type II error (β) occurs when H0 is not rejected although it is wrong – we miss an existing effect. A test cannot control both at the same time; therefore we fix the type I error at a threshold (usually 5% in social sciences) and use a test that minimises the type II error.",
+    "keyPoints": [
+      "Type I: reject true H0 (α)",
+      "Type II: keep false H0 (β)",
+      "Cannot control both simultaneously",
+      "Fix α (5%) and minimise β"
+    ]
+  }
+]

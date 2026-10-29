@@ -1,0 +1,98 @@
+[
+  {
+    "id": "c-s02-01",
+    "lecture": "s02",
+    "front": "Nominal data",
+    "back": "Non-metric, no hierarchy. E.g. gender, product category, region, purchase occasion."
+  },
+  {
+    "id": "c-s02-02",
+    "lecture": "s02",
+    "front": "Ordinal data",
+    "back": "Non-metric with a hierarchy. E.g. age groups, purchase frequency, emotions."
+  },
+  {
+    "id": "c-s02-03",
+    "lecture": "s02",
+    "front": "Interval data",
+    "back": "Metric, equal intervals but no true zero. E.g. IQ, Likert scales (satisfaction, NPS, brand attitude)."
+  },
+  {
+    "id": "c-s02-04",
+    "lecture": "s02",
+    "front": "Ratio data",
+    "back": "Metric, equal intervals and a true zero. E.g. age, income, revenues, sales."
+  },
+  {
+    "id": "c-s02-05",
+    "lecture": "s02",
+    "front": "Question types → variable type",
+    "back": "Dichotomous → nominal\nRank order → ordinal\nMC select one → nominal or ordinal\nMC select many → nominal\nLikert / semantic differential → metric interval"
+  },
+  {
+    "id": "c-s02-06",
+    "lecture": "s02",
+    "front": "CSAT",
+    "back": "Customer Satisfaction Score = number of satisfied customers (4 and 5 on a 5-point scale) / number of responses × 100."
+  },
+  {
+    "id": "c-s02-07",
+    "lecture": "s02",
+    "front": "NPS",
+    "back": "Net Promoter Score – measures loyalty: \"How likely are you to recommend…?\" (0–10). NPS = % promoters (9–10) − % detractors (0–6). Passives: 7–8."
+  },
+  {
+    "id": "c-s02-08",
+    "lecture": "s02",
+    "front": "CES",
+    "back": "Customer Effort Score: \"The company made it easy for me to handle my issue\" (1–7). CES = respondents with 5, 6, 7 / responses × 100."
+  },
+  {
+    "id": "c-s02-09",
+    "lecture": "s02",
+    "front": "Mean / median / mode",
+    "back": "Mean: average (metric data). Median: middle score after ordering (not for nominal). Mode: most frequent value – highest bar in a histogram (any variable)."
+  },
+  {
+    "id": "c-s02-10",
+    "lecture": "s02",
+    "front": "Variance & standard deviation",
+    "back": "Variance: average of the squared differences from the mean. SD: square root of the variance, same unit as the mean. Metric variables only."
+  },
+  {
+    "id": "c-s02-11",
+    "lecture": "s02",
+    "front": "Pearson correlation",
+    "back": "Direction and strength of a LINEAR relationship between two metric variables; −1 ≤ r ≤ 1. r = 1 perfect positive, 0 no linear relationship, −1 perfect negative."
+  },
+  {
+    "id": "c-s02-12",
+    "lecture": "s02",
+    "front": "Data analysis techniques",
+    "back": "Descriptive: summarise characteristics of data. Causal: relationships and impact of a change in one variable on another. Exploratory: discover new connections."
+  },
+  {
+    "id": "c-s02-13",
+    "lecture": "s02",
+    "front": "LATCH – five ways to organise information",
+    "back": "Location, Alphabet, Time, Category, Hierarchy (Wurman)."
+  },
+  {
+    "id": "c-s02-14",
+    "lecture": "s02",
+    "front": "Visual variables",
+    "back": "Size, orientation (hierarchies), shape, colour (categories), value, texture."
+  },
+  {
+    "id": "c-s02-15",
+    "lecture": "s02",
+    "front": "Which chart when?",
+    "back": "Bar: compare categories/change over time (≤10 bars). Pie: proportions (≤6–7 categories). Line: continuous data over time, trends. Area: part-to-whole volume. Scatter: correlation/clusters. Histogram: distribution. Gauge/bullet: KPI vs target, NPS. Radar: compare features."
+  },
+  {
+    "id": "c-s02-16",
+    "lecture": "s02",
+    "front": "Grammar for visual creation",
+    "back": "Data source · statistics · aesthetics · coordinates (scale not cut) · position · guides (not too many labels) · geometry · colour theme (colour-blind friendly) · manipulation (unbiased) · subjective appeal."
+  }
+]

@@ -28,6 +28,14 @@ Erster Anwendungsfall: **Management Control – Midterm**.
 Das Format ist pro Fach in `subject.json` hinterlegt (`examFormat`) und damit für andere
 Fächer anpassbar.
 
+### Prüfungsformat Marketing (Data-driven Marketing, MM03)
+
+Aufbau wie die Probeklausuren (2019/20, 2023/24, 2025/26 und die Revision Session): Teil A True/False zu Theorie und
+Frameworks, Teil B Rechen- und Interpretationsaufgaben (Regression, VIU, Trend Canvas, Cluster, A/B-Test) als
+Single/Multiple Choice zu einer Fallbeschreibung mit Tabelle, Teil C Mini-Case (CLV, Conjoint, BCG/GE-Matrix) mit
+offenen Antworten. In der App: 10 True/False → 16 Multiple Choice → 4 Kurzantworten, 90 Minuten
+(`examFormat.order = ["tf", "mc", "short"]`). Fragen zum selben Fall stehen im Test hintereinander.
+
 ## 3. Inhalte: vom Dokument zur Frage
 
 Die App generiert **keine** Fragen selbst. Der Ablauf:
@@ -185,3 +193,5 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 8. Echte Inhalte aus den Key Messages S1a–S3&4 (118 Fragen, 78 Karten) ✓ – später auf 246 Fragen erweitert, die jede Key Message, Definition und jeden Denkanstoß abdecken
 9. Kapitel mit Level, Kapiteltests, Lernpfad mit Abschlusstest ✓
 10. Deployment auf Vercel
+11. Zweites Fach **Marketing**: 10 Kapitel (eine Vorlesung je Kapitel), 369 Fragen, 141 Karten, 27 Fallstudien
+    aus den Klausuraufgaben, Lesetexte als Folienzusammenfassung ✓

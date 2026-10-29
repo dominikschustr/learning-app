@@ -1,0 +1,443 @@
+[
+  {
+    "id": "polkaly-segments",
+    "title": "Mini case Polkaly – strategic segments (mock exam)",
+    "text": [
+      "Polkaly is a digital solution company. Its product is an interactive tool that allows presenters to better engage with their audience. With the recent change in the market, it observed a surge in demand for tools for distant meetings, especially in the education sector. Polkaly considers introducing a new real-time project management tool that lets presenters interact with and monitor audiences in multiple teams simultaneously. It separates its clients into four strategic segments."
+    ],
+    "tables": [
+      {
+        "caption": "Strategic segments",
+        "head": [
+          "",
+          "Consultancy",
+          "Education",
+          "Public Sector",
+          "Retail"
+        ],
+        "rows": [
+          [
+            "Segment size",
+            "30%",
+            "15%",
+            "50%",
+            "5%"
+          ],
+          [
+            "Average annual growth in revenue",
+            "5%",
+            "3%",
+            "1%",
+            "2%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polkaly-conjoint",
+    "title": "Mini case Polkaly – conjoint analysis (mock exam)",
+    "text": [
+      "Polkaly is a digital solution company. Its product is an interactive tool that allows presenters to better engage with their audience. With the recent change in the market, it observed a surge in demand for tools for distant meetings, especially in the education sector. Polkaly considers introducing a new real-time project management tool that lets presenters interact with and monitor audiences in multiple teams simultaneously. It separates its clients into four strategic segments.",
+      "To be sure about introducing the new product, Polkaly ran a rating-based conjoint analysis (1–10 scale) with representative respondents from each segment."
+    ],
+    "tables": [
+      {
+        "caption": "Rating-based conjoint (1–10 scale): part-worth utilities",
+        "head": [
+          "Attribute – level",
+          "Consultancy",
+          "Education",
+          "Public Sector",
+          "Retail"
+        ],
+        "rows": [
+          [
+            "Live chat – side window",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Live chat – in-window display",
+            "−0.23",
+            "1.24",
+            "−0.089",
+            "2.92"
+          ],
+          [
+            "Breakout groups – no groups",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Breakout groups – limited (max 10)",
+            "1.81",
+            "0.89",
+            "−0.21",
+            "1.25"
+          ],
+          [
+            "Breakout groups – unlimited",
+            "0.19",
+            "2.94",
+            "−1.08",
+            "1.02"
+          ],
+          [
+            "Max participants – 20",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Max participants – 50",
+            "2.31",
+            "0.28",
+            "1.92",
+            "2.01"
+          ],
+          [
+            "Max participants – 100",
+            "1.02",
+            "1.59",
+            "0.20",
+            "0.83"
+          ],
+          [
+            "Price per licence/year – 30",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Price – 50",
+            "−1.22",
+            "−2.31",
+            "−3.72",
+            "−0.83"
+          ],
+          [
+            "Price – 70",
+            "−2.24",
+            "−2.71",
+            "−2.34",
+            "−1.21"
+          ],
+          [
+            "Baseline utility",
+            "2.84",
+            "4.18",
+            "5.23",
+            "3.17"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polkaly-full",
+    "title": "Mini case Polkaly – all information (mock exam)",
+    "text": [
+      "Polkaly is a digital solution company. Its product is an interactive tool that allows presenters to better engage with their audience. With the recent change in the market, it observed a surge in demand for tools for distant meetings, especially in the education sector. Polkaly considers introducing a new real-time project management tool that lets presenters interact with and monitor audiences in multiple teams simultaneously. It separates its clients into four strategic segments.",
+      "Assume 20% of revenue must be subtracted for overhead costs when computing customer lifetime value. Among all product attributes, the unlimited group function and the in-window chat display are Polkaly's truly competitive advantages."
+    ],
+    "tables": [
+      {
+        "caption": "Strategic segments",
+        "head": [
+          "",
+          "Consultancy",
+          "Education",
+          "Public Sector",
+          "Retail"
+        ],
+        "rows": [
+          [
+            "Segment size",
+            "30%",
+            "15%",
+            "50%",
+            "5%"
+          ],
+          [
+            "Average annual growth in revenue",
+            "5%",
+            "3%",
+            "1%",
+            "2%"
+          ]
+        ]
+      },
+      {
+        "caption": "Customer profitability",
+        "head": [
+          "",
+          "Consultancy",
+          "Education",
+          "Public Sector",
+          "Retail"
+        ],
+        "rows": [
+          [
+            "Average revenue per client (annual)",
+            "5,000",
+            "3,000",
+            "2,000",
+            "2,500"
+          ],
+          [
+            "Average customer lifetime",
+            "2 years",
+            "5 years",
+            "3 years",
+            "1 year"
+          ],
+          [
+            "Acquisition cost",
+            "1,000",
+            "1,500",
+            "2,000",
+            "1,000"
+          ]
+        ]
+      },
+      {
+        "caption": "Rating-based conjoint (1–10 scale): part-worth utilities",
+        "head": [
+          "Attribute – level",
+          "Consultancy",
+          "Education",
+          "Public Sector",
+          "Retail"
+        ],
+        "rows": [
+          [
+            "Live chat – side window",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Live chat – in-window display",
+            "−0.23",
+            "1.24",
+            "−0.089",
+            "2.92"
+          ],
+          [
+            "Breakout groups – no groups",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Breakout groups – limited (max 10)",
+            "1.81",
+            "0.89",
+            "−0.21",
+            "1.25"
+          ],
+          [
+            "Breakout groups – unlimited",
+            "0.19",
+            "2.94",
+            "−1.08",
+            "1.02"
+          ],
+          [
+            "Max participants – 20",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Max participants – 50",
+            "2.31",
+            "0.28",
+            "1.92",
+            "2.01"
+          ],
+          [
+            "Max participants – 100",
+            "1.02",
+            "1.59",
+            "0.20",
+            "0.83"
+          ],
+          [
+            "Price per licence/year – 30",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "Price – 50",
+            "−1.22",
+            "−2.31",
+            "−3.72",
+            "−0.83"
+          ],
+          [
+            "Price – 70",
+            "−2.24",
+            "−2.71",
+            "−2.34",
+            "−1.21"
+          ],
+          [
+            "Baseline utility",
+            "2.84",
+            "4.18",
+            "5.23",
+            "3.17"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ralph-fortnite",
+    "title": "Ralph × Fortnite collaboration – conjoint analysis (mock exam, revision session)",
+    "text": [
+      "Ralph is a fashion brand known for its polo shirt, with a traditional and sophisticated image. It is preparing a Fortnite collaboration and ran a rating-based conjoint analysis (scale 1–7) with four attributes: outlet (virtual only for in-game avatars vs. virtual and offline clothing line), design (classic polo vs. bomber jacket), target (male, female, gender-neutral design) and price (€50, €100, €150 or the equivalent in Fortnite currency)."
+    ],
+    "tables": [
+      {
+        "caption": "Part-worths per cluster",
+        "head": [
+          "",
+          "Cluster 1",
+          "Cluster 2",
+          "Cluster 3",
+          "Cluster 4"
+        ],
+        "rows": [
+          [
+            "Intercept",
+            "1.21",
+            "2.15",
+            "3.02",
+            "1.07"
+          ],
+          [
+            "Outlet – virtual",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Outlet – virtual and offline",
+            "0.19",
+            "0.65",
+            "0.36",
+            "0.02"
+          ],
+          [
+            "Design – polo",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Design – bomber jacket",
+            "−0.45",
+            "1.10",
+            "0.65",
+            "−0.96"
+          ],
+          [
+            "Target – male",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Target – female",
+            "−0.97",
+            "0.02",
+            "−0.12",
+            "1.12"
+          ],
+          [
+            "Target – gender neutral",
+            "0.56",
+            "1.35",
+            "1.62",
+            "−0.12"
+          ],
+          [
+            "Price – €50",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Price – €100",
+            "−0.24",
+            "−1.13",
+            "−0.76",
+            "−0.45"
+          ],
+          [
+            "Price – €150",
+            "0.32",
+            "−2.01",
+            "−0.37",
+            "0.97"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pizza",
+    "title": "Conjoint example: one customer's partial benefits for frozen pizza (Lilien et al.)",
+    "text": [
+      "Attribute importance in points (scale 0–100) and partial benefits per level for ONE customer:"
+    ],
+    "tables": [
+      {
+        "head": [
+          "Attribute (importance)",
+          "Levels and partial benefits"
+        ],
+        "rows": [
+          [
+            "Crust (15)",
+            "Pan 0 · Thin 0 · Thick 15"
+          ],
+          [
+            "Topping (30)",
+            "Pineapple 0 · Veggie 10 · Sausage 25 · Pepperoni 30"
+          ],
+          [
+            "Type of cheese (10)",
+            "Romano 0 · Mixed 3 · Mozzarella 10"
+          ],
+          [
+            "Amount of cheese (10)",
+            "2 oz 0 · 4 oz 8 · 6 oz 10"
+          ],
+          [
+            "Price (35)",
+            "$9.99 −35 · $8.99 −15 · $7.99 0"
+          ]
+        ]
+      }
+    ]
+  }
+]

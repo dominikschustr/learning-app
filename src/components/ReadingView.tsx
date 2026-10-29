@@ -47,7 +47,7 @@ export function ReadingView({
           <ScrollText className="size-3.5" /> Kapitel {chapterIndex + 1} · Nachlesen
         </p>
         <h1 className="display text-4xl sm:text-5xl mt-2">{title}</h1>
-        <p className="mt-3 text-sm text-muted">Originaltext aus „{text.source}“</p>
+        <p className="mt-3 text-sm text-muted">Quelle: „{text.source}“</p>
       </header>
 
       <nav className="sticky top-14 z-20 -mx-4 mt-8 flex gap-2 overflow-x-auto border-b border-line bg-bg/90 px-4 py-3 backdrop-blur-md sm:mx-0 sm:rounded-full sm:border sm:px-2 sm:py-1.5">

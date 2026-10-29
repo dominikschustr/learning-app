@@ -1,0 +1,663 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s04-01",
+    "lecture": "s04",
+    "difficulty": 1,
+    "prompt": "Match the definitions. Which pairs are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Text mining – analytics on unstructured text information"
+      },
+      {
+        "id": "b",
+        "text": "Data mining – exploration and analysis of data to uncover meaningful patterns or rules"
+      },
+      {
+        "id": "c",
+        "text": "Social listening – identifying and assessing what is being said about a company, person, product or brand on the internet"
+      },
+      {
+        "id": "d",
+        "text": "Visual mining – determining whether an author feels positive or negative about a topic"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Visual mining extracts trends, patterns and insights from visual data (images, video) with data mining, computer vision and visualisation. Determining emotional tone is sentiment analysis."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-02",
+    "lecture": "s04",
+    "difficulty": 1,
+    "prompt": "Which statements describe predictive analytics?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It makes predictions about future outcomes"
+      },
+      {
+        "id": "b",
+        "text": "It uses historical data"
+      },
+      {
+        "id": "c",
+        "text": "It combines statistical modelling, data mining techniques and machine learning"
+      },
+      {
+        "id": "d",
+        "text": "It only describes what happened in the past"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Predictive analytics is a branch of advanced analytics forecasting future outcomes."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-03",
+    "lecture": "s04",
+    "difficulty": 1,
+    "prompt": "Which text mining technique divides a text into smaller units?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tokenization"
+      },
+      {
+        "id": "b",
+        "text": "Stemming / lemmatization"
+      },
+      {
+        "id": "c",
+        "text": "Named Entity Recognition"
+      },
+      {
+        "id": "d",
+        "text": "TF-IDF"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Tokenization splits text into tokens. Stemming/lemmatization reduces words to their root, NER identifies names/locations, TF-IDF weighs term frequency.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-04",
+    "lecture": "s04",
+    "difficulty": 2,
+    "prompt": "Which text mining techniques prepare (pre-process) the text before analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tokenization"
+      },
+      {
+        "id": "b",
+        "text": "Elimination of stop words (e.g. \"and\", \"the\")"
+      },
+      {
+        "id": "c",
+        "text": "Stemming / lemmatization"
+      },
+      {
+        "id": "d",
+        "text": "Topic modelling"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Topic modelling is an analysis step that extracts hidden themes; the other three clean and normalise the text."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-05",
+    "lecture": "s04",
+    "difficulty": 1,
+    "prompt": "A brand wants to automatically detect which persons, places and organisations are mentioned in online reviews. Which algorithm fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Named Entity Recognition (NER)"
+      },
+      {
+        "id": "b",
+        "text": "Sentiment analysis"
+      },
+      {
+        "id": "c",
+        "text": "TF-IDF"
+      },
+      {
+        "id": "d",
+        "text": "Anomaly detection"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "NER identifies and classifies named entities (names, locations, organisations) in text.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-06",
+    "lecture": "s04",
+    "difficulty": 1,
+    "prompt": "Which factors determine the success of text mining?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quality of the data (garbage in, garbage out)"
+      },
+      {
+        "id": "b",
+        "text": "Data cleansing"
+      },
+      {
+        "id": "c",
+        "text": "Algorithm selection"
+      },
+      {
+        "id": "d",
+        "text": "Scalability, model evaluation and ethical boundaries"
+      },
+      {
+        "id": "e",
+        "text": "The number of stop words kept in the text"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Success factors: data quality, cleansing, algorithm selection, scalability, model evaluation, ethical boundaries."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-07",
+    "lecture": "s04",
+    "difficulty": 2,
+    "prompt": "Which data mining algorithm matches each task? Select the correct pairs.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Association rule mining – discover relationships among items (e.g. products bought together)"
+      },
+      {
+        "id": "b",
+        "text": "Clustering – group similar data points by their characteristics"
+      },
+      {
+        "id": "c",
+        "text": "Classification – predict categorical labels for new instances based on training data"
+      },
+      {
+        "id": "d",
+        "text": "Regression – detect fraudulent transactions"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Regression predicts continuous numerical values (linear, logistic regression). Detecting fraud is anomaly detection."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-08",
+    "lecture": "s04",
+    "difficulty": 1,
+    "prompt": "A bank wants to flag unusual credit card transactions. Which data mining approach fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anomaly detection"
+      },
+      {
+        "id": "b",
+        "text": "Association rule mining"
+      },
+      {
+        "id": "c",
+        "text": "Sequential pattern mining"
+      },
+      {
+        "id": "d",
+        "text": "Clustering of product categories"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Anomaly detection identifies unusual patterns, e.g. fraud.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-09",
+    "lecture": "s04",
+    "difficulty": 3,
+    "prompt": "Which techniques are often used to forecast demand?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Time series modelling"
+      },
+      {
+        "id": "b",
+        "text": "Regression analysis"
+      },
+      {
+        "id": "c",
+        "text": "Sequential pattern mining on transaction data"
+      },
+      {
+        "id": "d",
+        "text": "Conjoint analysis"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Demand forecasting uses historical data: time series models, regression and sequential pattern mining. Conjoint analysis measures preferences for product attributes, not demand over time."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-10",
+    "lecture": "s04",
+    "difficulty": 2,
+    "prompt": "Which are the steps of the social listening process (in order)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 Set marketing objectives – 2 Data collection – 3 Data analysis – 4 Insights generation – 5 Engagement and response – 6 Monitoring"
+      },
+      {
+        "id": "b",
+        "text": "1 Data collection – 2 Set objectives – 3 Engagement – 4 Analysis – 5 Monitoring – 6 Insights"
+      },
+      {
+        "id": "c",
+        "text": "1 Insights – 2 Objectives – 3 Collection – 4 Monitoring – 5 Analysis – 6 Response"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Objectives and engagement/response are done in-house; collection, analysis, insights and monitoring rely on tools/platforms.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-11",
+    "lecture": "s04",
+    "difficulty": 2,
+    "prompt": "Which of the following is NOT an answer to the question \"Why is social listening important?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customers like it when companies/brands are responsive"
+      },
+      {
+        "id": "b",
+        "text": "Social listening can help improve customer acquisition"
+      },
+      {
+        "id": "c",
+        "text": "Social listening is technically easy"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Social listening matters for responsiveness, reputation, acquisition and insights – not because it is technically easy. Past exam question.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-12",
+    "lecture": "s04",
+    "difficulty": 1,
+    "prompt": "Which are applications of sentiment analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brand reputation management and monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Crisis prevention or management"
+      },
+      {
+        "id": "c",
+        "text": "Customer service and support"
+      },
+      {
+        "id": "d",
+        "text": "Market research for decision making"
+      },
+      {
+        "id": "e",
+        "text": "Calculating the customer lifetime value"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Further applications: customer research/feedback, social media, financial and political analysis."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-13",
+    "lecture": "s04",
+    "case": "brand24",
+    "difficulty": 2,
+    "prompt": "Which brand has the higher sentiment ratio, and what is it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brand Orbit, 4.5"
+      },
+      {
+        "id": "b",
+        "text": "Brand Nova, 2.0"
+      },
+      {
+        "id": "c",
+        "text": "Brand Nova, 0.5"
+      },
+      {
+        "id": "d",
+        "text": "Brand Orbit, 0.22"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Nova: 12,000 / 6,000 = 2.0. Orbit: 9,000 / 2,000 = 4.5 → Orbit has the higher sentiment ratio despite fewer mentions.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-14",
+    "lecture": "s04",
+    "case": "brand24",
+    "difficulty": 2,
+    "prompt": "Which conclusions are supported by the data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nova generates more buzz (volume of mentions and social reach) than Orbit"
+      },
+      {
+        "id": "b",
+        "text": "Orbit's conversations are relatively more positive than Nova's"
+      },
+      {
+        "id": "c",
+        "text": "Orbit reaches more people outside social media than Nova"
+      },
+      {
+        "id": "d",
+        "text": "Nova has fewer negative mentions than Orbit"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Nova has 6,000 negative mentions vs 2,000 for Orbit. High volume with a low sentiment ratio can signal a reputational issue worth investigating (what events drove it?)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-15",
+    "lecture": "s04",
+    "difficulty": 1,
+    "prompt": "Which statements on visual mining are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A large share of visual imagery (above 80%) remains untapped"
+      },
+      {
+        "id": "b",
+        "text": "It helps to pick up emerging trends and monitor competitors"
+      },
+      {
+        "id": "c",
+        "text": "Tools such as Dash Hudson (Vision AI) and YouScan (Visual Insights) recognise images in social posts"
+      },
+      {
+        "id": "d",
+        "text": "It can only analyse text captions of images"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Visual mining uses computer vision to analyse the images themselves – over half of social posts monitored by YouScan are images."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-01",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "Sentiment analysis aims to detect whether sentiment around a brand or topic is positive, negative or neutral.",
+    "answer": true,
+    "explanation": "It determines how the author feels about a topic."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-02",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "Neutral sentiment expresses strong emotion in favour of a brand.",
+    "answer": false,
+    "explanation": "Neutral sentiment is a lack of emotion and bias – objective statements."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-03",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "Stemming/lemmatization reduces words to their root or base form.",
+    "answer": true,
+    "explanation": "E.g. \"buying\", \"bought\" → \"buy\"."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-04",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "TF-IDF is a statistical calculation that determines the frequency and weight of a word in a document relative to a collection of documents.",
+    "answer": true,
+    "explanation": "Term Frequency – Inverse Document Frequency."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-05",
+    "lecture": "s04",
+    "difficulty": 2,
+    "statement": "Topic modelling identifies hidden themes in a text corpus, while text classification assigns predetermined labels.",
+    "answer": true,
+    "explanation": "Both are grouped as \"topic modelling & text classification\"."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-06",
+    "lecture": "s04",
+    "difficulty": 2,
+    "statement": "Clustering predicts categorical labels for new instances based on labelled training data.",
+    "answer": false,
+    "explanation": "That is classification. Clustering groups similar data points without predefined labels."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-07",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "Sequential pattern mining discovers patterns in sequential data such as time series or transactional data.",
+    "answer": true,
+    "explanation": "E.g. typical purchase sequences."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-08",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "Neural networks are models inspired by the structure of the human brain.",
+    "answer": true,
+    "explanation": "They are among the data mining algorithms discussed."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-09",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "In the social listening process, engagement and response is typically handled in-house.",
+    "answer": true,
+    "explanation": "Objectives and engagement/response are in-house; collection, analysis, insights and monitoring use tools/platforms."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-10",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "Social listening only matters for crisis management after a reputational damage has happened.",
+    "answer": false,
+    "explanation": "It supports reputation monitoring, customer research, acquisition, service and market research – and helps prevent crises."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-11",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "After the China Eastern Airlines Boeing 737-800 crash, sentiment analysis and a reputation score could be used to monitor Boeing's reputational damage.",
+    "answer": true,
+    "explanation": "Example from class."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-12",
+    "lecture": "s04",
+    "difficulty": 2,
+    "statement": "In the cryptocurrency study discussed, social media sentiment was used to predict short-term price changes, and the final model was profitable.",
+    "answer": true,
+    "explanation": "Linear regression, boosting and neural networks; sentiment measured three times per day."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-13",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "Coca-Cola's Social Hub monitors and analyses social media mentions in real time to support marketers worldwide.",
+    "answer": true,
+    "explanation": "Coca-Cola is mentioned more than 30 times per minute in English alone."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-14",
+    "lecture": "s04",
+    "difficulty": 1,
+    "statement": "A sentiment ratio below 1 means that there are more positive than negative mentions.",
+    "answer": false,
+    "explanation": "Sentiment ratio = positive / negative; below 1 means more negative than positive mentions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-15",
+    "lecture": "s04",
+    "case": "brand24",
+    "difficulty": 1,
+    "statement": "A higher volume of mentions always indicates a better brand reputation.",
+    "answer": false,
+    "explanation": "Volume measures buzz, not tone – Nova has more mentions but a lower sentiment ratio than Orbit."
+  },
+  {
+    "type": "short",
+    "id": "sa-s04-01",
+    "lecture": "s04",
+    "difficulty": 2,
+    "verb": "state",
+    "prompt": "State the six steps of the social listening process and indicate which are done in-house.",
+    "modelAnswer": "1 Set marketing objectives (in-house); 2 data collection (tools/platforms); 3 data analysis (tools); 4 insights generation (tools); 5 engagement and response (in-house); 6 monitoring (tools).",
+    "keyPoints": [
+      "Set marketing objectives",
+      "Data collection",
+      "Data analysis",
+      "Insights generation",
+      "Engagement and response",
+      "Monitoring",
+      "Objectives and engagement in-house"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s04-02",
+    "lecture": "s04",
+    "case": "brand24",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Calculate and compare the sentiment ratios of both brands and explain what the marketing team should conclude.",
+    "modelAnswer": "Sentiment ratio Nova = 12,000 / 6,000 = 2.0; Orbit = 9,000 / 2,000 = 4.5. Nova creates more buzz (48,000 mentions, 120 m social reach) but its conversations are relatively less positive – one in three tonal mentions is negative. Orbit is talked about less but more favourably and reaches more people off social media. The team should investigate which events drove Nova's negative mentions (e.g. product issue, campaign) and respond, while Orbit could leverage its positive sentiment to increase volume.",
+    "keyPoints": [
+      "Nova ratio 2.0",
+      "Orbit ratio 4.5",
+      "Volume/reach ≠ positive tone",
+      "Investigate events behind negative mentions / take action"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s04-03",
+    "lecture": "s04",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the main text mining techniques and what each one does.",
+    "modelAnswer": "Tokenization divides text into tokens; elimination of stop words removes words without meaning (and, the); stemming/lemmatization reduces words to their root; TF-IDF calculates the frequency and weight of terms; Named Entity Recognition identifies and classifies names, locations etc.; sentiment analysis/opinion mining classifies text as positive, negative or neutral; topic modelling and text classification extract hidden themes or assign predefined labels.",
+    "keyPoints": [
+      "Tokenization",
+      "Stop word elimination",
+      "Stemming/lemmatization",
+      "TF-IDF",
+      "NER",
+      "Sentiment analysis",
+      "Topic modelling / classification"
+    ]
+  }
+]

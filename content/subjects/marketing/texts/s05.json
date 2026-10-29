@@ -1,0 +1,112 @@
+{
+  "lecture": "s05",
+  "title": "Session 5 – Segmentation, Targeting, Positioning",
+  "source": "05_DDM_Student handout_2627.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Markets are heterogeneous. The STP approach identifies potential customers, selects which to pursue and formulates the value proposition – focusing resources, building loyalty and increasing profitability."
+        },
+        {
+          "kind": "item",
+          "text": "Post-demographic segmentation: traditional demographics lose predictive power because people construct their own lifestyles and identities."
+        },
+        {
+          "kind": "item",
+          "text": "A segmentation study runs in four phases:",
+          "children": [
+            "I Planning & design: objectives, resources, constraints",
+            "II Qualitative assessment: database review, qualitative research, deep needs, decision-making process",
+            "III Quantitative measurement: sample design, questionnaire, data collection",
+            "IV Analysis & implementation: cluster analysis, cluster profiling, implementation via direct marketing, social media, promotions"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Segmentation bases (variables that form segments) differ from descriptors (variables that profile and reach them). The choice depends on the segmentation objective."
+        },
+        {
+          "kind": "item",
+          "text": "Cluster analysis groups consumers so that distances within clusters are minimal and distances between cluster centroids maximal. Test robustness by splitting the sample randomly and re-running the analysis."
+        },
+        {
+          "kind": "item",
+          "text": "Evaluate segment attractiveness on:",
+          "children": [
+            "Size and growth",
+            "Structural characteristics: competition, saturation, protectability, environmental risk",
+            "Product-market fit: fit with strengths and image, relationships with other segments, profitability"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Select target segments with the GE/McKinsey matrix (segment attractiveness × company strengths): weight drivers, rate segments, multiply, plot, run sensitivity analysis. Strong position in highly attractive segments → build preemptive position; weak position in unattractive segments → exit."
+        },
+        {
+          "kind": "item",
+          "text": "Positioning is what you do to the mind of the prospect (Ries & Trout). Differentiation creates differences; positioning makes them distinct, relevant and sustainable in customers' minds."
+        },
+        {
+          "kind": "item",
+          "text": "Positioning analysis has seven steps: target segment, competitive offerings, differentiator dimensions, customer ratings, perceptual map, integrate preferences/choice/share, positioning statement."
+        },
+        {
+          "kind": "item",
+          "text": "Perceptual maps show distances between brands along a few quantifiable dimensions; brand association maps show the network of associations around a brand."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Market segment",
+          "text": "A group of customers who have similar needs and show similar behaviour or lifestyle."
+        },
+        {
+          "kind": "item",
+          "term": "Market segmentation",
+          "text": "The process of identifying and grouping consumers into relatively homogeneous segments based on shared needs, characteristics, attitudes or behaviours."
+        },
+        {
+          "kind": "item",
+          "term": "Segmentation bases",
+          "text": "Variables used to segment a market; they tell us why segments differ and respond differently."
+        },
+        {
+          "kind": "item",
+          "term": "Segment descriptors",
+          "text": "Characteristics that help profile each segment and reach it with dedicated offerings and communication."
+        },
+        {
+          "kind": "item",
+          "term": "Cluster analysis",
+          "text": "A statistical method that groups consumers based on a series of variables so that members of a cluster are similar and different from other clusters."
+        },
+        {
+          "kind": "item",
+          "term": "Positioning",
+          "text": "A set of strategies a company develops to differentiate its offering in the minds of its target customers."
+        },
+        {
+          "kind": "item",
+          "term": "Mapping",
+          "text": "Techniques that visualise the competitive structure of a market as perceived by customers."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Cluster tables are a classic exam exercise (shopping centre mock exam). Practise: least satisfied cluster, focus aspects, cluster descriptions, attractiveness rating, and recognising when the GE/McKinsey matrix cannot be applied."
+        }
+      ]
+    }
+  ]
+}

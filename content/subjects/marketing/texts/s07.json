@@ -1,0 +1,87 @@
+{
+  "lecture": "s07",
+  "title": "Session 7 – Customer Journey: Conversion",
+  "source": "07_DDM_Student handout_2627.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Companies organise products into product lines and Strategic Business Units (SBUs) and review their portfolio regularly to improve positioning, maximise and align investments, clarify resource allocation and improve collaboration."
+        },
+        {
+          "kind": "item",
+          "text": "Portfolio techniques to assess market offerings:",
+          "children": [
+            "BCG matrix: market growth × market share → stars, cash cows, question marks, dogs",
+            "GE/McKinsey matrix: industry attractiveness × business unit strength, rated low–medium–high"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "A/B testing and conjoint analysis are the two main methods to develop new products and to review existing offerings."
+        },
+        {
+          "kind": "item",
+          "text": "Conjoint analysis decomposes preferences for product bundles into part-worths for each attribute level. Clearly defined products are 3.3 times as likely to succeed (Cooper, 1993)."
+        },
+        {
+          "kind": "item",
+          "text": "Terminology: attributes, levels, profiles, tasks, part-worths, relative importance. The basic model is additive: total perceived value = sum of part-worths (incl. price)."
+        },
+        {
+          "kind": "item",
+          "text": "Example pizza: 324 possible pizzas and 16 parameters; one customer's partial benefits show which pizza he prefers and how he trades toppings against price."
+        },
+        {
+          "kind": "item",
+          "text": "Steps of a conjoint study:",
+          "children": [
+            "Stage 1 – design: select attributes and levels, develop bundles",
+            "Stage 2 – obtain data: data collection procedure, part-worth computation",
+            "Stage 3 – evaluate: segment customers, market simulations, choice rule, adjust shares for marketing programs"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Water bottle exercise: 3 × 3 × 2 × 3 = 54 profiles → efficient design; rating-based conjoint; find best profiles, relative importance, preferred material, market shares (max-utility rule, threshold 4) and the effect of price increases / maximum willingness to pay."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Conjoint analysis",
+          "text": "A method for assessing customers' preferences that decomposes preferences for product bundles into preferences (value) for each product attribute option (part-worths)."
+        },
+        {
+          "kind": "item",
+          "term": "Part-worth",
+          "text": "The contribution of an attribute level to the total perceived value of a profile."
+        },
+        {
+          "kind": "item",
+          "term": "Relative importance",
+          "text": "The relative leverage of an attribute on total perceived value: the impact of changing from its worst to its best level."
+        },
+        {
+          "kind": "item",
+          "term": "Profile",
+          "text": "A hypothetical product or offering, i.e. a set of attributes with specific levels."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Conjoint mini cases appeared in every mock exam (Polkaly, Ralph). Practise: best combination per segment, most important feature (ranges), target segment for a given product, and the effect of a price change."
+        }
+      ]
+    }
+  ]
+}

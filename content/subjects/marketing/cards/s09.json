@@ -1,0 +1,74 @@
+[
+  {
+    "id": "c-s09-01",
+    "lecture": "s09",
+    "front": "Marketing planning",
+    "back": "Analysis → objectives → strategy → implementation (marketing mix and budget decisions) → control. Resource allocation is part of it."
+  },
+  {
+    "id": "c-s09-02",
+    "lecture": "s09",
+    "front": "Regression in marketing planning",
+    "back": "Marketing mix modelling · budget optimisation · sales forecasting · price optimisation."
+  },
+  {
+    "id": "c-s09-03",
+    "lecture": "s09",
+    "front": "Regression analysis",
+    "back": "Analyses (causal) relationships between a dependent variable (Y) and one (simple) or more (multiple) independent variables – to explain and to predict."
+  },
+  {
+    "id": "c-s09-04",
+    "lecture": "s09",
+    "front": "Scales in regression",
+    "back": "DV: metric (interval/ratio). IVs: metric, or nominal as dummies (k categories → k−1 dummies, baseline omitted). Ordinal: not in traditional regression."
+  },
+  {
+    "id": "c-s09-05",
+    "lecture": "s09",
+    "front": "4 steps of regression",
+    "back": "Model formulation (theory, linearity) → estimation (OLS) → test of the function (R², adj. R², F) → test of coefficients (t-test)."
+  },
+  {
+    "id": "c-s09-06",
+    "lecture": "s09",
+    "front": "Intercept & slope",
+    "back": "Intercept b0: estimated Y when X = 0. Slope b1: change in Y for a one-unit change in X (ceteris paribus in multiple regression)."
+  },
+  {
+    "id": "c-s09-07",
+    "lecture": "s09",
+    "front": "Residual & OLS",
+    "back": "Residual = observed − estimated value. OLS chooses the parameters that minimise the sum of squared residuals."
+  },
+  {
+    "id": "c-s09-08",
+    "lecture": "s09",
+    "front": "R² and adjusted R²",
+    "back": "R² = explained variance / total variance (0–1). Grows with every added IV → adjusted R² corrects for the number of IVs."
+  },
+  {
+    "id": "c-s09-09",
+    "lecture": "s09",
+    "front": "t-test of coefficients",
+    "back": "H0: βj = 0. t = b / SE. Significant if |t_emp| > t_tab or p < 0.05. Only significant coefficients are interpreted."
+  },
+  {
+    "id": "c-s09-10",
+    "lecture": "s09",
+    "front": "Coefficients vs importance",
+    "back": "Different units → absolute coefficient size ≠ importance. Standardise coefficients to compare."
+  },
+  {
+    "id": "c-s09-11",
+    "lecture": "s09",
+    "front": "Exam recipe: regression table",
+    "back": "1 check model significance & R² · 2 mark p < 0.05 · 3 interpret sign and size of significant betas · 4 forecast = intercept + Σ significant β × value (dummies 0/1)."
+  },
+  {
+    "id": "c-s09-12",
+    "lecture": "s09",
+    "front": "Spurious correlation",
+    "back": "Statistically significant but not causal relationship explained by a third variable (ice cream sales ↔ murders, both driven by weather)."
+  }
+]

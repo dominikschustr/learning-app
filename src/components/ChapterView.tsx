@@ -66,7 +66,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             href: `${base}/c/${chapterId}/text`,
             icon: ScrollText,
             title: "Nachlesen",
-            text: "Key Messages, Definitionen & Denkanstöße im Original",
+            text: "Key Messages, Definitionen & Denkanstöße zum Nachlesen",
             meta: "Originaltext",
           },
         ]

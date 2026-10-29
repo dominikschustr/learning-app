@@ -1,0 +1,787 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s07-01",
+    "lecture": "s07",
+    "difficulty": 1,
+    "prompt": "Why do companies regularly review their portfolio of offerings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To improve competitive positioning"
+      },
+      {
+        "id": "b",
+        "text": "To maximise product investments and align them with business objectives"
+      },
+      {
+        "id": "c",
+        "text": "To identify strong and weak products and clarify resource allocation"
+      },
+      {
+        "id": "d",
+        "text": "To improve communication and collaboration"
+      },
+      {
+        "id": "e",
+        "text": "To avoid ever discontinuing products"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Reviews can also lead to eliminating underperforming products in unattractive markets."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-02",
+    "lecture": "s07",
+    "difficulty": 1,
+    "prompt": "In the BCG matrix, a product with HIGH market growth and LOW relative market share is a …",
+    "options": [
+      {
+        "id": "a",
+        "text": "Question mark"
+      },
+      {
+        "id": "b",
+        "text": "Star"
+      },
+      {
+        "id": "c",
+        "text": "Cash cow"
+      },
+      {
+        "id": "d",
+        "text": "Dog"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Star: high growth, high share. Cash cow: low growth, high share. Dog: low growth, low share.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-03",
+    "lecture": "s07",
+    "difficulty": 2,
+    "prompt": "Which statements on the GE/McKinsey matrix compared to the BCG matrix are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It was developed by General Electric and McKinsey as an expansion of the BCG matrix"
+      },
+      {
+        "id": "b",
+        "text": "It uses industry attractiveness and business unit strength as axes"
+      },
+      {
+        "id": "c",
+        "text": "It uses low–medium–high ratings, giving a broader view"
+      },
+      {
+        "id": "d",
+        "text": "It only uses market growth and market share"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Market growth and relative market share are the BCG axes."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-04",
+    "lecture": "s07",
+    "difficulty": 1,
+    "prompt": "Which two methods are widely used to review and revise market offerings and in new product development?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A/B testing"
+      },
+      {
+        "id": "b",
+        "text": "Conjoint analysis"
+      },
+      {
+        "id": "c",
+        "text": "Pearson correlation"
+      },
+      {
+        "id": "d",
+        "text": "Horizon scanning"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Both are used in NPD for target customers and to review existing offerings."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-05",
+    "lecture": "s07",
+    "difficulty": 2,
+    "prompt": "Which statements refer to conjoint analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Respondents provide direct measures of how much they value each attribute level"
+      },
+      {
+        "id": "b",
+        "text": "It uncovers respondents' preferences from their overall assessment of profiles/configurations"
+      },
+      {
+        "id": "c",
+        "text": "The basic conjoint model is additive"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct": [
+      "b",
+      "c"
+    ],
+    "explanation": "Conjoint is decompositional: respondents evaluate whole profiles and the part-worths are DERIVED – they are not stated directly. Past exam question.",
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-06",
+    "lecture": "s07",
+    "difficulty": 1,
+    "prompt": "Match the conjoint terminology. Which pairs are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Attribute – a product feature, e.g. brand, size, battery life"
+      },
+      {
+        "id": "b",
+        "text": "Level – a specification of an attribute, e.g. Samsung, Dell, Apple"
+      },
+      {
+        "id": "c",
+        "text": "Profile – a hypothetical offering combining one level of each attribute"
+      },
+      {
+        "id": "d",
+        "text": "Part-worth – the number of tasks a respondent completes"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Part-worth = contribution of an attribute level to the total perceived value. A task is one choice/rating the respondent makes."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-07",
+    "lecture": "s07",
+    "difficulty": 1,
+    "prompt": "A product has 4 attributes with 3, 3, 2 and 3 levels. How many profiles are possible?",
+    "options": [
+      {
+        "id": "a",
+        "text": "11"
+      },
+      {
+        "id": "b",
+        "text": "54"
+      },
+      {
+        "id": "c",
+        "text": "27"
+      },
+      {
+        "id": "d",
+        "text": "18"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "3 × 3 × 2 × 3 = 54 – too many for one study, so an efficient (fractional) design is used.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-08",
+    "lecture": "s07",
+    "difficulty": 2,
+    "prompt": "The pizza study has crust (3 levels), toppings (4), cheese type (3), cheese amount (3) and price (3). How many combinations and how many parameters (sum of all levels)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "324 combinations, 16 parameters"
+      },
+      {
+        "id": "b",
+        "text": "16 combinations, 324 parameters"
+      },
+      {
+        "id": "c",
+        "text": "108 combinations, 5 parameters"
+      },
+      {
+        "id": "d",
+        "text": "324 combinations, 5 parameters"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "3 × 4 × 3 × 3 × 3 = 324 pizzas; 3 + 4 + 3 + 3 + 3 = 16 parameters.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-09",
+    "lecture": "s07",
+    "case": "pizza",
+    "difficulty": 2,
+    "prompt": "Which pizza does this customer prefer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Meat-Lover's Treat: thick, pepperoni, mixed cheese, 6 oz, $9.99"
+      },
+      {
+        "id": "b",
+        "text": "Veggie Delight: thin, veggie, Romano, 2 oz, $7.99"
+      },
+      {
+        "id": "c",
+        "text": "Aloha Special: pan, pineapple, mozzarella, 4 oz, $8.99"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Meat-Lover's: 15 + 30 + 3 + 10 − 35 = 23. Veggie: 0 + 10 + 0 + 0 + 0 = 10. Aloha: 0 + 0 + 10 + 8 − 15 = 3.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-10",
+    "lecture": "s07",
+    "case": "pizza",
+    "difficulty": 2,
+    "prompt": "Which statements on this customer's partial benefits are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The customer prefers pepperoni to veggie by 20 points"
+      },
+      {
+        "id": "b",
+        "text": "Paying $8.99 instead of $9.99 is worth the same 20 points"
+      },
+      {
+        "id": "c",
+        "text": "Topping is worth twice as much as crust"
+      },
+      {
+        "id": "d",
+        "text": "Price is the least important attribute"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Price is the MOST important attribute (35 points)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-11",
+    "lecture": "s07",
+    "difficulty": 2,
+    "prompt": "Which steps belong to stage 3 of a conjoint study (evaluating product design options)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Segment customers based on their partial benefits"
+      },
+      {
+        "id": "b",
+        "text": "Design market simulations"
+      },
+      {
+        "id": "c",
+        "text": "Select a choice rule"
+      },
+      {
+        "id": "d",
+        "text": "Adjust market shares to reflect supporting marketing programs"
+      },
+      {
+        "id": "e",
+        "text": "Select attributes and levels"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Selecting attributes and levels is stage 1 (designing the study); stage 2 obtains the data and computes part-worths."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-12",
+    "lecture": "s07",
+    "difficulty": 2,
+    "prompt": "How is the relative importance of an attribute calculated in conjoint analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Range of the attribute (best level minus worst level part-worth), divided by the sum of all ranges"
+      },
+      {
+        "id": "b",
+        "text": "Highest part-worth of the attribute divided by the intercept"
+      },
+      {
+        "id": "c",
+        "text": "Average part-worth of all levels"
+      },
+      {
+        "id": "d",
+        "text": "Number of levels of the attribute divided by the total number of levels"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Importance shows the leverage of moving from the worst to the best level.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-13",
+    "lecture": "s07",
+    "case": "polkaly-conjoint",
+    "difficulty": 2,
+    "prompt": "What is the best combination of product levels for the EDUCATION segment and its total utility?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In-window display, unlimited groups, 100 participants, price 30"
+      },
+      {
+        "id": "b",
+        "text": "Side window, limited groups, 50 participants, price 30"
+      },
+      {
+        "id": "c",
+        "text": "In-window display, limited groups, 50 participants, price 30"
+      },
+      {
+        "id": "d",
+        "text": "In-window display, unlimited groups, 50 participants, price 30"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "4.18 + 1.24 + 2.94 + 1.59 + 0 = 9.95. (Option 2 is consultancy's best, option 3 retail's best; with 50 participants education only reaches 8.64.)",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-14",
+    "lecture": "s07",
+    "case": "polkaly-conjoint",
+    "difficulty": 3,
+    "prompt": "What is the most important feature for each segment? Select the correct pairs.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Consultancy – maximum participants"
+      },
+      {
+        "id": "b",
+        "text": "Education – group breakout sessions"
+      },
+      {
+        "id": "c",
+        "text": "Public sector – price"
+      },
+      {
+        "id": "d",
+        "text": "Retail – maximum participants"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Ranges: consultancy participants 2.31 (vs price 2.24); education groups 2.94; public sector price 3.72; retail live chat 2.92 – ahead of participants (2.01)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-15",
+    "lecture": "s07",
+    "case": "polkaly-conjoint",
+    "difficulty": 3,
+    "prompt": "Which statements on the public sector segment are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Its best combination is side window, no groups, 50 participants, price 30 (total 7.15)"
+      },
+      {
+        "id": "b",
+        "text": "Price is its most important attribute"
+      },
+      {
+        "id": "c",
+        "text": "Breakout groups reduce its utility"
+      },
+      {
+        "id": "d",
+        "text": "It values the in-window chat display highly"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Public sector part-worth for in-window display is −0.089 – slightly negative."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-16",
+    "lecture": "s07",
+    "case": "ralph-fortnite",
+    "difficulty": 3,
+    "prompt": "Based on the conjoint analysis, what are the most important features for each Ralph cluster?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 1 – target"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 2 – price"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 3 – target"
+      },
+      {
+        "id": "d",
+        "text": "Cluster 4 – design"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Ranges – C1: target 0.56 − (−0.97) = 1.53. C2: price 0 − (−2.01) = 2.01. C3: target 1.62 − (−0.12) = 1.74. C4: price 0.97 − (−0.45) = 1.42 is the largest, ahead of target (1.24) and design (0.96). Clusters 1 & 3 share target; 2 & 4 share price."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-17",
+    "lecture": "s07",
+    "case": "ralph-fortnite",
+    "difficulty": 3,
+    "prompt": "Ralph launches a product that is virtual AND offline, a classic polo, gender-neutral, priced at €100. Which segment is the most suitable target?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 1"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 2"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 3"
+      },
+      {
+        "id": "d",
+        "text": "Cluster 4"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "C1 = 1.21 + 0.19 + 0 + 0.56 − 0.24 = 1.72; C2 = 2.15 + 0.65 + 1.35 − 1.13 = 3.02; C3 = 3.02 + 0.36 + 1.62 − 0.76 = 4.24; C4 = 1.07 + 0.02 − 0.12 − 0.45 = 0.52 → Cluster 3 has the highest total utility.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-18",
+    "lecture": "s07",
+    "case": "ralph-fortnite",
+    "difficulty": 3,
+    "prompt": "If Ralph sells the same product at €150 instead of €100, what happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 3 remains the best target and its utility even rises – increasing the price is a good idea"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 2 becomes the best target"
+      },
+      {
+        "id": "c",
+        "text": "All clusters lose utility, so the price should not be raised"
+      },
+      {
+        "id": "d",
+        "text": "Cluster 3's utility falls below Cluster 1's"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Cluster 3: 3.02 + 0.36 + 1.62 − 0.37 = 4.63 > 4.24. In this luxury context, the €150 level has a smaller utility loss than €100 – a higher price signals quality.",
+    "single": true
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-01",
+    "lecture": "s07",
+    "difficulty": 1,
+    "statement": "Organisations group similar products into product lines and group lines of business targeting a common set of customers into Strategic Business Units (SBUs).",
+    "answer": true,
+    "explanation": "Example: Johnson & Johnson with hundreds of products."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-02",
+    "lecture": "s07",
+    "difficulty": 1,
+    "statement": "In the BCG matrix, a cash cow has high market growth and high market share.",
+    "answer": false,
+    "explanation": "A cash cow dominates a slow-growth market (low growth, high share). High growth + high share = star."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-03",
+    "lecture": "s07",
+    "difficulty": 1,
+    "statement": "Products grouped as \"dogs\" are candidates for elimination in unattractive markets.",
+    "answer": true,
+    "explanation": "Low growth, low share."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-04",
+    "lecture": "s07",
+    "difficulty": 1,
+    "statement": "Conjoint analysis decomposes preferences for product bundles into the value of each attribute level (part-worths).",
+    "answer": true,
+    "explanation": "That is the definition used in the session."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-05",
+    "lecture": "s07",
+    "difficulty": 1,
+    "statement": "In the simplest conjoint model, the total perceived value of a profile is the sum of its part-worths (including price).",
+    "answer": true,
+    "explanation": "The basic model is additive."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-06",
+    "lecture": "s07",
+    "difficulty": 2,
+    "statement": "Firms that clearly define their products for targeted customers are 3.3 times as likely to be successful (Cooper, 1993).",
+    "answer": true,
+    "explanation": "Conjoint analysis offers sharper product definitions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-07",
+    "lecture": "s07",
+    "difficulty": 1,
+    "statement": "Relative importance shows how much total perceived value changes when moving from the worst to the best level of an attribute.",
+    "answer": true,
+    "explanation": "Range of the attribute / sum of ranges."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-08",
+    "lecture": "s07",
+    "difficulty": 2,
+    "statement": "A rating-based conjoint was chosen for the water bottle study because people do not have to buy just one bottle and different preferences can be observed.",
+    "answer": true,
+    "explanation": "With 54 possible profiles, an efficient design with 19 profiles was used."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-09",
+    "lecture": "s07",
+    "difficulty": 1,
+    "statement": "In a market simulation with the maximum-utility choice rule, each respondent is assumed to buy the option with the highest total value for him/her.",
+    "answer": true,
+    "explanation": "A twist: only if the highest value exceeds a threshold (e.g. 4, the scale mean)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-10",
+    "lecture": "s07",
+    "difficulty": 3,
+    "statement": "The maximum willingness to pay for an option can be found by raising its price until its total value falls below the threshold or below the respondent's second-best option.",
+    "answer": true,
+    "explanation": "Used in the water bottle exercise (questions 5–6)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-11",
+    "lecture": "s07",
+    "case": "polkaly-conjoint",
+    "difficulty": 1,
+    "statement": "For Polkaly's consultancy segment, a price of 70 instead of 30 reduces utility by 2.24.",
+    "answer": true,
+    "explanation": "Consultancy part-worth at price 70 = −2.24 (baseline 30 = 0)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-12",
+    "lecture": "s07",
+    "case": "polkaly-conjoint",
+    "difficulty": 3,
+    "statement": "For the education segment, the best product at a price of 70 still has a total utility above the midpoint of the 1–10 scale.",
+    "answer": true,
+    "explanation": "4.18 + 1.24 + 2.94 + 1.59 − 2.71 = 7.24 > 5.5 – education shows strong preference for the features and willingness to compromise on price."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-13",
+    "lecture": "s07",
+    "case": "polkaly-conjoint",
+    "difficulty": 1,
+    "statement": "Retail is the segment that values the in-window chat display the most.",
+    "answer": true,
+    "explanation": "Retail part-worth 2.92, the highest across segments."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-14",
+    "lecture": "s07",
+    "case": "ralph-fortnite",
+    "difficulty": 1,
+    "statement": "For Ralph's Cluster 4, the bomber jacket increases utility compared to the polo.",
+    "answer": false,
+    "explanation": "Cluster 4 bomber jacket part-worth = −0.96 → it reduces utility."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-15",
+    "lecture": "s07",
+    "case": "polkaly-segments",
+    "difficulty": 1,
+    "statement": "Based on the segment table, the public sector is a cash-cow-like segment: largest size but lowest growth.",
+    "answer": true,
+    "explanation": "50% size, 1% growth."
+  },
+  {
+    "type": "short",
+    "id": "sa-s07-01",
+    "lecture": "s07",
+    "case": "polkaly-conjoint",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "What is the best combination of product levels for each strategic segment? Show your calculations.",
+    "modelAnswer": "Choose the level with the highest part-worth per attribute and add the baseline:\nConsultancy: side window, limited groups, 50 participants, price 30 → 2.84 + 0 + 1.81 + 2.31 + 0 = 6.96.\nEducation: in-window, unlimited groups, 100 participants, 30 → 4.18 + 1.24 + 2.94 + 1.59 + 0 = 9.95.\nPublic sector: side window, no groups, 50 participants, 30 → 5.23 + 0 + 0 + 1.92 + 0 = 7.15.\nRetail: in-window, limited groups, 50 participants, 30 → 3.17 + 2.92 + 1.25 + 2.01 + 0 = 9.35.",
+    "keyPoints": [
+      "Consultancy: side window, limited, 50, 30 = 6.96",
+      "Education: in-window, unlimited, 100, 30 = 9.95",
+      "Public: side window, no groups, 50, 30 = 7.15",
+      "Retail: in-window, limited, 50, 30 = 9.35"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s07-02",
+    "lecture": "s07",
+    "case": "polkaly-conjoint",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "What is the most important feature for each strategic segment? Show your calculations.",
+    "modelAnswer": "Importance = range (max − min part-worth) of each attribute, relative to the sum of ranges.\nConsultancy: chat 0.23, groups 1.81, participants 2.31, price 2.24 → participants (≈35%).\nEducation: chat 1.24, groups 2.94, participants 1.59, price 2.71 → group breakout sessions (≈35%).\nPublic sector: chat 0.089, groups 1.08, participants 1.92, price 3.72 → price (≈55%).\nRetail: chat 2.92, groups 1.25, participants 2.01, price 1.21 → live chat (≈40%).",
+    "keyPoints": [
+      "Method: range of part-worths per attribute",
+      "Consultancy: max participants",
+      "Education: group breakout sessions",
+      "Public sector: price",
+      "Retail: live chat"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s07-03",
+    "lecture": "s07",
+    "case": "polkaly-segments",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Based on segment size and growth, would entering the education segment with a new product be a good idea? Explain (e.g. using the BCG logic).",
+    "modelAnswer": "Education is mid-sized (15%) but has the second-highest growth (3%), and the case mentions a surge in demand especially in education. In BCG terms: consultancy (large, fastest growth) ≈ star, public sector (largest, slowest growth) ≈ cash cow, retail (small, low growth) ≈ dog, education ≈ question mark with the potential to become a star. Entering education with the new product is promising, though its smaller size means growth must continue to pay off.",
+    "keyPoints": [
+      "Education: 15% size, 3% growth (2nd highest)",
+      "Rising demand in education mentioned",
+      "Classification via BCG (question mark / rising star)",
+      "Conclusion: promising entry with caveats"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s07-04",
+    "lecture": "s07",
+    "case": "polkaly-full",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "The unlimited group function and in-window chat are Polkaly's competitive advantages. Which group(s) would you target, with what product and at what price point?",
+    "modelAnswer": "Education is the best fit: it values exactly Polkaly's advantages (unlimited groups 2.94, in-window chat 1.24), reaches the highest total utility (9.95) and has the highest CLV (10,500) plus strong growth. Offer in-window chat, unlimited groups and 100 participants. Even at the highest price of 70, total utility stays at 7.24 – above the scale midpoint – so start at 70 for margin (discounts or further price tests possible). Retail also values in-window chat (2.92) but is small, slow-growing and has a low CLV (1,000).",
+    "keyPoints": [
+      "Target education",
+      "Product: in-window chat, unlimited groups, 100 participants",
+      "Price 70 still yields utility 7.24",
+      "Supported by highest CLV / growth; retail less attractive"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s07-05",
+    "lecture": "s07",
+    "case": "ralph-fortnite",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Ralph: what are the most important features per cluster, and which cluster should be targeted with a virtual + offline, polo, gender-neutral product at €100? Would the target change at €150?",
+    "modelAnswer": "Ranges – C1: outlet 0.19, design 0.45, target 1.53, price 0.56 → target. C2: 0.65, 1.10, 1.35, 2.01 → price. C3: 0.36, 0.65, 1.74, 0.76 → target. C4: 0.02, 0.96, 1.24, 1.42 → price.\nAt €100: C1 = 1.21+0.19+0+0.56−0.24 = 1.72; C2 = 2.15+0.65+1.35−1.13 = 3.02; C3 = 3.02+0.36+1.62−0.76 = 4.24; C4 = 1.07+0.02−0.12−0.45 = 0.52 → target Cluster 3.\nAt €150: C3 = 3.02+0.36+1.62−0.37 = 4.63 (still highest; C1 2.28, C2 2.14, C4 1.94). The target stays the same and the higher price even increases C3's utility – a luxury signal – so raising the price is a good idea.",
+    "keyPoints": [
+      "Importance via ranges (C1 & C3 target, C2 & C4 price)",
+      "At €100 Cluster 3 highest (4.24)",
+      "At €150 Cluster 3 still highest (4.63)",
+      "Price increase is a good idea (luxury effect)"
+    ]
+  }
+]

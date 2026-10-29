@@ -1,0 +1,232 @@
+[
+  {
+    "id": "madcool",
+    "title": "MadCool Festival – customer metrics (in-class examples)",
+    "text": [
+      "The sales of MadCool are €1,000,000 in period t−1 and €1,200,000 in period t. All firms in the market together sell €3,000,000 (period t−1).",
+      "The festival's target market is 200,000 people; in March, MadCool has sold 60,000 tickets. The acquisition campaign cost €3 million."
+    ],
+    "tables": []
+  },
+  {
+    "id": "madcool-survival",
+    "title": "MadCool – retention and survival of a cohort",
+    "text": [
+      "MadCool has 1,000 customers at the beginning of period 1. Survival rate: SR_t = Rr_t × SR_(t−1), with SR_1 = Rr_1."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Period",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "rows": [
+          [
+            "Retention rate Rr",
+            "0.55",
+            "0.62",
+            "0.68",
+            "0.73"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecom-segments",
+    "title": "E-commerce site: value of two target segments over three months (exam 2019/20)",
+    "text": [
+      "To estimate the value of key segments, an e-commerce manager tracked their activities for three months. Monthly margin = margin per transaction × monthly shopping frequency. Monthly profit = monthly margin × survival rate (minus acquisition cost in month 1). Estimated customer lifetime: three months for both segments."
+    ],
+    "tables": [
+      {
+        "caption": "Segment A",
+        "head": [
+          "",
+          "Month 1",
+          "Month 2",
+          "Month 3"
+        ],
+        "rows": [
+          [
+            "Average revenue per transaction",
+            "€200",
+            "€250",
+            "€200"
+          ],
+          [
+            "Average margin per transaction",
+            "€100",
+            "€200",
+            "€150"
+          ],
+          [
+            "Monthly shopping frequency",
+            "2",
+            "5",
+            "4"
+          ],
+          [
+            "Monthly margin",
+            "?",
+            "€1,000",
+            "€600"
+          ],
+          [
+            "Customers at beginning of month",
+            "1,000",
+            "1,000",
+            "600"
+          ],
+          [
+            "Customers lost by end of month",
+            "0",
+            "400",
+            "480"
+          ],
+          [
+            "Retention rate",
+            "100%",
+            "?",
+            "?"
+          ],
+          [
+            "Survival rate",
+            "100%",
+            "?",
+            "?"
+          ],
+          [
+            "Customer acquisition cost",
+            "€250",
+            "–",
+            "–"
+          ],
+          [
+            "Monthly profit",
+            "−€50",
+            "€600",
+            "?"
+          ],
+          [
+            "Cumulative profit to date",
+            "−€50",
+            "€550",
+            "?"
+          ]
+        ]
+      },
+      {
+        "caption": "Segment B",
+        "head": [
+          "",
+          "Month 1",
+          "Month 2",
+          "Month 3"
+        ],
+        "rows": [
+          [
+            "Average margin per transaction",
+            "€200",
+            "€200",
+            "€400"
+          ],
+          [
+            "Monthly shopping frequency",
+            "3",
+            "6",
+            "7"
+          ],
+          [
+            "Monthly margin",
+            "€600",
+            "€1,200",
+            "€2,800"
+          ],
+          [
+            "Retention rate",
+            "100%",
+            "70%",
+            "50%"
+          ],
+          [
+            "Survival rate",
+            "100%",
+            "70%",
+            "35%"
+          ],
+          [
+            "Customer acquisition cost",
+            "€500",
+            "–",
+            "–"
+          ],
+          [
+            "Monthly profit",
+            "€100",
+            "?",
+            "€980"
+          ],
+          [
+            "Cumulative profit to date",
+            "€100",
+            "€940",
+            "?"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polkaly-clv",
+    "title": "Mini case Polkaly – customer lifetime value per segment (mock exam)",
+    "text": [
+      "To make better data-driven decisions, Polkaly looks into customer profitability per strategic segment. Assume you need to subtract 20% of the revenue for overhead costs."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Consultancy",
+          "Education",
+          "Public Sector",
+          "Retail"
+        ],
+        "rows": [
+          [
+            "Average revenue per client (annual)",
+            "5,000",
+            "3,000",
+            "2,000",
+            "2,500"
+          ],
+          [
+            "Average customer lifetime",
+            "2 years",
+            "5 years",
+            "3 years",
+            "1 year"
+          ],
+          [
+            "Acquisition cost",
+            "1,000",
+            "1,500",
+            "2,000",
+            "1,000"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clv-basic",
+    "title": "Customer lifetime value – a single client",
+    "text": [
+      "Average order value: 10 €. Average purchase frequency: 12 per year. Acquisition costs: 200 €. Use CLV = lifetime revenues − acquisition costs (per client)."
+    ],
+    "tables": []
+  }
+]

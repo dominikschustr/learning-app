@@ -1,0 +1,731 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s01-01",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "Which are the characteristics of Big Data (the \"5 Vs\")?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Volume"
+      },
+      {
+        "id": "b",
+        "text": "Velocity"
+      },
+      {
+        "id": "c",
+        "text": "Variety"
+      },
+      {
+        "id": "d",
+        "text": "Veracity"
+      },
+      {
+        "id": "e",
+        "text": "Value"
+      },
+      {
+        "id": "f",
+        "text": "Validity"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "explanation": "The 5 Vs (Marr, 2014) are Volume, Velocity, Variety, Veracity and Value. Validity is a quality criterion of measurement, not one of the 5 Vs."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-02",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "Which question does each type of analytics answer? Select the correct pairs.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Descriptive analytics – What happened in the business?"
+      },
+      {
+        "id": "b",
+        "text": "Diagnostic analytics – Why is something happening in the business?"
+      },
+      {
+        "id": "c",
+        "text": "Predictive analytics – What is likely to happen in the future?"
+      },
+      {
+        "id": "d",
+        "text": "Prescriptive analytics – Why did it happen?"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Prescriptive analytics answers \"So what? And now what? What is required to do more?\" – it leads to a decision/action. \"Why\" is diagnostic analytics."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-03",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "Diagnostic (or inquisitive) analytics answer or explore …",
+    "options": [
+      {
+        "id": "a",
+        "text": "the \"what will happen\" of a specific managerial issue"
+      },
+      {
+        "id": "b",
+        "text": "the \"why\" of a specific managerial issue"
+      },
+      {
+        "id": "c",
+        "text": "the \"how\" of a specific managerial issue"
+      },
+      {
+        "id": "d",
+        "text": "the \"what and how\" of a specific managerial issue"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Diagnostic analytics asks why something is happening (past exam question 2019/20).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-04",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "Which three research types lead from descriptive to diagnostic analytics?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Descriptive, Prescriptive, Predictive"
+      },
+      {
+        "id": "b",
+        "text": "Exploratory, Descriptive, Causal"
+      },
+      {
+        "id": "c",
+        "text": "Causal, Predictive, Descriptive"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The research types are exploratory (ambiguous problem), descriptive (aware of problem) and causal (clearly defined problem). Past exam question.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-05",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "One of the main differences between traditional analytics and Big Data analytics is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Traditional analytics focus on descriptive and diagnostic analytics, Big Data analytics focus on predictive analytics and data science"
+      },
+      {
+        "id": "b",
+        "text": "Traditional analytics analyse correlations, Big Data analytics mainly analyse cause-effect relationships"
+      },
+      {
+        "id": "c",
+        "text": "Traditional analytics analyse complex data models, Big Data analytics focus on simple data models"
+      },
+      {
+        "id": "d",
+        "text": "The only difference refers to the kinds of statistical analysis that are applied"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Big Data analytics shift the focus towards prediction and data science; traditional analytics look back (what happened, why). Past exam question.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-06",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "Which statements describe CAUSAL research?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is used when the problem is clearly defined"
+      },
+      {
+        "id": "b",
+        "text": "It manipulates one or more independent variables"
+      },
+      {
+        "id": "c",
+        "text": "It controls other (mediating) variables"
+      },
+      {
+        "id": "d",
+        "text": "Its typical method is the experiment"
+      },
+      {
+        "id": "e",
+        "text": "It is flexible and often the front end of the research design"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Causal research determines cause-and-effect relationships via experiments (manipulation + control). Flexibility and being the front end of the design describe exploratory research."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-07",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "Which methods are typical for EXPLORATORY research?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expert surveys"
+      },
+      {
+        "id": "b",
+        "text": "Pilot surveys"
+      },
+      {
+        "id": "c",
+        "text": "Secondary data analysed qualitatively"
+      },
+      {
+        "id": "d",
+        "text": "Qualitative research"
+      },
+      {
+        "id": "e",
+        "text": "Experiments"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Exploratory research discovers ideas and insights for an ambiguous problem (\"Our sales are declining… why?\"). Experiments belong to causal research."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-08",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "\"What kind of people buy our products? Who buys our competitors' products?\" Which research type fits this question?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exploratory research"
+      },
+      {
+        "id": "b",
+        "text": "Descriptive research"
+      },
+      {
+        "id": "c",
+        "text": "Causal research"
+      },
+      {
+        "id": "d",
+        "text": "Prescriptive research"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Descriptive research is used when you are aware of the problem and want to describe market characteristics, e.g. via surveys, panels or quantitatively analysed secondary data.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-09",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "According to Mazzei and Noble (2017), companies create value through data in which ways?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data as a tool"
+      },
+      {
+        "id": "b",
+        "text": "Data as an industry"
+      },
+      {
+        "id": "c",
+        "text": "Data as a strategy"
+      },
+      {
+        "id": "d",
+        "text": "Data as a currency"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The three approaches are data as a tool (improving specific functions), data as an industry (selling data products/services) and data as a strategy (data drives competitive strategy and business models)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-10",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "A firm provides big-data products and data-as-a-service to a broad range of companies and is intensive in technical knowledge. Which approach to value creation is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data as a tool"
+      },
+      {
+        "id": "b",
+        "text": "Data as an industry"
+      },
+      {
+        "id": "c",
+        "text": "Data as a strategy"
+      },
+      {
+        "id": "d",
+        "text": "Data as an ecosystem"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Providers of big data products or services (technology and data-as-a-service) represent \"data as an industry\".",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-11",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "Rolls-Royce transformed its business so that data accumulated from its engines became a driver of new business models and ecosystems. This is an example of …",
+    "options": [
+      {
+        "id": "a",
+        "text": "Data as a tool"
+      },
+      {
+        "id": "b",
+        "text": "Data as an industry"
+      },
+      {
+        "id": "c",
+        "text": "Data as a strategy"
+      },
+      {
+        "id": "d",
+        "text": "Data ethics"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Data as a strategy: big data drives competitive strategy, new business models and ecosystem development (Rolls-Royce example).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-12",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "Which are main features of the EU General Data Protection Regulation (GDPR)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Privacy policies in clear and straightforward language"
+      },
+      {
+        "id": "b",
+        "text": "Affirmative consent – silence is no consent"
+      },
+      {
+        "id": "c",
+        "text": "Users must be informed about data breaches"
+      },
+      {
+        "id": "d",
+        "text": "A right to data portability, access and deletion"
+      },
+      {
+        "id": "e",
+        "text": "Fines can only be imposed on companies with more than 45 million users"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "GDPR (enforced May 2018): clear language, consent, transparency, stronger rights, stronger enforcement (European Data Protection Board). The 45-million-user threshold belongs to the Digital Services Act."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-13",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "The \"Privacy Paradox\" …",
+    "options": [
+      {
+        "id": "a",
+        "text": "refers to a difference between what people think they should do and what they actually do"
+      },
+      {
+        "id": "b",
+        "text": "explains why people express more privacy concerns online than offline"
+      },
+      {
+        "id": "c",
+        "text": "relates to the fact that people prefer purchasing online rather than offline"
+      },
+      {
+        "id": "d",
+        "text": "is none of the above"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "People say they care about privacy but still disclose data and use data-hungry services – an attitude–behaviour gap. Past exam question.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-14",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "Which statements on how Starbucks' Deep Brew and Sephora's agentic AI change data-driven marketing are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deep Brew is a reinforcement-learning system that selects the next-best offer and learns from each customer response"
+      },
+      {
+        "id": "b",
+        "text": "AI shifts marketing from segment-based campaigns towards an individual, real-time customer journey"
+      },
+      {
+        "id": "c",
+        "text": "Agentic AI moves from reactive personalisation towards an autonomous digital sales agent"
+      },
+      {
+        "id": "d",
+        "text": "Agentic AI makes continuous real-time adaptation unnecessary because A/B tests are run once a year"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Deep Brew: from short-term response to long-term value maximisation; Sephora: from A/B testing to continuous real-time adaptation based on feedback, 1:1 digital selling."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-15",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "Which are the four principles of a Digital Republic (Jamie Susskind)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Preservation principle"
+      },
+      {
+        "id": "b",
+        "text": "Domination principle"
+      },
+      {
+        "id": "c",
+        "text": "Democracy principle"
+      },
+      {
+        "id": "d",
+        "text": "Parsimony principle"
+      },
+      {
+        "id": "e",
+        "text": "Profitability principle"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Preservation (keep the role of the state), Domination (reduce unaccountable power imbalances), Democracy (civic values in tech), Parsimony (state restrains others only if strictly necessary)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s01-16",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "To whom does the EU Digital Services Act apply, and what does it regulate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Companies offering digital services in the EU that transmit and store data (e.g. hosting, social networks, marketplaces)"
+      },
+      {
+        "id": "b",
+        "text": "Rules on cookie banners, online advertising and deleting illegal content"
+      },
+      {
+        "id": "c",
+        "text": "More transparency about algorithmic decisions"
+      },
+      {
+        "id": "d",
+        "text": "Only companies headquartered in the EU"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The DSA is a \"basic law for the Internet\" for all firms offering digital services in the EU; the strictest rules apply above 45 million monthly users. A Digital Services Board and national coordinators enforce it."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-01",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "According to Netflix co-founder Marc Randolph, good decisions should rely on data instead of intuition.",
+    "answer": false,
+    "explanation": "Randolph says \"you need both\": data tells you the red button does 2.7% better, but never which of 16.7 million colours to test. Data should inform intuition, explore and validate assumptions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-02",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "Unstructured data (e.g. texts, images, videos) require sense-making before they can be analysed.",
+    "answer": true,
+    "explanation": "Structured data fit predefined fields; unstructured data need processing (e.g. text mining) to make sense of them."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-03",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "Prescriptive analytics answers the question \"What is likely to happen in the future?\".",
+    "answer": false,
+    "explanation": "That is predictive analytics. Prescriptive analytics answers \"So what? Now what? What is required to do more?\" and leads to decisions/actions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-04",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "Along the analytics continuum, descriptive and diagnostic analytics deliver information/insights, while prescriptive analytics leads to a decision or action.",
+    "answer": true,
+    "explanation": "Information → insights → decision/action: descriptive (what), diagnostic (why), predictive (what will), prescriptive (now what)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-05",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "\"Will our customers purchase more with a change in our website?\" is a typical question for exploratory research.",
+    "answer": false,
+    "explanation": "It is a clearly defined cause-effect question → causal research (experiment, e.g. A/B test)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-06",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "A strong correlation between two variables proves that one causes the other.",
+    "answer": false,
+    "explanation": "Correlation is not causation – a third variable or chance can explain the association."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-07",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "Descriptive research is marked by the prior formulation of specific hypotheses and a preplanned, structured design.",
+    "answer": true,
+    "explanation": "Exploratory research is flexible; descriptive research is preplanned and structured; causal research manipulates and controls variables."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-08",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "\"Data as a tool\" means actively collecting data and building analytical capabilities internally to improve specific areas such as marketing, sales or customer service.",
+    "answer": true,
+    "explanation": "This is the first of Mazzei & Noble's three approaches to value creation through data."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-09",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "Shoshana Zuboff defines surveillance capitalism as an economic order that claims human experience as free raw material for hidden commercial practices of extraction, prediction and sales.",
+    "answer": true,
+    "explanation": "This is the first meaning in Zuboff's definition; she also describes it as a parasitic logic of behavioural modification and a new instrumentarian power."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-10",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "Information privacy is violated when a person's efforts to seclude or conceal himself or herself physically are frustrated.",
+    "answer": false,
+    "explanation": "That is physical privacy. Information privacy is disturbed when data, facts or conversations a person wishes to keep secret are acquired or disclosed."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-11",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "Under the GDPR, a user who does not object (silence) has given valid consent.",
+    "answer": false,
+    "explanation": "GDPR requires affirmative consent – silence is no consent."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-12",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "Kollnig et al. (2021) found that GDPR led to a strong decline of third-party trackers in Android apps.",
+    "answer": false,
+    "explanation": "They studied ~2 million apps: only limited change, and further concentration in the firms owning trackers (danger of data monopolies/gatekeepers)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-13",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "Under the Digital Services Act, the strictest rules apply to companies with more than 45 million monthly users.",
+    "answer": true,
+    "explanation": "Very large platforms (>45 million monthly users in the EU) face the strictest obligations."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-14",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "Cathy O'Neil argues that algorithms are objective because they are based on mathematics.",
+    "answer": false,
+    "explanation": "O'Neil (\"Weapons of Math Destruction\") warns against blind faith in big data: algorithms embed the opinions and biases of their builders and can increase inequality."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-15",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "Byung-Chul Han describes Big Data as a psychopolitical instrument that makes human behaviour predictable and controllable.",
+    "answer": true,
+    "explanation": "In \"The Palliative Society\" Han argues the digital surveillance regime degrades the person to a profitable data set and creates a crisis of freedom."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-16",
+    "lecture": "s01",
+    "difficulty": 1,
+    "statement": "Sephora's AI Beauty Advisor illustrates a shift from campaign-based promotion to AI-powered 1:1 digital selling.",
+    "answer": true,
+    "explanation": "Virtual Artist (Smart Skin Scan) + agentic Beauty Advisor recommend routines, book appointments and offer discounts."
+  },
+  {
+    "type": "short",
+    "id": "sa-s01-01",
+    "lecture": "s01",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the four types of analytics and the question each one answers.",
+    "modelAnswer": "Descriptive analytics: what happened in the business? Diagnostic analytics: why is something happening? Predictive analytics: what is likely to happen in the future? Prescriptive analytics: so what / now what – what is required to do more? They move from information (descriptive) over insights (diagnostic, predictive) to decision and action (prescriptive).",
+    "keyPoints": [
+      "Descriptive: what happened",
+      "Diagnostic: why is it happening",
+      "Predictive: what is likely to happen",
+      "Prescriptive: what should we do / now what",
+      "Progression from information to insight to decision/action"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s01-02",
+    "lecture": "s01",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Compare exploratory, descriptive and causal research (objective, type of problem, typical methods).",
+    "modelAnswer": "Exploratory research discovers ideas and insights for an ambiguous problem; it is flexible and uses expert/pilot surveys, qualitative research and qualitatively analysed secondary data. Descriptive research describes market characteristics when one is aware of the problem; it is preplanned with prior hypotheses and uses surveys, panels, observational and quantitatively analysed secondary data. Causal research determines cause-effect relationships for a clearly defined problem by manipulating independent variables and controlling others, i.e. experiments.",
+    "keyPoints": [
+      "Exploratory: ambiguous problem, discover ideas, flexible, qualitative methods",
+      "Descriptive: aware of problem, describe characteristics, structured with hypotheses, surveys/panels",
+      "Causal: clearly defined problem, cause-effect",
+      "Causal research uses experiments (manipulation + control)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s01-03",
+    "lecture": "s01",
+    "difficulty": 2,
+    "verb": "state",
+    "prompt": "State the main features of the GDPR.",
+    "modelAnswer": "Clear language in privacy policies; affirmative consent from users (silence is no consent); more transparency (data transfers outside the EU, well-defined purpose, use of algorithmic decisions); stronger rights (breach notification, data portability, access to a copy of own data, right to deletion); stronger enforcement by the European Data Protection Board with fines.",
+    "keyPoints": [
+      "Clear language",
+      "Affirmative consent",
+      "More transparency",
+      "Stronger rights (breach notification, portability, access, deletion)",
+      "Stronger enforcement / fines"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s01-04",
+    "lecture": "s01",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the three approaches through which companies create value from data (Mazzei & Noble, 2017) and give an example for each.",
+    "modelAnswer": "Data as a tool: firms actively collect data and build internal analytical capabilities to improve functions like product development, marketing or customer service (e.g. a retailer optimising promotions). Data as an industry: firms provide big-data products, technology or data-as-a-service to many other companies (e.g. analytics or cloud providers such as IBM). Data as a strategy: data becomes the driver of competitive strategy, new business models and ecosystems (e.g. Rolls-Royce selling engine performance based on sensor data).",
+    "keyPoints": [
+      "Data as a tool – improve specific functions internally",
+      "Data as an industry – sell data products/services",
+      "Data as a strategy – data drives business model/ecosystem",
+      "Relevant example for each"
+    ]
+  }
+]

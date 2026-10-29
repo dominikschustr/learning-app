@@ -1,0 +1,142 @@
+[
+  {
+    "id": "playmobil",
+    "title": "Playmobil Christmas edition – what drives monthly sales? (exam 2019/20)",
+    "text": [
+      "To maximise their share of kids' allowance, Playmobil analysed monthly toy sales of its \"Christmas edition\" box sets: number of retail outlets (outlet_number), promotional spending online, on billboards and on TV, the box's age suitability (box_age: 4+, 5+, 6+) and the number of pieces in the box as an indication of size (box_size).",
+      "y = β0 + β1·outlet_number + β2·online_spend + β3·billboard_spend + β4·TV_spend + β5·box_age + β6·box_size"
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Beta coefficient",
+          "Significance"
+        ],
+        "rows": [
+          [
+            "Intercept (β0)",
+            "2.12",
+            "p < 0.05"
+          ],
+          [
+            "outlet_number (β1)",
+            "1.31",
+            "p < 0.05"
+          ],
+          [
+            "online_spend (β2)",
+            "0.18",
+            "p > 0.05"
+          ],
+          [
+            "billboard_spend (β3)",
+            "0.76",
+            "p < 0.01"
+          ],
+          [
+            "TV_spend (β4)",
+            "0.45",
+            "p < 0.01"
+          ],
+          [
+            "box_age (β5)",
+            "−1.08",
+            "p > 0.05"
+          ],
+          [
+            "box_size (β6)",
+            "−0.89",
+            "p < 0.001"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hm-regression",
+    "title": "H&M – forecasting 2022 sales (mock exam, revision session)",
+    "text": [
+      "An analyst at H&M forecasts sales considering the number of retail outlets (outlet_number), promotional spending online, on billboards and on TV, sales from the previous year (old_sales) and the average number of new product launches (new_products).",
+      "y = α + β1·outlet_number + β2·online_spend + β3·billboard_spend + β4·TV_spend + β5·old_sales + β6·new_products + ε"
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Beta coefficient",
+          "Significance (p-value)"
+        ],
+        "rows": [
+          [
+            "outlet_number (β1)",
+            "2.12",
+            "p < 0.05"
+          ],
+          [
+            "online_spend (β2)",
+            "1.39",
+            "p < 0.05"
+          ],
+          [
+            "billboard_spend (β3)",
+            "0.03",
+            "p < 0.01"
+          ],
+          [
+            "TV_spend (β4)",
+            "0.31",
+            "p < 0.01"
+          ],
+          [
+            "old_sales (β5)",
+            "−1.08",
+            "p < 0.05"
+          ],
+          [
+            "new_products (β6)",
+            "−0.21",
+            "p > 0.05"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "grocery",
+    "title": "Grocery shopping – refined model (practice case, fictitious coefficients)",
+    "text": [
+      "A U.S. supermarket models customers' total annual grocery spending (USD). After dummy-coding gender (female = 1), loyalty programme membership (member = 1) and region, a refined model with four predictors is estimated. All coefficients shown are significant (p < 0.05); adjusted R² = 0.54."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Coefficient"
+        ],
+        "rows": [
+          [
+            "Intercept",
+            "120.0"
+          ],
+          [
+            "Age (years)",
+            "3.5"
+          ],
+          [
+            "Female",
+            "45.0"
+          ],
+          [
+            "Visit frequency (visits per year)",
+            "22.0"
+          ],
+          [
+            "Loyalty programme member",
+            "180.0"
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "c-s07-01",
+    "lecture": "s07",
+    "front": "Why review offerings?",
+    "back": "Improve competitive positioning · maximise product investments · align with objectives · identify strong/weak products for resource allocation · improve communication."
+  },
+  {
+    "id": "c-s07-02",
+    "lecture": "s07",
+    "front": "BCG matrix",
+    "back": "Axes: market growth × relative market share. Star (high/high), cash cow (low growth/high share), question mark (high growth/low share), dog (low/low)."
+  },
+  {
+    "id": "c-s07-03",
+    "lecture": "s07",
+    "front": "GE/McKinsey matrix (portfolio)",
+    "back": "Expands BCG: industry attractiveness × business unit strength, rated low–medium–high → develop, expand, re-tool or eliminate."
+  },
+  {
+    "id": "c-s07-04",
+    "lecture": "s07",
+    "front": "Conjoint analysis",
+    "back": "Decomposes preferences for product bundles into preferences (part-worths) for each attribute level. Respondents evaluate whole profiles; part-worths are derived."
+  },
+  {
+    "id": "c-s07-05",
+    "lecture": "s07",
+    "front": "Conjoint terminology",
+    "back": "Attribute (feature) · level (specification) · profile (hypothetical offering) · task (one choice/rating) · part-worth (contribution of a level) · relative importance."
+  },
+  {
+    "id": "c-s07-06",
+    "lecture": "s07",
+    "front": "Additive conjoint model",
+    "back": "Total perceived value y_k = Σ β_jm · x_jm (sum of part-worths of the levels in option k, incl. price) – plus baseline/intercept."
+  },
+  {
+    "id": "c-s07-07",
+    "lecture": "s07",
+    "front": "Relative importance",
+    "back": "Range of an attribute (best − worst part-worth) / sum of all ranges. Most important attribute = largest range."
+  },
+  {
+    "id": "c-s07-08",
+    "lecture": "s07",
+    "front": "Best profile per segment",
+    "back": "Pick the highest part-worth level for each attribute and add the baseline utility."
+  },
+  {
+    "id": "c-s07-09",
+    "lecture": "s07",
+    "front": "Number of profiles",
+    "back": "Product of the number of levels (e.g. 3 × 3 × 2 × 3 = 54). Parameters to estimate = sum of all levels."
+  },
+  {
+    "id": "c-s07-10",
+    "lecture": "s07",
+    "front": "Conjoint – 3 stages",
+    "back": "1 Design (attributes, levels, bundles) · 2 Data (collection procedure, part-worth computation) · 3 Evaluate (segment by part-worths, market simulation, choice rule, adjust shares for marketing)."
+  },
+  {
+    "id": "c-s07-11",
+    "lecture": "s07",
+    "front": "Market share simulation",
+    "back": "Maximum-utility rule: each respondent buys the option with the highest total value; optional threshold (e.g. value must exceed 4). Max WTP: raise the price until the option loses its first place or falls below the threshold."
+  },
+  {
+    "id": "c-s07-12",
+    "lecture": "s07",
+    "front": "Pizza example",
+    "back": "324 combinations, 16 parameters. Meat-Lover's (23) > Veggie (10) > Aloha (3) for this customer; pepperoni vs veggie = 20 points = paying $8.99 instead of $9.99."
+  },
+  {
+    "id": "c-s07-13",
+    "lecture": "s07",
+    "front": "Polkaly – conjoint results",
+    "back": "Best: Consultancy 6.96 · Education 9.95 · Public 7.15 · Retail 9.35. Most important: consultancy participants, education groups, public price, retail live chat."
+  }
+]

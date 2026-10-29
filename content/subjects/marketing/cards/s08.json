@@ -1,0 +1,86 @@
+[
+  {
+    "id": "c-s08-01",
+    "lecture": "s08",
+    "front": "CRM (definition)",
+    "back": "Analysing marketing databases and leveraging communication technologies to determine practices that maximise the lifetime value of each (typical) customer."
+  },
+  {
+    "id": "c-s08-02",
+    "lecture": "s08",
+    "front": "Trends making CRM important",
+    "back": "Increasing acquisition cost (mature markets, less effective ads) · demand for relationship-based marketing · declining brand loyalty and higher switching."
+  },
+  {
+    "id": "c-s08-03",
+    "lecture": "s08",
+    "front": "Loyalty",
+    "back": "A deeply held commitment to re-buy or re-patronise a preferred product in the future despite situational influences and marketing efforts that could cause switching (HBR, 2010)."
+  },
+  {
+    "id": "c-s08-04",
+    "lecture": "s08",
+    "front": "Satisfaction–loyalty–profit chain",
+    "back": "Satisfaction is positively associated with customer-level outcomes (retention, WOM, spending, price) and firm-level outcomes (product-market, accounting, financial-market performance); varies by context (Mittal et al., 2023)."
+  },
+  {
+    "id": "c-s08-05",
+    "lecture": "s08",
+    "front": "CLV (definition)",
+    "back": "The present value of the future (net) cash flows associated with a (typical) customer. Forward-looking, predictive not precise, use only relevant data."
+  },
+  {
+    "id": "c-s08-06",
+    "lecture": "s08",
+    "front": "CLV analytics",
+    "back": "Traditional: market share, sales growth. Acquisition: acquisition rate, acquisition cost. Activity: average inter-purchase time, retention/attrition, survival rate, lifetime duration."
+  },
+  {
+    "id": "c-s08-07",
+    "lecture": "s08",
+    "front": "Market share & sales growth",
+    "back": "MS_j = 100 × s_j / Σ s_i.\nGrowth_t = 100 × (s_t − s_(t−1)) / s_(t−1)."
+  },
+  {
+    "id": "c-s08-08",
+    "lecture": "s08",
+    "front": "Acquisition rate & cost",
+    "back": "Acquisition rate = 100 × prospects acquired / prospects targeted.\nAcquisition cost = acquisition spending / prospects acquired."
+  },
+  {
+    "id": "c-s08-09",
+    "lecture": "s08",
+    "front": "Retention & attrition",
+    "back": "Rr_t = customers buying in t (who bought in t−1) / customers who bought in t−1. Rr = 100% − defection rate. Average lifetime = 1 / (1 − Rr)."
+  },
+  {
+    "id": "c-s08-10",
+    "lecture": "s08",
+    "front": "Survival rate",
+    "back": "SR_t = Rr_t × SR_(t−1), SR_1 = Rr_1. E.g. Rr 0.55, 0.62, 0.68, 0.73 → SR 55%, 34.1%, 23.2%, 16.9%."
+  },
+  {
+    "id": "c-s08-11",
+    "lecture": "s08",
+    "front": "Lifetime duration",
+    "back": "Average lifetime = Σ (t × number of retained customers in t) / N (cohort size)."
+  },
+  {
+    "id": "c-s08-12",
+    "lecture": "s08",
+    "front": "Simple CLV",
+    "back": "CLV = lifetime revenues (or margin) − acquisition costs. E.g. 10 € × 12 × 10 years − 200 € = 1,000 €."
+  },
+  {
+    "id": "c-s08-13",
+    "lecture": "s08",
+    "front": "CLV with overhead (Polkaly)",
+    "back": "CLV = annual revenue × lifetime × (1 − overhead %) − CAC. Education: 3,000 × 5 × 0.8 − 1,500 = 10,500."
+  },
+  {
+    "id": "c-s08-14",
+    "lecture": "s08",
+    "front": "Cohort profit table (exam 2019)",
+    "back": "Monthly margin = margin/transaction × frequency. Rr = (start − lost)/start. SR = Rr × previous SR. Profit = margin × SR (− CAC in month 1). Compare cumulative profits."
+  }
+]

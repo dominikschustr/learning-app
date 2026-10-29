@@ -1,0 +1,889 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s05-01",
+    "lecture": "s05",
+    "difficulty": 1,
+    "prompt": "What does the STP approach do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identifies a firm's potential customers (segmentation)"
+      },
+      {
+        "id": "b",
+        "text": "Selects which customers the firm should pursue (targeting)"
+      },
+      {
+        "id": "c",
+        "text": "Formulates the value proposition for the target customers (positioning)"
+      },
+      {
+        "id": "d",
+        "text": "Sets the prices of all products"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "STP: identify segments → select segments → create competitive advantage."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-02",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "Why are classic demographic criteria losing predictive power (post-demographic segmentation)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People construct lifestyles and identities of their own choosing"
+      },
+      {
+        "id": "b",
+        "text": "Consumption patterns are no longer defined only by age, gender, income or country"
+      },
+      {
+        "id": "c",
+        "text": "Consumers live in an empowered state in which billions of personalities co-exist"
+      },
+      {
+        "id": "d",
+        "text": "Demographic data are no longer available"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Demographics are still available, but they explain less of consumer behaviour."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-03",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "Which statements on segmentation bases and descriptors are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bases are variables that tell us why segments differ and respond differently"
+      },
+      {
+        "id": "b",
+        "text": "Descriptors help to profile and reach each segment (e.g. demographics, purchase frequency)"
+      },
+      {
+        "id": "c",
+        "text": "A segmentation model uses bases as dependent and descriptors as independent variables"
+      },
+      {
+        "id": "d",
+        "text": "Bases and descriptors must always be demographic variables"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The choice of bases and descriptors depends on the objective, e.g. psychographic/behavioural bases to tailor campaigns, geographic bases to expand into new areas."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-04",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "How does a cluster analysis determine the clusters?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It minimises the average distance between customers within a cluster"
+      },
+      {
+        "id": "b",
+        "text": "It maximises the average distance between the clusters' centroids"
+      },
+      {
+        "id": "c",
+        "text": "It assigns customers randomly and keeps the solution with the largest cluster"
+      },
+      {
+        "id": "d",
+        "text": "It requires exactly two variables"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Segmentation is usually multidimensional (more than two variables)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-05",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "How can you test the robustness of a cluster solution?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Randomly split the sample in two subgroups, re-run the analysis and compare the agreement"
+      },
+      {
+        "id": "b",
+        "text": "Add more irrelevant variables"
+      },
+      {
+        "id": "c",
+        "text": "Increase the number of clusters until each customer is alone"
+      },
+      {
+        "id": "d",
+        "text": "Check the R² of the clusters"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The higher the agreement between the two solutions, the more robust the original cluster analysis.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-06",
+    "lecture": "s05",
+    "difficulty": 1,
+    "prompt": "Which criteria are used to evaluate segment attractiveness (Lilien et al., 2017)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Size and growth"
+      },
+      {
+        "id": "b",
+        "text": "Structural characteristics (competition, saturation, protectability, environmental risk)"
+      },
+      {
+        "id": "c",
+        "text": "Product-market fit (fit with strengths, relationships with other segments, profitability)"
+      },
+      {
+        "id": "d",
+        "text": "The number of variables in the cluster analysis"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Three groups of criteria: size & growth, structural characteristics, product-market fit."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-07",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "Which are the steps to build a GE/McKinsey portfolio matrix for targeting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Specify drivers of each dimension and weight them by relative importance"
+      },
+      {
+        "id": "b",
+        "text": "Rate segments on each driver"
+      },
+      {
+        "id": "c",
+        "text": "Multiply weights times ratings for each segment"
+      },
+      {
+        "id": "d",
+        "text": "Plot the results and run a review/sensitivity analysis"
+      },
+      {
+        "id": "e",
+        "text": "Compute the CLV of each customer"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Dimensions: segment attractiveness and the company's strengths and competences."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-08",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "In the GE/McKinsey matrix, which strategy fits a HIGHLY attractive segment where the company's strengths are STRONG?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Build preemptive position – invest for growth"
+      },
+      {
+        "id": "b",
+        "text": "Harvest – reduce fixed costs"
+      },
+      {
+        "id": "c",
+        "text": "Exit – no further commitment of resources"
+      },
+      {
+        "id": "d",
+        "text": "Strict cash flow management"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Strong + high: invest for growth, diversify globally, consolidate position, focus on long-term cash flow.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-09",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "Which strategy does the GE/McKinsey matrix suggest for a segment of LOW attractiveness where the company is WEAK?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exit"
+      },
+      {
+        "id": "b",
+        "text": "Harvest"
+      },
+      {
+        "id": "c",
+        "text": "Capitalize on attractiveness"
+      },
+      {
+        "id": "d",
+        "text": "Build preemptive position"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Weak + low: exit the market or prune the product line, time it to preserve maximum value. Weak + average = harvest; weak + high = capitalize on attractiveness.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-10",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "Which of the following is NOT a step in the process of positioning analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Determine potential differentiator dimensions"
+      },
+      {
+        "id": "b",
+        "text": "Create a perceptual map"
+      },
+      {
+        "id": "c",
+        "text": "Integrate preferences, choice or market share"
+      },
+      {
+        "id": "d",
+        "text": "Identify consumer segments"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Positioning analysis starts by SELECTING a target segment; identifying segments is part of segmentation. Past exam question.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-11",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "What can be read from a perceptual map?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The shorter the distance between brands, the more similar they are perceived"
+      },
+      {
+        "id": "b",
+        "text": "The axes suggest the underlying dimensions consumers use to differentiate brands"
+      },
+      {
+        "id": "c",
+        "text": "A vector indicates a product attribute"
+      },
+      {
+        "id": "d",
+        "text": "The exact market share of each brand"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Preferences, choice or market share can be integrated, but the map itself shows perceptions."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-12",
+    "lecture": "s05",
+    "difficulty": 2,
+    "prompt": "How do brand association maps differ from perceptual maps?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They explore the mental network of associations tied to a brand"
+      },
+      {
+        "id": "b",
+        "text": "They have no fixed axes – associations radiate around the brand"
+      },
+      {
+        "id": "c",
+        "text": "They are often based on qualitative data or monitored consumer conversations"
+      },
+      {
+        "id": "d",
+        "text": "They always have exactly two quantifiable axes such as price and quality"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Perceptual maps use two (occasionally three) quantifiable dimensions from survey ratings; brand association maps capture depth and richness of brand meaning."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-13",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 1,
+    "prompt": "Which cluster is the least satisfied?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 1"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 2"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 3"
+      },
+      {
+        "id": "d",
+        "text": "Cluster 4"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Cluster 4 has the lowest satisfaction score (3.5).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-14",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 2,
+    "prompt": "For the least satisfied cluster, which aspects are most relevant and should be the focus to improve their experience?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Centre activities and events and loyalty program"
+      },
+      {
+        "id": "b",
+        "text": "Retail offer and centre design and layout"
+      },
+      {
+        "id": "c",
+        "text": "Retail offer and centre activities and events"
+      },
+      {
+        "id": "d",
+        "text": "None of the proposed options"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Cluster 4 rates retail offer (6.5) and design/layout (5.3) as most important; events (2.6) and loyalty (2.3) matter little.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-15",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 2,
+    "prompt": "Which statement best describes Cluster 1?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Satisfied, but they do not perceive the retail offer as important"
+      },
+      {
+        "id": "b",
+        "text": "Satisfied, but they do not perceive the loyalty program membership as relevant"
+      },
+      {
+        "id": "c",
+        "text": "Satisfied, but they do not perceive centre design and layout as important"
+      },
+      {
+        "id": "d",
+        "text": "Satisfied, but they do not perceive centre activities and events as relevant"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Cluster 1: satisfaction 5.7, all aspects important except the loyalty program (3.4).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-16",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 2,
+    "prompt": "Which strategy should be used to target Cluster 3?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Invest in centre design and layout to improve the atmospherics"
+      },
+      {
+        "id": "b",
+        "text": "Invest in activities and events to improve the entertainment offer"
+      },
+      {
+        "id": "c",
+        "text": "Invest in the loyalty program and customise it"
+      },
+      {
+        "id": "d",
+        "text": "None of the proposed strategies is appropriate"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Cluster 3 (largest, N = 328) values design and layout most (6.7), events and loyalty less.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-17",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 3,
+    "prompt": "Applying the GE/McKinsey matrix, which segment should the shopping centre prioritise?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 1"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 3"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 4"
+      },
+      {
+        "id": "d",
+        "text": "Not enough information is provided to proceed with this decision"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The tables only inform segment attractiveness. The GE/McKinsey matrix also needs the company's strengths and competences per segment – which are not given.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-18",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 3,
+    "prompt": "Which segments would you rate as HIGHLY attractive for the shopping centre managers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 1"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 2"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 3"
+      },
+      {
+        "id": "d",
+        "text": "Cluster 4"
+      }
+    ],
+    "correct": [
+      "a",
+      "c"
+    ],
+    "explanation": "Cluster 1: high satisfaction and visit frequency (55% more than monthly). Cluster 3: largest segment, satisfaction above the midpoint, good visit frequency. Cluster 2 is the smallest (medium); Cluster 4 is small, dissatisfied and visits rarely (low).",
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-19",
+    "lecture": "s05",
+    "case": "mynatural",
+    "difficulty": 2,
+    "prompt": "Which statements about the MyNatural clusters are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cluster 3 has the strongest green values, knowledge, product beliefs and social influence"
+      },
+      {
+        "id": "b",
+        "text": "Cluster 3 has the highest willingness to try, purchase likelihood and recommendation"
+      },
+      {
+        "id": "c",
+        "text": "Cluster 3 has the LOWEST evaluation of MyNatural products"
+      },
+      {
+        "id": "d",
+        "text": "Cluster 2 has the highest purchase likelihood"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Cluster 3 is the green, engaged segment – but rates MyNatural products lowest (2.13), a gap the brand must address. Cluster 2 has the lowest purchase likelihood (2.49)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-20",
+    "lecture": "s05",
+    "case": "mynatural",
+    "difficulty": 3,
+    "prompt": "Which variables of the MyNatural survey are segmentation BASES (rather than descriptors)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "GreenValues"
+      },
+      {
+        "id": "b",
+        "text": "ProductBeliefs"
+      },
+      {
+        "id": "c",
+        "text": "Social"
+      },
+      {
+        "id": "d",
+        "text": "Age and gender"
+      },
+      {
+        "id": "e",
+        "text": "PurchaseLikely"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The clusters were formed on the attitudinal variables (GreenValues, Knowledge, Evaluation, ProductBeliefs, Social). Demographics and behavioural variables (purchase frequency, WillingTry, PurchaseLikely, Recommendation) profile the clusters."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s05-21",
+    "lecture": "s05",
+    "case": "ge-scoring",
+    "difficulty": 2,
+    "prompt": "Which weighted attractiveness scores do the segments reach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A = 3.1 and B = 3.5"
+      },
+      {
+        "id": "b",
+        "text": "A = 3.0 and B = 3.7"
+      },
+      {
+        "id": "c",
+        "text": "A = 9.0 and B = 11.0"
+      },
+      {
+        "id": "d",
+        "text": "A = 3.5 and B = 3.1"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A = 0.4·4 + 0.3·3 + 0.3·2 = 1.6 + 0.9 + 0.6 = 3.1. B = 0.4·2 + 0.3·5 + 0.3·4 = 0.8 + 1.5 + 1.2 = 3.5 → B is more attractive.",
+    "single": true
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-01",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "A market segment is a group of customers who have similar needs and show similar behaviour or lifestyle.",
+    "answer": true,
+    "explanation": "Segmentation groups consumers into relatively homogeneous segments."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-02",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "Customers who are brand loyal mean that more marketing resources are needed over time to maintain market share.",
+    "answer": false,
+    "explanation": "Brand loyalty creates a barrier to competition, and FEWER resources are needed over time to maintain share."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-03",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "The basic idea of segmentation research is to analyse a small (random) sample of consumers and leverage the insights across the entire customer base.",
+    "answer": true,
+    "explanation": "Four phases: planning & design, qualitative assessment, quantitative measurement, analysis & implementation."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-04",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "Cluster analysis and cluster profiling belong to phase I (planning and design) of a segmentation study.",
+    "answer": false,
+    "explanation": "They belong to phase IV (analysis and implementation). Phase I is internal assessment and planning (objectives, resources, constraints)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-05",
+    "lecture": "s05",
+    "difficulty": 2,
+    "statement": "Salesforce allocation and pricing are examples of short-term applications of segmentation.",
+    "answer": true,
+    "explanation": "Longer-term applications include emerging needs, new segments, lead users and market driving."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-06",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "Individuals within a cluster are similar to each other but different from individuals in other clusters.",
+    "answer": true,
+    "explanation": "That is the goal of cluster analysis."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-07",
+    "lecture": "s05",
+    "difficulty": 2,
+    "statement": "Euromonitor's Consumer Types were derived with k-means cluster models fitted to lifestyle survey data in each country.",
+    "answer": true,
+    "explanation": "Online panel in 40 countries (n ≈ 40,000), nested quotas for age and gender; types profiled with demographics."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-08",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "Differentiation and positioning mean exactly the same thing.",
+    "answer": false,
+    "explanation": "Differentiation creates differences on attributes vs competitors; positioning is the set of strategies to differentiate the offering IN THE MINDS of target customers."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-09",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "\"Positioning is not what you do to a product. Positioning is what you do to the mind of a prospect\" (Ries & Trout).",
+    "answer": true,
+    "explanation": "Positioning lives in the customer's mind."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-10",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "A successful positioning results in a distinct, relevant and sustainable position in the minds of target customers.",
+    "answer": true,
+    "explanation": "Definition from the session."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-11",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "The first step of the 7-step positioning analysis is to plot a perceptual map.",
+    "answer": false,
+    "explanation": "The first step is to select the target segment; plotting comes fifth, after selecting competitors, differentiator dimensions and collecting ratings."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-12",
+    "lecture": "s05",
+    "difficulty": 1,
+    "statement": "Perceptual maps oversimplify because they are limited to the chosen dimensions.",
+    "answer": true,
+    "explanation": "Their strength is easy interpretation and spotting positioning gaps."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-13",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 1,
+    "statement": "Cluster 2 visits the shopping centre more often than Cluster 1.",
+    "answer": false,
+    "explanation": "55% of Cluster 1 visit more often than monthly vs 29% of Cluster 2."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-14",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 1,
+    "statement": "The loyalty program is very important for Cluster 2.",
+    "answer": true,
+    "explanation": "Cluster 2 rates the loyalty program at 6.0."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-15",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 1,
+    "statement": "Cluster 4 is mainly composed of young consumers aged 18–34.",
+    "answer": true,
+    "explanation": "68% of Cluster 4 are 18–34 years old."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-16",
+    "lecture": "s05",
+    "case": "mynatural",
+    "difficulty": 2,
+    "statement": "For MyNatural, Cluster 2 is the most attractive target for the new line because it evaluates the brand best.",
+    "answer": false,
+    "explanation": "Cluster 2's evaluation (2.75) is still below the midpoint, and it has the weakest green values, purchase frequency, purchase likelihood and recommendation. Cluster 3 is the most attractive, though MyNatural must improve its product evaluation there."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s05-17",
+    "lecture": "s05",
+    "case": "ge-scoring",
+    "difficulty": 1,
+    "statement": "With weights 0.4/0.3/0.3, Segment B is more attractive than Segment A.",
+    "answer": true,
+    "explanation": "B scores 3.5 vs 3.1 for A."
+  },
+  {
+    "type": "short",
+    "id": "sa-s05-01",
+    "lecture": "s05",
+    "case": "mall-clusters",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Rate the attractiveness (high / medium / low) of each shopping centre cluster for the managers and justify your rating.",
+    "modelAnswer": "Cluster 1 – high: satisfied (5.7), visits very often (55% more than monthly), mid-sized (222), values retail, design and events. Cluster 2 – medium: smallest segment (165), satisfied (5.3), visits mostly monthly, older (51% 55+), values the loyalty program. Cluster 3 – high: largest segment (328), satisfaction above the midpoint (4.2), good visit frequency (46% more than monthly), values design and layout. Cluster 4 – low: small, least satisfied (3.5), visits rarely (57% less than monthly) – invest little.",
+    "keyPoints": [
+      "Cluster 1 high (satisfaction + visit frequency)",
+      "Cluster 2 medium (smallest, satisfied)",
+      "Cluster 3 high (largest, frequent visits)",
+      "Cluster 4 low (dissatisfied, rare visits)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s05-02",
+    "lecture": "s05",
+    "case": "mynatural",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Evaluate the MyNatural segments and recommend which segment(s) to target with the new product line and with which strategic actions.",
+    "modelAnswer": "Cluster 3 is the most attractive: strongest green values, knowledge, product beliefs and social influence, buys sustainable products and cosmetics most often and has the highest willingness to try (4.38), purchase likelihood and recommendation. However it rates MyNatural products lowest (2.13). Actions: (1) prove effectiveness and sustainability credentials (certifications, transparent ingredients) to lift the evaluation; (2) leverage social influence – referral programs, community and influencer content among friends; (3) educational, values-driven communication matching their knowledge. Cluster 1 can be a secondary target; Cluster 2 has low attractiveness.",
+    "keyPoints": [
+      "Target Cluster 3 (green, engaged, high WillingTry/PurchaseLikely)",
+      "Address low evaluation of MyNatural in Cluster 3",
+      "Use social influence / referrals",
+      "Cluster 2 least attractive"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s05-03",
+    "lecture": "s05",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the difference between segmentation bases and segment descriptors and give examples.",
+    "modelAnswer": "Bases are the variables used to form segments – they explain why segments differ and respond differently (e.g. needs, attitudes, usage, responses to the product; psychographic or behavioural variables). Descriptors profile the resulting segments and help to reach them with tailored offers and communication (e.g. demographics, firmographics, personality, values, purchase frequency). The choice depends on the segmentation objective.",
+    "keyPoints": [
+      "Bases: variables used to form segments / why they differ",
+      "Descriptors: profile and reach segments",
+      "Examples for each",
+      "Choice depends on the objective"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s05-04",
+    "lecture": "s05",
+    "difficulty": 2,
+    "verb": "state",
+    "prompt": "State the seven steps of positioning analysis.",
+    "modelAnswer": "1 Select the target segment; 2 determine relevant competitive offerings; 3 determine potential differentiator dimensions; 4 select a sample of customers and get ratings of competitors on these dimensions; 5 plot the results (perceptual maps); 6 integrate preferences, choice or market share; 7 develop the positioning statement and strategies.",
+    "keyPoints": [
+      "Select target segment",
+      "Competitive offerings",
+      "Differentiator dimensions",
+      "Customer ratings",
+      "Perceptual map",
+      "Integrate preferences/choice/share",
+      "Positioning statement"
+    ]
+  }
+]

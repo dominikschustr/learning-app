@@ -1,0 +1,73 @@
+[
+  {
+    "id": "viu-chips",
+    "title": "Value-in-use: chips for ESCP's learning device (mock exam 2023/24 & 2025/26)",
+    "text": [
+      "ESCP introduces a new online learning device and needs 400 chips for it. ESCP pays 6 € per chip, and the chips need to be changed twice per year. By selling these chips, the supplier has a margin of 3 € per chip.",
+      "A new chip technology is introduced that has twice the endurance. The supplier's margin for the new chips is 8 € per chip. The supplier wants to determine the value-in-use (VIU) of the new chips.",
+      "Add-on: the new technology also allows a longer time between maintenance – 12 months instead of 6 months – and the cost of each shutdown is 1,000 €."
+    ],
+    "tables": []
+  },
+  {
+    "id": "viu-rings",
+    "title": "Value-in-use: Z-rings vs Y-rings (exam 2019/20)",
+    "text": [
+      "You are the CEO of a car manufacturer. One production line uses 250 Z-rings to connect it with the power distribution centre. Your buying department pays 8 € per Z-ring, and the rings must be changed during regular maintenance every three months.",
+      "A new product (Y-rings) has been developed that has twice the lifespan of the Z-rings. Add-on: each shutdown of the production line costs 3,000 €."
+    ],
+    "tables": []
+  },
+  {
+    "id": "web-kpis",
+    "title": "Startup OMG: comparing two website versions",
+    "text": [
+      "The startup OMG sells trendy sneakers and wants to know which website version performs better – the early version A or the new version B. Data from a social media platform:",
+      "Use: click-through rate = clicks / visitors; conversion rate = sales / visitors; (ad) cost per sale = ad spend / sales; return on ad investment = (revenue − ad spend) / ad spend."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Version A",
+          "Version B"
+        ],
+        "rows": [
+          [
+            "Visitors",
+            "20,000",
+            "20,000"
+          ],
+          [
+            "Clicks on product page",
+            "1,298",
+            "1,056"
+          ],
+          [
+            "Sales",
+            "75",
+            "92"
+          ],
+          [
+            "Average price paid",
+            "108 €",
+            "98 €"
+          ],
+          [
+            "Ad spend",
+            "1,800 €",
+            "2,000 €"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ab-decisions",
+    "title": "Can an A/B test support these decisions? (mock exam, revision session)",
+    "text": [
+      "In the following situations, decide whether an A/B test could support you in making the decision (true) or not (false)."
+    ],
+    "tables": []
+  }
+]

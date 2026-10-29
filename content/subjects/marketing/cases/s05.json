@@ -1,0 +1,268 @@
+[
+  {
+    "id": "mall-clusters",
+    "title": "Shopping centre cluster analysis (mock exam, revision session)",
+    "text": [
+      "A cluster analysis was conducted on a sample of 899 consumers who visited a shopping centre over the past month. Customers rated the importance of (1) quality and variety of the retail offer, (2) centre design and architecture, (3) activities and events at the centre, (4) membership in the loyalty program on a 1–7 scale (1 = not important at all, 7 = very important). The survey also measured satisfaction (1 = very dissatisfied, 7 = very satisfied) and visit frequency. Table 1 shows average scores per segment, table 2 demographics and visit frequency."
+    ],
+    "tables": [
+      {
+        "caption": "Table 1: Segmentation results",
+        "head": [
+          "",
+          "Cluster 1 (N=222)",
+          "Cluster 2 (N=165)",
+          "Cluster 3 (N=328)",
+          "Cluster 4 (N=184)"
+        ],
+        "rows": [
+          [
+            "Retail offer",
+            "5.8",
+            "6.1",
+            "4.6",
+            "6.5"
+          ],
+          [
+            "Centre activities and events",
+            "5.1",
+            "1.8",
+            "3.9",
+            "2.6"
+          ],
+          [
+            "Centre design and layout",
+            "5.6",
+            "5.9",
+            "6.7",
+            "5.3"
+          ],
+          [
+            "Loyalty program",
+            "3.4",
+            "6.0",
+            "4.2",
+            "2.3"
+          ],
+          [
+            "Satisfaction",
+            "5.7",
+            "5.3",
+            "4.2",
+            "3.5"
+          ]
+        ]
+      },
+      {
+        "caption": "Table 2: Demographics and visit frequency",
+        "head": [
+          "",
+          "Cluster 1",
+          "Cluster 2",
+          "Cluster 3",
+          "Cluster 4"
+        ],
+        "rows": [
+          [
+            "Age 18–34",
+            "23%",
+            "15%",
+            "45%",
+            "68%"
+          ],
+          [
+            "Age 35–54",
+            "45%",
+            "34%",
+            "36%",
+            "22%"
+          ],
+          [
+            "Age 55+",
+            "32%",
+            "51%",
+            "19%",
+            "10%"
+          ],
+          [
+            "Male",
+            "40%",
+            "29%",
+            "51%",
+            "48%"
+          ],
+          [
+            "Female",
+            "60%",
+            "71%",
+            "49%",
+            "52%"
+          ],
+          [
+            "Visits more often than monthly",
+            "55%",
+            "29%",
+            "46%",
+            "11%"
+          ],
+          [
+            "Visits monthly",
+            "37%",
+            "50%",
+            "37%",
+            "32%"
+          ],
+          [
+            "Visits less than monthly",
+            "8%",
+            "21%",
+            "17%",
+            "57%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mynatural",
+    "title": "MyNatural – segmentation of young skincare customers (in-class case)",
+    "text": [
+      "MyNatural produces premium natural and organic skincare and plans a new line for young consumers. 1,276 customers answered an online survey. Attitudinal scores range from 1 (low) to 5 (high): GreenValues (attitude towards sustainability), Knowledge (about environmental issues), Evaluation (opinion of MyNatural products), ProductBeliefs (sustainable products are better than traditional ones), Social (influence of friends on sustainable choices). A k-means cluster analysis produced three clusters. * = statistically significantly different from the other clusters."
+    ],
+    "tables": [
+      {
+        "caption": "Cluster means (segmentation bases)",
+        "head": [
+          "",
+          "GreenValues",
+          "Knowledge",
+          "Evaluation",
+          "ProductBeliefs",
+          "Social"
+        ],
+        "rows": [
+          [
+            "Cluster 1",
+            "3.22",
+            "3.08",
+            "2.61",
+            "2.64",
+            "2.22"
+          ],
+          [
+            "Cluster 2",
+            "2.27",
+            "1.97",
+            "2.75",
+            "2.31",
+            "1.67"
+          ],
+          [
+            "Cluster 3",
+            "3.98",
+            "3.75",
+            "2.13",
+            "3.42",
+            "3.27"
+          ]
+        ]
+      },
+      {
+        "caption": "Profiling (descriptors)",
+        "head": [
+          "",
+          "Cluster 1",
+          "Cluster 2",
+          "Cluster 3"
+        ],
+        "rows": [
+          [
+            "Female",
+            "56%",
+            "53%",
+            "66%*"
+          ],
+          [
+            "Average age",
+            "23.85",
+            "22.94",
+            "24.18*"
+          ],
+          [
+            "Metropolitan",
+            "54%",
+            "57%",
+            "55%"
+          ],
+          [
+            "Buys sustainable products more than once a month",
+            "12%",
+            "4%",
+            "24%*"
+          ],
+          [
+            "Buys sustainable cosmetics once a month or more",
+            "34%",
+            "19%",
+            "53%*"
+          ],
+          [
+            "WillingTry (1–5)",
+            "3.91",
+            "3.75",
+            "4.38"
+          ],
+          [
+            "PurchaseLikely (1–5)",
+            "3.15",
+            "2.49",
+            "3.84"
+          ],
+          [
+            "Recommendation (1–5)",
+            "3.34",
+            "2.76",
+            "4.04"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ge-scoring",
+    "title": "Scoring segment attractiveness for the GE/McKinsey matrix",
+    "text": [
+      "A company rates two segments on three attractiveness drivers (1 = poor, 5 = excellent). The weights reflect the relative importance of each driver."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Driver",
+          "Weight",
+          "Segment A",
+          "Segment B"
+        ],
+        "rows": [
+          [
+            "Segment size",
+            "0.4",
+            "4",
+            "2"
+          ],
+          [
+            "Growth",
+            "0.3",
+            "3",
+            "5"
+          ],
+          [
+            "Competitive intensity (5 = low competition)",
+            "0.3",
+            "2",
+            "4"
+          ]
+        ]
+      }
+    ]
+  }
+]

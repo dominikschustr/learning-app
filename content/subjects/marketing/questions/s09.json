@@ -1,0 +1,683 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s09-01",
+    "lecture": "s09",
+    "case": "adidas-regression",
+    "difficulty": 2,
+    "prompt": "From this model, which element(s) have an impact on how much money the customer spent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gender"
+      },
+      {
+        "id": "b",
+        "text": "Age"
+      },
+      {
+        "id": "c",
+        "text": "Social"
+      },
+      {
+        "id": "d",
+        "text": "Duration"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Only coefficients with p < 0.05 are significant: gender (0.002), age (0.030) – and channel (0.004), which is not an option. Duration (0.567) and social (0.832) are not significant, so we cannot interpret them despite their large coefficients.",
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-02",
+    "lecture": "s09",
+    "case": "adidas-regression",
+    "difficulty": 3,
+    "prompt": "Disregarding age, what is the difference in spending between a male customer purchasing online and a female customer purchasing offline?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Female/offline spends 23.1 less"
+      },
+      {
+        "id": "b",
+        "text": "Male/online spends 12.7 more"
+      },
+      {
+        "id": "c",
+        "text": "Female/offline spends 35.8 more"
+      },
+      {
+        "id": "d",
+        "text": "Male/online spends 10.4 less"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Male online: β0 − 23.1. Female offline: β0 + 12.7. Difference = 12.7 − (−23.1) = 35.8 in favour of female/offline.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-03",
+    "lecture": "s09",
+    "case": "adidas-regression",
+    "difficulty": 3,
+    "prompt": "A 24-year-old female customer who usually shops online, last bought 37 days ago and follows the brand on social media. What is her forecast transaction value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "502.20 €"
+      },
+      {
+        "id": "b",
+        "text": "75.50 €"
+      },
+      {
+        "id": "c",
+        "text": "554.50 €"
+      },
+      {
+        "id": "d",
+        "text": "23.20 €"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Include only significant variables (plus the intercept): 52.3 + 12.7 (female) + 1.4 × 24 (= 33.6) − 23.1 (online) = 75.50 €. Duration and social are not significant and are left out.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-04",
+    "lecture": "s09",
+    "case": "adidas-regression",
+    "difficulty": 2,
+    "prompt": "What does the R² of 65% tell you?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The model explains 65% of the variance in transaction value"
+      },
+      {
+        "id": "b",
+        "text": "35% of the variance remains unexplained (error)"
+      },
+      {
+        "id": "c",
+        "text": "65% of the coefficients are significant"
+      },
+      {
+        "id": "d",
+        "text": "The forecast is correct for 65% of customers"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "R² = explained variance / total variance – an indication of how precise the predictions are."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-05",
+    "lecture": "s09",
+    "difficulty": 1,
+    "prompt": "For which purposes can regression analysis be used in marketing planning?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marketing mix modelling – effectiveness of channels and campaigns"
+      },
+      {
+        "id": "b",
+        "text": "Budget optimisation – predict the impact of budget allocations"
+      },
+      {
+        "id": "c",
+        "text": "Sales forecasting"
+      },
+      {
+        "id": "d",
+        "text": "Price optimisation – predict willingness to pay from customer characteristics"
+      },
+      {
+        "id": "e",
+        "text": "Perceptual mapping of brands"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Regression analyses relationships between a dependent and independent variables to explain and predict."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-06",
+    "lecture": "s09",
+    "difficulty": 2,
+    "prompt": "Which measurement scales can be used in traditional (linear) regression?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Metric (interval or ratio) dependent variable"
+      },
+      {
+        "id": "b",
+        "text": "Metric independent variables"
+      },
+      {
+        "id": "c",
+        "text": "Nominal independent variables transformed into binary (dummy) variables"
+      },
+      {
+        "id": "d",
+        "text": "Nominal dependent variable"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The DV must be metric. Nominal IVs must be dummy-coded; ordinal variables are not used in traditional regression."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-07",
+    "lecture": "s09",
+    "difficulty": 2,
+    "prompt": "Package colour has three levels (red, yellow, green). How is it included as an independent variable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two dummy variables (red: 0/1, yellow: 0/1); green is the baseline when both are 0"
+      },
+      {
+        "id": "b",
+        "text": "One variable coded 1, 2, 3"
+      },
+      {
+        "id": "c",
+        "text": "Three dummy variables all included in the model"
+      },
+      {
+        "id": "d",
+        "text": "It cannot be included"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "k categories → k−1 dummies; the omitted category is the reference. Same in the start-up example: three states, two dummies, Florida as baseline.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-08",
+    "lecture": "s09",
+    "difficulty": 2,
+    "prompt": "Which are the four steps of a regression analysis (in order)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Model formulation → estimation of the regression function → test of the regression function → test of the regression coefficients"
+      },
+      {
+        "id": "b",
+        "text": "Estimation → model formulation → test of coefficients → test of the function"
+      },
+      {
+        "id": "c",
+        "text": "Test of the function → estimation → formulation → test of coefficients"
+      },
+      {
+        "id": "d",
+        "text": "Data collection → clustering → profiling → targeting"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Formulation (incl. checking linearity with scatter plots), estimation (OLS), test of the function (R², F), test of coefficients (t-test).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-09",
+    "lecture": "s09",
+    "difficulty": 1,
+    "prompt": "How does ordinary least squares (OLS) choose the regression line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It minimises the sum of the squared residuals"
+      },
+      {
+        "id": "b",
+        "text": "It maximises R² by adding variables"
+      },
+      {
+        "id": "c",
+        "text": "It minimises the number of outliers"
+      },
+      {
+        "id": "d",
+        "text": "It sets the intercept to zero"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Residual = observed − estimated value; OLS chooses b0, b1 so that Σ residuals² is minimal.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-10",
+    "lecture": "s09",
+    "difficulty": 2,
+    "prompt": "In a simple regression analysis, the intercept indicates …",
+    "options": [
+      {
+        "id": "a",
+        "text": "the observed value of the dependent variable when the independent variable is zero"
+      },
+      {
+        "id": "b",
+        "text": "the estimated value of the dependent variable when the independent variable is zero"
+      },
+      {
+        "id": "c",
+        "text": "the estimated value of the independent variable when the dependent variable is zero"
+      },
+      {
+        "id": "d",
+        "text": "the observed value of the independent variable when the dependent variable is zero"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The intercept is the ESTIMATED value of Y at X = 0 (recap quiz of session 10).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-11",
+    "lecture": "s09",
+    "case": "margarine",
+    "difficulty": 3,
+    "prompt": "What are the estimated sales and the residual for observation no. 6 (multiple regression)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estimated ≈ 2,210; residual ≈ +68"
+      },
+      {
+        "id": "b",
+        "text": "Estimated ≈ 2,278; residual = 0"
+      },
+      {
+        "id": "c",
+        "text": "Estimated ≈ 1,965; residual ≈ +313"
+      },
+      {
+        "id": "d",
+        "text": "Estimated ≈ 2,210; residual ≈ −68"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "144.482 + 10.487 × 102 + 0.664 × 1,500 = 144.48 + 1,069.67 + 996 ≈ 2,210. Residual = observed − estimated = 2,278 − 2,210 = 68.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-12",
+    "lecture": "s09",
+    "case": "margarine",
+    "difficulty": 2,
+    "prompt": "How do you interpret the coefficient of visits in the multiple regression?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One additional salesman visit is associated with about 10.5 more packages sold, holding marketing investment constant"
+      },
+      {
+        "id": "b",
+        "text": "One additional visit increases sales by 18.9 packages in all models"
+      },
+      {
+        "id": "c",
+        "text": "Visits are more important than marketing investment because 10.487 > 0.664"
+      },
+      {
+        "id": "d",
+        "text": "Visits explain 10.5% of the variance in sales"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "In multiple regression, coefficients are interpreted ceteris paribus. Absolute coefficient sizes are not comparable when variables use different units – standardise first.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-13",
+    "lecture": "s09",
+    "case": "units-model",
+    "difficulty": 2,
+    "prompt": "Which coefficients are significant at the 5% level?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SEM"
+      },
+      {
+        "id": "b",
+        "text": "Social media"
+      },
+      {
+        "id": "c",
+        "text": "Season"
+      },
+      {
+        "id": "d",
+        "text": "Price"
+      },
+      {
+        "id": "e",
+        "text": "Intercept"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "p-values: SEM 0.018, social media 0.044, season 0.000 – all < 0.05. Price (0.130) and intercept (0.165) are not significant."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-14",
+    "lecture": "s09",
+    "case": "units-model",
+    "difficulty": 3,
+    "prompt": "Where should the company invest an additional euro to increase unit sales?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Social media campaigns – about 1.38 extra units per €"
+      },
+      {
+        "id": "b",
+        "text": "SEM – about 0.47 extra units per €"
+      },
+      {
+        "id": "c",
+        "text": "Lower the price – significant effect of −79 units per €"
+      },
+      {
+        "id": "d",
+        "text": "Nowhere – the model does not fit"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Both channels are significant and measured in € – social media yields ~1.38 units per € vs ~0.47 for SEM. Price is not significant.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-15",
+    "lecture": "s09",
+    "case": "startups",
+    "difficulty": 3,
+    "prompt": "Which conclusions does the start-up regression support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Marketing spend and administration spend are significantly associated with profit"
+      },
+      {
+        "id": "b",
+        "text": "There is no significant profit difference between the states"
+      },
+      {
+        "id": "c",
+        "text": "The model explains about 61% of the variance in profit"
+      },
+      {
+        "id": "d",
+        "text": "New York start-ups earn 5,579 more than Florida start-ups – a significant difference"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The New York dummy has p = 0.55 → not significant; we cannot conclude a location effect."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-01",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "Regression analysis is used both to explain relationships between variables and to predict values of the dependent variable.",
+    "answer": true,
+    "explanation": "Simple regression: one IV; multiple regression: several IVs."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-02",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "The selection of the dependent and independent variables must be based on conceptual or theoretical grounds.",
+    "answer": true,
+    "explanation": "Otherwise there is a danger of spurious correlations (e.g. ice cream sales and murders – both driven by the weather)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-03",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "Linear regression assumes a linear relationship between the dependent and each independent variable, which can be checked with scatter plots.",
+    "answer": true,
+    "explanation": "Linearity assumption."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-04",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "The slope coefficient indicates the change in the dependent variable due to a one-unit change in the independent variable.",
+    "answer": true,
+    "explanation": "E.g. one more salesman visit → +18.881 packages (simple regression)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-05",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "A residual is the difference between the observed and the estimated value of the dependent variable.",
+    "answer": true,
+    "explanation": "It expresses the impact of factors that are not / cannot be measured."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-06",
+    "lecture": "s09",
+    "difficulty": 2,
+    "statement": "R² can decrease when an additional independent variable is added to the model.",
+    "answer": false,
+    "explanation": "R² grows (or at least does not change) when IVs are added – even irrelevant ones. That is why the adjusted R² is used."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-07",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "R² is the proportion of explained variance in the dependent variable and ranges from 0 to 1.",
+    "answer": true,
+    "explanation": "Close to 1 = very good fit."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-08",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "The t-test of a regression coefficient tests H0: βj = 0.",
+    "answer": true,
+    "explanation": "If the true coefficient differs from 0, the IV has a significant influence."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-09",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "A coefficient is significant at the 5% level if its p-value is greater than 0.05.",
+    "answer": false,
+    "explanation": "Significant if p < 0.05 (|t_emp| > t_tab)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-10",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "The empirical t-value is the coefficient divided by its standard error.",
+    "answer": true,
+    "explanation": "t = b_j / SE(b_j); t-values can be negative."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-11",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "A non-significant coefficient should still be used to make predictions because its value is large.",
+    "answer": false,
+    "explanation": "Always check significance first; non-significant variables are not interpreted and left out of the forecast."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-12",
+    "lecture": "s09",
+    "difficulty": 2,
+    "statement": "If variables are measured in different units, the absolute size of their coefficients shows their relative importance.",
+    "answer": false,
+    "explanation": "Coefficients must be standardised to compare importance."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-13",
+    "lecture": "s09",
+    "difficulty": 1,
+    "statement": "The F-statistic assesses whether the regression model as a whole is useful for revealing the relationship in the population.",
+    "answer": true,
+    "explanation": "Together with R² it tests the regression function."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-14",
+    "lecture": "s09",
+    "case": "margarine",
+    "difficulty": 1,
+    "statement": "In the margarine example, the simple regression predicts 39.534 packages for an area with zero salesman visits.",
+    "answer": true,
+    "explanation": "That is the intercept."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-15",
+    "lecture": "s09",
+    "case": "units-model",
+    "difficulty": 1,
+    "statement": "In the monthly sales model, price has a significant negative effect on units sold.",
+    "answer": false,
+    "explanation": "Price's p-value is 0.130 > 0.05 → not significant."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-16",
+    "lecture": "s09",
+    "case": "adidas-regression",
+    "difficulty": 1,
+    "statement": "In the Adidas model, online purchases are associated with a lower transaction value than offline purchases.",
+    "answer": true,
+    "explanation": "Channel coefficient −23.1 (p = 0.004)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s09-17",
+    "lecture": "s09",
+    "case": "adidas-regression",
+    "difficulty": 1,
+    "statement": "In the Adidas model, social media followers spend 27.6 € more on average.",
+    "answer": false,
+    "explanation": "Social is not significant (p = 0.832), so this coefficient cannot be interpreted."
+  },
+  {
+    "type": "short",
+    "id": "sa-s09-01",
+    "lecture": "s09",
+    "case": "adidas-regression",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Forecast the transaction value of a 24-year-old female customer who shops online, last purchased 37 days ago and follows Adidas on social media. Explain which variables you include.",
+    "modelAnswer": "Only significant variables (p < 0.05) are included, plus the intercept: gender (0.002), age (0.030), channel (0.004). Duration and social are not significant and are left out.\nY = 52.3 + 12.7 × 1 + 1.4 × 24 − 23.1 × 1 = 52.3 + 12.7 + 33.6 − 23.1 = 75.50 €.",
+    "keyPoints": [
+      "Use only significant variables + intercept",
+      "Exclude duration and social (p > 0.05)",
+      "52.3 + 12.7 + 33.6 − 23.1",
+      "Result 75.50 €"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s09-02",
+    "lecture": "s09",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the four steps of a regression analysis and what is tested in steps 3 and 4.",
+    "modelAnswer": "1 Model formulation: choose DV and IVs on theoretical grounds and check linearity (scatter plots). 2 Estimation: estimate the regression function with OLS (minimise the sum of squared residuals). 3 Test of the regression function: how well does the model fit – R² (explained/total variance), adjusted R², F-statistic. 4 Test of the coefficients: t-test of H0: βj = 0 for each IV – significant if |t| > t_tab or p < 0.05.",
+    "keyPoints": [
+      "Formulation incl. linearity check",
+      "Estimation via OLS",
+      "Test function: R², adjusted R², F",
+      "Test coefficients: t-test, p-value"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s09-03",
+    "lecture": "s09",
+    "case": "units-model",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Interpret the regression results for monthly unit sales: model fit, significant variables and where to invest.",
+    "modelAnswer": "The model fits very well (R² = 0.99, adjusted 0.98, F significant). SEM (0.472, p = 0.018), social media (1.380, p = 0.044) and the seasonal dummy (1,534.58, p = 0.000) are significant; price (p = 0.130) is not. Each extra € on social media is associated with ~1.38 more units, each € on SEM with ~0.47 units; the summer months sell ~1,535 more units. To increase sales, shift budget towards social media campaigns (while keeping the seasonal effect in mind).",
+    "keyPoints": [
+      "Very good fit (R² 0.99)",
+      "SEM, social media, season significant",
+      "Price not significant",
+      "Invest in social media (higher return per €)"
+    ]
+  }
+]

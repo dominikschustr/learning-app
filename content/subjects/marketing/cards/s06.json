@@ -1,0 +1,92 @@
+[
+  {
+    "id": "c-s06-01",
+    "lecture": "s06",
+    "front": "Customer journey (sessions 6–8)",
+    "back": "Acquisition (S6) → Conversion (S7) → Retention & relationship management (S8)."
+  },
+  {
+    "id": "c-s06-02",
+    "lecture": "s06",
+    "front": "Customer acquisition funnel",
+    "back": "Awareness → interest → consideration → intent → evaluation → purchase."
+  },
+  {
+    "id": "c-s06-03",
+    "lecture": "s06",
+    "front": "CAC",
+    "back": "Customer acquisition cost = marketing costs (MC) / customers acquired (CA), for a specific campaign or time window. To be optimised; compare with CLV."
+  },
+  {
+    "id": "c-s06-04",
+    "lecture": "s06",
+    "front": "Product levels",
+    "back": "Core (underlying need – \"a three-inch hole, not a drill bit\"), tangible (features, styling, quality, brand, packaging), augmented (added services and features)."
+  },
+  {
+    "id": "c-s06-05",
+    "lecture": "s06",
+    "front": "Product component model",
+    "back": "Physical attributes (product, design, functional features) · symbolic attributes (brand, trademark, styling, packaging, price, quality) · service attributes (repair, installation, instructions, financing, spare parts, warranties, deliveries) · legal conformity."
+  },
+  {
+    "id": "c-s06-06",
+    "lecture": "s06",
+    "front": "New product development process",
+    "back": "Opportunity identification → design → testing → introduction → life cycle management (GO/NO decisions; reposition or harvest)."
+  },
+  {
+    "id": "c-s06-07",
+    "lecture": "s06",
+    "front": "Customer value equation",
+    "back": "Value = benefits (functional, psychological, economic) − costs (monetary, perceived risk, inconvenience). Example: Lexus."
+  },
+  {
+    "id": "c-s06-08",
+    "lecture": "s06",
+    "front": "Measures of customer value",
+    "back": "Objective: engineering assessment, indirect survey questions, VIU. Perceptual unconstrained: focus groups, direct survey questions, importance ratings. Perceptual constrained: conjoint, benchmarking. Behavioural: choice models (MNL), data mining."
+  },
+  {
+    "id": "c-s06-09",
+    "lecture": "s06",
+    "front": "Value-in-use (VIU)",
+    "back": "Maximum willingness to pay for a focal product given a reference product. Old cost per period = new cost per period → solve for the new price. Include all usage costs (e.g. shutdowns)."
+  },
+  {
+    "id": "c-s06-10",
+    "lecture": "s06",
+    "front": "VIU recipe",
+    "back": "1 annual cost of the old solution (units × replacements × price + downtime) · 2 annual cost of the new one with price P · 3 set equal and solve for P · 4 compare P (VIU) with the offered price: price < VIU → buy."
+  },
+  {
+    "id": "c-s06-11",
+    "lecture": "s06",
+    "front": "Inferential statistics",
+    "back": "Conclusions about a population from a sample: estimation and hypothesis testing. H0 = no effect, H1 = hypothesised effect."
+  },
+  {
+    "id": "c-s06-12",
+    "lecture": "s06",
+    "front": "Type I vs. type II error",
+    "back": "Type I (α): reject H0 although true. Type II (β): keep H0 although false. Fix α (usually 5%) and minimise β."
+  },
+  {
+    "id": "c-s06-13",
+    "lecture": "s06",
+    "front": "A/B testing",
+    "back": "Split testing: show version A (control) to one part of the audience and version B (challenger) to another; compare a KPI. Benefits: traffic ↑, conversion ↑, bounce rate ↓, cart abandonment ↓."
+  },
+  {
+    "id": "c-s06-14",
+    "lecture": "s06",
+    "front": "t-test vs. chi-square in A/B tests",
+    "back": "t-test: difference between means of two groups (e.g. willingness to buy – metric). Chi-square: observed vs expected frequencies (e.g. choice yes/no – categorical); test of independence or goodness of fit."
+  },
+  {
+    "id": "c-s06-15",
+    "lecture": "s06",
+    "front": "When is an A/B test NOT appropriate?",
+    "back": "When you do not compare two versions of the same element under random assignment – e.g. comparing different products across different customer groups (→ regression)."
+  }
+]

@@ -1,0 +1,724 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s02-01",
+    "lecture": "s02",
+    "difficulty": 1,
+    "prompt": "Which of the following variables are measured on a RATIO scale?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Age in years"
+      },
+      {
+        "id": "b",
+        "text": "Revenues in €"
+      },
+      {
+        "id": "c",
+        "text": "Satisfaction on a 1–7 Likert scale"
+      },
+      {
+        "id": "d",
+        "text": "Product category"
+      },
+      {
+        "id": "e",
+        "text": "Purchase frequency groups (rarely / sometimes / often)"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Ratio data have equal intervals and a true zero point (age, income, revenues, sales). Likert scales are interval, product category is nominal, frequency groups are ordinal."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-02",
+    "lecture": "s02",
+    "difficulty": 2,
+    "prompt": "Which variables are NON-METRIC (categorical)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gender"
+      },
+      {
+        "id": "b",
+        "text": "Age groups (18–34, 35–54, 55+)"
+      },
+      {
+        "id": "c",
+        "text": "Net Promoter Score scale 0–10"
+      },
+      {
+        "id": "d",
+        "text": "Region"
+      },
+      {
+        "id": "e",
+        "text": "Income in €"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "Nominal (gender, region) and ordinal (age groups) data are non-metric. Rating scales such as NPS/Likert are treated as interval (metric); income is ratio."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-03",
+    "lecture": "s02",
+    "difficulty": 2,
+    "prompt": "Which type of variable does each question type generate? Select the correct pairs.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dichotomous question (yes/no) – nominal"
+      },
+      {
+        "id": "b",
+        "text": "Rank order question – ordinal"
+      },
+      {
+        "id": "c",
+        "text": "Likert scale – metric (interval)"
+      },
+      {
+        "id": "d",
+        "text": "Multiple choice, select many – ordinal"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Multiple choice (select many) generates a non-metric NOMINAL variable; select one generates nominal or ordinal."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-04",
+    "lecture": "s02",
+    "difficulty": 2,
+    "prompt": "Which measures of central tendency can be computed for a NOMINAL variable such as product category?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mode"
+      },
+      {
+        "id": "b",
+        "text": "Median"
+      },
+      {
+        "id": "c",
+        "text": "Mean"
+      },
+      {
+        "id": "d",
+        "text": "Standard deviation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The mode can be computed for any type of variable. The median requires an order (not possible for nominal data); mean and SD require metric data.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-05",
+    "lecture": "s02",
+    "difficulty": 1,
+    "prompt": "Which statements about dispersion measures are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The variance is the average of the squared differences from the mean"
+      },
+      {
+        "id": "b",
+        "text": "The standard deviation is the square root of the variance"
+      },
+      {
+        "id": "c",
+        "text": "The standard deviation is expressed in the same units as the mean"
+      },
+      {
+        "id": "d",
+        "text": "Variance and standard deviation can be computed for nominal variables"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Variance and SD measure how spread-out observations are and require metric variables."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-06",
+    "lecture": "s02",
+    "difficulty": 2,
+    "prompt": "What does a Pearson correlation coefficient of r = −0.85 between price and units sold indicate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A strong negative linear relationship"
+      },
+      {
+        "id": "b",
+        "text": "As price increases, units sold tend to decrease"
+      },
+      {
+        "id": "c",
+        "text": "Price increases cause sales to fall"
+      },
+      {
+        "id": "d",
+        "text": "There is no linear relationship"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "r shows direction and strength of a LINEAR relationship (−1 ≤ r ≤ 1). It does not prove causation."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-07",
+    "lecture": "s02",
+    "difficulty": 1,
+    "prompt": "Which recommendations for designing a questionnaire were given in class?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use clear language and brief, simple questions"
+      },
+      {
+        "id": "b",
+        "text": "Follow a natural flow (train of thought, logical conversation)"
+      },
+      {
+        "id": "c",
+        "text": "Do not lead respondents to a particular answer"
+      },
+      {
+        "id": "d",
+        "text": "Open with a presentation of the research, anonymity/privacy and instructions"
+      },
+      {
+        "id": "e",
+        "text": "Rely mainly on open-ended questions to collect quantitative data"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Closed-ended questions form the major part of surveys because they are more effective for quantitative data."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-08",
+    "lecture": "s02",
+    "difficulty": 1,
+    "prompt": "Which statements about customer experience metrics are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CSAT tracks how satisfied customers are with products/services"
+      },
+      {
+        "id": "b",
+        "text": "NPS measures customer loyalty"
+      },
+      {
+        "id": "c",
+        "text": "CES measures how much effort a customer has to exert to get an issue resolved"
+      },
+      {
+        "id": "d",
+        "text": "NPS is the share of customers giving 7 or 8"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "NPS = % promoters (9–10) − % detractors (0–6). Scores 7–8 are passives."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-09",
+    "lecture": "s02",
+    "case": "cx-survey",
+    "difficulty": 2,
+    "prompt": "What is the CSAT score?",
+    "options": [
+      {
+        "id": "a",
+        "text": "70%"
+      },
+      {
+        "id": "b",
+        "text": "60%"
+      },
+      {
+        "id": "c",
+        "text": "30%"
+      },
+      {
+        "id": "d",
+        "text": "87.5%"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "CSAT = satisfied customers (scores 4 and 5) / responses × 100 = (80 + 60) / 200 × 100 = 70%.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-10",
+    "lecture": "s02",
+    "case": "cx-survey",
+    "difficulty": 2,
+    "prompt": "What is the Net Promoter Score?",
+    "options": [
+      {
+        "id": "a",
+        "text": "+20"
+      },
+      {
+        "id": "b",
+        "text": "+45"
+      },
+      {
+        "id": "c",
+        "text": "+75"
+      },
+      {
+        "id": "d",
+        "text": "−5"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Promoters (9–10) = 90/200 = 45%; detractors (0–6) = 50/200 = 25%; NPS = 45 − 25 = +20. Passives (7–8) are ignored.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-11",
+    "lecture": "s02",
+    "case": "cx-survey",
+    "difficulty": 2,
+    "prompt": "What is the Customer Effort Score?",
+    "options": [
+      {
+        "id": "a",
+        "text": "60%"
+      },
+      {
+        "id": "b",
+        "text": "45%"
+      },
+      {
+        "id": "c",
+        "text": "35%"
+      },
+      {
+        "id": "d",
+        "text": "75%"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "CES = respondents agreeing (5, 6, 7) / responses × 100 = (30 + 50 + 40) / 200 × 100 = 60%.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-12",
+    "lecture": "s02",
+    "case": "basket-values",
+    "difficulty": 3,
+    "prompt": "Which statements on the basket data are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The mean is 5"
+      },
+      {
+        "id": "b",
+        "text": "The median is 4.5"
+      },
+      {
+        "id": "c",
+        "text": "The mode is 4"
+      },
+      {
+        "id": "d",
+        "text": "The standard deviation (average squared deviation) is 2"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Mean = 40/8 = 5. Median = average of 4th and 5th value = (4+5)/2 = 4.5. Mode = 4 (three times). Variance = (9+1+1+1+0+0+4+16)/8 = 4 → SD = 2."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-13",
+    "lecture": "s02",
+    "difficulty": 2,
+    "prompt": "You want to show the share of each product category in total revenue (5 categories). Which charts are suitable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pie chart"
+      },
+      {
+        "id": "b",
+        "text": "Stacked (100%) bar or area chart showing part-to-whole"
+      },
+      {
+        "id": "c",
+        "text": "Scatter plot"
+      },
+      {
+        "id": "d",
+        "text": "Histogram"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Pie charts show relative proportions (max. 6–7 categories); part-to-whole can also be shown with area/stacked charts. Scatter plots show correlation, histograms distributions."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-14",
+    "lecture": "s02",
+    "difficulty": 1,
+    "prompt": "Which chart fits best to show how well a KPI (e.g. NPS) performs against a target goal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gauge / bullet chart"
+      },
+      {
+        "id": "b",
+        "text": "Scatter plot"
+      },
+      {
+        "id": "c",
+        "text": "Pie chart"
+      },
+      {
+        "id": "d",
+        "text": "Histogram"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Gauge/bullet charts show how a metric performs against a target and are used for KPIs and NPS scores.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-15",
+    "lecture": "s02",
+    "difficulty": 1,
+    "prompt": "Which are Wurman's five ways to organise information (\"five hat racks\")?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Location"
+      },
+      {
+        "id": "b",
+        "text": "Alphabet"
+      },
+      {
+        "id": "c",
+        "text": "Time"
+      },
+      {
+        "id": "d",
+        "text": "Category"
+      },
+      {
+        "id": "e",
+        "text": "Hierarchy"
+      },
+      {
+        "id": "f",
+        "text": "Colour"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "explanation": "LATCH: Location, Alphabet, Time, Category, Hierarchy (Wurman, Information Anxiety 2). Colour is a visual variable."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-16",
+    "lecture": "s02",
+    "difficulty": 2,
+    "prompt": "Which questions belong to the \"grammar\" for checking a visualisation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Is the data source provided?"
+      },
+      {
+        "id": "b",
+        "text": "Is the scale complete (not cut)?"
+      },
+      {
+        "id": "c",
+        "text": "Is the colour theme friendly for colour-blind viewers?"
+      },
+      {
+        "id": "d",
+        "text": "Is the data displayed in an unbiased fashion, without illusory effects?"
+      },
+      {
+        "id": "e",
+        "text": "Does the chart use as many colours as possible?"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Checks: data, statistics, aesthetics, coordinates, position, guides, geometry, colour theme, manipulation, subjective appeal."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-01",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Interval data have equal intervals but no true zero point (e.g. Likert scales, IQ scores).",
+    "answer": true,
+    "explanation": "Ratio data additionally have a true zero point (age, income, sales)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-02",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Ordinal data have a hierarchy, e.g. age groups or purchase frequency.",
+    "answer": true,
+    "explanation": "Ordinal = ordered categories; nominal = no hierarchy."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-03",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "A rank order question generates a metric interval variable.",
+    "answer": false,
+    "explanation": "Rank order questions generate a non-metric ORDINAL variable."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-04",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "A Likert-scale question usually offers 5, 7 or 9 response options and can be organised as a semantic differential or a matrix.",
+    "answer": true,
+    "explanation": "Likert scales generate metric interval variables."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-05",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "When designing multiple-choice questions, you should include a \"don't know\" and an \"other – please specify\" option where applicable.",
+    "answer": true,
+    "explanation": "This was the advice on multiple choice (select many) questions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-06",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "The median can be computed for nominal variables.",
+    "answer": false,
+    "explanation": "The median requires ordering the data by magnitude; it cannot be computed for non-metric nominal variables."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-07",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Relative frequencies are absolute frequencies divided by the total number of observations.",
+    "answer": true,
+    "explanation": "They express the percentage of the total sample."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-08",
+    "lecture": "s02",
+    "difficulty": 2,
+    "statement": "A Pearson correlation of r = 0 means that there is no relationship at all between two variables.",
+    "answer": false,
+    "explanation": "r = 0 means no LINEAR relationship; a non-linear relationship may still exist."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-09",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Univariate analysis examines the relationship between a dependent and several independent variables.",
+    "answer": false,
+    "explanation": "Univariate analysis involves a single variable; multivariate analysis examines two (bivariate) or more variables."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-10",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "CSAT counts respondents who give 4 or 5 on a 5-point scale as satisfied.",
+    "answer": true,
+    "explanation": "CSAT = satisfied customers (4 and 5) / survey responses × 100."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-11",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Detractors in the NPS are respondents scoring 0 to 6.",
+    "answer": true,
+    "explanation": "Promoters 9–10, passives 7–8, detractors 0–6."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-12",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Bar charts work well with many categories (more than 20 bars).",
+    "answer": false,
+    "explanation": "Avoid bar charts with too many categories – no more than about 10 bars."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-13",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Line charts are suited for continuous data that change over time and can display multiple series on the same timeline.",
+    "answer": true,
+    "explanation": "Line charts visualise trends rather than exact values."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-14",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Pie charts should be limited to about 6–7 categories.",
+    "answer": true,
+    "explanation": "With more categories, slices become hard to compare."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-15",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "Data visualisation is the process of converting raw data into easily understood pictures of information that enable fast and effective decisions.",
+    "answer": true,
+    "explanation": "Definition from the session."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-16",
+    "lecture": "s02",
+    "difficulty": 2,
+    "statement": "In a survey with 200 respondents, if 10 detractors become passives (all else equal), the NPS increases by 5 points.",
+    "answer": true,
+    "explanation": "Detractors fall by 10/200 = 5 percentage points; promoters are unchanged, so NPS = %promoters − %detractors rises by 5. Passives themselves do not enter the formula."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s02-17",
+    "lecture": "s02",
+    "difficulty": 1,
+    "statement": "A scatter plot is the appropriate chart to show correlation and clusters between two metric variables.",
+    "answer": true,
+    "explanation": "Scatter plots show correlation and clustering; the order of the points is not essential."
+  },
+  {
+    "type": "short",
+    "id": "sa-s02-01",
+    "lecture": "s02",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the four measurement scales of data and give a marketing example for each.",
+    "modelAnswer": "Non-metric data: nominal (no hierarchy, e.g. gender, product category, region) and ordinal (hierarchy/order, e.g. age groups, purchase frequency). Metric data: interval (equal intervals, no true zero, e.g. Likert-scale satisfaction, NPS) and ratio (equal intervals and a true zero, e.g. age, income, revenues, sales).",
+    "keyPoints": [
+      "Nominal: categories without order + example",
+      "Ordinal: ordered categories + example",
+      "Interval: equal intervals, no true zero + example",
+      "Ratio: true zero point + example",
+      "Nominal/ordinal = non-metric, interval/ratio = metric"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s02-02",
+    "lecture": "s02",
+    "case": "cx-survey",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Calculate CSAT, NPS and CES for the survey. Show your calculations.",
+    "modelAnswer": "CSAT = (80 + 60) / 200 × 100 = 70%.\nNPS = % promoters − % detractors = 90/200 − 50/200 = 45% − 25% = +20.\nCES = (30 + 50 + 40) / 200 × 100 = 60%.",
+    "keyPoints": [
+      "CSAT = 70% (scores 4–5)",
+      "NPS = 45% − 25% = +20",
+      "CES = 60% (scores 5–7)",
+      "Calculation steps shown"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s02-03",
+    "lecture": "s02",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain which measures of central tendency and dispersion can be used for which type of variable.",
+    "modelAnswer": "The mode (most frequent value) works for every variable type. The median (middle value after ordering) needs at least ordinal data – not nominal. The mean, variance and standard deviation require metric (interval/ratio) data. For two metric variables, the Pearson correlation shows direction and strength of a linear relationship.",
+    "keyPoints": [
+      "Mode: all variable types",
+      "Median: not for nominal (needs order)",
+      "Mean: metric data",
+      "Variance/SD: metric data",
+      "Pearson correlation: two metric variables"
+    ]
+  }
+]

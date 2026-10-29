@@ -1,0 +1,118 @@
+{
+  "lecture": "s04",
+  "title": "Session 4 – Text and Data Mining + Visual Mining",
+  "source": "04_DDM_Student handout_2627.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Text and data mining (TDM) turn large volumes of mostly unstructured data into insights. Companies like Coca-Cola monitor and analyse social media mentions in real time (more than 30 mentions per minute in English alone)."
+        },
+        {
+          "kind": "item",
+          "text": "Text mining treats unstructured text. Typical algorithms:",
+          "children": [
+            "Tokenization: divide text into tokens",
+            "Elimination of stop words (\"and\", \"the\")",
+            "Stemming/lemmatization: reduce words to their root",
+            "TF-IDF: frequency and weight of a term",
+            "Named Entity Recognition: identify names, locations etc.",
+            "Opinion mining/sentiment analysis: positive, negative, neutral",
+            "Topic modelling & text classification: hidden themes, predefined labels"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Text mining success depends on data quality (garbage in, garbage out), data cleansing, algorithm selection, scalability, model evaluation and ethical boundaries."
+        },
+        {
+          "kind": "item",
+          "text": "Data mining uncovers meaningful patterns or rules:",
+          "children": [
+            "Association rule mining: relationships among items",
+            "Clustering: group similar data points",
+            "Classification: predict categorical labels from training data",
+            "Regression: predict continuous values",
+            "Sequential pattern mining: sequences, time series, transactions",
+            "Neural networks",
+            "Anomaly detection: unusual patterns, e.g. fraud"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Predictive analytics uses historical data with statistical modelling, data mining and machine learning – for demand forecasting, supply chain optimisation, fraud detection, predicting customer behaviour, healthcare diagnostics and stock markets."
+        },
+        {
+          "kind": "item",
+          "text": "Social listening follows six steps:",
+          "children": [
+            "1 Set marketing objectives (in-house)",
+            "2 Data collection",
+            "3 Data analysis",
+            "4 Insights generation",
+            "5 Engagement and response (in-house)",
+            "6 Monitoring"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Sentiment analysis supports brand reputation monitoring, customer research and feedback, market research, crisis prevention and management, customer service and social media/financial/political analysis (examples: Boeing after the China Eastern crash; cryptocurrency price prediction)."
+        },
+        {
+          "kind": "item",
+          "text": "Visual mining extracts insights from images and videos (Dash Hudson Vision AI, YouScan). More than 80% of visual imagery is untapped; it helps to spot emerging trends and monitor competitors."
+        },
+        {
+          "kind": "item",
+          "text": "Team activity (Brand24, Microsoft vs Apple): compare volume of mentions, social and non-social reach, positive and negative mentions, and the sentiment ratio = positive / negative mentions – then explain which events could have driven the results."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Text mining",
+          "text": "A branch of analytics that encompasses the treatment of unstructured text information."
+        },
+        {
+          "kind": "item",
+          "term": "Data mining",
+          "text": "The exploration and analysis of data to uncover patterns or rules that are meaningful."
+        },
+        {
+          "kind": "item",
+          "term": "Predictive analytics",
+          "text": "Advanced analytics that makes predictions about future outcomes using historical data combined with statistical modelling, data mining techniques and machine learning."
+        },
+        {
+          "kind": "item",
+          "term": "Social listening",
+          "text": "The process of identifying and assessing what is being said about a company, individual, product or brand on the internet."
+        },
+        {
+          "kind": "item",
+          "term": "Sentiment analysis",
+          "text": "The process of analysing online text to determine its emotional tone – positive, negative or neutral."
+        },
+        {
+          "kind": "item",
+          "term": "Visual mining",
+          "text": "Extracting trends, patterns, insights and knowledge from visual data with data mining, computer vision and data visualisation."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The revision session mentioned sentiment analysis as a possible exam exercise – practise computing and interpreting sentiment ratios together with reach and volume."
+        }
+      ]
+    }
+  ]
+}

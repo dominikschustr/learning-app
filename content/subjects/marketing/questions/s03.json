@@ -1,0 +1,741 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s03-01",
+    "lecture": "s03",
+    "difficulty": 1,
+    "prompt": "Which statements describe marketing insights?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Knowledge and understanding about a market, its consumers and the companies operating within it"
+      },
+      {
+        "id": "b",
+        "text": "They are generated through observation of consumer, company and stakeholder behaviour"
+      },
+      {
+        "id": "c",
+        "text": "They are fundamental to understand a marketplace and identify emerging trends"
+      },
+      {
+        "id": "d",
+        "text": "Marketing insights and marketing research are the same thing"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Marketing research ≠ marketing insights: research is one of the tools for discovery, insights are the deeper understanding that results."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-02",
+    "lecture": "s03",
+    "difficulty": 1,
+    "prompt": "Which are the three key moments for marketing insights?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Looking back – past behaviour and historical market data"
+      },
+      {
+        "id": "b",
+        "text": "Focus on the present – tracking behaviour in real time (e.g. Voice of Customer, NPS)"
+      },
+      {
+        "id": "c",
+        "text": "Looking forward – predicting behaviour through trend forecasting and statistical modelling"
+      },
+      {
+        "id": "d",
+        "text": "Looking sideways – copying competitors' campaigns"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Looking back, real time and looking forward."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-03",
+    "lecture": "s03",
+    "difficulty": 2,
+    "prompt": "Primary research methods …",
+    "options": [
+      {
+        "id": "a",
+        "text": "… include experimental and non-experimental methods"
+      },
+      {
+        "id": "b",
+        "text": "… have primarily a quantitative nature"
+      },
+      {
+        "id": "c",
+        "text": "… involve data already collected for other purposes"
+      },
+      {
+        "id": "d",
+        "text": "… combine internal and external data"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Primary data are collected for a specific purpose and can be experimental/non-experimental and qualitative/quantitative. Data collected for other purposes and internal/external sources describe secondary research. Past exam question.",
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-04",
+    "lecture": "s03",
+    "difficulty": 1,
+    "prompt": "Which statements about secondary research are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It uses data that have already been compiled"
+      },
+      {
+        "id": "b",
+        "text": "It can draw on internal and external sources"
+      },
+      {
+        "id": "c",
+        "text": "It is usually more time- and cost-effective than primary research"
+      },
+      {
+        "id": "d",
+        "text": "It is always collected for the specific purpose of the current study"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Data collected for a specific purpose = primary research."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-05",
+    "lecture": "s03",
+    "difficulty": 1,
+    "prompt": "Which are key sections of a market analysis based on secondary data?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Industry description and outlook"
+      },
+      {
+        "id": "b",
+        "text": "Target market"
+      },
+      {
+        "id": "c",
+        "text": "Competitive analysis"
+      },
+      {
+        "id": "d",
+        "text": "Distribution channels"
+      },
+      {
+        "id": "e",
+        "text": "Barriers to entry and regulation"
+      },
+      {
+        "id": "f",
+        "text": "A/B test results"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "explanation": "A market analysis assesses market size (volume and value), segments, competition, channels, barriers to entry and regulation (incl. compliance costs)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-06",
+    "lecture": "s03",
+    "difficulty": 2,
+    "prompt": "Which database is described as \"an insights platform that documents new consumer behaviour and key industry trends across different consumer markets\"?",
+    "options": [
+      {
+        "id": "a",
+        "text": "LS:N Global"
+      },
+      {
+        "id": "b",
+        "text": "Euromonitor International (GMID)"
+      },
+      {
+        "id": "c",
+        "text": "Statista"
+      },
+      {
+        "id": "d",
+        "text": "Xerfi"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Euromonitor: international market analyses, consumer/country/company data. Statista: international statistics portal. Xerfi: industry studies on French and international markets.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-07",
+    "lecture": "s03",
+    "difficulty": 2,
+    "prompt": "Which elements should be used to structure a trend in order to analyse it adequately?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Basic needs, drivers of change and innovations"
+      },
+      {
+        "id": "b",
+        "text": "Advantages, benefits and innovations"
+      },
+      {
+        "id": "c",
+        "text": "Trend maturity, industry and locality"
+      },
+      {
+        "id": "d",
+        "text": "None of the above"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The fundamental trend elements are basic needs, drivers of change and innovations (Mason et al., 2015). Maturity, industry and locality are used to EVALUATE a trend for opportunity. Past exam question.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-08",
+    "lecture": "s03",
+    "difficulty": 2,
+    "prompt": "Which criteria are used to evaluate a trend for opportunity (Mattin et al., 2015)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trend maturity"
+      },
+      {
+        "id": "b",
+        "text": "Locality"
+      },
+      {
+        "id": "c",
+        "text": "Industry"
+      },
+      {
+        "id": "d",
+        "text": "Segment size"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "How are the expectations behind the trend playing out now (maturity), in my target locality, and in my industry?"
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-09",
+    "lecture": "s03",
+    "difficulty": 2,
+    "prompt": "Which statements on macro and micro trends are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A macro trend spans at least five years and impacts a variety of industries"
+      },
+      {
+        "id": "b",
+        "text": "A micro trend moves from early influencers to mass adoption within one to two years"
+      },
+      {
+        "id": "c",
+        "text": "Micro trends tend to be smaller-scale realisations of desires underlying macro trends"
+      },
+      {
+        "id": "d",
+        "text": "The wellness boom is an example of a micro trend"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The maker movement and the wellness boom are examples of macro trends."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-10",
+    "lecture": "s03",
+    "difficulty": 1,
+    "prompt": "Which techniques do trend forecasters use to detect emerging trends?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Weak signals"
+      },
+      {
+        "id": "b",
+        "text": "Cultural brailling"
+      },
+      {
+        "id": "c",
+        "text": "Horizon scanning"
+      },
+      {
+        "id": "d",
+        "text": "Conjoint analysis"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Weak signals (anomalies, meaningful in clusters), cultural brailling (Faith Popcorn: sensing change daily), horizon scanning (structured scanning of the STEEPLE landscape)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-11",
+    "lecture": "s03",
+    "difficulty": 2,
+    "prompt": "Which belong to the ANALYSE section of the Consumer Trend Canvas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inspirations"
+      },
+      {
+        "id": "b",
+        "text": "Basic needs"
+      },
+      {
+        "id": "c",
+        "text": "Drivers of change"
+      },
+      {
+        "id": "d",
+        "text": "Emerging consumer expectations"
+      },
+      {
+        "id": "e",
+        "text": "Innovation potential"
+      },
+      {
+        "id": "f",
+        "text": "Who (customer groups)"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Innovation potential and \"Who\" belong to the APPLY section."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-12",
+    "lecture": "s03",
+    "difficulty": 2,
+    "prompt": "In the Consumer Trend Canvas, how do shifts and triggers differ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shifts are long-term macro changes playing out over years or decades"
+      },
+      {
+        "id": "b",
+        "text": "Triggers are more immediate changes, e.g. new technologies, political events, economic shocks"
+      },
+      {
+        "id": "c",
+        "text": "An aging society or urban transition are typical triggers"
+      },
+      {
+        "id": "d",
+        "text": "Shifts and triggers together form the drivers of change"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "Aging society, rich–poor divide, climate challenge, people on the move, urban transition and emerging middle class are SHIFTS."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-13",
+    "lecture": "s03",
+    "difficulty": 1,
+    "prompt": "Where can a trend be applied according to the \"Innovation potential\" box of the canvas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vision"
+      },
+      {
+        "id": "b",
+        "text": "Business model"
+      },
+      {
+        "id": "c",
+        "text": "Product / service / experience"
+      },
+      {
+        "id": "d",
+        "text": "Marketing"
+      },
+      {
+        "id": "e",
+        "text": "Accounting standards"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Vision (long-term), business model (new venture/brand), product/service/experience, marketing & communication."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-14",
+    "lecture": "s03",
+    "case": "trend-resale",
+    "difficulty": 2,
+    "prompt": "What are the drivers of change fuelling this trend? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Climate challenge"
+      },
+      {
+        "id": "b",
+        "text": "Cost-of-living crisis / economic shock"
+      },
+      {
+        "id": "c",
+        "text": "Smartphone apps with AI-powered listing"
+      },
+      {
+        "id": "d",
+        "text": "Aging population"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The text names the climate challenge (shift), the cost-of-living crisis after the 2022 energy shock (trigger) and AI-powered resale apps (technology trigger). Aging is not mentioned – stick to the text."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-15",
+    "lecture": "s03",
+    "case": "trend-resale",
+    "difficulty": 2,
+    "prompt": "What new consumer expectations are created by this trend? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brands take responsibility for a product's second life (take-back, certified resale, repair)"
+      },
+      {
+        "id": "b",
+        "text": "Reselling is as easy as posting a story"
+      },
+      {
+        "id": "c",
+        "text": "Lower prices for new fast-fashion items"
+      },
+      {
+        "id": "d",
+        "text": "Faster delivery of new collections"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "The text describes expectations of take-back, certified resale and repair, and effortless reselling. Cheaper fast fashion or faster delivery are not supported by the text."
+  },
+  {
+    "type": "mc",
+    "id": "mc-s03-16",
+    "lecture": "s03",
+    "case": "trend-resale",
+    "difficulty": 3,
+    "prompt": "Which basic needs does this trend satisfy? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Status / self-expression (badge of taste, standing out)"
+      },
+      {
+        "id": "b",
+        "text": "Security / saving money"
+      },
+      {
+        "id": "c",
+        "text": "Belonging to an older generation"
+      },
+      {
+        "id": "d",
+        "text": "Convenience of home delivery"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "A rare vintage piece is a badge of taste (status, self-expression); keeping up with fashion more cheaply addresses financial security. The other options are not in the text."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-01",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "A consumer trend is a new manifestation among people – in behaviour, attitude or expectation – of a fundamental human need, want or desire.",
+    "answer": true,
+    "explanation": "Definition by Mason et al. (2015)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-02",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "Innovations are trends.",
+    "answer": false,
+    "explanation": "Innovations are not trends but examples of how a trend exists. On-trend innovations cater to needs while anticipating or responding to change."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-03",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "Basic human needs change frequently, which is why trends emerge.",
+    "answer": false,
+    "explanation": "Basic needs are fundamental and rarely-if-ever-changing; what changes are the drivers of change and the ways needs are served."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-04",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "There are no trends without change.",
+    "answer": true,
+    "explanation": "Analysing change (drivers of change) is at the core of trend forecasting."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-05",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "Trend forecasting combines intuition, hard data and experience.",
+    "answer": true,
+    "explanation": "The anatomy of a trend: intuition + hard data + experience."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-06",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "Horizon scanning is the unstructured, daily sensing of changes through feeling, smelling and tasting.",
+    "answer": false,
+    "explanation": "That describes cultural brailling (Faith Popcorn). Horizon scanning is a more organised, structured approach to detect shifts in the social, technological, economic, environmental, political, legal and ethical landscape."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-07",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "Weak signals become meaningful when they are organised in clusters across industries.",
+    "answer": true,
+    "explanation": "On their own they are random, disconnected and could be surreal."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-08",
+    "lecture": "s03",
+    "difficulty": 2,
+    "statement": "Because adoption of new products is fluid, the traditional innovation adoption curve (Rogers, 1962) may be unreliable in today's dynamic contexts.",
+    "answer": true,
+    "explanation": "That is why trends must be adapted for today (trend maturity)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-09",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "New consumer expectations are usually set within your own industry.",
+    "answer": false,
+    "explanation": "New expectations of quality of service are usually set OUTSIDE your industry and affect it later – monitor other industries."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-10",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "Emerging consumer expectations can be identified by looking for gaps between what consumers want and what they currently have.",
+    "answer": true,
+    "explanation": "Expectation gaps reveal unmet needs."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-11",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "A persona is a rich description of one fictional person exemplifying a specific group of people.",
+    "answer": true,
+    "explanation": "Personas help to create empathy and better ideas in the APPLY section (\"Who\")."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-12",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "Secondary data is usually more time- and cost-effective than primary data.",
+    "answer": true,
+    "explanation": "It has already been compiled and is often widely available."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-13",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "The marketing research process has five steps: problem formulation, sources & research design, data collection method, data collection, data analysis & interpretation.",
+    "answer": true,
+    "explanation": "Steps 2 and 3 concern the types of data and methods to collect them."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-14",
+    "lecture": "s03",
+    "difficulty": 1,
+    "statement": "Regulation in a market analysis includes estimating compliance costs.",
+    "answer": true,
+    "explanation": "Compliance costs are costs a company incurs to adhere to industry- or country-specific regulations."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-15",
+    "lecture": "s03",
+    "case": "trend-resale",
+    "difficulty": 2,
+    "statement": "The rising popularity of resale apps among Gen Z is a basic need.",
+    "answer": false,
+    "explanation": "It is an innovation/manifestation. The underlying basic needs are e.g. status/self-expression and security."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-16",
+    "lecture": "s03",
+    "case": "trend-geni",
+    "difficulty": 1,
+    "statement": "Based on the text, ageing society is a driver of change of the Generation I trend.",
+    "answer": false,
+    "explanation": "The trend is driven by digital natives growing up with intuitive technology and by more wealth/spending power – ageing is not mentioned."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-17",
+    "lecture": "s03",
+    "case": "trend-geni",
+    "difficulty": 1,
+    "statement": "According to the text, Generation I members have access to more wealth than previous generations.",
+    "answer": true,
+    "explanation": "Toys worth £1,200, allowances of $780 a year, influence on $1.12 trillion of family spending."
+  },
+  {
+    "type": "short",
+    "id": "sa-s03-01",
+    "lecture": "s03",
+    "case": "trend-geni",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Recalling the Consumer Trend Canvas structure, what are the drivers of change related to the Generation I trend?",
+    "modelAnswer": "Shifts: digitalisation of everyday life – digital natives born after 2002 grow up with a constant layer of effortless technological augmentation; they no longer notice technology. Triggers: intuitive touch and swipe devices, video calling and creative apps (ATOMS, Flip Boom) that let kids build and share their own worlds instantly. Economic driver: Generation I has access to more wealth (toys worth £1,200, $780 allowance, influence on $1.12 trillion family spending) and rarely saves.",
+    "keyPoints": [
+      "Digital natives / constant technological augmentation (shift)",
+      "Intuitive touch devices, apps, video calls (triggers)",
+      "Shorter cognitive processes, expectation of immediacy",
+      "More wealth / spending power and influence on family spending"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s03-02",
+    "lecture": "s03",
+    "case": "trend-geni",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "If you were the brand manager of Playmobil, what factors would you consider to adapt the Generation I trend to your business and how would you leverage it?",
+    "modelAnswer": "Evaluate the trend for opportunity: trend maturity (how are expectations for intuitive, interactive experiences playing out now?), industry (how are other toy and tech firms serving it?) and locality (which markets?). Then apply it: product/experience – combine physical sets with apps, AR or customisation so kids can create their own worlds; marketing – simple, direct but rich digital communication on the platforms kids use; who – target Gen I as users but also parents as payers, given children's influence on family spending; consider ethics/regulation when marketing to children.",
+    "keyPoints": [
+      "Trend maturity, industry and locality",
+      "Product/experience: interactive, intuitive, customisable (digital + physical)",
+      "Marketing via digital channels, simple and direct",
+      "Consider both kids (influence) and parents (payers)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s03-03",
+    "lecture": "s03",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the two sections of the Consumer Trend Canvas and the boxes they contain.",
+    "modelAnswer": "ANALYSE (left side) unpacks the trend: inspirations (innovations raising expectations), basic needs (deep needs and desires the trend addresses), drivers of change (shifts = long-term macro changes; triggers = immediate changes such as technologies, events, shocks) and emerging consumer expectations (new needs created by the changes). APPLY (right side) uses these insights: innovation potential (vision, business model, product/service/experience, marketing) and who (which new customer groups, e.g. via personas).",
+    "keyPoints": [
+      "Analyse: inspirations, basic needs, drivers of change, emerging expectations",
+      "Drivers of change = shifts and triggers",
+      "Apply: innovation potential (vision, business model, product/service/experience, marketing)",
+      "Apply: who – target customer groups / personas"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s03-04",
+    "lecture": "s03",
+    "difficulty": 2,
+    "verb": "state",
+    "prompt": "State the key sections of a market analysis.",
+    "modelAnswer": "Industry description and outlook (size, trends, life cycle, growth); target market (segments, demographics, psychographics, needs, size and value); competitive analysis (positioning, strengths, weaknesses, strategies); distribution channels; barriers to entry; regulation (compliance costs).",
+    "keyPoints": [
+      "Industry description & outlook",
+      "Target market",
+      "Competitive analysis",
+      "Distribution channels",
+      "Barriers to entry",
+      "Regulation"
+    ]
+  }
+]

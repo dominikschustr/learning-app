@@ -1,0 +1,23 @@
+[
+  {
+    "id": "trend-resale",
+    "title": "Trend report extract: \"Pre-loved Prestige\"",
+    "text": [
+      "Second-hand is no longer second best. Resale platforms such as Vinted and Vestiaire Collective report double-digit growth as young consumers turn their wardrobes into circular investments. For Generation Z, scoring a rare vintage piece has become a badge of taste and a way to stand out from the crowd – and to be seen doing so on social media.",
+      "The movement is fuelled by the climate challenge: shoppers increasingly question the environmental cost of fast fashion. At the same time, the cost-of-living crisis that followed the 2022 energy price shock pushed many households to look for cheaper ways to keep up with fashion. Smartphone apps with AI-powered photo listing have made reselling an item as easy as posting a story.",
+      "Consumers now expect brands to take responsibility for a product's second life: take-back schemes, certified resale and repair services are moving from nice-to-have to standard. Brands that ignore this risk looking out of touch.",
+      "Source: fictitious trend report written for practice, in the style of LS:N Global / TrendWatching."
+    ],
+    "tables": []
+  },
+  {
+    "id": "trend-geni",
+    "title": "Trend report extract: \"Generation I\" (LS:N Global, 2013 – past exam)",
+    "text": [
+      "You type, they swipe. You click, they tap. Born after 2002, today's digital natives demand experiences that are richer, more immediate, interactive and, above all, intuitive. Members of Generation I grow up with a constant layer of effortless augmentation – their habits differ from those who switched technology on and off for individual tasks. Brands will have to make all experiences simpler, more direct, but deeper and richer.",
+      "Examples: ATOMS (components that snap together to build anything) and the Flip Boom Cartoon app (make and send own animations in seconds).",
+      "Generation I has access to more wealth than previous generations: UK children aged 3–10 own on average £1,200 worth of toys (Playmobil), US children receive an average allowance of $780 a year, only 1% of parents say their children save, and these kids influence $1.12 trillion of family spending a year."
+    ],
+    "tables": []
+  }
+]

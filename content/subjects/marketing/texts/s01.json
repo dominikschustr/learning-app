@@ -1,0 +1,131 @@
+{
+  "lecture": "s01",
+  "title": "Session 1 – Introduction to Data-Driven Decisions & Data Ethics",
+  "source": "01_DDM_Student Handout_2627.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Good decisions combine data and intuition: data validates and informs assumptions, but it does not generate the ideas worth testing (Marc Randolph, Netflix). The goal is a culture of \"The data shows…\" instead of \"I think…\"."
+        },
+        {
+          "kind": "item",
+          "text": "Data and marketing analytics can be structured along a framework (Wedel & Kannan, 2016):",
+          "children": [
+            "Types of data: structured vs. unstructured, Big Data",
+            "Analytics and analytical methods",
+            "Implementing data and analytics in companies",
+            "Applications: personalisation, CRM, marketing mix, privacy and security"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Big Data refers to the explosion in the quantity (and sometimes quality) of available data due to advances in data recording and storage. It is characterised by the 5 Vs: Volume, Velocity, Variety, Veracity and Value."
+        },
+        {
+          "kind": "item",
+          "text": "Four types of analytics move from information over insights to decision/action:",
+          "children": [
+            "Descriptive: What happened in the business?",
+            "Diagnostic: Why is something happening?",
+            "Predictive: What is likely to happen in the future?",
+            "Prescriptive: So what? Now what? What is required to do more?"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Three research types lead from descriptive to diagnostic analytics:",
+          "children": [
+            "Exploratory research: ambiguous problem (\"Our sales are declining… why?\"); flexible, versatile, front end of the research design; expert surveys, pilot surveys, qualitative research, qualitatively analysed secondary data",
+            "Descriptive research: aware of the problem (\"Who buys our products?\"); prior hypotheses, preplanned and structured; surveys, panels, observation, quantitatively analysed secondary data",
+            "Causal research: clearly defined problem (\"Will customers buy more after a website change?\"); manipulation of independent variables and control of others; experiments"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Correlation is not causation."
+        },
+        {
+          "kind": "item",
+          "text": "Companies create value through data in three ways (Mazzei & Noble, 2017):",
+          "children": [
+            "Data as a tool: active data collection and internal analytical capabilities to improve product development, marketing, sales, distribution, customer service",
+            "Data as an industry: providers of big-data products/services, technology and data-as-a-service",
+            "Data as a strategy: big data drives competitive strategy, new business models and ecosystems (e.g. Rolls-Royce)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "AI changes data-driven marketing:",
+          "children": [
+            "Starbucks Deep Brew (reinforcement learning, next-best offer): from segment-based campaigns to an individual, real-time journey; from short-term response to long-term value maximisation",
+            "Sephora Virtual Artist + agentic AI Beauty Advisor: from reactive personalisation to an autonomous digital sales agent; from A/B testing to continuous real-time adaptation"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Surveillance capitalism (Zuboff) claims human experience as free raw material for hidden practices of extraction, prediction and sales and aims at behavioural modification. Byung-Chul Han calls Big Data a psychopolitical instrument; Cathy O'Neil warns against blind faith in algorithms."
+        },
+        {
+          "kind": "item",
+          "text": "Regulation tries to protect privacy:",
+          "children": [
+            "Physical privacy vs. information privacy",
+            "GDPR (May 2018): clear language, affirmative consent, transparency, stronger rights, stronger enforcement",
+            "Kollnig et al. (2021): limited change in third-party tracking after GDPR, further concentration (gatekeepers)",
+            "Digital Services Act: cookie banners, online advertising, illegal content, algorithmic transparency; strictest rules above 45 million monthly users"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Susskind's Digital Republic proposes four principles: preservation, domination, democracy and parsimony."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Data",
+          "text": "Information, especially facts or numbers, collected to be examined and used to help decision-making; or information in electronic form that can be stored and used by a computer (Cambridge Dictionary)."
+        },
+        {
+          "kind": "item",
+          "term": "Big Data",
+          "text": "The explosion in the quantity (and sometimes quality) of available and potentially relevant data, largely the result of recent advances in data recording and storage technology (Diebold, 2000)."
+        },
+        {
+          "kind": "item",
+          "term": "Data analytics",
+          "text": "The process of examining datasets in order to draw conclusions about the information they contain, increasingly with the aid of specialised systems and software."
+        },
+        {
+          "kind": "item",
+          "term": "Surveillance capitalism",
+          "text": "A new economic order that claims human experience as free raw material for hidden commercial practices of extraction, prediction and sales (Zuboff, 2019)."
+        },
+        {
+          "kind": "item",
+          "term": "Privacy paradox",
+          "text": "The difference between what people think they should do to protect their privacy and what they actually do."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Note from the revision session: except for session 1, any in-class exercise can become an exam exercise – but session 1 concepts (analytics types, research types, data ethics) can still appear in the true/false part."
+        },
+        {
+          "kind": "item",
+          "text": "How have data strategies evolved since McKinsey's 2013 article? Think of AI agents, real-time personalisation and regulation (GDPR, DSA)."
+        }
+      ]
+    }
+  ]
+}

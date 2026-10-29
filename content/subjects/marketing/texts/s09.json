@@ -1,0 +1,89 @@
+{
+  "lecture": "s09",
+  "title": "Session 9 – Marketing Planning and Resource Allocation: Introduction to Regression Analysis",
+  "source": "09_DDM_Student handout_2627.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Marketing planning develops strategies and tactics to reach marketing and business goals: analysis → objectives → strategy → implementation through marketing mix and budget decisions → control. Resource allocation is part of it."
+        },
+        {
+          "kind": "item",
+          "text": "Regression supports marketing mix modelling, budget optimisation, sales forecasting and price optimisation."
+        },
+        {
+          "kind": "item",
+          "text": "Regression analysis investigates relationships between a dependent variable and one (simple) or more (multiple) independent variables – to explain and to predict. The choice of variables must be theory-based to avoid spurious correlations."
+        },
+        {
+          "kind": "item",
+          "text": "The dependent variable must be metric; independent variables are metric or nominal transformed into dummies (k categories → k−1 dummies, the omitted one is the baseline)."
+        },
+        {
+          "kind": "item",
+          "text": "Four steps:",
+          "children": [
+            "Model formulation: check linearity with scatter plots",
+            "Estimation: OLS minimises the sum of squared residuals",
+            "Test of the regression function: R², adjusted R², F-statistic",
+            "Test of the coefficients: t-test (H0: βj = 0), p-value"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Interpretation: the intercept is the estimated Y at X = 0; a slope is the change in Y for a one-unit change in X, holding other variables constant. Coefficient sizes are only comparable after standardisation."
+        },
+        {
+          "kind": "item",
+          "text": "R² grows with every additional variable, so use the adjusted R². A coefficient is significant if |t| exceeds the critical value or p < 0.05."
+        },
+        {
+          "kind": "item",
+          "text": "Examples: margarine sales (visits, marketing investment), monthly unit sales (price, SEM, social media, season), start-up profits (marketing, administration, state dummies)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Regression analysis",
+          "text": "A means to analyse (causal) relationships between a dependent variable and one or more independent variables."
+        },
+        {
+          "kind": "item",
+          "term": "Residual",
+          "text": "The difference between the observed and the estimated value of the dependent variable."
+        },
+        {
+          "kind": "item",
+          "term": "Ordinary least squares (OLS)",
+          "text": "Estimation method that chooses the regression parameters to minimise the sum of squared residuals."
+        },
+        {
+          "kind": "item",
+          "term": "Coefficient of determination (R²)",
+          "text": "The proportion of the variance of the dependent variable explained by the model."
+        },
+        {
+          "kind": "item",
+          "term": "Dummy variable",
+          "text": "A binary (0/1) variable representing one category of a nominal variable."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Regression is \"for sure\" in the exam (revision session). Always check significance first, then interpret sign and size, then forecast with the significant variables only."
+        }
+      ]
+    }
+  ]
+}

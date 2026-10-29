@@ -192,7 +192,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         <div className="mb-4 flex items-end justify-between gap-4">
           <div>
             <h2 className="display text-2xl">Lernpfad</h2>
-            <p className="text-sm text-muted">Ein Kapitel pro Key-Messages-Dokument – jedes mit eigenem Level.</p>
+            <p className="text-sm text-muted">Ein Kapitel pro Vorlesung – jedes mit eigenem Level.</p>
           </div>
           <Chip>
             {mastered}/{st.lectures.length} gemeistert

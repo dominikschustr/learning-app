@@ -1,0 +1,66 @@
+{
+  "lecture": "s10",
+  "title": "Session 10 – Marketing Planning and Resource Allocation: Applications of Regression Analysis",
+  "source": "10_DDM_Student Handout_2627.pdf",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Recap: regression answers questions about relationships and predictions (y = b0 + b1x + ε). The intercept is the estimated y at x = 0; a significant b-coefficient is the change in y for a one-unit change in x; R² is the share of explained variance."
+        },
+        {
+          "kind": "item",
+          "text": "A causal effect requires that x precedes y, that x is reliably correlated with y, and that the relation is not explained by other causes."
+        },
+        {
+          "kind": "item",
+          "text": "A coefficient must be read as an association if x is (potentially) endogenous:",
+          "children": [
+            "Reverse causality / simultaneity",
+            "Omitted variables"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "A coefficient can be interpreted causally if x is exogenous (manipulated by an external force). Only causal effects justify policy recommendations; beware spurious correlations."
+        },
+        {
+          "kind": "item",
+          "text": "Applications practised in class:",
+          "children": [
+            "Marketing mix decision: which factors are associated with Airbnb prices in New York?",
+            "Spending pattern optimisation: grocery spending – descriptives, dummies, scatter plot, hypotheses, multiple regression, refined model, prediction",
+            "Sales forecast: movie box office with budget, runtime and rating (\"1917\")",
+            "Take-home: Airbnb prices in Melbourne"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "In the exam, regression tables are interpreted step by step: significance → strongest effects → recommendations (advertising, product) → limitations and improvements."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Endogenous variable",
+          "text": "An independent variable that may be correlated with the error term (e.g. due to reverse causality or omitted variables) – its coefficient is only an association."
+        },
+        {
+          "kind": "item",
+          "term": "Exogenous variable",
+          "text": "An independent variable determined outside the model, e.g. manipulated by an external force – its coefficient can be interpreted causally."
+        },
+        {
+          "kind": "item",
+          "term": "Spurious correlation",
+          "text": "A statistical association between two variables without a causal link."
+        }
+      ]
+    }
+  ]
+}
