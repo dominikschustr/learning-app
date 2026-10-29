@@ -1,0 +1,99 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p3-01",
+    "lecture": "f3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Using PESTEL, identify two macro-environmental factors that hinder and two that foster Maison Verdier's development, and explain for whom each factor is a threat or an opportunity. (3 points)",
+    "modelAnswer": "Hindering: (Social) younger generations drink less alcohol and global wine consumption declines – a threat for traditional estates, an opportunity for no/low-alcohol producers; (Political) higher US tariffs and weaker Chinese demand – a threat for exporters dependent on these markets, less so for estates focused on Europe; (Environmental) climate change – heat, early harvests, variable quality, constrained by appellation rules; (Economic) higher interest rates raise the cost of stocks. Fostering: (Social) growth of no/low-alcohol and moderation trends (+7 %/year) – an opportunity for Verdier Zéro; (Technological) digital direct-to-consumer channels and apps allow building relationships and capturing margin; (Environmental) warming may make some new regions or grape choices possible. Translation: the same trends threaten classified growths dependent on aged red wine and exports, while favouring new entrants and estates that adapt.",
+    "keyPoints": [
+      "Two hindering factors labelled and explained",
+      "Two fostering factors labelled and explained",
+      "For whom threat/opportunity (translate step)"
+    ],
+    "case": "maison-verdier"
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-02",
+    "lecture": "f4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Build a strategic group map of the wine market with two relevant dimensions. Where is Maison Verdier located, which mobility barriers protect its group, and what does the move into canned no-alcohol wine mean in terms of strategic groups? (3 points)",
+    "modelAnswer": "Dimensions (example): price/status level (resource commitment: quality, ageing, brand) and distribution scope/channel (négociants and collectors vs supermarkets and mass retail). Groups: first growths (very high price, collectors), other classified growths incl. Verdier (high price, négociants, restaurants), mass-market Bordeaux (low price, supermarkets), no/low-alcohol producers (low price, supermarkets, bars, festivals). Mobility barriers protecting Verdier's group: the classification and history, terroir and appellation, critics' scores, access to the négociant system and allocations, aged stocks and capital. Verdier Zéro moves Verdier into a completely different group with other rivals (start-ups, beer and spirits groups), other critical success factors (cost, marketing, festival distribution) and low barriers – Verdier's protective barriers do not apply there, while its presence may weaken its standing in its original group.",
+    "keyPoints": [
+      "Two meaningful dimensions",
+      "Groups placed, Verdier located",
+      "Mobility barriers of its group",
+      "Implication of the move into another group"
+    ],
+    "case": "maison-verdier"
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-03",
+    "lecture": "f8",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Describe Maison Verdier's organizational identity (central, durable and distinctive attributes) and discuss how “Verdier Zéro” relates to this identity. (4 points)",
+    "modelAnswer": "Central: making fine red Bordeaux wine from its terroir as a classified growth; family ownership. Durable: history since 1884, the classification, the coat of arms, the family's continuity. Distinctive: its specific terroir and style, rank among classified growths, relationship with négociants and collectors. Verdier Zéro: dealcoholized wine, in cans, at €6, in supermarkets and festivals contradicts central attributes (craft of fine wine, ageing, rarity), the durable status image and the distinctive positioning; using the same name and coat of arms creates confusion for audiences (critics, négociants, collectors), as their reactions show. It could renew relevance for younger consumers, but test consumers do not even know Verdier, so the name adds little value for them while risking it for core audiences. Recommendation: protect the core identity – e.g. a separate brand, or a premium no-alcohol product closer to the estate's codes.",
+    "keyPoints": [
+      "Central attributes",
+      "Durable attributes",
+      "Distinctive attributes",
+      "Move contradicts/reinforces identity with argumentation",
+      "Audience reactions or recommendation"
+    ],
+    "case": "maison-verdier"
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-04",
+    "lecture": "f8",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Using the concepts of the categorical imperative and optimal distinctiveness, explain the reactions of négociants and critics and propose how Maison Verdier could orchestrate conformity and differentiation. (4 points)",
+    "modelAnswer": "Categorical imperative: audiences evaluate through categories; a classified growth selling canned no-alcohol wine spans categories (fine wine vs mass soft drink) and creates confusion and doubts about commitment and authenticity – the negative sanction on spanning (illegitimacy discount, lower allocations, critic's “contradiction in terms”). Optimal distinctiveness: be as different as legitimately possible. Orchestration: compensatory – conform strongly on the core (classified red wine, négociant system, terroir) while deviating in a separate unit; or integrative – familiar elements in a new combination (e.g. a premium no-alcohol cuvée from the estate's grapes, sold in bottles through existing channels). Stakeholder multiplicity: collectors, négociants and critics value tradition; young consumers and start-up investors value novelty – serve them through different frames and brands. Temporality: the no-alcohol category is young, so experimentation is rewarded there, but the fine-wine category is mature with strong conformity pressure. Concrete proposal: launch Zéro under a separate brand (“by the Verdier family” in small print) and keep the coat of arms for the classified wine.",
+    "keyPoints": [
+      "Categorical imperative / spanning penalty explains reactions",
+      "Optimal distinctiveness defined",
+      "Orchestration proposal (compensatory or integrative)",
+      "Stakeholder multiplicity and/or temporality",
+      "Concrete recommendation"
+    ],
+    "case": "maison-verdier"
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-05",
+    "lecture": "f9",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Discuss the strategic consequences of creating a US subsidiary that distributes Verdier wines directly, bypassing négociants. (3 points)",
+    "modelAnswer": "This is forward vertical integration into distribution (and an internationalization move via a wholly owned subsidiary). Benefits: capture the margin of négociants and importers, direct customer knowledge and data (also feeds the app), control over pricing, placement and brand presentation, less dependence on the négociants' bargaining power. Costs and risks: high fixed costs and capital, need for new capabilities (sales force, logistics, US regulation – three-tier system, tariffs), small volumes (300,000 bottles) for one estate, loss of the global reach of négociants (70 countries), retaliation by négociants (reduced allocations) that damages the core system and status; tariffs and weak demand make the US market risky now. Alternatives: partnership with a US importer, joint distribution with other estates, or direct sales only to top restaurants.",
+    "keyPoints": [
+      "Correct label: forward integration (+ entry mode)",
+      "Benefits (margin, control, data, bargaining power)",
+      "Costs/risks (capital, capabilities, négociant retaliation, tariffs)",
+      "Alternative or conclusion"
+    ],
+    "case": "maison-verdier"
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-06",
+    "lecture": "f8",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Several first-growth estates have launched experimental projects without criticism, while Maison Verdier is criticized. Explain this difference with the relationship between status and conformity. (3 points)",
+    "modelAnswer": "Categories hierarchize actors; status shapes who can afford to deviate. Middle-status conformity (Phillips & Zuckerman 2001): high-status actors (first growths) have a secure position – their deviations are read as creativity and do not question their membership; low-status actors have little to lose. Middle-status actors such as a fifth growth (recognized but far from the top) are most exposed: their claim to belong to the elite is fragile, so audiences sanction deviations that seem to contradict the category – hence conformity pressure on Verdier. Durand & Kremp's orchestras show the same: low-status conductors innovated, middle-status Ormandy conformed, high-status Stokowski deviated. Implication: Verdier should deviate cautiously and protect its core signals of quality.",
+    "keyPoints": [
+      "Status hierarchy through categories",
+      "High status → freedom to deviate",
+      "Middle status → conformity pressure (Verdier = fifth growth)",
+      "Implication for Verdier"
+    ],
+    "case": "maison-verdier"
+  }
+]

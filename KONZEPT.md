@@ -205,3 +205,8 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 13. Drittes Fach **Accounting** (IFRS, CM01): 5 Topics mit allen Quiz-Aussagen der Folien (ausführlich begründet),
     215 Fragen, 66 Karten, Zusammenfassungen je Topic, 5 Probeklausuren (Nachbauten 2024, 2023, 2019 und zwei
     Konzeptklausuren); Abschlussauszüge, die im Original nur als Bild vorliegen, sind durch fiktive ersetzt ✓
+14. Viertes Fach **Strategy** (ESCP): nach Frameworks statt nach Folien gegliedert – 9 Kapitel (Biases, PESTEL &
+    Five Forces, Life cycle/Strategic groups/Blue Ocean, SWOT/RBV/Value chain/VRIO, generische Strategien,
+    Competitive dynamics, Identity & Optimal distinctiveness, Corporate strategy als Vorschau), 206 Fragen, 110 Karten,
+    Framework-Zusammenfassungen mit Klausurtipps, 4 Probeklausuren im Aufbau der Fallklausur (Nachbau Dez. 2023
+    Insight Timer und drei Konzeptklausuren mit fiktiven Fällen) ✓

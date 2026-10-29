@@ -1,0 +1,58 @@
+[
+  {
+    "id": "insight-timer",
+    "title": "Insight Timer: mindful profits? (exam December 2023, summarized)",
+    "text": [
+      "Insight Timer is a meditation app with more than 25 million registered users and claims to be the usage leader in its market. It offers free access to about 180,000 guided meditations and music tracks from some 16,000 meditation teachers, plus community features: live group sessions, more than 12,000 community groups, questions and tips. It does not advertise to acquire users (only word of mouth and unsolicited celebrity support) and shows no ads. A paid subscription (about $60 per year, called “support” for teachers) unlocks offline listening and a few exclusive courses; users can also donate to their favourite teachers. In summer 2023 it signed a deal giving the 60 million members of Walmart+ free access. After almost a decade of losses, it expects to become profitable in 2024.",
+      "Industry: the global wellness market was estimated at $1.5 trillion (growing 5–10 % a year); mental-health apps reached close to $500m in 2022 and boomed during Covid-19. Nearly 800 million people live with a mental condition. Meditation has religious roots but gained medical and scientific recognition (MBSR programme). Demand varies by country: tradition of meditation (India, Thailand), stress levels (Japan, South Korea), habits of technology use. Apps help overcome shortages and stigma of professional care, but are no replacement for it.",
+      "Competition: more than 20,000 meditation apps exist; developing an app costs only $10,000–100,000, plus content, marketing and customer relations. Teaching meditation is not regulated and there is no recognized professional body. Headspace (2012) and Calm (2012) dominate the pay segment at $69.99 per year after a free trial; others (10% Happier, Sattva, Waking Up at $119.99 with scholarships, Petit Bambou in Europe) price similarly. Fitness platforms include meditation in their packages, Apple offers free basic mindfulness features on the Apple Watch, and YouTube channels provide free, less structured content.",
+      "Headspace: positive, science-based image, mostly in-house content narrated by its founder (a former Buddhist monk), gamification (streaks, comparison with friends), partnerships (Netflix, Sesame Street, airlines, Spotify, Starbucks, Nike, NBA) and a B2B branch Headspace for Work (Google, LinkedIn, Unilever …). It merged with the online therapy platform Ginger (valuation $3bn) and has sought FDA approval to be reimbursed by insurers. Calm: more downloads and about 4 million paid subscribers, focus on sleep with celebrity-narrated Sleep Stories and music remixes, entertainment rather than science, partnerships with airlines, American Express and Adidas, 3,500 corporate clients. Valued at $2bn.",
+      "Insight Timer was founded in 2015 by Christopher Plowman, a discreet entrepreneur with social-media expertise, and his brother, a meditation teacher who struggled to find students; they bought a simple timer app with community features and made it free. Plowman wants a for-profit company that is “a force for good”. The platform eases the administrative burden of teachers and gives them distant students. It has about 70 employees (Headspace 800+, Calm 300), costs about $1m per month to run and relies on Google Cloud. It consults its community on decisions (donations were introduced at students' request). When it removed the need to register, paid subscriptions plummeted and the change was reversed. It refuses further gamification: in many traditions performance is antithetical to meditation, and advanced students may no longer need a platform.",
+      "Revenue split: 30 % goes to Apple or Google as app stores; teachers keep half of the remaining 70 % (35 %), a share similar to in-person teaching; Insight Timer takes 20 % of donations. In 2023 it introduced Stripe for donations to avoid the app-store fee and waived its own 20 % fee on them; teachers are paid through PayPal (2 % fee). Top teachers earn more than $100,000. Content remains the property and responsibility of teachers. Unlike the simple, few-path programmes of Headspace and Calm, Insight Timer emphasizes diversity: advanced, spiritual and philosophical approaches in 47 languages and 37 confessions – a large catalogue that can be hard to navigate for newcomers.",
+      "The way forward: new players with little credentials may enter, scandals could revive a mystical image of meditation, generative AI could offer new ways to address mental health (some unsupervised chatbots may harm users; lobbies call for regulatory approval when health benefits are claimed), and regulators are increasingly concerned about health-data privacy."
+    ],
+    "tables": [
+      {
+        "caption": "Key figures from the case",
+        "head": [
+          "",
+          "Insight Timer",
+          "Headspace",
+          "Calm"
+        ],
+        "rows": [
+          [
+            "Model",
+            "Mostly free, community, ~16k teachers",
+            "Pay, in-house content, science",
+            "Pay, sleep & entertainment"
+          ],
+          [
+            "Price",
+            "~$60/year (optional)",
+            "$69.99/year",
+            "$69.99/year"
+          ],
+          [
+            "Employees",
+            "~70",
+            "800+",
+            "~300"
+          ],
+          [
+            "Valuation",
+            "€100–150m (2021 est.)",
+            "$3bn (with Ginger)",
+            "$2bn"
+          ],
+          [
+            "Acquisition",
+            "Word of mouth, no ads",
+            "Marketing, partnerships, B2B",
+            "Celebrities, partnerships, B2B"
+          ]
+        ]
+      }
+    ]
+  }
+]

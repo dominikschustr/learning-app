@@ -1,0 +1,181 @@
+{
+  "lecture": "f6",
+  "title": "F6 – Business strategy: business models and generic strategies",
+  "source": "Zusammenfassung von Session 5 „Business Strategy (Part 1/2)“ mit dem Fall „AI Wars“ und Ryall (2013)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Business strategy: how to compete in a market. Corporate strategy: where to compete. Business strategy is a choice about how the organization performs the primary and support activities of the value chain to create value – for single businesses or strategic business units (SBUs)."
+        },
+        {
+          "kind": "item",
+          "text": "A business model is an arrangement of activities describing a value proposition and how it is achieved: value creation, value configuration, value capture."
+        },
+        {
+          "kind": "item",
+          "text": "Two dimensions of competitive positioning: cost vs value (differentiation) and broad vs narrow scope → four generic strategies. The risk is being “stuck in the middle” – unless activities are compartmentalized or the offer is innovative enough (blue ocean)."
+        }
+      ]
+    },
+    {
+      "heading": "Business model",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Value creation: what is offered to which customer segment – which needs, which solution?"
+        },
+        {
+          "kind": "item",
+          "text": "Value configuration: how the elements of the value chain are organized to deliver the value proposition."
+        },
+        {
+          "kind": "item",
+          "text": "Value capture: why does the model generate a margin – where are the sources of revenues and costs?"
+        },
+        {
+          "kind": "item",
+          "text": "Airbnb: value for guests (finding housing) and hosts (renting it out); configured as a multi-sided platform; captured by Airbnb through booking commissions and by hosts through guests' payments."
+        },
+        {
+          "kind": "item",
+          "text": "Value creation ≠ value capture (Ryall 2013): a firm can create a lot of value and keep little of it. Who captures the surplus depends on who has credible alternatives in the value network (Amazon's early book sales: easy switching → low markups; Apple iPod + iTunes: ecosystem and loyalty → strong capture)."
+        }
+      ]
+    },
+    {
+      "heading": "Cost vs value",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Cost advantage: structurally lower costs than competitors → lower prices with higher market share, or higher margins."
+        },
+        {
+          "kind": "item",
+          "text": "Value advantage through differentiation: a unique source of value → higher willingness-to-pay (WTP) → higher prices or market share."
+        },
+        {
+          "kind": "item",
+          "text": "Created value = generated value for the demand (WTP) − costs. A competitor can have a cost advantage, a value advantage, or – rarely – both (dual advantage)."
+        }
+      ]
+    },
+    {
+      "heading": "The four generic strategies",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "1. Cost leadership (low cost, broad market): systematically lower costs, often in inbound and outbound logistics; standardization (McDonald's in “The Founder”). Three sources of lower costs:",
+          "children": [
+            "Costs of input resources: raw materials, labour",
+            "Economies of scale: average cost falls with output – up to diseconomies of scale (U-shaped long-run average cost)",
+            "Economies of learning (experience curve): unit cost falls with cumulated experience – capital and labour productivity"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Structure for cost leadership: functional, simple reporting lines, few layers, centralized staff focusing on process improvement and cost reduction, specialized jobs, operations as the main function. Challenges: sustaining low costs (labour regulation, rare inputs), keeping acceptable quality, preserving human rights – labour is not a resource like capital."
+        },
+        {
+          "kind": "item",
+          "text": "2. Differentiation (high differentiation, broad market): uniqueness on a dimension valued by customers, often through innovation (Apple, Netflix) → higher WTP. Sources: material attributes (unique technology) and non-material attributes (service, reputation, brand). Structure: complex, flexible reporting, marketing and product R&D as main functions, less specialized jobs. Challenges: costly and risky innovation, costs still matter, rivals may deliver the same value at lower cost, WTP is not unlimited, risk of being too different."
+        },
+        {
+          "kind": "item",
+          "text": "3. Focused cost leadership (low cost, narrow market): a specific geography (local restaurant), customer type or activity (commodity fruit market)."
+        },
+        {
+          "kind": "item",
+          "text": "4. Focused differentiation (high differentiation, narrow market), often high-end: Ladurée macarons, rare-disease medicine, professional extreme sports."
+        },
+        {
+          "kind": "item",
+          "text": "Juicero (USD 120m VC, juicing press at USD 700 then 400): perceived value is not enough – the price must be justified by substantial added value. A disassembled press showed an over-engineered machine; bags could be squeezed by hand."
+        }
+      ]
+    },
+    {
+      "heading": "Stuck in the middle",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Organizations are stuck in the middle when their positioning between cost leadership and differentiation is unclear AND this leads to bad performance."
+        },
+        {
+          "kind": "item",
+          "text": "JCPenney (near bankruptcy 2020): cut prices but could not match Walmart on cost; added brand shops but could not match Macy's on value."
+        },
+        {
+          "kind": "item",
+          "text": "Exceptions: compartmentalized activities, or a blue ocean that combines lower costs and differentiation – an advantage usually limited in time."
+        }
+      ]
+    },
+    {
+      "heading": "Case: AI Wars (2025)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Google invented the Transformer (2017) but OpenAI commercialized it; by 2025 Gemini is technically competitive – the constraint is Google's business model: generative answers substitute for ad-funded search (cannibalization)."
+        },
+        {
+          "kind": "item",
+          "text": "Five Forces: suppliers powerful (Nvidia 70–95 % of AI chips; superstar AI talent, no non-competes in California); buyers powerful (free or cheap services, low switching costs); entry barriers lowered by open weights, public data and known architectures."
+        },
+        {
+          "kind": "item",
+          "text": "Business model: unlike classic software, every query has a real marginal cost, and usage is skewed and unbounded. Responses: caps, tiers (free / USD 20 / USD 200), routing to cheaper models; and advertising, because most users never pay (Google earns ~1.6 cents per search from 6.25bn users)."
+        },
+        {
+          "kind": "item",
+          "text": "Three ways to play a gold rush: dig for gold (build and sell the best model – structurally costly), sell shovels (chips, cloud – profit whoever wins), make jewellery (own the complements – Meta, Chrome, Android, Workspace – and want the gold cheap). Google tries all three at once."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "An arrangement of activities that describes a value proposition and the ways of achieving it (creation, configuration, capture).",
+          "term": "Business model"
+        },
+        {
+          "kind": "item",
+          "text": "The maximum price a customer is ready to pay; raised by differentiation.",
+          "term": "Willingness-to-pay (WTP)"
+        },
+        {
+          "kind": "item",
+          "text": "Unit costs fall as output increases (until diseconomies of scale set in).",
+          "term": "Economies of scale"
+        },
+        {
+          "kind": "item",
+          "text": "Unit costs fall with cumulated production experience (learning curve).",
+          "term": "Experience curve"
+        },
+        {
+          "kind": "item",
+          "text": "Unclear position between cost leadership and differentiation, resulting in poor performance.",
+          "term": "Stuck in the middle"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: using F6 in the exam",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Classify the firm on both axes (cost vs differentiation, broad vs narrow) with evidence, then check consistency of its value chain and structure with that choice."
+        },
+        {
+          "kind": "item",
+          "text": "For “how to improve profitability” questions, separate value creation from value capture: raise WTP, cut costs, or capture a larger share (pricing, fees, bargaining power) – and name the trade-off for the position and identity."
+        }
+      ]
+    }
+  ]
+}

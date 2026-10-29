@@ -1,0 +1,432 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-f8-01",
+    "lecture": "f8",
+    "difficulty": 1,
+    "prompt": "According to Albert & Whetten (1985), which three types of attributes define an organizational identity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Central, durable (enduring) and distinctive"
+      },
+      {
+        "id": "b",
+        "text": "Valuable, rare and inimitable"
+      },
+      {
+        "id": "c",
+        "text": "Mission, vision and values"
+      },
+      {
+        "id": "d",
+        "text": "Cost, quality and brand"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Centrality (what makes the organization what it is), durability (its history), distinctiveness (what separates it from similar organizations).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-02",
+    "lecture": "f8",
+    "difficulty": 2,
+    "prompt": "What did Zuckerman (1999) find about firms that diversify across industry categories?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are less likely to be covered by industry-specialized analysts and receive a lower valuation"
+      },
+      {
+        "id": "b",
+        "text": "They receive a valuation premium for diversification"
+      },
+      {
+        "id": "c",
+        "text": "They are covered by more analysts because they are larger"
+      },
+      {
+        "id": "d",
+        "text": "Their identity has no effect on valuation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The illegitimacy discount: audiences organized by categories penalize those that do not fit – the categorical imperative.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-03",
+    "lecture": "f8",
+    "difficulty": 2,
+    "prompt": "Which arguments present ambiguity as an ASSET for Oura? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Broad appeal and several growth engines"
+      },
+      {
+        "id": "b",
+        "text": "It avoids head-on comparison with the Apple Watch or established jewellers"
+      },
+      {
+        "id": "c",
+        "text": "Flexibility and options to pivot, valued by venture capital"
+      },
+      {
+        "id": "d",
+        "text": "A stable price anchor for customers"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Liabilities: confusion at the point of sale, no stable price anchor, discount from analysts lacking peers."
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-04",
+    "lecture": "f8",
+    "difficulty": 1,
+    "prompt": "Askin & Mauskapf (2017) studied 27,000+ songs. Which relationship between differentiation and the probability of a hit did they find?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A balanced level of differentiation and conformity predicts the highest chance (inverted U)"
+      },
+      {
+        "id": "b",
+        "text": "The more different, the more likely a hit"
+      },
+      {
+        "id": "c",
+        "text": "The more conforming, the more likely a hit"
+      },
+      {
+        "id": "d",
+        "text": "Success depends only on luck"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Optimal distinctiveness: neither maximal differentiation nor pure conformity.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-05",
+    "lecture": "f8",
+    "difficulty": 2,
+    "prompt": "According to Zhao et al. (2017), which are dimensions of optimal distinctiveness as a dynamic process? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orchestration (integrative or compensatory)"
+      },
+      {
+        "id": "b",
+        "text": "Stakeholder multiplicity"
+      },
+      {
+        "id": "c",
+        "text": "Temporality"
+      },
+      {
+        "id": "d",
+        "text": "Economies of scale"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Orchestration across strategic dimensions, multiple audiences with different criteria, and changing expectations over time."
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-06",
+    "lecture": "f8",
+    "difficulty": 2,
+    "prompt": "A start-up deviates strongly with a radical product design but uses a classic, conventional brand name and sells through established retailers. Which type of orchestration is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compensatory orchestration"
+      },
+      {
+        "id": "b",
+        "text": "Integrative orchestration"
+      },
+      {
+        "id": "c",
+        "text": "Stuck in the middle"
+      },
+      {
+        "id": "d",
+        "text": "Middle-status conformity"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Compensatory: deviate strongly on one dimension while conforming on another to reduce legitimacy concerns. Integrative: familiar elements combined in a distinctive way.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-07",
+    "lecture": "f8",
+    "difficulty": 1,
+    "prompt": "According to middle-status conformity (Phillips & Zuckerman 2001), which actors conform most to conventions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Middle-status actors"
+      },
+      {
+        "id": "b",
+        "text": "High-status actors"
+      },
+      {
+        "id": "c",
+        "text": "Low-status actors"
+      },
+      {
+        "id": "d",
+        "text": "All actors equally"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "High-status actors are secure enough to deviate, low-status actors have little to lose; middle-status actors fear losing their position.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-08",
+    "lecture": "f8",
+    "difficulty": 2,
+    "prompt": "Which are DEMAND-side drawbacks of spanning multiple categories? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inattention: atypical identities are ignored"
+      },
+      {
+        "id": "b",
+        "text": "Confusion and cognitive burden for audiences"
+      },
+      {
+        "id": "c",
+        "text": "Perceived lack of commitment or inauthenticity"
+      },
+      {
+        "id": "d",
+        "text": "Higher coordination costs"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Higher coordination costs and dilution of resources are supply-side drawbacks."
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-09",
+    "lecture": "f8",
+    "difficulty": 2,
+    "prompt": "Which variables can soften the negative sanction on category spanning? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The audience's goals, tastes and expertise"
+      },
+      {
+        "id": "b",
+        "text": "The actor's status or reputation"
+      },
+      {
+        "id": "c",
+        "text": "The novelty of the category"
+      },
+      {
+        "id": "d",
+        "text": "The number of employees"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Research cited in class (Paolella & Durand 2016, Pontikes 2012, Goldberg et al. 2016 …)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-f8-10",
+    "lecture": "f8",
+    "difficulty": 2,
+    "prompt": "Oura option D – “create the smart-ring category and become its prototype” – has which main risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A form-based category invites copycats"
+      },
+      {
+        "id": "b",
+        "text": "Slow and costly regulatory clearances"
+      },
+      {
+        "id": "c",
+        "text": "Small volumes and tech obsolescence"
+      },
+      {
+        "id": "d",
+        "text": "Identity drift through many lines"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "B: regulatory risk; C: small volumes, obsolescence; E: coordination and identity drift.",
+    "single": true
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-01",
+    "lecture": "f8",
+    "difficulty": 1,
+    "statement": "Market intermediaries such as reviews, rankings and certifications help reduce uncertainty about the identity and quality of market actors.",
+    "answer": true,
+    "explanation": "Together with formal rules (property rights, contracts) and informal rules (routines, norms)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-02",
+    "lecture": "f8",
+    "difficulty": 1,
+    "statement": "In the course's positioning map, the vertical axis represents the identity claim and the horizontal axis the status claim.",
+    "answer": false,
+    "explanation": "Horizontal = identity claim (features, categories); vertical = status claim (perceived value, quality, tiers)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-03",
+    "lecture": "f8",
+    "difficulty": 1,
+    "statement": "Research shows that, on average, people embrace novel ideas that combine several categories.",
+    "answer": false,
+    "explanation": "People desire but often reject creative ideas (bias against creativity, Mueller et al. 2012); generalists tend to receive lower evaluations."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-04",
+    "lecture": "f8",
+    "difficulty": 1,
+    "statement": "Category spanners combine features of typical members of more than one category.",
+    "answer": true,
+    "explanation": "E.g. Oura combines fitness tracker and jewellery features (and possibly medical diagnostics)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-05",
+    "lecture": "f8",
+    "difficulty": 1,
+    "statement": "Optimal distinctiveness means finding one fixed midpoint between conformity and differentiation.",
+    "answer": false,
+    "explanation": "Zhao et al.: it is a dynamic orchestration across dimensions, stakeholders and time."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-06",
+    "lecture": "f8",
+    "difficulty": 1,
+    "statement": "Early in an industry's life, experimentation and differentiation tend to be rewarded, while conformity pressure increases as the industry matures.",
+    "answer": true,
+    "explanation": "Temporality dimension of optimal distinctiveness."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-07",
+    "lecture": "f8",
+    "difficulty": 1,
+    "statement": "Economies of scope are a supply-side advantage of spanning categories.",
+    "answer": true,
+    "explanation": "Other supply-side pros: market power, risk dilution. Cons: dilution of resources and skills, coordination costs."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-08",
+    "lecture": "f8",
+    "difficulty": 2,
+    "statement": "Berger & Packard (2018) found that lyrical differentiation has the same effect on success in all music genres.",
+    "answer": false,
+    "explanation": "Overall positive, but the effect varies across genres – differentiation must be analysed on several dimensions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f8-09",
+    "lecture": "f8",
+    "difficulty": 1,
+    "statement": "The smartphone example shows that a category label can persist while its prototype changes (BlackBerry → iPhone).",
+    "answer": true,
+    "explanation": "The object changed but the label remained."
+  },
+  {
+    "type": "short",
+    "id": "sa-f8-01",
+    "lecture": "f8",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Oura faces audiences that apply different categories to its ring. Explain why category ambiguity is both a liability and an asset, and recommend one positioning option.",
+    "modelAnswer": "Liability: audiences evaluate through categories; Oura confuses retailers (which aisle?), customers (no stable price anchor, “what does it replace?”) and investors (inconsistent peers → valuation discount, Zuckerman's categorical imperative); specialists tend to be evaluated better than spanners. Asset: broad appeal and several growth engines (wellness, sport, fashion, health), no head-on comparison with the Apple Watch or jewellers, and strategic flexibility valued by VC investors. Recommendation (example): option E “one core, many frames” – a stable core identity around sleep and recovery science (central, durable attribute), with audience-specific lines and channels (Gucci edition, clinical partnerships). This orchestrates conformity and distinctiveness, but needs tight coordination to avoid identity drift. Alternatives (A or D) are acceptable if argued with their risks.",
+    "keyPoints": [
+      "Liabilities with mechanism (categories, price anchor, analysts)",
+      "Assets (growth engines, avoids comparison, options)",
+      "Clear recommendation",
+      "Risks of the recommended option"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-f8-02",
+    "lecture": "f8",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the concept of optimal distinctiveness and its three dimensions according to Zhao et al. (2017).",
+    "modelAnswer": "Firms face a tension: strategic management says differentiate to gain competitive advantage; institutional theory says conform to norms to gain legitimacy. Optimal distinctiveness means being “as different as legitimately possible” (Deephouse's strategic balance). Zhao et al. argue it is a dynamic management process: (1) orchestration – combine dimensions, either integratively (familiar elements in a distinctive combination) or compensatorily (deviate strongly on one dimension and conform on another); (2) stakeholder multiplicity – customers, investors, regulators and employees evaluate with different criteria (US vs French wine classifications); (3) temporality – early in an industry differentiation is rewarded, later conformity pressure rises, so positioning must be reviewed over time.",
+    "keyPoints": [
+      "Tension differentiation vs legitimacy",
+      "Orchestration (integrative / compensatory)",
+      "Stakeholder multiplicity",
+      "Temporality"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-f8-03",
+    "lecture": "f8",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Why might a high-status and a middle-status organization react differently to an opportunity to deviate from industry conventions?",
+    "modelAnswer": "Categories hierarchize actors. According to middle-status conformity (Phillips & Zuckerman 2001), high-status actors are secure: deviation is read as visionary and does not threaten their position, so they can innovate (Stokowski playing Schoenberg). Low-status actors have little to lose and may deviate to get noticed (Katims in Seattle). Middle-status actors aspire to the top and fear falling, so conformity is their safest way to signal quality (Ormandy's conventional programmes in Philadelphia). Hence the middle-status firm is more likely to avoid the deviation, while the high-status firm can afford it.",
+    "keyPoints": [
+      "Status hierarchy via categories",
+      "High status: secure, can deviate",
+      "Middle status: conforms most (insecure)",
+      "Low status: little to lose / example"
+    ]
+  }
+]

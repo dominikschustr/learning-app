@@ -1,0 +1,213 @@
+{
+  "lecture": "f3",
+  "title": "F3 – External analysis I: PESTEL and Porter's Five Forces",
+  "source": "Zusammenfassung von Session 3 „External analysis“ (Teil 1) und der Five-Forces-Analyse im Dyson-Fall",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Layers of the business environment: macro-environment (PESTEL) → industry (Five Forces) → competitors and strategic groups → the organization."
+        },
+        {
+          "kind": "item",
+          "text": "Industry explains a large share of firm performance – hence the interest in industries. But an industry (a group of firms producing similar products or services) has fuzzy boundaries: similar according to which criteria? What if a firm belongs to several industries?"
+        },
+        {
+          "kind": "item",
+          "text": "PESTEL scans the macro-environment: structural trends and uncertainties that shape an industry but that no single organization controls (although some have more power than others to shape them)."
+        },
+        {
+          "kind": "item",
+          "text": "Porter's Five Forces explain the underlying profitability of an industry: where the economic value is located and which forces favour or impede capturing it. Growth alone does not make an industry attractive."
+        }
+      ]
+    },
+    {
+      "heading": "PESTEL – the six factors",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Political: government stability, taxation, social welfare policies, foreign trade regulation (e.g. return of US protectionism since 2025)."
+        },
+        {
+          "kind": "item",
+          "text": "Economic: GDP, inflation, disposable income, interest rates, exchange rates (e.g. end of near-zero interest rates since 2022)."
+        },
+        {
+          "kind": "item",
+          "text": "Social: shifts in values and culture, lifestyle, consumerism, attitudes to work and leisure (e.g. younger generations drinking less alcohol)."
+        },
+        {
+          "kind": "item",
+          "text": "Technological: research policy, new patents and products (e.g. AI answers in search cut publishers' Google traffic)."
+        },
+        {
+          "kind": "item",
+          "text": "Environmental: climate change, energy consumption, waste (e.g. shorter, less reliable snow seasons for ski resorts)."
+        },
+        {
+          "kind": "item",
+          "text": "Legal: legislative and regulatory constraints and changes (e.g. EU board gender-balance quotas since June 2026)."
+        },
+        {
+          "kind": "item",
+          "text": "How to use it – three steps:",
+          "children": [
+            "Scan: identify the factors that matter for THIS industry, not generic ones like “inflation”",
+            "Assess: rate each factor on impact and predictability – trends you can plan on vs uncertainties that call for scenarios",
+            "Translate: ask for whom each factor is a threat or an opportunity"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Porter's Five Forces – factors that increase each force",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "1. Rivalry among existing competitors (same demand, similar products – not substitutes; e.g. Air France vs British Airways). Higher when:",
+          "children": [
+            "Low concentration – power evenly distributed among rivals",
+            "Low industry growth → price competition",
+            "Low differentiation → price competition",
+            "High fixed costs → pressure for volume, price competition"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "2. Threat of new entrants (how hard is it to enter? e.g. pharmaceuticals). The threat is LOW when entry barriers are high:",
+          "children": [
+            "Scale and experience (economies of scale)",
+            "Access to supply or distribution channels",
+            "Incumbents' formal control: vertical integration, property rights (patents)",
+            "Incumbents' informal control: customer loyalty, networks, brand identity",
+            "Capital requirements (private tutoring vs private university)",
+            "Legislation (pharmaceuticals, pensions, taxis)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "3. Threat of substitutes: products with a similar function and benefit but a different nature (tablet vs computer, bus vs train, aluminium vs steel). They come from outside the industry – watch distant threats. Main driver: low switching costs (“cost” = value for money)."
+        },
+        {
+          "kind": "item",
+          "text": "4. Bargaining power of buyers – the immediate customers, not necessarily final consumers (supermarkets buying milk). Higher when:",
+          "children": [
+            "Buyers are concentrated",
+            "Switching costs are low / products standardized",
+            "Buyers can integrate backwards (produce in-house)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "5. Bargaining power of suppliers (oil & gas, Microsoft's operating system). Higher when:",
+          "children": [
+            "Suppliers are concentrated",
+            "Switching costs for the buyer are high",
+            "Suppliers can integrate forwards",
+            "Suppliers' products are highly differentiated (strong brands vs milk producers)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "The originality of the model: rivalry is not the only force. The four other forces put pressure on firms in the industry and all affect the first force."
+        }
+      ]
+    },
+    {
+      "heading": "Contributions and limitations",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Contributions:",
+          "children": [
+            "Simplifies micro-economic theory, makes it applicable, encourages systems thinking",
+            "Shows that internal competition is not the only determinant of profitability",
+            "Helps predict long-term returns; profitability cannot be read from growth alone"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Limitations:",
+          "children": [
+            "Industry level rather than finer product-market segments",
+            "Forces treated as independent, while they are interdependent",
+            "Forces are not prioritized",
+            "Assumes rigid industry boundaries",
+            "Static view of today's forces"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Worked example: vacuum cleaners (Dyson case)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Rivalry high: saturated market (US households own 3 vacuums, 97 % of Japanese households own one), growth only in pockets such as China and cordless sticks."
+        },
+        {
+          "kind": "item",
+          "text": "Threat of entry high (low barriers); substitutes moderate (brooms, but no efficient alternative); suppliers' power high (oil prices drive plastics); buyers' power high (price-sensitive, well-informed)."
+        },
+        {
+          "kind": "item",
+          "text": "Conclusion: an unattractive industry – yet Dyson earns high margins. The explanation lies in its differentiation and resources, not in industry structure (→ internal analysis, F5)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "A group of firms producing products and services that are similar to each other.",
+          "term": "Industry"
+        },
+        {
+          "kind": "item",
+          "text": "A product with a similar function and benefit but of a different nature, coming from outside the industry.",
+          "term": "Substitute"
+        },
+        {
+          "kind": "item",
+          "text": "The cost for a customer of moving from one offer to another (in value-for-money terms).",
+          "term": "Switching costs"
+        },
+        {
+          "kind": "item",
+          "text": "Obstacles that newcomers must overcome to enter an industry (scale, access, control, capital, legislation).",
+          "term": "Barriers to entry"
+        },
+        {
+          "kind": "item",
+          "text": "Buyers or suppliers taking over the activity of the other side (backward vs forward integration).",
+          "term": "Vertical integration threat"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: how to answer a Five Forces question",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Go through all five forces, rate each (low / medium / high) and justify each rating with two or three facts from the case – the exam rewards reasoning, not lists."
+        },
+        {
+          "kind": "item",
+          "text": "Name the right buyers and suppliers: for an app, buyers can be users AND corporate clients; suppliers can be content creators, app stores (30 % fee) and cloud providers."
+        },
+        {
+          "kind": "item",
+          "text": "Conclude explicitly on attractiveness (“moderately attractive because …”) and mention one interdependence or one limitation (static view, blurred boundaries)."
+        },
+        {
+          "kind": "item",
+          "text": "For PESTEL, pick only relevant factors, say whether each fosters or hinders the industry and for whom."
+        }
+      ]
+    }
+  ]
+}

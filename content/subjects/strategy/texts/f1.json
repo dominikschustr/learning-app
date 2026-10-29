@@ -1,0 +1,156 @@
+{
+  "lecture": "f1",
+  "title": "F1 – What is strategy? Definitions, levels and classic views",
+  "source": "Zusammenfassung von Session 1 „Introduction: Strategy & Organizations“ sowie Porter (1996), Mintzberg (1987) und Simon (1991)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Strategy is the long-term direction (trajectory) of an organization. Three words carry the definition: long-term, direction, organization."
+        },
+        {
+          "kind": "item",
+          "text": "Organizations are “purposive social collections of controlled resources, building exchange relations and interacting with other entities, and developing strategies for reaching objectives” (Durand 2006). Firms are only one type – NGOs, clubs, schools, parties or hospitals also have strategies."
+        },
+        {
+          "kind": "item",
+          "text": "A good strategy statement answers three questions:",
+          "children": [
+            "Why: purpose – mission, vision (the future to create), values (moral principles), objectives (outcomes to achieve)",
+            "Where: industry and scope – customer segments, geography, activities (vertical integration) → corporate strategy",
+            "How: resources and capabilities used to compete → business strategy"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Three levels of strategy that must be integrated:",
+          "children": [
+            "Corporate strategy: scope of the organization – geography, diversification, allocation of resources to businesses",
+            "Business strategy: how a business competes in its market – innovation, scale, response to competition",
+            "Functional strategies: how the parts of the organization implement corporate and business strategy"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "The key question of strategy as a discipline: why are some organizations more successful than others? A firm has a competitive advantage when it earns (or can earn) a persistently higher profit than rivals in the same market."
+        },
+        {
+          "kind": "item",
+          "text": "Performance is hard to explain: it is multi-dimensional (economic, social …), the relevant factors are hard to identify, causality is hard to establish (endogeneity) and a model may not hold across time and places."
+        }
+      ]
+    },
+    {
+      "heading": "Porter (1996) – What is strategy?",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Operational effectiveness (OE) is not strategy.",
+          "children": [
+            "OE: performing the same activities better than rivals (faster, fewer inputs, fewer defects) – moves a firm towards the productivity frontier",
+            "Best practices diffuse quickly → everyone improves, nobody gains a relative advantage → competitive convergence"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Strategy = performing different activities, or similar activities in different ways. It rests on three pillars:",
+          "children": [
+            "Unique, valuable position: variety-based (a subset of products, e.g. Jiffy Lube), needs-based (most needs of one customer group, e.g. IKEA), access-based (customers reachable in a distinct way, e.g. Carmike Cinemas in small towns)",
+            "Trade-offs: choosing what NOT to do; without trade-offs a position can be copied or straddled (Continental Lite imitating Southwest)",
+            "Fit among activities: 1st order = consistency, 2nd order = activities reinforce each other, 3rd order = optimization of effort; the whole system is hard to imitate"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Growth trap: broadening the line and chasing every segment blurs the position. Profitable growth deepens the position; leadership must be willing to say no."
+        }
+      ]
+    },
+    {
+      "heading": "Mintzberg (1987) – Five Ps for strategy",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Five complementary definitions:",
+          "children": [
+            "Plan: a consciously intended course of action, set in advance",
+            "Ploy: a specific manoeuvre to outwit an opponent",
+            "Pattern: consistency in a stream of behaviour, intended or not",
+            "Position: the location of the organization in its environment (niche, product-market domain)",
+            "Perspective: an ingrained, shared way of seeing the world – the organization's “personality”; hardest to change"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Plan vs pattern → intended strategies can be realized (deliberate) or unrealized; realized strategies can also emerge without prior intention (emergent). Honda's US motorcycle success: the position was stumbled into and only later made deliberate."
+        }
+      ]
+    },
+    {
+      "heading": "Organizations and the economy",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Chandler (The Visible Hand): before 1850 markets coordinated the economy; railroads and the telegraph created volumes and speeds that called for internal coordination. The advantage was throughput, not size as such – investments in large plants, national distribution and a professional management hierarchy. Structure follows strategy (multidivisional form)."
+        },
+        {
+          "kind": "item",
+          "text": "Perrow (A Society of Organizations): large organizations have “absorbed society”. They won not only through efficiency but because they could keep the gains and push costs onto workers, communities and the state. Alternative: dense networks of small specialized firms."
+        },
+        {
+          "kind": "item",
+          "text": "Simon (1991, Organizations and Markets): a Martian would see large green areas (organizations) linked by thin red lines (markets) – we live in an “organizational economy”. Organizations work through authority, rewards, identification (loyalty) and coordination."
+        },
+        {
+          "kind": "item",
+          "text": "For strategy: where a firm draws its boundaries (what it internalizes vs. outsources) is a strategic choice with economic and social consequences."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The long-term direction (trajectory) of an organization.",
+          "term": "Strategy"
+        },
+        {
+          "kind": "item",
+          "text": "Performing the same activities as rivals, only better. Necessary but not sufficient for superior performance.",
+          "term": "Operational effectiveness"
+        },
+        {
+          "kind": "item",
+          "text": "A firm earns (or can earn) a persistently higher profit than its rivals in the same market.",
+          "term": "Competitive advantage"
+        },
+        {
+          "kind": "item",
+          "text": "A realized strategy that formed as a pattern without (or despite) prior intention.",
+          "term": "Emergent strategy"
+        },
+        {
+          "kind": "item",
+          "text": "Incompatibilities between positions that force a firm to choose what not to do.",
+          "term": "Trade-off"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: using F1 in the exam",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "When an exam question asks about “trade-offs” or “identity” of a strategic move, use Porter: name what the firm gives up, and check whether the move fits the existing activity system or blurs the position."
+        },
+        {
+          "kind": "item",
+          "text": "Distinguish levels: “should we enter China / buy a supplier?” is corporate strategy; “how do we beat rivals in our market?” is business strategy."
+        }
+      ]
+    }
+  ]
+}

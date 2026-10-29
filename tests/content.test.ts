@@ -26,7 +26,7 @@ describe("Lesetexte", () => {
     for (const c of loadAllContent()) for (const t of getTexts(c.subject.id)) expect(t.sections.length).toBeGreaterThan(0);
   });
 
-  it.each(["management-control", "marketing", "accounting"])("jedes Kapitel von %s hat einen gültigen Text", (id) => {
+  it.each(["management-control", "marketing", "accounting", "strategy"])("jedes Kapitel von %s hat einen gültigen Text", (id) => {
     const content = getAllContent().find((c) => c.subject.id === id)!;
     const texts = getTexts(id);
     expect(texts.map((t) => t.lecture).sort()).toEqual(content.subject.lectures.map((l) => l.id).sort());

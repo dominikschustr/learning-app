@@ -1,0 +1,92 @@
+[
+  {
+    "id": "c-f2-01",
+    "lecture": "f2",
+    "front": "Bounded rationality (Simon)",
+    "back": "Decision-makers satisfice: choose the first satisfactory alternative without evaluating all, using heuristics."
+  },
+  {
+    "id": "c-f2-02",
+    "lecture": "f2",
+    "front": "System 1 vs System 2",
+    "back": "System 1: fast, intuitive, associative. System 2: slow, deliberate, logical. Parallel – both can be biased or correct."
+  },
+  {
+    "id": "c-f2-03",
+    "lecture": "f2",
+    "front": "Inattentional blindness – 4 causes",
+    "back": "Unremarkable object · cognitive load · expectations · attentional capacities (personal/situational)."
+  },
+  {
+    "id": "c-f2-04",
+    "lecture": "f2",
+    "front": "Conjunction fallacy (Linda)",
+    "back": "Judging A∧B more likely than A. P(A∧B) ≤ P(A). Driven by representativeness."
+  },
+  {
+    "id": "c-f2-05",
+    "lecture": "f2",
+    "front": "Out-group homogeneity vs in-group favoritism",
+    "back": "Perceptive: “they are alike, we are diverse”. Evaluative: favour our own group, even with random assignment (social identity theory, Tajfel)."
+  },
+  {
+    "id": "c-f2-06",
+    "lecture": "f2",
+    "front": "Dichotomous thinking (Oshio)",
+    "back": "Preference for dichotomy · dichotomous belief · profit-and-loss thinking."
+  },
+  {
+    "id": "c-f2-07",
+    "lecture": "f2",
+    "front": "Einstellung effect",
+    "back": "Expert entrenchment: preferring the known solution over new, better ones (Dane 2010)."
+  },
+  {
+    "id": "c-f2-08",
+    "lecture": "f2",
+    "front": "Confirmation bias – 3 mechanisms",
+    "back": "Selective exposure · selective perception · selective retention. Filter bubble (Pariser)."
+  },
+  {
+    "id": "c-f2-09",
+    "lecture": "f2",
+    "front": "4 sources of endogeneity",
+    "back": "Simultaneity/reverse causation · omitted variable · measurement error · selection bias."
+  },
+  {
+    "id": "c-f2-10",
+    "lecture": "f2",
+    "front": "Types of selection bias",
+    "back": "Sampling · survivorship · attrition · non-response · volunteer · undercoverage."
+  },
+  {
+    "id": "c-f2-11",
+    "lecture": "f2",
+    "front": "Survivorship bias (Wald)",
+    "back": "Only survivors observed → misread causes of success. Ask what data is missing; learn from failures too."
+  },
+  {
+    "id": "c-f2-12",
+    "lecture": "f2",
+    "front": "Kahneman, Lovallo & Sibony checklist",
+    "back": "12 questions to review others' proposals: self-interest, affect, groupthink, saliency, confirmation, availability, anchoring, halo, sunk cost, over-optimism, disaster neglect (premortem), loss aversion."
+  },
+  {
+    "id": "c-f2-13",
+    "lecture": "f2",
+    "front": "Sunstein & Hastie: why groups fail",
+    "back": "Informational signals + reputational pressure → amplified errors, cascades, polarization, common-knowledge effect."
+  },
+  {
+    "id": "c-f2-14",
+    "lecture": "f2",
+    "front": "Sunstein & Hastie: correctives",
+    "back": "Silence the leader · prime critical thinking · reward group success · assign roles · devil's advocate (weak) · red team · Delphi."
+  },
+  {
+    "id": "c-f2-15",
+    "lecture": "f2",
+    "front": "Behavioral strategy (Powell et al. 2011)",
+    "back": "Psychology in strategy; fourth pillar. Debiasing individuals fails → improve the firm's choice architecture."
+  }
+]

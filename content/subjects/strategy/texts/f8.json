@@ -1,0 +1,202 @@
+{
+  "lecture": "f8",
+  "title": "F8 – Organizational identity, categories and optimal distinctiveness",
+  "source": "Zusammenfassung von Session 6 „Organizational Identity & Positioning“ mit dem Oura-Ring-Fall und den Präsentationen zu Durand & Kremp (2016) und Zhao et al. (2017)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Markets are not continuous spaces – they are segmented by categories (movie genres, patent classes, industries, academic disciplines). Audiences use categories to answer two questions: what is it, and how good is it?"
+        },
+        {
+          "kind": "item",
+          "text": "A fundamental strategic question is “Who are we as an organization?” – formulating identity goes together with formulating purpose and goals."
+        },
+        {
+          "kind": "item",
+          "text": "Is differentiation always best? Porter says competitive strategy is about being different. Research on categories shows that audiences penalize what they cannot classify – organizations must be as different as legitimately possible (optimal distinctiveness)."
+        }
+      ]
+    },
+    {
+      "heading": "Uncertainty, institutions and identity",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Complex or credence goods: quality is hard to assess before consumption. Institutions reduce uncertainty about identity and quality:",
+          "children": [
+            "Formal rules: ownership rights, contract enforcement",
+            "Informal rules: routines, beliefs, social norms",
+            "Market intermediaries: reviews, ratings, rankings, certifications, accreditations, degrees"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Organizational identity (Albert & Whetten 1985) rests on three types of attributes:",
+          "children": [
+            "Centrality: attributes that make the organization what it is – without them it would be different",
+            "Durability: attributes that reflect the organization's history and endure over time",
+            "Distinctiveness: attributes that separate it from similar organizations"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Strategic positioning has two axes: horizontal = identity claim (set of features, industries, categories), vertical = status claim (perceived value, quality, ordering into low, middle and high tiers)."
+        }
+      ]
+    },
+    {
+      "heading": "The categorical imperative",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Two-stage valuation: first, audiences screen offers that conform to a recognizable category (secure attention through conformity); only then is differentiation used to attract them."
+        },
+        {
+          "kind": "item",
+          "text": "Zuckerman (1999): diversified firms spanning industry categories are less often covered by industry-specialized financial analysts and receive a lower valuation – the illegitimacy discount."
+        },
+        {
+          "kind": "item",
+          "text": "Innovative identities must be identified, recognized, classified and understood to be valued. People say they want creativity but tend to reject novel ideas (Mueller et al. 2012 – bias against creativity)."
+        }
+      ]
+    },
+    {
+      "heading": "Category spanning – the Oura Ring case",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Oura (Kickstarter 2015): sleep, heart-rate variability and temperature → “Readiness Score”; titanium design; early adopters (biohackers, NBA players); later Gucci edition (> USD 950), subscription (2021), Apple Health integration, AI advisor (2024), Dexcom partnership (2025). 2.5m rings by mid-2024, ~USD 500m revenue."
+        },
+        {
+          "kind": "item",
+          "text": "The market cannot agree on what it is: sleep tracker, fitness device, luxury accessory or medical tool? Each audience applies a different category and expectations – early adopters (data depth), athletes (benchmarked against WHOOP), mainstream consumers (“what does it replace?”), luxury buyers (tech ages, jewellery lasts), clinicians (validated accuracy), retailers (which aisle?), investors (inconsistent peers)."
+        },
+        {
+          "kind": "item",
+          "text": "Category spanners combine features of typical members of more than one category. Innovation often happens at the periphery, by combining elements from several domains."
+        },
+        {
+          "kind": "item",
+          "text": "Ambiguity paradox – liability: confusion at the point of sale, no stable price anchor, discount from analysts and investors lacking peers. Asset: broad appeal and several growth engines, avoids head-on comparison with the Apple Watch or jewellers, flexibility (options to pivot) valued by venture capital."
+        },
+        {
+          "kind": "item",
+          "text": "Five positioning options: A) sleep & recovery specialist (clear identity; smaller market), B) health & clinical device (high barriers; slow, costly, regulatory risk), C) luxury wearable (margins; small volumes, tech obsolescence), D) create the smart-ring category and become its prototype (sets the criteria; a form-based category invites copycats), E) one core, many frames (several growth engines; coordination, identity drift)."
+        },
+        {
+          "kind": "item",
+          "text": "Critical lens: individualization of health, datafication of the body and ownership of biometric data, unclear regulation – not all categories can be blurred without risk."
+        }
+      ]
+    },
+    {
+      "heading": "Generalists vs specialists",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Across domains, category spanners (generalists) receive lower evaluations or performance than specialists (Hsu 2006; Kovács & Hannan 2015 …). Moderators that soften the penalty: audience goals, tastes and expertise; the actor's status or reputation; the novelty of the category."
+        },
+        {
+          "kind": "item",
+          "text": "Pros and cons of spanning (“jack of all trades, master of none?”):",
+          "children": [
+            "Demand side +: perception of resources to handle complex issues, diluted risk",
+            "Demand side −: inattention (atypical identities ignored), confusion and cognitive burden, perceived lack of commitment or inauthenticity",
+            "Supply side +: economies of scope (synergies), market power, risk dilution",
+            "Supply side −: dilution of resources and skills, higher coordination costs"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Categories change: BlackBerry had ~20 % of smartphones sold in 2010 and ~0 % in 2025 – the iPhone design became the new prototype; the object changed, the label stayed."
+        }
+      ]
+    },
+    {
+      "heading": "Optimal distinctiveness",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Tension: firms must differentiate to gain competitive advantage (strategic management) and conform to the industry's norms, standards and institutions to gain legitimacy (institutional theory) – “as different as legitimately possible” (Deephouse 1999: strategic balance)."
+        },
+        {
+          "kind": "item",
+          "text": "Evidence from music: Askin & Mauskapf (2017, 27,000+ songs): a balanced level of differentiation and conformity (inverted U) predicts the highest chance of a hit. Berger & Packard (2018): lyrical differentiation helps overall, but the effect varies across genres → differentiation must be analysed on N dimensions."
+        },
+        {
+          "kind": "item",
+          "text": "Zhao et al. (2017): optimal distinctiveness is a dynamic process, not a fixed midpoint:",
+          "children": [
+            "Orchestration: integrative (familiar elements, distinctive combination) or compensatory (deviate strongly on one dimension, conform on another)",
+            "Stakeholder multiplicity: customers, investors, regulators and employees judge with different criteria (wine in the US vs France)",
+            "Temporality: early in an industry, experimentation is rewarded; as it matures, conformity pressure increases"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Status and conformity",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Categories also hierarchize actors (Bourdieu): belonging signals who one is, what one is worth and where one stands."
+        },
+        {
+          "kind": "item",
+          "text": "Middle-status conformity (Phillips & Zuckerman 2001): high-status actors can afford to deviate (secure position), low-status actors have little to lose, middle-status actors conform most – an inverted U of conformity over status."
+        },
+        {
+          "kind": "item",
+          "text": "Durand & Kremp (2016, US orchestras 1879–1969): organizations align with peers to avoid penalties, while conductors conform selectively: low-status Katims programmed for originality, middle-status Ormandy played conventional programmes, high-status Stokowski deviated (Schoenberg)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Central, durable and distinctive attributes answering “who are we as an organization?” (Albert & Whetten 1985).",
+          "term": "Organizational identity"
+        },
+        {
+          "kind": "item",
+          "text": "Audiences penalize offers that do not fit recognized categories (illegitimacy discount).",
+          "term": "Categorical imperative"
+        },
+        {
+          "kind": "item",
+          "text": "An actor combining features of typical members of several categories.",
+          "term": "Category spanner"
+        },
+        {
+          "kind": "item",
+          "text": "Being as different as legitimately possible – balancing differentiation and conformity across dimensions, stakeholders and time.",
+          "term": "Optimal distinctiveness"
+        },
+        {
+          "kind": "item",
+          "text": "Middle-status actors conform most; high- and low-status actors deviate more.",
+          "term": "Middle-status conformity"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: using F8 in the exam",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "For “how does the move relate to the company's identity?” questions: name the central, durable and distinctive attributes from the case, then say whether the move reinforces or contradicts them (and how each audience will react)."
+        },
+        {
+          "kind": "item",
+          "text": "When a firm combines categories (app + community, ring + jewellery, wine + tech), discuss the ambiguity paradox and propose a way to orchestrate conformity and distinctiveness."
+        }
+      ]
+    }
+  ]
+}

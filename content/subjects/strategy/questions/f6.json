@@ -1,0 +1,400 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-f6-01",
+    "lecture": "f6",
+    "difficulty": 1,
+    "prompt": "What are the three components of a value proposition in the course's business model framework?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Value creation, value configuration, value capture"
+      },
+      {
+        "id": "b",
+        "text": "Product, price, promotion"
+      },
+      {
+        "id": "c",
+        "text": "Inbound logistics, operations, outbound logistics"
+      },
+      {
+        "id": "d",
+        "text": "Value, rarity, inimitability"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Creation: what for whom? Configuration: how is the value chain organized? Capture: why does the model generate a margin?",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f6-02",
+    "lecture": "f6",
+    "difficulty": 1,
+    "prompt": "Which are the three main sources of lower costs for a cost leader?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Costs of input resources, economies of scale, economies of learning"
+      },
+      {
+        "id": "b",
+        "text": "Patents, brand, design"
+      },
+      {
+        "id": "c",
+        "text": "Vertical integration, diversification, internationalization"
+      },
+      {
+        "id": "d",
+        "text": "Low prices, high volumes, advertising"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Input costs (raw materials, labour), economies of scale and the experience (learning) curve.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f6-03",
+    "lecture": "f6",
+    "difficulty": 1,
+    "prompt": "A local Parisian shop sells only high-end macarons at premium prices. Which generic strategy is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focused differentiation"
+      },
+      {
+        "id": "b",
+        "text": "Differentiation"
+      },
+      {
+        "id": "c",
+        "text": "Focused cost leadership"
+      },
+      {
+        "id": "d",
+        "text": "Cost leadership"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "High differentiation + narrow market (often high-end): Ladurée in the slides.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f6-04",
+    "lecture": "f6",
+    "difficulty": 2,
+    "prompt": "Which organizational features typically fit a differentiation strategy? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Complex and flexible reporting relationships"
+      },
+      {
+        "id": "b",
+        "text": "Marketing and product R&D as main functions"
+      },
+      {
+        "id": "c",
+        "text": "Less specialized jobs and heterogeneous subgroups"
+      },
+      {
+        "id": "d",
+        "text": "Centralized staff focused on cost reduction in every function"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Centralized staff focused on process improvement and cost reduction, specialized jobs and operations as main function fit cost leadership."
+  },
+  {
+    "type": "mc",
+    "id": "mc-f6-05",
+    "lecture": "f6",
+    "difficulty": 1,
+    "prompt": "JCPenney cut prices but could not match Walmart on cost, and opened brand shops but could not match Macy's on value. This illustrates…",
+    "options": [
+      {
+        "id": "a",
+        "text": "being stuck in the middle"
+      },
+      {
+        "id": "b",
+        "text": "a blue ocean strategy"
+      },
+      {
+        "id": "c",
+        "text": "focused cost leadership"
+      },
+      {
+        "id": "d",
+        "text": "a first-mover advantage"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Unclear positioning between cost leadership and differentiation that results in bad performance.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f6-06",
+    "lecture": "f6",
+    "difficulty": 2,
+    "prompt": "Which statements about Juicero illustrate the risks of differentiation? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perceived value is not sufficient; price must be justified by substantial added value"
+      },
+      {
+        "id": "b",
+        "text": "Customers' WTP is not unlimited"
+      },
+      {
+        "id": "c",
+        "text": "Innovation is costly and risky"
+      },
+      {
+        "id": "d",
+        "text": "Juicero failed because it had too low costs"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "A USD 400–700 press for juice bags that could be squeezed by hand: low added value relative to price. Costs and WTP limits still matter for differentiators."
+  },
+  {
+    "type": "mc",
+    "id": "mc-f6-07",
+    "lecture": "f6",
+    "difficulty": 3,
+    "prompt": "In the “AI Wars” case, why is Google constrained in exploiting generative AI in search? Select all that apply.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Generative answers substitute for its profitable ad-funded search (cannibalization)"
+      },
+      {
+        "id": "b",
+        "text": "Each generative query has a real marginal (inference) cost"
+      },
+      {
+        "id": "c",
+        "text": "Google lacks the underlying technology"
+      },
+      {
+        "id": "d",
+        "text": "Unlike start-ups, Google's losses would not be financed by investors buying an option on the future"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "Google invented the Transformer and Gemini is competitive; the constraint is the business model, not capability."
+  },
+  {
+    "type": "mc",
+    "id": "mc-f6-08",
+    "lecture": "f6",
+    "difficulty": 2,
+    "prompt": "In the “gold rush” metaphor of the AI Wars case, which player “sells shovels”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nvidia (chips) and cloud providers"
+      },
+      {
+        "id": "b",
+        "text": "OpenAI building frontier models"
+      },
+      {
+        "id": "c",
+        "text": "Meta owning complements such as apps"
+      },
+      {
+        "id": "d",
+        "text": "Users of ChatGPT"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dig for gold = build the best model (costly); sell shovels = supply inputs (chips, cloud) and profit whoever wins; make jewellery = own the complements and want the gold cheap.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-f6-09",
+    "lecture": "f6",
+    "difficulty": 2,
+    "prompt": "According to Ryall (2013), what determines how much of the value a firm creates it can capture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The credible alternatives available to its customers, suppliers and partners"
+      },
+      {
+        "id": "b",
+        "text": "Only the quality of its product"
+      },
+      {
+        "id": "c",
+        "text": "The size of its advertising budget"
+      },
+      {
+        "id": "d",
+        "text": "The number of employees"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Value created ≠ value captured. Map alternatives beyond direct rivals; bargaining power depends on who has credible alternatives.",
+    "single": true
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-01",
+    "lecture": "f6",
+    "difficulty": 1,
+    "statement": "Business strategy answers the question “where to compete?”, corporate strategy “how to compete?”.",
+    "answer": false,
+    "explanation": "The other way round: business strategy = how to compete in a market; corporate strategy = where (which markets/industries)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-02",
+    "lecture": "f6",
+    "difficulty": 1,
+    "statement": "Created value equals the value generated for the demand (willingness-to-pay) minus costs.",
+    "answer": true,
+    "explanation": "Firms can raise created value by increasing WTP (differentiation) or lowering costs (cost advantage)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-03",
+    "lecture": "f6",
+    "difficulty": 1,
+    "statement": "Economies of scale can turn into diseconomies of scale beyond a certain output size.",
+    "answer": true,
+    "explanation": "The long-run average cost curve is U-shaped."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-04",
+    "lecture": "f6",
+    "difficulty": 1,
+    "statement": "The experience curve describes how unit costs fall with higher cumulated experience, through capital and labour productivity.",
+    "answer": true,
+    "explanation": "E.g. more efficient logistics, higher skills."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-05",
+    "lecture": "f6",
+    "difficulty": 1,
+    "statement": "Being positioned between cost leadership and differentiation always leads to bad performance.",
+    "answer": false,
+    "explanation": "Stuck in the middle means an unclear position that results in bad performance. Compartmentalized activities or blue-ocean innovations can combine both."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-06",
+    "lecture": "f6",
+    "difficulty": 1,
+    "statement": "In Airbnb's business model, value is captured by Airbnb through commissions and by hosts through guests' payments.",
+    "answer": true,
+    "explanation": "Configuration: a multi-sided platform."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-07",
+    "lecture": "f6",
+    "difficulty": 2,
+    "statement": "With generative AI, as with classic software subscriptions, the marginal cost of an extra query is close to zero.",
+    "answer": false,
+    "explanation": "Each query has a real inference cost scaling with model size and prompt length; usage is skewed and unbounded → caps, tiers, routing."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-08",
+    "lecture": "f6",
+    "difficulty": 1,
+    "statement": "Differentiation can rely on non-material attributes such as customer service, reputation and brand.",
+    "answer": true,
+    "explanation": "Material attributes: unique technological solutions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-f6-09",
+    "lecture": "f6",
+    "difficulty": 1,
+    "statement": "Labour costs can be treated exactly like capital in a cost leadership strategy.",
+    "answer": false,
+    "explanation": "The course stresses ethical limits: preserving human rights, acceptable quality – labour is not a resource like capital."
+  },
+  {
+    "type": "short",
+    "id": "sa-f6-01",
+    "lecture": "f6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Describe Ryanair's (or another low-cost airline's) business model with the three components value creation, value configuration and value capture.",
+    "modelAnswer": "Value creation: cheap point-to-point flights for price-sensitive leisure and business travellers who value price over comfort. Value configuration: one aircraft type (lower maintenance and training costs), high aircraft utilization and fast turnarounds, secondary airports with low fees, direct online sales, no free extras, standardized processes. Value capture: margin from very low costs per seat plus ancillary revenues (luggage, seat choice, priority boarding, partner offers) – low base fares fill planes, extras and cost discipline generate the margin.",
+    "keyPoints": [
+      "Customer segment and need",
+      "Configuration of activities consistent with low cost",
+      "Revenue and cost sources (ancillaries)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-f6-02",
+    "lecture": "f6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the risk of being “stuck in the middle” and under which conditions a firm can combine cost leadership and differentiation.",
+    "modelAnswer": "Porter's generic strategies require a clear choice between lower costs and higher perceived value, because they call for different activities, structures and cultures (centralized, specialized, operations-driven vs flexible, marketing- and R&D-driven). A firm that tries to do both risks having neither the lowest cost nor the highest value and ends up with poor performance (JCPenney vs Walmart and Macy's). Combining both is possible when activities are compartmentalized (different units for different positions) or when value innovation creates a new market space where the firm eliminates and reduces costly factors while raising and creating valued ones (blue ocean, e.g. CitizenM, Nintendo Wii) – such dual advantage is usually limited in time.",
+    "keyPoints": [
+      "Different activities/structures for each strategy",
+      "Unclear position → poor performance (example)",
+      "Compartmentalization",
+      "Blue ocean / value innovation, temporary"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-f6-03",
+    "lecture": "f6",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "A premium chocolate maker considers selling a low-priced line in supermarkets to boost growth. Discuss the move with the generic strategies framework.",
+    "modelAnswer": "Today the firm pursues (focused) differentiation: high quality, brand, premium price, selective channels. A low-priced supermarket line moves towards cost leadership in a broad market, where it competes with players having scale and input-cost advantages. Risks: stuck in the middle (not cheap enough vs mass brands, brand dilution vs premium rivals), cannibalization of the premium line, conflicts in the value chain (sourcing, production standards, sales force). Conditions for success: compartmentalize the activities (separate brand, separate production and sourcing) or create a genuinely new value curve. Otherwise growth comes better from deepening the differentiation position (new premium segments, geographies).",
+    "keyPoints": [
+      "Current position identified",
+      "New line implies cost logic and broader scope",
+      "Stuck in the middle / brand dilution / cannibalization",
+      "Conditions: compartmentalization or deepening the position"
+    ]
+  }
+]

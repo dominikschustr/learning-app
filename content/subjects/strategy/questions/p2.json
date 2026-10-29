@@ -1,0 +1,100 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p2-01",
+    "lecture": "f4",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Where is the connected home-fitness industry in its life cycle? Explain how this stage affects the Five Forces and assess the attractiveness of the industry. (4 points)",
+    "modelAnswer": "Stage: after an introduction and a Covid-driven growth phase, the industry is in a shakeout (demand −40 %, inventories, price cuts, bankruptcies), moving towards maturity. Effects: rivalry becomes high – overcapacity, high fixed costs (factories, content studios), price wars (PulseRide −25 %, rental plans); buyers gain power – they can compare offers, wait for discounts, switch to cheaper alternatives; threat of new entrants falls – investors are cautious and capital requirements for hardware plus content are high, but asset-light entrants (Apple Fitness+) attack via software; substitutes are strong – reopened gyms and studios, cheap non-connected rowers with free YouTube, Apple Fitness+ at €10; suppliers: music labels raise fees, contract manufacturers serve many brands (moderate power), chips scarce in 2022. Conclusion: the industry has become unattractive for undifferentiated hardware players; profits will go to firms with scale (PulseRide) or a clearly differentiated, loyal niche.",
+    "keyPoints": [
+      "Stage identified (shakeout → maturity) with evidence",
+      "Rivalry high (price cuts, fixed costs)",
+      "Buyers and substitutes powerful",
+      "Entry/suppliers discussed",
+      "Conclusion on attractiveness"
+    ],
+    "case": "kinetiq"
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-02",
+    "lecture": "f6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which generic strategy does Kinetiq pursue today? Discuss whether the launch of “Kinetiq Go” risks leaving Kinetiq “stuck in the middle”. (3 points)",
+    "modelAnswer": "Today: focused differentiation – a premium, design-oriented product (oak wood, patented flywheel, €2,200) and a distinctive content style (calm Nordic coaches) for a narrow segment (35–55, design-minded, large apartments), sold in design stores; low churn shows high WTP. Kinetiq Go (€799, plastic, Amazon, sports retailers) targets a broad, price-sensitive market where cost leadership requires scale, cheap inputs and learning effects that PulseRide and basic-rower makers have. Risks: neither the lowest cost nor the highest value; brand dilution in the premium segment; cannibalization of the main model; conflicts in channels (design stores vs Amazon) and in the value chain. Stuck in the middle unless Go is compartmentalized (separate brand, different production and channel) or offers a genuinely new value curve; otherwise deepen the current position.",
+    "keyPoints": [
+      "Current strategy = (focused) differentiation with evidence",
+      "Go = move to low cost / broad scope",
+      "Stuck-in-the-middle mechanism (no cost advantage vs scale players, dilution, cannibalization)",
+      "Condition or recommendation (compartmentalize / deepen position)"
+    ],
+    "case": "kinetiq"
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-03",
+    "lecture": "f5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Locate Kinetiq's key resources and capabilities in its value chain and use a VRIO analysis to assess whether (1) its coaching content and community and (2) its hardware give it a sustained competitive advantage. (4 points)",
+    "modelAnswer": "Value chain: technology development (flywheel, software in Copenhagen), operations outsourced (Taiwanese assembler), marketing & sales via design stores and online, service = subscription content and community. (1) Coaches, Nordic style and community: valuable – customers value coaches and calm atmosphere, churn 1.2 % vs 3 %; rare – rivals offer studio, music and competition-driven content; inimitable – the specific style, relationships with coaches, filmed locations and community culture are path-dependent and causally ambiguous, though a rival could hire coaches or copy the style over time; organized – subscription model and leaderboard exploit it → sustained (or at least long-lasting) advantage. (2) Hardware: valuable (design, smooth resistance), patents make the flywheel rare and protected, but the frame is built by a contract manufacturer that serves rivals, and design can be imitated; with category prices falling, hardware differences matter less → temporary advantage at best. Conclusion: the advantage lies in content and community (service activities), not in hardware.",
+    "keyPoints": [
+      "Value-chain location of resources (technology dev., outsourced operations, sales, service)",
+      "VRIO for content/community with evidence (churn, style)",
+      "VRIO for hardware (patents vs outsourced, imitable design)",
+      "Outcomes stated and compared"
+    ],
+    "case": "kinetiq"
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-04",
+    "lecture": "f4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Propose an Eliminate–Reduce–Raise–Create grid that could take Kinetiq out of the red ocean of connected fitness equipment. (3 points)",
+    "modelAnswer": "Example: Eliminate – the race for screens, live leaderboards and high-intensity competition; ownership of a costly machine for every user. Reduce – hardware price and specifications (rent or lease the machine, smaller screen or use own tablet), number of classes. Raise – calm, mindful and low-impact training, design that fits a living room, coaching personalization, community belonging. Create – a “mindful movement” offer combining rowing with breathing and meditation programmes, outdoor/Nordic experiences (retreats, rowing on real lakes), B2B offers for hotels and offices. Target noncustomers: people who dislike gyms and competitive fitness (older adults, stressed professionals). Check the traps: not only differentiation – also lower costs (leasing, fewer specs); value innovation, not technology.",
+    "keyPoints": [
+      "Eliminate with concrete factor",
+      "Reduce with concrete factor",
+      "Raise with concrete factor",
+      "Create with concrete factor",
+      "Link to noncustomers / cost and value (traps)"
+    ],
+    "case": "kinetiq"
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-05",
+    "lecture": "f2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Identify three biases in the way the CEO and the board approach the growth plan and propose how the decision process should be improved. (3 points)",
+    "modelAnswer": "Biases: (1) over-optimism / planning fallacy and anchoring – the plan extrapolates the exceptional 2020–21 Covid growth; (2) survivorship bias and halo effect – “PulseRide did it, so can we” ignores the many connected-fitness firms that failed; (3) sunk-cost fallacy / escalation of commitment – the €60m factory line is a sunk cost and should not justify the Go launch; also groupthink and affect heuristic – an enthusiastic board, dissent of the CFO not explored, decision presented as already taken (leader stating his view first). Remedies (Kahneman, Lovallo & Sibony; Sunstein & Hastie): independent review with the checklist, re-anchor forecasts on post-Covid data and an outside view (reference class including failed firms), premortem (“it is 2027 and Go failed – why?”), ask what an incoming CEO would do with the factory, explicitly invite the CFO's dissent, red team or anonymous voting, silence the leader before discussion.",
+    "keyPoints": [
+      "Bias 1 (over-optimism / anchoring on Covid growth)",
+      "Bias 2 (survivorship / halo)",
+      "Bias 3 (sunk cost / groupthink / affect)",
+      "Concrete process remedies (premortem, outside view, red team, dissent)"
+    ],
+    "case": "kinetiq"
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-06",
+    "lecture": "f7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "How likely is PulseRide to respond to Kinetiq's 20 % price cut? Base your answer on the competitor analysis and the drivers of competitive behaviour, and consider the velocity of the market. (3 points)",
+    "modelAnswer": "Market similarity: partial – both sell connected rowers and subscriptions, but PulseRide's core is bikes and treadmills and a mass, performance-oriented audience; Kinetiq targets a design-minded niche. Resource similarity: moderate – PulseRide has far more scale, studios and subscribers. Awareness: high (Kinetiq is a visible rival in rowers), but PulseRide may underestimate a small Danish player. Motivation: low to moderate – a 20 % cut on a €2,200 premium niche product barely threatens its revenues; motivation rises if Kinetiq Go attacks the mass market via Amazon. Ability: high – PulseRide already cut prices and offers rental. Velocity: standard/fast-cycle (hardware can be imitated, price moves are quick). Conclusion: a direct response to the premium price cut is unlikely; a strong response is likely if Kinetiq Go enters PulseRide's mass segment – Kinetiq should avoid head-on overlap.",
+    "keyPoints": [
+      "Market similarity",
+      "Resource similarity",
+      "Awareness / motivation / ability",
+      "Conclusion incl. distinction premium cut vs Kinetiq Go"
+    ],
+    "case": "kinetiq"
+  }
+]

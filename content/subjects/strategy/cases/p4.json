@@ -1,0 +1,54 @@
+[
+  {
+    "id": "alpengluh",
+    "title": "Alpenglüh Resorts: waiting for snow (fictional case)",
+    "text": [
+      "Alpenglüh Resorts operates four ski areas in the Austrian Alps at altitudes between 1,000 and 1,800 metres. It owns the lifts, the snowmaking systems and the ski schools; hotels, restaurants and rental shops in the villages belong mostly to local families. A day pass costs €65. Revenue comes 85 % from the winter season.",
+      "Over the past twenty years the season in its resorts has shortened by about three weeks. Snowmaking now covers 70 % of the slopes, but energy prices rose by 80 % in 2022 and water use for artificial snow is increasingly regulated. Skier days in the Alps have stagnated for fifteen years; the average skier is getting older, and fewer children learn to ski. Beach holidays, city trips, indoor ski halls and wellness hotels compete for winter holiday budgets. Many customers book through online platforms and compare prices; tour operators negotiate group rates.",
+      "Two manufacturers control about 90 % of the market for ropeways and gondolas; a new gondola costs €60–120m and lasts 30 years. High-altitude glacier resorts invest heavily and gain share. In 2025 AlpPass, an alliance owned by a North American resort group, launched a season pass valid in 40 resorts at €799 – Alpenglüh's own season pass costs €690 for four resorts. AlpPass has invited Alpenglüh to join, in exchange for 30 % of the pass revenue allocated to its resorts.",
+      "CEO Josef Gruber proposes a €120m gondola for the lowest resort (1,000–1,450 m): “We have already invested €40m in snowmaking there; abandoning the resort would waste it.” He points to the neighbouring resort Kitzberg, which built a gondola in 2015 and doubled its visitors. His team's data show that “slopes with more snow cannons have more visitors – so more cannons bring more skiers.” A board member suggests instead turning the resorts into four-season mountain destinations (bike parks, hiking, wellness, conferences) and buying several hotels in the villages."
+    ],
+    "tables": [
+      {
+        "caption": "Alpenglüh's resorts",
+        "head": [
+          "Resort",
+          "Altitude",
+          "Snow-cannon coverage",
+          "Skier days 2015",
+          "Skier days 2025"
+        ],
+        "rows": [
+          [
+            "Hochalm",
+            "1,400–1,800 m",
+            "60 %",
+            "410,000",
+            "430,000"
+          ],
+          [
+            "Sonnberg",
+            "1,250–1,700 m",
+            "70 %",
+            "300,000",
+            "285,000"
+          ],
+          [
+            "Talwinkel",
+            "1,100–1,600 m",
+            "75 %",
+            "240,000",
+            "190,000"
+          ],
+          [
+            "Lindenau",
+            "1,000–1,450 m",
+            "90 %",
+            "160,000",
+            "95,000"
+          ]
+        ]
+      }
+    ]
+  }
+]

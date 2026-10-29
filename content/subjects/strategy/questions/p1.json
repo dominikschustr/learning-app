@@ -1,0 +1,99 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p1-01",
+    "lecture": "f3",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Using Porter's Five Forces framework, assess the attractiveness of the meditation application industry. (5 points)",
+    "modelAnswer": "Rivalry: high – more than 20,000 apps, two strong leaders (Headspace, Calm) with similar prices ($69.99), low differentiation of basic content (breathing, body scan), heavy marketing and partnership battles; but the market is still growing, which softens rivalry. Threat of new entrants: high – development costs are low ($10–100k), no regulation or professional bodies for teachers, digital distribution through app stores; barriers exist only through brand, content libraries, community/network effects and corporate contracts (and would rise if health claims required FDA approval). Threat of substitutes: high – free YouTube channels, Apple's free mindfulness features, fitness platforms bundling meditation, books, retreats and in-person classes, therapy; switching costs are low. Bargaining power of buyers: high for individuals (many free alternatives, low switching costs, price sensitivity) and corporate clients (large B2B contracts such as Walmart+, employers); moderate because of habit and community. Bargaining power of suppliers: high for Apple/Google (30 % app-store fee, gatekeepers) and star teachers/celebrities; moderate for cloud (AWS/Google Cloud). Conclusion: a large, growing but structurally unattractive industry for most players – value is captured by app stores and large partners; profitability depends on differentiation (brand, community, B2B/health positioning). Note: none of the leaders is profitable.",
+    "keyPoints": [
+      "Rivalry: many apps, two leaders, low differentiation, growth",
+      "Entry: low costs, no regulation → high threat; some barriers (brand, network effects, regulation if health claims)",
+      "Substitutes: free YouTube/Apple/fitness/therapy, low switching costs",
+      "Buyers: individuals and corporate clients powerful",
+      "Suppliers: app stores 30 % fee, teachers/celebrities",
+      "Explicit conclusion on (low/moderate) attractiveness"
+    ],
+    "case": "insight-timer"
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-02",
+    "lecture": "f5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Using a VRIO analysis, determine two resources or capabilities providing Insight Timer with a competitive advantage. (4 points)",
+    "modelAnswer": "1) The community of teachers and students (16,000 teachers, 25m users, 12,000 groups, live sessions): valuable – diverse, advanced content and social practice that keep even advanced students on the platform and attract teachers who find students and income; rare – Headspace and Calm offer in-house, asynchronous, convenience-driven content; inimitable – built organically over more than a decade, based on trust and two-sided network effects (more teachers → more students → more teachers), causal ambiguity of the culture; organized – revenue sharing (teachers keep half), donations, consultation of the community, tools that ease teachers' administration → sustained competitive advantage. 2) The lean, word-of-mouth cost structure and capability (70 employees, no advertising, cheap cloud hosting): valuable – lets it offer free content and survive with few revenues; rare among rivals with 300–800 employees and heavy marketing; hard to imitate because rivals' business models and investors expect growth via marketing; organized around organic growth → advantage, but weaker (imitable over time). Alternative acceptable: the brand/identity as a mission-driven, spiritual, non-gamified platform (V, R, I through history and authenticity; O through the founder's choices).",
+    "keyPoints": [
+      "Resource 1 identified specifically (e.g. teacher/student community)",
+      "V, R, I, O argued for resource 1 with case facts (network effects, history, trust)",
+      "Resource 2 identified (e.g. lean cost structure / mission-driven brand / content diversity)",
+      "V, R, I, O argued for resource 2",
+      "Outcome stated (sustained vs temporary advantage)"
+    ],
+    "case": "insight-timer"
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-03",
+    "lecture": "f3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What are the factors in the macro-environment influencing the development of the meditation application industry? Propose two factors fostering and two factors hindering the development, and discuss how incumbent players are interrelated through some of the suggested factors. (3 points)",
+    "modelAnswer": "Fostering: (Social) growing awareness of mental health and well-being, accelerated by Covid-19; 800m people with a mental condition, stigma and shortage of professional care that apps can bypass. (Technological) smartphone penetration and cheap cloud hosting; AI personalization. (Economic) the rising cost of mental-health conditions for the economy ($6T by 2030) pushes employers to buy B2B wellness plans; cheap alternative to therapy in times of tight budgets. Hindering: (Legal/Political) possible regulation of health claims and AI chatbots (FDA approval, lobbies) and stricter health-data privacy rules (FTC vs BetterHelp, GDPR). (Social) scandals and low-credential entrants could revive a mystical, esoteric image. (Economic) disposable income pressure limits paid subscriptions. Interrelations: regulation of health claims is a threat for Insight Timer but an opportunity for Headspace, which pursues FDA approval and insurance reimbursement – the same factor raises entry barriers for those who comply; privacy rules affect all players with B2B analytics (Headspace's employer insights); AI is both a tool for incumbents and a door for new entrants; corporate demand links players to the same large clients.",
+    "keyPoints": [
+      "Two fostering factors with PESTEL label",
+      "Two hindering factors with PESTEL label",
+      "Interrelation: same factor affects incumbents differently (e.g. FDA approval favours Headspace)"
+    ],
+    "case": "insight-timer"
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-04",
+    "lecture": "f9",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Give an example of vertical integration that Insight Timer can engage with and discuss its strategic consequences. (3 points)",
+    "modelAnswer": "Example (backward integration): Insight Timer employs its meditation teachers or produces its own in-house content instead of relying on independent teachers who keep ownership of their content. Consequences: + more control over quality, content production and curation (easier for newcomers, potentially for health claims), lower bargaining power of star teachers, capture of the 35 % teacher share, exclusive content as a reason to pay. − costs: salaries and social security even when content does not attract students, contracts and labour obligations, loss of the diversity of 16,000 independent voices that is its distinctive resource; conflicts with teachers and with its identity as a platform that empowers independent teachers (“force for good”); it would come closer to Headspace's model and lose distinctiveness. Alternative example (forward integration): its own payment/distribution channel (Stripe instead of app stores) or physical retreats/studios – reduces the 30 % app-store fee and the power of Apple/Google, but requires new capabilities. Conclusion: integration of teachers would undermine its VRIO community; limited forward integration in payments is more consistent.",
+    "keyPoints": [
+      "Concrete vertical move identified (backward or forward) and correctly labelled",
+      "Benefits (control, margin, bargaining power)",
+      "Costs/risks (labour obligations, loss of diversity, capabilities)",
+      "Link to competitive advantage and identity"
+    ],
+    "case": "insight-timer"
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-05",
+    "lecture": "f9",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What could be the motives for Insight Timer to expand internationally, and are Insight Timer's resources and capabilities consistent with international expansion? Build your argumentation on a model studied in class. (2 points)",
+    "modelAnswer": "Motives (Yip's globalization drivers): market – mental-health awareness and meditation demand grow worldwide, strong demand in countries with meditation traditions (India, Thailand) or high stress (Japan, South Korea), more users strengthen network effects; cost – near-zero marginal cost per extra user, content already exists, cloud infrastructure scales; competitive – Headspace, Calm and local players (Petit Bambou) already expand, so it must follow to keep leadership; government – unregulated teaching is an opportunity, but data rules (GDPR) differ. Consistency: high – content in 47 languages and 37 confessions, teachers worldwide and a community that is not tied to one culture; diversity is valuable in countries with different traditions; lean organization. Limits: limited marketing capability (no advertising), local regulation and privacy, payment channels, need for local curation for newcomers.",
+    "keyPoints": [
+      "Motives via a named model (e.g. Yip: market, cost, competitive, government)",
+      "Consistency of resources (languages, confessions, global teachers, digital scalability)",
+      "At least one limit / adaptation need"
+    ],
+    "case": "insight-timer"
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-06",
+    "lecture": "f8",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Propose two ways for Insight Timer to improve profitability in the long term. What would be the trade-offs? In particular, explain how these actions undermine or reinforce the company's competitive advantage and how the proposed strategic moves relate to the company's identity. (3 points)",
+    "modelAnswer": "1) Grow B2B and partnership revenues (more deals like Walmart+, employers, insurers, schools): + steady revenues and scale without advertising, leverages the large free library; trade-offs – corporate clients want measurable, secular, “functional” content and analytics, pushing Insight Timer towards Headspace's model; risks for privacy and for the spiritual diversity central to its identity → reinforces reach, but may dilute distinctiveness unless offered as a separate frame (compensatory orchestration). 2) Strengthen the premium offer (more exclusive courses, curated learning paths for newcomers, a higher-priced “support” tier, more gamification): + higher conversion and ARPU; trade-offs – paywalls contradict the mission of free access (the registration episode shows users and subscriptions react strongly), gamification contradicts the non-performance identity and community values. Other options: reduce the app-store fee by moving payments outside stores (Stripe, already for donations); raise its commission on teachers or donations (hurts teacher relations – the core of its VRIO community). Conclusion: choose moves that keep the central, durable and distinctive attributes (free access, diverse teachers, community, mission) – e.g. B2B and fee optimization – and avoid those that turn it into a convergent copy of Headspace/Calm.",
+    "keyPoints": [
+      "Two concrete profitability levers",
+      "Trade-off for each (costs, users, teachers)",
+      "Effect on competitive advantage (community, cost structure)",
+      "Link to identity (central/durable/distinctive attributes, mission, non-gamification)"
+    ],
+    "case": "insight-timer"
+  }
+]

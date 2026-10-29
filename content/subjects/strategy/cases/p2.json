@@ -1,0 +1,55 @@
+[
+  {
+    "id": "kinetiq",
+    "title": "Kinetiq: rowing against the tide (fictional case)",
+    "text": [
+      "Kinetiq is a Danish start-up founded in 2018 that sells connected rowing machines. The machine (€2,200) has an oak-wood frame, a patented magnetic resistance flywheel (three patents) and a large screen. A subscription (€39 per month) gives access to live and on-demand classes with 25 coaches, filmed on Nordic fjords and lakes in a calm, meditative “Nordic” style, plus a community leaderboard. Machines are sold online and in selected design and furniture stores; the frame is assembled by a Taiwanese contract manufacturer that also builds equipment for several other brands, while the flywheel and software are developed in Copenhagen.",
+      "During the Covid-19 lockdowns sales of connected fitness equipment exploded: Kinetiq's sales grew fivefold between 2019 and 2021. Since gyms reopened, demand for the whole category has fallen by about 40 %, inventories have piled up and most brands cut prices or offer rental plans. Several small players went bankrupt in 2023 and 2024; investors have become cautious.",
+      "PulseRide, the market leader, sells connected bikes, treadmills and rowers, owns content studios in New York and London, has about 6 million subscribers and strong brand awareness. It cut its hardware prices by 25 % in 2024 and launched a rental plan. Apple Fitness+ offers classes for €10 per month on any device; non-connected rowing machines cost €300–800 and can be combined with free YouTube workouts. Gyms and boutique studios are booming again. Music labels licensing the soundtracks of classes have increased their fees, and a global chip shortage delayed deliveries in 2022.",
+      "Kinetiq's churn is low (1.2 % per month versus an industry average of about 3 %), and survey data show that subscribers value the coaches and the calm atmosphere more than performance metrics. Most customers are 35–55 years old, live in large apartments and value design.",
+      "CEO Mads Holm wants to relaunch growth. He plans a 20 % price cut on the main model and a new model, “Kinetiq Go”, made of plastic, priced at €799 and sold through Amazon and large sports retailers. His business plan extrapolates the growth rate of 2020–2021 to reach one million subscribers in 2027: “PulseRide reached millions of subscribers, so can we.” He also argues that the €60m factory line built in 2021 for the flywheel must now be used at full capacity: “We cannot let that investment go to waste.” The board consists of the two founders and early investors who are enthusiastic about the product; the CFO's doubts were not discussed at the last meeting, and the plan was presented as already decided."
+    ],
+    "tables": [
+      {
+        "caption": "Selected offers (2025)",
+        "head": [
+          "",
+          "Kinetiq",
+          "PulseRide rower",
+          "Apple Fitness+",
+          "Basic rower + YouTube"
+        ],
+        "rows": [
+          [
+            "Hardware price",
+            "€2,200",
+            "€1,650 (after cut)",
+            "– (any device)",
+            "€300–800"
+          ],
+          [
+            "Subscription",
+            "€39/month",
+            "€44/month",
+            "€10/month",
+            "free"
+          ],
+          [
+            "Content",
+            "25 coaches, Nordic outdoor style",
+            "Studio classes, music, competition",
+            "Studio classes",
+            "unstructured"
+          ],
+          [
+            "Monthly churn",
+            "1.2 %",
+            "≈ 2.5 %",
+            "n/a",
+            "n/a"
+          ]
+        ]
+      }
+    ]
+  }
+]

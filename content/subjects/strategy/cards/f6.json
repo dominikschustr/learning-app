@@ -1,0 +1,74 @@
+[
+  {
+    "id": "c-f6-01",
+    "lecture": "f6",
+    "front": "Business vs corporate strategy",
+    "back": "Business: how to compete in a market. Corporate: where to compete."
+  },
+  {
+    "id": "c-f6-02",
+    "lecture": "f6",
+    "front": "Business model – three components",
+    "back": "Value creation (what, for whom) · value configuration (how the value chain is organized) · value capture (why a margin)."
+  },
+  {
+    "id": "c-f6-03",
+    "lecture": "f6",
+    "front": "Airbnb business model",
+    "back": "Creation: guests find housing, hosts rent out · Configuration: multi-sided platform · Capture: commissions (Airbnb), payments (hosts)."
+  },
+  {
+    "id": "c-f6-04",
+    "lecture": "f6",
+    "front": "Value created vs captured (Ryall)",
+    "back": "A firm can create much value but capture little; capture depends on credible alternatives of customers, suppliers, partners."
+  },
+  {
+    "id": "c-f6-05",
+    "lecture": "f6",
+    "front": "Generic strategies matrix",
+    "back": "Cost leadership (low cost, broad) · Differentiation (broad) · Focused cost leadership (narrow) · Focused differentiation (narrow)."
+  },
+  {
+    "id": "c-f6-06",
+    "lecture": "f6",
+    "front": "Sources of lower costs",
+    "back": "Input costs (materials, labour) · economies of scale · economies of learning (experience curve)."
+  },
+  {
+    "id": "c-f6-07",
+    "lecture": "f6",
+    "front": "Structure: cost leader vs differentiator",
+    "back": "Cost: functional, few layers, centralized staff, specialized jobs, operations main. Differentiation: flexible, marketing & product R&D main, less specialized jobs."
+  },
+  {
+    "id": "c-f6-08",
+    "lecture": "f6",
+    "front": "Risks of differentiation",
+    "back": "Costly, risky innovation · costs still matter · rivals deliver same value cheaper · WTP limited · too different (Juicero)."
+  },
+  {
+    "id": "c-f6-09",
+    "lecture": "f6",
+    "front": "Stuck in the middle",
+    "back": "Unclear position between cost and differentiation + poor performance (JCPenney). Exceptions: compartmentalization, blue ocean."
+  },
+  {
+    "id": "c-f6-10",
+    "lecture": "f6",
+    "front": "Created value",
+    "back": "WTP − costs. Cost advantage, value advantage or dual advantage."
+  },
+  {
+    "id": "c-f6-11",
+    "lecture": "f6",
+    "front": "AI Wars: Google's constraint",
+    "back": "Not capability but business model: gen-AI answers cannibalize ad-funded search and have real marginal costs."
+  },
+  {
+    "id": "c-f6-12",
+    "lecture": "f6",
+    "front": "Gold rush metaphor",
+    "back": "Dig for gold (models) · sell shovels (chips, cloud) · make jewellery (complements: apps, browsers, OS)."
+  }
+]

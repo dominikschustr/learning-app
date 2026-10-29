@@ -1,0 +1,45 @@
+[
+  {
+    "id": "p3",
+    "title": "Konzeptklausur B – Maison Verdier",
+    "subtitle": "Fiktiver Fall zu Identität und Kategorien: PESTEL, Strategic groups, Organizational identity, Categorical imperative & Optimal distinctiveness, vertikale Integration, Status.",
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Case questions",
+        "instructions": "2 hours – no documents, no calculator. The points of each question indicate how much development is expected. Only the quality of the reasoning is valued; non-relevant arguments may lead to a discount. [20 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p3-01",
+                "points": 3
+              },
+              {
+                "q": "sa-p3-02",
+                "points": 3
+              },
+              {
+                "q": "sa-p3-03",
+                "points": 4
+              },
+              {
+                "q": "sa-p3-04",
+                "points": 4
+              },
+              {
+                "q": "sa-p3-05",
+                "points": 3
+              },
+              {
+                "q": "sa-p3-06",
+                "points": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

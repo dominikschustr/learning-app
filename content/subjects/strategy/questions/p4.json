@@ -1,0 +1,100 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p4-01",
+    "lecture": "f4",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Using PESTEL and the industry life cycle, characterize the evolution of the Alpine ski industry and its consequences for Alpenglüh. (4 points)",
+    "modelAnswer": "PESTEL: environmental – global warming shortens seasons (−3 weeks), more variable snow, especially at low altitude; economic – energy prices +80 % raise snowmaking costs, holiday budgets under pressure; social – ageing skiers, fewer children learning to ski, preference for varied or wellness holidays; legal – water-use regulation for artificial snow; technological – snowmaking improves but is costly, online booking increases price transparency. Life cycle: skier days have stagnated for 15 years → maturity moving towards decline, especially in low-altitude resorts: high buyer power, low threat of entry, increasing rivalry (consolidation, AlpPass alliances, glacier resorts gaining share). Consequences: low resorts (Lindenau, Talwinkel – skier days −40 % and −21 %) are structurally threatened; high resorts (Hochalm) remain viable; Alpenglüh's 85 % winter dependence is a major risk – a reason to diversify the offer.",
+    "keyPoints": [
+      "At least three relevant PESTEL factors labelled",
+      "Life-cycle stage (maturity/decline) with evidence",
+      "Effects on forces of that stage",
+      "Consequences differentiated by altitude / winter dependence"
+    ],
+    "case": "alpengluh"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-02",
+    "lecture": "f3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Assess the attractiveness of the Alpine ski-resort industry using Porter's Five Forces. (4 points)",
+    "modelAnswer": "Rivalry: high – stagnating demand, high fixed costs (lifts, snowmaking), glacier resorts and alliances such as AlpPass with cheap multi-resort passes. Threat of entry: low – huge capital needs (gondola €60–120m), land and environmental permits, limited suitable mountains; entry happens via alliances/consolidators rather than new resorts. Substitutes: high – beach holidays, city trips, wellness hotels, indoor ski halls; low switching costs. Buyers: strong – price-comparing individuals on online platforms, tour operators negotiating group rates, mega-pass holders. Suppliers: strong – two ropeway makers control 90 %; energy suppliers with rising prices; water authorities. Conclusion: an unattractive, mature industry; only high-altitude, scale or alliance players earn good returns; value is captured by suppliers and buyers.",
+    "keyPoints": [
+      "Rivalry",
+      "Entry barriers (capital, permits)",
+      "Substitutes",
+      "Buyers (platforms, tour operators)",
+      "Suppliers (duopoly, energy)",
+      "Conclusion"
+    ],
+    "case": "alpengluh"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-03",
+    "lecture": "f2",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Identify the biases and the problems of causal reasoning in the CEO's arguments, and propose how the decision should be prepared. (4 points)",
+    "modelAnswer": "Sunk-cost fallacy / escalation of commitment: the €40m already invested in snowmaking is sunk and irrelevant to whether a €120m gondola creates value. Survivorship bias and halo/saliency: Kitzberg is one memorable success; resorts that built gondolas and still declined are not considered, and Kitzberg may differ (altitude, location). Correlation vs causation in “more cannons → more skiers”: omitted variable – altitude and natural snow drive both cannon investment decisions and visitor numbers (or larger resorts invest more); reverse causation – resorts with many visitors can afford more cannons; selection – the table even shows Lindenau with 90 % coverage has the steepest decline. Remedies: independent review (Kahneman checklist), outside view with a reference class of comparable low-altitude resorts including failures, premortem, ask what a new CEO without the past investment would do, analyse the data properly (control for altitude, compare before/after, natural experiments), red team on the four-season alternative.",
+    "keyPoints": [
+      "Sunk-cost bias",
+      "Survivorship / halo with Kitzberg",
+      "Correlation ≠ causation with confounder (altitude) or reverse causation",
+      "Uses table evidence",
+      "Process remedies"
+    ],
+    "case": "alpengluh"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-04",
+    "lecture": "f5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which of Alpenglüh's resources remain valuable in a warming climate, and which dynamic capabilities would it need to build to become a four-season mountain destination? (3 points)",
+    "modelAnswer": "Resources that remain valuable: the land, lifts and gondolas (usable for summer hiking, biking and sightseeing), concessions and permits (hard to obtain – inimitable), the Hochalm high-altitude location, ski-school staff and mountain know-how, customer relationships and brand. Resources losing value: snowmaking at low altitude, winter-only processes. Dynamic capabilities: sensing new demand (summer, wellness, events, conferences), seizing through new offers and partnerships (bike parks, hotels, local families), reconfiguring assets and staff from a winter-only to a year-round model (scheduling, new skills, marketing to new segments). Threshold vs distinctive resources change with the industry – what was distinctive (snow guarantee) becomes a threshold or obsolete.",
+    "keyPoints": [
+      "Resources that remain valuable (with VRIO idea)",
+      "Resources losing value",
+      "Definition of dynamic capabilities",
+      "Concrete capabilities to build"
+    ],
+    "case": "alpengluh"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-05",
+    "lecture": "f9",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Discuss the strategic consequences of buying several hotels in the villages. (3 points)",
+    "modelAnswer": "Buying hotels is forward integration in the tourism value system (from lifts to accommodation) and supports the four-season strategy. Benefits: capture more of the visitor's spending and margin, control the quality of the whole experience and package offers, secure beds for year-round demand, gain customer data and reduce dependence on tour operators. Costs and risks: large capital needs on top of lift investments, new capabilities (hotel management, hospitality staff), higher fixed costs and lower flexibility in a declining winter market, conflict with local family hoteliers who are partners and may see Alpenglüh as a competitor, concentration of risk in the same region and climate. Alternative: alliances, revenue-sharing packages or minority stakes with local hotels.",
+    "keyPoints": [
+      "Correct label (forward integration in value system)",
+      "Benefits",
+      "Costs/risks (capital, capabilities, local partners)",
+      "Alternative or conclusion"
+    ],
+    "case": "alpengluh"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-06",
+    "lecture": "f7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "AlpPass offers multi-resort season passes and invites Alpenglüh to join. Considering competitive dynamics, how should Alpenglüh respond? (2 points)",
+    "modelAnswer": "AlpPass has high market and resource similarity with Alpenglüh in winter season passes, is aware of it and able to compete with scale (40 resorts, €799 vs €690 for four). Ski resorts are a slow-cycle market (high barriers, long-lived assets), so a quick price war would destroy margins without a lasting advantage. Options: join the alliance (access to its customers, but 30 % of pass revenue and loss of pricing control – value capture moves to AlpPass), respond by forming a regional alliance with neighbouring resorts, or avoid head-on competition by differentiating (four-season destination, families, local experience). A reasoned choice with its trade-off is expected.",
+    "keyPoints": [
+      "Similarity/AMA assessment of AlpPass",
+      "Market velocity (slow cycle)",
+      "Option with trade-off (join vs alliance vs differentiate)"
+    ],
+    "case": "alpengluh"
+  }
+]

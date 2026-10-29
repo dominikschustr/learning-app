@@ -1,0 +1,45 @@
+[
+  {
+    "id": "p4",
+    "title": "Konzeptklausur C – Alpenglüh Resorts",
+    "subtitle": "Fiktiver Fall zu einer schrumpfenden Branche: PESTEL & Life cycle, Five Forces, Biases & Kausalität, Dynamic capabilities, vertikale Integration, Competitive dynamics.",
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Case questions",
+        "instructions": "2 hours – no documents, no calculator. The points of each question indicate how much development is expected. Only the quality of the reasoning is valued; non-relevant arguments may lead to a discount. [20 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p4-01",
+                "points": 4
+              },
+              {
+                "q": "sa-p4-02",
+                "points": 4
+              },
+              {
+                "q": "sa-p4-03",
+                "points": 4
+              },
+              {
+                "q": "sa-p4-04",
+                "points": 3
+              },
+              {
+                "q": "sa-p4-05",
+                "points": 3
+              },
+              {
+                "q": "sa-p4-06",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

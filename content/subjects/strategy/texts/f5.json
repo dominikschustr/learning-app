@@ -1,0 +1,207 @@
+{
+  "lecture": "f5",
+  "title": "F5 – Internal analysis: SWOT, RBV, value chain and VRIO",
+  "source": "Zusammenfassung von Session 4 „Internal analysis“ mit dem Dyson-Fall und dem Cultural Item zum VfB Stuttgart",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "External analysis cannot explain the large and enduring performance differences among firms in the same industry. Firm-level influences are the largest systematic drivers of performance; markets are volatile; firms can change their markets."
+        },
+        {
+          "kind": "item",
+          "text": "Resource-based view (Wernerfelt 1984, Barney 1991): a bottom-up view – superior performance comes from distinctive resources and capabilities, not from the industry position (top-down Industrial Organization view)."
+        },
+        {
+          "kind": "item",
+          "text": "To achieve sustained competitive advantage, resources and capabilities must be Valuable, Rare, Inimitable and supported by the Organization (VRIO). A resource can be VRIO in one industry but not in another."
+        },
+        {
+          "kind": "item",
+          "text": "Because environments change, firms also need dynamic capabilities (Teece) to renew their resource base."
+        }
+      ]
+    },
+    {
+      "heading": "SWOT",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Strengths and weaknesses = internal and actual (“are”); opportunities and threats = external and potential (“could be”). S/W come from the resource-based model, O/T from environmental models such as the Five Forces."
+        },
+        {
+          "kind": "item",
+          "text": "Traps to avoid:",
+          "children": [
+            "Weight and prioritize: score each factor (−5 to +5) and focus on the main industry and resource factors",
+            "Keep only factors relevant to value creation: valued by customers and different from competitors",
+            "Avoid ambiguous, overlapping concepts",
+            "SWOT is a simple heuristic – it does not replace a precise industry and resource analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Resource-based view",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Assumptions of environmental models (Porter 1980): firms in an industry hold identical strategic resources, and any heterogeneity is short-lived because resources are mobile (can be bought on factor markets)."
+        },
+        {
+          "kind": "item",
+          "text": "RBV assumptions (Barney 1991): resources are heterogeneous across firms and imperfectly mobile, so heterogeneity can last."
+        },
+        {
+          "kind": "item",
+          "text": "Resources = what we have (nouns): client data, cash flows, skilled employees. Capabilities = what we do (verbs): using client data to improve production, managing cash flows, motivating and training employees."
+        },
+        {
+          "kind": "item",
+          "text": "Tangible resources: capital, land, buildings, plant, equipment, supplies. Intangible: culture, knowledge, brand and reputation, intellectual property."
+        },
+        {
+          "kind": "item",
+          "text": "Threshold resources and capabilities are needed to compete at parity (minimal); distinctive ones are needed for competitive advantage (superior). Both change as industries change – link with the strategy canvas."
+        }
+      ]
+    },
+    {
+      "heading": "Value chain and value system (Porter 1985)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Primary activities add value directly:",
+          "children": [
+            "Inbound logistics: receiving, storing, distributing inputs",
+            "Operations: transforming inputs into the product or service",
+            "Outbound logistics: collecting, storing, distributing to customers",
+            "Marketing & sales: making customers aware and able to buy",
+            "Service: installation, repair, training, spares"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Support activities add value indirectly: procurement, technology development, human resource management, firm infrastructure. Together they create the margin."
+        },
+        {
+          "kind": "item",
+          "text": "Diagnosis: identify resources and capabilities, locate them in the value chain, ask which activities create higher value for customers and higher margins."
+        },
+        {
+          "kind": "item",
+          "text": "Value system: the inter-organizational links (suppliers' and customers' value chains) needed to create a product. Where can quality be maximized and cost minimized? → make-or-buy decisions (corporate strategy)."
+        }
+      ]
+    },
+    {
+      "heading": "VRIO",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Four questions:",
+          "children": [
+            "Value: does the resource let the firm respond to opportunities or threats, valued by customers? Customers/stakeholders – not producers – qualify value",
+            "Rarity: do no or few competitors possess it? Advantage is relative",
+            "Inimitability: is it costly to imitate, obtain or substitute? Sources: causal ambiguity of the “recipe”, culture and history, tacit knowledge",
+            "Organization: is the firm organized (processes, structure, control, incentives) to exploit it? A complementary capability"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Outcomes:",
+          "children": [
+            "Not valuable → competitive disadvantage",
+            "Valuable but not rare → competitive parity",
+            "Valuable and rare but imitable → temporary competitive advantage",
+            "Valuable, rare, inimitable but not organized → (unexploited) temporary advantage",
+            "V + R + I + O → sustained competitive advantage"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "From VRIN (Barney 1991: valuable, rare, imperfectly imitable, non-substitutable) to VRIO (Barney 1995): substitution is folded into I, and O is added. V, R and I describe the resource; O describes the organization."
+        },
+        {
+          "kind": "item",
+          "text": "Example of O: a patent (resource), knowing how to implement it in production (capability), and sales forces and distribution to sell it (organizational support)."
+        }
+      ]
+    },
+    {
+      "heading": "Dyson case and dynamic capabilities",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Dyson in vacuums: brand image, experience and skills (design thinking, plastics), innovation culture and patents are VRIO; funding and test infrastructure are valuable but not rare; the engineering team is valuable and rare but imitable."
+        },
+        {
+          "kind": "item",
+          "text": "In electric vehicles, only some resources transfer: experience and skills are valuable and rare but not inimitable versus Tesla, BYD, BMW…; innovation culture is valuable but not rare. In 2019 Dyson abandoned the EV project after investing USD 2bn+ (“not commercially viable”)."
+        },
+        {
+          "kind": "item",
+          "text": "Lessons: a set of VRIO resources is needed for sustained advantage; resources may allow moving into distant industries, but a resource that is VRIO in one industry may not be in another – VRIO helps decide whether to enter."
+        },
+        {
+          "kind": "item",
+          "text": "Dynamic capabilities (Teece): the ability to create, extend or modify resources and capabilities to meet changing environments, because today's advantages get imitated or become obsolete. VfB Stuttgart: almost the same squad went from 16th (2023) to 2nd (2024) – capabilities (how resources are combined) and leadership continuity matter more than a list of resources."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Assets an organization has or can call upon – “what we have”.",
+          "term": "Resources"
+        },
+        {
+          "kind": "item",
+          "text": "The ways those assets are deployed – “what we do”.",
+          "term": "Capabilities"
+        },
+        {
+          "kind": "item",
+          "text": "Resources and capabilities needed to compete at parity.",
+          "term": "Threshold resources"
+        },
+        {
+          "kind": "item",
+          "text": "Resources and capabilities required to achieve competitive advantage.",
+          "term": "Distinctive resources"
+        },
+        {
+          "kind": "item",
+          "text": "The set of activities inside an organization that together create a product or service.",
+          "term": "Value chain"
+        },
+        {
+          "kind": "item",
+          "text": "The organization's ability to renew and recreate its resources and capabilities as environments change.",
+          "term": "Dynamic capabilities"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: how to answer a VRIO question",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Pick resources or capabilities that are specific (“a community of 16,000 teachers built over a decade”), not generic (“good management”)."
+        },
+        {
+          "kind": "item",
+          "text": "Go through V, R, I and O one by one with case evidence, state where the chain breaks and give the resulting outcome (parity, temporary or sustained advantage)."
+        },
+        {
+          "kind": "item",
+          "text": "For I, name the source of inimitability: history/time, trust, network effects, tacit knowledge, causal ambiguity, patents."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "p2",
+    "title": "Konzeptklausur A – Kinetiq",
+    "subtitle": "Neuer, fiktiver Fall im Aufbau der Klausur 2023: Industry life cycle & Five Forces, generische Strategien, Value chain & VRIO, Blue Ocean, Biases, Competitive dynamics.",
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Case questions",
+        "instructions": "2 hours – no documents, no calculator. The points of each question indicate how much development is expected. Only the quality of the reasoning is valued; non-relevant arguments may lead to a discount. [20 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p2-01",
+                "points": 4
+              },
+              {
+                "q": "sa-p2-02",
+                "points": 3
+              },
+              {
+                "q": "sa-p2-03",
+                "points": 4
+              },
+              {
+                "q": "sa-p2-04",
+                "points": 3
+              },
+              {
+                "q": "sa-p2-05",
+                "points": 3
+              },
+              {
+                "q": "sa-p2-06",
+                "points": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,209 @@
+{
+  "lecture": "f2",
+  "title": "F2 – Strategic decision-making biases",
+  "source": "Zusammenfassung von Session 2 „Strategic decision-making biases“ sowie Kahneman, Lovallo & Sibony (2011), Luca (2021), Sunstein & Hastie (2014) und Powell, Lovallo & Fox (2011)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Every decision-maker faces biases. The session moves in three steps: information perception → information filtering → strategic decision-making."
+        },
+        {
+          "kind": "item",
+          "text": "Bounded rationality (Herbert Simon): decision-makers do not maximize; they choose the first satisfactory alternative (“satisficing”) without evaluating all options, using heuristics – mental shortcuts that usually work but are not always accurate."
+        },
+        {
+          "kind": "item",
+          "text": "Two thinking systems (Kahneman): System 1 = fast, intuitive, associative; System 2 = slow, deliberate, logical. They operate in parallel – and both can be correct or biased."
+        },
+        {
+          "kind": "item",
+          "text": "Good strategy starts with causal thinking: correlation does not imply causation."
+        },
+        {
+          "kind": "item",
+          "text": "Knowing about biases does not remove them. The remedy is the process: independent review, checklists, premortems, red teams and choice architecture (Kahneman et al.; Powell et al.)."
+        }
+      ]
+    },
+    {
+      "heading": "Information perception",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "We interpret ambiguous cues; the meaning is shaped by experience, knowledge, expectations and identity – not only by the cue. Perceptual illusions can lead to false conclusions."
+        },
+        {
+          "kind": "item",
+          "text": "Inattentional blindness: when focused on a demanding task, we fail to notice unexpected events in full view (gorilla video, unicycling clown). Causes:",
+          "children": [
+            "The object seems unremarkable",
+            "Cognitive load: too much information, multitasking, tiredness",
+            "Expectations: expecting one event blocks attention to others (magic tricks)",
+            "Attentional capacities: personal (expertise) and situational (tiredness, drugs) factors"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Scarcity vs abundance: with too much information we filter pieces out; with too little we fill the gaps with meaning."
+        }
+      ]
+    },
+    {
+      "heading": "Information filtering: categorization biases",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Categorization: sorting objects into categories with a “prototype” lets us respond quickly – but it also biases (“imagine a CEO”: man or woman?)."
+        },
+        {
+          "kind": "item",
+          "text": "Conjunction fallacy (Linda problem, Tversky & Kahneman): people judge “bank teller AND feminist” as more likely than “bank teller”, although P(A and B) ≤ P(A). Cause: representativeness heuristic."
+        },
+        {
+          "kind": "item",
+          "text": "Out-group homogeneity bias: “they are alike; we are diverse.” In-group favoritism: we favour members of our own group, even when groups are assigned randomly – explained by social identity theory (Tajfel): self-esteem comes from the groups we belong to."
+        },
+        {
+          "kind": "item",
+          "text": "Dichotomous thinking (Oshio 2009): preference for dichotomy, dichotomous belief, profit-and-loss thinking. Low tolerance of ambiguity (Bochner 1965): need for categorization and certainty, premature closure, rejection of the unusual."
+        },
+        {
+          "kind": "item",
+          "text": "Strategic relevance: a diagnosis is an act of categorization and a decision is a binary go/no-go – but strategic problems are ambiguous. Check at each step whether two problems are really similar."
+        }
+      ]
+    },
+    {
+      "heading": "Expertise, entrenchment and confirmation",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Experts have richer schemas but risk cognitive entrenchment (Dane 2010) – the Einstellung effect: prioritizing the known solution over new, more appropriate ones."
+        },
+        {
+          "kind": "item",
+          "text": "Confirmation bias: searching for, attending to and believing information that fits prior beliefs. Mechanisms: selective exposure, selective perception, selective retention. Amplified by the “filter bubble” (Pariser 2011)."
+        }
+      ]
+    },
+    {
+      "heading": "Causal thinking and endogeneity",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Ice cream and sunburn co-occur; baths and lower heart disease co-occur – the data are fine, the causal interpretation is the problem (Luca 2021)."
+        },
+        {
+          "kind": "item",
+          "text": "Four sources of endogeneity (inability to claim causality):",
+          "children": [
+            "Simultaneity / reverse causation: does A cause B or B cause A? (police budgets and crime)",
+            "Omitted variable: a confounder C drives both A and B → spurious correlation (stress and leisure time behind baths and heart health)",
+            "Measurement error: A or B is badly measured (how to measure money, happiness?)",
+            "Selection bias: the sample is not random – sampling, survivorship, attrition, non-response, volunteer and undercoverage bias"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Survivorship bias (Abraham Wald, WWII bombers): studying only planes that came back suggested reinforcing the damaged areas – but the planes hit elsewhere never returned. Learning from success stories only cannot reveal what causes success."
+        },
+        {
+          "kind": "item",
+          "text": "Remedies: theory and common sense, temporal antecedence, controlled or natural experiments, instrumental variables; ask how the data were generated (eBay ads: the spend mostly reached people who would have bought anyway)."
+        }
+      ]
+    },
+    {
+      "heading": "Before you make that big decision (Kahneman, Lovallo & Sibony 2011)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "We cannot catch our own System 1 errors, but we can review other people's recommendations. A 12-question checklist:",
+          "children": [
+            "Self-interest, affect heuristic (in love with the proposal), groupthink (was dissent explored?)",
+            "Saliency (one memorable analogy), confirmation (real alternatives?), availability (what is missing?)",
+            "Anchoring (where do the numbers come from?), halo effect, sunk costs and endowment",
+            "Over-optimism / planning fallacy / competitor neglect, disaster neglect (premortem), loss aversion"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Works only for important, recurring decisions and if the reviewer is independent of the team."
+        }
+      ]
+    },
+    {
+      "heading": "Groups and behavioral strategy",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Sunstein & Hastie (2014): groups often amplify errors through informational signals and reputational pressure. Failure modes: amplified errors, cascades, polarization, common-knowledge effect (hidden profiles)."
+        },
+        {
+          "kind": "item",
+          "text": "Correctives: silence the leader, prime critical thinking, reward group success, assign roles, devil's advocate (weak), red teams, Delphi method / anonymous voting."
+        },
+        {
+          "kind": "item",
+          "text": "Powell, Lovallo & Fox (2011): behavioral strategy brings realistic psychology into strategic management – a fourth pillar next to market power, resources and innovation. Individual debiasing largely fails; the firm's choice architecture matters."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Choosing the first satisfactory option instead of the optimal one (Simon).",
+          "term": "Satisficing / bounded rationality"
+        },
+        {
+          "kind": "item",
+          "text": "Simple judgmental strategies – mental shortcuts between automatic perception and deliberate reasoning.",
+          "term": "Heuristic"
+        },
+        {
+          "kind": "item",
+          "text": "Failing to see unexpected events while attention is focused elsewhere.",
+          "term": "Inattentional blindness"
+        },
+        {
+          "kind": "item",
+          "text": "Experts prioritize the familiar solution over new, more appropriate ones (cognitive entrenchment).",
+          "term": "Einstellung effect"
+        },
+        {
+          "kind": "item",
+          "text": "Looking for, noticing and remembering information that fits prior beliefs.",
+          "term": "Confirmation bias"
+        },
+        {
+          "kind": "item",
+          "text": "Only surviving (successful) cases are observed, so the causes of success are misread.",
+          "term": "Survivorship bias"
+        },
+        {
+          "kind": "item",
+          "text": "A third variable affects both A and B and creates a spurious correlation.",
+          "term": "Omitted (confounding) variable"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: using F2 in the exam",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "When a case shows a founder or CEO deciding on a bold move, name the concrete bias (overconfidence, confirmation, sunk cost, halo, survivorship) and a process remedy (premortem, red team, outside view, reference class)."
+        },
+        {
+          "kind": "item",
+          "text": "When a case cites a correlation (“customers who use feature X stay longer”), discuss reverse causality, a confounder and selection – then propose an experiment."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "lecture": "f7",
+  "title": "F7 – Competitive dynamics",
+  "source": "Zusammenfassung von Session 5 „Business Strategy (Part 2/2): Competitive Dynamics“",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Business strategies are dynamic: firms respond to rivals' actions. Competitive rivalry is the ongoing set of competitive actions and responses among firms manoeuvring for an advantageous position (Apple vs Samsung in smartphones)."
+        },
+        {
+          "kind": "item",
+          "text": "Mutual interdependence: firms recognize that their strategies are not implemented in isolation from rivals' actions and responses. Competitive dynamics = the total set of actions and responses of all firms in a market."
+        },
+        {
+          "kind": "item",
+          "text": "Typical sequence: competitor analysis (market and resource similarity) → drivers of competitive behaviour (awareness, motivation, ability) → competitive rivalry (likelihood of attack and of response) → outcomes (market position, financial performance)."
+        },
+        {
+          "kind": "item",
+          "text": "First-mover advantages exist mainly in fast-cycle markets; in slow-cycle markets it is often better to be a fast second."
+        }
+      ]
+    },
+    {
+      "heading": "Competitor analysis and drivers",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Market similarity: overlap of markets between the focal firm and a competitor. Resource similarity: overlap in type and amount of resources. The higher both overlaps, the higher the rivalry – which is why Blue Ocean Strategy differentiates to escape competition."
+        },
+        {
+          "kind": "item",
+          "text": "Awareness: understanding competitors to “see them coming”. Established firms may not see new entrants because of a sudden change (new technology, new law), organizational routines that create blindness, or success that creates blindness and overconfidence."
+        },
+        {
+          "kind": "item",
+          "text": "Motivation: gain/loss analysis – but rivalry can also be personal, irrational or even pathological."
+        },
+        {
+          "kind": "item",
+          "text": "Ability: the resources and capabilities to attack or respond."
+        }
+      ]
+    },
+    {
+      "heading": "First-mover (dis)advantages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Attack = a move that affects competitors; response = the competitors' counter-move. First mover = the actor taking the initial competitive action."
+        },
+        {
+          "kind": "item",
+          "text": "Advantages: high market shares, secured customer loyalty, authenticity (“since 1905”). Research shows they appear in fast-moving markets (rapid technological change, short product life cycles)."
+        },
+        {
+          "kind": "item",
+          "text": "Disadvantages: uncertain demand, costs of innovation and learning (trial and error), lower initial quality, risk of path dependency and routines that make the firm too “traditional”. No first-mover advantage in slow-cycle markets → second-mover advantage."
+        }
+      ]
+    },
+    {
+      "heading": "Interactive strategies on price and quality (D'Aveni)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Firms are positioned by price and perceived quality: D = differentiating business, M = mid-point business, L = cost-leading business, U = uncompetitive business. A value line links the price–quality combinations customers accept."
+        },
+        {
+          "kind": "item",
+          "text": "At time t, D improves its perceived quality while holding prices → customer expectations shift to a 2nd value line; M and L must improve quality or cut prices to stay on it."
+        },
+        {
+          "kind": "item",
+          "text": "At t+1, M lowers its price at constant quality → a 3rd value line; L and D must adapt. Competitive moves continuously shift the value line – yesterday's position becomes uncompetitive (U)."
+        }
+      ]
+    },
+    {
+      "heading": "Velocity of markets",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Slow-cycle markets: players are shielded from imitation for long periods and imitation is costly. Advantage from high barriers to entry (high fixed costs, complex processes, patents, history); slow responses (space industry)."
+        },
+        {
+          "kind": "item",
+          "text": "Standard-cycle markets: in between – moderate imitation pressure; advantage from scale, market share and brand built over time."
+        },
+        {
+          "kind": "item",
+          "text": "Fast-cycle markets: little or short protection, cheap imitation, low barriers. Advantage from adaptation (exploration, awareness of competition, flexible production) and quickness of decision and implementation (smartphones, AI LLMs)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Ongoing set of competitive actions and responses among firms manoeuvring for an advantageous market position.",
+          "term": "Competitive rivalry"
+        },
+        {
+          "kind": "item",
+          "text": "Firms recognize that their strategies depend on competitors' actions and responses.",
+          "term": "Mutual interdependence"
+        },
+        {
+          "kind": "item",
+          "text": "Overlap of markets (market similarity) and of resources (resource similarity) between two firms.",
+          "term": "Competitive similarity"
+        },
+        {
+          "kind": "item",
+          "text": "Awareness, motivation and ability – the drivers of competitive behaviour.",
+          "term": "AMA"
+        },
+        {
+          "kind": "item",
+          "text": "The firm taking the initial competitive action in a market.",
+          "term": "First mover"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: using F7 in the exam",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "To predict a rival's reaction, go through market similarity, resource similarity, awareness, motivation and ability – then conclude on the likelihood of response."
+        },
+        {
+          "kind": "item",
+          "text": "When a case discusses being first (first app, first smart ring), qualify the market velocity: in a fast-cycle market, speed and adaptation matter; in a slow-cycle market, being a fast second can be smarter."
+        }
+      ]
+    }
+  ]
+}

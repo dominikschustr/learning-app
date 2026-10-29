@@ -1,0 +1,86 @@
+[
+  {
+    "id": "c-f5-01",
+    "lecture": "f5",
+    "front": "Why internal analysis?",
+    "back": "Large, enduring performance differences within industries; firm-level effects are the largest drivers; markets are volatile; firms can change markets."
+  },
+  {
+    "id": "c-f5-02",
+    "lecture": "f5",
+    "front": "SWOT – logic",
+    "back": "S/W: internal, actual (resource-based). O/T: external, potential (Five Forces etc.)."
+  },
+  {
+    "id": "c-f5-03",
+    "lecture": "f5",
+    "front": "SWOT – traps",
+    "back": "Weight & prioritize (−5 to +5) · only factors valued by customers and different from rivals · no overlapping concepts · not a substitute for analysis."
+  },
+  {
+    "id": "c-f5-04",
+    "lecture": "f5",
+    "front": "RBV assumptions",
+    "back": "Resources heterogeneous and imperfectly mobile → heterogeneity can last (Barney 1991). IO assumes homogeneous, mobile resources."
+  },
+  {
+    "id": "c-f5-05",
+    "lecture": "f5",
+    "front": "Resources vs capabilities",
+    "back": "Resources = what we have (nouns). Capabilities = what we do (verbs)."
+  },
+  {
+    "id": "c-f5-06",
+    "lecture": "f5",
+    "front": "Tangible vs intangible resources",
+    "back": "Tangible: capital, land, buildings, plant, equipment, supplies. Intangible: culture, knowledge, brand, IP."
+  },
+  {
+    "id": "c-f5-07",
+    "lecture": "f5",
+    "front": "Threshold vs distinctive",
+    "back": "Threshold = needed for parity. Distinctive = needed for advantage. Both change with the industry."
+  },
+  {
+    "id": "c-f5-08",
+    "lecture": "f5",
+    "front": "Value chain – primary activities",
+    "back": "Inbound logistics · operations · outbound logistics · marketing & sales · service."
+  },
+  {
+    "id": "c-f5-09",
+    "lecture": "f5",
+    "front": "Value chain – support activities",
+    "back": "Procurement · technology development · HRM · firm infrastructure. → Margin."
+  },
+  {
+    "id": "c-f5-10",
+    "lecture": "f5",
+    "front": "VRIO questions",
+    "back": "Valuable (valued by customers, responds to O/T) · Rare · Inimitable (costly to imitate or substitute) · Organized to exploit."
+  },
+  {
+    "id": "c-f5-11",
+    "lecture": "f5",
+    "front": "VRIO outcomes",
+    "back": "No V: disadvantage · V only: parity · V+R: temporary advantage · V+R+I (no O): temporary/unexploited · V+R+I+O: sustained advantage."
+  },
+  {
+    "id": "c-f5-12",
+    "lecture": "f5",
+    "front": "VRIN → VRIO",
+    "back": "N folded into I (imitate or substitute); O added. V, R, I describe the resource; O describes the organization."
+  },
+  {
+    "id": "c-f5-13",
+    "lecture": "f5",
+    "front": "Dyson lesson",
+    "back": "VRIO in vacuums ≠ VRIO in electric vehicles → abandoned EV project 2019 (USD 2bn+)."
+  },
+  {
+    "id": "c-f5-14",
+    "lecture": "f5",
+    "front": "Dynamic capabilities (Teece)",
+    "back": "Ability to create, extend or modify resources and capabilities as environments change."
+  }
+]

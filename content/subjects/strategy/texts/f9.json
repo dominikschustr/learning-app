@@ -1,0 +1,169 @@
+{
+  "lecture": "f9",
+  "title": "F9 – Corporate strategy: diversification, vertical integration and internationalization",
+  "source": "Vorschau: Die Folien zu Corporate Strategy liegen noch nicht im Ordner. Zusammenfassung der Standard-Frameworks (Johnson, Whittington et al., Exploring Strategy; Yip; Ghemawat), die in der Klausur Dez. 2023 (Fragen 4 und 5) verlangt wurden.",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Corporate strategy answers “where to compete?”: the scope of the organization – which products and markets (diversification), which activities of the value system (vertical integration) and which countries (internationalization) – and how to allocate resources across businesses."
+        },
+        {
+          "kind": "item",
+          "text": "Every scope decision should pass two tests: does the industry offer value to capture (external analysis), and are the firm's resources and capabilities valuable there (VRIO travels or not – Dyson)?"
+        },
+        {
+          "kind": "item",
+          "text": "Each move has trade-offs: more control and margin vs. less flexibility, more capital, more coordination – and possible conflicts with the organization's identity."
+        }
+      ]
+    },
+    {
+      "heading": "Directions of growth (Ansoff)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Market penetration: existing products, existing markets (gain share)."
+        },
+        {
+          "kind": "item",
+          "text": "Product development: new products for existing markets."
+        },
+        {
+          "kind": "item",
+          "text": "Market development: existing products for new markets (new segments or countries – internationalization)."
+        },
+        {
+          "kind": "item",
+          "text": "Diversification: new products for new markets – related (shares resources, capabilities or customers with the core business → synergies, economies of scope) or unrelated/conglomerate (financial logic, few synergies)."
+        },
+        {
+          "kind": "item",
+          "text": "Synergy test: is the new business worth more inside the group than outside? Link with F8 – spanning categories may cost an illegitimacy discount."
+        }
+      ]
+    },
+    {
+      "heading": "Vertical integration",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Backward integration: moving upstream into the activities of suppliers (a supermarket producing its own milk). Forward integration: moving downstream into the activities of buyers/distributors (a brand opening its own stores)."
+        },
+        {
+          "kind": "item",
+          "text": "Benefits:",
+          "children": [
+            "Control over quality, supply security and timing of key inputs",
+            "Capture the margin of the integrated stage",
+            "Reduce the bargaining power of suppliers or buyers (Five Forces)",
+            "Protect and coordinate distinctive resources (know-how, data, customer relationship)",
+            "Create entry barriers (formal control of supply or distribution)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Costs and risks:",
+          "children": [
+            "Capital requirements and fixed costs; less flexibility to switch to better or cheaper partners",
+            "Capabilities may not fit the new activity (a different business to manage)",
+            "Coordination and bureaucracy costs; loss of the market's incentive effects",
+            "For labour-intensive stages: employment obligations (salaries, social security) instead of flexible contracts",
+            "Possible conflict with identity and with partners who become competitors"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Make or buy: integrate when transaction costs of using the market are high – specific assets, high uncertainty, frequent transactions, risk of opportunism – and when the activity is strategically core. Otherwise outsource. Intermediate options: long-term contracts, alliances, joint ventures, minority stakes, franchising."
+        }
+      ]
+    },
+    {
+      "heading": "Internationalization: drivers (Yip)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Market drivers: similar customer needs and tastes across countries, global customers, transferable marketing (e.g. growing awareness of mental health worldwide)."
+        },
+        {
+          "kind": "item",
+          "text": "Cost drivers: economies of scale and learning, country-specific cost advantages, high development costs that need large markets (digital products: near-zero marginal cost per extra user)."
+        },
+        {
+          "kind": "item",
+          "text": "Government drivers: trade policies, regulation, standards, data protection (e.g. GDPR in Europe), host-government policies – can favour or hinder."
+        },
+        {
+          "kind": "item",
+          "text": "Competitive drivers: interdependence between countries, global competitors already present, need to follow rivals or customers abroad."
+        }
+      ]
+    },
+    {
+      "heading": "Internationalization: fit and entry",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Firm-level test: are the resources and capabilities transferable and still VRIO abroad (brand, content, community, know-how)? Do they need local adaptation (language, culture, partners)?"
+        },
+        {
+          "kind": "item",
+          "text": "CAGE distance (Ghemawat): Cultural (language, religion, norms), Administrative (institutions, regulation, trade agreements), Geographic (physical distance, time zones), Economic (income levels, costs, infrastructure). Greater distance → more adaptation and risk."
+        },
+        {
+          "kind": "item",
+          "text": "Entry modes, from low to high commitment and control: exporting / digital distribution, licensing and franchising, alliances and joint ventures, wholly owned subsidiaries (greenfield or acquisition)."
+        },
+        {
+          "kind": "item",
+          "text": "Global integration vs local responsiveness: standardize to exploit scale (global strategy) or adapt to local needs (multidomestic) – or combine (transnational)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Entering activities of the firm's suppliers (upstream).",
+          "term": "Backward integration"
+        },
+        {
+          "kind": "item",
+          "text": "Entering activities of the firm's buyers or distributors (downstream).",
+          "term": "Forward integration"
+        },
+        {
+          "kind": "item",
+          "text": "Moving into businesses that share resources, capabilities or customers with the core.",
+          "term": "Related diversification"
+        },
+        {
+          "kind": "item",
+          "text": "Market, cost, government and competitive drivers that push an industry towards global strategies.",
+          "term": "Yip's globalization drivers"
+        },
+        {
+          "kind": "item",
+          "text": "Cultural, administrative, geographic and economic distance between countries.",
+          "term": "CAGE framework"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: how to answer a corporate-strategy question",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Vertical integration: name the concrete stage (e.g. “Insight Timer employs its teachers” = backward; “Insight Timer opens meditation studios” = forward), then argue benefits vs costs with the Five Forces (bargaining power) and VRIO (does it protect a distinctive resource?), and conclude on the consequences for the business model and identity."
+        },
+        {
+          "kind": "item",
+          "text": "Internationalization: motives = drivers (market, cost, government, competitive) applied to the case; consistency = which resources travel (VRIO abroad, CAGE distance) and which need adaptation."
+        }
+      ]
+    }
+  ]
+}

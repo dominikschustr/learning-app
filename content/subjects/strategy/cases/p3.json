@@ -1,0 +1,49 @@
+[
+  {
+    "id": "maison-verdier",
+    "title": "Maison Verdier: a classified growth in a canned world? (fictional case)",
+    "text": [
+      "Maison Verdier is a family-owned Bordeaux wine estate founded in 1884. In the 1855-style classification of the region it is ranked as a fifth growth – recognized among the classified estates, but far below the famous first growths. It produces about 300,000 bottles a year of red wine sold at €80–250 per bottle. Like most Bordeaux estates, it sells its wine through négociants (merchants of “La Place de Bordeaux”) who distribute it to importers, restaurants and collectors in 70 countries; wine critics' scores and the classification strongly influence prices.",
+      "The environment is changing. Global wine consumption has been declining for years; younger generations drink less alcohol and prefer beer, spirits, cocktails or no-alcohol drinks. The no- and low-alcohol segment grows by about 7 % a year. Climate change brings heat waves, earlier harvests and more variable quality; the appellation rules restrict which grape varieties and practices can be used. US import tariffs on European wine were raised in 2025, and demand from China, once the fastest-growing market, has dropped sharply. Interest rates make holding expensive stocks of aged wine costlier.",
+      "Claire Verdier, 38, the founder's great-great-granddaughter, became CEO in 2024 after ten years at a technology company. She wants to “make Verdier relevant for the next generation”. Her plan has three parts: (1) “Verdier Zéro”, a dealcoholized red wine sold in cans at €6 through supermarkets, bars and festivals, under the Verdier name and coat of arms; (2) an app that tells the history of the estate and lets customers buy directly from the château; (3) a US subsidiary that would import and distribute Verdier wines directly to US retailers and restaurants, bypassing négociants.",
+      "Reactions are mixed. Some négociants warn that they may reduce allocations for an estate that “sells cans”; a well-known critic wrote that “a classified growth in a can is a contradiction in terms”. Younger consumers in a test market liked the taste of Verdier Zéro, but many did not know what Verdier was. Investors in a sparkling no-alcohol start-up have praised the idea. Several first-growth estates have launched experimental cuvées and art collaborations without any criticism."
+    ],
+    "tables": [
+      {
+        "caption": "Bordeaux and wine market – selected data (illustrative)",
+        "head": [
+          "Segment",
+          "Typical price",
+          "Main channel",
+          "Growth"
+        ],
+        "rows": [
+          [
+            "First growths",
+            "€500–1,500",
+            "Négociants, collectors",
+            "Stable"
+          ],
+          [
+            "Other classified growths (incl. Verdier)",
+            "€60–250",
+            "Négociants, restaurants",
+            "−2 %/year"
+          ],
+          [
+            "Mass-market Bordeaux",
+            "€5–15",
+            "Supermarkets",
+            "−5 %/year"
+          ],
+          [
+            "No-/low-alcohol wine",
+            "€4–12",
+            "Supermarkets, bars, online",
+            "+7 %/year"
+          ]
+        ]
+      }
+    ]
+  }
+]

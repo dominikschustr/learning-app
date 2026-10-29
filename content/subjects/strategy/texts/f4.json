@@ -1,0 +1,186 @@
+{
+  "lecture": "f4",
+  "title": "F4 – External analysis II: Life cycles, strategic groups and Blue Ocean",
+  "source": "Zusammenfassung von Session 3 „External analysis“ (Teil 2: Industry life cycle, Strategic groups, Nintendo-Fall, Blue Ocean Strategy)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Industries are structures that change: introduction, growth, shakeout, maturity, decline – and the Five Forces change with them."
+        },
+        {
+          "kind": "item",
+          "text": "Competition often happens at the level of strategic groups (firms with similar strategic characteristics) rather than the whole industry."
+        },
+        {
+          "kind": "item",
+          "text": "Blue Ocean Strategy (Kim & Mauborgne, INSEAD) proposes to escape competition by creating new market space through value innovation instead of fighting in the red ocean."
+        }
+      ]
+    },
+    {
+      "heading": "Industry life cycle",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Introduction: low rivalry."
+        },
+        {
+          "kind": "item",
+          "text": "Growth: low rivalry, low buyer power, high supplier power."
+        },
+        {
+          "kind": "item",
+          "text": "Shakeout: high rivalry – weaker players exit."
+        },
+        {
+          "kind": "item",
+          "text": "Maturity: high buyer power, low threat of entry."
+        },
+        {
+          "kind": "item",
+          "text": "Decline: high rivalry."
+        },
+        {
+          "kind": "item",
+          "text": "Defining the industry: neither too broad nor too narrow; criteria are geography, product segment, position in the value chain (airlines: Asia/Europe/US; leisure/business/freight). Industries converge (FinTech, EdTech)."
+        }
+      ]
+    },
+    {
+      "heading": "Strategic groups",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Set of organizations with similar strategic characteristics; competitive dynamics are more intense within groups (grocery retail: supermarkets, convenience stores, corner shops)."
+        },
+        {
+          "kind": "item",
+          "text": "Two dimensions to define them:",
+          "children": [
+            "Scope of activities: product range, geographical coverage, number of segments, distribution channels",
+            "Resource commitment: branding & marketing effort, vertical integration, quality, R&D / technological leadership, size"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Why use them:",
+          "children": [
+            "Competition: with whom do you actually compete, on which dimension?",
+            "Strategic opportunities: which space is unoccupied – a white space (opportunity) or a black hole (dead end)?",
+            "Mobility barriers: barriers to entry between groups – can a firm move from one group to another?"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Blue Ocean Strategy",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Red ocean: existing market space where competition is maximized (detergents). Blue ocean: new market space where competition is minimized."
+        },
+        {
+          "kind": "item",
+          "text": "Strategy canvas: critical success factors (CSFs) on the x-axis, perceived performance on the y-axis. The blue-ocean player keeps adequate performance (above the minimal level to survive) on the CSFs where rivals fight, and invests in new CSFs that customers value but nobody serves."
+        },
+        {
+          "kind": "item",
+          "text": "Four actions framework (ERRC):",
+          "children": [
+            "Eliminate: which factors the industry takes for granted should be eliminated?",
+            "Reduce: which factors should be reduced well below the industry standard?",
+            "Raise: which factors should be raised well above the industry standard?",
+            "Create: which factors should be created that the industry has never offered?"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "CitizenM (“affordable luxury” hotels): eliminate restaurants; reduce room space and reception (ambassadors and machines); raise low-cost construction (container rooms); create a combination of 5* features (location, bed comfort) with 3* prices."
+        },
+        {
+          "kind": "item",
+          "text": "Six red-ocean traps (Kim & Mauborgne 2015):",
+          "children": [
+            "Making existing customers happier → focus on noncustomers",
+            "Treating market creation as a niche strategy → market creation de-segments markets",
+            "Confusing technology innovation with market creation → value innovation",
+            "Equating creative destruction with market creation → new markets need not destroy existing ones",
+            "Equating market creation with differentiation → also lower costs and prices",
+            "Equating market creation with low cost → also differentiation"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Reorientation of strategic thinking: from competitors to alternatives, from customers to noncustomers; assess value (what do customers need?), industry (is there room to capture value? – Five Forces), firm (which CSFs to serve adequately, which new sources of value to focus on)."
+        }
+      ]
+    },
+    {
+      "heading": "Nintendo case – lessons",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Successes: NES (1983), Game Boy (1989), Super NES, DS (2004) and Wii (2006) – low technical standards, low learning costs, fun, broad market – Pokémon Go (2016) and Switch (2017, hybrid console + portable, non-game features eliminated)."
+        },
+        {
+          "kind": "item",
+          "text": "Failures: N64 and GameCube, 3DS (3D screen of little value but costly), Wii U (technically obsolete versus smartphones and tablets) – each time Nintendo tried to compete on technology."
+        },
+        {
+          "kind": "item",
+          "text": "Lessons: escape competition rather than imitate; customers, not producers, determine value; technology is neither necessary nor sufficient – value innovation opens new markets."
+        },
+        {
+          "kind": "item",
+          "text": "Risk of failure: Apple Vision Pro (2024, USD 3,499) – heralded as a new era, became a niche (comfort, battery, thin app ecosystem, unclear use case). WeWork claimed a “tech” blue ocean, but the Five Forces of real estate stayed the same."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Organizations in an industry that share similar strategic characteristics (scope, resource commitment).",
+          "term": "Strategic group"
+        },
+        {
+          "kind": "item",
+          "text": "Barriers that prevent firms from moving from one strategic group to another.",
+          "term": "Mobility barriers"
+        },
+        {
+          "kind": "item",
+          "text": "Creating a leap in value for buyers while lowering costs, instead of competing on existing factors.",
+          "term": "Value innovation"
+        },
+        {
+          "kind": "item",
+          "text": "Chart of an industry's critical success factors and the performance level each player offers.",
+          "term": "Strategy canvas"
+        },
+        {
+          "kind": "item",
+          "text": "Eliminate – Reduce – Raise – Create: the four actions to redraw the value curve.",
+          "term": "ERRC grid"
+        }
+      ]
+    },
+    {
+      "heading": "Further thinking: using F4 in the exam",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Strategic group maps: choose two dimensions that really separate firms (e.g. price level vs. breadth of content), place the case firms and discuss mobility barriers and white spaces."
+        },
+        {
+          "kind": "item",
+          "text": "Blue Ocean questions: fill all four ERRC boxes with concrete case features and check the traps – is the idea valuable to noncustomers, and does it lower costs as well as add value?"
+        }
+      ]
+    }
+  ]
+}
