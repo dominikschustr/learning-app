@@ -1,0 +1,145 @@
+[
+  {
+    "id": "concept-b",
+    "title": "Konzeptklausur B",
+    "subtitle": "Neue Aufgaben im Aufbau der Klausur 2024: Konsolidierung ein Jahr nach Erwerb, Impairment mit Wertaufholung, Leasing vs. Service, Multiple Choice, Analyse eines Konzernabschlusses.",
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Part 1 – Consolidation",
+        "instructions": "Delta and Echo. [12 points]",
+        "sections": [
+          {
+            "title": "Delta and Echo",
+            "items": [
+              {
+                "q": "mc-p5-01",
+                "points": 3
+              },
+              {
+                "q": "sa-p5-01",
+                "points": 7
+              },
+              {
+                "q": "tf-p5-01",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Measurement of non-current assets",
+        "instructions": "Max GmbH. [10 points]",
+        "sections": [
+          {
+            "title": "Max's machine",
+            "items": [
+              {
+                "q": "sa-p5-02",
+                "points": 4
+              },
+              {
+                "q": "sa-p5-03",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 3 – Leases",
+        "instructions": "[8 points]",
+        "sections": [
+          {
+            "title": "Lease or service?",
+            "items": [
+              {
+                "q": "tf-p5-02",
+                "points": 1
+              },
+              {
+                "q": "tf-p5-03",
+                "points": 1
+              },
+              {
+                "q": "sa-p5-04",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 4 – Multiple choice",
+        "instructions": "Only one right answer per question. [12 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-t1-02",
+                "points": 2
+              },
+              {
+                "q": "mc-t4-08",
+                "points": 2
+              },
+              {
+                "q": "mc-t3-12",
+                "points": 2
+              },
+              {
+                "q": "mc-t4-03",
+                "points": 2
+              },
+              {
+                "q": "mc-t5-12",
+                "points": 2
+              },
+              {
+                "q": "mc-t2-15",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 5 – Decoding financial statements",
+        "instructions": "Vela Group. [18 points]",
+        "sections": [
+          {
+            "title": "Vela Group",
+            "items": [
+              {
+                "q": "mc-p5-02",
+                "points": 2
+              },
+              {
+                "q": "sa-p5-05",
+                "points": 3
+              },
+              {
+                "q": "sa-p5-06",
+                "points": 5
+              },
+              {
+                "q": "mc-p5-03",
+                "points": 2
+              },
+              {
+                "q": "sa-p5-07",
+                "points": 4
+              },
+              {
+                "q": "mc-p5-04",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "lecture": "t1",
+  "title": "Topic 1 – Introduction to IFRS in the EU and IFRS financial statements",
+  "source": "Zusammenfassung von „IFRS Topic 1 2026 student version“",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "IFRS are issued by a private institution, the IASB, and adopted by local regulators in more than 140 jurisdictions (not the USA). Because national financial statements were not comparable, the EU made IFRS mandatory since 2005 for the consolidated financial statements of listed companies. Individual statements stay in local GAAP or IFRS depending on the country (France: French GAAP)."
+        },
+        {
+          "kind": "item",
+          "text": "IFRS consist of IAS (issued before 2001), IFRS (since 2001) and the interpretations SIC (old) and IFRIC (new)."
+        },
+        {
+          "kind": "item",
+          "text": "The Conceptual Framework:",
+          "children": [
+            "Objective: decision-useful information for investors, lenders and other creditors",
+            "Fundamental qualitative characteristics: relevance (incl. materiality) and faithful representation (incl. substance over form)",
+            "Enhancing characteristics: comparability, verifiability, timeliness, understandability",
+            "Other elements: cost constraint, going concern, definitions, measurement bases",
+            "It is not a standard – individual IFRS override the Framework"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "A complete set of IFRS financial statements (IAS 1):",
+          "children": [
+            "Statement of financial position (balance sheet)",
+            "Statement of comprehensive income (one statement, or income statement + OCI statement)",
+            "Statement of cash flows (IAS 7)",
+            "Statement of changes in equity",
+            "Notes",
+            "Listed companies: segment reporting (IFRS 8), earnings per share (IAS 33)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Balance sheet: no mandatory format, but current and non-current items must be distinguished. Current = realised/settled within 12 months or within the operating cycle (or held for trading)."
+        },
+        {
+          "kind": "item",
+          "text": "Income statement: very few mandatory line items; operating profit is not defined (until IFRS 18). Expenses are analysed by nature or by function. Extraordinary items are prohibited."
+        },
+        {
+          "kind": "item",
+          "text": "Other comprehensive income contains gains and losses outside P/L. Total comprehensive income = net income + OCI. OCI does not affect net income (and hence not EPS or dividends)."
+        },
+        {
+          "kind": "item",
+          "text": "Cash flow statement: operating (direct or indirect method), investing, financing cash flows."
+        },
+        {
+          "kind": "item",
+          "text": "Statement of changes in equity: total comprehensive income and transactions with owners (contributions, distributions, treasury shares) for each equity component."
+        },
+        {
+          "kind": "item",
+          "text": "IFRS 18 replaces IAS 1 from January 2027: defined subtotals, categories in the income statement, disclosure of management-defined performance measures."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Current asset",
+          "text": "An asset expected to be realised, sold or consumed within one year or within the normal operating cycle, or held primarily for trading."
+        },
+        {
+          "kind": "item",
+          "term": "Other comprehensive income (OCI)",
+          "text": "Items of income and expense that IFRS require or permit to be recognised outside profit or loss."
+        },
+        {
+          "kind": "item",
+          "term": "Total comprehensive income",
+          "text": "Net income (profit or loss) plus other comprehensive income."
+        },
+        {
+          "kind": "item",
+          "term": "Indirect method",
+          "text": "Presentation of operating cash flows starting from net income, adjusted for non-cash items and changes in working capital."
+        },
+        {
+          "kind": "item",
+          "term": "Management-defined performance measure (MPM)",
+          "text": "Under IFRS 18: a subtotal of income and expenses not defined by IFRS that management uses in public communication; requires reconciliation and disclosure."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Typical exam question: 'Is this income statement IFRS? Is it consolidated?' – look for extraordinary items, mixed nature/function, non-controlling interests, share of profit of associates."
+        }
+      ]
+    }
+  ]
+}

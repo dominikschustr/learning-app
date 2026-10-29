@@ -1,0 +1,16 @@
+{
+  "id": "accounting",
+  "name": "Accounting",
+  "short": "IFRS",
+  "color": "#0E8A6B",
+  "description": "International Financial Reporting (CM01): IFRS-Abschlüsse, Konsolidierung, Anlagevermögen & Leasing, Fremd- und Eigenkapital, KPIs.",
+  "demo": false,
+  "lectures": [
+    { "id": "t1", "title": "T1 · IFRS in the EU & IFRS financial statements" },
+    { "id": "t2", "title": "T2 · Business combinations & consolidation" },
+    { "id": "t3", "title": "T3 · Non-current assets, impairment & leases" },
+    { "id": "t4", "title": "T4 · Financial debt & equity" },
+    { "id": "t5", "title": "T5 · KPIs & financial communication" }
+  ],
+  "examFormat": { "name": "Final exam", "minutes": 75, "short": 5, "mc": 6, "tf": 4, "order": ["short", "mc", "tf"] }
+}

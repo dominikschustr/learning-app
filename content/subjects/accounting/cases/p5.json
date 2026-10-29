@@ -1,0 +1,232 @@
+[
+  {
+    "id": "delta-echo",
+    "title": "Delta acquires 100% of Echo – one year later",
+    "text": [
+      "On 31 December N, Delta acquired 100% of Echo for 1,200 in cash. At that date Echo's equity was 800 (share capital). Echo's equipment had a fair value 100 above its carrying amount (remaining useful life 5 years, straight-line), and Echo had an internally developed brand name with a fair value of 150 (indefinite useful life).",
+      "At 31 December N1 the brand name is impaired: its recoverable amount is 120. Goodwill is not impaired."
+    ],
+    "tables": [
+      {
+        "caption": "Delta – 31 December N1",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "900",
+            "Share capital",
+            "1,500"
+          ],
+          [
+            "Investment in Echo",
+            "1,200",
+            "Net income",
+            "200"
+          ],
+          [
+            "Cash",
+            "300",
+            "Liabilities",
+            "700"
+          ],
+          [
+            "Total",
+            "2,400",
+            "Total",
+            "2,400"
+          ]
+        ]
+      },
+      {
+        "caption": "Echo – 31 December N1",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "700",
+            "Share capital",
+            "800"
+          ],
+          [
+            "Inventory",
+            "400",
+            "Net income",
+            "150"
+          ],
+          [
+            "Cash",
+            "100",
+            "Liabilities",
+            "250"
+          ],
+          [
+            "Total",
+            "1,200",
+            "Total",
+            "1,200"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "max-machine",
+    "title": "Max GmbH – impairment and reversal of a machine",
+    "text": [
+      "Max acquired a machine on 1 January N1 for €500,000; useful life 10 years, no residual value, straight-line depreciation, cost model.",
+      "At the end of N2 a competitor launches a much more efficient technology (indication of impairment): fair value less costs to sell €300,000, value in use €320,000.",
+      "At the end of N3 Max wins a long-term exclusive contract using the machine (indication of reversal): recoverable amount €380,000. The remaining useful life is unchanged."
+    ],
+    "tables": []
+  },
+  {
+    "id": "lease-or-service",
+    "title": "Lease or service?",
+    "text": [
+      "Contract 1: A retailer rents a specified store unit in a shopping centre for 6 years. It decides on the assortment, opening hours within the centre's rules and the shop design.",
+      "Contract 2: A company buys 'storage capacity of 500 TB' from a data-centre provider. The provider can move the data to any of its servers at any time and decides how the servers are operated.",
+      "Contract 3 (store unit): payments of €50,000 at the beginning of each year for 3 years (first payment at commencement), interest rate 6%, annuity factor (6%, 2 years) = 1.8334."
+    ],
+    "tables": []
+  },
+  {
+    "id": "vela-fs",
+    "title": "Vela Group – consolidated statements N (M€, fictitious)",
+    "text": [
+      "Vela Group, a listed sports equipment maker, publishes the following excerpts. The income statement presents expenses by nature."
+    ],
+    "tables": [
+      {
+        "caption": "Income statement (excerpt)",
+        "head": [
+          "",
+          "N"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "4,800"
+          ],
+          [
+            "Purchases consumed",
+            "(2,300)"
+          ],
+          [
+            "Staff costs",
+            "(1,100)"
+          ],
+          [
+            "Other operating expenses",
+            "(500)"
+          ],
+          [
+            "Depreciation and amortisation (incl. right-of-use assets 90)",
+            "(380)"
+          ],
+          [
+            "Impairment of goodwill",
+            "(40)"
+          ],
+          [
+            "Operating profit",
+            "480"
+          ],
+          [
+            "Net financial expense",
+            "(80)"
+          ],
+          [
+            "Income tax (25%)",
+            "(100)"
+          ],
+          [
+            "Net income",
+            "300"
+          ]
+        ]
+      },
+      {
+        "caption": "Cash flow statement (excerpt)",
+        "head": [
+          "",
+          "N"
+        ],
+        "rows": [
+          [
+            "Net cash from operating activities",
+            "690"
+          ],
+          [
+            "Capital expenditure (net)",
+            "(410)"
+          ],
+          [
+            "Proceeds from new borrowings",
+            "250"
+          ],
+          [
+            "Repayment of borrowings",
+            "(150)"
+          ],
+          [
+            "Repayment of lease liabilities",
+            "(85)"
+          ],
+          [
+            "Purchase of treasury shares",
+            "(60)"
+          ],
+          [
+            "Dividends paid",
+            "(120)"
+          ]
+        ]
+      },
+      {
+        "caption": "Balance sheet (excerpt)",
+        "head": [
+          "",
+          "31/12/N",
+          "31/12/N−1"
+        ],
+        "rows": [
+          [
+            "Goodwill",
+            "610",
+            "650"
+          ],
+          [
+            "Borrowings",
+            "1,300",
+            "1,200"
+          ],
+          [
+            "Lease liabilities",
+            "420",
+            "400"
+          ],
+          [
+            "Cash and cash equivalents",
+            "350",
+            "305"
+          ],
+          [
+            "Treasury shares",
+            "(95)",
+            "(35)"
+          ]
+        ]
+      }
+    ]
+  }
+]

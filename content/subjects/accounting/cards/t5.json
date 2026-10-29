@@ -1,0 +1,80 @@
+[
+  {
+    "id": "c-t5-01",
+    "lecture": "t5",
+    "front": "What KPIs answer",
+    "back": "Profit in absolute terms? Profit relative to capital (ratios, margins)? High enough vs what? Solvency (medium/long term)? Liquidity (short term)?"
+  },
+  {
+    "id": "c-t5-02",
+    "lecture": "t5",
+    "front": "GAAP vs non-GAAP",
+    "back": "GAAP (defined by IFRS): revenue, net income, EPS, segment information, discontinued operations. Non-GAAP: EBITDA, operating/recurring profit (until IFRS 18), ROCE, FCF, EVA, net debt."
+  },
+  {
+    "id": "c-t5-03",
+    "lecture": "t5",
+    "front": "Income statement cascade",
+    "back": "Net sales − cost of sales = gross margin ± other operating items = EBITDA − D&A, impairment = operating profit ± non-recurring = EBIT − net interest = EBT − tax = NI continuing ± discontinued = net income."
+  },
+  {
+    "id": "c-t5-04",
+    "lecture": "t5",
+    "front": "EBITDA",
+    "back": "Operating profit + depreciation & amortisation. Non-GAAP, not standardised. Neutralises financing, tax and depreciation policies; ≈ cash from operations before working capital and taxes. Used in valuation and covenants (net debt/EBITDA)."
+  },
+  {
+    "id": "c-t5-05",
+    "lecture": "t5",
+    "front": "EBITDAaL",
+    "back": "EBITDA after leases (≈ EBITDA − lease payments), used e.g. by telecoms/airlines since IFRS 16 moved rent below EBITDA."
+  },
+  {
+    "id": "c-t5-06",
+    "lecture": "t5",
+    "front": "ROCE",
+    "back": "NOPAT / capital employed, NOPAT = EBIT × (1 − t). Capital employed = net non-current assets + working capital needs = equity + net financial debt."
+  },
+  {
+    "id": "c-t5-07",
+    "lecture": "t5",
+    "front": "Working capital needs",
+    "back": "Inventories + trade receivables − trade payables (operating items only, no cash or financial debt)."
+  },
+  {
+    "id": "c-t5-08",
+    "lecture": "t5",
+    "front": "DuPont",
+    "back": "ROCE = NOPAT margin (NOPAT/sales) × capital employed turnover (sales/capital employed)."
+  },
+  {
+    "id": "c-t5-09",
+    "lecture": "t5",
+    "front": "ROE, ROA, ROI",
+    "back": "ROE = net income / equity (shareholders). ROA = EBIT / total assets. ROI = EBIT / investment (profit centres)."
+  },
+  {
+    "id": "c-t5-10",
+    "lecture": "t5",
+    "front": "EVA",
+    "back": "EVA = NOPAT − WACC × capital employed = (ROCE − WACC) × capital employed. Positive → value created. Improve: higher NOPAT, lower capital, lower WACC."
+  },
+  {
+    "id": "c-t5-11",
+    "lecture": "t5",
+    "front": "Free cash flow to the firm",
+    "back": "CFO − net capex (or EBIT(1 − t) + D&A − capex − ΔWCN). Cash available to all capital providers; not reduced by dividends or debt repayments."
+  },
+  {
+    "id": "c-t5-12",
+    "lecture": "t5",
+    "front": "Free cash flow to equity",
+    "back": "FCFF + net increase in financial debt − interest × (1 − t) (or NI + D&A − capex − ΔWCN + net borrowing). Reduced by debt repayments."
+  },
+  {
+    "id": "c-t5-13",
+    "lecture": "t5",
+    "front": "IFRS 18 & MPMs",
+    "back": "Management-defined performance measures = non-IFRS subtotals of income/expenses used in public communication. Required: reconciliation, explanation, statement that they are management's view. FCF, ROE, net debt are not MPMs."
+  }
+]

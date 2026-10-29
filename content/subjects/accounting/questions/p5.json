@@ -1,0 +1,270 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-p5-01",
+    "lecture": "t2",
+    "case": "delta-echo",
+    "difficulty": 2,
+    "prompt": "What is the goodwill on the acquisition of Echo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "150"
+      },
+      {
+        "id": "b",
+        "text": "400"
+      },
+      {
+        "id": "c",
+        "text": "250"
+      },
+      {
+        "id": "d",
+        "text": "300"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fair value of net assets = 800 + equipment step-up 100 + brand 150 = 1,050. Goodwill = 1,200 − 1,050 = 150.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-01",
+    "lecture": "t2",
+    "case": "delta-echo",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare Delta's consolidated balance sheet at 31 December N1.",
+    "modelAnswer": "Equipment: 900 + 700 + (100 − 20 additional depreciation N1) = 1,680; brand name 150 − 30 impairment = 120; goodwill 150; inventory 400; cash 300 + 100 = 400 → total 2,750.\nShare capital 1,500 (Delta only; Echo's 800 eliminated with the investment); net income 200 + 150 − 20 (depreciation of the step-up) − 30 (brand impairment) = 300; liabilities 700 + 250 = 950 → total 2,750.",
+    "keyPoints": [
+      "Equipment 1,680 incl. step-up net of depreciation 20",
+      "Brand 120 (impairment 30), goodwill 150",
+      "Net income 300 = 200 + 150 − 20 − 30",
+      "Share capital 1,500, liabilities 950, total 2,750"
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p5-01",
+    "lecture": "t2",
+    "case": "delta-echo",
+    "difficulty": 2,
+    "statement": "In the consolidated income statement N1, Echo's brand impairment of 30 and the additional depreciation of 20 reduce consolidated net income.",
+    "answer": true,
+    "explanation": "Yes. Valuation differences from the PPA follow the asset they relate to: the equipment step-up is depreciated (−20 per year), the brand is impaired (−30). Both are consolidation adjustments not visible in Echo's own statements."
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-02",
+    "lecture": "t3",
+    "case": "max-machine",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "What is the impairment loss at the end of N2 and the depreciation for N3?",
+    "modelAnswer": "Depreciation 50,000 per year → carrying amount end N2 = 500,000 − 2 × 50,000 = 400,000. Recoverable amount = max(300,000; 320,000) = 320,000 → impairment loss 80,000 (expense) → carrying amount 320,000. Depreciation N3 = 320,000 / 8 remaining years = 40,000.",
+    "keyPoints": [
+      "Carrying amount 400,000 end N2",
+      "Recoverable amount 320,000 (value in use)",
+      "Impairment 80,000",
+      "Depreciation N3 = 40,000"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-03",
+    "lecture": "t3",
+    "case": "max-machine",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "What is the reversal of impairment at the end of N3 and the carrying amount after reversal?",
+    "modelAnswer": "Carrying amount end N3 before reversal = 320,000 − 40,000 = 280,000. Recoverable amount 380,000. Cap: carrying amount without any impairment = 500,000 − 3 × 50,000 = 350,000. Reversal = 350,000 − 280,000 = 70,000 (income in P/L); carrying amount 350,000; depreciation from N4 = 350,000 / 7 = 50,000.",
+    "keyPoints": [
+      "Carrying amount before reversal 280,000",
+      "Cap = depreciated cost 350,000 (not 380,000)",
+      "Reversal 70,000 in P/L",
+      "Depreciation from N4 back to 50,000"
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p5-02",
+    "lecture": "t3",
+    "case": "lease-or-service",
+    "difficulty": 1,
+    "statement": "Contract 1 is a lease.",
+    "answer": true,
+    "explanation": "Identified asset (specified unit), the retailer obtains substantially all economic benefits and directs how and for what purpose the unit is used; centre rules are protective restrictions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p5-03",
+    "lecture": "t3",
+    "case": "lease-or-service",
+    "difficulty": 2,
+    "statement": "Contract 2 is a lease.",
+    "answer": false,
+    "explanation": "No identified asset: the provider has a substantive right to substitute servers and directs their operation → service contract, expensed."
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-04",
+    "lecture": "t3",
+    "case": "lease-or-service",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "For the store unit (contract 3), compute the lease liability and the right-of-use asset at commencement, and the depreciation and interest of year 1.",
+    "modelAnswer": "At commencement the first payment of 50,000 is paid immediately; the liability covers the two remaining payments (beginning of years 2 and 3 = end of years 1 and 2): 50,000 × 1.8334 = 91,670. ROU = 91,670 + 50,000 paid at commencement = 141,670. Year 1: depreciation 141,670 / 3 ≈ 47,223; interest 6% × 91,670 ≈ 5,500; liability end of year 1 = 97,170 (paid on the next day).",
+    "keyPoints": [
+      "Liability = PV of 2 remaining payments = 91,670",
+      "ROU = 141,670 (incl. payment at commencement)",
+      "Depreciation ≈ 47,223",
+      "Interest ≈ 5,500"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-02",
+    "lecture": "t5",
+    "case": "vela-fs",
+    "difficulty": 2,
+    "prompt": "What is Vela's EBITDA in N?",
+    "options": [
+      {
+        "id": "a",
+        "text": "900 M€"
+      },
+      {
+        "id": "b",
+        "text": "860 M€"
+      },
+      {
+        "id": "c",
+        "text": "480 M€"
+      },
+      {
+        "id": "d",
+        "text": "1,280 M€"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "EBITDA = operating profit + depreciation & amortisation + impairment = 480 + 380 + 40 = 900. (860 forgets the goodwill impairment.)",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-05",
+    "lecture": "t5",
+    "case": "vela-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain two reasons why net cash from operating activities (690) differs from EBITDA (900).",
+    "modelAnswer": "1) Income taxes paid (around 100) are deducted in operating cash flow but not in EBITDA. 2) Changes in working capital needs (e.g. higher inventories or receivables) absorb cash. Depending on the policy, interest paid may also be included in operating cash flow. EBITDA is only an approximation of operating cash.",
+    "keyPoints": [
+      "Income tax paid",
+      "Change in working capital needs",
+      "(Interest paid if classified as operating)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-06",
+    "lecture": "t5",
+    "case": "vela-fs",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Calculate Vela's free cash flow to the firm and to equity for N (use the cash-flow definitions; ignore the tax shield on interest).",
+    "modelAnswer": "FCF to the firm = operating cash flow − net capex = 690 − 410 = 280. Net increase in financial debt = borrowings 250 − repayments 150 − lease repayments 85 = +15. FCF to equity ≈ 280 + 15 − net financial expense 80 = 215 (if interest paid is not already in operating cash flow). Dividends (120) and treasury share purchases (60) are uses of FCFE, not deductions.",
+    "keyPoints": [
+      "FCFF = 690 − 410 = 280",
+      "Net debt flows: +250 − 150 − 85",
+      "FCFE ≈ 215 after interest",
+      "Dividends and buy-backs are uses, not deductions"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-03",
+    "lecture": "t5",
+    "case": "vela-fs",
+    "difficulty": 2,
+    "prompt": "What is Vela's net financial debt at 31 December N, including lease liabilities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1,370 M€"
+      },
+      {
+        "id": "b",
+        "text": "950 M€"
+      },
+      {
+        "id": "c",
+        "text": "1,720 M€"
+      },
+      {
+        "id": "d",
+        "text": "1,020 M€"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Borrowings 1,300 + lease liabilities 420 − cash 350 = 1,370. Since IFRS 16 lease liabilities are financial debt.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-07",
+    "lecture": "t5",
+    "case": "vela-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Goodwill fell from 650 to 610. What explains the change, and what does it tell an analyst?",
+    "modelAnswer": "Goodwill is not amortised; the income statement shows a goodwill impairment of 40, which exactly explains the decrease (650 − 40 = 610), so there were no new acquisitions. An impairment means that the recoverable amount of a CGU fell below its carrying amount – the expected cash flows of an acquired business deteriorated (overpayment or worse prospects). It cannot be reversed.",
+    "keyPoints": [
+      "Goodwill not amortised",
+      "Impairment of 40 explains 650 → 610",
+      "No acquisitions",
+      "Signal of worse prospects of acquired business; irreversible"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p5-04",
+    "lecture": "t5",
+    "case": "vela-fs",
+    "difficulty": 1,
+    "prompt": "What happened to treasury shares in N?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vela bought back own shares for 60 M€"
+      },
+      {
+        "id": "b",
+        "text": "Vela sold treasury shares for 60 M€"
+      },
+      {
+        "id": "c",
+        "text": "Vela cancelled shares and made a loss of 60"
+      },
+      {
+        "id": "d",
+        "text": "Vela issued 60 M€ of new shares"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Treasury shares became more negative by 60 (−35 → −95), matching the cash outflow 'purchase of treasury shares' (60).",
+    "single": true
+  }
+]

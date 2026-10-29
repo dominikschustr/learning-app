@@ -1,0 +1,277 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p4-01",
+    "lecture": "t2",
+    "case": "nova-stella",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Calculate the goodwill and the non-controlling interest at the acquisition date.",
+    "modelAnswer": "Book value of Stella's equity = 500 + 600 + 100 = 1,200. Fair value of identifiable net assets = 1,200 + customer list 300 = 1,500. Nova's share = 80% × 1,500 = 1,200 → goodwill = 1,500 − 1,200 = 300. Non-controlling interest = 20% × 1,500 = 300.",
+    "keyPoints": [
+      "Stella's equity 1,200 + customer list 300 = 1,500",
+      "Group share 80% = 1,200",
+      "Goodwill 300",
+      "NCI = 20% × 1,500 = 300"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-02",
+    "lecture": "t2",
+    "case": "nova-stella",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare the consolidated balance sheet of Nova at the acquisition date.",
+    "modelAnswer": "Assets: land 900; other non-current assets 1,500 + 1,000 = 2,500; customer list 300; goodwill 300; current assets 600 + 700 = 1,300 → total 5,300 (investment in Stella eliminated).\nEquity & liabilities: share capital 1,000; retained earnings 1,700; net income 300 (equity attributable to owners of the parent 3,000 = Nova only); non-controlling interests 300; liabilities 1,500 + 500 = 2,000 → total 5,300.",
+    "keyPoints": [
+      "100% of Stella's assets/liabilities integrated",
+      "Customer list 300 and goodwill 300 recognised",
+      "Group equity = Nova's equity 3,000",
+      "NCI 300 within equity",
+      "Total 5,300"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-01",
+    "lecture": "t3",
+    "case": "store-lyon",
+    "difficulty": 1,
+    "prompt": "What is the impairment loss of the Lyon store?",
+    "options": [
+      {
+        "id": "a",
+        "text": "350,000"
+      },
+      {
+        "id": "b",
+        "text": "420,000"
+      },
+      {
+        "id": "c",
+        "text": "150,000"
+      },
+      {
+        "id": "d",
+        "text": "No impairment"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Recoverable amount = higher of value in use (1,050,000) and FV less costs to sell (980,000) = 1,050,000. Impairment = 1,400,000 − 1,050,000 = 350,000.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-03",
+    "lecture": "t3",
+    "case": "store-lyon",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Allocate the impairment loss to the assets of the CGU. Show your calculation.",
+    "modelAnswer": "1) Goodwill first: 150,000 → 0; remaining loss 200,000.\n2) Pro rata to the other assets (carrying amounts 650,000 / 400,000 / 200,000 = 1,250,000): building 200,000 × 650/1,250 = 104,000 → would give 546,000, but the building cannot go below its fair value less costs to sell of 600,000 → building only −50,000.\n3) The remaining 150,000 is reallocated to fittings and IT equipment pro rata (400 : 200): fittings −100,000 → 300,000; IT −50,000 → 150,000.\nAfter impairment: goodwill 0; building 600,000; fittings 300,000; IT 150,000 = 1,050,000 (= recoverable amount).",
+    "keyPoints": [
+      "Goodwill reduced to 0 first",
+      "Pro rata allocation of the remaining 200,000",
+      "Building floor at 600,000 (−50,000 only)",
+      "Reallocation: fittings 300,000, IT 150,000",
+      "Total equals recoverable amount 1,050,000"
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-01",
+    "lecture": "t3",
+    "case": "store-lyon",
+    "difficulty": 2,
+    "statement": "If the Lyon store's recoverable amount rises again next year, ShopCo must reverse the goodwill impairment of 150,000.",
+    "answer": false,
+    "explanation": "Wrong. Goodwill impairment losses can never be reversed (IAS 36.124). Only the impairments of the building, fittings and IT equipment may be reversed – capped at their carrying amounts without impairment."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-02",
+    "lecture": "t3",
+    "case": "novatel-lease",
+    "difficulty": 2,
+    "prompt": "What are the lease liability and the right-of-use asset at commencement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Liability 432,950; ROU 440,000"
+      },
+      {
+        "id": "b",
+        "text": "Liability 500,000; ROU 500,000"
+      },
+      {
+        "id": "c",
+        "text": "Liability 432,950; ROU 432,950"
+      },
+      {
+        "id": "d",
+        "text": "Liability 440,000; ROU 432,950"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Liability = 100,000 × 4.3295 = 432,950. ROU = liability + initial direct costs 7,050 = 440,000.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-03",
+    "lecture": "t3",
+    "case": "novatel-lease",
+    "difficulty": 3,
+    "prompt": "What are the impacts in N1? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depreciation 88,000"
+      },
+      {
+        "id": "b",
+        "text": "Interest expense 21,648"
+      },
+      {
+        "id": "c",
+        "text": "Lease liability end N1: 354,598"
+      },
+      {
+        "id": "d",
+        "text": "Rent expense 100,000"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Depreciation 440,000/5 = 88,000. Interest 5% × 432,950 = 21,648. Liability = 432,950 + 21,648 − 100,000 = 354,598. No rent expense under IFRS 16."
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-04",
+    "lecture": "t3",
+    "case": "novatel-lease",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Compared with the old operating-lease treatment (rent expense of 100,000, nothing on the balance sheet), how does IFRS 16 change Novatel's EBITDA and gearing in N1?",
+    "modelAnswer": "EBITDA increases by 100,000: the rent disappears from operating expenses and is replaced by depreciation (88,000, below EBITDA) and interest (21,648, financial result). Gearing deteriorates: a lease liability of 354,598 (financial debt) appears at year-end, together with a right-of-use asset. Total expenses in N1 are even higher (109,648 vs 100,000) because interest is front-loaded. That is why analysts look at EBITDAaL and net debt including lease liabilities.",
+    "keyPoints": [
+      "EBITDA +100,000 (rent replaced by depreciation and interest)",
+      "Financial debt increases (lease liability)",
+      "Total N1 expenses 109,648 > 100,000 (front-loaded interest)",
+      "Link to EBITDAaL / net debt"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-04",
+    "lecture": "t4",
+    "case": "orion-de",
+    "difficulty": 2,
+    "prompt": "Which of Orion's instruments are financial liabilities? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bonds repayable in 7 years with a 3% coupon"
+      },
+      {
+        "id": "b",
+        "text": "Perpetual notes whose coupon is paid only if Orion pays a dividend on ordinary shares"
+      },
+      {
+        "id": "c",
+        "text": "Preference shares the holders can ask Orion to redeem at par"
+      },
+      {
+        "id": "d",
+        "text": "Ordinary shares"
+      }
+    ],
+    "correct": [
+      "a",
+      "c"
+    ],
+    "explanation": "Mandatory repayment/coupons and holder put options are contractual obligations → liabilities. Dividend-linked perpetual coupons can be avoided → equity."
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-05",
+    "lecture": "t4",
+    "case": "orion-de",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "How is the convertible bond recognised at issuance?",
+    "modelAnswer": "Split accounting (IAS 32): cash +50,000,000; liability component = PV of the contractual cash flows at the rate for similar non-convertible debt = 46,200,000 (financial debt, then amortised cost); equity component = residual 50,000,000 − 46,200,000 = 3,800,000 (e.g. share premium/other equity), not remeasured.",
+    "keyPoints": [
+      "Compound instrument → split accounting",
+      "Liability 46,200,000",
+      "Equity 3,800,000 (residual)"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p4-05",
+    "lecture": "t4",
+    "case": "orion-de",
+    "difficulty": 2,
+    "prompt": "What is the impact of reselling the 30,000 treasury shares?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cash +540,000; treasury shares +600,000 (less negative); share premium −60,000"
+      },
+      {
+        "id": "b",
+        "text": "Cash +540,000; loss of 60,000 in P/L"
+      },
+      {
+        "id": "c",
+        "text": "Cash +540,000; treasury shares +540,000"
+      },
+      {
+        "id": "d",
+        "text": "Cash +600,000; share premium +60,000"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Released at cost 30,000 × 20 = 600,000; received 30,000 × 18 = 540,000; shortfall 60,000 reduces share premium – no P/L impact.",
+    "single": true
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-06",
+    "lecture": "t4",
+    "case": "orion-de",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Calculate Orion's EBITDA, NOPAT, ROCE and EVA for N and interpret.",
+    "modelAnswer": "EBITDA = EBIT + D&A = 2,400 + 600 = 3,000. NOPAT = 2,400 × (1 − 0.25) = 1,800. ROCE = 1,800 / 20,000 = 9%. EVA = NOPAT − WACC × capital employed = 1,800 − 0.08 × 20,000 = 1,800 − 1,600 = 200 m€ (= (9% − 8%) × 20,000). Orion creates value: its return on capital employed exceeds its cost of capital by 1 percentage point.",
+    "keyPoints": [
+      "EBITDA 3,000",
+      "NOPAT 1,800",
+      "ROCE 9%",
+      "EVA +200 → value created"
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-02",
+    "lecture": "t4",
+    "case": "orion-de",
+    "difficulty": 2,
+    "statement": "All else equal, Orion's share buy-back increases its return on equity (ROE).",
+    "answer": true,
+    "explanation": "ROE = net income / equity. Buying back shares reduces equity (treasury shares are deducted), so with unchanged net income ROE rises – one of the reasons companies buy back shares."
+  }
+]

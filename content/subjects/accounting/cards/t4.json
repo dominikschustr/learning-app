@@ -1,0 +1,74 @@
+[
+  {
+    "id": "c-t4-01",
+    "lecture": "t4",
+    "front": "Relevant standards",
+    "back": "IAS 32 (presentation: debt vs equity) · IFRS 9 (recognition & measurement) · IFRS 7 (disclosures) · IFRS 13 (fair value) · IFRS 2 (share-based payment)."
+  },
+  {
+    "id": "c-t4-02",
+    "lecture": "t4",
+    "front": "Debt vs equity (IAS 32)",
+    "back": "Contractual obligation to deliver cash (interest/repayment) that the issuer cannot avoid → liability. Otherwise equity (residual). \"If you have to write a cheque, it can't be equity.\" Label and probability irrelevant."
+  },
+  {
+    "id": "c-t4-03",
+    "lecture": "t4",
+    "front": "Puttable vs callable shares",
+    "back": "Holder can require redemption (put) → liability. Issuer has the option to redeem (call) → equity."
+  },
+  {
+    "id": "c-t4-04",
+    "lecture": "t4",
+    "front": "Conditional payments",
+    "back": "Conditions outside the issuer's control (reference rates, CO2 targets) do not make an instrument equity. Payments linked to discretionary dividends on ordinary shares → equity."
+  },
+  {
+    "id": "c-t4-05",
+    "lecture": "t4",
+    "front": "Compensation & issue costs",
+    "back": "Liability: interest expense in P/L; issue costs deducted from the liability and spread via the effective interest rate. Equity: dividends in equity; issue costs deducted from equity."
+  },
+  {
+    "id": "c-t4-06",
+    "lecture": "t4",
+    "front": "Hybrid instruments",
+    "back": "Mix of debt and equity features (subordination, very long or perpetual maturity, deferrable interest). Classified as a whole by the obligation criterion – often equity if interest can be deferred."
+  },
+  {
+    "id": "c-t4-07",
+    "lecture": "t4",
+    "front": "Compound instruments",
+    "back": "Convertible bonds, bonds with warrants: split accounting – liability = PV at market rate, equity = remainder (e.g. 100 → 95 debt + 5 equity). No intermediate category in IFRS."
+  },
+  {
+    "id": "c-t4-08",
+    "lecture": "t4",
+    "front": "Components of equity",
+    "back": "Share capital (par) · share premium/APIC · retained earnings · accumulated OCI · less treasury shares."
+  },
+  {
+    "id": "c-t4-09",
+    "lecture": "t4",
+    "front": "Authorised, issued, outstanding",
+    "back": "Outstanding (held externally) ≤ issued (incl. treasury shares) ≤ authorised (board may issue)."
+  },
+  {
+    "id": "c-t4-10",
+    "lecture": "t4",
+    "front": "Share issue",
+    "back": "Cash = number × issue price; share capital = number × par; share premium = rest; issue costs reduce share premium."
+  },
+  {
+    "id": "c-t4-11",
+    "lecture": "t4",
+    "front": "Treasury shares",
+    "back": "Buy-back: treasury shares (negative equity) at cost. Resale: cash in, treasury released at cost, difference to share premium – never P/L. Cancellation: share capital −par, share premium −rest."
+  },
+  {
+    "id": "c-t4-12",
+    "lecture": "t4",
+    "front": "Bond at amortised cost",
+    "back": "Initial: issue price (net of costs). Interest expense = effective rate × opening carrying amount; cash = coupon × nominal; difference amortises discount/premium."
+  }
+]

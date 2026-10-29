@@ -1,0 +1,74 @@
+[
+  {
+    "id": "c-t2-01",
+    "lecture": "t2",
+    "front": "Individual vs consolidated statements",
+    "back": "Individual: one per legal entity (local GAAP, tax, dividends). Consolidated: one for the economic entity 'group' – shows e.g. the true group leverage."
+  },
+  {
+    "id": "c-t2-02",
+    "lecture": "t2",
+    "front": "Consolidation process",
+    "back": "1 scope & methods · 2 prepare individual statements (IFRS, uniform policies, currency) · 3 consolidate · 4 present."
+  },
+  {
+    "id": "c-t2-03",
+    "lecture": "t2",
+    "front": "Scope and methods",
+    "back": "<20% passive investment (IFRS 9) · 20–50% significant influence → equity method (IAS 28) · joint control → JV: equity method, joint operation: proportionate · control (>50% presumed) → full consolidation (IFRS 10, IFRS 3)."
+  },
+  {
+    "id": "c-t2-04",
+    "lecture": "t2",
+    "front": "Control (IFRS 10)",
+    "back": "Power over relevant activities + exposure to variable returns + ability to use power. Possible with <50% (agreements, board, double voting rights) and even with 0% (structured entities)."
+  },
+  {
+    "id": "c-t2-05",
+    "lecture": "t2",
+    "front": "Full consolidation – steps",
+    "back": "a) PPA: valuation differences & goodwill · b) 100% of assets, liabilities, income, expenses · c) eliminate investment vs subsidiary equity and intra-group transactions · d) identify NCI."
+  },
+  {
+    "id": "c-t2-06",
+    "lecture": "t2",
+    "front": "Goodwill",
+    "back": "Purchase price − fair value of identifiable net assets acquired (× % acquired). Contains synergies, workforce, market position. No amortisation; annual impairment test; never reversed. Negative goodwill → immediate gain."
+  },
+  {
+    "id": "c-t2-07",
+    "lecture": "t2",
+    "front": "Identifiable net asset or goodwill?",
+    "back": "Identifiable: PP&E, patents, brands, customer lists, R&D projects, debt – at fair value. Goodwill: know-how of employees (assembled workforce), expected synergies."
+  },
+  {
+    "id": "c-t2-08",
+    "lecture": "t2",
+    "front": "Consolidated balance sheet at acquisition",
+    "back": "Sum of all assets/liabilities (subsidiary at fair value) + goodwill − investment in subsidiary. Equity = parent's equity only (+ NCI if <100%)."
+  },
+  {
+    "id": "c-t2-09",
+    "lecture": "t2",
+    "front": "Non-controlling interest",
+    "back": "Minority shareholders' share in a subsidiary's net assets and income. Presented in consolidated equity, separately. Example 60%: NCI = 40% × equity; NI split group / NCI."
+  },
+  {
+    "id": "c-t2-10",
+    "lecture": "t2",
+    "front": "Consolidated net income",
+    "back": "Parent NI + 100% of subsidiary post-acquisition NI (adjusted, e.g. impairment of valuation differences) → split into group share and NCI."
+  },
+  {
+    "id": "c-t2-11",
+    "lecture": "t2",
+    "front": "Equity method",
+    "back": "Cost + share of post-acquisition changes in equity (profit − dividends). One line in BS ('investments in associates'), one line in IS ('share of profit of associates'). No NCI, no line-by-line integration."
+  },
+  {
+    "id": "c-t2-12",
+    "lecture": "t2",
+    "front": "Subsequent treatment of valuation differences",
+    "back": "Same as the asset they belong to: depreciation of higher PP&E values, impairment test for brands, use of provisions. Reversal of brand impairment allowed (up to original value); goodwill impairment never reversed."
+  }
+]

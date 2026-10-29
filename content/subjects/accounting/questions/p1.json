@@ -1,0 +1,140 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-p1-01",
+    "lecture": "t3",
+    "difficulty": 1,
+    "prompt": "According to IAS 38 regarding the accounting for research and development costs it is CORRECT to say that …",
+    "options": [
+      {
+        "id": "a",
+        "text": "Research and development costs have to be recognised as intangible assets if certain criteria of IAS 38 are met"
+      },
+      {
+        "id": "b",
+        "text": "Research costs have to be expensed; development costs have to be recognised as an intangible asset if the criteria of IAS 38 are met"
+      },
+      {
+        "id": "c",
+        "text": "Research and development costs have to be expensed regardless of the criteria of IAS 38"
+      },
+      {
+        "id": "d",
+        "text": "Research costs have to be recognised as intangible assets if certain criteria are met and development costs have to be expensed"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Research never meets the recognition criteria (future benefits cannot be demonstrated) → expense. Development costs MUST be capitalised once all IAS 38 criteria are met (exam 2019 and 2024).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-01",
+    "lecture": "t1",
+    "case": "lumen-fs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "In which statement of Lumen Games can you find the staff costs expensed? Indicate the amount.",
+    "modelAnswer": "Not on the face of the income statement: Lumen presents expenses by FUNCTION (cost of sales, R&D, selling, G&A), so staff costs are spread across these lines. They are disclosed in the notes (Note 7): 1,050 M€ (wages 820 + social charges 230). Under the function method IAS 1 requires such nature information in the notes.",
+    "keyPoints": [
+      "Income statement is by function → staff costs not visible as a line",
+      "Found in the notes (Note 7)",
+      "Amount 1,050 M€"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-02",
+    "lecture": "t1",
+    "case": "lumen-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Was there a cash capital increase in N? If yes, specify its terms (increase in share capital, share premium, cash received, number of shares).",
+    "modelAnswer": "Yes. Share capital rose from 13.0 to 15.4 (+2.4 M€) and share premium from 1,090.0 to 1,207.6 (+117.6 M€); the cash flow statement shows 'Proceeds from capital increase' of 120 M€ = 2.4 + 117.6. With a par value of €0.10, 24 million new shares were issued at an average price of €5.00 (120 / 24).",
+    "keyPoints": [
+      "Share capital +2.4",
+      "Share premium +117.6",
+      "Cash received 120 (financing cash flow)",
+      "24 million shares at €5"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-03",
+    "lecture": "t1",
+    "case": "lumen-fs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Explain why 'depreciation, amortisation, provisions' appears as a positive amount in the statement of cash flows.",
+    "modelAnswer": "Lumen uses the indirect method: operating cash flow starts from net income and adds back expenses that did not cause a cash outflow. Depreciation, amortisation (e.g. of capitalised game development costs) and additions to provisions reduced net income by 900 M€ but no cash left the company in N, so they are added back (positive amount).",
+    "keyPoints": [
+      "Indirect method starts from net income",
+      "These are non-cash expenses",
+      "They are added back to reconcile to operating cash flow"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-04",
+    "lecture": "t1",
+    "case": "lumen-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Does Lumen have significant influence over any associates? List all items in the financial statements that support your answer.",
+    "modelAnswer": "Yes. Balance sheet: 'Investments in associates' 35 (31 in N−1) – the equity method is used for entities under significant influence. Income statement: 'Share of profit of associates' 4. Cash flow statement: 'Share of profit of associates, net of dividends' (−4) is deducted because it is a non-cash income.",
+    "keyPoints": [
+      "Investments in associates (BS)",
+      "Share of profit of associates (IS)",
+      "Adjustment in the cash flow statement",
+      "Equity method = significant influence"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-05",
+    "lecture": "t1",
+    "case": "lumen-fs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Are all Lumen subsidiaries 100% owned? Justify your answer.",
+    "modelAnswer": "No. The balance sheet shows non-controlling interests of 12 (11 in N−1) in equity, and the income statement attributes 1 of net income to non-controlling interests. NCI only exist if minority shareholders hold part of at least one fully consolidated subsidiary.",
+    "keyPoints": [
+      "No",
+      "Non-controlling interests in equity (12)",
+      "Net income attributable to NCI (1)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-06",
+    "lecture": "t1",
+    "case": "lumen-fs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Does Lumen use leasing to finance any of its assets? List all items that support your answer.",
+    "modelAnswer": "Yes. Balance sheet: right-of-use assets 180 and lease liabilities 195 (IFRS 16). Income statement: interest on lease liabilities (9) within financial expense (depreciation of ROU assets within the functional lines). Cash flow statement: 'Repayment of lease liabilities' (40) in financing activities.",
+    "keyPoints": [
+      "Right-of-use assets",
+      "Lease liabilities",
+      "Interest on lease liabilities / repayment of lease liabilities"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-07",
+    "lecture": "t1",
+    "case": "lumen-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Do you think Lumen made new (small) acquisitions in N? List all items that support your answer.",
+    "modelAnswer": "Yes, most likely small ones. The cash flow statement shows 'Acquisition of subsidiaries, net of cash acquired' (18), and goodwill increased from 230 to 241 (+11) – goodwill is not amortised, so an increase points to new business combinations (or currency effects). The amounts are small compared with the group's size.",
+    "keyPoints": [
+      "Cash outflow for acquisition of subsidiaries (18)",
+      "Goodwill increase 230 → 241",
+      "Goodwill not amortised → increase from acquisitions"
+    ]
+  }
+]

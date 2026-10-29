@@ -1,0 +1,141 @@
+[
+  {
+    "id": "concept-a",
+    "title": "Konzeptklausur A",
+    "subtitle": "Neue Aufgaben im Aufbau der Klausur 2024: Konsolidierung mit 80 % und NCI, CGU-Impairment mit Untergrenze, IFRS-16-Leasing, Multiple Choice, Fremd-/Eigenkapital und KPIs.",
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Part 1 – Consolidation",
+        "instructions": "Nova acquires 80% of Stella. [12 points]",
+        "sections": [
+          {
+            "title": "Nova and Stella",
+            "items": [
+              {
+                "q": "sa-p4-01",
+                "points": 6
+              },
+              {
+                "q": "sa-p4-02",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Impairment of non-current assets",
+        "instructions": "ShopCo's Lyon store. [10 points]",
+        "sections": [
+          {
+            "title": "CGU Lyon",
+            "items": [
+              {
+                "q": "mc-p4-01",
+                "points": 2
+              },
+              {
+                "q": "sa-p4-03",
+                "points": 6
+              },
+              {
+                "q": "tf-p4-01",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 3 – Leases",
+        "instructions": "Novatel's hotel lease. [8 points]",
+        "sections": [
+          {
+            "title": "Novatel",
+            "items": [
+              {
+                "q": "mc-p4-02",
+                "points": 2
+              },
+              {
+                "q": "mc-p4-03",
+                "points": 3
+              },
+              {
+                "q": "sa-p4-04",
+                "points": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 4 – Multiple choice",
+        "instructions": "Only one right answer per question. [12 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-t1-08",
+                "points": 2
+              },
+              {
+                "q": "mc-t2-12",
+                "points": 2
+              },
+              {
+                "q": "mc-t3-04",
+                "points": 2
+              },
+              {
+                "q": "mc-t4-04",
+                "points": 2
+              },
+              {
+                "q": "mc-t5-10",
+                "points": 2
+              },
+              {
+                "q": "mc-t5-09",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 5 – Financial debt, equity and KPIs",
+        "instructions": "Orion SA. [18 points]",
+        "sections": [
+          {
+            "title": "Orion",
+            "items": [
+              {
+                "q": "mc-p4-04",
+                "points": 4
+              },
+              {
+                "q": "sa-p4-05",
+                "points": 3
+              },
+              {
+                "q": "mc-p4-05",
+                "points": 3
+              },
+              {
+                "q": "sa-p4-06",
+                "points": 6
+              },
+              {
+                "q": "tf-p4-02",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

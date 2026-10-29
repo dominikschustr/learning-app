@@ -1,0 +1,718 @@
+[
+  {
+    "type": "tf",
+    "id": "tf-t3-01",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "IAS 38 requires that acquired brand names have to be amortised.",
+    "answer": false,
+    "explanation": "Wrong. Amortisation depends on the useful life, not on how the asset was obtained. Brand names usually have an INDEFINITE useful life (no foreseeable limit to the period they generate cash) → no amortisation, but an impairment test at least once a year. Only intangibles with a finite life (licences, patents) are amortised."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-02",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "Tangible assets have to be measured at fair value when using IFRS.",
+    "answer": false,
+    "explanation": "Wrong. After initial recognition IAS 16 offers a choice per class of assets: the COST model (cost − accumulated depreciation − impairment) or the REVALUATION model (fair value at revaluation date − subsequent depreciation/impairment). In Europe the cost model is used almost exclusively."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-03",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "Internally generated brand names, publishing titles and customer lists can be recognised as intangible assets if they are legally protected.",
+    "answer": false,
+    "explanation": "Wrong. IAS 38.63 explicitly prohibits recognising internally generated brands, mastheads, publishing titles, customer lists and similar items as assets – their cost cannot be distinguished from the cost of developing the business as a whole. Legal protection does not change this. (If ACQUIRED, e.g. in a business combination, they are recognised.)"
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-04",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "When a non-current asset does not generate cash on its own, for impairment testing it should be associated with a group of assets so that this group generates cash.",
+    "answer": true,
+    "explanation": "Correct. If the recoverable amount (especially the value in use) of an individual asset cannot be determined, the test is performed for the cash-generating unit (CGU): the smallest identifiable group of assets generating cash inflows largely independent of other assets (e.g. a store, a magazine title, a plant)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-05",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "When the recoverable amount of an asset increases after a prior-year impairment, the carrying amount has to be increased up to its historical acquisition cost.",
+    "answer": false,
+    "explanation": "Wrong. A reversal is required, but capped: the new carrying amount may not exceed the carrying amount that would have resulted (net of depreciation) had no impairment been recognised – i.e. depreciated cost, not historical cost. For goodwill, impairment losses can never be reversed."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-06",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "Research costs are always expensed, whereas development costs are capitalised when they meet the requirements of IAS 38.",
+    "answer": true,
+    "explanation": "Correct. Research (gaining new knowledge) → expense, because future benefits cannot be demonstrated. Development (applying research to a plan or design before commercial production) → MUST be capitalised once all IAS 38 criteria are met (technical feasibility, intention and ability to complete and use/sell, probable future economic benefits, adequate resources, reliable measurement). Amortisation starts when the product goes to market."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-07",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "If a rental agreement for buildings meets the definition of a lease under IFRS 16, the lessee recognises the lease payments as costs on a straight-line basis in the income statement.",
+    "answer": false,
+    "explanation": "Wrong. Under IFRS 16 the lessee recognises a right-of-use ASSET and a lease LIABILITY. The income statement shows DEPRECIATION of the right of use and INTEREST on the liability – not rent. Straight-line rent expense is only allowed for the optional exemptions (short-term ≤ 12 months, low-value assets ≈ USD 5,000)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-08",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "At the commencement date of a lease, the right-of-use asset is always equal to the lease liability.",
+    "answer": false,
+    "explanation": "Wrong. ROU asset = lease liability (PV of future lease payments) + lease payments made at or before commencement (less incentives) + initial direct costs + dismantling/restoration costs. In the Adams example: liability 31,597 + first payment 9,968 = ROU 41,565."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-09",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "Indefinite-life intangible assets and goodwill must be tested for impairment at least once a year, even without any indication of impairment.",
+    "answer": true,
+    "explanation": "Correct (IAS 36.10). For PPE and finite-life intangibles a test is only required when there are internal or external indications (market value decline, adverse technological/legal changes, rising interest rates, obsolescence, damage, worse performance)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-10",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "The recoverable amount of an asset is the lower of its fair value less costs to sell and its value in use.",
+    "answer": false,
+    "explanation": "Wrong – it is the HIGHER of the two. A rational entity would either sell the asset or keep using it, whichever gives more. An impairment loss is recognised only if the carrying amount exceeds this recoverable amount."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-11",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "An impairment loss of a CGU is first allocated to goodwill and then to the other assets pro rata to their carrying amounts.",
+    "answer": true,
+    "explanation": "Correct. But no individual asset may be reduced below the highest of its fair value less costs to sell, its value in use (if determinable) and zero; any excess is reallocated to the other assets."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-12",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "Value in use is calculated with pre-tax cash flows from continuing use and disposal of the asset, excluding financing and income tax cash flows, discounted at a pre-tax rate.",
+    "answer": true,
+    "explanation": "Correct. Forecasts usually cover at most five years unless longer projections are reliable; if no asset-specific rate is available, the WACC can be used as a starting point."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-13",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "Staff training costs incurred when a production process is robotised are added to the cost of the new machines.",
+    "answer": false,
+    "explanation": "Wrong. Training costs (human capital) are expensed as incurred – the entity does not control its employees' know-how. Only costs directly attributable to bringing the asset to working condition (price, transport, installation, testing) are capitalised."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-14",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "A contract to transport cargo on a specified ship, where the supplier operates the ship and the contract predetermines cargo and dates, is a lease.",
+    "answer": false,
+    "explanation": "Wrong – it is a service contract (lecture exercise 3.3). Even though the ship is identified and the customer uses substantially all its capacity, the customer does not direct HOW and FOR WHAT PURPOSE the ship is used: the supplier operates it, and cargo and dates are predetermined by the contract, not decided by the customer during the period of use."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-15",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "A 5-year contract for a specified ship, where the customer decides what cargo is transported and whether, when and to which ports the ship sails (within restrictions on piracy waters and hazardous cargo), is a lease even though the supplier operates the ship.",
+    "answer": true,
+    "explanation": "Correct (lecture exercise 3.4). Identified asset, no substitution rights, the customer obtains substantially all economic benefits and directs how and for what purpose the ship is used. The restrictions are protective rights of the supplier; operating the ship is a service component that does not prevent lease classification."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-16",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "A company leases delivery trucks for 4 years, but at the beginning of every quarter the lessor must approve the routes the trucks will travel. This is a lease.",
+    "answer": false,
+    "explanation": "Not a lease (exam 2024). The lessor keeps the right to decide how and for what purpose the trucks are used (it approves the routes every quarter), so the customer does not have the right to direct the use of the identified asset."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t3-17",
+    "lecture": "t3",
+    "difficulty": 1,
+    "statement": "A company leases vehicles for its sales force for 4 years; the vehicles must not leave the national territory and must not exceed 20,000 km per year. This is a lease.",
+    "answer": true,
+    "explanation": "Yes. Territory and mileage limits are protective restrictions that define the scope of use; within them the customer decides how and for what purpose the vehicles are used and obtains substantially all economic benefits."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-01",
+    "lecture": "t3",
+    "difficulty": 1,
+    "prompt": "Which conditions must be met to recognise an intangible asset under IAS 38?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identifiable"
+      },
+      {
+        "id": "b",
+        "text": "Controlled by the entity"
+      },
+      {
+        "id": "c",
+        "text": "Future economic benefits are expected and probable"
+      },
+      {
+        "id": "d",
+        "text": "Cost can be measured reliably"
+      },
+      {
+        "id": "e",
+        "text": "Legally protected by a patent"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "Legal protection is not required (and does not suffice for internally generated brands). For separately acquired assets the criteria are assumed to be met."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-02",
+    "lecture": "t3",
+    "difficulty": 2,
+    "prompt": "A pharmaceutical company has spent several million euros researching a vaccine. It has reached stage 3 and countries have reserved millions of doses, but marketing approval has not yet been obtained. Where are these costs recognised?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the income statement as operating expenses"
+      },
+      {
+        "id": "b",
+        "text": "As an intangible asset"
+      },
+      {
+        "id": "c",
+        "text": "As revenue for the reserved doses"
+      },
+      {
+        "id": "d",
+        "text": "As an intangible asset and as revenue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Research costs are expensed. Without regulatory approval, the development criteria (technical feasibility, probable benefits) are not met in pharma – costs are expensed. Reservations are not revenue until the performance obligation is satisfied.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-03",
+    "lecture": "t3",
+    "difficulty": 2,
+    "prompt": "An auction house with net assets of 10 million € is acquired for 30 million €. How can the difference be explained? (select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Its brand was not recognised in its balance sheet (internally generated)"
+      },
+      {
+        "id": "b",
+        "text": "Goodwill: reputation, know-how and expected synergies"
+      },
+      {
+        "id": "c",
+        "text": "Its tangible assets were overvalued"
+      },
+      {
+        "id": "d",
+        "text": "Its provisions were too high"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Internally generated brands are not recognised in the target's own balance sheet but become identifiable assets at fair value in the acquirer's PPA; the remainder is goodwill."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-04",
+    "lecture": "t3",
+    "difficulty": 1,
+    "prompt": "Equipment: invoice price $540,000, transport $26,000, installation $5,000, party celebrating the installation $300. At what amount is the equipment recognised?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$540,000"
+      },
+      {
+        "id": "b",
+        "text": "$571,300"
+      },
+      {
+        "id": "c",
+        "text": "$566,000"
+      },
+      {
+        "id": "d",
+        "text": "$571,000"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Cost includes the purchase price and all costs directly attributable to bringing the asset to its location and working condition (transport, installation). The party is not necessary → expense.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-05",
+    "lecture": "t3",
+    "difficulty": 1,
+    "prompt": "When is it NOT possible to perform an individual impairment test?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When only the fair value of the asset is available"
+      },
+      {
+        "id": "b",
+        "text": "When only the value in use is available"
+      },
+      {
+        "id": "c",
+        "text": "When the recoverable amount of the asset is available"
+      },
+      {
+        "id": "d",
+        "text": "When the asset does not generate cash inflows on its own"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "An individual test needs the asset's recoverable amount. If either fair value less costs to sell or value in use is available, it can be compared with the carrying amount. If the asset does not generate cash inflows largely independent of other assets (e.g. a single machine on a production line, a head-office building), its value in use cannot be determined – it is then tested as part of its cash-generating unit.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-06",
+    "lecture": "t3",
+    "case": "verma-machine",
+    "difficulty": 2,
+    "prompt": "What is Verma's impairment loss and the depreciation for N+1?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Impairment 40,000; depreciation N+1 = 32,000"
+      },
+      {
+        "id": "b",
+        "text": "Impairment 50,000; depreciation N+1 = 30,000"
+      },
+      {
+        "id": "c",
+        "text": "Impairment 40,000; depreciation N+1 = 40,000"
+      },
+      {
+        "id": "d",
+        "text": "No impairment"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Value in use = 40,000 × 3.993 ≈ 160,000 > fair value 150,000 → recoverable amount 160,000. Impairment = 200,000 − 160,000 = 40,000 (expense). New depreciation = 160,000 / 5 = 32,000.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-07",
+    "lecture": "t3",
+    "difficulty": 2,
+    "prompt": "Kohlbuy's Pritt division (a CGU) has a carrying amount of $2,400,000 including goodwill of $900,000; its recoverable amount is $1,900,000. Which statements are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The impairment loss is $500,000"
+      },
+      {
+        "id": "b",
+        "text": "It is entirely allocated to goodwill, which falls to $400,000"
+      },
+      {
+        "id": "c",
+        "text": "It is allocated pro rata to all assets including goodwill"
+      },
+      {
+        "id": "d",
+        "text": "The goodwill impairment can be reversed later"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Goodwill absorbs the loss first; since 500,000 < 900,000, no other asset is affected. Goodwill impairment is never reversed."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-08",
+    "lecture": "t3",
+    "difficulty": 1,
+    "prompt": "A strong impairment of a CGU follows a coup in the UTOPIA region. What is the impact on the financial statements?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decrease in operating income and in non-current assets"
+      },
+      {
+        "id": "b",
+        "text": "Decrease in operating income and increase in financial debt"
+      },
+      {
+        "id": "c",
+        "text": "Decrease in operating income and in cash"
+      },
+      {
+        "id": "d",
+        "text": "Decrease in operating income and in current assets"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "An impairment is a non-cash expense reducing the carrying amount of non-current assets (goodwill, PPE). Cash and debt are not affected.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-09",
+    "lecture": "t3",
+    "case": "beta-cgu",
+    "difficulty": 3,
+    "prompt": "What is the total impairment loss for CGU A, and how is it allocated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "800,000: building −100,000 (individual test) and goodwill −700,000"
+      },
+      {
+        "id": "b",
+        "text": "800,000: all to the land and building"
+      },
+      {
+        "id": "c",
+        "text": "300,000 to goodwill only"
+      },
+      {
+        "id": "d",
+        "text": "No impairment because land has gained value"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Building A: recoverable amount = max(400,000; 350,000) = 400,000 < 500,000 → individual impairment 100,000. CGU A after that: 3,700,000 vs recoverable 3,000,000 → 700,000 → goodwill (1,000,000 → 300,000). Land is not written up. Total 800,000.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-10",
+    "lecture": "t3",
+    "case": "beta-cgu",
+    "difficulty": 3,
+    "prompt": "What is the impairment loss for CGU B and the machinery's carrying amount after impairment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "320,000; machinery 1,730,000"
+      },
+      {
+        "id": "b",
+        "text": "320,000; machinery 1,800,000"
+      },
+      {
+        "id": "c",
+        "text": "600,000; machinery 1,500,000"
+      },
+      {
+        "id": "d",
+        "text": "270,000; machinery 1,710,000"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Building B: recoverable max(550,000; 500,000) = 550,000 → individual impairment 50,000. CGU: recoverable = max(2,280,000; 2,000,000) = 2,280,000 vs 2,550,000 → 270,000: goodwill 200,000 → 0, remaining 70,000 – the building cannot go below its recoverable 550,000, so machinery takes 70,000 → 1,730,000. Total 320,000.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-11",
+    "lecture": "t3",
+    "case": "adams-lease",
+    "difficulty": 3,
+    "prompt": "What are the lease liability and the right-of-use asset at commencement, and the N1 expenses?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Liability 31,597; ROU 41,565; depreciation 10,391; interest 3,160"
+      },
+      {
+        "id": "b",
+        "text": "Liability 41,565; ROU 41,565; depreciation 6,928; interest 4,157"
+      },
+      {
+        "id": "c",
+        "text": "Liability 31,597; ROU 31,597; rent expense 9,968"
+      },
+      {
+        "id": "d",
+        "text": "Liability 39,872; ROU 39,872; depreciation 9,968"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Liability = 9,968 × 3.169865 = 31,597 (4 future payments). ROU = 31,597 + 9,968 paid at commencement = 41,565, depreciated over the shorter of lease term (4) and useful life (6): 10,391. Interest = 10% × 31,597 = 3,160. Liability end N1 = 31,597 + 3,160 − 9,968 = 24,789.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-12",
+    "lecture": "t3",
+    "difficulty": 3,
+    "prompt": "Finchley leases an office building (fair value = PV of lease payments = 4,000,000; useful life 20 years; payment 300,000 per year on 31 December; effective rate 4.5%). Impact at 31 December of the first year?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rent expense and cash outflow of 300,000"
+      },
+      {
+        "id": "b",
+        "text": "ROU 4,000,000, debt 4,000,000, depreciation 200,000, rent expense 300,000"
+      },
+      {
+        "id": "c",
+        "text": "ROU 3,800,000, debt 3,880,000, interest 180,000, depreciation 200,000, cash outflow 300,000"
+      },
+      {
+        "id": "d",
+        "text": "ROU 3,800,000, debt 4,000,000, depreciation 200,000, rent expense 300,000"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Depreciation 4,000,000/20 = 200,000 → ROU 3,800,000. Interest 4.5% × 4,000,000 = 180,000. Debt = 4,000,000 + 180,000 − 300,000 = 3,880,000.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-13",
+    "lecture": "t3",
+    "difficulty": 2,
+    "prompt": "The CEO of a highly indebted company is reassured because most investments of the year were leased, not bought. What is the impact of leasing on the financial statements?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It decreases net income and cash by the amount of the rent only"
+      },
+      {
+        "id": "b",
+        "text": "It decreases assets and cash"
+      },
+      {
+        "id": "c",
+        "text": "It increases non-current assets, decreases cash and increases financial debt"
+      },
+      {
+        "id": "d",
+        "text": "It increases non-current assets and financial debt, and decreases cash and net income"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "IFRS 16: ROU asset and lease liability (debt ↑), lease payments reduce cash, depreciation and interest reduce net income. Leasing is no longer off-balance-sheet financing for the lessee.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-14",
+    "lecture": "t3",
+    "case": "prodi-financing",
+    "difficulty": 3,
+    "prompt": "Which statements on the PRODI financing decision are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both solutions show a production line/ROU of 900,000 at the end of N"
+      },
+      {
+        "id": "b",
+        "text": "The loan shows debt of 1,000,000, the lease a lease liability of 919,600"
+      },
+      {
+        "id": "c",
+        "text": "Loan: depreciation 100,000 and interest 46,500; lease: depreciation 100,000 and interest 47,600"
+      },
+      {
+        "id": "d",
+        "text": "The lease avoids any increase in financial debt"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Lease liability = 1,000,000 + 4.76% × 1,000,000 (47,600) − 128,000 = 919,600. Under IFRS 16 the lease adds debt like a loan – the CFO's argument is wrong."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-15",
+    "lecture": "t3",
+    "difficulty": 2,
+    "prompt": "Which exemptions from the right-of-use model exist under IFRS 16, and for whom?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Short-term leases (12 months or less) – lessee only"
+      },
+      {
+        "id": "b",
+        "text": "Leases of low-value assets (≈ USD 5,000 when new) – lessee only"
+      },
+      {
+        "id": "c",
+        "text": "All leases of buildings – lessee and lessor"
+      },
+      {
+        "id": "d",
+        "text": "Leases with variable payments – lessor only"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "With the exemptions, payments are expensed straight-line and disclosed. Leases of minerals/oil/gas and certain licences (films, patents) are outside IFRS 16."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-16",
+    "lecture": "t3",
+    "case": "ramon-mall",
+    "difficulty": 3,
+    "prompt": "What is the impairment loss on Ramon's mall at 31 December N5, and the book value at 31 December N6?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Impairment 32.08 m; book value N6 ≈ 209.2 m"
+      },
+      {
+        "id": "b",
+        "text": "Impairment 40 m; book value N6 = 202 m"
+      },
+      {
+        "id": "c",
+        "text": "Impairment 34.4 m; book value N6 ≈ 207 m"
+      },
+      {
+        "id": "d",
+        "text": "No impairment"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Carrying amount = 300 − 5 × 10 = 250. Value in use = 24 × 9.08 (25 remaining years) = 217.92 > fair value 210 → recoverable 217.92. Impairment 32.08. New depreciation 217.92/25 ≈ 8.72 → N6 ≈ 209.2.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-01",
+    "lecture": "t3",
+    "case": "beta-cgu",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Determine and allocate the impairment losses of CGU A and CGU B at 31 December N, and state the impact on net income N.",
+    "modelAnswer": "Individual tests first (property price drop): land A: recoverable max(450,000; 500,000) = 500,000 > 300,000 → no impairment (no write-up). Building A: max(400,000; 350,000) = 400,000 < 500,000 → impairment 100,000. Building B: max(550,000; 500,000) = 550,000 < 600,000 → impairment 50,000.\nCGU A: carrying amount 3,700,000 vs recoverable 3,000,000 (value in use) → 700,000, allocated to goodwill first → goodwill 300,000. After: land 300,000; building 400,000; machinery 2,000,000; goodwill 300,000 = 3,000,000.\nCGU B: carrying amount 2,550,000 vs recoverable max(2,280,000; 2,000,000) = 2,280,000 → 270,000: goodwill 200,000 → 0; remaining 70,000 pro rata, but the building cannot fall below 550,000 → machinery −70,000. After: building 550,000; machinery 1,730,000; goodwill 0 = 2,280,000.\nImpact on net income N: impairment losses of 800,000 + 320,000 = 1,120,000 (operating expense, non-cash).",
+    "keyPoints": [
+      "Recoverable amount = higher of value in use and FV less costs to sell",
+      "Individual impairments: building A −100,000, building B −50,000",
+      "CGU A: goodwill reduced to 300,000 (total 3,000,000)",
+      "CGU B: goodwill to 0, machinery 1,730,000 (total 2,280,000)",
+      "Net income N reduced by 1,120,000"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-02",
+    "lecture": "t3",
+    "case": "prodi-financing",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "What do you think of the CFO's comment that leasing is better given PRODI's high gearing? Justify with the impacts on the financial statements at the end of N.",
+    "modelAnswer": "The CFO is wrong under IFRS 16. Loan: PPE 1,000,000 − depreciation 100,000 = 900,000; financial debt 1,000,000; expenses: depreciation 100,000 + interest 4.65% × 1,000,000 = 46,500; cash out 46,500. Lease: right-of-use 1,000,000 − depreciation 100,000 = 900,000; lease liability 1,000,000 + interest 47,600 − 128,000 = 919,600 (financial debt); expenses: depreciation 100,000 + interest 47,600; cash out 128,000. Both solutions increase assets and financial debt similarly, so gearing deteriorates in both cases; the lease is even slightly more expensive (147,600 vs 146,500 of expenses). Only short-term or low-value leases would stay off balance sheet.",
+    "keyPoints": [
+      "Loan: asset 900,000, debt 1,000,000, depreciation 100,000 + interest 46,500",
+      "Lease: ROU 900,000, lease liability 919,600, depreciation 100,000 + interest 47,600",
+      "Under IFRS 16 the lease also creates financial debt",
+      "Conclusion: CFO is wrong – gearing increases in both cases"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-03",
+    "lecture": "t3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the difference between research and development costs under IAS 38 and why the distinction matters for profit.",
+    "modelAnswer": "Research = original investigation to gain new knowledge (e.g. lab research for new molecules) → always expensed, because future benefits cannot be demonstrated. Development = application of research findings to a plan or design for new or substantially improved products/processes before commercial production (e.g. prototypes, pilot plants) → must be capitalised as an intangible asset once all IAS 38 criteria are met (technical feasibility, intention and ability to complete and use/sell, probable future economic benefits, adequate resources, reliable measurement). Capitalised development costs are amortised from market launch over the useful life. Hence research reduces profit immediately, capitalised development only gradually via amortisation – the R&D director's belief that all R&D is capitalised is wrong.",
+    "keyPoints": [
+      "Research: gain new knowledge → expense",
+      "Development: apply knowledge before production → capitalise if criteria met",
+      "Name IAS 38 criteria (feasibility, benefits, resources, measurement)",
+      "Profit impact: immediate expense vs amortisation over useful life"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-04",
+    "lecture": "t3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the criteria that distinguish a lease from a service contract under IFRS 16.",
+    "modelAnswer": "A contract is (or contains) a lease if it conveys the right to control the use of an identified asset for a period of time in exchange for consideration. Three tests: (1) identified asset – explicitly or implicitly specified, with no substantive substitution right of the supplier; (2) the customer has the right to obtain substantially all economic benefits from its use; (3) the customer has the right to direct how and for what purpose the asset is used (or these decisions are predetermined and the customer operates or designed the asset). In a service contract the supplier keeps control of the asset used to deliver the service. The distinction matters because service contracts are expensed, leases are recognised on the balance sheet (ROU asset + liability).",
+    "keyPoints": [
+      "Identified asset, no substantive substitution right",
+      "Right to substantially all economic benefits",
+      "Right to direct how and for what purpose it is used",
+      "Service: supplier controls the asset; lease → on balance sheet"
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "lecture": "t3",
+  "title": "Topic 3 – Selected issues in reporting for non-current assets and leases",
+  "source": "Zusammenfassung von „IFRS Topic 3 2026 student version“",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Intangible assets (IAS 38) are only recognised under strict conditions:",
+          "children": [
+            "Identifiable, controlled, expected and probable future economic benefits, cost measurable reliably",
+            "Separately acquired or acquired in a business combination: criteria assumed met (brands, customer lists, software, licences…)",
+            "Internally generated: brands, publishing titles, customer lists, training costs are expensed; development costs, software and patents can be assets"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Research costs are always expensed. Development costs must be capitalised once the IAS 38 criteria are met (technical feasibility, economic viability…) and are amortised over their useful life from market launch."
+        },
+        {
+          "kind": "item",
+          "text": "Subsequent measurement of PPE and intangibles: cost model (cost − accumulated depreciation − impairment), used almost everywhere in Europe, or revaluation model. Depreciation needs a depreciable base (cost − residual value), useful life and method; significant components are depreciated separately."
+        },
+        {
+          "kind": "item",
+          "text": "Intangibles with a finite life are amortised; goodwill and indefinite-life intangibles (brands) are not amortised but tested for impairment at least annually."
+        },
+        {
+          "kind": "item",
+          "text": "Impairment (IAS 36):",
+          "children": [
+            "PPE and finite-life intangibles: test only if internal or external indications exist",
+            "Recoverable amount = higher of fair value less costs to sell and value in use (PV of future cash flows, pre-tax rate or WACC)",
+            "Impairment loss = carrying amount − recoverable amount, recognised as an expense; depreciation is then based on the new amount",
+            "Reversal when indications disappear, capped at the carrying amount without impairment; never for goodwill"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "If an asset does not generate independent cash flows, it is tested within its cash-generating unit. A CGU impairment is allocated first to goodwill, then pro rata to the other assets, without reducing any asset below its own recoverable amount or zero."
+        },
+        {
+          "kind": "item",
+          "text": "Critical issues for analysts: capitalised intangibles, depreciation/amortisation choices, assumptions of impairment tests (discount rates, cash flow forecasts)."
+        },
+        {
+          "kind": "item",
+          "text": "Leases (IFRS 16, since 2019):",
+          "children": [
+            "A lease conveys the right to control the use of an identified asset: identified asset, substantially all economic benefits, right to direct the use – otherwise it is a service contract",
+            "Lessee: right-of-use asset and lease liability (PV of lease payments); depreciation and interest in P/L; payments reduce the liability",
+            "Exemptions for the lessee only: short-term (≤ 12 months) and low-value leases → straight-line expense",
+            "Lessor: little change (finance vs operating lease)",
+            "Consequence: leasing is no longer off-balance-sheet financing – it increases assets and financial debt like a bank loan"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Recoverable amount",
+          "text": "The higher of an asset's (or CGU's) fair value less costs of disposal and its value in use."
+        },
+        {
+          "kind": "item",
+          "term": "Value in use",
+          "text": "The present value of the future cash flows expected from the continuing use of an asset and its disposal."
+        },
+        {
+          "kind": "item",
+          "term": "Cash-generating unit",
+          "text": "The smallest identifiable group of assets that generates cash inflows largely independent of those from other assets."
+        },
+        {
+          "kind": "item",
+          "term": "Lease",
+          "text": "A contract that conveys the right to use an underlying asset for a period of time in exchange for consideration."
+        },
+        {
+          "kind": "item",
+          "term": "Right-of-use asset",
+          "text": "The lessee's asset representing its right to use the underlying asset over the lease term."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Exam pattern CGU: 1) individual tests where values are given, 2) CGU carrying amount vs recoverable amount, 3) goodwill first, 4) pro rata with floors, 5) check that the new total equals the recoverable amount, 6) state the P/L impact."
+        }
+      ]
+    }
+  ]
+}

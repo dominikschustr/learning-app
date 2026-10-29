@@ -1,0 +1,542 @@
+[
+  {
+    "type": "tf",
+    "id": "tf-t1-01",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "In 2026, the EU is the only jurisdiction in the world that requires IFRS for the consolidated financial statements of listed companies.",
+    "answer": false,
+    "explanation": "Wrong. IFRS are issued by a private body (the IASB) but have been adopted by local regulators in more than 140 jurisdictions (e.g. UK, Australia, Canada, Brazil, South Korea). The notable exception is the USA, where domestic listed companies use US GAAP. The EU only made IFRS mandatory for the CONSOLIDATED statements of LISTED companies since 2005 – it is one of many adopters, not the only one."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-02",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "In case of conflict between an IFRS and the Conceptual Framework, the IFRS overrides the Conceptual Framework.",
+    "answer": true,
+    "explanation": "Correct. The Conceptual Framework is NOT a standard. In the IFRS hierarchy the individual standards (IFRS/IAS and their interpretations IFRIC/SIC) come first; the Framework helps the IASB develop standards and helps preparers develop an accounting policy when no standard applies. If a standard says something different, the standard wins (\"individual IFRS override the Framework\")."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-03",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "Accounts receivable maturing in more than one year have to be presented as non-current assets.",
+    "answer": false,
+    "explanation": "Wrong. IAS 1 classifies an asset as current if it is expected to be realised within twelve months OR within the entity's normal operating cycle (or held for trading). Trade receivables that are part of the operating cycle are current even if they are collected after more than 12 months (e.g. in long construction or wine businesses). The 12-month rule is only one of the criteria – so \"have to be non-current\" is too absolute."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-04",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "Operating expenses can be disclosed either by nature or by function in the statement of comprehensive income.",
+    "answer": true,
+    "explanation": "Correct. IAS 1.99 lets the entity choose the method that gives reliable and more relevant information: by NATURE (raw materials, staff costs, depreciation… – e.g. Orange) or by FUNCTION (cost of sales, selling & distribution, administrative expenses – e.g. Vodafone). Entities using the function method must disclose additional information on the nature of expenses (incl. depreciation and staff costs) in the notes."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-05",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "Operating profit is currently precisely defined under IFRS.",
+    "answer": false,
+    "explanation": "Wrong. Under IAS 1 (still applicable until 2027) operating profit is neither mandatory nor defined – companies present it voluntarily and calculate it differently, which hurts comparability. This is exactly one of the reasons for IFRS 18 (from 1 January 2027), which introduces defined subtotals such as 'operating profit' and the operating/investing/financing categories in the income statement."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-06",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "Comprehensive income is equal to net income plus other comprehensive income.",
+    "answer": true,
+    "explanation": "Correct. Total comprehensive income = profit or loss (net income) + other comprehensive income (OCI). OCI contains certain gains and losses that IFRS require to bypass the income statement (e.g. fair value changes of some financial assets, actuarial gains/losses on pensions). OCI items do not affect net income and therefore not EPS or dividend calculation, but they do change equity."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-07",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "Operating cash flows must be presented according to the direct method in the statement of cash flows.",
+    "answer": false,
+    "explanation": "Wrong. IAS 7 allows the DIRECT method (gross cash receipts and payments) or the INDIRECT method (start from net income and adjust for non-cash items such as depreciation and for changes in working capital) for operating cash flows. Most companies use the indirect method. Investing and financing cash flows are always shown gross (direct)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-08",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "The statement of changes in equity shows purchases and sales of treasury stock.",
+    "answer": true,
+    "explanation": "Correct. IAS 1.106 requires the statement of changes in equity to show, for each component of equity, transactions with owners in their capacity as owners – contributions (share issues), distributions (dividends) and changes in own shares. Buying back treasury shares reduces equity, reselling them increases equity; neither goes through the income statement."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-09",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "IFRS 18 will replace IAS 7 'Statement of cash flows' from January 2027.",
+    "answer": false,
+    "explanation": "Wrong. IFRS 18 'Presentation and Disclosure in Financial Statements' replaces IAS 1 (presentation of financial statements), not IAS 7. IAS 7 remains in force (with some consequential amendments). IFRS 18 introduces new defined subtotals in the income statement, disclosures on management-defined performance measures (MPMs) and principles for aggregation/disaggregation."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-10",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "Primary users of general purpose financial reporting are existing and potential investors, lenders and other creditors.",
+    "answer": true,
+    "explanation": "Correct. According to the Conceptual Framework the objective is to provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the entity – not to all possible users (tax authorities, government statistics…)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-11",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "European listed companies can present their consolidated financial statements according to either IFRS or local GAAP.",
+    "answer": false,
+    "explanation": "Wrong. Since 2005 the EU IFRS Regulation makes IFRS MANDATORY for the consolidated financial statements of listed companies. Choices only exist for consolidated statements of non-listed companies and for individual (separate) statements, depending on the member state (e.g. France: individual statements always in French GAAP)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-12",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "In the income statement, extraordinary income and expenses must be disclosed on a separate line.",
+    "answer": false,
+    "explanation": "Wrong – it is the opposite. IAS 1.87 PROHIBITS presenting any items of income or expense as 'extraordinary' in the statement of comprehensive income or in the notes. Seeing an 'extraordinary items' line is therefore a hint that a statement is NOT prepared under IFRS (exam 2023)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-13",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "Trade payables due in 18 months are always classified as non-current liabilities.",
+    "answer": false,
+    "explanation": "Wrong. Like receivables, liabilities that the entity expects to settle within its normal operating cycle are current, even if they are due after more than 12 months (IAS 1.69). Trade payables are part of the working capital used in the operating cycle – they are classified as current liabilities."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-14",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "In a statement of changes in equity, an increase in share capital always means that the company collected cash for that amount.",
+    "answer": false,
+    "explanation": "Wrong. Share capital can also increase without cash: e.g. capitalisation of reserves (bonus shares), conversion of convertible bonds, shares issued to acquire another company, or scrip dividends. And when shares are issued for cash above par, the cash received equals share capital PLUS share premium."
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-15",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "Under IFRS there is no mandatory format for the balance sheet, but current and non-current assets and liabilities must be distinguished (unless a liquidity presentation is more relevant).",
+    "answer": true,
+    "explanation": "Correct. IAS 1 does not prescribe the order or layout – companies may present non-current assets first (GSK, most European groups) or current assets first, and equity before or after liabilities. What is required is the current/non-current distinction (or a presentation by liquidity, e.g. for banks) and certain minimum line items."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-01",
+    "lecture": "t1",
+    "difficulty": 2,
+    "prompt": "The Conceptual Framework …",
+    "options": [
+      {
+        "id": "a",
+        "text": "is an IFRS"
+      },
+      {
+        "id": "b",
+        "text": "overrides all other IFRS requirements"
+      },
+      {
+        "id": "c",
+        "text": "does not define standards for any particular measurement or disclosure issue"
+      },
+      {
+        "id": "d",
+        "text": "is used by management – in the absence of a specific IFRS – to develop an accounting policy that results in useful information"
+      }
+    ],
+    "correct": [
+      "c",
+      "d"
+    ],
+    "explanation": "The Framework is not a standard and never overrides a standard. It sets out concepts (objective, qualitative characteristics, elements, measurement bases) used by the IASB to develop standards and by preparers to fill gaps when no IFRS applies (IAS 8 hierarchy)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-02",
+    "lecture": "t1",
+    "difficulty": 2,
+    "prompt": "ABC holds 10% of ACC Inc. IFRS 9 requires the ACC shares to be measured at fair value. The CFO read in the Conceptual Framework that historical cost is an accepted measurement basis and measures the shares at cost. Was he right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No"
+      },
+      {
+        "id": "b",
+        "text": "Yes"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "No. The Framework lists several measurement bases, but it does not override a specific standard. IFRS 9 explicitly requires equity investments to be measured at fair value (through P/L or, as an option, OCI), so historical cost is not allowed.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-03",
+    "lecture": "t1",
+    "difficulty": 2,
+    "prompt": "Which are the FUNDAMENTAL qualitative characteristics of useful financial information?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Relevance (including materiality)"
+      },
+      {
+        "id": "b",
+        "text": "Faithful representation (including substance over form)"
+      },
+      {
+        "id": "c",
+        "text": "Comparability"
+      },
+      {
+        "id": "d",
+        "text": "Timeliness"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Relevance and faithful representation are fundamental. Comparability, verifiability, timeliness and understandability are ENHANCING characteristics. The cost constraint and the going concern assumption are further elements of the Framework."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-04",
+    "lecture": "t1",
+    "difficulty": 1,
+    "prompt": "Which statements are REQUIRED by IAS 1 in a complete set of IFRS financial statements?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Statement of financial position"
+      },
+      {
+        "id": "b",
+        "text": "Statement of comprehensive income"
+      },
+      {
+        "id": "c",
+        "text": "Statement of cash flows"
+      },
+      {
+        "id": "d",
+        "text": "Statement of changes in equity and notes"
+      },
+      {
+        "id": "e",
+        "text": "Management report / CSR report"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "A management report or sustainability report is not required by IFRS but often by national law. Listed companies additionally present segment reporting (IFRS 8) and earnings per share (IAS 33)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-05",
+    "lecture": "t1",
+    "difficulty": 2,
+    "prompt": "Determine the cash flow from operating activities in year 1 (indirect method): net profit 100; depreciation and amortization 70; trade receivables 1 Jan: 50; trade receivables 31 Dec: 55.",
+    "options": [
+      {
+        "id": "a",
+        "text": "165"
+      },
+      {
+        "id": "b",
+        "text": "175"
+      },
+      {
+        "id": "c",
+        "text": "25"
+      },
+      {
+        "id": "d",
+        "text": "35"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Start from net profit 100, add back the non-cash expense depreciation 70 → 170, deduct the increase in receivables 5 (sales not yet collected in cash) → 165.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-06",
+    "lecture": "t1",
+    "difficulty": 1,
+    "prompt": "Company AD presents a net loss of 1,000 and other comprehensive income of +300. Its total comprehensive income is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "−700"
+      },
+      {
+        "id": "b",
+        "text": "+700"
+      },
+      {
+        "id": "c",
+        "text": "−1,300"
+      },
+      {
+        "id": "d",
+        "text": "+300"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Total comprehensive income = net income + OCI = −1,000 + 300 = −700.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-07",
+    "lecture": "t1",
+    "difficulty": 2,
+    "prompt": "Company X presents expenses by NATURE. Which item is NOT presented in its income statement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cost of goods sold"
+      },
+      {
+        "id": "b",
+        "text": "Personnel costs"
+      },
+      {
+        "id": "c",
+        "text": "Interest expense"
+      },
+      {
+        "id": "d",
+        "text": "Income taxes"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "'Cost of goods sold' (cost of sales) is a FUNCTION line. A nature-based income statement shows purchases/raw materials consumed, staff costs, depreciation etc. Interest and taxes appear under both methods.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-08",
+    "lecture": "t1",
+    "difficulty": 3,
+    "prompt": "Carrefour presents: net sales net of loyalty costs; gross margin from recurring operations; recurring operating income; recurring operating income after equity-accounted companies; operating income. Which intermediate result is mandatory under IAS 1?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Operating income"
+      },
+      {
+        "id": "b",
+        "text": "None of the results reported"
+      },
+      {
+        "id": "c",
+        "text": "Recurring operating income"
+      },
+      {
+        "id": "d",
+        "text": "Gross margin from recurring operations"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "IAS 1 requires only few line items (revenue, finance costs, share of associates, tax, discontinued operations, profit or loss). None of these intermediate subtotals is mandatory or defined – they are company-specific (until IFRS 18 introduces defined subtotals).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-09",
+    "lecture": "t1",
+    "difficulty": 2,
+    "prompt": "Companies that use IFRS …",
+    "options": [
+      {
+        "id": "a",
+        "text": "may report all their assets at fair value"
+      },
+      {
+        "id": "b",
+        "text": "may offset assets against liabilities and show only net amounts"
+      },
+      {
+        "id": "c",
+        "text": "may report current assets before non-current assets and equity before liabilities"
+      },
+      {
+        "id": "d",
+        "text": "can choose any presentation without distinguishing current and non-current items"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "The order of presentation is free. Offsetting is generally prohibited (IAS 1.32), fair value is only allowed where a standard permits it, and the current/non-current distinction is required (unless a liquidity presentation is more relevant).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-10",
+    "lecture": "t1",
+    "difficulty": 1,
+    "prompt": "Which of the following is NOT a non-current liability?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bonds payable"
+      },
+      {
+        "id": "b",
+        "text": "Current maturities of long-term obligations"
+      },
+      {
+        "id": "c",
+        "text": "Long-term notes payable"
+      },
+      {
+        "id": "d",
+        "text": "Mortgages payable"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The part of long-term debt due within the next 12 months is reclassified to current liabilities.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-11",
+    "lecture": "t1",
+    "difficulty": 1,
+    "prompt": "Dividends paid by the parent company can be found in …",
+    "options": [
+      {
+        "id": "a",
+        "text": "the statement of changes in equity"
+      },
+      {
+        "id": "b",
+        "text": "the income statement"
+      },
+      {
+        "id": "c",
+        "text": "the statement of financial position as an expense"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dividends are a distribution to owners, not an expense: they reduce retained earnings in the statement of changes in equity (and appear as a financing cash outflow in the cash flow statement).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-12",
+    "lecture": "t1",
+    "difficulty": 1,
+    "prompt": "How do the cash flow categories of IAS 7 differ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Operating: day-to-day activities; direct or indirect method"
+      },
+      {
+        "id": "b",
+        "text": "Investing: buying and selling non-current assets"
+      },
+      {
+        "id": "c",
+        "text": "Financing: debt and cash contributions by / distributions to owners"
+      },
+      {
+        "id": "d",
+        "text": "Dividends received from customers are financing cash flows"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Investing and financing cash flows are presented gross (direct method); the operating section can start from net income (indirect)."
+  },
+  {
+    "type": "short",
+    "id": "sa-t1-01",
+    "lecture": "t1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the difference between net income and total comprehensive income, and why the distinction matters for shareholders.",
+    "modelAnswer": "Net income (profit or loss) contains all income and expenses recognised in P/L. Other comprehensive income contains certain gains and losses that IFRS require to bypass P/L (e.g. fair value changes on equity instruments designated at FVOCI, actuarial gains/losses, currency translation differences). Total comprehensive income = net income + OCI. OCI items change equity but not net income, so they do not affect earnings per share or the basis for dividends – a company can look profitable in P/L while losing value in OCI, or vice versa.",
+    "keyPoints": [
+      "Net income = income and expenses in P/L",
+      "OCI = gains/losses recognised outside P/L (examples)",
+      "Total comprehensive income = NI + OCI",
+      "OCI does not affect EPS/dividend basis but changes equity"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t1-02",
+    "lecture": "t1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "An income statement shows a line 'extraordinary items', and expenses are classified partly by nature and partly by function. Is it an IFRS income statement? Justify.",
+    "modelAnswer": "Most likely not. IAS 1.87 prohibits presenting any item as 'extraordinary' in the income statement or the notes. In addition, IAS 1 requires an analysis of expenses either by nature or by function – a consistent choice, not a mixture. Both elements indicate a local GAAP statement (e.g. French GAAP individual accounts with 'résultat exceptionnel').",
+    "keyPoints": [
+      "Extraordinary items are prohibited under IFRS (IAS 1.87)",
+      "Expenses must be presented by nature OR by function",
+      "Conclusion: probably not IFRS / local GAAP"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t1-03",
+    "lecture": "t1",
+    "difficulty": 2,
+    "verb": "state",
+    "prompt": "State the five components of a complete set of IFRS financial statements and two additional disclosures required for listed companies.",
+    "modelAnswer": "Statement of financial position; statement of comprehensive income (single statement or income statement + OCI statement); statement of cash flows (IAS 7); statement of changes in equity; notes. Listed companies additionally: segment reporting (IFRS 8) and earnings per share (IAS 33).",
+    "keyPoints": [
+      "Balance sheet",
+      "Statement of comprehensive income",
+      "Cash flow statement",
+      "Statement of changes in equity",
+      "Notes",
+      "Segment reporting and EPS for listed companies"
+    ]
+  }
+]

@@ -1,0 +1,168 @@
+[
+  {
+    "id": "lumen-fs",
+    "title": "Lumen Games – consolidated financial statements at 31 March N (M€, fictitious)",
+    "text": [
+      "Lumen Games is a listed video game publisher. Below are excerpts of its IFRS consolidated financial statements. The par value of a Lumen share is €0.10.",
+      "Note 7 – Staff costs: wages and salaries 820, social charges 230 (total 1,050), included in cost of sales, R&D, selling and administrative expenses."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated income statement (by function)",
+        "head": [
+          "",
+          "N",
+          "N−1"
+        ],
+        "rows": [
+          [
+            "Net sales",
+            "2,300",
+            "2,100"
+          ],
+          [
+            "Cost of sales",
+            "(560)",
+            "(500)"
+          ],
+          [
+            "R&D expenses",
+            "(1,190)",
+            "(1,080)"
+          ],
+          [
+            "Selling expenses",
+            "(420)",
+            "(380)"
+          ],
+          [
+            "General and administrative expenses",
+            "(180)",
+            "(170)"
+          ],
+          [
+            "Operating income",
+            "(50)",
+            "(30)"
+          ],
+          [
+            "Net financial expense (incl. interest on lease liabilities 9)",
+            "(25)",
+            "(20)"
+          ],
+          [
+            "Share of profit of associates",
+            "4",
+            "3"
+          ],
+          [
+            "Income tax",
+            "21",
+            "15"
+          ],
+          [
+            "Net income",
+            "(50)",
+            "(32)"
+          ],
+          [
+            "– attributable to owners of the parent",
+            "(51)",
+            "(33)"
+          ],
+          [
+            "– attributable to non-controlling interests",
+            "1",
+            "1"
+          ]
+        ]
+      },
+      {
+        "caption": "Consolidated balance sheet (excerpt)",
+        "head": [
+          "",
+          "31/03/N",
+          "31/03/N−1"
+        ],
+        "rows": [
+          [
+            "Goodwill",
+            "241",
+            "230"
+          ],
+          [
+            "Right-of-use assets",
+            "180",
+            "170"
+          ],
+          [
+            "Investments in associates",
+            "35",
+            "31"
+          ],
+          [
+            "Share capital",
+            "15.4",
+            "13.0"
+          ],
+          [
+            "Share premium",
+            "1,207.6",
+            "1,090.0"
+          ],
+          [
+            "Non-controlling interests",
+            "12",
+            "11"
+          ],
+          [
+            "Lease liabilities (non-current and current)",
+            "195",
+            "186"
+          ]
+        ]
+      },
+      {
+        "caption": "Consolidated cash flow statement (excerpt)",
+        "head": [
+          "",
+          "N"
+        ],
+        "rows": [
+          [
+            "Net income",
+            "(50)"
+          ],
+          [
+            "Depreciation, amortisation, provisions",
+            "900"
+          ],
+          [
+            "Share of profit of associates, net of dividends",
+            "(4)"
+          ],
+          [
+            "Change in working capital",
+            "(60)"
+          ],
+          [
+            "Net cash from operating activities",
+            "786"
+          ],
+          [
+            "Acquisition of subsidiaries, net of cash acquired",
+            "(18)"
+          ],
+          [
+            "Proceeds from capital increase",
+            "120"
+          ],
+          [
+            "Repayment of lease liabilities",
+            "(40)"
+          ]
+        ]
+      }
+    ]
+  }
+]

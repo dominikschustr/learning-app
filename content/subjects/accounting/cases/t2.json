@@ -1,0 +1,284 @@
+[
+  {
+    "id": "palma-ibiza",
+    "title": "Palma acquires 100% of Ibiza (exam 2024)",
+    "text": [
+      "Palma bought 100% of Ibiza on 1 January N1 for 2,600 K€ (ordinary shares, cash payment). Ibiza has developed a brand name whose fair value is estimated at 600 K€. The fair value of all other assets corresponds to their carrying amount."
+    ],
+    "tables": [
+      {
+        "caption": "Palma – individual balance sheet after the acquisition (K€)",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Land",
+            "400",
+            "Share capital",
+            "800"
+          ],
+          [
+            "Other non-current assets",
+            "1,600",
+            "Retained earnings",
+            "2,400"
+          ],
+          [
+            "Investment in Ibiza",
+            "2,600",
+            "Net income",
+            "200"
+          ],
+          [
+            "Current assets",
+            "400",
+            "Liabilities",
+            "1,600"
+          ],
+          [
+            "Total",
+            "5,000",
+            "Total",
+            "5,000"
+          ]
+        ]
+      },
+      {
+        "caption": "Ibiza – individual balance sheet at the acquisition date (K€)",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Land",
+            "300",
+            "Share capital",
+            "400"
+          ],
+          [
+            "Other non-current assets",
+            "1,200",
+            "Retained earnings",
+            "1,000"
+          ],
+          [
+            "Current assets",
+            "1,000",
+            "Net income",
+            "200"
+          ],
+          [
+            "",
+            "",
+            "Liabilities",
+            "900"
+          ],
+          [
+            "Total",
+            "2,500",
+            "Total",
+            "2,500"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pc-sa-2023",
+    "title": "PC acquires 100% of SA (exam 2023)",
+    "text": [
+      "PC purchased all shares of SA for a cash price of 3,000. PC paid more than book value because it valued SA's brand name at 600 and a building had a fair value 400 higher than its book value. PC also expected synergies of 800 from the transaction."
+    ],
+    "tables": [
+      {
+        "caption": "PC",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Cash",
+            "500",
+            "Share capital",
+            "900"
+          ],
+          [
+            "Receivables",
+            "740",
+            "Share premium",
+            "700"
+          ],
+          [
+            "Inventory",
+            "820",
+            "Retained earnings",
+            "1,210"
+          ],
+          [
+            "PP&E",
+            "4,600",
+            "Current liabilities",
+            "2,850"
+          ],
+          [
+            "Investment in SA",
+            "3,000",
+            "Long-term debt",
+            "4,000"
+          ],
+          [
+            "Total",
+            "9,660",
+            "Total",
+            "9,660"
+          ]
+        ]
+      },
+      {
+        "caption": "SA",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Cash",
+            "380",
+            "Share capital",
+            "200"
+          ],
+          [
+            "Receivables",
+            "420",
+            "Share premium",
+            "825"
+          ],
+          [
+            "Inventory",
+            "530",
+            "Retained earnings",
+            "175"
+          ],
+          [
+            "PP&E",
+            "870",
+            "Current liabilities",
+            "350"
+          ],
+          [
+            "",
+            "",
+            "Long-term debt",
+            "650"
+          ],
+          [
+            "Total",
+            "2,200",
+            "Total",
+            "2,200"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pc-sa-2019",
+    "title": "PC/SA – consolidation two years after acquisition (exam 2019)",
+    "text": [
+      "On 31 December N, PC acquired 100% of SA for 900 € in cash. At that date the book value of SA's net assets (equity) was 300 € (capital) and SA had developed a brand name with a fair value of 250 €. In N2 the brand name is impaired: its value is now 200 € (31 December N2)."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N2",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "700",
+            "Capital",
+            "700"
+          ],
+          [
+            "Investment in SA",
+            "900",
+            "Net income",
+            "120"
+          ],
+          [
+            "Cash",
+            "160",
+            "Liabilities",
+            "940"
+          ],
+          [
+            "Total",
+            "1,760",
+            "Total",
+            "1,760"
+          ]
+        ]
+      },
+      {
+        "caption": "SA – 31 December N2",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "350",
+            "Capital",
+            "300"
+          ],
+          [
+            "Inventory",
+            "280",
+            "Net income",
+            "190"
+          ],
+          [
+            "Cash",
+            "70",
+            "Liabilities",
+            "210"
+          ],
+          [
+            "Total",
+            "700",
+            "Total",
+            "700"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nci-60",
+    "title": "Parent acquires 60% of S (lecture example 3)",
+    "text": [
+      "On 31 December N, Parent acquires 60% of S for 90. S's equity (book value = fair value) is 150, its assets 170 and liabilities 20. Parent's other assets are 140, equity 100, liabilities 130.",
+      "On 31 December N+1, S reports a net income of 20 and Parent (individually) a net income of 30."
+    ],
+    "tables": []
+  }
+]

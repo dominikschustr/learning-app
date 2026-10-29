@@ -1,0 +1,80 @@
+[
+  {
+    "id": "c-t1-01",
+    "lecture": "t1",
+    "front": "Why IFRS in the EU?",
+    "back": "Despite harmonisation, national financial statements were not comparable. Since 2005 the IFRS Regulation makes IFRS mandatory for the CONSOLIDATED statements of LISTED companies. Individual statements: local GAAP (France) or optional IFRS depending on the country."
+  },
+  {
+    "id": "c-t1-02",
+    "lecture": "t1",
+    "front": "Who issues IFRS?",
+    "back": "The IASB – a private standard setter. Adopted by local regulators in > 140 jurisdictions (not the USA). IFRS = IAS (old, before 2001) + IFRS (since 2001) + SIC + IFRIC interpretations."
+  },
+  {
+    "id": "c-t1-03",
+    "lecture": "t1",
+    "front": "Conceptual Framework – objective",
+    "back": "Provide decision-useful information to existing and potential investors, lenders and other creditors."
+  },
+  {
+    "id": "c-t1-04",
+    "lecture": "t1",
+    "front": "Qualitative characteristics",
+    "back": "Fundamental: relevance (incl. materiality), faithful representation (incl. substance over form). Enhancing: comparability, verifiability, timeliness, understandability. Constraint: cost."
+  },
+  {
+    "id": "c-t1-05",
+    "lecture": "t1",
+    "front": "IFRS hierarchy",
+    "back": "Individual IFRS/IAS (+ IFRIC/SIC) override the Conceptual Framework. The Framework is used when no standard applies."
+  },
+  {
+    "id": "c-t1-06",
+    "lecture": "t1",
+    "front": "Complete set of IFRS financial statements (IAS 1)",
+    "back": "Balance sheet · statement of comprehensive income · cash flow statement (IAS 7) · statement of changes in equity · notes. Listed: + segment reporting (IFRS 8), EPS (IAS 33)."
+  },
+  {
+    "id": "c-t1-07",
+    "lecture": "t1",
+    "front": "Current vs non-current",
+    "back": "Current asset: realised/sold/consumed within 12 months OR within the operating cycle, or held for trading. Current liability: settled within 12 months or the operating cycle. No mandatory order of presentation."
+  },
+  {
+    "id": "c-t1-08",
+    "lecture": "t1",
+    "front": "Nature vs function of expense",
+    "back": "Nature: raw materials, staff costs, depreciation… Function: cost of sales, selling & distribution, administrative. Choice under IAS 1.99; function method requires nature disclosures in the notes."
+  },
+  {
+    "id": "c-t1-09",
+    "lecture": "t1",
+    "front": "OCI",
+    "back": "Gains/losses recognised outside P/L (e.g. some fair value changes, actuarial gains/losses, currency translation). Total comprehensive income = net income + OCI. OCI does not affect net income/EPS."
+  },
+  {
+    "id": "c-t1-10",
+    "lecture": "t1",
+    "front": "Extraordinary items",
+    "back": "Prohibited under IFRS (IAS 1.87). A line 'extraordinary items' signals a non-IFRS statement."
+  },
+  {
+    "id": "c-t1-11",
+    "lecture": "t1",
+    "front": "Cash flow statement (IAS 7)",
+    "back": "Operating (direct or indirect method) · investing (non-current assets) · financing (debt, owners). Indirect method: net income + non-cash expenses ± changes in working capital."
+  },
+  {
+    "id": "c-t1-12",
+    "lecture": "t1",
+    "front": "Statement of changes in equity",
+    "back": "For each equity component: profit or loss, OCI, transactions with owners (share issues, dividends, treasury shares, changes in ownership of subsidiaries), effects of IAS 8 restatements."
+  },
+  {
+    "id": "c-t1-13",
+    "lecture": "t1",
+    "front": "IFRS 18 (from 1 Jan 2027)",
+    "back": "Replaces IAS 1. Defined subtotals in the income statement (operating profit…), categories operating/investing/financing, disclosure and reconciliation of management-defined performance measures (MPMs), aggregation principles."
+  }
+]

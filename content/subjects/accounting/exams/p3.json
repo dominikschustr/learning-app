@@ -1,0 +1,98 @@
+[
+  {
+    "id": "exam-2019",
+    "title": "Final exam 2019 (Nachbau, aktueller Stoff)",
+    "subtitle": "Nach der Klausur vom April 2019 mit offiziellen Lösungen – nur die Aufgaben zu Themen, die heute noch im Stoff sind (Bilanz, Konsolidierung, Impairment, Multiple Choice).",
+    "minutes": 60,
+    "parts": [
+      {
+        "title": "Exercise 1 – Balance sheet",
+        "instructions": "GlaxoSmithKline 2018. [8 points]",
+        "sections": [
+          {
+            "title": "GSK",
+            "items": [
+              {
+                "q": "sa-p3-01",
+                "points": 2
+              },
+              {
+                "q": "sa-p3-02",
+                "points": 3
+              },
+              {
+                "q": "sa-p3-03",
+                "points": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 2 – Consolidation",
+        "instructions": "[21 points]",
+        "sections": [
+          {
+            "title": "PC and SA",
+            "items": [
+              {
+                "q": "sa-p3-04",
+                "points": 16
+              },
+              {
+                "q": "sa-p3-05",
+                "points": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 3 – Impairment of a property (cost model)",
+        "instructions": "[14 points]",
+        "sections": [
+          {
+            "title": "Ramon Inc.",
+            "items": [
+              {
+                "q": "sa-p3-06",
+                "points": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 4 – Multiple choice",
+        "instructions": "One right answer per question. [13 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-p1-01",
+                "points": 3
+              },
+              {
+                "q": "mc-p3-01",
+                "points": 3
+              },
+              {
+                "q": "mc-p3-02",
+                "points": 3
+              },
+              {
+                "q": "mc-p3-03",
+                "points": 2
+              },
+              {
+                "q": "mc-t5-04",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

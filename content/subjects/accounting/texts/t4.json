@@ -1,0 +1,83 @@
+{
+  "lecture": "t4",
+  "title": "Topic 4 – Accounting for financial debt and equity",
+  "source": "Zusammenfassung von „IFRS Topic 4 Fall 2026 student version“ (+ Anleihen aus den Klausuren)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Relevant standards: IAS 32 (presentation – debt or equity), IFRS 9 (recognition and measurement), IFRS 7 (disclosures), IFRS 13 (fair value), IFRS 2 (share-based payment). The issuer classifies under IAS 32 and measures liabilities under IFRS 9; the holder uses the same classification to choose its IFRS 9 category."
+        },
+        {
+          "kind": "item",
+          "text": "Debt or equity? The criterion is a contractual obligation of the issuer to transfer financial assets:",
+          "children": [
+            "Obligation to pay ongoing compensation ('interest') and/or to repay at maturity → financial liability",
+            "Instruments puttable by the holder → liability",
+            "Probability of payment is irrelevant; conditions outside the issuer's control are irrelevant",
+            "The name of the instrument and of the payments is irrelevant",
+            "No obligation → equity (residual interest)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "The classification also drives the treatment of compensation (interest = expense, dividends = distribution) and of issue costs (equity: deducted from equity; debt: included in the effective interest)."
+        },
+        {
+          "kind": "item",
+          "text": "Hybrid instruments (subordinated, perpetual, deferrable interest) are classified by the same criterion – often equity, while cheaper than ordinary shares."
+        },
+        {
+          "kind": "item",
+          "text": "Compound instruments (convertible bonds, bonds with warrants) are split at issuance: liability component first (PV at market rate), equity component as the remainder. There is no intermediate category between liabilities and equity under IFRS."
+        },
+        {
+          "kind": "item",
+          "text": "Accounting for equity:",
+          "children": [
+            "Share capital at par, the excess in share premium; issue costs reduce share premium",
+            "Outstanding ≤ issued ≤ authorised shares",
+            "Treasury shares are deducted from equity at cost; resale or cancellation never creates a gain or loss in P/L",
+            "Reasons for buy-backs: distribute cash, increase EPS/ROE, employee plans, acquisitions, takeover defence, market making"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Bonds measured at amortised cost (exam topic): initial amount = issue price; interest expense = effective rate × opening carrying amount; cash paid = coupon; the difference amortises the discount until nominal value is reached."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Financial liability",
+          "text": "A contractual obligation to deliver cash or another financial asset (IAS 32)."
+        },
+        {
+          "kind": "item",
+          "term": "Equity instrument",
+          "text": "A contract that evidences a residual interest in the assets of an entity after deducting all of its liabilities."
+        },
+        {
+          "kind": "item",
+          "term": "Compound financial instrument",
+          "text": "An instrument containing both a liability and an equity component, e.g. a convertible bond."
+        },
+        {
+          "kind": "item",
+          "term": "Treasury shares",
+          "text": "An entity's own shares that it has reacquired; deducted from equity."
+        },
+        {
+          "kind": "item",
+          "term": "Effective interest rate",
+          "text": "The rate that exactly discounts the estimated future cash payments to the initial carrying amount of the financial liability."
+        }
+      ]
+    }
+  ]
+}

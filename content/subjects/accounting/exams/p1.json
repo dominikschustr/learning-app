@@ -1,0 +1,129 @@
+[
+  {
+    "id": "exam-2024",
+    "title": "Final exam 2024 (Nachbau)",
+    "subtitle": "Wie die Abschlussklausur CM01 2024: 5 unabhängige Teile, 60 Punkte, 75 Minuten, Unterlagen erlaubt. Teil 5 nutzt einen fiktiven Konzernabschluss statt Ubisoft.",
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Part 1 – Consolidation",
+        "instructions": "Palma acquires Ibiza. [12 points]",
+        "sections": [
+          {
+            "title": "Purchase price allocation and consolidated balance sheet",
+            "items": [
+              {
+                "q": "sa-t2-01",
+                "points": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Impairment of non-current assets",
+        "instructions": "Determine and allocate the impairment losses of CGU A and CGU B. [10 points]",
+        "sections": [
+          {
+            "title": "CGU A and CGU B",
+            "items": [
+              {
+                "q": "sa-t3-01",
+                "points": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 3 – Financing of a non-current asset",
+        "instructions": "Bank loan or lease? Justify with figures. [8 points]",
+        "sections": [
+          {
+            "title": "PRODI",
+            "items": [
+              {
+                "q": "sa-t3-02",
+                "points": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 4 – Multiple choice",
+        "instructions": "For each question choose the right answer (only one right answer). [12 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-t2-11",
+                "points": 2
+              },
+              {
+                "q": "mc-p1-01",
+                "points": 2
+              },
+              {
+                "q": "mc-t4-01",
+                "points": 2
+              },
+              {
+                "q": "mc-t5-01",
+                "points": 2
+              },
+              {
+                "q": "tf-t3-16",
+                "points": 2
+              },
+              {
+                "q": "mc-t5-02",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 5 – Decoding financial statements",
+        "instructions": "Refer to the Lumen Games financial statements. [18 points]",
+        "sections": [
+          {
+            "title": "Lumen Games",
+            "items": [
+              {
+                "q": "sa-p1-01",
+                "points": 2
+              },
+              {
+                "q": "sa-p1-02",
+                "points": 4
+              },
+              {
+                "q": "sa-p1-03",
+                "points": 2
+              },
+              {
+                "q": "sa-p1-04",
+                "points": 3
+              },
+              {
+                "q": "sa-p1-05",
+                "points": 3
+              },
+              {
+                "q": "sa-p1-06",
+                "points": 2
+              },
+              {
+                "q": "sa-p1-07",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

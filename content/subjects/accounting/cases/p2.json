@@ -1,0 +1,126 @@
+[
+  {
+    "id": "is-excerpt-2023",
+    "title": "Income statement excerpt 2022 (exam 2023 type, figures illustrative)",
+    "text": [
+      "Below is an income statement 2022 of a company (K€). In the notes, 'external expenses' include 'rent and associated charges' of 1,200; the income statement of the same company also contains a line 'depreciation and impairment of right-of-use assets'."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "2022",
+          "2021"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "84,500",
+            "79,200"
+          ],
+          [
+            "Purchases consumed",
+            "(31,400)",
+            "(29,100)"
+          ],
+          [
+            "External expenses",
+            "(12,700)",
+            "(11,900)"
+          ],
+          [
+            "Staff costs",
+            "(21,300)",
+            "(20,400)"
+          ],
+          [
+            "Depreciation, amortisation and provisions",
+            "(6,900)",
+            "(6,600)"
+          ],
+          [
+            "Depreciation and impairment of right-of-use assets",
+            "(2,100)",
+            "(2,000)"
+          ],
+          [
+            "Operating result",
+            "10,100",
+            "9,200"
+          ],
+          [
+            "Financial result",
+            "(1,050)",
+            "(980)"
+          ],
+          [
+            "Extraordinary result",
+            "(640)",
+            "310"
+          ],
+          [
+            "Income tax",
+            "(2,150)",
+            "(2,120)"
+          ],
+          [
+            "Net result",
+            "6,260",
+            "6,410"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "airline-goodwill",
+    "title": "Airline group – goodwill note (exam 2023 type, figures illustrative)",
+    "text": [
+      "Note 12 – Goodwill (unchanged at 365 M£): 'Goodwill is not amortised. It is tested for impairment annually by comparing the carrying amount of the airline CGU with its recoverable amount, determined as value in use: cash flows from the board-approved five-year plan, extrapolated with a long-term growth rate of 2%, discounted with a pre-tax discount rate.'",
+      "Key assumptions: pre-tax discount rate 2022: 11.0% (2021: 9.5%); jet fuel price assumption 2022: $900 per tonne (2021: $650 per tonne)."
+    ],
+    "tables": []
+  },
+  {
+    "id": "build-machine",
+    "title": "Company BUILD – measurement of a machine (exam 2023, simplified)",
+    "text": [
+      "BUILD, a concrete manufacturer, purchased a machine on 1 January N1 for €300,000, to be used only for its concrete production for 10 years. BUILD uses the cost model and straight-line depreciation. For simplicity, keep the original 10-year useful life in all years and consider only impairment and its reversal.",
+      "In N1 and N2 production proceeds as planned. In N3 a new environmental law is passed: from N8 concrete manufacturing will be prohibited in the region. In N4 the government votes a transition measure allowing existing facilities to continue until N11."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "31 Dec N1",
+          "31 Dec N2",
+          "31 Dec N3",
+          "31 Dec N4"
+        ],
+        "rows": [
+          [
+            "Fair value",
+            "265,000",
+            "245,000",
+            "170,000",
+            "200,000"
+          ],
+          [
+            "Cost to sell",
+            "20,000",
+            "20,000",
+            "18,000",
+            "15,000"
+          ],
+          [
+            "Value in use",
+            "260,000",
+            "230,000",
+            "175,000",
+            "190,000"
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -114,7 +114,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
                   <div key={x.title} className="flex justify-between gap-4 text-ink-2">
                     <span className="min-w-0 truncate">{x.title}</span>
                     <span className="shrink-0 tabular-nums text-muted">
-                      {x.count} Fragen · {fmtPoints(x.points)} P.
+                      {x.count} {x.count === 1 ? "Frage" : "Fragen"} · {fmtPoints(x.points)} P.
                     </span>
                   </div>
                 ))}

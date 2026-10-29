@@ -1,0 +1,122 @@
+[
+  {
+    "id": "exam-2023",
+    "title": "Final exam 2023 (Nachbau)",
+    "subtitle": "Wie die Abschlussklausur CM01 vom 20.11.2023: 75 Punkte, 75 Minuten, open book. Abschlussauszüge sind nachgebildet, weil sie im Original nur als Bild vorliegen.",
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Exercise 1 – Financial statements",
+        "instructions": "[13 points]",
+        "sections": [
+          {
+            "title": "Income statement and KPI",
+            "items": [
+              {
+                "q": "sa-p2-01",
+                "points": 2
+              },
+              {
+                "q": "sa-p2-02",
+                "points": 2
+              },
+              {
+                "q": "sa-p2-03",
+                "points": 3
+              },
+              {
+                "q": "sa-t5-01",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 2 – Consolidation",
+        "instructions": "[26 points]",
+        "sections": [
+          {
+            "title": "Goodwill note",
+            "items": [
+              {
+                "q": "sa-p2-04",
+                "points": 1
+              },
+              {
+                "q": "sa-p2-05",
+                "points": 5
+              },
+              {
+                "q": "sa-p2-06",
+                "points": 4
+              }
+            ]
+          },
+          {
+            "title": "PC acquires SA",
+            "items": [
+              {
+                "q": "sa-t2-02",
+                "points": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 3 – Measurement of non-current assets",
+        "instructions": "[18 points]",
+        "sections": [
+          {
+            "title": "BUILD",
+            "items": [
+              {
+                "q": "sa-p2-07",
+                "points": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 4 – Accounting for a bond",
+        "instructions": "[9 points]",
+        "sections": [
+          {
+            "title": "Company B",
+            "items": [
+              {
+                "q": "sa-t4-01",
+                "points": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 5 – Multiple choice",
+        "instructions": "One solution for each question. [9 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-t4-06",
+                "points": 4
+              },
+              {
+                "q": "mc-t5-03",
+                "points": 2
+              },
+              {
+                "q": "mc-t5-05",
+                "points": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

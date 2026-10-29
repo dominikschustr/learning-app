@@ -1,0 +1,108 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p2-01",
+    "lecture": "t1",
+    "case": "is-excerpt-2023",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Do you think that this income statement is based on IFRS? Justify with one element.",
+    "modelAnswer": "No (at least not fully IFRS-compliant). It shows an 'extraordinary result' line – IAS 1.87 prohibits presenting any item of income or expense as extraordinary. (Any one justified element suffices.)",
+    "keyPoints": [
+      "Extraordinary items are prohibited under IFRS (IAS 1.87)",
+      "Conclusion: not IFRS"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-02",
+    "lecture": "t1",
+    "case": "is-excerpt-2023",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Do you think that this income statement is a consolidated income statement? Justify with one element.",
+    "modelAnswer": "Probably not. A consolidated income statement would split net income between owners of the parent and non-controlling interests, and would typically show a share of profit of associates; neither appears. (Hint for a consolidated statement would be the opposite elements.)",
+    "keyPoints": [
+      "No split of net income into group share / non-controlling interests",
+      "No share of profit of associates",
+      "Conclusion: likely individual statement"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-03",
+    "lecture": "t1",
+    "case": "is-excerpt-2023",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "How is it possible to have 'rent and associated charges' although the company applies IFRS 16 to its leases?",
+    "modelAnswer": "IFRS 16 offers two optional exemptions for lessees: short-term leases (lease term of 12 months or less) and leases of low-value assets (≈ USD 5,000 when new); their payments are expensed straight-line. In addition, 'associated charges' include non-lease (service) components such as maintenance, cleaning or service charges, and variable payments not included in the lease liability – these are expensed. All other leases appear as right-of-use assets (hence the depreciation line).",
+    "keyPoints": [
+      "Short-term lease exemption (≤ 12 months)",
+      "Low-value asset exemption",
+      "Service/non-lease components and variable payments are expensed"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-04",
+    "lecture": "t2",
+    "case": "airline-goodwill",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Explain why there is no goodwill amortisation in 2022.",
+    "modelAnswer": "Under IFRS goodwill has an indefinite useful life and is not amortised (IFRS 3/IAS 38); instead it is tested for impairment at least annually (IAS 36). As no impairment was necessary, the amount is unchanged.",
+    "keyPoints": [
+      "Goodwill is not amortised under IFRS",
+      "Annual impairment test instead"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-05",
+    "lecture": "t2",
+    "case": "airline-goodwill",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain briefly how the recoverable amount of goodwill is calculated in general, and for this airline in particular.",
+    "modelAnswer": "Goodwill does not generate cash flows on its own, so it is allocated to the cash-generating unit(s) that benefit from it and tested at that level. The recoverable amount of the CGU is the higher of its fair value less costs of disposal and its value in use (present value of future cash flows). If the CGU's carrying amount (incl. goodwill) exceeds it, the impairment loss reduces goodwill first. Here: the airline CGU's recoverable amount is its value in use – cash flows of the five-year plan, extrapolated at 2% long-term growth, discounted at a pre-tax rate (11.0% in 2022).",
+    "keyPoints": [
+      "Goodwill tested at CGU level",
+      "Recoverable amount = higher of FV less costs of disposal and value in use",
+      "Value in use = PV of future cash flows",
+      "Airline: 5-year plan, 2% growth, pre-tax discount rate"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-06",
+    "lecture": "t2",
+    "case": "airline-goodwill",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "How do the changes in the discount rate and the fuel price assumption affect the recoverable amount? Are the 2022 assumptions stricter (more prudent) than in 2021?",
+    "modelAnswer": "A higher discount rate (9.5% → 11.0%) reduces the present value of future cash flows. A higher fuel price assumption ($650 → $900/t) increases expected costs and reduces forecast cash flows. Both changes lower the value in use and therefore the recoverable amount, i.e. the headroom over the carrying amount shrinks and an impairment becomes more likely. So the 2022 assumptions are stricter / more prudent than those of 2021.",
+    "keyPoints": [
+      "Higher discount rate → lower present value",
+      "Higher fuel price → lower cash flows",
+      "Recoverable amount decreases",
+      "2022 assumptions more prudent"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-07",
+    "lecture": "t3",
+    "case": "build-machine",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Outline the reasoning for each period and present the accounting impacts for N1 to N4.",
+    "modelAnswer": "Depreciation 300,000/10 = 30,000 per year.\nN1: no indication of impairment (production as planned) → no test required for PPE; depreciation 30,000; carrying amount 270,000.\nN2: still no indication → depreciation 30,000; carrying amount 240,000.\nN3: the new law is an external indication → test. Carrying amount before test 210,000; recoverable amount = higher of FV less costs to sell (170,000 − 18,000 = 152,000) and value in use (175,000) = 175,000 → impairment loss 35,000 (expense); carrying amount 175,000.\nN4: depreciation on the new basis 175,000 / 7 remaining years = 25,000 → 150,000. The transition measure indicates that the impairment may have reversed → recoverable amount = max(200,000 − 15,000; 190,000) = 190,000. The reversal is capped at the carrying amount without impairment: 300,000 − 4 × 30,000 = 180,000 → reversal 30,000 (income); carrying amount 180,000 (then depreciation 30,000 per year again).",
+    "keyPoints": [
+      "N1/N2: no indication → only depreciation 30,000 (270,000; 240,000)",
+      "N3: recoverable 175,000 (VIU > FV − costs 152,000) → impairment 35,000",
+      "N4: depreciation 25,000 → 150,000",
+      "Reversal capped at 180,000 → reversal 30,000"
+    ]
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "nova-stella",
+    "title": "Nova acquires 80% of Stella",
+    "text": [
+      "On 1 January N, Nova bought 80% of the shares of Stella for 1,500 K€ in cash. Stella has a customer list (not recognised in its own balance sheet) with a fair value of 300 K€. All other assets and liabilities: fair value = carrying amount. Goodwill is measured on the parent's share (partial goodwill); non-controlling interests are measured at their share of the fair value of Stella's identifiable net assets."
+    ],
+    "tables": [
+      {
+        "caption": "Nova – after the acquisition (K€)",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Land",
+            "900",
+            "Share capital",
+            "1,000"
+          ],
+          [
+            "Other non-current assets",
+            "1,500",
+            "Retained earnings",
+            "1,700"
+          ],
+          [
+            "Investment in Stella",
+            "1,500",
+            "Net income",
+            "300"
+          ],
+          [
+            "Current assets",
+            "600",
+            "Liabilities",
+            "1,500"
+          ],
+          [
+            "Total",
+            "4,500",
+            "Total",
+            "4,500"
+          ]
+        ]
+      },
+      {
+        "caption": "Stella – at the acquisition date (K€)",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Non-current assets",
+            "1,000",
+            "Share capital",
+            "500"
+          ],
+          [
+            "Current assets",
+            "700",
+            "Retained earnings",
+            "600"
+          ],
+          [
+            "",
+            "",
+            "Net income",
+            "100"
+          ],
+          [
+            "",
+            "",
+            "Liabilities",
+            "500"
+          ],
+          [
+            "Total",
+            "1,700",
+            "Total",
+            "1,700"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "store-lyon",
+    "title": "ShopCo – impairment of the Lyon store (a CGU)",
+    "text": [
+      "ShopCo, a retail chain, tests each store as a cash-generating unit. Because of a sharp drop in sales in Lyon, the store is tested at 31 December N. The CGU's value in use is €1,050,000; its fair value less costs to sell is €980,000."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Asset of the CGU",
+          "Carrying amount",
+          "Fair value less costs to sell"
+        ],
+        "rows": [
+          [
+            "Goodwill",
+            "150,000",
+            "cannot be determined"
+          ],
+          [
+            "Building",
+            "650,000",
+            "600,000"
+          ],
+          [
+            "Fittings",
+            "400,000",
+            "cannot be determined"
+          ],
+          [
+            "IT equipment",
+            "200,000",
+            "cannot be determined"
+          ],
+          [
+            "Total",
+            "1,400,000",
+            "980,000 (CGU)"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "novatel-lease",
+    "title": "Novatel – leasing a hotel building",
+    "text": [
+      "On 1 January N1 Novatel leases a hotel building for 5 years and decides how it is used. Payments: €100,000 at the end of each year. Interest rate implicit in the lease 5% (annuity factor 5%, 5 years = 4.3295). Novatel pays €7,050 of initial direct costs (legal fees) on 1 January N1. Straight-line depreciation over the lease term."
+    ],
+    "tables": []
+  },
+  {
+    "id": "orion-de",
+    "title": "Orion – debt, equity and KPIs",
+    "text": [
+      "Orion SA issues a convertible bond for €50,000,000 on 1 January N. The present value of its contractual cash flows at the market rate for similar non-convertible debt is €46,200,000.",
+      "Orion bought back 100,000 own shares at €20 in N−1. In N it resells 30,000 of them at €18.",
+      "Key figures N (million €): EBIT 2,400; depreciation and amortisation 600; tax rate 25%; capital employed 20,000; WACC 8%."
+    ],
+    "tables": []
+  }
+]

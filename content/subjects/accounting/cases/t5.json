@@ -1,0 +1,84 @@
+[
+  {
+    "id": "abc-eva",
+    "title": "Company ABC – EVA (exam 2023)",
+    "text": [
+      "On 31 December 2022 Company ABC publishes its financial statements. Analysts calculate its Economic Value Added (EVA) from the following information (million €):"
+    ],
+    "tables": [
+      {
+        "head": [
+          "Item",
+          "Amount"
+        ],
+        "rows": [
+          [
+            "Sales revenue",
+            "49,155"
+          ],
+          [
+            "EBITDA",
+            "5,565"
+          ],
+          [
+            "EBIT",
+            "1,848"
+          ],
+          [
+            "Profit before income taxes",
+            "1,575"
+          ],
+          [
+            "Income tax rate",
+            "25%"
+          ],
+          [
+            "Profit after income taxes",
+            "1,181"
+          ],
+          [
+            "WACC",
+            "6.5%"
+          ],
+          [
+            "Capital employed",
+            "32,780"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fcf-excerpt",
+    "title": "Cash flow excerpt – which KPI? (exam 2023 type)",
+    "text": [
+      "A company's analyst presentation shows the following calculation (million €):"
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "2022",
+          "2021"
+        ],
+        "rows": [
+          [
+            "Net cash flow from operating activities",
+            "5,168",
+            "199"
+          ],
+          [
+            "Net cash flow from investing activities",
+            "(2,286)",
+            "(1,119)"
+          ],
+          [
+            "KPI",
+            "2,882",
+            "(920)"
+          ]
+        ]
+      }
+    ]
+  }
+]

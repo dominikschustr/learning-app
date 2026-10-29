@@ -1,0 +1,106 @@
+{
+  "lecture": "t2",
+  "title": "Topic 2 – Business combinations",
+  "source": "Zusammenfassung von „IFRS Topic 2 fall 2026 student version“",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Individual financial statements are prepared for each legal entity (generally in local GAAP); consolidated statements present the group as one economic entity. Consolidated statements matter because individual statements can hide the group's real leverage (example: individual debt/equity of 1 each, consolidated 7)."
+        },
+        {
+          "kind": "item",
+          "text": "The consolidation process:",
+          "children": [
+            "1) Determine the scope of consolidation and the method for each entity",
+            "2) Prepare individual statements for consolidation: convert to IFRS, apply uniform accounting policies (IFRS 10.19), convert currencies",
+            "3) Consolidate according to the method",
+            "4) Present the consolidated statements"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Scope and methods by type of relationship:",
+          "children": [
+            "Passive investment (<20%): financial asset under IFRS 9",
+            "Significant influence (20–50%): associate, equity method (IAS 28)",
+            "Joint control: joint venture (equity method) or joint operation (proportionate method), IFRS 11",
+            "Control: subsidiary, full consolidation (IFRS 10, IFRS 3)",
+            "Percentages are indicators – control is what counts"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Full consolidation:",
+          "children": [
+            "a) Purchase price allocation: allocate fair value–book value differences to identifiable assets/liabilities; the remainder is goodwill",
+            "b) Integrate 100% of the subsidiary's assets, liabilities, income and expenses, even below 100% ownership",
+            "c) Eliminate the investment in the subsidiary against its (acquisition-date) equity and eliminate intra-group transactions",
+            "d) Identify non-controlling interests"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Goodwill = purchase price − fair value of the identifiable net assets acquired. It reflects synergies, workforce and other non-identifiable elements. Positive goodwill is an intangible asset, not amortised but tested for impairment annually; negative goodwill is an immediate gain."
+        },
+        {
+          "kind": "item",
+          "text": "Valuation differences follow the asset they belong to (depreciation, impairment test). Impairments of brands can be reversed up to their original value; goodwill impairments never."
+        },
+        {
+          "kind": "item",
+          "text": "Non-controlling interest is the minority shareholders' share in a subsidiary's equity and net income; it is presented separately within consolidated equity, and consolidated net income is split into group share and NCI share."
+        },
+        {
+          "kind": "item",
+          "text": "Equity method: the investment follows the associate's equity (cost + share of profits − dividends), shown in one line in the balance sheet and one line in the income statement; PPA still applies; no NCI."
+        },
+        {
+          "kind": "item",
+          "text": "Critical issues for analysts: scope of consolidation and its changes (pro forma information), goodwill (PPA, impairment test), related-party transactions."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Subsidiary",
+          "text": "An entity controlled by another entity (the parent)."
+        },
+        {
+          "kind": "item",
+          "term": "Associate",
+          "text": "An entity over which the investor has significant influence (presumed from 20% of voting rights)."
+        },
+        {
+          "kind": "item",
+          "term": "Purchase price allocation (PPA)",
+          "text": "Allocation of the purchase price to the identifiable assets and liabilities of the acquiree at fair value; the remainder is goodwill."
+        },
+        {
+          "kind": "item",
+          "term": "Goodwill",
+          "text": "The excess of the purchase price over the fair value of the identifiable net assets acquired."
+        },
+        {
+          "kind": "item",
+          "term": "Non-controlling interest",
+          "text": "Equity in a subsidiary not attributable, directly or indirectly, to the parent."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Exam recipe (consolidated BS at acquisition): 1) equity of the subsidiary at book value, 2) + fair value adjustments, 3) goodwill = price − fair value of net assets, 4) add all assets/liabilities line by line with fair value adjustments, add goodwill, remove the investment, 5) equity = parent's equity (+ NCI). Check: total assets = total equity & liabilities."
+        }
+      ]
+    }
+  ]
+}

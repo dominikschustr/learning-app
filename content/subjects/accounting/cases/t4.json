@@ -1,0 +1,48 @@
+[
+  {
+    "id": "bond-b",
+    "title": "Company B – bond measured at amortised cost (exam 2023)",
+    "text": [
+      "Company B issued 5,000 bonds with a nominal value of €100 on 1 January N1 for an issue price of €90 per bond. The bond pays a coupon of 6% at the end of every year; the effective interest rate is 7%. The bonds are redeemed at the end of N10 at nominal value."
+    ],
+    "tables": []
+  },
+  {
+    "id": "equity-section",
+    "title": "Equity section of a listed company (mock exam)",
+    "text": [
+      "The par value of the company's shares is €2. Equity section (M€):"
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "2020",
+          "2019"
+        ],
+        "rows": [
+          [
+            "Share capital",
+            "885",
+            "777"
+          ],
+          [
+            "Share premium",
+            "3,555",
+            "2,941"
+          ],
+          [
+            "Retained earnings",
+            "6,241",
+            "5,293"
+          ],
+          [
+            "Treasury shares",
+            "(82)",
+            "(50)"
+          ]
+        ]
+      }
+    ]
+  }
+]

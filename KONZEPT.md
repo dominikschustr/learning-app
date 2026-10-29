@@ -202,3 +202,6 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 11. Zweites Fach **Marketing**: 10 Kapitel (eine Vorlesung je Kapitel), 369 Fragen, 141 Karten, 27 Fallstudien
     aus den Klausuraufgaben, Lesetexte als Folienzusammenfassung ✓
 12. Probeklausuren statt Zufallstest für Marketing: 6 Klausuren (3 Nachbauten, 3 Konzeptklausuren), Punkte je Teil ✓
+13. Drittes Fach **Accounting** (IFRS, CM01): 5 Topics mit allen Quiz-Aussagen der Folien (ausführlich begründet),
+    215 Fragen, 66 Karten, Zusammenfassungen je Topic, 5 Probeklausuren (Nachbauten 2024, 2023, 2019 und zwei
+    Konzeptklausuren); Abschlussauszüge, die im Original nur als Bild vorliegen, sind durch fiktive ersetzt ✓

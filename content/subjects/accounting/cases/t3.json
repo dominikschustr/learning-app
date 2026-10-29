@@ -1,0 +1,124 @@
+[
+  {
+    "id": "verma-machine",
+    "title": "Impairment of an individual asset: Verma's machine (lecture exercise 3.1)",
+    "text": [
+      "At the end of N Verma tests a machine for impairment. Carrying amount: €200,000; remaining useful life: 5 years. Fair value (less costs to sell) at the end of N: €150,000.",
+      "Expected cash flows: €40,000 at the end of each of the next five years; discount rate 8%; annuity factor (8%, 5 years) = 3.993."
+    ],
+    "tables": []
+  },
+  {
+    "id": "beta-cgu",
+    "title": "Company Beta – impairment of two CGUs (exam 2024)",
+    "text": [
+      "Company Beta consists of two cash-generating units, A and B. The land and building of CGU A and the building of CGU B are in sectors with a drop in property prices, so an impairment test must be carried out for them. In addition, IAS 36 requires an impairment test for all CGUs (they contain goodwill) at the end of year N."
+    ],
+    "tables": [
+      {
+        "caption": "CGU A",
+        "head": [
+          "Asset",
+          "Book value",
+          "Value in use",
+          "Fair value less costs to sell"
+        ],
+        "rows": [
+          [
+            "Land",
+            "300,000",
+            "450,000",
+            "500,000"
+          ],
+          [
+            "Building",
+            "500,000",
+            "400,000",
+            "350,000"
+          ],
+          [
+            "Machinery",
+            "2,000,000",
+            "cannot be determined",
+            "cannot be determined"
+          ],
+          [
+            "Goodwill",
+            "1,000,000",
+            "cannot be determined",
+            "cannot be determined"
+          ],
+          [
+            "Total",
+            "3,800,000",
+            "3,000,000",
+            "cannot be determined"
+          ]
+        ]
+      },
+      {
+        "caption": "CGU B",
+        "head": [
+          "Asset",
+          "Book value",
+          "Value in use",
+          "Fair value less costs to sell"
+        ],
+        "rows": [
+          [
+            "Building",
+            "600,000",
+            "550,000",
+            "500,000"
+          ],
+          [
+            "Machinery",
+            "1,800,000",
+            "cannot be determined",
+            "cannot be determined"
+          ],
+          [
+            "Goodwill",
+            "200,000",
+            "cannot be determined",
+            "cannot be determined"
+          ],
+          [
+            "Total",
+            "2,600,000",
+            "2,280,000",
+            "2,000,000"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prodi-financing",
+    "title": "PRODI – bank loan or lease? (exam 2024)",
+    "text": [
+      "The CFO of PRODI considers two ways to finance a new production line worth €1,000,000, used for 10 years and commissioned on 2 January N. PRODI already has a high gearing ratio, so the CFO thinks a lease contract would be better.",
+      "Solution 1 – bank loan of €1,000,000: repayment in fine after 10 years, interest rate 4.65%.",
+      "Solution 2 – lease contract: annual rent €128,000 payable on 31/12 (first rent 31/12/N, 10 rents), duration 10 years, effective interest rate 4.76%, fair value of the line €1,000,000 (= present value of all lease payments)."
+    ],
+    "tables": []
+  },
+  {
+    "id": "adams-lease",
+    "title": "Adams Corporation – lessee accounting (lecture exercise 3.5)",
+    "text": [
+      "On 1 January N1 Adams signed a 4-year non-cancellable lease for a specific machine, which it can use according to its production needs. Payments: $9,968 at the beginning of N1 and four further payments of $9,968 at the end of N1, N2, N3, N4. Useful life of the machine: 6 years; straight-line depreciation; interest rate of the contract 10%; annuity factor (10%, 4 years) = 3.169865."
+    ],
+    "tables": []
+  },
+  {
+    "id": "ramon-mall",
+    "title": "Ramon Inc. – impairment of a shopping mall under the cost model (exam 2019)",
+    "text": [
+      "On 1 January N1 Ramon spent 300 million € to acquire a shopping mall for renting, depreciated straight-line over 30 years (cost model). On 31 December N5 shopping property prices have fallen sharply.",
+      "Estimated selling price on 31 December N5: 210 million €. Annual rent (paid on 31 December): 24 million €. Discount rate 10%. Residual value at the end of N30: zero.",
+      "Discount factors at 10% for an annual amount: 30 years 9.42 · 25 years 9.08 · 24 years 8.98 · 20 years 8.51."
+    ],
+    "tables": []
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p3-01",
+    "lecture": "t1",
+    "case": "gsk-bs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "GSK presents non-current assets, current assets, current liabilities and non-current liabilities, in this order. Is this order mandatory under IFRS? Explain.",
+    "modelAnswer": "No. IAS 1 does not prescribe a specific format or order for the balance sheet. It requires the distinction between current and non-current items (unless a liquidity presentation is more relevant) and certain minimum line items, but entities may present current assets first, equity before liabilities, etc.",
+    "keyPoints": [
+      "Not mandatory",
+      "IAS 1 prescribes no format/order",
+      "Only current/non-current distinction and minimum line items required"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-02",
+    "lecture": "t1",
+    "case": "gsk-bs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Why does GSK present liabilities in brackets as negative numbers to calculate 'net assets'? What is the meaning of net assets?",
+    "modelAnswer": "Net assets = total assets − total liabilities = equity. Presenting liabilities as negatives lets GSK show net assets as a subtotal that equals total equity, whose detailed composition follows below. Net assets represent the book (accounting) value of the company for its owners – not its market value.",
+    "keyPoints": [
+      "Net assets = assets − liabilities",
+      "Net assets = equity",
+      "Book value of the company (not market value)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-03",
+    "lecture": "t1",
+    "case": "gsk-bs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain what the 'non-controlling interest' in equity represents and comment on GSK's negative amount.",
+    "modelAnswer": "NCI represents the equity of subsidiaries provided by minority shareholders, i.e. the part of fully consolidated subsidiaries' net assets not attributable to the parent. A negative NCI means that the subsidiaries concerned have negative equity – typically due to accumulated losses (or distributions exceeding their equity) – and the negative amount is the minority shareholders' share in it.",
+    "keyPoints": [
+      "Equity of subsidiaries from minority shareholders",
+      "Negative NCI → subsidiaries with negative equity",
+      "Usually due to accumulated losses"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-04",
+    "lecture": "t2",
+    "case": "pc-sa-2019",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare PC's consolidated balance sheet at 31 December N2 (the brand name is impaired to 200 €).",
+    "modelAnswer": "PPA at acquisition (31/12/N): goodwill = 900 − 300 (book value) − 250 (brand name) = 350.\nConsolidated balance sheet 31/12/N2: equipment 700 + 350 = 1,050; goodwill 350; brand name 250 − 50 = 200; inventory 280; cash 160 + 70 = 230 → total 2,110. Capital 700 (PC only; SA's capital 300 is eliminated with the investment 900); net income 120 + 190 − 50 (brand impairment) = 260; liabilities 940 + 210 = 1,150 → total 2,110.",
+    "keyPoints": [
+      "Goodwill 350 (900 − 300 − 250)",
+      "Brand 250 impaired by 50 → 200",
+      "Net income 260 = 120 + 190 − 50",
+      "Equipment 1,050, inventory 280, cash 230, liabilities 1,150, capital 700",
+      "Total 2,110"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-05",
+    "lecture": "t2",
+    "case": "pc-sa-2019",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "On 31 December N3 the value of the brand name has increased to 400 €. Describe the accounting impacts on the financial statements of N3.",
+    "modelAnswer": "The impairment loss recognised in N2 no longer exists and must be reversed: the brand name is increased in the balance sheet and a 'reversal of impairment' income is recognised in the income statement. However, the carrying amount after reversal cannot exceed the amount it would have had without the impairment – the acquisition-date value of 250 (the brand is not amortised). The reversal is therefore limited to 50. (Goodwill impairments, by contrast, could never be reversed.)",
+    "keyPoints": [
+      "Impairment must be reversed",
+      "Increase of the brand + income in P/L",
+      "Capped at the carrying amount without impairment (250)",
+      "Reversal limited to 50"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-06",
+    "lecture": "t3",
+    "case": "ramon-mall",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Assuming the cost model: what value will appear for the mall on 31 December N5, which entries are made, and what is the book value on 31 December N6?",
+    "modelAnswer": "Carrying amount before impairment: 300 − (300/30) × 5 = 250 (depreciation N5: 10).\nRecoverable amount: fair value less costs to sell 210; value in use = 24 × 9.08 (25 remaining years) = 217.92 → the higher one, 217.92.\nImpairment loss = 250 − 217.92 = 32.08 (expense; reduces the building).\nBook value 31 December N5: 217.92.\nN6: new depreciation 217.92 / 25 ≈ 8.72 → book value ≈ 209.2.",
+    "keyPoints": [
+      "Carrying amount 250 before impairment",
+      "Value in use 217.92 > selling price 210 → recoverable amount",
+      "Impairment 32.08",
+      "N6: depreciation ≈ 8.72, book value ≈ 209.2"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p3-01",
+    "lecture": "t3",
+    "difficulty": 2,
+    "prompt": "Regarding the lease standard IFRS 16 it is WRONG to say that …",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the lessor's balance sheet operating and finance leases are accounted for in the same way: a right of use on the assets side and a debt on the liability side"
+      },
+      {
+        "id": "b",
+        "text": "In the lessee's balance sheet all lease contracts (except exemptions) are accounted for in the same way: a right of use and a corresponding lease liability"
+      },
+      {
+        "id": "c",
+        "text": "In the lessee's financial statements amounts paid for service contracts are expensed"
+      },
+      {
+        "id": "d",
+        "text": "In the lessor's financial statements amounts received for operating leases are recognised as revenue"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The lessor still distinguishes finance leases (derecognise the asset, recognise a receivable) from operating leases (keep the asset, recognise lease income). The single right-of-use model applies to the LESSEE only.",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p3-02",
+    "lecture": "t5",
+    "difficulty": 2,
+    "prompt": "Which statement is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Segment information and earnings per share are GAAP KPIs under IFRS, but profit/loss from discontinued operations is non-GAAP"
+      },
+      {
+        "id": "b",
+        "text": "Segment information, profit/loss from discontinued operations and earnings per share are GAAP KPIs under IFRS"
+      },
+      {
+        "id": "c",
+        "text": "Earnings per share is a GAAP KPI, but segment information and discontinued operations are non-GAAP"
+      },
+      {
+        "id": "d",
+        "text": "All three are non-GAAP KPIs under IFRS"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "They are all required and defined by IFRS: IFRS 8 (segments), IFRS 5 (discontinued operations), IAS 33 (EPS).",
+    "single": true,
+    "shuffle": false
+  },
+  {
+    "type": "mc",
+    "id": "mc-p3-03",
+    "lecture": "t5",
+    "difficulty": 2,
+    "prompt": "Regarding ROCE it is CORRECT to say that …",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is calculated as net income divided by capital employed"
+      },
+      {
+        "id": "b",
+        "text": "Capital employed can be determined using the asset side or the liability and equity side of the balance sheet"
+      },
+      {
+        "id": "c",
+        "text": "It is an indicator used to assess the liquidity of a company"
+      },
+      {
+        "id": "d",
+        "text": "It indicates the return for the shareholders"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Capital employed = net non-current assets + working capital needs (asset side) = equity + net financial debt (liability side). ROCE uses operating profit (after tax), measures profitability (not liquidity) and concerns all capital providers.",
+    "single": true,
+    "shuffle": false
+  }
+]

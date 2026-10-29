@@ -1,0 +1,98 @@
+[
+  {
+    "id": "c-t3-01",
+    "lecture": "t3",
+    "front": "Intangible asset recognition (IAS 38)",
+    "back": "Identifiable · controlled · future economic benefits expected · probable · cost measurable reliably. Acquired: criteria assumed met."
+  },
+  {
+    "id": "c-t3-02",
+    "lecture": "t3",
+    "front": "Internally generated intangibles",
+    "back": "Expense: research, brands, mastheads, publishing titles, customer lists, training (human capital). Asset: development costs meeting IAS 38 criteria, software, patents."
+  },
+  {
+    "id": "c-t3-03",
+    "lecture": "t3",
+    "front": "Research vs development",
+    "back": "Research: new knowledge → expense. Development: apply knowledge to new/improved products before production → capitalise when criteria met (feasibility, intention, ability, probable benefits, resources, reliable cost); amortise from launch."
+  },
+  {
+    "id": "c-t3-04",
+    "lecture": "t3",
+    "front": "Cost of PPE",
+    "back": "Purchase price + directly attributable costs (transport, installation, testing). Not: training, celebrations, general overhead."
+  },
+  {
+    "id": "c-t3-05",
+    "lecture": "t3",
+    "front": "Subsequent measurement (IAS 16/38)",
+    "back": "Cost model: cost − accumulated depreciation − impairment (standard in Europe). Revaluation model: fair value (intangibles only with an active market, e.g. taxi licences). Component approach for significant parts."
+  },
+  {
+    "id": "c-t3-06",
+    "lecture": "t3",
+    "front": "Amortisation of intangibles",
+    "back": "Finite life (licence, patent): amortise. Indefinite life (goodwill, brands): no amortisation, impairment test at least annually."
+  },
+  {
+    "id": "c-t3-07",
+    "lecture": "t3",
+    "front": "When to test for impairment?",
+    "back": "PPE/finite-life intangibles: only if indications (market value decline, adverse changes, interest rates, obsolescence, damage, worse performance). Goodwill/indefinite-life intangibles: at least annually."
+  },
+  {
+    "id": "c-t3-08",
+    "lecture": "t3",
+    "front": "Recoverable amount",
+    "back": "Higher of fair value less costs to sell and value in use. Impairment loss = carrying amount − recoverable amount (expense). New depreciation on the reduced amount."
+  },
+  {
+    "id": "c-t3-09",
+    "lecture": "t3",
+    "front": "Value in use",
+    "back": "PV of future pre-tax cash flows from use and disposal (max. ~5 years of forecasts), excluding financing and tax; pre-tax discount rate (or WACC)."
+  },
+  {
+    "id": "c-t3-10",
+    "lecture": "t3",
+    "front": "Cash-generating unit (CGU)",
+    "back": "Smallest group of assets generating cash inflows largely independent of others (store, magazine title, plant). Used when an asset's cash flows cannot be determined individually."
+  },
+  {
+    "id": "c-t3-11",
+    "lecture": "t3",
+    "front": "Allocating a CGU impairment",
+    "back": "1 goodwill · 2 other assets pro rata to carrying amounts. No asset below max(FV less costs to sell, value in use, 0)."
+  },
+  {
+    "id": "c-t3-12",
+    "lecture": "t3",
+    "front": "Reversal of impairment",
+    "back": "Required when indications disappear; capped at the carrying amount without impairment (depreciated cost). Gain in P/L. Goodwill: never reversed."
+  },
+  {
+    "id": "c-t3-13",
+    "lecture": "t3",
+    "front": "Lease (IFRS 16)",
+    "back": "Right to control the use of an identified asset for a period in exchange for consideration: identified asset + substantially all economic benefits + right to direct the use. Otherwise: service contract (expense)."
+  },
+  {
+    "id": "c-t3-14",
+    "lecture": "t3",
+    "front": "Lessee accounting (IFRS 16)",
+    "back": "Liability = PV of future lease payments (implicit rate or incremental borrowing rate). ROU = liability + payments at/before commencement − incentives + initial direct costs + dismantling costs. Then: depreciation of ROU (shorter of term and useful life) + interest; payments reduce the liability."
+  },
+  {
+    "id": "c-t3-15",
+    "lecture": "t3",
+    "front": "IFRS 16 exemptions",
+    "back": "Lessee only: short-term (≤ 12 months) and low-value (≈ USD 5,000) leases → straight-line expense + disclosure. Lessor: still finance vs operating lease (no big change)."
+  },
+  {
+    "id": "c-t3-16",
+    "lecture": "t3",
+    "front": "Lease vs bank loan (exam pattern)",
+    "back": "Under IFRS 16 both create an asset (PPE/ROU) and financial debt, both generate depreciation + interest. Leasing is no longer off-balance-sheet financing → gearing increases too."
+  }
+]
