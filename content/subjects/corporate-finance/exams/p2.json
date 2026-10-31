@@ -1,0 +1,174 @@
+[
+  {
+    "id": "p2",
+    "title": "Final exam 2022/23 (Nachbau)",
+    "subtitle": "Built from the two 2022/23 papers: multiple choice from Group A, calculation exercises from both groups. Questions on topics after lecture 8 (taxes, payout, raising capital, options) are replaced by questions from lectures 1–8. Multiple-choice solutions are own solutions.",
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Part 1 – Multiple choice questions",
+        "instructions": "Select the MOST appropriate response. Each question is worth 2/3 marks. [10 marks]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "cf-p2-mc01",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc02",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc03",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc04",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc05",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc06",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc07",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc08",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc09",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc10",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc11",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc12",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc13",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc14",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p2-mc15",
+                "points": 0.6666666666666666
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Short answer and calculation questions",
+        "instructions": "Report the main calculation steps and justify all your responses. Report numbers with four decimals and percentages with two decimals. [10 marks]",
+        "sections": [
+          {
+            "title": "Exercise 1 – Returns with a dividend",
+            "items": [
+              {
+                "q": "cf-p2-01a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p2-01b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Portfolio risk",
+            "items": [
+              {
+                "q": "cf-p2-02a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p2-02b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Is the market efficient?",
+            "items": [
+              {
+                "q": "cf-p2-03a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p2-03b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 4 – Alpha, SML and CML",
+            "items": [
+              {
+                "q": "cf-p2-04a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p2-04b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 5 – Industry beta",
+            "items": [
+              {
+                "q": "cf-p2-05a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p2-05b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 6 – MM Proposition I",
+            "items": [
+              {
+                "q": "cf-p2-06a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p2-06b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 7 – MM Proposition II",
+            "items": [
+              {
+                "q": "cf-p2-07",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

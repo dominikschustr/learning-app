@@ -1,0 +1,26 @@
+[
+  {
+    "id": "c-capm",
+    "lecture": "l4",
+    "front": "Formula: CAPM / security market line",
+    "back": "E(Ri) = rf + βi (E(RM) − rf)\n\nUse: Required (= expected) return and cost of equity of any stock or portfolio.\nTrap: The premium, not E(R_M), multiplies beta."
+  },
+  {
+    "id": "c-cml",
+    "lecture": "l4",
+    "front": "Formula: Capital market line",
+    "back": "E(Rp) = rf + [(E(RM) − rf) / σM] × σp\n\nUse: Expected return of an efficient portfolio (mix of M and r_f) for a given volatility.\nTrap: Single stocks are not on the CML – they lie below it.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-port-beta",
+    "lecture": "l4",
+    "front": "Formula: Portfolio beta",
+    "back": "βp = Σ xi βi   (risk-free asset: β = 0)\n\nUse: Beta of a portfolio before applying the CAPM.\nTrap: Average the betas first, then apply the CAPM.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-add-stock",
+    "lecture": "l4",
+    "front": "Formula: Is stock A worth adding to portfolio P?",
+    "back": "Buy A if E(RA) > rf + βA,P (E(RP) − rf),   βA,P = ρA,P σA / σP\n\nUse: Deciding whether a stock improves your portfolio's Sharpe ratio.\nTrap: What matters is the correlation with P, not A's own volatility.\n\nNot on the formula sheet – learn it by heart."
+  }
+]

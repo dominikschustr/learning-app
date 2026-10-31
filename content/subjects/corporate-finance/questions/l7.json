@@ -1,0 +1,256 @@
+[
+  {
+    "type": "short",
+    "id": "cf-l7-01",
+    "lecture": "l7",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "(a) What is the value of the unlevered firm and the NPV of the project?",
+    "modelAnswer": "Expected cash flow = 0.5 × 1,080 + 0.5 × 720 = 900.\nV_U = 900/1.20 = 750. NPV = −600 + 750 = 150.",
+    "keyPoints": [
+      "Unlevered value V_U (EUR): 750 EUR",
+      "NPV (EUR): 150 EUR"
+    ],
+    "results": [
+      {
+        "label": "Unlevered value V_U (EUR)",
+        "value": 750.0,
+        "unit": "EUR",
+        "tol": 0.5
+      },
+      {
+        "label": "NPV (EUR)",
+        "value": 150.0,
+        "unit": "EUR",
+        "tol": 0.5
+      }
+    ],
+    "case": "l7-bistro"
+  },
+  {
+    "type": "short",
+    "id": "cf-l7-02",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) With EUR 400 of debt: what are the cash flows to shareholders in each state, and what is the equity worth today (MM I)?",
+    "modelAnswer": "The debt is risk-free (even the weak state pays 720 > 420). Lenders receive 400 × 1.05 = 420 in both states.\nShareholders get the rest: 1,080 − 420 = 660 and 720 − 420 = 300.\nMM I: debt + equity still pay 1,080 / 720 → V_L = V_U = 750 → E = 750 − 400 = 350.",
+    "keyPoints": [
+      "Equity cash flow, strong (EUR): 660 EUR",
+      "Equity cash flow, weak (EUR): 300 EUR",
+      "Equity value today (EUR): 350 EUR"
+    ],
+    "results": [
+      {
+        "label": "Equity cash flow, strong (EUR)",
+        "value": 660,
+        "unit": "EUR",
+        "tol": 0.5
+      },
+      {
+        "label": "Equity cash flow, weak (EUR)",
+        "value": 300,
+        "unit": "EUR",
+        "tol": 0.5
+      },
+      {
+        "label": "Equity value today (EUR)",
+        "value": 350.0,
+        "unit": "EUR",
+        "tol": 0.5
+      }
+    ],
+    "case": "l7-bistro"
+  },
+  {
+    "type": "short",
+    "id": "cf-l7-03",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(c) What return do the levered shareholders earn in each state, and what is their expected return? Check with the average cost of capital. Report percentages with two decimals.",
+    "modelAnswer": "Strong: 660/350 − 1 = 88.57%. Weak: 300/350 − 1 = -14.29%.\nExpected = 0.5 × 88.57% + 0.5 × (-14.29%) = 37.14%.\nCheck: (350/750) × 37.14% + (400/750) × 5% = 20.00% = unlevered cost. Debt makes the equity riskier, not the firm more valuable.",
+    "keyPoints": [
+      "Return, strong: 88.5714 %",
+      "Return, weak: -14.2857 %",
+      "Expected return: 37.1429 %"
+    ],
+    "results": [
+      {
+        "label": "Return, strong",
+        "value": 88.5714,
+        "unit": "%"
+      },
+      {
+        "label": "Return, weak",
+        "value": -14.2857,
+        "unit": "%"
+      },
+      {
+        "label": "Expected return",
+        "value": 37.1429,
+        "unit": "%"
+      }
+    ],
+    "case": "l7-bistro"
+  },
+  {
+    "type": "short",
+    "id": "cf-l7-04",
+    "lecture": "l7",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "(d) A friend discounts the expected levered equity cash flow at the unlevered 20% and concludes that borrowing creates value. What value does she get, and what is her mistake?",
+    "modelAnswer": "Expected equity cash flow = 0.5 × 660 + 0.5 × 300 = 480 → 480/1.20 = 400 > 350.\nThe mistake is the discount rate: levered equity swings between 88.6% and -14.3% instead of +44% / −4%, so it requires 37.14%. Correct: 480/1.3714 = 350.",
+    "keyPoints": [
+      "Wrong equity value (EUR): 400 EUR"
+    ],
+    "results": [
+      {
+        "label": "Wrong equity value (EUR)",
+        "value": 400.0,
+        "unit": "EUR",
+        "tol": 0.5
+      }
+    ],
+    "case": "l7-bistro"
+  },
+  {
+    "type": "short",
+    "id": "cf-l7-05",
+    "lecture": "l7",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "Alpha Corp and Beta Corp have identical assets and cash flows. Alpha is all-equity financed with 12 million shares trading at EUR 25. Beta has 15 million shares and EUR 90m of debt. According to MM I (perfect capital markets), what are Beta's equity value and share price?",
+    "modelAnswer": "V_U = 12m × 25 = 300m. MM I: V_L = V_U = 300m.\nE_Beta = 300 − 90 = 210m → price = 210m/15m = EUR 14.00.",
+    "keyPoints": [
+      "Equity value Beta (EUR m): 210 m",
+      "Share price Beta (EUR): 14 EUR"
+    ],
+    "results": [
+      {
+        "label": "Equity value Beta (EUR m)",
+        "value": 210,
+        "unit": "m",
+        "tol": 0.05
+      },
+      {
+        "label": "Share price Beta (EUR)",
+        "value": 14.0,
+        "unit": "EUR",
+        "tol": 0.01
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l7-06",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Continuing with Alpha (all equity, worth EUR 300m) and Beta (debt EUR 90m, equity EUR 210m): an investor would like the risk and return of 1% of Beta's equity, but only Alpha's shares are available to her. She can borrow at the same rate as the firms. How much must she invest in Alpha's shares, how much must she borrow, and how much of her own money does she need?",
+    "modelAnswer": "Homemade leverage: buy 1% of Alpha (1% × 300m = 3.0m) and borrow 1% of Beta's debt (0.9m). Own money = 3.0 − 0.9 = 2.1m = 1% of Beta's equity.\nThe cash flows equal 1% of Alpha's cash flow minus 1% of Beta's debt repayment – exactly 1% of Beta's equity. Investors can create leverage themselves, so they will not pay a premium for a levered firm.",
+    "keyPoints": [
+      "Investment in Alpha shares (EUR m): 3 m",
+      "Borrowing (EUR m): 0.9 m",
+      "Own money (EUR m): 2.1 m"
+    ],
+    "results": [
+      {
+        "label": "Investment in Alpha shares (EUR m)",
+        "value": 3.0,
+        "unit": "m",
+        "tol": 0.01
+      },
+      {
+        "label": "Borrowing (EUR m)",
+        "value": 0.9,
+        "unit": "m",
+        "tol": 0.01
+      },
+      {
+        "label": "Own money (EUR m)",
+        "value": 2.1,
+        "unit": "m",
+        "tol": 0.01
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l7-07",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "A firm in a perfect capital market has assets worth EUR 500m, no debt and 25 million shares. It issues EUR 150m of debt and uses the proceeds to repurchase shares (leveraged recapitalization). (a) At what price are the shares repurchased, and how many? (b) How many shares remain, and what is the equity worth after the transaction?",
+    "modelAnswer": "Before: share price = 500/25 = EUR 20. Under MM I the recap changes the slices, not the value of the assets, so the price stays at EUR 20.\n150m/20 = 7.5m shares repurchased → 17.5m remain. Market value balance sheet: assets 500 = debt 150 + equity 350 (17.5m × 20).",
+    "keyPoints": [
+      "(a) Repurchase price (EUR): 20 EUR",
+      "(a) Shares repurchased (m): 7.5 m",
+      "(b) Shares remaining (m): 17.5 m",
+      "(b) Equity value (EUR m): 350 m"
+    ],
+    "results": [
+      {
+        "label": "(a) Repurchase price (EUR)",
+        "value": 20,
+        "unit": "EUR",
+        "tol": 0.01
+      },
+      {
+        "label": "(a) Shares repurchased (m)",
+        "value": 7.5,
+        "unit": "m",
+        "tol": 0.01
+      },
+      {
+        "label": "(b) Shares remaining (m)",
+        "value": 17.5,
+        "unit": "m",
+        "tol": 0.01
+      },
+      {
+        "label": "(b) Equity value (EUR m)",
+        "value": 350,
+        "unit": "m",
+        "tol": 0.5
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l7-08",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Two firms have identical cash flows. The unlevered firm U trades at EUR 820m. The levered firm L has debt worth EUR 300m and equity worth EUR 480m. Describe the arbitrage and compute the riskless profit today (in EUR m).",
+    "modelAnswer": "V_L = 300 + 480 = 780 < V_U = 820 → U is too expensive.\nSell (short) U for 820 and buy all of L's debt (300) and equity (480) for 780. Debt + equity of L pay exactly U's cash flows, so future cash flows net to zero. Profit today = 820 − 780 = 40m.\nTrading continues until V_U = V_L (MM I).",
+    "keyPoints": [
+      "Arbitrage profit today (EUR m): 40 m"
+    ],
+    "results": [
+      {
+        "label": "Arbitrage profit today (EUR m)",
+        "value": 40,
+        "unit": "m",
+        "tol": 0.05
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l7-09",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "state",
+    "prompt": "State Modigliani–Miller Proposition I and the five conditions of a perfect capital market under which it holds.",
+    "modelAnswer": "MM I: in a perfect capital market, the total value of a firm's securities equals the market value of the cash flows generated by its assets and does not depend on its capital structure (V_L = E + D = V_U). Conditions: (1) investors and firms trade the same securities at fair prices equal to the present value of their cash flows; (2) no taxes, transaction or issuance costs; (3) no bankruptcy costs; (4) everyone can borrow and lend at the risk-free rate without restriction; (5) financing decisions change neither the investment cash flows nor the information about them. If capital structure matters in reality, it must be because one of these conditions fails.",
+    "keyPoints": [
+      "V_L = V_U: value independent of capital structure",
+      "Fair prices / Law of One Price",
+      "No taxes, transaction, issuance or bankruptcy costs",
+      "Borrow and lend at rf (homemade leverage)",
+      "Financing does not change cash flows or information"
+    ]
+  }
+]

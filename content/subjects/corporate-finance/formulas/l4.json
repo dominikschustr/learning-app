@@ -1,0 +1,44 @@
+[
+  {
+    "id": "f-capm",
+    "lecture": "l4",
+    "name": "CAPM / security market line",
+    "formula": "E(R_i) = r_f + β_i (E(R_M) − r_f)",
+    "use": "Required (= expected) return and cost of equity of any stock or portfolio.",
+    "vars": [
+      "E(R_M) − r_f = market risk premium"
+    ],
+    "pitfall": "The premium, not E(R_M), multiplies beta.",
+    "sheet": true
+  },
+  {
+    "id": "f-cml",
+    "lecture": "l4",
+    "name": "Capital market line",
+    "formula": "E(R_p) = r_f + [(E(R_M) − r_f) / σ_M] × σ_p",
+    "use": "Expected return of an efficient portfolio (mix of M and r_f) for a given volatility.",
+    "vars": [],
+    "pitfall": "Single stocks are not on the CML – they lie below it.",
+    "sheet": false
+  },
+  {
+    "id": "f-port-beta",
+    "lecture": "l4",
+    "name": "Portfolio beta",
+    "formula": "β_p = Σ x_i β_i   (risk-free asset: β = 0)",
+    "use": "Beta of a portfolio before applying the CAPM.",
+    "vars": [],
+    "pitfall": "Average the betas first, then apply the CAPM.",
+    "sheet": false
+  },
+  {
+    "id": "f-add-stock",
+    "lecture": "l4",
+    "name": "Is stock A worth adding to portfolio P?",
+    "formula": "Buy A if E(R_A) > r_f + β_{A,P} (E(R_P) − r_f),   β_{A,P} = ρ_{A,P} σ_A / σ_P",
+    "use": "Deciding whether a stock improves your portfolio's Sharpe ratio.",
+    "vars": [],
+    "pitfall": "What matters is the correlation with P, not A's own volatility.",
+    "sheet": false
+  }
+]

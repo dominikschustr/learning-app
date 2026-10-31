@@ -1,0 +1,282 @@
+[
+  {
+    "type": "short",
+    "id": "cf-l2-01",
+    "lecture": "l2",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "Stock X returns 25% in a boom (probability 0.3), 10% in a normal year (0.5) and −15% in a recession (0.2). Compute its expected return and its volatility. Report percentages with two decimals.",
+    "modelAnswer": "E(R) = 0.3 × 25% + 0.5 × 10% + 0.2 × (−15%) = 9.50%.\nScenarios → weight squared deviations by probabilities (no T − 1):\nVar = 0.3 × (25 − 9.5)² + 0.5 × (10 − 9.5)² + 0.2 × (−15 − 9.5)² = 72.075 + 0.125 + 120.05 = 192.25 %² = 0.0192.\nσ = √0.019225 = 13.87%.",
+    "keyPoints": [
+      "Expected return: 9.5 %",
+      "Volatility: 13.8654 %"
+    ],
+    "results": [
+      {
+        "label": "Expected return",
+        "value": 9.5,
+        "unit": "%"
+      },
+      {
+        "label": "Volatility",
+        "value": 13.8654,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-02",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) Compute the average return and the volatility of each stock. Report percentages with two decimals.",
+    "modelAnswer": "Means: A = (14 − 2 + 8 + 4)/4 = 6.00%; B = (3 + 7 − 1 + 7)/4 = 4.00%.\nA: deviations 8, −8, 2, −2 → squares 64, 64, 4, 4 = 136 → Var = 136/3 = 45.33 %² → σ = 6.73%.\nB: deviations −1, 3, −5, 3 → squares 1, 9, 25, 9 = 44 → Var = 44/3 = 14.67 %² → σ = 3.83%.",
+    "keyPoints": [
+      "Average A: 6 %",
+      "Volatility A: 6.733 %",
+      "Average B: 4 %",
+      "Volatility B: 3.8297 %"
+    ],
+    "results": [
+      {
+        "label": "Average A",
+        "value": 6.0,
+        "unit": "%"
+      },
+      {
+        "label": "Volatility A",
+        "value": 6.733,
+        "unit": "%"
+      },
+      {
+        "label": "Average B",
+        "value": 4.0,
+        "unit": "%"
+      },
+      {
+        "label": "Volatility B",
+        "value": 3.8297,
+        "unit": "%"
+      }
+    ],
+    "case": "l2-hist"
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-03",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) Compute the covariance and the correlation between A and B, and the beta of B with respect to A. Give the covariance in decimals (e.g. 0.0012).",
+    "modelAnswer": "Products of deviations (%-points): (8)(−1) + (−8)(3) + (2)(−5) + (−2)(3) = −8 − 24 − 10 − 6 = −48.\nCov = −48/3 = −16 %² = -0.0016.\nρ = Cov/(σA σB) = −0.0016/(0.0673 × 0.0383) = -0.6205.\nβ(B on A) = Cov/Var(A) = −0.0016/0.004533 = -0.3529.",
+    "keyPoints": [
+      "Covariance: -0.0016",
+      "Correlation: -0.620505",
+      "Beta of B on A: -0.352941"
+    ],
+    "results": [
+      {
+        "label": "Covariance",
+        "value": -0.0016,
+        "unit": "",
+        "tol": 5e-05
+      },
+      {
+        "label": "Correlation",
+        "value": -0.620505,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Beta of B on A",
+        "value": -0.352941,
+        "unit": "",
+        "tol": 0.01
+      }
+    ],
+    "case": "l2-hist"
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-04",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(c) What are the expected return and the volatility of a portfolio invested 50% in A and 50% in B? Compare with the volatilities of A and B alone. Report percentages with two decimals.",
+    "modelAnswer": "E(Rp) = 0.5 × 6.00% + 0.5 × 4.00% = 5.00%.\nVar(Rp) = 0.25 × 0.004533 + 0.25 × 0.001467 + 2 × 0.25 × (-0.0016) = 0.000700.\nσp = 2.65% – far below 6.73% and 3.83%: the negative covariance makes risks cancel (check: portfolio returns 8.5%, 2.5%, 3.5%, 5.5% give the same variance).",
+    "keyPoints": [
+      "Portfolio expected return: 5 %",
+      "Portfolio volatility: 2.6458 %"
+    ],
+    "results": [
+      {
+        "label": "Portfolio expected return",
+        "value": 5.0,
+        "unit": "%"
+      },
+      {
+        "label": "Portfolio volatility",
+        "value": 2.6458,
+        "unit": "%"
+      }
+    ],
+    "case": "l2-hist"
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-05",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "You invest EUR 3,000 in stock A (expected return 6%, volatility 20%) and EUR 1,000 in stock B (expected return 16%, volatility 40%). The correlation is 0.3. What are the expected return and the volatility of your portfolio? Report percentages with two decimals.",
+    "modelAnswer": "Weights: 3,000/4,000 = 75% in A, 25% in B.\nE(Rp) = 0.75 × 6% + 0.25 × 16% = 8.50%.\nVar = 0.75² × 0.20² + 0.25² × 0.40² + 2 × 0.75 × 0.25 × 0.3 × 0.20 × 0.40 = 0.0225 + 0.01 + 0.009 = 0.0415.\nσp = 20.37%.",
+    "keyPoints": [
+      "Expected return: 8.5 %",
+      "Volatility: 20.3715 %"
+    ],
+    "results": [
+      {
+        "label": "Expected return",
+        "value": 8.5,
+        "unit": "%"
+      },
+      {
+        "label": "Volatility",
+        "value": 20.3715,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-06",
+    "lecture": "l2",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "You have EUR 10,000. You short-sell EUR 4,000 of stock B and invest EUR 14,000 in stock A. A: expected return 10%, volatility 20%. B: expected return 6%, volatility 15%. Correlation 0.3. What are the portfolio weights, the expected return and the volatility? Report percentages with two decimals.",
+    "modelAnswer": "Weights are computed on your own money: xA = 14,000/10,000 = 1.4, xB = −4,000/10,000 = −0.4 (sum = 1).\nE(Rp) = 1.4 × 10% − 0.4 × 6% = 11.60%.\nVar = 1.4² × 0.04 + 0.4² × 0.0225 + 2 × 1.4 × (−0.4) × 0.3 × 0.20 × 0.15 = 0.0784 + 0.0036 − 0.01008 = 0.07192.\nσp = 26.82%. The short position flips the sign of the cross term, the squared weight still adds risk.",
+    "keyPoints": [
+      "Weight in A: 1.4",
+      "Weight in B: -0.4",
+      "Expected return: 11.6 %",
+      "Volatility: 26.8179 %"
+    ],
+    "results": [
+      {
+        "label": "Weight in A",
+        "value": 1.4,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Weight in B",
+        "value": -0.4,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Expected return",
+        "value": 11.6,
+        "unit": "%"
+      },
+      {
+        "label": "Volatility",
+        "value": 26.8179,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-07",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "An investor has mean–variance utility U = E(R) − (γ/2) × Var(R) with γ = 3. Investment 1 offers 8% expected return with 10% volatility, investment 2 offers 12% with 25%. Compute both utilities (in %) and say which the investor prefers.",
+    "modelAnswer": "U₁ = 0.08 − 1.5 × 0.10² = 0.08 − 0.015 = 6.50%.\nU₂ = 0.12 − 1.5 × 0.25² = 0.12 − 0.09375 = 2.62%.\nThe investor prefers investment 1: the extra 4% of return does not compensate a risk-averse investor (γ = 3) for the much higher variance.",
+    "keyPoints": [
+      "Utility investment 1: 6.5 %",
+      "Utility investment 2: 2.625 %"
+    ],
+    "results": [
+      {
+        "label": "Utility investment 1",
+        "value": 6.5,
+        "unit": "%"
+      },
+      {
+        "label": "Utility investment 2",
+        "value": 2.625,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-08",
+    "lecture": "l2",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "The covariance between the returns of stocks A and B is 0.012. A has a volatility of 20%, B of 30%. Compute the correlation and the beta of A with respect to B.",
+    "modelAnswer": "ρ = Cov/(σA σB) = 0.012/(0.20 × 0.30) = 0.012/0.06 = 0.20.\nβ(A on B) = Cov/Var(B) = 0.012/0.30² = 0.012/0.09 = 0.1333.\nAll three measures use the covariance; they only differ in what you divide by.",
+    "keyPoints": [
+      "Correlation: 0.2",
+      "Beta of A on B: 0.133333"
+    ],
+    "results": [
+      {
+        "label": "Correlation",
+        "value": 0.2,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Beta of A on B",
+        "value": 0.133333,
+        "unit": "",
+        "tol": 0.005
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-09",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "A portfolio invests 60% in stock A (volatility 20%) and 40% in stock B (volatility 30%). Compute the portfolio volatility if the correlation is (a) +1 and (b) 0. Report percentages with two decimals.",
+    "modelAnswer": "(a) ρ = +1: no diversification, σp = 0.6 × 20% + 0.4 × 30% = 24.00%.\n(b) ρ = 0: Var = 0.36 × 0.04 + 0.16 × 0.09 = 0.0144 + 0.0144 = 0.0288 → σp = 16.97%.\nWith ρ < 1 the portfolio risk lies below the weighted average – that is diversification.",
+    "keyPoints": [
+      "(a) Volatility with ρ = +1: 24 %",
+      "(b) Volatility with ρ = 0: 16.9706 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Volatility with ρ = +1",
+        "value": 24.0,
+        "unit": "%"
+      },
+      {
+        "label": "(b) Volatility with ρ = 0",
+        "value": 16.9706,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l2-10",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which part of a stock's risk disappears in a well-diversified portfolio, and which part does not? Explain using the variance of an equally weighted portfolio of N stocks.",
+    "modelAnswer": "Idiosyncratic (firm-specific) risk disappears: firm-specific news is independent across firms and averages out. Systematic (market) risk remains, because all firms are exposed to common factors (economy, interest rates). In an equally weighted portfolio Var = (1/N) × average variance + (1 − 1/N) × average covariance. As N grows, the own-variance term goes to zero and the variance converges to the average covariance – the systematic risk that cannot be diversified away.",
+    "keyPoints": [
+      "Idiosyncratic / firm-specific risk is diversified away",
+      "Systematic / market risk remains",
+      "Var = (1/N) avg variance + (1 − 1/N) avg covariance",
+      "Portfolio risk converges to the average covariance"
+    ]
+  }
+]

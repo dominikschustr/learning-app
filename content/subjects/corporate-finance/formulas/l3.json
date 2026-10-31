@@ -1,0 +1,54 @@
+[
+  {
+    "id": "f-min-var",
+    "lecture": "l3",
+    "name": "Minimum-variance portfolio (two assets)",
+    "formula": "x_1 = (σ_2^2 − σ_1 σ_2 ρ) / (σ_1^2 + σ_2^2 − 2 σ_1 σ_2 ρ),   x_2 = 1 − x_1",
+    "use": "The lowest-risk combination of two stocks.",
+    "vars": [],
+    "pitfall": "Expected returns play no role.",
+    "sheet": false
+  },
+  {
+    "id": "f-zero-risk",
+    "lecture": "l3",
+    "name": "Risk-free mix when ρ = −1",
+    "formula": "x_1 = σ_2 / (σ_1 + σ_2)  →  σ_p = 0",
+    "use": "Perfectly negatively correlated assets.",
+    "vars": [],
+    "pitfall": "Special case ρ = 0: x_1 = σ_2² / (σ_1² + σ_2²).",
+    "sheet": false
+  },
+  {
+    "id": "f-cal",
+    "lecture": "l3",
+    "name": "Mixing with the risk-free asset (CAL)",
+    "formula": "E(R) = r_f + x (E(R_P) − r_f)\nσ = x σ_P",
+    "use": "Lending (0 < x < 1) or borrowing (x > 1) combined with a risky portfolio P.",
+    "vars": [
+      "x = fraction of own money in P; 1 − x at r_f"
+    ],
+    "pitfall": "Leverage scales premium and risk in the same proportion – the Sharpe ratio stays.",
+    "sheet": false
+  },
+  {
+    "id": "f-sharpe",
+    "lecture": "l3",
+    "name": "Sharpe ratio",
+    "formula": "S_P = (E(R_P) − r_f) / σ_P",
+    "use": "Ranking risky portfolios when you can borrow and lend at r_f.",
+    "vars": [],
+    "pitfall": "Positive Sharpe = beats r_f in expectation; it says nothing about 'above one'.",
+    "sheet": true
+  },
+  {
+    "id": "f-target",
+    "lecture": "l3",
+    "name": "Hitting a target risk or return",
+    "formula": "target σ:  x = σ_{target} / σ_T\ntarget return:  x = (E_{target} − r_f) / (E(R_T) − r_f)",
+    "use": "Beat a given portfolio with the tangency (or market) portfolio.",
+    "vars": [],
+    "pitfall": "x > 1 means borrowing (negative risk-free weight).",
+    "sheet": false
+  }
+]

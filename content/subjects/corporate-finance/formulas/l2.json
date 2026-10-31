@@ -1,0 +1,88 @@
+[
+  {
+    "id": "f-scenarios",
+    "lecture": "l2",
+    "name": "Expected return and variance with scenarios",
+    "formula": "E(R) = Σ p_i R_i\nVar(R) = Σ p_i (R_i − E(R))^2",
+    "use": "Returns given per state of the economy with probabilities.",
+    "vars": [
+      "p_i = probability of state i"
+    ],
+    "pitfall": "Weights are the probabilities – no T − 1 here.",
+    "sheet": false
+  },
+  {
+    "id": "f-utility",
+    "lecture": "l2",
+    "name": "Mean–variance utility",
+    "formula": "U = E(R) − (γ/2) × Var(R)",
+    "use": "Ranking investments for a risk-averse investor.",
+    "vars": [
+      "γ = risk aversion (higher = more risk-averse)"
+    ],
+    "pitfall": "Use the variance, not the volatility.",
+    "sheet": false
+  },
+  {
+    "id": "f-covariance",
+    "lecture": "l2",
+    "name": "Covariance",
+    "formula": "Cov(R_i, R_j) = (1/(T − 1)) Σ (R_{i,t} − R̄_i)(R_{j,t} − R̄_j)\nscenarios: Σ p_s (R_{i,s} − E(R_i))(R_{j,s} − E(R_j))",
+    "use": "How two returns move together (only the sign is easy to read).",
+    "vars": [],
+    "pitfall": "Historical data: T − 1, like the variance.",
+    "sheet": false
+  },
+  {
+    "id": "f-correlation",
+    "lecture": "l2",
+    "name": "Correlation",
+    "formula": "ρ_{i,j} = Cov(R_i, R_j) / (σ_i σ_j)   ⟺   Cov = ρ σ_i σ_j",
+    "use": "Strength of comovement on a scale from −1 to +1.",
+    "vars": [],
+    "pitfall": "Same sign as the covariance.",
+    "sheet": false
+  },
+  {
+    "id": "f-beta",
+    "lecture": "l2",
+    "name": "Beta",
+    "formula": "β_{j,M} = Cov(R_j, R_M) / Var(R_M) = ρ_{j,M} × σ_j / σ_M",
+    "use": "How much a stock moves when the market (or another asset) moves by 1%.",
+    "vars": [],
+    "pitfall": "Divide by the variance of the asset that does the moving.",
+    "sheet": true
+  },
+  {
+    "id": "f-port-return",
+    "lecture": "l2",
+    "name": "Portfolio return",
+    "formula": "E(R_p) = x_1 E(R_1) + x_2 E(R_2),   x_1 + x_2 = 1",
+    "use": "Expected return of any portfolio: a plain weighted average.",
+    "vars": [
+      "x_i = amount in asset i / own money (can be < 0 or > 1)"
+    ],
+    "pitfall": "Weights on own money, not on the total position.",
+    "sheet": true
+  },
+  {
+    "id": "f-port-vol",
+    "lecture": "l2",
+    "name": "Portfolio volatility (two assets)",
+    "formula": "σ_p^2 = x_1^2 σ_1^2 + x_2^2 σ_2^2 + 2 x_1 x_2 ρ_{12} σ_1 σ_2",
+    "use": "Risk of a two-asset portfolio.",
+    "vars": [],
+    "pitfall": "Never forget the cross term; a short position flips its sign.",
+    "sheet": true
+  },
+  {
+    "id": "f-bounds",
+    "lecture": "l2",
+    "name": "Diversification by correlation",
+    "formula": "ρ = +1: σ_p = x_1 σ_1 + x_2 σ_2\nρ < 1: σ_p < x_1 σ_1 + x_2 σ_2\nρ = −1: σ_p = |x_1 σ_1 − x_2 σ_2|",
+    "use": "Quick check of how much diversification a pair offers.",
+    "vars": [],
+    "pitfall": "",
+    "sheet": false
+  }
+]

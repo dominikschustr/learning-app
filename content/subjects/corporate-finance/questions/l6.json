@@ -1,0 +1,252 @@
+[
+  {
+    "type": "short",
+    "id": "cf-l6-01",
+    "lecture": "l6",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "Air Liquide has a volatility of 22% and a beta of 0.85; Renault has a volatility of 35% and a beta of 1.60. The risk-free rate is 3% and the expected market return 8.5%. (a) Which stock has more total risk, which more market risk? (b) Compute both equity costs of capital. Report percentages with two decimals.",
+    "modelAnswer": "(a) Total risk = volatility: Renault (35% > 22%). Market risk = beta: also Renault (1.60 > 0.85).\n(b) Premium = 8.5% − 3% = 5.5%. Air Liquide: 3% + 0.85 × 5.5% = 7.67%. Renault: 3% + 1.60 × 5.5% = 11.80%.\nOnly beta enters the cost of capital.",
+    "keyPoints": [
+      "Cost of equity Air Liquide: 7.675 %",
+      "Cost of equity Renault: 11.8 %"
+    ],
+    "results": [
+      {
+        "label": "Cost of equity Air Liquide",
+        "value": 7.675,
+        "unit": "%"
+      },
+      {
+        "label": "Cost of equity Renault",
+        "value": 11.8,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-02",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "The Euro Stoxx 50 has a dividend yield of 3.5% and dividends have grown by about 3% per year; the risk-free rate is 2%. (a) Estimate the expected market return with the fundamental approach and the implied market risk premium. (b) A stock with beta 2 (rf 5%, market risk premium 6%) will pay a constant dividend of EUR 4 per year forever, starting in one year. What is its price? Report percentages with two decimals.",
+    "modelAnswer": "(a) Gordon growth solved for r: r_M = Div₁/P₀ + g = 3.5% + 3% = 6.5% → premium = 6.5% − 2% = 4.5%.\n(b) Required return = 5% + 2 × 6% = 17%. Perpetuity: P₀ = Div/r = 4/0.17 = 23.53.",
+    "keyPoints": [
+      "(a) Expected market return: 6.5 %",
+      "(a) Market risk premium: 4.5 %",
+      "(b) Price (EUR): 23.5294 EUR"
+    ],
+    "results": [
+      {
+        "label": "(a) Expected market return",
+        "value": 6.5,
+        "unit": "%"
+      },
+      {
+        "label": "(a) Market risk premium",
+        "value": 4.5,
+        "unit": "%"
+      },
+      {
+        "label": "(b) Price (EUR)",
+        "value": 23.529412,
+        "unit": "EUR",
+        "tol": 0.02
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-03",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "A BB-rated bond has a yield to maturity of 5.2%. BB debt has an average annual default rate of 2.2% and a beta of 0.17; the expected loss rate in default is 55%. The risk-free rate is 2% and the market risk premium 5%. Estimate the cost of debt (a) as yield minus expected loss and (b) with the CAPM and the debt beta. Report percentages with two decimals.",
+    "modelAnswer": "(a) r_D = y − p × L = 5.2% − 2.2% × 0.55 = 5.2% − 1.21% = 3.99%.\n(b) r_D = rf + β_D × premium = 2% + 0.17 × 5% = 2.85%.\nThe yield to maturity is the promised return; with default risk the expected return is lower. The coupon rate is irrelevant.",
+    "keyPoints": [
+      "(a) Yield minus expected loss: 3.99 %",
+      "(b) CAPM with debt beta: 2.85 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Yield minus expected loss",
+        "value": 3.99,
+        "unit": "%"
+      },
+      {
+        "label": "(b) CAPM with debt beta",
+        "value": 2.85,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-04",
+    "lecture": "l6",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "You plan to launch an online-marketing start-up and use a listed competitor without any debt as a reference. Its equity beta is 0.75. The risk-free rate is 3% and the market risk premium 5.5%. What is the cost of capital of your project? Report percentages with two decimals.",
+    "modelAnswer": "No debt → equity beta = asset beta = project beta. r = 3% + 0.75 × 5.5% = 7.13%.",
+    "keyPoints": [
+      "Project cost of capital: 7.125 %"
+    ],
+    "results": [
+      {
+        "label": "Project cost of capital",
+        "value": 7.125,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-05",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "A firm wants to launch a new snack and uses a listed food company as comparable: market capitalization EUR 18bn, equity beta 1.1, debt EUR 6bn with a yield to maturity of 4% and negligible default risk. rf = 3%, market risk premium 5%. (a) What is the comparable's cost of equity? (b) Estimate the project's unlevered cost of capital via the returns and via the betas (debt beta 0). Report percentages with two decimals.",
+    "modelAnswer": "(a) r_E = 3% + 1.1 × 5% = 8.50%.\n(b) Weights: E/(E + D) = 18/24 = 75%, D/(E + D) = 25%; r_D = YTM = 4% (negligible default).\nVia returns: r_U = 0.75 × 8.50% + 0.25 × 4% = 7.38%.\nVia betas: β_U = 0.75 × 1.1 + 0.25 × 0 = 0.825 → r_U = 3% + 0.825 × 5% = 7.13%.\nThe small gap arises because a 4% yield implies a slightly positive debt beta.",
+    "keyPoints": [
+      "(a) Cost of equity: 8.5 %",
+      "(b) r_U via returns: 7.375 %",
+      "(b) r_U via betas: 7.125 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Cost of equity",
+        "value": 8.5,
+        "unit": "%"
+      },
+      {
+        "label": "(b) r_U via returns",
+        "value": 7.375,
+        "unit": "%"
+      },
+      {
+        "label": "(b) r_U via betas",
+        "value": 7.125,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-06",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "A software firm has a market capitalization of EUR 40bn, debt of EUR 3bn and excess cash of EUR 8bn. Its equity beta is 1.05; debt and cash are risk-free. rf = 2.5%, market risk premium 5%. (a) Compute the net debt and the asset (unlevered) beta. (b) What is the cost of capital of the business? Report percentages with two decimals.",
+    "modelAnswer": "(a) Net debt = 3 − 8 = −5bn → value of the business = 40 − 5 = 35bn.\nβ_U = (E/(E + D)) β_E + (D/(E + D)) β_D = (40/35) × 1.05 + (−5/35) × 0 = 1.2000.\n(b) r_U = 2.5% + 1.20 × 5% = 8.50%.\nWith more cash than debt, the asset beta exceeds the equity beta: the cash makes the shares safer than the business.",
+    "keyPoints": [
+      "(a) Net debt (EUR bn): -5 bn",
+      "(a) Asset beta: 1.2",
+      "(b) Cost of capital: 8.5 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Net debt (EUR bn)",
+        "value": -5,
+        "unit": "bn",
+        "tol": 0.05
+      },
+      {
+        "label": "(a) Asset beta",
+        "value": 1.2,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "(b) Cost of capital",
+        "value": 8.5,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-07",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Caseificio Alpino has a market capitalization of EUR 450m and EUR 150m of debt. Its cost of equity is 11%, its pre-tax cost of debt 4.5% and the corporate tax rate 25%. Compute (a) the after-tax cost of debt, (b) the WACC and (c) the unlevered (pre-tax) cost of capital. Report percentages with two decimals.",
+    "modelAnswer": "(a) r_D (1 − τ) = 4.5% × 0.75 = 3.38%.\n(b) Weights 450/600 = 75%, 150/600 = 25%. WACC = 0.75 × 11% + 0.25 × 3.38% = 9.09%.\n(c) r_U = 0.75 × 11% + 0.25 × 4.5% = 9.38%. Check: r_U − τ × D/(E + D) × r_D = 9.38% − 0.25 × 0.25 × 4.5% = 9.09%.",
+    "keyPoints": [
+      "(a) After-tax cost of debt: 3.375 %",
+      "(b) WACC: 9.0938 %",
+      "(c) Unlevered cost r_U: 9.375 %"
+    ],
+    "results": [
+      {
+        "label": "(a) After-tax cost of debt",
+        "value": 3.375,
+        "unit": "%"
+      },
+      {
+        "label": "(b) WACC",
+        "value": 9.0938,
+        "unit": "%"
+      },
+      {
+        "label": "(c) Unlevered cost r_U",
+        "value": 9.375,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-08",
+    "lecture": "l6",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "Prosciutto S.p.A. has a market capitalization of EUR 40m and EUR 20m of debt. Its equity cost of capital is 12%, its cost of debt 5% and the corporate tax rate 30%. What is its after-tax WACC? Report percentages with two decimals.",
+    "modelAnswer": "Weights 40/60 = 2/3, 20/60 = 1/3.\nWACC = 2/3 × 12% + 1/3 × 5% × (1 − 0.30) = 8% + 1.17% = 9.17%.",
+    "keyPoints": [
+      "WACC: 9.1667 %"
+    ],
+    "results": [
+      {
+        "label": "WACC",
+        "value": 9.1667,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-09",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "A project costs EUR 100 today and pays EUR 120 in one year if it succeeds. There is a 20% chance that a technical problem specific to this firm destroys the payoff entirely (cash flow 0). The appropriate cost of capital for the project's market risk is 8%. What is the project's NPV? Report with two decimals.",
+    "modelAnswer": "Execution risk is firm-specific (diversifiable): put it into the expected cash flow, not into the discount rate.\nExpected cash flow = 0.8 × 120 + 0.2 × 0 = 96.\nNPV = −100 + 96/1.08 = -11.11 → reject.\nRaising the discount rate instead would mix up market risk and firm-specific risk.",
+    "keyPoints": [
+      "NPV (EUR): -11.1111 EUR"
+    ],
+    "results": [
+      {
+        "label": "NPV (EUR)",
+        "value": -11.111111,
+        "unit": "EUR",
+        "tol": 0.05
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l6-10",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Why does the yield to maturity generally overstate a firm's cost of debt? And when may a project be evaluated with the firm's WACC instead of its unlevered cost of capital?",
+    "modelAnswer": "The yield to maturity is the promised return: it assumes every coupon and the principal are paid. With default risk some payments will be missed, so the expected return is lower: r_D = YTM − probability of default × expected loss rate (or use the CAPM with a debt beta). The YTM is a good estimate only for very safe debt. A project may be discounted at the firm's WACC only if it has the same market risk as the firm AND is financed with the same debt mix, so that the interest tax saving built into the WACC is the one the project generates; otherwise start from the unlevered cost of capital of comparable firms.",
+    "keyPoints": [
+      "YTM = promised return, assumes no default",
+      "Expected return = YTM − p × L (or debt beta)",
+      "WACC only for same risk as the firm",
+      "… and the same debt mix (tax shield)"
+    ]
+  }
+]

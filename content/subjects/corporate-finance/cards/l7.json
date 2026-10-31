@@ -1,0 +1,20 @@
+[
+  {
+    "id": "c-mm1",
+    "lecture": "l7",
+    "front": "Formula: MM Proposition I",
+    "back": "VL = E + D = VU\n\nUse: Perfect capital markets: firm value does not depend on capital structure.\nTrap: Equity value = V_U − D, not the PV of equity cash flows at r_U.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-avg-cost",
+    "lecture": "l7",
+    "front": "Formula: Average cost stays unchanged",
+    "back": "E/(E + D) × rE + D/(E + D) × rD = rU\n\nUse: Check any levered return calculation against the unlevered cost.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-homemade",
+    "lecture": "l7",
+    "front": "Formula: Homemade leverage",
+    "back": "Replicate x% of levered equity:\nbuy x% of U, borrow x% of D\n\nUse: Arbitrage argument behind MM I (investors borrow at the firm's rate).\n\nNot on the formula sheet – learn it by heart."
+  }
+]

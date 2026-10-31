@@ -1,0 +1,101 @@
+[
+  {
+    "id": "p1-danone",
+    "title": "Exercise 1 – Danone SA",
+    "text": [
+      "The table shows the closing stock price and dividends of Danone SA. Danone has done no stock split in the past five years."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Date",
+          "Close",
+          "Dividends"
+        ],
+        "rows": [
+          [
+            "31/10/2019",
+            "58.60",
+            ""
+          ],
+          [
+            "31/10/2020",
+            "52.63",
+            "2.88"
+          ],
+          [
+            "31/10/2021",
+            "30.33",
+            "2.43"
+          ],
+          [
+            "31/10/2022",
+            "50.11",
+            "3.61"
+          ],
+          [
+            "31/10/2023",
+            "54.77",
+            "3.13"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p1-negcorr",
+    "title": "Exercise 2 – Two perfectly negatively correlated stocks",
+    "text": [
+      "Consider stocks A and B with the expected returns and volatilities listed below and perfectly negatively correlated returns (ρ = −1)."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Stock",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "A",
+            "8%",
+            "15%"
+          ],
+          [
+            "B",
+            "12%",
+            "30%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p1-nintendo",
+    "title": "Exercise 3 – Nintendo and the capital market line",
+    "text": [
+      "Your friend currently invests all his savings in a single stock, Nintendo. Nintendo has an expected return of 10% and a volatility of 40%. The market portfolio has an expected return of 8% and a volatility of 16%. The risk-free return is 4%. Assume that the CAPM holds."
+    ]
+  },
+  {
+    "id": "p1-sp500",
+    "title": "Exercise 4 – Expected market return",
+    "text": [
+      "Assume that the S&P 500 index currently has a dividend yield of 4%, that the dividends of S&P 500 firms have increased by about 2% per year on average, and that the risk-free rate is 1%."
+    ]
+  },
+  {
+    "id": "p1-eduhos",
+    "title": "Exercise 5 – EduHos Inc",
+    "text": [
+      "EduHos Inc is a conglomerate with two divisions: a for-profit university and a for-profit hospital. Its market capitalization is EUR 300 million and it has EUR 200 million of debt. Shareholders require a return of 7% per year; the debt holders require 3% and the debt can be considered risk-free. Assume perfect capital markets."
+    ]
+  },
+  {
+    "id": "p1-hexa",
+    "title": "Exercise 6 – Hexa and Octo (replaces the IPO auction)",
+    "text": [
+      "Hexa Industries and Octo Systems have identical assets that generate identical cash flows. Hexa is all-equity financed with 8 million shares trading at EUR 30. Octo has 12 million shares and EUR 60 million of debt. Assume perfect capital markets."
+    ]
+  }
+]

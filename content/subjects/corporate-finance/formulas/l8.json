@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f-mm2",
+    "lecture": "l8",
+    "name": "MM Proposition II",
+    "formula": "r_E = r_U + (D/E)(r_U − r_D)",
+    "use": "Cost of equity after a change in leverage (no taxes).",
+    "vars": [],
+    "pitfall": "Uses D/E, not D/(D + E).",
+    "sheet": false
+  },
+  {
+    "id": "f-wacc-mm",
+    "lecture": "l8",
+    "name": "WACC without taxes",
+    "formula": "r_{WACC} = E/(E + D) × r_E + D/(E + D) × r_D = r_U",
+    "use": "The WACC is constant for any leverage when there are no taxes.",
+    "vars": [],
+    "pitfall": "Cheap debt is offset by dearer equity.",
+    "sheet": false
+  },
+  {
+    "id": "f-relever",
+    "lecture": "l8",
+    "name": "Relevering betas (β_D = 0)",
+    "formula": "β_E = β_U (1 + D/E)   ⟺   β_U = β_E / (1 + D/E)",
+    "use": "Unlever a comparable, relever to a target structure.",
+    "vars": [],
+    "pitfall": "Average asset betas across an industry, then relever.",
+    "sheet": true
+  },
+  {
+    "id": "f-beta-mm2",
+    "lecture": "l8",
+    "name": "Beta version of MM II",
+    "formula": "β_E = β_U + (D/E)(β_U − β_D)",
+    "use": "Equity beta with risky debt (β_D > 0).",
+    "vars": [],
+    "pitfall": "",
+    "sheet": false
+  },
+  {
+    "id": "f-convert",
+    "lecture": "l8",
+    "name": "Converting leverage ratios",
+    "formula": "D/E = w/(1 − w)   with   w = D/(D + E)\nE/(D + E) = 1/(1 + D/E)",
+    "use": "Whenever the task gives D/(D + E) but the formula needs D/E (or vice versa).",
+    "vars": [],
+    "pitfall": "D/(D + E) = 0.5 means D/E = 1.",
+    "sheet": false
+  },
+  {
+    "id": "f-ratios",
+    "lecture": "l8",
+    "name": "Earnings yield and ROE",
+    "formula": "Earnings yield = Earnings / E_{market}\nROE = Earnings / E_{book}",
+    "use": "Performance ratios that rise with leverage without any value creation.",
+    "vars": [],
+    "pitfall": "Judge value, not leverage-dependent ratios.",
+    "sheet": false
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "l1-belair",
+    "title": "Bel Air SA: closing prices and dividends",
+    "text": [
+      "The table shows the closing share price of Bel Air SA at the end of each year and the dividend per share paid on that date. Bel Air did no stock split in this period."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Date",
+          "Close (EUR)",
+          "Dividend (EUR)"
+        ],
+        "rows": [
+          [
+            "31/12/2021",
+            "48.00",
+            "–"
+          ],
+          [
+            "31/12/2022",
+            "51.20",
+            "1.60"
+          ],
+          [
+            "31/12/2023",
+            "44.80",
+            "1.70"
+          ],
+          [
+            "31/12/2024",
+            "53.10",
+            "1.75"
+          ],
+          [
+            "31/12/2025",
+            "57.40",
+            "1.90"
+          ]
+        ]
+      }
+    ]
+  }
+]

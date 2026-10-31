@@ -1,0 +1,40 @@
+[
+  {
+    "id": "l2-hist",
+    "title": "Stocks A and B: four years of returns",
+    "text": [
+      "You observe the yearly returns of two stocks over four years. Use the formulas for historical data (divide by T − 1)."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Year",
+          "Stock A",
+          "Stock B"
+        ],
+        "rows": [
+          [
+            "2022",
+            "14%",
+            "3%"
+          ],
+          [
+            "2023",
+            "-2%",
+            "7%"
+          ],
+          [
+            "2024",
+            "8%",
+            "-1%"
+          ],
+          [
+            "2025",
+            "4%",
+            "7%"
+          ]
+        ]
+      }
+    ]
+  }
+]

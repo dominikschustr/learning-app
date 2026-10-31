@@ -1,0 +1,37 @@
+[
+  {
+    "id": "f-alpha",
+    "lecture": "l5",
+    "name": "Alpha",
+    "formula": "α_i = E(R_i) − [r_f + β_i (E(R_M) − r_f)]",
+    "use": "Is a stock over- or undervalued relative to the CAPM?",
+    "vars": [
+      "α > 0: above the SML → buy",
+      "α < 0: below the SML → sell"
+    ],
+    "pitfall": "Compare a stock with its own required return, not with another stock.",
+    "sheet": false
+  },
+  {
+    "id": "f-alpha-price",
+    "lecture": "l5",
+    "name": "Price at which alpha is zero",
+    "formula": "P_0 = E(P_1 + Div_1) / (1 + r_{required})",
+    "use": "Where competition pushes the price of a positive-alpha stock.",
+    "vars": [],
+    "pitfall": "",
+    "sheet": false
+  },
+  {
+    "id": "f-multifactor",
+    "lecture": "l5",
+    "name": "Multi-factor model",
+    "formula": "E(R_i) = r_f + β_M (MKT) + β_S (SMB) + β_V (HML) + β_{Mom} (PR1YR)",
+    "use": "Required return including size, value and momentum premiums.",
+    "vars": [
+      "each β × its factor premium"
+    ],
+    "pitfall": "",
+    "sheet": false
+  }
+]

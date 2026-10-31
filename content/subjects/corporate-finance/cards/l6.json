@@ -1,0 +1,32 @@
+[
+  {
+    "id": "c-gordon",
+    "lecture": "l6",
+    "front": "Formula: Gordon growth / market return",
+    "back": "P0 = Div1 / (r − g)   ⟺   r = Div1/P0 + g\n\nUse: Fundamental approach to the expected market return; value of a growing perpetuity.\nTrap: Only valid for g < r. Constant dividends: P_0 = Div/r."
+  },
+  {
+    "id": "c-cost-debt",
+    "lecture": "l6",
+    "front": "Formula: Cost of debt",
+    "back": "rD = y − p × L\nor   rD = rf + βD (E(RM) − rf)\n\nUse: Expected return on risky debt.\nTrap: The YTM is the promised return; the coupon rate is irrelevant."
+  },
+  {
+    "id": "c-unlever",
+    "lecture": "l6",
+    "front": "Formula: Unlevered (asset) cost of capital and beta",
+    "back": "rU = E/(E + D) × rE + D/(E + D) × rD\nβU = E/(E + D) × βE + D/(E + D) × βD\n\nUse: Cost of capital of a project using a levered comparable.\nTrap: Use market values; risk-free debt → β_D = 0."
+  },
+  {
+    "id": "c-net-debt",
+    "lecture": "l6",
+    "front": "Formula: Net debt",
+    "back": "Net debt = Debt − Excess cash\n\nUse: Firms with large cash holdings: use net debt in place of D.\nTrap: Negative net debt makes β_U > β_E.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-wacc",
+    "lecture": "l6",
+    "front": "Formula: WACC with taxes",
+    "back": "rWACC = E/(E + D) × rE + D/(E + D) × rD (1 − τC)\n= rU − τC × D/(E + D) × rD\n\nUse: Project with the firm's risk AND the firm's debt mix.\nTrap: Only for the same risk and same leverage; otherwise start from r_U."
+  }
+]

@@ -1,0 +1,276 @@
+[
+  {
+    "type": "short",
+    "id": "cf-l4-01",
+    "lecture": "l4",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "The risk-free rate is 2.5% and the expected market risk premium is 5.5%. The stock of Nordlicht AG has a beta of 1.3. Under the CAPM, what is its required return? Report percentages with two decimals.",
+    "modelAnswer": "E(R) = rf + β × (E(R_M) − rf) = 2.5% + 1.3 × 5.5% = 9.65%.\nThe premium (5.5%), not E(R_M), multiplies beta.",
+    "keyPoints": [
+      "Required return: 9.65 %"
+    ],
+    "results": [
+      {
+        "label": "Required return",
+        "value": 9.65,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-02",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "A stock has a volatility of 35% and a correlation of 0.45 with the market. The market has a volatility of 18% and an expected return of 8.5%; the risk-free rate is 2.5%. Compute the stock's beta and its expected return under the CAPM. Report percentages with two decimals.",
+    "modelAnswer": "β = ρ × σ_i/σ_M = 0.45 × 35%/18% = 0.8750.\nE(R) = 2.5% + 0.8750 × (8.5% − 2.5%) = 7.75%.\nAlthough the stock is almost twice as volatile as the market, its beta is below 1.",
+    "keyPoints": [
+      "Beta: 0.875",
+      "Expected return: 7.75 %"
+    ],
+    "results": [
+      {
+        "label": "Beta",
+        "value": 0.875,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Expected return",
+        "value": 7.75,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-03",
+    "lecture": "l4",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "You invest 60% of your money in Fast Semiconductor (beta 2.25) and 40% in the risk-free asset. The risk-free rate is 4% and the market risk premium 6%. What are the beta and the expected return of your portfolio? Report percentages with two decimals.",
+    "modelAnswer": "βp = Σ xᵢ βᵢ = 0.6 × 2.25 + 0.4 × 0 = 1.35.\nE(Rp) = 4% + 1.35 × 6% = 12.10%.",
+    "keyPoints": [
+      "Portfolio beta: 1.35",
+      "Expected return: 12.1 %"
+    ],
+    "results": [
+      {
+        "label": "Portfolio beta",
+        "value": 1.35,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Expected return",
+        "value": 12.1,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-04",
+    "lecture": "l4",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "The expected return of Chambersburg Forging is 12%. The risk-free rate is 4% and the expected market return 12.5%. What is the beta of the stock according to the CAPM?",
+    "modelAnswer": "12% = 4% + β × (12.5% − 4%) → β = 8%/8.5% = 0.9412.",
+    "keyPoints": [
+      "Beta: 0.941176"
+    ],
+    "results": [
+      {
+        "label": "Beta",
+        "value": 0.941176,
+        "unit": "",
+        "tol": 0.005
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-05",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "You hold only an ETF on the market portfolio (expected return 11%, volatility 18%); the risk-free rate is 2.5%. Your broker suggests adding Lumen Corp: expected return 4%, volatility 15%, correlation zero with the market. (a) What is Lumen's beta and its required return? (b) What is its alpha – should you add it? Report percentages with two decimals.",
+    "modelAnswer": "(a) β = ρ σ_i/σ_M = 0 → required return = rf + 0 × 8.5% = 2.5%.\n(b) α = 4% − 2.5% = 1.5% > 0 → the stock lies above the SML; adding a little of it raises your Sharpe ratio. Its low stand-alone return does not matter, only its return relative to the risk it adds (none, since ρ = 0). It lies below the CML (a single stock with only idiosyncratic risk) but above the SML: it is undervalued.",
+    "keyPoints": [
+      "(a) Beta: 0",
+      "(a) Required return: 2.5 %",
+      "(b) Alpha: 1.5 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Beta",
+        "value": 0,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "(a) Required return",
+        "value": 2.5,
+        "unit": "%"
+      },
+      {
+        "label": "(b) Alpha",
+        "value": 1.5,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-06",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "The market portfolio has an expected return of 10% and a volatility of 25%; the risk-free rate is 2.5%. (a) What is the slope of the capital market line (CML)? (b) What is the slope of the security market line (SML)? (c) What is the expected return of an efficient portfolio with a volatility of 15%?",
+    "modelAnswer": "(a) CML slope = Sharpe ratio of M = (10% − 2.5%)/25% = 0.30 (return per unit of volatility).\n(b) SML slope = market risk premium = 10% − 2.5% = 7.5% (return per unit of beta).\n(c) On the CML: 2.5% + 0.30 × 15% = 7.00%.",
+    "keyPoints": [
+      "(a) Slope of the CML: 0.3",
+      "(b) Slope of the SML: 7.5 %",
+      "(c) Expected return: 7 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Slope of the CML",
+        "value": 0.3,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "(b) Slope of the SML",
+        "value": 7.5,
+        "unit": "%"
+      },
+      {
+        "label": "(c) Expected return",
+        "value": 7.0,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-07",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "rf = 4%, E(R_M) = 10%, σ_M = 16%. Stock A has a volatility of 24% and a correlation of 0.4 with the market. (a) What is A's beta and expected return? (b) What does an efficient portfolio (on the CML) with the same volatility as A earn? Report percentages with two decimals.",
+    "modelAnswer": "(a) β = 0.4 × 24%/16% = 0.60 → E = 4% + 0.6 × 6% = 7.60%.\n(b) 4% + (6%/16%) × 24% = 13.00%.\nThe gap shows that most of A's volatility is idiosyncratic and therefore not rewarded.",
+    "keyPoints": [
+      "(a) Beta: 0.6",
+      "(a) Expected return: 7.6 %",
+      "(b) Return on the CML: 13 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Beta",
+        "value": 0.6,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "(a) Expected return",
+        "value": 7.6,
+        "unit": "%"
+      },
+      {
+        "label": "(b) Return on the CML",
+        "value": 13.0,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-08",
+    "lecture": "l4",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "A gold-mining stock has a beta of −0.25. The risk-free rate is 3% and the expected market return 9%. What is its required return, and why can it be below the risk-free rate? Report percentages with two decimals.",
+    "modelAnswer": "E(R) = 3% + (−0.25) × 6% = 1.50%.\nA negative-beta stock tends to rise when the market falls: it insures the portfolio, so investors accept an expected return below rf.",
+    "keyPoints": [
+      "Required return: 1.5 %"
+    ],
+    "results": [
+      {
+        "label": "Required return",
+        "value": 1.5,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-09",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What are the expected return and the volatility of the market portfolio (a 50–50 combination of the two portfolios)? Report percentages with two decimals.",
+    "modelAnswer": "E(R_M) = 0.5 × 10% + 0.5 × 15% = 12.50%.\nVar = 0.25 × 0.18² + 0.25 × 0.24² + 2 × 0.25 × 0.5 × 0.18 × 0.24 = 0.0081 + 0.0144 + 0.0108 = 0.033300 → σ_M = 18.25%.",
+    "keyPoints": [
+      "E(R_M): 12.5 %",
+      "σ_M: 18.2483 %"
+    ],
+    "results": [
+      {
+        "label": "E(R_M)",
+        "value": 12.5,
+        "unit": "%"
+      },
+      {
+        "label": "σ_M",
+        "value": 18.2483,
+        "unit": "%"
+      }
+    ],
+    "case": "l4-esg"
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-10",
+    "lecture": "l4",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "(b) Compute the beta of the green portfolio with respect to the market and its required return under the CAPM. Does the CAPM hold in this economy?",
+    "modelAnswer": "Cov(G, M) = Cov(G, 0.5G + 0.5B) = 0.5 × 0.18² + 0.5 × 0.5 × 0.18 × 0.24 = 0.0270.\nβ_G = 0.0270/0.033300 = 0.8108 → required return = 2% + 0.8108 × 10.50% = 10.51%.\nThe green portfolio offers only 10% → negative alpha (≈ -0.51%). Not every asset lies on the SML, so the market portfolio is not efficient and the CAPM does not hold (e.g. because investors care about sustainability, not only mean and variance).",
+    "keyPoints": [
+      "Beta green: 0.810811",
+      "CAPM required return: 10.5135 %"
+    ],
+    "results": [
+      {
+        "label": "Beta green",
+        "value": 0.810811,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "CAPM required return",
+        "value": 10.5135,
+        "unit": "%"
+      }
+    ],
+    "case": "l4-esg"
+  },
+  {
+    "type": "short",
+    "id": "cf-l4-11",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Compare the capital market line (CML) and the security market line (SML): axes, slope, and which assets lie on each line.",
+    "modelAnswer": "CML: expected return against volatility (total risk); slope = Sharpe ratio of the market (E(R_M) − rf)/σ_M; only efficient portfolios (mixes of the market and the risk-free asset) lie on it, single stocks lie below because their idiosyncratic risk is not rewarded. SML: expected return against beta (market risk); slope = market risk premium E(R_M) − rf; in equilibrium every stock and portfolio lies on it. Above the SML = positive alpha (buy), below = negative alpha (sell).",
+    "keyPoints": [
+      "CML: x-axis volatility, slope Sharpe ratio of M",
+      "Only efficient portfolios on the CML; stocks below",
+      "SML: x-axis beta, slope market risk premium",
+      "Every asset on the SML in equilibrium (alpha = 0)"
+    ]
+  }
+]

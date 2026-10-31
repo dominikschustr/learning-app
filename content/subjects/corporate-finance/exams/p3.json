@@ -1,0 +1,174 @@
+[
+  {
+    "id": "p3",
+    "title": "Probeklausur 3 (neu)",
+    "subtitle": "A new paper in the exam format with fresh numbers across all eight lectures: 15 multiple-choice questions and 7 calculation exercises.",
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Part 1 – Multiple choice questions",
+        "instructions": "Select the MOST appropriate response. Each question is worth 2/3 marks. [10 marks]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "cf-p3-mc01",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc02",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc03",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc04",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc05",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc06",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc07",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc08",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc09",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc10",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc11",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc12",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc13",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc14",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p3-mc15",
+                "points": 0.6666666666666666
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Short answer and calculation questions",
+        "instructions": "Report the main calculation steps and justify all your responses. Report numbers with four decimals and percentages with two decimals. [10 marks]",
+        "sections": [
+          {
+            "title": "Exercise 1 – Adjusted prices",
+            "items": [
+              {
+                "q": "cf-p3-01a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p3-01b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Scenarios",
+            "items": [
+              {
+                "q": "cf-p3-02a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p3-02b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Risk-free asset",
+            "items": [
+              {
+                "q": "cf-p3-03a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p3-03b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 4 – CAPM and alpha",
+            "items": [
+              {
+                "q": "cf-p3-04a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p3-04b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 5 – WACC",
+            "items": [
+              {
+                "q": "cf-p3-05a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p3-05b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 6 – MM with a simple project",
+            "items": [
+              {
+                "q": "cf-p3-06a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p3-06b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 7 – Industry beta",
+            "items": [
+              {
+                "q": "cf-p3-07",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

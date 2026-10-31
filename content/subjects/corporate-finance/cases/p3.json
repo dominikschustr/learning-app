@@ -1,0 +1,110 @@
+[
+  {
+    "id": "p3-lumen",
+    "title": "Exercise 1 – Lumen SE",
+    "text": [
+      "The table shows the closing price of Lumen SE and the adjusted close, i.e. the price adjusted for dividends and stock splits. Lumen did no stock split, so the adjusted close only reflects dividends."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Date",
+          "Close",
+          "Adj. close"
+        ],
+        "rows": [
+          [
+            "31/10/2021",
+            "42.00",
+            "36.12"
+          ],
+          [
+            "31/10/2022",
+            "39.50",
+            "35.20"
+          ],
+          [
+            "31/10/2023",
+            "45.80",
+            "42.65"
+          ],
+          [
+            "31/10/2024",
+            "47.10",
+            "45.30"
+          ],
+          [
+            "31/10/2025",
+            "49.20",
+            "49.20"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p3-scen",
+    "title": "Exercise 2 – Two stocks in three scenarios",
+    "text": [
+      "Next year's returns of stocks A and B depend on the state of the economy:"
+    ],
+    "tables": [
+      {
+        "head": [
+          "State",
+          "Probability",
+          "Stock A",
+          "Stock B"
+        ],
+        "rows": [
+          [
+            "Boom",
+            "0.25",
+            "20%",
+            "2%"
+          ],
+          [
+            "Normal",
+            "0.50",
+            "8%",
+            "6%"
+          ],
+          [
+            "Recession",
+            "0.25",
+            "−6%",
+            "12%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p3-tobin",
+    "title": "Exercise 3 – Lending and borrowing",
+    "text": [
+      "A risky fund has an expected return of 12% and a volatility of 20%. You can lend and borrow at the risk-free rate of 3%."
+    ]
+  },
+  {
+    "id": "p3-kappa",
+    "title": "Exercise 4 – Kappa AG",
+    "text": [
+      "The risk-free rate is 3%, the expected market return 9% and the market volatility 18%. Kappa AG has a volatility of 30% and a correlation of 0.6 with the market. An analyst expects Kappa to return 11% next year."
+    ]
+  },
+  {
+    "id": "p3-wacc",
+    "title": "Exercise 5 – Orion SA",
+    "text": [
+      "Orion SA has equity with a market value of EUR 600m and debt of EUR 400m. Its cost of equity is 11% and its cost of debt 5%. The corporate tax rate is 25%."
+    ]
+  },
+  {
+    "id": "p3-cafe",
+    "title": "Exercise 6 – Café Atlas",
+    "text": [
+      "An entrepreneur invests EUR 400 today in a project that pays EUR 780 next year if the economy is strong and EUR 520 if it is weak, each with probability 0.5. The unlevered cost of capital is 30% and the risk-free rate 4%. She borrows EUR 300 at the risk-free rate and raises the rest with equity. Perfect capital markets."
+    ]
+  }
+]

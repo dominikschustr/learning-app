@@ -1,0 +1,76 @@
+[
+  {
+    "id": "l8-bikes",
+    "title": "Comparable firms for a private bike maker",
+    "text": [
+      "You want to estimate the cost of capital of a private bicycle manufacturer. It has a target debt-to-equity ratio of 0.5. There are no taxes and all debt is risk-free (β_D = 0). The risk-free rate is 3% and the market risk premium 5%."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Firm",
+          "Equity beta",
+          "D/E"
+        ],
+        "rows": [
+          [
+            "Velo A",
+            "1.30",
+            "0.60"
+          ],
+          [
+            "Velo B",
+            "0.90",
+            "0.20"
+          ],
+          [
+            "Velo C",
+            "1.50",
+            "1.00"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "l8-conglo",
+    "title": "Trident Group: a conglomerate with three divisions",
+    "text": [
+      "Trident Group has three divisions: Food (50% of firm value), Tech (30%) and Energy (20%). It pays no taxes, all debt is risk-free, and Trident's own debt ratio is D/(D + E) = 0.25. The risk-free rate is 3% and the expected market return 9%. Trident has identified one pure-play competitor per division:"
+    ],
+    "tables": [
+      {
+        "head": [
+          "Competitor",
+          "Equity beta",
+          "D/(D + E)"
+        ],
+        "rows": [
+          [
+            "Food peer",
+            "0.90",
+            "0.30"
+          ],
+          [
+            "Tech peer",
+            "1.50",
+            "0.10"
+          ],
+          [
+            "Energy peer",
+            "1.10",
+            "0.40"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "l8-perks",
+    "title": "Brightline: managing the earnings yield",
+    "text": [
+      "Brightline has no debt. Its cash flow (= EBIT = earnings) is EUR 12m this year and is expected to grow at 4% per year forever; all earnings are paid out as dividends. Its market capitalization is EUR 150m and its book equity EUR 90m. It can borrow risk-free at 5% and pays no taxes.",
+      "A large shareholder demands a higher earnings yield (earnings / market value of equity). The CFO considers raising the debt-to-equity ratio to 2:1 through a leveraged recapitalization, without changing the assets."
+    ]
+  }
+]

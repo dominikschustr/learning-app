@@ -1,0 +1,32 @@
+[
+  {
+    "id": "c-min-var",
+    "lecture": "l3",
+    "front": "Formula: Minimum-variance portfolio (two assets)",
+    "back": "x1 = (σ2² − σ1 σ2 ρ) / (σ1² + σ2² − 2 σ1 σ2 ρ),   x2 = 1 − x1\n\nUse: The lowest-risk combination of two stocks.\nTrap: Expected returns play no role.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-zero-risk",
+    "lecture": "l3",
+    "front": "Formula: Risk-free mix when ρ = −1",
+    "back": "x1 = σ2 / (σ1 + σ2)  →  σp = 0\n\nUse: Perfectly negatively correlated assets.\nTrap: Special case ρ = 0: x_1 = σ_2² / (σ_1² + σ_2²).\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-cal",
+    "lecture": "l3",
+    "front": "Formula: Mixing with the risk-free asset (CAL)",
+    "back": "E(R) = rf + x (E(RP) − rf)\nσ = x σP\n\nUse: Lending (0 < x < 1) or borrowing (x > 1) combined with a risky portfolio P.\nTrap: Leverage scales premium and risk in the same proportion – the Sharpe ratio stays.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-sharpe",
+    "lecture": "l3",
+    "front": "Formula: Sharpe ratio",
+    "back": "SP = (E(RP) − rf) / σP\n\nUse: Ranking risky portfolios when you can borrow and lend at r_f.\nTrap: Positive Sharpe = beats r_f in expectation; it says nothing about 'above one'."
+  },
+  {
+    "id": "c-target",
+    "lecture": "l3",
+    "front": "Formula: Hitting a target risk or return",
+    "back": "target σ:  x = σtarget / σT\ntarget return:  x = (Etarget − rf) / (E(RT) − rf)\n\nUse: Beat a given portfolio with the tangency (or market) portfolio.\nTrap: x > 1 means borrowing (negative risk-free weight).\n\nNot on the formula sheet – learn it by heart."
+  }
+]

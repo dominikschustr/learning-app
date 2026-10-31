@@ -1,0 +1,10 @@
+[
+  {
+    "id": "l3-fund",
+    "title": "The Plus+ fund vs stock A",
+    "text": [
+      "Stock A trades at EUR 50 today. In one year it will be worth EUR 62 (expansion) or EUR 48 (recession), each with probability 0.5. No dividends. The risk-free rate is 4%.",
+      "The fund Plus+ claims to be better than stock A: for an investment of EUR 100 today it pays EUR 140 in the expansion and EUR 85 in the recession."
+    ]
+  }
+]

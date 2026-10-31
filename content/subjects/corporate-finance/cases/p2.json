@@ -1,0 +1,116 @@
+[
+  {
+    "id": "p2-abc",
+    "title": "Exercise 1 – ABC",
+    "text": [
+      "ABC's share price on 1 October 2021 was EUR 350.40. On 9 May 2022 the firm paid a dividend of EUR 4 per share; the share price on this day was EUR 340.40. On 31 October 2022 the share price was EUR 380.20."
+    ]
+  },
+  {
+    "id": "p2-port",
+    "title": "Exercise 2 – A two-stock portfolio",
+    "text": [
+      "You invest EUR 2,000 in stock A and EUR 1,000 in stock B. Their returns have a correlation of 0.4."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Stock",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "A",
+            "8%",
+            "25%"
+          ],
+          [
+            "B",
+            "20%",
+            "50%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p2-esg",
+    "title": "Exercise 3 – Sustainable and unsustainable stocks",
+    "text": [
+      "Suppose you group all stocks in the world into two mutually exclusive portfolios based on their sustainability rating. The two portfolios have equal total value and a correlation of 0.6. The risk-free rate is 3%."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Portfolio",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "Sustainable stocks",
+            "12%",
+            "20%"
+          ],
+          [
+            "Unsustainable stocks",
+            "17%",
+            "21%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p2-broker",
+    "title": "Exercise 4 – Should you add ESCP Corporation?",
+    "text": [
+      "You currently invest only in an ETF that tracks the market portfolio. The ETF and the market have an expected return of 14% with a volatility of 20%. The risk-free rate is 2%. Your broker suggests adding ESCP Corporation: expected return 5%, volatility 10%, correlation of zero with the ETF and the market."
+    ]
+  },
+  {
+    "id": "p2-music",
+    "title": "Exercise 5 – Musical instruments",
+    "text": [
+      "You estimate the equity beta of a private firm that manufactures musical instruments, using publicly traded firms in the same industry. The private firm has a debt-to-equity ratio of 1. No firm pays corporate tax, and all debt betas are zero."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Firm",
+          "Equity beta",
+          "Debt (EUR m)",
+          "Equity (EUR m)"
+        ],
+        "rows": [
+          [
+            "Music Star",
+            "1.20",
+            "100",
+            "50"
+          ],
+          [
+            "Virtuoso Instruments",
+            "0.80",
+            "75",
+            "200"
+          ],
+          [
+            "VivaMo",
+            "0.60",
+            "10",
+            "110"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p2-zeta",
+    "title": "Exercise 6 – Zeta and Omicron",
+    "text": [
+      "Zeta Industries and Omicron Technology have identical assets that generate identical cash flows. Zeta is all-equity financed with 10 million shares trading at EUR 22. Omicron has 20 million shares and EUR 60 million of debt. Assume perfect capital markets."
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c-mm2",
+    "lecture": "l8",
+    "front": "Formula: MM Proposition II",
+    "back": "rE = rU + (D/E)(rU − rD)\n\nUse: Cost of equity after a change in leverage (no taxes).\nTrap: Uses D/E, not D/(D + E).\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-wacc-mm",
+    "lecture": "l8",
+    "front": "Formula: WACC without taxes",
+    "back": "rWACC = E/(E + D) × rE + D/(E + D) × rD = rU\n\nUse: The WACC is constant for any leverage when there are no taxes.\nTrap: Cheap debt is offset by dearer equity.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-relever",
+    "lecture": "l8",
+    "front": "Formula: Relevering betas (β_D = 0)",
+    "back": "βE = βU (1 + D/E)   ⟺   βU = βE / (1 + D/E)\n\nUse: Unlever a comparable, relever to a target structure.\nTrap: Average asset betas across an industry, then relever."
+  },
+  {
+    "id": "c-beta-mm2",
+    "lecture": "l8",
+    "front": "Formula: Beta version of MM II",
+    "back": "βE = βU + (D/E)(βU − βD)\n\nUse: Equity beta with risky debt (β_D > 0).\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-convert",
+    "lecture": "l8",
+    "front": "Formula: Converting leverage ratios",
+    "back": "D/E = w/(1 − w)   with   w = D/(D + E)\nE/(D + E) = 1/(1 + D/E)\n\nUse: Whenever the task gives D/(D + E) but the formula needs D/E (or vice versa).\nTrap: D/(D + E) = 0.5 means D/E = 1.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-ratios",
+    "lecture": "l8",
+    "front": "Formula: Earnings yield and ROE",
+    "back": "Earnings yield = Earnings / Emarket\nROE = Earnings / Ebook\n\nUse: Performance ratios that rise with leverage without any value creation.\nTrap: Judge value, not leverage-dependent ratios.\n\nNot on the formula sheet – learn it by heart."
+  }
+]

@@ -1,0 +1,853 @@
+[
+  {
+    "type": "mc",
+    "id": "cf-p1-mc01",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Assume that an economy has only two risky stocks with the same market capitalization and the same volatility. Their returns are perfectly negatively correlated (ρ = −1). Which statement on idiosyncratic and systematic risk is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The risk of the two stocks is systematic only."
+      },
+      {
+        "id": "b",
+        "text": "B  The risk of the two stocks is idiosyncratic only."
+      },
+      {
+        "id": "c",
+        "text": "C  The risk of the two stocks is both systematic and idiosyncratic."
+      },
+      {
+        "id": "d",
+        "text": "D  We do not have enough information to conclude whether the stocks' risk is idiosyncratic and/or systematic."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The market portfolio is 50/50. With equal volatilities and ρ = −1 its volatility is |0.5σ − 0.5σ| = 0: the market has no risk. All risk of each stock cancels in the market, so it is idiosyncratic only."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc02",
+    "lecture": "l2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The volatility of a portfolio will differ, depending on the correlation between the securities in the portfolio."
+      },
+      {
+        "id": "b",
+        "text": "B  We say a portfolio is an efficient portfolio whenever it is possible to find another portfolio that is better in terms of either expected return or volatility."
+      },
+      {
+        "id": "c",
+        "text": "C  We can rule out some efficient portfolios because they represent inferior investment choices."
+      },
+      {
+        "id": "d",
+        "text": "D  Correlation between individual assets in a portfolio affects the expected return of a portfolio."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The cross term 2x₁x₂ρσ₁σ₂ makes the volatility depend on the correlation. B describes an inefficient portfolio, C confuses efficient with inefficient, and the expected return is a weighted average that does not depend on correlation."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc03",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Assume all investors want to hold a portfolio that, for a given level of volatility, has the maximum expected return. Which statement describes investors' portfolio choice when a risk-free asset is available?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  As we increase the fraction invested in the efficient portfolio, we increase our expected return but not our risk proportionately."
+      },
+      {
+        "id": "b",
+        "text": "B  If we increase the fraction invested in the efficient portfolio beyond 100%, we are short selling the risk-free investment."
+      },
+      {
+        "id": "c",
+        "text": "C  To earn the highest possible expected return for any level of volatility, we must find the portfolio that generates the flattest possible line when combined with the risk-free investment."
+      },
+      {
+        "id": "d",
+        "text": "D  Only aggressive investors should invest in the tangency portfolio."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "x > 1 means a negative weight on the risk-free asset, i.e. borrowing (short selling the risk-free investment). Risk rises proportionately (σ = xσ_T), we look for the steepest line, and every investor holds the tangency portfolio."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc04",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The GreenFund has an expected return of 12% and a volatility of 10%. The risk-free rate is 3%. Which statement regarding the Sharpe ratio of the GreenFund is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Since the Sharpe ratio is above one, it offers a good risk-return trade-off."
+      },
+      {
+        "id": "b",
+        "text": "B  Since the Sharpe ratio is below one, it offers a poor risk-return trade-off."
+      },
+      {
+        "id": "c",
+        "text": "C  Since the Sharpe ratio is above one, it outperforms the risk-free investment."
+      },
+      {
+        "id": "d",
+        "text": "D  Since the Sharpe ratio is below one, it underperforms the risk-free investment."
+      },
+      {
+        "id": "e",
+        "text": "E  Since the Sharpe ratio is positive, it outperforms the risk-free investment."
+      }
+    ],
+    "correct": [
+      "e"
+    ],
+    "explanation": "Sharpe = (12% − 3%)/10% = 0.9. There is no threshold of one; a positive Sharpe ratio means the expected return exceeds the risk-free rate."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc05",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Suppose that the market portfolio has an expected return of 9% and a volatility of 20%. The risk-free rate is 3%. What is the slope of the security market line (SML)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  6%"
+      },
+      {
+        "id": "b",
+        "text": "B  9%"
+      },
+      {
+        "id": "c",
+        "text": "C  0.25"
+      },
+      {
+        "id": "d",
+        "text": "D  0.3"
+      },
+      {
+        "id": "e",
+        "text": "E  0.45"
+      },
+      {
+        "id": "f",
+        "text": "F  3"
+      },
+      {
+        "id": "g",
+        "text": "G  None of the proposed alternatives is close to the slope of the SML."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The SML plots expected return against beta; its slope is the market risk premium 9% − 3% = 6%. 0.3 is the slope of the CML (Sharpe ratio of the market)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc06",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Suppose the risk-free rate is 3% and the expected market risk premium is 6%. The stock of the Smart AI Company has a beta of 1.4. Under the CAPM, what is the required return on the stock?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  15.6%"
+      },
+      {
+        "id": "b",
+        "text": "B  13.8%"
+      },
+      {
+        "id": "c",
+        "text": "C  11.4%"
+      },
+      {
+        "id": "d",
+        "text": "D  10.2%"
+      },
+      {
+        "id": "e",
+        "text": "E  8.4%"
+      },
+      {
+        "id": "f",
+        "text": "F  7.2%"
+      },
+      {
+        "id": "g",
+        "text": "G  None of the proposed alternatives is close to the required return."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "3% + 1.4 × 6% = 11.4%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc07",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which setting below violates a CAPM assumption?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Most investors prefer to buy and hold rather than actively trade."
+      },
+      {
+        "id": "b",
+        "text": "B  One investor in the market is very large relative to all the others."
+      },
+      {
+        "id": "c",
+        "text": "C  Very few stocks exist."
+      },
+      {
+        "id": "d",
+        "text": "D  A significant number of investors excludes highly polluting firms from their portfolios."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The CAPM assumes that every investor holds an efficient portfolio (mean–variance only). Investors who exclude polluting firms for non-financial reasons do not hold the tangency portfolio. Buy-and-hold is consistent with the CAPM, and the number of stocks does not matter. (Solution not part of the original paper – own reasoning.)"
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc08",
+    "lecture": "l6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "From the start of 1999 to the start of 2009, the S&P 500 had a negative return. Does this mean the market risk premium we should use in the CAPM is negative?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  No, negative risk premiums are impossible, there is clearly an error in the estimation."
+      },
+      {
+        "id": "b",
+        "text": "B  No, to get a reliable estimate of an expected return we need much more data."
+      },
+      {
+        "id": "c",
+        "text": "C  No, it is generally not advisable to use historical returns to infer the risk premium for the CAPM formula."
+      },
+      {
+        "id": "d",
+        "text": "D  Yes, during this time period the risk premium is negative."
+      },
+      {
+        "id": "e",
+        "text": "E  Yes, the data shows that the risk premium on the market proxy is negative."
+      },
+      {
+        "id": "f",
+        "text": "F  Yes, ten years is a sufficiently long time period to infer a risk premium."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Realized returns are very noisy; ten years give an imprecise estimate of the expected return (standard error of several percent). The historical approach needs long samples – it is data intensive but not necessarily precise."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc09",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The market portfolio has an expected return of 10% and a volatility of 20%; Tesla's stock has a volatility of 40%. Given its higher volatility, should we expect Tesla to have an equity cost of capital larger than 10%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Yes, because stock return correlations are usually positive, Tesla's beta must be above one and thus its cost of equity is larger than 10%."
+      },
+      {
+        "id": "b",
+        "text": "B  No, because markets are efficient, Tesla's stock cannot have an expected return higher than the market and thus its equity cost of capital must be below 10%."
+      },
+      {
+        "id": "c",
+        "text": "C  Yes, higher volatility means more risk, so Tesla is riskier than the market and should therefore have an equity cost of capital larger than 10%."
+      },
+      {
+        "id": "d",
+        "text": "D  No, volatility includes diversifiable risk, and so Tesla's beta could be below or above one. Thus, we cannot say whether Tesla's equity cost of capital is larger than 10%."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "β = ρ × 40%/20% = 2ρ, which is above one only if ρ > 0.5. Only market risk (beta) is priced, not total volatility."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc10",
+    "lecture": "l6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Latteria Montello S.p.A. has a market capitalization of EUR 300 million and EUR 200 million of debt. Its equity cost of capital is 12%, its (pre-tax) debt cost of capital is 5%, and the corporate tax rate is 24%. Latteria Montello's after-tax debt cost of capital is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  8.72%"
+      },
+      {
+        "id": "b",
+        "text": "B  5%"
+      },
+      {
+        "id": "c",
+        "text": "C  12%"
+      },
+      {
+        "id": "d",
+        "text": "D  9.2%"
+      },
+      {
+        "id": "e",
+        "text": "E  7.08%"
+      },
+      {
+        "id": "f",
+        "text": "F  3.8%"
+      },
+      {
+        "id": "g",
+        "text": "G  None of the proposed values is close to the correct solution."
+      }
+    ],
+    "correct": [
+      "f"
+    ],
+    "explanation": "r_D (1 − τ) = 5% × 0.76 = 3.8%. 8.72% would be the WACC, 9.2% the pre-tax WACC."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc11",
+    "lecture": "l8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Modigliani and Miller propose that the market value or the cost of capital of any firm is independent of its capital structure in perfect capital markets. Which statement is CORRECT in this setting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The cost of capital of unlevered equity is equal to the cost of capital of levered equity plus a risk premium that depends on the debt-equity ratio."
+      },
+      {
+        "id": "b",
+        "text": "B  The cost of capital of levered equity is equal to the cost of capital of unlevered equity plus a risk premium that depends on the debt-equity ratio."
+      },
+      {
+        "id": "c",
+        "text": "C  The cost of capital of levered equity is equal to the cost of capital of unlevered equity plus a risk premium that depends on the risk of the cash flow stream."
+      },
+      {
+        "id": "d",
+        "text": "D  The cost of capital of levered equity is equal to the cost of capital of unlevered equity minus a discount that depends on the debt-equity ratio."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "MM II: r_E = r_U + (D/E)(r_U − r_D)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc12",
+    "lecture": "l7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is FALSE? (replaces a question on the interest tax shield, which is not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  In a perfect capital market, the total value of a firm's securities equals the market value of the cash flows generated by its assets."
+      },
+      {
+        "id": "b",
+        "text": "B  Investors can replicate the leverage of a firm by borrowing on their own account (homemade leverage)."
+      },
+      {
+        "id": "c",
+        "text": "C  A leveraged recapitalization raises the share price in a perfect market because debt is cheaper than equity."
+      },
+      {
+        "id": "d",
+        "text": "D  If capital structure matters, it must stem from a market imperfection."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Under MM I a recap only changes the slices: the share price stays the same. Cheaper debt is offset by a higher cost of equity."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc13",
+    "lecture": "l5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Investors start buying a stock that has a positive alpha. What is the likely effect? (replaces a question on convertible bonds)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Its price rises and its expected return falls until the alpha is zero."
+      },
+      {
+        "id": "b",
+        "text": "B  Its price falls and its expected return rises until the alpha is zero."
+      },
+      {
+        "id": "c",
+        "text": "C  Its price and its expected return both rise."
+      },
+      {
+        "id": "d",
+        "text": "D  Nothing: in efficient markets a positive alpha persists."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Buying pressure lifts today's price; with the same expected payoff, the expected return falls until it equals the required return (α = 0)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc14",
+    "lecture": "l8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A listed firm issues new shares at the market price and invests the money in a zero-NPV project. Assume perfect capital markets. Which statement is CORRECT? (replaces a question on share buybacks)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Existing shareholders lose because earnings are spread over more shares."
+      },
+      {
+        "id": "b",
+        "text": "B  Issuing shares at their fair market value does not dilute value; gains or losses come only from the NPV of the investment."
+      },
+      {
+        "id": "c",
+        "text": "C  The share price falls in proportion to the number of new shares issued."
+      },
+      {
+        "id": "d",
+        "text": "D  Earnings per share always rise after an equity issue."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Dilution fallacy: new shareholders pay a fair price, so the value per share is unchanged. Only the NPV of the use of funds creates or destroys value."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p1-mc15",
+    "lecture": "l2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "In portfolio formulas, what does a short position in a stock correspond to? (replaces a question on options)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  A negative portfolio weight; the remaining weights then add up to more than one."
+      },
+      {
+        "id": "b",
+        "text": "B  A weight above one."
+      },
+      {
+        "id": "c",
+        "text": "C  A weight of zero, because no own money is invested."
+      },
+      {
+        "id": "d",
+        "text": "D  A position in the risk-free asset."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Short EUR 50 with EUR 100 of own money → weight −0.5; the other weights sum to 1.5, the total is still 1."
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-01a",
+    "lecture": "l1",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What was the stock's total (realized) return between 31/10/2019 and 31/10/2020, and what was the capital gain rate?",
+    "modelAnswer": "Total return: (52.63 + 2.88)/58.60 − 1 = -5.27%.\nCapital gain rate: 52.63/58.60 − 1 = -10.19%.",
+    "keyPoints": [
+      "Total return: -5.273 %",
+      "Capital gain rate: -10.1877 %"
+    ],
+    "results": [
+      {
+        "label": "Total return",
+        "value": -5.273,
+        "unit": "%"
+      },
+      {
+        "label": "Capital gain rate",
+        "value": -10.1877,
+        "unit": "%"
+      }
+    ],
+    "case": "p1-danone",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-01b",
+    "lecture": "l1",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) Assuming that dividends were immediately reinvested in Danone stock, calculate the overall return over the four years from 31/10/2019 to 31/10/2023. What is the annualized return (geometric average)?",
+    "modelAnswer": "Yearly returns: -5.27%, -37.75%, 77.12%, 15.55%.\nOverall: (1 − 5.27%)(1 − 37.75%)(1 + 77.12%)(1 + 15.55%) − 1 = 20.67%.\nGeometric average: (1 + 20.67%)^(1/4) − 1 = 4.81%.",
+    "keyPoints": [
+      "Overall return: 20.6707 %",
+      "Geometric average: 4.8095 %"
+    ],
+    "results": [
+      {
+        "label": "Overall return",
+        "value": 20.6707,
+        "unit": "%"
+      },
+      {
+        "label": "Geometric average",
+        "value": 4.8095,
+        "unit": "%"
+      }
+    ],
+    "case": "p1-danone",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-02a",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is the portfolio of these two stocks that has the lowest risk?",
+    "modelAnswer": "With ρ = −1: xA = σB/(σA + σB) = 30%/45% = 66.67%, xB = 15%/45% = 33.33%. The portfolio's volatility is zero.",
+    "keyPoints": [
+      "Weight in A: 66.6667 %",
+      "Weight in B: 33.3333 %"
+    ],
+    "results": [
+      {
+        "label": "Weight in A",
+        "value": 66.6667,
+        "unit": "%"
+      },
+      {
+        "label": "Weight in B",
+        "value": 33.3333,
+        "unit": "%"
+      }
+    ],
+    "case": "p1-negcorr",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-02b",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What is the expected return of the portfolio calculated in the previous question?",
+    "modelAnswer": "2/3 × 8% + 1/3 × 12% = 9.33%.",
+    "keyPoints": [
+      "Expected return: 9.3333 %"
+    ],
+    "results": [
+      {
+        "label": "Expected return",
+        "value": 9.3333,
+        "unit": "%"
+      }
+    ],
+    "case": "p1-negcorr",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-03a",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) According to the CAPM, which alternative investment provides the same volatility as Nintendo but a higher expected return? Calculate the portfolio weights and the expected return.",
+    "modelAnswer": "Combine the risk-free asset with the market portfolio: 16% × x = 40% → x = 2.5 in the market, −1.5 in the risk-free asset (borrowing).\nE = 8% × 2.5 + 4% × (−1.5) = 14% > 10%.",
+    "keyPoints": [
+      "Weight in the market portfolio: 2.5",
+      "Weight in the risk-free asset: -1.5",
+      "Expected return: 14 %"
+    ],
+    "results": [
+      {
+        "label": "Weight in the market portfolio",
+        "value": 2.5,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Weight in the risk-free asset",
+        "value": -1.5,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Expected return",
+        "value": 14.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p1-nintendo",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-03b",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) Which mix of the market and the risk-free asset offers the same expected return as Nintendo, and what is its volatility? Where do Nintendo and both portfolios lie relative to the capital market line? (replaces drawing the CML)",
+    "modelAnswer": "4% + x × (8% − 4%) = 10% → x = 1.5, σ = 1.5 × 16% = 24% < 40%.\nBoth mixes of the market and the risk-free asset lie on the CML (E = 4% + 0.25σ); Nintendo lies below it, because part of its volatility is idiosyncratic and not rewarded.",
+    "keyPoints": [
+      "Weight in the market portfolio: 1.5",
+      "Volatility: 24 %"
+    ],
+    "results": [
+      {
+        "label": "Weight in the market portfolio",
+        "value": 1.5,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Volatility",
+        "value": 24.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p1-nintendo",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-04a",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is your estimate of the expected market return according to the fundamental approach?",
+    "modelAnswer": "Constant-growth model: r_M = Div₁/P₀ + g = 4% + 2% = 6%.",
+    "keyPoints": [
+      "Expected market return: 6 %"
+    ],
+    "results": [
+      {
+        "label": "Expected market return",
+        "value": 6.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p1-sp500",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-04b",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "(b) Explain briefly the historical approach as an alternative method to estimate the expected market return. What are its two main drawbacks?",
+    "modelAnswer": "The historical approach takes the average return of the market over a long sample of past returns and uses it as the estimate of the future expected market return (or the average excess return as the risk premium). Drawbacks: (1) it is data intensive but still imprecise – realized returns are so volatile that even decades of data leave a large standard error; (2) it is backward looking by construction and may not reflect current expectations.",
+    "keyPoints": [
+      "Average of past market returns as estimate",
+      "Imprecise even with much data (large standard error)",
+      "Backward looking, may not reflect current expectations"
+    ],
+    "case": "p1-sp500",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-05a",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is EduHos's cost of capital?",
+    "modelAnswer": "3/5 × 7% + 2/5 × 3% = 5.4% (no taxes → WACC = r_U).",
+    "keyPoints": [
+      "Cost of capital: 5.4 %"
+    ],
+    "results": [
+      {
+        "label": "Cost of capital",
+        "value": 5.4,
+        "unit": "%"
+      }
+    ],
+    "case": "p1-eduhos",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-05b",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) EduHos sells its hospital division for EUR 150 million and uses the money to pay back part of its debt. The typical asset betas of hospitals and universities are 0.6 and 0.4. What is EduHos's equity beta after these transactions? What can you say about its equity beta before (no calculation needed)?",
+    "modelAnswer": "After the sale only the university remains (β_U = 0.4), debt = 200 − 150 = 50, equity = 300.\nβ_E = 0.4 × (1 + 50/300) = 0.4 × 1.1667 = 0.4667.\nBefore, EduHos had more leverage and a higher asset beta (hospitals 0.6 > 0.4), so its equity beta must have been higher than 0.4667.",
+    "keyPoints": [
+      "Equity beta after: 0.466667"
+    ],
+    "results": [
+      {
+        "label": "Equity beta after",
+        "value": 0.466667,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "case": "p1-eduhos",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-06a",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) According to MM Proposition I, what are the equity value and the share price of Octo?",
+    "modelAnswer": "V_U = 8m × 30 = 240m = V_L. E_Octo = 240 − 60 = 180m → price = 180/12 = EUR 15.",
+    "keyPoints": [
+      "Equity value (EUR m): 180 m",
+      "Share price (EUR): 15 EUR"
+    ],
+    "results": [
+      {
+        "label": "Equity value (EUR m)",
+        "value": 180,
+        "unit": "m",
+        "tol": 0.05
+      },
+      {
+        "label": "Share price (EUR)",
+        "value": 15,
+        "unit": "EUR",
+        "tol": 0.01
+      }
+    ],
+    "case": "p1-hexa",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-06b",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "(b) Suppose Octo stock trades at EUR 16. What arbitrage opportunity is available, and which assumptions are needed to exploit it?",
+    "modelAnswer": "At EUR 16, E_Octo = 192m and V_L = 252m > V_U = 240m: Octo is overpriced. Arbitrage: sell (short) Octo shares and replicate them with homemade leverage – e.g. sell 1% of Octo's shares (1.92m), buy 1% of Hexa (2.4m) and borrow 1% of Octo's debt (0.6m): net +0.12m today, identical future cash flows. It requires perfect capital markets: investors can borrow at the same rate as the firm, short selling is possible, no transaction costs or taxes.",
+    "keyPoints": [
+      "V_L = 252 > V_U = 240 → Octo overpriced",
+      "Sell Octo, buy Hexa and borrow (homemade leverage)",
+      "Riskless profit today, zero future cash flows",
+      "Needs borrowing at the firm's rate, short sales, no transaction costs"
+    ],
+    "case": "p1-hexa",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p1-07",
+    "lecture": "l5",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "A stock trades at EUR 40 today. Analysts expect a price of EUR 43 in one year plus a dividend of EUR 1.20. The stock's beta is 0.8, the risk-free rate 3% and the market risk premium 5%. Compute the expected return, the required return and the alpha. Is the stock over- or undervalued? (replaces the option question)",
+    "modelAnswer": "Expected return = (43 + 1.20)/40 − 1 = 10.50%. Required = 3% + 0.8 × 5% = 7.00%. α = 3.50% > 0 → undervalued (above the SML): buy.",
+    "keyPoints": [
+      "Expected return: 10.5 %",
+      "Required return: 7 %",
+      "Alpha: 3.5 %"
+    ],
+    "results": [
+      {
+        "label": "Expected return",
+        "value": 10.5,
+        "unit": "%"
+      },
+      {
+        "label": "Required return",
+        "value": 7.0,
+        "unit": "%"
+      },
+      {
+        "label": "Alpha",
+        "value": 3.5,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "f-realized-return",
+    "lecture": "l1",
+    "name": "Realized return (one period)",
+    "formula": "R_{t+1} = (P_{t+1} + Div_{t+1} − P_t) / P_t\n= capital gain rate + dividend yield",
+    "use": "Return of a stock or bond held between two dates.",
+    "vars": [
+      "P_t = price at the start",
+      "Div_{t+1} = dividend (or coupon) received"
+    ],
+    "pitfall": "Bond: use the coupon in EUR, not the coupon rate.",
+    "sheet": true
+  },
+  {
+    "id": "f-split-return",
+    "lecture": "l1",
+    "name": "Return with a stock split",
+    "formula": "R = (shares after × P_{end} + dividends − shares before × P_{start}) / (shares before × P_{start})",
+    "use": "Whenever a split or reverse split happens during the holding period.",
+    "vars": [],
+    "pitfall": "Never compare one share's price before and after the split – compare the whole position.",
+    "sheet": false
+  },
+  {
+    "id": "f-compound",
+    "lecture": "l1",
+    "name": "Return over several periods",
+    "formula": "R_{1→N} = (1 + R_1)(1 + R_2) ⋯ (1 + R_N) − 1",
+    "use": "Total return over several years, or with dividends reinvested at each dividend date.",
+    "vars": [],
+    "pitfall": "Multiply (1 + R), never add returns.",
+    "sheet": true
+  },
+  {
+    "id": "f-arith-mean",
+    "lecture": "l1",
+    "name": "Arithmetic average",
+    "formula": "R̄ = (1/T) Σ_{t=1}^{T} R_t",
+    "use": "Estimate of the expected return of one future period.",
+    "vars": [],
+    "pitfall": "Not the realized performance per year.",
+    "sheet": true
+  },
+  {
+    "id": "f-geo-mean",
+    "lecture": "l1",
+    "name": "Geometric average (CAGR)",
+    "formula": "R_{geo} = [(1 + R_1)(1 + R_2) ⋯ (1 + R_n)]^{1/n} − 1",
+    "use": "What an investment actually earned per year in the past.",
+    "vars": [],
+    "pitfall": "−50% then +100%: arithmetic +25%, geometric 0%.",
+    "sheet": true
+  },
+  {
+    "id": "f-annualize",
+    "lecture": "l1",
+    "name": "Annualizing a sub-period return",
+    "formula": "R_{annual} = (1 + R_h)^{1/h} − 1",
+    "use": "Return measured over h years (e.g. h = 0.5 for six months).",
+    "vars": [
+      "h = length of the period in years"
+    ],
+    "pitfall": "Halved in 6 months → (0.5)² − 1 = −75% p.a., not −100%.",
+    "sheet": false
+  },
+  {
+    "id": "f-volatility",
+    "lecture": "l1",
+    "name": "Variance and volatility (historical)",
+    "formula": "Var(R) = (1/(T − 1)) Σ (R_t − R̄)^2\nσ = √Var(R)   ·   σ_{annual} = σ_{monthly} × √12",
+    "use": "Risk of one asset from past returns.",
+    "vars": [],
+    "pitfall": "Divide by T − 1 for historical data; use decimals (0.25² = 0.0625) consistently.",
+    "sheet": true
+  }
+]

@@ -1,0 +1,373 @@
+[
+  {
+    "type": "short",
+    "id": "cf-l8-01",
+    "lecture": "l8",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "A firm has an unlevered cost of capital of 12% and can borrow risk-free at 5%. There are no taxes. What is its cost of equity at a debt-to-equity ratio of (a) 0.5 and (b) 1.5? Report percentages with two decimals.",
+    "modelAnswer": "MM II: r_E = r_U + (D/E)(r_U − r_D).\n(a) 12% + 0.5 × 7% = 15.50%. (b) 12% + 1.5 × 7% = 22.50%.\nThe WACC stays at 12% in both cases.",
+    "keyPoints": [
+      "(a) Cost of equity at D/E = 0.5: 15.5 %",
+      "(b) Cost of equity at D/E = 1.5: 22.5 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Cost of equity at D/E = 0.5",
+        "value": 15.5,
+        "unit": "%"
+      },
+      {
+        "label": "(b) Cost of equity at D/E = 1.5",
+        "value": 22.5,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-02",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Kölsch AG has equity worth EUR 300m and debt worth EUR 150m. Investors expect 14% on the stock and 5% on the debt. Perfect capital markets. (a) If Kölsch issues EUR 150m of new stock to repay all its debt, what is its cost of equity? (b) If instead it issues EUR 75m of new debt (same risk) to repurchase shares, what is its cost of equity? Report percentages with two decimals.",
+    "modelAnswer": "r_U = WACC = (300/450) × 14% + (150/450) × 5% = 11.00%.\n(a) No debt → r_E = r_U = 11.00%.\n(b) D = 225, E = 225 → D/E = 1 → r_E = 11% + 1 × (11% − 5%) = 17.00%.",
+    "keyPoints": [
+      "(a) Cost of equity, all equity: 11 %",
+      "(b) Cost of equity, D = E = 225: 17 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Cost of equity, all equity",
+        "value": 11.0,
+        "unit": "%"
+      },
+      {
+        "label": "(b) Cost of equity, D = E = 225",
+        "value": 17.0,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-03",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Infonian AG has a debt-to-equity ratio of 150%. Its debt is risk-free at 5%; shareholders require 20%. No taxes. (a) What is the WACC? (b) What is the cost of equity if Infonian issues equity and repays debt until D/E = 50%? Report percentages with two decimals.",
+    "modelAnswer": "(a) D/E = 1.5 → D/(D + E) = 1.5/2.5 = 0.6, E/(D + E) = 0.4. WACC = 0.4 × 20% + 0.6 × 5% = 11%.\n(b) The assets do not change → WACC = r_U = 11%. MM II: r_E = 11% + 0.5 × (11% − 5%) = 14%.\nCheck: (2/3) × 14% + (1/3) × 5% = 11%.",
+    "keyPoints": [
+      "(a) WACC: 11 %",
+      "(b) New cost of equity: 14 %"
+    ],
+    "results": [
+      {
+        "label": "(a) WACC",
+        "value": 11.0,
+        "unit": "%"
+      },
+      {
+        "label": "(b) New cost of equity",
+        "value": 14.0,
+        "unit": "%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-04",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) A firm has an equity beta of 1.7 and a debt-to-equity ratio of 2 (risk-free debt). What is its asset beta? (b) What is the equity beta of a firm in the same industry with D/(D + E) = 0.5? (c) A firm without debt has a beta of 0.9 and takes on debt equal to 40% of the value of its assets (debt beta 0). What is its new equity beta?",
+    "modelAnswer": "β_E = β_U (1 + D/E) with β_D = 0.\n(a) β_U = 1.7/(1 + 2) = 0.5667.\n(b) D/(D + E) = 0.5 → D/E = 1 → β_E = 0.5667 × 2 = 1.1333.\n(c) D/V = 0.4 → D/E = 0.4/0.6 = 0.6667 → β_E = 0.9 × 1.6667 = 1.5000.",
+    "keyPoints": [
+      "(a) Asset beta: 0.566667",
+      "(b) Equity beta: 1.13333",
+      "(c) New equity beta: 1.5"
+    ],
+    "results": [
+      {
+        "label": "(a) Asset beta",
+        "value": 0.566667,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "(b) Equity beta",
+        "value": 1.133333,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "(c) New equity beta",
+        "value": 1.5,
+        "unit": "",
+        "tol": 0.01
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-05",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) Compute the asset (unlevered) beta of each comparable and the industry asset beta (simple average).",
+    "modelAnswer": "β_U = β_E/(1 + D/E):\nVelo A: 1.3/1.6 = 0.8125; Velo B: 0.9/1.2 = 0.7500; Velo C: 1.5/2.0 = 0.7500.\nAverage = 0.7708. Average the asset betas, never the equity betas – the firms have different leverage.",
+    "keyPoints": [
+      "Asset beta Velo A: 0.8125",
+      "Asset beta Velo B: 0.75",
+      "Asset beta Velo C: 0.75",
+      "Industry asset beta: 0.770833"
+    ],
+    "results": [
+      {
+        "label": "Asset beta Velo A",
+        "value": 0.8125,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Asset beta Velo B",
+        "value": 0.75,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Asset beta Velo C",
+        "value": 0.75,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Industry asset beta",
+        "value": 0.770833,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "case": "l8-bikes"
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-06",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What are the equity beta and the cost of equity of the private firm at its target D/E of 0.5? What is its cost of capital (WACC, no taxes)? Report percentages with two decimals.",
+    "modelAnswer": "Relever: β_E = 0.7708 × (1 + 0.5) = 1.1562.\nr_E = 3% + 1.1562 × 5% = 8.78%.\nWACC = r_U = 3% + 0.7708 × 5% = 6.85% (check: (2/3) × 8.78% + (1/3) × 3% = 6.85%).",
+    "keyPoints": [
+      "Equity beta: 1.15625",
+      "Cost of equity: 8.7812 %",
+      "WACC: 6.8542 %"
+    ],
+    "results": [
+      {
+        "label": "Equity beta",
+        "value": 1.15625,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Cost of equity",
+        "value": 8.7812,
+        "unit": "%"
+      },
+      {
+        "label": "WACC",
+        "value": 6.8542,
+        "unit": "%"
+      }
+    ],
+    "case": "l8-bikes"
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-07",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What are the asset betas of Trident's divisions and of the whole firm? What is the beta of Trident's stock?",
+    "modelAnswer": "With risk-free debt: β_U = E/(D + E) × β_E.\nFood 0.7 × 0.9 = 0.6300; Tech 0.9 × 1.5 = 1.3500; Energy 0.6 × 1.1 = 0.6600.\nFirm: 0.5 × 0.63 + 0.3 × 1.35 + 0.2 × 0.66 = 0.8520.\nRelever with E/(D + E) = 0.75: β_E = 0.8520/0.75 = 1.1360.",
+    "keyPoints": [
+      "Asset beta Food: 0.63",
+      "Asset beta Tech: 1.35",
+      "Asset beta Energy: 0.66",
+      "Asset beta Trident: 0.852",
+      "Equity beta Trident: 1.136"
+    ],
+    "results": [
+      {
+        "label": "Asset beta Food",
+        "value": 0.63,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Asset beta Tech",
+        "value": 1.35,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Asset beta Energy",
+        "value": 0.66,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Asset beta Trident",
+        "value": 0.852,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Equity beta Trident",
+        "value": 1.136,
+        "unit": "",
+        "tol": 0.01
+      }
+    ],
+    "case": "l8-conglo"
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-08",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What is the cost of capital of each division, and what is Trident's WACC? Report percentages with two decimals.",
+    "modelAnswer": "Use the asset betas (a division is a business, not a stock). Premium = 9% − 3% = 6%.\nFood 3% + 0.63 × 6% = 6.78%; Tech 11.10%; Energy 6.96%.\nNo taxes → WACC = r_U = 3% + 0.8520 × 6% = 8.11%. A Tech project must not be discounted at the group WACC.",
+    "keyPoints": [
+      "Food: 6.78 %",
+      "Tech: 11.1 %",
+      "Energy: 6.96 %",
+      "WACC Trident: 8.112 %"
+    ],
+    "results": [
+      {
+        "label": "Food",
+        "value": 6.78,
+        "unit": "%"
+      },
+      {
+        "label": "Tech",
+        "value": 11.1,
+        "unit": "%"
+      },
+      {
+        "label": "Energy",
+        "value": 6.96,
+        "unit": "%"
+      },
+      {
+        "label": "WACC Trident",
+        "value": 8.112,
+        "unit": "%"
+      }
+    ],
+    "case": "l8-conglo"
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-09",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is Brightline's cost of capital implied by its market value (Gordon model)? What is its earnings yield today? Report percentages with two decimals.",
+    "modelAnswer": "Gordon: V = CF/(r − g) → 150 = 12/(r − 4%) → r = 8% + 4% = 12%.\nEarnings yield = 12/150 = 8% = r − g: the price of growth, not poor performance.",
+    "keyPoints": [
+      "Cost of capital r_U: 12 %",
+      "Earnings yield today: 8 %"
+    ],
+    "results": [
+      {
+        "label": "Cost of capital r_U",
+        "value": 12.0,
+        "unit": "%"
+      },
+      {
+        "label": "Earnings yield today",
+        "value": 8.0,
+        "unit": "%"
+      }
+    ],
+    "case": "l8-perks"
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-10",
+    "lecture": "l8",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "(b) After the recapitalization to D/E = 2: how much debt does Brightline have, and what are its cost of equity and its earnings yield? Report percentages with two decimals.",
+    "modelAnswer": "MM I: D + E = 150 stays. D/E = 2 → D = 100, E = 50 (issue debt, buy back shares).\nMM II: r_E = 12% + 2 × (12% − 5%) = 26.00%.\nEarnings = 12 − 5% × 100 = 7 → earnings yield = 7/50 = 14.00%.\nThe earnings yield rose from 8% to 14% without any value creation: it only reflects the riskier equity (r_E 12% → 26%). Judge value, not leverage-dependent ratios.",
+    "keyPoints": [
+      "Debt (EUR m): 100 m",
+      "Cost of equity: 26 %",
+      "Earnings yield: 14 %"
+    ],
+    "results": [
+      {
+        "label": "Debt (EUR m)",
+        "value": 100,
+        "unit": "m",
+        "tol": 0.5
+      },
+      {
+        "label": "Cost of equity",
+        "value": 26.0,
+        "unit": "%"
+      },
+      {
+        "label": "Earnings yield",
+        "value": 14.0,
+        "unit": "%"
+      }
+    ],
+    "case": "l8-perks"
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-11",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "MediLearn has two divisions (online courses and a clinic). Its market capitalization is EUR 400m and it has EUR 200m of risk-free debt. Shareholders require 8%, debt holders 3%. Perfect capital markets. (a) What is MediLearn's cost of capital? (b) MediLearn sells the clinic for EUR 160m and uses the money to repay debt. The typical asset beta of online-education firms is 0.45. What is MediLearn's equity beta after the transaction? Report percentages with two decimals.",
+    "modelAnswer": "(a) WACC = (400/600) × 8% + (200/600) × 3% = 6.33%.\n(b) After the sale: debt = 200 − 160 = 40; equity unchanged at 400 (fair price, MM). Only online education remains → β_U = 0.45.\nβ_E = 0.45 × (1 + 40/400) = 0.4950.",
+    "keyPoints": [
+      "(a) Cost of capital: 6.3333 %",
+      "(b) Equity beta after: 0.495"
+    ],
+    "results": [
+      {
+        "label": "(a) Cost of capital",
+        "value": 6.3333,
+        "unit": "%"
+      },
+      {
+        "label": "(b) Equity beta after",
+        "value": 0.495,
+        "unit": "",
+        "tol": 0.005
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-l8-12",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Debt is cheaper than equity. Explain why, without taxes, replacing equity by debt does not lower the WACC, and why a higher EPS after a leveraged recap does not mean the share price rises.",
+    "modelAnswer": "Debt is cheaper because lenders are paid first and carry little business risk. But every euro of debt makes the remaining equity riskier: by MM II r_E = r_U + (D/E)(r_U − r_D) rises exactly enough to keep the weighted average equal to r_U, so the WACC stays constant and so does firm value (MM I). Leverage can raise the expected EPS, but EPS also becomes more volatile; the higher expected EPS is just compensation for the extra risk, discounted at the higher cost of equity. In a perfect market the share price does not change.",
+    "keyPoints": [
+      "Debt cheaper: paid first, less risk",
+      "Cheap debt makes equity riskier (MM II)",
+      "WACC = r_U stays constant without taxes",
+      "Higher expected EPS compensates for higher risk; price unchanged"
+    ]
+  }
+]

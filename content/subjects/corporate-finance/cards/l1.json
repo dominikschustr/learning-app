@@ -1,0 +1,44 @@
+[
+  {
+    "id": "c-realized-return",
+    "lecture": "l1",
+    "front": "Formula: Realized return (one period)",
+    "back": "Rt+1 = (Pt+1 + Divt+1 − Pt) / Pt\n= capital gain rate + dividend yield\n\nUse: Return of a stock or bond held between two dates.\nTrap: Bond: use the coupon in EUR, not the coupon rate."
+  },
+  {
+    "id": "c-split-return",
+    "lecture": "l1",
+    "front": "Formula: Return with a stock split",
+    "back": "R = (shares after × Pend + dividends − shares before × Pstart) / (shares before × Pstart)\n\nUse: Whenever a split or reverse split happens during the holding period.\nTrap: Never compare one share's price before and after the split – compare the whole position.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-compound",
+    "lecture": "l1",
+    "front": "Formula: Return over several periods",
+    "back": "R1→N = (1 + R1)(1 + R2) ⋯ (1 + RN) − 1\n\nUse: Total return over several years, or with dividends reinvested at each dividend date.\nTrap: Multiply (1 + R), never add returns."
+  },
+  {
+    "id": "c-arith-mean",
+    "lecture": "l1",
+    "front": "Formula: Arithmetic average",
+    "back": "R̄ = (1/T) Σt=1^(T) Rt\n\nUse: Estimate of the expected return of one future period.\nTrap: Not the realized performance per year."
+  },
+  {
+    "id": "c-geo-mean",
+    "lecture": "l1",
+    "front": "Formula: Geometric average (CAGR)",
+    "back": "Rgeo = [(1 + R1)(1 + R2) ⋯ (1 + Rn)]^(1/n) − 1\n\nUse: What an investment actually earned per year in the past.\nTrap: −50% then +100%: arithmetic +25%, geometric 0%."
+  },
+  {
+    "id": "c-annualize",
+    "lecture": "l1",
+    "front": "Formula: Annualizing a sub-period return",
+    "back": "Rannual = (1 + Rh)^(1/h) − 1\n\nUse: Return measured over h years (e.g. h = 0.5 for six months).\nTrap: Halved in 6 months → (0.5)² − 1 = −75% p.a., not −100%.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-volatility",
+    "lecture": "l1",
+    "front": "Formula: Variance and volatility (historical)",
+    "back": "Var(R) = (1/(T − 1)) Σ (Rt − R̄)²\nσ = √Var(R)   ·   σannual = σmonthly × √12\n\nUse: Risk of one asset from past returns.\nTrap: Divide by T − 1 for historical data; use decimals (0.25² = 0.0625) consistently."
+  }
+]

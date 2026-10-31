@@ -1,0 +1,873 @@
+[
+  {
+    "type": "mc",
+    "id": "cf-p3-mc01",
+    "lecture": "l1",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "You bought a stock for EUR 80, received a dividend of EUR 2.40 and sold it at EUR 76. What is your realized return?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  −5%"
+      },
+      {
+        "id": "b",
+        "text": "B  −2%"
+      },
+      {
+        "id": "c",
+        "text": "C  1%"
+      },
+      {
+        "id": "d",
+        "text": "D  3%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to your realized return."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "(76 + 2.40 − 80)/80 = −2%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc02",
+    "lecture": "l1",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which statement about volatility is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Volatility can become negative when most returns are negative."
+      },
+      {
+        "id": "b",
+        "text": "B  Volatility counts good and bad surprises alike."
+      },
+      {
+        "id": "c",
+        "text": "C  For historical data, the variance is computed by dividing by the number of observations T."
+      },
+      {
+        "id": "d",
+        "text": "D  The volatility of an index equals the average volatility of its stocks."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Volatility is a symmetric measure (square root of the variance), always ≥ 0; historical data use T − 1; diversification makes an index less volatile than the average stock."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc03",
+    "lecture": "l2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Two stocks have a correlation of 0.3. A portfolio with positive weights in both has a volatility that is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  equal to the weighted average of the two volatilities."
+      },
+      {
+        "id": "b",
+        "text": "B  below the weighted average of the two volatilities."
+      },
+      {
+        "id": "c",
+        "text": "C  above the weighted average of the two volatilities."
+      },
+      {
+        "id": "d",
+        "text": "D  impossible to compare without the expected returns."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "With ρ < 1 the cross term is smaller than for ρ = 1: diversification."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc04",
+    "lecture": "l2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "You have EUR 5,000. You short-sell EUR 2,000 of stock X and invest EUR 7,000 in stock Y. What is the portfolio weight of Y?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  0.7"
+      },
+      {
+        "id": "b",
+        "text": "B  1.0"
+      },
+      {
+        "id": "c",
+        "text": "C  1.4"
+      },
+      {
+        "id": "d",
+        "text": "D  1.75"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Weights on own money: 7,000/5,000 = 1.4 (X: −0.4)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc05",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Stock 1 has a volatility of 30%, stock 2 a volatility of 10%; they are uncorrelated. What weight in stock 1 gives the minimum-variance portfolio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  10%"
+      },
+      {
+        "id": "b",
+        "text": "B  25%"
+      },
+      {
+        "id": "c",
+        "text": "C  33.33%"
+      },
+      {
+        "id": "d",
+        "text": "D  75%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to the correct weight."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "ρ = 0: x₁ = σ₂²/(σ₁² + σ₂²) = 0.01/(0.09 + 0.01) = 10.00%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc06",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Fund A offers 10% expected return with 15% volatility, fund B 13% with 24%. The risk-free rate is 2.5% and you can borrow and lend at this rate. Which statement is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Fund B is better because it has the higher expected return."
+      },
+      {
+        "id": "b",
+        "text": "B  Fund A has the higher Sharpe ratio; levered up to B's volatility it offers more than 13%."
+      },
+      {
+        "id": "c",
+        "text": "C  Both funds are equally good."
+      },
+      {
+        "id": "d",
+        "text": "D  The funds cannot be compared without their correlation."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "S_A = 7.5/15 = 0.50, S_B = 10.5/24 = 0.44. At 24% volatility: 2.5% + 0.5 × 24% = 14.5% > 13%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc07",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which statement on systematic risk is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  It disappears in large portfolios."
+      },
+      {
+        "id": "b",
+        "text": "B  A change of CEO at one firm is a source of systematic risk."
+      },
+      {
+        "id": "c",
+        "text": "C  It is rewarded with a risk premium because it cannot be diversified away."
+      },
+      {
+        "id": "d",
+        "text": "D  It is measured by a stock's volatility."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Systematic risk remains in any portfolio and is therefore priced; it is measured by beta, not volatility."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc08",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The risk-free rate is 2% and the expected market return 7%. A stock has a beta of 1.6. What is its expected return under the CAPM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  9.2%"
+      },
+      {
+        "id": "b",
+        "text": "B  10%"
+      },
+      {
+        "id": "c",
+        "text": "C  11.2%"
+      },
+      {
+        "id": "d",
+        "text": "D  13.2%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to the expected return."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "2% + 1.6 × (7% − 2%) = 10%. 13.2% would wrongly multiply E(R_M) by beta."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc09",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A portfolio invests 30% in a stock with beta 1.5, 50% in a stock with beta 0.8 and 20% in the risk-free asset. What is its beta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  0.85"
+      },
+      {
+        "id": "b",
+        "text": "B  0.92"
+      },
+      {
+        "id": "c",
+        "text": "C  1.06"
+      },
+      {
+        "id": "d",
+        "text": "D  1.15"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "0.3 × 1.5 + 0.5 × 0.8 + 0.2 × 0 = 0.45 + 0.40 = 0.85."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc10",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which statement about the CML and the SML is TRUE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  In equilibrium all stocks lie on the CML."
+      },
+      {
+        "id": "b",
+        "text": "B  The slope of the SML is the Sharpe ratio of the market portfolio."
+      },
+      {
+        "id": "c",
+        "text": "C  In equilibrium a single stock lies on the SML but below the CML."
+      },
+      {
+        "id": "d",
+        "text": "D  The CML has beta on its horizontal axis."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "SML: beta axis, slope = market risk premium, all assets on it. CML: volatility axis, slope = Sharpe ratio, only efficient portfolios on it."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc11",
+    "lecture": "l5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A stock has a beta of 0.7 and an expected return of 9%. The risk-free rate is 3% and the market risk premium 6%. What is its alpha, and what should an investor holding the market do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  +1.8%, buy (overweight) it"
+      },
+      {
+        "id": "b",
+        "text": "B  −1.8%, sell (underweight) it"
+      },
+      {
+        "id": "c",
+        "text": "C  +6%, buy it"
+      },
+      {
+        "id": "d",
+        "text": "D  0%, it lies on the SML"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Required = 3% + 0.7 × 6% = 7.2% → α = 9% − 7.2% = +1.8% → above the SML."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc12",
+    "lecture": "l6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A B-rated bond has a yield to maturity of 6%. B debt has an average default rate of 5.5% per year and the expected loss rate in default is 50%. What is the expected return on the bond (cost of debt)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  6%"
+      },
+      {
+        "id": "b",
+        "text": "B  5.45%"
+      },
+      {
+        "id": "c",
+        "text": "C  3.25%"
+      },
+      {
+        "id": "d",
+        "text": "D  2.75%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to the cost of debt."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "6% − 5.5% × 0.50 = 3.25%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc13",
+    "lecture": "l6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A firm has a market capitalization of EUR 50bn, debt of EUR 5bn and excess cash of EUR 15bn. Its equity beta is 0.9; debt and cash are risk-free. What is its asset beta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  0.72"
+      },
+      {
+        "id": "b",
+        "text": "B  0.90"
+      },
+      {
+        "id": "c",
+        "text": "C  1.125"
+      },
+      {
+        "id": "d",
+        "text": "D  1.35"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Net debt = −10 → E + D = 40 → β_U = 50/40 × 0.9 = 1.125."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc14",
+    "lecture": "l7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following is NOT one of the conditions of a perfect capital market in Modigliani–Miller?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  There are no taxes."
+      },
+      {
+        "id": "b",
+        "text": "B  There are no bankruptcy costs."
+      },
+      {
+        "id": "c",
+        "text": "C  Firms have no debt."
+      },
+      {
+        "id": "d",
+        "text": "D  Financing decisions do not change the cash flows of the investments."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "MM I is about firms that do have debt; the conditions concern fair prices, taxes, transaction/bankruptcy costs, borrowing at rf and information."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p3-mc15",
+    "lecture": "l8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A firm without taxes has an unlevered cost of capital of 10% and risk-free debt at 4%. It raises its debt-to-equity ratio from 0.25 to 1. Which statement is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Its cost of equity rises from 11.5% to 16% and its WACC stays at 10%."
+      },
+      {
+        "id": "b",
+        "text": "B  Its cost of equity rises to 16% and its WACC falls because debt is cheaper."
+      },
+      {
+        "id": "c",
+        "text": "C  Its cost of equity stays at 11.5% and its WACC falls to 7%."
+      },
+      {
+        "id": "d",
+        "text": "D  Its cost of equity rises to 14% and its WACC stays at 10%."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "MM II: 10% + 0.25 × 6% = 11.5% → 10% + 1 × 6% = 16%. Without taxes the WACC stays equal to r_U."
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-01a",
+    "lecture": "l1",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What was Lumen's total return between 31/10/2024 and 31/10/2025, and what was the capital gain?",
+    "modelAnswer": "Total return uses the adjusted close: 49.20/45.30 − 1 = 8.61%.\nCapital gain uses the close: 49.20/47.10 − 1 = 4.46%. The difference is the dividend yield.",
+    "keyPoints": [
+      "Total return: 8.6093 %",
+      "Capital gain rate: 4.4586 %"
+    ],
+    "results": [
+      {
+        "label": "Total return",
+        "value": 8.6093,
+        "unit": "%"
+      },
+      {
+        "label": "Capital gain rate",
+        "value": 4.4586,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-lumen",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-01b",
+    "lecture": "l1",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) Use the adjusted close to calculate the return from 31/10/2021 to 31/10/2025. What is the annualized return (geometric average)?",
+    "modelAnswer": "Adjusted prices already include reinvested dividends: 49.20/36.12 − 1 = 36.21%.\nGeometric average: (1 + 36.21%)^(1/4) − 1 = 8.03%.",
+    "keyPoints": [
+      "Return over four years: 36.2126 %",
+      "Geometric average: 8.0325 %"
+    ],
+    "results": [
+      {
+        "label": "Return over four years",
+        "value": 36.2126,
+        "unit": "%"
+      },
+      {
+        "label": "Geometric average",
+        "value": 8.0325,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-lumen",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-02a",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) Compute the expected return and the volatility of each stock and their correlation.",
+    "modelAnswer": "E(R_A) = 0.25 × 20% + 0.5 × 8% + 0.25 × (−6%) = 7.50%; E(R_B) = 6.50%.\nVar_A = 0.25 × 0.125² + 0.5 × 0.005² + 0.25 × 0.135² = 0.008475 → σ_A = 9.21%.\nVar_B = 0.25 × 0.045² + 0.5 × 0.005² + 0.25 × 0.055² = 0.001275 → σ_B = 3.57%.\nCov = 0.25 × (0.125)(−0.045) + 0.5 × (0.005)(−0.005) + 0.25 × (−0.135)(0.055) = -0.003275 → ρ = -0.9963.",
+    "keyPoints": [
+      "E(R_A): 7.5 %",
+      "σ_A: 9.206 %",
+      "E(R_B): 6.5 %",
+      "σ_B: 3.5707 %",
+      "Correlation: -0.996291"
+    ],
+    "results": [
+      {
+        "label": "E(R_A)",
+        "value": 7.5,
+        "unit": "%"
+      },
+      {
+        "label": "σ_A",
+        "value": 9.206,
+        "unit": "%"
+      },
+      {
+        "label": "E(R_B)",
+        "value": 6.5,
+        "unit": "%"
+      },
+      {
+        "label": "σ_B",
+        "value": 3.5707,
+        "unit": "%"
+      },
+      {
+        "label": "Correlation",
+        "value": -0.996291,
+        "unit": "",
+        "tol": 0.01
+      }
+    ],
+    "case": "p3-scen",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-02b",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What are the expected return and the volatility of a portfolio invested 50% in A and 50% in B?",
+    "modelAnswer": "E = 0.5 × 7.50% + 0.5 × 6.50% = 7.00%.\nVar = 0.25 × 0.008475 + 0.25 × 0.001275 + 2 × 0.25 × (-0.003275) = 0.000800 → σ = 2.83%.\nCheck: the portfolio returns 11%, 7%, 3% give the same variance.",
+    "keyPoints": [
+      "Expected return: 7 %",
+      "Volatility: 2.8284 %"
+    ],
+    "results": [
+      {
+        "label": "Expected return",
+        "value": 7.0,
+        "unit": "%"
+      },
+      {
+        "label": "Volatility",
+        "value": 2.8284,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-scen",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-03a",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) You want a volatility of 15%. How much of your money do you invest in the fund, and what is your expected return?",
+    "modelAnswer": "x × 20% = 15% → x = 75% in the fund, 25% lent at 3%. E = 3% + 0.75 × 9% = 9.75%.",
+    "keyPoints": [
+      "Weight in the fund: 75 %",
+      "Expected return: 9.75 %"
+    ],
+    "results": [
+      {
+        "label": "Weight in the fund",
+        "value": 75.0,
+        "unit": "%"
+      },
+      {
+        "label": "Expected return",
+        "value": 9.75,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-tobin",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-03b",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) You want an expected return of 16.5%. How much must you borrow per EUR of own money, and what is the volatility of your position?",
+    "modelAnswer": "3% + x × 9% = 16.5% → x = 1.5: invest 1.5 EUR in the fund per EUR, borrowing 0.5 EUR. σ = 1.5 × 20% = 30%.",
+    "keyPoints": [
+      "Borrowing per EUR of own money: 0.5 EUR",
+      "Volatility: 30 %"
+    ],
+    "results": [
+      {
+        "label": "Borrowing per EUR of own money",
+        "value": 0.5,
+        "unit": "EUR",
+        "tol": 0.005
+      },
+      {
+        "label": "Volatility",
+        "value": 30.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-tobin",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-04a",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What are Kappa's beta and its required return under the CAPM?",
+    "modelAnswer": "β = 0.6 × 30%/18% = 1.00. Required return = 3% + 1.0 × 6% = 9%.",
+    "keyPoints": [
+      "Beta: 1",
+      "Required return: 9 %"
+    ],
+    "results": [
+      {
+        "label": "Beta",
+        "value": 1.0,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Required return",
+        "value": 9.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-kappa",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-04b",
+    "lecture": "l5",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What is Kappa's alpha according to the analyst? What would an efficient portfolio with the same volatility as Kappa earn?",
+    "modelAnswer": "α = 11% − 9% = +2% → the analyst sees Kappa as undervalued.\nCML: 3% + (6%/18%) × 30% = 13%. Even with its positive alpha, Kappa alone is a poor investment compared with the market plus leverage: 64% of its variance (1 − ρ²) is idiosyncratic.",
+    "keyPoints": [
+      "Alpha: 2 %",
+      "Return on the CML at 30% volatility: 13 %"
+    ],
+    "results": [
+      {
+        "label": "Alpha",
+        "value": 2.0,
+        "unit": "%"
+      },
+      {
+        "label": "Return on the CML at 30% volatility",
+        "value": 13.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-kappa",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-05a",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is Orion's WACC?",
+    "modelAnswer": "0.6 × 11% + 0.4 × 5% × 0.75 = 6.6% + 1.5% = 8.10%.",
+    "keyPoints": [
+      "WACC: 8.1 %"
+    ],
+    "results": [
+      {
+        "label": "WACC",
+        "value": 8.1,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-wacc",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-05b",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What is Orion's unlevered cost of capital? Which rate should Orion use for a project with the same risk as the firm that is financed with equity only?",
+    "modelAnswer": "r_U = 0.6 × 11% + 0.4 × 5% = 8.60%. A project financed with equity only does not generate the interest tax saving built into the WACC → discount it at r_U = 8.60%, not at the WACC of 8.10%.",
+    "keyPoints": [
+      "Unlevered cost of capital: 8.6 %"
+    ],
+    "results": [
+      {
+        "label": "Unlevered cost of capital",
+        "value": 8.6,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-wacc",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-06a",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What are the value of the firm and the value of the equity today?",
+    "modelAnswer": "Expected cash flow = 0.5 × 780 + 0.5 × 520 = 650 → V_U = 650/1.30 = 500. MM I: V_L = 500 → E = 500 − 300 = 200.",
+    "keyPoints": [
+      "Firm value (EUR): 500 EUR",
+      "Equity value (EUR): 200 EUR"
+    ],
+    "results": [
+      {
+        "label": "Firm value (EUR)",
+        "value": 500,
+        "unit": "EUR",
+        "tol": 0.5
+      },
+      {
+        "label": "Equity value (EUR)",
+        "value": 200.0,
+        "unit": "EUR",
+        "tol": 0.5
+      }
+    ],
+    "case": "p3-cafe",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-06b",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What return do the shareholders earn in each state, and what is their expected return? Verify with MM Proposition II.",
+    "modelAnswer": "Debt repayment 300 × 1.04 = 312 in both states (risk-free, 520 > 312).\nStrong: (780 − 312)/200 − 1 = 134.00%; weak: (520 − 312)/200 − 1 = 4.00%; expected 69.00%.\nMM II: 30% + (300/200) × (30% − 4%) = 69.00% ✓.",
+    "keyPoints": [
+      "Return, strong: 134 %",
+      "Return, weak: 4 %",
+      "Expected return: 69 %"
+    ],
+    "results": [
+      {
+        "label": "Return, strong",
+        "value": 134.0,
+        "unit": "%"
+      },
+      {
+        "label": "Return, weak",
+        "value": 4.0,
+        "unit": "%"
+      },
+      {
+        "label": "Expected return",
+        "value": 69.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p3-cafe",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p3-07",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "You need the cost of equity of a private firm with a target debt ratio D/(D + E) of 20%. Two listed comparables: X has an equity beta of 1.4 and D/E = 0.75; Y has an equity beta of 1.1 and D/E = 0.375. There are no taxes and debt is risk-free. The risk-free rate is 3% and the market risk premium 5%. Compute the industry asset beta, the private firm's equity beta and its cost of equity.",
+    "modelAnswer": "Unlever: X 1.4/1.75 = 0.80; Y 1.1/1.375 = 0.80 → average 0.80.\nTarget D/(D + E) = 0.2 → D/E = 0.25 → β_E = 0.80 × 1.25 = 1.00.\nr_E = 3% + 1.00 × 5% = 8%.",
+    "keyPoints": [
+      "Industry asset beta: 0.8",
+      "Equity beta: 1",
+      "Cost of equity: 8 %"
+    ],
+    "results": [
+      {
+        "label": "Industry asset beta",
+        "value": 0.8,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Equity beta",
+        "value": 1.0,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Cost of equity",
+        "value": 8.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true
+  }
+]

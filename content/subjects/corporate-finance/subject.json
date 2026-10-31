@@ -1,0 +1,53 @@
+{
+  "id": "corporate-finance",
+  "name": "Corporate Finance",
+  "short": "CF",
+  "color": "#BE185D",
+  "description": "Corporate Finance (ESCP): Rechenaufgaben je Kapitel mit automatischer Prüfung, Formelübersicht und Probeklausuren im Format der Final exam (15 Multiple Choice + Rechenaufgaben).",
+  "lectures": [
+    {
+      "id": "l1",
+      "title": "L1 · Capital markets & the pricing of risk"
+    },
+    {
+      "id": "l2",
+      "title": "L2 · Portfolio choice & diversification"
+    },
+    {
+      "id": "l3",
+      "title": "L3 · Efficient frontier & the best portfolio"
+    },
+    {
+      "id": "l4",
+      "title": "L4 · The CAPM"
+    },
+    {
+      "id": "l5",
+      "title": "L5 · Investor behavior & market efficiency"
+    },
+    {
+      "id": "l6",
+      "title": "L6 · Estimating the cost of capital"
+    },
+    {
+      "id": "l7",
+      "title": "L7 · Capital structure in a perfect market (I)"
+    },
+    {
+      "id": "l8",
+      "title": "L8 · Capital structure in a perfect market (II)"
+    }
+  ],
+  "examFormat": {
+    "name": "Final exam",
+    "minutes": 120,
+    "short": 13,
+    "mc": 0,
+    "tf": 0,
+    "order": [
+      "short",
+      "mc",
+      "tf"
+    ]
+  }
+}

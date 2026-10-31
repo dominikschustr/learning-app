@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f-gordon",
+    "lecture": "l6",
+    "name": "Gordon growth / market return",
+    "formula": "P_0 = Div_1 / (r − g)   ⟺   r = Div_1/P_0 + g",
+    "use": "Fundamental approach to the expected market return; value of a growing perpetuity.",
+    "vars": [
+      "g = constant dividend growth"
+    ],
+    "pitfall": "Only valid for g < r. Constant dividends: P_0 = Div/r.",
+    "sheet": true
+  },
+  {
+    "id": "f-cost-debt",
+    "lecture": "l6",
+    "name": "Cost of debt",
+    "formula": "r_D = y − p × L\nor   r_D = r_f + β_D (E(R_M) − r_f)",
+    "use": "Expected return on risky debt.",
+    "vars": [
+      "y = yield to maturity",
+      "p = default probability",
+      "L = expected loss rate"
+    ],
+    "pitfall": "The YTM is the promised return; the coupon rate is irrelevant.",
+    "sheet": true
+  },
+  {
+    "id": "f-unlever",
+    "lecture": "l6",
+    "name": "Unlevered (asset) cost of capital and beta",
+    "formula": "r_U = E/(E + D) × r_E + D/(E + D) × r_D\nβ_U = E/(E + D) × β_E + D/(E + D) × β_D",
+    "use": "Cost of capital of a project using a levered comparable.",
+    "vars": [
+      "market values of E and D"
+    ],
+    "pitfall": "Use market values; risk-free debt → β_D = 0.",
+    "sheet": true
+  },
+  {
+    "id": "f-net-debt",
+    "lecture": "l6",
+    "name": "Net debt",
+    "formula": "Net debt = Debt − Excess cash",
+    "use": "Firms with large cash holdings: use net debt in place of D.",
+    "vars": [],
+    "pitfall": "Negative net debt makes β_U > β_E.",
+    "sheet": false
+  },
+  {
+    "id": "f-wacc",
+    "lecture": "l6",
+    "name": "WACC with taxes",
+    "formula": "r_{WACC} = E/(E + D) × r_E + D/(E + D) × r_D (1 − τ_C)\n= r_U − τ_C × D/(E + D) × r_D",
+    "use": "Project with the firm's risk AND the firm's debt mix.",
+    "vars": [
+      "τ_C = corporate tax rate"
+    ],
+    "pitfall": "Only for the same risk and same leverage; otherwise start from r_U.",
+    "sheet": true
+  }
+]

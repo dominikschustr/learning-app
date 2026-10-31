@@ -1,0 +1,30 @@
+[
+  {
+    "id": "l4-esg",
+    "title": "Green vs brown stocks",
+    "text": [
+      "Suppose all stocks in the world are grouped into two portfolios of equal total value: green and brown stocks. The two portfolios have a correlation of 0.5. The risk-free rate is 2%."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Portfolio",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "Green stocks",
+            "10%",
+            "18%"
+          ],
+          [
+            "Brown stocks",
+            "15%",
+            "24%"
+          ]
+        ]
+      }
+    ]
+  }
+]

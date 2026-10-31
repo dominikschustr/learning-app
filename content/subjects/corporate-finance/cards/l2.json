@@ -1,0 +1,50 @@
+[
+  {
+    "id": "c-scenarios",
+    "lecture": "l2",
+    "front": "Formula: Expected return and variance with scenarios",
+    "back": "E(R) = Σ pi Ri\nVar(R) = Σ pi (Ri − E(R))²\n\nUse: Returns given per state of the economy with probabilities.\nTrap: Weights are the probabilities – no T − 1 here.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-utility",
+    "lecture": "l2",
+    "front": "Formula: Mean–variance utility",
+    "back": "U = E(R) − (γ/2) × Var(R)\n\nUse: Ranking investments for a risk-averse investor.\nTrap: Use the variance, not the volatility.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-covariance",
+    "lecture": "l2",
+    "front": "Formula: Covariance",
+    "back": "Cov(Ri, Rj) = (1/(T − 1)) Σ (Ri,t − R̄i)(Rj,t − R̄j)\nscenarios: Σ ps (Ri,s − E(Ri))(Rj,s − E(Rj))\n\nUse: How two returns move together (only the sign is easy to read).\nTrap: Historical data: T − 1, like the variance.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-correlation",
+    "lecture": "l2",
+    "front": "Formula: Correlation",
+    "back": "ρi,j = Cov(Ri, Rj) / (σi σj)   ⟺   Cov = ρ σi σj\n\nUse: Strength of comovement on a scale from −1 to +1.\nTrap: Same sign as the covariance.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-beta",
+    "lecture": "l2",
+    "front": "Formula: Beta",
+    "back": "βj,M = Cov(Rj, RM) / Var(RM) = ρj,M × σj / σM\n\nUse: How much a stock moves when the market (or another asset) moves by 1%.\nTrap: Divide by the variance of the asset that does the moving."
+  },
+  {
+    "id": "c-port-return",
+    "lecture": "l2",
+    "front": "Formula: Portfolio return",
+    "back": "E(Rp) = x1 E(R1) + x2 E(R2),   x1 + x2 = 1\n\nUse: Expected return of any portfolio: a plain weighted average.\nTrap: Weights on own money, not on the total position."
+  },
+  {
+    "id": "c-port-vol",
+    "lecture": "l2",
+    "front": "Formula: Portfolio volatility (two assets)",
+    "back": "σp² = x1² σ1² + x2² σ2² + 2 x1 x2 ρ12 σ1 σ2\n\nUse: Risk of a two-asset portfolio.\nTrap: Never forget the cross term; a short position flips its sign."
+  },
+  {
+    "id": "c-bounds",
+    "lecture": "l2",
+    "front": "Formula: Diversification by correlation",
+    "back": "ρ = +1: σp = x1 σ1 + x2 σ2\nρ < 1: σp < x1 σ1 + x2 σ2\nρ = −1: σp = |x1 σ1 − x2 σ2|\n\nUse: Quick check of how much diversification a pair offers.\n\nNot on the formula sheet – learn it by heart."
+  }
+]

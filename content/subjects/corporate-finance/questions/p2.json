@@ -1,0 +1,814 @@
+[
+  {
+    "type": "mc",
+    "id": "cf-p2-mc01",
+    "lecture": "l1",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "You bought a stock one year ago for EUR 40 per share and sold it today for EUR 42 per share. It paid a EUR 1 per share dividend today. What is your realized return?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  0%"
+      },
+      {
+        "id": "b",
+        "text": "B  2.5%"
+      },
+      {
+        "id": "c",
+        "text": "C  5%"
+      },
+      {
+        "id": "d",
+        "text": "D  7.5%"
+      },
+      {
+        "id": "e",
+        "text": "E  10%"
+      },
+      {
+        "id": "f",
+        "text": "F  None of the proposed alternatives is close to your realized return."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "(42 + 1 − 40)/40 = 7.5%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc02",
+    "lecture": "l2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The primary function of diversification is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Manage systematic risk."
+      },
+      {
+        "id": "b",
+        "text": "B  Increase the expected return."
+      },
+      {
+        "id": "c",
+        "text": "C  Reduce the risk of holding an investment that will fail."
+      },
+      {
+        "id": "d",
+        "text": "D  Reduce idiosyncratic or unsystematic risk."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Diversification removes firm-specific (idiosyncratic) risk; systematic risk remains."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc03",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is FALSE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  We say a portfolio is an efficient portfolio whenever it is possible to find another portfolio that is better in terms of both expected return and volatility."
+      },
+      {
+        "id": "b",
+        "text": "B  We can rule out inefficient portfolios because they represent inferior investment choices."
+      },
+      {
+        "id": "c",
+        "text": "C  The volatility of the portfolio will differ, depending on the correlation between the securities in the portfolio."
+      },
+      {
+        "id": "d",
+        "text": "D  Correlation between individual assets in a portfolio has no effect on the expected return of a portfolio."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A describes an inefficient portfolio: if a better one exists, the portfolio is inefficient."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc04",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Assume all investors want to hold a portfolio that, for a given level of volatility, has the maximum possible expected return. Which statement does NOT describe investors' portfolio choice when a risk-free asset is available?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Investors' preferences will determine only how much to invest in the tangency portfolio versus the risk-free investment."
+      },
+      {
+        "id": "b",
+        "text": "B  Conservative investors will invest a small amount in the tangency portfolio, choosing a portfolio on the line near the risk-free investment."
+      },
+      {
+        "id": "c",
+        "text": "C  Only aggressive investors will choose to hold the portfolio of risky assets, the tangency portfolio."
+      },
+      {
+        "id": "d",
+        "text": "D  Aggressive investors will invest more in the tangency portfolio, near it or even beyond it by buying on margin (leverage)."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Two-fund separation: every investor holds the tangency portfolio; risk aversion only sets the mix with the risk-free asset."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc05",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is FALSE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  When a stock's alpha is not zero, investors can improve upon the performance of the market portfolio."
+      },
+      {
+        "id": "b",
+        "text": "B  When the market portfolio is efficient, all stocks are on the capital market line."
+      },
+      {
+        "id": "c",
+        "text": "C  Investors holding only the market portfolio can improve their performance by comparing the expected return of each security with its required return from the SML."
+      },
+      {
+        "id": "d",
+        "text": "D  The Sharpe ratio of a portfolio will increase if we sell stocks with negative alphas."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "With an efficient market portfolio all stocks lie on the SML, not on the CML; single stocks lie below the CML because of their idiosyncratic risk."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc06",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Suppose the risk-free rate is 2% and the expected market risk premium is 5%. Company XY has a beta of 1.2. Under the CAPM, what is its expected return?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  4%"
+      },
+      {
+        "id": "b",
+        "text": "B  5.6%"
+      },
+      {
+        "id": "c",
+        "text": "C  6%"
+      },
+      {
+        "id": "d",
+        "text": "D  8%"
+      },
+      {
+        "id": "e",
+        "text": "E  10%"
+      },
+      {
+        "id": "f",
+        "text": "F  None of the proposed alternatives is close to the expected return."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "2% + 1.2 × 5% = 8%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc07",
+    "lecture": "l5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The tendency to hang on to losers and sell winners is known as the:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  cascade effect."
+      },
+      {
+        "id": "b",
+        "text": "B  disposition effect."
+      },
+      {
+        "id": "c",
+        "text": "C  overconfidence bias."
+      },
+      {
+        "id": "d",
+        "text": "D  herd behavior bias."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Disposition effect."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc08",
+    "lecture": "l6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "If a firm's excess cash holdings are greater than its debt, using net debt as the measure of leverage will result in:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  its unlevered beta and cost of capital equaling zero."
+      },
+      {
+        "id": "b",
+        "text": "B  its unlevered beta and cost of capital being higher than its equity beta and equity cost of capital."
+      },
+      {
+        "id": "c",
+        "text": "C  the risk of the firm's equity being increased by its cash holdings."
+      },
+      {
+        "id": "d",
+        "text": "D  the risk of the firm's debt being increased by its cash holdings."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Negative net debt: β_U = E/(E + D) × β_E with E/(E + D) > 1 → asset beta above equity beta. Cash makes the equity safer than the business."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc09",
+    "lecture": "l4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The market has an expected return of 10% and a volatility of 20%; Amazon's stock has a volatility of 30%. Should we expect Amazon to have an equity cost of capital larger than 10%?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Yes, because a correlation cannot exceed one, Amazon's beta must be above one."
+      },
+      {
+        "id": "b",
+        "text": "B  No, volatility includes diversifiable risk, so Amazon's beta could be below or above one; we cannot say."
+      },
+      {
+        "id": "c",
+        "text": "C  Yes, higher volatility means more risk, so Amazon should have a cost of capital above 10%."
+      },
+      {
+        "id": "d",
+        "text": "D  No, because markets are efficient, Amazon cannot have an expected return above the market."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "β = ρ × 30%/20% = 1.5ρ, above one only if ρ > 2/3."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc10",
+    "lecture": "l6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Guanciale S.p.A. has a market capitalization of EUR 30 million and EUR 10 million of debt. Its equity cost of capital is 10%, its debt cost of capital 4%, and the corporate tax rate 32%. What is its after-tax WACC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  7.60%"
+      },
+      {
+        "id": "b",
+        "text": "B  8.18%"
+      },
+      {
+        "id": "c",
+        "text": "C  8.5%"
+      },
+      {
+        "id": "d",
+        "text": "D  9.2%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed values is close to the correct solution."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "0.75 × 10% + 0.25 × 4% × 0.68 = 8.18%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc11",
+    "lecture": "l8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Assuming perfect capital markets, which of the following statements is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  When the cost of debt is lower than the cost of equity, leverage decreases a firm's cost of capital."
+      },
+      {
+        "id": "b",
+        "text": "B  A firm's cost of capital depends on its capital structure and equals its equity cost of capital only if the firm is unlevered."
+      },
+      {
+        "id": "c",
+        "text": "C  As a firm increases its debt-to-equity ratio, its equity beta increases, but its asset beta tends to decrease."
+      },
+      {
+        "id": "d",
+        "text": "D  When a positive-beta firm pays out a large amount of excess cash as a special dividend, the overall riskiness of its assets (including cash) will increase."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Cash has a beta of zero; paying it out leaves only the risky operating assets, so the asset beta of what remains rises. The cost of capital does not depend on capital structure, and the asset beta is constant."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc12",
+    "lecture": "l6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A project is valued with the equity beta of a comparable firm that has a lot of debt, without unlevering it. What is the consequence? (replaces a question on corporate taxes)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The project's cost of capital is overstated."
+      },
+      {
+        "id": "b",
+        "text": "B  The project's cost of capital is understated."
+      },
+      {
+        "id": "c",
+        "text": "C  There is no effect, because beta measures business risk only."
+      },
+      {
+        "id": "d",
+        "text": "D  It only matters if there are corporate taxes."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The levered equity beta is higher than the asset beta (debt takes the safer part of the cash flows). Unlever first."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc13",
+    "lecture": "l1",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following indices is a (gross) total return index, i.e. reinvests dividends? (replaces a question on payout policy)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  S&P 500"
+      },
+      {
+        "id": "b",
+        "text": "B  CAC 40"
+      },
+      {
+        "id": "c",
+        "text": "C  DAX 40"
+      },
+      {
+        "id": "d",
+        "text": "D  Dow Jones"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "The DAX 40 reinvests dividends; the S&P 500, CAC 40 and Dow Jones are price indices."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc14",
+    "lecture": "l5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following is NOT one of the patterns (anomalies) that earned a positive alpha relative to the CAPM? (replaces a question on raising equity)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Small firms (low market capitalization)"
+      },
+      {
+        "id": "b",
+        "text": "B  Stocks with a high book-to-market ratio (value stocks)"
+      },
+      {
+        "id": "c",
+        "text": "C  Past 6–12-month winners"
+      },
+      {
+        "id": "d",
+        "text": "D  High-beta stocks earning more than the CAPM predicts"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Size, value and momentum are the three classic anomalies (Fama–French–Carhart factors)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p2-mc15",
+    "lecture": "l2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The variance of a portfolio of stocks tends to be lower than the variance of an individual stock due to: (replaces a question on options)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  the diversification effect."
+      },
+      {
+        "id": "b",
+        "text": "B  the systematic risk."
+      },
+      {
+        "id": "c",
+        "text": "C  the market risk."
+      },
+      {
+        "id": "d",
+        "text": "D  the covariance."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Diversification: idiosyncratic risks partly cancel."
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-01a",
+    "lecture": "l1",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What was the total return (assuming dividend reinvestment) from 1 October 2021 to 31 October 2022?",
+    "modelAnswer": "Sub-period 1: (340.40 + 4)/350.40 − 1 = -1.71%. Sub-period 2: 380.20/340.40 − 1 = 11.69%.\nTotal: (1 -0.0171)(1 + 0.1169) − 1 = 9.78%.",
+    "keyPoints": [
+      "Total return: 9.7796 %"
+    ],
+    "results": [
+      {
+        "label": "Total return",
+        "value": 9.7796,
+        "unit": "%"
+      }
+    ],
+    "case": "p2-abc",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-01b",
+    "lecture": "l1",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What was the capital gain from 1 October 2021 to 9 May 2022? What was the dividend yield over this period?",
+    "modelAnswer": "Capital gain: 340.40/350.40 − 1 = -2.85%. Dividend yield: 4/350.40 = 1.14%. Together -1.71%.",
+    "keyPoints": [
+      "Capital gain rate: -2.8539 %",
+      "Dividend yield: 1.1416 %"
+    ],
+    "results": [
+      {
+        "label": "Capital gain rate",
+        "value": -2.8539,
+        "unit": "%"
+      },
+      {
+        "label": "Dividend yield",
+        "value": 1.1416,
+        "unit": "%"
+      }
+    ],
+    "case": "p2-abc",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-02a",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is the expected return of your portfolio?",
+    "modelAnswer": "Weights 2/3 and 1/3: 2/3 × 8% + 1/3 × 20% = 12%.",
+    "keyPoints": [
+      "Expected return: 12 %"
+    ],
+    "results": [
+      {
+        "label": "Expected return",
+        "value": 12.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p2-port",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-02b",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What is the volatility of your portfolio?",
+    "modelAnswer": "Var = (2/3)² × 0.25² + (1/3)² × 0.5² + 2 × (2/3)(1/3) × 0.4 × 0.25 × 0.5 = 0.0778 → σ = 27.89%.",
+    "keyPoints": [
+      "Volatility: 27.8887 %"
+    ],
+    "results": [
+      {
+        "label": "Volatility",
+        "value": 27.8887,
+        "unit": "%"
+      }
+    ],
+    "case": "p2-port",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-03a",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What are the expected return and the volatility of the market portfolio (a 50–50 combination of the two portfolios)?",
+    "modelAnswer": "E(R_M) = 0.5 × 12% + 0.5 × 17% = 14.5%.\nVar = 0.25 × 0.04 + 0.25 × 0.0441 + 2 × 0.25 × 0.6 × 0.2 × 0.21 = 0.033625 → σ_M = 18.34%.",
+    "keyPoints": [
+      "E(R_M): 14.5 %",
+      "σ_M: 18.3371 %"
+    ],
+    "results": [
+      {
+        "label": "E(R_M)",
+        "value": 14.5,
+        "unit": "%"
+      },
+      {
+        "label": "σ_M",
+        "value": 18.3371,
+        "unit": "%"
+      }
+    ],
+    "case": "p2-esg",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-03b",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) Does the CAPM hold in this economy? (Hint: is the market portfolio efficient?) Support your answer with the beta and the CAPM required return of the sustainable portfolio.",
+    "modelAnswer": "Cov(S, M) = 0.5 × 0.04 + 0.5 × 0.6 × 0.2 × 0.21 = 0.0326 → β_S = 0.9695; required return = 3% + 0.9695 × 11.5% = 14.15% > 12%.\nThe sustainable portfolio has a negative alpha (the unsustainable one a positive alpha). Equivalently, the Sharpe ratio of the unsustainable portfolio (14/21 = 0.67) exceeds that of the market (0.63), so the market is not efficient and the CAPM does not hold.",
+    "keyPoints": [
+      "Beta sustainable: 0.969517",
+      "Required return sustainable: 14.1494 %"
+    ],
+    "results": [
+      {
+        "label": "Beta sustainable",
+        "value": 0.969517,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Required return sustainable",
+        "value": 14.1494,
+        "unit": "%"
+      }
+    ],
+    "case": "p2-esg",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-04a",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) Is your broker right? Support your answer with ESCP's beta, its required return and its alpha.",
+    "modelAnswer": "β = 0 × 10%/20% = 0 → required return = 2%. ESCP offers 5% → α = +3%: adding a small position raises the Sharpe ratio of your portfolio, so the broker is right – even though ESCP's return is far below the market's.",
+    "keyPoints": [
+      "Beta: 0",
+      "Required return: 2 %",
+      "Alpha: 3 %"
+    ],
+    "results": [
+      {
+        "label": "Beta",
+        "value": 0,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Required return",
+        "value": 2.0,
+        "unit": "%"
+      },
+      {
+        "label": "Alpha",
+        "value": 3.0,
+        "unit": "%"
+      }
+    ],
+    "case": "p2-broker",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-04b",
+    "lecture": "l4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "(b) What can you conclude about the valuation of ESCP (over-, under- or correctly valued)? Is it above or below the SML? Above or below the CML?",
+    "modelAnswer": "ESCP is undervalued: its expected return (5%) exceeds its required return (2%), so it lies above the SML (positive alpha). On the CML, a portfolio with 10% volatility earns 2% + (12%/20%) × 10% = 8% > 5%, so ESCP lies below the CML – like any single stock, its volatility is idiosyncratic risk that is not rewarded.",
+    "keyPoints": [
+      "Undervalued (positive alpha)",
+      "Above the SML",
+      "Below the CML (8% for 10% volatility)",
+      "Its risk is idiosyncratic, not rewarded"
+    ],
+    "case": "p2-broker",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-05a",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is the asset (unlevered) beta of the private firm?",
+    "modelAnswer": "β_U = E/(D + E) × β_E for each comparable:\nMusic Star: 50/150 × 1.2 = 0.4000\nVirtuoso Instruments: 200/275 × 0.8 = 0.5818\nVivaMo: 110/120 × 0.6 = 0.5500\nAverage = 0.5106.",
+    "keyPoints": [
+      "Asset beta: 0.510606"
+    ],
+    "results": [
+      {
+        "label": "Asset beta",
+        "value": 0.510606,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "case": "p2-music",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-05b",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) Given your answer to the previous question, what is the equity beta of the private firm?",
+    "modelAnswer": "β_E = β_U (1 + D/E) = 0.5106 × 2 = 1.0212.",
+    "keyPoints": [
+      "Equity beta: 1.02121"
+    ],
+    "results": [
+      {
+        "label": "Equity beta",
+        "value": 1.021212,
+        "unit": "",
+        "tol": 0.01
+      }
+    ],
+    "case": "p2-music",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-06a",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) According to MM Proposition I, what are the equity value and the stock price of Omicron?",
+    "modelAnswer": "V_U = 10m × 22 = 220m = V_L → E = 220 − 60 = 160m → price = 160/20 = EUR 8.",
+    "keyPoints": [
+      "Equity value (EUR m): 160 m",
+      "Share price (EUR): 8 EUR"
+    ],
+    "results": [
+      {
+        "label": "Equity value (EUR m)",
+        "value": 160,
+        "unit": "m",
+        "tol": 0.05
+      },
+      {
+        "label": "Share price (EUR)",
+        "value": 8,
+        "unit": "EUR",
+        "tol": 0.01
+      }
+    ],
+    "case": "p2-zeta",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-06b",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "(b) Suppose Omicron stock currently trades at EUR 11 per share. What arbitrage opportunity is available? Which assumptions are necessary to exploit it?",
+    "modelAnswer": "At EUR 11, E = 220m and V_L = 280m > V_U = 220m: Omicron is overpriced. Sell Omicron's shares short and create the same levered position with homemade leverage: buy Zeta shares and borrow – e.g. per 1%: sell Omicron shares for 2.2m, buy 1% of Zeta for 2.2m and borrow 0.6m → +0.6m today with identical future cash flows. Required: investors can borrow at the same rate as the firm, short selling is allowed, no transaction costs or taxes (perfect capital markets).",
+    "keyPoints": [
+      "V_L = 280 > V_U = 220 → Omicron overpriced",
+      "Short Omicron, buy Zeta and borrow (homemade leverage)",
+      "Riskless profit today",
+      "Borrowing at the firm's rate, short sales, no frictions"
+    ],
+    "case": "p2-zeta",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p2-07",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Mast-Jägermeister SE has common stock worth EUR 200 million and debt worth EUR 100 million. Investors expect a 15% return on the stock and a 6% return on the debt. Assume perfect capital markets. (a) MJ issues EUR 100 million of new stock to buy back all its debt: what is its cost of equity afterwards? (b) Instead, MJ issues EUR 50 million of new debt (same risk) to repurchase shares: what is its cost of equity afterwards?",
+    "modelAnswer": "r_U = 2/3 × 15% + 1/3 × 6% = 12%.\n(a) All equity → r_E = r_U = 12%.\n(b) D = 150, E = 150 → r_E = 12% + 1 × (12% − 6%) = 18%.",
+    "keyPoints": [
+      "(a) Cost of equity: 12 %",
+      "(b) Cost of equity: 18 %"
+    ],
+    "results": [
+      {
+        "label": "(a) Cost of equity",
+        "value": 12.0,
+        "unit": "%"
+      },
+      {
+        "label": "(b) Cost of equity",
+        "value": 18.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true
+  }
+]

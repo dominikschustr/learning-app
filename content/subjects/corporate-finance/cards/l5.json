@@ -1,0 +1,20 @@
+[
+  {
+    "id": "c-alpha",
+    "lecture": "l5",
+    "front": "Formula: Alpha",
+    "back": "αi = E(Ri) − [rf + βi (E(RM) − rf)]\n\nUse: Is a stock over- or undervalued relative to the CAPM?\nTrap: Compare a stock with its own required return, not with another stock.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-alpha-price",
+    "lecture": "l5",
+    "front": "Formula: Price at which alpha is zero",
+    "back": "P0 = E(P1 + Div1) / (1 + rrequired)\n\nUse: Where competition pushes the price of a positive-alpha stock.\n\nNot on the formula sheet – learn it by heart."
+  },
+  {
+    "id": "c-multifactor",
+    "lecture": "l5",
+    "front": "Formula: Multi-factor model",
+    "back": "E(Ri) = rf + βM (MKT) + βS (SMB) + βV (HML) + βMom (PR1YR)\n\nUse: Required return including size, value and momentum premiums.\n\nNot on the formula sheet – learn it by heart."
+  }
+]
