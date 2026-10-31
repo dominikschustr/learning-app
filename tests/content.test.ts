@@ -19,7 +19,8 @@ describe("Content", () => {
   });
 });
 
-import { getFrameworks, getTexts } from "@/lib/content";
+import { getFormulas, getFrameworks, getSummaries, getTexts } from "@/lib/content";
+import { paperItems } from "@/lib/schema";
 
 describe("Lesetexte", () => {
   it("alle Lesetexte gehören zu einem Kapitel ihres Fachs", () => {
@@ -49,5 +50,26 @@ describe("Framework-Steckbriefe", () => {
     const strategy = getAllContent().find((c) => c.subject.id === "strategy")!;
     const lectures = new Set(getFrameworks("strategy").map((f) => f.lecture));
     for (const l of strategy.subject.lectures) expect(lectures, l.id).toContain(l.id);
+  });
+});
+
+describe("Corporate Finance", () => {
+  const cf = getAllContent().find((c) => c.subject.id === "corporate-finance")!;
+
+  it("jedes Kapitel hat Formeln und Rechenaufgaben, aber keine Multiple-Choice-Fragen zum Üben", () => {
+    const formulas = new Set(getFormulas("corporate-finance").map((f) => f.lecture));
+    const summary = getSummaries().find((s) => s.subject.id === "corporate-finance")!;
+    for (const l of cf.subject.lectures) {
+      expect(formulas, l.id).toContain(l.id);
+      expect(summary.items.filter((i) => i.lecture === l.id && i.calc).length, l.id).toBeGreaterThanOrEqual(5);
+    }
+    expect(summary.items.some((i) => i.type !== "short")).toBe(false);
+  });
+
+  it("Probeklausuren haben 20 Punkte wie die echte Klausur, Ergebnisse von Rechenaufgaben sind endlich", () => {
+    for (const p of cf.papers) {
+      expect(paperItems(p).reduce((s, i) => s + i.points, 0), p.id).toBeCloseTo(20, 6);
+    }
+    for (const q of cf.questions) if (q.type === "short") for (const r of q.results) expect(Number.isFinite(r.value), q.id).toBe(true);
   });
 });

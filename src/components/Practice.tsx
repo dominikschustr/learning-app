@@ -8,7 +8,7 @@ import { answerXp } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
 import type { Question, SubjectContent } from "@/lib/schema";
-import { SHORT_PASS, gradeMC, gradeTF, toggleOption, type MCResult } from "@/lib/scoring";
+import { gradeMC, gradeTF, shortPassed, toggleOption, type MCResult } from "@/lib/scoring";
 import { markKey, markedIds, useApp, useHydrated, type ShortGrade } from "@/lib/store";
 import { announce, celebrate } from "@/lib/toast";
 import { refreshNow } from "@/lib/useNow";
@@ -139,7 +139,7 @@ function Session({
       setPending(false);
       if (g) {
         setShortGrade(g);
-        finish(g.score >= SHORT_PASS);
+        finish(shortPassed(g));
       } else {
         setRevealed(true); // Selbstbewertung anzeigen
       }
@@ -178,7 +178,8 @@ function Session({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!entry) return;
-      const inText = (e.target as HTMLElement)?.tagName === "TEXTAREA";
+      const tag = (e.target as HTMLElement)?.tagName;
+      const inText = tag === "TEXTAREA";
       if (e.key === "Enter") {
         // Im Textfeld nur mit Cmd/Ctrl+Enter abschicken
         if (inText && !(e.metaKey || e.ctrlKey)) return;
@@ -187,7 +188,8 @@ function Session({
         else void check();
         return;
       }
-      if (e.metaKey || e.ctrlKey || e.altKey || inText) return;
+      // Ergebnisfelder von Rechenaufgaben: Enter prüft, Buchstaben sind Eingabe
+      if (e.metaKey || e.ctrlKey || e.altKey || inText || tag === "INPUT") return;
       if (e.key === "m") {
         useApp.getState().toggleMark(markKey("q", subject.id, entry.q.id));
         return;
@@ -350,10 +352,11 @@ function Session({
                 q={q}
                 grade={shortGrade}
                 pending={pending}
+                answer={text}
                 onSelfGrade={(hit) => {
                   const g = selfGrade(q, hit);
                   setShortGrade(g);
-                  finish(g.score >= SHORT_PASS);
+                  finish(shortPassed(g));
                 }}
               />
             )}
@@ -377,7 +380,7 @@ function Session({
             disabled={(q.type === "mc" && !selected.length) || (q.type === "short" && (pending || revealed || !text.trim()))}
             className="min-w-40 shadow-soft"
           >
-            {q.type === "short" ? "Bewerten" : "Prüfen"}
+            {q.type === "short" && !q.results.length ? "Bewerten" : "Prüfen"}
           </Button>
         )}
       </div>

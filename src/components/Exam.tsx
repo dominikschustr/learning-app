@@ -20,13 +20,13 @@ import { chapterFormat, createExam, gradeExam, isAnswered } from "@/lib/exam";
 import { XP } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
 import type { Case, Lecture, Question, QuestionType, SubjectContent } from "@/lib/schema";
-import { SHORT_PASS, gradeMC, toggleOption } from "@/lib/scoring";
+import { gradeMC, shortPassed, toggleOption } from "@/lib/scoring";
 import { examScore, questionCredit, useApp, useHydrated, type ActiveExam, type AnswerEvent, type ExamRecord, type ShortGrade } from "@/lib/store";
 import { announceAll, celebrate } from "@/lib/toast";
 import { cn, formatClock, pct } from "@/lib/utils";
 import { MarkButton } from "./MarkButton";
 import { PaperList, fmtPoints, paperSlots, slotLabel, type PaperSlot } from "./Papers";
-import { CaseContext, MCView, ShortInput, ShortResult, TFView, useCaseOf } from "./Questions";
+import { CaseContext, MCView, ShortInput, ShortResult, TFView, answerText, useCaseOf } from "./Questions";
 import { Bar, Button, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
 export function Exam({ content }: { content: SubjectContent }) {
@@ -61,7 +61,9 @@ function partHint(t: QuestionType, questions: Question[]): string {
 }
 
 function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lecture }) {
-  const { subject, questions } = content;
+  const { subject } = content;
+  // Fragen nur für Probeklausuren kommen in Kapiteltests und im zufälligen Abschlusstest nicht vor
+  const questions = content.questions.filter((q) => !q.paperOnly);
   const f = lecture ? chapterFormat(questions, lecture.id, subject.examFormat) : subject.examFormat;
   const startExam = useApp((s) => s.startExam);
   const allExams = useApp((s) => s.exams);
@@ -442,7 +444,7 @@ function Result({ content, record }: { content: SubjectContent; record: ExamReco
   const isBest = exams.every((e) => e.id === record.id || examScore(e).score < sc.score);
 
   const applyGrade = (id: string, g: ShortGrade) => {
-    const correct = g.score >= SHORT_PASS;
+    const correct = shortPassed(g);
     const cur = useApp.getState().exams.find((e) => e.id === record.id) ?? record;
     updateExamRecord(record.id, {
       shortGrades: { ...cur.shortGrades, [id]: g },
@@ -700,10 +702,13 @@ function ReviewItem({
               {context && <CaseContext c={context} />}
               <div className="rounded-2xl bg-surface-2 p-4 text-sm">
                 <p className="eyebrow mb-1">Deine Antwort</p>
-                <p className="whitespace-pre-wrap">{a?.kind === "short" && a.text.trim() ? a.text : "—"}</p>
+                <p className="whitespace-pre-wrap">
+                  {(a?.kind === "short" && answerText(q, a.text).trim()) || (q.results.length ? "Kein Rechenweg notiert." : "—")}
+                </p>
               </div>
               <ShortResult
                 q={q}
+                answer={a?.kind === "short" ? a.text : ""}
                 grade={record.shortGrades[q.id] ?? null}
                 pending={r === null && !aiUnavailable}
                 onSelfGrade={r === null && aiUnavailable ? onSelfGrade : undefined}

@@ -3,10 +3,12 @@
 import { Check, CheckCircle2, ChevronDown, Circle, FileText, Loader2, Sparkles, X } from "lucide-react";
 import { motion } from "motion/react";
 import { useCallback, useMemo, useState } from "react";
+import { checkResult, decodeCalc, encodeCalc, fmtResult, isCalc } from "@/lib/calc";
 import type { Case, MCQuestion, Question, ShortQuestion, TFQuestion } from "@/lib/schema";
-import { SHORT_PASS, type OptionVerdict } from "@/lib/scoring";
+import { shortPassed, type OptionVerdict } from "@/lib/scoring";
 import type { ShortGrade } from "@/lib/store";
 import { cn } from "@/lib/utils";
+import { FormulaText } from "./FormulaText";
 import { Button } from "./ui";
 
 const VERB_LABEL = { define: "Define", state: "State", explain: "Explain", calculate: "Calculate" };
@@ -66,11 +68,18 @@ export function CaseContext({ c }: { c: Case }) {
   );
 }
 
-export function QuestionMeta({ kind, extra }: { kind: "mc" | "tf" | "short"; extra?: React.ReactNode }) {
-  const label = { mc: "Multiple Choice", tf: "True / False", short: "Kurzantwort" }[kind];
+export function QuestionMeta({
+  kind,
+  extra,
+  label,
+}: {
+  kind: "mc" | "tf" | "short";
+  extra?: React.ReactNode;
+  label?: string;
+}) {
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <span className="eyebrow">{label}</span>
+      <span className="eyebrow">{label ?? { mc: "Multiple Choice", tf: "True / False", short: "Kurzantwort" }[kind]}</span>
       {extra}
     </div>
   );
@@ -208,6 +217,7 @@ export function ShortInput({
   context?: Case;
 }) {
   const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+  if (isCalc(q)) return <CalcInput q={q} text={text} onChange={onChange} disabled={disabled} context={context} />;
   return (
     <div>
       {context && <CaseContext c={context} />}
@@ -233,19 +243,115 @@ export function ShortInput({
   );
 }
 
+/** Rechenaufgabe: ein Feld je Ergebnis, darunter optional der eigene Rechenweg. */
+function CalcInput({
+  q,
+  text,
+  onChange,
+  disabled,
+  context,
+}: {
+  q: ShortQuestion;
+  text: string;
+  onChange?: (t: string) => void;
+  disabled?: boolean;
+  context?: Case;
+}) {
+  const answer = decodeCalc(text, q.results.length);
+  const set = (patch: Partial<typeof answer>) => onChange?.(encodeCalc({ ...answer, ...patch }));
+  return (
+    <div>
+      {context && <CaseContext c={context} />}
+      <QuestionMeta
+        kind="short"
+        label="Rechenaufgabe"
+        extra={<span className="text-xs text-muted">· Ergebnisse werden automatisch geprüft</span>}
+      />
+      <h2 className="mt-3 whitespace-pre-line text-lg font-semibold leading-snug sm:text-xl">
+        <FormulaText text={q.prompt} />
+      </h2>
+      <div className="mt-6 grid gap-2.5">
+        {q.results.map((r, i) => (
+          <label
+            key={r.label}
+            className="flex flex-col gap-2 rounded-2xl border-2 border-line bg-surface p-3 transition focus-within:border-accent sm:flex-row sm:items-center sm:gap-4"
+          >
+            <FormulaText text={r.label} className="flex-1 text-sm font-medium" />
+            <span className="flex items-center gap-2">
+              <input
+                type="text"
+                inputMode="decimal"
+                autoComplete="off"
+                value={answer.values[i]}
+                disabled={disabled}
+                onChange={(e) => set({ values: answer.values.map((v, j) => (j === i ? e.target.value : v)) })}
+                placeholder="Ergebnis"
+                className="w-full rounded-xl border border-line bg-surface-2 px-3 py-2 text-right tabular-nums outline-none placeholder:text-muted focus:border-accent disabled:opacity-70 sm:w-36"
+              />
+              <span className="w-10 shrink-0 text-sm text-muted">{r.unit}</span>
+            </span>
+          </label>
+        ))}
+      </div>
+      <textarea
+        value={answer.work}
+        onChange={(e) => set({ work: e.target.value })}
+        disabled={disabled}
+        rows={3}
+        placeholder="Rechenweg (optional, nur für dich) …"
+        className="mt-3 w-full resize-y rounded-2xl border-2 border-line bg-surface p-4 text-sm leading-relaxed outline-none transition placeholder:text-muted focus:border-accent disabled:opacity-70"
+      />
+      <p className="mt-1 text-xs text-muted">
+        Prozent als Prozentzahl (13,8) oder Dezimalzahl (0,138). Kleine Rundungsabweichungen zählen als richtig.
+      </p>
+    </div>
+  );
+}
+
+/** Eingegebene Ergebnisse neben der Lösung, je Zeile richtig oder falsch. */
+function CalcCheck({ q, answer }: { q: ShortQuestion; answer: string }) {
+  const { values } = decodeCalc(answer, q.results.length);
+  return (
+    <ul className="mt-3 divide-y divide-line/70 text-sm">
+      {q.results.map((r, i) => {
+        const ok = checkResult(r, values[i]);
+        return (
+          <li key={r.label} className="flex flex-wrap items-center gap-x-3 gap-y-1 py-2">
+            {ok ? <CheckCircle2 className="size-4 shrink-0 text-good" /> : <X className="size-4 shrink-0 text-bad" />}
+            <FormulaText text={r.label} className="min-w-0 flex-1" />
+            <span className="tabular-nums">
+              {!ok && <span className="mr-2 text-ink-2 line-through">{values[i].trim() || "—"}</span>}
+              <span className="font-semibold">{fmtResult(r)}</span>
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+/** Was in der Auswertung unter „Deine Antwort“ steht: bei Rechenaufgaben nur der Rechenweg. */
+export function answerText(q: ShortQuestion, text: string): string {
+  return isCalc(q) ? decodeCalc(text, q.results.length).work : text;
+}
+
 /** Ergebnis einer Kurzantwort: KI-Bewertung oder Selbstbewertung + Musterlösung. */
 export function ShortResult({
   q,
   grade,
   pending,
   onSelfGrade,
+  answer = "",
 }: {
   q: ShortQuestion;
   grade: ShortGrade | null;
   pending?: boolean;
   onSelfGrade?: (hit: string[]) => void;
+  /** eigene Antwort, für den Abgleich der Ergebnisse bei Rechenaufgaben */
+  answer?: string;
 }) {
   const [checked, setChecked] = useState<string[]>([]);
+  const calc = isCalc(q);
 
   return (
     <div className="space-y-4">
@@ -261,20 +367,28 @@ export function ShortResult({
           animate={{ opacity: 1, y: 0 }}
           className={cn(
             "rounded-2xl border p-4",
-            grade.score >= SHORT_PASS ? "border-good/30 bg-good-soft" : "border-bad/30 bg-bad-soft",
+            shortPassed(grade) ? "border-good/30 bg-good-soft" : "border-bad/30 bg-bad-soft",
           )}
         >
           <div className="flex items-center gap-3">
             <span className="display text-3xl tabular-nums">{grade.score}</span>
             <span className="text-sm">
               <span className="block font-semibold">
-                {grade.score >= SHORT_PASS ? "Gut – zählt als richtig" : "Noch nicht ausreichend"}
+                {shortPassed(grade)
+                  ? calc
+                    ? "Alle Ergebnisse richtig"
+                    : "Gut – zählt als richtig"
+                  : calc
+                    ? "Noch nicht alle Ergebnisse richtig"
+                    : "Noch nicht ausreichend"}
               </span>
               <span className="flex items-center gap-1 text-muted">
                 {grade.source === "ai" ? (
                   <>
                     <Sparkles className="size-3" /> KI-Bewertung
                   </>
+                ) : grade.source === "auto" ? (
+                  "Automatisch geprüft"
                 ) : (
                   "Selbstbewertung"
                 )}
@@ -282,21 +396,25 @@ export function ShortResult({
             </span>
           </div>
           {grade.source === "ai" && <p className="mt-2 text-sm">{grade.feedback}</p>}
-          <ul className="mt-3 space-y-1.5 text-sm">
-            {q.keyPoints.map((k) => {
-              const hit = grade.hit.includes(k);
-              return (
-                <li key={k} className="flex gap-2">
-                  {hit ? (
-                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-good" />
-                  ) : (
-                    <Circle className="mt-0.5 size-4 shrink-0 text-bad" />
-                  )}
-                  <span className={hit ? "" : "text-ink-2"}>{k}</span>
-                </li>
-              );
-            })}
-          </ul>
+          {calc ? (
+            <CalcCheck q={q} answer={answer} />
+          ) : (
+            <ul className="mt-3 space-y-1.5 text-sm">
+              {q.keyPoints.map((k) => {
+                const hit = grade.hit.includes(k);
+                return (
+                  <li key={k} className="flex gap-2">
+                    {hit ? (
+                      <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-good" />
+                    ) : (
+                      <Circle className="mt-0.5 size-4 shrink-0 text-bad" />
+                    )}
+                    <span className={hit ? "" : "text-ink-2"}>{k}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
         </motion.div>
       )}
 
@@ -329,8 +447,10 @@ export function ShortResult({
       )}
 
       <details className="group rounded-2xl border border-line bg-surface p-4" open={!!grade}>
-        <summary className="cursor-pointer text-sm font-semibold">Musterlösung</summary>
-        <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-ink-2">{q.modelAnswer}</p>
+        <summary className="cursor-pointer text-sm font-semibold">{calc ? "Lösungsweg" : "Musterlösung"}</summary>
+        <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-ink-2">
+          {calc ? <FormulaText text={q.modelAnswer} /> : q.modelAnswer}
+        </p>
       </details>
     </div>
   );

@@ -18,7 +18,8 @@ export type ShortGrade = {
   hit: string[];
   missed: string[];
   feedback: string;
-  source: "ai" | "self";
+  /** auto = Rechenaufgabe, Ergebnisse automatisch geprüft */
+  source: "ai" | "self" | "auto";
 };
 
 export type ActiveExam = {

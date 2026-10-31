@@ -37,6 +37,11 @@ export function gradeTF(answer: boolean, given: boolean | null): boolean {
 /** Ab diesem Score (0–100) gilt eine Kurzantwort als richtig. */
 export const SHORT_PASS = 60;
 
+/** Richtig für Lernstand und Kapiteltest: Rechenaufgaben nur mit allen Ergebnissen, sonst ab SHORT_PASS. */
+export function shortPassed(g: { score: number; source: string }): boolean {
+  return g.source === "auto" ? g.score === 100 : g.score >= SHORT_PASS;
+}
+
 /** Prognostizierter Prüfungs-Score: Mastery je Fragetyp, gewichtet mit dem Prüfungsformat. */
 export function examReadiness(
   format: Pick<ExamFormat, QuestionType>,

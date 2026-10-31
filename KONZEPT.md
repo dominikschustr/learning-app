@@ -39,6 +39,14 @@ bewertet nach Punkten wie in der Klausur: Nachbauten der Mock exams 2025/26, der
 2019/20 sowie drei Konzeptklausuren mit neuen Fällen aus dem Folienstoff. Für die Readiness-Prognose gilt weiter
 `examFormat` (10 True/False, 16 Multiple Choice, 4 Kurzantworten, 90 Minuten).
 
+### Prüfungsformat Corporate Finance (FF01, ESCP)
+
+Final exam, 2 Stunden, Formelblatt: Teil 1 mit 15 Multiple-Choice-Fragen (je 2/3 Punkt, 10 Punkte), Teil 2 mit
+Rechen- und Kurzantwortaufgaben a)/b) zu je 0,75 Punkten plus einer Aufgabe zu 1 Punkt (10 Punkte). In der App üben die
+Kapitel L1–L8 nur **Rechenaufgaben** mit automatisch geprüften Ergebnissen und Lösungsweg, dazu eine **Formelübersicht**
+je Kapitel (markiert, was auf dem Formelblatt steht) und Formel-Karteikarten. Multiple Choice gibt es nur in den drei
+**Probeklausuren** (`paperOnly`): Nachbauten der Klausuren 2023/24 und 2022/23 (Themen nach L8 ersetzt) und eine neue.
+
 ## 3. Inhalte: vom Dokument zur Frage
 
 Die App generiert **keine** Fragen selbst. Der Ablauf:

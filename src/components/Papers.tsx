@@ -64,6 +64,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
   const { subject, papers } = content;
   const startExam = useApp((s) => s.startExam);
   const allExams = useApp((s) => s.exams);
+  const hasCalc = content.questions.some((q) => q.type === "short" && q.results.length > 0);
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -84,7 +85,8 @@ export function PaperList({ content }: { content: SubjectContent }) {
         </li>
         <li className="flex gap-2">
           <FileText className="mt-0.5 size-4 shrink-0 text-muted" /> Offene Aufgaben: Rechenweg zeigen. Sie werden anteilig bewertet
-          (KI oder Selbstbewertung anhand der Kernpunkte).
+          (KI oder Selbstbewertung anhand der Kernpunkte)
+          {hasCalc && ", Rechenaufgaben automatisch nach dem Anteil richtiger Ergebnisse"}.
         </li>
         <li className="flex gap-2">
           <Flag className="mt-0.5 size-4 shrink-0 text-muted" /> Unsichere Fragen markieren und vor der Abgabe zurückspringen.

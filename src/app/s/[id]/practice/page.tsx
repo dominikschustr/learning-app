@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { Practice } from "@/components/Practice";
 import { Skeleton } from "@/components/ui";
-import { getAllContent, getSubjectContent } from "@/lib/content";
+import { getAllContent, getSubjectContent, practiceContent } from "@/lib/content";
 
 export const metadata = { title: "Üben" };
 
@@ -16,7 +16,7 @@ export default async function PracticePage({ params }: PageProps<"/s/[id]/practi
   if (!content) notFound();
   return (
     <Suspense fallback={<Skeleton className="h-96" />}>
-      <Practice content={content} />
+      <Practice content={practiceContent(content)} />
     </Suspense>
   );
 }

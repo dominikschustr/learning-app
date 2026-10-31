@@ -1,19 +1,6 @@
 "use client";
 
-import {
-  ArrowLeft,
-  ArrowRight,
-  Bookmark,
-  Brain,
-  Info,
-  Layers,
-  LayoutGrid,
-  Play,
-  RotateCcw,
-  Target,
-  Trophy,
-  Zap,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, Brain, Info, Layers, LayoutGrid, Play, RotateCcw, Sigma, Target, Trophy, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { subjectStats } from "@/lib/progress";
@@ -71,6 +58,17 @@ function Inner({ summary }: { summary: SubjectSummary }) {
 
   const hasTf = summary.items.some((i) => i.type === "tf");
   const modes = [
+    ...(summary.formulas.length
+      ? [
+          {
+            href: `${base}/formulas`,
+            icon: Sigma,
+            title: "Formelübersicht",
+            text: "Alle Formeln je Kapitel, mit Abfrage-Modus",
+            meta: `${summary.formulas.length} Kapitel`,
+          },
+        ]
+      : []),
     ...(summary.frameworks.length
       ? [
           {

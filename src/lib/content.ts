@@ -6,6 +6,7 @@ import { z } from "zod";
 import {
   CardSchema,
   CaseSchema,
+  FormulaSchema,
   FrameworkSchema,
   PaperSchema,
   QuestionSchema,
@@ -13,6 +14,7 @@ import {
   TextSchema,
   checkContent,
   paperItems,
+  type Formula,
   type Framework,
   type LectureText,
   type SubjectContent,
@@ -121,13 +123,33 @@ export const getFrameworks = cache((subjectId: string): Framework[] => {
   return list.toSorted((a, b) => order.get(a.lecture)! - order.get(b.lecture)!);
 });
 
+/** Formelübersicht: formulas/<kapitel>.json, in Kapitelreihenfolge. */
+export const getFormulas = cache((subjectId: string): Formula[] => {
+  const subject = loadAllContent().find((c) => c.subject.id === subjectId)?.subject;
+  const order = new Map(subject?.lectures.map((l, i) => [l.id, i]));
+  const list = readDir(path.join(ROOT, subjectId, "formulas"), FormulaSchema);
+  for (const f of list) {
+    if (!order.has(f.lecture)) throw new Error(`Content "${subjectId}": Formel ${f.id} – unbekanntes Kapitel "${f.lecture}"`);
+  }
+  if (new Set(list.map((f) => f.id)).size !== list.length) throw new Error(`Content "${subjectId}": doppelte Formel-ids`);
+  return list.toSorted((a, b) => order.get(a.lecture)! - order.get(b.lecture)!);
+});
+
+/** Fragen zum Üben, für Kapiteltests und den zufälligen Abschlusstest: ohne die nur für Probeklausuren. */
+export function practiceContent(content: SubjectContent): SubjectContent {
+  return { ...content, questions: content.questions.filter((q) => !q.paperOnly) };
+}
+
 export function getSummaries(): SubjectSummary[] {
   return getAllContent().map(({ subject, questions, cards, papers }) => ({
     subject,
-    items: questions.map((q) => ({ id: q.id, type: q.type, lecture: q.lecture })),
+    items: questions
+      .filter((q) => !q.paperOnly)
+      .map((q) => ({ id: q.id, type: q.type, lecture: q.lecture, calc: q.type === "short" && q.results.length > 0 })),
     cards: cards.map((c) => ({ id: c.id, lecture: c.lecture })),
     texts: getTexts(subject.id).map((t) => t.lecture),
     frameworks: [...new Set(getFrameworks(subject.id).map((f) => f.lecture))],
+    formulas: [...new Set(getFormulas(subject.id).map((f) => f.lecture))],
     papers: papers.map((p) => ({ id: p.id, title: p.title, points: paperItems(p).reduce((s, i) => s + i.points, 0) })),
   }));
 }

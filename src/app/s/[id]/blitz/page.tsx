@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { Blitz } from "@/components/Blitz";
 import { Skeleton } from "@/components/ui";
-import { getAllContent, getSubjectContent } from "@/lib/content";
+import { getAllContent, getSubjectContent, practiceContent } from "@/lib/content";
 
 export const metadata = { title: "Blitzrunde" };
 
@@ -16,7 +16,7 @@ export default async function Page({ params }: PageProps<"/s/[id]/blitz">) {
   if (!content) notFound();
   return (
     <Suspense fallback={<Skeleton className="h-96" />}>
-      <Blitz content={content} />
+      <Blitz content={practiceContent(content)} />
     </Suspense>
   );
 }

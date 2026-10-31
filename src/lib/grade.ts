@@ -2,6 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import { z } from "zod";
+import { gradeCalc, isCalc } from "./calc";
 import type { Case, ShortQuestion } from "./schema";
 import type { ShortGrade } from "./store";
 
@@ -70,6 +71,7 @@ function caseText(c: Case): string {
 
 /** null = KI nicht verfügbar → Selbstbewertung. */
 export async function gradeShortAnswer(q: ShortQuestion, answer: string, context?: Case): Promise<ShortGrade | null> {
+  if (isCalc(q)) return gradeCalc(q, answer);
   const key = readKey();
   if (!key) return null;
   if (answer.trim().length < 3) {

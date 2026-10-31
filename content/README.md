@@ -123,6 +123,35 @@ Marketing z. B. `["tf", "mc", "short"]` wie die echte Klausur).
 Ein Fach kann auch ganz ohne Multiple Choice und True/False auskommen (`"mc": 0, "tf": 0` in `examFormat`, z. B. Strategy):
 dann wird nur mit offenen Fragen geübt, Kapiteltests ziehen bis zu drei Kurzantworten, und die Blitzrunde entfällt.
 
+**Rechenaufgaben:** Eine Kurzantwort mit `results` wird zur Rechenaufgabe. Je Ergebnis gibt es ein Eingabefeld; die App
+prüft die Zahlen sofort und ohne KI (Toleranz: 0,5 % des Werts, mindestens 0,01, oder `tol` absolut) und zeigt danach
+`modelAnswer` als Lösungsweg. Prozent werden als Prozentzahl hinterlegt (`13.8` mit `"unit": "%"`); `0.138` wird dann
+ebenfalls als richtig erkannt. Beispiel: Corporate Finance.
+
+```json
+{
+  "type": "short", "id": "cf-l4-01", "lecture": "l4", "verb": "calculate",
+  "prompt": "rf = 3 %, market risk premium 6 %, beta 1.4. Required return?",
+  "modelAnswer": "3% + 1.4 × 6% = 11.40%", "keyPoints": ["Required return 11.4 %"],
+  "results": [{ "label": "Required return", "value": 11.4, "unit": "%" }]
+}
+```
+
+`"paperOnly": true` – eine Frage erscheint nur in Probeklausuren, nicht beim Üben, in Kapiteltests, der Blitzrunde oder der
+Readiness (z. B. der Multiple-Choice-Teil der Corporate-Finance-Klausur, während die Kapitel nur Rechenaufgaben haben).
+
+`formulas/l01.json` – optional: **Formelübersicht**. Hat ein Fach welche, bekommt es die Seite „Formelübersicht“ (mit
+Abfrage-Modus und Filter „Nur auswendig“) und jedes betroffene Kapitel eine Kachel „Formeln“. In `formula` werden `r_{E}`
+bzw. `σ^{2}` tief- und hochgestellt; `sheet: true` heißt „steht auf dem Formelblatt der Klausur“.
+
+```json
+[{
+  "id": "f-capm", "lecture": "l4", "name": "CAPM", "formula": "E(R_i) = r_f + β_i (E(R_M) − r_f)",
+  "use": "Required return of any stock", "vars": ["E(R_M) − r_f = market risk premium"],
+  "pitfall": "The premium, not E(R_M), multiplies beta.", "sheet": true
+}]
+```
+
 `cards/l01.json`
 
 ```json

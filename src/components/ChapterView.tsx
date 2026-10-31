@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, Bookmark, FileText, Layers, LayoutGrid, ScrollText, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Bookmark, FileText, Layers, LayoutGrid, ScrollText, Sigma, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { chapterFormat } from "@/lib/exam";
@@ -53,6 +53,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const testCount = fmt.short + fmt.mc + fmt.tf;
 
   const byType = (t: QuestionType) => summary.items.filter((i) => i.lecture === chapterId && i.type === t).length;
+  const calcCount = summary.items.filter((i) => i.lecture === chapterId && i.calc).length;
 
   const hasText = summary.texts.includes(chapterId);
   const qMarks = markedIds(s.marks, "q", subject.id);
@@ -60,6 +61,17 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const markedQ = summary.items.filter((i) => i.lecture === chapterId && qMarks.has(i.id)).length;
   const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
   const actions = [
+    ...(summary.formulas.includes(chapterId)
+      ? [
+          {
+            href: `${base}/formulas#${chapterId}`,
+            icon: Sigma,
+            title: "Formeln",
+            text: "Die wichtigsten Formeln des Kapitels, mit Abfrage-Modus",
+            meta: "Übersicht",
+          },
+        ]
+      : []),
     ...(summary.frameworks.includes(chapterId)
       ? [
           {
@@ -121,7 +133,8 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             {[
               [byType("mc"), "Multiple Choice"],
               [byType("tf"), "True/False"],
-              [byType("short"), "Kurzantwort"],
+              [calcCount, "Rechenaufgaben"],
+              [byType("short") - calcCount, "Kurzantwort"],
               [ch.cards, "Karten"],
             ]
               .filter(([n]) => n)

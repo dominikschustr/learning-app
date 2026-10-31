@@ -69,7 +69,22 @@ export const PaperSchema = z.object({
     .min(1),
 });
 
-const base = { id, lecture: id, case: id.optional() };
+const base = {
+  id,
+  lecture: id,
+  case: id.optional(),
+  /** nur in Probeklausuren, nicht beim Üben, in Kapiteltests oder der Readiness */
+  paperOnly: z.boolean().default(false),
+};
+
+/** Ergebnis einer Rechenaufgabe, das automatisch geprüft wird (Prozent als Prozentzahl: 13.8 mit unit "%"). */
+export const CalcResultSchema = z.object({
+  label: z.string().min(1),
+  value: z.number(),
+  unit: z.string().default(""),
+  /** erlaubte absolute Abweichung; Standard: 0,5 % des Werts, mindestens 0,01 */
+  tol: z.number().positive().optional(),
+});
 
 export const MCQuestionSchema = z.object({
   ...base,
@@ -101,6 +116,8 @@ export const ShortQuestionSchema = z.object({
   prompt: z.string().min(1),
   modelAnswer: z.string().min(1),
   keyPoints: z.array(z.string().min(1)).min(1),
+  /** Rechenaufgabe: Ergebnisse werden automatisch geprüft statt per KI/Selbstbewertung */
+  results: z.array(CalcResultSchema).default([]),
 });
 
 export const QuestionSchema = z.discriminatedUnion("type", [
@@ -173,6 +190,23 @@ export const FrameworkSchema = z.object({
     .optional(),
 });
 
+/** Formel mit Einsatzzweck für die Formelübersicht (formulas/<kapitel>.json, optional). */
+export const FormulaSchema = z.object({
+  id,
+  lecture: id,
+  name: z.string().min(1),
+  /** Formel in Unicode; r_{E} und σ^{2} werden tief- bzw. hochgestellt */
+  formula: z.string().min(1),
+  /** Wann verwende ich sie? */
+  use: z.string().default(""),
+  /** Bedeutung der Symbole */
+  vars: z.array(z.string().min(1)).default([]),
+  /** typische Falle */
+  pitfall: z.string().default(""),
+  /** steht auf dem Formelblatt der Klausur */
+  sheet: z.boolean().default(false),
+});
+
 export type Lecture = z.infer<typeof LectureSchema>;
 export type ExamFormat = z.infer<typeof ExamFormatSchema>;
 export type Subject = z.infer<typeof SubjectSchema>;
@@ -186,6 +220,8 @@ export type Case = z.infer<typeof CaseSchema>;
 export type Paper = z.infer<typeof PaperSchema>;
 export type LectureText = z.infer<typeof TextSchema>;
 export type Framework = z.infer<typeof FrameworkSchema>;
+export type Formula = z.infer<typeof FormulaSchema>;
+export type CalcResult = z.infer<typeof CalcResultSchema>;
 
 export type SubjectContent = {
   subject: Subject;
@@ -198,12 +234,15 @@ export type SubjectContent = {
 /** Leichte Übersicht für Dashboard/Readiness, ohne Fragetexte. */
 export type SubjectSummary = {
   subject: Subject;
-  items: { id: string; type: QuestionType; lecture: string }[];
+  /** ohne paperOnly-Fragen; calc = Rechenaufgabe mit automatisch geprüften Ergebnissen */
+  items: { id: string; type: QuestionType; lecture: string; calc: boolean }[];
   cards: { id: string; lecture: string }[];
   /** Kapitel, für die ein Lesetext hinterlegt ist */
   texts: string[];
   /** Kapitel, für die Framework-Steckbriefe hinterlegt sind */
   frameworks: string[];
+  /** Kapitel, für die eine Formelübersicht hinterlegt ist */
+  formulas: string[];
   /** Probeklausuren (nur Kopfdaten) */
   papers: { id: string; title: string; points: number }[];
 };
@@ -230,7 +269,9 @@ export function checkContent({ subject, questions, cards, cases, papers }: Subje
     for (const q of ids) if (!questionIds.has(q)) errors.push(`Klausur ${p.id}: unbekannte Frage "${q}"`);
   }
 
+  const inPapers = new Set(papers.flatMap((p) => paperItems(p).map((i) => i.q)));
   for (const q of questions) {
+    if (q.paperOnly && !inPapers.has(q.id)) errors.push(`${q.id}: paperOnly, aber in keiner Probeklausur`);
     if (q.case && !caseIds.has(q.case)) errors.push(`${q.id}: unbekannter Fall "${q.case}"`);
     if (q.type !== "mc") continue;
     if (q.single && q.correct.length !== 1) errors.push(`${q.id}: single braucht genau eine richtige Option`);
@@ -242,7 +283,7 @@ export function checkContent({ subject, questions, cards, cases, papers }: Subje
   }
 
   if (subject.draft) return errors;
-  const count = (t: QuestionType) => questions.filter((q) => q.type === t).length;
+  const count = (t: QuestionType) => questions.filter((q) => q.type === t && !q.paperOnly).length;
   const f = subject.examFormat;
   if (count("short") < f.short || count("mc") < f.mc || count("tf") < f.tf) {
     errors.push(
