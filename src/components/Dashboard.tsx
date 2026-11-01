@@ -1,17 +1,19 @@
 "use client";
 
-import { ArrowRight, Check, Flame, Lock } from "lucide-react";
+import { ArrowRight, CalendarClock, Check, Flame, Lock } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 import { ACHIEVEMENTS, levelInfo, titleFor } from "@/lib/gamification";
+import { countdown, studyPlan } from "@/lib/plan";
 import { subjectStats } from "@/lib/progress";
-import type { SubjectSummary } from "@/lib/schema";
+import type { CalendarEntry, SubjectSummary } from "@/lib/schema";
 import { achievementProgress, useApp, useHydrated, visibleStreak } from "@/lib/store";
 import { useNow } from "@/lib/useNow";
 import { alpha, cn, dayKey } from "@/lib/utils";
 import { Heatmap } from "./Heatmap";
 import { Icon } from "./Icon";
+import { StudyPlan } from "./StudyPlan";
 import { Bar, Chip, ProgressRing, Skeleton } from "./ui";
 
 function greeting(hour: number) {
@@ -22,7 +24,7 @@ function greeting(hour: number) {
   return "Späte Schicht";
 }
 
-export function Dashboard({ summaries }: { summaries: SubjectSummary[] }) {
+export function Dashboard({ summaries, calendar }: { summaries: SubjectSummary[]; calendar: CalendarEntry[] }) {
   const hydrated = useHydrated();
   if (!hydrated) {
     return (
@@ -33,16 +35,45 @@ export function Dashboard({ summaries }: { summaries: SubjectSummary[] }) {
       </div>
     );
   }
-  return <DashboardInner summaries={summaries} />;
+  return <DashboardInner summaries={summaries} calendar={calendar} />;
 }
 
-function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
+function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; calendar: CalendarEntry[] }) {
   const s = useApp();
   const now = useNow();
   const today = s.activity[dayKey(now)] ?? 0;
   const unlockedCount = ACHIEVEMENTS.filter((a) => s.achievements[a.id]).length;
   const lvl = levelInfo(s.xp);
   const streak = visibleStreak(s.streak, now);
+  const subjects = summaries.map((summary) => ({ summary, st: subjectStats(summary, s.items, s.cards, now) }));
+  const plan = studyPlan(
+    [
+      ...subjects.flatMap(({ summary: { subject }, st }) =>
+        subject.examDate
+          ? [
+              {
+                key: subject.id,
+                name: subject.name,
+                date: subject.examDate,
+                short: subject.short,
+                color: subject.color,
+                href: `/s/${subject.id}`,
+                readiness: st.readiness,
+              },
+            ]
+          : [],
+      ),
+      ...calendar.map((c) => ({ key: `cal-${c.name}`, name: c.name, date: c.date })),
+    ],
+    now,
+  );
+  const daysTo = new Map([...plan.upcoming, ...plan.past].map((e) => [e.key, e.days]));
+  // Fächer nach Klausurtermin: anstehende zuerst, geschriebene und ohne Termin danach
+  const order = (id: string) => {
+    const d = daysTo.get(id);
+    return d === undefined ? 1e6 : d < 0 ? 1e5 - d : d;
+  };
+  const sorted = subjects.toSorted((a, b) => order(a.summary.subject.id) - order(b.summary.subject.id));
 
   return (
     <div className="space-y-10">
@@ -52,6 +83,8 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
           Was lernen wir <span className="text-accent">heute</span>?
         </h1>
       </section>
+
+      <StudyPlan upcoming={plan.upcoming} past={plan.past} />
 
       <section className="grid gap-4 sm:grid-cols-3">
         <div className="card flex items-center gap-5 p-5">
@@ -100,9 +133,9 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
           <h2 className="display text-2xl">Deine Fächer</h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
-          {summaries.map((summary, i) => {
-            const st = subjectStats(summary, s.items, s.cards, now);
+          {sorted.map(({ summary, st }, i) => {
             const { subject } = summary;
+            const days = daysTo.get(subject.id);
             return (
               <motion.div
                 key={subject.id}
@@ -129,6 +162,12 @@ function DashboardInner({ summaries }: { summaries: SubjectSummary[] }) {
                           {subject.short}
                         </span>
                         {subject.demo && <Chip>Demo-Inhalte</Chip>}
+                        {days !== undefined && (
+                          <Chip className={days >= 0 && days <= 7 ? "border-bad/40 text-bad" : undefined}>
+                            <CalendarClock className="size-3" />
+                            {days >= 0 ? `Klausur ${countdown(days)}` : "geschrieben"}
+                          </Chip>
+                        )}
                       </div>
                       <h3 className="display mt-3 text-2xl">{subject.name}</h3>
                       <p className="mt-1 line-clamp-2 text-sm text-muted">{subject.description}</p>

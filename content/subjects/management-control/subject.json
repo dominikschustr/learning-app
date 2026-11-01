@@ -4,6 +4,7 @@
   "short": "MC",
   "color": "#2F5BEA",
   "description": "Midterm: Control-Zyklus, Responsibility Centres, finanzielle Indikatoren, Performance-Modelle, Dashboards & OVAR.",
+  "examDate": "2026-12-17",
   "demo": false,
   "lectures": [
     { "id": "s1a", "title": "S1a · Management control: an overview" },

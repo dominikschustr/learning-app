@@ -51,6 +51,11 @@ Für die Prüfungssimulation braucht ein sichtbares Fach mindestens so viele Fra
 }
 ```
 
+`"examDate": "2026-12-16"` (optional) – Klausurtermin. Daraus entstehen der Countdown auf Fach- und Startseite und der
+**Prüfungsplan**: alle Klausuren nach Datum, mit Priorität und Anteil der Lernzeit heute (was bis 85 % Readiness fehlt,
+geteilt durch die verbleibenden Tage). Prüfungen ohne eigenes Fach in der App stehen in `content/calendar.json`
+(`[{ "name": "Human Resource", "date": "2026-11-26" }]`) und erscheinen nur im Plan.
+
 `questions/l01.json` – drei Fragetypen, ids im ganzen Fach eindeutig, `lecture` = Kapitel-id:
 
 ```json

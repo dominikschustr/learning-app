@@ -4,6 +4,7 @@
   "short": "MK",
   "color": "#5B2BC4",
   "description": "Data-driven Marketing (MM03): Analytics & Datenethik, Statistik, Trends, Text Mining, STP & Cluster, VIU & A/B-Tests, Conjoint, CLV, Regression.",
+  "examDate": "2026-12-15",
   "demo": false,
   "lectures": [
     { "id": "s01", "title": "S1 · Data-driven decisions & data ethics" },

@@ -4,6 +4,7 @@ import path from "node:path";
 import { cache } from "react";
 import { z } from "zod";
 import {
+  CalendarEntrySchema,
   CardSchema,
   CaseSchema,
   FormulaSchema,
@@ -14,6 +15,7 @@ import {
   TextSchema,
   checkContent,
   paperItems,
+  type CalendarEntry,
   type Formula,
   type Framework,
   type LectureText,
@@ -133,6 +135,15 @@ export const getFormulas = cache((subjectId: string): Formula[] => {
   }
   if (new Set(list.map((f) => f.id)).size !== list.length) throw new Error(`Content "${subjectId}": doppelte Formel-ids`);
   return list.toSorted((a, b) => order.get(a.lecture)! - order.get(b.lecture)!);
+});
+
+/** Weitere Prüfungen ohne eigenes Fach (content/calendar.json, optional) – nur für den Lernplan. */
+export const getCalendar = cache((): CalendarEntry[] => {
+  const file = path.join(process.cwd(), "content", "calendar.json");
+  if (!fs.existsSync(file)) return [];
+  const result = z.array(CalendarEntrySchema).safeParse(readJson(file));
+  if (!result.success) throw new Error(`Content: content/calendar.json\n${z.prettifyError(result.error)}`);
+  return result.data;
 });
 
 /** Fragen zum Üben, für Kapiteltests und den zufälligen Abschlusstest: ohne die nur für Probeklausuren. */

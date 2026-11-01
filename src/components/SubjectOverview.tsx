@@ -1,14 +1,15 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, Brain, Info, Layers, LayoutGrid, Play, RotateCcw, Sigma, Target, Trophy, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, Info, Layers, LayoutGrid, Play, RotateCcw, Sigma, Target, Trophy, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
 import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { LevelBadge } from "./ChapterView";
 import { useNow } from "@/lib/useNow";
-import { alpha, pct } from "@/lib/utils";
+import { alpha, cn, pct } from "@/lib/utils";
 import { Bar, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
 export function SubjectOverview({ summary }: { summary: SubjectSummary }) {
@@ -143,6 +144,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         </span>
         <h1 className="display text-4xl sm:text-5xl mt-3">{subject.name}</h1>
         <p className="mt-2 max-w-2xl text-muted">{subject.description}</p>
+        {subject.examDate && <ExamCountdown date={subject.examDate} readiness={st.readiness} now={now} />}
       </header>
 
       {subject.demo && (
@@ -339,5 +341,28 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         </section>
       )}
     </div>
+  );
+}
+
+/** Klausurtermin mit Countdown und dem Tempo, das bis zur Ziel-Readiness nötig ist. */
+function ExamCountdown({ date, readiness, now }: { date: string; readiness: number; now: number }) {
+  const days = daysUntil(date, now);
+  const need = Math.max(0, READINESS_TARGET - readiness);
+  const target = Math.round(READINESS_TARGET * 100);
+  let pace: string;
+  if (days < 0) pace = "Klausur geschrieben.";
+  else if (!need) pace = `Ziel von ${target} % Readiness erreicht – jetzt nur noch wiederholen.`;
+  else {
+    const perDay = ((need / Math.max(1, days)) * 100).toLocaleString("de-DE", { maximumFractionDigits: 1 });
+    pace = `Für ${target} % Readiness: +${perDay} Punkte pro Tag.`;
+  }
+  return (
+    <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+      <span className={cn("inline-flex items-center gap-1.5 font-semibold", days >= 0 && days <= 7 && "text-bad")}>
+        <CalendarClock className="size-4" />
+        Klausur {fmtExamDate(date, true)} · {countdown(days)}
+      </span>
+      <span className="text-muted">{pace}</span>
+    </p>
   );
 }

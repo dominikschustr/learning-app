@@ -4,6 +4,7 @@
   "short": "CF",
   "color": "#BE185D",
   "description": "Corporate Finance (ESCP): Rechenaufgaben je Kapitel mit automatischer Prüfung, Formelübersicht und Probeklausuren im Format der Final exam (15 Multiple Choice + Rechenaufgaben).",
+  "examDate": "2026-12-16",
   "lectures": [
     {
       "id": "l1",

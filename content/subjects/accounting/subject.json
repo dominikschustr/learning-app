@@ -4,6 +4,7 @@
   "short": "IFRS",
   "color": "#0E8A6B",
   "description": "International Financial Reporting (CM01): IFRS-Abschlüsse, Konsolidierung, Anlagevermögen & Leasing, Fremd- und Eigenkapital, KPIs.",
+  "examDate": "2026-11-24",
   "demo": false,
   "lectures": [
     { "id": "t1", "title": "T1 · IFRS in the EU & IFRS financial statements" },

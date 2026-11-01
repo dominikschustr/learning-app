@@ -1,6 +1,6 @@
 import { Dashboard } from "@/components/Dashboard";
-import { getSummaries } from "@/lib/content";
+import { getCalendar, getSummaries } from "@/lib/content";
 
 export default function Home() {
-  return <Dashboard summaries={getSummaries()} />;
+  return <Dashboard summaries={getSummaries()} calendar={getCalendar()} />;
 }

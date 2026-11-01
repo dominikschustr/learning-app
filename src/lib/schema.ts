@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 const id = z.string().min(1).regex(/^[a-z0-9-]+$/, "nur a-z, 0-9 und -");
+const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Datum als JJJJ-MM-TT");
 
 export const LectureSchema = z.object({ id, title: z.string().min(1) });
 
@@ -25,9 +26,14 @@ export const SubjectSchema = z.object({
   demo: z.boolean().default(false),
   /** Entwurf: wird geprüft, erscheint aber noch nicht in der App (z. B. solange Fragen fehlen). */
   draft: z.boolean().default(false),
+  /** Klausurtermin (JJJJ-MM-TT) für Countdown und Lernplan */
+  examDate: isoDate.optional(),
   lectures: z.array(LectureSchema).min(1),
   examFormat: ExamFormatSchema,
 });
+
+/** Weitere Prüfung ohne eigenes Fach in der App (content/calendar.json) – erscheint nur im Lernplan. */
+export const CalendarEntrySchema = z.object({ name: z.string().min(1), date: isoDate });
 
 /** Fallbeschreibung mit Tabellen, auf die sich mehrere Fragen beziehen (wie in der Prüfung). */
 export const CaseSchema = z.object({
@@ -221,6 +227,7 @@ export type Paper = z.infer<typeof PaperSchema>;
 export type LectureText = z.infer<typeof TextSchema>;
 export type Framework = z.infer<typeof FrameworkSchema>;
 export type Formula = z.infer<typeof FormulaSchema>;
+export type CalendarEntry = z.infer<typeof CalendarEntrySchema>;
 export type CalcResult = z.infer<typeof CalcResultSchema>;
 
 export type SubjectContent = {
