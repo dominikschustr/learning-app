@@ -217,7 +217,7 @@ function Running({ content, exam }: { content: SubjectContent; exam: ActiveExam 
 
   return (
     <div className="mx-auto max-w-3xl">
-      <div className="sticky top-14 z-30 -mx-4 mb-6 border-b border-line bg-bg/90 px-4 py-3 backdrop-blur-md sm:mx-0 sm:rounded-2xl sm:border sm:px-4">
+      <div className="sticky top-[calc(3.5rem+env(safe-area-inset-top))] z-30 -mx-4 mb-6 border-b border-line bg-bg/90 px-4 py-3 backdrop-blur-md sm:mx-0 sm:rounded-2xl sm:border sm:px-4">
         <div className="flex items-center gap-3">
           <span
             className={cn(

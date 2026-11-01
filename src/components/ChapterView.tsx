@@ -8,6 +8,7 @@ import { LECTURE_SIZE } from "@/lib/queue";
 import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
 import type { QuestionType, SubjectSummary } from "@/lib/schema";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
+import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
 import { statusCounts, type ItemState, type ItemStatus } from "@/lib/srs";
 import { alpha, cn, itemKey, pct } from "@/lib/utils";
@@ -39,6 +40,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const { subject } = summary;
   const s = useApp();
   const now = useNow();
+  const mobile = useMobile();
   const st = subjectStats(summary, s.items, s.cards, now, chapterBests(s.exams, subject.id));
   const index = subject.lectures.findIndex((l) => l.id === chapterId);
   const ch = st.lectures[index];
@@ -118,18 +120,22 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   ];
 
   return (
-    <div className="space-y-8">
-      <Link href={base} className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink">
+    // Auf dem Handy stehen die Aktionen direkt unter dem Titel, die Statistik danach
+    <div className="flex flex-col gap-6 sm:gap-8">
+      <Link
+        href={base}
+        className="inline-flex items-center gap-1 self-start text-sm font-medium text-muted hover:text-ink max-sm:order-[-3]"
+      >
         <ArrowLeft className="size-4" /> {subject.name}
       </Link>
 
-      <header className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+      <header className="flex flex-col gap-6 max-sm:order-[-2] sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="eyebrow">
             Kapitel {index + 1} von {subject.lectures.length} · {code}
           </p>
-          <h1 className="display text-4xl sm:text-5xl mt-2">{title}</h1>
-          <p className="mt-2 text-sm text-muted">
+          <h1 className="display mt-1 text-3xl sm:mt-2 sm:text-5xl">{title}</h1>
+          <p className="mt-2 text-sm text-muted max-sm:hidden">
             {[
               [byType("mc"), "Multiple Choice"],
               [byType("tf"), "True/False"],
@@ -144,16 +150,16 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         </div>
       </header>
 
-      <section className="card grid gap-6 p-6 sm:grid-cols-[auto_1fr] sm:p-8">
+      <section className="card grid grid-cols-[auto_1fr] items-center gap-4 p-4 sm:gap-6 sm:p-8">
         <div className="flex justify-center">
-          <LevelBadge ch={ch} color={subject.color} size={150} />
+          <LevelBadge ch={ch} color={subject.color} size={mobile ? 72 : 150} />
         </div>
         <div className="flex flex-col justify-center">
           <p className="eyebrow">Kapitel-Level {ch.level.level} / 5</p>
-          <h2 className="display mt-1 text-3xl">{ch.level.name}</h2>
+          <h2 className="display mt-1 text-2xl sm:text-3xl">{ch.level.name}</h2>
           <p className="mt-2 text-sm text-ink-2">{ch.level.hint}</p>
 
-          <div className="mt-5 flex gap-1.5">
+          <div className="mt-5 flex gap-1.5 max-sm:hidden">
             {LEVEL_NAMES.slice(1).map((name, i) => {
               const lvl = i + 1;
               const reached = ch.level.level >= lvl;
@@ -171,13 +177,13 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             })}
           </div>
 
-          <div className="mt-5 grid max-w-md gap-2 text-sm">
-            <div className="grid grid-cols-[6.5rem_1fr_2.5rem] items-center gap-3">
+          <div className="mt-3 grid max-w-md gap-2 text-sm sm:mt-5">
+            <div className="grid grid-cols-[5.5rem_1fr_2rem] items-center gap-2 sm:grid-cols-[6.5rem_1fr_2.5rem] sm:gap-3">
               <span className="text-ink-2">Fragen</span>
               <Bar value={ch.mastery} color={subject.color} />
               <span className="text-right tabular-nums text-muted">{Math.round(ch.mastery * 100)}</span>
             </div>
-            <div className="grid grid-cols-[6.5rem_1fr_2.5rem] items-center gap-3">
+            <div className="grid grid-cols-[5.5rem_1fr_2rem] items-center gap-2 sm:grid-cols-[6.5rem_1fr_2.5rem] sm:gap-3">
               <span className="text-ink-2">Karteikarten</span>
               <Bar value={ch.cardMastery} color={subject.color} />
               <span className="text-right tabular-nums text-muted">{Math.round(ch.cardMastery * 100)}</span>
@@ -187,7 +193,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
       </section>
 
       <section>
-        <h2 className="display mb-3 text-2xl">Dein Stand</h2>
+        <h2 className="display mb-3 text-xl sm:text-2xl">Dein Stand</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           <StatusCard
             title="Übungsfragen"
@@ -210,19 +216,24 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         </div>
       </section>
 
-      <section className={cn("grid gap-3 sm:grid-cols-2", actions.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3")}>
+      <section
+        className={cn(
+          "grid grid-cols-2 gap-2 max-sm:order-[-1] sm:gap-3",
+          actions.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3",
+        )}
+      >
         {actions.map((a, i) => (
           <motion.div key={a.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
-            <Link href={a.href} className="card group flex h-full flex-col p-5 transition hover:-translate-y-0.5">
+            <Link href={a.href} className="card group flex h-full flex-col p-3 transition hover:-translate-y-0.5 sm:p-5">
               <span
-                className="grid size-11 place-items-center rounded-xl"
+                className="grid size-9 place-items-center rounded-xl sm:size-11"
                 style={{ background: alpha(subject.color, 0.1), color: subject.color }}
               >
                 <a.icon className="size-5" />
               </span>
-              <span className="mt-4 text-lg font-semibold">{a.title}</span>
-              <span className="text-sm text-muted">{a.text}</span>
-              <span className="mt-auto flex items-center justify-between pt-4 text-xs font-semibold text-ink-2">
+              <span className="mt-2 font-semibold sm:mt-4 sm:text-lg">{a.title}</span>
+              <span className="text-sm text-muted max-sm:hidden">{a.text}</span>
+              <span className="mt-auto flex items-center justify-between pt-1 text-xs font-semibold text-ink-2 sm:pt-4">
                 {a.meta}
                 <ArrowRight className="size-4 text-muted transition group-hover:translate-x-0.5" />
               </span>
@@ -360,9 +371,9 @@ function StatusCard({
   const n = (k: number) => `${k} ${k === 1 ? noun[0] : noun[1]}`;
 
   return (
-    <div className="card flex flex-col p-5">
+    <div className="card flex flex-col p-4 sm:p-5">
       <div className="flex items-baseline justify-between gap-3">
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <h3 className="font-semibold sm:text-lg">{title}</h3>
         <span className="text-sm tabular-nums text-muted">
           {seen} / {total} gesehen
         </span>
@@ -380,7 +391,7 @@ function StatusCard({
         )}
       </div>
 
-      <ul className="mt-4 grid gap-x-4 gap-y-2 text-sm lg:grid-cols-2">
+      <ul className="mt-4 grid gap-x-4 gap-y-2 text-sm max-sm:hidden lg:grid-cols-2">
         {STATUS_ORDER.map((k) => (
           <li key={k} className="flex items-center gap-2">
             <span className="size-2.5 shrink-0 rounded-full" style={{ background: colors[k] }} />
@@ -390,7 +401,7 @@ function StatusCard({
         ))}
       </ul>
 
-      <div className="mt-auto flex flex-wrap gap-2 pt-4">
+      <div className="mt-auto flex flex-wrap gap-2 pt-3 sm:pt-4">
         {counts.new > 0 && (
           <ButtonLink variant="secondary" href={newHref}>
             Nur neue · {n(counts.new)}

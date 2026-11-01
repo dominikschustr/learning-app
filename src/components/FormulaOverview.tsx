@@ -71,7 +71,7 @@ export function FormulaOverview({ subject, formulas }: { subject: Subject; formu
         </div>
       </header>
 
-      <nav className="sticky top-14 z-20 -mx-4 mt-8 flex gap-2 overflow-x-auto border-b border-line bg-bg/90 px-4 py-3 backdrop-blur-md sm:mx-0 sm:rounded-full sm:border sm:px-2 sm:py-1.5">
+      <nav className="sticky top-[calc(3.5rem+env(safe-area-inset-top))] z-20 -mx-4 mt-8 flex gap-2 overflow-x-auto border-b border-line bg-bg/90 px-4 py-3 backdrop-blur-md sm:mx-0 sm:rounded-full sm:border sm:px-2 sm:py-1.5">
         {chapters.map((l) => (
           <a
             key={l.id}

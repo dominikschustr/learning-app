@@ -19,8 +19,8 @@ export function Header() {
   const days = hydrated ? visibleStreak(streak, now) : 0;
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/80 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-5xl items-center gap-3 px-4 sm:px-6">
+    <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/80 pt-[env(safe-area-inset-top)] backdrop-blur-md">
+      <div className="safe-x mx-auto flex h-14 max-w-5xl items-center gap-3">
         <Link href="/" className="group flex items-center gap-2">
           <Logo className="size-8 drop-shadow-[0_2px_6px_rgb(76_91_255/0.35)]" />
           {/* Auf schmalen Handys reicht das Logo, sonst passen die Icons nicht in die Zeile */}
@@ -88,7 +88,8 @@ function SyncBadge() {
       aria-label={label}
       className={cn(
         "grid size-8 place-items-center rounded-full hover:bg-surface-2",
-        status === "idle" || status === "syncing" ? "text-ink-2" : "text-warn",
+        // Auf dem Handy nur zeigen, wenn etwas nicht stimmt – die Leiste ist sonst zu voll
+        status === "idle" || status === "syncing" ? "hidden text-ink-2 sm:grid" : "text-warn",
       )}
     >
       <Icon className={cn("size-4", status === "syncing" && "animate-spin")} />

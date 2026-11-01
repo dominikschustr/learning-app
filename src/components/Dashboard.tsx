@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, CalendarClock, Check, Flame, Lock } from "lucide-react";
+import { ArrowRight, CalendarClock, Check, ChevronDown, Flame, Lock } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -9,6 +9,7 @@ import { countdown, studyPlan } from "@/lib/plan";
 import { subjectStats } from "@/lib/progress";
 import type { CalendarEntry, SubjectSummary } from "@/lib/schema";
 import { achievementProgress, useApp, useHydrated, visibleStreak } from "@/lib/store";
+import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
 import { alpha, cn, dayKey } from "@/lib/utils";
 import { Heatmap } from "./Heatmap";
@@ -74,19 +75,34 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
     return d === undefined ? 1e6 : d < 0 ? 1e5 - d : d;
   };
   const sorted = subjects.toSorted((a, b) => order(a.summary.subject.id) - order(b.summary.subject.id));
+  const mobile = useMobile();
+  // Aktivität und Achievements sind auf dem Handy eingeklappt
+  const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-6 sm:space-y-10">
       <section>
         <p className="eyebrow">{greeting(new Date(now).getHours())}</p>
-        <h1 className="display text-4xl sm:text-5xl mt-2">
+        <h1 className="display mt-1 text-3xl sm:mt-2 sm:text-5xl">
           Was lernen wir <span className="text-accent">heute</span>?
         </h1>
       </section>
 
+      {/* Handy: nur das Tagesziel – Streak und Level stehen schon in der Kopfleiste */}
+      <section className="card p-4 sm:hidden">
+        <p className="flex items-baseline justify-between text-sm">
+          <span className="font-semibold">Tagesziel</span>
+          <span className="tabular-nums text-muted">
+            {today >= s.dailyGoal ? "geschafft · " : ""}
+            {today} / {s.dailyGoal}
+          </span>
+        </p>
+        <Bar value={today / s.dailyGoal} color="var(--good)" className="mt-2" />
+      </section>
+
       <StudyPlan upcoming={plan.upcoming} past={plan.past} />
 
-      <section className="grid gap-4 sm:grid-cols-3">
+      <section className="hidden gap-4 sm:grid sm:grid-cols-3">
         <div className="card flex items-center gap-5 p-5">
           <ProgressRing value={today / s.dailyGoal} size={84} stroke={8} color="var(--good)">
             <span className="display text-lg tabular-nums">{today}</span>
@@ -132,7 +148,7 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
         <div className="mb-4 flex items-end justify-between">
           <h2 className="display text-2xl">Deine Fächer</h2>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
           {sorted.map(({ summary, st }, i) => {
             const { subject } = summary;
             const days = daysTo.get(subject.id);
@@ -145,14 +161,14 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
               >
                 <Link
                   href={`/s/${subject.id}`}
-                  className="card group relative block overflow-hidden p-6 transition hover:-translate-y-0.5"
+                  className="card group relative block overflow-hidden p-4 transition hover:-translate-y-0.5 sm:p-6"
                 >
                   <div
                     className="absolute inset-x-0 top-0 h-1.5"
                     style={{ background: subject.color }}
                     aria-hidden
                   />
-                  <div className="flex items-start gap-5">
+                  <div className="flex items-center gap-4 sm:items-start sm:gap-5">
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-2">
                         <span
@@ -169,9 +185,9 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
                           </Chip>
                         )}
                       </div>
-                      <h3 className="display mt-3 text-2xl">{subject.name}</h3>
-                      <p className="mt-1 line-clamp-2 text-sm text-muted">{subject.description}</p>
-                      <div className="mt-4 flex flex-wrap gap-2">
+                      <h3 className="display mt-2 truncate text-xl sm:mt-3 sm:text-2xl">{subject.name}</h3>
+                      <p className="mt-1 line-clamp-2 text-sm text-muted max-sm:hidden">{subject.description}</p>
+                      <div className="mt-4 hidden flex-wrap gap-2 sm:flex">
                         <Chip>
                           {st.due + st.cardsDue} fällig
                         </Chip>
@@ -180,16 +196,16 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
                         </Chip>
                       </div>
                     </div>
-                    <ProgressRing value={st.readiness} size={96} stroke={8} color={subject.color}>
+                    <ProgressRing value={st.readiness} size={mobile ? 60 : 96} stroke={mobile ? 6 : 8} color={subject.color}>
                       <span>
-                        <span className="display block text-xl tabular-nums">{Math.round(st.readiness * 100)}</span>
-                        <span className="block text-[10px] font-semibold uppercase tracking-wider text-muted">
+                        <span className="display block text-base tabular-nums sm:text-xl">{Math.round(st.readiness * 100)}</span>
+                        <span className="hidden text-[10px] font-semibold uppercase tracking-wider text-muted sm:block">
                           Readiness
                         </span>
                       </span>
                     </ProgressRing>
                   </div>
-                  <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold" style={{ color: subject.color }}>
+                  <span className="mt-5 hidden items-center gap-1 text-sm font-semibold sm:inline-flex" style={{ color: subject.color }}>
                     Weiterlernen <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
                   </span>
                 </Link>
@@ -199,7 +215,17 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
         </div>
       </section>
 
-      <section className="grid gap-4 lg:grid-cols-[1fr_1.1fr]">
+      <button
+        type="button"
+        onClick={() => setShowMore((v) => !v)}
+        aria-expanded={showMore}
+        className="flex w-full items-center justify-center gap-1.5 rounded-full border border-line py-2.5 text-sm font-semibold text-ink-2 sm:hidden"
+      >
+        {showMore ? "Aktivität & Achievements ausblenden" : "Aktivität & Achievements"}
+        <ChevronDown className={cn("size-4 transition", showMore && "rotate-180")} />
+      </button>
+
+      <section className={cn("gap-4 sm:grid lg:grid-cols-[1fr_1.1fr]", showMore ? "grid" : "hidden")}>
         <div className="card p-6">
           <h2 className="display text-2xl">Aktivität</h2>
           <p className="mb-4 text-sm text-muted">Beantwortete Fragen und Karten pro Tag</p>

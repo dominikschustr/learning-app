@@ -22,13 +22,13 @@ export function useCaseOf(cases: Case[]) {
 /** Fallbeschreibung mit Tabellen über einer Frage, wie in der Prüfung. */
 export function CaseContext({ c }: { c: Case }) {
   return (
-    <details open className="group mb-6 rounded-2xl border border-line bg-surface-2/60">
-      <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 text-sm font-semibold">
+    <details open className="group mb-4 rounded-2xl border border-line bg-surface-2/60 sm:mb-6">
+      <summary className="flex cursor-pointer list-none items-center gap-2 px-3 py-2.5 text-sm font-semibold sm:px-4 sm:py-3">
         <FileText className="size-4 shrink-0 text-accent" />
         <span className="flex-1">{c.title}</span>
         <ChevronDown className="size-4 shrink-0 text-muted transition group-open:rotate-180" />
       </summary>
-      <div className="space-y-4 border-t border-line px-4 pb-4 pt-3 text-sm leading-relaxed text-ink-2">
+      <div className="space-y-3 border-t border-line px-3 pb-3 pt-2.5 text-[13px] leading-relaxed text-ink-2 sm:space-y-4 sm:px-4 sm:pb-4 sm:pt-3 sm:text-sm">
         {c.text.map((p, i) => (
           <p key={i} className="whitespace-pre-line">
             {p}
@@ -42,7 +42,7 @@ export function CaseContext({ c }: { c: Case }) {
                 <thead className="bg-accent/10 text-ink">
                   <tr>
                     {t.head.map((h, j) => (
-                      <th key={j} className="px-3 py-2 font-semibold">
+                      <th key={j} className="px-2.5 py-1.5 font-semibold sm:px-3 sm:py-2">
                         {h}
                       </th>
                     ))}
@@ -52,7 +52,7 @@ export function CaseContext({ c }: { c: Case }) {
                   {t.rows.map((r, j) => (
                     <tr key={j} className="border-t border-line even:bg-surface-2/50">
                       {r.map((cell, k) => (
-                        <td key={k} className={cn("px-3 py-1.5", k === 0 && "font-medium text-ink")}>
+                        <td key={k} className={cn("px-2.5 py-1 sm:px-3 sm:py-1.5", k === 0 && "font-medium text-ink")}>
                           {cell}
                         </td>
                       ))}
@@ -112,8 +112,8 @@ export function MCView({
           </span>
         }
       />
-      <h2 className="mt-3 text-xl font-semibold leading-snug sm:text-2xl">{q.prompt}</h2>
-      <div className="mt-6 grid gap-2.5">
+      <h2 className="mt-2 text-lg font-semibold leading-snug sm:mt-3 sm:text-2xl">{q.prompt}</h2>
+      <div className="mt-4 grid gap-2 sm:mt-6 sm:gap-2.5">
         {order.map((id, i) => {
           const o = byId.get(id);
           if (!o) return null;
@@ -127,7 +127,7 @@ export function MCView({
               onClick={() => onToggle?.(id)}
               aria-pressed={isSel}
               className={cn(
-                "group flex w-full items-start gap-3 rounded-2xl border-2 bg-surface p-4 text-left transition",
+                "group flex w-full items-start gap-3 rounded-2xl border-2 bg-surface p-3 text-left text-[15px] transition sm:p-4 sm:text-base",
                 !verdicts && (isSel ? "border-accent bg-accent/5" : "border-line hover:border-line-strong"),
                 v === "hit" && "border-good bg-good-soft",
                 v === "wrong" && "border-bad bg-bad-soft",
@@ -174,8 +174,8 @@ export function TFView({
     <div>
       {context && <CaseContext c={context} />}
       <QuestionMeta kind="tf" />
-      <h2 className="mt-3 text-xl font-semibold leading-snug sm:text-2xl">{q.statement}</h2>
-      <div className="mt-6 grid grid-cols-2 gap-3">
+      <h2 className="mt-2 text-lg font-semibold leading-snug sm:mt-3 sm:text-2xl">{q.statement}</h2>
+      <div className="mt-4 grid grid-cols-2 gap-3 sm:mt-6">
         {([true, false] as const).map((opt) => {
           const isSel = value === opt;
           const isRight = q.answer === opt;
@@ -186,7 +186,7 @@ export function TFView({
               disabled={!onChange || revealed}
               onClick={() => onChange?.(opt)}
               className={cn(
-                "flex h-20 items-center justify-center gap-2 rounded-2xl border-2 bg-surface text-lg font-semibold transition",
+                "flex h-16 items-center justify-center gap-2 rounded-2xl border-2 bg-surface text-lg font-semibold transition sm:h-20",
                 !revealed && (isSel ? "border-accent bg-accent/5 text-accent" : "border-line hover:border-line-strong"),
                 revealed && isRight && "border-good bg-good-soft text-good",
                 revealed && isSel && !isRight && "border-bad bg-bad-soft text-bad",
@@ -229,7 +229,7 @@ export function ShortInput({
           </span>
         }
       />
-      <h2 className="mt-3 text-xl font-semibold leading-snug sm:text-2xl">{q.prompt}</h2>
+      <h2 className="mt-2 text-lg font-semibold leading-snug sm:mt-3 sm:text-2xl">{q.prompt}</h2>
       <textarea
         value={text}
         onChange={(e) => onChange?.(e.target.value)}
@@ -265,19 +265,19 @@ function CalcInput({
       <QuestionMeta
         kind="short"
         label="Rechenaufgabe"
-        extra={<span className="text-xs text-muted">· Ergebnisse werden automatisch geprüft</span>}
+        extra={<span className="text-xs text-muted max-sm:hidden">· Ergebnisse werden automatisch geprüft</span>}
       />
-      <h2 className="mt-3 whitespace-pre-line text-lg font-semibold leading-snug sm:text-xl">
+      <h2 className="mt-2 whitespace-pre-line text-base font-semibold leading-snug sm:mt-3 sm:text-xl">
         <FormulaText text={q.prompt} />
       </h2>
-      <div className="mt-6 grid gap-2.5">
+      <div className="mt-4 grid gap-2 sm:mt-6 sm:gap-2.5">
         {q.results.map((r, i) => (
           <label
             key={r.label}
-            className="flex flex-col gap-2 rounded-2xl border-2 border-line bg-surface p-3 transition focus-within:border-accent sm:flex-row sm:items-center sm:gap-4"
+            className="flex items-center gap-3 rounded-2xl border-2 border-line bg-surface p-2.5 pl-3 transition focus-within:border-accent sm:gap-4 sm:p-3"
           >
             <FormulaText text={r.label} className="flex-1 text-sm font-medium" />
-            <span className="flex items-center gap-2">
+            <span className="flex shrink-0 items-center gap-1.5 sm:gap-2">
               <input
                 type="text"
                 inputMode="decimal"
@@ -286,9 +286,9 @@ function CalcInput({
                 disabled={disabled}
                 onChange={(e) => set({ values: answer.values.map((v, j) => (j === i ? e.target.value : v)) })}
                 placeholder="Ergebnis"
-                className="w-full rounded-xl border border-line bg-surface-2 px-3 py-2 text-right tabular-nums outline-none placeholder:text-muted focus:border-accent disabled:opacity-70 sm:w-36"
+                className="w-28 rounded-xl border border-line bg-surface-2 px-3 py-2 text-right tabular-nums outline-none placeholder:text-muted focus:border-accent disabled:opacity-70 sm:w-36"
               />
-              <span className="w-10 shrink-0 text-sm text-muted">{r.unit}</span>
+              <span className="w-7 shrink-0 text-sm text-muted sm:w-10">{r.unit}</span>
             </span>
           </label>
         ))}

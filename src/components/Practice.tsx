@@ -300,7 +300,7 @@ function Session({
       <SessionBar exitHref={home} progress={index / queue.length} combo={combo} xp={sessionXp} color={subject.color} />
 
       <div className="mb-4 flex items-center justify-between gap-3 text-xs text-muted">
-        <span className="min-w-0">
+        <span className="min-w-0 truncate">
           {only ? "Fehler wiederholen" : MODE_TITLE[mode]} · {lectureTitle}
         </span>
         <span className="flex shrink-0 items-center gap-2">
@@ -364,7 +364,7 @@ function Session({
         </motion.div>
       </AnimatePresence>
 
-      <div className="sticky bottom-4 mt-8 flex items-center justify-end gap-2">
+      <div className="sticky bottom-[calc(1rem+env(safe-area-inset-bottom))] mt-8 flex items-center justify-end gap-2">
         {!revealed && !pending && (
           <Button variant="ghost" onClick={skip} className="mr-auto text-muted">
             <SkipForward className="size-4" /> Überspringen <span className="kbd ml-1 hidden sm:inline-flex">S</span>

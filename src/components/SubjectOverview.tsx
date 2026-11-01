@@ -8,6 +8,7 @@ import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { LevelBadge } from "./ChapterView";
+import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
 import { alpha, cn, pct } from "@/lib/utils";
 import { Bar, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
@@ -56,6 +57,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const cIds = new Set(summary.cards.map((c) => c.id));
   const markedQ = [...markedIds(s.marks, "q", subject.id)].filter((id) => qIds.has(id)).length;
   const markedC = [...markedIds(s.marks, "c", subject.id)].filter((id) => cIds.has(id)).length;
+  const mobile = useMobile();
 
   const hasTf = summary.items.some((i) => i.type === "tf");
   const modes = [
@@ -119,6 +121,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       title: "Markierte Fragen",
       text: "Deine Lesezeichen gezielt üben",
       meta: markedQ ? `${markedQ} markiert` : "noch keine markiert",
+      empty: !markedQ,
     },
     {
       href: `${base}/cards?marked=1`,
@@ -126,11 +129,12 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       title: "Markierte Karten",
       text: "Gemerkte Karteikarten wiederholen",
       meta: markedC ? `${markedC} markiert` : "noch keine markiert",
+      empty: !markedC,
     },
   ];
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8">
       <Link href="/" className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink">
         <ArrowLeft className="size-4" /> Übersicht
       </Link>
@@ -142,8 +146,8 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         >
           {subject.short}
         </span>
-        <h1 className="display text-4xl sm:text-5xl mt-3">{subject.name}</h1>
-        <p className="mt-2 max-w-2xl text-muted">{subject.description}</p>
+        <h1 className="display mt-2 text-3xl sm:mt-3 sm:text-5xl">{subject.name}</h1>
+        <p className="mt-2 max-w-2xl text-muted max-sm:hidden">{subject.description}</p>
         {subject.examDate && <ExamCountdown date={subject.examDate} readiness={st.readiness} now={now} />}
       </header>
 
@@ -167,23 +171,25 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         </Link>
       )}
 
-      <section className="card grid gap-8 p-6 sm:grid-cols-[auto_1fr] sm:p-8">
-        <div className="flex justify-center">
-          <ProgressRing value={st.readiness} size={176} stroke={12} color={subject.color}>
+      <section className="card grid grid-cols-[auto_1fr] items-center gap-x-4 gap-y-4 p-4 sm:gap-8 sm:p-8">
+        <div className="flex justify-center sm:row-span-2">
+          <ProgressRing value={st.readiness} size={mobile ? 88 : 176} stroke={mobile ? 8 : 12} color={subject.color}>
             <span>
-              <span className="display block text-5xl tabular-nums">{Math.round(st.readiness * 100)}</span>
-              <span className="eyebrow">Prozent</span>
+              <span className="display block text-2xl tabular-nums sm:text-5xl">{Math.round(st.readiness * 100)}</span>
+              <span className="eyebrow max-sm:hidden">Prozent</span>
             </span>
           </ProgressRing>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center sm:self-end">
           <p className="eyebrow">Prognose {f.name}</p>
-          <h2 className="display mt-1 text-3xl">{readinessLabel(st.readiness)}</h2>
-          <p className="mt-2 max-w-md text-sm text-muted">
+          <h2 className="display mt-1 text-2xl sm:text-3xl">{readinessLabel(st.readiness)}</h2>
+          <p className="mt-2 max-w-md text-sm text-muted max-sm:hidden">
             Geschätzter Score, wenn die Prüfung jetzt wäre: deine Sicherheit pro Fragetyp, gewichtet wie in der
             Prüfung ({TYPES.filter(([t]) => f[t]).map(([t, label]) => `${f[t]} ${label}`).join(" · ")}).
           </p>
-          <div className="mt-4 grid max-w-md gap-2.5">
+        </div>
+        <div className="col-span-2 sm:col-span-1 sm:col-start-2 sm:self-start">
+          <div className="grid max-w-md gap-2.5">
             {TYPES.filter(([t]) => f[t]).map(([t, label]) => [label, st.masteryByType[t]] as const).map(([label, v]) => (
               <div key={label} className="grid grid-cols-[7.5rem_1fr_2.5rem] items-center gap-3 text-sm">
                 <span className="text-ink-2">{label}</span>
@@ -192,8 +198,8 @@ function Inner({ summary }: { summary: SubjectSummary }) {
               </div>
             ))}
           </div>
-          <div className="mt-5 flex flex-wrap gap-2">
-            <ButtonLink href={`${base}/practice?mode=smart`}>
+          <div className="mt-4 flex flex-wrap gap-2 sm:mt-5">
+            <ButtonLink href={`${base}/practice?mode=smart`} className="max-sm:flex-1">
               <Brain className="size-4" /> Empfohlene Session
             </ButtonLink>
             {weakest && st.seen > 0 && (
@@ -206,17 +212,17 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       </section>
 
       <section>
-        <div className="mb-4 flex items-end justify-between gap-4">
+        <div className="mb-3 flex items-end justify-between gap-4 sm:mb-4">
           <div>
             <h2 className="display text-2xl">Lernpfad</h2>
-            <p className="text-sm text-muted">Ein Kapitel pro Vorlesung – jedes mit eigenem Level.</p>
+            <p className="text-sm text-muted max-sm:hidden">Ein Kapitel pro Vorlesung – jedes mit eigenem Level.</p>
           </div>
           <Chip>
             {mastered}/{st.lectures.length} gemeistert
           </Chip>
         </div>
-        <ol className="relative space-y-3">
-          <span className="absolute bottom-6 left-[2.35rem] top-6 w-px bg-line-strong sm:left-[2.6rem]" aria-hidden />
+        <ol className="relative space-y-2 sm:space-y-3">
+          <span className="absolute bottom-6 left-[2.15rem] top-6 w-px bg-line-strong sm:left-[2.6rem]" aria-hidden />
           {st.lectures.map((l, i) => {
             const [code, ...rest] = l.title.split(" · ");
             return (
@@ -229,10 +235,10 @@ function Inner({ summary }: { summary: SubjectSummary }) {
               >
                 <Link
                   href={`${base}/c/${l.id}`}
-                  className="card group flex items-center gap-4 p-3 pr-5 transition hover:-translate-y-0.5 sm:p-4"
+                  className="card group flex items-center gap-3 p-3 pr-4 transition hover:-translate-y-0.5 sm:gap-4 sm:p-4 sm:pr-5"
                 >
                   <span className="rounded-full bg-surface">
-                    <LevelBadge ch={l} color={subject.color} />
+                    <LevelBadge ch={l} color={subject.color} size={mobile ? 44 : 56} />
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="eyebrow block">
@@ -284,19 +290,26 @@ function Inner({ summary }: { summary: SubjectSummary }) {
 
       <section>
         <h2 className="display mb-3 text-2xl">Freies Training</h2>
-        <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-3">
           {modes.map((m, i) => (
-            <motion.div key={m.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
-              <Link href={m.href} className="card group flex h-full flex-col p-4 transition hover:-translate-y-0.5">
+            <motion.div
+              key={m.title}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.04 }}
+              // Leere Lesezeichen-Kacheln auf dem Handy weglassen
+              className={cn("empty" in m && m.empty && "max-sm:hidden")}
+            >
+              <Link href={m.href} className="card group flex h-full flex-col p-3 transition hover:-translate-y-0.5 sm:p-4">
                 <span
-                  className="grid size-10 place-items-center rounded-xl"
+                  className="grid size-9 place-items-center rounded-xl sm:size-10"
                   style={{ background: alpha(subject.color, 0.1), color: subject.color }}
                 >
                   <m.icon className="size-5" />
                 </span>
-                <span className="mt-3 font-semibold leading-tight">{m.title}</span>
-                <span className="text-sm text-muted">{m.text}</span>
-                <span className="mt-auto pt-3 text-xs font-semibold text-ink-2">{m.meta}</span>
+                <span className="mt-2 font-semibold leading-tight sm:mt-3">{m.title}</span>
+                <span className="text-sm text-muted max-sm:hidden">{m.text}</span>
+                <span className="mt-auto pt-1 text-xs font-semibold text-ink-2 sm:pt-3">{m.meta}</span>
               </Link>
             </motion.div>
           ))}
