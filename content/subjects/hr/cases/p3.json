@@ -1,0 +1,13 @@
+[
+  {
+    "id": "kiro",
+    "title": "Case: Kiro Robotics",
+    "text": [
+      "Kiro Robotics, a Munich scale-up with 650 employees, builds warehouse robots. It wants to double headcount within two years, mainly engineers, and enter the US market. HR consists of six people who mostly run payroll and contracts; team leads make hiring and pay decisions themselves.",
+      "To speed up hiring, Kiro introduced an AI tool that screens CVs and ranks candidates by similarity to “top performers” – who are almost all men from three technical universities. The share of women among engineering hires fell from 24 % to 11 % in a year. Candidates complain that they never hear back.",
+      "Performance: engineers are evaluated every six months on individual “velocity” (story points completed). Senior engineers say they no longer have time to mentor juniors or fix shared infrastructure, because it does not count.",
+      "Pay: engineers receive base salary plus stock options that vest after four years; sales staff earn 50 % commission. Engineers hired in 2025 earn up to 20 % more than colleagues hired in 2022 in the same role, because the market was tighter. Kiro's founders want to “keep it simple” and avoid salary bands."
+    ],
+    "tables": []
+  }
+]

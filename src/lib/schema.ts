@@ -28,6 +28,10 @@ export const SubjectSchema = z.object({
   draft: z.boolean().default(false),
   /** Klausurtermin (JJJJ-MM-TT) für Countdown und Lernplan */
   examDate: isoDate.optional(),
+  /** „slides“: Framework-Übersicht und Zusammenfassungen im Look der Vorlesungsfolien (Rahmen, Titelbox in `accent`) */
+  look: z.enum(["default", "slides"]).default("default"),
+  /** Zweitfarbe für den Folien-Look, z. B. das ESCP-Gold der Titelboxen */
+  accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
   lectures: z.array(LectureSchema).min(1),
   examFormat: ExamFormatSchema,
 });
@@ -197,6 +201,13 @@ export const FrameworkSchema = z.object({
         "spectrum", // Bausteine auf einer Skala von x[0] nach x[1]
         "hump", // umgekehrtes U: x/y = Achsen, marks = links, Gipfel, rechts
         "vertical", // Wertsystem mit Rückwärts-/Vorwärtsintegration; marks = Lieferant, Firma, Kunde
+        "venn", // drei überlappende Kreise (Triple Bottom Line), Punkte darunter
+        "triangle", // drei Ecken eines Dreiecks (Spannungsfeld, z. B. Direction – Fairness – Workability)
+        "harvard", // Harvard-Modell: Stakeholder, Situation → Policy choices → HR outcomes → Long-term consequences
+        "branch", // Quelle links → Stapel in der Mitte → Ziel rechts; marks[0] = Kasten über der Quelle
+        "diamond", // oben → zwei Seiten → unten (z. B. Job analysis → IC & EC → Salary structure)
+        "expectancy", // Effort → Performance → Outcome mit den drei Verbindungen (E, I, V)
+        "sliders", // Entscheidungsachsen: label „A vs B“ wird zu zwei Polen
       ]),
       count: z.number().int().min(0).optional(),
       x: z.array(z.string()).optional(),

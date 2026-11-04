@@ -1,0 +1,174 @@
+{
+  "lecture": "h4",
+  "title": "H4 – Merit, signals and bias in selection",
+  "source": "Zusammenfassung von Session 2 (Meritocracy, „Spoiled for choice“) und Session 3 „Recruitment and selection part 2“",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Meritocracy promises rewards for talent and effort (IQ + Effort = Merit). But what looks like merit on a CV is partly produced by social class origins – economic, social and cultural capital (Bourdieu; Ingram, 2021)."
+        },
+        {
+          "kind": "item",
+          "text": "Recruiters rely on signals (degrees, programmes) because they are expensive, granted by screening institutions and imply knowledge (Baron & Kreps, 1999) – but signals can be biased. The HR challenge is to distinguish the signal from the underlying job-relevant capability."
+        },
+        {
+          "kind": "item",
+          "text": "The search for cultural fit can reproduce inequality, depending on how fit is defined and assessed."
+        },
+        {
+          "kind": "item",
+          "text": "Inequality (outcomes), discrimination (treatment) and bias (cognition) are related but not interchangeable."
+        },
+        {
+          "kind": "item",
+          "text": "Field experiments (Quillian et al., 2019) show discrimination causally: equivalent applicants, only the ethnic cue varies."
+        },
+        {
+          "kind": "item",
+          "text": "Reducing bias and increasing diversity matters for fairness and for innovation (Mohammadi et al., 2017)."
+        }
+      ]
+    },
+    {
+      "heading": "Frameworks at a glance",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Bourdieu's capitals",
+          "children": [
+            "Economic: money, assets",
+            "Social: networks, group membership",
+            "Cultural: knowledge, education, expectations"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Signaling theory (Baron & Kreps, 1999)",
+          "children": [
+            "Expensive to obtain · granted by screening institutions · require knowledge",
+            "But: weight a signal by how it was produced"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Biases (Weston & Woods, Box 6.1)",
+          "children": [
+            "Halo · horns · similar-to-me · stereotyping · self-delusion"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Unconscious bias in design",
+          "children": [
+            "Gendered wording (Gaucher et al., 2011)",
+            "In-group favouritism (Bell, 2013)",
+            "Standardized methods screen out neurodiverse people (Austin & Pisano, 2017)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Field experiments (Quillian et al., 2019)",
+          "children": [
+            "97 experiments, 200,000+ applications, 9 countries",
+            "Discrimination ratio = callback rate of white natives / callback rate of target group",
+            "France highest relative to the US (≈ 1.43), Germany lowest (≈ 0.92)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Diversity and innovation (Mohammadi et al., 2017)",
+          "children": [
+            "Ethnic and disciplinary diversity → more innovation",
+            "Disciplinary diversity substitutable by external collaboration, ethnic diversity not",
+            "Ethnic diversity → mainly radical innovation"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Core ideas of R&S",
+          "children": [
+            "Carefully design the process: systematic & transparent criteria, validity/reliability/practicability, question signals and preconceptions",
+            "Involve a variety of actors: reduce unconscious bias, increase diversity"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Applying H4 to a case",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Read the CVs through Bourdieu: which capitals produced each signal, and which capabilities does the less-polished candidate show (work experience, responsibility, resilience)?"
+        },
+        {
+          "kind": "item",
+          "text": "Name the biases in the decision-maker's reasoning and match each with a remedy (structured interviews, scoring rubrics set in advance, diverse panels, anonymised screening, work samples)."
+        },
+        {
+          "kind": "item",
+          "text": "Be precise with concepts: an outcome gap is inequality; proving discrimination needs a design like a field experiment."
+        },
+        {
+          "kind": "item",
+          "text": "Make the case for change with two arguments: fairness and performance (innovation)."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Meritocracy",
+          "text": "A system in which rewards, power and privilege are allocated by individual merit (talent and effort), not by social background."
+        },
+        {
+          "kind": "item",
+          "term": "Economic / social / cultural capital",
+          "text": "Financial resources / resources from networks and group membership / knowledge, skills, education and expectations that give higher social standing (Bourdieu)."
+        },
+        {
+          "kind": "item",
+          "term": "Signal",
+          "text": "An observable credential (degree, training programme) used to infer unobservable ability (Baron & Kreps, 1999)."
+        },
+        {
+          "kind": "item",
+          "term": "Inequality",
+          "text": "Unequal outcomes between groups."
+        },
+        {
+          "kind": "item",
+          "term": "Discrimination",
+          "text": "Differential treatment associated with group membership."
+        },
+        {
+          "kind": "item",
+          "term": "Bias",
+          "text": "A cognitive or attitudinal process that distorts judgement."
+        },
+        {
+          "kind": "item",
+          "term": "Discrimination ratio",
+          "text": "Callback rate of the majority group divided by the callback rate of the target group (Quillian et al., 2019)."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Spoiled for choice: what skills might Peter have acquired that John did not – and why might a prestige-oriented CV screen undervalue them?"
+        },
+        {
+          "kind": "item",
+          "text": "Why can't comparing real applicants show discrimination, while a field experiment can? (Causal inference.)"
+        }
+      ]
+    }
+  ]
+}

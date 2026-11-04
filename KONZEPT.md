@@ -221,3 +221,8 @@ Jede Kapitelseite bietet: **Nachlesen** (Originaltext des Dokuments mit Key Mess
 15. Strategy ohne Multiple Choice/True-False: Framework-Übersicht (46 Steckbriefe aus den Slides mit Bausteinen,
     Vorgehen im Case, Fallen und Slide-Beispiel; Abfrage-Modus verdeckt die Bausteine), 27 Mini-Cases zum Anwenden,
     insgesamt 76 offene Fragen; Kapiteltests mit bis zu drei Kurzantworten ✓
+16. Fünftes Fach **Human Resource Management** (ESCP): 7 Kapitel aus den Slides (Einführung & Harvard-Modell, Sustainable
+    HRM, Recruitment & Selection in zwei Teilen, Performance Management, Rewards in zwei Teilen), 54 Framework-Folien im
+    Folien-Look der Vorlesung (`look: "slides"`, neue Diagramme Harvard-Modell, Venn, Dreieck, HR-Zyklus, Expectancy u. a.),
+    Zusammenfassung je Kapitel, 14 Mini-Cases mit 29 offenen Fragen, 3 Probeklausuren (National Office Supplies und zwei
+    fiktive Fälle), 77 Karten ✓

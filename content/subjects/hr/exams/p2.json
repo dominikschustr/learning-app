@@ -1,0 +1,40 @@
+[
+  {
+    "id": "p2",
+    "title": "Probeklausur 2 – Verdana Hotels",
+    "subtitle": "Neuer, fiktiver Fall über mehrere Kapitel: Sustainable HRM, Recruitment & Selection, Bias, Performance Management, Rewards.",
+    "origin": {
+      "kind": "neu"
+    },
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Case questions",
+        "instructions": "2 hours. Answer all questions. Apply the frameworks of the course to the case – the points indicate how much development is expected. Generic answers without case facts earn few points. [20 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p2-01",
+                "points": 5
+              },
+              {
+                "q": "sa-p2-02",
+                "points": 5
+              },
+              {
+                "q": "sa-p2-03",
+                "points": 5
+              },
+              {
+                "q": "sa-p2-04",
+                "points": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

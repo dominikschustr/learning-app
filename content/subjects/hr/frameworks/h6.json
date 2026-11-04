@@ -1,0 +1,420 @@
+[
+  {
+    "id": "what-to-pay-for",
+    "lecture": "h6",
+    "name": "What to pay for?",
+    "origin": "Renard (2008)",
+    "purpose": "Why do two computer programmers earn €40,820 and €52,890? Pay decisions rest on three groups of reasons (≈ 20 reasons).",
+    "parts": [
+      {
+        "label": "Internal consistency",
+        "points": [
+          "Valuing jobs relative to one another",
+          "Value and rarity",
+          "Complexity, danger, unsocial hours, shift work",
+          "Part of core business, source of competitive advantage"
+        ]
+      },
+      {
+        "label": "External competitiveness",
+        "points": [
+          "Market pricing",
+          "Staffing stocks and flows",
+          "Pay's role in quits and recruitment"
+        ]
+      },
+      {
+        "label": "Individual contributions",
+        "points": [
+          "Pay for skills",
+          "Pay for performance"
+        ]
+      },
+      {
+        "label": "Individual characteristics",
+        "points": [
+          "Unwise or illegal allocation of rewards (gender, age, ethnicity, looks)"
+        ]
+      }
+    ],
+    "apply": [
+      "Sort every pay difference in the case into one of the three groups",
+      "Flag differences that only come from individual characteristics – unwise or illegal (EU pay transparency!)",
+      "Recommend what the firm should pay for, given its strategy"
+    ],
+    "pitfalls": [
+      "Answering “how much” instead of “what for”"
+    ],
+    "example": "Chris (€40,820) vs Pat (€52,890): Pat's job requires more languages, beta testing and QC, a Master's and 4 years' experience (internal); Pat's firm is larger, more profitable, unionized, in the computer industry with few applicants (external).",
+    "visual": {
+      "type": "pillars",
+      "count": 3
+    }
+  },
+  {
+    "id": "pat-chris",
+    "lecture": "h6",
+    "name": "Pat vs Chris: the reasons in detail",
+    "origin": "Renard (2008)",
+    "purpose": "Which concrete reasons belong to internal consistency and which to external competitiveness?",
+    "parts": [
+      {
+        "label": "Internal consistency reasons",
+        "points": [
+          "Abilities",
+          "Duties",
+          "Education",
+          "Experience",
+          "Job complexity",
+          "Job level",
+          "(same: knowledge, responsibilities, skills, supervision)"
+        ]
+      },
+      {
+        "label": "External competitiveness reasons",
+        "points": [
+          "Company ability to pay",
+          "Cost of living",
+          "Industry",
+          "Market (relevant labour market)",
+          "Profitability",
+          "Size",
+          "Unions",
+          "Supply and demand",
+          "(economic downturn, geographic area, pay policies)"
+        ]
+      }
+    ],
+    "apply": [
+      "Quote the case facts next to each reason – that is the analysis the exam rewards"
+    ],
+    "pitfalls": [
+      "Putting “experience” under external – it is a property of the job requirements (internal)"
+    ],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "salary-structure",
+    "lecture": "h6",
+    "name": "From job analysis to salary structure",
+    "origin": "Session 6",
+    "purpose": "How do internal consistency and external competitiveness combine into a pay structure?",
+    "parts": [
+      {
+        "label": "Job analysis",
+        "points": [
+          "What the job involves"
+        ]
+      },
+      {
+        "label": "Internal consistency",
+        "points": [
+          "Job evaluation: value of jobs relative to each other"
+        ]
+      },
+      {
+        "label": "External competitiveness",
+        "points": [
+          "Market data: what others pay"
+        ]
+      },
+      {
+        "label": "Salary structure",
+        "points": [
+          "Grades and pay ranges"
+        ]
+      }
+    ],
+    "apply": [
+      "Explain a pay problem as a missing step: no job analysis, no job evaluation, or no market benchmark"
+    ],
+    "pitfalls": [],
+    "example": "",
+    "visual": {
+      "type": "diamond"
+    }
+  },
+  {
+    "id": "skills-vs-performance",
+    "lecture": "h6",
+    "name": "Individual contributions: pay for skills vs pay for performance",
+    "origin": "Renard (2008)",
+    "purpose": "Should we reward what people can do or what they achieve?",
+    "parts": [
+      {
+        "label": "Pay for skills",
+        "points": [
+          "Rewards investment in formal education",
+          "Experience (tenure)",
+          "Abilities, competencies"
+        ]
+      },
+      {
+        "label": "Pay for performance",
+        "points": [
+          "Achievements",
+          "Meeting objectives",
+          "Going the extra mile"
+        ]
+      }
+    ],
+    "apply": [
+      "Choose by the job: skills pay where outputs are hard to measure or learning matters; performance pay where output is measurable and controllable"
+    ],
+    "pitfalls": [],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "why-prp",
+    "lecture": "h6",
+    "name": "Why might PRP work?",
+    "origin": "Session 6 · Safelite case",
+    "purpose": "Four mechanisms through which performance-related pay can raise performance.",
+    "parts": [
+      {
+        "label": "Culture",
+        "points": [
+          "Signals what the firm values: a performance culture"
+        ]
+      },
+      {
+        "label": "Keep the good",
+        "points": [
+          "Sorting: attracts and retains high performers, low performers leave"
+        ]
+      },
+      {
+        "label": "Motivation",
+        "points": [
+          "Expectancy theory: effort → performance → reward"
+        ]
+      },
+      {
+        "label": "Focused effort",
+        "points": [
+          "Agency theory: directs effort to the principal's goals"
+        ]
+      }
+    ],
+    "apply": [
+      "For each mechanism, check whether the case conditions allow it to work"
+    ],
+    "pitfalls": [
+      "Forgetting sorting – at Safelite part of the gain came from who joined and stayed"
+    ],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "expectancy",
+    "lecture": "h6",
+    "name": "Vroom's expectancy theory",
+    "origin": "Vroom",
+    "purpose": "When does a reward motivate effort? Only if all three links hold.",
+    "parts": [
+      {
+        "label": "Expectancy",
+        "points": [
+          "Effort → Performance",
+          "“If I try harder I will do better”"
+        ]
+      },
+      {
+        "label": "Instrumentality",
+        "points": [
+          "Performance → Outcome",
+          "“If I do better I will be rewarded”"
+        ]
+      },
+      {
+        "label": "Valence",
+        "points": [
+          "Outcome valued",
+          "“I value the reward”"
+        ]
+      }
+    ],
+    "apply": [
+      "Test each link with case facts – one weak link breaks motivation",
+      "Expectancy breaks if results depend on rivals, markets or the boss",
+      "Instrumentality breaks if bonus criteria are unclear or discretionary",
+      "Valence breaks if the sum is small or the reward is not wanted"
+    ],
+    "pitfalls": [
+      "Collective PRP weakens line of sight: effort → performance → MY reward gets weaker"
+    ],
+    "example": "National Office Supplies: no written criteria + manager discretion → weak instrumentality.",
+    "visual": {
+      "type": "expectancy"
+    }
+  },
+  {
+    "id": "agency",
+    "lecture": "h6",
+    "name": "Agency theory",
+    "origin": "Focused effort",
+    "purpose": "How does the principal (firm) make the agent (worker) act in the principal's interest – and not shirk?",
+    "parts": [
+      {
+        "label": "Supervision",
+        "points": [
+          "Monitor behaviour directly",
+          "Costly when work is hard to observe"
+        ]
+      },
+      {
+        "label": "Incentive pay",
+        "points": [
+          "Deferred compensation",
+          "Collective schemes",
+          "Individual PRP"
+        ]
+      }
+    ],
+    "apply": [
+      "Ask: is behaviour observable (→ supervise) or only output (→ incentives)?",
+      "Check the risk of rewarding the measurable part only (multitasking problem)"
+    ],
+    "pitfalls": [
+      "Incentives tied to the wrong output – the financial sector rewarded short-term results without risk"
+    ],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "prp-evidence",
+    "lecture": "h6",
+    "name": "Effect of PRP on performance: the debate",
+    "origin": "Lazear (2000) · Fernie & Metcalf (1999) · Marsden et al. (2009)",
+    "purpose": "What does the evidence say – does PRP raise performance?",
+    "parts": [
+      {
+        "label": "Examples of success",
+        "points": [
+          "Safelite (Lazear, 2000): piece rates for windscreen installers – output up sharply, pay up, labour cost per unit down",
+          "Jockeys (Fernie & Metcalf, 1999): performance pay → better results"
+        ]
+      },
+      {
+        "label": "But… (Marsden et al., 2009)",
+        "points": [
+          "Only 33 % agree PRP recognises good work",
+          "51.5 % say PRP is a good principle",
+          "36 % say it made them aware of objectives",
+          "Only 17 % say it gave incentives to work beyond requirements"
+        ]
+      }
+    ],
+    "apply": [
+      "Use Safelite to show the conditions where PRP works, Marsden to show why it often fails in practice"
+    ],
+    "pitfalls": [],
+    "example": "",
+    "visual": {
+      "type": "versus"
+    }
+  },
+  {
+    "id": "prp-problems",
+    "lecture": "h6",
+    "name": "Practical problems with PRP",
+    "origin": "Session 6 · video on challenges to the use of rewards",
+    "purpose": "Why is PRP hard to make work in practice?",
+    "parts": [
+      {
+        "label": "Identification & measurement",
+        "points": [
+          "What is performance, and can it be measured?"
+        ]
+      },
+      {
+        "label": "Appraisal bias",
+        "points": [
+          "Subjective ratings, favouritism"
+        ]
+      },
+      {
+        "label": "Need for precision",
+        "points": [
+          "Small rating errors → big pay differences"
+        ]
+      },
+      {
+        "label": "Contingency & contiguity",
+        "points": [
+          "Contingency: reward clearly depends on performance",
+          "Contiguity: reward follows performance closely in time"
+        ]
+      },
+      {
+        "label": "Administration cost",
+        "points": []
+      }
+    ],
+    "apply": [
+      "Run the case scheme through the five problems; each one you find is a design fix to recommend"
+    ],
+    "pitfalls": [
+      "PRP schemes are totally dependent on performance management systems"
+    ],
+    "example": "Vatican: “dedication, professionalism, productivity and politeness” – measurement problems and cultural clash. City bonuses: losses appear years later → clash with contiguity."
+  },
+  {
+    "id": "prp-conditions",
+    "lecture": "h6",
+    "name": "When does PRP work? Conditions from the cases",
+    "origin": "Synthesis of the PRP case studies (Safelite, City banks, Vatican)",
+    "purpose": "A test to decide whether – and how strongly – to use PRP in a case.",
+    "parts": [
+      {
+        "label": "Measure matches the real goal",
+        "points": [
+          "Safelite yes · City no (no risk adjustment) · Vatican mostly subjective"
+        ]
+      },
+      {
+        "label": "Employee controls the result",
+        "points": [
+          "Safelite yes · City partly (markets) · Vatican few units"
+        ]
+      },
+      {
+        "label": "Results known before payment",
+        "points": [
+          "Safelite yes · City no (losses come later)"
+        ]
+      },
+      {
+        "label": "Employee bears cost of failure",
+        "points": [
+          "Safelite: unpaid rework · City: bonus kept"
+        ]
+      },
+      {
+        "label": "Fits motivation & culture",
+        "points": [
+          "Vatican: risk of crowding out mission-driven motivation"
+        ]
+      }
+    ],
+    "apply": [
+      "Score the case on the five conditions",
+      "Match incentive strength to measure quality; match payment horizon to when results are known (defer with clawback)",
+      "Measure quantity and quality together; protect a pay floor"
+    ],
+    "pitfalls": [
+      "“Rewarding A while hoping for B” (Kerr, 1975)"
+    ],
+    "example": "Safelite: guaranteed hourly floor + unpaid rework kept quality; output and pay both rose. Stiglitz: bankers were paid to gamble – share of gains, not of losses; hold bonuses in escrow."
+  }
+]

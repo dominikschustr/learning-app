@@ -1,0 +1,156 @@
+{
+  "lecture": "h6",
+  "title": "H6 – Rewards I: what to pay for and performance-related pay",
+  "source": "Zusammenfassung von Session 6 „Rewards and compensation part 1“ (Renard, 2008; PRP-Fälle Safelite, City, Vatikan)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The key question is not “how much” but “what for”: pay depends on internal consistency, external competitiveness and individual contributions (Renard, 2008). Differences based on individual characteristics are unwise or illegal."
+        },
+        {
+          "kind": "item",
+          "text": "Job analysis feeds internal consistency (job evaluation) and external competitiveness (market pricing); together they form the salary structure."
+        },
+        {
+          "kind": "item",
+          "text": "Individual contributions can be rewarded as pay for skills (education, experience, abilities) or pay for performance (achievements, objectives, extra mile)."
+        },
+        {
+          "kind": "item",
+          "text": "PRP might work through culture, sorting (keep the good), motivation (expectancy theory) and focused effort (agency theory)."
+        },
+        {
+          "kind": "item",
+          "text": "Evidence is mixed: Safelite and jockeys show success, but employees often doubt PRP (Marsden et al., 2009). Practical problems: measurement, appraisal bias, need for precision, contingency & contiguity, administration cost."
+        }
+      ]
+    },
+    {
+      "heading": "Frameworks at a glance",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "What to pay for (Renard, 2008)",
+          "children": [
+            "Internal consistency: abilities, duties, education, experience, complexity, job level",
+            "External competitiveness: ability to pay, cost of living, industry, market, profitability, size, unions, supply & demand",
+            "Individual contributions: skills, performance"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Salary structure",
+          "children": [
+            "Job analysis → internal consistency + external competitiveness → salary structure"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Why PRP might work",
+          "children": [
+            "Culture · keep the good · motivation (expectancy) · focused effort (agency)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Vroom's expectancy theory",
+          "children": [
+            "Expectancy: effort → performance",
+            "Instrumentality: performance → reward",
+            "Valence: I value the reward"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Agency theory",
+          "children": [
+            "Principal (firm) vs agent (worker): supervision or incentive pay (deferred, collective, individual)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Practical problems with PRP",
+          "children": [
+            "Measurement · appraisal bias · precision · contingency & contiguity · admin cost"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "PRP cases",
+          "children": [
+            "Safelite: measurable individual output, unpaid rework, pay floor → success",
+            "City bonuses (Stiglitz): rewards for short-term, risk-blind results – “paid to gamble”; escrow instead of caps",
+            "Vatican: subjective criteria, cultural clash, intrinsic motivation – no financial rewards for clergy"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Applying H6 to a case",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Explain each pay difference with Renard's three groups and the case facts."
+        },
+        {
+          "kind": "item",
+          "text": "For a PRP scheme, test expectancy theory link by link and the five practical problems."
+        },
+        {
+          "kind": "item",
+          "text": "Decide whether PRP fits: does the measure match the goal, does the employee control it, are results known before payment, who bears the cost of failure, does it fit motivation and culture?"
+        },
+        {
+          "kind": "item",
+          "text": "Recommend design: quantity and quality measured, horizon matched to results, floor protected – and remember that PRP is only as good as the PM system behind it."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Internal consistency",
+          "text": "Pay reflects the relative value of jobs within the organisation."
+        },
+        {
+          "kind": "item",
+          "term": "External competitiveness",
+          "text": "Pay reflects what the relevant labour market pays."
+        },
+        {
+          "kind": "item",
+          "term": "Performance-related pay (PRP)",
+          "text": "Pay that varies with individual, team or organisational performance."
+        },
+        {
+          "kind": "item",
+          "term": "Expectancy, instrumentality, valence",
+          "text": "Belief that effort leads to performance; that performance leads to the reward; the value attached to the reward (Vroom)."
+        },
+        {
+          "kind": "item",
+          "term": "Contingency and contiguity",
+          "text": "The reward clearly depends on the performance / the reward follows the performance closely in time."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Can you build an argument regarding when and how performance-related pay might work? Use Safelite, the City and the Vatican as test cases."
+        },
+        {
+          "kind": "item",
+          "text": "The candle problem: why can incentives worsen performance on creative tasks?"
+        }
+      ]
+    }
+  ]
+}

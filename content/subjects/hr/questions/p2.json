@@ -1,0 +1,70 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p2-01",
+    "lecture": "h2",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Is Verdana's HR consistent with its goal to become the most sustainable hotel group? Use the definition of sustainable HRM, the triple bottom line and the sins of commission and omission.",
+    "modelAnswer": "Definition: sustainable HRM requires financial, social and ecological goals, inside and outside the firm, long term, controlling side effects. Verdana's practices serve short-term financial goals: cutting housekeeping hours (side effect: workload, turnover 55 %, quality), 30 % agency contracts. Triple bottom line: financial focus, social dimension neglected, ecological not addressed in HR (no green behaviour in hiring/rewards). Commission: precarious contracts, excessive pressure through cost-per-room rankings, layoffs/hour cuts for short-term profit. Omission: failing to address pay inequality (housekeepers excluded from bonuses), ignoring discrimination in hiring (“look like they belong”). Conclusion: not consistent; the sustainability goal is ecological branding without the social pillar. Recommendations: convert agency contracts, add well-being and turnover to managers' targets, triple-bottom-line incentives for managers.",
+    "keyPoints": [
+      "Definition elements applied",
+      "TBL: social neglected",
+      "Commission examples",
+      "Omission examples",
+      "Conclusion + recommendation"
+    ],
+    "case": "verdana"
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-02",
+    "lecture": "h4",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Identify the biases and sources of inequality in Verdana's recruitment and selection, and recommend a more valid and inclusive process for front-desk staff.",
+    "modelAnswer": "Biases: “look like they belong” = stereotyping and similar-to-me bias, a cultural-fit judgement that reproduces homogeneity; recommendations of current staff = in-group favouritism (social capital), which reproduces the existing composition; informal interviews invite halo/horns. Result: inequality (young majority-population front desk vs migrant women in housekeeping) – possibly discrimination, which a field experiment could test. Process: job analysis for front desk (languages, service, problem solving, systems); targeted recruitment including internal promotion of housekeepers (inform and attract, internal recruitment); structured interviews with scoring and a role-play of a guest complaint (valid, reliable); diverse panels and interviewer training (variety of actors); criteria set in advance; monitor hiring data. Practicable across 35 hotels with a common toolkit. Business case: diverse guests, languages, innovation.",
+    "keyPoints": [
+      "Names biases with case facts",
+      "Inequality vs discrimination",
+      "Valid/reliable methods",
+      "Inclusive design and variety of actors",
+      "Internal recruitment"
+    ],
+    "case": "verdana"
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-03",
+    "lecture": "h5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Evaluate Verdana's performance management for employees and hotel managers and propose improvements.",
+    "modelAnswer": "Employees: “attitude” and “guest focus” are undefined dimensions without standards (Latham et al.) → subjective ratings, appraisal bias; annual only, so no development or communication. Managers: relative ranking on monthly reviews and cost per room is a forced distribution – infighting, short-termism, and a clear externality: managers cut housekeeping hours to hit cost targets, hurting well-being, quality and future reviews. Improvements: define performance dimensions and behavioural standards per job; frequent check-ins with development purpose (Cappelli & Tavis); for managers, absolute targets on a balanced set (guest reviews, cost, turnover, employee well-being, sustainability) over longer periods; analyse externalities before introducing any metric.",
+    "keyPoints": [
+      "Undefined dimensions/standards",
+      "Manager ranking = forced distribution, externality",
+      "Purpose: development missing",
+      "Improvement for employees",
+      "Improvement for managers"
+    ],
+    "case": "verdana"
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-04",
+    "lecture": "h7",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Assess Verdana's reward system (direction, fairness, workability; Herzberg; pay transparency) and recommend two changes.",
+    "modelAnswer": "Direction: front-desk bonus on hotel review score links to guest experience but individual line of sight is weak (collective outcome); housekeepers, who strongly influence reviews (cleanliness), get nothing – misdirection. Fairness: excluding housekeepers creates perceived inequity (equity theory) and reinforces the group split; no transparency; asking for salary history perpetuates past gaps. Workability: simple. Herzberg: housekeepers lack hygiene (secure hours, conditions) and motivators (recognition, advancement). Transparency: low; the EU directive will require pay ranges before hiring, a ban on salary-history questions, information rights and gap reporting. Changes: 1. Extend a hotel-level team bonus to all staff including housekeeping (collective PFP, alignment; Nyberg), combined with recognition; 2. Move to process transparency: publish bands and criteria, stop salary-history questions, monitor gaps – plus secure hours for housekeeping (reduce insecurity, Sayre).",
+    "keyPoints": [
+      "Direction incl. housekeeping misalignment",
+      "Fairness/equity",
+      "Herzberg",
+      "Transparency and EU directive",
+      "Two justified changes"
+    ],
+    "case": "verdana"
+  }
+]

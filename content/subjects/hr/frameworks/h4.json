@@ -1,0 +1,182 @@
+[
+  {
+    "id": "meritocracy",
+    "lecture": "h4",
+    "name": "Meritocratic systems",
+    "origin": "Spoiled for choice case · Ingram (2021)",
+    "purpose": "What is the promise of meritocracy – and why is it questioned in selection?",
+    "parts": [
+      { "label": "Premise", "points": ["Actors are rewarded for talent and hard work", "Framed as the way to a fair society and productive organizations"] },
+      { "label": "In a meritocracy", "points": ["Riches and rule are earned, not inherited (vs aristocracy)", "Power and privilege allocated by individual merit, not social background"] },
+      { "label": "IQ + Effort = Merit", "points": ["But what looks like merit on a CV is partly produced by class origins"] }
+    ],
+    "apply": [
+      "Ask how each candidate's “merit” was produced (opportunities, capitals, networks)",
+      "Separate the signal on the CV from the job-relevant capability"
+    ],
+    "pitfalls": ["Treating prestige signals (top school, unpaid internships) as pure merit"],
+    "example": "Chris Sands (EIC) chooses between John and Peter, childhood friends who both fit EIC's culture – part B reveals their very different back stories.",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "bourdieu",
+    "lecture": "h4",
+    "name": "Bourdieu's three capitals",
+    "origin": "Bourdieu · as used by Ingram (2021): “social class origins”",
+    "purpose": "Which resources produce social inequality – and shape a candidate's CV?",
+    "parts": [
+      { "label": "Economic capital", "points": ["Command over financial resources: cash, assets", "→ can afford unpaid internships, travel, tuition"] },
+      { "label": "Social capital", "points": ["Resources from group membership, relations, networks of influence and support", "→ referrals, insider tips"] },
+      { "label": "Cultural capital", "points": ["Knowledge, skills, education, high expectations", "Any advantage giving higher standing", "→ “polish”, confident interviewing, cultural fit"] }
+    ],
+    "apply": [
+      "Map each candidate's advantages to the three capitals",
+      "Ask which skills the less-advantaged candidate built instead (resilience, work experience, responsibility)",
+      "Recommend selection methods that measure capability rather than capitals"
+    ],
+    "pitfalls": ["Mixing the capitals up: networks = social, education/manners = cultural, money = economic"],
+    "example": "Peter's work experience may reveal capabilities that a prestige-oriented CV screen undervalues.",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "signaling",
+    "lecture": "h4",
+    "name": "Signaling theory in selection",
+    "origin": "Baron & Kreps (1999)",
+    "purpose": "Why do recruiters rely on degrees and similar signals – and when does that mislead them?",
+    "parts": [
+      { "label": "Expensive to obtain", "points": ["Only able/committed candidates invest"] },
+      { "label": "Granted by screening institutions", "points": ["Universities, programmes pre-select the pool"] },
+      { "label": "Require acquiring knowledge", "points": ["The signal implies skills"] },
+      { "label": "But: signals can be biased", "points": ["Cost of the signal depends on capitals, not only ability", "How much evidentiary weight should a signal get once we know how it was produced?", "“Evidence-based” selection ≠ reading the evidence literally"] }
+    ],
+    "apply": [
+      "Name the signals in the CVs",
+      "Explain how they were produced and who could afford them",
+      "HR challenge: distinguish the signal from the underlying job-relevant capability – use work samples, structured interviews"
+    ],
+    "pitfalls": ["Rejecting signals altogether – they carry information, but need to be weighted"],
+    "example": "",
+    "visual": { "type": "pillars", "count": 3 }
+  },
+  {
+    "id": "cultural-fit",
+    "lecture": "h4",
+    "name": "Person–organisation fit vs “cultural fit”",
+    "origin": "Spoiled for choice · Inditex case",
+    "purpose": "Can the search for fit reproduce inequality?",
+    "parts": [
+      { "label": "P–O fit", "points": ["Match between person's values/goals and the organisation's", "Legitimate selection criterion (Inditex)"] },
+      { "label": "The problem", "points": ["How cultural fit is defined and assessed", "Fit judged as “like us” → similar-to-me bias", "Reproduces homogeneity and inequality"] }
+    ],
+    "apply": ["Define fit by job-relevant values and behaviours, write it down in advance, assess it with several raters"],
+    "pitfalls": ["Using “fit” as an unexplained gut feeling"],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "ineq-disc-bias",
+    "lecture": "h4",
+    "name": "Inequality, discrimination, bias",
+    "origin": "Important conceptual distinctions",
+    "purpose": "Three related but NOT interchangeable concepts.",
+    "parts": [
+      { "label": "Inequality", "points": ["Unequal outcomes between groups"] },
+      { "label": "Discrimination", "points": ["Differential treatment associated with group membership"] },
+      { "label": "Bias", "points": ["A cognitive/attitudinal process"] }
+    ],
+    "apply": [
+      "Name precisely what the case shows: an outcome gap (inequality), unequal treatment (discrimination) or a judgement error (bias)",
+      "An outcome gap alone does not prove discrimination – candidates may differ (→ field experiments)"
+    ],
+    "pitfalls": ["Using the three words as synonyms"],
+    "example": "",
+    "visual": { "type": "flow" }
+  },
+  {
+    "id": "biases",
+    "lecture": "h4",
+    "name": "Common biases in people perception",
+    "origin": "Weston & Woods, Box 6.1 (p. 163)",
+    "purpose": "Which subjective biases distort recruitment and selection decisions?",
+    "parts": [
+      { "label": "Halo effect", "points": ["One positive feature → see only positives"] },
+      { "label": "Horns effect", "points": ["Same, but only negatives"] },
+      { "label": "Similar-to-me", "points": ["Oneself as the “gold standard”"] },
+      { "label": "Stereotyping", "points": ["Prejudiced assumptions from appearance or background: ethnicity, gender, age, dialect/accent"] },
+      { "label": "Self-delusion", "points": ["Believing oneself immune from bias"] }
+    ],
+    "apply": [
+      "Spot the bias in the case decision and name it",
+      "Match a remedy: structured interviews and scoring (halo/horns), diverse panels (similar-to-me), anonymised CVs (stereotyping), training + monitoring data (self-delusion)"
+    ],
+    "pitfalls": ["Naming a bias without showing where it appears in the case"],
+    "example": "The surgeon riddle (“I cannot operate on this boy, he is my son”): the doctor is his mother – unconscious gender stereotypes.",
+    "visual": { "type": "letters" }
+  },
+  {
+    "id": "unconscious-bias",
+    "lecture": "h4",
+    "name": "Unconscious bias in R&S practices",
+    "origin": "Gaucher et al. (2011) · Bell (2013) · Austin & Pisano (2017)",
+    "purpose": "How does unconscious bias enter the design of recruitment and selection?",
+    "parts": [
+      { "label": "Gendered wording", "points": ["Masculine wording in job ads maintains inequality in male-dominated occupations (Gaucher et al., 2011)"] },
+      { "label": "In-group favouritism", "points": ["Hiring, promoting, rewarding the “in” group constrains diversity, against women and minorities (Bell, 2013)"] },
+      { "label": "Conformity to standard methods", "points": ["Absolute conformity to standardized approaches screens out neurodiverse people (Austin & Pisano, 2017)"] }
+    ],
+    "apply": ["Audit the case's job ad, referral practices and assessment format for these three mechanisms"],
+    "pitfalls": ["Standardization is good for reliability – but must allow reasonable adjustments"],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "field-experiments",
+    "lecture": "h4",
+    "name": "Measuring discrimination: field experiments",
+    "origin": "Quillian et al. (2019)",
+    "purpose": "If one group is hired less often, how do we know it is discrimination and not differences between candidates?",
+    "parts": [
+      { "label": "Equivalent applicants", "points": ["Researchers construct applications equal in job-relevant characteristics"] },
+      { "label": "Vary the cue", "points": ["Only racial/ethnic cues differ (e.g. names)"] },
+      { "label": "Compare callbacks", "points": ["Discrimination ratio = callback rate of white natives / callback rate of target group"] },
+      { "label": "Causal inference", "points": ["The gap can only come from the cue → discrimination", "Real applicants differ in many ways – comparing them cannot show this"] }
+    ],
+    "apply": ["Explain why a firm's raw hiring statistics are not proof – and how a correspondence test would settle it"],
+    "pitfalls": ["Confusing correlation (outcome gaps) with causation"],
+    "example": "Meta-analysis of 97 field experiments, 200,000+ applications, nine countries in Europe and North America; France shows the highest discrimination relative to the US (≈ 1.43), Germany the lowest (≈ 0.92).",
+    "visual": { "type": "flow" }
+  },
+  {
+    "id": "diversity-case",
+    "lecture": "h4",
+    "name": "Why reduce bias and increase diversity?",
+    "origin": "Mohammadi, Broström & Franzoni (2017)",
+    "purpose": "What is the business case for diversity – beyond fairness?",
+    "parts": [
+      { "label": "More innovative", "points": ["Firms with more heterogeneous ethnic and disciplinary backgrounds innovate more"] },
+      { "label": "Substitutes?", "points": ["Disciplinary diversity can be substituted by intense external collaboration", "Ethnic diversity can neither be replaced nor complemented by external sources"] },
+      { "label": "Type of innovation", "points": ["Disciplinary diversity → radical and incremental", "Ethnic diversity → mainly radical"] }
+    ],
+    "apply": ["Use as the performance argument for inclusive selection, next to the fairness argument"],
+    "pitfalls": [],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "inclusive-selection",
+    "lecture": "h4",
+    "name": "R&S core ideas: an inclusive process",
+    "origin": "Session 3 summary · CIPD 2024 & 2026",
+    "purpose": "How can EIC (and other organizations) improve candidate selection and make it more inclusive?",
+    "parts": [
+      { "label": "Carefully design the process", "points": ["Systematic & transparent criteria (set in advance)", "Validity, reliability & practicability", "Put standard signals and preconceptions into question"] },
+      { "label": "Involve a variety of actors", "points": ["Reduce unconscious bias", "Increase diversity"] },
+      { "label": "What employers do (CIPD)", "points": ["Diverse interview panels", "Training interviewers on legal obligations and objective practice", "Criteria determined in advance and linked to the job", "Removing biographical details from initial screening", "Monitoring data on protected characteristics", "EDI statements, flexible-working ads, checking ad wording"] }
+    ],
+    "apply": ["Turn the three blocks into concrete recommendations for the case firm, each linked to the bias it reduces"],
+    "pitfalls": ["Generic “more diversity” recommendations without a mechanism"],
+    "example": "",
+    "visual": { "type": "pillars", "count": 2 }
+  }
+]

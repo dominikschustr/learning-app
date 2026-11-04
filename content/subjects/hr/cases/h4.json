@@ -1,0 +1,19 @@
+[
+  {
+    "id": "mc-lawfirm",
+    "title": "Mini-case: Harlow & Price",
+    "text": [
+      "Harlow & Price, a London law firm, receives 2,000 applications for 20 trainee places. Recruiters screen for degrees from a list of ten “target” universities, prior internships at top firms and membership in debating societies. Final interviews are unstructured conversations with partners, who look for candidates who are “one of us”.",
+      "90 % of last year's trainees attended private schools (7 % nationally). Clients increasingly ask for diverse legal teams, and the firm struggles to win public-sector work."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-twins",
+    "title": "Mini-case: Amira and Lucas",
+    "text": [
+      "For a junior consulting role, the final two candidates have the same grades. Lucas studied at a prestigious business school, completed two unpaid summer internships in Paris arranged through his father's network, and is relaxed and articulate in the interview. Amira studied at a regional university while working 20 hours a week as a shift supervisor in a supermarket, which she ran alone at weekends; she is more nervous in the interview."
+    ],
+    "tables": []
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p3-01",
+    "lecture": "h1",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Assess the role HR plays at Kiro and use the Harvard Model to explain why HR needs to change as Kiro scales.",
+    "modelAnswer": "HR is administrative (payroll, contracts); operational practices are run by team leads; there is no transformational HR, although the strategy (doubling headcount, US entry) depends on people. HR is neither strategic business partner nor employee advocate. Harvard Model: stakeholders – founders/investors (growth), employees (fair pay, development), candidates, regulators (anti-discrimination, EU pay transparency); situational factors – tight engineering labour market, scale-up strategy, technology (AI tool), German and US law; policy choices – HR flow (mass hiring), work systems, rewards, employee influence; outcomes – commitment and congruence at risk (pay gaps, no mentoring), competence (junior development) declining, cost-effectiveness of hiring unclear; long-term consequences – organisational effectiveness and reputation. Kiro needs HR that designs the practices and coordinates them.",
+    "keyPoints": [
+      "Current role: administrative",
+      "Partner/advocate gap",
+      "Harvard stakeholders + situation",
+      "Outcomes/consequences",
+      "Why change"
+    ],
+    "case": "kiro"
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-02",
+    "lecture": "h4",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Evaluate Kiro's AI screening tool with validity, reliability and practicability, signaling theory and the concepts of bias and discrimination. What should Kiro do?",
+    "modelAnswer": "Practicability: fast and cheap for volume. Reliability: consistent – but consistently biased. Validity: similarity to past “top performers” is not shown to predict performance; it reproduces their signals (three universities, male profiles) – signals produced partly by capitals and past bias. This is algorithmically biased recruitment, a sin of commission (Brewster & Brookes, 2024), and the outcome (women 24 % → 11 %) shows inequality; whether it is discrimination could be tested by sending equivalent CVs differing only in gender cues (field-experiment logic) – likely, as the tool uses group-correlated features. Recommendation: audit and retrain or drop the tool, define job-relevant criteria from a job analysis, use work samples and structured interviews, diverse panels, gender-neutral ad wording (Gaucher et al.), monitor outcomes, and reply to every candidate (employer brand). Business case: diversity and innovation.",
+    "keyPoints": [
+      "V/R/P applied",
+      "Signals reproduce past bias",
+      "Inequality vs discrimination, test",
+      "Sin of commission",
+      "Concrete remedies"
+    ],
+    "case": "kiro"
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-03",
+    "lecture": "h5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Analyse Kiro's performance management with agency theory and the behaviours it encourages. Propose a better design.",
+    "modelAnswer": "Rewarding individual velocity directs effort to what is measured (agency/multitasking): seniors stop mentoring and fixing shared infrastructure – valuable but unmeasured – an externality of the metric. Individual evaluation ignores the centrality of teamwork (Cappelli & Tavis). Better: define performance dimensions including collaboration, mentoring and quality (Latham et al.); team-level goals plus qualitative peer feedback; frequent check-ins focused on development; use velocity only as a team-level signal, not an individual rating.",
+    "keyPoints": [
+      "Metric directs effort, externality",
+      "Teamwork ignored",
+      "Redefine dimensions",
+      "Team goals, feedback, development"
+    ],
+    "case": "kiro"
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-04",
+    "lecture": "h6",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Analyse Kiro's pay with “what to pay for” and the EU pay transparency directive, and recommend how Kiro should pay its engineers.",
+    "modelAnswer": "Internal consistency is broken: same role, up to 20 % difference based only on hiring date (external competitiveness of the moment) – perceived inequity (equity theory) and possible gender effects. External competitiveness: needed to attract engineers, especially for the US. Individual contributions: not linked to pay except options. The EU directive requires explainable, gender-neutral pay criteria, ranges before hiring, information rights and gap reporting (650 employees) – “keep it simple” without bands is not compliant in practice. Recommendation (Groysberg): job evaluation and salary bands per level benchmarked to the market, correct legacy gaps; mix fixed and long-term equity (options keep retention) with a collective/company component rather than individual velocity bonuses (cooperation, line of sight at team level); clear progression criteria (process transparency) – balancing direction, fairness and workability.",
+    "keyPoints": [
+      "IC broken by hiring-date gap",
+      "EC role",
+      "Directive requirements",
+      "Bands, gap correction",
+      "Design via Groysberg trade-offs"
+    ],
+    "case": "kiro"
+  }
+]

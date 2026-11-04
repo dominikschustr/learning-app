@@ -1,0 +1,18 @@
+[
+  {
+    "id": "mc-salesteam",
+    "title": "Mini-case: Vendex software sales",
+    "text": [
+      "Vendex pays its 120 software sales reps 40 % base salary and 60 % commission. Commission depends on quarterly bookings ranked against colleagues; the top 10 % get an extra trip, and the sales director can redistribute leads at will. Reps describe “boom and bust” quarters, sales burnout is high, and customer churn after 12 months has doubled. Reps rarely share leads."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-transparency",
+    "title": "Mini-case: a confidential pay culture",
+    "text": [
+      "A 400-employee engineering firm in Belgium has never published salary ranges. Pay is set individually by managers; employees are asked for their previous salary in interviews. A recent internal survey shows that 60 % believe pay is unfair, and women engineers earn on average 9 % less than men in the same grade."
+    ],
+    "tables": []
+  }
+]

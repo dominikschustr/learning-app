@@ -1,0 +1,65 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p1-01",
+    "lecture": "h6",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Analyse the reward practices at National Office Supplies with “what to pay for” (internal consistency, external competitiveness, individual contributions) and expectancy theory.",
+    "modelAnswer": "What to pay for: the bonuses reward only individual contributions (pay for performance), and in London only sales volume; internal consistency is weak – administrators and managers are covered only informally (Scotland's unofficial share, Jeff's discretion), and no job-based criteria exist; external competitiveness is questionable – a rep says the package trails competitors, and London's pot replaces a London allowance (cost of living), which is an external-competitiveness element turned into a contest. Expectancy theory: London – expectancy is weakened because winning depends on rivals' sales and lead allocation; instrumentality is weak because Jeff decides at his discretion, can withhold the pot and roll it over; valence is moderate (small sums, but status). Scotland – instrumentality is almost absent (equal split regardless of performance), so the money does not motivate performance, but there is no uncertainty.",
+    "keyPoints": [
+      "IC, EC, individual contributions each applied",
+      "London allowance as EC issue",
+      "E, I, V for London",
+      "Scotland: no instrumentality"
+    ],
+    "case": "nos"
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-02",
+    "lecture": "h7",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Evaluate the compensation design of the two offices using direction, fairness and workability, Herzberg's two-factor model and the uncertainty argument of Sayre et al. (2026).",
+    "modelAnswer": "London: direction strong but narrow (volume → hard selling, customer complaints); fairness low (discretion, lobbying/horse-trading, winner-takes-most, administrator excluded); workability simple but with hidden costs (turnover risk, customers). High pay uncertainty – rivals' results, discretion, rollover – which Sayre et al. link to insecurity, tunnel vision, overwork and stress: “pay for performance without certainty”. Scotland: direction weak (no reason to stand out, free riding), fairness perceived as good within the team but unofficial and not rule-based, workability simple. Herzberg: Nicola provides motivators – recognition, contact, relationships – while pay acts as hygiene; London relies on money, which Herzberg says does not create satisfaction: “certainty without pay for performance”. Critical: the sums are modest and the lab evidence is an inference; no direct burnout evidence.",
+    "keyPoints": [
+      "Direction, fairness, workability for both",
+      "Uncertainty mechanism London",
+      "Herzberg: Scotland motivators vs London money",
+      "Critical points/limits"
+    ],
+    "case": "nos"
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-03",
+    "lecture": "h1",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Head office wants to roll out the London model to all offices. Is this a good idea? Use best practice vs best fit.",
+    "modelAnswer": "No. Copying one office's practice assumes a universal best practice, but London's results may come from its size and market, not the reward system, and its side effects (hard selling, administrator leaving) would be scaled too. Best fit says practices must match the context – Scotland is remote and relies on team relations. What should be standardised are clear principles (written criteria, fair coverage of all roles), not Jeff's system; designs can differ by office context.",
+    "keyPoints": [
+      "Rejects copy-paste with reasons",
+      "Best fit: context differences",
+      "Standardise principles, not the design"
+    ],
+    "case": "nos"
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-04",
+    "lecture": "h7",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Recommend two specific changes to the reward approach of National Office Supplies. Justify them in detail with the course material.",
+    "modelAnswer": "1. Clear rules (Sayre et al.: clear): written bonus criteria for all offices, agreed in advance, paid if targets are met; add customer quality (retention, complaints) to volume; cover administrators and managers explicitly. Justification: restores instrumentality and expectancy, reduces discretion and horse-trading (fairness), aligns direction with the real goal (rewarding A while hoping for B), and fits the EU pay-transparency logic of explainable pay. 2. Smooth and secure: replace the monthly top-seller prize and rollover with annual or averaged results plus an office-level team share, and convert Jeff's pot into a real London allowance (external competitiveness/cost of living); benchmark the package against competitors. Justification: smooths income and reduces uncertainty (Sayre), collective PFP encourages cooperation (Nyberg et al., 2020) while the individual part keeps line of sight; Herzberg – keep Nicola-style recognition as motivator. Trade-off: less short-term sales pressure in London; monitor free riding in team shares.",
+    "keyPoints": [
+      "Change 1 concrete",
+      "Change 2 concrete",
+      "At least three course frameworks used",
+      "Trade-offs and implementation"
+    ],
+    "case": "nos"
+  }
+]

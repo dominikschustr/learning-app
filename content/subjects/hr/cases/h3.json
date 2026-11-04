@@ -1,0 +1,19 @@
+[
+  {
+    "id": "mc-nordbank",
+    "title": "Mini-case: NordBank's data analysts",
+    "text": [
+      "NordBank (Stockholm) needs 8 junior data analysts. The job description asks for SQL and Python, statistical reasoning, communicating results to business teams, and working in agile squads. Last year the bank posted the job on generic job boards, received 1,900 applications, screened CVs by university ranking and ran unstructured interviews with line managers. Half of the hires left within a year; managers complained that they could code but not explain results.",
+      "HR has a budget of €40,000 for the whole process."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-storeassoc",
+    "title": "Mini-case: seasonal store associates",
+    "text": [
+      "A fashion retailer needs 600 seasonal store associates across Spain within six weeks. The job involves customer service, cash handling, merchandising and weekend shifts. The previous year it used a 90-minute assessment centre per candidate run by store managers."
+    ],
+    "tables": []
+  }
+]

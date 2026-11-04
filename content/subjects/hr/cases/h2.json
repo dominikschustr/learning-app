@@ -1,0 +1,19 @@
+[
+  {
+    "id": "mc-fastfashion",
+    "title": "Mini-case: the HR Director's dilemma",
+    "text": [
+      "You are HR Director of a fast-fashion company with 10,000 employees. The CEO announces: “We need to reduce labour costs by 12 % this year while becoming an industry leader in sustainability.”",
+      "Options: freeze recruitment and increase workloads; introduce a living-wage commitment throughout the supply chain; link executive bonuses to carbon reduction and employee well-being; introduce AI-based recruitment to reduce recruitment costs; invest €5m in employee reskilling; replace some European jobs with lower-cost contractors. You can implement only two."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-greenco",
+    "title": "Mini-case: GreenCo's sustainability report",
+    "text": [
+      "GreenCo, a packaging producer, publishes an award-winning sustainability report: CO₂ down 30 %, a tree-planting volunteer day and an ESG target in the CEO's bonus. At the same time, 40 % of its warehouse staff are on rolling temporary contracts, a harassment complaint against a plant manager has been open for a year, and the pay gap between the CEO and the median worker has doubled. HR says these issues are “not part of the sustainability agenda”."
+    ],
+    "tables": []
+  }
+]

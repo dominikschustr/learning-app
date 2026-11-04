@@ -125,6 +125,16 @@ Marketing z. B. `["tf", "mc", "short"]` wie die echte Klausur).
 }]
 ```
 
+Diagrammtypen für `visual.type`: `forces`, `quad`, `flow`, `pillars`, `layers`, `letters`, `curve`, `valuechain`, `vrio`,
+`versus`, `spectrum`, `hump`, `vertical` sowie (seit HR) `venn` (drei Kreise), `triangle` (Spannungsdreieck), `harvard`
+(Harvard-Modell, 5 Bausteine), `branch` (Quelle → Stapel → Ziel, `marks[0]` = Kasten über der Quelle), `diamond`
+(oben → zwei Seiten → unten), `expectancy` (Effort → Performance → Outcome) und `sliders` (Label „A vs B“ wird zu zwei Polen).
+Die Bedeutung steht in `src/lib/schema.ts`.
+
+**Folien-Look:** `"look": "slides"` und `"accent": "#FEC33F"` in `subject.json` lassen Framework-Übersicht und Lesetexte wie
+die Vorlesungsfolien aussehen: Titelfolie je Kapitel, Folienblatt mit Rahmen in Lila und Titelbox in `accent`, Diagramme in
+den Folienfarben. Die Folien bleiben auch im Dark Mode hell. Beispiel: HR.
+
 Ein Fach kann auch ganz ohne Multiple Choice und True/False auskommen (`"mc": 0, "tf": 0` in `examFormat`, z. B. Strategy):
 dann wird nur mit offenen Fragen geübt, Kapiteltests ziehen bis zu drei Kurzantworten, und die Blitzrunde entfällt.
 

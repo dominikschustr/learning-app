@@ -1,0 +1,28 @@
+{
+  "id": "hr",
+  "name": "Human Resource Management",
+  "short": "HRM",
+  "color": "#6247CC",
+  "accent": "#FEC33F",
+  "look": "slides",
+  "description": "HRM (ESCP, Almudena Cañibano): die Frameworks der Slides verstehen und auf Cases anwenden – Framework-Folien mit Abfrage-Modus, Zusammenfassung je Kapitel, Mini-Cases und Probeklausuren.",
+  "examDate": "2026-11-26",
+  "demo": false,
+  "lectures": [
+    { "id": "h1", "title": "H1 · What is HRM? Roles, HR cycle & core principles" },
+    { "id": "h2", "title": "H2 · Sustainable HRM" },
+    { "id": "h3", "title": "H3 · Recruitment & selection: designing the process" },
+    { "id": "h4", "title": "H4 · Merit, signals & bias in selection" },
+    { "id": "h5", "title": "H5 · Performance management" },
+    { "id": "h6", "title": "H6 · Rewards I: what to pay for & PRP" },
+    { "id": "h7", "title": "H7 · Rewards II: how to pay" }
+  ],
+  "examFormat": {
+    "name": "Final exam",
+    "minutes": 120,
+    "short": 4,
+    "mc": 0,
+    "tf": 0,
+    "order": ["short", "mc", "tf"]
+  }
+}

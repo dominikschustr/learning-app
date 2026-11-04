@@ -1,0 +1,40 @@
+[
+  {
+    "id": "p3",
+    "title": "Probeklausur 3 – Kiro Robotics",
+    "subtitle": "Neuer, fiktiver Fall: HR-Rollen und Harvard-Modell, KI im Recruiting, Selektion, Performance Management und Vergütung im Scale-up.",
+    "origin": {
+      "kind": "neu"
+    },
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Case questions",
+        "instructions": "2 hours. Answer all questions. Apply the frameworks of the course to the case – the points indicate how much development is expected. Generic answers without case facts earn few points. [20 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p3-01",
+                "points": 4
+              },
+              {
+                "q": "sa-p3-02",
+                "points": 6
+              },
+              {
+                "q": "sa-p3-03",
+                "points": 4
+              },
+              {
+                "q": "sa-p3-04",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

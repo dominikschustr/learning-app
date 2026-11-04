@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowRight, BookOpen, FileText, Layers, Lightbulb, ScrollTex
 import Link from "next/link";
 import type { LectureText, Subject } from "@/lib/schema";
 import { alpha } from "@/lib/utils";
+import { SlideFrame, TitleSlide } from "./Slide";
 import { ButtonLink } from "./ui";
 
 type Section = LectureText["sections"][number];
@@ -34,7 +35,9 @@ export function ReadingView({
   const chapterHref = `/s/${subject.id}/c/${lecture.id}`;
   const base = `/s/${subject.id}`;
   const title = text.title.replace(/^Sessions?\s+[\w&]+\s*-\s*/i, "");
-  const color = subject.color;
+  const slides = subject.look === "slides";
+  const color = slides ? "#3b2182" : subject.color;
+  const isSummary = /^zusammenfassung/i.test(text.source);
 
   return (
     <article className="mx-auto max-w-2xl">
@@ -42,6 +45,16 @@ export function ReadingView({
         <ArrowLeft className="size-4" /> {lecture.title}
       </Link>
 
+      {slides ? (
+        <header className="mt-8">
+          <TitleSlide
+            eyebrow={`Kapitel ${chapterIndex + 1} · ${isSummary ? "Zusammenfassung" : "Nachlesen"}`}
+            title={title.replace(/^H\d+\s*[–-]\s*/, "")}
+            subtitle={text.source}
+            footer={subject.name}
+          />
+        </header>
+      ) : (
       <header className="mt-8">
         <p className="eyebrow flex items-center gap-2">
           <ScrollText className="size-3.5" /> Kapitel {chapterIndex + 1} · Nachlesen
@@ -49,6 +62,7 @@ export function ReadingView({
         <h1 className="display text-4xl sm:text-5xl mt-2">{title}</h1>
         <p className="mt-3 text-sm text-muted">Quelle: „{text.source}“</p>
       </header>
+      )}
 
       <nav className="sticky top-[calc(3.5rem+env(safe-area-inset-top))] z-20 -mx-4 mt-8 flex gap-2 overflow-x-auto border-b border-line bg-bg/90 px-4 py-3 backdrop-blur-md sm:mx-0 sm:rounded-full sm:border sm:px-2 sm:py-1.5">
         {text.sections.map((s, i) => (
@@ -62,15 +76,20 @@ export function ReadingView({
         ))}
       </nav>
 
-      <div className="mt-10 space-y-14">
+      <div className={slides ? "mt-8 space-y-6" : "mt-10 space-y-14"}>
         {text.sections.map((s, i) => (
-          <SectionView key={i} id={slug(s.heading, i)} section={s} color={color} />
+          <SectionView key={i} id={slug(s.heading, i)} section={s} color={color} slides={slides} />
         ))}
       </div>
 
       <section className="card mt-16 p-6">
         <p className="eyebrow">Gelesen? Jetzt festigen</p>
         <div className="mt-4 grid gap-2 sm:grid-cols-3">
+          {slides && (
+            <ButtonLink variant="secondary" href={`${base}/frameworks#${lecture.id}`} className="sm:col-span-3">
+              <ScrollText className="size-4" /> Framework-Folien dieses Kapitels
+            </ButtonLink>
+          )}
           <ButtonLink variant="secondary" href={`${base}/cards?lecture=${lecture.id}`}>
             <Layers className="size-4" /> Karteikarten
           </ButtonLink>
@@ -97,35 +116,51 @@ export function ReadingView({
   );
 }
 
-function SectionView({ id, section, color }: { id: string; section: Section; color: string }) {
+/** Abschnitt mit Überschrift – im Folien-Look als Folienblatt mit gelber Titelbox. */
+function Wrap({ id, heading, slides, children }: { id: string; heading: string; slides: boolean; children: React.ReactNode }) {
+  if (slides) {
+    return (
+      <SlideFrame id={id} title={heading}>
+        {children}
+      </SlideFrame>
+    );
+  }
+  return (
+    <section id={id} className="scroll-mt-32">
+      <h2 className="display text-2xl">{heading}</h2>
+      {children}
+    </section>
+  );
+}
+
+function SectionView({ id, section, color, slides }: { id: string; section: Section; color: string; slides: boolean }) {
   const kind = kindOf(section.heading);
   const heading = LABEL[kind] || section.heading;
+  const top = slides ? "mt-4" : "mt-6";
 
   if (kind === "def") {
     return (
-      <section id={id} className="scroll-mt-32">
-        <h2 className="display text-2xl">{heading}</h2>
-        <dl className="mt-6 grid gap-3">
+      <Wrap id={id} heading={heading} slides={slides}>
+        <dl className={`${top} grid gap-3`}>
           {section.blocks.map((b, i) => (
             <div
               key={i}
               className="rounded-2xl border border-line bg-surface p-4 sm:p-5"
-              style={{ borderLeft: `4px solid ${color}` }}
+              style={{ borderLeft: `4px solid ${slides ? "#fec33f" : color}` }}
             >
               {b.term && <dt className="font-semibold text-ink">{b.term}</dt>}
               <dd className="mt-1 leading-relaxed text-ink-2">{b.text}</dd>
             </div>
           ))}
         </dl>
-      </section>
+      </Wrap>
     );
   }
 
   if (kind === "further") {
     return (
-      <section id={id} className="scroll-mt-32">
-        <h2 className="display text-2xl">{heading}</h2>
-        <ul className="mt-6 space-y-3">
+      <Wrap id={id} heading={heading} slides={slides}>
+        <ul className={`${top} space-y-3`}>
           {section.blocks.map((b, i) => (
             <li key={i} className="flex gap-3 rounded-2xl bg-surface-2 p-4 leading-relaxed text-ink-2">
               <Lightbulb className="mt-1 size-4 shrink-0 text-warn" />
@@ -133,15 +168,14 @@ function SectionView({ id, section, color }: { id: string; section: Section; col
             </li>
           ))}
         </ul>
-      </section>
+      </Wrap>
     );
   }
 
   let n = 0;
   return (
-    <section id={id} className="scroll-mt-32">
-      <h2 className="display text-2xl">{heading}</h2>
-      <div className="mt-6 space-y-5">
+    <Wrap id={id} heading={heading} slides={slides}>
+      <div className={`${top} space-y-5`}>
         {section.blocks.map((b, i) =>
           b.kind === "para" ? (
             <p key={i} className="text-[1.05rem] font-medium leading-relaxed text-ink">
@@ -171,7 +205,7 @@ function SectionView({ id, section, color }: { id: string; section: Section; col
           ),
         )}
       </div>
-    </section>
+    </Wrap>
   );
 }
 

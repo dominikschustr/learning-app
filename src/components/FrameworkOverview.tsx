@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import type { Framework, Subject } from "@/lib/schema";
 import { alpha, cn } from "@/lib/utils";
 import { FrameworkVisual, visualCount } from "./FrameworkVisual";
+import { SlideFrame, TitleSlide } from "./Slide";
 import { Button } from "./ui";
 
 /** Alle Framework-Steckbriefe eines Fachs, nach Kapiteln – mit Abfrage-Modus, der die Bausteine verdeckt. */
@@ -14,6 +15,7 @@ export function FrameworkOverview({ subject, frameworks }: { subject: Subject; f
   const [shown, setShown] = useState<Set<string>>(new Set());
   const base = `/s/${subject.id}`;
   const chapters = subject.lectures.filter((l) => frameworks.some((f) => f.lecture === l.id));
+  const slides = subject.look === "slides";
 
   // Die Seite erscheint erst nach der Anmeldung – den Anker (#f3) daher selbst ansteuern
   useEffect(() => {
@@ -108,6 +110,29 @@ export function FrameworkOverview({ subject, frameworks }: { subject: Subject; f
           const list = frameworks.filter((f) => f.lecture === l.id);
           return (
             <section key={l.id} id={l.id} className="scroll-mt-32">
+              {slides ? (
+                <TitleSlide
+                  eyebrow={`${code} · ${list.length} Frameworks`}
+                  title={rest.join(" · ") || l.title}
+                  footer={subject.name}
+                >
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    <Link
+                      href={`${base}/c/${l.id}/text`}
+                      className="inline-flex h-9 items-center rounded-full bg-white/15 px-4 text-sm font-semibold text-white hover:bg-white/25"
+                    >
+                      Zusammenfassung
+                    </Link>
+                    <Link
+                      href={`${base}/c/${l.id}`}
+                      className="inline-flex h-9 items-center gap-1 rounded-full px-4 text-sm font-semibold text-[#3a2082] hover:opacity-90"
+                      style={{ background: subject.accent ?? "#ffffff" }}
+                    >
+                      Im Case anwenden <ArrowRight className="size-4" />
+                    </Link>
+                  </div>
+                </TitleSlide>
+              ) : (
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
                   <p className="eyebrow">{code}</p>
@@ -120,12 +145,14 @@ export function FrameworkOverview({ subject, frameworks }: { subject: Subject; f
                   Im Case anwenden <ArrowRight className="size-4" />
                 </Link>
               </div>
+              )}
               <div className="mt-6 space-y-5">
-                {list.map((f) => (
+                {list.map((f, i) => (
                   <FrameworkCard
                     key={f.id}
                     f={f}
-                    color={subject.color}
+                    slide={slides ? { accent: subject.accent ?? "#fec33f", number: `${code} · ${i + 1}` } : undefined}
+                    color={slides ? "#3b2182" : subject.color}
                     hidden={quiz && !shown.has(f.id)}
                     onReveal={() => toggle(f.id)}
                     quiz={quiz}
@@ -142,12 +169,15 @@ export function FrameworkOverview({ subject, frameworks }: { subject: Subject; f
 
 function FrameworkCard({
   f,
+  slide,
   color,
   hidden,
   quiz,
   onReveal,
 }: {
   f: Framework;
+  /** Folien-Look: als Folienblatt mit Titelbox, Diagramme in der Akzentfarbe */
+  slide?: { accent: string; number: string };
   color: string;
   hidden: boolean;
   quiz: boolean;
@@ -155,15 +185,19 @@ function FrameworkCard({
 }) {
   const shownInVisual = visualCount(f);
   const rest = f.parts.slice(shownInVisual);
-  return (
-    <article id={f.id} className="card scroll-mt-32 p-5 sm:p-6" style={{ borderTop: `4px solid ${color}` }}>
-      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-        <h3 className="text-xl font-semibold">{f.name}</h3>
-        {f.origin && <span className="text-sm text-muted">{f.origin}</span>}
-      </div>
+  const body = (
+    <>
       <p className="mt-2 leading-relaxed text-ink-2">{f.purpose}</p>
 
-      {f.visual && <FrameworkVisual parts={f.parts.slice(0, shownInVisual)} visual={f.visual} color={color} hidden={hidden} />}
+      {f.visual && (
+        <FrameworkVisual
+          parts={f.parts.slice(0, shownInVisual)}
+          visual={f.visual}
+          color={color}
+          accent={slide?.accent}
+          hidden={hidden}
+        />
+      )}
 
       {hidden ? (
         <div className="mt-5 flex flex-wrap items-center gap-3 rounded-2xl border border-dashed border-line-strong p-4">
@@ -181,7 +215,11 @@ function FrameworkCard({
           {rest.length > 0 && (
             <div className={cn("mt-5 grid gap-3", rest.length > 1 && "sm:grid-cols-2")}>
               {rest.map((p, i) => (
-                <div key={i} className="rounded-2xl p-4" style={{ background: alpha(color, 0.06) }}>
+                <div
+                  key={i}
+                  className={cn("p-4", slide ? "rounded-md border-l-4" : "rounded-2xl")}
+                  style={slide ? { background: alpha(slide.accent, 0.16), borderColor: slide.accent } : { background: alpha(color, 0.06) }}
+                >
                   <p className="font-semibold" style={{ color }}>
                     {p.label}
                   </p>
@@ -250,6 +288,23 @@ function FrameworkCard({
           )}
         </>
       )}
+    </>
+  );
+
+  if (slide) {
+    return (
+      <SlideFrame id={f.id} title={f.name} source={f.origin} number={slide.number}>
+        {body}
+      </SlideFrame>
+    );
+  }
+  return (
+    <article id={f.id} className="card scroll-mt-32 p-5 sm:p-6" style={{ borderTop: `4px solid ${color}` }}>
+      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <h3 className="text-xl font-semibold">{f.name}</h3>
+        {f.origin && <span className="text-sm text-muted">{f.origin}</span>}
+      </div>
+      {body}
     </article>
   );
 }

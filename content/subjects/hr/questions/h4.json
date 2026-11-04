@@ -1,0 +1,50 @@
+[
+  {
+    "type": "short",
+    "id": "sa-h4-01",
+    "lecture": "h4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Distinguish inequality, discrimination and bias. How can researchers show that discrimination exists?",
+    "modelAnswer": "Inequality is unequal outcomes between groups; discrimination is differential treatment associated with group membership; bias is a cognitive or attitudinal process. They can be related but are not interchangeable: an outcome gap may come from differences between candidates. Field experiments (Quillian et al., 2019) solve this: researchers send applications that are equivalent in job-relevant characteristics and vary only the ethnic cue (e.g. the name). Any difference in callback rates (discrimination ratio = callback rate of white natives / callback rate of the target group) can only be caused by the cue – this allows causal inference, which comparing real applicants cannot. Their meta-analysis of 97 experiments found discrimination in all nine countries, highest in France.",
+    "keyPoints": [
+      "Three definitions",
+      "Not interchangeable / gap ≠ proof",
+      "Field experiment design",
+      "Causal inference"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h4-02",
+    "lecture": "h4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Use Bourdieu's capitals and signaling theory to analyse the two candidates. Whom would you hire, and how would you decide fairly?",
+    "modelAnswer": "Lucas's signals (prestigious school, Paris internships, polish) are expensive and screened, so they seem to show merit (Baron & Kreps, 1999). But they were partly produced by economic capital (unpaid internships, tuition), social capital (father's network) and cultural capital (confidence, articulate style). Amira's signals are weaker, yet her trajectory reveals job-relevant capabilities – responsibility, leadership of a team, time management, resilience – that a prestige-oriented CV screen undervalues. The HR challenge is to distinguish the signal from the underlying capability; “evidence-based” does not mean reading evidence literally. Fair decision: define competencies in advance, use a work sample/case exercise and a structured interview scored by a panel, and weight signals by how they were produced. On the information given, Amira's demonstrated capabilities make her at least as strong.",
+    "keyPoints": [
+      "Signals and why recruiters use them",
+      "Three capitals applied to Lucas",
+      "Amira's hidden capabilities",
+      "Signal vs capability; structured, competency-based decision"
+    ],
+    "case": "mc-twins"
+  },
+  {
+    "type": "short",
+    "id": "sa-h4-03",
+    "lecture": "h4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which biases and mechanisms of unconscious bias operate at Harlow & Price? Recommend an inclusive selection process.",
+    "modelAnswer": "Mechanisms: target-university and internship screens rely on class-produced signals (economic, social, cultural capital); “one of us” is similar-to-me bias and in-group favouritism (Bell, 2013) disguised as cultural fit; unstructured partner interviews invite halo/horns and stereotyping; partners likely believe they are objective (self-delusion). The result is inequality (90 % private school). Recommendations: (1) design the process – competencies set in advance, contextual recruitment (consider grades in light of school background), drop target lists, anonymise CVs in first screening; (2) valid and reliable methods – work samples (legal reasoning task), structured interviews with scoring; (3) involve a variety of actors – diverse panels, trained interviewers, monitoring data. Business case: clients and public-sector work demand diverse teams; diversity drives (radical) innovation (Mohammadi et al., 2017).",
+    "keyPoints": [
+      "Names biases with case evidence",
+      "Links signals to capitals",
+      "Process design recommendations",
+      "Variety of actors",
+      "Business case for diversity"
+    ],
+    "case": "mc-lawfirm"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "type": "short",
+    "id": "sa-h1-01",
+    "lecture": "h1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the difference between the best-practice (universalist) and the best-fit (contingency) approach to HRM. Use Pfeffer's (1998) practices to illustrate.",
+    "modelAnswer": "Best practice (universalism) claims that one bundle of HR practices improves performance in all organisations. Pfeffer (1998) lists seven: employment security, selective hiring, self-managed teams, high pay contingent on company performance, extensive training, reduced status differences and information sharing. Best fit (contingency, the “matching model” of Jackson & Schuler, 1984) argues that the most effective way of managing varies from organisation to organisation; HR must fit strategy, workforce and environment (Paauwe & Farndale, 2017). A balanced view: some principles travel (e.g. fair, transparent criteria), but the design of practices must be adapted to the context.",
+    "keyPoints": [
+      "Universalism: one bundle works everywhere",
+      "At least three Pfeffer practices",
+      "Best fit: tight fit between HR and context",
+      "Balanced conclusion / example"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h1-02",
+    "lecture": "h1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What does it mean that HR is both a “strategic business partner” and an “employee advocate”? Why does the course present the two roles as yin and yang?",
+    "modelAnswer": "As strategic business partner HR contributes to company performance – aligning people practices with strategy, transformational activities, analytics. As employee advocate it protects employees' interests, well-being and fair treatment. The yin-yang image shows that they are complementary, not alternatives: practices that ignore employees (burnout, distrust) undermine performance in the long run, and advocacy without business sense loses influence. Good HR decisions serve both – e.g. reskilling that secures future capabilities and employees' employability.",
+    "keyPoints": [
+      "Business partner: performance, strategy",
+      "Advocate: interests, well-being, fairness",
+      "Complementary, not either/or",
+      "Example"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h1-03",
+    "lecture": "h1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Diagnose LogiFlow's HR philosophy using the shift from “control” to “commitment”. What are the consequences for its performance?",
+    "modelAnswer": "LogiFlow follows a control model: close monitoring through scanners, narrow job descriptions, precise daily evaluations (ranking) and reward per piece – value is created by minimizing labour cost and maximizing output, like Bentham's Panopticon or Ford's assembly line. It delivers short-term productivity, but the side effects appear: 48 % turnover, rising sick leave, no discretionary effort (nobody suggests improvements for automation – no “extra mile”), conflict with the works council. The automation project needs commitment: trust, teamwork, development and voice. The commitment model creates value by maximizing trust and commitment; the Japanese production model shows that this can also be more productive (Womack et al., 1990).",
+    "keyPoints": [
+      "Identifies control features with case facts",
+      "Short-term output vs side effects (turnover, sick leave)",
+      "Need for commitment/extra mile for automation",
+      "Commitment model and its value logic"
+    ],
+    "case": "mc-logiflow"
+  },
+  {
+    "type": "short",
+    "id": "sa-h1-04",
+    "lecture": "h1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Apply the Harvard Model (Beer et al., 1984) to LogiFlow. Which stakeholders and situational factors matter, and what HR outcomes and long-term consequences do the current policy choices produce?",
+    "modelAnswer": "Stakeholders: shareholders/management (cost, productivity), employees (well-being, fair treatment), works council/unions (surveillance), local communities (night-shift hiring, employer image). Situational factors: labour market tightness in two countries, workforce characteristics, business strategy (automation), task technology (scanners), laws (German co-determination, data protection). Policy choices: work systems (narrow jobs, tracking), reward systems (piece-rate bonus, ranking), HR flow (high turnover → constant hiring), little employee influence. HR outcomes: low commitment, competence not built, low congruence of goals, cost-effectiveness only apparent (turnover and sick leave costs). Long-term consequences: poor individual well-being, weaker organisational effectiveness (automation stalls), negative societal effects – and feedback loops: communities and the works council push back, the labour market reacts.",
+    "keyPoints": [
+      "Stakeholders listed with interests",
+      "Situational factors",
+      "Policy choices classified (influence, flow, rewards, work systems)",
+      "4 Cs assessed",
+      "Long-term consequences and feedback loop"
+    ],
+    "case": "mc-logiflow"
+  },
+  {
+    "type": "short",
+    "id": "sa-h1-05",
+    "lecture": "h1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Should the new CEO copy Google's HR practices? Argue with best practice vs best fit.",
+    "modelAnswer": "A universalist would say high-commitment practices work everywhere. But best fit warns that practices must match the context: a long-tenured, partly unionized shift workforce in safety-critical production differs from tech knowledge workers. Unlimited holidays and 20 % time clash with shift coverage and safety; peer ratings may conflict with union agreements and a collective culture; stock options are hard in a family-owned firm. Recommendation: keep the commitment principles (information sharing, training, voice, perhaps profit sharing instead of stock options) but adapt the design – e.g. improvement time organised by team, structured suggestion schemes, collective bonuses negotiated with the works council.",
+    "keyPoints": [
+      "Universalist argument",
+      "Context differences (workforce, unions, shifts, ownership)",
+      "Practice-by-practice misfit",
+      "Adapted recommendation"
+    ],
+    "case": "mc-copycat"
+  }
+]

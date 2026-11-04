@@ -1,0 +1,83 @@
+[
+  {
+    "id": "rs-process",
+    "lecture": "h3",
+    "name": "Recruitment vs selection",
+    "origin": "Session 2 · Staffing process",
+    "purpose": "What is the difference between attracting candidates and choosing among them – and why does the order matter?",
+    "parts": [
+      { "label": "Job analysis", "points": ["Job description and person specification", "Defines the criteria for everything after"] },
+      { "label": "Recruitment", "points": ["Attracting the right pool of candidates", "Good recruitment makes selection possible"] },
+      { "label": "Selection", "points": ["Applying techniques to identify the right candidates out of the pool", "Techniques must be valid, reliable and practicable"] },
+      { "label": "Induction", "points": ["Integrating the new hire"] }
+    ],
+    "apply": [
+      "Start from the job description: highlight the key issues the job involves",
+      "Build the recruitment strategy (where and how to attract) and then the selection strategy (how to choose)",
+      "Justify each step with person–organisation fit, context and cost-effectiveness"
+    ],
+    "pitfalls": ["Mixing the two: a job ad is recruitment, an assessment centre is selection"],
+    "example": "Inditex case: develop a recruitment AND a selection strategy for one of two positions in different countries.",
+    "visual": { "type": "flow" }
+  },
+  {
+    "id": "vrp",
+    "lecture": "h3",
+    "name": "Validity, reliability & practicability",
+    "origin": "Selection criteria · Inditex feedback",
+    "purpose": "How do I judge – and defend – a selection method?",
+    "parts": [
+      { "label": "Validity", "points": ["Does the method measure what predicts performance in THIS job?", "Which aspect of the job description does it measure?"] },
+      { "label": "Reliability", "points": ["Consistent results across raters, candidates and time", "Structured, standardized methods help"] },
+      { "label": "Practicability", "points": ["Cost, time, volume of applicants", "Acceptance by candidates, legal constraints", "→ cost-effectiveness"] }
+    ],
+    "apply": [
+      "For each method: name the criterion from the job description it measures (validity)",
+      "Explain how the methods work together to increase validity and reliability",
+      "Check repetitions: do two methods look at the same criterion? Is that necessary and cost-effective?",
+      "Check coverage: are all relevant requirements of the job description evaluated?"
+    ],
+    "pitfalls": [
+      "Listing methods without saying what each one measures",
+      "Forgetting practicability: an assessment centre for 5,000 store applicants is not workable"
+    ],
+    "example": "",
+    "visual": { "type": "triangle" }
+  },
+  {
+    "id": "recruitment-strategy",
+    "lecture": "h3",
+    "name": "Designing a recruitment strategy",
+    "origin": "Inditex case · key feedback points",
+    "purpose": "Which choices does a recruitment strategy have to balance?",
+    "parts": [
+      { "label": "Informing vs attracting", "points": ["Balance the organisation's and the candidate's needs", "Realistic information vs selling the job"] },
+      { "label": "Internal vs external", "points": ["Consider internal recruitment: known performers, motivation, cheaper", "External: new skills, larger pool"] },
+      { "label": "Standard vs local", "points": ["Same firm, different countries: labour market, channels, culture"] },
+      { "label": "Broad vs targeted channels", "points": ["Volume vs quality of applications", "Cost per hire"] }
+    ],
+    "apply": [
+      "Position the case on each axis and justify with the job description and the context",
+      "Choose channels that reach the target pool (and diverse candidates)",
+      "Close with cost-effectiveness"
+    ],
+    "pitfalls": ["More applications ≠ better hires: CIPD 2026 – 58 % saw more applications, only 33 % more suitable candidates"],
+    "example": "",
+    "visual": { "type": "sliders" }
+  },
+  {
+    "id": "cipd-labour-market",
+    "lecture": "h3",
+    "name": "Recruitment in numbers (CIPD 2026)",
+    "origin": "CIPD Resourcing and Talent Planning Report 2026",
+    "purpose": "What does the evidence say about attraction methods, quality and cost of hiring?",
+    "parts": [
+      { "label": "Volume ≠ quality", "points": ["58 % of employers saw more applications, only 33 % more suitable candidates", "53 % had difficulties attracting candidates, mainly senior and skilled roles (18 % also for low-skilled)"] },
+      { "label": "Most effective attraction methods", "points": ["Own corporate website (40 %)", "Generic job boards (35 %)", "Internal advertising to existing talent pool (32 %)", "Recruitment/search consultants (29 %)", "Targeted campaigns on professional networks (28 %)", "Employee referrals and organic content (24 % each)"] },
+      { "label": "Median cost per hire", "points": ["Senior managers/directors: £3,500 (2026)", "Other employees: £2,000 (2026)", "Costs include technology, advertising, agency fees, tests, onboarding"] }
+    ],
+    "apply": ["Use the numbers to justify channel choice and cost-effectiveness in a recruitment recommendation"],
+    "pitfalls": ["Quoting numbers without linking them to the case job"],
+    "example": ""
+  }
+]

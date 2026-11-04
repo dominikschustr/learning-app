@@ -1,0 +1,63 @@
+[
+  {
+    "type": "short",
+    "id": "sa-h2-01",
+    "lecture": "h2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Define sustainable HRM (Ehnert et al., 2016) and explain how it differs from strategic HRM.",
+    "modelAnswer": "Sustainable HRM is the adoption of HRM strategies and practices that enable financial, social and ecological goals, with an impact inside and outside the organisation, over a long-term horizon, while controlling for unintended side effects and negative feedback. Compared with strategic HRM it extends responsibility beyond the firm to communities and other organisations, has a longer-term orientation, combines top-down with bottom-up control, is highly integrated with operations, is proactive and activist, initiates and sustains change, and treats environmental, social and financial performance as equally important – whereas strategic HRM puts financial performance first.",
+    "keyPoints": [
+      "Definition: triple goals, inside/outside, long term, side effects",
+      "At least three contrasts with strategic HRM",
+      "Financial first vs equal importance"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h2-02",
+    "lecture": "h2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Why do companies implement sustainable HRM practices? Explain the three types of reasons (Stahl et al., 2020).",
+    "modelAnswer": "Compliance-related: avoid legal sanctions and fulfil ethical obligations to society – the minimum required. Instrumental/strategic: practices complement the business model and strategy, attract talent and impress investors – they pay off. Mission-led/values-driven: doing the “right” thing and staying consistent with the mission and values. Instrumental and mission-led motives lead to actions that go beyond regulations and laws; the motive predicts how deep and durable the commitment is.",
+    "keyPoints": [
+      "Compliance: sanctions, obligations",
+      "Instrumental: strategy, talent, investors",
+      "Mission-led: values",
+      "Last two go beyond the law"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h2-03",
+    "lecture": "h2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which two options would you choose? Evaluate the options with the triple bottom line and justify your choice.",
+    "modelAnswer": "Scoring (financial / social / ecological): freeze recruitment and increase workloads (+ / − burnout, quality / 0); living wage in the supply chain (− short term / ++ / 0, reputational +); executive bonuses linked to carbon and well-being (0 / + / + – aligns leaders, cheap); AI recruitment (+ / − risk of algorithmic bias, a sin of commission / 0); €5m reskilling (− now, + later / + / + if green skills); replacing jobs with contractors (+ / − precarious contracts, layoffs for short-term profit / 0). A defensible choice: link executive bonuses to carbon reduction and well-being (cheap, signals the strategy, steers the whole organisation) and invest in reskilling (long-term financial and social value; can be financed by productivity gains and natural attrition rather than layoffs). Acknowledge the trade-off: the 12 % cost target is hard to reach this year – argue for a longer horizon, as the definition of sustainable HRM requires.",
+    "keyPoints": [
+      "TBL scoring of several options",
+      "Trade-offs named explicitly",
+      "Two choices justified",
+      "Link to long-term horizon/side effects"
+    ],
+    "case": "mc-fastfashion"
+  },
+  {
+    "type": "short",
+    "id": "sa-h2-04",
+    "lecture": "h2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Assess GreenCo's HR practices with the sins of commission and omission (Brewster & Brookes, 2024). Is GreenCo practising sustainable HRM?",
+    "modelAnswer": "Commission – HR contributes to problems: precarious rolling temporary contracts for 40 % of warehouse staff; an extreme and growing executive/employee pay gap. Omission – HR fails to prevent problems: the harassment complaint left open for a year. GreenCo's agenda covers only the ecological dimension (CO₂, trees) and a CEO bonus; the social dimension of the triple bottom line is ignored, which contradicts the definition (financial, social AND ecological goals, inside and outside). HR acts reactively rather than as a proactive, activist function. So it is not sustainable HRM but selective “green” reporting. Recommendations: convert temporary contracts, resolve the complaint and set a harassment process, add social indicators (pay ratio, well-being) to the CEO's ESG target.",
+    "keyPoints": [
+      "Commission examples",
+      "Omission example",
+      "Only ecological dimension → not sustainable HRM",
+      "Concrete recommendations"
+    ],
+    "case": "mc-greenco"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "id": "performance-theory",
+    "lecture": "h5",
+    "name": "What does performance mean?",
+    "origin": "Latham, Sulsky & Macdonald (2007, p. 366)",
+    "purpose": "Before measuring performance, a performance theory must stipulate five things.",
+    "parts": [
+      { "label": "(a) Dimensions", "points": ["The relevant performance dimensions"] },
+      { "label": "(b) Standards", "points": ["Expectations associated with each performance level"] },
+      { "label": "(c) Situational constraints", "points": ["How (if at all) to weight factors outside the employee's control"] },
+      { "label": "(d) Number of levels", "points": ["How many performance levels or gradients"] },
+      { "label": "(e) Absolute vs relative", "points": ["Compare with a standard or with colleagues (ranking)?"] }
+    ],
+    "apply": [
+      "Use (a)–(e) as the design checklist for any PM system in a case",
+      "Ask first: what is value-adding work here? (Beach House: innovation, not output)"
+    ],
+    "pitfalls": ["Jumping to a rating form before defining what performance means for this job"],
+    "example": "Role play: manager and employee disagree on the appraisal – the key issue is a different understanding of performance."
+  },
+  {
+    "id": "evaluation-behaviour",
+    "lecture": "h5",
+    "name": "Evaluation systems shape behaviour",
+    "origin": "Session 4 · class exercise",
+    "purpose": "What behaviours does each evaluation system encourage?",
+    "parts": [
+      { "label": "Team evaluation on a case study", "points": ["Cooperation, knowledge sharing", "Risk: free riding"] },
+      { "label": "Individual exam", "points": ["Individual effort and accountability", "No incentive to help others"] },
+      { "label": "Individual with ranking (normal distribution)", "points": ["Competition, possibly sabotage", "No sharing, stress"] },
+      { "label": "Individual exam but team grades", "points": ["Peer pressure and peer teaching", "Perceived unfairness, free riding"] }
+    ],
+    "apply": ["Predict the behaviour the case's system rewards – and compare it with the behaviour the firm needs"],
+    "pitfalls": ["Evaluating a system only by its accuracy – its behavioural effects matter more"],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "cappelli-tavis",
+    "lecture": "h5",
+    "name": "Why firms drop traditional appraisals",
+    "origin": "Cappelli & Tavis (2016) – mandatory reading",
+    "purpose": "What is pushing organizations to drop annual appraisals and embrace alternatives?",
+    "parts": [
+      { "label": "Return of people development", "points": ["Tight labour markets: firms must grow talent", "Frequent coaching conversations instead of a yearly rating"] },
+      { "label": "Need for agility", "points": ["Annual goals become obsolete fast", "Short-term, flexible goals and frequent check-ins"] },
+      { "label": "Centrality of teamwork", "points": ["Individual ratings undermine collaboration", "Feedback from several people, team goals"] }
+    ],
+    "apply": [
+      "Check which of the three pressures applies to the case firm",
+      "Recommend continuous feedback, development focus or team goals accordingly"
+    ],
+    "pitfalls": ["Claiming appraisals disappear completely – firms still need decisions on pay and promotion"],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "forced-distribution",
+    "lecture": "h5",
+    "name": "Forced distribution: disadvantages",
+    "origin": "Session 5 · ranking on a normal curve",
+    "purpose": "Why does ranking employees on a forced curve backfire?",
+    "parts": [
+      { "label": "Demotivation of the majority in the middle", "points": [] },
+      { "label": "Infighting and reduced collaboration", "points": ["Why work with the stars if they push you into the bottom 10 %?"] },
+      { "label": "Cost and time of administration", "points": [] },
+      { "label": "Horse-trading", "points": ["Lobbying and politicking before reviews, trading favours"] },
+      { "label": "Does not value diversity", "points": ["Variety of personalities and talents"] },
+      { "label": "Short-termism", "points": [] }
+    ],
+    "apply": ["If the case uses rankings, list the disadvantages that already show and propose absolute standards plus development conversations"],
+    "pitfalls": [],
+    "example": "",
+    "visual": { "type": "hump", "x": ["Performance"], "y": ["Employees"], "marks": ["Bottom (e.g. 10 %) – out", "Majority in the middle", "Top stars"] }
+  },
+  {
+    "id": "pm-purpose",
+    "lecture": "h5",
+    "name": "Purposes of a PM system",
+    "origin": "Lussier & Hendon (2016) · Beach House feedback",
+    "purpose": "What is the new system FOR? Each purpose pulls the design in a different direction.",
+    "parts": [
+      { "label": "Accountability", "points": ["Evaluate and decide: pay, promotion, exit", "Needs comparable, defensible ratings"] },
+      { "label": "Development", "points": ["Coaching, feedback, learning", "Needs trust, frequent and forward-looking talks"] },
+      { "label": "Communication", "points": ["Clarify goals and expectations, align with strategy", "Two-way dialogue"] }
+    ],
+    "apply": [
+      "State the main purpose for the case firm first",
+      "Then design to it – and explain the tension (rating for pay hurts honest developmental talk)"
+    ],
+    "pitfalls": ["Trying to serve all purposes with one annual meeting"],
+    "example": "",
+    "visual": { "type": "triangle" }
+  },
+  {
+    "id": "pm-design",
+    "lecture": "h5",
+    "name": "Designing a PM system (Beach House)",
+    "origin": "Beach House case · key feedback points",
+    "purpose": "Which design choices must a performance management proposal decide and justify?",
+    "parts": [
+      { "label": "Control vs autonomy", "points": ["Structure and targets vs freedom to experiment"] },
+      { "label": "Quantitative vs qualitative indicators", "points": ["Countable output vs judgement of quality, ideas, behaviours"] },
+      { "label": "One system vs segmented", "points": ["Can the “A Team” be managed like the “Tweakers”, given the nature of their work?"] },
+      { "label": "Individual vs team", "points": ["Whose performance is measured?"] },
+      { "label": "Annual vs continuous", "points": ["Yearly review vs frequent check-ins"] }
+    ],
+    "apply": [
+      "1. Name the key problem (Beach House: lack of innovation)",
+      "2. Define value-adding activities for each group",
+      "3. Choose the purpose (accountability, development, communication)",
+      "4. Set each slider and justify it",
+      "5. Analyse potential externalities (what will people stop doing?)"
+    ],
+    "pitfalls": [
+      "Measuring innovators with output targets – that kills the innovation you want",
+      "Forgetting the limits of PM: not everything valuable can be measured (“Humanize”)"
+    ],
+    "example": "",
+    "visual": { "type": "sliders" }
+  }
+]

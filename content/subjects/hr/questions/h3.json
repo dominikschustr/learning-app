@@ -1,0 +1,51 @@
+[
+  {
+    "type": "short",
+    "id": "sa-h3-01",
+    "lecture": "h3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Distinguish recruitment from selection and explain the three criteria a selection method must meet.",
+    "modelAnswer": "Recruitment attracts the right pool of candidates; good recruitment makes selection possible. Selection applies techniques to identify the right candidates out of that pool. Selection techniques must be valid (they measure what predicts performance in the job – each method should be linked to a requirement of the job description), reliable (they give consistent results across raters, candidates and time, e.g. through structure and scoring) and practicable (feasible in cost, time and volume, acceptable to candidates and legal). Together they determine cost-effectiveness.",
+    "keyPoints": [
+      "Recruitment = attract pool",
+      "Selection = choose from pool",
+      "Validity",
+      "Reliability",
+      "Practicability/cost-effectiveness"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h3-02",
+    "lecture": "h3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Design a recruitment and a selection strategy for NordBank and justify each method with validity, reliability and practicability.",
+    "modelAnswer": "Job analysis first: technical skills (SQL, Python, statistics) and communication/teamwork are both key – last year's process measured neither validly. Recruitment: targeted channels (university data programmes, coding communities, professional networks, employee referrals) instead of generic boards to improve quality rather than volume; a realistic job preview that informs (agile squads, business communication) and attracts; consider internal candidates from business teams with analytics skills. Selection: (1) short online work sample or coding test – valid for technical skills, reliable (same task, scored), practicable for volume; (2) a case presentation of results to non-experts – valid for communication; (3) structured interview with scoring rubric by a panel (line manager + squad member + HR) – reliable, assesses teamwork and P–O fit. Each requirement is covered once or deliberately twice (communication in case and interview); drop the university-ranking screen (low validity, biased). Cost: test platform and panel time fit within €40,000; the expensive step (presentation) only for the shortlist.",
+    "keyPoints": [
+      "Starts from job description, diagnoses last year's failure",
+      "Targeted recruitment, inform vs attract, internal option",
+      "Methods mapped to criteria",
+      "Validity, reliability, practicability argued",
+      "Cost-effectiveness within budget"
+    ],
+    "case": "mc-nordbank"
+  },
+  {
+    "type": "short",
+    "id": "sa-h3-03",
+    "lecture": "h3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Was the assessment centre a good choice for the seasonal store associates? Propose a more practicable process.",
+    "modelAnswer": "An assessment centre can be valid and reliable, but for 600 hires in six weeks it fails practicability: 90 minutes per candidate with store managers is too costly and slow for low-complexity seasonal jobs, and candidates may drop out. Better: recruit through the own website, in-store signs and referrals (cheap, reach local candidates); short online application with availability check (weekends); a situational judgement test on customer service and cash handling (valid, reliable, scalable); a 15-minute structured interview in store with a scoring sheet. Reserve deeper assessment for supervisors. This balances validity with practicability and cost-effectiveness.",
+    "keyPoints": [
+      "AC fails practicability (volume, time, cost)",
+      "Recruitment channels suited to local pool",
+      "Scalable valid methods (SJT, structured interview)",
+      "Cost-effectiveness"
+    ],
+    "case": "mc-storeassoc"
+  }
+]

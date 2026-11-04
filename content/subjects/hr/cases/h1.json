@@ -1,0 +1,19 @@
+[
+  {
+    "id": "mc-logiflow",
+    "title": "Mini-case: LogiFlow warehouses",
+    "text": [
+      "LogiFlow runs 14 e-commerce warehouses in Germany and Poland. Pickers wear scanners that track every movement; the system ranks them daily and pays a bonus per item picked. Job descriptions are narrow, and team leaders spend most of their time checking dashboards.",
+      "Productivity is high, but annual staff turnover is 48 %, sick leave is rising, and a new automation project needs experienced employees to suggest process improvements – almost nobody does. The works council complains about constant surveillance, and local communities report difficulties hiring for LogiFlow's night shifts."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-copycat",
+    "title": "Mini-case: copying Google's HR",
+    "text": [
+      "A 300-employee family-owned manufacturer of industrial valves in rural Austria hires a new CEO from a tech firm. She wants to introduce “Google-style” HR: unlimited holidays, a 20 % time rule for own projects, peer-based ratings and stock options. The workforce is long-tenured, partly unionized, and production runs in shifts with strict safety rules."
+    ],
+    "tables": []
+  }
+]

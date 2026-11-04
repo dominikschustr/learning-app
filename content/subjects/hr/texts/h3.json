@@ -1,0 +1,146 @@
+{
+  "lecture": "h3",
+  "title": "H3 – Recruitment and selection: designing the process",
+  "source": "Zusammenfassung von Session 2 „Recruitment and selection“ (Inditex-Fall, CIPD 2026)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Recruitment attracts the right pool of candidates; selection applies techniques to identify the right candidates out of that pool. Good recruitment makes selection possible."
+        },
+        {
+          "kind": "item",
+          "text": "Selection methods must be valid (measure what predicts performance in the job), reliable (consistent) and practicable (cost, time, acceptance)."
+        },
+        {
+          "kind": "item",
+          "text": "A strong recommendation starts from the job description, considers person–organisation fit and the local context, explains why the methods are valid, reliable and practicable, and is cost-effective."
+        },
+        {
+          "kind": "item",
+          "text": "Recruitment balances the organisation's and the candidate's needs – informing vs attracting – and should consider internal recruitment."
+        },
+        {
+          "kind": "item",
+          "text": "More applications do not mean better candidates (CIPD 2026)."
+        }
+      ]
+    },
+    {
+      "heading": "Frameworks at a glance",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Staffing process",
+          "children": [
+            "Job analysis → recruitment → selection → induction"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Selection criteria",
+          "children": [
+            "Validity · reliability · practicability (→ cost-effectiveness)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Recruitment strategy choices",
+          "children": [
+            "Informing vs attracting",
+            "Internal vs external",
+            "Standard vs local (country context)",
+            "Broad vs targeted channels"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Checklist for a selection strategy (Inditex feedback)",
+          "children": [
+            "Which aspect of performance in the job description does each method measure?",
+            "How do the methods work together to increase validity and reliability?",
+            "Repetitions: do methods measure the same criteria – necessary and cost-effective?",
+            "Coverage: are all relevant requirements evaluated?"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Evidence (CIPD 2026)",
+          "children": [
+            "58 % more applications but only 33 % more suitable candidates",
+            "53 % struggled to attract candidates",
+            "Top methods: own website 40 %, job boards 35 %, internal advertising 32 %",
+            "Median cost per hire: £3,500 senior, £2,000 other employees"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Applying H3 to a case",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "1. Analyse the job description: key tasks, competencies, context (country, level)."
+        },
+        {
+          "kind": "item",
+          "text": "2. Recruitment: target pool, channels, internal option, message (inform AND attract), cost."
+        },
+        {
+          "kind": "item",
+          "text": "3. Selection: build a method-by-criterion grid – each requirement covered, each method justified on validity, reliability and practicability."
+        },
+        {
+          "kind": "item",
+          "text": "4. Close with cost-effectiveness and fit with the employer brand."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Recruitment",
+          "text": "Activities that attract a pool of suitable candidates for a vacancy."
+        },
+        {
+          "kind": "item",
+          "term": "Selection",
+          "text": "Applying techniques to choose the most suitable candidate(s) from the pool."
+        },
+        {
+          "kind": "item",
+          "term": "Validity",
+          "text": "The degree to which a selection method measures what it is meant to measure – i.e. predicts job performance."
+        },
+        {
+          "kind": "item",
+          "term": "Reliability",
+          "text": "The consistency of a method's results across raters, occasions and candidates."
+        },
+        {
+          "kind": "item",
+          "term": "Practicability",
+          "text": "Whether a method is feasible: cost, time, administrative effort, candidate acceptance, legality."
+        },
+        {
+          "kind": "item",
+          "term": "Person–organisation fit",
+          "text": "Compatibility between a person's values and goals and those of the organisation."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Why might the same firm (Inditex) need different recruitment strategies for positions in different countries?"
+        }
+      ]
+    }
+  ]
+}

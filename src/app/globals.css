@@ -171,3 +171,57 @@ body {
     transition: none;
   }
 }
+
+/* Folien-Look (subject.look = "slides", z. B. HR): weißes Folienblatt mit lila Rahmen, lila Schrift und
+   gelber Titelbox wie in den ESCP-Vorlesungsfolien. Das Blatt bleibt auch im Dark Mode hell (wie eine
+   projizierte Folie), daher werden die Farbvariablen innerhalb von .slide überschrieben. */
+.slide {
+  --slide-frame: #3b2182;
+  --slide-gold: #fec33f;
+  --slide-navy: #2f4b76;
+  --surface: #ffffff;
+  --surface-2: #f3f0fa;
+  --ink: #3b2182;
+  --ink-2: #4a3d78;
+  --muted: #776c99;
+  --line: #e4def3;
+  --line-strong: #cbc1e6;
+  --good: #16865b;
+  --bad: #b0124f;
+  --accent: #3b2182;
+  color-scheme: light;
+  color: var(--ink);
+  background: #fdfffd;
+  border: 7px solid var(--slide-frame);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.slide-title {
+  display: inline-block;
+  background: var(--slide-gold);
+  border: 1.5px solid var(--slide-frame);
+  color: var(--slide-frame);
+  font-family: var(--font-montserrat), var(--font-inter), sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  padding: 0.35rem 1rem;
+  text-wrap: balance;
+}
+
+/* Titelfolie: lila Fläche, goldene Serifen-Überschrift */
+.slide-cover {
+  background: #3a2082;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
+.slide-cover-title {
+  color: var(--slide-gold, #fec33f);
+  font-family: "Didot", "Bodoni 72", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-wrap: balance;
+}

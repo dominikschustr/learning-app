@@ -1,0 +1,63 @@
+[
+  {
+    "type": "short",
+    "id": "sa-h5-01",
+    "lecture": "h5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Why are many organizations dropping traditional performance appraisals (Cappelli & Tavis, 2016)?",
+    "modelAnswer": "Three core arguments: (1) the return of people development – firms must grow talent and need frequent coaching rather than a yearly backward-looking rating; (2) the need for agility – annual goals become obsolete quickly, so firms use short-term goals and frequent check-ins; (3) the centrality of teamwork – individual ratings and rankings undermine collaboration, while work is done in teams. In addition, forced distribution has well-known disadvantages: demotivation of the middle, infighting, admin cost, horse-trading, no value for diversity, short-termism. Firms still need decisions on pay and promotion, so they replace rather than abolish evaluation.",
+    "keyPoints": [
+      "Development",
+      "Agility",
+      "Teamwork",
+      "Forced distribution problems"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h5-02",
+    "lecture": "h5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What must a performance theory specify before an organization can measure performance (Latham, Sulsky & Macdonald, 2007)?",
+    "modelAnswer": "(a) The relevant performance dimensions; (b) the performance standards or expectations associated with each performance level; (c) how situational constraints should be weighted, if at all; (d) the number of performance levels or gradients; (e) whether performance is judged against absolute standards or by relative comparison with others. Without these, manager and employee can disagree about what “good performance” means, as in the role play.",
+    "keyPoints": [
+      "Five elements a–e",
+      "Link to disagreements/role play"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h5-03",
+    "lecture": "h5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Analyse Pixelwerk's performance management system. What behaviours does it encourage and why does it fail?",
+    "modelAnswer": "The system measures quantitative output (code, tickets, deadlines) for both groups, once a year, with a forced ranking. Behaviour: R&D avoids risk because failures lower ratings – exactly the opposite of the innovation it needs (key problem: lack of innovation, like Beach House); live-ops stops cooperating because colleagues are rivals on the curve (infighting, reduced collaboration). Forced distribution also demotivates the middle and invites horse-trading. In Latham et al.'s terms, performance dimensions are not defined per job, and relative standards replace absolute ones. The system serves accountability only, not development or communication.",
+    "keyPoints": [
+      "Quantitative annual metrics + forced ranking",
+      "R&D risk-avoidance vs innovation need",
+      "Live-ops collaboration loss",
+      "Purpose/performance definition missing"
+    ],
+    "case": "mc-pixel"
+  },
+  {
+    "type": "short",
+    "id": "sa-h5-04",
+    "lecture": "h5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Design a new performance management system for Pixelwerk.",
+    "modelAnswer": "Purpose: development and communication first, accountability for pay decisions separately. Segment the system, because the A-Team-style R&D cannot be managed like the “Tweakers”: R&D – autonomy, qualitative indicators (quality of experiments, learning, ideas tested), team goals, frequent peer and lead feedback, protection for failed experiments; live-ops – clearer quantitative indicators (stability, response times, player satisfaction) combined with team goals to restore cooperation. Replace the forced curve with absolute standards and continuous check-ins (Cappelli & Tavis); decouple developmental conversations from the annual pay decision. Analyse externalities: count of experiments could be gamed; tickets closed can reduce quality – so combine indicators and judgement.",
+    "keyPoints": [
+      "States purpose",
+      "Segments R&D vs live-ops with justification",
+      "Qualitative vs quantitative indicators",
+      "Drops forced ranking, continuous feedback",
+      "Externalities considered"
+    ],
+    "case": "mc-pixel"
+  }
+]

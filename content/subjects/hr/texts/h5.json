@@ -1,0 +1,147 @@
+{
+  "lecture": "h5",
+  "title": "H5 – Performance management",
+  "source": "Zusammenfassung von Session 4 und 5 „Performance management“ (Cappelli & Tavis, 2016; Beach-House-Fall)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Before measuring, define performance: dimensions, standards, situational constraints, number of levels and absolute vs relative comparison (Latham et al., 2007)."
+        },
+        {
+          "kind": "item",
+          "text": "Evaluation systems shape behaviour: team grades encourage cooperation (and free riding), rankings encourage competition (and stop sharing)."
+        },
+        {
+          "kind": "item",
+          "text": "Firms drop traditional annual appraisals because of the return of people development, the need for agility and the centrality of teamwork (Cappelli & Tavis, 2016)."
+        },
+        {
+          "kind": "item",
+          "text": "Forced distribution demotivates the middle, causes infighting and horse-trading, costs time, ignores diversity and fosters short-termism."
+        },
+        {
+          "kind": "item",
+          "text": "Design a PM system from its purpose (accountability, development, communication) and from the nature of the work – innovators cannot be managed like routine workers."
+        },
+        {
+          "kind": "item",
+          "text": "PM has limits: not everything valuable can be measured, and every metric has externalities."
+        }
+      ]
+    },
+    {
+      "heading": "Frameworks at a glance",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Performance theory (Latham, Sulsky & Macdonald, 2007)",
+          "children": [
+            "(a) dimensions (b) standards (c) situational constraints (d) number of levels (e) absolute vs relative"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Cappelli & Tavis (2016)",
+          "children": [
+            "Return of people development",
+            "Need for agility",
+            "Centrality of teamwork",
+            "+ disadvantages of forced distribution"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Forced distribution: disadvantages",
+          "children": [
+            "Demotivates the middle · infighting · admin cost · horse-trading · no diversity · short-termism"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Purposes (Lussier & Hendon, 2016)",
+          "children": [
+            "Accountability · development · communication"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Beach House design choices",
+          "children": [
+            "Key problem: lack of innovation",
+            "Value-adding activities?",
+            "Autonomy vs control and structure",
+            "A Team vs Tweakers: same system?",
+            "Qualitative vs quantitative indicators",
+            "Externalities"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Applying H5 to a case",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "1. Diagnose: what is the business problem the PM system must solve (e.g. innovation, quality, cooperation)?"
+        },
+        {
+          "kind": "item",
+          "text": "2. Define performance for each group with (a)–(e)."
+        },
+        {
+          "kind": "item",
+          "text": "3. Choose the purpose and design accordingly (frequency, raters, indicators, link to pay)."
+        },
+        {
+          "kind": "item",
+          "text": "4. Predict behaviour and externalities – what will people stop doing?"
+        },
+        {
+          "kind": "item",
+          "text": "5. Link to rewards carefully: PRP depends entirely on the PM system."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Performance management",
+          "text": "The continuous process of defining, measuring, discussing and developing employee performance in line with organisational goals."
+        },
+        {
+          "kind": "item",
+          "term": "Performance appraisal",
+          "text": "The formal (often annual) evaluation of an employee's performance."
+        },
+        {
+          "kind": "item",
+          "term": "Forced distribution",
+          "text": "Ranking employees on a fixed curve (e.g. top 20 %, middle 70 %, bottom 10 %)."
+        },
+        {
+          "kind": "item",
+          "term": "Horse-trading",
+          "text": "Lobbying and trading favours before performance reviews."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "What is pushing organizations to drop traditional performance appraisals – and what do they still need ratings for?"
+        },
+        {
+          "kind": "item",
+          "text": "Are there limits to performance management? (Video “Humanize”.)"
+        }
+      ]
+    }
+  ]
+}

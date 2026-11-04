@@ -1,0 +1,181 @@
+[
+  {
+    "id": "pfp-pros-cons",
+    "lecture": "h7",
+    "name": "Pay for performance: pros and cons",
+    "origin": "Dahl & Pierce (2020)",
+    "purpose": "Why do organizations use PFP – and what does it cost them?",
+    "parts": [
+      { "label": "Why organizations use it", "points": ["Associated with higher performance (directing effort, motivating)", "Attracts higher performers, encourages low performers to leave"] },
+      { "label": "Costs it can generate", "points": ["Competition and reduced cooperation", "Stress and poorer employee health", "Burnout, disengagement, reduced motivation, turnover"] }
+    ],
+    "apply": ["Weigh both columns with case evidence before recommending to keep, change or drop PFP"],
+    "pitfalls": [],
+    "example": "",
+    "visual": { "type": "versus" }
+  },
+  {
+    "id": "pfp-uncertainty",
+    "lecture": "h7",
+    "name": "The uncertainty mechanism",
+    "origin": "Sayre, Corgnet, Hernán González & Gächter (2026), MIT Sloan Management Review",
+    "purpose": "Why does PFP harm employees? The problem is pay uncertainty, not PFP itself.",
+    "parts": [
+      { "label": "Uncertainty", "points": ["About what is rewarded and how much I will earn"] },
+      { "label": "Insecurity", "points": ["Financial insecurity, tunnel vision on earnings"] },
+      { "label": "Overwork", "points": ["Neglected recovery – people kept working even when pay became negligible"] },
+      { "label": "Stress & burnout", "points": [] }
+    ],
+    "apply": ["Ask: how is PRP designed here, and what uncertainty does that design create?"],
+    "pitfalls": ["Limits: lab experiments (5 studies, 1,400+ people, simple tasks, random token pay) – applying them to a sales team is an inference"],
+    "example": "Experiment: same average pay – a certain 12 tokens per correct answer vs an uncertain 1–23 tokens. The uncertain group worked longer and reported more stress.",
+    "visual": { "type": "flow" }
+  },
+  {
+    "id": "clear-smooth-secure",
+    "lecture": "h7",
+    "name": "Keep the benefits, reduce the costs: Clear, Smooth, Secure",
+    "origin": "Sayre et al. (2026)",
+    "purpose": "How can organizations keep the benefits of PRP while reducing its costs?",
+    "parts": [
+      { "label": "1. Make the rules clear", "points": ["Define goals/KPIs and bonus criteria in advance", "Discuss expectations with employees", "Frequent feedback so employees know where they stand", "→ less uncertainty about WHAT is rewarded"] },
+      { "label": "2. Smooth variable income", "points": ["Evaluate performance over longer periods", "Team/company-level rather than purely individual outcomes", "Reduce short-term fluctuations in earnings"] },
+      { "label": "3. Reduce financial insecurity", "points": ["Increase the proportion of base pay", "Less dependence on uncertain PRP", "→ less uncertainty about HOW MUCH employees earn"] }
+    ],
+    "apply": ["Turn each fix into a concrete change for the case firm (two detailed recommendations are typical exam tasks)"],
+    "pitfalls": ["Recommending “more base pay” without saying what happens to the performance focus"],
+    "example": "National Office Supplies: written bonus criteria for all offices (clear); replace the monthly top-seller prize and roll-over with annual results plus an office team share (smooth); turn Jeff's pot into a real London allowance (secure).",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "collective-pfp",
+    "lecture": "h7",
+    "name": "Collective pay for performance",
+    "origin": "Nyberg et al. (2020) – meta-analysis of 106 studies",
+    "purpose": "Does paying for collective outcomes (team PRP, gainsharing, profit sharing, stock options) work?",
+    "parts": [
+      { "label": "Benefits", "points": ["Positive overall relationship with collective outcomes (ρ = .11): financial, operational, behavioural", "Common goals, knowledge sharing, cooperation and coordination – especially where work is interdependent"] },
+      { "label": "Drawbacks", "points": ["Trade-off between alignment and line of sight: the further the reward from what I influence, the weaker effort → performance → my reward", "Free riding, perceived inequity", "Conflicting individual & team incentives", "Teams optimizing at the expense of the wider organization"] }
+    ],
+    "apply": ["Recommend collective PRP when work is interdependent; keep teams small or add individual recognition to protect line of sight"],
+    "pitfalls": [],
+    "example": "Scotland office (National Office Supplies): pot split equally – no uncertainty, but free-riding risk and little reason to stand out.",
+    "visual": { "type": "versus" }
+  },
+  {
+    "id": "groysberg",
+    "lecture": "h7",
+    "name": "How to pay? Decisions to be made",
+    "origin": "Groysberg (2021)",
+    "purpose": "Which design decisions make up a compensation system?",
+    "parts": [
+      { "label": "Fixed vs variable", "points": ["Security vs incentive"] },
+      { "label": "Short-term vs long-term", "points": ["Annual bonus vs deferred, multi-year"] },
+      { "label": "Cash vs equity", "points": ["Liquidity vs ownership and alignment"] },
+      { "label": "Individual vs collective goals", "points": ["Line of sight vs cooperation"] }
+    ],
+    "apply": ["Position the case's current package on each axis, then argue where it should move and why – always naming the trade-off"],
+    "pitfalls": ["Answering only “how much” – the question is “what for” and “how”"],
+    "example": "",
+    "visual": { "type": "sliders" }
+  },
+  {
+    "id": "comp-tradeoffs",
+    "lecture": "h7",
+    "name": "Trade-offs in compensation design",
+    "origin": "Groysberg (2021)",
+    "purpose": "Three criteria every reward system must balance.",
+    "parts": [
+      { "label": "Direction", "points": ["Does it promote the desired behaviour?", "Effectiveness"] },
+      { "label": "Fairness", "points": ["Is it perceived as fair (internal, external, procedural)?"] },
+      { "label": "Workability", "points": ["Can it be administered, explained, afforded?", "Value for money"] }
+    ],
+    "apply": ["Assess the case's system on all three corners; a fix for one corner usually costs another (e.g. precise individual targets: direction ↑, workability ↓)"],
+    "pitfalls": ["Analysing only direction (motivation) and forgetting fairness and workability"],
+    "example": "",
+    "visual": { "type": "triangle" }
+  },
+  {
+    "id": "herzberg",
+    "lecture": "h7",
+    "name": "Herzberg's two-factor model",
+    "origin": "Herzberg",
+    "purpose": "Why “rewards & compensation are different things”: pay can remove dissatisfaction, but rarely creates satisfaction.",
+    "parts": [
+      { "label": "Hygiene factors", "points": ["Company policy", "Supervision", "Relationship with superiors", "Work conditions", "Compensation", "Relationship with peers", "→ factors leading to DISsatisfaction"] },
+      { "label": "Motivators", "points": ["Achievement", "Recognition", "Work itself (meaning, challenge)", "Responsibility", "Advancement, growth", "→ factors leading to satisfaction"] }
+    ],
+    "apply": [
+      "Check whether hygiene is fixed first (competitive pay, decent conditions)",
+      "Then recommend motivators – recognition, responsibility, growth – not just more money"
+    ],
+    "pitfalls": ["Saying pay motivates in Herzberg – compensation is a hygiene factor"],
+    "example": "Scotland office: “great boss”, regular contact, recognition, get-togethers → motivators work despite weak pay link.",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "equity-theory",
+    "lecture": "h7",
+    "name": "Equity theory",
+    "origin": "Adams (1963) – named in the National Office Supplies case questions",
+    "purpose": "Is pay perceived as fair? People compare their outcome/input ratio with others'.",
+    "parts": [
+      { "label": "Inputs", "points": ["Effort, skills, experience, time"] },
+      { "label": "Outcomes", "points": ["Pay, bonus, recognition, status"] },
+      { "label": "Comparison", "points": ["My outcomes/inputs vs a referent's outcomes/inputs"] },
+      { "label": "Reaction to inequity", "points": ["Reduce effort, ask for more, distort perceptions, change referent, leave"] }
+    ],
+    "apply": ["Find the referents in the case (other offices, colleagues, competitors) and the perceived inequity – then predict the reaction"],
+    "pitfalls": [],
+    "example": "Administrators unofficially getting part of the pot; a rep saying the package trails competitors; the London administrator job-hunting.",
+    "visual": { "type": "flow" }
+  },
+  {
+    "id": "pay-transparency",
+    "lecture": "h7",
+    "name": "Pay transparency",
+    "origin": "Session 7",
+    "purpose": "What should employees have a right to know about pay?",
+    "parts": [
+      { "label": "Low", "points": ["Pay is confidential; employees know little about how pay is determined"] },
+      { "label": "Process transparency", "points": ["How jobs are valued", "Salary bands/ranges", "Criteria for increases and bonuses", "How to progress through the range"] },
+      { "label": "Outcome transparency", "points": ["Pay ranges for different jobs", "Average pay for comparable employees", "Gender pay gaps"] },
+      { "label": "Full transparency", "points": ["Individual salaries are visible"] }
+    ],
+    "apply": ["Place the case firm on the scale and recommend a level – process transparency is the minimum for clear PRP rules"],
+    "pitfalls": [],
+    "example": "Share of job postings with salary information has risen since 2020 in the UK, France, Netherlands and sharply in Italy (Indeed data).",
+    "visual": { "type": "spectrum", "x": ["Low", "Full transparency"] }
+  },
+  {
+    "id": "eu-directive",
+    "lecture": "h7",
+    "name": "The EU pay transparency directive",
+    "origin": "EU Directive 2023/970",
+    "purpose": "Issue for any manager: can we explain and justify why different people are paid differently?",
+    "parts": [
+      { "label": "Before recruitment", "points": ["Applicants receive the starting pay or range before employment", "Employers cannot ask about salary history"] },
+      { "label": "During employment", "points": ["Employees can request their pay level + average pay by sex for comparable work", "Criteria for pay and progression accessible and gender-neutral"] },
+      { "label": "Organizational accountability", "points": ["Gender pay-gap reporting for employers with 100+ employees", "≥ 5 % unexplained gap in a category can trigger a joint pay assessment", "Greater enforcement and accountability"] }
+    ],
+    "apply": ["Check whether the case's pay practices (discretion, secret pots, no criteria) could be explained and justified under the directive"],
+    "pitfalls": [],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "reward-types",
+    "lecture": "h7",
+    "name": "Types of rewards",
+    "origin": "Rewards & compensation are different things",
+    "purpose": "Which reward levers exist beyond money?",
+    "parts": [
+      { "label": "Compensation (financial)", "points": ["Base pay, allowances", "Variable pay: individual PRP, team bonus, profit sharing, equity", "Benefits"] },
+      { "label": "Non-financial rewards", "points": ["Recognition, praise", "Development and advancement", "Responsibility, meaningful work", "Social events, relationships"] }
+    ],
+    "apply": ["Classify every reward in the case; recommend a mix – financial for hygiene and direction, non-financial as motivators"],
+    "pitfalls": [],
+    "example": "",
+    "visual": { "type": "pillars" }
+  }
+]

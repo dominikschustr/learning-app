@@ -1,0 +1,142 @@
+{
+  "lecture": "h2",
+  "title": "H2 – Sustainable HRM",
+  "source": "Zusammenfassung von Session 1, Teil „Sustainable HRM“ (Folien 19–26, Festing; Stahl et al., 2020)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Sustainable HRM (Ehnert et al., 2016) adopts HR strategies and practices that achieve financial, social and ecological goals, inside and outside the organisation, over the long term, while controlling for unintended side effects."
+        },
+        {
+          "kind": "item",
+          "text": "The triple bottom line (Elkington, 1997) – social, ecological, financial – is the lens: sustainable HRM is about managing trade-offs between the three."
+        },
+        {
+          "kind": "item",
+          "text": "Compared with strategic HRM, the sustainable philosophy looks beyond the firm's boundaries, is longer-term, combines top-down and bottom-up control, is integrated with operations, proactive and activist, and treats the three performances as equally important."
+        },
+        {
+          "kind": "item",
+          "text": "Firms adopt sustainable HRM for compliance, instrumental/strategic or mission-led reasons (Stahl et al., 2020); only the last two go beyond the law."
+        },
+        {
+          "kind": "item",
+          "text": "HR can harm by commission (actively contributing to a problem) and by omission (failing to prevent one) (Brewster & Brookes, 2024)."
+        }
+      ]
+    },
+    {
+      "heading": "Frameworks at a glance",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Definition (Ehnert et al., 2016)",
+          "children": [
+            "Triple goals · inside & outside · long term · control of side effects"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Triple bottom line (Elkington, 1997)",
+          "children": [
+            "Social – people & community",
+            "Ecological – environmental impact",
+            "Financial – profitability & investments"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Strategic vs sustainable HRM philosophy",
+          "children": [
+            "Own organisation → also communities",
+            "Short → long term",
+            "Top-down → top-down + bottom-up",
+            "Low → high integration",
+            "Reactive → proactive & activist",
+            "Implementer → initiates and sustains change",
+            "Financial first → all three equal"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Reasons (Stahl et al., 2020)",
+          "children": [
+            "Compliance: avoid sanctions, ethical obligations",
+            "Instrumental: fit strategy, attract talent, impress investors",
+            "Mission-led: do the right thing, consistency with values"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Practices by dimension (Stahl et al., 2020)",
+          "children": [
+            "Financial: ESOPs, long-term leadership development, retention, TBL incentives for managers",
+            "Ecological: hire for sustainability values, link green behaviour to promotion, eco-education",
+            "Social: volunteering, healthy work environment, health investments, no child/forced labour in the supply chain, decent pay"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Sins of commission and omission (Brewster & Brookes, 2024)",
+          "children": [
+            "Commission: excessive pressure, biased algorithms, precarious contracts, extreme pay gaps, layoffs for short-term profit",
+            "Omission: ignoring harassment, pay inequality, unsafe conditions, discrimination in promotion, not reskilling workers threatened by AI"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Applying H2 to a case",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Score each HR option on the three TBL dimensions and name the trade-off explicitly."
+        },
+        {
+          "kind": "item",
+          "text": "Check the four elements of the definition: is the effect long-term, does it reach outside the firm, is there an unintended side effect?"
+        },
+        {
+          "kind": "item",
+          "text": "Identify the firm's motive (compliance, instrumental, mission) – it tells you how far the firm will go and how to sell your recommendation."
+        },
+        {
+          "kind": "item",
+          "text": "Look for sins of omission – what HR tolerates is easy to miss in a case text."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Sustainable HRM",
+          "text": "HRM strategies and practices that enable financial, social and ecological goals, inside and outside the organisation, over a long-term horizon, while controlling for unintended side effects and negative feedback (Ehnert et al., 2016)."
+        },
+        {
+          "kind": "item",
+          "term": "Triple bottom line",
+          "text": "Corporate performance measured on social (people), ecological (planet) and financial (profit) dimensions (Elkington, 1997)."
+        },
+        {
+          "kind": "item",
+          "term": "Sin of commission / omission",
+          "text": "HR contributes actively to a harmful outcome / HR fails to prevent a harmful outcome (Brewster & Brookes, 2024)."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Brainstorm: name three HR practices that create a sustainability trade-off (e.g. AI-based recruitment: financial + but social − through bias; remote work: ecological + but social ±)."
+        }
+      ]
+    }
+  ]
+}

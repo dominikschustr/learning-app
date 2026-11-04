@@ -80,7 +80,10 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             href: `${base}/frameworks#${chapterId}`,
             icon: LayoutGrid,
             title: "Frameworks",
-            text: "Steckbriefe zum Auswendiglernen, mit Abfrage-Modus",
+            text:
+              subject.look === "slides"
+                ? "Framework-Folien mit Diagrammen, Vorgehen im Case und Abfrage-Modus"
+                : "Steckbriefe zum Auswendiglernen, mit Abfrage-Modus",
             meta: "Übersicht",
           },
         ]
@@ -90,9 +93,12 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           {
             href: `${base}/c/${chapterId}/text`,
             icon: ScrollText,
-            title: "Nachlesen",
-            text: "Key Messages, Definitionen & Denkanstöße zum Nachlesen",
-            meta: "Originaltext",
+            title: subject.look === "slides" ? "Zusammenfassung" : "Nachlesen",
+            text:
+              subject.look === "slides"
+                ? "Key Messages, alle Frameworks des Kapitels und Vorgehen im Case"
+                : "Key Messages, Definitionen & Denkanstöße zum Nachlesen",
+            meta: subject.look === "slides" ? "Kapitel auf einen Blick" : "Originaltext",
           },
         ]
       : []),

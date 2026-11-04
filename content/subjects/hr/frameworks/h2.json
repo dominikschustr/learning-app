@@ -1,0 +1,153 @@
+[
+  {
+    "id": "sustainable-hrm",
+    "lecture": "h2",
+    "name": "Sustainable HRM – definition",
+    "origin": "Ehnert et al. (2016, p. 90)",
+    "purpose": "What makes an HRM strategy “sustainable”? Four elements of the definition.",
+    "parts": [
+      { "label": "Triple goals", "points": ["Financial, social and ecological goals"] },
+      { "label": "Inside & outside", "points": ["Impact inside and outside the organization"] },
+      { "label": "Long term", "points": ["Over a long-term time horizon"] },
+      { "label": "Side effects", "points": ["Controlling for unintended side effects and negative feedback"] }
+    ],
+    "apply": [
+      "Test a proposed HR practice against all four elements",
+      "Name the unintended side effect explicitly (e.g. cost cut → workload → burnout → turnover)"
+    ],
+    "pitfalls": ["Equating sustainable HRM with “green HRM” only – the social and financial goals count too"],
+    "example": "“Adoption of HRM strategies and practices that enable the achievement of financial, social and ecological goals, with an impact inside and outside of the organization and over a long-term time horizon while controlling for unintended side effects and negative feedback.”",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "tbl",
+    "lecture": "h2",
+    "name": "Triple Bottom Line",
+    "origin": "Elkington (1997)",
+    "purpose": "Which three dimensions does corporate sustainability – and sustainable HRM – have to balance?",
+    "parts": [
+      { "label": "Social", "points": ["People & community"] },
+      { "label": "Ecological", "points": ["Environmental impact"] },
+      { "label": "Financial", "points": ["Profitability & investments"] }
+    ],
+    "apply": [
+      "Score each HR option on the three dimensions (+ / 0 / −)",
+      "Identify the trade-off: which dimension pays for the gain in another?",
+      "Recommend the options that balance the three, or that mitigate the losing dimension"
+    ],
+    "pitfalls": ["Only listing benefits – the exercise is about trade-offs (e.g. AI recruitment: cheaper but biased)"],
+    "example": "HR Director exercise (fast fashion): freezing recruitment saves money (financial +) but raises workloads (social −); a living wage in the supply chain is social + but costly; reskilling (€5m) is costly short term but social + and financial + long term.",
+    "visual": { "type": "venn" }
+  },
+  {
+    "id": "strategic-vs-sustainable",
+    "lecture": "h2",
+    "name": "Strategic HRM vs sustainable HRM philosophy",
+    "origin": "Kramar (2014); Macke & Genari (2019); Ren & Jackson (2020); Stahl et al. (2020)",
+    "purpose": "Is sustainable HRM a new approach to people management? Seven contrasts.",
+    "parts": [
+      {
+        "label": "Strategic HRM philosophy",
+        "points": [
+          "Responsibility focuses on own organization",
+          "Shorter-term orientation",
+          "Top-down control",
+          "Low integration with business operations",
+          "Reactive or responsive HR function",
+          "Change agent focused on implementation",
+          "Financial performance is the most important goal"
+        ]
+      },
+      {
+        "label": "Sustainable HRM philosophy",
+        "points": [
+          "Beyond own boundaries: communities and other organizations",
+          "Longer-term orientation",
+          "Top-down + bottom-up control",
+          "High integration with business operations",
+          "Proactive & activist HR function",
+          "Initiating, guiding and sustaining change",
+          "Environmental, social and financial performance of equal importance"
+        ]
+      }
+    ],
+    "apply": [
+      "Place the case firm's HR function on each of the seven contrasts",
+      "Argue which shift would matter most for the case problem"
+    ],
+    "pitfalls": ["Presenting sustainable HRM as anti-business – financial performance still counts, just not alone"],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "reasons-sustainable",
+    "lecture": "h2",
+    "name": "Reasons for sustainable HRM",
+    "origin": "Stahl et al. (2020)",
+    "purpose": "Why do companies implement sustainable HRM practices (and refrain from unsustainable ones)?",
+    "parts": [
+      { "label": "Compliance-related", "points": ["Avoid legal sanctions", "Fulfil ethical obligations to society"] },
+      { "label": "Instrumental / strategic", "points": ["Complement business model and strategy", "Attract talent", "Impress investors", "→ beyond laws"] },
+      { "label": "Mission-led / values-driven", "points": ["Do the “right” thing", "Consistency with mission and values", "→ beyond laws"] }
+    ],
+    "apply": [
+      "Identify the firm's motive – it predicts how far the practice will go",
+      "Compliance = minimum; instrumental and mission-led go beyond regulations and laws"
+    ],
+    "pitfalls": ["Assuming one motive – firms often mix them (e.g. EU pay-transparency compliance + employer branding)"],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "sustainable-practices",
+    "lecture": "h2",
+    "name": "Sustainable HRM practices by dimension",
+    "origin": "Stahl et al. (2020)",
+    "purpose": "Which concrete HR practices serve each dimension of the triple bottom line?",
+    "parts": [
+      {
+        "label": "Financial",
+        "points": ["Employee stock-ownership programmes", "Leadership development: long-term investment in employees", "Talent retention", "Triple-bottom-line incentives in managerial pay"]
+      },
+      {
+        "label": "Ecological",
+        "points": ["Hire employees who embrace sustainability goals", "Link green behaviour to promotion", "Employee education on eco-friendly practices"]
+      },
+      {
+        "label": "Social",
+        "points": ["Company-sponsored volunteering", "Positive social and physical work environment", "Invest in physical and psychological health", "Eliminate child and forced labour in the supply chain", "Decent pay"]
+      }
+    ],
+    "apply": [
+      "Pick practices from each column to build a balanced recommendation",
+      "Show the trade-off each one creates (brainstorm task: 3 HR practices with a sustainability trade-off)"
+    ],
+    "pitfalls": ["Listing practices without linking them to the case problem"],
+    "example": "",
+    "visual": { "type": "pillars" }
+  },
+  {
+    "id": "sins",
+    "lecture": "h2",
+    "name": "Sins of commission and omission",
+    "origin": "Brewster & Brookes (2024)",
+    "purpose": "How can HR harm people – by what it does and by what it fails to do?",
+    "parts": [
+      {
+        "label": "Commission – HR contributes to a problem",
+        "points": ["Excessive performance pressure", "Algorithmically biased recruitment", "Precarious contracts", "Extreme executive/employee pay gaps", "Layoffs purely to raise short-term profitability"]
+      },
+      {
+        "label": "Omission – HR fails to prevent a problem",
+        "points": ["Ignoring harassment", "Failing to address pay inequality", "Not challenging unsafe working conditions", "Ignoring discrimination in promotion", "Failing to develop workers whose jobs are threatened by AI"]
+      }
+    ],
+    "apply": [
+      "Scan the case for both: what HR actively does wrong, and what it tolerates",
+      "Recommend a fix for each sin – omission is often the easier one to miss"
+    ],
+    "pitfalls": ["Only criticizing active decisions – silence and inaction count as well"],
+    "example": "",
+    "visual": { "type": "pillars" }
+  }
+]

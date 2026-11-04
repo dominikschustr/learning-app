@@ -1,0 +1,82 @@
+[
+  {
+    "type": "short",
+    "id": "sa-h6-01",
+    "lecture": "h6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain Vroom's expectancy theory and use it to explain when performance-related pay motivates.",
+    "modelAnswer": "Motivation depends on three beliefs: expectancy – effort leads to performance (“if I try harder I will do better”); instrumentality – performance leads to the reward (“if I do better I will be rewarded”); valence – the reward is valued. Motivation is high only if all three are strong (multiplicative). PRP motivates when employees control their results (expectancy), when the rules linking performance and pay are clear and reliably applied (instrumentality), and when the reward is meaningful to them (valence). It fails when results depend on luck, rivals or the boss's discretion, when criteria are unclear, or when sums are small or unwanted.",
+    "keyPoints": [
+      "Three links defined",
+      "All three needed",
+      "Conditions for PRP",
+      "Failure conditions"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h6-02",
+    "lecture": "h6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What are the practical problems with PRP? Illustrate with the financial sector and the Vatican.",
+    "modelAnswer": "Performance identification and measurement (what is performance – Vatican's “dedication, professionalism, productivity and politeness” are hard to measure); appraisal bias (subjective supervisor ratings invite favouritism); need for precision (small rating errors lead to big pay differences); contingency and contiguity (the reward must clearly depend on performance and follow it closely in time – in banking, losses appear years after the bonus, so short-term risk-blind results were rewarded; Stiglitz: bankers were paid to gamble); administration cost. In the Vatican there is also a cultural clash with mission-driven motivation. PRP schemes are totally dependent on performance management systems.",
+    "keyPoints": [
+      "Five problems",
+      "Financial sector: contiguity/short-term, risk",
+      "Vatican: measurement, culture",
+      "Dependence on PM"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h6-03",
+    "lecture": "h6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Should SwiftParcel introduce pay per parcel? Use the reasons why PRP might work and the practical problems.",
+    "modelAnswer": "Conditions are close to Safelite: output is countable per courier at low cost (app tracking), couriers work alone and control their effort, failures can be traced to the individual (so quality can be protected by not paying for failed/damaged deliveries), and a guaranteed minimum limits downside risk. Mechanisms: motivation (strong expectancy and instrumentality), focused effort (agency – less supervision needed), sorting (faster couriers join and stay). Risks: demand varies by weather and district, which couriers do not control – allocate districts fairly or adjust rates; safety (speeding) and stress from uncertainty – keep a solid base wage; quality must be measured alongside quantity. Recommendation: yes, a piece rate with guaranteed minimum, quality condition and fair district rotation.",
+    "keyPoints": [
+      "Measurement and control conditions met",
+      "Mechanisms (motivation, agency, sorting)",
+      "Risks: uncontrollable demand, safety, uncertainty",
+      "Design: floor, quality, fairness"
+    ],
+    "case": "mc-courier"
+  },
+  {
+    "type": "short",
+    "id": "sa-h6-04",
+    "lecture": "h6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Would the nurses' bonus work? Evaluate with expectancy theory and the conditions for PRP.",
+    "modelAnswer": "Weak. Expectancy: patients treated per shift depends on patient mix and team allocation, not mainly on the nurse's effort. Instrumentality: the supervisor rating of “dedication and friendliness” is subjective → appraisal bias and doubts that performance will be rewarded. Valence: intrinsically motivated nurses may value the bonus less, and extrinsic rewards can crowd out their motivation. The measure does not match the real goal (quality of care) – rewarding A (speed) while hoping for B (care) – and teamwork is ignored. Better: secure base pay, team-level recognition, development and skill-based pay steps, quality indicators only as a threshold.",
+    "keyPoints": [
+      "Expectancy weak (patient mix)",
+      "Instrumentality weak (subjective rating)",
+      "Valence/crowding out",
+      "Measure ≠ goal, team work",
+      "Alternative"
+    ],
+    "case": "mc-hospital"
+  },
+  {
+    "type": "short",
+    "id": "sa-h6-05",
+    "lecture": "h6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the pay difference between Sophie and Mark with Renard's “what to pay for”. Is it justified?",
+    "modelAnswer": "Internal consistency: Mark's job covers two countries and a works council – more complexity and responsibility → justified part of the gap (job evaluation should confirm it). External competitiveness: Mark was hired in a tight labour market (supply and demand, market pricing) – explains but does not permanently justify the gap once the market eases; internal promotion of Sophie may have anchored her lower. Individual contributions: both “exceeds expectations” – no performance reason. Individual characteristics: if negotiation style or gender explain the rest, the allocation is unwise or illegal. Under the EU pay transparency directive, an unexplained gap ≥ 5 % in a category can trigger a joint pay assessment, so the firm must be able to explain and justify the 18 %. Recommendation: evaluate both jobs, benchmark, and adjust Sophie if the jobs are of equal value.",
+    "keyPoints": [
+      "Internal consistency part",
+      "External competitiveness part",
+      "No individual contribution difference",
+      "Individual characteristics / legality",
+      "EU directive and recommendation"
+    ],
+    "case": "mc-paygap"
+  }
+]

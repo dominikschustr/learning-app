@@ -1,0 +1,158 @@
+{
+  "lecture": "h1",
+  "title": "H1 – What is HRM? Roles, HR cycle and core principles",
+  "source": "Zusammenfassung von Session 1 „Introduction to HRM“ (Folien 1–19, 27–38)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "HRM is the management of people at work. It has a double role: strategic business partner AND employee advocate – two sides of one role (yin-yang), not a choice."
+        },
+        {
+          "kind": "item",
+          "text": "HR work spans administrative, operational and transformational (strategic) activities, increasingly supported by data analytics."
+        },
+        {
+          "kind": "item",
+          "text": "HRM is done by ALL managers, not only by the HR department – line managers run most HR practices day to day."
+        },
+        {
+          "kind": "item",
+          "text": "The individual HR cycle (Boxall & Purcell, 2008) links staffing, development, performance management, rewards and exit: practices only work if they fit together."
+        },
+        {
+          "kind": "item",
+          "text": "Core principles moved from control (monitor, narrow jobs, piece rates) to commitment (trust, teams, development). Two schools explain what works: best practice (Pfeffer, 1998) vs best fit (contingency)."
+        },
+        {
+          "kind": "item",
+          "text": "The Harvard Model (Beer et al., 1984) is the stakeholder map of HRM: stakeholder interests and situational factors shape policy choices, which produce HR outcomes and long-term consequences for individuals, the organisation and society."
+        }
+      ]
+    },
+    {
+      "heading": "Frameworks at a glance",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "HR roles",
+          "children": [
+            "Administrative → operational → transformational → data analytics",
+            "Strategic business partner + employee advocate"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Individual HR cycle (Boxall & Purcell)",
+          "children": [
+            "Employer branding → staffing (job analysis, recruitment, selection, induction) → training & development, performance management, compensation & rewards → discipline & dismissal"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Why bother?",
+          "children": [
+            "Human capital theory: skills are an investment",
+            "RBV: people capabilities can be a sustained advantage",
+            "Impact on individual, environmental and societal well-being"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Control vs commitment",
+          "children": [
+            "Control: Bentham's Panopticon, Ford, call centres – value through monitoring and low labour cost",
+            "Commitment: value through trust; Japanese production model (Womack et al., 1990)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Best practice (Pfeffer, 1998)",
+          "children": [
+            "Employment security · selective hiring · self-managed teams · high pay contingent on company performance · extensive training · reduced status differences · information sharing"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Best fit (Jackson & Schuler, 1984)",
+          "children": [
+            "Matching model: tight fit between HR and context – what works depends on the organisation"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Harvard Model (Beer et al., 1984)",
+          "children": [
+            "Stakeholder interests + situational factors → HRM policy choices (employee influence, HR flow, reward systems, work systems) → HR outcomes (commitment, competence, congruence, cost-effectiveness) → long-term consequences (individual, organisational, societal well-being), with feedback loops"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Applying H1 to a case",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Start with the Harvard Model as the structure of a case answer: who are the stakeholders, what is the context, which policy choice is at stake, which outcomes and consequences follow?"
+        },
+        {
+          "kind": "item",
+          "text": "Use control vs commitment to diagnose the firm's philosophy – and ask whether it fits the work (routine vs knowledge work)."
+        },
+        {
+          "kind": "item",
+          "text": "Use best practice vs best fit whenever a firm wants to copy one site's or one company's practices: argue for principles that travel and designs that are adapted."
+        },
+        {
+          "kind": "item",
+          "text": "Check the line manager: in most cases the HR problem is created or solved by a manager, not by the HR department."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Human capital theory",
+          "text": "Employees' knowledge and skills are capital: investing in them (training, selection) raises productivity and returns."
+        },
+        {
+          "kind": "item",
+          "term": "Resource-based view",
+          "text": "Sustained competitive advantage comes from resources that are valuable, rare and hard to imitate – people and the way they are managed can be such resources."
+        },
+        {
+          "kind": "item",
+          "term": "Universalism (best practice)",
+          "text": "One bundle of HR practices improves performance in every organisation (Pfeffer, 1998)."
+        },
+        {
+          "kind": "item",
+          "term": "Contingency (best fit)",
+          "text": "The most effective way of managing people varies with the organisation's context; HR must fit strategy and environment."
+        },
+        {
+          "kind": "item",
+          "term": "4 Cs (Harvard Model)",
+          "text": "HR outcomes: commitment, competence, congruence (of goals) and cost-effectiveness."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "HR Director exercise: a fast-fashion firm (10,000 employees) must cut labour costs by 12 % while becoming a sustainability leader – which two options would you choose, and which stakeholders win or lose?"
+        },
+        {
+          "kind": "item",
+          "text": "Find a modern example of a control system (algorithmic management, warehouse tracking). What are its side effects?"
+        }
+      ]
+    }
+  ]
+}

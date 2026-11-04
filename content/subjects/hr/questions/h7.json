@@ -1,0 +1,83 @@
+[
+  {
+    "type": "short",
+    "id": "sa-h7-01",
+    "lecture": "h7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the mechanism through which pay for performance can harm employees according to Sayre et al. (2026), and their three recommendations.",
+    "modelAnswer": "The problem is not PFP itself but the uncertainty it creates: uncertainty about what is rewarded and how much one will earn → financial insecurity and tunnel vision → overwork and neglected recovery → stress and burnout. In experiments with the same average pay, the group with uncertain pay (1–23 tokens) kept working even when pay became negligible and reported more stress than the group with certain pay (12 tokens). Recommendations: (1) make the rules clear – goals, KPIs and bonus criteria in advance, discussed with employees, frequent feedback; (2) smooth variable income – evaluate over longer periods, use team/company outcomes, reduce short-term fluctuations; (3) reduce financial insecurity – increase the share of base pay, make employees less dependent on uncertain PRP.",
+    "keyPoints": [
+      "Uncertainty as cause",
+      "Chain to stress/burnout",
+      "Experimental evidence",
+      "Clear",
+      "Smooth",
+      "Secure"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h7-02",
+    "lecture": "h7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain Herzberg's two-factor model. What does it imply for reward design?",
+    "modelAnswer": "Herzberg distinguishes hygiene factors – company policy, supervision, relationship with superiors and peers, work conditions and compensation – whose absence leads to dissatisfaction, from motivators – achievement, recognition, the work itself, responsibility, advancement and growth – which lead to satisfaction. Pay is a hygiene factor: adequate, fair pay removes dissatisfaction but does not by itself create motivation. Implication: “rewards and compensation are different things” – first get compensation right (competitive, fair), then use non-financial rewards (recognition, responsibility, development, meaningful work) to motivate.",
+    "keyPoints": [
+      "Hygiene factors incl. compensation",
+      "Motivators",
+      "Dissatisfaction vs satisfaction",
+      "Implication for reward mix"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-h7-03",
+    "lecture": "h7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Analyse Vendex's compensation design with direction, fairness and workability (Groysberg, 2021) and Sayre et al.'s uncertainty mechanism.",
+    "modelAnswer": "Direction: strong push for bookings, but towards the wrong performance – short-term volume, not customer retention (churn doubled) or cooperation (no lead sharing); relative ranking adds competition. Fairness: discretionary lead redistribution makes outcomes depend on the director, not effort; ranking against colleagues feels unfair. Workability: simple to calculate, but costly through burnout, churn and turnover. Uncertainty: 60 % variable, quarterly, relative and discretionary pay creates high uncertainty about what is rewarded and how much → boom-and-bust quarters, overwork, burnout, as Sayre et al. predict. Expectancy is weakened by lead allocation.",
+    "keyPoints": [
+      "Direction: wrong behaviours (churn, no sharing)",
+      "Fairness: discretion, ranking",
+      "Workability incl. hidden costs",
+      "Uncertainty mechanism applied"
+    ],
+    "case": "mc-salesteam"
+  },
+  {
+    "type": "short",
+    "id": "sa-h7-04",
+    "lecture": "h7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Recommend two specific changes to Vendex's reward system and justify them with the course.",
+    "modelAnswer": "1. Clear and secure: raise base pay to ~60–70 % and publish written commission rules with a transparent, rule-based lead allocation (Sayre: reduce uncertainty about what is rewarded and how much; Groysberg: fixed vs variable; expectancy theory: restores instrumentality and expectancy). 2. Smooth and aligned: measure annually (or rolling 12 months) and include customer retention/12-month revenue, plus a team component for shared leads (Sayre: smooth income; collective PFP: cooperation, Nyberg et al., 2020; long-term vs short-term). Keep individual recognition so line of sight is not lost. Trade-off: some loss of pure short-term sales push, in exchange for lower burnout and churn.",
+    "keyPoints": [
+      "Change 1 with justification",
+      "Change 2 with justification",
+      "Course references",
+      "Trade-off acknowledged"
+    ],
+    "case": "mc-salesteam"
+  },
+  {
+    "type": "short",
+    "id": "sa-h7-05",
+    "lecture": "h7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What level of pay transparency would you recommend for the engineering firm, and what does the EU pay transparency directive require?",
+    "modelAnswer": "The firm is at the “low” end: pay is confidential and set individually. The directive requires: before recruitment, applicants receive the starting pay or range, and employers cannot ask about salary history (the current interview practice must stop); during employment, employees can request their individual pay and average pay by sex for comparable work, and pay criteria must be accessible and gender-neutral; firms with 100+ employees report gender pay gaps, and an unexplained gap ≥ 5 % in a category (here 9 %) can trigger a joint pay assessment. Recommendation: move at least to process transparency (job evaluation, published salary bands, criteria for increases) and partial outcome transparency (ranges, gap reporting), and correct the unexplained 9 % gap. This improves perceived fairness (equity theory) – the key question being whether the firm can explain and justify why people are paid differently.",
+    "keyPoints": [
+      "Current level: low",
+      "Directive: before recruitment",
+      "Directive: during employment",
+      "Accountability: reporting, ≥ 5 % rule",
+      "Recommendation and fairness argument"
+    ],
+    "case": "mc-transparency"
+  }
+]

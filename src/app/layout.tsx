@@ -1,10 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
+/** Titel im Folien-Look (HR), wie in den ESCP-Slides; nicht vorladen, da nur dort gebraucht */
+const montserrat = Montserrat({ variable: "--font-montserrat", subsets: ["latin"], weight: ["700"], preload: false });
 
 export const metadata: Metadata = {
   title: { default: "Lernwerk", template: "%s · Lernwerk" },
@@ -27,7 +29,7 @@ const themeScript = `(function(){try{var t=localStorage.getItem("lernwerk-theme"
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="de" suppressHydrationWarning className={`${inter.variable} h-full antialiased`}>
+    <html lang="de" suppressHydrationWarning className={`${inter.variable} ${montserrat.variable} h-full antialiased`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>

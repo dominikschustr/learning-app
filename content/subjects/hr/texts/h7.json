@@ -1,0 +1,170 @@
+{
+  "lecture": "h7",
+  "title": "H7 – Rewards II: how to pay",
+  "source": "Zusammenfassung von Session 7 „Rewards and compensation part 2“ (Sayre et al., 2026; Groysberg, 2021; National Office Supplies)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "PFP can raise performance and attract high performers, but it can also cause competition, stress, burnout and turnover (Dahl & Pierce, 2020)."
+        },
+        {
+          "kind": "item",
+          "text": "The harm comes from pay uncertainty: uncertainty → insecurity → overwork and neglected recovery → stress and burnout (Sayre et al., 2026). Fix it with clear rules, smoothed variable income and more financial security."
+        },
+        {
+          "kind": "item",
+          "text": "Collective PFP is positively related to collective outcomes (Nyberg et al., 2020) but trades alignment against line of sight and risks free riding."
+        },
+        {
+          "kind": "item",
+          "text": "How to pay (Groysberg, 2021): fixed vs variable, short vs long term, cash vs equity, individual vs collective – balancing direction, fairness and workability."
+        },
+        {
+          "kind": "item",
+          "text": "Herzberg: compensation is a hygiene factor; rewards and compensation are different things."
+        },
+        {
+          "kind": "item",
+          "text": "Pay transparency ranges from confidential to full; the EU directive requires firms to explain and justify why people are paid differently."
+        }
+      ]
+    },
+    {
+      "heading": "Frameworks at a glance",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Uncertainty mechanism (Sayre et al., 2026)",
+          "children": [
+            "Uncertainty → insecurity → overwork → stress & burnout"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Clear, Smooth, Secure",
+          "children": [
+            "Clear: KPIs and criteria in advance, frequent feedback",
+            "Smooth: longer periods, team/company outcomes",
+            "Secure: higher base pay share"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Collective PFP (Nyberg et al., 2020)",
+          "children": [
+            "106 studies, ρ = .11",
+            "Alignment vs line of sight; free riding, inequity, conflicting incentives"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Groysberg (2021)",
+          "children": [
+            "Fixed vs variable · short vs long term · cash vs equity · individual vs collective",
+            "Trade-offs: direction · fairness · workability"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Herzberg's two-factor model",
+          "children": [
+            "Hygiene: policy, supervision, relations, conditions, compensation",
+            "Motivators: achievement, recognition, work itself, responsibility, growth"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Equity theory (Adams)",
+          "children": [
+            "Compare own outcome/input ratio with a referent's"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Pay transparency",
+          "children": [
+            "Low → process → outcome → full transparency",
+            "EU directive: pay ranges before hiring, no salary-history questions, right to information, gap reporting (100+ employees), ≥ 5 % unexplained gap → joint pay assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Applying H7 to a case (National Office Supplies)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "1. Analyse reward practices with the course frameworks",
+          "children": [
+            "What to pay for: internal consistency, external competitiveness, individual contributions",
+            "Compensation design: direction, fairness, workability",
+            "Expectancy, Herzberg, equity theory",
+            "Types of rewards: financial and non-financial"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "2. Recommend two specific changes and justify them with the course",
+          "children": [
+            "e.g. written bonus criteria for all offices (clear) and an office-level team share instead of a monthly winner (smooth)",
+            "e.g. turn the discretionary London pot into a secure London allowance (secure)"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "London (Jeff): strong but volume-only link to performance, high uncertainty and discretion – “pay for performance without certainty”. Scotland (Nicola): equal split, recognition and contact – “certainty without pay for performance”."
+        },
+        {
+          "kind": "item",
+          "text": "Critical points: the sums are modest, the experiments used simple lab tasks, the case shows no direct burnout evidence – and Scotland's equal split risks free riding."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Pay uncertainty",
+          "text": "Uncertainty about what performance will be rewarded and how much an employee will earn."
+        },
+        {
+          "kind": "item",
+          "term": "Line of sight",
+          "text": "How clearly an employee sees the connection between own effort, performance and reward."
+        },
+        {
+          "kind": "item",
+          "term": "Collective PFP",
+          "text": "Pay contingent on collective outcomes: team PRP, gainsharing, profit sharing, stock options."
+        },
+        {
+          "kind": "item",
+          "term": "Hygiene factors / motivators",
+          "text": "Factors whose absence causes dissatisfaction / factors whose presence creates satisfaction (Herzberg)."
+        },
+        {
+          "kind": "item",
+          "term": "Process vs outcome transparency",
+          "text": "Employees know how pay is determined / employees know the resulting pay levels and gaps."
+        }
+      ]
+    },
+    {
+      "heading": "To go further",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "What should employees have a right to know about pay?"
+        },
+        {
+          "kind": "item",
+          "text": "Summary: two key questions on rewards – “what for” and “how to pay” (not merely “how much”); PRP is common but controversial and depends on the PM system."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mc-courier",
+    "title": "Mini-case: SwiftParcel couriers",
+    "text": [
+      "SwiftParcel pays its 2,000 bike couriers a flat hourly wage. Management considers paying per delivered parcel instead, with a guaranteed minimum hourly wage. Deliveries are tracked by app; failed or damaged deliveries can be traced to the courier. Couriers work alone; demand varies by weather and district."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-hospital",
+    "title": "Mini-case: bonuses for nurses",
+    "text": [
+      "A public hospital wants to introduce individual bonuses for nurses based on “patients treated per shift” and a supervisor rating of “dedication and friendliness”. Nurses work in rotating teams, patient needs vary greatly, and many nurses say they chose the job “to help people”."
+    ],
+    "tables": []
+  },
+  {
+    "id": "mc-paygap",
+    "title": "Mini-case: two HR business partners",
+    "text": [
+      "Sophie and Mark are both HR business partners in the same company. Mark earns 18 % more. Mark's role covers two countries and a works council, Sophie's one country. Mark was hired two years ago when the labour market was tight and negotiated hard; Sophie was promoted internally. Both received “exceeds expectations” ratings."
+    ],
+    "tables": []
+  }
+]
