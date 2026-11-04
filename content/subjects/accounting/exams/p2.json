@@ -3,6 +3,11 @@
     "id": "exam-2023",
     "title": "Final exam 2023 (Nachbau)",
     "subtitle": "Wie die Abschlussklausur CM01 vom 20.11.2023: 75 Punkte, 75 Minuten, open book. Abschlussauszüge sind nachgebildet, weil sie im Original nur als Bild vorliegen.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Abschlussklausur IFRS (CM01) vom 20.11.2023",
+      "faithful": true
+    },
     "minutes": 75,
     "parts": [
       {

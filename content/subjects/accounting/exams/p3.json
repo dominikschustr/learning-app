@@ -3,6 +3,11 @@
     "id": "exam-2019",
     "title": "Final exam 2019 (Nachbau, aktueller Stoff)",
     "subtitle": "Nach der Klausur vom April 2019 mit offiziellen Lösungen – nur die Aufgaben zu Themen, die heute noch im Stoff sind (Bilanz, Konsolidierung, Impairment, Multiple Choice).",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "IFRS-Klausur April 2019",
+      "faithful": false
+    },
     "minutes": 60,
     "parts": [
       {

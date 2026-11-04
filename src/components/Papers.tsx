@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, CheckCircle2, Clock, FileText, Flag, Play } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Clock, FileText, Flag, History, Play } from "lucide-react";
 import Link from "next/link";
 import { createPaperExam } from "@/lib/exam";
 import { paperItems, type Paper, type SubjectContent } from "@/lib/schema";
@@ -59,6 +59,29 @@ function partPoints(paper: Paper) {
   }));
 }
 
+/** „2 Nachbauten von Altklausuren · 3 neue Klausuren“ für die Fach-Übersicht. */
+export function paperCountLabel(papers: { kind: Paper["origin"]["kind"] }[]): string {
+  const alt = papers.filter((p) => p.kind === "altklausur").length;
+  const neu = papers.length - alt;
+  return [
+    alt && `${alt} ${alt === 1 ? "Nachbau einer Altklausur" : "Nachbauten von Altklausuren"}`,
+    neu && `${neu} ${neu === 1 ? "neue Klausur" : "neue Klausuren"}`,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+}
+
+/** Label, ob eine Klausur einer echten Altklausur nachgebaut oder neu ist. */
+export function OriginChip({ paper }: { paper: Paper }) {
+  const { kind, faithful } = paper.origin;
+  if (kind === "neu") return <Chip>Neu · eigene Klausur</Chip>;
+  return (
+    <Chip className={faithful ? "border-good/30 bg-good-soft text-good" : "border-warn/30 bg-warn-soft text-warn"}>
+      <History className="size-3.5" /> Nachbau · {faithful ? "nah am Original" : "angepasst"}
+    </Chip>
+  );
+}
+
 /** Auswahl der Probeklausuren eines Fachs (ersetzt den zufälligen Abschlusstest). */
 export function PaperList({ content }: { content: SubjectContent }) {
   const { subject, papers } = content;
@@ -78,6 +101,17 @@ export function PaperList({ content }: { content: SubjectContent }) {
         und Punkten. Kein Feedback bis zur Abgabe; danach siehst du deine Punkte pro Teil und jede Lösung.
       </p>
 
+      <div className="mt-5 grid gap-2 text-sm text-ink-2 sm:grid-cols-2">
+        <p className="rounded-xl border border-line bg-surface p-3">
+          <span className="font-semibold text-ink">Nachbau</span> – nach einer echten Altklausur: gleicher Aufbau, gleiche
+          Aufgaben, Themen und Punkte, in eigenen Worten. „Angepasst“ heißt, einzelne Aufgaben wurden ersetzt oder gekürzt.
+        </p>
+        <p className="rounded-xl border border-line bg-surface p-3">
+          <span className="font-semibold text-ink">Neu</span> – eigene Klausur im selben Format mit neuen Fällen aus dem
+          Vorlesungsstoff, ohne Vorlage.
+        </p>
+      </div>
+
       <ul className="mt-6 space-y-2 text-sm text-ink-2">
         <li className="flex gap-2">
           <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-muted" /> Achte auf „select all that apply“ (mehrere richtig) vs.
@@ -93,8 +127,15 @@ export function PaperList({ content }: { content: SubjectContent }) {
         </li>
       </ul>
 
-      <div className="mt-8 grid gap-4">
-        {papers.map((p, i) => {
+      {(["altklausur", "neu"] as const).map((kind) => {
+        const group = papers.filter((p) => p.origin.kind === kind);
+        if (!group.length) return null;
+        return (
+          <section key={kind} className="mt-10">
+            <h2 className="display text-2xl">{kind === "altklausur" ? "Nachbauten von Altklausuren" : "Neue Klausuren"}</h2>
+            <div className="mt-4 grid gap-4">
+        {group.map((p) => {
+          const i = papers.indexOf(p);
           const done = allExams.filter((e) => e.subjectId === subject.id && e.paper === p.id);
           const best = done.reduce((b, e) => Math.max(b, examScore(e).score), 0);
           const parts = partPoints(p);
@@ -105,9 +146,13 @@ export function PaperList({ content }: { content: SubjectContent }) {
                 <div className="min-w-0">
                   <p className="eyebrow">Klausur {i + 1}</p>
                   <h2 className="mt-1 text-lg font-semibold leading-snug">{p.title}</h2>
+                  {p.origin.exam && (
+                    <p className="mt-1 text-sm font-medium text-ink-2">Vorlage: {p.origin.exam}</p>
+                  )}
                   {p.subtitle && <p className="mt-1 text-sm text-muted">{p.subtitle}</p>}
                 </div>
                 <div className="flex flex-wrap gap-2">
+                  <OriginChip paper={p} />
                   {done.length > 0 && <Chip>Bestwert {fmtPoints(best * max)} / {fmtPoints(max)} P. · {pct(best)}</Chip>}
                 </div>
               </div>
@@ -133,7 +178,10 @@ export function PaperList({ content }: { content: SubjectContent }) {
             </div>
           );
         })}
-      </div>
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }

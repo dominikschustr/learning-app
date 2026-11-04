@@ -56,6 +56,16 @@ export const PaperSchema = z.object({
   id,
   title: z.string().min(1),
   subtitle: z.string().default(""),
+  /** Herkunft: Nachbau einer echten Altklausur (mit Vorlage) oder neue Konzeptklausur */
+  origin: z
+    .object({
+      kind: z.enum(["altklausur", "neu"]),
+      /** Vorlage, z. B. „Abschlussklausur CM01, 20.11.2023“ (nur bei Altklausuren) */
+      exam: z.string().default(""),
+      /** true: gleiche Aufgaben wie im Original; false: Aufgaben ersetzt, gekürzt oder zusammengelegt */
+      faithful: z.boolean().default(true),
+    })
+    .default({ kind: "neu", exam: "", faithful: true }),
   minutes: z.number().int().positive(),
   parts: z
     .array(
@@ -251,7 +261,7 @@ export type SubjectSummary = {
   /** Kapitel, für die eine Formelübersicht hinterlegt ist */
   formulas: string[];
   /** Probeklausuren (nur Kopfdaten) */
-  papers: { id: string; title: string; points: number }[];
+  papers: { id: string; title: string; points: number; kind: Paper["origin"]["kind"] }[];
 };
 
 /** Prüft Querverweise, die zod allein nicht sieht. Gibt Fehlermeldungen zurück. */
@@ -271,6 +281,7 @@ export function checkContent({ subject, questions, cards, cases, papers }: Subje
   const questionIds = new Set(questions.map((q) => q.id));
   if (new Set(papers.map((p) => p.id)).size !== papers.length) errors.push("doppelte Klausur-ids");
   for (const p of papers) {
+    if (p.origin.kind === "altklausur" && !p.origin.exam) errors.push(`${p.id}: Nachbau ohne Vorlage (origin.exam)`);
     const ids = paperItems(p).map((i) => i.q);
     if (new Set(ids).size !== ids.length) errors.push(`Klausur ${p.id}: Frage doppelt`);
     for (const q of ids) if (!questionIds.has(q)) errors.push(`Klausur ${p.id}: unbekannte Frage "${q}"`);

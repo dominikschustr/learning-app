@@ -8,6 +8,7 @@ import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { LevelBadge } from "./ChapterView";
+import { paperCountLabel } from "./Papers";
 import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
 import { alpha, cn, pct } from "@/lib/utils";
@@ -274,7 +275,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
                 </span>
                 <span className="block font-semibold sm:text-lg">
                   {summary.papers.length
-                    ? `${summary.papers.length} Klausuren im Aufbau der Altklausuren`
+                    ? paperCountLabel(summary.papers)
                     : `Fragen aus allen ${st.lectures.length} Kapiteln`}
                 </span>
                 <span className="mt-0.5 block text-xs opacity-70">

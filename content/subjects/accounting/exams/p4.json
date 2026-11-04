@@ -3,6 +3,9 @@
     "id": "concept-a",
     "title": "Konzeptklausur A",
     "subtitle": "Neue Aufgaben im Aufbau der Klausur 2024: Konsolidierung mit 80 % und NCI, CGU-Impairment mit Untergrenze, IFRS-16-Leasing, Multiple Choice, Fremd-/Eigenkapital und KPIs.",
+    "origin": {
+      "kind": "neu"
+    },
     "minutes": 75,
     "parts": [
       {

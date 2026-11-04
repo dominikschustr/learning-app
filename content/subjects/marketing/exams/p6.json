@@ -3,6 +3,9 @@
     "id": "concept-c",
     "title": "Konzeptklausur C",
     "subtitle": "Neue Aufgaben: Umfragedaten & CX-Kennzahlen, Conjoint mit einem Befragten, Regression mit Dummies, Mini-Case Lumo (Trend Canvas, Cluster, GE/McKinsey, Datenethik).",
+    "origin": {
+      "kind": "neu"
+    },
     "minutes": 90,
     "parts": [
       {

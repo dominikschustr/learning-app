@@ -3,6 +3,9 @@
     "id": "concept-a",
     "title": "Konzeptklausur A",
     "subtitle": "Neue Aufgaben im Aufbau der Probeklausuren: Regression (CoffeeCo), Value-in-Use (LED-Lampen), Trendanalyse, Mini-Case FitHub (BCG, CLV, Conjoint).",
+    "origin": {
+      "kind": "neu"
+    },
     "minutes": 90,
     "parts": [
       {

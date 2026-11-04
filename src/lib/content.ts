@@ -161,6 +161,11 @@ export function getSummaries(): SubjectSummary[] {
     texts: getTexts(subject.id).map((t) => t.lecture),
     frameworks: [...new Set(getFrameworks(subject.id).map((f) => f.lecture))],
     formulas: [...new Set(getFormulas(subject.id).map((f) => f.lecture))],
-    papers: papers.map((p) => ({ id: p.id, title: p.title, points: paperItems(p).reduce((s, i) => s + i.points, 0) })),
+    papers: papers.map((p) => ({
+      id: p.id,
+      title: p.title,
+      points: paperItems(p).reduce((s, i) => s + i.points, 0),
+      kind: p.origin.kind,
+    })),
   }));
 }

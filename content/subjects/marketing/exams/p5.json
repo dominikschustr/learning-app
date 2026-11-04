@@ -3,6 +3,9 @@
     "id": "concept-b",
     "title": "Konzeptklausur B",
     "subtitle": "Neue Aufgaben: A/B-Tests & Fehlerarten, Clusteranalyse StreamCo, Social Listening Airlines, Mini-Case GreenBite (Kohorten-CLV, Akquisition, CRM).",
+    "origin": {
+      "kind": "neu"
+    },
     "minutes": 90,
     "parts": [
       {

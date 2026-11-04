@@ -3,6 +3,11 @@
     "id": "mock-revision",
     "title": "Mock exam aus der Revision Session (Nachbau)",
     "subtitle": "Die in der Vorlesung besprochene Probeklausur: A/B-Testing, Shopping-Center-Cluster, H&M-Regression, Conjoint Ralph × Fortnite.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Mock exam aus der Revision Session",
+      "faithful": true
+    },
     "minutes": 90,
     "parts": [
       {

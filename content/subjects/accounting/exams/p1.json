@@ -3,6 +3,11 @@
     "id": "exam-2024",
     "title": "Final exam 2024 (Nachbau)",
     "subtitle": "Wie die Abschlussklausur CM01 2024: 5 unabhängige Teile, 60 Punkte, 75 Minuten, Unterlagen erlaubt. Teil 5 nutzt einen fiktiven Konzernabschluss statt Ubisoft.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Abschlussklausur IFRS (CM01) 2024",
+      "faithful": false
+    },
     "minutes": 75,
     "parts": [
       {

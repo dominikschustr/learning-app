@@ -1,8 +1,11 @@
 [
   {
     "id": "p3",
-    "title": "Probeklausur 3 (neu)",
+    "title": "Konzeptklausur",
     "subtitle": "A new paper in the exam format with fresh numbers across all eight lectures: 15 multiple-choice questions and 7 calculation exercises.",
+    "origin": {
+      "kind": "neu"
+    },
     "minutes": 120,
     "parts": [
       {

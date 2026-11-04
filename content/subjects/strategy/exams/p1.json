@@ -3,6 +3,11 @@
     "id": "p1",
     "title": "Final exam December 2023 (Nachbau)",
     "subtitle": "Die Originalklausur: Fallstudie Insight Timer mit sechs offenen Fragen zu Five Forces, VRIO, PESTEL, vertikaler Integration, Internationalisierung und Identität. Fall gekürzt zusammengefasst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Exam Strategy Main Track, Dezember 2023",
+      "faithful": true
+    },
     "minutes": 120,
     "parts": [
       {
