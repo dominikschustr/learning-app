@@ -2,8 +2,9 @@
 
 import { AlertTriangle, ArrowLeft, ArrowRight, Eye, EyeOff, FileCheck2 } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import type { Formula, Subject } from "@/lib/schema";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import type { Subject } from "@/lib/schema";
+import type { RenderedFormula } from "@/lib/tex";
 import { alpha, cn } from "@/lib/utils";
 import { FormulaText } from "./FormulaText";
 import { Button } from "./ui";
@@ -11,7 +12,7 @@ import { Button } from "./ui";
 type Filter = "all" | "memorize";
 
 /** Formelübersicht eines Fachs nach Kapiteln – mit Abfrage-Modus, der die Formeln verdeckt. */
-export function FormulaOverview({ subject, formulas }: { subject: Subject; formulas: Formula[] }) {
+export function FormulaOverview({ subject, formulas }: { subject: Subject; formulas: RenderedFormula[] }) {
   const [quiz, setQuiz] = useState(false);
   const [filter, setFilter] = useState<Filter>("all");
   const [shown, setShown] = useState<Set<string>>(new Set());
@@ -156,14 +157,14 @@ function FormulaCard({
   quiz,
   onToggle,
 }: {
-  f: Formula;
+  f: RenderedFormula;
   color: string;
   hidden: boolean;
   quiz: boolean;
   onToggle: () => void;
 }) {
   return (
-    <article id={f.id} className="card scroll-mt-32 p-5 sm:p-6" style={{ borderLeft: `4px solid ${color}` }}>
+    <article id={f.id} className="card scroll-mt-32 p-5 sm:p-6">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <h3 className="text-lg font-semibold">{f.name}</h3>
         {f.sheet ? (
@@ -190,21 +191,17 @@ function FormulaCard({
         </div>
       ) : (
         <>
-          <div
-            className="mt-4 overflow-x-auto rounded-2xl px-4 py-3.5 font-serif text-lg leading-loose sm:text-xl"
-            style={{ background: alpha(color, 0.06) }}
-          >
-            <FormulaText text={f.formula} className="whitespace-pre-line" />
-          </div>
-          {f.vars.length > 0 && (
-            <ul className="mt-3 grid gap-x-6 gap-y-1 text-sm text-ink-2 sm:grid-cols-2">
-              {f.vars.map((v) => (
-                <li key={v}>
-                  <FormulaText text={v} />
-                </li>
-              ))}
-            </ul>
-          )}
+          <FittedFormula html={f.html} background={alpha(color, 0.06)} />
+          <dl className="mt-4 grid grid-cols-[auto_1fr] items-baseline gap-x-4 gap-y-2 text-sm">
+            {f.vars.map((v) => (
+              <div key={v.symbol} className="contents">
+                <dt className="text-right text-base text-ink" dangerouslySetInnerHTML={{ __html: v.html }} />
+                <dd className="leading-relaxed text-ink-2">
+                  <FormulaText text={v.meaning} />
+                </dd>
+              </div>
+            ))}
+          </dl>
           {f.pitfall && (
             <p className="mt-3 flex gap-2 text-sm leading-relaxed text-ink-2">
               <AlertTriangle className="mt-0.5 size-4 shrink-0 text-bad" />
@@ -221,5 +218,33 @@ function FormulaCard({
         </>
       )}
     </article>
+  );
+}
+
+/** Formel im getönten Kasten; ist sie breiter als der Platz (Handy), wird sie bis auf 70 % verkleinert, danach scrollt sie. */
+function FittedFormula({ html, background }: { html: string; background: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const fit = () => {
+      el.style.fontSize = "";
+      const s = getComputedStyle(el);
+      const pad = parseFloat(s.paddingLeft) + parseFloat(s.paddingRight);
+      const ratio = (el.clientWidth - pad) / (el.scrollWidth - pad);
+      if (ratio < 1) el.style.fontSize = `${parseFloat(s.fontSize) * Math.max(ratio * 0.98, 0.7)}px`;
+    };
+    fit();
+    void document.fonts.ready.then(fit);
+    window.addEventListener("resize", fit);
+    return () => window.removeEventListener("resize", fit);
+  }, [html]);
+  return (
+    <div
+      ref={ref}
+      className="formula mt-4 overflow-x-auto rounded-2xl px-3 py-1 text-[0.95rem] sm:px-6 sm:py-2 sm:text-xl"
+      style={{ background }}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   );
 }

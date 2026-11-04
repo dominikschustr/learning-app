@@ -110,6 +110,11 @@ body {
     box-shadow: var(--shadow);
   }
 
+  /* KaTeX-Formeln in der Formelübersicht: Abstand im Kasten, auf dem Handy waagerecht scrollbar */
+  .formula .katex-display {
+    margin: 0.85em 0;
+  }
+
   /* Einheitliche Typo: eine Schrift (Inter), Überschriften & Kennzahlen fett und eng. */
   .display {
     font-weight: 700;

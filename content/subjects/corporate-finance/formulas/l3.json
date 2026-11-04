@@ -3,9 +3,22 @@
     "id": "f-min-var",
     "lecture": "l3",
     "name": "Minimum-variance portfolio (two assets)",
-    "formula": "x_1 = (σ_2^2 − σ_1 σ_2 ρ) / (σ_1^2 + σ_2^2 − 2 σ_1 σ_2 ρ),   x_2 = 1 − x_1",
+    "formula": "\\begin{aligned} x_1 &= \\dfrac{\\sigma_2^2 - \\rho\\, \\sigma_1 \\sigma_2}{\\sigma_1^2 + \\sigma_2^2 - 2\\rho\\, \\sigma_1 \\sigma_2} \\\\[8pt] x_2 &= 1 - x_1 \\end{aligned}",
     "use": "The lowest-risk combination of two stocks.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "x_1,\\ x_2",
+        "meaning": "weights of the minimum-variance portfolio"
+      },
+      {
+        "symbol": "\\sigma_1,\\ \\sigma_2",
+        "meaning": "volatilities of the two stocks"
+      },
+      {
+        "symbol": "\\rho",
+        "meaning": "correlation between the two stocks"
+      }
+    ],
     "pitfall": "Expected returns play no role.",
     "sheet": false
   },
@@ -13,9 +26,22 @@
     "id": "f-zero-risk",
     "lecture": "l3",
     "name": "Risk-free mix when ρ = −1",
-    "formula": "x_1 = σ_2 / (σ_1 + σ_2)  →  σ_p = 0",
+    "formula": "x_1 = \\dfrac{\\sigma_2}{\\sigma_1 + \\sigma_2} \\quad\\Longrightarrow\\quad \\sigma_p = 0",
     "use": "Perfectly negatively correlated assets.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "x_1",
+        "meaning": "weight of asset 1 (asset 2 gets 1 − x₁)"
+      },
+      {
+        "symbol": "\\sigma_1,\\ \\sigma_2",
+        "meaning": "volatilities of the two assets"
+      },
+      {
+        "symbol": "\\sigma_p",
+        "meaning": "volatility of the portfolio"
+      }
+    ],
     "pitfall": "Special case ρ = 0: x_1 = σ_2² / (σ_1² + σ_2²).",
     "sheet": false
   },
@@ -23,10 +49,25 @@
     "id": "f-cal",
     "lecture": "l3",
     "name": "Mixing with the risk-free asset (CAL)",
-    "formula": "E(R) = r_f + x (E(R_P) − r_f)\nσ = x σ_P",
+    "formula": "\\begin{aligned} E(R) &= r_f + x\\, \\big(E(R_P) - r_f\\big) \\\\[6pt] \\sigma &= x\\, \\sigma_P \\end{aligned}",
     "use": "Lending (0 < x < 1) or borrowing (x > 1) combined with a risky portfolio P.",
     "vars": [
-      "x = fraction of own money in P; 1 − x at r_f"
+      {
+        "symbol": "E(R),\\ \\sigma",
+        "meaning": "expected return and volatility of the combination"
+      },
+      {
+        "symbol": "x",
+        "meaning": "fraction of own money in P; 1 − x goes into the risk-free asset"
+      },
+      {
+        "symbol": "r_f",
+        "meaning": "risk-free rate"
+      },
+      {
+        "symbol": "E(R_P),\\ \\sigma_P",
+        "meaning": "expected return and volatility of the risky portfolio P"
+      }
     ],
     "pitfall": "Leverage scales premium and risk in the same proportion – the Sharpe ratio stays.",
     "sheet": false
@@ -35,9 +76,26 @@
     "id": "f-sharpe",
     "lecture": "l3",
     "name": "Sharpe ratio",
-    "formula": "S_P = (E(R_P) − r_f) / σ_P",
+    "formula": "S_P = \\dfrac{E(R_P) - r_f}{\\sigma_P}",
     "use": "Ranking risky portfolios when you can borrow and lend at r_f.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "S_P",
+        "meaning": "Sharpe ratio of portfolio P (excess return per unit of risk)"
+      },
+      {
+        "symbol": "E(R_P)",
+        "meaning": "expected return of P"
+      },
+      {
+        "symbol": "r_f",
+        "meaning": "risk-free rate"
+      },
+      {
+        "symbol": "\\sigma_P",
+        "meaning": "volatility of P"
+      }
+    ],
     "pitfall": "Positive Sharpe = beats r_f in expectation; it says nothing about 'above one'.",
     "sheet": true
   },
@@ -45,9 +103,26 @@
     "id": "f-target",
     "lecture": "l3",
     "name": "Hitting a target risk or return",
-    "formula": "target σ:  x = σ_{target} / σ_T\ntarget return:  x = (E_{target} − r_f) / (E(R_T) − r_f)",
+    "formula": "\\begin{aligned} \\text{target risk:}\\quad x &= \\dfrac{\\sigma_{\\text{target}}}{\\sigma_T} \\\\[8pt] \\text{target return:}\\quad x &= \\dfrac{E_{\\text{target}} - r_f}{E(R_T) - r_f} \\end{aligned}",
     "use": "Beat a given portfolio with the tangency (or market) portfolio.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "x",
+        "meaning": "weight in the tangency portfolio T (x > 1 = borrowing)"
+      },
+      {
+        "symbol": "\\sigma_{\\text{target}},\\ E_{\\text{target}}",
+        "meaning": "volatility / expected return you want to reach"
+      },
+      {
+        "symbol": "\\sigma_T,\\ E(R_T)",
+        "meaning": "volatility / expected return of T"
+      },
+      {
+        "symbol": "r_f",
+        "meaning": "risk-free rate"
+      }
+    ],
     "pitfall": "x > 1 means borrowing (negative risk-free weight).",
     "sheet": false
   }

@@ -5,7 +5,20 @@
     "name": "MM Proposition I",
     "formula": "V_L = E + D = V_U",
     "use": "Perfect capital markets: firm value does not depend on capital structure.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "V_L",
+        "meaning": "value of the levered firm"
+      },
+      {
+        "symbol": "V_U",
+        "meaning": "value of the same firm without debt"
+      },
+      {
+        "symbol": "E,\\ D",
+        "meaning": "market values of equity and debt"
+      }
+    ],
     "pitfall": "Equity value = V_U − D, not the PV of equity cash flows at r_U.",
     "sheet": false
   },
@@ -13,9 +26,26 @@
     "id": "f-avg-cost",
     "lecture": "l7",
     "name": "Average cost stays unchanged",
-    "formula": "E/(E + D) × r_E + D/(E + D) × r_D = r_U",
+    "formula": "\\dfrac{E}{E + D}\\, r_E + \\dfrac{D}{E + D}\\, r_D = r_U",
     "use": "Check any levered return calculation against the unlevered cost.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "E,\\ D",
+        "meaning": "market values of equity and debt"
+      },
+      {
+        "symbol": "r_E",
+        "meaning": "cost of levered equity"
+      },
+      {
+        "symbol": "r_D",
+        "meaning": "cost of debt"
+      },
+      {
+        "symbol": "r_U",
+        "meaning": "unlevered cost of capital"
+      }
+    ],
     "pitfall": "",
     "sheet": false
   },
@@ -23,9 +53,26 @@
     "id": "f-homemade",
     "lecture": "l7",
     "name": "Homemade leverage",
-    "formula": "Replicate x% of levered equity:\nbuy x% of U, borrow x% of D",
+    "formula": "\\begin{aligned} &\\text{replicate } x\\% \\text{ of the levered equity } E\\text{:} \\\\[4pt] &\\text{buy } x\\% \\text{ of } U \\text{ and borrow } x\\% \\text{ of } D \\end{aligned}",
     "use": "Arbitrage argument behind MM I (investors borrow at the firm's rate).",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "x\\%",
+        "meaning": "share of the levered firm you want to own"
+      },
+      {
+        "symbol": "E",
+        "meaning": "equity of the levered firm"
+      },
+      {
+        "symbol": "U",
+        "meaning": "the unlevered firm (its equity = V_U)"
+      },
+      {
+        "symbol": "D",
+        "meaning": "debt of the levered firm (you borrow at the same rate)"
+      }
+    ],
     "pitfall": "",
     "sheet": false
   }

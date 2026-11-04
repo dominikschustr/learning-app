@@ -3,11 +3,29 @@
     "id": "f-alpha",
     "lecture": "l5",
     "name": "Alpha",
-    "formula": "α_i = E(R_i) − [r_f + β_i (E(R_M) − r_f)]",
+    "formula": "\\alpha_i = E(R_i) - \\big[r_f + \\beta_i\\, \\big(E(R_M) - r_f\\big)\\big]",
     "use": "Is a stock over- or undervalued relative to the CAPM?",
     "vars": [
-      "α > 0: above the SML → buy",
-      "α < 0: below the SML → sell"
+      {
+        "symbol": "\\alpha_i",
+        "meaning": "alpha: > 0 = above the SML → buy, < 0 = below the SML → sell"
+      },
+      {
+        "symbol": "E(R_i)",
+        "meaning": "expected return of stock i (your own forecast)"
+      },
+      {
+        "symbol": "r_f",
+        "meaning": "risk-free rate"
+      },
+      {
+        "symbol": "\\beta_i",
+        "meaning": "beta of stock i"
+      },
+      {
+        "symbol": "E(R_M)",
+        "meaning": "expected return of the market"
+      }
     ],
     "pitfall": "Compare a stock with its own required return, not with another stock.",
     "sheet": false
@@ -16,9 +34,26 @@
     "id": "f-alpha-price",
     "lecture": "l5",
     "name": "Price at which alpha is zero",
-    "formula": "P_0 = E(P_1 + Div_1) / (1 + r_{required})",
+    "formula": "P_0 = \\dfrac{E(P_1 + \\mathit{Div}_1)}{1 + r_{\\text{required}}}",
     "use": "Where competition pushes the price of a positive-alpha stock.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "P_0",
+        "meaning": "price today"
+      },
+      {
+        "symbol": "P_1",
+        "meaning": "expected price in one year"
+      },
+      {
+        "symbol": "\\mathit{Div}_1",
+        "meaning": "expected dividend in one year"
+      },
+      {
+        "symbol": "r_{\\text{required}}",
+        "meaning": "required return from the CAPM"
+      }
+    ],
     "pitfall": "",
     "sheet": false
   },
@@ -26,10 +61,37 @@
     "id": "f-multifactor",
     "lecture": "l5",
     "name": "Multi-factor model",
-    "formula": "E(R_i) = r_f + β_M (MKT) + β_S (SMB) + β_V (HML) + β_{Mom} (PR1YR)",
+    "formula": "\\begin{aligned} E(R_i) = r_f &+ \\beta_M\\, \\mathit{MKT} + \\beta_S\\, \\mathit{SMB} \\\\[4pt] &+ \\beta_V\\, \\mathit{HML} + \\beta_{\\mathit{Mom}}\\, \\mathit{PR1YR} \\end{aligned}",
     "use": "Required return including size, value and momentum premiums.",
     "vars": [
-      "each β × its factor premium"
+      {
+        "symbol": "E(R_i)",
+        "meaning": "required return of stock i"
+      },
+      {
+        "symbol": "r_f",
+        "meaning": "risk-free rate"
+      },
+      {
+        "symbol": "\\beta_M,\\ \\beta_S,\\ \\beta_V,\\ \\beta_{\\mathit{Mom}}",
+        "meaning": "sensitivities of i to each factor"
+      },
+      {
+        "symbol": "\\mathit{MKT}",
+        "meaning": "market risk premium E(R_M) − r_f"
+      },
+      {
+        "symbol": "\\mathit{SMB}",
+        "meaning": "size premium: small minus big stocks"
+      },
+      {
+        "symbol": "\\mathit{HML}",
+        "meaning": "value premium: high minus low book-to-market"
+      },
+      {
+        "symbol": "\\mathit{PR1YR}",
+        "meaning": "momentum premium: last year's winners minus losers"
+      }
     ],
     "pitfall": "",
     "sheet": false

@@ -3,9 +3,26 @@
     "id": "f-mm2",
     "lecture": "l8",
     "name": "MM Proposition II",
-    "formula": "r_E = r_U + (D/E)(r_U − r_D)",
+    "formula": "r_E = r_U + \\dfrac{D}{E}\\, (r_U - r_D)",
     "use": "Cost of equity after a change in leverage (no taxes).",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "r_E",
+        "meaning": "cost of levered equity"
+      },
+      {
+        "symbol": "r_U",
+        "meaning": "unlevered cost of capital"
+      },
+      {
+        "symbol": "r_D",
+        "meaning": "cost of debt"
+      },
+      {
+        "symbol": "D/E",
+        "meaning": "debt-to-equity ratio (market values)"
+      }
+    ],
     "pitfall": "Uses D/E, not D/(D + E).",
     "sheet": false
   },
@@ -13,9 +30,26 @@
     "id": "f-wacc-mm",
     "lecture": "l8",
     "name": "WACC without taxes",
-    "formula": "r_{WACC} = E/(E + D) × r_E + D/(E + D) × r_D = r_U",
+    "formula": "\\begin{aligned} r_{\\text{WACC}} &= \\dfrac{E}{E + D}\\, r_E + \\dfrac{D}{E + D}\\, r_D \\\\[8pt] &= r_U \\end{aligned}",
     "use": "The WACC is constant for any leverage when there are no taxes.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "r_{\\text{WACC}}",
+        "meaning": "weighted average cost of capital (no taxes)"
+      },
+      {
+        "symbol": "E,\\ D",
+        "meaning": "market values of equity and debt"
+      },
+      {
+        "symbol": "r_E,\\ r_D",
+        "meaning": "cost of equity and of debt"
+      },
+      {
+        "symbol": "r_U",
+        "meaning": "unlevered cost of capital"
+      }
+    ],
     "pitfall": "Cheap debt is offset by dearer equity.",
     "sheet": false
   },
@@ -23,9 +57,22 @@
     "id": "f-relever",
     "lecture": "l8",
     "name": "Relevering betas (β_D = 0)",
-    "formula": "β_E = β_U (1 + D/E)   ⟺   β_U = β_E / (1 + D/E)",
+    "formula": "\\begin{aligned} \\beta_E &= \\beta_U \\left(1 + \\dfrac{D}{E}\\right) \\\\[8pt] \\Longleftrightarrow\\quad \\beta_U &= \\dfrac{\\beta_E}{1 + D/E} \\end{aligned}",
     "use": "Unlever a comparable, relever to a target structure.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\beta_E",
+        "meaning": "equity beta (levered)"
+      },
+      {
+        "symbol": "\\beta_U",
+        "meaning": "unlevered (asset) beta"
+      },
+      {
+        "symbol": "D/E",
+        "meaning": "debt-to-equity ratio (market values); assumes riskless debt, β_D = 0"
+      }
+    ],
     "pitfall": "Average asset betas across an industry, then relever.",
     "sheet": true
   },
@@ -33,9 +80,26 @@
     "id": "f-beta-mm2",
     "lecture": "l8",
     "name": "Beta version of MM II",
-    "formula": "β_E = β_U + (D/E)(β_U − β_D)",
+    "formula": "\\beta_E = \\beta_U + \\dfrac{D}{E}\\, (\\beta_U - \\beta_D)",
     "use": "Equity beta with risky debt (β_D > 0).",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\beta_E",
+        "meaning": "equity beta (levered)"
+      },
+      {
+        "symbol": "\\beta_U",
+        "meaning": "unlevered (asset) beta"
+      },
+      {
+        "symbol": "\\beta_D",
+        "meaning": "debt beta"
+      },
+      {
+        "symbol": "D/E",
+        "meaning": "debt-to-equity ratio (market values)"
+      }
+    ],
     "pitfall": "",
     "sheet": false
   },
@@ -43,9 +107,22 @@
     "id": "f-convert",
     "lecture": "l8",
     "name": "Converting leverage ratios",
-    "formula": "D/E = w/(1 − w)   with   w = D/(D + E)\nE/(D + E) = 1/(1 + D/E)",
+    "formula": "\\begin{aligned} w &= \\dfrac{D}{D + E} \\\\[8pt] \\dfrac{D}{E} &= \\dfrac{w}{1 - w} \\\\[8pt] \\dfrac{E}{D + E} &= \\dfrac{1}{1 + D/E} \\end{aligned}",
     "use": "Whenever the task gives D/(D + E) but the formula needs D/E (or vice versa).",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "D,\\ E",
+        "meaning": "market values of debt and equity"
+      },
+      {
+        "symbol": "w",
+        "meaning": "debt ratio D / (D + E)"
+      },
+      {
+        "symbol": "D/E",
+        "meaning": "debt-to-equity ratio"
+      }
+    ],
     "pitfall": "D/(D + E) = 0.5 means D/E = 1.",
     "sheet": false
   },
@@ -53,9 +130,26 @@
     "id": "f-ratios",
     "lecture": "l8",
     "name": "Earnings yield and ROE",
-    "formula": "Earnings yield = Earnings / E_{market}\nROE = Earnings / E_{book}",
+    "formula": "\\begin{aligned} \\text{Earnings yield} &= \\dfrac{\\text{Earnings}}{E_{\\text{market}}} \\\\[8pt] \\text{ROE} &= \\dfrac{\\text{Earnings}}{E_{\\text{book}}} \\end{aligned}",
     "use": "Performance ratios that rise with leverage without any value creation.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\text{Earnings}",
+        "meaning": "net income to shareholders"
+      },
+      {
+        "symbol": "E_{\\text{market}}",
+        "meaning": "market value of equity"
+      },
+      {
+        "symbol": "E_{\\text{book}}",
+        "meaning": "book value of equity"
+      },
+      {
+        "symbol": "\\text{ROE}",
+        "meaning": "return on equity"
+      }
+    ],
     "pitfall": "Judge value, not leverage-dependent ratios.",
     "sheet": false
   }

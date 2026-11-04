@@ -73,3 +73,15 @@ describe("Corporate Finance", () => {
     for (const q of cf.questions) if (q.type === "short") for (const r of q.results) expect(Number.isFinite(r.value), q.id).toBe(true);
   });
 });
+
+import { renderFormula } from "@/lib/tex";
+
+describe("Formelübersicht", () => {
+  it("jede Formel ist gültiges LaTeX und erklärt ihre Symbole", () => {
+    for (const c of loadAllContent())
+      for (const f of getFormulas(c.subject.id)) {
+        expect(() => renderFormula(f), f.id).not.toThrow();
+        expect(f.vars.length, f.id).toBeGreaterThan(0);
+      }
+  });
+});

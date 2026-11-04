@@ -3,11 +3,25 @@
     "id": "f-realized-return",
     "lecture": "l1",
     "name": "Realized return (one period)",
-    "formula": "R_{t+1} = (P_{t+1} + Div_{t+1} − P_t) / P_t\n= capital gain rate + dividend yield",
+    "formula": "\\begin{aligned} R_{t+1} &= \\dfrac{P_{t+1} + \\mathit{Div}_{t+1} - P_t}{P_t} \\\\[8pt] &= \\underbrace{\\dfrac{P_{t+1} - P_t}{P_t}}_{\\text{capital gain rate}} + \\underbrace{\\dfrac{\\mathit{Div}_{t+1}}{P_t}}_{\\text{dividend yield}} \\end{aligned}",
     "use": "Return of a stock or bond held between two dates.",
     "vars": [
-      "P_t = price at the start",
-      "Div_{t+1} = dividend (or coupon) received"
+      {
+        "symbol": "R_{t+1}",
+        "meaning": "realized return between date t and t + 1"
+      },
+      {
+        "symbol": "P_t",
+        "meaning": "price at the start (date t)"
+      },
+      {
+        "symbol": "P_{t+1}",
+        "meaning": "price at the end (date t + 1)"
+      },
+      {
+        "symbol": "\\mathit{Div}_{t+1}",
+        "meaning": "dividend (or coupon) received at t + 1"
+      }
     ],
     "pitfall": "Bond: use the coupon in EUR, not the coupon rate.",
     "sheet": true
@@ -16,9 +30,34 @@
     "id": "f-split-return",
     "lecture": "l1",
     "name": "Return with a stock split",
-    "formula": "R = (shares after × P_{end} + dividends − shares before × P_{start}) / (shares before × P_{start})",
+    "formula": "R = \\dfrac{n_{\\text{after}}\\, P_{\\text{end}} + \\mathit{Div} - n_{\\text{before}}\\, P_{\\text{start}}}{n_{\\text{before}}\\, P_{\\text{start}}}",
     "use": "Whenever a split or reverse split happens during the holding period.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "R",
+        "meaning": "holding-period return"
+      },
+      {
+        "symbol": "n_{\\text{before}}",
+        "meaning": "number of shares held before the split"
+      },
+      {
+        "symbol": "n_{\\text{after}}",
+        "meaning": "number of shares held after the split"
+      },
+      {
+        "symbol": "P_{\\text{start}}",
+        "meaning": "share price at the start (before the split)"
+      },
+      {
+        "symbol": "P_{\\text{end}}",
+        "meaning": "share price at the end (after the split)"
+      },
+      {
+        "symbol": "\\mathit{Div}",
+        "meaning": "total dividends received on all shares held"
+      }
+    ],
     "pitfall": "Never compare one share's price before and after the split – compare the whole position.",
     "sheet": false
   },
@@ -26,9 +65,22 @@
     "id": "f-compound",
     "lecture": "l1",
     "name": "Return over several periods",
-    "formula": "R_{1→N} = (1 + R_1)(1 + R_2) ⋯ (1 + R_N) − 1",
+    "formula": "R_{1 \\to N} = (1 + R_1)(1 + R_2) \\cdots (1 + R_N) - 1",
     "use": "Total return over several years, or with dividends reinvested at each dividend date.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "R_{1 \\to N}",
+        "meaning": "total (cumulative) return from period 1 to N"
+      },
+      {
+        "symbol": "R_t",
+        "meaning": "return in period t"
+      },
+      {
+        "symbol": "N",
+        "meaning": "number of periods"
+      }
+    ],
     "pitfall": "Multiply (1 + R), never add returns.",
     "sheet": true
   },
@@ -36,9 +88,22 @@
     "id": "f-arith-mean",
     "lecture": "l1",
     "name": "Arithmetic average",
-    "formula": "R̄ = (1/T) Σ_{t=1}^{T} R_t",
+    "formula": "\\bar{R} = \\dfrac{1}{T} \\sum_{t=1}^{T} R_t",
     "use": "Estimate of the expected return of one future period.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\bar{R}",
+        "meaning": "arithmetic average return"
+      },
+      {
+        "symbol": "R_t",
+        "meaning": "realized return in period t"
+      },
+      {
+        "symbol": "T",
+        "meaning": "number of observed periods"
+      }
+    ],
     "pitfall": "Not the realized performance per year.",
     "sheet": true
   },
@@ -46,9 +111,22 @@
     "id": "f-geo-mean",
     "lecture": "l1",
     "name": "Geometric average (CAGR)",
-    "formula": "R_{geo} = [(1 + R_1)(1 + R_2) ⋯ (1 + R_n)]^{1/n} − 1",
+    "formula": "R_{\\text{geo}} = \\big[(1 + R_1)(1 + R_2) \\cdots (1 + R_n)\\big]^{1/n} - 1",
     "use": "What an investment actually earned per year in the past.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "R_{\\text{geo}}",
+        "meaning": "geometric average (compound annual) return"
+      },
+      {
+        "symbol": "R_t",
+        "meaning": "return in year t"
+      },
+      {
+        "symbol": "n",
+        "meaning": "number of years"
+      }
+    ],
     "pitfall": "−50% then +100%: arithmetic +25%, geometric 0%.",
     "sheet": true
   },
@@ -56,10 +134,21 @@
     "id": "f-annualize",
     "lecture": "l1",
     "name": "Annualizing a sub-period return",
-    "formula": "R_{annual} = (1 + R_h)^{1/h} − 1",
+    "formula": "R_{\\text{annual}} = (1 + R_h)^{1/h} - 1",
     "use": "Return measured over h years (e.g. h = 0.5 for six months).",
     "vars": [
-      "h = length of the period in years"
+      {
+        "symbol": "R_{\\text{annual}}",
+        "meaning": "equivalent return per year"
+      },
+      {
+        "symbol": "R_h",
+        "meaning": "return over the whole holding period"
+      },
+      {
+        "symbol": "h",
+        "meaning": "length of the period in years"
+      }
     ],
     "pitfall": "Halved in 6 months → (0.5)² − 1 = −75% p.a., not −100%.",
     "sheet": false
@@ -68,9 +157,34 @@
     "id": "f-volatility",
     "lecture": "l1",
     "name": "Variance and volatility (historical)",
-    "formula": "Var(R) = (1/(T − 1)) Σ (R_t − R̄)^2\nσ = √Var(R)   ·   σ_{annual} = σ_{monthly} × √12",
+    "formula": "\\begin{aligned} \\operatorname{Var}(R) &= \\dfrac{1}{T - 1} \\sum_{t=1}^{T} \\big(R_t - \\bar{R}\\big)^2 \\\\[8pt] \\sigma &= \\sqrt{\\operatorname{Var}(R)} \\\\[6pt] \\sigma_{\\text{annual}} &= \\sigma_{\\text{monthly}} \\cdot \\sqrt{12} \\end{aligned}",
     "use": "Risk of one asset from past returns.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\operatorname{Var}(R)",
+        "meaning": "variance of returns (sample estimate)"
+      },
+      {
+        "symbol": "\\sigma",
+        "meaning": "volatility = standard deviation of returns"
+      },
+      {
+        "symbol": "R_t",
+        "meaning": "return in period t"
+      },
+      {
+        "symbol": "\\bar{R}",
+        "meaning": "average return over all periods"
+      },
+      {
+        "symbol": "T",
+        "meaning": "number of observations"
+      },
+      {
+        "symbol": "\\sigma_{\\text{annual}},\\ \\sigma_{\\text{monthly}}",
+        "meaning": "volatility per year / per month"
+      }
+    ],
     "pitfall": "Divide by T − 1 for historical data; use decimals (0.25² = 0.0625) consistently.",
     "sheet": true
   }

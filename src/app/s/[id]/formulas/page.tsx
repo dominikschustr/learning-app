@@ -1,6 +1,8 @@
+import "katex/dist/katex.min.css";
 import { notFound } from "next/navigation";
 import { FormulaOverview } from "@/components/FormulaOverview";
 import { getAllContent, getFormulas, getSubjectContent } from "@/lib/content";
+import { renderFormula } from "@/lib/tex";
 
 export const metadata = { title: "Formelübersicht" };
 
@@ -15,5 +17,5 @@ export default async function Page({ params }: PageProps<"/s/[id]/formulas">) {
   const content = getSubjectContent(id);
   const formulas = getFormulas(id);
   if (!content || !formulas.length) notFound();
-  return <FormulaOverview subject={content.subject} formulas={formulas} />;
+  return <FormulaOverview subject={content.subject} formulas={formulas.map(renderFormula)} />;
 }

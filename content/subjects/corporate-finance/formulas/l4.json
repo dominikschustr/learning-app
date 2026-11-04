@@ -3,10 +3,29 @@
     "id": "f-capm",
     "lecture": "l4",
     "name": "CAPM / security market line",
-    "formula": "E(R_i) = r_f + β_i (E(R_M) − r_f)",
+    "formula": "E(R_i) = r_f + \\beta_i\\, \\big(E(R_M) - r_f\\big)",
     "use": "Required (= expected) return and cost of equity of any stock or portfolio.",
     "vars": [
-      "E(R_M) − r_f = market risk premium"
+      {
+        "symbol": "E(R_i)",
+        "meaning": "expected (= required) return of stock or portfolio i"
+      },
+      {
+        "symbol": "r_f",
+        "meaning": "risk-free rate"
+      },
+      {
+        "symbol": "\\beta_i",
+        "meaning": "beta of i with the market"
+      },
+      {
+        "symbol": "E(R_M)",
+        "meaning": "expected return of the market"
+      },
+      {
+        "symbol": "E(R_M) - r_f",
+        "meaning": "market risk premium"
+      }
     ],
     "pitfall": "The premium, not E(R_M), multiplies beta.",
     "sheet": true
@@ -15,9 +34,22 @@
     "id": "f-cml",
     "lecture": "l4",
     "name": "Capital market line",
-    "formula": "E(R_p) = r_f + [(E(R_M) − r_f) / σ_M] × σ_p",
+    "formula": "E(R_p) = r_f + \\dfrac{E(R_M) - r_f}{\\sigma_M} \\cdot \\sigma_p",
     "use": "Expected return of an efficient portfolio (mix of M and r_f) for a given volatility.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "E(R_p),\\ \\sigma_p",
+        "meaning": "expected return and volatility of the efficient portfolio"
+      },
+      {
+        "symbol": "r_f",
+        "meaning": "risk-free rate"
+      },
+      {
+        "symbol": "E(R_M),\\ \\sigma_M",
+        "meaning": "expected return and volatility of the market portfolio"
+      }
+    ],
     "pitfall": "Single stocks are not on the CML – they lie below it.",
     "sheet": false
   },
@@ -25,9 +57,22 @@
     "id": "f-port-beta",
     "lecture": "l4",
     "name": "Portfolio beta",
-    "formula": "β_p = Σ x_i β_i   (risk-free asset: β = 0)",
+    "formula": "\\beta_p = \\sum_i x_i\\, \\beta_i",
     "use": "Beta of a portfolio before applying the CAPM.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\beta_p",
+        "meaning": "beta of the portfolio"
+      },
+      {
+        "symbol": "x_i",
+        "meaning": "weight of asset i"
+      },
+      {
+        "symbol": "\\beta_i",
+        "meaning": "beta of asset i (risk-free asset: β = 0)"
+      }
+    ],
     "pitfall": "Average the betas first, then apply the CAPM.",
     "sheet": false
   },
@@ -35,9 +80,30 @@
     "id": "f-add-stock",
     "lecture": "l4",
     "name": "Is stock A worth adding to portfolio P?",
-    "formula": "Buy A if E(R_A) > r_f + β_{A,P} (E(R_P) − r_f),   β_{A,P} = ρ_{A,P} σ_A / σ_P",
+    "formula": "\\begin{aligned} E(R_A) &> r_f + \\beta_{A,P}\\, \\big(E(R_P) - r_f\\big) \\\\[8pt] \\beta_{A,P} &= \\rho_{A,P}\\, \\dfrac{\\sigma_A}{\\sigma_P} \\end{aligned}",
     "use": "Deciding whether a stock improves your portfolio's Sharpe ratio.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "E(R_A),\\ \\sigma_A",
+        "meaning": "expected return and volatility of stock A – buy A if the inequality holds"
+      },
+      {
+        "symbol": "E(R_P),\\ \\sigma_P",
+        "meaning": "expected return and volatility of your current portfolio P"
+      },
+      {
+        "symbol": "\\beta_{A,P}",
+        "meaning": "beta of A relative to P"
+      },
+      {
+        "symbol": "\\rho_{A,P}",
+        "meaning": "correlation between A and P"
+      },
+      {
+        "symbol": "r_f",
+        "meaning": "risk-free rate"
+      }
+    ],
     "pitfall": "What matters is the correlation with P, not A's own volatility.",
     "sheet": false
   }

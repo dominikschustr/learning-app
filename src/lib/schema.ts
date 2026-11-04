@@ -211,12 +211,12 @@ export const FormulaSchema = z.object({
   id,
   lecture: id,
   name: z.string().min(1),
-  /** Formel in Unicode; r_{E} und σ^{2} werden tief- bzw. hochgestellt */
+  /** Formel in LaTeX (KaTeX); mehrzeilig mit \begin{aligned} … \end{aligned} */
   formula: z.string().min(1),
   /** Wann verwende ich sie? */
   use: z.string().default(""),
-  /** Bedeutung der Symbole */
-  vars: z.array(z.string().min(1)).default([]),
+  /** Bedeutung jedes Symbols der Formel: symbol in LaTeX, meaning als Text (r_f → tiefgestellt) */
+  vars: z.array(z.object({ symbol: z.string().min(1), meaning: z.string().min(1) })).min(1),
   /** typische Falle */
   pitfall: z.string().default(""),
   /** steht auf dem Formelblatt der Klausur */

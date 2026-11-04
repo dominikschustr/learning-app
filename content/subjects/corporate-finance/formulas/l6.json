@@ -3,10 +3,25 @@
     "id": "f-gordon",
     "lecture": "l6",
     "name": "Gordon growth / market return",
-    "formula": "P_0 = Div_1 / (r − g)   ⟺   r = Div_1/P_0 + g",
+    "formula": "\\begin{aligned} P_0 &= \\dfrac{\\mathit{Div}_1}{r - g} \\\\[8pt] \\Longleftrightarrow\\quad r &= \\dfrac{\\mathit{Div}_1}{P_0} + g \\end{aligned}",
     "use": "Fundamental approach to the expected market return; value of a growing perpetuity.",
     "vars": [
-      "g = constant dividend growth"
+      {
+        "symbol": "P_0",
+        "meaning": "price (value) today"
+      },
+      {
+        "symbol": "\\mathit{Div}_1",
+        "meaning": "dividend expected in one year"
+      },
+      {
+        "symbol": "r",
+        "meaning": "expected return (cost of equity)"
+      },
+      {
+        "symbol": "g",
+        "meaning": "constant dividend growth rate"
+      }
     ],
     "pitfall": "Only valid for g < r. Constant dividends: P_0 = Div/r.",
     "sheet": true
@@ -15,12 +30,33 @@
     "id": "f-cost-debt",
     "lecture": "l6",
     "name": "Cost of debt",
-    "formula": "r_D = y − p × L\nor   r_D = r_f + β_D (E(R_M) − r_f)",
+    "formula": "\\begin{aligned} r_D &= y - p \\cdot L \\\\[6pt] \\text{or}\\quad r_D &= r_f + \\beta_D\\, \\big(E(R_M) - r_f\\big) \\end{aligned}",
     "use": "Expected return on risky debt.",
     "vars": [
-      "y = yield to maturity",
-      "p = default probability",
-      "L = expected loss rate"
+      {
+        "symbol": "r_D",
+        "meaning": "expected return on debt (cost of debt)"
+      },
+      {
+        "symbol": "y",
+        "meaning": "yield to maturity"
+      },
+      {
+        "symbol": "p",
+        "meaning": "default probability per year"
+      },
+      {
+        "symbol": "L",
+        "meaning": "expected loss rate in default"
+      },
+      {
+        "symbol": "\\beta_D",
+        "meaning": "beta of the debt"
+      },
+      {
+        "symbol": "r_f,\\ E(R_M)",
+        "meaning": "risk-free rate, expected market return"
+      }
     ],
     "pitfall": "The YTM is the promised return; the coupon rate is irrelevant.",
     "sheet": true
@@ -29,10 +65,25 @@
     "id": "f-unlever",
     "lecture": "l6",
     "name": "Unlevered (asset) cost of capital and beta",
-    "formula": "r_U = E/(E + D) × r_E + D/(E + D) × r_D\nβ_U = E/(E + D) × β_E + D/(E + D) × β_D",
+    "formula": "\\begin{aligned} r_U &= \\dfrac{E}{E + D}\\, r_E + \\dfrac{D}{E + D}\\, r_D \\\\[8pt] \\beta_U &= \\dfrac{E}{E + D}\\, \\beta_E + \\dfrac{D}{E + D}\\, \\beta_D \\end{aligned}",
     "use": "Cost of capital of a project using a levered comparable.",
     "vars": [
-      "market values of E and D"
+      {
+        "symbol": "r_U,\\ \\beta_U",
+        "meaning": "unlevered cost of capital and beta (the asset risk)"
+      },
+      {
+        "symbol": "E,\\ D",
+        "meaning": "market values of equity and debt"
+      },
+      {
+        "symbol": "r_E,\\ \\beta_E",
+        "meaning": "cost of equity and equity beta"
+      },
+      {
+        "symbol": "r_D,\\ \\beta_D",
+        "meaning": "cost of debt and debt beta"
+      }
     ],
     "pitfall": "Use market values; risk-free debt → β_D = 0.",
     "sheet": true
@@ -41,9 +92,18 @@
     "id": "f-net-debt",
     "lecture": "l6",
     "name": "Net debt",
-    "formula": "Net debt = Debt − Excess cash",
+    "formula": "\\text{Net debt} = \\text{Debt} - \\text{Excess cash}",
     "use": "Firms with large cash holdings: use net debt in place of D.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\text{Debt}",
+        "meaning": "interest-bearing debt"
+      },
+      {
+        "symbol": "\\text{Excess cash}",
+        "meaning": "cash beyond what operations need"
+      }
+    ],
     "pitfall": "Negative net debt makes β_U > β_E.",
     "sheet": false
   },
@@ -51,10 +111,33 @@
     "id": "f-wacc",
     "lecture": "l6",
     "name": "WACC with taxes",
-    "formula": "r_{WACC} = E/(E + D) × r_E + D/(E + D) × r_D (1 − τ_C)\n= r_U − τ_C × D/(E + D) × r_D",
+    "formula": "\\begin{aligned} r_{\\text{WACC}} &= \\dfrac{E}{E + D}\\, r_E + \\dfrac{D}{E + D}\\, r_D\\, (1 - \\tau_C) \\\\[8pt] &= r_U - \\tau_C\\, \\dfrac{D}{E + D}\\, r_D \\end{aligned}",
     "use": "Project with the firm's risk AND the firm's debt mix.",
     "vars": [
-      "τ_C = corporate tax rate"
+      {
+        "symbol": "r_{\\text{WACC}}",
+        "meaning": "weighted average cost of capital (after tax)"
+      },
+      {
+        "symbol": "E,\\ D",
+        "meaning": "market values of equity and debt"
+      },
+      {
+        "symbol": "r_E",
+        "meaning": "cost of equity"
+      },
+      {
+        "symbol": "r_D",
+        "meaning": "cost of debt"
+      },
+      {
+        "symbol": "\\tau_C",
+        "meaning": "corporate tax rate"
+      },
+      {
+        "symbol": "r_U",
+        "meaning": "unlevered cost of capital"
+      }
     ],
     "pitfall": "Only for the same risk and same leverage; otherwise start from r_U.",
     "sheet": true

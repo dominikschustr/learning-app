@@ -3,10 +3,25 @@
     "id": "f-scenarios",
     "lecture": "l2",
     "name": "Expected return and variance with scenarios",
-    "formula": "E(R) = Σ p_i R_i\nVar(R) = Σ p_i (R_i − E(R))^2",
+    "formula": "\\begin{aligned} E(R) &= \\sum_i p_i\\, R_i \\\\[6pt] \\operatorname{Var}(R) &= \\sum_i p_i \\big(R_i - E(R)\\big)^2 \\end{aligned}",
     "use": "Returns given per state of the economy with probabilities.",
     "vars": [
-      "p_i = probability of state i"
+      {
+        "symbol": "E(R)",
+        "meaning": "expected return"
+      },
+      {
+        "symbol": "\\operatorname{Var}(R)",
+        "meaning": "variance of the return"
+      },
+      {
+        "symbol": "p_i",
+        "meaning": "probability of state i"
+      },
+      {
+        "symbol": "R_i",
+        "meaning": "return in state i"
+      }
     ],
     "pitfall": "Weights are the probabilities – no T − 1 here.",
     "sheet": false
@@ -15,10 +30,25 @@
     "id": "f-utility",
     "lecture": "l2",
     "name": "Mean–variance utility",
-    "formula": "U = E(R) − (γ/2) × Var(R)",
+    "formula": "U = E(R) - \\dfrac{\\gamma}{2}\\, \\operatorname{Var}(R)",
     "use": "Ranking investments for a risk-averse investor.",
     "vars": [
-      "γ = risk aversion (higher = more risk-averse)"
+      {
+        "symbol": "U",
+        "meaning": "utility (certainty-equivalent return)"
+      },
+      {
+        "symbol": "E(R)",
+        "meaning": "expected return"
+      },
+      {
+        "symbol": "\\gamma",
+        "meaning": "risk aversion (higher = more risk-averse)"
+      },
+      {
+        "symbol": "\\operatorname{Var}(R)",
+        "meaning": "variance of the return"
+      }
     ],
     "pitfall": "Use the variance, not the volatility.",
     "sheet": false
@@ -27,9 +57,38 @@
     "id": "f-covariance",
     "lecture": "l2",
     "name": "Covariance",
-    "formula": "Cov(R_i, R_j) = (1/(T − 1)) Σ (R_{i,t} − R̄_i)(R_{j,t} − R̄_j)\nscenarios: Σ p_s (R_{i,s} − E(R_i))(R_{j,s} − E(R_j))",
+    "formula": "\\begin{aligned} &\\operatorname{Cov}(R_i, R_j) = \\dfrac{1}{T - 1} \\sum_{t=1}^{T} \\big(R_{i,t} - \\bar{R}_i\\big)\\big(R_{j,t} - \\bar{R}_j\\big) \\\\[10pt] &\\text{scenarios:} \\\\[2pt] &\\operatorname{Cov}(R_i, R_j) = \\sum_s p_s \\big(R_{i,s} - E(R_i)\\big)\\big(R_{j,s} - E(R_j)\\big) \\end{aligned}",
     "use": "How two returns move together (only the sign is easy to read).",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\operatorname{Cov}(R_i, R_j)",
+        "meaning": "covariance of the returns of i and j"
+      },
+      {
+        "symbol": "R_{i,t}",
+        "meaning": "return of asset i in period t"
+      },
+      {
+        "symbol": "\\bar{R}_i",
+        "meaning": "average return of asset i"
+      },
+      {
+        "symbol": "T",
+        "meaning": "number of periods"
+      },
+      {
+        "symbol": "p_s",
+        "meaning": "probability of scenario s"
+      },
+      {
+        "symbol": "R_{i,s}",
+        "meaning": "return of asset i in scenario s"
+      },
+      {
+        "symbol": "E(R_i)",
+        "meaning": "expected return of asset i"
+      }
+    ],
     "pitfall": "Historical data: T − 1, like the variance.",
     "sheet": false
   },
@@ -37,9 +96,22 @@
     "id": "f-correlation",
     "lecture": "l2",
     "name": "Correlation",
-    "formula": "ρ_{i,j} = Cov(R_i, R_j) / (σ_i σ_j)   ⟺   Cov = ρ σ_i σ_j",
+    "formula": "\\begin{aligned} \\rho_{i,j} &= \\dfrac{\\operatorname{Cov}(R_i, R_j)}{\\sigma_i\\, \\sigma_j} \\\\[8pt] \\Longleftrightarrow\\quad \\operatorname{Cov}(R_i, R_j) &= \\rho_{i,j}\\, \\sigma_i\\, \\sigma_j \\end{aligned}",
     "use": "Strength of comovement on a scale from −1 to +1.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\rho_{i,j}",
+        "meaning": "correlation between i and j (from −1 to +1)"
+      },
+      {
+        "symbol": "\\operatorname{Cov}(R_i, R_j)",
+        "meaning": "covariance of the returns"
+      },
+      {
+        "symbol": "\\sigma_i,\\ \\sigma_j",
+        "meaning": "volatilities of i and j"
+      }
+    ],
     "pitfall": "Same sign as the covariance.",
     "sheet": false
   },
@@ -47,9 +119,26 @@
     "id": "f-beta",
     "lecture": "l2",
     "name": "Beta",
-    "formula": "β_{j,M} = Cov(R_j, R_M) / Var(R_M) = ρ_{j,M} × σ_j / σ_M",
+    "formula": "\\beta_{j,M} = \\dfrac{\\operatorname{Cov}(R_j, R_M)}{\\operatorname{Var}(R_M)} = \\rho_{j,M}\\, \\dfrac{\\sigma_j}{\\sigma_M}",
     "use": "How much a stock moves when the market (or another asset) moves by 1%.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\beta_{j,M}",
+        "meaning": "beta of stock j relative to the market M"
+      },
+      {
+        "symbol": "R_j,\\ R_M",
+        "meaning": "returns of stock j and of the market"
+      },
+      {
+        "symbol": "\\rho_{j,M}",
+        "meaning": "correlation between j and the market"
+      },
+      {
+        "symbol": "\\sigma_j,\\ \\sigma_M",
+        "meaning": "volatilities of j and of the market"
+      }
+    ],
     "pitfall": "Divide by the variance of the asset that does the moving.",
     "sheet": true
   },
@@ -57,10 +146,21 @@
     "id": "f-port-return",
     "lecture": "l2",
     "name": "Portfolio return",
-    "formula": "E(R_p) = x_1 E(R_1) + x_2 E(R_2),   x_1 + x_2 = 1",
+    "formula": "\\begin{gathered} E(R_p) = x_1\\, E(R_1) + x_2\\, E(R_2) \\\\[6pt] x_1 + x_2 = 1 \\end{gathered}",
     "use": "Expected return of any portfolio: a plain weighted average.",
     "vars": [
-      "x_i = amount in asset i / own money (can be < 0 or > 1)"
+      {
+        "symbol": "E(R_p)",
+        "meaning": "expected return of the portfolio"
+      },
+      {
+        "symbol": "x_i",
+        "meaning": "weight = amount in asset i / own money (can be < 0 or > 1)"
+      },
+      {
+        "symbol": "E(R_i)",
+        "meaning": "expected return of asset i"
+      }
     ],
     "pitfall": "Weights on own money, not on the total position.",
     "sheet": true
@@ -69,9 +169,26 @@
     "id": "f-port-vol",
     "lecture": "l2",
     "name": "Portfolio volatility (two assets)",
-    "formula": "σ_p^2 = x_1^2 σ_1^2 + x_2^2 σ_2^2 + 2 x_1 x_2 ρ_{12} σ_1 σ_2",
+    "formula": "\\sigma_p^2 = x_1^2\\, \\sigma_1^2 + x_2^2\\, \\sigma_2^2 + 2\\, x_1 x_2\\, \\rho_{12}\\, \\sigma_1 \\sigma_2",
     "use": "Risk of a two-asset portfolio.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\sigma_p^2",
+        "meaning": "variance of the portfolio (σₚ = its volatility)"
+      },
+      {
+        "symbol": "x_1,\\ x_2",
+        "meaning": "portfolio weights of asset 1 and 2"
+      },
+      {
+        "symbol": "\\sigma_1,\\ \\sigma_2",
+        "meaning": "volatilities of asset 1 and 2"
+      },
+      {
+        "symbol": "\\rho_{12}",
+        "meaning": "correlation between asset 1 and 2"
+      }
+    ],
     "pitfall": "Never forget the cross term; a short position flips its sign.",
     "sheet": true
   },
@@ -79,9 +196,26 @@
     "id": "f-bounds",
     "lecture": "l2",
     "name": "Diversification by correlation",
-    "formula": "ρ = +1: σ_p = x_1 σ_1 + x_2 σ_2\nρ < 1: σ_p < x_1 σ_1 + x_2 σ_2\nρ = −1: σ_p = |x_1 σ_1 − x_2 σ_2|",
+    "formula": "\\begin{aligned} \\rho = +1 &: \\quad \\sigma_p = x_1 \\sigma_1 + x_2 \\sigma_2 \\\\[4pt] \\rho < 1 &: \\quad \\sigma_p < x_1 \\sigma_1 + x_2 \\sigma_2 \\\\[4pt] \\rho = -1 &: \\quad \\sigma_p = \\lvert x_1 \\sigma_1 - x_2 \\sigma_2 \\rvert \\end{aligned}",
     "use": "Quick check of how much diversification a pair offers.",
-    "vars": [],
+    "vars": [
+      {
+        "symbol": "\\rho",
+        "meaning": "correlation between the two assets"
+      },
+      {
+        "symbol": "\\sigma_p",
+        "meaning": "volatility of the portfolio"
+      },
+      {
+        "symbol": "x_1,\\ x_2",
+        "meaning": "portfolio weights"
+      },
+      {
+        "symbol": "\\sigma_1,\\ \\sigma_2",
+        "meaning": "volatilities of the two assets"
+      }
+    ],
     "pitfall": "",
     "sheet": false
   }
