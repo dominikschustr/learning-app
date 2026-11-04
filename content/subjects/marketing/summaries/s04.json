@@ -1,0 +1,217 @@
+{
+  "lecture": "s04",
+  "title": "Text, data & visual mining",
+  "source": "Session 4 handout (DDM 26/27) – Coca-Cola Social Hub, Boeing reputation case, crypto sentiment study, Dash Hudson & YouScan, Brand24 team activity",
+  "tagline": "Most marketing data is unstructured – posts, reviews, images. Text, data and visual mining (TDVM) turn it into patterns, predictions and sentiment you can act on. You will rarely mine yourself, but you must know which algorithm does what and how to read the output.",
+  "goals": [
+    "define **text mining, data mining, predictive analytics, social listening, sentiment analysis and visual mining**",
+    "order the **text-mining steps** from tokenization to topic modelling",
+    "match a business problem to a **data-mining algorithm**",
+    "describe the **social listening process** and who does each step",
+    "calculate and interpret a **sentiment ratio**"
+  ],
+  "sections": [
+    {
+      "id": "definitions",
+      "heading": "Six methods at a glance",
+      "lead": "Every minute Coca-Cola is mentioned more than 30 times on social media in English alone – its Social Hub monitors and analyses these posts in real time for marketers worldwide.",
+      "blocks": [
+        {
+          "type": "grid",
+          "cols": 3,
+          "items": [
+            { "label": "Text mining", "tag": "unstructured text", "text": "Treatment of unstructured text information; e.g. automatic grouping of similar texts." },
+            { "label": "Data mining", "tag": "patterns", "text": "Exploration and analysis of data to uncover meaningful patterns or rules." },
+            { "label": "Predictive analytics", "tag": "future", "text": "Predicts future outcomes from historical data with statistical modelling, data mining and machine learning." },
+            { "label": "Social listening", "tag": "what is said", "text": "Identifying and assessing what is being said about a company, person, product or brand online." },
+            { "label": "Sentiment analysis", "tag": "how it feels", "text": "Analysing online text to determine its emotional tone – positive, negative or neutral; how the author feels about a topic." },
+            { "label": "Visual mining", "tag": "images & video", "text": "Extracting trends, patterns and insights from visual data with data mining, computer vision and visualisation." }
+          ]
+        },
+        { "type": "callout", "tone": "tip", "text": "Social listening asks **what** is said (volume, reach, topics); sentiment analysis asks **how** it is said (tone). Listening collects, sentiment evaluates." }
+      ]
+    },
+    {
+      "id": "text-mining",
+      "heading": "Text mining: from raw text to meaning",
+      "blocks": [
+        {
+          "type": "flow",
+          "title": "Pre-processing",
+          "steps": [
+            { "label": "Tokenization", "text": "Text divided into smaller units called **tokens** (words, characters)" },
+            { "label": "Stop-word removal", "text": "Words without meaning removed – “and”, “the”" },
+            { "label": "Stemming / lemmatization", "text": "Words reduced to their root or base form (“buying”, “bought” → “buy”)" },
+            { "label": "TF-IDF", "text": "Statistical weight of a term: frequent in this document, rare across all documents = important" }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "Analysis",
+          "steps": [
+            { "label": "Named entity recognition (NER)", "text": "Identify and classify entities – names, brands, locations" },
+            { "label": "Opinion mining / sentiment analysis", "text": "Classify text as positive, negative or neutral" },
+            { "label": "Topic modelling & text classification", "text": "Extract hidden topics; assign predefined labels or categories" }
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "Success depends on …",
+          "cols": 3,
+          "items": [
+            { "label": "Data quality", "text": "Garbage in, garbage out" },
+            { "label": "Data cleansing", "text": "Remove noise, duplicates, spam" },
+            { "label": "Algorithm selection", "text": "Fit the method to the question" },
+            { "label": "Scalability", "text": "Can it handle the volume?" },
+            { "label": "Model evaluation", "text": "Is the output accurate?" },
+            { "label": "Ethical boundaries", "text": "Privacy, consent, bias (→ S1)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-mining",
+      "heading": "Data mining algorithms",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Algorithm", "What it does", "Marketing example"],
+          "rows": [
+            ["Clustering", "Groups similar data points by their characteristics", "Customer segmentation (k-means → S5)"],
+            ["Association rule mining", "Finds relationships among items in a data set", "Market-basket analysis: who buys A also buys B"],
+            ["Classification", "Predicts **categorical** labels for new cases from training data", "Will this customer churn – yes/no?"],
+            ["Regression", "Predicts **continuous** values (linear, logistic regression)", "Sales forecast (→ S9–S10)"],
+            ["Sequential pattern mining", "Patterns in sequential data (time series, transactions)", "Typical order of purchases over time"],
+            ["Neural networks", "Powerful models inspired by the human brain", "Image recognition, recommendation"],
+            ["Anomaly detection", "Identifies unusual patterns", "Fraudulent transactions"]
+          ],
+          "highlight": 0
+        },
+        {
+          "type": "grid",
+          "title": "Predictive analytics – where AI and ML are used",
+          "cols": 3,
+          "items": [
+            { "label": "Demand forecasting", "text": "Market trends, future demand" },
+            { "label": "Customer behaviour", "text": "Predict consumer trends, churn, next purchase" },
+            { "label": "Supply chain", "text": "Stock levels, efficiency" },
+            { "label": "Financial analysis", "text": "Fraud detection" },
+            { "label": "Stock market", "text": "Investment opportunities" },
+            { "label": "Healthcare", "text": "Predict future diagnoses" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "heading": "Social listening & sentiment analysis",
+      "blocks": [
+        {
+          "type": "flow",
+          "title": "Social listening process",
+          "steps": [
+            { "tag": "In house", "label": "1 · Objectives", "text": "Set marketing objectives" },
+            { "tag": "Tools", "label": "2 · Collection", "text": "Collect mentions" },
+            { "tag": "Tools", "label": "3 · Analysis", "text": "Analyse volume, reach, sentiment" },
+            { "tag": "Tools", "label": "4 · Insights", "text": "Generate insights" },
+            { "tag": "In house", "label": "5 · Engage", "text": "Engagement and response" },
+            { "tag": "Tools", "label": "6 · Monitor", "text": "Ongoing monitoring" }
+          ],
+          "note": "Strategy (objectives) and the human response stay in house; collection, analysis and monitoring run on platforms such as Brand24."
+        },
+        {
+          "type": "compare",
+          "title": "How sentiment is detected",
+          "sides": [
+            { "label": "Positive", "points": ["“good”, “great”, “wonderful”, “happy”, “fantastic”"] },
+            { "label": "Neutral", "points": ["Lack of emotion and bias – objective statements"] },
+            { "label": "Negative", "points": ["“bad”, “terrible”, “hate”, “disgusting”"] }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Applications",
+          "items": [
+            "Brand reputation management and monitoring – e.g. **Boeing** after the China Eastern 737-800 crash: sentiment and reputation score track the damage",
+            "Customer research and feedback; customer service and support",
+            "Market research for decision-making; social media, financial and political analysis",
+            "Crisis prevention or management",
+            "Prediction: social-media sentiment (measured 3× per day) predicted short-term **cryptocurrency prices** with regression, boosting and neural networks – the final model was profitable"
+          ]
+        },
+        {
+          "type": "formula",
+          "name": "Sentiment ratio (Brand24 activity)",
+          "formula": "Sentiment ratio = positive mentions / negative mentions",
+          "vars": ["> 1: more positive than negative mentions", "< 1: more negative than positive mentions"],
+          "note": "Also compare **volume of mentions** and **social vs. non-social reach** – and ask which events (launches, outages, news) drove the numbers in the period."
+        },
+        {
+          "type": "example",
+          "title": "Two brands over 30 days",
+          "given": ["Nova: 12,000 positive and 6,000 negative mentions", "Orbit: 9,000 positive and 2,000 negative mentions"],
+          "question": "Which brand has the better sentiment?",
+          "steps": ["Nova = 12,000 / 6,000 = 2.0", "Orbit = 9,000 / 2,000 = 4.5", "Nova has more buzz (volume), Orbit the better tone"],
+          "result": "Orbit has the higher sentiment ratio (4.5 vs. 2.0) despite fewer mentions – volume measures buzz, not tone."
+        },
+        {
+          "type": "bars",
+          "title": "Sentiment ratio of the example",
+          "items": [
+            { "label": "Nova", "value": 2.0, "note": "18,000 polarised mentions" },
+            { "label": "Orbit", "value": 4.5, "note": "11,000 polarised mentions" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visual-mining",
+      "heading": "Visual mining",
+      "blocks": [
+        {
+          "type": "grid",
+          "cols": 2,
+          "items": [
+            { "label": "Dash Hudson – Vision AI", "text": "Learning since 2016; goes beyond topics, hashtags and keywords to surface **visual trends** and community sentiment across social media." },
+            { "label": "YouScan – image recognition", "text": "Over half of monitored posts are images; Visual Insights find new use cases, influencers and measure the impact of offline campaigns." }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Takeaways",
+          "style": "check",
+          "items": [
+            "Huge untapped potential: **above 80 %** of visual imagery (photos, videos) is not analysed",
+            "Draws on multimedia, computer vision and pattern recognition",
+            "Excellent way to pick up emerging trends early and keep an eye on competitors",
+            "Empowers better decisions for the marketer"
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "key",
+          "title": "Why TDVM matters for data-driven marketing",
+          "text": "Extract insights from large amounts of textual, numerical and visual information → understand sentiments, preferences and behaviour **at scale** → targeted, personalised strategies, optimised campaigns and better customer experience."
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "Text mining handles unstructured text; data mining finds patterns; predictive analytics forecasts; social listening = what is said; sentiment = how it is said; visual mining = images and video.",
+    "Text pipeline: **tokenization → stop words → stemming/lemmatization → TF-IDF → NER / sentiment / topic modelling**.",
+    "Classification predicts categories, regression continuous values, clustering groups, association rules find “bought together”, anomaly detection finds fraud.",
+    "Social listening: objectives (in house) → collection → analysis → insights (tools) → engagement (in house) → monitoring.",
+    "**Sentiment ratio = positive / negative mentions**; > 1 = more positive. Volume ≠ tone.",
+    "Over 80 % of visual data is untapped – visual mining spots trends and competitors early."
+  ],
+  "exam": [
+    "T/F or MC on definitions and on what each text-mining step does (e.g. “Stemming removes words without meaning” → false, that is stop-word removal).",
+    "Small calculation: sentiment ratio of two brands and interpretation alongside volume and reach.",
+    "Match algorithms to examples (fraud → anomaly detection; churn yes/no → classification)."
+  ],
+  "traps": [
+    "A sentiment ratio **below 1** means more **negative** mentions.",
+    "Regression in data mining predicts continuous values; classification predicts classes – don't swap them.",
+    "Innovations in visual mining tools are not the goal – the insight for decisions is."
+  ]
+}

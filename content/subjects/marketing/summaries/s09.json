@@ -1,0 +1,253 @@
+{
+  "lecture": "s09",
+  "title": "Regression analysis: fundamentals",
+  "source": "Session 9 handout (DDM 26/27) – margarine sales example, online-shop and start-up examples, Adidas mock exam",
+  "tagline": "Regression explains how a dependent variable changes when independent variables change – and predicts it. You formulate the model, estimate it with least squares, test the whole function (R²) and then each coefficient (t-test, p-value).",
+  "goals": [
+    "name the marketing-planning uses of regression (**mix modelling, budget, forecasting, pricing**)",
+    "set up a **simple and multiple** regression equation and choose DV and IVs",
+    "explain **OLS**, residuals, intercept and slope",
+    "interpret **R², adjusted R²** and **t-tests / p-values**",
+    "make a **prediction** using only significant coefficients and interpret **dummies**"
+  ],
+  "sections": [
+    {
+      "id": "planning",
+      "heading": "Regression in marketing planning",
+      "lead": "Marketing planning = analysis → objectives → strategy → implementation (marketing mix and budget) → control. Resource allocation is part of it – and regression quantifies what each euro does.",
+      "blocks": [
+        {
+          "type": "grid",
+          "cols": 4,
+          "items": [
+            { "label": "Marketing mix modelling", "text": "Effectiveness of channels and campaigns: past spend vs. sales or KPIs" },
+            { "label": "Budget optimisation", "text": "Predict the impact of budget allocations to maximise ROI" },
+            { "label": "Sales forecasting", "text": "Predict sales from history, economic indicators etc. to plan mix and budget" },
+            { "label": "Price optimisation", "text": "Predict willingness to pay from customer characteristics and tailor prices" }
+          ]
+        },
+        {
+          "type": "defs",
+          "items": [
+            { "term": "Regression analysis", "text": "Analyses (causal) relationships between a **dependent variable** (DV, y) and one or more **independent variables** (IV, x) – to **explain** relationships and to **predict** the DV." }
+          ]
+        },
+        {
+          "type": "compare",
+          "sides": [
+            { "label": "Simple regression", "sub": "y = f(x)", "points": ["One DV, one IV", "Sales = f(salesman visits)"] },
+            { "label": "Multiple regression", "sub": "y = f(x1, x2, …, xJ)", "points": ["One DV, several IVs", "Sales = f(visits, marketing investment, price)"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "heading": "Introductory example: margarine sales",
+      "lead": "A sales manager sees big differences in sales across 10 equally sized areas and suspects that the number of salesman visits explains them.",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Area", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+          "rows": [
+            ["Sales (packages)", "2,585", "1,819", "1,647", "1,496", "921", "2,278", "1,810", "1,987", "1,612", "1,913"],
+            ["Salesman visits", "109", "107", "99", "70", "81", "102", "110", "92", "87", "79"],
+            ["Price", "12.5", "10", "9.95", "11.5", "12", "10", "8", "9", "9.5", "12.5"],
+            ["Marketing investment", "2,000", "550", "1,000", "800", "0", "1,500", "800", "1,200", "1,100", "1,300"]
+          ]
+        },
+        {
+          "type": "scatter",
+          "title": "Sales vs. salesman visits with the OLS line",
+          "xLabel": "Salesman visits per period",
+          "yLabel": "Sales (packages)",
+          "points": [[109, 2585], [107, 1819], [99, 1647], [70, 1496], [81, 921], [102, 2278], [110, 1810], [92, 1987], [87, 1612], [79, 1913]],
+          "line": [39.534, 18.881],
+          "residual": 0,
+          "caption": "Estimated sales = 39.534 + 18.881 · visits. Area 1 (109 visits) is expected to sell 39.534 + 18.881 × 109 ≈ 2,098 packages; it sold 2,585 – the residual of ≈ +487 captures everything the model does not measure."
+        },
+        {
+          "type": "callout",
+          "tone": "key",
+          "title": "Interpretation of the slope",
+          "text": "Each **additional salesman visit** is associated with **18.881 more packages** sold. Five more visits → about 94 more packages."
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "heading": "The four steps of a regression analysis",
+      "blocks": [
+        {
+          "type": "flow",
+          "steps": [
+            { "tag": "Step 1", "label": "Model formulation", "text": "Choose DV and IVs on **theoretical grounds**; check linearity with scatter plots" },
+            { "tag": "Step 2", "label": "Estimation", "text": "Estimate b0, b1, … with **OLS** (minimise the sum of squared residuals)" },
+            { "tag": "Step 3", "label": "Test of the function", "text": "Overall fit: **R²**, adjusted R², F-statistic" },
+            { "tag": "Step 4", "label": "Test of the coefficients", "text": "Which IVs matter? **t-test**, p-value per coefficient" }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Step 1: which scales are allowed?",
+          "head": ["Scale", "As DV", "As IV"],
+          "rows": [
+            ["Nominal", "No", "Yes – as **dummy (0/1)** variables"],
+            ["Ordinal", "No", "No"],
+            ["Interval", "Yes", "Yes"],
+            ["Ratio", "Yes", "Yes"]
+          ],
+          "note": "Package colour red / yellow / green → two dummies “red” (0/1) and “yellow” (0/1); both 0 = green (the baseline)."
+        },
+        {
+          "type": "causal",
+          "items": [
+            { "variant": "direct", "x": "Salesman visits", "y": "Sales", "caption": "Plausible causal direction based on theory – the regression quantifies it." },
+            { "variant": "confounder", "x": "Ice-cream sales", "y": "Murders", "z": "Hot weather", "caption": "Statistically significant, but spurious: a third variable drives both (→ S10)." }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "From managerial question to model",
+          "head": ["Question", "DV", "IV(s)"],
+          "rows": [
+            ["Is sales associated with the number of salesman visits?", "€ sales per vendor per period", "Visits per vendor per period"],
+            ["How do sales change if marketing investment doubles?", "Sales per period", "Marketing investment in € per period"],
+            ["Does a 10 % price increase affect sales if marketing investment rises by 10 % at the same time?", "Sales per period", "Price, marketing investment"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estimation",
+      "heading": "Estimation with least squares",
+      "blocks": [
+        {
+          "type": "formula",
+          "name": "Simple regression model",
+          "formula": "ŷ = b_{0} + b_{1} · x     y_{k} = ŷ_{k} + e_{k}",
+          "vars": ["ŷ = estimated value of the DV", "b_{0} = intercept: estimated y when x = 0", "b_{1} = slope: change in y for a one-unit change in x", "e_{k} = residual = observed − estimated value"]
+        },
+        {
+          "type": "formula",
+          "name": "Ordinary least squares (OLS)",
+          "formula": "min Σ e_{k}^{2} = Σ (y_{k} − b_{0} − b_{1} x_{k})^{2}",
+          "note": "Of the infinitely many possible lines, OLS picks the one with the **smallest sum of squared residuals** – the line closest to all observed points."
+        },
+        {
+          "type": "formula",
+          "name": "Multiple regression model",
+          "formula": "ŷ = b_{0} + b_{1} x_{1} + b_{2} x_{2} + … + b_{J} x_{J}"
+        },
+        {
+          "type": "example",
+          "title": "Margarine: adding marketing investment",
+          "given": ["Estimated sales = 144.482 + 10.487 · visits + 0.664 · marketing investment", "Area 6: 102 visits, 1,500 € investment, observed sales 2,278"],
+          "question": "Estimated sales and residual for area 6?",
+          "steps": ["ŷ = 144.482 + 10.487 × 102 + 0.664 × 1,500", "= 144.482 + 1,069.7 + 996 ≈ 2,210", "Residual = 2,278 − 2,210 = 68"],
+          "result": "≈ 2,210 packages expected, residual + 68"
+        },
+        {
+          "type": "callout",
+          "tone": "warn",
+          "title": "“All other variables constant”",
+          "text": "In a multiple regression each coefficient is the effect **holding the other IVs constant**: +1 visit → +10.487 packages; +1 € investment → +0.664 packages. The visit effect shrank from 18.9 because part of it was really marketing. And: the absolute size of coefficients ≠ importance when units differ → use **standardised coefficients**."
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "heading": "Testing the model and the coefficients",
+      "blocks": [
+        {
+          "type": "formula",
+          "name": "Coefficient of determination",
+          "formula": "R^{2} = explained variance / total variance     0 ≤ R^{2} ≤ 1",
+          "vars": ["0 = very bad fit", "1 = very good fit"],
+          "note": "R² never falls when you add IVs – even irrelevant ones. The **adjusted R²** penalises extra variables (uses number of observations and IVs). The F-test checks whether the model as a whole is significant."
+        },
+        {
+          "type": "formula",
+          "name": "t-test of a coefficient",
+          "formula": "H_{0}: β_{j} = 0   vs.   H_{1}: β_{j} ≠ 0     t_{emp} = b_{j} / SE(b_{j})",
+          "vars": ["|t_{emp}| > t_{tab} (e.g. 2.571 for 5 df at α = 0.05) → reject H0: significant", "Equivalent: **p-value < 0.05** → significant"]
+        },
+        {
+          "type": "table",
+          "title": "Online shop: monthly units (12 months), R² = 0.99, adjusted 0.98",
+          "head": ["Variable", "Coefficient", "p-value", "Reading"],
+          "rows": [
+            ["Intercept", "1,064.14", "0.165", "–"],
+            ["Price", "−79.27", "0.130", "**not significant** → no conclusion"],
+            ["SEM spend (€)", "0.472", "0.018", "+1 € → +0.47 units"],
+            ["Social media spend (€)", "1.380", "0.044", "+1 € → +1.38 units → best use of budget"],
+            ["Season dummy (months 7–9)", "1,534.58", "0.000", "summer months sell ~1,535 more units"]
+          ],
+          "note": "Visual inspection first: three outlier months (7, 8, 9) hinted at a seasonal effect – hence the dummy."
+        },
+        {
+          "type": "table",
+          "title": "50 tech start-ups: profit (R² = 0.61, adjusted 0.58), baseline = Florida",
+          "head": ["Variable", "Coefficient", "p-value", "Reading"],
+          "rows": [
+            ["Administration (€)", "0.32", "0.02", "+1 € → +0.32 € profit"],
+            ["Marketing spend (€)", "0.25", "0.00", "+1 € → +0.25 € profit"],
+            ["New York (dummy)", "5,579.47", "0.55", "not significantly different from Florida"],
+            ["California (dummy)", "1,703.70", "0.86", "not significantly different from Florida"]
+          ],
+          "note": "Three locations → only **two** dummies in the model; the omitted one (Florida) is the reference. No location is better than the others."
+        }
+      ]
+    },
+    {
+      "id": "adidas",
+      "heading": "Exam pattern: Adidas transaction value",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["", "Coefficient", "p-value", "Significant?"],
+          "rows": [
+            ["Intercept", "52.3", "0.000", "✓"],
+            ["Gender (female = 1)", "12.7", "0.002", "✓"],
+            ["Age", "1.4", "0.030", "✓"],
+            ["Channel (online = 1)", "−23.1", "0.004", "✓"],
+            ["Duration (days)", "12.2", "0.567", "–"],
+            ["Social (follower = 1)", "27.6", "0.832", "–"]
+          ],
+          "note": "R² = 65 %, model significant."
+        },
+        {
+          "type": "example",
+          "title": "Three typical questions",
+          "given": ["a) Which elements affect spending?", "b) Ignoring age: female offline vs. male online?", "c) Forecast for a 24-year-old woman, online, last purchase 37 days ago, follower"],
+          "steps": [
+            "a) Only p < 0.05: **gender, age, channel** – not duration or social",
+            "b) Female offline = +12.7; male online = −23.1 → difference 12.7 − (−23.1) = 35.8",
+            "c) Use intercept + significant terms only: 52.3 + 12.7 × 1 + 1.4 × 24 − 23.1 × 1",
+            "= 52.3 + 12.7 + 33.6 − 23.1"
+          ],
+          "result": "a) gender, age, channel · b) female/offline spend 35.8 € more · c) 75.50 €"
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "Regression explains and predicts a **metric DV** from IVs; nominal IVs enter as **dummies**, ordinal not at all.",
+    "**ŷ = b0 + b1·x**: intercept = estimated y at x = 0; slope = change in y per unit of x; residual = observed − estimated.",
+    "**OLS** minimises the sum of squared residuals.",
+    "Four steps: formulate → estimate → test function (**R², adj. R², F**) → test coefficients (**t = b/SE, p < 0.05**).",
+    "Multiple regression: each b holds the other IVs constant; compare importance only with standardised coefficients.",
+    "Predict with intercept + **significant** coefficients; k categories → k − 1 dummies."
+  ],
+  "exam": [
+    "Coefficient table with p-values: which variables matter, difference between two customer types, forecast for a described customer (Adidas).",
+    "Interpret R² and adjusted R² and recommend where to invest (online shop example).",
+    "T/F on definitions: intercept, residual, OLS, R² growth with more variables."
+  ],
+  "traps": [
+    "Insignificant coefficients are **not interpreted** and left out of forecasts.",
+    "The intercept is the **estimated** (not observed) value of y when all x = 0.",
+    "A higher R² from adding variables does not mean a better model – look at adjusted R².",
+    "Dummy coefficients are differences **relative to the baseline category**."
+  ]
+}

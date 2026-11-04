@@ -1,0 +1,314 @@
+{
+  "lecture": "s06",
+  "title": "Acquisition: customer value, VIU & A/B testing",
+  "source": "Session 6 handout (DDM 26/27) – Lilien, Rangaswamy & De Bruyn (2017) ch. 2 & 6, HubSpot on CAC, OMG website case, ESCP chips VIU case",
+  "tagline": "Acquiring customers costs money – so you must know what customers value and what one customer may cost. This session measures funnel KPIs and CAC, defines customer value (benefits − costs), calculates value-in-use and tests offers with A/B experiments.",
+  "goals": [
+    "calculate **CTR, conversion rate, cost per sale, ROI and CAC**",
+    "explain the **customer value equation** and the core/tangible/augmented product",
+    "compare **objective, perceptual and behavioural** measures of customer value",
+    "calculate **value-in-use (VIU)** – with and without shutdown costs",
+    "set up an **A/B test**, explain type I/II errors and pick **t-test vs. chi-square**"
+  ],
+  "sections": [
+    {
+      "id": "journey",
+      "heading": "The customer journey and acquisition",
+      "blocks": [
+        {
+          "type": "flow",
+          "steps": [
+            { "tag": "Session 6", "label": "Acquisition", "text": "What do customers want and value? How do we win them?" },
+            { "tag": "Session 7", "label": "Conversion", "text": "Which offering turns interest into a purchase?" },
+            { "tag": "Session 8", "label": "Retention & relationship", "text": "How do we keep valuable customers?" }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Why acquisition matters",
+          "items": ["It generates money to meet costs, pay employees and reinvest in growth", "It shows **traction** to investors, partners and influencers", "But: acquisition costs rose by **over 50 %** in five years – marketing gets more expensive and customers trust brands less"]
+        },
+        {
+          "type": "funnel",
+          "title": "Acquisition funnel – OMG website version A",
+          "stages": [
+            { "label": "Visitors", "tag": "20,000", "text": "Reach of the page" },
+            { "label": "Clicks on product page", "tag": "1,298", "text": "CTR = clicks / visitors = 6.49 %" },
+            { "label": "Sales", "tag": "75", "text": "Conversion rate = sales / visitors = 0.375 %" }
+          ],
+          "caption": "Each stage has its own KPI – check whether the measures of an analytics tool really reflect the stages of the funnel."
+        }
+      ]
+    },
+    {
+      "id": "kpis",
+      "heading": "Funnel KPIs and acquisition cost",
+      "blocks": [
+        {
+          "type": "grid",
+          "cols": 2,
+          "items": [
+            { "label": "Click-through rate", "text": "CTR = clicks / visitors" },
+            { "label": "Conversion rate", "text": "Sales / visitors" },
+            { "label": "(Ad) cost per sale", "text": "Ad spend / sales" },
+            { "label": "Return on ad investment", "text": "ROI = (revenue − ad spend) / ad spend" }
+          ]
+        },
+        {
+          "type": "formula",
+          "name": "Customer acquisition cost",
+          "formula": "CAC = MC / CA",
+          "vars": ["MC = marketing costs of a campaign or period", "CA = customers acquired by it"],
+          "note": "For an accurate CAC include **all** marketing costs – campaign spend, salaries, events, even materials. CAC makes marketing ROI measurable; the CLV (Session 8) tells you how much you **may** spend."
+        },
+        {
+          "type": "example",
+          "title": "Startup OMG: which website version performs better?",
+          "given": ["A: 20,000 visitors · 1,298 clicks · 75 sales at 108 € · 1,800 € ad spend", "B: 20,000 visitors · 1,056 clicks · 92 sales at 98 € · 2,000 € ad spend"],
+          "question": "Compute CTR, conversion, cost per sale and ROI.",
+          "steps": [
+            "CTR: A = 1,298 / 20,000 = 6.49 % · B = 1,056 / 20,000 = 5.28 %",
+            "Conversion: A = 75 / 20,000 = 0.375 % · B = 92 / 20,000 = 0.46 %",
+            "Cost per sale: A = 1,800 / 75 = 24.00 € · B = 2,000 / 92 ≈ 21.74 €",
+            "Revenue: A = 75 × 108 = 8,100 € · B = 92 × 98 = 9,016 €",
+            "ROI: A = (8,100 − 1,800) / 1,800 = 3.50 · B = (9,016 − 2,000) / 2,000 ≈ 3.51"
+          ],
+          "result": "A wins on clicks, but B is (slightly) better on the bottom line: higher conversion, lower cost per sale, higher ROI."
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "heading": "What is a product?",
+      "lead": "Anything that can be offered for attention, acquisition, use or consumption and that might satisfy a want or a need – including services (concerts, consulting, an MBA). Is your degree a product?",
+      "blocks": [
+        {
+          "type": "flow",
+          "title": "Three product levels",
+          "steps": [
+            { "label": "Core product", "text": "The central need or benefit. “A customer buys a three-inch **hole**, not a three-inch drill bit” (Levitt); “In the factory we make cosmetics; in the store we sell **hope**” (Revlon)." },
+            { "label": "Tangible product", "text": "Features, styling, quality level, brand name and packaging that make the core buyable." },
+            { "label": "Augmented product", "text": "Additional services and features (delivery, warranty, support) – increasingly important for the overall experience." }
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "Product component model of attributes (adapted from Cateora)",
+          "cols": 3,
+          "items": [
+            { "label": "Physical attributes", "points": ["Physical product incl. package sides", "Design features", "Functional features", "Legal conformity"] },
+            { "label": "Symbolic attributes", "points": ["Brand name, trademark", "Styling, packaging design", "Price, quality, quality–price ratio"] },
+            { "label": "Service attributes", "points": ["Repair & maintenance, installation", "Instructions, financing", "Warranties, deliveries, spare parts"] }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "New product development process – a decision tree with GO / NO-GO gates",
+          "steps": [
+            { "label": "Opportunity identification", "text": "Market identification, idea generation" },
+            { "label": "Design", "text": "Customer needs, positioning, segmentation, sales forecast – **measure customer value**" },
+            { "label": "Testing", "text": "Ad & product tests, pre-test forecasting, test marketing – **A/B testing**" },
+            { "label": "Introduction", "text": "Launch planning and tracking" },
+            { "label": "Life-cycle management", "text": "Market response, fine-tuning the mix, innovation at maturity (→ S8)" }
+          ],
+          "note": "A NO at an early gate sends the idea back; a NO late in the life cycle means reposition or harvest."
+        }
+      ]
+    },
+    {
+      "id": "value",
+      "heading": "Customer value",
+      "blocks": [
+        {
+          "type": "formula",
+          "name": "Customer value equation (Lilien et al., 2017)",
+          "formula": "Net customer value = benefits − costs",
+          "vars": ["Benefits: functional, psychological, economic", "Costs: monetary, perceived risk, inconvenience"]
+        },
+        {
+          "type": "compare",
+          "title": "Example: the launch of Lexus",
+          "sides": [
+            { "label": "Benefits", "points": ["Engineering, safety, style, fit and finish on European premium level"] },
+            { "label": "Costs", "points": ["Price advantage over Mercedes", "Reduced perceived risk of buying an expensive car"] }
+          ],
+          "note": "Toyota targeted buyers who wanted a BMW or Mercedes but found them overpriced – high benefits at lower cost made Lexus an outstanding success."
+        },
+        {
+          "type": "table",
+          "title": "Measures of customer value",
+          "head": ["Family", "Method", "How it works"],
+          "rows": [
+            ["Objective", "Internal engineering assessment", "Firm's own engineers estimate value: lab tests, alpha tests by employees, simulations – only as good as the firm's understanding of usage"],
+            ["Objective", "Indirect survey questions", "Ask about the effect of **changes** rather than the worth of the whole offer: “If cartridges lasted 20 % longer, what would that be worth to you?”"],
+            ["Objective", "Value-in-use (VIU)", "Maximum willingness to pay for a product given a reference (previous version, main competitor)"],
+            ["Perceptual – unconstrained", "Focus groups", "5–10 (potential) customers discuss with a moderator for hours – risk of **groupthink**"],
+            ["Perceptual – unconstrained", "Direct survey questions", "Respondents state the worth of described concepts"],
+            ["Perceptual – unconstrained", "Importance ratings", "Popular – but everything can be rated “very important”, no trade-offs, no WTP, weak link to behaviour"],
+            ["Perceptual – constrained", "Conjoint analysis", "Rate or choose systematically varied offerings → part-worths (→ S7)"],
+            ["Perceptual – constrained", "Benchmarking", "How much more (less) would you pay if a feature were added to (removed from) the benchmark offer?"],
+            ["Behavioural", "Choice models", "Infer value from past behaviour, e.g. multinomial logit"],
+            ["Behavioural", "Data mining", "Segment purchase databases (American Express) → cross- and up-selling"]
+          ]
+        },
+        {
+          "type": "formula",
+          "name": "Multinomial logit model",
+          "formula": "P(A) = B_{A} / (B_{A} + B_{B} + … + B_{N})",
+          "vars": ["P(A) = purchase probability of brand A", "B_{j} = perceived benefit of brand j for this customer"]
+        },
+        {
+          "type": "table",
+          "title": "Comparison of the families (Lilien et al., 2017)",
+          "head": ["Criterion", "Objective", "Behavioural", "Perceived – constrained", "Perceived – unconstrained"],
+          "rows": [
+            ["Customer information needed", "High", "Low", "Medium", "Low"],
+            ["Cost", "Very high per respondent", "Medium", "High", "Low"],
+            ["Insight", "Very high", "Medium", "High", "Low"],
+            ["Predictive of behaviour", "High", "Moderate", "Moderate", "Low"],
+            ["Past purchase data needed", "No", "Yes", "No", "No"],
+            ["Good in dynamic markets", "Yes", "No", "Partly", "Partly"],
+            ["Usable for lead users", "Yes", "No", "Yes", "No"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "viu",
+      "heading": "Value-in-use (VIU)",
+      "lead": "VIU = the maximum price a customer would pay for the new product so that it costs them exactly as much per year as the reference product. Price below VIU → the customer gains; above → don't buy.",
+      "blocks": [
+        {
+          "type": "formula",
+          "name": "VIU logic – indifference between old and new",
+          "formula": "Annual cost_{old} = units_{new} × VIU + other annual costs_{new}",
+          "vars": ["Annual cost_{old} = units × changes per year × price + shutdowns × shutdown cost", "Solve for VIU"],
+          "note": "The **supplier's margins are distractors** – VIU is about the customer's costs."
+        },
+        {
+          "type": "example",
+          "title": "ESCP chips (mock exam 2023/24 and 2025/26)",
+          "given": ["400 chips at 6 €, changed twice per year", "New chips last twice as long (changed once per year)", "Add-on: maintenance every 12 instead of 6 months; each shutdown costs 1,000 €"],
+          "question": "VIU without and with shutdown costs? Buy at 14 €?",
+          "steps": [
+            "Old annual cost = 400 × 2 × 6 € = 4,800 €",
+            "Without shutdowns: 400 × VIU = 4,800 → VIU = 12 € (one new chip replaces two old ones: 2 × 6 €)",
+            "Shutdowns old = 2 × 1,000 = 2,000 €; new = 1 × 1,000 = 1,000 €",
+            "With shutdowns: 4,800 + 2,000 = 400 × VIU + 1,000 → VIU = 5,800 / 400 = 14.50 €",
+            "Shortcut: savings 1,000 € / 400 chips = 2.50 € per chip → 12 + 2.50",
+            "Price 14 € < VIU 14.50 € → buy (saves 0.50 € per chip)"
+          ],
+          "result": "VIU = 12 € (material only) and 14.50 € (incl. shutdowns) → purchase at 14 €. If shutdowns cost 1,200 €, VIU rises to 15 €."
+        },
+        {
+          "type": "waterfall",
+          "title": "How the VIU of a new chip builds up",
+          "unit": " €",
+          "items": [
+            { "label": "Replaces 2 old chips", "value": 12 },
+            { "label": "Shutdown savings per chip", "value": 2.5 },
+            { "label": "VIU incl. shutdowns", "value": 14.5, "total": true },
+            { "label": "Price paid", "value": -14 },
+            { "label": "Customer gain", "value": 0.5, "total": true }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "exam",
+          "title": "Same pattern, 2019/20: Z-rings vs. Y-rings",
+          "text": "250 Z-rings at 8 €, changed every 3 months (4×/year); Y-rings last twice as long → VIU = 16 €. With 3,000 € per shutdown: 8,000 + 12,000 = 500 × VIU + 6,000 → **VIU = 28 €**, so 25 € is a good deal."
+        }
+      ]
+    },
+    {
+      "id": "ab",
+      "heading": "Inference and A/B testing",
+      "blocks": [
+        {
+          "type": "defs",
+          "items": [
+            { "term": "Inferential statistics", "text": "Drawing conclusions about a **population** from a **sample** – for estimation (average satisfaction in my segment?) and hypothesis testing (does the new loyalty programme raise satisfaction?)." },
+            { "term": "Hypotheses", "text": "**H0** = “no effect”; **H1** = the hypothesised effect. A test decides whether to reject H0 in favour of H1 – and can be wrong." }
+          ]
+        },
+        {
+          "type": "matrix",
+          "title": "Test decisions and errors",
+          "xLabel": "Reality",
+          "yLabel": "Test says",
+          "x": ["H0 is correct", "H1 is correct"],
+          "y": ["Reject H0 (support H1)", "Don't reject H0"],
+          "cells": [
+            { "label": "Type I error (α)", "text": "We believe in an effect that doesn't exist", "tone": "bad" },
+            { "label": "OK", "text": "Effect correctly detected", "tone": "good" },
+            { "label": "OK", "text": "Correctly no effect", "tone": "good" },
+            { "label": "Type II error (β)", "text": "We miss an effect that exists", "tone": "bad" }
+          ],
+          "note": "A test cannot control both errors at once: fix α (usually **5 %** in social sciences) and use a test that minimises β."
+        },
+        {
+          "type": "defs",
+          "items": [
+            { "term": "A/B test (split test)", "text": "A marketing experiment that **splits** the audience randomly: version A (control, existing) vs. version B (challenger, one change) – which performs better on a KPI?" }
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "Two classic tests",
+          "sides": [
+            { "label": "Design test", "points": ["CTA button blue (A) vs. red (B), same landing page", "Result: blue gets more clicks → keep blue"] },
+            { "label": "User-experience test", "points": ["CTA at the top (A) vs. in the sidebar/bottom (B)", "Same share of visitors sees each version"] }
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "Benefits",
+          "cols": 4,
+          "items": [
+            { "label": "More traffic", "text": "Better titles → more clicks" },
+            { "label": "Higher conversion", "text": "CTA position, colour, anchor text → more leads" },
+            { "label": "Lower bounce rate", "text": "Intros, fonts, images keep visitors" },
+            { "label": "Less cart abandonment", "text": "40–75 % leave items in the cart – test photos, checkout, shipping display" }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Sustainable t-shirt: which test for which KPI?",
+          "head": ["KPI", "Funnel stage", "Data", "Test"],
+          "rows": [
+            ["#1 Willingness to buy", "Intention", "Metric rating → compare **means** of A and B", "**t-test**"],
+            ["#2 Choice (buy A or B)", "Purchase", "Categorical counts → observed vs. expected", "**Chi-square test** (independence)"]
+          ],
+          "note": "The two KPIs can disagree: people may say they would buy the sustainable version but not choose it. Base the launch decision on the KPI closest to the business goal (sales → choice)."
+        },
+        {
+          "type": "callout",
+          "tone": "warn",
+          "title": "When an A/B test fits",
+          "text": "One element, two versions, random split, one KPI (“Does the new newsletter design raise CTR?” → yes). Comparing **different products and different customer groups** (“women buying t-shirts vs. men buying shoes”) → not an A/B test. Note the dark side: Google and Facebook run A/B tests on users **without telling them** (Zuboff)."
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "Journey: acquisition (S6) → conversion (S7) → retention (S8).",
+    "CTR = clicks / visitors; conversion = sales / visitors; cost per sale = spend / sales; ROI = (revenue − spend) / spend; **CAC = MC / CA**.",
+    "Product = core (need) + tangible (features, brand) + augmented (services).",
+    "**Customer value = benefits (functional, psychological, economic) − costs (monetary, risk, inconvenience)**.",
+    "Value measures: objective (engineering, indirect questions, VIU), perceptual (unconstrained: focus groups, ratings; constrained: conjoint, benchmarking), behavioural (choice models, data mining).",
+    "**VIU**: old annual cost = new units × VIU + remaining costs; price < VIU → buy. Supplier margins are irrelevant.",
+    "Type I = reject a true H0 (α = 5 %); type II = keep a false H0 (β).",
+    "A/B: one change, random split; means → **t-test**, choice counts → **chi-square**."
+  ],
+  "exam": [
+    "VIU mini-case (every recent mock): annual cost, VIU without/with shutdown costs, buy decision, effect of a change in shutdown costs.",
+    "KPI calculation of two website versions (CTR, conversion, cost per sale, ROI).",
+    "T/F: “Can an A/B test support this decision?”; type I vs. type II error."
+  ],
+  "traps": [
+    "Supplier margins (3 €, 8 €) are **distractors** in the VIU case.",
+    "Count shutdowns per **year**: every 6 months = 2, every 3 months = 4.",
+    "More clicks ≠ better – judge website versions on conversion, cost per sale and ROI.",
+    "Not rejecting H0 does not prove H0 – it may be a type II error."
+  ]
+}

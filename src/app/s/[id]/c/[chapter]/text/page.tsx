@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ReadingView } from "@/components/ReadingView";
+import { SummaryView } from "@/components/SummaryView";
 import { getAllContent, getSubjectContent, getText, getTexts } from "@/lib/content";
+import { getLectureSummary } from "@/lib/summary";
 
 export function generateStaticParams() {
   return getAllContent().flatMap((c) => getTexts(c.subject.id).map((t) => ({ id: c.subject.id, chapter: t.lecture })));
@@ -17,7 +19,11 @@ export default async function TextPage({ params }: PageProps<"/s/[id]/c/[chapter
   const { id, chapter } = await params;
   const content = getSubjectContent(id);
   const text = getText(id, chapter);
+  const summary = getLectureSummary(id, chapter);
   const index = content?.subject.lectures.findIndex((l) => l.id === chapter) ?? -1;
-  if (!content || !text || index < 0) notFound();
+  if (!content || index < 0) notFound();
+  // Ausgearbeitete Zusammenfassung mit Diagrammen hat Vorrang vor dem Stichpunkttext
+  if (summary) return <SummaryView subject={content.subject} summary={summary} chapterIndex={index} />;
+  if (!text) notFound();
   return <ReadingView subject={content.subject} text={text} chapterIndex={index} />;
 }

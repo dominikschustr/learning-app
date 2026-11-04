@@ -1,0 +1,185 @@
+{
+  "lecture": "s10",
+  "title": "Regression in practice & causality",
+  "source": "Session 10 handout (DDM 26/27) – Antonakis et al. (2010), Airbnb New York/Melbourne, grocery shopping, movie box office; Playmobil (exam 2019/20) and H&M (revision session)",
+  "tagline": "A regression coefficient is only a causal effect if the independent variable is exogenous. Otherwise – reverse causality, omitted variables – it is an association. You may predict with associations, but you should only give policy recommendations based on causal effects.",
+  "goals": [
+    "state the **three conditions** for a causal claim",
+    "explain **reverse causality, omitted variables** and **spurious correlations**",
+    "say when a coefficient may be read **causally** (exogenous x)",
+    "build and interpret a model with **dummy variables** and make a **prediction**",
+    "turn a coefficient table into **managerial recommendations** and name its limitations"
+  ],
+  "sections": [
+    {
+      "id": "reading-output",
+      "heading": "Recap: reading regression output",
+      "blocks": [
+        {
+          "type": "list",
+          "style": "check",
+          "items": [
+            "Intercept: the **estimated** value of the DV when all IVs equal zero (not the observed one)",
+            "Significant coefficient (p < 0.05): when x rises by one unit, y is expected to change by b units, all else equal",
+            "Not significant (p ≥ 0.05): **no change expected** – don't interpret the size, even if it looks large",
+            "R²: share of the variance of y explained by the model"
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "exam",
+          "title": "Recap quiz pattern",
+          "text": "“When social desirability is higher by one unit, how does perceived stress change?” – if the coefficient is **insignificant**, the correct answer is “we do not expect any change”, not “lower by 0.149”."
+        }
+      ]
+    },
+    {
+      "id": "causality",
+      "heading": "Causality",
+      "blocks": [
+        {
+          "type": "flow",
+          "title": "x → y is causal only if … (Antonakis et al., 2010)",
+          "steps": [
+            { "label": "Temporal precedence", "text": "x must **precede** y in time" },
+            { "label": "Reliable correlation", "text": "x must be correlated with y **beyond chance**" },
+            { "label": "No alternative explanation", "text": "The relation must **not** be explained by other causes" }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "If x is (potentially) **endogenous**, the regression coefficient must be interpreted as an **association** (correlational). Two major reasons:"
+        },
+        {
+          "type": "causal",
+          "items": [
+            { "variant": "reverse", "x": "Advertising budget", "y": "Sales", "caption": "**Reverse causality / simultaneity**: y also drives x – firms spend more on ads when they expect high sales." },
+            { "variant": "confounder", "x": "Ice-cream sales", "y": "Drownings", "z": "Summer heat", "caption": "**Omitted variable**: a third variable drives both x and y – the correlation is spurious." },
+            { "variant": "direct", "x": "Randomly assigned price", "y": "Purchases", "caption": "**Exogenous x** (manipulated by an external force, e.g. an experiment or A/B test) → the coefficient is a causal effect." }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "key",
+          "title": "Why it matters",
+          "text": "Causal effects let you **explain past events** and give **appropriate policy recommendations**. Spurious correlations (tylervigen.com) can be highly significant – significance is not causality. Recommendations like “spend more on X” require a causal effect."
+        }
+      ]
+    },
+    {
+      "id": "dummies",
+      "heading": "Applications: dummies and prediction",
+      "blocks": [
+        {
+          "type": "grid",
+          "cols": 3,
+          "items": [
+            { "label": "Airbnb New York", "tag": "Marketing mix", "text": "Which factors are associated with price? Room type, number of beds, people accommodated, bathrooms, acceptance rate, review score. Take-home: compare with **Melbourne** – different market, different coefficients." },
+            { "label": "Grocery shopping", "tag": "Spending optimisation", "text": "Total grocery spending explained by demographics and behaviour; categorical variables (gender, loyalty membership, region) recoded as **dummies**." },
+            { "label": "Movie box office", "tag": "Sales forecast", "text": "Predict revenue of “1917” (budget 100 m, 118 min, IMDb 8.37; actual 365.2 m): budget only → + runtime → + rating – each step gets closer to the real value." }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Dummy coding",
+          "items": [
+            "A nominal variable with **k categories** becomes **k − 1** dummies (0/1); the left-out category is the **baseline**",
+            "The dummy coefficient = difference in y **relative to the baseline**, all else equal (female = 1: women spend b more than men)",
+            "Including all k dummies plus an intercept makes the model unidentifiable (dummy-variable trap)"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Grocery spending – refined model (practice coefficients)",
+          "given": ["Spending = 120 + 3.5 × age + 45 × female + 22 × visits per year + 180 × loyalty member", "Customer: 45 years, female, 37 visits per year, loyalty member"],
+          "question": "Predicted yearly grocery spending?",
+          "steps": ["120 + 3.5 × 45 = 120 + 157.5", "+ 45 × 1 (female) = 45", "+ 22 × 37 = 814", "+ 180 × 1 (member) = 180", "Sum = 120 + 157.5 + 45 + 814 + 180"],
+          "result": "≈ 1,316.50 € per year"
+        },
+        {
+          "type": "flow",
+          "title": "Exercise workflow (grocery case)",
+          "steps": [
+            { "label": "Describe", "text": "Descriptive statistics of all variables" },
+            { "label": "Recode", "text": "Categorical → dummy variables" },
+            { "label": "Visualise", "text": "Scatter plot visits vs. spending" },
+            { "label": "Hypothesise", "text": "Which variables should matter and why?" },
+            { "label": "Estimate", "text": "Full model: significance, fit, interpretation, face validity" },
+            { "label": "Refine & predict", "text": "Subset model → prediction for a given customer" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recommendations",
+      "heading": "From coefficients to recommendations",
+      "blocks": [
+        {
+          "type": "flow",
+          "title": "Answer scheme for “Which elements have the strongest impact – what do you recommend?”",
+          "steps": [
+            { "label": "1 · Significance", "text": "Keep only p < 0.05 – ignore the rest" },
+            { "label": "2 · Size & sign", "text": "Rank the significant betas; note negative effects" },
+            { "label": "3 · Recommend", "text": "Advertising: the significant channel with the largest beta; product: follow significant product effects" },
+            { "label": "4 · Limitations", "text": "Units, standardisation, R², omitted variables, causality" }
+          ]
+        },
+        {
+          "type": "bars",
+          "title": "Playmobil Christmas edition (exam 2019/20): significant betas only",
+          "items": [
+            { "label": "outlet_number", "value": 1.31 },
+            { "label": "billboard_spend", "value": 0.76 },
+            { "label": "TV_spend", "value": 0.45 },
+            { "label": "box_size", "value": -0.89 }
+          ],
+          "caption": "Not significant: online_spend (0.18) and box age. Strongest elements: outlets (+) and box size (−). Advertise via **billboards**, then TV; prioritise **smaller box sets**; no statement on age suitability."
+        },
+        {
+          "type": "bars",
+          "title": "H&M 2022 forecast (revision session): significant betas",
+          "items": [
+            { "label": "outlet_number", "value": 2.12 },
+            { "label": "online_spend", "value": 1.39 },
+            { "label": "TV_spend", "value": 0.31 },
+            { "label": "billboard_spend", "value": 0.03 },
+            { "label": "old_sales (trend)", "value": -1.08 }
+          ],
+          "caption": "All three channels are significant – online has by far the largest beta → invest online. The negative coefficient on past sales indicates a **declining** sales trend; new_products is not significant."
+        },
+        {
+          "type": "grid",
+          "title": "Typical limitations to name",
+          "cols": 3,
+          "items": [
+            { "label": "Units & standardisation", "text": "Units of DV and IVs unclear, coefficients not standardised → sizes hard to compare" },
+            { "label": "Fit not reported", "text": "No R² / adjusted R² → unknown how much is explained" },
+            { "label": "Omitted variables", "text": "Price, competitors, seasonality, product theme missing" },
+            { "label": "Reverse causality", "text": "Outlets and ad budgets may follow expected sales" },
+            { "label": "Data", "text": "Few observations; aggregate monthly data" },
+            { "label": "Fix", "text": "Add controls, more granular data, or run **experiments** for causal effects" }
+          ]
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "Causal claim needs: x before y, reliable correlation, no alternative explanation.",
+    "Endogenous x → coefficient is an **association**: reverse causality (y → x) or omitted variables (z → x and y).",
+    "Exogenous x (experiment, external manipulation) → **causal** effect; only causal effects justify policy recommendations.",
+    "k categories → **k − 1 dummies**; dummy coefficient = difference to the baseline.",
+    "Prediction = intercept + Σ (significant coefficient × value) for the described customer.",
+    "Recommendation scheme: significance → size/sign → action → limitations."
+  ],
+  "exam": [
+    "Coefficient table with significance levels (Playmobil, H&M): strongest elements, advertising and product recommendation, sales trend.",
+    "Explain why a coefficient may not be causal and what this means for recommendations.",
+    "Limitations of a given model and how to improve it."
+  ],
+  "traps": [
+    "Highly significant ≠ causal – spurious correlations can be very significant.",
+    "Don't recommend investing in a channel whose coefficient is **not** significant, however large it looks.",
+    "A negative coefficient on past sales signals a downward trend, not an error.",
+    "Comparing raw betas across variables in different units is misleading without standardisation."
+  ]
+}

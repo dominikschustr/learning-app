@@ -1,0 +1,230 @@
+{
+  "lecture": "s08",
+  "title": "Retention: CRM & customer lifetime value",
+  "source": "Session 8 handout (DDM 25/26) – Lilien et al. (2017), Mittal et al. (2023), HBR (2010), MadCool examples, Maru Batting Centre case",
+  "tagline": "Winning a customer is expensive; keeping a valuable one pays. CRM shifts the focus from single transactions to the lifetime value of each typical customer – measured with retention, survival and CLV.",
+  "goals": [
+    "explain why **CRM** gains importance and what questions a value-based approach answers",
+    "describe the **satisfaction – loyalty – profit chain**",
+    "compute **market share, sales growth, acquisition rate and acquisition cost**",
+    "compute **retention, survival rate and average lifetime**",
+    "compute **CLV** and compare segments by it"
+  ],
+  "sections": [
+    {
+      "id": "crm",
+      "heading": "Why CRM?",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "Trends that make CRM important",
+          "head": ["Trend", "Behind it", "CRM relevance"],
+          "rows": [
+            ["Rising cost of acquisition", "Slow population growth, mature markets; ads more expensive and less effective", "Shift from acquisition to maximising the value of existing customers: loyalty, upselling, retention"],
+            ["Demand for relationship marketing", "Growth depends on nurturing existing customers; trust beats one-off promotions", "Lifecycle marketing, nurturing leads, long-term value instead of transactions"],
+            ["Declining brand loyalty", "Young, digital consumers experiment; switching is cheap and easy online", "Monitor engagement, spot churn signals, targeted retention"]
+          ]
+        },
+        {
+          "type": "defs",
+          "items": [
+            { "term": "CRM", "text": "The practice of analysing and using marketing databases and communication technologies to determine practices that **maximise the lifetime value of each (typical) customer** – “typical” = representative of a segment." },
+            { "term": "Loyalty", "text": "A deeply held commitment to re-buy or re-patronise a preferred product in the future despite situational influences and marketing efforts that could cause switching (HBR, 2010)." },
+            { "term": "Customer lifetime value (CLV)", "text": "The **present value of the future (net) cash flows** associated with a particular customer – forward-looking, predictive rather than precise, calculated differently in different settings." }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Questions a customer-value approach answers",
+          "style": "check",
+          "items": ["What is the expected future value of a customer or segment – and who are the most valuable ones?", "How can we acquire more high-value customers and retain the best ones?", "Why do customers churn and how can we prevent it?", "How should we allocate marketing resources across segments?"]
+        },
+        {
+          "type": "grid",
+          "title": "Why a value-based approach pays",
+          "cols": 4,
+          "items": [
+            { "label": "Profit", "text": "Prioritise high-value customers" },
+            { "label": "ROMI", "text": "Higher conversion, lower acquisition cost" },
+            { "label": "Forecasting", "text": "CLV projections inform budgets" },
+            { "label": "Allocation", "text": "Effort where returns are highest" },
+            { "label": "Firm value", "text": "High-CLV customer base raises valuation" },
+            { "label": "Cost-to-serve", "text": "Automate or limit service for low-value customers" },
+            { "label": "Share of wallet", "text": "Up- and cross-selling to profitable customers" },
+            { "label": "Churn", "text": "Retention focused on top segments" }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "Satisfaction – loyalty – profit chain (Mittal et al., 2023)",
+          "steps": [
+            { "label": "Customer satisfaction", "text": "Perceived value delivered (S6)" },
+            { "label": "Customer-level outcomes", "text": "Retention, word of mouth, spending, price tolerance" },
+            { "label": "Firm-level outcomes", "text": "Product-market, accounting and financial-market performance" }
+          ],
+          "note": "The associations are positive on average but vary with context and measurement (moderators)."
+        }
+      ]
+    },
+    {
+      "id": "metrics",
+      "heading": "CLV analytics: the metrics",
+      "lead": "All metrics are empirical – they come from your own records and market reports.",
+      "blocks": [
+        {
+          "type": "grid",
+          "cols": 3,
+          "items": [
+            { "label": "Traditional", "points": ["Market share", "Sales growth"] },
+            { "label": "Acquisition", "points": ["Acquisition rate", "Acquisition cost"] },
+            { "label": "Activity", "points": ["Average inter-purchase time", "Retention and attrition rates", "Survival rate", "Lifetime duration"] }
+          ]
+        },
+        { "type": "formula", "name": "Market share", "formula": "MS_{j} (%) = 100 × s_{j} / Σ s_{i}", "vars": ["s_{j} = sales of the focal firm (internal records)", "Σ s_{i} = category sales of all firms (market reports, competitive intelligence)"] },
+        { "type": "formula", "name": "Sales growth", "formula": "Growth_{t} (%) = 100 × Δs_{jt} / s_{j,t−1}" },
+        { "type": "formula", "name": "Acquisition rate and cost", "formula": "Acq. rate (%) = 100 × prospects acquired / prospects targeted     Acq. cost = acquisition spending / prospects acquired" },
+        {
+          "type": "example",
+          "title": "MadCool Festival",
+          "given": ["Sales €1,000,000 (t−1) and €1,200,000 (t); market €3,000,000", "Target market 200,000 people; 60,000 tickets sold by March", "Acquisition campaign €3 million"],
+          "steps": ["Market share = 1,000,000 / 3,000,000 = 33.3 %", "Sales growth = (1,200,000 − 1,000,000) / 1,000,000 = 20 %", "Acquisition rate = 60,000 / 200,000 = 30 %", "Acquisition cost = 3,000,000 / 60,000 = €50 per customer"],
+          "result": "MS 33.3 % · growth 20 % · acquisition rate 30 % · €50 per acquired customer"
+        },
+        {
+          "type": "table",
+          "title": "Customer activity metrics",
+          "head": ["Metric", "Meaning"],
+          "rows": [
+            ["Average inter-purchase time (AIT)", "Average time between purchases"],
+            ["Retention rate Rr", "Share of customers buying in t, given they bought in t−1"],
+            ["Attrition / defection rate", "Share of those who bought in t−1 but not in t = 1 − Rr"],
+            ["Survival rate SR", "Share of a cohort still active in t since the start of observation"],
+            ["Lifetime duration", "How long a customer stays with the firm"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retention",
+      "heading": "Retention, survival and lifetime",
+      "blocks": [
+        {
+          "type": "formula",
+          "name": "Retention rate",
+          "formula": "Rr_{t} (%) = 100 × customers of the cohort buying in t / customers of the cohort buying in t−1",
+          "vars": ["Rr = 100 % − average defection rate"]
+        },
+        {
+          "type": "formula",
+          "name": "Average lifetime (constant retention)",
+          "formula": "Average lifetime = 1 / (1 − Rr)     ⇔     Rr = 1 − 1 / lifetime",
+          "note": "Lifetime 4 years → Rr = 1 − 1/4 = **75 %**. Lifetime 1 year → Rr = 0 %. Rr = 90 % → lifetime 10 periods."
+        },
+        {
+          "type": "formula",
+          "name": "Survival rate",
+          "formula": "SR_{t} = Rr_{t} × SR_{t−1}     with SR_{1} = Rr_{1}",
+          "note": "Retention describes one period; survival summarises how many of the original cohort are left."
+        },
+        {
+          "type": "example",
+          "title": "MadCool: survival of a cohort of 1,000",
+          "given": ["Rr: period 1 = 0.55 · 2 = 0.62 · 3 = 0.68 · 4 = 0.73"],
+          "steps": ["SR1 = 0.55 → 550 customers", "SR2 = 0.62 × 0.55 = 0.341 → 341", "SR3 = 0.68 × 0.341 = 0.232 → 232", "SR4 = 0.73 × 0.232 = 0.169 → 169"],
+          "result": "After four periods only about 17 % of the cohort survive – even though retention rises every period."
+        },
+        {
+          "type": "line",
+          "title": "Retention vs. survival of the MadCool cohort",
+          "xTicks": ["Period 1", "Period 2", "Period 3", "Period 4"],
+          "unit": " %",
+          "series": [
+            { "label": "Retention rate", "values": [55, 62, 68, 73] },
+            { "label": "Survival rate", "values": [55, 34.1, 23.2, 16.9] }
+          ],
+          "caption": "Survival can only fall: it multiplies the retention rates of all periods so far."
+        },
+        {
+          "type": "formula",
+          "name": "Average lifetime duration from cohort data",
+          "formula": "Avg. lifetime = Σ_{t=1}^{T} (t × number of customers retained in t) / N",
+          "vars": ["N = cohort size", "t = time period", "T = time horizon"]
+        }
+      ]
+    },
+    {
+      "id": "clv",
+      "heading": "Customer lifetime value",
+      "blocks": [
+        {
+          "type": "formula",
+          "name": "CLV (simple version used in class)",
+          "formula": "CLV = lifetime revenues (or margins) − acquisition costs (per client)",
+          "vars": ["Lifetime revenues = order value × purchase frequency × lifetime", "Lifetime unknown but Rr constant → lifetime = 1 / (1 − Rr)"],
+          "note": "Correct CLV tells you what a customer is worth, estimates customer equity, segments by value, sharpens targeting and balances retention vs. acquisition spending. With discounting (Maru case): sum the present values of yearly profits."
+        },
+        {
+          "type": "example",
+          "title": "One client – with known lifetime or with retention rate",
+          "given": ["Order value 10 € · 12 purchases per year · acquisition cost 200 €", "(a) lifetime 10 years · (b) lifetime unknown, constant Rr = 90 %"],
+          "steps": ["Revenue per year = 10 × 12 = 120 €", "(a) CLV = 120 × 10 − 200 = 1,000 €", "(b) lifetime = 1 / (1 − 0.9) = 10 years → CLV = 120 × 10 − 200 = 1,000 €"],
+          "result": "CLV = 1,000 € in both cases"
+        },
+        {
+          "type": "example",
+          "title": "Polkaly – which segment by CLV? (20 % overhead)",
+          "given": ["Consultancy: 5,000 per year · 2 years · CAC 1,000", "Education: 3,000 · 5 years · 1,500", "Public sector: 2,000 · 3 years · 2,000", "Retail: 2,500 · 1 year · 1,000"],
+          "steps": ["CLV = revenue × lifetime × 0.8 − CAC", "Consultancy = 5,000 × 2 × 0.8 − 1,000 = 7,000", "Education = 3,000 × 5 × 0.8 − 1,500 = 10,500", "Public sector = 2,000 × 3 × 0.8 − 2,000 = 2,800", "Retail = 2,500 × 1 × 0.8 − 1,000 = 1,000"],
+          "result": "Education has the highest CLV (10,500) – the small, slow-growing segment is the most valuable per client."
+        },
+        {
+          "type": "bars",
+          "title": "Polkaly – CLV per segment",
+          "items": [
+            { "label": "Education", "value": 10500 },
+            { "label": "Consultancy", "value": 7000 },
+            { "label": "Public sector", "value": 2800 },
+            { "label": "Retail", "value": 1000 }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "E-commerce segments over three months (exam 2019/20)",
+          "given": ["Monthly margin = margin per transaction × frequency", "Monthly profit = monthly margin × survival rate (− CAC in month 1)", "A: margins 200 / 1,000 / 600; customers 1,000 → 1,000 → 600, lost 400 and 480; CAC 250", "B: margins 600 / 1,200 / 2,800; Rr 100 / 70 / 50 %; CAC 500"],
+          "steps": [
+            "A: Rr m2 = 600 / 1,000 = 60 %; Rr m3 = (600 − 480) / 600 = 20 %",
+            "A: SR = 100 % → 60 % → 60 % × 20 % = 12 %",
+            "A: profit = 200 − 250 = −50 · 1,000 × 0.6 = 600 · 600 × 0.12 = 72 → cumulative 622",
+            "B: SR = 100 % → 70 % → 35 %; profit = 600 − 500 = 100 · 1,200 × 0.7 = 840 · 2,800 × 0.35 = 980 → cumulative 1,920"
+          ],
+          "result": "Segment B (1,920) beats A (622): much higher retention outweighs its double acquisition cost."
+        },
+        {
+          "type": "callout",
+          "tone": "exam",
+          "title": "Maru Batting Centre (case logic)",
+          "text": "For each segment: **CAC** (ad cost / customers won, list + event cost / response), **break-even** = CAC / yearly profit (without discounting), then **CLV** with discounted yearly profits until the yearly NPV falls below ¥100. Judge promotions (discounts, free bats, a second ward) by whether the gain in retention or response raises CLV − CAC more than it costs."
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "CRM maximises the **lifetime value of each typical customer**; acquisition is getting more expensive and loyalty weaker.",
+    "Chain: satisfaction → retention, WOM, spending → firm performance.",
+    "**MS** = own sales / market sales; **growth** = Δsales / last period; **acquisition rate** = acquired / targeted; **acquisition cost** = spend / acquired.",
+    "**Rr** = buyers in t / buyers in t−1; attrition = 1 − Rr; **lifetime = 1 / (1 − Rr)**.",
+    "**SR_t = Rr_t × SR_t−1** – survival only falls.",
+    "**CLV = lifetime revenues/margins − acquisition costs**; compare segments per client, include overhead if given."
+  ],
+  "exam": [
+    "Fill-the-gaps table (retention, survival, monthly profit, cumulative profit) for two segments and choose one.",
+    "CLV per segment from revenue, lifetime and CAC (Polkaly) – often combined with the conjoint part of the mini case.",
+    "Conversions between lifetime and retention rate (“lifetime 1 year → Rr = 0 %”)."
+  ],
+  "traps": [
+    "Retention uses the customers of the **previous period** as denominator, survival the **original cohort**.",
+    "Subtract the acquisition cost **once** (month/year 1), not every period.",
+    "Apply overhead (e.g. 20 %) to revenue before subtracting CAC.",
+    "The biggest or fastest-growing segment is not necessarily the one with the highest CLV."
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "lecture": "s02",
+  "title": "Descriptive statistics & visual data analysis",
+  "source": "Session 2 handout (DDM 26/27) – Superstore exercises in Stata/Excel, Wurman (2000), Keim et al. (2010)",
+  "tagline": "Before you model anything, you must know what kind of variable you have – the measurement scale decides which statistics and which charts are allowed. Then you summarise (central tendency, dispersion, correlation) and show it with the right graph.",
+  "goals": [
+    "classify a variable as **nominal, ordinal, interval or ratio**",
+    "say which **question type** produces which kind of variable",
+    "calculate **CSAT, NPS and CES**",
+    "pick the right measure of **central tendency and dispersion** for a scale",
+    "interpret a **Pearson correlation** and choose a fitting **chart**"
+  ],
+  "sections": [
+    {
+      "id": "scales",
+      "heading": "Types of data and variables",
+      "lead": "Two families: non-metric (categorical) and metric (numerical). Each step to the right adds information – and allows more statistics.",
+      "blocks": [
+        {
+          "type": "flow",
+          "steps": [
+            { "tag": "Non-metric", "label": "Nominal", "text": "Categories without hierarchy", "points": ["gender, product category, region, purchase occasion"] },
+            { "tag": "Non-metric", "label": "Ordinal", "text": "Categories with a hierarchy (order), distances unknown", "points": ["age groups, purchase frequency, emotions"] },
+            { "tag": "Metric", "label": "Interval", "text": "Equal intervals, **no true zero**", "points": ["IQ, Likert scales (satisfaction, NPS, brand attitude)"] },
+            { "tag": "Metric", "label": "Ratio", "text": "Equal intervals **and a true zero**", "points": ["age, income, revenue, sales"] }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "What can you compute?",
+          "head": ["Statistic", "Nominal", "Ordinal", "Interval", "Ratio"],
+          "rows": [
+            ["Frequencies, mode", "✓", "✓", "✓", "✓"],
+            ["Median", "–", "✓", "✓", "✓"],
+            ["Mean, variance, SD", "–", "–", "✓", "✓"],
+            ["Pearson correlation", "–", "–", "✓", "✓"],
+            ["Ratios (“twice as much”)", "–", "–", "–", "✓"]
+          ]
+        },
+        { "type": "callout", "tone": "tip", "text": "Ratio test: does “0” mean **nothing at all** (0 € revenue)? Then it is ratio. 0 on a satisfaction scale does not mean “no satisfaction” → interval." }
+      ]
+    },
+    {
+      "id": "survey",
+      "heading": "The questionnaire and question types",
+      "blocks": [
+        {
+          "type": "list",
+          "title": "Good questionnaire design",
+          "items": [
+            "Mostly **closed-ended** questions – more effective for quantitative data; the flow is fixed before the research",
+            "Clear language, brief and simple questions; follow a natural flow (train of thought, chronology)",
+            "Do **not lead** respondents to an answer",
+            "Opening: brief presentation of the research, anonymity and privacy, instructions",
+            "Content can cover facts, awareness, frequency of behaviour, opinions, motivations, intentions, attitudes, demographics & psychographics"
+          ]
+        },
+        {
+          "type": "table",
+          "head": ["Question type", "Example", "Variable produced"],
+          "rows": [
+            ["Dichotomous", "“Have you ever visited our store?” Yes / No", "Non-metric, **nominal**"],
+            ["Multiple choice – select one", "“Which brand do you buy most?”", "Non-metric (nominal or ordinal)"],
+            ["Multiple choice – select many", "“Which channels do you use?” (+ “don't know”, “other – specify”)", "Non-metric, **nominal**"],
+            ["Rank order", "“Rank these features by importance”", "Non-metric, **ordinal**"],
+            ["Likert scale (5, 7 or 9 points)", "“I am satisfied …” strongly disagree → strongly agree; semantic differential or matrix", "Metric, **interval**"]
+          ],
+          "highlight": 2
+        }
+      ]
+    },
+    {
+      "id": "cx",
+      "heading": "Customer experience metrics",
+      "blocks": [
+        {
+          "type": "grid",
+          "cols": 3,
+          "items": [
+            { "label": "CSAT", "tag": "Satisfaction", "text": "How satisfied are customers with products/services? Scale 1–5." },
+            { "label": "NPS", "tag": "Loyalty", "text": "How likely are you to recommend us? Scale 0–10." },
+            { "label": "CES", "tag": "Effort", "text": "How easy was it to get an issue resolved, a request fulfilled, a product bought or returned? Scale 1–7." }
+          ]
+        },
+        { "type": "formula", "name": "Customer Satisfaction Score", "formula": "CSAT = (number of satisfied customers (4 and 5) / number of responses) × 100" },
+        {
+          "type": "formula",
+          "name": "Net Promoter Score",
+          "formula": "NPS = % promoters (9–10) − % detractors (0–6)",
+          "vars": ["Passives (7–8) count in the total but in neither group", "Range: −100 to +100"]
+        },
+        { "type": "formula", "name": "Customer Effort Score", "formula": "CES = (number of customers answering 5, 6 or 7 / number of responses) × 100", "note": "Statement: “This company made it easy for me to handle my issue” (1 = strongly disagree … 7 = strongly agree)." },
+        {
+          "type": "example",
+          "title": "NPS from 200 survey answers",
+          "given": ["120 respondents answered 9 or 10", "50 answered 7 or 8", "30 answered 0 to 6"],
+          "question": "What is the NPS?",
+          "steps": ["Promoters = 120 / 200 = 60 %", "Detractors = 30 / 200 = 15 %", "Passives (25 %) are ignored", "NPS = 60 − 15"],
+          "result": "NPS = +45"
+        }
+      ]
+    },
+    {
+      "id": "univariate",
+      "heading": "Univariate statistics",
+      "lead": "Univariate analysis looks at one variable at a time.",
+      "blocks": [
+        {
+          "type": "defs",
+          "items": [
+            { "term": "Frequencies", "text": "How often a value occurs (**absolute**); divided by the number of observations → **relative** frequency (% of sample). Frequencies contain the whole information about a distribution." },
+            { "term": "Mean", "text": "Most common measure of central tendency; good summary of **metric** data, but sensitive to outliers." },
+            { "term": "Median", "text": "The middle score once data are ordered by magnitude. **Not** computable for nominal variables." },
+            { "term": "Mode", "text": "The most frequent value – the highest bar of a histogram. Computable for **any** type of variable." },
+            { "term": "Variance", "text": "Average of the squared differences from the mean (metric variables)." },
+            { "term": "Standard deviation", "text": "Square root of the variance, in the **same unit as the mean** – how spread out observations are." }
+          ]
+        },
+        {
+          "type": "formula",
+          "name": "Mean, variance and standard deviation",
+          "formula": "x̄ = Σx_{i} / n     s^{2} = Σ(x_{i} − x̄)^{2} / (n − 1)     s = √s^{2}",
+          "note": "Dispersion = how much a distribution is stretched or squeezed."
+        },
+        {
+          "type": "example",
+          "title": "Five customers rate a product (1–5)",
+          "given": ["Ratings: 5, 4, 1, 5, 4"],
+          "question": "Compute mode, median and mean.",
+          "steps": ["Order: 1, 4, 4, 5, 5", "Mode: 4 and 5 both occur twice → bimodal", "Median: middle (3rd) value = 4", "Mean = (1 + 4 + 4 + 5 + 5) / 5 = 19 / 5 = 3.8"],
+          "result": "Mean (3.8) < median (4): the single low rating pulls the mean down – the median is robust to outliers."
+        }
+      ]
+    },
+    {
+      "id": "bivariate",
+      "heading": "Bivariate analysis: correlation",
+      "lead": "Multivariate analysis looks at two (bivariate) or more variables – typically one dependent and several independent variables.",
+      "blocks": [
+        {
+          "type": "formula",
+          "name": "Pearson correlation coefficient",
+          "formula": "−1 ≤ r ≤ +1",
+          "vars": ["Sign = direction (positive / negative)", "|r| = strength of the **linear** relationship", "Only for metric variables"]
+        },
+        { "type": "correlation", "caption": "r = 0 only means no **linear** relationship – there may still be a curved one. And even a strong r says nothing about causality." },
+        {
+          "type": "grid",
+          "title": "Data analysis techniques in this course",
+          "cols": 3,
+          "items": [
+            { "label": "Descriptive", "tag": "S2", "text": "Summarise a characteristic of a data set (univariate & bivariate)." },
+            { "label": "Exploratory", "tag": "S5", "text": "Discover new connections – e.g. cluster analysis." },
+            { "label": "Causal", "tag": "S9–S10", "text": "Relationships between variables and the impact of a change in one on another – regression." }
+          ]
+        },
+        { "type": "callout", "tone": "tip", "title": "In Stata (Superstore exercise)", "text": "Compute means/SDs for numerical variables, **frequencies** for categorical ones, **cross-tabs** for two categorical variables and **correlations** between metric ones – then ask: what can I conclude, and what would I recommend?" }
+      ]
+    },
+    {
+      "id": "visual",
+      "heading": "Visual data analysis",
+      "blocks": [
+        {
+          "type": "defs",
+          "items": [
+            { "term": "Visual data analysis", "text": "A key tool to make sense of and interact with massive data sets: present, navigate, aggregate and see details so that complex questions can be answered (visual analytics process, Keim et al., 2010)." },
+            { "term": "Data visualisation", "text": "Converting raw data into easily understood pictures of information that enable fast and effective decisions." }
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "Five ways to organise information – “LATCH” hat racks (Wurman)",
+          "cols": 5,
+          "items": [
+            { "label": "Location", "text": "Data from different sources or places (where goods are distributed)" },
+            { "label": "Alphabet", "text": "Huge amounts of data or audiences unfamiliar with categories" },
+            { "label": "Time", "text": "Events over fixed durations – changes are easy to compare" },
+            { "label": "Category", "text": "Items of similar importance, goods and industries" },
+            { "label": "Hierarchy", "text": "By magnitude – small to large, cheap to expensive, by importance" }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Which chart for which purpose?",
+          "head": ["Chart", "Use it to …", "Avoid when …"],
+          "rows": [
+            ["Bar / column", "Compare categories or change over time; show positive and negative values", "More than ~10 bars"],
+            ["Pie / donut", "Show relative proportions (part-to-whole) for one factor", "More than 6–7 categories"],
+            ["Line", "Continuous data over time; several series on one timeline; trends rather than exact values", "Few, unrelated categories"],
+            ["Area", "Part-to-whole relations plus the volume over time", "Many overlapping series"],
+            ["Scatter plot", "Correlation and clustering; distribution; order of points irrelevant", "One variable only"],
+            ["Bubble", "Relation plus the size of a third phenomenon", "Too many bubbles"],
+            ["Gauge / bullet", "Performance vs. target, KPIs, NPS", "Comparisons of many items"],
+            ["Radar", "Compare several features of one or more samples", "Many samples"]
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "Grammar for visual creation – a checklist for good (and against bad) charts",
+          "cols": 3,
+          "items": [
+            { "label": "Data & statistics", "text": "Source given? Statistics accurate and complete (p-value, confidence interval)?" },
+            { "label": "Aesthetics & position", "text": "Organised by a hat rack, obeys reading gravity, proper alignment and use of space." },
+            { "label": "Coordinates & geometry", "text": "Scale complete (not cut)? Shapes in proper scale and easy to compare?" },
+            { "label": "Guides & theme", "text": "Not too many labels; colour-blind friendly (protan-, deuteran-, tritanopia)." },
+            { "label": "Manipulation", "text": "Unbiased display, no illusory effects, no truncated axes to exaggerate." },
+            { "label": "Visual variables", "text": "Size, orientation (hierarchies), shape, colour (categories), value, texture." }
+          ]
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "Scales: **nominal** (no order) → **ordinal** (order) → **interval** (equal steps, no true zero, e.g. Likert) → **ratio** (true zero, e.g. sales).",
+    "Mode works for all scales, the median from ordinal, mean/SD/correlation only for metric data.",
+    "Dichotomous & multiple choice → nominal; rank order → ordinal; Likert → interval.",
+    "**CSAT** = % answering 4–5 (1–5); **NPS** = % promoters (9–10) − % detractors (0–6); **CES** = % answering 5–7 (1–7).",
+    "Pearson r between −1 and +1 measures direction and strength of a **linear** relationship – not causality.",
+    "Choose charts by purpose: bars compare, lines show time, pies show shares (≤ 6–7), scatter shows relationships."
+  ],
+  "exam": [
+    "T/F on measurement scales and which statistic is allowed (“The median can be computed for nominal variables” → false).",
+    "Small calculations: NPS, CSAT, CES from given response counts.",
+    "Interpretation of a correlation coefficient (sign, strength, no causality)."
+  ],
+  "traps": [
+    "NPS is a **difference of percentages**, not an average score – passives drop out.",
+    "Likert scales are treated as **interval**, not ordinal, in this course.",
+    "A correlation of 0 does not mean the variables are unrelated – only that there is no linear relation."
+  ]
+}

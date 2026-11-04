@@ -1,0 +1,298 @@
+{
+  "lecture": "s05",
+  "title": "Segmentation, targeting & positioning",
+  "source": "Session 5 handout (DDM 26/27) – Lilien et al. (2017), Euromonitor Consumer Types, MyNatural case, Ries & Trout (2001), Levitt (1980)",
+  "tagline": "Markets are heterogeneous. STP finds groups of similar customers (segmentation, with cluster analysis), decides which ones to serve (targeting, with the GE/McKinsey matrix) and builds a distinct place in their minds (positioning, with perceptual maps).",
+  "goals": [
+    "explain the **STP** logic and how it creates value for the firm",
+    "distinguish **segmentation bases** from **segment descriptors**",
+    "explain how **cluster analysis** forms segments and how to test robustness",
+    "evaluate segment attractiveness and use the **GE/McKinsey matrix**",
+    "read a **perceptual map** and compare it with a brand association map"
+  ],
+  "sections": [
+    {
+      "id": "stp",
+      "heading": "The STP approach",
+      "lead": "Customers differ in needs, wants, constraints, values, beliefs and incentives. STP identifies potential customers, selects which to pursue and formulates the value proposition for them.",
+      "blocks": [
+        {
+          "type": "flow",
+          "steps": [
+            { "tag": "S", "label": "Segmentation", "text": "Identify segments" },
+            { "tag": "T", "label": "Targeting", "text": "Select segments" },
+            { "tag": "P", "label": "Positioning", "text": "Create competitive advantage" }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "How STP adds value (Lilien et al., 2017)",
+          "steps": [
+            { "label": "Focus", "text": "Resources focused to better meet needs and deliver more value" },
+            { "label": "Preference", "text": "Customers prefer brands that meet their needs better" },
+            { "label": "Loyalty", "text": "Repeat purchase, positive word of mouth" },
+            { "label": "Share & barrier", "text": "Higher market share, barrier to competition" },
+            { "label": "Profit", "text": "Fewer resources needed over time → profitability rises" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "key",
+          "title": "Post-demographic segmentation",
+          "text": "Traditional demographics (age, gender, income, family status, country) are **losing predictive power**. People construct lifestyles and identities of their own choosing – segment by needs, values, attitudes and behaviour."
+        }
+      ]
+    },
+    {
+      "id": "segmentation",
+      "heading": "Segmentation",
+      "blocks": [
+        {
+          "type": "defs",
+          "items": [
+            { "term": "Market segment", "text": "A group of customers with similar needs and similar behaviour or lifestyle." },
+            { "term": "Market segmentation", "text": "Identifying and grouping consumers into relatively **homogeneous** segments based on shared needs, characteristics, attitudes or behaviours – then evaluating and targeting them with tailored strategies." }
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "Applications",
+          "sides": [
+            { "label": "Short term", "points": ["Salesforce allocation, call planning", "Channel assignment", "Communication programme", "Pricing", "Today's competitors and my relative advantage"] },
+            { "label": "Longer term", "points": ["Emerging needs, new and evolving segments", "Planning segment development and growth", "Satisfying needs in different ways", "Lead-user identification", "Market driving (vs. customer focused)"] }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "Four phases of a segmentation study",
+          "steps": [
+            { "tag": "Phase I", "label": "Planning & design", "points": ["Internal assessment: objectives, resources, constraints", "Database review: primary and secondary data"] },
+            { "tag": "Phase II", "label": "Qualitative assessment", "points": ["Interviews", "“Deep needs” identification", "Decision-making process"] },
+            { "tag": "Phase III", "label": "Quantitative measurement", "points": ["Sample design", "Questionnaire", "Data collection"] },
+            { "tag": "Phase IV", "label": "Analysis & implementation", "points": ["Cluster analysis and profiling", "Direct marketing, social media, promotions"] }
+          ],
+          "note": "Basic idea: segment a small (random) sample, then leverage the insights across the entire customer base."
+        },
+        {
+          "type": "compare",
+          "title": "Bases vs. descriptors – the model needs both",
+          "sides": [
+            { "label": "Segmentation bases", "sub": "Why segments differ → used to FORM the clusters", "points": ["Variables on needs, attitudes, knowledge, uses, responses to the product", "In the model: the “dependent” variables", "MyNatural: GreenValues, Knowledge, Evaluation, ProductBeliefs, Social"] },
+            { "label": "Segment descriptors", "sub": "Who they are → used to PROFILE and reach the clusters", "points": ["Demographics, firmographics, personality, values, purchase frequency", "In the model: the “independent” variables", "MyNatural: age, gender, location, purchase frequency, willingness to try"] }
+          ],
+          "note": "The choice depends on the objective: tailoring campaigns to needs → psychographic or behavioural bases; expanding into new regions → geographic bases."
+        }
+      ]
+    },
+    {
+      "id": "clusters",
+      "heading": "Cluster analysis",
+      "lead": "A statistical method that groups consumers on several variables so that people within a cluster are similar to each other and different from people in other clusters.",
+      "blocks": [
+        {
+          "type": "map",
+          "title": "Shopping centre: four clusters on two dimensions",
+          "x": ["Low visit frequency", "High"],
+          "y": ["Low spending per visit", "High"],
+          "groups": ["Cluster 1 – largest: rare visits, moderately high spending", "Cluster 2", "Cluster 3", "Cluster 4 – smallest: very frequent visits, moderately high spending"],
+          "centroids": true,
+          "points": [
+            { "label": "·", "x": -0.72, "y": 0.42, "group": 0 }, { "label": "·", "x": -0.6, "y": 0.3, "group": 0 }, { "label": "·", "x": -0.82, "y": 0.25, "group": 0 }, { "label": "·", "x": -0.66, "y": 0.55, "group": 0 }, { "label": "·", "x": -0.5, "y": 0.4, "group": 0 }, { "label": "·", "x": -0.75, "y": 0.12, "group": 0 }, { "label": "·", "x": -0.56, "y": 0.18, "group": 0 },
+            { "label": "·", "x": -0.4, "y": -0.6, "group": 1 }, { "label": "·", "x": -0.25, "y": -0.7, "group": 1 }, { "label": "·", "x": -0.32, "y": -0.48, "group": 1 }, { "label": "·", "x": -0.12, "y": -0.6, "group": 1 },
+            { "label": "·", "x": 0.25, "y": -0.15, "group": 2 }, { "label": "·", "x": 0.38, "y": -0.28, "group": 2 }, { "label": "·", "x": 0.15, "y": -0.3, "group": 2 }, { "label": "·", "x": 0.32, "y": -0.02, "group": 2 },
+            { "label": "·", "x": 0.75, "y": 0.5, "group": 3 }, { "label": "·", "x": 0.85, "y": 0.38, "group": 3 }, { "label": "·", "x": 0.68, "y": 0.36, "group": 3 }
+          ],
+          "caption": "The algorithm (e.g. k-means) minimises the average distance between customers **within** a cluster and maximises the distance **between** cluster centroids (×). Real segmentations use more than two variables."
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "title": "Is the solution robust?",
+          "text": "Randomly split the sample into two halves and re-run the analysis. The higher the agreement between the two solutions, the more robust the original cluster solution."
+        },
+        {
+          "type": "grid",
+          "title": "Example: Euromonitor “Voice of the Consumer: Lifestyles” consumer types",
+          "cols": 3,
+          "items": [
+            { "label": "Data", "text": "Online panel in 40 countries, n = 40,000 (Jan–Feb 2025); quotas for age (15–65) and gender match each population." },
+            { "label": "Bases", "text": "Healthy living, meal preparation, technology use, marketing influences, shopping priorities, spending, personal traits & values." },
+            { "label": "Analysis", "text": "k-means cluster models per country; types grouped into global categories and profiled with demographics and descriptors." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mynatural",
+      "heading": "Case: MyNatural",
+      "lead": "A premium natural and organic skincare start-up plans a product line for young consumers. 1,276 customers answered an online survey; three clusters emerged.",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "Cluster means on the segmentation bases (1–5)",
+          "head": ["Cluster", "Size", "GreenValues", "Knowledge", "Evaluation", "ProductBeliefs", "Social"],
+          "rows": [
+            ["Cluster 1", "565", "3.22", "3.08", "2.61", "2.64", "2.22"],
+            ["Cluster 2", "437", "2.27", "1.97", "**2.75**", "2.31", "1.67"],
+            ["Cluster 3", "274", "**3.98**", "**3.75**", "2.13", "**3.42**", "**3.27**"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Profiling with descriptors (* = significantly different)",
+          "head": ["", "Cluster 1", "Cluster 2", "Cluster 3"],
+          "rows": [
+            ["Female", "56 %", "53 %", "66 %*"],
+            ["Average age", "23.85", "22.94", "24.18*"],
+            ["Buys sustainable products ≥ once a month", "40 %", "15 %", "69 %*"],
+            ["Buys sustainable cosmetics ≥ once a month", "34 %", "19 %", "53 %*"],
+            ["WillingTry", "3.91", "3.75", "**4.38**"],
+            ["PurchaseLikely", "3.15", "2.49", "**3.84**"],
+            ["Recommendation", "3.34", "2.76", "**4.04**"]
+          ],
+          "highlight": 3
+        },
+        {
+          "type": "grid",
+          "title": "Interpretation",
+          "cols": 3,
+          "items": [
+            { "label": "Cluster 1 – moderate greens", "tag": "largest", "text": "Average on all bases; medium purchase frequency and intentions. Volume segment – needs convincing on product benefits." },
+            { "label": "Cluster 2 – indifferent", "tag": "low fit", "text": "Lowest green values, knowledge and social influence; rarely buys sustainable products; lowest purchase likelihood – despite the best evaluation of MyNatural." },
+            { "label": "Cluster 3 – green enthusiasts", "tag": "most attractive", "text": "Strongest values, knowledge, beliefs and peer influence; buys most often; highest willingness to try and recommend – but rates MyNatural **lowest**: improve product perception (healthy, sustainable, ethical)." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "targeting",
+      "heading": "Targeting",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "Evaluating segment attractiveness (Lilien et al., 2017)",
+          "head": ["Group", "Criterion", "Considerations"],
+          "rows": [
+            ["I. Size & growth", "1 Size · 2 Growth", "Market potential, current penetration, growth forecasts"],
+            ["II. Structural characteristics", "3 Competition · 4 Saturation · 5 Protectability · 6 Environmental risk", "Barriers to entry/exit, competitors' position and ability to retaliate; gaps in the market; patents; economic, political, technological change"],
+            ["III. Product–market fit", "7 Fit · 8 Relation to other segments · 9 Profitability", "Coherence with strengths and image; synergies, cannibalisation, image transfer; entry costs, margins, ROI"]
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Coverage strategies – from narrow to broad",
+          "style": "number",
+          "items": ["Concentrate on a single segment", "Select segments to specialise in", "Provide a range of offerings to one specific segment", "Provide many offerings to many segments", "Cover the entire market (all offerings to all segments)"]
+        },
+        {
+          "type": "matrix",
+          "title": "GE/McKinsey portfolio matrix for segments",
+          "xLabel": "Segment attractiveness",
+          "yLabel": "Company's strengths & competences",
+          "x": ["Low", "Average", "High"],
+          "y": ["Strong", "Medium", "Weak"],
+          "cells": [
+            { "label": "Protect / refocus", "text": "Invest selectively for earnings, defend strengths, monitor for harvest", "tone": "warn" },
+            { "label": "Expand selectively", "text": "Seek most desirable parts, trade share for earnings", "tone": "good" },
+            { "label": "Build preemptive position", "text": "Invest for growth, diversify, consolidate, long-term cash flow", "tone": "good" },
+            { "label": "Strict cash-flow management", "text": "Minimum resources, protect position in attractive areas", "tone": "bad" },
+            { "label": "Preserve position", "text": "Selective investments, opportunistic growth", "tone": "warn" },
+            { "label": "Expand selectively", "text": "Seek most desirable parts, monitor closely", "tone": "good" },
+            { "label": "Exit", "text": "Exit or prune; time it for maximum value; no new resources", "tone": "bad" },
+            { "label": "Harvest", "text": "Cut fixed costs and capex, reduce product line, seek sale", "tone": "bad" },
+            { "label": "Capitalise on attractiveness", "text": "Position selectively, strict cut-off criteria, monitor closely", "tone": "warn" }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "Building the matrix",
+          "steps": [
+            { "label": "1 · Drivers & weights", "text": "Specify drivers of attractiveness and of strengths; weight them" },
+            { "label": "2 · Rate", "text": "Score each segment on each driver" },
+            { "label": "3 · Multiply", "text": "Weight × rating, summed per segment" },
+            { "label": "4 · Plot", "text": "Place segments in the matrix" },
+            { "label": "5 · Review", "text": "Sensitivity analysis – there may be no consensus" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "positioning",
+      "heading": "Positioning",
+      "blocks": [
+        {
+          "type": "callout",
+          "tone": "key",
+          "text": "“Positioning is not what you do to a product. Positioning is what you do to the **mind of a prospect**” (Ries & Trout). Firms should define themselves by the **value they produce in consumers' lives** – the value proposition (Levitt)."
+        },
+        {
+          "type": "compare",
+          "sides": [
+            { "label": "Differentiation", "points": ["Creating tangible or intangible differences on one or more attributes between your offering and competitors"] },
+            { "label": "Positioning", "points": ["Strategies to differentiate the offering **in the minds** of target customers", "Success = a distinct, relevant and sustainable position"] }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "7-step positioning analysis",
+          "steps": [
+            { "label": "1", "text": "Select target segment" },
+            { "label": "2", "text": "Determine relevant competing offerings" },
+            { "label": "3", "text": "Determine potential differentiating dimensions" },
+            { "label": "4", "text": "Get ratings of competitors from a customer sample" },
+            { "label": "5", "text": "Plot the perceptual map" },
+            { "label": "6", "text": "Integrate preference, choice or share" },
+            { "label": "7", "text": "Positioning statement & strategies" }
+          ]
+        },
+        {
+          "type": "map",
+          "title": "Perceptual map (illustrative)",
+          "x": ["Budget", "Premium"],
+          "y": ["Low quality", "High quality"],
+          "points": [
+            { "label": "Brand A", "x": 0.7, "y": 0.75 },
+            { "label": "Brand B", "x": 0.55, "y": 0.6 },
+            { "label": "Brand C", "x": -0.6, "y": 0.45 },
+            { "label": "Brand D", "x": -0.7, "y": -0.6 },
+            { "label": "Brand E", "x": 0.45, "y": -0.5 },
+            { "label": "Brand F", "x": -0.2, "y": 0.05 }
+          ],
+          "caption": "Short distance = perceived as similar (A and B compete head-on). Axes = underlying dimensions consumers use to differentiate. Empty areas are potential positioning gaps – e.g. good value for money (C) faces little competition. Attribute vectors can be added."
+        },
+        {
+          "type": "table",
+          "title": "Perceptual maps vs. brand association maps",
+          "head": ["", "Perceptual map", "Brand association map"],
+          "rows": [
+            ["Purpose", "How consumers perceive brands along key dimensions", "The mental network of associations tied to a brand"],
+            ["Focus", "Competitive positioning, market structure", "Brand identity, deeper perceptions"],
+            ["Axes", "Two (sometimes three) quantifiable dimensions", "No fixed axes – associations radiate around the brand"],
+            ["Data", "Survey data, rating scales", "Qualitative data, monitored conversations (proximity = correlation)"],
+            ["Strength", "Easy to interpret, finds positioning gaps", "Captures depth and richness of meaning"],
+            ["Weakness", "Oversimplifies, limited to chosen dimensions", "Subjective, harder to quantify"],
+            ["Example", "Soda brands on “sweetness vs. healthiness”", "“fun”, “youth”, “refreshing” around Coca-Cola"]
+          ]
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "STP: **segment** (identify) → **target** (select) → **position** (competitive advantage); value via focus, loyalty, share and profit.",
+    "Demographics lose predictive power → post-demographic segmentation by needs, values and behaviour.",
+    "**Bases** form the clusters (why they differ); **descriptors** profile and reach them (who they are).",
+    "Cluster analysis: small distance within clusters, large distance between centroids; robustness via split-half re-runs.",
+    "Attractiveness: size & growth, structural characteristics, product–market fit → GE/McKinsey matrix (attractiveness × strengths).",
+    "Positioning happens in the customer's mind; perceptual maps show similarity by distance and reveal gaps."
+  ],
+  "exam": [
+    "Interpret a cluster table (means + profiling): name, size, attractiveness and an action per segment – the MyNatural pattern.",
+    "Bases vs. descriptors: classify given variables.",
+    "Place segments in the GE/McKinsey matrix and justify a strategy; read a perceptual map (who competes, where is a gap)."
+  ],
+  "traps": [
+    "The largest segment is not automatically the most attractive – fit and intentions matter (MyNatural cluster 3).",
+    "A high evaluation of the brand does not mean high purchase intention (cluster 2).",
+    "Differentiation is about the offering, positioning about the customer's perception."
+  ]
+}

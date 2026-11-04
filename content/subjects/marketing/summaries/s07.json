@@ -1,0 +1,232 @@
+{
+  "lecture": "s07",
+  "title": "Conversion: portfolio matrices & conjoint analysis",
+  "source": "Session 7 handout (DDM 26/27) – Lilien et al. (2017), Rao (2014) Applied Conjoint Analysis, Cooper (1993), pizza example, ESCP water bottle exercise, Polkaly & Ralph mock cases",
+  "tagline": "To convert interest into purchases, a firm must offer the right products. Portfolio matrices (BCG, GE/McKinsey) decide which offerings to grow or drop; conjoint analysis finds the feature combination customers value most – and predicts what they would choose.",
+  "goals": [
+    "explain why firms review their **portfolio** (product lines, SBUs)",
+    "place offerings in the **BCG** and **GE/McKinsey** matrices",
+    "use conjoint vocabulary: **attribute, level, profile, part-worth, relative importance**",
+    "compute **total utility**, the **best profile** and **relative importance** from part-worths",
+    "simulate **market shares** with a choice rule and judge a **price increase**"
+  ],
+  "sections": [
+    {
+      "id": "portfolio",
+      "heading": "Why review the offering?",
+      "lead": "Johnson & Johnson sells baby shampoo to parents and knee prostheses to surgeons. Nobody can manage hundreds of products one by one – and optimising each product alone misses company goals.",
+      "blocks": [
+        {
+          "type": "flow",
+          "steps": [
+            { "label": "Products", "text": "e.g. Neutrogena face wash, Aveeno face wash" },
+            { "label": "Product lines", "text": "Similar products grouped together" },
+            { "label": "Strategic Business Units (SBUs)", "text": "Lines of business targeting a common set of customers" }
+          ]
+        },
+        {
+          "type": "compare",
+          "sides": [
+            { "label": "Benefits of a timely review", "points": ["Improve competitive positioning", "Maximise product investments and align them with business objectives", "Identify strong and weak products to clarify resource allocation", "Improve communication and collaboration"] },
+            { "label": "Goals of the amendments", "points": ["Find products with high demand in growing markets", "Eliminate underperformers in unattractive markets", "Allocate resources to promising innovations; improve or re-brand products in promising markets", "Identify products dominating slow-growth markets", "Balance long- vs. short-term goals; link to corporate strategy"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matrices",
+      "heading": "Portfolio matrices",
+      "blocks": [
+        {
+          "type": "matrix",
+          "title": "BCG growth–share matrix",
+          "xLabel": "Relative market share",
+          "yLabel": "Market growth",
+          "x": ["Low", "High"],
+          "y": ["High", "Low"],
+          "cells": [
+            { "label": "Question marks", "text": "Growing market, weak position – invest heavily or divest", "tone": "warn" },
+            { "label": "Stars", "text": "Leader in a growing market – invest to keep the lead", "tone": "good" },
+            { "label": "Dogs", "text": "Weak position in a slow market – harvest or drop", "tone": "bad" },
+            { "label": "Cash cows", "text": "Dominates a slow-growth market – milk cash to fund stars and question marks", "tone": "accent" }
+          ],
+          "note": "Polkaly mock case: the public sector (50 % size, 1 % growth) behaves like a cash cow; education (15 %, 3 %) is the question to be justified with more data."
+        },
+        {
+          "type": "compare",
+          "sides": [
+            { "label": "BCG matrix", "points": ["X–Y graph of a product against its market", "Two dimensions: market growth × relative market share", "Four types: stars, cash cows, dogs, question marks"] },
+            { "label": "GE/McKinsey matrix", "points": ["Expanded BCG for diverse product families and acquisitions", "Industry attractiveness × business-unit strength", "Low–medium–high ratings (3×3) → develop, expand, re-tool or eliminate (same logic as targeting in S5)"] }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "tip",
+          "text": "To review and revise offerings, firms use the two NPD methods also for existing products: **A/B testing** (S6) compares two versions; **conjoint analysis** (this session) compares many feature combinations at once."
+        }
+      ]
+    },
+    {
+      "id": "conjoint",
+      "heading": "Conjoint analysis: idea and vocabulary",
+      "lead": "Products with a clearly defined offer are 3.3× as likely to succeed and earn higher share and profit (Cooper, 1993). Conjoint sharpens the definition by decomposing preferences for whole product bundles into the value of each attribute level.",
+      "blocks": [
+        {
+          "type": "defs",
+          "items": [
+            { "term": "Attribute (benefit component)", "text": "A product feature being evaluated – laptop: brand, size, colour, battery life." },
+            { "term": "Level", "text": "The specification of an attribute – brand: Samsung, Dell, Apple, Asus." },
+            { "term": "Profile (configuration)", "text": "A hypothetical offering = one level per attribute." },
+            { "term": "Task", "text": "How many times a respondent has to choose or rate." },
+            { "term": "Part-worth (partial benefit)", "text": "The contribution of one attribute level to the total perceived value – e.g. Samsung −0.11, Dell 0.10, Apple 0.17, Asus −0.16." },
+            { "term": "Relative importance", "text": "How much total value changes when you move from the worst to the best level of an attribute, relative to all attributes (e.g. brand 35 %, price 30 %)." }
+          ]
+        },
+        {
+          "type": "formula",
+          "name": "Additive conjoint model",
+          "formula": "y_{k} = Σ_{j} Σ_{m} β_{jm} · x_{jm}",
+          "vars": ["y_{k} = total perceived value of option k", "β_{jm} = part-worth of level m of attribute j", "x_{jm} = 1 if option k has that level, else 0"],
+          "note": "In mock cases a **baseline (intercept)** is added and the reference level of each attribute is set to 0."
+        },
+        {
+          "type": "formula",
+          "name": "Relative importance of an attribute",
+          "formula": "Importance_{j} = range_{j} / Σ ranges     with range_{j} = max part-worth − min part-worth",
+          "note": "Remember the reference level 0 when taking max and min – with levels 0, −1.22, −2.24 the range is 2.24."
+        },
+        {
+          "type": "flow",
+          "title": "Three stages of a conjoint study",
+          "steps": [
+            { "tag": "Stage 1", "label": "Design the study", "points": ["Select attributes", "Select levels", "Develop product bundles"] },
+            { "tag": "Stage 2", "label": "Obtain data", "points": ["Data collection procedure (ratings or choices)", "Method to compute part-worths"] },
+            { "tag": "Stage 3", "label": "Evaluate designs", "points": ["Segment customers by part-worths", "Design market simulations", "Select a choice rule", "Adjust shares for marketing support"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "heading": "Worked example: the pizza",
+      "lead": "Crust (3) × topping (4) × cheese type (3) × cheese amount (3) × price (3) = 324 possible pizzas, 16 levels to estimate – nobody tastes 324 pizzas, so a reduced set is tested.",
+      "blocks": [
+        {
+          "type": "bars",
+          "title": "One customer's part-worths (0–100 points)",
+          "items": [
+            { "label": "Crust: thick", "value": 15, "note": "pan, thin = 0" },
+            { "label": "Topping: pepperoni", "value": 30, "note": "sausage 25, veggie 10, pineapple 0" },
+            { "label": "Cheese: mozzarella", "value": 10, "note": "mixed 3, Romano 0" },
+            { "label": "Amount: 6 oz", "value": 10, "note": "4 oz 8, 2 oz 0" },
+            { "label": "Price $8.99", "value": -15 },
+            { "label": "Price $9.99", "value": -35, "note": "$7.99 = 0" }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Which pizza does this customer prefer?",
+          "head": ["Pizza", "Crust", "Topping", "Cheese", "Amount", "Price", "Total"],
+          "rows": [
+            ["Meat-Lover's Treat", "thick 15", "pepperoni 30", "mixed 3", "6 oz 10", "$9.99 −35", "**23**"],
+            ["Veggie Delight", "thin 0", "veggie 10", "Romano 0", "2 oz 0", "$7.99 0", "10"],
+            ["Aloha Special", "pan 0", "pineapple 0", "mozzarella 10", "4 oz 8", "$8.99 −15", "3"]
+          ],
+          "highlight": 6
+        },
+        {
+          "type": "bars",
+          "title": "Relative importance = range of each attribute (sums to 100)",
+          "unit": " %",
+          "items": [
+            { "label": "Price", "value": 35 },
+            { "label": "Topping", "value": 30 },
+            { "label": "Crust", "value": 15 },
+            { "label": "Cheese type", "value": 10 },
+            { "label": "Cheese amount", "value": 10 }
+          ],
+          "caption": "Pepperoni beats veggie by 20 points – exactly as much as paying $8.99 instead of $9.99. Topping is worth twice as much as crust. Preferences are individual: each customer has their own part-worths."
+        }
+      ]
+    },
+    {
+      "id": "cases",
+      "heading": "Exam cases: Polkaly, Ralph and the ESCP bottle",
+      "blocks": [
+        {
+          "type": "example",
+          "title": "Polkaly – best combination for the education segment",
+          "given": ["Baseline 4.18", "Chat: side 0 · in-window 1.24", "Groups: none 0 · limited 0.89 · unlimited 2.94", "Participants: 20 → 0 · 50 → 0.28 · 100 → 1.59", "Price: 30 → 0 · 50 → −2.31 · 70 → −2.71"],
+          "question": "Best profile, total utility and most important attribute?",
+          "steps": [
+            "Pick the highest part-worth per attribute: in-window (1.24), unlimited (2.94), 100 participants (1.59), price 30 (0)",
+            "Total = 4.18 + 1.24 + 2.94 + 1.59 + 0 = 9.95",
+            "Ranges: chat 1.24 · groups 2.94 · participants 1.59 · price 2.71 → sum 8.48",
+            "Importance: groups 2.94 / 8.48 ≈ 35 %, price ≈ 32 %, participants ≈ 19 %, chat ≈ 15 %"
+          ],
+          "result": "Education: in-window chat, unlimited groups, 100 participants, price 30 → 9.95; breakout groups are the most important feature – and Polkaly's competitive advantage."
+        },
+        {
+          "type": "bars",
+          "title": "Polkaly – relative importance in the education segment",
+          "unit": " %",
+          "items": [
+            { "label": "Breakout groups", "value": 34.7 },
+            { "label": "Price", "value": 32 },
+            { "label": "Max participants", "value": 18.8 },
+            { "label": "Live chat", "value": 14.6 }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Polkaly – most important feature per segment (range)",
+          "head": ["Segment", "Most important", "Best profile (total)"],
+          "rows": [
+            ["Consultancy", "Participants 2.31 (price 2.24)", "side window, limited, 50, 30 → 6.96"],
+            ["Education", "Breakout groups 2.94", "in-window, unlimited, 100, 30 → 9.95"],
+            ["Public sector", "Price 3.72", "side window, no groups, 50, 30 → 7.15"],
+            ["Retail", "Live chat 2.92", "in-window, limited, 50, 30 → 9.35"]
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Ralph × Fortnite – which cluster to target?",
+          "given": ["Product: virtual and offline, classic polo, gender-neutral, €100", "Cluster 3: intercept 3.02 · virtual+offline 0.36 · polo 0 · gender-neutral 1.62 · €100 −0.76"],
+          "steps": ["C1 = 1.21 + 0.19 + 0 + 0.56 − 0.24 = 1.72", "C2 = 2.15 + 0.65 + 0 + 1.35 − 1.13 = 3.02", "C3 = 3.02 + 0.36 + 0 + 1.62 − 0.76 = 4.24", "C4 = 1.07 + 0.02 + 0 − 0.12 − 0.45 = 0.52"],
+          "result": "Cluster 3 has the highest total utility (4.24). At €150 its utility even rises (−0.37 instead of −0.76 → 4.63): in a luxury context a higher price can signal quality."
+        },
+        {
+          "type": "flow",
+          "title": "ESCP water bottle – the full conjoint workflow",
+          "steps": [
+            { "label": "Attributes & levels", "text": "Material (steel, copper, plastic) · size (250/500/1000 ml) · straw (yes/no) · price (12/20/25 €)" },
+            { "label": "Profiles", "text": "3 × 3 × 2 × 3 = **54** → efficient design with 19 profiles; rating-based" },
+            { "label": "Best option & importance", "text": "Per respondent: highest-value profile; ranges → relative importance" },
+            { "label": "Market simulation", "text": "Each respondent buys the option with the highest value (first choice) – variant: only if value > 4 (scale mean)" },
+            { "label": "Pricing", "text": "Raise the favourite's price 10 %: still preferred over the 2nd option? Max WTP = price at which it stops being first choice" }
+          ]
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "Products → product lines → SBUs; review the portfolio to allocate resources and drop underperformers.",
+    "**BCG**: growth × relative share → stars, cash cows, question marks, dogs. **GE/McKinsey**: attractiveness × strength, 3×3.",
+    "Conjoint decomposes preferences for bundles into **part-worths** per attribute level.",
+    "Total utility = baseline + Σ part-worths of the chosen levels; best profile = best level of every attribute.",
+    "**Relative importance = range / sum of ranges** (include the 0 reference level).",
+    "Number of profiles = product of the numbers of levels (pizza 324, bottle 54).",
+    "Market share simulation: each respondent picks the highest-utility option (optionally above a threshold)."
+  ],
+  "exam": [
+    "Mini case with a part-worth table (Polkaly, Ralph): best combination per segment, total utility of a given product, most important attribute, effect of a price change.",
+    "T/F: reading single part-worths (“price 70 instead of 30 reduces utility by 2.24”).",
+    "Portfolio interpretation of a segment table (size vs. growth)."
+  ],
+  "traps": [
+    "The most important attribute is the one with the largest **range**, not the largest single part-worth.",
+    "Don't forget the **baseline/intercept** when computing total utility.",
+    "Negative part-worths are relative to the reference level, not absolute dislikes.",
+    "A higher price level can have a smaller utility loss (luxury signal) – read the table, don't assume."
+  ]
+}

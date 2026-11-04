@@ -1,0 +1,262 @@
+{
+  "lecture": "s01",
+  "title": "Data-driven decisions & data ethics",
+  "source": "Session 1 handout (DDM 26/27) – Wedel & Kannan (2016), Sivarajah et al. (2017), Mazzei & Noble (2017), Zuboff (2019), GDPR/DSA, Susskind (2022)",
+  "tagline": "Data does not replace intuition – it tests it. This session gives you the vocabulary for everything that follows: what data is, which question each type of analytics answers, how firms earn money with data – and where the ethical and legal limits are.",
+  "goals": [
+    "explain the **5 Vs** of Big Data and structured vs. unstructured data",
+    "match a business question to **descriptive, diagnostic, predictive or prescriptive** analytics",
+    "choose between **exploratory, descriptive and causal** research",
+    "name the three ways firms create value through data (**tool, industry, strategy**)",
+    "explain **surveillance capitalism** and the main features of **GDPR** and the **DSA**"
+  ],
+  "sections": [
+    {
+      "id": "data-intuition",
+      "heading": "Data and intuition",
+      "lead": "Netflix co-founder Marc Randolph: you need both. Data can tell you with certainty that the red button beats the blue one by 2.7 % – but it will never tell you which of the 16.7 million colours to test.",
+      "blocks": [
+        {
+          "type": "compare",
+          "sides": [
+            { "label": "Intuition / experience", "sub": "“I think …”", "points": ["Generates the ideas and hypotheses worth testing", "Fast, but prone to bias", "Cannot prove that something works"] },
+            { "label": "Data", "sub": "“The data shows …”", "points": ["Validates or rejects assumptions", "Quantifies effects (e.g. +2.7 % clicks)", "Cannot tell you what to test in the first place"] }
+          ],
+          "note": "Goal of a data-driven culture: less “I think …”, more “The data shows …” – data informs intuition, it does not replace it."
+        },
+        {
+          "type": "grid",
+          "title": "Framework to understand data & marketing analytics (adapted from Wedel & Kannan, 2016)",
+          "cols": 4,
+          "items": [
+            { "label": "Types of data", "text": "Structured vs. unstructured, Big Data" },
+            { "label": "Analytics & methods", "text": "From descriptive statistics to machine learning" },
+            { "label": "Implementation", "text": "Bringing data and analytics into the organisation" },
+            { "label": "Applications", "text": "Personalisation, CRM, marketing mix – always framed by privacy & security" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "big-data",
+      "heading": "What is (Big) Data?",
+      "blocks": [
+        {
+          "type": "defs",
+          "items": [
+            { "term": "Data", "text": "Information, especially facts or numbers, collected to be examined and used to help decision-making – or information in electronic form that can be stored and used by a computer (Cambridge Dictionary)." },
+            { "term": "Big Data", "text": "The explosion in the quantity (and sometimes quality) of available and potentially relevant data, largely the result of recent advances in data recording and storage technology (Diebold, 2000). In short: **Big data is … data.**" },
+            { "term": "Data analytics", "text": "The process of examining datasets to draw conclusions about the information they contain, increasingly with specialised systems and software." }
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "The 5 Vs of Big Data (Marr, 2014)",
+          "cols": 5,
+          "items": [
+            { "label": "Volume", "text": "Sheer amount of data" },
+            { "label": "Velocity", "text": "Speed at which data is generated and must be processed (real time)" },
+            { "label": "Variety", "text": "Many formats: numbers, text, images, video, sensor data" },
+            { "label": "Veracity", "text": "Trustworthiness and quality of the data" },
+            { "label": "Value", "text": "Only worth it if it creates business value" }
+          ]
+        },
+        {
+          "type": "compare",
+          "sides": [
+            { "label": "Structured data", "points": ["Fits into rows and columns (tables, databases)", "e.g. transactions, prices, age, CRM records", "Directly analysable with statistics"] },
+            { "label": "Unstructured data", "points": ["No predefined format", "e.g. reviews, social posts, images, videos, call recordings", "Needs sense-making first (text, data & visual mining → Session 4)"] }
+          ]
+        },
+        { "type": "callout", "tone": "tip", "text": "Memory hook for the 5 Vs: **3 technical Vs** (Volume, Velocity, Variety) describe the data, **2 business Vs** (Veracity, Value) ask whether you can trust and use it." }
+      ]
+    },
+    {
+      "id": "analytics",
+      "heading": "Four types of analytics",
+      "lead": "The four types build on each other: from information (what happened) over insight (why) to decision and action (what to do). Each answers a different question (Sivarajah et al., 2017).",
+      "blocks": [
+        {
+          "type": "flow",
+          "steps": [
+            { "tag": "Information", "label": "Descriptive", "text": "What happened in the business?", "points": ["KPIs, dashboards, reports"] },
+            { "tag": "Insight", "label": "Diagnostic", "text": "Why is something happening?", "points": ["Drill-down, correlation, experiments"] },
+            { "tag": "Insight", "label": "Predictive", "text": "What is likely to happen in the future?", "points": ["Forecasts, regression, ML"] },
+            { "tag": "Decision / action", "label": "Prescriptive", "text": "So what? Now what? What is required to do more?", "points": ["Optimisation, next-best offer"] }
+          ],
+          "note": "Value and complexity increase from left to right."
+        },
+        {
+          "type": "table",
+          "title": "Spot the type in an exam question",
+          "head": ["Question", "Type"],
+          "rows": [
+            ["“How many units did we sell in Q3 per region?”", "Descriptive"],
+            ["“Why did sales in Italy drop after the price change?”", "Diagnostic"],
+            ["“How many customers will churn next month?”", "Predictive"],
+            ["“Which offer should we send to which customer to maximise profit?”", "Prescriptive"]
+          ],
+          "highlight": 1
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "heading": "Three research types",
+      "lead": "How clearly the problem is defined decides which research design you need – moving from descriptive to diagnostic analytics.",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["", "Exploratory", "Descriptive", "Causal"],
+          "rows": [
+            ["Problem", "Ambiguous – “Our sales are declining … why?”", "Aware of problem – “Who buys our (competitors') products?”", "Clearly defined – “Will customers buy more after a website change?”"],
+            ["Objective", "Discover ideas and insights", "Describe market characteristics or functions", "Determine cause-and-effect relationships"],
+            ["Characteristics", "Flexible, versatile; often the front end of the research design", "Prior specific hypotheses; preplanned and structured", "Manipulate one or more independent variables; control other variables"],
+            ["Methods", "Expert surveys, pilot surveys, qualitative research, secondary data (qualitative)", "Surveys, panels, observation, secondary data (quantitative)", "Experiments (e.g. A/B tests)"]
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "warn",
+          "title": "Correlation is not causation",
+          "text": "Only **causal research (experiments)** lets you claim that X causes Y. Surveys and observational data show associations. This idea comes back in A/B testing (S6) and regression (S9–S10)."
+        }
+      ]
+    },
+    {
+      "id": "value",
+      "heading": "How companies create value through data",
+      "lead": "Mazzei & Noble (2017) distinguish three levels – from using data internally to building the whole business model on it.",
+      "blocks": [
+        {
+          "type": "flow",
+          "steps": [
+            { "tag": "Level 1", "label": "Data as a tool", "text": "Active data collection and internal analytical capabilities improve specific functions: product development, marketing, sales, distribution, customer service." },
+            { "tag": "Level 2", "label": "Data as an industry", "text": "Firms sell big-data products and services to others: technology and data-as-a-service; intensive in technical know-how." },
+            { "tag": "Level 3", "label": "Data as a strategy", "text": "Big data drives competitive strategy, new business models and ecosystems built on accumulated data – e.g. **Rolls-Royce** (engine data → service model)." }
+          ]
+        },
+        {
+          "type": "compare",
+          "title": "How AI shifts data-driven marketing",
+          "sides": [
+            {
+              "label": "Starbucks – Deep Brew",
+              "sub": "Predictive customer journey (since 2019)",
+              "points": ["Reinforcement learning selects the next-best offer and learns from every response", "Implemented in the app, designed for heavy users", "From segment-based campaigns → individual real-time journey", "From short-term response → long-term value maximisation"]
+            },
+            {
+              "label": "Sephora – Virtual Artist & Beauty Advisor",
+              "sub": "Agentic AI",
+              "points": ["Smart skin scan recommends products; AI agent discusses routines, books appointments, offers discounts", "From reactive personalisation → autonomous digital sales agent", "From A/B testing → continuous real-time adaptation", "From campaign-based promotion → 1:1 digital selling"]
+            }
+          ],
+          "note": "Think about the data inputs: purchase history, time, location, weather, app behaviour (Starbucks); skin scans, preferences, chat history (Sephora)."
+        }
+      ]
+    },
+    {
+      "id": "ethics",
+      "heading": "Data ethics: surveillance capitalism",
+      "blocks": [
+        {
+          "type": "defs",
+          "items": [
+            { "term": "Surveillance capitalism (Zuboff, 2019)", "text": "A new economic order that claims **human experience as free raw material** for hidden commercial practices of **extraction, prediction and sales** – a logic in which producing goods is subordinated to a global architecture of **behavioural modification**, with unprecedented concentrations of wealth, knowledge and power." },
+            { "term": "Privacy paradox", "text": "The gap between what people think they should do to protect their privacy and what they actually do." }
+          ]
+        },
+        {
+          "type": "flow",
+          "title": "The surveillance logic",
+          "steps": [
+            { "label": "Extraction", "text": "Behavioural data collected, often without real awareness" },
+            { "label": "Prediction", "text": "Algorithms forecast what we will do" },
+            { "label": "Sales", "text": "Predictions are sold (e.g. to advertisers)" },
+            { "label": "Modification", "text": "Behaviour is nudged to make predictions come true" }
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "Critical voices",
+          "cols": 3,
+          "items": [
+            { "label": "Shoshana Zuboff", "text": "Surveillance capitalism as a “coup from above” that threatens human autonomy and market democracy." },
+            { "label": "Byung-Chul Han", "text": "Big Data is a **psychopolitical instrument**: people are degraded to profitable data sets, guided “like puppets on algorithmic strings”." },
+            { "label": "Cathy O'Neil", "text": "The era of **blind faith in algorithms** must end – algorithms embed opinions and can reinforce inequality (“Weapons of Math Destruction”)." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulation",
+      "heading": "Regulation and the future",
+      "blocks": [
+        {
+          "type": "compare",
+          "sides": [
+            { "label": "Physical privacy", "points": ["Violated when a person's efforts to seclude or conceal themselves are frustrated"] },
+            { "label": "Information privacy", "points": ["Disturbed when data, facts or conversations a person wishes to keep secret or anonymous are acquired or disclosed"] }
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "GDPR (enforced May 2018) – five main features",
+          "cols": 5,
+          "items": [
+            { "label": "Clear language", "text": "Privacy policies in plain, straightforward language" },
+            { "label": "Consent", "text": "Affirmative consent – silence is no consent" },
+            { "label": "Transparency", "text": "Inform about transfers outside the EU, purpose of use, algorithmic decisions" },
+            { "label": "Stronger rights", "text": "Breach notification, data portability, access to a copy, right to deletion" },
+            { "label": "Enforcement", "text": "European Data Protection Board interprets, decides and imposes fines" }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "key",
+          "title": "Did GDPR work? (Kollnig et al., 2021)",
+          "text": "In ~2 million Android apps, third-party tracking changed **only a little** after GDPR – and ownership of trackers became **more concentrated** (risk of user-data monopolies, “gatekeepers”)."
+        },
+        {
+          "type": "list",
+          "title": "Digital Services Act (EU, from 2023)",
+          "items": [
+            "Purpose: a basic law for the internet – rules on cookie banners, online advertising, deletion of illegal content, transparency of algorithmic decisions",
+            "Institutions: new Digital Services Board with Digital Services Coordinators in member states",
+            "Scope: all firms offering digital services in the EU (internet & hosting providers, cloud, social networks, messengers, marketplaces); **strictest rules above 45 million monthly users**"
+          ]
+        },
+        {
+          "type": "grid",
+          "title": "Susskind – four principles of a Digital Republic",
+          "cols": 4,
+          "items": [
+            { "label": "Preservation", "text": "Preserve the role of the state (a say in company standards that affect its users)" },
+            { "label": "Domination", "text": "Identify and reduce unaccountable imbalances of power (e.g. Musk's Twitter takeover)" },
+            { "label": "Democracy", "text": "Moral and civic values should be reflected in technological innovation" },
+            { "label": "Parsimony", "text": "The state should restrain others only where strictly necessary" }
+          ]
+        }
+      ]
+    }
+  ],
+  "recap": [
+    "Good decisions combine **intuition (ideas)** and **data (validation)**.",
+    "Big Data = 5 Vs: **Volume, Velocity, Variety, Veracity, Value**; data is structured or unstructured.",
+    "Analytics: **descriptive** (what?) → **diagnostic** (why?) → **predictive** (what will?) → **prescriptive** (what should we do?).",
+    "Research: **exploratory** (ambiguous problem, qualitative) → **descriptive** (surveys, panels) → **causal** (experiments). Correlation ≠ causation.",
+    "Value through data: **tool → industry → strategy** (Mazzei & Noble); AI moves marketing to individual, real-time, autonomous selling.",
+    "Surveillance capitalism: **extraction → prediction → sales → behavioural modification** (Zuboff); critics Han and O'Neil.",
+    "GDPR: clear language, consent, transparency, stronger rights, enforcement – but limited effect on tracking; DSA: strictest rules > 45 m monthly users."
+  ],
+  "exam": [
+    "Session 1 is **not** used for calculation exercises – but its concepts regularly appear in the **true/false part** (analytics types, research types, data ethics, GDPR).",
+    "Typical T/F: “Causal research is flexible and the front end of the research design” → false (that is exploratory research).",
+    "Be able to classify a question into one of the four analytics types and one of the three research types."
+  ],
+  "traps": [
+    "Descriptive **analytics** (what happened) and descriptive **research** (who buys?) are different classifications.",
+    "Silence or pre-ticked boxes are **not** consent under GDPR.",
+    "Big Data is not only about volume – veracity and value matter just as much."
+  ]
+}
