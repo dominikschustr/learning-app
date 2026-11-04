@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
 import { useAuth, useAuthHydrated } from "@/lib/auth";
 import { startAutoPublish } from "@/lib/leaderboard";
+import { refreshReminder } from "@/lib/push";
 import { useApp, useHydrated } from "@/lib/store";
 import { startAutoSync } from "@/lib/sync";
 import { useToasts } from "@/lib/toast";
@@ -21,6 +22,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
   // Automatische Synchronisation erst, wenn der lokale Stand geladen ist
   useEffect(() => (hydrated ? startAutoSync() : undefined), [hydrated]);
   useEffect(() => (hydrated ? startAutoPublish() : undefined), [hydrated]);
+  // Erinnerung ans Tagesziel: Abo dieses Geräts beim Start (und nach Kontowechsel) prüfen und melden
+  const uid = useAuth((s) => s.session?.uid);
+  useEffect(() => {
+    if (hydrated && uid) refreshReminder().catch(() => undefined);
+  }, [hydrated, uid]);
 
   // Die App gibt es nur mit Konto: bis die Sitzung geladen ist nichts zeigen, ohne Sitzung die Anmeldung
   if (!authHydrated) return <div className="min-h-dvh" />;

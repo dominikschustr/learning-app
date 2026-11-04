@@ -14,6 +14,7 @@ import { useNow } from "@/lib/useNow";
 import { alpha, cn, dayKey } from "@/lib/utils";
 import { Heatmap } from "./Heatmap";
 import { Icon } from "./Icon";
+import { ReminderPrompt } from "./ReminderSettings";
 import { Bar, Chip, ProgressRing, Skeleton } from "./ui";
 
 const PRIORITY: Record<Priority, { label: string; className: string; dot: string }> = {
@@ -98,6 +99,8 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
           Was lernen wir <span className="text-accent">heute</span>?
         </h1>
       </section>
+
+      <ReminderPrompt />
 
       {/* Handy: nur das Tagesziel – Streak und Level stehen schon in der Kopfleiste */}
       <section className="card p-4 sm:hidden">

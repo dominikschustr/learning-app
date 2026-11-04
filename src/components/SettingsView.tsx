@@ -7,6 +7,7 @@ import { exportData, useApp, useHydrated } from "@/lib/store";
 import { resetProgress } from "@/lib/account";
 import { dayKey } from "@/lib/utils";
 import { AccountSettings } from "./AccountSettings";
+import { ReminderSettings } from "./ReminderSettings";
 import { Button, Skeleton } from "./ui";
 
 export function SettingsView() {
@@ -59,6 +60,8 @@ export function SettingsView() {
           </Button>
         </div>
       </section>
+
+      <ReminderSettings />
 
       <AiSettings />
 

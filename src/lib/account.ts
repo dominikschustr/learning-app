@@ -3,6 +3,7 @@
 import { clearSession, deleteAuthAccount, getIdToken, reauthenticate, useAuth } from "./auth";
 import { progressDelete, userDelete } from "./cloud";
 import { publishNow, useBoard, writePublished } from "./leaderboard";
+import { disableReminder } from "./push";
 import { useApp } from "./store";
 import { syncNow, useSync } from "./sync";
 
@@ -25,6 +26,8 @@ export async function signOut(force = false): Promise<boolean> {
     if (!synced) return false;
     await publishNow().catch(() => undefined);
   }
+  // Erinnerungen gehören zum Konto – die nächste Person auf dem Gerät soll keine bekommen
+  await disableReminder().catch(() => undefined);
   clearSession();
   clearLocal();
   return true;
@@ -36,6 +39,7 @@ export async function deleteAccount(password: string): Promise<void> {
   const uid = useAuth.getState().session!.uid;
   await progressDelete(uid, token);
   await userDelete(uid, token);
+  await disableReminder().catch(() => undefined);
   await deleteAuthAccount(token);
   clearSession();
   clearLocal();

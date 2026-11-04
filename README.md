@@ -61,7 +61,24 @@ Was die Regeln sicherstellen: Den Lernstand (`progress/{uid}`) kann nur das eige
 die Rangliste (`users/{uid}`: Name, XP, Tagesstand, Tagesziel, Streak) sehen alle Angemeldeten, ändern kann
 jedes Konto nur den eigenen Eintrag.
 
-### 3. Optional: KI-Bewertung der Kurzantworten
+### 3. Erinnerung ans Tagesziel (Mitteilungen)
+
+Wer die Erinnerung einschaltet (Einstellungen oder Hinweis auf der Startseite), bekommt abends zur gewählten
+Uhrzeit eine Mitteilung, falls das Tagesziel noch offen ist. Das Gerät speichert sein Push-Abo in Firestore
+(`push/{id}`); der Workflow [`remind.yml`](.github/workflows/remind.yml) läuft von 16 bis 23 Uhr stündlich, liest
+Abos und Ranglisten-Stand mit einem Dienstkonto und verschickt die Mitteilungen ([`scripts/reminders.mjs`](scripts/reminders.mjs)).
+
+1. Die aktuelle [`firestore.rules`](firestore.rules) in der Firebase-Konsole einfügen und veröffentlichen.
+2. Firebase-Konsole → Projekteinstellungen → **Dienstkonten** → **Neuen privaten Schlüssel generieren**.
+3. GitHub → Repository → Settings → Secrets and variables → **Actions** → zwei Secrets anlegen:
+   - `FIREBASE_SERVICE_ACCOUNT`: kompletter Inhalt der heruntergeladenen JSON-Datei
+   - `VAPID_PRIVATE_KEY`: privater Web-Push-Schlüssel (Gegenstück zu `PUSH.vapidPublicKey` in [`src/config.ts`](src/config.ts))
+4. Testen: Actions → **Remind** → **Run workflow**.
+
+Auf dem iPhone kommen Mitteilungen nur an die Home-Bildschirm-App (Safari → Teilen → Zum Home-Bildschirm, iOS 16.4+).
+Neue Schlüssel: `npx web-push generate-vapid-keys`, öffentlichen in `src/config.ts`, privaten als Secret.
+
+### 4. Optional: KI-Bewertung der Kurzantworten
 
 Jede Person kann unter *Einstellungen → KI-Bewertung* einen eigenen, kostenlosen API-Key aus
 [Google AI Studio](https://aistudio.google.com/apikey) eintragen (keine Abrechnung aktivieren). Der Key bleibt

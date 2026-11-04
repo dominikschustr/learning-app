@@ -122,6 +122,26 @@ describe.skipIf(!EMULATOR || !AUTH)("Konten und Firestore-Regeln", () => {
     expect(e).toMatchObject({ name: "Ben", weekXp: 0, week: null });
   });
 
+  it("Erinnerung: Abo speichern, nicht lesbar, nur eigenes löschen", async () => {
+    const sub = { uid: anna.uid, sub: JSON.stringify({ endpoint: "https://push.example/abc", keys: {} }), hour: 20, tz: "Europe/Berlin" };
+    await cloud.pushPut("dev1", anna.token, sub);
+    await cloud.pushPut("dev1", anna.token, { ...sub, hour: 21 });
+    // niemand kann Abos lesen
+    expect(await raw("GET", "push/dev1", anna.token)).toBe(403);
+    expect(await raw("GET", "push", ben.token)).toBe(403);
+    // fremdes Konto eintragen geht nicht
+    await expect(cloud.pushPut("dev2", ben.token, sub)).rejects.toThrow();
+    // ungültige Uhrzeit
+    await expect(cloud.pushPut("dev3", anna.token, { ...sub, hour: 30 })).rejects.toThrow();
+    // Ben darf Annas Abo nicht löschen (403 gilt als „nicht da“), es bleibt bestehen …
+    await cloud.pushDelete("dev1", ben.token);
+    expect(await raw("DELETE", "push/dev1", ben.token)).toBe(403);
+    // … Anna schon
+    await cloud.pushDelete("dev1", anna.token);
+    await cloud.pushPut("dev1", anna.token, sub);
+    expect(await raw("DELETE", "push/dev1", anna.token)).toBe(200);
+  });
+
   it("Konto löschen: Lernstand, Eintrag und Konto sind weg", async () => {
     const c = await register("Clara", "clara@example.com");
     await cloud.progressPut(c.uid, c.token, { xp: 5 }, null);

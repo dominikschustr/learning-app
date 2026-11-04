@@ -177,3 +177,40 @@ export async function userDelete(uid: string, token: string): Promise<void> {
   const res = await call(token, "DELETE", doc(`users/${uid}`));
   if (!res.ok && res.status !== 404) await fail(res, "Löschen");
 }
+
+// ---------- Erinnerungen (Web Push) ----------
+
+/**
+ * Push-Abo eines Geräts speichern (push/{id}, id = Hash des Endpoints). Gelesen wird es nur vom
+ * Versand-Workflow; hour = Uhrzeit der Erinnerung in der Zeitzone tz. sent (letzter Versandtag) bleibt erhalten.
+ */
+export async function pushPut(
+  id: string,
+  token: string,
+  p: { uid: string; sub: string; hour: number; tz: string },
+): Promise<void> {
+  const res = await call(token, "POST", `${firebaseSettings().root}:commit`, {}, {
+    writes: [
+      {
+        update: {
+          name: doc(`push/${id}`),
+          fields: {
+            uid: { stringValue: p.uid },
+            sub: { stringValue: p.sub },
+            hour: { integerValue: String(p.hour) },
+            tz: { stringValue: p.tz },
+          },
+        },
+        updateMask: { fieldPaths: ["uid", "sub", "hour", "tz"] },
+        updateTransforms: [{ fieldPath: "at", setToServerValue: "REQUEST_TIME" }],
+      },
+    ],
+  });
+  if (!res.ok) await fail(res, "Erinnerung speichern");
+}
+
+/** Push-Abo entfernen; fehlt es schon (oder gehört einem anderen Konto), ist das kein Fehler. */
+export async function pushDelete(id: string, token: string): Promise<void> {
+  const res = await call(token, "DELETE", doc(`push/${id}`));
+  if (!res.ok && res.status !== 404 && res.status !== 403) await fail(res, "Erinnerung entfernen");
+}
