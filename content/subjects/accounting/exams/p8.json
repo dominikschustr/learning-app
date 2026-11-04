@@ -1,0 +1,46 @@
+[
+  {
+    "id": "midterm-2019",
+    "title": "Midterm März 2019 (Nachbau, aktueller Stoff)",
+    "subtitle": "Nach dem Mid-term test vom 1. März 2019 (ursprünglich 90 Punkte, 90 Minuten, ohne Unterlagen): Conceptual Framework, Konsolidierung und Anlagevermögen mit eigenen Fällen und Zahlen. Weggelassen sind die Teile zu Revenue Recognition und Investment Property (IAS 40).",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Mid-term test Financial Reporting under IFRS vom 01.03.2019",
+      "faithful": false
+    },
+    "minutes": 55,
+    "parts": [
+      {
+        "title": "Section A – Conceptual framework and presentation of financial statements",
+        "instructions": "Choose one answer for A.1–A.3. [5 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "mc-p8-01", "points": 1 },
+              { "q": "mc-p8-02", "points": 1 },
+              { "q": "mc-p8-03", "points": 1 },
+              { "q": "sa-p8-01", "points": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Section B – Consolidated financial statements",
+        "instructions": "[25 points]",
+        "sections": [
+          { "title": "B.1 – Vestra", "items": [{ "q": "sa-p8-02", "points": 5 }] },
+          { "title": "B.2 – Norda and Sudo", "items": [{ "q": "sa-p8-03", "points": 10 }, { "q": "sa-p8-04", "points": 10 }] }
+        ]
+      },
+      {
+        "title": "Section C – Non-current assets",
+        "instructions": "[25 points]",
+        "sections": [
+          { "title": "C.1 – Acquisition of a machine", "items": [{ "q": "sa-p8-05", "points": 15 }] },
+          { "title": "C.2 – Recognition of intangible assets", "items": [{ "q": "sa-p8-06", "points": 10 }] }
+        ]
+      }
+    ]
+  }
+]

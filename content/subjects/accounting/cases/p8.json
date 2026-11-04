@@ -1,0 +1,107 @@
+[
+  {
+    "id": "vestra-is",
+    "title": "Vestra group – consolidated income statement N (€000, illustrative)",
+    "text": [
+      "Vestra is a listed group selling apparel, footwear and accessories through licensees and its own stores. All its subsidiaries are wholly owned. It presents the following consolidated income statement."
+    ],
+    "tables": [
+      {
+        "head": ["", "N", "N-1"],
+        "rows": [
+          ["Revenue from own stores", "182,400", "171,900"],
+          ["Royalties from licensees", "61,300", "58,700"],
+          ["Cost of sales", "(97,600)", "(92,300)"],
+          ["Gross margin", "146,100", "138,300"],
+          ["Selling expenses", "(38,200)", "(36,100)"],
+          ["Personnel costs", "(41,700)", "(39,800)"],
+          ["General and administrative expenses", "(21,900)", "(21,200)"],
+          ["Contribution margin", "44,300", "41,200"],
+          ["Depreciation and amortisation", "(14,600)", "(13,900)"],
+          ["Operating result (EBIT)", "29,700", "27,300"],
+          ["Net financial expense", "(3,100)", "(3,400)"],
+          ["Profit before tax", "26,600", "23,900"],
+          ["Income tax", "(7,400)", "(6,600)"],
+          ["Net profit", "19,200", "17,300"],
+          ["– attributable to owners of the parent", "19,200", "17,300"],
+          ["– attributable to non-controlling interests", "0", "0"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "norda-sudo",
+    "title": "Norda acquires Sudo",
+    "text": [
+      "On 31 December N-1, Norda acquired 100% of the shares of Sudo for 12,000, paid in cash on that date. The individual balance sheets just before the acquisition are given below.",
+      "Sudo has developed a brand internally, never recognised in its own balance sheet; its fair value is estimated at 2,300 on 31 December N-1. The brand has an indefinite useful life and is not impaired in N. All other book values equal fair values."
+    ],
+    "tables": [
+      {
+        "caption": "Norda – before the acquisition (31 December N-1)",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Plant and equipment", "11,000", "Capital", "9,000"],
+          ["Cash", "13,500", "Retained earnings", "1,500"],
+          ["", "", "Liabilities", "14,000"],
+          ["Total", "24,500", "Total", "24,500"]
+        ]
+      },
+      {
+        "caption": "Sudo – 31 December N-1",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Plant and equipment", "9,000", "Capital", "6,000"],
+          ["Inventory", "4,500", "Retained earnings", "2,500"],
+          ["Cash", "1,500", "Liabilities", "6,500"],
+          ["Total", "15,000", "Total", "15,000"]
+        ]
+      },
+      {
+        "caption": "Norda – 31 December N",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Plant and equipment", "11,000", "Capital", "9,000"],
+          ["Investment in Sudo", "12,000", "Retained earnings", "1,500"],
+          ["Trade receivables", "900", "Net income", "950"],
+          ["Cash", "1,600", "Liabilities", "14,050"],
+          ["Total", "25,500", "Total", "25,500"]
+        ]
+      },
+      {
+        "caption": "Sudo – 31 December N",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Plant and equipment", "10,200", "Capital", "6,000"],
+          ["Inventory", "5,300", "Retained earnings", "2,500"],
+          ["Cash", "900", "Net income", "1,100"],
+          ["", "", "Liabilities", "6,800"],
+          ["Total", "16,400", "Total", "16,400"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "halvor-machine",
+    "title": "Company Halvor – acquisition of a machine",
+    "text": [
+      "Halvor recently acquired a new machine:",
+      "– The machine is received on 1 April N and ready for use on 1 July N.",
+      "– Purchase price: 1,800,000, paid 60 days after delivery.",
+      "– Customs duties: 45,000. Transport insurance: 15,000. Transport cost: 40,000.",
+      "– Training of the users by the machine's manufacturer: 25,000.",
+      "– Useful life: 8 years. The machine will be sold at the end of its useful life; its residual value is estimated at 260,000.",
+      "– Halvor uses straight-line depreciation."
+    ],
+    "tables": []
+  },
+  {
+    "id": "medora-project",
+    "title": "Medora – new drug project",
+    "text": [
+      "Medora, a pharmaceutical company, starts a project in year N to develop a new drug. It spends 1,400,000 on the project during N, and a further 600,000 from January to October N+1.",
+      "On 1 November N+1 Medora receives the authorisation of the national health authority to sell the drug. In November and December N+1 it spends 120,000 on an advertising campaign. Sales start in January N+2."
+    ],
+    "tables": []
+  }
+]

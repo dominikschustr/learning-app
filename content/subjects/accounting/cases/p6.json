@@ -1,0 +1,105 @@
+[
+  {
+    "id": "belcour-sci",
+    "title": "Belcour group – income statement and statement of comprehensive income N (M€, illustrative)",
+    "text": [
+      "Belcour is a listed cosmetics group. It publishes the two tables below. Belcour also holds 8.5% of the shares of Vitapharm, a pharmaceutical company listed in Paris and New York; it has no seat on Vitapharm's board. Belcour designated the Vitapharm shares at fair value through other comprehensive income."
+    ],
+    "tables": [
+      {
+        "caption": "Table 1 – Consolidated income statement",
+        "head": ["", "N", "N-1"],
+        "rows": [
+          ["Revenue", "9,840", "9,310"],
+          ["Cost of sales", "(2,870)", "(2,760)"],
+          ["Research and development expenses", "(310)", "(295)"],
+          ["Advertising and promotion expenses", "(3,050)", "(2,880)"],
+          ["Selling, general and administrative expenses", "(1,920)", "(1,850)"],
+          ["Operating profit", "1,690", "1,525"],
+          ["Net finance costs", "(28)", "(31)"],
+          ["Dividends from Vitapharm", "142", "131"],
+          ["Profit before tax", "1,804", "1,625"],
+          ["Income tax", "(468)", "(420)"],
+          ["Net profit", "1,336", "1,205"]
+        ]
+      },
+      {
+        "caption": "Table 2 – Consolidated statement of comprehensive income",
+        "head": ["", "N", "N-1"],
+        "rows": [
+          ["Net profit", "1,336", "1,205"],
+          ["Items that will not be reclassified to profit or loss:", "", ""],
+          ["Change in fair value of equity investments (FVOCI)", "412", "(96)"],
+          ["Remeasurement of defined benefit plans", "(37)", "54"],
+          ["Items that may be reclassified to profit or loss:", "", ""],
+          ["Cash flow hedges", "(18)", "22"],
+          ["Translation differences", "205", "63"],
+          ["Income tax on other comprehensive income", "(41)", "(9)"],
+          ["Other comprehensive income", "521", "34"],
+          ["Total comprehensive income", "1,857", "1,239"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "holdco-subco",
+    "title": "HC and SC – individual balance sheets 31 December N2",
+    "text": [
+      "On 31 December N, HC acquired 100% of the shares of SC for 900 in cash. At that date the book value of SC's net assets (equity) was 350 (capital only). SC had developed a brand internally; its fair value at the acquisition date was estimated at 420. SC's result for N1 was nil.",
+      "On 31 December N2 the brand is impaired: its value is now 330. Assume the whole impairment arises in N2 and that there are no intercompany transactions."
+    ],
+    "tables": [
+      {
+        "caption": "HC – balance sheet 31 December N2",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "760", "Capital", "700"],
+          ["Investment in SC", "900", "Net income", "150"],
+          ["Cash", "190", "Liabilities", "1,000"],
+          ["Total", "1,850", "Total", "1,850"]
+        ]
+      },
+      {
+        "caption": "SC – balance sheet 31 December N2",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "450", "Capital", "350"],
+          ["Inventory", "230", "Net income", "260"],
+          ["Cash", "90", "Liabilities", "160"],
+          ["Total", "770", "Total", "770"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "corvin-park",
+    "title": "Corvin plc – retail park measured at cost",
+    "text": [
+      "On 1 January N1 Corvin plc acquired a retail park for €480 million, which it rents out to shops. Corvin measures the park with the cost model and depreciates it straight-line over 40 years (residual value zero).",
+      "On 31 December N6, after the depreciation of N6, the CFO notices that prices of retail properties have dropped sharply. Information available on 31 December N6:",
+      "– Estimated selling price of the park (net of costs to sell): €300 million.",
+      "– Annual rent received: €36 million, paid each year on 31 December, for the remaining 34 years of use.",
+      "– Discount rate: 9%. Residual value at the end of the useful life: zero.",
+      "Annuity factors at 9%: 30 years 10.27 · 34 years 10.52 · 35 years 10.57 · 40 years 10.76."
+    ],
+    "tables": []
+  },
+  {
+    "id": "marlow-lease",
+    "title": "Marlow SA – lease or bank loan?",
+    "text": [
+      "Marlow SA needs new production equipment with a useful life of 7 years. Marlow already carries a high level of financial debt, and its loan covenants limit net debt to 3 × EBITDA. Instead of borrowing from its bank to buy the equipment, the CFO plans to sign a 6-year lease contract for the equipment, convinced that this will keep financial debt unchanged. Marlow prepares IFRS financial statements."
+    ],
+    "tables": []
+  },
+  {
+    "id": "avarin-convertible",
+    "title": "Avarin SA – convertible bond",
+    "text": [
+      "On 1 January N Avarin SA issued a convertible bond with a nominal value of €150 million at par. It carries a coupon of 4%, paid at the end of each year, and is redeemed at par on 31 December N+3 unless converted. Holders may convert at any time into 8 ordinary shares per €100 of bonds.",
+      "A conventional bond without the conversion option would have required an interest rate of 6%.",
+      "Factors at 6%: annuity factor over 4 years 3.4651; discount factor for year 4 0.7921."
+    ],
+    "tables": []
+  }
+]

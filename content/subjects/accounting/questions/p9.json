@@ -1,0 +1,205 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p9-01",
+    "lecture": "t1",
+    "case": "vectis-cfs",
+    "difficulty": 1,
+    "verb": "define",
+    "prompt": "Briefly define the operating, investing and financing activities distinguished in the statement of cash flows.",
+    "modelAnswer": "Operating activities: the principal revenue-producing activities of the entity (cash from customers, payments to suppliers and employees, taxes) and other activities that are not investing or financing.\nInvesting activities: acquisition and disposal of long-term assets and other investments – PPE, intangibles, subsidiaries, financial investments.\nFinancing activities: changes in the size and composition of equity and borrowings – issuing or buying back shares, dividends paid, raising or repaying loans, lease liability repayments.",
+    "keyPoints": [
+      "Operating: main revenue-producing activities",
+      "Investing: acquisition/disposal of non-current assets and investments",
+      "Financing: equity and financial liabilities (shares, dividends, borrowings)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-02",
+    "lecture": "t1",
+    "case": "vectis-cfs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "IFRS allows two methods to present cash flows from operating activities. Briefly explain both. Which one does Vectis use?",
+    "modelAnswer": "Direct method: shows the major classes of gross cash receipts and payments (cash received from customers, cash paid to suppliers and employees, …).\nIndirect method: starts from profit and adjusts it for non-cash items (depreciation, provisions), for items that belong to investing or financing (e.g. gains on disposals) and for changes in working capital.\nVectis uses the indirect method – its statement starts with net profit and adds back depreciation, provisions and working capital changes.",
+    "keyPoints": [
+      "Direct: gross cash receipts and payments",
+      "Indirect: profit adjusted for non-cash items, investing/financing items and working capital",
+      "Vectis: indirect method"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-03",
+    "lecture": "t1",
+    "case": "vectis-cfs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Vectis' cash flow from investing activities is negative. Is this good or bad news? Explain briefly.",
+    "modelAnswer": "Generally good news: a negative investing cash flow means Vectis invests more in non-current assets (PPE, intangibles, an acquisition) than it sells. Without investment a company cannot sustain revenue and cash generation in the long run or grow. The quality of the investments still has to be analysed; here they are comfortably financed by operating cash flow (11,650 > 8,700).",
+    "keyPoints": [
+      "Negative = net investment in non-current assets",
+      "Usually positive sign for future revenues and growth",
+      "Quality of the investments must be assessed"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-04",
+    "lecture": "t2",
+    "case": "parent-sub-missing",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Calculate the missing values in the Parent Company's balance sheet and in the consolidated balance sheet.",
+    "modelAnswer": "Parent Company: capital = consolidated capital (the Subsidiary's capital is eliminated) = 510. Total equity & liabilities = 510 + 50 + 910 = 1,470 = total assets. PPE = 1,470 − 860 − 140 = 470 (check: 470 + 560 = 1,030 consolidated PPE).\nConsolidated: goodwill = 860 − (240 + 130) − 380 = 110. Total assets = 110 + 380 + 1,030 = 1,520. Consolidated net income = 50 (the Subsidiary's earnings before acquisition are eliminated). Accounts payable = 910 + 190 − 140 (intercompany) = 960. Total equity & liabilities = 510 + 50 + 960 = 1,520.",
+    "keyPoints": [
+      "Parent capital 510, total 1,470, PPE 470",
+      "Goodwill 110 = 860 − 370 − 380",
+      "Consolidated net income 50",
+      "Accounts payable 960 after eliminating the 140 intercompany balance",
+      "Consolidated total 1,520"
+    ],
+    "results": [
+      { "label": "Parent Company PPE", "value": 470 },
+      { "label": "Goodwill", "value": 110 },
+      { "label": "Consolidated accounts payable", "value": 960 },
+      { "label": "Consolidated balance sheet total", "value": 1520 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-05",
+    "lecture": "t2",
+    "case": "parent-sub-missing",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Why are there no accounts receivable and no retained earnings in the consolidated balance sheet?",
+    "modelAnswer": "Accounts receivable: the Parent's receivables are owed by the Subsidiary. Within the group they are intercompany balances and are eliminated together with the matching payables.\nRetained earnings: the Parent has none, and the Subsidiary's retained earnings (130) were earned before the acquisition – they are part of the equity acquired and are eliminated against the investment. Since the balance sheet is prepared at the acquisition date, the group has not yet earned any post-acquisition profits of the Subsidiary.",
+    "keyPoints": [
+      "Intercompany receivables/payables eliminated",
+      "Subsidiary's pre-acquisition retained earnings eliminated against the investment",
+      "No post-acquisition earnings yet at the acquisition date"
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-01",
+    "lecture": "t3",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Company A stops a machine for 2 months in N for major maintenance costing €250,000. Afterwards the machine can be used exactly as before over its remaining useful life – no extra output, life or quality. The maintenance cost should be …",
+    "options": [
+      { "id": "a", "text": "expensed" },
+      { "id": "b", "text": "capitalised and depreciated over the remaining useful life of the machine" },
+      { "id": "c", "text": "capitalised and depreciated until the next maintenance is due" }
+    ],
+    "correct": ["a"],
+    "explanation": "Subsequent costs are capitalised only if they generate additional future economic benefits (more output, longer life, better quality). Here the work merely maintains the machine → expense."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-02",
+    "lecture": "t3",
+    "case": "kerris-building",
+    "difficulty": 3,
+    "single": true,
+    "shuffle": false,
+    "prompt": "At what amount is the building shown in Kerris' balance sheet on 31 December N+5?",
+    "options": [
+      { "id": "a", "text": "€3,000,000" },
+      { "id": "b", "text": "€2,300,000" },
+      { "id": "c", "text": "€1,800,000" },
+      { "id": "d", "text": "€1,750,000" },
+      { "id": "e", "text": "€1,400,000" },
+      { "id": "f", "text": "€1,200,000" }
+    ],
+    "correct": ["d"],
+    "explanation": "After the impairment (1,800,000 at N+3) depreciation is 1,800,000 / 9 = 200,000 → carrying amount N+5 before the test 1,400,000. The reversal is capped at the amount without any impairment: 3,000,000 − 5 × 250,000 = 1,750,000. The recoverable amount (2,300,000) is higher, so the building is shown at 1,750,000."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-03",
+    "lecture": "t3",
+    "case": "kerris-building",
+    "difficulty": 3,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What is the impact of the impairment reversal on Kerris' income statement for N+5?",
+    "options": [
+      { "id": "a", "text": "0" },
+      { "id": "b", "text": "€350,000 profit" },
+      { "id": "c", "text": "€450,000 profit" },
+      { "id": "d", "text": "€500,000 profit" },
+      { "id": "e", "text": "€900,000 profit" }
+    ],
+    "correct": ["b"],
+    "explanation": "Reversal = capped amount 1,750,000 − carrying amount before the reversal 1,400,000 = 350,000, recognised as income in profit or loss (no revaluation model). 900,000 ignores the cap."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-04",
+    "lecture": "t3",
+    "difficulty": 2,
+    "single": false,
+    "shuffle": false,
+    "prompt": "TWO of the following items are NOT part of the acquisition cost of a piece of equipment. Which ones?",
+    "options": [
+      { "id": "a", "text": "Insurance during transport" },
+      { "id": "b", "text": "Operating losses in the first months of use" },
+      { "id": "c", "text": "Estimated cost of dismantling the equipment at the end of its life" },
+      { "id": "d", "text": "Cost of special foundations for the equipment" },
+      { "id": "e", "text": "Borrowing costs (the equipment is a qualifying asset)" },
+      { "id": "f", "text": "Cost of test runs before use" },
+      { "id": "g", "text": "Depreciation of the building in which the equipment is installed" }
+    ],
+    "correct": ["b", "g"],
+    "explanation": "Initial operating losses arise after the asset is ready for use, and depreciation of the building is a cost of the building – neither is directly attributable to bringing the equipment to working condition. All others are part of cost under IAS 16 / IAS 23."
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-06",
+    "lecture": "t3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Starting in year N, Company E incurs development expenses of €600,000 every year. Each year's expenses generate benefits over the following 4 years. Independently of the IAS 38 criteria, the CFO wonders whether to expense or capitalise them. Show the impact on the income statements of N to N+4 for both options, and compare.",
+    "modelAnswer": "Expensing: expense of 600,000 in every year N to N+4.\nCapitalising (amortised over the 4 following years, starting the year after): N: 0 · N+1: 150,000 (N's spending) · N+2: 300,000 · N+3: 450,000 · N+4: 600,000.\nComparison: capitalising lowers expenses and raises profit in the build-up years N to N+3 (and creates an intangible asset). From N+4 on, with constant spending, the annual expense is the same under both options; only the balance sheet differs.",
+    "keyPoints": [
+      "Expensing: 600,000 every year",
+      "Capitalising: 0 / 150,000 / 300,000 / 450,000 / 600,000",
+      "Difference only in the build-up years; same expense from N+4 with stable spending",
+      "Capitalising also creates an intangible asset"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-07",
+    "lecture": "t3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Give two examples of critical accounting issues related to non-current assets (PPE, goodwill or intangible assets) for financial analysts and auditors, and briefly explain why they are critical.",
+    "modelAnswer": "Any two, with a short explanation, for example:\n– Depreciation: useful lives, residual values and methods are management estimates that directly drive profit.\n– Impairment tests (goodwill, CGUs): value in use depends on cash flow forecasts, growth and discount rates – highly judgmental, can delay or accelerate losses.\n– Capitalised intangibles / development costs: whether IAS 38 criteria are met is a judgment; capitalising raises profit and assets.\n– Fair values under the revaluation model: estimates without an active market make values volatile and hard to verify.",
+    "keyPoints": [
+      "Names two relevant issues (depreciation, impairment test, capitalised intangibles, fair values)",
+      "Explains that they rest on management judgment/estimates",
+      "Explains the effect on profit or assets"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-08",
+    "lecture": "t3",
+    "case": "fennick-financing",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Discuss the accounting impacts of the three alternatives and possible criteria for choosing between them.",
+    "modelAnswer": "A – loan and purchase: equipment as PPE (depreciated, possibly impaired) and a financial liability; the instalments are split into interest expense and repayment.\nB – lease under IFRS 16: right-of-use asset (depreciated) and lease liability; payments split into interest and repayment. The impact is very close to A. Difference: in A Fennick becomes the legal owner (the asset can serve as collateral for new debt), in B it does not.\nC – service contract: there is no identified asset that Fennick controls (the supplier can substitute it), so it is not a lease: no asset and no debt; the fees are expensed as incurred.\nCriteria: impact on financial debt and gearing/covenants (C keeps debt off the balance sheet), comparison of the effective interest rate of the loan with the rate implicit in the lease, flexibility and ownership, and the profile of the expense (A/B: depreciation + interest, front-loaded interest; C: constant service expense; EBITDA higher in A/B).",
+    "keyPoints": [
+      "A: PPE + financial debt; depreciation + interest",
+      "B: right-of-use asset + lease liability; nearly identical to A, no legal ownership",
+      "C: no lease – no asset, no debt, fees expensed",
+      "Criteria: debt/gearing, effective cost (interest rates), ownership/flexibility, expense profile"
+    ]
+  }
+]

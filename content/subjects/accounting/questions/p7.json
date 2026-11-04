@@ -1,0 +1,201 @@
+[
+  {
+    "type": "tf",
+    "id": "tf-p7-01",
+    "lecture": "t1",
+    "statement": "In the statement of comprehensive income, operating expenses may be presented either by nature or by function.",
+    "answer": true,
+    "explanation": "IAS 1 allows both classifications; an entity presenting by function must disclose additional information by nature (e.g. depreciation, staff costs) in the notes."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-02",
+    "lecture": "t1",
+    "statement": "Total comprehensive income equals net income minus other comprehensive income.",
+    "answer": false,
+    "explanation": "Total comprehensive income = net income PLUS other comprehensive income."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-03",
+    "lecture": "t1",
+    "statement": "According to the Conceptual Framework, financial reporting aims to provide information that is useful to existing and potential investors, lenders and other creditors (providers of capital).",
+    "answer": true,
+    "explanation": "These capital providers are the primary users of general purpose financial reports; their information needs define what is useful."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-04",
+    "lecture": "t2",
+    "statement": "Company A holds 12% of the shares of entity B and has no other rights over B. B is outside A's scope of consolidation.",
+    "answer": true,
+    "explanation": "12% without further rights gives neither control nor joint control nor significant influence (presumed from 20%). B is a simple financial investment for A."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-05",
+    "lecture": "t2",
+    "statement": "Company A holds no shares at all in entity C. C can nevertheless be part of A's scope of consolidation.",
+    "answer": true,
+    "explanation": "Consolidation depends on control, not on ownership. A can control C through contracts (e.g. a structured entity whose relevant activities A directs and whose returns A bears)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-06",
+    "lecture": "t2",
+    "statement": "Positive goodwill is amortised over its useful life.",
+    "answer": false,
+    "explanation": "Goodwill is not amortised under IFRS; it is tested for impairment at least once a year."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-07",
+    "lecture": "t3",
+    "statement": "The cost of training the staff who will operate a new machine is part of the machine's acquisition cost.",
+    "answer": false,
+    "explanation": "IAS 16 lists staff training as a cost that is NOT directly attributable to bringing the asset to working condition – it is expensed."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-08",
+    "lecture": "t3",
+    "statement": "Internally generated brands, mastheads and customer lists cannot be recognised as intangible assets, even if they are legally protected.",
+    "answer": true,
+    "explanation": "IAS 38 prohibits recognising these internally generated items, because their cost cannot be distinguished from the cost of developing the business as a whole."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-09",
+    "lecture": "t3",
+    "statement": "When the recoverable amount of an asset rises after an impairment in a prior year, its carrying amount is increased up to its original acquisition cost.",
+    "answer": false,
+    "explanation": "The reversal is capped at the carrying amount the asset would have had without the impairment, i.e. acquisition cost net of the depreciation that would have been charged."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-10",
+    "lecture": "t2",
+    "statement": "Goodwill only needs to be tested for impairment when the company sees internal or external indications that its value has declined.",
+    "answer": false,
+    "explanation": "Goodwill (like intangible assets with indefinite lives) must be tested at least annually, in addition to whenever there is an indication of impairment."
+  },
+  {
+    "type": "tf",
+    "id": "tf-p7-11",
+    "lecture": "t3",
+    "statement": "Research and development expenditure is capitalised as soon as it meets the criteria of IAS 38.",
+    "answer": false,
+    "explanation": "Research expenditure is always expensed. Only development expenditure is capitalised, from the moment all IAS 38 criteria are met."
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-01",
+    "lecture": "t2",
+    "case": "parento-filia",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare the consolidated balance sheet of the PC group at the acquisition date (31 December N-1).",
+    "modelAnswer": "Purchase price allocation: price 820 − book value of SA's net assets (220 + 70 = 290) = 530 difference. Fair value adjustments: brand 280 − 0 = 280; equipment 330 − 240 = 90. Goodwill = 530 − 280 − 90 = 160.\nSA at fair value: equipment 330, vehicles 90, brand 280 → net assets 660 (capital 220, net income 70, revaluation reserve 370, liabilities 40).\nConsolidated balance sheet: Equipment 350 + 330 = 680 · Vehicles 90 · Brand 280 · Goodwill 160 → total 1,210.\nCapital 550 · Net income 170 (only PC's – SA's equity at acquisition is eliminated) · Liabilities 450 + 40 = 490 → total 1,210.",
+    "keyPoints": [
+      "Book value of SA's net assets 290",
+      "Fair value adjustments: brand 280, equipment +90",
+      "Goodwill 160",
+      "Investment in SA eliminated against SA's equity at fair value",
+      "Consolidated total 1,210; net income = PC's 170"
+    ],
+    "results": [
+      { "label": "Goodwill", "value": 160 },
+      { "label": "Consolidated equipment", "value": 680 },
+      { "label": "Balance sheet total", "value": 1210 }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p7-01",
+    "lecture": "t2",
+    "case": "pc-sa-75",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What amount of non-controlling interests is recognised in the consolidated balance sheet at the acquisition date?",
+    "options": [
+      { "id": "a", "text": "70" },
+      { "id": "b", "text": "52.5" },
+      { "id": "c", "text": "280" },
+      { "id": "d", "text": "210" },
+      { "id": "e", "text": "20" }
+    ],
+    "correct": ["a"],
+    "explanation": "NCI = 25% × SA's net assets (200 + 80 = 280) = 70. The consolidated balance sheet then shows equipment 590, capital 360, net income 40, NCI 70, liabilities 120 (total 590). 52.5 is 25% of the price, 20 is 25% of SA's net income only."
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-02",
+    "lecture": "t2",
+    "case": "pc-sa-75",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Does the PC group recognise goodwill on this acquisition? Yes or no – why?",
+    "modelAnswer": "No. The price paid (210) equals PC's share of SA's net assets: 75% × (200 + 80) = 210. As no fair values are given, the book value of SA's net assets is taken as their fair value, so there is no excess of the price over the share acquired – goodwill is zero.",
+    "keyPoints": [
+      "No goodwill",
+      "Price 210 = 75% × net assets 280",
+      "Book values assumed equal to fair values"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-03",
+    "lecture": "t3",
+    "case": "torvik-machine",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Show the impact of this acquisition on Torvik's balance sheet and income statement on 1 July N and on 31 December N.",
+    "modelAnswer": "Deferred payment: the price is paid after 12 months, so the cost includes only its present value: 742,000 / 1.06 = 700,000 (the rest is interest).\nAcquisition cost = 700,000 + transport insurance 24,000 + transport 18,000 = 742,000. Training (30,000) and advertising (50,000) are expensed.\n1 July N – balance sheet: PPE +742,000; payable to supplier +700,000; cash −122,000 (24,000 + 18,000 + 30,000 + 50,000). Income statement: training expense 30,000, advertising expense 50,000.\nDepreciation over Torvik's 8-year usage period: (742,000 − 110,000) / 8 = 79,000 per year → 6 months in N = 39,500.\n31 December N – income statement: depreciation 39,500; interest expense 700,000 × 6% × 6/12 = 21,000. Balance sheet: PPE 742,000 − 39,500 = 702,500; supplier payable 700,000 + 21,000 = 721,000.",
+    "keyPoints": [
+      "Price discounted for the 12-month payment term: 700,000",
+      "Cost 742,000 incl. transport and insurance; training and advertising expensed",
+      "Depreciation over 8 years with residual value 110,000: 39,500 for 6 months",
+      "Interest expense 21,000 increases the payable to 721,000",
+      "PPE 702,500 on 31 December N"
+    ],
+    "results": [
+      { "label": "Acquisition cost of the machine", "value": 742000 },
+      { "label": "Depreciation N", "value": 39500 },
+      { "label": "Interest expense N", "value": 21000 },
+      { "label": "Carrying amount of the machine 31 Dec N", "value": 702500 },
+      { "label": "Supplier payable 31 Dec N", "value": 721000 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-04",
+    "lecture": "t3",
+    "case": "torvik-land",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Show the impact on the balance sheet and on the income statement / other comprehensive income of Torvik on 31 December N and 31 December N+1 if Torvik uses the revaluation model for this land.",
+    "modelAnswer": "Land is not depreciated.\n31 December N: land 6,750,000 (6,400,000 + 350,000). The increase of 350,000 goes to OCI and accumulates in a revaluation surplus in equity – no effect on net income.\n31 December N+1: land 6,520,000. The decrease of 230,000 is recognised in OCI as well, because it reverses part of the existing surplus (surplus now 120,000). Only a decrease below the original cost (i.e. beyond the surplus) would hit net income.",
+    "keyPoints": [
+      "No depreciation of land",
+      "N: land 6,750,000; +350,000 in OCI (revaluation surplus)",
+      "N+1: land 6,520,000; −230,000 in OCI against the surplus",
+      "No impact on net income"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-05",
+    "lecture": "t3",
+    "case": "torvik-land",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Same land, but Torvik uses the cost model. What is the impact on 31 December N and 31 December N+1?",
+    "modelAnswer": "The land stays at its cost of 6,400,000 on both dates. Land is not depreciated and fair value changes are ignored, so there is no impact on net income or OCI (an impairment test would only matter if the recoverable amount fell below 6,400,000).",
+    "keyPoints": [
+      "Land at 6,400,000 on both dates",
+      "No depreciation, fair value changes ignored",
+      "No impact on net income or OCI"
+    ]
+  }
+]

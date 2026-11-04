@@ -1,0 +1,161 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-p8-01",
+    "lecture": "t1",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "If the Conceptual Framework and an IFRS standard conflict, …",
+    "options": [
+      { "id": "a", "text": "the Conceptual Framework always prevails over the standard" },
+      { "id": "b", "text": "the standard always prevails over the Conceptual Framework" },
+      { "id": "c", "text": "the entity must develop its own accounting policy to resolve the conflict" },
+      { "id": "d", "text": "it depends on the nature of the conflict" }
+    ],
+    "correct": ["b"],
+    "explanation": "The Conceptual Framework is not a standard and overrides no IFRS requirement. It guides the IASB and helps entities only where no standard applies."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-02",
+    "lecture": "t1",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which statement about the use of IFRS in the European Union is correct?",
+    "options": [
+      { "id": "a", "text": "IFRS are mandatory for the consolidated financial statements of all groups, listed or not" },
+      { "id": "b", "text": "IFRS are mandatory for the consolidated financial statements of listed companies" },
+      { "id": "c", "text": "IFRS are forbidden for the separate (individual) financial statements of listed companies in every member state" },
+      { "id": "d", "text": "IFRS are forbidden for the consolidated financial statements of non-listed groups" }
+    ],
+    "correct": ["b"],
+    "explanation": "The IAS Regulation (2002) requires IFRS as adopted by the EU for the consolidated accounts of listed companies. For other consolidated accounts and for separate accounts, member states may permit or require IFRS – so neither a general obligation nor a general ban applies."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-03",
+    "lecture": "t1",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Who are the primary users of general purpose financial statements according to the IASB?",
+    "options": [
+      { "id": "a", "text": "Employees" },
+      { "id": "b", "text": "Statutory auditors" },
+      { "id": "c", "text": "Providers of capital (investors, lenders and other creditors)" },
+      { "id": "d", "text": "Tax authorities" }
+    ],
+    "correct": ["c"],
+    "explanation": "The Conceptual Framework names existing and potential investors, lenders and other creditors as primary users."
+  },
+  {
+    "type": "short",
+    "id": "sa-p8-01",
+    "lecture": "t1",
+    "case": "vestra-is",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Are Vestra's costs presented by nature or by function? Vestra shows three intermediate operating results – is this compliant with IAS 1? Why?",
+    "modelAnswer": "Neither purely: it is a mixed presentation. Cost of sales, selling expenses and general and administrative expenses are classified by function; personnel costs and depreciation and amortisation are classified by nature.\nThe three intermediate results (gross margin, contribution margin, EBIT) are compliant: IAS 1 does not prescribe any intermediate operating result. Additional subtotals are allowed if they are relevant, made of IFRS amounts, clearly labelled and presented consistently over time.",
+    "keyPoints": [
+      "Mixed: some lines by function, some by nature",
+      "Intermediate results are not mandatory under IAS 1",
+      "Additional subtotals allowed if relevant, clear and consistent"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p8-02",
+    "lecture": "t2",
+    "case": "vestra-is",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "In Vestra's income statement, the net profit attributable to non-controlling interests is zero. What is the reason?",
+    "modelAnswer": "All subsidiaries are wholly owned (100%). Non-controlling interests only arise when the parent owns less than 100% of a consolidated subsidiary; then the share of profit belonging to the other shareholders is shown separately.",
+    "keyPoints": [
+      "All subsidiaries are 100% owned",
+      "NCI exist only for subsidiaries owned less than 100%"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p8-03",
+    "lecture": "t2",
+    "case": "norda-sudo",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Prepare the consolidated balance sheet of the Norda group at the acquisition date (31 December N-1, after the cash payment).",
+    "modelAnswer": "Purchase price allocation: price 12,000 − book value of Sudo's net assets (6,000 + 2,500 = 8,500) = 3,500. Brand at fair value 2,300 (book value 0). Goodwill = 3,500 − 2,300 = 1,200.\nAssets: Plant and equipment 11,000 + 9,000 = 20,000 · Inventory 4,500 · Cash (13,500 − 12,000) + 1,500 = 3,000 · Brand 2,300 · Goodwill 1,200 → total 31,000.\nEquity & liabilities: Capital 9,000 · Retained earnings 1,500 (Norda only) · Liabilities 14,000 + 6,500 = 20,500 → total 31,000.",
+    "keyPoints": [
+      "Book value of Sudo's net assets 8,500",
+      "Brand recognised at 2,300",
+      "Goodwill 1,200",
+      "Cash reduced by the 12,000 paid",
+      "Total 31,000; equity = Norda's only"
+    ],
+    "results": [
+      { "label": "Goodwill", "value": 1200 },
+      { "label": "Consolidated cash", "value": 3000 },
+      { "label": "Balance sheet total", "value": 31000 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p8-04",
+    "lecture": "t2",
+    "case": "norda-sudo",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Prepare the consolidated balance sheet of the Norda group as of 31 December N.",
+    "modelAnswer": "The investment in Sudo (12,000) is eliminated against Sudo's equity at acquisition (8,500) + brand (2,300) + goodwill (1,200). Brand and goodwill are unchanged (indefinite life, no impairment).\nAssets: Plant and equipment 11,000 + 10,200 = 21,200 · Inventory 5,300 · Trade receivables 900 · Cash 1,600 + 900 = 2,500 · Brand 2,300 · Goodwill 1,200 → total 33,400.\nEquity & liabilities: Capital 9,000 · Retained earnings 1,500 · Net income 950 + 1,100 = 2,050 · Liabilities 14,050 + 6,800 = 20,850 → total 33,400.",
+    "keyPoints": [
+      "Investment eliminated against Sudo's equity at acquisition, brand and goodwill",
+      "Brand 2,300 and goodwill 1,200 unchanged",
+      "Consolidated net income 2,050 = 950 + 1,100 (Sudo's post-acquisition profit)",
+      "Total 33,400"
+    ],
+    "results": [
+      { "label": "Consolidated net income", "value": 2050 },
+      { "label": "Balance sheet total", "value": 33400 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p8-05",
+    "lecture": "t3",
+    "case": "halvor-machine",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Show the impact of this acquisition on Halvor's balance sheet and income statement on 1 July N and on 31 December N.",
+    "modelAnswer": "Cost of the machine = purchase price 1,800,000 + customs 45,000 + transport insurance 15,000 + transport 40,000 = 1,900,000. Training (25,000) is expensed. The 60-day payment term is short, so there is no discounting.\nDepreciation starts when the machine is ready for use (1 July N), not at delivery: (1,900,000 − 260,000) / 8 = 205,000 per year → 6 months in N = 102,500.\n1 July N: PPE 1,900,000; the price is paid within 60 days; all costs, including training, are paid by year-end (cash −1,925,000). Training expense 25,000.\n31 December N: depreciation expense 102,500 → machine 1,797,500 (and 1,592,500 at the end of N+1 after a full year of 205,000).",
+    "keyPoints": [
+      "Cost 1,900,000 incl. customs, insurance and transport",
+      "Training expensed (25,000)",
+      "Depreciation from 1 July (ready for use): 205,000 per year, 102,500 in N",
+      "Carrying amount 1,797,500 on 31 December N"
+    ],
+    "results": [
+      { "label": "Acquisition cost", "value": 1900000 },
+      { "label": "Depreciation N", "value": 102500 },
+      { "label": "Carrying amount 31 Dec N", "value": 1797500 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p8-06",
+    "lecture": "t3",
+    "case": "medora-project",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Present the accounting impacts of the project for years N and N+1.",
+    "modelAnswer": "Under IAS 38 research costs are expensed; only development costs incurred after all criteria are met (technical feasibility, intention and ability to complete and sell, probable future benefits, reliable measurement) are capitalised. For a drug, these criteria are met only once the authorisation is obtained – here 1 November N+1.\nN: expense of 1,400,000 (research/pre-approval phase). No asset.\nN+1: the 600,000 spent before approval is expensed as well. After approval Medora only spends 120,000 on advertising, which is always an expense. No development asset is recognised in N or N+1.\nCash: −1,400,000 in N, −720,000 in N+1.",
+    "keyPoints": [
+      "Capitalisation only after all IAS 38 criteria are met (authorisation 1 Nov N+1)",
+      "N: 1,400,000 expensed",
+      "N+1: 600,000 expensed; advertising 120,000 expensed",
+      "No intangible asset recognised"
+    ]
+  }
+]

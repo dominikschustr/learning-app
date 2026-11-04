@@ -88,6 +88,8 @@ export function PaperList({ content }: { content: SubjectContent }) {
   const startExam = useApp((s) => s.startExam);
   const allExams = useApp((s) => s.exams);
   const hasCalc = content.questions.some((q) => q.type === "short" && q.results.length > 0);
+  // Reihenfolge wie angezeigt: erst Nachbauten von Altklausuren, dann neue Klausuren
+  const shown = [...papers.filter((p) => p.origin.kind === "altklausur"), ...papers.filter((p) => p.origin.kind !== "altklausur")];
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -135,7 +137,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
             <h2 className="display text-2xl">{kind === "altklausur" ? "Nachbauten von Altklausuren" : "Neue Klausuren"}</h2>
             <div className="mt-4 grid gap-4">
         {group.map((p) => {
-          const i = papers.indexOf(p);
+          const i = shown.indexOf(p);
           const done = allExams.filter((e) => e.subjectId === subject.id && e.paper === p.id);
           const best = done.reduce((b, e) => Math.max(b, examScore(e).score), 0);
           const parts = partPoints(p);

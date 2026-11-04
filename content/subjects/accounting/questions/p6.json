@@ -1,0 +1,233 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p6-01",
+    "lecture": "t1",
+    "case": "belcour-sci",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "IFRS offers two ways of presenting comprehensive income. Briefly describe both. Which one does Belcour use?",
+    "modelAnswer": "Single-statement approach: one table that shows the income statement down to net profit and then continues with the items of other comprehensive income, ending with total comprehensive income.\nTwo-statement approach: a separate income statement ending with net profit, followed by a second statement that starts from net profit, lists the OCI items and ends with total comprehensive income.\nBelcour uses the two-statement approach (Table 1 ends with net profit, Table 2 starts from it).",
+    "keyPoints": [
+      "Single statement: P&L and OCI in one table, down to total comprehensive income",
+      "Two statements: income statement, then a second statement starting from net profit",
+      "Belcour: two-statement approach"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-02",
+    "lecture": "t2",
+    "case": "belcour-sci",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Is Vitapharm part of Belcour's scope of consolidation? Justify. Where do the dividends received from Vitapharm appear, and where does the change in the market value of the Vitapharm shares appear?",
+    "modelAnswer": "No. 8.5% of the shares, without board representation or other rights, gives Belcour neither control (full consolidation) nor joint control nor significant influence (equity method, presumed from 20%). Vitapharm is simply a financial asset (equity investment) for Belcour.\nDividends: recognised in profit or loss as financial income – the separate line 'Dividends from Vitapharm' after operating profit (shown separately because of their size).\nChange in market value: because the shares are designated at FVOCI, it goes to other comprehensive income – the line 'Change in fair value of equity investments' in Table 2, an item that is never reclassified to profit or loss.",
+    "keyPoints": [
+      "Not consolidated: 8.5% gives no control, joint control or significant influence",
+      "Dividends in profit or loss as financial income (separate line after operating profit)",
+      "Fair value change in OCI (FVOCI line, not reclassified)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-03",
+    "lecture": "t2",
+    "case": "holdco-subco",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare the consolidated balance sheet of the HC group as of 31 December N2.",
+    "modelAnswer": "Goodwill at acquisition = 900 − 350 (book value) − 420 (brand) = 130.\nBrand at N2 = 330 → impairment 90, which reduces consolidated net income.\nAssets: Equipment 760 + 450 = 1,210 · Goodwill 130 · Brand 330 · Inventory 230 · Cash 190 + 90 = 280 → total 2,180.\nEquity & liabilities: Capital 700 (HC only; SC's capital is eliminated against the investment) · Net income 150 + 260 − 90 = 320 · Liabilities 1,000 + 160 = 1,160 → total 2,180.",
+    "keyPoints": [
+      "Goodwill 130 = 900 − 350 − 420",
+      "Investment in SC eliminated against SC's capital and the fair value adjustment",
+      "Brand 330 after impairment of 90",
+      "Consolidated net income 320 = 150 + 260 − 90",
+      "Balance sheet total 2,180"
+    ],
+    "results": [
+      { "label": "Goodwill", "value": 130 },
+      { "label": "Consolidated net income", "value": 320 },
+      { "label": "Balance sheet total", "value": 2180 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-04",
+    "lecture": "t3",
+    "case": "corvin-park",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "What value will the retail park have on the balance sheet on 31 December N6, and which entries are made on that date? Show the carrying amount before the test, the recoverable amount and the impairment loss (€ million).",
+    "modelAnswer": "Annual depreciation = 480 / 40 = 12; carrying amount 31 Dec N6 before the test = 480 − 6 × 12 = 408 (depreciation expense N6: 12).\nRecoverable amount = higher of fair value less costs to sell (300) and value in use = 36 × 10.52 (34 remaining years) = 378.72 → 378.72.\nImpairment loss = 408 − 378.72 = 29.28: expense in profit or loss, reduces the park.\nBalance sheet value 31 Dec N6: 378.72.",
+    "keyPoints": [
+      "Carrying amount before test 408 (6 years × 12 depreciation)",
+      "Value in use 36 × 10.52 = 378.72",
+      "Recoverable amount = higher of 300 and 378.72",
+      "Impairment loss 29.28 as an expense",
+      "Balance sheet value 378.72"
+    ],
+    "results": [
+      { "label": "Carrying amount before impairment test", "value": 408 },
+      { "label": "Recoverable amount", "value": 378.72, "tol": 0.05 },
+      { "label": "Impairment loss", "value": 29.28, "tol": 0.05 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-05",
+    "lecture": "t3",
+    "case": "corvin-park",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Still under the cost model: what is the carrying amount of the retail park on 31 December N7 (€ million)?",
+    "modelAnswer": "After the impairment the new carrying amount is depreciated over the remaining 34 years: 378.72 / 34 ≈ 11.14 per year.\nCarrying amount 31 Dec N7 = 378.72 − 11.14 ≈ 367.58.",
+    "keyPoints": [
+      "New depreciation based on the impaired amount: 378.72 / 34 ≈ 11.14",
+      "Carrying amount ≈ 367.58"
+    ],
+    "results": [{ "label": "Carrying amount 31 Dec N7", "value": 367.58, "tol": 0.1 }]
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-06",
+    "lecture": "t3",
+    "case": "marlow-lease",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Is the CFO's plan a good idea given Marlow's financial constraints? Justify by comparing the accounting impacts of the lease with those of a bank loan used to buy the equipment.",
+    "modelAnswer": "Bank loan: the equipment is recognised as PPE and depreciated; the loan is a financial liability that generates interest expense. Financial debt increases.\nLease under IFRS 16 (lessee): the 6-year lease is neither short-term (≤ 12 months) nor low-value, so Marlow recognises a right-of-use asset (depreciated) and a lease liability (interest expense). The lease liability is generally treated as financial debt by analysts and in covenants, so net debt increases almost as with the bank loan. EBITDA increases somewhat (no rent expense), but the debt increase dominates.\nConclusion: under IFRS 16 the plan does not keep financial debt unchanged – it is not a good idea for this purpose. Only short-term or low-value leases, or a service contract without an identified asset that Marlow controls, would stay off the balance sheet (payments expensed).",
+    "keyPoints": [
+      "Bank loan: asset + financial debt, depreciation + interest",
+      "IFRS 16: right-of-use asset + lease liability, depreciation + interest",
+      "Lease liability counts as debt → plan does not avoid higher debt",
+      "Off balance sheet only for short-term / low-value leases or service contracts"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-07",
+    "lecture": "t4",
+    "case": "avarin-convertible",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Show the impacts on the financial statements when the convertible bond is issued on 1 January N and when the first coupon is paid on 31 December N (€ million).",
+    "modelAnswer": "Split of the compound instrument: the liability component is the present value of the contractual cash flows at the rate of a conventional bond (6%): 6 × 3.4651 + 150 × 0.7921 = 20.79 + 118.82 = 139.61. Equity component = 150 − 139.61 = 10.39.\n1 January N: Cash +150; financial debt +139.61; equity +10.39. No income statement impact.\n31 December N: interest expense = 139.61 × 6% = 8.38 (effective interest method); cash paid = 150 × 4% = 6; the difference 2.38 increases the debt → carrying amount of the debt 141.98. The equity component stays at 10.39.",
+    "keyPoints": [
+      "Debt component = PV of coupons and redemption at 6% = 139.61",
+      "Equity component = 150 − 139.61 = 10.39",
+      "Issue: cash +150, debt +139.61, equity +10.39",
+      "Interest expense 8.38 at 6% vs cash coupon 6",
+      "Debt 31 Dec N = 141.98; equity component unchanged"
+    ],
+    "results": [
+      { "label": "Liability component at issue", "value": 139.61, "tol": 0.05 },
+      { "label": "Equity component", "value": 10.39, "tol": 0.05 },
+      { "label": "Interest expense N", "value": 8.38, "tol": 0.05 },
+      { "label": "Carrying amount of the debt 31 Dec N", "value": 141.98, "tol": 0.05 }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p6-01",
+    "lecture": "t3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Company B carries out a major overhaul of a machine in N, costing €400,000. The overhaul extends the machine's useful life by 3 years beyond the original estimate; the next overhaul will be due in 4 years. The overhaul cost should be …",
+    "options": [
+      { "id": "a", "text": "expensed in N" },
+      { "id": "b", "text": "capitalised and depreciated over the remaining useful life of the machine" },
+      { "id": "c", "text": "capitalised as a separate component and depreciated until the next overhaul is due" },
+      { "id": "d", "text": "capitalised and only tested for impairment every year" }
+    ],
+    "correct": ["c"],
+    "explanation": "The overhaul creates future economic benefits (longer useful life), so it is capitalised. Under the component approach of IAS 16 it is a separate component whose benefits are consumed until the next overhaul – so it is depreciated over 4 years."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p6-02",
+    "lecture": "t2",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "How is positive goodwill arising on a business combination treated under IFRS?",
+    "options": [
+      { "id": "a", "text": "Recognised as an asset and tested for impairment at least annually" },
+      { "id": "b", "text": "Recognised as an asset and kept at its original amount forever" },
+      { "id": "c", "text": "Recognised as an asset and amortised over its useful life" },
+      { "id": "d", "text": "Expensed immediately in the income statement" }
+    ],
+    "correct": ["a"],
+    "explanation": "IFRS 3 / IAS 36: goodwill is not amortised. It is tested for impairment every year (and whenever there is an indication of impairment); an impairment loss on goodwill can never be reversed."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p6-03",
+    "lecture": "t4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which of the following items is recognised in the financial statements in the way described?",
+    "options": [
+      { "id": "a", "text": "As a non-current liability: a provision for possible storm damage to buildings of a company located in a region with frequent storms" },
+      { "id": "b", "text": "In equity: the equity component of an issued convertible bond" },
+      { "id": "c", "text": "As a trade receivable: a €20,000 customer balance that has been sold to a factoring company without recourse" },
+      { "id": "d", "text": "In revenue: the full sales price of a machine that the seller must also service for three years under the sales contract" }
+    ],
+    "correct": ["b"],
+    "explanation": "A compound instrument is split into a liability and an equity component (IAS 32). (a) Future storm damage is no present obligation → no provision. (c) A receivable sold without recourse is derecognised. (d) The servicing obligation is a separate performance obligation – part of the price is deferred."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p6-04",
+    "lecture": "t5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "At 31 March N, Jorvik had equity of €400,000 and financial debt of €200,000. Gearing = debt / (debt + equity). Which transaction, taken on its own, increases Jorvik's gearing compared with the situation without the transaction?",
+    "options": [
+      { "id": "a", "text": "A property is revalued upwards by €30,000 during the year." },
+      { "id": "b", "text": "Instead of paying a €60,000 dividend in cash, Jorvik issues new ordinary shares to its shareholders." },
+      { "id": "c", "text": "On 31 March N Jorvik leases equipment; the lease liability recognised is €40,000." },
+      { "id": "d", "text": "A provision for litigation is reduced during the year from €30,000 to €22,000." }
+    ],
+    "correct": ["c"],
+    "explanation": "(c) The lease liability adds €40,000 of debt → gearing rises (240/640 = 37.5% vs 33.3%). (a) Revaluation surplus raises equity → gearing falls. (b) A scrip dividend only moves amounts within equity → no change compared with not paying it. (d) A provision is not financial debt; the release increases profit and equity → gearing falls."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p6-05",
+    "lecture": "t2",
+    "difficulty": 3,
+    "single": true,
+    "shuffle": false,
+    "prompt": "In which of the following relationships is Kestrel necessarily the parent company?\n(i) Alder has 200,000 voting and 60,000 non-voting shares in issue, all with the same dividend rights. Kestrel owns all non-voting shares and 90,000 voting shares.\n(ii) Birch has 1 million shares in issue, of which Kestrel owns 35%. Kestrel also holds 70% of the bonds issued by Birch.\n(iii) Kestrel owns 46% of the shares of Cedar and, under an agreement with the other shareholders, has the right to appoint the majority of Cedar's board.",
+    "options": [
+      { "id": "a", "text": "(i) only" },
+      { "id": "b", "text": "(i) and (ii) only" },
+      { "id": "c", "text": "(ii) and (iii) only" },
+      { "id": "d", "text": "(iii) only" },
+      { "id": "e", "text": "All three" }
+    ],
+    "correct": ["d"],
+    "explanation": "Control (IFRS 10) depends on power over the investee, not on the share of capital. (i) 90,000 of 200,000 votes = 45% – non-voting shares give no power → not necessarily control. (ii) 35% of the votes plus bonds: bonds carry no voting rights → significant influence at most. (iii) The right to appoint the board majority gives power → Kestrel controls Cedar."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p6-06",
+    "lecture": "t3",
+    "difficulty": 3,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Tamsin acquired an office building on 1 January N. Its initial carrying amount (€000) is made up of: land 3,000 · building structure 12,000 · lift system 3,000 – total 18,000. The structure has a useful life of 25 years, the lift system 10 years; at the end of its life the lift system can be dismantled and sold for €400,000. At what total amount (€000) are these assets shown in Tamsin's balance sheet at 31 December N?",
+    "options": [
+      { "id": "a", "text": "17,400" },
+      { "id": "b", "text": "17,280" },
+      { "id": "c", "text": "17,260" },
+      { "id": "d", "text": "17,220" }
+    ],
+    "correct": ["c"],
+    "explanation": "Component approach: land is not depreciated (3,000). Structure: 12,000 − 12,000/25 = 11,520. Lift system: 3,000 − (3,000 − 400)/10 = 2,740. Total 17,260. (17,220 ignores the residual value; 17,280 depreciates land too; 17,400 depreciates building and lifts together over 25 years.)"
+  }
+]

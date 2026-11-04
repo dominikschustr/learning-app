@@ -1,0 +1,85 @@
+[
+  {
+    "id": "parento-filia",
+    "title": "PC and SA – acquisition on 31 December N-1",
+    "text": [
+      "On 31 December N-1, PC acquired 100% of the shares of SA for 820. The individual balance sheets at the acquisition date are given below.",
+      "At the acquisition date, the fair value of SA's equipment is 330. In addition, a brand that SA developed internally and never recognised is identified; its fair value is estimated at 280."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N-1",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "350", "Capital", "550"],
+          ["Investment in SA", "820", "Net income", "170"],
+          ["", "", "Liabilities", "450"],
+          ["Total", "1,170", "Total", "1,170"]
+        ]
+      },
+      {
+        "caption": "SA – 31 December N-1",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "240", "Capital", "220"],
+          ["Vehicles", "90", "Net income", "70"],
+          ["", "", "Liabilities", "40"],
+          ["Total", "330", "Total", "330"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pc-sa-75",
+    "title": "PC acquires 75% of SA",
+    "text": [
+      "On 31 December N, the parent company PC acquired 75% of the shares of SA for 210. The individual balance sheets at the acquisition date are given below. No information on fair values is available."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "280", "Capital", "360"],
+          ["Investment in SA", "210", "Net income", "40"],
+          ["", "", "Liabilities", "90"],
+          ["Total", "490", "Total", "490"]
+        ]
+      },
+      {
+        "caption": "SA – 31 December N",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "310", "Capital", "200"],
+          ["", "", "Net income", "80"],
+          ["", "", "Liabilities", "30"],
+          ["Total", "310", "Total", "310"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "torvik-machine",
+    "title": "Company Torvik – acquisition of a machine",
+    "text": [
+      "Torvik recently acquired a machine:",
+      "– The machine is delivered on 1 July N and ready for use on the same day.",
+      "– Purchase price excluding VAT: 742,000, payable in full on 1 July N+1.",
+      "– Transport insurance: 24,000. Transport cost: 18,000.",
+      "– Training of Torvik's operators by the machine supplier: 30,000.",
+      "– The machine is used to launch a new product; on 1 July N Torvik spends 50,000 on advertising the product.",
+      "– Technical useful life: 15 years. Torvik's policy is to keep no machine for more than 8 years; the resale price after 8 years is estimated at 110,000 (zero after 15 years).",
+      "– Torvik's borrowing rate is 6%. Depreciation is straight-line.",
+      "All costs other than the purchase price are paid in cash on 1 July N."
+    ],
+    "tables": []
+  },
+  {
+    "id": "torvik-land",
+    "title": "Company Torvik – land for own use",
+    "text": [
+      "On 1 January N Torvik acquired land for 6,400,000 for its own use (it will build a warehouse on it). The fair value of the land is estimated at 6,750,000 on 31 December N and at 6,520,000 on 31 December N+1."
+    ],
+    "tables": []
+  }
+]

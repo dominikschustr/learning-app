@@ -1,0 +1,57 @@
+[
+  {
+    "id": "exam-2016",
+    "title": "Final exam 2016 (Nachbau, aktueller Stoff)",
+    "subtitle": "Nach der Abschlussklausur vom April 2016 (ursprünglich 150 Punkte, 150 Minuten, ohne Unterlagen): gleiche Aufgaben mit eigenen Fällen und Zahlen. Weggelassen sind Teile, die nicht mehr im Stoff sind (Revenue Recognition, Finanzinstrumente nach IAS 39, Rückstellungen, Pensionen, latente Steuern). Leasing wird nach IFRS 16 gelöst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Abschlussklausur IFRS (CM01) vom 20.04.2016",
+      "faithful": false
+    },
+    "minutes": 72,
+    "parts": [
+      {
+        "title": "Exercise 1 – Statement of comprehensive income",
+        "instructions": "Belcour group. [8 points]",
+        "sections": [{ "title": "Belcour", "items": [{ "q": "sa-p6-01", "points": 4 }, { "q": "sa-p6-02", "points": 4 }] }]
+      },
+      {
+        "title": "Exercise 2 – Consolidation",
+        "instructions": "[15 points]",
+        "sections": [{ "title": "HC and SC", "items": [{ "q": "sa-p6-03", "points": 15 }] }]
+      },
+      {
+        "title": "Exercise 3 – Impairment of a property (cost model)",
+        "instructions": "[13 points]",
+        "sections": [{ "title": "Corvin plc", "items": [{ "q": "sa-p6-04", "points": 10 }, { "q": "sa-p6-05", "points": 3 }] }]
+      },
+      {
+        "title": "Exercise 4 – Leases",
+        "instructions": "[12 points]",
+        "sections": [{ "title": "Marlow SA", "items": [{ "q": "sa-p6-06", "points": 12 }] }]
+      },
+      {
+        "title": "Exercise 5 – Accounting for a convertible bond",
+        "instructions": "[10 points]",
+        "sections": [{ "title": "Avarin SA", "items": [{ "q": "sa-p6-07", "points": 10 }] }]
+      },
+      {
+        "title": "Exercise 6 – Multiple choice",
+        "instructions": "Only one correct answer per question. 2 points each unless otherwise indicated. [14 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "mc-p6-01", "points": 2 },
+              { "q": "mc-p6-02", "points": 2 },
+              { "q": "mc-p6-03", "points": 2 },
+              { "q": "mc-p6-04", "points": 2 },
+              { "q": "mc-p6-05", "points": 2 },
+              { "q": "mc-p6-06", "points": 4 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

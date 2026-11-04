@@ -1,0 +1,62 @@
+[
+  {
+    "id": "exam-2015",
+    "title": "Final exam 2015 (Nachbau, aktueller Stoff)",
+    "subtitle": "Nach der Abschlussklausur vom 11. Mai 2015 (Punkte auf 20 skaliert, ursprünglich 2,5 Stunden, ohne Unterlagen): Kapitalflussrechnung, Konsolidierung, Anlagevermögen und Leasing mit eigenen Fällen und Zahlen. Weggelassen sind Revenue Recognition, Finanzinstrumente nach IAS 39, Rückstellungen, Pensionen, latente Steuern, Investment Property und die Fragen zum Gastvortrag. Leasing wird nach IFRS 16 gelöst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Abschlussklausur IFRS (CM01) vom 11.05.2015",
+      "faithful": false
+    },
+    "minutes": 65,
+    "parts": [
+      {
+        "title": "Exercise 1 – Cash flow statement",
+        "instructions": "Vectis. [2 points]",
+        "sections": [
+          {
+            "title": "Vectis",
+            "items": [
+              { "q": "sa-p9-01", "points": 0.5 },
+              { "q": "sa-p9-02", "points": 1 },
+              { "q": "sa-p9-03", "points": 0.5 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 2 – Consolidated financial statements",
+        "instructions": "[2 points]",
+        "sections": [
+          { "title": "Parent and Subsidiary", "items": [{ "q": "sa-p9-04", "points": 1.5 }, { "q": "sa-p9-05", "points": 0.5 }] }
+        ]
+      },
+      {
+        "title": "Exercise 3 – Non-current assets",
+        "instructions": "Explain your answer to each multiple-choice question. [1.5 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "mc-p9-01", "points": 0.25 },
+              { "q": "mc-p9-02", "points": 0.25 },
+              { "q": "mc-p9-03", "points": 0.25 },
+              { "q": "mc-p9-04", "points": 0.25 },
+              { "q": "sa-p9-06", "points": 0.5 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 4 – Critical accounting issues related to non-current assets",
+        "instructions": "[1 point]",
+        "sections": [{ "title": "", "items": [{ "q": "sa-p9-07", "points": 1 }] }]
+      },
+      {
+        "title": "Exercise 5 – Leasing",
+        "instructions": "[2 points]",
+        "sections": [{ "title": "Fennick", "items": [{ "q": "sa-p9-08", "points": 2 }] }]
+      }
+    ]
+  }
+]

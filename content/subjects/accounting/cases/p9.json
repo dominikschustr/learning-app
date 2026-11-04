@@ -1,0 +1,94 @@
+[
+  {
+    "id": "vectis-cfs",
+    "title": "Vectis – consolidated statement of cash flows N (€000, illustrative)",
+    "text": [
+      "Vectis is a listed software and equipment group. It publishes the following statement of cash flows for N."
+    ],
+    "tables": [
+      {
+        "head": ["", "N"],
+        "rows": [
+          ["Net profit", "8,200"],
+          ["Depreciation and amortisation", "4,600"],
+          ["Change in provisions", "300"],
+          ["Gain on disposal of PPE", "(150)"],
+          ["Change in inventories", "(900)"],
+          ["Change in trade receivables", "(1,100)"],
+          ["Change in trade payables", "700"],
+          ["Cash flows from operating activities", "11,650"],
+          ["Purchases of PPE and intangible assets", "(6,800)"],
+          ["Proceeds from disposals of PPE", "400"],
+          ["Acquisition of a subsidiary, net of cash acquired", "(2,300)"],
+          ["Cash flows from investing activities", "(8,700)"],
+          ["Dividends paid", "(3,100)"],
+          ["Repayment of borrowings", "(1,200)"],
+          ["Purchase of treasury shares", "(500)"],
+          ["Cash flows from financing activities", "(4,800)"],
+          ["Net change in cash and cash equivalents", "(1,850)"],
+          ["Cash and cash equivalents at 1 January", "21,400"],
+          ["Cash and cash equivalents at 31 December", "19,550"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "parent-sub-missing",
+    "title": "Parent Company and Subsidiary – balance sheets at the acquisition date",
+    "text": [
+      "On 31 December N, the Parent Company acquired 100% of the Subsidiary. The individual balance sheets and the consolidated balance sheet at the acquisition date are given below; some amounts are missing (?). The receivables of the Parent Company are all owed by the Subsidiary. The brand in the consolidated balance sheet was developed internally by the Subsidiary."
+    ],
+    "tables": [
+      {
+        "caption": "Parent Company",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["PPE", "?", "Capital", "?"],
+          ["Investment in Subsidiary", "860", "Net income", "50"],
+          ["Accounts receivable", "140", "Accounts payable", "910"],
+          ["Total", "?", "Total", "?"]
+        ]
+      },
+      {
+        "caption": "Subsidiary",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["PPE", "560", "Capital", "240"],
+          ["", "", "Retained earnings", "130"],
+          ["", "", "Accounts payable", "190"],
+          ["Total", "560", "Total", "560"]
+        ]
+      },
+      {
+        "caption": "Consolidated balance sheet 31 December N",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Goodwill", "?", "Capital", "510"],
+          ["Brand", "380", "Consolidated net income", "?"],
+          ["PPE", "1,030", "Accounts payable", "?"],
+          ["Total", "?", "Total", "?"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kerris-building",
+    "title": "Company Kerris – office building",
+    "text": [
+      "Kerris bought an office building for its own use for €3,000,000 on 31 December N; useful life 12 years, straight-line depreciation, no residual value.",
+      "On 31 December N+3 the building is impaired down to its recoverable amount of €1,800,000. On 31 December N+5 a new impairment test shows that the recoverable amount has risen to €2,300,000."
+    ],
+    "tables": []
+  },
+  {
+    "id": "fennick-financing",
+    "title": "Company Fennick – how to finance new equipment",
+    "text": [
+      "Fennick needs new equipment with a useful life of 8 years. The CFO considers three alternatives:",
+      "A – take out a bank loan and buy the equipment;",
+      "B – lease the equipment for 7 years (lease contract under IFRS 16);",
+      "C – sign a service contract under which a supplier provides the required capacity with equipment the supplier chooses and may replace at any time."
+    ],
+    "tables": []
+  }
+]
