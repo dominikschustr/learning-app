@@ -10,7 +10,10 @@ import { isDue, itemStatus } from "@/lib/srs";
 import { markKey, markedIds, useApp, useHydrated } from "@/lib/store";
 import { announce, celebrate } from "@/lib/toast";
 import { refreshNow } from "@/lib/useNow";
-import { itemKey, shuffle } from "@/lib/utils";
+import type { RenderedFormula } from "@/lib/tex";
+import { cn, itemKey, shuffle } from "@/lib/utils";
+import { FormulaDetails, FormulaHeading, SheetBadge } from "./FormulaOverview";
+import { FormulaText } from "./FormulaText";
 import { MarkButton } from "./MarkButton";
 import { SessionBar } from "./SessionBar";
 import { Button, ButtonLink, Skeleton } from "./ui";
@@ -25,7 +28,14 @@ const FILTER_TITLE: Record<DeckFilter, string> = {
   marked: "Markierte Karten",
 };
 
-export function Flashcards({ content }: { content: SubjectContent }) {
+export function Flashcards({
+  content,
+  formulas = {},
+}: {
+  content: SubjectContent;
+  /** Formel je Karten-id: solche Karten sehen aus wie in der Formelübersicht */
+  formulas?: Record<string, RenderedFormula>;
+}) {
   const hydrated = useHydrated();
   const params = useSearchParams();
   const lecture = params.get("lecture") ?? undefined;
@@ -38,6 +48,7 @@ export function Flashcards({ content }: { content: SubjectContent }) {
     <Deck
       key={`${lecture}-${filter}-${run.n}`}
       content={content}
+      formulas={formulas}
       lecture={lecture}
       filter={filter}
       only={run.only}
@@ -48,12 +59,14 @@ export function Flashcards({ content }: { content: SubjectContent }) {
 
 function Deck({
   content,
+  formulas,
   lecture,
   filter,
   only,
   onRestart,
 }: {
   content: SubjectContent;
+  formulas: Record<string, RenderedFormula>;
   lecture?: string;
   /** nur neue, zuletzt nicht gewusste oder markierte Karten */
   filter?: DeckFilter;
@@ -187,6 +200,7 @@ function Deck({
   }
 
   const lectureTitle = subject.lectures.find((l) => l.id === card.lecture)?.title;
+  const formula = formulas[card.id];
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -216,9 +230,16 @@ function Deck({
             type="button"
             onClick={() => setFlipped((f) => !f)}
             aria-label={flipped ? "Vorderseite zeigen" : "Rückseite zeigen"}
-            className="flip-inner relative block h-[22rem] w-full text-left sm:h-[24rem]"
+            className={cn(
+              "flip-inner relative block w-full text-left",
+              formula ? "h-[30rem] sm:h-[32rem]" : "h-[22rem] sm:h-[24rem]",
+            )}
             data-flipped={flipped}
           >
+            {formula ? (
+              <FormulaFaces f={formula} color={subject.color} />
+            ) : (
+              <>
             <div className="flip-face card absolute inset-0 flex flex-col p-8">
               <span className="eyebrow">Begriff</span>
               <p className="display my-auto text-center text-3xl sm:text-4xl">{card.front}</p>
@@ -235,6 +256,8 @@ function Deck({
               </span>
               <p className="my-auto whitespace-pre-line text-lg leading-relaxed sm:text-xl">{card.back}</p>
             </div>
+              </>
+            )}
           </button>
         </motion.div>
       </AnimatePresence>
@@ -253,5 +276,30 @@ function Deck({
         </Button>
       </div>
     </div>
+  );
+}
+
+/** Formelkarte: vorn Name und Einsatzzweck, hinten die Formel wie in der Formelübersicht. */
+function FormulaFaces({ f, color }: { f: RenderedFormula; color: string }) {
+  return (
+    <>
+      <div className="flip-face card absolute inset-0 flex flex-col p-6 sm:p-8">
+        <div className="flex items-start justify-between gap-2">
+          <span className="eyebrow">Formel</span>
+          <SheetBadge sheet={f.sheet} color={color} />
+        </div>
+        <div className="my-auto text-center">
+          <p className="display text-3xl sm:text-4xl">{f.name}</p>
+          {f.use && <FormulaText text={f.use} className="mx-auto mt-4 block max-w-md leading-relaxed text-ink-2" />}
+        </div>
+        <span className="text-center text-xs text-muted">
+          Formel aufschreiben, dann umdrehen <span className="kbd ml-1 hidden sm:inline-flex">Leertaste</span>
+        </span>
+      </div>
+      <div className="flip-face flip-back card absolute inset-0 overflow-y-auto p-5 sm:p-6">
+        <FormulaHeading f={f} color={color} />
+        <FormulaDetails f={f} color={color} />
+      </div>
+    </>
   );
 }

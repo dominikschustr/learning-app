@@ -165,22 +165,7 @@ function FormulaCard({
 }) {
   return (
     <article id={f.id} className="card scroll-mt-32 p-5 sm:p-6">
-      <div className="flex flex-wrap items-start justify-between gap-2">
-        <h3 className="text-lg font-semibold">{f.name}</h3>
-        {f.sheet ? (
-          <span className="inline-flex items-center gap-1 rounded-full bg-surface-2 px-2.5 py-0.5 text-xs font-semibold text-muted">
-            <FileCheck2 className="size-3.5" /> Formelblatt
-          </span>
-        ) : (
-          <span
-            className="rounded-full px-2.5 py-0.5 text-xs font-semibold"
-            style={{ background: alpha(color, 0.1), color }}
-          >
-            auswendig
-          </span>
-        )}
-      </div>
-      {f.use && <FormulaText text={f.use} className="mt-1 block text-sm leading-relaxed text-ink-2" />}
+      <FormulaHeading f={f} color={color} />
 
       {hidden ? (
         <div className="mt-4 flex flex-wrap items-center gap-3 rounded-2xl border border-dashed border-line-strong p-4">
@@ -191,23 +176,7 @@ function FormulaCard({
         </div>
       ) : (
         <>
-          <FittedFormula html={f.html} background={alpha(color, 0.06)} />
-          <dl className="mt-4 grid grid-cols-[auto_1fr] items-baseline gap-x-4 gap-y-2 text-sm">
-            {f.vars.map((v) => (
-              <div key={v.symbol} className="contents">
-                <dt className="text-right text-base text-ink" dangerouslySetInnerHTML={{ __html: v.html }} />
-                <dd className="leading-relaxed text-ink-2">
-                  <FormulaText text={v.meaning} />
-                </dd>
-              </div>
-            ))}
-          </dl>
-          {f.pitfall && (
-            <p className="mt-3 flex gap-2 text-sm leading-relaxed text-ink-2">
-              <AlertTriangle className="mt-0.5 size-4 shrink-0 text-bad" />
-              <FormulaText text={f.pitfall} />
-            </p>
-          )}
+          <FormulaDetails f={f} color={color} />
           {quiz && (
             <div className="mt-3 flex justify-end">
               <Button variant="ghost" onClick={onToggle}>
@@ -218,6 +187,56 @@ function FormulaCard({
         </>
       )}
     </article>
+  );
+}
+
+/** Name der Formel mit Kennzeichnung (Formelblatt / auswendig) und Einsatzzweck. */
+export function FormulaHeading({ f, color }: { f: RenderedFormula; color: string }) {
+  return (
+    <>
+      <div className="flex flex-wrap items-start justify-between gap-2">
+        <h3 className="text-lg font-semibold">{f.name}</h3>
+        <SheetBadge sheet={f.sheet} color={color} />
+      </div>
+      {f.use && <FormulaText text={f.use} className="mt-1 block text-sm leading-relaxed text-ink-2" />}
+    </>
+  );
+}
+
+export function SheetBadge({ sheet, color }: { sheet: boolean; color: string }) {
+  return sheet ? (
+    <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-surface-2 px-2.5 py-0.5 text-xs font-semibold text-muted">
+      <FileCheck2 className="size-3.5" /> Formelblatt
+    </span>
+  ) : (
+    <span className="shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold" style={{ background: alpha(color, 0.1), color }}>
+      auswendig
+    </span>
+  );
+}
+
+/** Gesetzte Formel, Bedeutung jedes Symbols und die typische Falle. */
+export function FormulaDetails({ f, color }: { f: RenderedFormula; color: string }) {
+  return (
+    <>
+      <FittedFormula html={f.html} background={alpha(color, 0.06)} />
+      <dl className="mt-4 grid grid-cols-[auto_1fr] items-baseline gap-x-4 gap-y-2 text-sm">
+        {f.vars.map((v) => (
+          <div key={v.symbol} className="contents">
+            <dt className="text-right text-base text-ink" dangerouslySetInnerHTML={{ __html: v.html }} />
+            <dd className="leading-relaxed text-ink-2">
+              <FormulaText text={v.meaning} />
+            </dd>
+          </div>
+        ))}
+      </dl>
+      {f.pitfall && (
+        <p className="mt-3 flex gap-2 text-sm leading-relaxed text-ink-2">
+          <AlertTriangle className="mt-0.5 size-4 shrink-0 text-bad" />
+          <FormulaText text={f.pitfall} />
+        </p>
+      )}
+    </>
   );
 }
 

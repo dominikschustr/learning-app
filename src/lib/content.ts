@@ -137,6 +137,21 @@ export const getFormulas = cache((subjectId: string): Formula[] => {
   return list.toSorted((a, b) => order.get(a.lecture)! - order.get(b.lecture)!);
 });
 
+/**
+ * Karteikarten, die eine Formel abfragen: Karte „c-<name>“ gehört zur Formel „f-<name>“.
+ * Solche Karten zeigen auf der Rückseite die gesetzte Formel samt Symbolen statt des Klartexts.
+ */
+export const getCardFormulas = cache((subjectId: string): Record<string, Formula> => {
+  const byId = new Map(getFormulas(subjectId).map((f) => [f.id, f]));
+  const cards = loadAllContent().find((c) => c.subject.id === subjectId)?.cards ?? [];
+  const out: Record<string, Formula> = {};
+  for (const c of cards) {
+    const f = c.id.startsWith("c-") ? byId.get(`f-${c.id.slice(2)}`) : undefined;
+    if (f) out[c.id] = f;
+  }
+  return out;
+});
+
 /** Weitere Prüfungen ohne eigenes Fach (content/calendar.json, optional) – nur für den Lernplan. */
 export const getCalendar = cache((): CalendarEntry[] => {
   const file = path.join(process.cwd(), "content", "calendar.json");
