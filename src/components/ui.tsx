@@ -100,3 +100,27 @@ export function Chip({ children, className }: { children: React.ReactNode; class
     </span>
   );
 }
+
+type LinkItem = {
+  href: string;
+  icon: React.ComponentType<{ className?: string; style?: React.CSSProperties }>;
+  label: string;
+};
+
+/** Schmale Linkleiste für Nebenwege (Nachschlagen, Lesezeichen) unter den großen Kacheln. */
+export function LinkRow({ links, color, className }: { links: LinkItem[]; color: string; className?: string }) {
+  if (!links.length) return null;
+  return (
+    <div className={cn("flex flex-wrap gap-2", className)}>
+      {links.map(({ href, icon: I, label }) => (
+        <Link
+          key={href}
+          href={href}
+          className="inline-flex h-10 items-center gap-2 rounded-full border border-line bg-surface px-4 text-sm font-semibold text-ink-2 transition hover:bg-surface-2"
+        >
+          <I className="size-4" style={{ color }} /> {label}
+        </Link>
+      ))}
+    </div>
+  );
+}

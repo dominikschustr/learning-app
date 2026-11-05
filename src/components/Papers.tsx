@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, CheckCircle2, Clock, FileText, Flag, History, Play } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Clock, FileText, Flag, History, Info, Play } from "lucide-react";
 import Link from "next/link";
 import { createPaperExam } from "@/lib/exam";
 import { paperItems, type Paper, type SubjectContent } from "@/lib/schema";
@@ -99,22 +99,14 @@ export function PaperList({ content }: { content: SubjectContent }) {
       <p className="eyebrow mt-8">Probeklausuren · {subject.examFormat.name}</p>
       <h1 className="display text-4xl sm:text-5xl mt-2">Klausur schreiben</h1>
       <p className="mt-3 text-muted">
-        {papers.length} vollständige Klausuren im Aufbau der Altklausuren – mit Fallbeschreibungen, Aufgaben in Teilfragen
-        und Punkten. Kein Feedback bis zur Abgabe; danach siehst du deine Punkte pro Teil und jede Lösung.
+        {papers.length} vollständige Klausuren mit Punkten. Feedback und Lösungen gibt es nach der Abgabe.
       </p>
 
-      <div className="mt-5 grid gap-2 text-sm text-ink-2 sm:grid-cols-2">
-        <p className="rounded-xl border border-line bg-surface p-3">
-          <span className="font-semibold text-ink">Nachbau</span> – nach einer echten Altklausur: gleicher Aufbau, gleiche
-          Aufgaben, Themen und Punkte, in eigenen Worten. „Angepasst“ heißt, einzelne Aufgaben wurden ersetzt oder gekürzt.
-        </p>
-        <p className="rounded-xl border border-line bg-surface p-3">
-          <span className="font-semibold text-ink">Neu</span> – eigene Klausur im selben Format mit neuen Fällen aus dem
-          Vorlesungsstoff, ohne Vorlage.
-        </p>
-      </div>
-
-      <ul className="mt-6 space-y-2 text-sm text-ink-2">
+      <details className="mt-5 text-sm text-ink-2">
+        <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 font-semibold">
+          <Info className="size-4 text-muted" /> Hinweise zur Bewertung
+        </summary>
+        <ul className="mt-3 space-y-2">
         <li className="flex gap-2">
           <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-muted" /> Achte auf „select all that apply“ (mehrere richtig) vs.
           „genau eine Antwort“. Multiple Choice gibt Punkte nur bei exakt richtiger Auswahl.
@@ -127,7 +119,8 @@ export function PaperList({ content }: { content: SubjectContent }) {
         <li className="flex gap-2">
           <Flag className="mt-0.5 size-4 shrink-0 text-muted" /> Unsichere Fragen markieren und vor der Abgabe zurückspringen.
         </li>
-      </ul>
+        </ul>
+      </details>
 
       {(["altklausur", "neu"] as const).map((kind) => {
         const group = papers.filter((p) => p.origin.kind === kind);
@@ -135,7 +128,12 @@ export function PaperList({ content }: { content: SubjectContent }) {
         return (
           <section key={kind} className="mt-10">
             <h2 className="display text-2xl">{kind === "altklausur" ? "Nachbauten von Altklausuren" : "Neue Klausuren"}</h2>
-            <div className="mt-4 grid gap-4">
+            <p className="mt-1 text-sm text-muted">
+              {kind === "altklausur"
+                ? "Gleicher Aufbau, gleiche Aufgaben und Punkte wie die Vorlage – in eigenen Worten."
+                : "Selbes Format, neue Fälle aus dem Vorlesungsstoff."}
+            </p>
+            <div className="mt-4 grid grid-cols-1 gap-4">
         {group.map((p) => {
           const i = shown.indexOf(p);
           const done = allExams.filter((e) => e.subjectId === subject.id && e.paper === p.id);
@@ -143,7 +141,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
           const parts = partPoints(p);
           const max = parts.reduce((s, x) => s + x.points, 0);
           return (
-            <div key={p.id} className="card p-5 sm:p-6">
+            <div key={p.id} className="card min-w-0 p-5 sm:p-6">
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="min-w-0">
                   <p className="eyebrow">Klausur {i + 1}</p>
@@ -160,7 +158,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
               </div>
               <div className="mt-4 grid gap-1.5 text-sm">
                 {parts.map((x) => (
-                  <div key={x.title} className="flex justify-between gap-4 text-ink-2">
+                  <div key={x.title} className="flex min-w-0 justify-between gap-4 text-ink-2">
                     <span className="min-w-0 truncate">{x.title}</span>
                     <span className="shrink-0 tabular-nums text-muted">
                       {x.count} {x.count === 1 ? "Frage" : "Fragen"} · {fmtPoints(x.points)} P.

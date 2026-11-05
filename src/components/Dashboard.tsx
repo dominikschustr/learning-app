@@ -194,10 +194,9 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
               <Info className="size-3.5" /> Wie wird priorisiert?
             </summary>
             <p className="mt-2 max-w-prose">
-              Anteil der Lernzeit = was bis {Math.round(READINESS_TARGET * 100)} % Readiness fehlt, geteilt durch die Tage
-              bis zur Klausur – nahe Klausuren mit viel Rückstand zuerst. Er verschiebt sich, sobald du lernst.
-              {external.length > 0 &&
-                ` Für ${external.map((e) => e.name).join(" und ")} plane zusätzlich Zeit ein – ${external.length === 1 ? "das Fach ist" : "die Fächer sind"} nicht in der App.`}
+              Nahe Klausuren mit viel Rückstand bis {Math.round(READINESS_TARGET * 100)} % Readiness bekommen den größten
+              Anteil der Lernzeit.
+              {external.length > 0 && ` ${external.map((e) => e.name).join(" und ")} zusätzlich einplanen – nicht in der App.`}
             </p>
           </details>
         )}
@@ -209,7 +208,7 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
         aria-expanded={showMore}
         className="flex w-full items-center justify-center gap-1.5 rounded-full border border-line py-2.5 text-sm font-semibold text-ink-2 sm:hidden"
       >
-        {showMore ? "Aktivität & Achievements ausblenden" : "Aktivität & Achievements"}
+        Aktivität & Achievements
         <ChevronDown className={cn("size-4 transition", showMore && "rotate-180")} />
       </button>
 
@@ -262,6 +261,7 @@ function SubjectTile({
   const soon = days !== undefined && days >= 0 && days <= 7;
   const priority = entry?.priority ? PRIORITY[entry.priority] : null;
   const share = entry && entry.share > 0 ? Math.round(entry.share * 100) : null;
+  const due = st.due + st.cardsDue;
 
   return (
     <Link
@@ -312,12 +312,6 @@ function SubjectTile({
               {share !== null ? `${share} % der Lernzeit heute` : priority.label}
             </p>
           )}
-          <div className="mt-4 hidden flex-wrap gap-2 sm:flex">
-            <Chip>{st.due + st.cardsDue} fällig</Chip>
-            <Chip>
-              {st.seen}/{st.total} Fragen gesehen
-            </Chip>
-          </div>
         </div>
         <ProgressRing value={st.readiness} size={mobile ? 60 : 96} stroke={mobile ? 6 : 8} color={subject.color}>
           <span>
@@ -330,13 +324,14 @@ function SubjectTile({
         <span className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: subject.color }}>
           {focus ? "Heute zuerst" : "Weiterlernen"}{" "}
           <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+          {due > 0 && <span className="ml-1 font-normal text-muted">· {due} fällig</span>}
         </span>
         {share !== null && (
           <span className="flex min-w-0 items-center gap-2 text-xs tabular-nums text-muted" title="Anteil deiner Lernzeit heute">
             <span className="h-1.5 w-16 shrink-0 overflow-hidden rounded-full bg-surface-2 lg:w-24">
               <span className="block h-full rounded-full" style={{ width: `${share}%`, background: subject.color }} />
             </span>
-            {share} % der Lernzeit
+            {share} % Lernzeit
           </span>
         )}
       </div>

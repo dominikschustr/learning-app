@@ -45,9 +45,7 @@ export function FormulaOverview({ subject, formulas }: { subject: Subject; formu
         <p className="eyebrow">Formelübersicht · {formulas.length} Formeln</p>
         <h1 className="display mt-2 text-4xl sm:text-5xl">Die wichtigsten Formeln je Kapitel</h1>
         <p className="mt-3 max-w-2xl text-muted">
-          Je Formel: wann du sie brauchst, was die Symbole bedeuten und die typische Falle. {onSheet} von{" "}
-          {formulas.length} stehen auf dem Formelblatt der Klausur, den Rest musst du selbst können. Im Abfrage-Modus
-          sind die Formeln verdeckt – erst aufschreiben, dann aufdecken.
+          {onSheet} von {formulas.length} stehen auf dem Formelblatt, den Rest musst du selbst können.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           <Segmented

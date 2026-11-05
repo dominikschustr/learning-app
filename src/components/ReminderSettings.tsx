@@ -117,7 +117,7 @@ export function ReminderSettings() {
 
       <Row
         title="Erinnerung ans Tagesziel"
-        text="Hast du dein Tagesziel abends noch nicht geschafft, bekommst du eine Mitteilung."
+        text="Abends, falls das Tagesziel noch offen ist"
       >
         {toggle("Erinnerung ans Tagesziel", on, setDailyReminder, "Die Erinnerung")}
       </Row>
@@ -144,7 +144,7 @@ export function ReminderSettings() {
 
       <div className="my-4 border-t border-line" />
 
-      <Row title="Rangliste" text="Mitteilung, wenn jemand aus der Rangliste gerade lernt (höchstens alle drei Stunden pro Person).">
+      <Row title="Rangliste" text="Wenn jemand gerade lernt, höchstens alle 3 Std. pro Person">
         {toggle("Mitteilung, wenn jemand aus der Rangliste lernt", social, setSocialPush, "Die Ranglisten-Mitteilung")}
       </Row>
 
@@ -179,8 +179,8 @@ export function ReminderPrompt() {
         <p className="font-semibold">Mitteilungen einschalten?</p>
         <p className="text-sm text-muted">
           {support === "ios-install"
-            ? "Füge Lernwerk zum Home-Bildschirm hinzu (Teilen → Zum Home-Bildschirm) – dann erinnert dich die App abends an dein Tagesziel und meldet, wenn jemand aus der Rangliste lernt."
-            : `Um ${hour}:00 Uhr eine Erinnerung, falls dein Tagesziel noch offen ist, und eine Mitteilung, wenn jemand aus der Rangliste lernt. Ändern kannst du das in den Einstellungen.`}
+            ? "Erst zum Home-Bildschirm hinzufügen (Teilen → Zum Home-Bildschirm), dann klappt die Erinnerung ans Tagesziel."
+            : `Um ${hour}:00 Uhr, falls dein Tagesziel offen ist – und wenn jemand aus der Rangliste lernt.`}
         </p>
         {msg && <p className="mt-1 text-sm text-bad">{msg}</p>}
       </div>

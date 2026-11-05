@@ -49,7 +49,7 @@ export function SettingsView() {
 
       <section className="card p-6">
         <h2 className="text-lg font-semibold">Tagesziel</h2>
-        <p className="text-sm text-muted">Beantwortete Fragen und Karteikarten pro Tag.</p>
+        <p className="text-sm text-muted">Fragen und Karten pro Tag</p>
         <div className="mt-4 flex items-center gap-3">
           <Button variant="secondary" className="size-11 px-0" onClick={() => setDailyGoal(dailyGoal - 5)} aria-label="weniger">
             <Minus className="size-4" />
@@ -65,51 +65,50 @@ export function SettingsView() {
 
       <AiSettings />
 
-      <section className="card p-6">
-        <h2 className="text-lg font-semibold">Backup</h2>
-        <p className="text-sm text-muted">
-          Zusätzlich zur Synchronisation kannst du deinen Fortschritt als Datei sichern und wieder importieren.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Button onClick={download}>
-            <Download className="size-4" /> Exportieren
-          </Button>
-          <Button variant="secondary" onClick={() => fileRef.current?.click()}>
-            <Upload className="size-4" /> Importieren
-          </Button>
-          <input
-            ref={fileRef}
-            type="file"
-            accept="application/json,.json"
-            className="hidden"
-            onChange={(e) => {
-              const f = e.target.files?.[0];
-              if (f) void upload(f);
-              e.target.value = "";
-            }}
-          />
+      <section className="card divide-y divide-line">
+        <div className="p-6">
+          <h2 className="text-lg font-semibold">Backup</h2>
+          <p className="text-sm text-muted">Fortschritt als Datei sichern oder wiederherstellen</p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Button onClick={download}>
+              <Download className="size-4" /> Exportieren
+            </Button>
+            <Button variant="secondary" onClick={() => fileRef.current?.click()}>
+              <Upload className="size-4" /> Importieren
+            </Button>
+            <input
+              ref={fileRef}
+              type="file"
+              accept="application/json,.json"
+              className="hidden"
+              onChange={(e) => {
+                const f = e.target.files?.[0];
+                if (f) void upload(f);
+                e.target.value = "";
+              }}
+            />
+          </div>
+          {msg && <p className="mt-3 text-sm text-ink-2">{msg}</p>}
         </div>
-        {msg && <p className="mt-3 text-sm text-ink-2">{msg}</p>}
-      </section>
 
-      <section className="card border-bad/30 p-6">
-        <h2 className="text-lg font-semibold">Zurücksetzen</h2>
-        <p className="text-sm text-muted">
-          Löscht XP, Streak, Achievements und den gesamten Lernfortschritt deines Kontos – auf allen Geräten. Konto und
-          Name bleiben.
-        </p>
-        <Button
-          variant="secondary"
-          className="mt-4 text-bad"
-          onClick={() => {
-            if (!window.confirm("Wirklich den gesamten Fortschritt löschen – auf allen Geräten? Das lässt sich nicht rückgängig machen.")) return;
-            resetProgress()
-              .then(() => setMsg("Fortschritt zurückgesetzt."))
-              .catch((e: Error) => setMsg(`Zurücksetzen fehlgeschlagen: ${e.message}`));
-          }}
-        >
-          <Trash2 className="size-4" /> Fortschritt löschen
-        </Button>
+        <div className="flex flex-wrap items-center justify-between gap-3 p-6">
+          <div className="min-w-0">
+            <h2 className="text-lg font-semibold">Zurücksetzen</h2>
+            <p className="text-sm text-muted">XP, Streak und Lernstand auf allen Geräten löschen</p>
+          </div>
+          <Button
+            variant="secondary"
+            className="text-bad"
+            onClick={() => {
+              if (!window.confirm("Wirklich den gesamten Fortschritt löschen – auf allen Geräten? Das lässt sich nicht rückgängig machen.")) return;
+              resetProgress()
+                .then(() => setMsg("Fortschritt zurückgesetzt."))
+                .catch((e: Error) => setMsg(`Zurücksetzen fehlgeschlagen: ${e.message}`));
+            }}
+          >
+            <Trash2 className="size-4" /> Löschen
+          </Button>
+        </div>
       </section>
     </div>
   );
@@ -121,14 +120,13 @@ function AiSettings() {
 
   return (
     <section className="card p-6">
-      <h2 className="text-lg font-semibold">KI-Bewertung</h2>
+      <h2 className="text-lg font-semibold">KI-Bewertung <span className="text-sm font-normal text-muted">· optional</span></h2>
       <p className="text-sm text-muted">
-        Optional: Kurzantworten von Google Gemini bewerten lassen statt selbst. Dafür brauchst du einen eigenen,
-        kostenlosen API-Key aus{" "}
+        Kurzantworten von Google Gemini bewerten lassen – mit kostenlosem Key aus{" "}
         <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer" className="font-medium text-accent underline">
           Google AI Studio
-        </a>{" "}
-        (keine Abrechnung aktivieren). Der Key bleibt nur in diesem Browser.
+        </a>
+        . Bleibt nur in diesem Browser.
       </p>
       {saved ? (
         <div className="mt-4 flex flex-wrap items-center gap-3">

@@ -71,7 +71,6 @@ function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lectur
   const exams = allExams.filter((e) => e.subjectId === subject.id && e.lecture === lecture?.id);
   const best = exams.reduce((b, e) => Math.max(b, examScore(e).score), 0);
   const total = f.short + f.mc + f.tf;
-  const pool = lecture ? questions.filter((q) => q.lecture === lecture.id).length : questions.length;
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -85,8 +84,8 @@ function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lectur
       <h1 className="display text-4xl sm:text-5xl mt-2">{lecture ? "Kapiteltest" : `${f.name}-Probelauf`}</h1>
       <p className="mt-3 text-muted">
         {lecture
-          ? `${total} Fragen nur aus diesem Kapitel, ${f.minutes} Minuten, kein Feedback bis zur Abgabe. Mit mindestens 80 % erreichst du das Kapitel-Level „Gemeistert“.`
-          : `Wie in der echten Prüfung: ${total} Fragen, ${f.minutes} Minuten, kein Feedback bis zur Abgabe. Die Fragen werden zufällig aus ${pool} Fragen gezogen – jedes der ${subject.lectures.length} Kapitel ist vertreten.`}
+          ? `${f.minutes} Minuten, kein Feedback bis zur Abgabe. Ab 80 % ist das Kapitel „Gemeistert“.`
+          : `Wie in der Prüfung: ${f.minutes} Minuten, kein Feedback bis zur Abgabe, Fragen aus allen ${subject.lectures.length} Kapiteln.`}
       </p>
 
       <div className="mt-8 grid grid-cols-3 gap-3">
@@ -101,15 +100,14 @@ function Intro({ content, lecture }: { content: SubjectContent; lecture?: Lectur
 
       <ul className="mt-6 space-y-2 text-sm text-ink-2">
         <li className="flex gap-2">
-          <Clock className="mt-0.5 size-4 shrink-0 text-muted" /> Richtwert: ca. {Math.round((f.minutes / total) * 10) / 10} Min
-          pro Frage. Bei Zeitablauf wird automatisch abgegeben.
+          <Clock className="mt-0.5 size-4 shrink-0 text-muted" /> ca. {Math.round((f.minutes / total) * 10) / 10} Min pro Frage,
+          bei Zeitablauf automatische Abgabe
         </li>
         <li className="flex gap-2">
-          <Flag className="mt-0.5 size-4 shrink-0 text-muted" /> Unsichere Fragen mit der Fahne kennzeichnen und vor der Abgabe zurückspringen.
+          <Flag className="mt-0.5 size-4 shrink-0 text-muted" /> Unsichere Fragen mit der Fahne markieren
         </li>
         <li className="flex gap-2">
-          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-muted" /> Multiple Choice zählt nur bei exakt richtiger
-          Auswahl; Teilpunkte siehst du zusätzlich in der Auswertung.
+          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-muted" /> Multiple Choice zählt nur bei exakt richtiger Auswahl
         </li>
       </ul>
 

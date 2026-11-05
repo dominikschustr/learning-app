@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDown, ArrowUp, CalendarClock, Crown, Flame, RefreshCw, Swords, Trophy, Users } from "lucide-react";
+import { ArrowDown, ArrowUp, CalendarClock, Crown, Flame, Info, RefreshCw, Swords, Trophy, Users } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { titleFor } from "@/lib/gamification";
@@ -152,10 +152,17 @@ function LeaderboardInner() {
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <section className="flex items-end justify-between gap-4">
+      <section className="flex items-start justify-between gap-4">
         <div>
-          <p className="eyebrow">Wettbewerb</p>
-          <h1 className="display mt-2 text-4xl sm:text-5xl">Rangliste</h1>
+          <h1 className="display text-4xl sm:text-5xl">Rangliste</h1>
+          {mine && session && (
+            <p className="mt-2 text-sm text-muted">
+              <span className="font-semibold text-ink">{session.name}</span> · Platz {mine.rank} von {rows.length} ·{" "}
+              <Link href="/settings/#konto" className="font-medium text-accent hover:underline">
+                Name ändern
+              </Link>
+            </p>
+          )}
         </div>
         <Button
           variant="ghost"
@@ -168,19 +175,6 @@ function LeaderboardInner() {
           <RefreshCw className={cn("size-4 shrink-0", board.status === "loading" && "animate-spin")} />
         </Button>
       </section>
-
-      {mine && session && (
-        <section className="card flex flex-wrap items-center justify-between gap-3 px-5 py-4">
-          <p className="text-sm text-ink-2">
-            <span className="font-semibold text-ink">{session.name}</span> – Platz {mine.rank} von {rows.length}
-          </p>
-          <Link href="/settings/#konto" className="text-sm font-medium text-accent hover:underline">
-            Namen ändern
-          </Link>
-        </section>
-      )}
-
-      <TeamCard rows={rows} />
 
       <div role="tablist" aria-label="Sortierung" className="inline-flex rounded-full border border-line bg-surface p-1">
         {SORTS.map((o) => (
@@ -203,6 +197,7 @@ function LeaderboardInner() {
       {board.error && <p className="text-sm text-bad">{board.error}</p>}
 
       {by === "week" && <WeekCard rows={rows} now={now} myId={myId} />}
+      {by === "today" && <TeamCard rows={rows} />}
       {myId && rows.length > 1 && <DuelCard rows={rows} myId={myId} by={by} />}
       {showPodium && <Podium rows={rows} by={by} myId={myId} />}
 
@@ -230,12 +225,17 @@ function LeaderboardInner() {
         </ol>
       )}
 
-      <p className="text-xs text-muted">
-        Hier stehen alle, die ein Konto haben. „Heute“ zählt beantwortete Fragen und Karteikarten seit Mitternacht,
-        „Streak“ die Lerntage in Folge. Die Wochenliga zählt die XP von Montag bis Sonntag und startet jeden Montag
-        um 0 Uhr neu. Die Liga richtet sich nach deinem Level (Bronze ab 1, Silber ab 3, Gold ab 5,
-        Platin ab 8, Diamant ab 12, Legende ab 17). Pfeile zeigen Auf- und Abstiege seit deinem letzten Besuch.
-      </p>
+      <details className="text-xs leading-relaxed text-muted">
+        <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 font-semibold text-ink-2">
+          <Info className="size-3.5" /> So wird gezählt
+        </summary>
+        <ul className="mt-2 max-w-prose list-disc space-y-1 pl-5">
+          <li>Heute: Fragen und Karten seit Mitternacht · Streak: Lerntage in Folge</li>
+          <li>Woche: XP von Montag bis Sonntag, startet montags neu</li>
+          <li>Liga nach Level: Bronze 1, Silber 3, Gold 5, Platin 8, Diamant 12, Legende 17</li>
+          <li>Pfeile: Auf- und Abstiege seit deinem letzten Besuch</li>
+        </ul>
+      </details>
     </div>
   );
 }
@@ -510,7 +510,7 @@ function WeekCard({ rows, now, myId }: { rows: Row[]; now: number; myId: string 
       </div>
       <p className="mt-2 text-sm">
         {active.length === 0 ? (
-          "Diese Woche hat noch niemand XP gesammelt – hol dir Platz 1."
+          "Diese Woche hat noch niemand XP gesammelt."
         ) : (
           <>
             <span className="font-semibold">{active.length}</span> {active.length === 1 ? "Person sammelt" : "Personen sammeln"} diese Woche XP
@@ -526,8 +526,8 @@ function WeekCard({ rows, now, myId }: { rows: Row[]; now: number; myId: string 
       {me && (
         <p className="mt-1 text-xs text-muted">
           {me.weekNow > 0
-            ? `Du: ${me.weekNow} XP diese Woche, Platz ${me.rank}. Die ersten drei kommen aufs Wochen-Treppchen.`
-            : "Du hast diese Woche noch keine XP – schon eine Übungsrunde bringt dich ins Feld."}
+            ? `Du: ${me.weekNow} XP, Platz ${me.rank}`
+            : "Du hast diese Woche noch keine XP."}
         </p>
       )}
     </section>

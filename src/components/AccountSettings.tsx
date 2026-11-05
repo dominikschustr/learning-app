@@ -87,8 +87,8 @@ export function AccountSettings() {
         </Button>
       </div>
       <p className="mt-2 text-xs text-muted">
-        Dein Lernstand gehört zu deinem Konto: Melde dich auf Laptop und Handy an, dann ist überall alles gleich. In
-        der Rangliste sehen andere deinen Namen, XP, Tagesstand und Streak.
+        Auf allen Geräten anmelden, dann ist dein Lernstand überall gleich. Die Rangliste zeigt Name, XP, Tagesstand
+        und Streak.
       </p>
 
       {mode === "rename" && (

@@ -4,7 +4,6 @@ import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, La
 import { motion } from "motion/react";
 import Link from "next/link";
 import { chapterFormat } from "@/lib/exam";
-import { LECTURE_SIZE } from "@/lib/queue";
 import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
 import type { QuestionType, SubjectSummary } from "@/lib/schema";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
@@ -12,7 +11,7 @@ import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
 import { statusCounts, type ItemState, type ItemStatus } from "@/lib/srs";
 import { alpha, cn, itemKey, pct } from "@/lib/utils";
-import { Bar, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
+import { Bar, ButtonLink, Chip, LinkRow, ProgressRing, Skeleton } from "./ui";
 
 export function ChapterView({ summary, chapterId }: { summary: SubjectSummary; chapterId: string }) {
   const hydrated = useHydrated();
@@ -64,59 +63,47 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
   const checkups = summary.items.filter((i) => i.lecture === chapterId && i.checkup);
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
-  const actions = [
-    ...(summary.formulas.includes(chapterId)
-      ? [
-          {
-            href: `${base}/formulas#${chapterId}`,
-            icon: Sigma,
-            title: "Formeln",
-            text: "Die wichtigsten Formeln des Kapitels, mit Abfrage-Modus",
-            meta: "Übersicht",
-          },
-        ]
-      : []),
-    ...(summary.frameworks.includes(chapterId)
-      ? [
-          {
-            href: `${base}/frameworks#${chapterId}`,
-            icon: LayoutGrid,
-            title: "Frameworks",
-            text:
-              subject.look === "slides"
-                ? "Framework-Folien mit Diagrammen, Vorgehen im Case und Abfrage-Modus"
-                : "Steckbriefe zum Auswendiglernen, mit Abfrage-Modus",
-            meta: "Übersicht",
-          },
-        ]
-      : []),
+  const slides = subject.look === "slides";
+  // Nachschlagen und Lesezeichen: schmale Links über den Übungs-Kacheln
+  const links = [
     ...(hasText
+      ? [{ href: `${base}/c/${chapterId}/text`, icon: ScrollText, label: slides ? "Zusammenfassung" : "Nachlesen" }]
+      : []),
+    ...(summary.formulas.includes(chapterId) ? [{ href: `${base}/formulas#${chapterId}`, icon: Sigma, label: "Formeln" }] : []),
+    ...(summary.frameworks.includes(chapterId)
+      ? [{ href: `${base}/frameworks#${chapterId}`, icon: LayoutGrid, label: "Frameworks" }]
+      : []),
+    ...(markedQ
       ? [
           {
-            href: `${base}/c/${chapterId}/text`,
-            icon: ScrollText,
-            title: subject.look === "slides" ? "Zusammenfassung" : "Nachlesen",
-            text:
-              subject.look === "slides"
-                ? "Key Messages, alle Frameworks des Kapitels und Vorgehen im Case"
-                : "Key Messages, Definitionen & Denkanstöße zum Nachlesen",
-            meta: subject.look === "slides" ? "Kapitel auf einen Blick" : "Originaltext",
+            href: `${base}/practice?mode=marked&lecture=${chapterId}`,
+            icon: Bookmark,
+            label: `${markedQ} ${markedQ === 1 ? "markierte Frage" : "markierte Fragen"}`,
           },
         ]
       : []),
-    {
-      href: `${base}/cards?lecture=${chapterId}`,
-      icon: Layers,
-      title: "Karteikarten",
-      text: `${ch.cards} Key Concepts & Definitionen`,
-      meta: `${Math.round(ch.cardMastery * 100)} % sicher`,
-    },
+    ...(markedC
+      ? [
+          {
+            href: `${base}/cards?marked=1&lecture=${chapterId}`,
+            icon: Bookmark,
+            label: `${markedC} ${markedC === 1 ? "markierte Karte" : "markierte Karten"}`,
+          },
+        ]
+      : []),
+  ];
+  const actions = [
     {
       href: `${base}/practice?mode=lecture&lecture=${chapterId}`,
       icon: BookOpen,
       title: "Üben",
-      text: `Je Durchgang ${Math.min(LECTURE_SIZE, ch.total)} wechselnde aus ${ch.total} Fragen, mit sofortigem Feedback`,
       meta: `${ch.seen}/${ch.total} gesehen`,
+    },
+    {
+      href: `${base}/cards?lecture=${chapterId}`,
+      icon: Layers,
+      title: "Karteikarten",
+      meta: `${Math.round(ch.cardMastery * 100)} % sicher`,
     },
     ...(checkups.length
       ? [
@@ -124,7 +111,6 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             href: `${base}/practice?mode=checkup&lecture=${chapterId}`,
             icon: ClipboardCheck,
             title: "Check-up-Fragen",
-            text: `Die ${checkups.length} Quiz-Aussagen vom Ende der Vorlesung`,
             meta: `${checkupStatus.first + checkupStatus.recovered}/${checkups.length} richtig`,
           },
         ]
@@ -133,22 +119,20 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
       href: `${base}/exam?chapter=${chapterId}`,
       icon: FileText,
       title: "Kapiteltest",
-      text: `${testCount} Fragen · ${fmt.minutes} Min · ohne Feedback`,
-      meta: ch.testBest ? `Bestwert ${pct(ch.testBest)}` : "≥ 80 % für „Gemeistert“",
+      meta: ch.testBest ? `Bestwert ${pct(ch.testBest)}` : `${testCount} Fragen · ${fmt.minutes} Min`,
     },
   ];
 
   return (
-    // Auf dem Handy stehen die Aktionen direkt unter dem Titel, die Statistik danach
     <div className="flex flex-col gap-6 sm:gap-8">
       <Link
         href={base}
-        className="inline-flex items-center gap-1 self-start text-sm font-medium text-muted hover:text-ink max-sm:order-[-3]"
+        className="inline-flex items-center gap-1 self-start text-sm font-medium text-muted hover:text-ink"
       >
         <ArrowLeft className="size-4" /> {subject.name}
       </Link>
 
-      <header className="flex flex-col gap-6 max-sm:order-[-2] sm:flex-row sm:items-end sm:justify-between">
+      <header className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="eyebrow">
             Kapitel {index + 1} von {subject.lectures.length} · {code}
@@ -168,6 +152,29 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           </p>
         </div>
       </header>
+
+      <section>
+        <div className={cn("grid grid-cols-2 gap-2 sm:gap-3", actions.length === 4 ? "sm:grid-cols-4" : "sm:grid-cols-3")}>
+          {actions.map((a, i) => (
+            <motion.div key={a.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
+              <Link href={a.href} className="card group flex h-full flex-col p-3 transition hover:-translate-y-0.5 sm:p-5">
+                <span
+                  className="grid size-9 place-items-center rounded-xl sm:size-11"
+                  style={{ background: alpha(subject.color, 0.1), color: subject.color }}
+                >
+                  <a.icon className="size-5" />
+                </span>
+                <span className="mt-2 font-semibold sm:mt-4 sm:text-lg">{a.title}</span>
+                <span className="mt-auto flex items-center justify-between pt-1 text-xs text-muted sm:pt-3">
+                  {a.meta}
+                  <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+                </span>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+        <LinkRow links={links} color={subject.color} className="mt-3" />
+      </section>
 
       <section className="card grid grid-cols-[auto_1fr] items-center gap-4 p-4 sm:gap-6 sm:p-8">
         <div className="flex justify-center">
@@ -234,62 +241,6 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           />
         </div>
       </section>
-
-      <section
-        className={cn(
-          "grid grid-cols-2 gap-2 max-sm:order-[-1] sm:gap-3",
-          actions.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3",
-        )}
-      >
-        {actions.map((a, i) => (
-          <motion.div key={a.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
-            <Link href={a.href} className="card group flex h-full flex-col p-3 transition hover:-translate-y-0.5 sm:p-5">
-              <span
-                className="grid size-9 place-items-center rounded-xl sm:size-11"
-                style={{ background: alpha(subject.color, 0.1), color: subject.color }}
-              >
-                <a.icon className="size-5" />
-              </span>
-              <span className="mt-2 font-semibold sm:mt-4 sm:text-lg">{a.title}</span>
-              <span className="text-sm text-muted max-sm:hidden">{a.text}</span>
-              <span className="mt-auto flex items-center justify-between pt-1 text-xs font-semibold text-ink-2 sm:pt-4">
-                {a.meta}
-                <ArrowRight className="size-4 text-muted transition group-hover:translate-x-0.5" />
-              </span>
-            </Link>
-          </motion.div>
-        ))}
-      </section>
-
-      {(markedQ > 0 || markedC > 0) && (
-        <section className="card flex flex-wrap items-center gap-3 p-4">
-          <span
-            className="grid size-10 shrink-0 place-items-center rounded-xl bg-accent/10 text-accent"
-          >
-            <Bookmark className="size-5" fill="currentColor" />
-          </span>
-          <span className="flex-1 text-sm">
-            <span className="block font-semibold">Deine Lesezeichen in diesem Kapitel</span>
-            <span className="text-muted">
-              {[markedQ && `${markedQ} ${markedQ === 1 ? "Frage" : "Fragen"}`, markedC && `${markedC} ${markedC === 1 ? "Karte" : "Karten"}`]
-                .filter(Boolean)
-                .join(" · ")}
-            </span>
-          </span>
-          <span className="flex flex-wrap gap-2">
-            {markedQ > 0 && (
-              <ButtonLink variant="secondary" href={`${base}/practice?mode=marked&lecture=${chapterId}`}>
-                Fragen üben
-              </ButtonLink>
-            )}
-            {markedC > 0 && (
-              <ButtonLink variant="secondary" href={`${base}/cards?marked=1&lecture=${chapterId}`}>
-                Karten wiederholen
-              </ButtonLink>
-            )}
-          </span>
-        </section>
-      )}
 
       {tests.length > 0 && (
         <section>

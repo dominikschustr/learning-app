@@ -44,10 +44,7 @@ export function FrameworkOverview({ subject, frameworks }: { subject: Subject; f
       <header className="mt-8">
         <p className="eyebrow">Framework-Übersicht · {frameworks.length} Frameworks</p>
         <h1 className="display mt-2 text-4xl sm:text-5xl">Alle Frameworks auf einen Blick</h1>
-        <p className="mt-3 max-w-2xl text-muted">
-          Je Framework: wozu es dient, die Bausteine zum Auswendiglernen, das Vorgehen im Case, typische Fehler und das
-          Beispiel aus den Slides. Im Abfrage-Modus sind die Bausteine verdeckt – erst selbst aufsagen, dann aufdecken.
-        </p>
+        <p className="mt-3 max-w-2xl text-muted">Im Abfrage-Modus sind die Bausteine verdeckt: erst aufsagen, dann aufdecken.</p>
         <div className="mt-5 inline-flex rounded-full border border-line-strong bg-surface p-1">
           {([
             [false, "Lernen", Eye],

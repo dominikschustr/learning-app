@@ -13,7 +13,7 @@ import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
 import { statusCounts } from "@/lib/srs";
 import { alpha, cn, itemKey, pct } from "@/lib/utils";
-import { Bar, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
+import { Bar, ButtonLink, Chip, LinkRow, ProgressRing, Skeleton } from "./ui";
 
 export function SubjectOverview({ summary }: { summary: SubjectSummary }) {
   const hydrated = useHydrated();
@@ -64,35 +64,25 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const hasTf = summary.items.some((i) => i.type === "tf");
   const checkups = summary.items.filter((i) => i.checkup);
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
+  // Üben: große Kacheln, nur Titel und Stand
   const modes = [
-    ...(summary.formulas.length
-      ? [
-          {
-            href: `${base}/formulas`,
-            icon: Sigma,
-            title: "Formelübersicht",
-            text: "Alle Formeln je Kapitel, mit Abfrage-Modus",
-            meta: `${summary.formulas.length} Kapitel`,
-          },
-        ]
-      : []),
-    ...(summary.frameworks.length
-      ? [
-          {
-            href: `${base}/frameworks`,
-            icon: LayoutGrid,
-            title: "Framework-Übersicht",
-            text: "Alle Frameworks als Steckbrief, mit Abfrage-Modus",
-            meta: `${summary.frameworks.length} Kapitel`,
-          },
-        ]
-      : []),
     {
       href: `${base}/cards`,
       icon: Layers,
       title: "Karteikarten",
-      text: "Key Concepts aktiv abrufen",
       meta: `${st.cardsDue} fällig · ${st.cardsNew} neu`,
+    },
+    {
+      href: `${base}/practice?mode=due`,
+      icon: RotateCcw,
+      title: "Wiederholung",
+      meta: `${st.due} fällig`,
+    },
+    {
+      href: `${base}/practice?mode=weak`,
+      icon: Target,
+      title: "Schwächen",
+      meta: st.seen ? "unsicherste Fragen" : "nach ein paar Fragen",
     },
     ...(checkups.length
       ? [
@@ -100,52 +90,31 @@ function Inner({ summary }: { summary: SubjectSummary }) {
             href: `${base}/practice?mode=checkup`,
             icon: ClipboardCheck,
             title: "Check-up-Fragen",
-            text: "Nur die Quiz-Aussagen vom Ende der Vorlesungen",
             meta: `${checkupStatus.first + checkupStatus.recovered}/${checkups.length} richtig`,
           },
         ]
       : []),
-    {
-      href: `${base}/practice?mode=due`,
-      icon: RotateCcw,
-      title: "Wiederholung",
-      text: "Was heute fällig ist",
-      meta: `${st.due} fällig`,
-    },
-    {
-      href: `${base}/practice?mode=weak`,
-      icon: Target,
-      title: "Schwächen-Training",
-      text: "Deine unsichersten Fragen",
-      meta: st.seen ? "gezielt" : "erst nach ein paar Fragen",
-    },
     ...(hasTf
       ? [
           {
             href: `${base}/blitz`,
             icon: Zap,
             title: "Blitzrunde",
-            text: "60 Sek. True/False",
-            meta: s.blitzBest[subject.id] ? `Rekord ${s.blitzBest[subject.id]}` : "noch kein Rekord",
+            meta: s.blitzBest[subject.id] ? `Rekord ${s.blitzBest[subject.id]}` : "60 Sek. True/False",
           },
         ]
       : []),
-    {
-      href: `${base}/practice?mode=marked`,
-      icon: Bookmark,
-      title: "Markierte Fragen",
-      text: "Deine Lesezeichen gezielt üben",
-      meta: markedQ ? `${markedQ} markiert` : "noch keine markiert",
-      empty: !markedQ,
-    },
-    {
-      href: `${base}/cards?marked=1`,
-      icon: Bookmark,
-      title: "Markierte Karten",
-      text: "Gemerkte Karteikarten wiederholen",
-      meta: markedC ? `${markedC} markiert` : "noch keine markiert",
-      empty: !markedC,
-    },
+  ];
+  // Nachschlagen und Lesezeichen: schmale Links unter den Kacheln
+  const links = [
+    ...(summary.formulas.length ? [{ href: `${base}/formulas`, icon: Sigma, label: "Formelübersicht" }] : []),
+    ...(summary.frameworks.length ? [{ href: `${base}/frameworks`, icon: LayoutGrid, label: "Framework-Übersicht" }] : []),
+    ...(markedQ
+      ? [{ href: `${base}/practice?mode=marked`, icon: Bookmark, label: `${markedQ} ${markedQ === 1 ? "markierte Frage" : "markierte Fragen"}` }]
+      : []),
+    ...(markedC
+      ? [{ href: `${base}/cards?marked=1`, icon: Bookmark, label: `${markedC} ${markedC === 1 ? "markierte Karte" : "markierte Karten"}` }]
+      : []),
   ];
 
   return (
@@ -170,8 +139,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         <div className="flex gap-3 rounded-2xl border border-warn/30 bg-warn-soft p-4 text-sm">
           <Info className="mt-0.5 size-4 shrink-0 text-warn" />
           <p>
-            <strong>Demo-Inhalte.</strong> Diese Fragen sind ein Platzhalter-Set. Sobald du die Key Messages der
-            Vorlesungen hochlädst, werden sie durch Fragen aus deinen Dokumenten ersetzt.
+            <strong>Demo-Inhalte</strong> – Platzhalter, bis die Vorlesungsunterlagen da sind.
           </p>
         </div>
       )}
@@ -198,10 +166,6 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         <div className="flex flex-col justify-center sm:self-end">
           <p className="eyebrow">Prognose {f.name}</p>
           <h2 className="display mt-1 text-2xl sm:text-3xl">{readinessLabel(st.readiness)}</h2>
-          <p className="mt-2 max-w-md text-sm text-muted max-sm:hidden">
-            Geschätzter Score, wenn die Prüfung jetzt wäre: deine Sicherheit pro Fragetyp, gewichtet wie in der
-            Prüfung ({TYPES.filter(([t]) => f[t]).map(([t, label]) => `${f[t]} ${label}`).join(" · ")}).
-          </p>
         </div>
         <div className="col-span-2 sm:col-span-1 sm:col-start-2 sm:self-start">
           <div className="grid max-w-md gap-2.5">
@@ -227,11 +191,8 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       </section>
 
       <section>
-        <div className="mb-3 flex items-end justify-between gap-4 sm:mb-4">
-          <div>
-            <h2 className="display text-2xl">Lernpfad</h2>
-            <p className="text-sm text-muted max-sm:hidden">Ein Kapitel pro Vorlesung – jedes mit eigenem Level.</p>
-          </div>
+        <div className="mb-3 flex items-center justify-between gap-4 sm:mb-4">
+          <h2 className="display text-2xl">Lernpfad</h2>
           <Chip>
             {mastered}/{st.lectures.length} gemeistert
           </Chip>
@@ -305,16 +266,9 @@ function Inner({ summary }: { summary: SubjectSummary }) {
 
       <section>
         <h2 className="display mb-3 text-2xl">Freies Training</h2>
-        <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-3">
+        <div className={cn("grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3", modes.length > 3 && "lg:grid-cols-5")}>
           {modes.map((m, i) => (
-            <motion.div
-              key={m.title}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.04 }}
-              // Leere Lesezeichen-Kacheln auf dem Handy weglassen
-              className={cn("empty" in m && m.empty && "max-sm:hidden")}
-            >
+            <motion.div key={m.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
               <Link href={m.href} className="card group flex h-full flex-col p-3 transition hover:-translate-y-0.5 sm:p-4">
                 <span
                   className="grid size-9 place-items-center rounded-xl sm:size-10"
@@ -323,12 +277,12 @@ function Inner({ summary }: { summary: SubjectSummary }) {
                   <m.icon className="size-5" />
                 </span>
                 <span className="mt-2 font-semibold leading-tight sm:mt-3">{m.title}</span>
-                <span className="text-sm text-muted max-sm:hidden">{m.text}</span>
-                <span className="mt-auto pt-1 text-xs font-semibold text-ink-2 sm:pt-3">{m.meta}</span>
+                <span className="mt-auto pt-1 text-xs text-muted">{m.meta}</span>
               </Link>
             </motion.div>
           ))}
         </div>
+        <LinkRow links={links} color={subject.color} className="mt-3" />
       </section>
 
       {exams.length > 0 && (
@@ -378,11 +332,11 @@ function ExamCountdown({ date, readiness, now }: { date: string; readiness: numb
   const need = Math.max(0, READINESS_TARGET - readiness);
   const target = Math.round(READINESS_TARGET * 100);
   let pace: string;
-  if (days < 0) pace = "Klausur geschrieben.";
-  else if (!need) pace = `Ziel von ${target} % Readiness erreicht – jetzt nur noch wiederholen.`;
+  if (days < 0) pace = "";
+  else if (!need) pace = `Ziel ${target} % erreicht`;
   else {
     const perDay = ((need / Math.max(1, days)) * 100).toLocaleString("de-DE", { maximumFractionDigits: 1 });
-    pace = `Für ${target} % Readiness: +${perDay} Punkte pro Tag.`;
+    pace = `+${perDay} Pkt./Tag bis ${target} %`;
   }
   return (
     <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
