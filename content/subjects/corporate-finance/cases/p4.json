@@ -1,0 +1,97 @@
+[
+  {
+    "id": "p4-returns",
+    "title": "Exercise 1 – Annual returns of a stock",
+    "text": [
+      "A stock had the following annual returns from 2019 to 2022."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Year",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ],
+        "rows": [
+          [
+            "Return",
+            "4.41%",
+            "−16.15%",
+            "43.68%",
+            "0.62%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p4-pernod",
+    "title": "Exercise 2 – A portfolio with a short sale",
+    "text": [
+      "You have EUR 5,000 to invest. You sell short Carrefour stock worth EUR 2,500 and buy Pernod Ricard stock worth EUR 7,500. The returns of the two stocks have a correlation of 0.25."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Stock",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "Pernod Ricard",
+            "13%",
+            "25%"
+          ],
+          [
+            "Carrefour",
+            "3%",
+            "20%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p4-gamestop",
+    "title": "Exercise 3 – GameStop and the capital market line",
+    "text": [
+      "A friend invests all his savings in a single stock, GameStop, with an expected return of 10% and a volatility of 50%. The market portfolio has an expected return of 8% and a volatility of 20%. The risk-free rate is 4%. Assume that the CAPM holds."
+    ],
+    "tables": []
+  },
+  {
+    "id": "p4-campari",
+    "title": "Exercise 4 – Campari-Milano acquires Molinari",
+    "text": [
+      "Campari-Milano N.V. is all-equity financed, with an equity beta of 1.2 and a market value of EUR 2 billion. It plans to acquire its competitor Molinari S.p.A., also all-equity financed, with an equity beta of 0.6 and a market value of EUR 500 million. Campari-Milano finances the acquisition entirely with debt, which you can treat as risk-free. Assume perfect capital markets."
+    ],
+    "tables": []
+  },
+  {
+    "id": "p4-bluthner",
+    "title": "Exercise 5 – Blüthner GmbH changes its capital structure",
+    "text": [
+      "Blüthner GmbH manufactures pianos. It expects a free cash flow of EUR 15 million next year, growing at 5% per year forever. Blüthner is currently all-equity financed and its cost of capital is 7%. Assume perfect capital markets (no taxes)."
+    ],
+    "tables": []
+  },
+  {
+    "id": "p4-alpha-bond",
+    "title": "Exercise 6 – Alpha's bond",
+    "text": [
+      "Three years ago, Alpha issued a 5-year bond with a face value of EUR 500 million and an annual coupon rate of 7.5%. Alpha is rated BB by Standard & Poor's. The residual maturity is now two years. The risk-free rate is 1%, and the average yield to maturity of BB-rated corporate bonds is 5%."
+    ],
+    "tables": []
+  },
+  {
+    "id": "p4-sharpe",
+    "title": "Exercise 7 – Two funds",
+    "text": [
+      "Fund X has an expected return of 12% and a volatility of 25%. Fund Y has an expected return of 9% and a volatility of 15%. The risk-free rate is 3%. You can borrow and lend at the risk-free rate and want to combine exactly one of the two funds with the risk-free asset."
+    ],
+    "tables": []
+  }
+]

@@ -2,7 +2,7 @@
   {
     "id": "p2",
     "title": "Final exam 2022/23 (Nachbau)",
-    "subtitle": "Built from the two 2022/23 papers: multiple choice from Group A, calculation exercises from both groups. Questions on topics after lecture 8 (taxes, payout, raising capital, options) are replaced by questions from lectures 1–8. Multiple-choice solutions are own solutions.",
+    "subtitle": "Built from the two 2022/23 papers: multiple choice from Group A, calculation exercises from both groups. Questions on topics after lecture 8 (taxes, payout, raising capital, options) are replaced by questions from lectures 1–8. Multiple-choice and exercise solutions checked against the official solutions of Group A.",
     "origin": {
       "kind": "altklausur",
       "exam": "Final exam 2022/23, Group A und B",

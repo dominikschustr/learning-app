@@ -1,0 +1,179 @@
+[
+  {
+    "id": "p4",
+    "title": "Final exam 2023/24 · Mod. A (Nachbau)",
+    "subtitle": "The original paper with official solutions (15 multiple-choice questions + 7 exercises, 2 hours). Questions on topics after lecture 8 (tax shield, IPO, buybacks, options, covenants, option payoff) are replaced by questions from lectures 1–8. Multiple-choice questions 2–11 are the same as in Group A.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Final exam 2023/24, Mod. A (with solutions)",
+      "faithful": false
+    },
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Part 1 – Multiple choice questions",
+        "instructions": "Select the MOST appropriate response. Each question is worth 2/3 marks. [10 marks]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "cf-p4-mc01",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc01",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc02",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc03",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p4-mc05",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc06",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc07",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc08",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc09",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc10",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p1-mc11",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p4-mc12",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p4-mc13",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p4-mc14",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p4-mc15",
+                "points": 0.6666666666666666
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Short answer and calculation questions",
+        "instructions": "Report the main calculation steps and justify all your responses. Report numbers with four decimals and percentages with two decimals. [10 marks]",
+        "sections": [
+          {
+            "title": "Exercise 1 – Returns",
+            "items": [
+              {
+                "q": "cf-p4-01a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p4-01b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Short selling",
+            "items": [
+              {
+                "q": "cf-p4-02a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p4-02b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Capital market line",
+            "items": [
+              {
+                "q": "cf-p4-03a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p4-03b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 4 – Asset and equity betas",
+            "items": [
+              {
+                "q": "cf-p4-04a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p4-04b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 5 – Capital structure in a perfect market",
+            "items": [
+              {
+                "q": "cf-p4-05a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p4-05b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 6 – Cost of debt",
+            "items": [
+              {
+                "q": "cf-p4-06a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p4-06b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 7 – Sharpe ratio",
+            "items": [
+              {
+                "q": "cf-p4-07",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

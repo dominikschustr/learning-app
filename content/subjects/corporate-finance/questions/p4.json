@@ -1,0 +1,564 @@
+[
+  {
+    "type": "mc",
+    "id": "cf-p4-mc01",
+    "lecture": "l1",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "You bought a stock one year ago for EUR 22 per share and sold it today for EUR 26 per share. The stock also paid a EUR 1 per share dividend today. What is your capital gain rate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  -15.39%"
+      },
+      {
+        "id": "b",
+        "text": "B  -11.54%"
+      },
+      {
+        "id": "c",
+        "text": "C  -8%"
+      },
+      {
+        "id": "d",
+        "text": "D  0%"
+      },
+      {
+        "id": "e",
+        "text": "E  13.64%"
+      },
+      {
+        "id": "f",
+        "text": "F  18.18%"
+      },
+      {
+        "id": "g",
+        "text": "G  27.27%"
+      },
+      {
+        "id": "h",
+        "text": "H  None of the proposed alternatives is close to your capital gain rate."
+      }
+    ],
+    "correct": [
+      "f"
+    ],
+    "explanation": "Capital gain rate = (26 − 22) / 22 = 18.18%. The dividend is not part of the capital gain: the dividend yield is 1/22 = 4.55% and the total return 22.73%."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p4-mc05",
+    "lecture": "l3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Suppose that the market portfolio has an expected return of 9% and a volatility of 20%. The risk-free rate is 3%. What is the slope of the capital market line (CML)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  6%"
+      },
+      {
+        "id": "b",
+        "text": "B  9%"
+      },
+      {
+        "id": "c",
+        "text": "C  0.25"
+      },
+      {
+        "id": "d",
+        "text": "D  0.3"
+      },
+      {
+        "id": "e",
+        "text": "E  0.45"
+      },
+      {
+        "id": "f",
+        "text": "F  3"
+      },
+      {
+        "id": "g",
+        "text": "G  None of the proposed alternatives is close to the slope of the CML."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The CML plots expected return against volatility; its slope is the market's Sharpe ratio (9% − 3%) / 20% = 0.3. 6% would be the slope of the SML (against beta)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p4-mc12",
+    "lecture": "l7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is FALSE? (replaces a question on the interest tax shield, which is not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  In perfect capital markets, the total value of a firm does not depend on its capital structure."
+      },
+      {
+        "id": "b",
+        "text": "B  Investors can replicate any leverage the firm chooses by borrowing or lending on their own (homemade leverage)."
+      },
+      {
+        "id": "c",
+        "text": "C  Because leverage raises the expected return on equity, it raises the firm's share price in a perfect market."
+      },
+      {
+        "id": "d",
+        "text": "D  With leverage, the equity cost of capital rises with the market value debt-equity ratio."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Leverage raises the expected return on equity only because it raises equity risk; the higher return compensates the higher risk, so the share price is unchanged in a perfect market (MM I and II)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p4-mc13",
+    "lecture": "l5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which statement on the efficiency of the market portfolio is CORRECT? (replaces a question on IPOs, which are not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  If the market portfolio is efficient, every security lies on the security market line and has an alpha of zero."
+      },
+      {
+        "id": "b",
+        "text": "B  A stock with a positive alpha keeps its positive alpha, because investors ignore it."
+      },
+      {
+        "id": "c",
+        "text": "C  If the market portfolio is efficient, uninformed investors cannot earn a fair return by holding it."
+      },
+      {
+        "id": "d",
+        "text": "D  The size and momentum effects show that the market portfolio is always efficient."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Market portfolio efficient ⇔ all securities on the SML (alpha = 0). Investors buying positive-alpha stocks push prices up until alpha disappears; uninformed investors can earn a fair return by holding the market. Anomalies such as size and momentum suggest the market proxy may NOT be efficient."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p4-mc14",
+    "lecture": "l6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "How is a stock's beta typically estimated from historical data? (replaces a question on share buybacks, which are not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  As the slope of a regression of the stock's excess returns on the market's excess returns."
+      },
+      {
+        "id": "b",
+        "text": "B  As the ratio of the stock's volatility to the market's volatility."
+      },
+      {
+        "id": "c",
+        "text": "C  As the intercept of a regression of the stock's excess returns on the market's excess returns."
+      },
+      {
+        "id": "d",
+        "text": "D  It can only be estimated for firms without debt."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Beta = slope of the regression (security characteristic line); the intercept is the stock's alpha. Volatility ratios ignore correlation, and betas of levered firms are estimated just the same (they are equity betas)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p4-mc15",
+    "lecture": "l7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "An all-equity firm has an equity cost of capital of 10%. It borrows at the risk-free rate of 4% and repurchases shares until its debt-equity ratio is 0.5. Assuming perfect capital markets, what is its new equity cost of capital? (replaces a question on options, which are not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  7%"
+      },
+      {
+        "id": "b",
+        "text": "B  10%"
+      },
+      {
+        "id": "c",
+        "text": "C  12%"
+      },
+      {
+        "id": "d",
+        "text": "D  13%"
+      },
+      {
+        "id": "e",
+        "text": "E  15%"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "MM Proposition II: rE = rU + D/E × (rU − rD) = 10% + 0.5 × (10% − 4%) = 13%."
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-01a",
+    "lecture": "l1",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "(a) Calculate the arithmetic average of these returns. With or without calculations, discuss how it compares with the geometric average of the same returns.",
+    "modelAnswer": "Arithmetic average = (4.41% − 16.15% + 43.68% + 0.62%) / 4 = 8.14%.\nThe geometric average is lower: (1.0441 × 0.8385 × 1.4368 × 1.0062)^(1/4) − 1 ≈ 6.07%. The geometric average is always below the arithmetic average when returns vary – the more volatile the returns, the larger the gap.",
+    "keyPoints": [
+      "Arithmetic average 8.14 %",
+      "Geometric average lower (≈ 6.07 %)",
+      "Gap grows with volatility"
+    ],
+    "results": [
+      {
+        "label": "Arithmetic average",
+        "value": 8.14,
+        "unit": "%"
+      }
+    ],
+    "case": "p4-returns",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-01b",
+    "lecture": "l1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "(b) How does the relationship between historical average return and historical volatility of individual stocks differ from that of large, well-diversified portfolios? Explain briefly.",
+    "modelAnswer": "For large, well-diversified portfolios there is generally a positive relation between average return and volatility: more risk, higher average return. For individual stocks there is no such clear relation, because a large part of their volatility is idiosyncratic (diversifiable) risk, which is not rewarded with a risk premium – only systematic risk is.",
+    "keyPoints": [
+      "Portfolios: positive relation",
+      "Individual stocks: no clear relation",
+      "Idiosyncratic risk not rewarded"
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-02a",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What are your portfolio weights, and what is the expected return of your portfolio?",
+    "modelAnswer": "Weights: Pernod Ricard 7,500 / 5,000 = 1.5; Carrefour −2,500 / 5,000 = −0.5.\nE(R) = 1.5 × 13% + (−0.5) × 3% = 18%.",
+    "keyPoints": [
+      "Weight Pernod 1.5",
+      "Weight Carrefour −0.5",
+      "Expected return 18 %"
+    ],
+    "results": [
+      {
+        "label": "Weight in Pernod Ricard",
+        "value": 1.5,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Weight in Carrefour",
+        "value": -0.5,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Expected return",
+        "value": 18,
+        "unit": "%"
+      }
+    ],
+    "case": "p4-pernod",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-02b",
+    "lecture": "l2",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) What is the volatility of your portfolio?",
+    "modelAnswer": "σ² = 1.5² × 0.25² + (−0.5)² × 0.20² + 2 × 1.5 × (−0.5) × 0.25 × 0.20 × 0.25 = 0.140625 + 0.01 − 0.01875 = 0.131875.\nσ = √0.131875 = 36.31%.",
+    "keyPoints": [
+      "Two-asset variance formula with negative weight",
+      "Variance 0.1319",
+      "Volatility 36.31 %"
+    ],
+    "results": [
+      {
+        "label": "Volatility",
+        "value": 36.31,
+        "unit": "%"
+      }
+    ],
+    "case": "p4-pernod",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-03a",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) According to the CAPM, which alternative investment provides the same expected return as GameStop but a lower risk? Calculate the portfolio weights and the volatility.",
+    "modelAnswer": "Combine the market portfolio and the risk-free asset: 8% × x + 4% × (1 − x) = 10% → x = (10% − 4%) / (8% − 4%) = 1.5 in the market and −0.5 in the risk-free asset (borrowing).\nVolatility = 1.5 × 20% = 30% < 50%.",
+    "keyPoints": [
+      "Weight in market 1.5",
+      "Weight in risk-free −0.5 (borrowing)",
+      "Volatility 30 %"
+    ],
+    "results": [
+      {
+        "label": "Weight in the market portfolio",
+        "value": 1.5,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Weight in the risk-free asset",
+        "value": -0.5,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Volatility",
+        "value": 30,
+        "unit": "%"
+      }
+    ],
+    "case": "p4-gamestop",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-03b",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "(b) Describe the capital market line in a figure with volatility on the x-axis and expected return on the y-axis: where are the risk-free asset, the market portfolio, GameStop and the portfolio from (a)? What is the slope of the CML?",
+    "modelAnswer": "The CML is a straight line starting at the risk-free asset (σ = 0, E = 4%) and passing through the market portfolio (20%, 8%); its slope is the market Sharpe ratio (8% − 4%) / 20% = 0.2. The portfolio from (a) lies on the CML beyond the market portfolio (30%, 10%) – leverage. GameStop (50%, 10%) lies to the right of and below the CML: same expected return with much more volatility, because most of its risk is diversifiable.",
+    "keyPoints": [
+      "Line from rf (0 %, 4 %) through market (20 %, 8 %)",
+      "Slope 0.2",
+      "Portfolio (a) at (30 %, 10 %) on the line",
+      "GameStop (50 %, 10 %) below the CML"
+    ],
+    "results": [
+      {
+        "label": "Slope of the CML",
+        "value": 0.2,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "case": "p4-gamestop",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-04a",
+    "lecture": "l8",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is Campari-Milano's asset (unlevered) beta before and after the acquisition? Explain the change.",
+    "modelAnswer": "Before: all-equity, so asset beta = equity beta = 1.2.\nAfter: the firm's assets are a portfolio of the old business (2 bn) and Molinari (0.5 bn): βU = 2/2.5 × 1.2 + 0.5/2.5 × 0.6 = 0.96 + 0.12 = 1.08.\nThe asset beta falls because the acquired business has a lower beta; the financing (debt) does not affect the asset beta.",
+    "keyPoints": [
+      "Before 1.2",
+      "After: value-weighted average 1.08",
+      "Lower because Molinari's beta is lower",
+      "Financing does not change the asset beta"
+    ],
+    "results": [
+      {
+        "label": "Asset beta before",
+        "value": 1.2,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Asset beta after",
+        "value": 1.08,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "case": "p4-campari",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-04b",
+    "lecture": "l8",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "(b) Calculate Campari-Milano's equity beta after the acquisition and compare it with the one before. Explain the change.",
+    "modelAnswer": "After the deal: equity 2 bn, risk-free debt 0.5 bn → D/E = 0.25.\nβE = βU × (1 + D/E) = 1.08 × 1.25 = 1.35 (equivalently 1.08 × 2.5 / 2).\nThe equity beta rises from 1.2 to 1.35: equity beta reflects business risk and financial risk. The lower business risk (asset beta 1.08) is more than offset by the leverage the firm takes on.",
+    "keyPoints": [
+      "D/E = 0.25",
+      "βE = 1.08 × 1.25 = 1.35",
+      "Higher than 1.2",
+      "Business risk down, financial risk up"
+    ],
+    "results": [
+      {
+        "label": "Equity beta after",
+        "value": 1.35,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "case": "p4-campari",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-05a",
+    "lecture": "l7",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) What is the value of Blüthner as an all-equity firm? (replaces a question on the interest tax shield)",
+    "modelAnswer": "Growing perpetuity: V = FCF1 / (r − g) = 15 / (7% − 5%) = EUR 750 million.",
+    "keyPoints": [
+      "Growing perpetuity",
+      "V = 15 / 0.02 = 750 m"
+    ],
+    "results": [
+      {
+        "label": "Firm value (EUR m)",
+        "value": 750
+      }
+    ],
+    "case": "p4-bluthner",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-05b",
+    "lecture": "l7",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "(b) Blüthner issues EUR 375 million of risk-free debt at 4% and uses the proceeds to repurchase shares. In perfect capital markets, what are the value of its equity and its equity cost of capital after the recapitalization?",
+    "modelAnswer": "MM I: firm value stays 750; equity = 750 − 375 = EUR 375 million (D/E = 1).\nMM II: rE = rU + D/E × (rU − rD) = 7% + 1 × (7% − 4%) = 10%.\nThe WACC stays 7% (0.5 × 10% + 0.5 × 4%).",
+    "keyPoints": [
+      "Firm value unchanged at 750",
+      "Equity 375",
+      "rE = 7 % + 1 × 3 % = 10 %",
+      "WACC unchanged"
+    ],
+    "results": [
+      {
+        "label": "Equity value (EUR m)",
+        "value": 375
+      },
+      {
+        "label": "Equity cost of capital",
+        "value": 10,
+        "unit": "%"
+      }
+    ],
+    "case": "p4-bluthner",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-06a",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(a) Calculate the market value of the bond (EUR million) and discuss whether the expected return for Alpha's debt holders is larger than, smaller than or equal to the discount rate you used.",
+    "modelAnswer": "Coupon = 7.5% × 500 = 37.5. Value = 37.5 / 1.05 + 537.5 / 1.05² = 35.7143 + 487.5283 = EUR 523.2426 million.\nThe 5% yield to maturity is a promised return that assumes all payments are made. Because a BB bond has a non-negligible default risk, the expected return to debt holders is below 5%.",
+    "keyPoints": [
+      "Discount at 5 % for 2 years",
+      "Value 523.2426 m",
+      "YTM is promised, not expected",
+      "Expected return below 5 % (default risk)"
+    ],
+    "results": [
+      {
+        "label": "Market value of the bond (EUR m)",
+        "value": 523.2426
+      }
+    ],
+    "case": "p4-alpha-bond",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-06b",
+    "lecture": "l6",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "(b) BB-rated debt has an average annual default rate of 2%, and investors lose 60% of the value in default. Estimate Alpha's debt cost of capital. (replaces a question on bond covenants)",
+    "modelAnswer": "Expected return = yield − probability of default × expected loss rate = 5% − 2% × 60% = 3.8%. It lies between the risk-free rate (1%) and the promised yield (5%).",
+    "keyPoints": [
+      "rD = y − p × L",
+      "5 % − 1.2 % = 3.8 %",
+      "Below the YTM"
+    ],
+    "results": [
+      {
+        "label": "Debt cost of capital",
+        "value": 3.8,
+        "unit": "%"
+      }
+    ],
+    "case": "p4-alpha-bond",
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "cf-p4-07",
+    "lecture": "l3",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Which fund should you combine with the risk-free asset, and why? Calculate the relevant measure for both funds. (replaces an exercise on option payoffs, which are not part of lectures 1–8)",
+    "modelAnswer": "Compare the Sharpe ratios (slope of the line from the risk-free asset through each fund):\nX: (12% − 3%) / 25% = 0.36.\nY: (9% − 3%) / 15% = 0.40.\nChoose Y: combined with borrowing or lending it offers the highest expected return for every level of volatility – e.g. with 25% volatility (weight 25/15 = 1.67 in Y) the expected return is 3% + 0.40 × 25% = 13% > 12% for X.",
+    "keyPoints": [
+      "Sharpe ratio = excess return / volatility",
+      "X 0.36, Y 0.40",
+      "Y has the steeper line → choose Y",
+      "Leverage Y to reach X's risk with higher return"
+    ],
+    "results": [
+      {
+        "label": "Sharpe ratio X",
+        "value": 0.36,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Sharpe ratio Y",
+        "value": 0.4,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "case": "p4-sharpe",
+    "paperOnly": true
+  }
+]
