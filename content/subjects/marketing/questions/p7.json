@@ -1,0 +1,179 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-p7-01",
+    "lecture": "s01",
+    "difficulty": 2,
+    "prompt": "Which is the correct dispossession cycle through which surveillance capitalism develops (Zuboff)?",
+    "options": [
+      { "id": "a", "text": "Incursion, habituation, adaptation, redirection" },
+      { "id": "b", "text": "Diffusion, redirection, habituation, adaptation" },
+      { "id": "c", "text": "Inclusion, habituation, adaptation, redirection" },
+      { "id": "d", "text": "None of the above" }
+    ],
+    "correct": ["a"],
+    "explanation": "Zuboff's cycle: incursion (taking data without asking), habituation (people get used to it), adaptation (cosmetic changes when criticised) and redirection (continuing in a new form)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p7-02",
+    "lecture": "s01",
+    "difficulty": 1,
+    "prompt": "What does GDPR NOT stand for?",
+    "options": [
+      { "id": "a", "text": "Global Directory of Protection Regulation" },
+      { "id": "b", "text": "Global Data Protection Rule" },
+      { "id": "c", "text": "General Data Privacy Regulation" },
+      { "id": "d", "text": "None of the above" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "GDPR = General Data Protection Regulation (EU, 2018). All three expansions given are wrong, so all of them are things GDPR does not stand for."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p7-03",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "Which of the following are ways to measure customer value (the value a product creates for the customer)?",
+    "options": [
+      { "id": "a", "text": "Customer lifetime value (CLV)" },
+      { "id": "b", "text": "Focus groups" },
+      { "id": "c", "text": "Direct survey questions" },
+      { "id": "d", "text": "None of the above" }
+    ],
+    "correct": ["b", "c"],
+    "explanation": "Focus groups and direct survey questions are perceptual measures of customer value (Lilien et al.). CLV measures the value of a customer TO the firm, not the value the customer perceives."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p7-04",
+    "lecture": "s06",
+    "difficulty": 1,
+    "prompt": "The product component model of product attributes consists of …",
+    "options": [
+      { "id": "a", "text": "service, symbolic and physical attributes" },
+      { "id": "b", "text": "theoretical, symbolic and physical attributes" },
+      { "id": "c", "text": "physical, functional and practical attributes" },
+      { "id": "d", "text": "None of the above" }
+    ],
+    "correct": ["a"],
+    "explanation": "Product component model: physical attributes (core product), service attributes (delivery, warranty, support) and symbolic attributes (brand, image)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p7-05",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "A chemical plant uses 150 O-rings to seal valves on pipes carrying corrosive materials. It pays $6 per O-ring and replaces them at every maintenance, every three months. A new O-ring resists corrosion twice as long. What is the value-in-use (VIU) of the new O-ring (ignoring shutdown costs)?",
+    "options": [
+      { "id": "a", "text": "$12" },
+      { "id": "b", "text": "$13" },
+      { "id": "c", "text": "$11" },
+      { "id": "d", "text": "None of the above" }
+    ],
+    "correct": ["a"],
+    "explanation": "Annual cost today: 150 × 4 changes × $6 = $3,600. New ring: 150 × 2 changes × VIU = $3,600 → VIU = $12."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p7-06",
+    "lecture": "s06",
+    "difficulty": 2,
+    "prompt": "A multinomial logit model gives these utilities: brand A 5, brand B 3, brand C 7, brand D 10. What is the purchase probability of brand A?",
+    "options": [
+      { "id": "a", "text": "0.30" },
+      { "id": "b", "text": "0.25" },
+      { "id": "c", "text": "0.45" },
+      { "id": "d", "text": "None of the above" }
+    ],
+    "correct": ["d"],
+    "explanation": "As taught in the course, the share is A's utility over the sum of utilities: 5 / (5 + 3 + 7 + 10) = 5 / 25 = 0.20 – not among the options."
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-01",
+    "lecture": "s07",
+    "case": "xyz-portfolio",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Apply the BCG matrix to products A–D, using your company and the most relevant competitor as the market actors. Calculate relative market share and relative market growth, classify each product with the BCG terminology and propose a strategy for each.",
+    "modelAnswer": "Relative market share (own / competitor): A 65/16 = 4.06 · B 73/22 = 3.32 · C 12/84 = 0.14 · D 23/89 = 0.26.\nRelative market growth (own / competitor): A 40/30 = 1.33 · B 28/79 = 0.35 · C 78/29 = 2.69 · D 15/74 = 0.20.\nA: high share, high growth → Star – invest to defend leadership and grow.\nB: high share, low growth → Cash cow – harvest/maintain, use its cash to fund stars and question marks.\nC: low share, high growth → Question mark – invest selectively to build share or divest if it cannot become a star.\nD: low share, low growth → Dog – harvest or divest.",
+    "keyPoints": ["Relative market share A 4.06, B 3.32, C 0.14, D 0.26", "Relative growth A 1.33, B 0.35, C 2.69, D 0.20", "A star, B cash cow, C question mark, D dog", "Strategy per product"],
+    "results": [
+      { "label": "Relative market share A", "value": 4.06, "tol": 0.02 },
+      { "label": "Relative market share B", "value": 3.32, "tol": 0.02 },
+      { "label": "Relative market share C", "value": 0.14, "tol": 0.01 },
+      { "label": "Relative market share D", "value": 0.26, "tol": 0.01 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-02",
+    "lecture": "s07",
+    "case": "xyz-portfolio",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Would applying the GE/McKinsey matrix suggest different results?",
+    "modelAnswer": "Possibly yes. The GE/McKinsey matrix replaces the two single indicators of the BCG matrix with weighted multi-factor scores: market attractiveness (size, growth, profitability, competitive intensity, entry barriers, risk) and business strength (market share, brand, cost position, capabilities, distribution). It uses a 3×3 grid (invest/grow, selective, harvest/divest) instead of four cells. With only share and growth data we cannot apply it fully – we would need more information. A product like D could move up if its market is very profitable or XYZ has strong capabilities there; C might be less attractive if its market is risky or highly competitive. GE/McKinsey is more nuanced but also more subjective (choice of factors and weights).",
+    "keyPoints": ["Multi-factor attractiveness vs business strength", "Weights and scores, 3×3 grid", "More information needed than in the table", "Results can differ (examples)", "More subjective"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-03",
+    "lecture": "s03",
+    "case": "trend-learning",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which deep consumer needs and desires does the Learning Economy trend address?",
+    "modelAnswer": "Basic needs behind the trend: self-improvement and self-actualisation (growing as a person throughout life); security – staying employable in a changing labour market threatened by AI and automation; autonomy and control over one's own development (learning when, where and what one wants); curiosity and the desire to understand the world; status and social recognition (new skills, credentials); belonging to communities of learners.",
+    "keyPoints": ["Self-improvement / self-actualisation", "Security / employability (AI)", "Autonomy, control", "Status, belonging, curiosity"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-04",
+    "lecture": "s03",
+    "case": "trend-learning",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What new consumer expectations are created by this trend?",
+    "modelAnswer": "Consumers expect learning to be lifelong, flexible and on demand (any time, any place, digital); personalised and up to date with the skills the future requires (coding, digital, AI); affordable or free and easy to access; and they expect brands – not only schools – to act as partners in their development: brands that teach, offer tutorials, academies and certificates. Expectation transfer: the convenience of digital services is now expected from education too.",
+    "keyPoints": ["Lifelong, flexible, on-demand learning", "Personalised, future-oriented skills", "Accessible / affordable", "Brands as education partners"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-05",
+    "lecture": "s03",
+    "case": "trend-learning",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Comment on the level of maturity of this trend and give examples.",
+    "modelAnswer": "In 2016 the trend was emerging to mainstreaming: early adopters used MOOCs and online courses, and governments and brands began to react. Today it is a mature, mainstream trend: platforms such as edX, Coursera, Duolingo, Khan Academy, LinkedIn Learning and MasterClass; brands offering education (Google and Microsoft certificates, Apple's “Today at Apple” sessions, Lego education, corporate academies); universities offering online degrees and micro-credentials; and AI tutors as the next innovation. Maturity should be judged by how widely the expectations have spread across industries and markets.",
+    "keyPoints": ["Emerging/early majority in 2016", "Mainstream today", "Concrete platform and brand examples", "Spread across industries/markets"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-06",
+    "lecture": "s08",
+    "case": "segment-cohort",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "What is the retention rate in period 1, and what is the survival rate in period 3 (with Sr1 = Rr1)?",
+    "modelAnswer": "Retention rate = share of customers kept in the period = 1 − lost / customers.\nRr1 = 1 − 25,000 / 300,000 = 91.67%.\nRr2 = 1 − 75,000 / 225,000 = 66.67%; Rr3 = 1 − 100,000 / 125,000 = 20%.\nSurvival rate: Sr_t = Rr_t × Sr_(t−1), so Sr3 = 0.9167 × 0.6667 × 0.20 = 12.22%. Only about one in eight customers of the original group is still active in period 3 – a sharp decline in a segment that brings 30% of revenues.",
+    "keyPoints": ["Rr1 = 91.67%", "Rr2 = 66.67%, Rr3 = 20%", "Sr3 = product of retention rates = 12.22%", "Interpretation: sharp decline"],
+    "results": [
+      { "label": "Retention rate period 1", "value": 91.67, "unit": "%" },
+      { "label": "Survival rate period 3", "value": 12.22, "unit": "%" }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-07",
+    "lecture": "s07",
+    "case": "polkaly-segments",
+    "difficulty": 1,
+    "verb": "define",
+    "prompt": "What is a strategic business unit (SBU)?",
+    "modelAnswer": "A strategic business unit is a part of the company – a product line, a division or, as at Polkaly, a group of customers – that serves a distinct set of customers and competitors and can be planned and managed separately, with its own strategy, objectives and resources. Companies group similar products into product lines and lines of business serving a common set of customers into SBUs; portfolio tools such as the BCG or GE/McKinsey matrix are applied at SBU level.",
+    "keyPoints": ["Distinct customers/competitors", "Planned and managed separately with own strategy", "Unit of portfolio analysis (BCG, GE)"]
+  }
+]

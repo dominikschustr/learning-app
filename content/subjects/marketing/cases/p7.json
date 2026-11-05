@@ -1,0 +1,47 @@
+[
+  {
+    "id": "xyz-portfolio",
+    "title": "Company XYZ – four products vs their closest competitors (sample exam 2019/20)",
+    "text": [
+      "You are product manager for products A, B, C and D of company XYZ. Your data science department provides market share and market growth (in units) for your products and for the most relevant competitor product in each market (E, F, G and H).",
+      "Relative market share = own market share / competitor's market share. Relative market growth = own growth / competitor's growth (values above 1 count as high)."
+    ],
+    "tables": [
+      {
+        "head": ["Your product", "Market share", "Market growth", "Competitor", "Market share", "Market growth"],
+        "rows": [
+          ["A", "65", "40", "E", "16", "30"],
+          ["B", "73", "28", "F", "22", "79"],
+          ["C", "12", "78", "G", "84", "29"],
+          ["D", "23", "15", "H", "89", "74"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "trend-learning",
+    "title": "Trend report extract: \"The Learning Economy\" (The Future Laboratory, 2016 – sample exam)",
+    "text": [
+      "Summary of the trend report: education is turning from something done early in life into a lifelong activity, but traditional schools and universities have not kept pace. Brands step in as partners in people's continuous self-improvement.",
+      "The head of an online learning platform argues that young people can learn as much online as in class and often know more about the forces shaping the future than their teachers. Young people are as interested in learning as previous generations, but teaching methods and curricula lag behind – the UK, for example, only made coding compulsory in state schools in 2014.",
+      "The three-stage life of education, work and retirement no longer describes how many people live: about three quarters of American adults call themselves lifelong learners (Pew Research). Uncertainty about artificial intelligence – which may destroy or create jobs – adds pressure, and educators call for cooperation between brands and schools to close a widening skills gap."
+    ],
+    "tables": []
+  },
+  {
+    "id": "segment-cohort",
+    "title": "A key customer segment over three periods (sample exam 2019/20)",
+    "text": [
+      "Your company analyses purchase behaviour over time to estimate future customer value. One segment, critical for your success (30% of the product's revenues), develops as follows. Assume that in period 1 the survival rate equals the retention rate (Sr1 = Rr1)."
+    ],
+    "tables": [
+      {
+        "head": ["", "Period 1", "Period 2", "Period 3"],
+        "rows": [
+          ["Total number of customers in the period", "300,000", "225,000", "125,000"],
+          ["Customers lost during the period", "25,000", "75,000", "100,000"]
+        ]
+      }
+    ]
+  }
+]

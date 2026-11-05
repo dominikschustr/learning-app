@@ -727,5 +727,101 @@
       "Data as a strategy – data drives business model/ecosystem",
       "Relevant example for each"
     ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-17",
+    "lecture": "s01",
+    "statement": "Economies of action extend surveillance from monitoring behaviour to actively shaping and modifying it.",
+    "answer": true,
+    "explanation": "Zuboff: after economies of scale and scope, economies of action intervene in behaviour (nudging, tuning, herding) to produce predictable outcomes."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-18",
+    "lecture": "s01",
+    "statement": "Companies only use data that customers actively provide to them.",
+    "answer": false,
+    "explanation": "Much more is collected: behavioural surplus from clicks, location, sensors, cookies and third parties – far beyond what users actively hand over."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-19",
+    "lecture": "s01",
+    "statement": "In surveillance markets, behavioural modification is mostly limited to the sphere of consumption.",
+    "answer": false,
+    "explanation": "It reaches far beyond shopping – e.g. political opinions and voting (Cambridge Analytica), health, social behaviour."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-20",
+    "lecture": "s01",
+    "statement": "Only “tech” companies operate in surveillance markets.",
+    "answer": false,
+    "explanation": "Insurers, retailers, car makers, banks and many others also collect and monetise behavioural data."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-21",
+    "lecture": "s01",
+    "statement": "In Zuboff's dispossession cycle, “habituation” describes the speed at which surveillance markets emerged.",
+    "answer": false,
+    "explanation": "Habituation means people get used to the incursion until it appears normal and inevitable; the cycle is incursion → habituation → adaptation → redirection."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-22",
+    "lecture": "s01",
+    "statement": "Under surveillance capitalism, the market for personal data is information-symmetric between the companies that collect data and the individuals who reveal it.",
+    "answer": false,
+    "explanation": "It is strongly asymmetric: companies know far more about users than users know about what is collected and how it is used."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-23",
+    "lecture": "s01",
+    "statement": "Behavioural surplus is the information companies collect beyond what they need to improve their products and services.",
+    "answer": true,
+    "explanation": "This surplus is turned into prediction products sold in behavioural futures markets."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-24",
+    "lecture": "s01",
+    "statement": "The extraction imperative states that all information that can be collected will be collected.",
+    "answer": true,
+    "explanation": "Prediction quality depends on the volume and variety of data, so firms are driven to extract ever more."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-25",
+    "lecture": "s01",
+    "statement": "Economies of scope are irrelevant in surveillance markets.",
+    "answer": false,
+    "explanation": "Variety matters: data from many areas of life (location, voice, health, social) improve predictions – economies of scope."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-26",
+    "lecture": "s01",
+    "statement": "Companies collect data solely to improve their services.",
+    "answer": false,
+    "explanation": "Data also train models that predict and influence behaviour, which are sold to third parties (advertisers, insurers …)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-27",
+    "lecture": "s01",
+    "statement": "In surveillance markets, companies can run large-scale online experiments on users without their awareness.",
+    "answer": true,
+    "explanation": "Example: Facebook's emotional contagion experiment or A/B tests that modify feeds without users knowing."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-28",
+    "lecture": "s01",
+    "statement": "Cambridge Analytica collected personal information from millions of Facebook profiles without consent and combined it with other sources for political advertising.",
+    "answer": true,
+    "explanation": "The case illustrates behavioural modification beyond consumption and why consent rules like the GDPR matter."
   }
 ]

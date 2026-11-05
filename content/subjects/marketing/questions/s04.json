@@ -659,5 +659,69 @@
       "Sentiment analysis",
       "Topic modelling / classification"
     ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-16",
+    "lecture": "s04",
+    "statement": "Social listening can only be used for brand and industry intelligence.",
+    "answer": false,
+    "explanation": "It also supports customer care, campaign tracking, influencer identification, crisis management, product development and innovation."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-17",
+    "lecture": "s04",
+    "statement": "When tracking campaigns, social listening can help identify top influencers.",
+    "answer": true,
+    "explanation": "It shows who drives reach and engagement around a campaign or topic."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-18",
+    "lecture": "s04",
+    "statement": "Social listening allows proactive decisions and responses to emerging trends.",
+    "answer": true,
+    "explanation": "Monitoring conversations in real time reveals shifts early, before they show up in sales data."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-19",
+    "lecture": "s04",
+    "statement": "Social monitoring explains the “why” behind a phenomenon.",
+    "answer": false,
+    "explanation": "Monitoring tracks what is said (mentions, volume, alerts); listening analyses the conversations to understand why."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-20",
+    "lecture": "s04",
+    "statement": "Social listening can be used to recover from service failures by responding quickly to customers.",
+    "answer": true,
+    "explanation": "Complaints are detected in real time and can be answered before they escalate."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-21",
+    "lecture": "s04",
+    "statement": "Social media listening means analysing only the conversations about one's own brand.",
+    "answer": false,
+    "explanation": "It also covers competitors, the industry, topics, trends and campaigns."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-22",
+    "lecture": "s04",
+    "statement": "Social listening cannot be used to track collaborative campaigns.",
+    "answer": false,
+    "explanation": "Co-branded and influencer collaborations can be tracked like any campaign (mentions, sentiment, reach)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-23",
+    "lecture": "s04",
+    "statement": "Social listening supports innovation by monitoring changes in the market.",
+    "answer": true,
+    "explanation": "Unmet needs, product complaints and new usage ideas surface in online conversations."
   }
 ]

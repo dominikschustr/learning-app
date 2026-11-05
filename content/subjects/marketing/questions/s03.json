@@ -737,5 +737,93 @@
       "Barriers to entry",
       "Regulation"
     ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-18",
+    "lecture": "s03",
+    "statement": "Trend identification draws on very diverse sources of inspiration, e.g. geopolitics, local subcultures, influencers, biotechnology and demographic shifts.",
+    "answer": true,
+    "explanation": "Horizon scanning looks far beyond one's own industry to spot weak signals early."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-19",
+    "lecture": "s03",
+    "statement": "Uber changing what people expect from transport (instant, one-touch service) is an example of expectation transfer.",
+    "answer": true,
+    "explanation": "Once experienced, such expectations transfer to other industries – people expect the same convenience from banks, food delivery, healthcare."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-20",
+    "lecture": "s03",
+    "statement": "Basic needs, drivers of change and innovations are the fundamental elements of a consumer trend.",
+    "answer": true,
+    "explanation": "Trend = basic needs + drivers of change (shifts, triggers) → innovations → new consumer expectations."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-21",
+    "lecture": "s03",
+    "statement": "Emerging consumer expectations are tied to a specific geography, industry and market and do not spread across borders.",
+    "answer": false,
+    "explanation": "Expectations spread across industries (expectation transfer) and countries, especially through digital media."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-22",
+    "lecture": "s03",
+    "statement": "A new consumer trend emerges when an external change unlocks a new way to serve basic human needs.",
+    "answer": true,
+    "explanation": "Needs stay stable; change (technology, society, economy) creates new ways to serve them."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-23",
+    "lecture": "s03",
+    "statement": "Consumer trends are only about fashion and design.",
+    "answer": false,
+    "explanation": "Trends concern how we live, eat, travel, work, consume media and relate to each other."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-24",
+    "lecture": "s03",
+    "statement": "Consumer trends are created by trend forecasting agencies such as WGSN, TrendWatching or The Future Laboratory.",
+    "answer": false,
+    "explanation": "Agencies identify and describe trends; trends emerge from changes in society and consumer behaviour."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-25",
+    "lecture": "s03",
+    "statement": "Macro trends matter mainly to fashion companies and much less to the mass market.",
+    "answer": false,
+    "explanation": "Macro trends are broad, long-lasting shifts affecting many industries and mass markets."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-26",
+    "lecture": "s03",
+    "statement": "Innovations are manifestations of how a trend exists.",
+    "answer": true,
+    "explanation": "Innovations are evidence of a trend, not the trend itself – the trend is the underlying shift in behaviour or expectations."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-27",
+    "lecture": "s03",
+    "statement": "Trend forecasting is a method for identifying short-term changes in the retail and service industries.",
+    "answer": false,
+    "explanation": "It looks at medium- to long-term shifts in consumer needs and expectations across all industries."
+  },
+  {
+    "type": "tf",
+    "id": "tf-s03-28",
+    "lecture": "s03",
+    "statement": "Macro trends affect a variety of industries and have a long-lasting effect on consumer behaviour.",
+    "answer": true,
+    "explanation": "They unfold over many years (e.g. digitalisation, ageing, sustainability) and shape many markets."
   }
 ]
