@@ -1,0 +1,139 @@
+[
+  {
+    "id": "meridian-bs",
+    "title": "Meridian Pharma plc – consolidated balance sheet 31 December 2025 (£m)",
+    "text": [
+      "Meridian Pharma plc, a listed pharmaceutical group (fictitious), presents its consolidated balance sheet as shown below. Liabilities are shown in brackets and deducted to arrive at “net assets”; the composition of equity follows at the bottom."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated balance sheet (£m)",
+        "head": ["", "2025"],
+        "rows": [
+          ["Property, plant and equipment", "10,800"],
+          ["Goodwill", "5,900"],
+          ["Other intangible assets", "17,600"],
+          ["Investments in associates", "260"],
+          ["Deferred tax assets", "2,600"],
+          ["Other non-current assets", "1,200"],
+          ["Non-current assets", "38,360"],
+          ["Inventories", "5,100"],
+          ["Trade and other receivables", "6,000"],
+          ["Cash and cash equivalents", "4,800"],
+          ["Current assets", "15,900"],
+          ["Short-term borrowings", "(4,100)"],
+          ["Trade and other payables", "(12,000)"],
+          ["Other current liabilities", "(2,600)"],
+          ["Current liabilities", "(18,700)"],
+          ["Long-term borrowings", "(14,700)"],
+          ["Pensions and other post-employment benefits", "(4,000)"],
+          ["Deferred tax liabilities", "(1,900)"],
+          ["Other non-current liabilities and provisions", "(10,560)"],
+          ["Non-current liabilities", "(31,160)"],
+          ["Net assets", "4,400"],
+          ["Share capital", "1,300"],
+          ["Share premium", "2,900"],
+          ["Retained earnings", "(5,400)"],
+          ["Other reserves", "2,300"],
+          ["Shareholders' equity", "1,100"],
+          ["Non-controlling interests", "3,300"],
+          ["Total equity", "4,400"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "meridian-cfs",
+    "title": "Meridian Pharma plc – extract of the cash flow statement 2025 (£m)",
+    "text": [
+      "The extract below shows how Meridian Pharma presents its cash flows for 2025."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated cash flow statement (extract, £m)",
+        "head": ["", "2025"],
+        "rows": [
+          ["Profit after tax", "1,400"],
+          ["Adjustments reconciling profit after tax to operating cash flows", "3,900"],
+          ["Cash generated from operations", "5,300"],
+          ["Taxation paid", "(900)"],
+          ["Net cash inflow from operating activities", "4,400"],
+          ["Net cash outflow from investing activities", "(2,700)"],
+          ["Net cash outflow from financing activities", "(1,200)"],
+          ["Increase in cash and cash equivalents", "500"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pc-sa-synergies",
+    "title": "PC acquires 100% of SA on 31 December N",
+    "text": [
+      "On 31 December N, PC acquires 100% of the shares of SA for 950, paid in cash. The individual balance sheets just before the acquisition are given below.",
+      "SA has developed a brand internally that it never recognised; its fair value is estimated at 120 on 31 December N. The future synergies PC expects from the acquisition are estimated at 70. All other book values equal fair values."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N (before the acquisition)",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "520", "Capital", "700"],
+          ["Cash", "950", "Net income", "60"],
+          ["", "", "Liabilities", "710"],
+          ["Total", "1,470", "Total", "1,470"]
+        ]
+      },
+      {
+        "caption": "SA – 31 December N",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "380", "Capital", "180"],
+          ["", "", "Net income", "110"],
+          ["", "", "Liabilities", "90"],
+          ["Total", "380", "Total", "380"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "toledo-building",
+    "title": "Toledo – a self-constructed office building",
+    "text": [
+      "Toledo, a construction company, has built a new office building for its own use. The construction took two years. The following amounts were incurred:",
+      "The building is depreciated straight-line over 25 years with no residual value and is put into use on 1 January 2025. Its fair value on 31 December 2025 is €3,000,000. Toledo uses the cost model."
+    ],
+    "tables": [
+      {
+        "caption": "Costs incurred (€)",
+        "head": ["Item", "Amount"],
+        "rows": [
+          ["Purchase of the land on which the building stands", "3,000,000"],
+          ["Raw materials used in construction", "600,000"],
+          ["Salaries of workers on the construction site", "2,200,000"],
+          ["Depreciation of equipment used for the construction", "150,000"],
+          ["Interest on a loan financing the construction (2 years)", "90,000"],
+          ["Cost of moving Toledo's staff into the new building", "40,000"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "halden-leases",
+    "title": "Halden Ltd – lease contracts entered into in year N",
+    "text": [
+      "Halden Ltd (lessee) entered into the following contracts on 1 January N. Lease payments are due at the end of each year (contract C: at the end of each month). Discount rate where needed: 10%.",
+      "Annuity factors at 10%: 3 years 2.4869; 6 years 4.3553."
+    ],
+    "tables": [
+      {
+        "head": ["", "Contract A", "Contract B", "Contract C", "Contract D"],
+        "rows": [
+          ["Asset", "Production machine", "Delivery van", "Storage space", "10 laptops (new price €900 each)"],
+          ["Lease term", "6 years", "3 years", "10 months", "3 years"],
+          ["Payment", "€100,000 per year", "€20,000 per year", "€5,000 per month", "€3,000 per year in total"],
+          ["Economic life of the asset", "6 years", "6 years", "30 years", "4 years"]
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "id": "exam-2022",
+    "title": "Final exam 2022 (Nachbau)",
+    "subtitle": "Wie die Abschlussklausur CM01 vom 14.11.2022 (75 Punkte, 75 Minuten, closed book): Bilanz eines Einzelhändlers, Konsolidierung mit Multiple Choice, Impairment von Sachanlagen, ROCE-Vergleich und Multiple Choice zu Impairment, IFRS 16, Free Cash Flow, Anleihe und Kapitalerhöhung – mit eigenen Fällen und Zahlen.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Final exam CM01 International Financial Reporting vom 14.11.2022",
+      "faithful": true
+    },
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Exercise 1 – Northway balance sheet",
+        "instructions": "[8 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p11-01", "points": 2 },
+              { "q": "sa-p11-02", "points": 3 },
+              { "q": "sa-p11-03", "points": 3 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 2 – Consolidation",
+        "instructions": "One correct answer for each multiple-choice question. [23 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "mc-p11-01", "points": 2 },
+              { "q": "mc-p11-02", "points": 3 },
+              { "q": "mc-p11-03", "points": 3 },
+              { "q": "mc-p11-04", "points": 2 }
+            ]
+          },
+          {
+            "title": "Consolidated balance sheet at acquisition",
+            "items": [{ "q": "sa-p11-04", "points": 13 }]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 3 – Property, plant and equipment",
+        "instructions": "[14 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p11-05", "points": 11 },
+              { "q": "sa-p11-06", "points": 3 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 4 – ROCE",
+        "instructions": "[15 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p11-07", "points": 6 },
+              { "q": "sa-p11-08", "points": 9 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 5 – Multiple choice",
+        "instructions": "One correct answer for each question. [15 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "mc-p11-05", "points": 3 },
+              { "q": "mc-p11-06", "points": 2 },
+              { "q": "mc-p11-07", "points": 2 },
+              { "q": "mc-p11-08", "points": 4 }
+            ]
+          },
+          {
+            "title": "Equity section",
+            "items": [
+              { "q": "mc-p11-09", "points": 2 },
+              { "q": "mc-p11-10", "points": 2 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

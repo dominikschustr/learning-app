@@ -1,0 +1,229 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p10-01",
+    "lecture": "t1",
+    "case": "meridian-bs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Meridian presents (in this order) non-current assets, current assets, current liabilities and non-current liabilities. Is this order of presentation mandatory under IFRS? Explain.",
+    "modelAnswer": "No. IAS 1 lists the line items that must at least be presented and requires a current/non-current distinction (unless a liquidity presentation is more relevant), but it does not prescribe a format or order. Companies may present non-current items first (common in the UK and continental Europe) or current items first, and may present a “net assets” format as Meridian does.",
+    "keyPoints": ["Not mandatory", "IAS 1 prescribes minimum line items, not format or order", "Current/non-current distinction required"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-02",
+    "lecture": "t1",
+    "case": "meridian-bs",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Meridian shows liabilities in brackets as negative numbers to calculate “net assets”. Why? What is the meaning of net assets?",
+    "modelAnswer": "Net assets = total assets − total liabilities = equity (here 54,260 − 18,700 − 31,160 = 4,400). Deducting the liabilities leads directly to the book (accounting) value of the group that belongs to the shareholders; because net assets equal equity, the bottom part of the balance sheet then shows how this equity is composed (share capital, premium, reserves, NCI).",
+    "keyPoints": ["Net assets = assets − liabilities = equity", "Book value of the company", "Equity composition shown below"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-03",
+    "lecture": "t2",
+    "case": "meridian-bs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain what the non-controlling interests (NCI) in equity represent and comment on the amount of NCI in Meridian's balance sheet.",
+    "modelAnswer": "NCI is the part of the equity of consolidated subsidiaries that does not belong to the parent but to other (minority) shareholders of those subsidiaries; under full consolidation 100% of the subsidiaries' assets and liabilities are included, so their share of net assets is shown separately within equity. Comment: Meridian's NCI (3,300) is three times the equity of the parent's shareholders (1,100) – most of the group's equity is provided by minority shareholders of subsidiaries (e.g. a large, partly owned subsidiary). The parent's own equity is small because retained earnings are negative (5,400) – e.g. after buybacks, dividends or losses.",
+    "keyPoints": ["Share of subsidiaries' equity held by other shareholders", "Result of full consolidation", "NCI 3,300 > parent equity 1,100", "Large partly owned subsidiaries / negative retained earnings"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-04",
+    "lecture": "t1",
+    "case": "meridian-cfs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What is the meaning of the line “Adjustments reconciling profit after tax to operating cash flows”? Give one example of such an adjustment.",
+    "modelAnswer": "Meridian uses the indirect method: it starts from profit after tax and adjusts it for items that affected profit but not cash. Non-cash expenses are added back (depreciation, amortisation, impairment, increase in provisions), non-cash income is deducted, and changes in working capital are reflected (an increase in receivables or inventories reduces cash; an increase in payables increases it). Example: depreciation of 1,000 lowers profit but not cash, so it is added back.",
+    "keyPoints": ["Indirect method", "Non-cash items added back / deducted", "Working capital changes", "Example such as depreciation"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-05",
+    "lecture": "t1",
+    "case": "meridian-cfs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Meridian's cash flow from investing activities is negative. Explain briefly whether this is good or bad news.",
+    "modelAnswer": "A negative investing cash flow is normal and generally good news: the company invests to maintain or expand its capacity (PPE, intangibles such as R&D and licences, acquisitions), which shows that management sees opportunities. Here the investments (2,700) are fully covered by operating cash flow (4,400), so they are self-financed. A final judgement requires knowing what was bought (which activities, countries, acquisitions) and whether these investments will earn more than their cost of capital.",
+    "keyPoints": ["Normal for a growing/maintaining company", "Covered by operating cash flow", "Depends on type and quality of investments"]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-06",
+    "lecture": "t2",
+    "case": "pc-sa-synergies",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare the consolidated balance sheet of the PC group at the acquisition date. Explain your calculations, in particular the treatment of the brand and of the expected synergies.",
+    "modelAnswer": "Book value of SA's net assets = 180 + 110 = 290. Identifiable intangible: the brand is separable and measurable → recognised at fair value 120. Expected synergies are not an identifiable asset – they are part of goodwill.\nGoodwill = price 950 − (290 + 120) = 540.\nConsolidated balance sheet: Equipment 520 + 380 = 900 · Cash 950 − 950 = 0 · Brand 120 · Goodwill 540 → total 1,560.\nCapital 700 · Net income 60 (only PC's; SA's equity at acquisition is eliminated against the investment) · Liabilities 710 + 90 = 800 → total 1,560.",
+    "keyPoints": ["Brand recognised at 120", "Synergies not recognised separately (in goodwill)", "Goodwill 540", "Equity = PC's only", "Total 1,560"],
+    "results": [
+      { "label": "Goodwill", "value": 540 },
+      { "label": "Consolidated equipment", "value": 900 },
+      { "label": "Balance sheet total", "value": 1560 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-07",
+    "lecture": "t3",
+    "case": "toledo-building",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "At what amount should the building be recognised on 1 January 2025? Justify which items you include.",
+    "modelAnswer": "Cost of a self-constructed asset = all costs directly attributable to bringing it to working condition: raw materials 600,000 + salaries of construction workers 2,200,000 + depreciation of equipment used 150,000 + interest during construction 90,000 (borrowing costs of a qualifying asset are capitalised, IAS 23) = 3,040,000.\nExcluded: the land (3,000,000) is a separate asset that is not depreciated; the moving costs (40,000) arise after the asset is ready for use and are expensed.",
+    "keyPoints": ["Materials, salaries, equipment depreciation, interest included", "Land is a separate asset", "Moving costs expensed", "Cost 3,040,000"],
+    "results": [{ "label": "Cost of the building", "value": 3040000 }]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-08",
+    "lecture": "t3",
+    "case": "toledo-building",
+    "difficulty": 1,
+    "verb": "calculate",
+    "prompt": "What are the balance sheet and income statement impacts on 31 December 2025?",
+    "modelAnswer": "Under the cost model the fair value (3,000,000) is not used. Depreciation 2025 = 3,040,000 / 25 = 121,600 → expense in the income statement; the carrying amount falls to 3,040,000 − 121,600 = 2,918,400. (The fair value is close to the carrying amount, so there is no indication of impairment to pursue.)",
+    "keyPoints": ["Fair value ignored under the cost model", "Depreciation 121,600", "Carrying amount 2,918,400"],
+    "results": [
+      { "label": "Depreciation expense 2025", "value": 121600 },
+      { "label": "Carrying amount 31.12.2025", "value": 2918400 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-09",
+    "lecture": "t3",
+    "case": "toledo-building",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "On 1 January 2027 Toledo spends €250,000 on modifications that extend the building's useful life by 5 years. What are the accounting impacts in 2027, and what is the carrying amount on 31 December 2027?",
+    "modelAnswer": "Carrying amount end of 2026 = 3,040,000 − 2 × 121,600 = 2,796,800.\nThe modifications extend the useful life, so they are capitalised: 2,796,800 + 250,000 = 3,046,800 on 1 January 2027.\nRemaining useful life = 25 − 2 + 5 = 28 years (change in estimate, applied prospectively).\nDepreciation 2027 = 3,046,800 / 28 = 108,814.29 (expense).\nCarrying amount 31 December 2027 = 3,046,800 − 108,814.29 = 2,937,985.71.",
+    "keyPoints": ["Carrying amount end 2026: 2,796,800", "Modification capitalised", "Remaining life 28 years, prospective", "Depreciation 108,814", "Carrying amount 2,937,986"],
+    "results": [
+      { "label": "Depreciation 2027", "value": 108814.29 },
+      { "label": "Carrying amount 31.12.2027", "value": 2937985.71 }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-10",
+    "lecture": "t5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Describe briefly the problems you may encounter as a reader of financial statements when you try to compare non-GAAP KPIs, such as free cash flow, published by two different companies.",
+    "modelAnswer": "Non-GAAP KPIs are not defined by IFRS, so each company chooses its own definition: Which definition did each company use (e.g. FCF before or after interest, leases, acquisitions, dividends to NCI)? Are the numbers reconciled to IFRS figures (cash flow statement, income statement) so I can recompute them? Are definitions stable over time, or changed when a different definition looks better? Are they audited? Is management selective in what it adjusts (e.g. excluding “one-off” costs every year)? Only after harmonising the definitions can the KPIs be compared.",
+    "keyPoints": ["No standard definition", "Reconciliation with IFRS numbers", "Changes in definition over time", "Not audited / selective adjustments"]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p10-01",
+    "lecture": "t5",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Non-GAAP financial indicators (KPIs) are indicators …",
+    "options": [
+      { "id": "a", "text": "that are confidential but audited by the company's auditors" },
+      { "id": "b", "text": "that are not defined by any accounting standard" },
+      { "id": "c", "text": "whose disclosure is mandatory under IFRS" },
+      { "id": "d", "text": "whose disclosure is mandatory under stock-exchange rules for listed companies" }
+    ],
+    "correct": ["b"],
+    "explanation": "Non-GAAP (alternative performance) measures such as EBITDA or free cash flow are defined by the company itself, not by IFRS. They are published voluntarily, are usually not audited, and regulators only require that they are explained and reconciled."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p10-02",
+    "lecture": "t5",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Earnings per share (EPS) according to IFRS …",
+    "options": [
+      { "id": "a", "text": "is net income attributable to the ordinary shareholders of the parent divided by the weighted average number of ordinary shares outstanding" },
+      { "id": "b", "text": "is a non-GAAP KPI that many companies publish voluntarily" },
+      { "id": "c", "text": "is the dividend a shareholder receives per share" },
+      { "id": "d", "text": "is net income attributable to all ordinary shareholders (parent and subsidiaries) divided by the weighted average number of all ordinary shares outstanding" }
+    ],
+    "correct": ["a"],
+    "explanation": "IAS 33 defines EPS: profit attributable to the parent's ordinary shareholders (i.e. after NCI) divided by the weighted average number of the parent's ordinary shares outstanding. It is an IFRS measure, not non-GAAP, and has nothing to do with dividends."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p10-03",
+    "lecture": "t3",
+    "difficulty": 3,
+    "single": true,
+    "shuffle": false,
+    "prompt": "On 1 January 2025, Finchley Ltd leases an office building for 20 years. The present value of the lease payments, discounted at 5%, is €3,000,000 (rounded). Lease payments of €240,000 are due on 31 December each year, the first on 31 December 2025. The right-of-use asset is depreciated straight-line over the lease term. What is the impact on the financial statements for 2025 under IFRS 16?",
+    "options": [
+      { "id": "a", "text": "Rent expense and cash outflow of €240,000" },
+      { "id": "b", "text": "Right-of-use asset €3,000,000, lease liability €3,000,000, depreciation €150,000, rent expense and cash outflow €240,000" },
+      { "id": "c", "text": "Right-of-use asset €2,850,000, lease liability €2,910,000, interest expense €150,000, depreciation €150,000, cash outflow €240,000" },
+      { "id": "d", "text": "Right-of-use asset €2,850,000, lease liability €3,000,000, depreciation €150,000, rent expense and cash outflow €240,000" },
+      { "id": "e", "text": "Right-of-use asset €2,850,000, lease liability €2,760,000, depreciation €150,000, interest expense €0, cash outflow €240,000" }
+    ],
+    "correct": ["c"],
+    "explanation": "At commencement: right-of-use asset = lease liability = 3,000,000. 2025: depreciation 3,000,000 / 20 = 150,000 → ROU 2,850,000. Interest 5% × 3,000,000 = 150,000; the payment of 240,000 covers the interest and repays 90,000 → liability 2,910,000. There is no rent expense under IFRS 16."
+  },
+  {
+    "type": "mc",
+    "id": "mc-p10-04",
+    "lecture": "t3",
+    "case": "halden-leases",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Under IFRS 16, for which contracts must Halden recognise a right-of-use asset and a lease liability if it applies the optional exemptions?",
+    "options": [
+      { "id": "a", "text": "Only contract A, because only its term covers the whole economic life of the asset" },
+      { "id": "b", "text": "Contracts A and B" },
+      { "id": "c", "text": "Contracts A, B and C" },
+      { "id": "d", "text": "All four contracts" },
+      { "id": "e", "text": "None – IFRS 16 only requires disclosure in the notes" }
+    ],
+    "correct": ["b"],
+    "explanation": "IFRS 16 has no operating/finance distinction for lessees: every lease goes on the balance sheet, also contract B although it covers only half the van's life. Exemptions: contract C is a short-term lease (≤ 12 months) and contract D a lease of low-value assets (laptops) – their payments may be expensed straight-line."
+  },
+  {
+    "type": "short",
+    "id": "sa-p10-11",
+    "lecture": "t3",
+    "case": "halden-leases",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Calculate the lease liability that Halden recognises at commencement for contracts A and B.",
+    "modelAnswer": "Lease liability = present value of the lease payments at 10%.\nContract A: 100,000 × 4.3553 = 435,530.\nContract B: 20,000 × 2.4869 = 49,738.\nThe right-of-use assets are recognised at the same amounts (no initial direct costs or prepayments).",
+    "keyPoints": ["PV of lease payments", "Contract A ≈ 435,530", "Contract B ≈ 49,738", "ROU asset = liability at start"],
+    "results": [
+      { "label": "Lease liability contract A", "value": 435530 },
+      { "label": "Lease liability contract B", "value": 49738 }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-p10-05",
+    "lecture": "t3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which statement about the lessee's accounting under IFRS 16 is CORRECT?",
+    "options": [
+      { "id": "a", "text": "At commencement, the lessee generally expenses each lease payment in the period it is paid." },
+      { "id": "b", "text": "At commencement, the lessee recognises a right-of-use asset and a lease liability measured at the present value of the lease payments." },
+      { "id": "c", "text": "The leased asset is shown in the balance sheet at its fair value and revalued every year." },
+      { "id": "d", "text": "Only leases that transfer ownership at the end of the term are recognised in the balance sheet." },
+      { "id": "e", "text": "The lessee recognises a receivable equal to the net investment in the lease." }
+    ],
+    "correct": ["b"],
+    "explanation": "IFRS 16 uses a single lessee model: right-of-use asset and lease liability at the PV of the lease payments; afterwards depreciation and interest. Expensing payments (a) was the old IAS 17 operating-lease treatment; a receivable (e) is the lessor's side of a finance lease."
+  }
+]

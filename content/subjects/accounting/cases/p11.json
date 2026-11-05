@@ -1,0 +1,124 @@
+[
+  {
+    "id": "northway-bs",
+    "title": "Northway Stores plc – consolidated balance sheet, 28 February 2026 (£m)",
+    "text": [
+      "Northway Stores plc, a UK-based food retailer (fictitious), presents its consolidated balance sheet as follows. Liabilities are shown in brackets and deducted to arrive at “net assets”."
+    ],
+    "tables": [
+      {
+        "caption": "Group balance sheet (£m)",
+        "head": ["", "28 Feb 2026"],
+        "rows": [
+          ["Goodwill and other intangible assets", "5,200"],
+          ["Property, plant and equipment", "15,900"],
+          ["Right-of-use assets", "6,300"],
+          ["Investments in joint ventures and associates", "1,100"],
+          ["Other non-current assets", "2,400"],
+          ["Non-current assets", "30,900"],
+          ["Inventories", "2,300"],
+          ["Trade and other receivables", "1,100"],
+          ["Cash and cash equivalents", "2,900"],
+          ["Other current assets", "1,000"],
+          ["Current assets", "7,300"],
+          ["Trade and other payables", "(8,600)"],
+          ["Borrowings", "(900)"],
+          ["Lease liabilities", "(600)"],
+          ["Other current liabilities", "(1,900)"],
+          ["Current liabilities", "(12,000)"],
+          ["Net current liabilities", "(4,700)"],
+          ["Borrowings", "(5,600)"],
+          ["Lease liabilities", "(7,000)"],
+          ["Post-employment benefit obligations", "(500)"],
+          ["Other non-current liabilities", "(1,300)"],
+          ["Non-current liabilities", "(14,400)"],
+          ["Net assets", "11,800"],
+          ["Share capital", "450"],
+          ["Share premium", "5,200"],
+          ["Other reserves", "1,300"],
+          ["Retained earnings", "4,853"],
+          ["Equity attributable to owners of the parent", "11,803"],
+          ["Non-controlling interests", "(3)"],
+          ["Total equity", "11,800"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pc-sa-knowhow",
+    "title": "PC acquires 100% of SA on 31 December N",
+    "text": [
+      "On 31 December N, PC acquires 100% of the shares of SA for 850, paid in cash. The individual balance sheets before the acquisition are given below.",
+      "SA has developed a brand internally whose fair value is estimated at 180 on 31 December N. SA's staff have also built up specific industry know-how, estimated at 60. All other book values equal fair values."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N (before the acquisition)",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "500", "Capital", "650"],
+          ["Cash", "1,000", "Net income", "50"],
+          ["", "", "Liabilities", "800"],
+          ["Total", "1,500", "Total", "1,500"]
+        ]
+      },
+      {
+        "caption": "SA – 31 December N",
+        "head": ["Assets", "", "Equity & liabilities", ""],
+        "rows": [
+          ["Equipment", "420", "Capital", "220"],
+          ["", "", "Net income", "100"],
+          ["", "", "Liabilities", "100"],
+          ["Total", "420", "Total", "420"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ravel-equipment",
+    "title": "Ravel SA – equipment under the cost model",
+    "text": [
+      "On 1 January Y1, Ravel SA buys equipment for its own use for €360 million. It is depreciated straight-line over 30 years with no residual value. Ravel uses the cost model.",
+      "On 31 December Y5, the CFO notices that prices for this type of equipment have fallen sharply during the year. Available information: the equipment could be sold for €240 million (net of costs of disposal); it will generate a cash flow of €27 million on 31 December of each remaining year of its useful life; the discount rate is 10%.",
+      "Annuity factors at 10%: 30 years 9.42 · 25 years 9.08 · 24 years 8.98 · 20 years 8.51."
+    ],
+    "tables": []
+  },
+  {
+    "id": "roce-ab",
+    "title": "Two retailers – income statements and capital employed",
+    "text": ["The table shows figures for companies A and B (in € thousand). The tax rate is 25%."],
+    "tables": [
+      {
+        "head": ["", "Company A", "Company B"],
+        "rows": [
+          ["Sales revenue", "410,000", "120,000"],
+          ["− Cost of sales", "372,000", "88,000"],
+          ["= Gross profit", "38,000", "32,000"],
+          ["− Selling & administrative expenses", "29,500", "25,600"],
+          ["= Profit before financial result", "8,500", "6,400"],
+          ["− Financial expenses", "150", "100"],
+          ["= Profit before tax", "8,350", "6,300"],
+          ["− Income tax (25%)", "2,088", "1,575"],
+          ["= Net income", "6,262", "4,725"],
+          ["Capital employed", "80,000", "48,000"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equity-issue",
+    "title": "Equity section of a listed company (€m)",
+    "text": ["The equity section of a company for the last two years shows the following. The par value of the shares is €2."],
+    "tables": [
+      {
+        "head": ["", "2025", "2024"],
+        "rows": [
+          ["Share capital", "1,020", "900"],
+          ["Share premium", "4,100", "3,560"],
+          ["Retained earnings", "6,480", "6,150"]
+        ]
+      }
+    ]
+  }
+]

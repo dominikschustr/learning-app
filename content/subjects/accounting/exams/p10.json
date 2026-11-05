@@ -1,0 +1,95 @@
+[
+  {
+    "id": "exam-2017",
+    "title": "Final exam 2017 (Nachbau, aktueller Stoff)",
+    "subtitle": "Nach der Abschlussklausur vom 26. April 2017 (ursprünglich 150 Punkte, 2,5 Stunden, ohne Unterlagen): Bilanz und Kapitalflussrechnung eines Pharmakonzerns, Konsolidierung, selbst erstelltes Gebäude, Non-GAAP-KPIs und Multiple Choice – mit eigenen Fällen und Zahlen. Weggelassen sind Revenue Recognition, Investment Property, Finanzinstrumente nach IAS 39, Rückstellungen, latente Steuern und Pensionen. Leasing wird nach IFRS 16 gelöst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Final exam CM01 International Financial Reporting vom 26.04.2017",
+      "faithful": false
+    },
+    "minutes": 70,
+    "parts": [
+      {
+        "title": "Exercise 1 – Balance sheet",
+        "instructions": "Use the balance sheet of Meridian Pharma. [9 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p10-01", "points": 2 },
+              { "q": "sa-p10-02", "points": 3 },
+              { "q": "sa-p10-03", "points": 4 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 2 – Cash flow statement",
+        "instructions": "Use the cash flow extract of Meridian Pharma. [6 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p10-04", "points": 3 },
+              { "q": "sa-p10-05", "points": 3 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 3 – Consolidation",
+        "instructions": "[15 points]",
+        "sections": [
+          { "title": "", "items": [{ "q": "sa-p10-06", "points": 15 }] }
+        ]
+      },
+      {
+        "title": "Exercise 4 – Non-current assets",
+        "instructions": "[14 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p10-07", "points": 5 },
+              { "q": "sa-p10-08", "points": 3 },
+              { "q": "sa-p10-09", "points": 6 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Exercise 5 – KPIs",
+        "instructions": "[6 points]",
+        "sections": [
+          { "title": "", "items": [{ "q": "sa-p10-10", "points": 6 }] }
+        ]
+      },
+      {
+        "title": "Exercise 6 – Multiple choice and questions",
+        "instructions": "Only one correct answer per multiple-choice question. [19 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "mc-p10-01", "points": 2 },
+              { "q": "mc-p10-02", "points": 2 },
+              { "q": "mc-p10-03", "points": 5 }
+            ]
+          },
+          {
+            "title": "Lease contracts of Halden Ltd",
+            "items": [
+              { "q": "mc-p10-04", "points": 4 },
+              { "q": "sa-p10-11", "points": 4 }
+            ]
+          },
+          {
+            "title": "",
+            "items": [{ "q": "mc-p10-05", "points": 2 }]
+          }
+        ]
+      }
+    ]
+  }
+]
