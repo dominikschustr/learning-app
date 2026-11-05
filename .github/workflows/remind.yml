@@ -10,7 +10,8 @@ on:
   schedule:
     # alle 10 Minuten von 5 bis 21:59 Uhr UTC = 6/7 bis 23/24 Uhr in Deutschland;
     # Uhrzeit und Ruhezeiten je Gerät prüft das Skript
-    - cron: "3-59/10 5-21 * * *"
+    # (Minuten als Liste statt "3-59/10" – Bereich mit Schrittweite hat GitHub nicht eingeplant)
+    - cron: "3,13,23,33,43,53 5-21 * * *"
   workflow_dispatch:
 
 permissions:
