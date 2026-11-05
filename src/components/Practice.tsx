@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Bookmark, PartyPopper, RotateCcw, SkipForward } from "lucide-react";
+import { ArrowRight, Bookmark, PartyPopper, RotateCcw, Sigma, SkipForward } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
@@ -8,11 +8,13 @@ import { answerXp } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
 import type { Question, SubjectContent } from "@/lib/schema";
+import type { RenderedFormula } from "@/lib/tex";
 import { gradeMC, gradeTF, shortPassed, toggleOption, type MCResult } from "@/lib/scoring";
 import { markKey, markedIds, useApp, useHydrated, type ShortGrade } from "@/lib/store";
 import { announce, celebrate } from "@/lib/toast";
 import { refreshNow } from "@/lib/useNow";
-import { pct } from "@/lib/utils";
+import { cn, pct } from "@/lib/utils";
+import { FormulaDrawer, sideBySide } from "./FormulaDrawer";
 import { MarkButton } from "./MarkButton";
 import { Explanation, MCView, ShortInput, ShortResult, TFView, useCaseOf } from "./Questions";
 import { SessionBar, XpFloat } from "./SessionBar";
@@ -23,7 +25,7 @@ type Outcome = { q: Question; correct: boolean };
 
 const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup"];
 
-export function Practice({ content }: { content: SubjectContent }) {
+export function Practice({ content, formulas = [] }: { content: SubjectContent; formulas?: RenderedFormula[] }) {
   const hydrated = useHydrated();
   const params = useSearchParams();
   const raw = params.get("mode") as PracticeMode;
@@ -36,6 +38,7 @@ export function Practice({ content }: { content: SubjectContent }) {
     <Session
       key={`${mode}-${lecture}-${run}`}
       content={content}
+      formulas={formulas}
       mode={mode}
       lecture={lecture}
       onRestart={() => setRun((r) => r + 1)}
@@ -45,12 +48,14 @@ export function Practice({ content }: { content: SubjectContent }) {
 
 function Session({
   content,
+  formulas,
   mode,
   lecture,
   onRestart,
   only,
 }: {
   content: SubjectContent;
+  formulas: RenderedFormula[];
   mode: PracticeMode;
   lecture?: string;
   onRestart: () => void;
@@ -94,6 +99,8 @@ function Session({
   const [revealed, setRevealed] = useState(false);
   const [wasCorrect, setWasCorrect] = useState(false);
   const [retryMode, setRetryMode] = useState<Question[] | null>(null);
+  const [formulasOpen, setFormulasOpen] = useState(false);
+  const closeFormulas = useCallback(() => setFormulasOpen(false), []);
 
   const entry = queue[index];
   const done = index >= queue.length;
@@ -178,6 +185,8 @@ function Session({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!entry) return;
+      // Tasten in der Formelsammlung (oder solange sie die Aufgabe verdeckt) gehören nicht der Frage
+      if (formulasOpen && (!sideBySide() || (e.target as HTMLElement)?.closest?.("[data-formula-drawer]"))) return;
       const tag = (e.target as HTMLElement)?.tagName;
       const inText = tag === "TEXTAREA";
       if (e.key === "Enter") {
@@ -213,10 +222,10 @@ function Session({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [entry, revealed, canContinue, next, check, pickTf, subject.id, skip]);
+  }, [entry, revealed, canContinue, next, check, pickTf, subject.id, skip, formulasOpen]);
 
   if (retryMode) {
-    return <Session content={content} mode={mode} onRestart={onRestart} only={retryMode} />;
+    return <Session content={content} formulas={formulas} mode={mode} onRestart={onRestart} only={retryMode} />;
   }
 
   if (!queue.length) {
@@ -300,7 +309,13 @@ function Session({
   const lectureTitle = subject.lectures.find((l) => l.id === q.lecture)?.title;
 
   return (
-    <div className="mx-auto max-w-2xl">
+    <div
+      className={cn(
+        "mx-auto max-w-2xl transition-[margin] duration-300",
+        // Formelsammlung offen: Aufgabe rückt links neben das Panel (36rem breit)
+        formulasOpen && "lg:mr-[max(0px,calc(37.5rem_-_(100vw_-_64rem)/2))]",
+      )}
+    >
       <SessionBar exitHref={home} progress={index / queue.length} combo={combo} xp={sessionXp} color={subject.color} />
 
       <div className="mb-4 flex items-center justify-between gap-3 text-xs text-muted">
@@ -311,6 +326,16 @@ function Session({
           <span className="tabular-nums">
             {index + 1} / {queue.length}
           </span>
+          {formulas.length > 0 && (
+            <button
+              type="button"
+              onClick={() => setFormulasOpen(true)}
+              title="Formelsammlung einblenden"
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1 text-sm font-semibold text-muted transition hover:bg-surface-2 hover:text-ink"
+            >
+              <Sigma className="size-4" /> Formeln
+            </button>
+          )}
           <MarkButton kind="q" subjectId={subject.id} id={q.id} shortcut="M" />
         </span>
       </div>
@@ -388,6 +413,16 @@ function Session({
           </Button>
         )}
       </div>
+
+      {formulas.length > 0 && (
+        <FormulaDrawer
+          open={formulasOpen}
+          onClose={closeFormulas}
+          subject={subject}
+          formulas={formulas}
+          lecture={q.lecture}
+        />
+      )}
     </div>
   );
 }
