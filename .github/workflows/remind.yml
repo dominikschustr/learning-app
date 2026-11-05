@@ -13,6 +13,13 @@ on:
     # (Minuten als Liste statt "3-59/10" – Bereich mit Schrittweite hat GitHub nicht eingeplant)
     - cron: "3,13,23,33,43,53 5-21 * * *"
   workflow_dispatch:
+  # nach Änderungen am Versand gleich einmal laufen (zeigt sofort, ob Workflow und Secrets funktionieren)
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/remind.yml
+      - scripts/reminders.mjs
+      - scripts/firebase-admin.mjs
 
 permissions:
   contents: read
