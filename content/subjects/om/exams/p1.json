@@ -1,0 +1,78 @@
+[
+  {
+    "id": "exam-part2",
+    "title": "End of term exam – Part 2: Buurtzorg",
+    "subtitle": "Wie Teil 2 der Abschlussklausur Organisation & Management: drei Fallfragen zu Buurtzorg (Mintzberg 23, Schein 23, Übertragbarkeit 14 von 60 Punkten). Der Falltext lag nicht vor und ist aus öffentlichen Angaben in eigenen Worten zusammengefasst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Organisation & Management, End of Term examination – Part 2 (Buurtzorg)",
+      "faithful": true
+    },
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Part 2 – Buurtzorg case questions",
+        "instructions": "Answer the three questions using the course models and evidence from the case. [60 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p1-01",
+                "points": 23
+              },
+              {
+                "q": "sa-p1-02",
+                "points": 23
+              },
+              {
+                "q": "sa-p1-03",
+                "points": 14
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "exam-2122",
+    "title": "Final exam 2021/22 – Buurtzorg",
+    "subtitle": "Nach der O&M-Abschlussklausur 2021/22: vier Fragen zu Buurtzorg. Wahlweise Frameworks aus anderen Jahrgängen (Groysberg, Ouchi) sind durch die des Kurses ersetzt (Schein, March & Simon); die Punkte waren nicht angegeben und sind gleich verteilt.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "OM final exam 2021-2022 (Buurtzorg)",
+      "faithful": false
+    },
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Case questions – Buurtzorg",
+        "instructions": "Answer all four questions using the course models and evidence from the case. [60 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p1-01",
+                "points": 15
+              },
+              {
+                "q": "sa-p1-02",
+                "points": 15
+              },
+              {
+                "q": "sa-p1-04",
+                "points": 15
+              },
+              {
+                "q": "sa-p1-03",
+                "points": 15
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,167 @@
+{
+  "lecture": "o3",
+  "title": "O3 – Structure: organisation charts and Mintzberg",
+  "source": "Zusammenfassung von Session 3 „Structure“ und der Übersicht OM_Session3_Summary",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The organisational dilemma: work must be divided (differentiation) and then coordinated (integration). Structure is the way to group employees into units while ensuring sufficient coordination to achieve efficiency."
+        },
+        {
+          "kind": "item",
+          "text": "The organisation chart shows only the grouping (functional, divisional, matrix). Mintzberg's “bottom perspective” shows how work is actually coordinated and who holds power."
+        },
+        {
+          "kind": "item",
+          "text": "Mintzberg: 5 coordination mechanisms, 5 parts of the organisation and 5 configurations. An organisation uses all mechanisms, but one is usually dominant."
+        },
+        {
+          "kind": "item",
+          "text": "To identify a configuration in a case, ask: how is work mostly coordinated? Who holds the power? Does the situation (age, size, environment, technology) fit?"
+        }
+      ]
+    },
+    {
+      "heading": "Three classic organisation charts",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Functional",
+          "text": "Activities grouped by work function, each with its own hierarchy; top management coordinates. + Economies of scale, transparency, tight control. − Conflicts between functions, slow adaptation, overloaded top when the firm grows."
+        },
+        {
+          "kind": "item",
+          "term": "Divisional",
+          "text": "Divisions by product, customer type or region, each with its own functions and run as a profit centre; HQ or results coordinate. + Suits very large firms, accountability, responsiveness to customers. − Duplication, high coordination cost, competition between divisions."
+        },
+        {
+          "kind": "item",
+          "term": "Matrix",
+          "text": "Two logics overlaid (functions × projects, regions or customers). + Flexibility to take on projects and move resources, advantages of both. − Conflicts from a dual line of authority, hard to implement (example: Unilever segments × functions)."
+        }
+      ]
+    },
+    {
+      "heading": "Mintzberg's 5 coordination mechanisms",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "1. Direct supervision",
+          "text": "One person is responsible for the work of others and gives orders (hierarchy)."
+        },
+        {
+          "kind": "item",
+          "term": "2. Standardisation of work processes",
+          "text": "The content of the work is specified in rules or routines; coordination happens before the activity."
+        },
+        {
+          "kind": "item",
+          "term": "3. Standardisation of outputs",
+          "text": "Expected results are made clear; the way to reach them is not prescribed."
+        },
+        {
+          "kind": "item",
+          "term": "4. Standardisation of skills and knowledge",
+          "text": "Standardised training and education: people know what to expect of each other and coordinate almost automatically."
+        },
+        {
+          "kind": "item",
+          "term": "5. Mutual adjustment",
+          "text": "Informal communication between people doing interdependent work."
+        },
+        {
+          "kind": "item",
+          "text": "Class exercise: bar with a fixed process → work processes · traders must gain +15 % whatever the method → outputs · basketball players → mutual adjustment · Roman wars → direct supervision."
+        }
+      ]
+    },
+    {
+      "heading": "Mintzberg's 5 parts of the organisation",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Strategic apex",
+          "text": "Top management; ensures the organisation is efficient and serves those who control it (CEO, board)."
+        },
+        {
+          "kind": "item",
+          "term": "Middle line",
+          "text": "Managers connecting the apex with the operating core (division director, director of production, foreman)."
+        },
+        {
+          "kind": "item",
+          "term": "Operating core",
+          "text": "Performs the basic work of producing products and services (machine operators, sales force, nurses)."
+        },
+        {
+          "kind": "item",
+          "term": "Technostructure",
+          "text": "Analysts who design, plan, change or train the operating core's work (planning, methods, training, quality)."
+        },
+        {
+          "kind": "item",
+          "term": "Support staff",
+          "text": "Support outside the operating flow (cleaning, legal, cafeteria, PR)."
+        }
+      ]
+    },
+    {
+      "heading": "Mintzberg's 5 configurations",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Simple structure",
+          "text": "Direct supervision · strategic apex · pull to centralise. Young/small firm, simple environment; or any firm in crisis. + speed, flexibility, low cost. − overloaded, charismatic leader; inadequate when size grows. Start-ups, architect office, special army operation."
+        },
+        {
+          "kind": "item",
+          "term": "Machine bureaucracy",
+          "text": "Standardisation of work processes · technostructure · pull to standardise. Big, mature, simple and stable environment, routine mass technology. + efficiency, economies of scale, rules replace discretion. − vertical communication only, obsession with rules, slow adaptation, well-being of the operating core. Heavy industry, public administration."
+        },
+        {
+          "kind": "item",
+          "term": "Divisional form",
+          "text": "Standardisation of outputs · middle line · pull to balkanise. Big, mature firm in diversified markets. + accountability, spreads risks, units can be removed. − duplication, divisional conflicts, excessive focus on outcomes. > 60 % of the Fortune 500; General Motors (Sloan)."
+        },
+        {
+          "kind": "item",
+          "term": "Professional bureaucracy",
+          "text": "Standardisation of skills · operating core · pull to professionalise. Complex but stable environment, external qualification standards. + expertise, autonomy, self-control by professionals. − coordination between professionals, conflicts with support staff, rejection of innovation. Hospitals, universities, big consulting firms."
+        },
+        {
+          "kind": "item",
+          "term": "Adhocracy",
+          "text": "Mutual adjustment · support staff (experts) · pull to collaborate. Complex, dynamic environment where innovation is critical. + the only truly innovative configuration, flexible. − costly coordination, tension, ambiguity → pull back toward bureaucracy. Research labs, small consulting firms, task forces, early NASA."
+        }
+      ]
+    },
+    {
+      "heading": "Exam traps",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Structure ≠ organisation chart: structure = grouping plus coordination."
+        },
+        {
+          "kind": "item",
+          "text": "Divisional form: the key part is the middle line, the mechanism is standardisation of outputs (not processes)."
+        },
+        {
+          "kind": "item",
+          "text": "Technostructure shapes the core's work (planning, methods, training); support staff serves outside the work flow (cleaning, legal)."
+        },
+        {
+          "kind": "item",
+          "text": "Adhocracy is not “no coordination”: it coordinates by mutual adjustment – and that is costly."
+        },
+        {
+          "kind": "item",
+          "text": "Machine vs professional bureaucracy: processes vs skills, technostructure vs operating core, centralised vs decentralised, simple vs complex environment – both need stability."
+        }
+      ]
+    }
+  ]
+}

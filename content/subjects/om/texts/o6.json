@@ -1,0 +1,145 @@
+{
+  "lecture": "o6",
+  "title": "O6 – Power: Milgram, legitimacy, dependency, Crozier, French & Raven",
+  "source": "Zusammenfassung von Session 6 „Power“ (Olivier Wurtz)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Milgram: ordinary people obey a legitimate authority to the point of harming others – the “agentic state”."
+        },
+        {
+          "kind": "item",
+          "text": "Weber: people obey because they find authority legitimate – traditional, charismatic or rational-legal."
+        },
+        {
+          "kind": "item",
+          "text": "Power is not an attribute but a relationship: A's power over B grows with B's dependence on resources A controls (Emerson, Blau, Pfeffer & Salancik)."
+        },
+        {
+          "kind": "item",
+          "text": "Crozier: no one is powerless; power is proportional to the capacity to create or control uncertainty for others."
+        },
+        {
+          "kind": "item",
+          "text": "French & Raven: five bases of power – formal (reward, coercive, legitimate) and personal (referent, expert)."
+        }
+      ]
+    },
+    {
+      "heading": "Obedience: Milgram (Yale, 1961–1974)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Subjects were asked by an experimenter in a lab coat to give increasingly strong electric shocks to a “learner” (an actor)."
+        },
+        {
+          "kind": "item",
+          "term": "Results",
+          "text": "65 % obeyed to the end · 48 % in a scruffy building · 23 % when orders came by phone · 40 % when the victim sat next to the subject."
+        },
+        {
+          "kind": "item",
+          "term": "Conclusions",
+          "text": "Agentic state: the individual merely executes another's will – the disappearance of a sense of responsibility is the most far-reaching consequence of submission to authority. Rational-legal legitimacy and expertise (Yale, the lab coat) drive obedience."
+        }
+      ]
+    },
+    {
+      "heading": "Legitimacy (Weber)",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Charismatic",
+          "text": "Devotion to the exceptional abilities of a person – prophets, heroes, Napoleon."
+        },
+        {
+          "kind": "item",
+          "term": "Traditional",
+          "text": "Belief in the sanctity of immemorial customs, sometimes hereditary – dynasties."
+        },
+        {
+          "kind": "item",
+          "term": "Rational-legal",
+          "text": "Belief in the legality of impersonal rules – a police officer. Milgram's experimenter draws on rational-legal and expert authority."
+        }
+      ]
+    },
+    {
+      "heading": "Resource dependency (Emerson 1962, Blau 1964, Pfeffer & Salancik 1978)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Power is a relationship, constantly negotiated – not set in stone."
+        },
+        {
+          "kind": "item",
+          "term": "Dependency",
+          "text": "Controlling resources another needs gives power over them."
+        },
+        {
+          "kind": "item",
+          "term": "Reciprocity",
+          "text": "Power is never one-sided: the one who obeys still has power through how he complies."
+        },
+        {
+          "kind": "item",
+          "term": "Imbalance",
+          "text": "Reciprocity is never equal or static; grey zones are potential sources of power."
+        },
+        {
+          "kind": "item",
+          "text": "A's power over B rises the more B needs the resource, the less B can get it elsewhere and the less B can force A. What counts is how actors perceive their needs."
+        }
+      ]
+    },
+    {
+      "heading": "Crozier: power and uncertainty zones",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Weber's view: authority flows in one direction along the hierarchy. Crozier & Friedberg (1977): power is a balance of forces; no one is completely powerless – it works in both directions through negotiation."
+        },
+        {
+          "kind": "item",
+          "text": "An individual's power is proportional to his capacity to create uncertainty concerning the execution of his tasks (Crozier, 1964): actors try to maximise their own zones of uncertainty and to control those of others."
+        },
+        {
+          "kind": "item",
+          "term": "4 sources of power",
+          "text": "Control of expertise (hard to replace) · control of relationships with the environment (networks, social capital) · control of communication and information flows · use of organisational rules (subordinates use rules for protection against arbitrariness; supervisors create rules or bargain over them)."
+        },
+        {
+          "kind": "item",
+          "text": "Study on the Pentagon and the maintenance workers of a French state monopoly: real power can differ widely from the organisation chart."
+        }
+      ]
+    },
+    {
+      "heading": "Bases of power (French & Raven, 1959)",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Formal power (position)",
+          "text": "Reward (control of valued rewards) · coercive (fear of consequences) · legitimate (formal authority from position and mutual agreement)."
+        },
+        {
+          "kind": "item",
+          "term": "Personal power (individual)",
+          "text": "Referent / charismatic (others identify with or want to be like the agent) · expert (trusted, relevant expertise perceived by others)."
+        }
+      ]
+    },
+    {
+      "heading": "Case: the 2008 banking crisis",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Mission of the consulting team: diagnose the causes in banking with the course models – structure (Mintzberg), culture (Schein), incentives of the risk controllers (contribution–retribution) – and assess the proposed reform."
+        }
+      ]
+    }
+  ]
+}

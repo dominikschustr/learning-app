@@ -1,0 +1,86 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p3-01",
+    "lecture": "o3",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "whatsapp-facebook",
+    "prompt": "Using Mintzberg's model, characterise WhatsApp's organisation before its integration into Facebook and compare it with the way Facebook tried to coordinate WhatsApp after 2016.",
+    "modelAnswer": "WhatsApp (before integration): very small, young firm with a highly skilled operating core of engineers; tiny strategic apex (Koum and Acton) with strong direct influence on product choices; practically no middle line, technostructure or support staff (no marketing, no growth team, no sign, few meetings). Coordination: standardisation of skills (experienced engineers – “older and crankier”) and mutual adjustment in very small teams, plus direct supervision by the founders on the vision (focus, no ads). Configuration: adhocracy/simple structure hybrid – a focused expert team around founders, close to a professional organisation; fits a complex, dynamic technology environment.\nFacebook: a huge, diversified company (20,000+ staff) organised in quasi-autonomous units (Facebook, Instagram, WhatsApp, Messenger) – a divisional form. At first WhatsApp was treated like a division with high autonomy, controlled lightly through results and shared support (recruiting, infrastructure). From 2016 the apex (Zuckerberg, Sandberg) increased control: standardisation of outputs (revenue targets – “that doesn't scale”), pressure to standardise processes and product features across apps, physical integration on the campus, then app integration (2020) – moving toward a more centralised, machine-like integration.\nAnalysis: the shift from autonomy to output control and integration clashed with WhatsApp's configuration and led to the founders' exit. The typical risk of the divisional form – excessive performance pressure on divisions – materialised.",
+    "keyPoints": [
+      "WhatsApp: parts and coordination (skills, mutual adjustment, founders)",
+      "WhatsApp configuration with justification",
+      "Facebook: divisional form, autonomy then output control/integration",
+      "Clash and consequences"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-02",
+    "lecture": "o4",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "whatsapp-facebook",
+    "prompt": "Using Schein's framework, compare the organisational cultures of WhatsApp and Facebook and explain why the integration led to a cultural clash.",
+    "modelAnswer": "WhatsApp – artifacts: no sign, unmarked door, cheap tables, quiet zones and “Focus is the new F-word” magnets, large desks, closed bathrooms, private meeting rooms, no press, no ads. Values: focus, simplicity, privacy, user respect, frugality, organic growth. Assumptions: the organisation is a small, serious team of craftsmen serving users (“when advertising is involved, you are the product”); a good engineer is focused and experienced; power lies with the founders' principles and the product.\nFacebook – artifacts: Disneyland-like campus with restaurants and ice-cream shops, hackathon-like energy, standard desks, posting enthusiasm on Facebook. Values: growth, moving fast, trying many things, egalitarianism, collaboration, loyalty; enacted values (per ex-employees) – conformity, no dissent, permanent enthusiasm. Assumptions: the company connects the world and ad-funded free products are good; a good employee is a visible, enthusiastic team player; power lies with Zuckerberg and Sandberg and with peers (reviews, stack ranking).\nClash: the cultures disagree at the deepest level – privacy and no-ads vs data-driven advertising – so integration felt like a betrayal to the founders; artifacts (noise, desks, bathrooms) became symbols of the conflict and were mocked; Facebook's egalitarian assumptions saw WhatsApp's privileges as arrogance. Small disputes took on great significance because they expressed incompatible values and assumptions. The promise of autonomy (espoused) gave way to monetisation pressure (enacted) → founders left.",
+    "keyPoints": [
+      "WhatsApp: three levels with facts",
+      "Facebook: three levels with facts",
+      "Incompatibility at assumption level (privacy vs ads)",
+      "Artifacts as symbols of the clash",
+      "Espoused autonomy vs enacted pressure"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-03",
+    "lecture": "o5",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "whatsapp-facebook",
+    "prompt": "Analyse Facebook's performance management and bonus scheme with March & Simon's contribution–retribution model and Etzioni's incentive mechanisms. What behaviours does the system encourage?",
+    "modelAnswer": "March & Simon: retributions – high pay and stock, prestige, perks, belonging to a famous company; contributions – availability beyond work hours, constant display of enthusiasm, conformity, building alliances for peer reviews, fear of ranking. For many, the perceived balance deteriorated after 2018 (scandals, pressure): employees reduce contributions in hidden ways (pretend), or seek exit discreetly (calls to former colleagues) to avoid the “non-regrettable” label.\nEtzioni: the mix combines coercion (stick: stack ranking with ~15 % in low categories, risk of dismissal, blocked careers, punishment of leavers), remuneration (carrot: bonuses tied to company goals) and identification (heart: mission to connect the world, cult-like belonging). The 2019 bonus change tries to steer behaviour toward social goals – but without clear metrics, it may be perceived as arbitrary and mainly symbolic.\nBehaviours encouraged: conformity and avoidance of dissent, political alliance-building, impression management (positive posts), short-term individual competition; discouraged: voice and whistle-blowing – precisely what is needed to detect misinformation or privacy problems. Coherence problem: rewarding “social progress” while punishing critical voices sends contradictory signals.",
+    "keyPoints": [
+      "Retributions and contributions with case facts",
+      "Perceived imbalance and reactions",
+      "Etzioni: coercion, remuneration, identification",
+      "Behaviours encouraged/discouraged",
+      "Assessment of the 2019 bonus change"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-04",
+    "lecture": "o5",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "whatsapp-facebook",
+    "prompt": "Using Hirschman's model, analyse the reactions of WhatsApp's founders and of Facebook employees to their dissatisfaction.",
+    "modelAnswer": "Hirschman: when an organisation no longer meets expectations, people choose between staying and leaving, keeping silent and complaining.\nBrian Acton: first voice inside (alternative revenue proposals, resistance to ads), then exit when ads advanced (leaving large unvested stock) – later exit & voice with the public “#deletefacebook” tweet, harming Facebook's reputation.\nJan Koum: loyalty for eight more months (stayed despite disagreement, tried to keep Acton) – partly out of attachment and to preserve his relationship with Zuckerberg – then a quiet exit without confronting Zuckerberg.\nInstagram founders: similar path – voice (they fought and won battles), then exit.\nFacebook employees: voice is risky in a culture that punishes dissent (peer reviews, stack ranking), so many choose apparent loyalty (posting enthusiasm while unhappy – loyalty out of resignation) or prepare a discreet exit (calls to former colleagues, careful timing to avoid the “non-regrettable” label). Exit is possible because the Silicon Valley labour market offers alternatives, but Facebook tries to raise its cost.\nLesson: suppressing voice does not remove dissatisfaction; it turns it into silent loyalty or exit and deprives the firm of warnings.",
+    "keyPoints": [
+      "Model with two axes",
+      "Acton: voice → exit → exit & voice",
+      "Koum: loyalty then quiet exit",
+      "Employees: hidden loyalty, discreet exit, voice suppressed",
+      "Managerial lesson"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-05",
+    "lecture": "o6",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "whatsapp-facebook",
+    "prompt": "Analyse the power relationship between WhatsApp's founders and Facebook's top management. Use Crozier and French & Raven.",
+    "modelAnswer": "Before the acquisition the founders controlled the key zones of uncertainty: product know-how and a billion users' trust (expertise, relationship with the environment), and the acquirer's promise of autonomy. Facebook depended on them to keep WhatsApp growing – they negotiated autonomy, no ads, their own space and privileges (desks, bathrooms, closed rooms). Koum even had a board seat.\nFrench & Raven: Zuckerberg and Sandberg hold legitimate power (owners, CEO/COO), reward power (stock vesting, resources) and coercive power (budgets, integration decisions); the founders held expert and referent power (respected product vision, the team's “moral compass”).\nOver time the balance shifted: once WhatsApp was integrated into Facebook's infrastructure, recruiting and campus, its dependence on Facebook grew and its zone of uncertainty shrank (resource dependency); Facebook controlled the rules (vesting conditions) and could decide monetisation. The founders' main remaining power was the threat of exit and public voice – which they used (Acton gave up unvested stock and spoke out). Power is a relationship: no one was powerless, but formal and resource power finally prevailed over expert and referent power.",
+    "keyPoints": [
+      "Crozier: uncertainty zones held by founders",
+      "French & Raven bases on both sides",
+      "Shift of dependency through integration",
+      "Remaining power: exit and voice",
+      "Conclusion on the balance"
+    ]
+  }
+]

@@ -1,0 +1,417 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-o6-01",
+    "lecture": "o6",
+    "difficulty": 1,
+    "prompt": "In Milgram's basic experiment, what share of subjects obeyed to the end?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 65 %"
+      },
+      {
+        "id": "b",
+        "text": "About 23 %"
+      },
+      {
+        "id": "c",
+        "text": "About 40 %"
+      },
+      {
+        "id": "d",
+        "text": "About 10 %"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "65 %. 48 % in a scruffy building, 23 % with orders by phone, 40 % with the victim beside the subject.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-02",
+    "lecture": "o6",
+    "difficulty": 2,
+    "prompt": "Which variations reduced obedience in Milgram's experiments?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moving the experiment to a scruffy, poor building"
+      },
+      {
+        "id": "b",
+        "text": "Giving orders by phone instead of in person"
+      },
+      {
+        "id": "c",
+        "text": "Seating the victim next to the subject"
+      },
+      {
+        "id": "d",
+        "text": "Having the experimenter wear a lab coat"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The lab coat and the Yale setting increased legitimacy and thus obedience."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-03",
+    "lecture": "o6",
+    "difficulty": 1,
+    "prompt": "What does Milgram call the state in which an individual only executes another's will?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agentic state"
+      },
+      {
+        "id": "b",
+        "text": "Goal displacement"
+      },
+      {
+        "id": "c",
+        "text": "Loyalty"
+      },
+      {
+        "id": "d",
+        "text": "Soldiering"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "In the agentic state the sense of responsibility disappears.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-04",
+    "lecture": "o6",
+    "difficulty": 2,
+    "prompt": "According to the resource dependency view, A's power over B is higher when …",
+    "options": [
+      {
+        "id": "a",
+        "text": "B strongly needs the resource A controls"
+      },
+      {
+        "id": "b",
+        "text": "B cannot obtain the resource elsewhere"
+      },
+      {
+        "id": "c",
+        "text": "B cannot force A to give the resource"
+      },
+      {
+        "id": "d",
+        "text": "B has many alternative sources"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Alternative sources lower A's power."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-05",
+    "lecture": "o6",
+    "difficulty": 2,
+    "prompt": "Which are Crozier & Friedberg's four sources of power?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Control of expertise"
+      },
+      {
+        "id": "b",
+        "text": "Control of relationships with the environment"
+      },
+      {
+        "id": "c",
+        "text": "Control of communication and information flows"
+      },
+      {
+        "id": "d",
+        "text": "Use of organisational rules"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "All four relate to the control of uncertainty zones."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-06",
+    "lecture": "o6",
+    "difficulty": 1,
+    "prompt": "“An individual's power is proportional to his capacity to create uncertainty concerning the execution of his tasks.” Who said this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Michel Crozier (1964)"
+      },
+      {
+        "id": "b",
+        "text": "Max Weber (1922)"
+      },
+      {
+        "id": "c",
+        "text": "Stanley Milgram (1974)"
+      },
+      {
+        "id": "d",
+        "text": "French & Raven (1959)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Crozier's strategic analysis of power.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-07",
+    "lecture": "o6",
+    "difficulty": 2,
+    "prompt": "Which of French & Raven's bases of power are personal (not derived from position)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Referent power"
+      },
+      {
+        "id": "b",
+        "text": "Expert power"
+      },
+      {
+        "id": "c",
+        "text": "Reward power"
+      },
+      {
+        "id": "d",
+        "text": "Legitimate power"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "Reward, coercive and legitimate power are formal power, based on position."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-08",
+    "lecture": "o6",
+    "difficulty": 2,
+    "prompt": "A maintenance technician is the only one who knows how to repair the plant's machines, and managers depend on him. Which source of power (Crozier) does he use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Control of expertise"
+      },
+      {
+        "id": "b",
+        "text": "Control of relationships with the environment"
+      },
+      {
+        "id": "c",
+        "text": "Use of organisational rules"
+      },
+      {
+        "id": "d",
+        "text": "Legitimate power"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "He controls a zone of uncertainty through hard-to-replace expertise (Crozier's tobacco plant study).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-09",
+    "lecture": "o6",
+    "difficulty": 2,
+    "prompt": "Which three concepts describe power as a relationship in the resource dependency view?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dependency"
+      },
+      {
+        "id": "b",
+        "text": "Reciprocity"
+      },
+      {
+        "id": "c",
+        "text": "Imbalance"
+      },
+      {
+        "id": "d",
+        "text": "Charisma"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Charisma is a type of legitimacy (Weber) or referent power (French & Raven)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o6-10",
+    "lecture": "o6",
+    "difficulty": 1,
+    "prompt": "A manager's power to grant bonuses and promotions is …",
+    "options": [
+      {
+        "id": "a",
+        "text": "reward power"
+      },
+      {
+        "id": "b",
+        "text": "referent power"
+      },
+      {
+        "id": "c",
+        "text": "expert power"
+      },
+      {
+        "id": "d",
+        "text": "coercive power"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Reward power is formal, based on position.",
+    "single": true
+  },
+  {
+    "type": "tf",
+    "id": "tf-o6-01",
+    "lecture": "o6",
+    "difficulty": 1,
+    "statement": "For Crozier, a subordinate can be completely powerless in an organisation.",
+    "answer": false,
+    "explanation": "Power is a balance of forces; no one is completely powerless."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o6-02",
+    "lecture": "o6",
+    "difficulty": 1,
+    "statement": "Resource dependency theory sees power as a stable attribute of a person.",
+    "answer": false,
+    "explanation": "Power is a relationship, constantly negotiated."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o6-03",
+    "lecture": "o6",
+    "difficulty": 1,
+    "statement": "Subordinates can use organisational rules to protect themselves against arbitrary decisions.",
+    "answer": true,
+    "explanation": "Use of rules is one of Crozier's four sources of power."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o6-04",
+    "lecture": "o6",
+    "difficulty": 2,
+    "statement": "Expert power exists only if the expertise is trusted to be accurate, relevant and perceived as such.",
+    "answer": true,
+    "explanation": "French & Raven's three conditions for expert power."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o6-05",
+    "lecture": "o6",
+    "difficulty": 1,
+    "statement": "Milgram's results suggest that obedience depends on the perceived legitimacy of the authority.",
+    "answer": true,
+    "explanation": "Obedience fell when the setting (scruffy building) or presence (phone) weakened legitimacy."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o6-06",
+    "lecture": "o6",
+    "difficulty": 1,
+    "statement": "Coercive power is a form of personal power in French & Raven's typology.",
+    "answer": false,
+    "explanation": "It is formal power, dependent on fear of consequences linked to a position."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o6-07",
+    "lecture": "o6",
+    "difficulty": 1,
+    "statement": "According to Crozier, the organisation chart is a reliable map of who holds power.",
+    "answer": false,
+    "explanation": "Real power comes from controlling uncertainty zones and can differ from the chart (Pentagon study)."
+  },
+  {
+    "type": "short",
+    "id": "sa-o6-01",
+    "lecture": "o6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "A plane crashes in the desert. Three survivors hold a compass, water and a welding torch. Who has power? Analyse with Crozier and the resource dependency view.",
+    "modelAnswer": "Power is a relationship based on control of uncertainty zones (Crozier) and on dependence on resources (Emerson, Pfeffer & Salancik).\n• Water: the most critical resource for immediate survival, scarce and not substitutable → its owner controls the biggest uncertainty and has the most power at first.\n• Compass: controls the uncertainty of the way out – essential as soon as the group decides to walk; the water holder depends on it to get out.\n• Welding torch: power depends on the situation – if the plane can be repaired or a signal made (fire, light), it becomes critical; otherwise little power.\nPower is reciprocal and shifting: each needs the others; the balance changes with the group's strategy (wait for rescue vs walk). It depends on perceptions of needs, not objective values. No one is completely powerless – negotiation and coalitions follow.",
+    "keyPoints": [
+      "Power = control of uncertainty / dependence",
+      "Water: critical, non-substitutable",
+      "Compass and torch depend on the situation/strategy",
+      "Reciprocity and shifting balance",
+      "Perception and negotiation"
+    ],
+    "case": "plane-crash"
+  },
+  {
+    "type": "short",
+    "id": "sa-o6-02",
+    "lecture": "o6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Compare Weber's and Crozier's views of power in organisations.",
+    "modelAnswer": "Weber: power is legitimate authority. People obey because they find it legitimate – traditional, charismatic or rational-legal. In bureaucracy, rational-legal authority flows in one direction, top-down along the hierarchy: orders come from the function.\nCrozier (& Friedberg, 1977): legitimacy is not the only mechanism. Power is a relationship and a balance of forces in both directions; no one is powerless. An actor's power is proportional to the uncertainty he controls for others – through expertise, relationships with the environment, information flows and the use of rules. Actors are strategic: they maximise their own zones of uncertainty and try to control those of others.\nThus real power may differ from formal hierarchy: a technician can have power over his manager.",
+    "keyPoints": [
+      "Weber: legitimacy, three types, top-down",
+      "Crozier: relationship, two directions, no one powerless",
+      "Uncertainty zones and four sources",
+      "Formal vs real power"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-o6-03",
+    "lecture": "o6",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Present French & Raven's five bases of power and apply them to a manager of your choice.",
+    "modelAnswer": "Formal power (from position): reward – control of valued rewards (raises, bonuses, promotions); coercive – fear of consequences (sanctions, dismissal); legitimate – formal authority based on the position in the hierarchy and mutual agreement.\nPersonal power (from the individual): referent or charismatic – others identify with or want to be like the person; expert – based on trusted, relevant expertise that others perceive.\nExample: a head of surgery has legitimate power (department head), reward power (schedules, promotions), some coercive power (reports), expert power (surgical skill) and possibly referent power (admired by young doctors). Expert and referent power last when position changes; formal power disappears with the position.",
+    "keyPoints": [
+      "Formal: reward, coercive, legitimate",
+      "Personal: referent, expert",
+      "Correct definitions",
+      "Application to a concrete manager"
+    ]
+  }
+]

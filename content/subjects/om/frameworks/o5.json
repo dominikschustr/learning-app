@@ -1,0 +1,177 @@
+[
+  {
+    "id": "hawthorne",
+    "lecture": "o5",
+    "name": "The Hawthorne effect",
+    "origin": "Elton Mayo · Western Electric, 1924–1932",
+    "purpose": "Why did productivity rise whatever the researchers changed?",
+    "parts": [
+      {
+        "label": "Observation",
+        "points": [
+          "Feeling observed changes behaviour"
+        ]
+      },
+      {
+        "label": "Care",
+        "points": [
+          "Showing people their work matters raises performance"
+        ]
+      },
+      {
+        "label": "Informal organisation",
+        "points": [
+          "Group morale and informal leaders matter more than formal rules"
+        ]
+      },
+      {
+        "label": "Group norms",
+        "points": [
+          "Don't produce too much or too little",
+          "Never harm a member",
+          "Don't play the boss"
+        ]
+      }
+    ],
+    "apply": [
+      "Use it to explain why perks or attention alone change behaviour – and how peer norms can cap output"
+    ],
+    "pitfalls": [
+      "It is the start of the human relations school, not of scientific management"
+    ],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "march-simon",
+    "lecture": "o5",
+    "name": "Contribution–retribution equilibrium (psychological contract)",
+    "origin": "March & Simon (1958)",
+    "purpose": "Why do people join, stay and contribute – and what happens when the balance breaks?",
+    "parts": [
+      {
+        "label": "Retributions",
+        "points": [
+          "Salary, status",
+          "Satisfaction, development",
+          "Social ties, power, meaning"
+        ]
+      },
+      {
+        "label": "Contributions",
+        "points": [
+          "Working time, effort",
+          "Subordination",
+          "Expertise, skills"
+        ]
+      }
+    ],
+    "apply": [
+      "List retributions and contributions with case facts",
+      "Judge the balance as the employees perceive it",
+      "Predict reactions: reduce contribution, raise retribution, exit (Hirschman)"
+    ],
+    "pitfalls": [
+      "Only perceptions count, not objective values",
+      "Immaterial items count too"
+    ],
+    "example": "Google: great pay and perks, but heavy workload, little recognition and conformism.",
+    "visual": {
+      "type": "versus"
+    }
+  },
+  {
+    "id": "hirschman",
+    "lecture": "o5",
+    "name": "Exit, voice and loyalty",
+    "origin": "Hirschman (1970)",
+    "purpose": "How do people react when an organisation no longer meets their expectations?",
+    "parts": [
+      {
+        "label": "Loyalty",
+        "points": [
+          "Stay and accept – attachment or resignation"
+        ]
+      },
+      {
+        "label": "Exit",
+        "points": [
+          "Leave silently – needs an external labour market"
+        ]
+      },
+      {
+        "label": "Voice",
+        "points": [
+          "Stay and protest, hoping for change"
+        ]
+      },
+      {
+        "label": "Exit & voice",
+        "points": [
+          "Leave and complain – reputational damage"
+        ]
+      }
+    ],
+    "apply": [
+      "Classify each actor's reaction in the case and explain it by alternatives and attachment"
+    ],
+    "pitfalls": [
+      "Loyalty can hide resignation"
+    ],
+    "example": "",
+    "visual": {
+      "type": "quad",
+      "count": 4,
+      "x": [
+        "Stay",
+        "Leave"
+      ],
+      "y": [
+        "Keep silent",
+        "Complain"
+      ]
+    }
+  },
+  {
+    "id": "etzioni",
+    "lecture": "o5",
+    "name": "Three incentive and control mechanisms",
+    "origin": "Etzioni (1961)",
+    "purpose": "How does an organisation get people to contribute?",
+    "parts": [
+      {
+        "label": "Coercion – stick",
+        "points": [
+          "Coercive power",
+          "Control, sanctions, punishments"
+        ]
+      },
+      {
+        "label": "Speculation – carrot",
+        "points": [
+          "Remunerative power",
+          "Pay, bonuses, promises"
+        ]
+      },
+      {
+        "label": "Identification – heart",
+        "points": [
+          "Symbolic power",
+          "Belonging, vision, values"
+        ]
+      }
+    ],
+    "apply": [
+      "Describe the mix in the case and whether it fits the people and the work"
+    ],
+    "pitfalls": [
+      "All three are used in variable proportions"
+    ],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  }
+]

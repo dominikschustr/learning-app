@@ -1,0 +1,417 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-o5-01",
+    "lecture": "o5",
+    "difficulty": 1,
+    "prompt": "What was the main finding of the Hawthorne experiments?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Productivity rose whatever working condition was changed, because workers felt observed and cared for"
+      },
+      {
+        "id": "b",
+        "text": "Better lighting is the main driver of productivity"
+      },
+      {
+        "id": "c",
+        "text": "Piece rates are the only effective incentive"
+      },
+      {
+        "id": "d",
+        "text": "Formal rules matter more than the informal organisation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Social factors – attention, group morale, informal norms – explained the results.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-02",
+    "lecture": "o5",
+    "difficulty": 2,
+    "prompt": "Which informal rules did the Hawthorne work group set up?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do not produce too much"
+      },
+      {
+        "id": "b",
+        "text": "Do not produce too little"
+      },
+      {
+        "id": "c",
+        "text": "Never tell a superior anything that may harm a group member"
+      },
+      {
+        "id": "d",
+        "text": "Always report colleagues who slack"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Plus: members with a slightly higher status should not play the boss."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-03",
+    "lecture": "o5",
+    "difficulty": 1,
+    "prompt": "According to March & Simon, when does a person stay in an organisation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As long as perceived retributions are at least equal to perceived contributions"
+      },
+      {
+        "id": "b",
+        "text": "As long as the salary is above the market average"
+      },
+      {
+        "id": "c",
+        "text": "As long as the manager is charismatic"
+      },
+      {
+        "id": "d",
+        "text": "As long as contributions exceed retributions"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Retributions ≥ contributions, as subjectively perceived.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-04",
+    "lecture": "o5",
+    "difficulty": 2,
+    "prompt": "Which of the following are contributions in March & Simon's model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Working time"
+      },
+      {
+        "id": "b",
+        "text": "Effort"
+      },
+      {
+        "id": "c",
+        "text": "Subordination"
+      },
+      {
+        "id": "d",
+        "text": "Status"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Status is a retribution."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-05",
+    "lecture": "o5",
+    "difficulty": 2,
+    "prompt": "An employee feels underpaid and starts arriving late and inflating expense claims. In March & Simon's terms, she …",
+    "options": [
+      {
+        "id": "a",
+        "text": "reduces her contributions and increases her retributions to restore the balance"
+      },
+      {
+        "id": "b",
+        "text": "chooses voice"
+      },
+      {
+        "id": "c",
+        "text": "shows loyalty"
+      },
+      {
+        "id": "d",
+        "text": "is intrinsically motivated"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lateness reduces contribution; fraudulent expenses increase retribution.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-06",
+    "lecture": "o5",
+    "difficulty": 1,
+    "prompt": "Engineers leave a company and publicly criticise its practices on social media. Which Hirschman reaction is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exit & voice"
+      },
+      {
+        "id": "b",
+        "text": "Exit"
+      },
+      {
+        "id": "c",
+        "text": "Voice"
+      },
+      {
+        "id": "d",
+        "text": "Loyalty"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "They leave (exit) and complain publicly (voice) – which can harm the firm's reputation.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-07",
+    "lecture": "o5",
+    "difficulty": 2,
+    "prompt": "Which statements about loyalty in Hirschman's model are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "People stay and accept the situation"
+      },
+      {
+        "id": "b",
+        "text": "It can stem from genuine attachment"
+      },
+      {
+        "id": "c",
+        "text": "It can stem from resignation or lack of alternatives"
+      },
+      {
+        "id": "d",
+        "text": "People stay and protest"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Staying and protesting is voice."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-08",
+    "lecture": "o5",
+    "difficulty": 1,
+    "prompt": "Which mechanism does Etzioni call “identification”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Symbolic power: belonging and vision (the heart)"
+      },
+      {
+        "id": "b",
+        "text": "Coercive power: control and sanctions (the stick)"
+      },
+      {
+        "id": "c",
+        "text": "Remunerative power: pay and promises (the carrot)"
+      },
+      {
+        "id": "d",
+        "text": "Expert power"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Coercion = stick, speculation = carrot, identification = heart. Expert power is French & Raven.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-09",
+    "lecture": "o5",
+    "difficulty": 2,
+    "prompt": "Which are examples of intrinsic motivation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pleasure of solving a hard problem"
+      },
+      {
+        "id": "b",
+        "text": "A sense of accomplishment"
+      },
+      {
+        "id": "c",
+        "text": "Finding the work meaningful"
+      },
+      {
+        "id": "d",
+        "text": "A performance bonus"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "A bonus is extrinsic: it comes from outside the individual."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o5-10",
+    "lecture": "o5",
+    "difficulty": 2,
+    "prompt": "Which statements about the psychological contract are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Retributions and contributions can be immaterial"
+      },
+      {
+        "id": "b",
+        "text": "The subjective perception matters more than the objective value"
+      },
+      {
+        "id": "c",
+        "text": "Weekend work may be perceived as a very high contribution"
+      },
+      {
+        "id": "d",
+        "text": "Only monetary values count"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "What counts is the subjective, sometimes symbolic perception."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o5-01",
+    "lecture": "o5",
+    "difficulty": 1,
+    "statement": "The Hawthorne experiments confirmed the scientific-management prediction that better physical conditions raise productivity.",
+    "answer": false,
+    "explanation": "Productivity rose even when conditions got worse – social factors explained it."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o5-02",
+    "lecture": "o5",
+    "difficulty": 1,
+    "statement": "In the Hawthorne studies, the informal organisation turned out to matter more than the formal organisation.",
+    "answer": true,
+    "explanation": "Group morale and informal leaders strongly shaped productivity."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o5-03",
+    "lecture": "o5",
+    "difficulty": 1,
+    "statement": "For March & Simon, what matters is the objective, monetary value of contributions and retributions.",
+    "answer": false,
+    "explanation": "It is the subjective, sometimes symbolic perception of the members."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o5-04",
+    "lecture": "o5",
+    "difficulty": 2,
+    "statement": "In Hirschman's model, exit requires an external labour market to be available.",
+    "answer": true,
+    "explanation": "People leave silently when they have alternatives."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o5-05",
+    "lecture": "o5",
+    "difficulty": 1,
+    "statement": "Etzioni argues that organisations use only one incentive mechanism at a time.",
+    "answer": false,
+    "explanation": "They combine coercion, remuneration and identification in variable proportions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o5-06",
+    "lecture": "o5",
+    "difficulty": 2,
+    "statement": "Introducing a fine for late parents at a daycare can increase lateness because it turns a moral obligation into a price.",
+    "answer": true,
+    "explanation": "Extrinsic incentives can crowd out intrinsic motivation."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o5-07",
+    "lecture": "o5",
+    "difficulty": 1,
+    "statement": "Voice means staying in the organisation and protesting in the hope of change.",
+    "answer": true,
+    "explanation": "Exit = leave silently; exit & voice = leave and complain; loyalty = stay and accept."
+  },
+  {
+    "type": "short",
+    "id": "sa-o5-01",
+    "lecture": "o5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Apply March & Simon's contribution–retribution model to Google. Is the equilibrium achieved?",
+    "modelAnswer": "March & Simon: people stay as long as perceived retributions ≥ contributions.\nRetributions at Google: high pay and stock, prestige of belonging to an elite, luxurious offices and perks, interesting technical problems, freedom for personal projects, talented colleagues.\nContributions: very heavy workload, availability at night and on holiday, pressure and stress (health and private life), subordination to sometimes unqualified managers, conformity to a dominant profile, accepting bureaucracy (goal reviews).\nMissing or weak retributions for many: recognition (“everyone is great”), promotion opportunities (overqualification), meaning and personal impact (“a cog in a giant machine”), voice (dissent not tolerated).\nConclusion: for star engineers the balance is positive; for many others it is fragile or negative. They may restore it by reducing contributions (disengagement) or by exit – a retention risk that the perks alone cannot fix. Remember: perceptions, not objective values, count.",
+    "keyPoints": [
+      "Model: retributions ≥ contributions, perceived",
+      "Retributions with case facts",
+      "Contributions with case facts",
+      "Nuanced verdict (stars vs others)",
+      "Consequences: reduced contribution, exit"
+    ],
+    "case": "google-quora"
+  },
+  {
+    "type": "short",
+    "id": "sa-o5-02",
+    "lecture": "o5",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Present Hirschman's exit–voice–loyalty model and explain what a manager can learn from it.",
+    "modelAnswer": "When an organisation no longer matches people's expectations, they react along two axes – stay or leave, keep silent or complain:\n• Exit: leave silently (needs an external labour market).\n• Exit & voice: leave and voice concerns – may harm the firm's reputation.\n• Voice: stay and protest, hoping management will change things.\n• Loyalty: stay and accept – out of attachment or out of resignation and lack of resources.\nLessons: silence is not satisfaction (loyalty may hide resignation); voice is valuable information and should be heard before it turns into exit; a firm that suppresses voice gets exits or disengaged “loyal” employees; the reaction depends on alternatives on the labour market and on attachment to the organisation.",
+    "keyPoints": [
+      "Two axes",
+      "Four reactions defined",
+      "Role of labour market / alternatives",
+      "Managerial implications: listen to voice"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-o5-03",
+    "lecture": "o5",
+    "difficulty": 1,
+    "verb": "explain",
+    "prompt": "Present Etzioni's three incentive and control mechanisms and give an organisational example for each.",
+    "modelAnswer": "Etzioni (1961): organisations use three mechanisms in variable proportions.\n• Coercion – coercive power, control and sanctions (stick): prisons, armies, strict monitoring with penalties, “rank and yank”.\n• Speculation – remunerative power, compensation and promises (carrot): sales commissions, bonuses, piece rates (Taylor).\n• Identification – symbolic or normative power, belonging, vision, values (heart): NGOs, start-ups with a mission, hospitals, companies with strong cultures.\nThe right mix depends on the work and the people: identification suits professionals and mission-driven organisations; too much coercion or money can crowd out intrinsic motivation.",
+    "keyPoints": [
+      "Coercion (stick) with example",
+      "Remuneration (carrot) with example",
+      "Identification (heart) with example",
+      "Mix depends on context"
+    ]
+  }
+]

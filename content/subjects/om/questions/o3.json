@@ -1,0 +1,456 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-o3-01",
+    "lecture": "o3",
+    "difficulty": 1,
+    "prompt": "“In this bar, the process is always the same: one waiter takes the order, the other serves it.” Which coordination mechanism dominates?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standardisation of work processes"
+      },
+      {
+        "id": "b",
+        "text": "Standardisation of outputs"
+      },
+      {
+        "id": "c",
+        "text": "Mutual adjustment"
+      },
+      {
+        "id": "d",
+        "text": "Direct supervision"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The work content is fixed in advance by a routine.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-02",
+    "lecture": "o3",
+    "difficulty": 1,
+    "prompt": "“All traders must increase their annual gain by 15 %, no matter how.” Which mechanism is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standardisation of outputs"
+      },
+      {
+        "id": "b",
+        "text": "Standardisation of work processes"
+      },
+      {
+        "id": "c",
+        "text": "Standardisation of skills"
+      },
+      {
+        "id": "d",
+        "text": "Mutual adjustment"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The result is specified, not the method.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-03",
+    "lecture": "o3",
+    "difficulty": 1,
+    "prompt": "Basketball players during a game mainly coordinate through …",
+    "options": [
+      {
+        "id": "a",
+        "text": "mutual adjustment"
+      },
+      {
+        "id": "b",
+        "text": "direct supervision"
+      },
+      {
+        "id": "c",
+        "text": "standardisation of outputs"
+      },
+      {
+        "id": "d",
+        "text": "standardisation of work processes"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Players communicate informally and adjust to each other in real time (the coach's orders are direct supervision, but during play mutual adjustment dominates).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-04",
+    "lecture": "o3",
+    "difficulty": 2,
+    "prompt": "Which roles belong to the technostructure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Planning department"
+      },
+      {
+        "id": "b",
+        "text": "Training department"
+      },
+      {
+        "id": "c",
+        "text": "Methods and quality engineers"
+      },
+      {
+        "id": "d",
+        "text": "Cleaning services"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The technostructure designs, plans, changes or trains the operating core's work. Cleaning is support staff."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-05",
+    "lecture": "o3",
+    "difficulty": 1,
+    "prompt": "Where does a foreman belong in Mintzberg's five parts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Middle line"
+      },
+      {
+        "id": "b",
+        "text": "Operating core"
+      },
+      {
+        "id": "c",
+        "text": "Technostructure"
+      },
+      {
+        "id": "d",
+        "text": "Support staff"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Middle line = managers between the apex and the operating core (division director, director of production, foreman).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-06",
+    "lecture": "o3",
+    "difficulty": 2,
+    "prompt": "Which statements about the divisional form are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Its key part is the middle line"
+      },
+      {
+        "id": "b",
+        "text": "It coordinates mainly by standardisation of outputs"
+      },
+      {
+        "id": "c",
+        "text": "Its dominant pull is balkanization"
+      },
+      {
+        "id": "d",
+        "text": "Its key part is the strategic apex"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Division heads are judged on results (profits), each division acting as a little company – usually a machine bureaucracy."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-07",
+    "lecture": "o3",
+    "difficulty": 1,
+    "prompt": "A university hospital employs highly trained doctors who work autonomously according to standards set by their professional bodies. Which configuration fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Professional bureaucracy"
+      },
+      {
+        "id": "b",
+        "text": "Machine bureaucracy"
+      },
+      {
+        "id": "c",
+        "text": "Simple structure"
+      },
+      {
+        "id": "d",
+        "text": "Divisional form"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Standardisation of skills, power in the operating core, support staff as a buffer; complex but stable environment.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-08",
+    "lecture": "o3",
+    "difficulty": 2,
+    "prompt": "Which are typical weaknesses of the machine bureaucracy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mainly vertical, top-down communication"
+      },
+      {
+        "id": "b",
+        "text": "Obsessive concern with following rules"
+      },
+      {
+        "id": "c",
+        "text": "Low ability to adapt"
+      },
+      {
+        "id": "d",
+        "text": "Duplication of resources across divisions"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Duplication is the weakness of the divisional form."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-09",
+    "lecture": "o3",
+    "difficulty": 2,
+    "prompt": "Which contingency factors favour an adhocracy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Complex, dynamic and unstable environment"
+      },
+      {
+        "id": "b",
+        "text": "Innovation is critical"
+      },
+      {
+        "id": "c",
+        "text": "Sophisticated technology"
+      },
+      {
+        "id": "d",
+        "text": "Simple, stable environment with mass production"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Simple and stable environments with mass production favour the machine bureaucracy."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-10",
+    "lecture": "o3",
+    "difficulty": 2,
+    "prompt": "What is the main weakness of the matrix structure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conflicts caused by the dual line of authority"
+      },
+      {
+        "id": "b",
+        "text": "No economies of scale because every division has its own functions"
+      },
+      {
+        "id": "c",
+        "text": "Excessive centralisation in a single leader"
+      },
+      {
+        "id": "d",
+        "text": "Rejection of innovation by professionals"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Two bosses (function and project) – contrary to Fayol's unity of command. b = divisional, c = simple structure, d = professional bureaucracy.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o3-11",
+    "lecture": "o3",
+    "difficulty": 2,
+    "prompt": "Which statements about differentiation and integration are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Differentiation means dividing labour into specialised tasks and units"
+      },
+      {
+        "id": "b",
+        "text": "Integration means coordinating the separate parts"
+      },
+      {
+        "id": "c",
+        "text": "The more an organisation specialises, the more it needs to coordinate"
+      },
+      {
+        "id": "d",
+        "text": "An organisation chart fully describes integration"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The chart only shows the grouping (differentiation). Coordination mechanisms are invisible on it."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o3-01",
+    "lecture": "o3",
+    "difficulty": 1,
+    "statement": "An organisation uses only one of Mintzberg's coordination mechanisms.",
+    "answer": false,
+    "explanation": "It uses all of them, but often one is dominant."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o3-02",
+    "lecture": "o3",
+    "difficulty": 1,
+    "statement": "In a simple structure, the strategic apex directly supervises the operating core and takes on the roles of technostructure and support staff.",
+    "answer": true,
+    "explanation": "It sets standards itself and handles relations with the environment itself."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o3-03",
+    "lecture": "o3",
+    "difficulty": 2,
+    "statement": "Regardless of its size, an organisation suddenly facing a hostile environment can fall back on a simple structure.",
+    "answer": true,
+    "explanation": "Crisis → centralisation and direct supervision (e.g. armies)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o3-04",
+    "lecture": "o3",
+    "difficulty": 1,
+    "statement": "In the professional bureaucracy, power lies with the technostructure.",
+    "answer": false,
+    "explanation": "Power lies with the operating core, which holds the critical skills. The technostructure dominates the machine bureaucracy."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o3-05",
+    "lecture": "o3",
+    "difficulty": 1,
+    "statement": "The adhocracy coordinates mainly through mutual adjustment and is the only truly innovative configuration.",
+    "answer": true,
+    "explanation": "Its price: costly communication and coordination, tension and ambiguity."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o3-06",
+    "lecture": "o3",
+    "difficulty": 1,
+    "statement": "A functional structure maximises economies of scale but adapts slowly.",
+    "answer": true,
+    "explanation": "No duplication and high specialisation; but conflicts between functions and slow responses."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o3-07",
+    "lecture": "o3",
+    "difficulty": 2,
+    "statement": "Support staff and technostructure are the same thing in Mintzberg's model.",
+    "answer": false,
+    "explanation": "Technostructure shapes the core's work (planning, methods, training); support staff serves the organisation outside the operating flow (legal, cleaning)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o3-08",
+    "lecture": "o3",
+    "difficulty": 2,
+    "statement": "Both machine and professional bureaucracies need a stable environment.",
+    "answer": true,
+    "explanation": "Machine: simple and stable; professional: complex but stable. Both adapt badly to change."
+  },
+  {
+    "type": "short",
+    "id": "sa-o3-01",
+    "lecture": "o3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Present Mintzberg's five configurations with, for each, the key coordination mechanism, the key part, the dominant pull and one example.",
+    "modelAnswer": "• Simple structure: direct supervision – strategic apex – centralisation – start-up, architect office, army in crisis.\n• Machine bureaucracy: standardisation of work processes – technostructure – standardisation/formalisation – heavy industry, public administration, mass production.\n• Divisional form: standardisation of outputs – middle line – balkanization – General Motors, > 60 % of Fortune 500.\n• Professional bureaucracy: standardisation of skills – operating core – professionalisation – hospitals, universities, big consulting firms.\n• Adhocracy: mutual adjustment – support staff (experts) – collaboration – research labs, small strategy consultancies, early NASA, task forces.\nThe five mechanisms in the same order give the five configurations; a limited number of configurations explains much of what we observe.",
+    "keyPoints": [
+      "All 5 configurations named",
+      "Correct mechanism for each",
+      "Correct key part and pull",
+      "One example each"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-o3-02",
+    "lecture": "o3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Compare the machine bureaucracy and the professional bureaucracy.",
+    "modelAnswer": "Both are bureaucracies: they rely on standardisation and need a stable environment, so they adapt badly to change.\nMachine bureaucracy standardises work processes; power lies with the technostructure, which formalises behaviour; decisions are centralised; environment simple and stable; routine, mass technology. Strength: efficiency and economies of scale. Weakness: rigidity, obsession with rules, top-down communication, poor well-being in the operating core.\nProfessional bureaucracy standardises skills acquired outside (training, professional bodies); power lies with the operating core (professionals); decisions are decentralised; environment complex but stable. Strength: expertise and autonomy. Weakness: weak coordination between professionals, conflicts with support staff, resistance to innovations that challenge professional knowledge.",
+    "keyPoints": [
+      "Common point: standardisation, stable environment",
+      "Processes vs skills",
+      "Technostructure vs operating core",
+      "Centralised vs decentralised",
+      "Simple vs complex environment, pros/cons"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-o3-03",
+    "lecture": "o3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Why is the organisation chart not enough to understand an organisation's structure?",
+    "modelAnswer": "Structure is the way to group employees into units (differentiation) while ensuring sufficient coordination (integration). An organisation chart – boxes and arrows of hierarchical relationships – shows only the grouping (functional, divisional, matrix) and the formal hierarchy. It does not show how work is actually coordinated (procedures, objectives, training, mutual adjustment), who really holds power, or the role of technostructure and support staff. Mintzberg's bottom perspective adds these: 5 coordination mechanisms, 5 parts, 5 configurations, with contingency factors. Two firms with the same chart can work very differently.",
+    "keyPoints": [
+      "Structure = differentiation + integration",
+      "Chart shows only grouping and hierarchy",
+      "Coordination mechanisms invisible",
+      "Real power and informal relations missing",
+      "Mintzberg's bottom perspective"
+    ]
+  }
+]

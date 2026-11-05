@@ -1,0 +1,53 @@
+[
+  {
+    "id": "mock-openai",
+    "title": "Mock exam – OpenAI",
+    "subtitle": "Nach der Mock Exam Review (OpenAI): drei Fragen zu Mintzberg (7 Punkte), Schein (8 Punkte) und der Reaktion der Mitarbeitenden auf Altmans Entlassung, dazu die Zusatzfrage zum psychologischen Vertrag bei Apple. Die Punkte für Frage 3 und die Zusatzfrage waren nicht angegeben. Fälle in eigenen Worten zusammengefasst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "O&M Mock Exam Review – OpenAI (with additional question on Apple)",
+      "faithful": false
+    },
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part A – OpenAI",
+        "instructions": "Answer the three questions using the course models and examples from the case. [20 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p2-01",
+                "points": 7
+              },
+              {
+                "q": "sa-p2-02",
+                "points": 8
+              },
+              {
+                "q": "sa-p2-03",
+                "points": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part B – Additional question",
+        "instructions": "Read the excerpt on Apple and answer the question. [5 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p2-04",
+                "points": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

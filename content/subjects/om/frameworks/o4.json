@@ -1,0 +1,90 @@
+[
+  {
+    "id": "culture-features",
+    "lecture": "o4",
+    "name": "Important features of culture",
+    "origin": "Hofstede (1980) · Session 4",
+    "purpose": "What is culture and what does it do?",
+    "parts": [
+      {
+        "label": "Shared",
+        "points": [
+          "By all or almost all members"
+        ]
+      },
+      {
+        "label": "Learned",
+        "points": [
+          "Older members pass it on to newcomers"
+        ]
+      },
+      {
+        "label": "Systematic",
+        "points": [
+          "A coherent whole, not random habits"
+        ]
+      },
+      {
+        "label": "Predictable",
+        "points": [
+          "Norms substitute for thinking"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [
+      "Culture is not innate"
+    ],
+    "example": "Conversation styles: Japan/Finland pause, UK waits, Mediterranean interrupts – none is “right”.",
+    "visual": {
+      "type": "letters"
+    }
+  },
+  {
+    "id": "schein",
+    "lecture": "o4",
+    "name": "Schein's three levels of organisational culture",
+    "origin": "Schein (1981, 2004)",
+    "purpose": "How to analyse the culture of an organisation?",
+    "parts": [
+      {
+        "label": "Artifacts · visible",
+        "points": [
+          "Name, logo, buildings, dress code",
+          "Stories, myths, heroes",
+          "Rituals, ceremonies",
+          "Language, symbols, taboos"
+        ]
+      },
+      {
+        "label": "Shared values · invisible",
+        "points": [
+          "Core, espoused vs enacted, aspirational",
+          "Good/bad, right/wrong"
+        ]
+      },
+      {
+        "label": "Shared assumptions · invisible",
+        "points": [
+          "Image of the organisation",
+          "Image of the profession",
+          "Image of the power structure"
+        ]
+      }
+    ],
+    "apply": [
+      "Give at least two case facts per level",
+      "Check coherence: do artifacts and enacted values confirm espoused values?",
+      "Conclude on strength and fit of the culture"
+    ],
+    "pitfalls": [
+      "Values ≠ assumptions",
+      "Never interpret one artifact alone",
+      "Strong ≠ good"
+    ],
+    "example": "Enron: tower and bonuses · espoused integrity vs enacted “win” · “we are the smartest”.",
+    "visual": {
+      "type": "layers"
+    }
+  }
+]

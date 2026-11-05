@@ -1,0 +1,22 @@
+[
+  {
+    "id": "openai",
+    "title": "OpenAI – the five days without Sam Altman (mock exam)",
+    "text": [
+      "OpenAI was founded in San Francisco in December 2015 as a non-profit research laboratory by Sam Altman, Elon Musk, Greg Brockman, Ilya Sutskever and others, with the mission of ensuring that artificial general intelligence benefits all of humanity. The name referred to the open-source movement and to sharing research openly. In its early years OpenAI competed fiercely for a small pool of top AI researchers from very different backgrounds and gave them great freedom to pursue their projects.",
+      "In 2019 it created a “capped-profit” company controlled by the non-profit's board to raise the capital needed to train large models; Microsoft invested heavily. The launch of ChatGPT in November 2022 made OpenAI world-famous and turned it into one of the most valuable start-ups. Sam Altman, a Stanford dropout who had run the start-up accelerator Y Combinator, became its public face, touring the world's capitals to meet heads of state about the promises and risks of AI. The offices are open, modern and full of plants; the logo was designed in-house by the founders; the style is casual and young.",
+      "The company has few management layers and little formal procedure: small research and product teams work closely together, while Altman and a small inner circle steer the main decisions. Employees describe a strong commitment to the mission and great admiration for Altman, while tensions grew between those who wanted to move fast and commercialise and those who stressed safety.",
+      "On 17 November 2023 the non-profit board – including chief scientist Ilya Sutskever – suddenly fired Altman, saying he had not been “consistently candid” with it. Greg Brockman resigned the same day, and Microsoft offered to hire Altman and any OpenAI staff who wanted to follow. Within days, more than 700 of the roughly 770 employees signed an open letter threatening to leave unless the board resigned and Altman returned; Sutskever himself signed and said he regretted his role. On 21–22 November Altman was reinstated as CEO and the board was replaced."
+    ],
+    "tables": []
+  },
+  {
+    "id": "apple-rto",
+    "title": "Apple's return-to-office policy (mock exam, additional question)",
+    "text": [
+      "Summary of a 2022 Fast Company column: when Apple's director of machine learning, Ian Goodfellow, resigned over the company's return-to-office mandate, the author argued that it should be a wake-up call for executives. After COVID-19, the flexibility to work from anywhere is the job feature knowledge workers value most, and data support this.",
+      "Instead of offering flexibility, many executives try to lure staff back with perks, swag, mission statements and open bars in expensive new offices, believing this builds an attractive employer brand. A group of Apple employees had written an open letter to CEO Tim Cook: without the inclusivity that flexibility brings, many felt forced to choose between their families, their well-being and doing their best work on the one hand – and being part of Apple on the other, a choice many would prefer not to make."
+    ],
+    "tables": []
+  }
+]

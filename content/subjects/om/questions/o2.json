@@ -1,0 +1,412 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-o2-01",
+    "lecture": "o2",
+    "difficulty": 2,
+    "prompt": "In Scott's timeline, which period sees the organisation as a closed system and the individual as a social agent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1930–1960: human relations (Mayo, Maslow, Herzberg)"
+      },
+      {
+        "id": "b",
+        "text": "1900–1930: Weber, Taylor, Fayol"
+      },
+      {
+        "id": "c",
+        "text": "1960–1970: contingency (Chandler, Lawrence & Lorsch)"
+      },
+      {
+        "id": "d",
+        "text": "1970– : culture and leadership (Weick, March, Ouchi)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Closed + rational = 1900–1930; closed + social = 1930–1960; open + rational = 1960–1970; open + social = 1970 onwards.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-02",
+    "lecture": "o2",
+    "difficulty": 2,
+    "prompt": "Which authors belong to the contingency school (1960–1970, “the organisation is shaped by outside forces”)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alfred Chandler"
+      },
+      {
+        "id": "b",
+        "text": "Paul Lawrence & Jay Lorsch"
+      },
+      {
+        "id": "c",
+        "text": "Joan Woodward"
+      },
+      {
+        "id": "d",
+        "text": "Elton Mayo"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Chandler, Lawrence & Lorsch, Woodward and Perrow: adapt the structure to the environment. Mayo belongs to human relations (1930–1960)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-03",
+    "lecture": "o2",
+    "difficulty": 2,
+    "prompt": "Which of the following are among Fayol's six functions of the company?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Security"
+      },
+      {
+        "id": "b",
+        "text": "Accounting"
+      },
+      {
+        "id": "c",
+        "text": "Administration (planning, organising, leading, controlling)"
+      },
+      {
+        "id": "d",
+        "text": "Human resources"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Technical, commercial, financial, security, accounting, administrative. HR is not one of the six."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-04",
+    "lecture": "o2",
+    "difficulty": 1,
+    "prompt": "“An employee should receive orders from one chief only.” Which Fayol principle is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unity of command"
+      },
+      {
+        "id": "b",
+        "text": "Unity of direction"
+      },
+      {
+        "id": "c",
+        "text": "Scalar chain"
+      },
+      {
+        "id": "d",
+        "text": "Centralisation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Unity of direction = similar activities directed to one goal under one manager; scalar chain = line of authority from top to bottom; centralisation = final responsibility stays at the top.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-05",
+    "lecture": "o2",
+    "difficulty": 2,
+    "prompt": "Which principles belong to Fayol's group “a focus on people”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stability of tenure of personnel"
+      },
+      {
+        "id": "b",
+        "text": "Initiative"
+      },
+      {
+        "id": "c",
+        "text": "Esprit de corps"
+      },
+      {
+        "id": "d",
+        "text": "Discipline"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Discipline belongs to “rationality and efficiency” (with division of labour and order)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-06",
+    "lecture": "o2",
+    "difficulty": 3,
+    "prompt": "Pope Leo, the Kennedy family, Steve Jobs, Angela Merkel. Which classification by Weber's types of authority is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Steve Jobs – charismatic"
+      },
+      {
+        "id": "b",
+        "text": "Kennedy family – traditional"
+      },
+      {
+        "id": "c",
+        "text": "Angela Merkel – rational-legal"
+      },
+      {
+        "id": "d",
+        "text": "Pope Leo – rational-legal only"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Jobs: devotion to an exceptional leader. Kennedys: dynasty, hereditary prestige. Merkel: elected chancellor, authority from legal rules. The Pope mixes traditional (centuries-old office) and charismatic authority – the office is not merely a legal-rational function."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-07",
+    "lecture": "o2",
+    "difficulty": 2,
+    "prompt": "What does Merton call the tendency of bureaucracies to pay more attention to the rules than to the objectives behind them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Goal displacement"
+      },
+      {
+        "id": "b",
+        "text": "Soldiering"
+      },
+      {
+        "id": "c",
+        "text": "Balkanization"
+      },
+      {
+        "id": "d",
+        "text": "Agentic state"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Goal displacement (Merton). Soldiering = Taylor's deliberate under-performance; balkanization = Mintzberg's divisional pull; agentic state = Milgram.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-08",
+    "lecture": "o2",
+    "difficulty": 2,
+    "prompt": "Which elements are part of Taylor's scientific management?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Timing each task and defining the one best way"
+      },
+      {
+        "id": "b",
+        "text": "Individual performance-based pay"
+      },
+      {
+        "id": "c",
+        "text": "Several functional foremen for each worker"
+      },
+      {
+        "id": "d",
+        "text": "Self-managed teams that decide their own methods"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Taylor removes method choice from the workers – the opposite of self-managed teams."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-09",
+    "lecture": "o2",
+    "difficulty": 1,
+    "prompt": "What did Taylor call workers deliberately working below their capacity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Soldiering"
+      },
+      {
+        "id": "b",
+        "text": "Goal displacement"
+      },
+      {
+        "id": "c",
+        "text": "Esprit de corps"
+      },
+      {
+        "id": "d",
+        "text": "Loyalty"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Workers slowed down so as not to be trapped in rising targets without proportional pay; they could do so because they controlled the know-how.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o2-10",
+    "lecture": "o2",
+    "difficulty": 2,
+    "prompt": "Which ideas are associated with Mary Parker Follett?",
+    "options": [
+      {
+        "id": "a",
+        "text": "“Power with” rather than “power over”"
+      },
+      {
+        "id": "b",
+        "text": "Integrative conflict resolution"
+      },
+      {
+        "id": "c",
+        "text": "Groups as the primary unit of organisational life"
+      },
+      {
+        "id": "d",
+        "text": "The 14 principles of management"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "The 14 principles are Fayol's."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o2-01",
+    "lecture": "o2",
+    "difficulty": 1,
+    "statement": "Fayol and Taylor were both engineers who promoted a universal “one best way” of managing.",
+    "answer": true,
+    "explanation": "Both favoured a rational, universal, scientific approach meant to balance the interests of top managers and workers."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o2-02",
+    "lecture": "o2",
+    "difficulty": 1,
+    "statement": "For Weber, charismatic authority is the only type that can replace arbitrary power with fair and impersonal rules.",
+    "answer": false,
+    "explanation": "It is rational-legal authority: people obey rules and the function, not the individual – the basis of bureaucracy."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o2-03",
+    "lecture": "o2",
+    "difficulty": 1,
+    "statement": "Weber's bureaucracy assumes that employees are elected by their peers.",
+    "answer": false,
+    "explanation": "They are appointed after a neutral selection based on technical qualifications and receive a fixed salary."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o2-04",
+    "lecture": "o2",
+    "difficulty": 1,
+    "statement": "Before Fayol, the administrative function (planning, organising, leading, controlling) was largely ignored.",
+    "answer": true,
+    "explanation": "Fayol's contribution was to show the specificity of the management function."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o2-05",
+    "lecture": "o2",
+    "difficulty": 1,
+    "statement": "One of the three changes that gave birth to the modern company was labour law creating a subordination link through work contracts.",
+    "answer": true,
+    "explanation": "The three changes: new industries, labour law (work contracts, subordination) and directors (control passes to managers, business schools)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o2-06",
+    "lecture": "o2",
+    "difficulty": 2,
+    "statement": "Taylor's system relies on direct supervision by a single foreman who handles all aspects of the work.",
+    "answer": false,
+    "explanation": "Taylor used functional foremanship: four foremen, each in charge of one functional task – a worker has several bosses (contrary to Fayol's unity of command)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o2-07",
+    "lecture": "o2",
+    "difficulty": 1,
+    "statement": "The 1970s onwards view in Scott's timeline treats the organisation as an open system and the individual as a social agent.",
+    "answer": true,
+    "explanation": "Complexity, change and innovation; engaging people through culture and leadership (Weick, March, Ouchi, Crozier)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o2-08",
+    "lecture": "o2",
+    "difficulty": 1,
+    "statement": "Adam Smith formalised the economic relevance of the division of labour with the example of a pin factory.",
+    "answer": true,
+    "explanation": "An Inquiry into the Nature and Causes of the Wealth of Nations (1776)."
+  },
+  {
+    "type": "short",
+    "id": "sa-o2-01",
+    "lecture": "o2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Present Weber's three types of legitimate authority and explain why, for Weber, bureaucracy is the most efficient form of organisation. What are its drawbacks?",
+    "modelAnswer": "Weber asks why people obey. Three types of legitimacy:\n• Traditional: authority rests on custom and tradition, sometimes hereditary (dynasties).\n• Charismatic: devotion to the exceptional qualities of a leader (prophets, heroes, Napoleon, Steve Jobs).\n• Rational-legal: belief in stable, explicit, impersonal rules; people obey the function, not the person (a police officer).\nOnly rational-legal authority replaces arbitrariness with fair rules; it is embodied in bureaucracy, an ideal type aiming at precision, speed, clarity, regularity, reliability and efficiency: rational rules, impersonal authority, clear role boundaries, selection on qualifications, appointment, fixed salary, careers, strict discipline.\nDrawbacks: red tape, slowness, lack of creativity, overly complex rules and chains of command; Merton's goal displacement – the rules become ends in themselves.",
+    "keyPoints": [
+      "Traditional, charismatic, rational-legal with examples",
+      "Rational-legal → bureaucracy (obey the function)",
+      "Aims: precision, speed, reliability, efficiency",
+      "Core principles",
+      "Drawbacks incl. Merton's goal displacement"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-o2-02",
+    "lecture": "o2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What should we think of Taylorism today? Give examples of where it is still present and discuss its advantages and limits.",
+    "modelAnswer": "Taylorism = scientific management: work split into simple, timed, standardised tasks (one best way), design separated from execution, selection and individual performance pay, functional supervision.\nStill present: fast food (standard procedures and timings), call centres (scripts, call times), Amazon warehouses (pick rates, algorithmic monitoring), assembly lines, platform work (Uber, delivery apps).\nAdvantages: productivity and low cost, predictable quality, easy training, scale, fair pay for measurable output.\nLimits: monotony and loss of meaning, health issues, weak intrinsic motivation, low initiative and adaptability, workers' knowledge ignored (Hawthorne showed the social side matters), poor fit for complex, innovative work.\nConclusion: useful for routine, stable tasks, but it must be combined with attention to people (Follett, human relations) and is unsuited to knowledge work.",
+    "keyPoints": [
+      "Definition of Taylorism",
+      "Present-day examples",
+      "Advantages (efficiency, standard quality)",
+      "Limits (meaning, motivation, adaptability)",
+      "Nuanced conclusion"
+    ]
+  }
+]

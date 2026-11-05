@@ -1,0 +1,86 @@
+[
+  {
+    "id": "c-o3-01",
+    "lecture": "o3",
+    "front": "Structure (definition)",
+    "back": "The way to group employees into units while ensuring sufficient coordination to achieve efficiency."
+  },
+  {
+    "id": "c-o3-02",
+    "lecture": "o3",
+    "front": "Differentiation vs integration",
+    "back": "Differentiation = labour division into specialised units. Integration = coordination that pulls the parts together."
+  },
+  {
+    "id": "c-o3-03",
+    "lecture": "o3",
+    "front": "Functional chart: + / −",
+    "back": "+ economies of scale, transparency, tight control · − conflicts between functions, slow, overloaded top."
+  },
+  {
+    "id": "c-o3-04",
+    "lecture": "o3",
+    "front": "Divisional chart: + / −",
+    "back": "+ large firms, accountability (profit centres), customer focus · − duplication, coordination cost, divisional rivalry."
+  },
+  {
+    "id": "c-o3-05",
+    "lecture": "o3",
+    "front": "Matrix chart: + / −",
+    "back": "+ flexibility, best of functional and divisional · − dual line of authority, hard to manage."
+  },
+  {
+    "id": "c-o3-06",
+    "lecture": "o3",
+    "front": "Mintzberg: 5 coordination mechanisms",
+    "back": "Direct supervision · standardisation of work processes · of outputs · of skills · mutual adjustment."
+  },
+  {
+    "id": "c-o3-07",
+    "lecture": "o3",
+    "front": "Mintzberg: 5 parts",
+    "back": "Strategic apex · middle line · operating core · technostructure · support staff."
+  },
+  {
+    "id": "c-o3-08",
+    "lecture": "o3",
+    "front": "Simple structure",
+    "back": "Direct supervision · strategic apex · centralisation · start-ups, crises."
+  },
+  {
+    "id": "c-o3-09",
+    "lecture": "o3",
+    "front": "Machine bureaucracy",
+    "back": "Work processes · technostructure · standardisation · big, mature, stable, mass production."
+  },
+  {
+    "id": "c-o3-10",
+    "lecture": "o3",
+    "front": "Divisional form",
+    "back": "Outputs · middle line · balkanization · diversified big firms (GM, Fortune 500)."
+  },
+  {
+    "id": "c-o3-11",
+    "lecture": "o3",
+    "front": "Professional bureaucracy",
+    "back": "Skills · operating core · professionalisation · hospitals, universities."
+  },
+  {
+    "id": "c-o3-12",
+    "lecture": "o3",
+    "front": "Adhocracy",
+    "back": "Mutual adjustment · support staff · collaboration · research labs, task forces, early NASA."
+  },
+  {
+    "id": "c-o3-13",
+    "lecture": "o3",
+    "front": "Balkanization",
+    "back": "Breaking up into nearly independent units – the pull of the middle line in the divisional form."
+  },
+  {
+    "id": "c-o3-14",
+    "lecture": "o3",
+    "front": "3 questions to identify a configuration",
+    "back": "How is work mostly coordinated? Who holds the power? Does the situation fit (age, size, environment, technology)?"
+  }
+]

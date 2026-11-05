@@ -1,0 +1,46 @@
+[
+  {
+    "id": "exam-2020",
+    "title": "End of term exam November 2020 – WhatsApp & Facebook",
+    "subtitle": "Nach der O&M-Abschlussklausur vom 6.11.2020 (90 Minuten, open book). Die sechs Pflichtartikel zu WhatsApp und Facebook sind in eigenen Worten zusammengefasst. Die Prüfungsfragen selbst lagen nicht vor und sind nach dem Kursstoff neu gestellt: Mintzberg, Schein, Anreize, Hirschman und Macht.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Organisation & Management, End of Term examination 6.11.2020 (pre-readings WhatsApp/Facebook)",
+      "faithful": false
+    },
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Case questions – WhatsApp and Facebook",
+        "instructions": "Answer all five questions using the course models and evidence from the articles. [60 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p3-01",
+                "points": 15
+              },
+              {
+                "q": "sa-p3-02",
+                "points": 15
+              },
+              {
+                "q": "sa-p3-03",
+                "points": 10
+              },
+              {
+                "q": "sa-p3-04",
+                "points": 10
+              },
+              {
+                "q": "sa-p3-05",
+                "points": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

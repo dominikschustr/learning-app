@@ -1,0 +1,419 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-o4-01",
+    "lecture": "o4",
+    "difficulty": 1,
+    "prompt": "Who defined culture as “the collective programming of the mind which distinguishes the members of one human group from another”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hofstede (1980)"
+      },
+      {
+        "id": "b",
+        "text": "Schein (1981)"
+      },
+      {
+        "id": "c",
+        "text": "Mintzberg (1989)"
+      },
+      {
+        "id": "d",
+        "text": "Crozier (1977)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Hofstede, 1980. Schein's definition speaks of a pattern of shared basic assumptions.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-02",
+    "lecture": "o4",
+    "difficulty": 2,
+    "prompt": "Which are important features of culture according to the course?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shared"
+      },
+      {
+        "id": "b",
+        "text": "Learned"
+      },
+      {
+        "id": "c",
+        "text": "Systematic and organised"
+      },
+      {
+        "id": "d",
+        "text": "Innate"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Culture is shared, learned, systematic and provides predictability/stability. It is not innate – it is transmitted to new entrants."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-03",
+    "lecture": "o4",
+    "difficulty": 2,
+    "prompt": "Which elements are artifacts in Schein's model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stories and legends"
+      },
+      {
+        "id": "b",
+        "text": "Rituals and ceremonies"
+      },
+      {
+        "id": "c",
+        "text": "Organisational language"
+      },
+      {
+        "id": "d",
+        "text": "Taken-for-granted beliefs about who holds real power"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Beliefs about power are shared assumptions (image of the power structure)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-04",
+    "lecture": "o4",
+    "difficulty": 2,
+    "prompt": "A firm's website says “we put people first”, but its bonus system only rewards short-term sales. This illustrates the gap between …",
+    "options": [
+      {
+        "id": "a",
+        "text": "espoused and enacted values"
+      },
+      {
+        "id": "b",
+        "text": "core and aspirational values"
+      },
+      {
+        "id": "c",
+        "text": "artifacts and rituals"
+      },
+      {
+        "id": "d",
+        "text": "external adaptation and internal integration"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Espoused values = what we say; enacted values = what actually guides decisions (what is rewarded and punished).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-05",
+    "lecture": "o4",
+    "difficulty": 2,
+    "prompt": "Which are the three “images” that shared assumptions answer to (Schein)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Image of the organisation"
+      },
+      {
+        "id": "b",
+        "text": "Image of the profession and qualifications"
+      },
+      {
+        "id": "c",
+        "text": "Image of the power structure"
+      },
+      {
+        "id": "d",
+        "text": "Image of the customer"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Org · job · power."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-06",
+    "lecture": "o4",
+    "difficulty": 2,
+    "prompt": "Which key ideas are part of Schein's 1981 definition of organisational culture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shared basic assumptions"
+      },
+      {
+        "id": "b",
+        "text": "Learned while solving problems of external adaptation and internal integration"
+      },
+      {
+        "id": "c",
+        "text": "Taught to new members as the correct way to perceive, think and feel"
+      },
+      {
+        "id": "d",
+        "text": "Written down in the company's value statement"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Culture is mostly unconscious; a value statement is at best an espoused value."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-07",
+    "lecture": "o4",
+    "difficulty": 1,
+    "prompt": "“Values a company needs to succeed in the future but currently lacks” are …",
+    "options": [
+      {
+        "id": "a",
+        "text": "aspirational values"
+      },
+      {
+        "id": "b",
+        "text": "core values"
+      },
+      {
+        "id": "c",
+        "text": "enacted values"
+      },
+      {
+        "id": "d",
+        "text": "espoused values"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Core = cornerstones guiding all actions; espoused = what we say; enacted = what we do.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-08",
+    "lecture": "o4",
+    "difficulty": 2,
+    "prompt": "According to the course, values drive decisions and behaviour when …",
+    "options": [
+      {
+        "id": "a",
+        "text": "we are mindful of our values"
+      },
+      {
+        "id": "b",
+        "text": "we have logical reasons to apply them in that situation"
+      },
+      {
+        "id": "c",
+        "text": "the situation does not interfere"
+      },
+      {
+        "id": "d",
+        "text": "they are printed on the office walls"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Display alone does not make values effective."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-09",
+    "lecture": "o4",
+    "difficulty": 2,
+    "prompt": "Which explanations of Enron's downfall use the culture lens correctly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "“Rank and yank” created fear, so nobody dared to object"
+      },
+      {
+        "id": "b",
+        "text": "Espoused values (integrity) differed from enacted values (win at all costs)"
+      },
+      {
+        "id": "c",
+        "text": "The belief of being the smartest made Enron blind to risk"
+      },
+      {
+        "id": "d",
+        "text": "Enron had a weak culture that employees did not share"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Enron had a very strong culture – strength amplified harmful values."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o4-10",
+    "lecture": "o4",
+    "difficulty": 1,
+    "prompt": "A glass tower with a trading floor and huge bonuses are, in Schein's model, …",
+    "options": [
+      {
+        "id": "a",
+        "text": "artifacts"
+      },
+      {
+        "id": "b",
+        "text": "shared values"
+      },
+      {
+        "id": "c",
+        "text": "shared assumptions"
+      },
+      {
+        "id": "d",
+        "text": "core values"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Visible elements – but they only make sense once decoded with values and assumptions.",
+    "single": true
+  },
+  {
+    "type": "tf",
+    "id": "tf-o4-01",
+    "lecture": "o4",
+    "difficulty": 1,
+    "statement": "In Schein's model, shared values and shared assumptions are both invisible levels of culture.",
+    "answer": true,
+    "explanation": "Values are conscious and can be stated; assumptions are unconscious and taken for granted."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o4-02",
+    "lecture": "o4",
+    "difficulty": 1,
+    "statement": "Artifacts are visible and therefore easy to interpret on their own.",
+    "answer": false,
+    "explanation": "They are visible but not always decipherable: decode them with values and assumptions."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o4-03",
+    "lecture": "o4",
+    "difficulty": 2,
+    "statement": "A strong culture is always a good culture.",
+    "answer": false,
+    "explanation": "Strength amplifies good and bad values alike (Enron)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o4-04",
+    "lecture": "o4",
+    "difficulty": 1,
+    "statement": "Culture provides predictability and stability by creating norms that in many cases substitute for thinking.",
+    "answer": true,
+    "explanation": "Habits: how to greet someone, when meetings begin."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o4-05",
+    "lecture": "o4",
+    "difficulty": 1,
+    "statement": "According to Schein (1999), a culture starts developing when a group of people have a shared experience.",
+    "answer": true,
+    "explanation": "Small groups (hobby, occupation) and companies alike develop a culture."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o4-06",
+    "lecture": "o4",
+    "difficulty": 1,
+    "statement": "Shared assumptions are conscious beliefs that employees can easily state.",
+    "answer": false,
+    "explanation": "Those are values. Assumptions are unconscious, taken-for-granted mental models."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o4-07",
+    "lecture": "o4",
+    "difficulty": 2,
+    "statement": "Culture is observed top-down (starting from artifacts) but produced bottom-up (from assumptions).",
+    "answer": true,
+    "explanation": "Assumptions → values → artifacts."
+  },
+  {
+    "type": "short",
+    "id": "sa-o4-01",
+    "lecture": "o4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Describe and analyse Enron's culture with Schein's model.",
+    "modelAnswer": "Artifacts: glass tower in Houston, tilted “crooked E” logo, huge trading floor, very large bonuses, deal vehicles with Star Wars names, the annual “rank and yank” ritual (bottom 15 % fired), heroes = star traders.\nShared values: espoused – Respect, Integrity, Communication, Excellence; enacted – innovation, winning, booking profits now, individual performance and money.\nShared assumptions: image of the organisation – we are the smartest, an exceptional company that can create markets for anything; image of the profession – be a shark, aggressive and competitive, or be fired; image of the power structure – traders and the share price matter, control functions do not.\nAnalysis: a very strong and coherent culture at the level of enacted values and assumptions, but a gap between espoused and enacted values.",
+    "keyPoints": [
+      "Artifacts with case examples",
+      "Espoused vs enacted values",
+      "Three images of the shared assumptions",
+      "Strong culture, gap espoused/enacted"
+    ],
+    "case": "enron"
+  },
+  {
+    "type": "short",
+    "id": "sa-o4-02",
+    "lecture": "o4",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "How does Enron's culture explain its downfall? What are the advantages and drawbacks of strong cultures?",
+    "modelAnswer": "Downfall: the pressure to grow and the belief in being the smartest pushed aggressive accounting (mark-to-market, debt hidden off the balance sheet); rank and yank created fear, so nobody dared to raise objections; because enacted values (win, book profits now) differed from espoused values (integrity), rules no longer guided behaviour; the culture spread to partners such as the auditor Arthur Andersen and made the company blind to risk – bankruptcy in December 2001.\nStrong cultures – advantages: identity and commitment, fast and coordinated decisions, culture substitutes for rules and control, attractive for like-minded recruits. Drawbacks: resistance to change, groupthink and conformism, harmful values locked in, clashes in mergers and acquisitions. A strong culture amplifies whatever values it carries.",
+    "keyPoints": [
+      "Link growth pressure → accounting fraud",
+      "Fear and absence of dissent",
+      "Espoused ≠ enacted",
+      "Strong culture = amplifier",
+      "Advantages and drawbacks"
+    ],
+    "case": "enron"
+  },
+  {
+    "type": "short",
+    "id": "sa-o4-03",
+    "lecture": "o4",
+    "difficulty": 1,
+    "verb": "define",
+    "prompt": "Give Schein's definition of organisational culture and explain its key ideas.",
+    "modelAnswer": "“A pattern of shared basic assumptions that the group learned as it solved its problems of external adaptation and internal integration, that has worked well enough to be considered valid, and therefore, to be taught to new members as the correct way to perceive, think and feel in relation to those problems” (Schein, 1981).\nKey ideas: culture lies in shared basic assumptions (deep and unconscious); it is learned by solving problems – adapting to the environment (customers, competitors, regulation) and integrating internally (living and working together); solutions that work repeatedly become taken for granted; they are transmitted to newcomers as the right way to see, think and feel.",
+    "keyPoints": [
+      "Shared basic assumptions",
+      "External adaptation and internal integration",
+      "Worked well enough → valid",
+      "Taught to new members"
+    ]
+  }
+]

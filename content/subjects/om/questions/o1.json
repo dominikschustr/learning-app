@@ -1,0 +1,270 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-o1-01",
+    "lecture": "o1",
+    "difficulty": 1,
+    "prompt": "Which elements belong to the course definition of an organisation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A stable collaboration of actors"
+      },
+      {
+        "id": "b",
+        "text": "Common general objectives"
+      },
+      {
+        "id": "c",
+        "text": "Division of work and functions with specific coordination mechanisms"
+      },
+      {
+        "id": "d",
+        "text": "A legal entity with shareholders"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Course definition: stable collaboration of actors, following common general objectives through division of work and functions and through specific coordination mechanisms. Legal form and shareholders are not part of it (an army or a choir is also an organisation)."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o1-02",
+    "lecture": "o1",
+    "difficulty": 2,
+    "prompt": "Who defined an organisation as “an answer to the problem of collective action”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Michel Crozier (1977)"
+      },
+      {
+        "id": "b",
+        "text": "Talcott Parsons (1964)"
+      },
+      {
+        "id": "c",
+        "text": "Henry Mintzberg (1989)"
+      },
+      {
+        "id": "d",
+        "text": "Howard Aldrich (1979)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Crozier (1977). Parsons: social units meant to reach specific objectives; Mintzberg: collective action in search of a common mission; Aldrich: activity systems oriented to an end that maintain their frontiers.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o1-03",
+    "lecture": "o1",
+    "difficulty": 2,
+    "prompt": "Katz & Kahn (1966) describe organisations as …",
+    "options": [
+      {
+        "id": "a",
+        "text": "open systems consisting of activities interwoven with individuals"
+      },
+      {
+        "id": "b",
+        "text": "a set of social units meant to reach specific objectives"
+      },
+      {
+        "id": "c",
+        "text": "the rational coordination of activities through hierarchy"
+      },
+      {
+        "id": "d",
+        "text": "a collective action in search of a common mission"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Katz & Kahn introduced the open-system view: organisations exchange with their environment. b = Parsons, c = Schein (1970), d = Mintzberg.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o1-04",
+    "lecture": "o1",
+    "difficulty": 1,
+    "prompt": "What does the opening formula “Perf(orga) ≠ Σ Perf(i)” express?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Organisational performance differs from the sum of individual performances"
+      },
+      {
+        "id": "b",
+        "text": "Organisations always perform worse than their best individual"
+      },
+      {
+        "id": "c",
+        "text": "Individual performance cannot be measured"
+      },
+      {
+        "id": "d",
+        "text": "Only the manager's performance counts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "How work is divided and coordinated creates (or destroys) value beyond individual contributions – which is why organisation is worth studying.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o1-05",
+    "lecture": "o1",
+    "difficulty": 2,
+    "prompt": "What did the Stanford prison experiment (Zimbardo, 1971) show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Roles and situations created by an organisation can strongly shape individual behaviour"
+      },
+      {
+        "id": "b",
+        "text": "Personality is the main driver of abusive behaviour"
+      },
+      {
+        "id": "c",
+        "text": "People resist authority when they can see the victim"
+      },
+      {
+        "id": "d",
+        "text": "Observation always raises productivity"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Ordinary students assigned to be guards became abusive within days. b is the opposite conclusion; c refers to Milgram (Session 6); d is the Hawthorne effect (Session 5).",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o1-06",
+    "lecture": "o1",
+    "difficulty": 1,
+    "prompt": "Which components make up the final grade of the course?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Attendance and involvement – 20 %"
+      },
+      {
+        "id": "b",
+        "text": "In-class closed-book works – 30 %"
+      },
+      {
+        "id": "c",
+        "text": "Final exam – 50 %"
+      },
+      {
+        "id": "d",
+        "text": "Group presentation – 30 %"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "20 % attendance and involvement, 30 % various in-class closed-book works (MCQ, short essays, cases), 50 % final exam (short case, closed book)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o1-01",
+    "lecture": "o1",
+    "difficulty": 1,
+    "statement": "Edgar Schein (1970) defined an organisation as the rational coordination of activities of a number of people pursuing common goals through division of work, hierarchy and responsibilities.",
+    "answer": true,
+    "explanation": "That is Schein's 1970 definition – long before his work on culture (1981, 2004)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o1-02",
+    "lecture": "o1",
+    "difficulty": 1,
+    "statement": "According to the course, an organisation needs a formal legal status to count as an organisation.",
+    "answer": false,
+    "explanation": "Organisations can be more or less formal: families, clubs, schools, armies. What counts is stable collaboration, common objectives, division of work and coordination."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o1-03",
+    "lecture": "o1",
+    "difficulty": 1,
+    "statement": "The course argues that, after their thirties, managers stand out mainly through technical competencies.",
+    "answer": false,
+    "explanation": "The Audencia & Essec (2014) report says the opposite: those who emerge go beyond technical considerations and develop a fine-grained understanding of complex organisational phenomena."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o1-04",
+    "lecture": "o1",
+    "difficulty": 1,
+    "statement": "The final exam of the course is closed book and asks you to apply the course models to a short case.",
+    "answer": true,
+    "explanation": "Final exam (50 %): short case, a few questions applying models and concepts, closed book."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o1-05",
+    "lecture": "o1",
+    "difficulty": 1,
+    "statement": "In the RCMP case, the court found that police practices had helped create the terrorist plot they then prosecuted.",
+    "answer": true,
+    "explanation": "The Supreme Court of British Columbia overturned the conviction (2016): the police had manufactured the crime – an example of how organisational features and mindsets produce outcomes."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o1-06",
+    "lecture": "o1",
+    "difficulty": 2,
+    "statement": "Aldrich (1979) defines organisations as open systems of activities interwoven with individuals.",
+    "answer": false,
+    "explanation": "That is Katz & Kahn (1966). Aldrich: a set of activity systems oriented toward an end and maintaining their frontiers."
+  },
+  {
+    "type": "short",
+    "id": "sa-o1-01",
+    "lecture": "o1",
+    "difficulty": 1,
+    "verb": "define",
+    "prompt": "Define an organisation as in the course and explain each element with an example.",
+    "modelAnswer": "Course definition: an organisation is a stable collaboration of actors, following common general objectives through division of work and functions and through specific coordination mechanisms.\n• Stable collaboration of actors: people work together over time (a hospital's staff, not a one-off crowd).\n• Common general objectives: a shared mission (heal patients, sell products).\n• Division of work and functions: tasks are split among specialised roles (surgeons, nurses, administration).\n• Coordination mechanisms: the parts are made to work together (hierarchy, procedures, objectives, training, mutual adjustment – see Mintzberg).\nBecause of division and coordination, the performance of the organisation differs from the sum of individual performances.",
+    "keyPoints": [
+      "Stable collaboration of actors",
+      "Common general objectives",
+      "Division of work and functions",
+      "Specific coordination mechanisms",
+      "Example for each element"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-o1-02",
+    "lecture": "o1",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Why is understanding organisations a key competency for managers? Use at least three arguments from Session 1.",
+    "modelAnswer": "1. Organisations have a major role in our societies: at every stage of life we belong to many organisations, more or less formal.\n2. They come in a variety of forms, ways of functioning and problems, each with advantages and drawbacks.\n3. Making the right organisational choices is key for performance and success (Perf(orga) ≠ Σ Perf(i)).\n4. Organisations strongly affect individuals and their behaviour (Stanford prison experiment; RCMP case; Kerviel, Enron).\n5. Understanding organisational complexity distinguishes successful managers once technical skills no longer suffice (Audencia & Essec, 2014).",
+    "keyPoints": [
+      "Major role in society",
+      "Variety of forms with pros and cons",
+      "Choices drive performance",
+      "Organisations shape behaviour (Zimbardo)",
+      "Managerial competency beyond technical skills"
+    ]
+  }
+]

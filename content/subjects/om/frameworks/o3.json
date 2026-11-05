@@ -1,0 +1,209 @@
+[
+  {
+    "id": "org-charts",
+    "lecture": "o3",
+    "name": "Functional, divisional and matrix structures",
+    "origin": "Session 3",
+    "purpose": "Which grouping logic does the organisation chart show?",
+    "parts": [
+      {
+        "label": "Functional",
+        "points": [
+          "Grouped by function, top coordinates",
+          "+ scale economies, control",
+          "− silos, slow"
+        ]
+      },
+      {
+        "label": "Divisional",
+        "points": [
+          "Divisions by product/customer/region, profit centres",
+          "+ accountability, customer focus",
+          "− duplication, rivalry"
+        ]
+      },
+      {
+        "label": "Matrix",
+        "points": [
+          "Functions × projects/regions",
+          "+ flexibility",
+          "− two bosses"
+        ]
+      }
+    ],
+    "apply": [
+      "Link chart and configuration: functional ↔ machine bureaucracy, divisional ↔ divisional form, matrix ↔ adhocracy"
+    ],
+    "pitfalls": [
+      "The chart shows only grouping, not coordination or power"
+    ],
+    "example": "Unilever: segments × functions.",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "coordination",
+    "lecture": "o3",
+    "name": "Mintzberg's 5 coordination mechanisms",
+    "origin": "Mintzberg (1979)",
+    "purpose": "How is work coordinated?",
+    "parts": [
+      {
+        "label": "Direct supervision",
+        "points": [
+          "Orders from the boss"
+        ]
+      },
+      {
+        "label": "Standardisation of work processes",
+        "points": [
+          "Rules and routines fix the how"
+        ]
+      },
+      {
+        "label": "Standardisation of outputs",
+        "points": [
+          "Objectives fix the what"
+        ]
+      },
+      {
+        "label": "Standardisation of skills",
+        "points": [
+          "Training fixes what to expect of each other"
+        ]
+      },
+      {
+        "label": "Mutual adjustment",
+        "points": [
+          "Informal communication"
+        ]
+      }
+    ],
+    "apply": [
+      "What is fixed in advance? The boss → the how → the what → the training → nothing"
+    ],
+    "pitfalls": [
+      "All are used; name the dominant one and justify with case facts"
+    ],
+    "example": "Bar → processes · traders +15 % → outputs · basketball → mutual adjustment · Roman wars → direct supervision.",
+    "visual": {
+      "type": "flow"
+    }
+  },
+  {
+    "id": "five-parts",
+    "lecture": "o3",
+    "name": "Mintzberg's 5 parts of the organisation",
+    "origin": "Mintzberg (1979)",
+    "purpose": "Who does what in the organisation?",
+    "parts": [
+      {
+        "label": "Strategic apex",
+        "points": [
+          "Top management, board"
+        ]
+      },
+      {
+        "label": "Middle line",
+        "points": [
+          "Managers between apex and core (foreman)"
+        ]
+      },
+      {
+        "label": "Operating core",
+        "points": [
+          "Produces the goods and services"
+        ]
+      },
+      {
+        "label": "Technostructure",
+        "points": [
+          "Analysts: planning, methods, training"
+        ]
+      },
+      {
+        "label": "Support staff",
+        "points": [
+          "Services outside the work flow: legal, cleaning"
+        ]
+      }
+    ],
+    "apply": [
+      "Map the case's actors onto the five parts and say which part is strongest"
+    ],
+    "pitfalls": [
+      "Technostructure ≠ support staff"
+    ],
+    "example": "CEO · director of production · machine operators · planning/training · cleaning.",
+    "visual": {
+      "type": "layers"
+    }
+  },
+  {
+    "id": "configurations",
+    "lecture": "o3",
+    "name": "Mintzberg's 5 configurations",
+    "origin": "Mintzberg (1979, 1989)",
+    "purpose": "Which structural configuration characterises the organisation – and does it fit?",
+    "parts": [
+      {
+        "label": "Simple structure",
+        "points": [
+          "Direct supervision",
+          "Strategic apex",
+          "Centralisation",
+          "Young/small or crisis"
+        ]
+      },
+      {
+        "label": "Machine bureaucracy",
+        "points": [
+          "Work processes",
+          "Technostructure",
+          "Standardisation",
+          "Big, mature, stable"
+        ]
+      },
+      {
+        "label": "Divisional form",
+        "points": [
+          "Outputs",
+          "Middle line",
+          "Balkanization",
+          "Diversified markets"
+        ]
+      },
+      {
+        "label": "Professional bureaucracy",
+        "points": [
+          "Skills",
+          "Operating core",
+          "Professionalisation",
+          "Complex but stable"
+        ]
+      },
+      {
+        "label": "Adhocracy",
+        "points": [
+          "Mutual adjustment",
+          "Support staff (experts)",
+          "Collaboration",
+          "Complex and dynamic"
+        ]
+      }
+    ],
+    "apply": [
+      "1 Key parts → 2 coordination → 3 pull → 4 contingency factors → 5 configuration → 6 fit and recommendation",
+      "Real organisations are often hybrids (e.g. professional bureaucracy with adhocratic features)"
+    ],
+    "pitfalls": [
+      "Divisional form: key part is the middle line, not the apex",
+      "Adhocracy still coordinates – by costly mutual adjustment"
+    ],
+    "example": "OpenAI mock: professional bureaucracy + adhocracy with elements of simple structure.",
+    "visual": {
+      "type": "pillars"
+    }
+  }
+]

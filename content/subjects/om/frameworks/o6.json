@@ -1,0 +1,179 @@
+[
+  {
+    "id": "milgram",
+    "lecture": "o6",
+    "name": "Milgram's obedience experiment",
+    "origin": "Milgram (Yale, 1961–1974)",
+    "purpose": "Why do ordinary people obey harmful orders?",
+    "parts": [
+      {
+        "label": "Baseline",
+        "points": [
+          "65 % obey to the end"
+        ]
+      },
+      {
+        "label": "Less legitimacy",
+        "points": [
+          "Scruffy building: 48 %"
+        ]
+      },
+      {
+        "label": "Less presence",
+        "points": [
+          "Orders by phone: 23 %"
+        ]
+      },
+      {
+        "label": "Victim closer",
+        "points": [
+          "Victim beside the subject: 40 %"
+        ]
+      },
+      {
+        "label": "Conclusion",
+        "points": [
+          "Agentic state: responsibility disappears",
+          "Rational-legal and expert legitimacy"
+        ]
+      }
+    ],
+    "apply": [
+      "Use it to explain why employees follow harmful instructions (RCMP, Enron, banks)"
+    ],
+    "pitfalls": [],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "resource-dependency",
+    "lecture": "o6",
+    "name": "Power as resource dependency",
+    "origin": "Emerson (1962), Blau (1964), Pfeffer & Salancik (1978)",
+    "purpose": "Where does A's power over B come from?",
+    "parts": [
+      {
+        "label": "Dependency",
+        "points": [
+          "Control of resources B needs"
+        ]
+      },
+      {
+        "label": "Reciprocity",
+        "points": [
+          "B keeps power through how it complies"
+        ]
+      },
+      {
+        "label": "Imbalance",
+        "points": [
+          "Never equal or static; grey zones"
+        ]
+      }
+    ],
+    "apply": [
+      "Ask: how much does B need it? Can B get it elsewhere? Can B force A?"
+    ],
+    "pitfalls": [
+      "Perception of needs matters, not the objective situation"
+    ],
+    "example": "",
+    "visual": {
+      "type": "triangle"
+    }
+  },
+  {
+    "id": "crozier",
+    "lecture": "o6",
+    "name": "Power and uncertainty zones",
+    "origin": "Crozier (1964), Crozier & Friedberg (1977)",
+    "purpose": "Who really holds power, beyond the organisation chart?",
+    "parts": [
+      {
+        "label": "Expertise",
+        "points": [
+          "Hard-to-replace know-how"
+        ]
+      },
+      {
+        "label": "Environment",
+        "points": [
+          "Networks, social capital, ties"
+        ]
+      },
+      {
+        "label": "Information",
+        "points": [
+          "Control of communication flows"
+        ]
+      },
+      {
+        "label": "Rules",
+        "points": [
+          "Protection against arbitrariness",
+          "Creating rules, bargaining"
+        ]
+      }
+    ],
+    "apply": [
+      "Identify the zones of uncertainty in the case and who controls them",
+      "Compare real power with the formal hierarchy"
+    ],
+    "pitfalls": [
+      "Power works in both directions; no one is powerless"
+    ],
+    "example": "Plane crash: compass, water, welding torch.",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "french-raven",
+    "lecture": "o6",
+    "name": "Bases of power",
+    "origin": "French & Raven (1959)",
+    "purpose": "On what bases does someone have power?",
+    "parts": [
+      {
+        "label": "Reward",
+        "points": [
+          "Formal: control of valued rewards"
+        ]
+      },
+      {
+        "label": "Coercive",
+        "points": [
+          "Formal: fear of consequences"
+        ]
+      },
+      {
+        "label": "Legitimate",
+        "points": [
+          "Formal: position in the hierarchy"
+        ]
+      },
+      {
+        "label": "Referent",
+        "points": [
+          "Personal: identification, charisma"
+        ]
+      },
+      {
+        "label": "Expert",
+        "points": [
+          "Personal: trusted, relevant expertise"
+        ]
+      }
+    ],
+    "apply": [
+      "Separate formal and personal bases for the key actors of a case"
+    ],
+    "pitfalls": [],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  }
+]

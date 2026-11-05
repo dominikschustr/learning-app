@@ -1,0 +1,25 @@
+{
+  "id": "om",
+  "name": "Organisation & Management",
+  "short": "O&M",
+  "color": "#0E7490",
+  "description": "Organisation & Management (ESCP, Olivier Wurtz): die Modelle der Sessions 1–6 lernen und auf Cases anwenden – Fayol, Weber, Taylor, Mintzberg, Schein, March & Simon, Hirschman, Etzioni, Crozier und French & Raven. Framework-Übersicht, Zusammenfassungen, Fragen je Kapitel und Probeklausuren (Buurtzorg, OpenAI, WhatsApp/Facebook).",
+  "examDate": "2026-11-23",
+  "demo": false,
+  "lectures": [
+    { "id": "o1", "title": "O1 · Introduction: what is an organisation?" },
+    { "id": "o2", "title": "O2 · Historical perspectives: Fayol, Weber, Follett, Taylor" },
+    { "id": "o3", "title": "O3 · Structure: organisation charts & Mintzberg" },
+    { "id": "o4", "title": "O4 · Culture: Hofstede & Schein" },
+    { "id": "o5", "title": "O5 · Incentives: Hawthorne, March & Simon, Hirschman, Etzioni" },
+    { "id": "o6", "title": "O6 · Power: Milgram, legitimacy, Crozier, French & Raven" }
+  ],
+  "examFormat": {
+    "name": "Final exam",
+    "minutes": 120,
+    "short": 3,
+    "mc": 8,
+    "tf": 6,
+    "order": ["short", "mc", "tf"]
+  }
+}

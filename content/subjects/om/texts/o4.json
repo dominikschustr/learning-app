@@ -1,0 +1,111 @@
+{
+  "lecture": "o4",
+  "title": "O4 – Culture: Hofstede, Schein and Enron",
+  "source": "Zusammenfassung von Session 4 „Culture“ und der Übersicht Organisation_Session_4_Culture",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Culture became a management topic in the 1980s: Western firms were in crisis while Japanese firms thrived with the same technology – culture was the explanation."
+        },
+        {
+          "kind": "item",
+          "text": "Hofstede (1980): culture is “the collective programming of the mind which distinguishes the members of one human group from another”."
+        },
+        {
+          "kind": "item",
+          "text": "Culture is shared, learned, systematic and organised, and provides predictability and stability (norms that substitute for thinking)."
+        },
+        {
+          "kind": "item",
+          "text": "Schein: every group that shares experience develops a culture; organisational culture has three levels – artifacts (visible), shared values and shared assumptions (invisible)."
+        },
+        {
+          "kind": "item",
+          "text": "Strong culture = amplifier: an asset with sound values in a stable environment, a danger with harmful values or a changing environment (Enron)."
+        }
+      ]
+    },
+    {
+      "heading": "Organisational culture (Schein)",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Schein (1999)",
+          "text": "A culture starts developing when a group of people have a shared experience."
+        },
+        {
+          "kind": "item",
+          "term": "Definition (Schein, 1981)",
+          "text": "A pattern of shared basic assumptions that the group learned as it solved its problems of external adaptation and internal integration, that has worked well enough to be considered valid, and therefore is taught to new members as the correct way to perceive, think and feel in relation to those problems."
+        },
+        {
+          "kind": "item",
+          "term": "Two problems",
+          "text": "External adaptation (customers, competitors, technology, regulators) and internal integration (living and working together)."
+        },
+        {
+          "kind": "item",
+          "term": "Class examples",
+          "text": "France Télécom → Orange: a state monopoly culture had to change when the environment became competitive. CIA vs USSR: culture is shaped by the problem the organisation was built to solve."
+        }
+      ]
+    },
+    {
+      "heading": "Schein's three levels (2004)",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Artifacts (visible, but not always decipherable)",
+          "text": "Name and logo · physical structures and décor (building, offices, dress code) · stories, legends, myths and heroes · rituals and ceremonies · organisational language (“clients” not “customers”) · symbols and taboos."
+        },
+        {
+          "kind": "item",
+          "term": "Shared values (invisible, conscious)",
+          "text": "Stable, evaluative beliefs about good and bad, right and wrong. Core values (cornerstones) · espoused values (what we say) vs enacted values (what we actually do) · aspirational values (needed for the future, still lacking). Values drive behaviour only when we are mindful of them, have logical reasons to apply them and the situation does not interfere."
+        },
+        {
+          "kind": "item",
+          "term": "Shared assumptions (invisible, unconscious)",
+          "text": "Taken-for-granted beliefs, mental models of ideals. They answer three questions: image of the organisation (solid or vulnerable? prestigious? caring or brutal?) · image of the profession and qualifications (what is expected of me? shark or team player?) · image of the power structure (who matters? official vs real power? which stakeholders?)."
+        },
+        {
+          "kind": "item",
+          "text": "Observe top-down (artifacts first), but culture is produced bottom-up (assumptions → values → artifacts). Never conclude from a single artifact."
+        }
+      ]
+    },
+    {
+      "heading": "Enron with Schein",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Artifacts",
+          "text": "Glass tower, crooked E logo, trading floor, huge bonuses, Star Wars deal names, rank and yank."
+        },
+        {
+          "kind": "item",
+          "term": "Values",
+          "text": "Espoused: Respect, Integrity, Communication, Excellence. Enacted: win, book profits now."
+        },
+        {
+          "kind": "item",
+          "term": "Assumptions",
+          "text": "Organisation: we are the smartest. Profession: be a shark or be fired. Power: traders and the share price."
+        },
+        {
+          "kind": "item",
+          "term": "Downfall",
+          "text": "Pressure to grow → mark-to-market and hidden debt; fear from rank and yank → nobody dares to object; espoused ≠ enacted → rules do not guide behaviour; “smartest” belief → blind to risk, auditors drawn in."
+        },
+        {
+          "kind": "item",
+          "term": "Strong cultures",
+          "text": "+ identity, commitment, fast decisions, culture replaces rules and control · − resistance to change, groupthink, locks in harmful values, merger clashes."
+        }
+      ]
+    }
+  ]
+}

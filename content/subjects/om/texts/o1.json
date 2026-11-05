@@ -1,0 +1,112 @@
+{
+  "lecture": "o1",
+  "title": "O1 – Introduction: what is an organisation?",
+  "source": "Zusammenfassung von Session 1 „Introduction“ (Olivier Wurtz)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "An organisation is more than the sum of its members: the performance of an organisation of n individuals differs from the sum of the n individual performances."
+        },
+        {
+          "kind": "item",
+          "text": "Course definition: organisations consist in a stable collaboration of actors, following common general objectives through division of work and functions, and through specific coordination mechanisms."
+        },
+        {
+          "kind": "item",
+          "text": "Organisations matter: they play a major role in our societies, come in a variety of forms with advantages and drawbacks, and the right organisational choices are key for performance and success."
+        },
+        {
+          "kind": "item",
+          "text": "Organisations strongly affect individuals and influence their behaviour (Zimbardo's Stanford prison experiment, 1971)."
+        },
+        {
+          "kind": "item",
+          "text": "Understanding the complexity of organisations is a key managerial competency: after their thirties, managers stand out by understanding complex organisational phenomena, not by technical skills (Audencia & Essec, 2014)."
+        }
+      ]
+    },
+    {
+      "heading": "What is an organisation? Classic definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Parsons (1964)",
+          "text": "A set of social units essentially meant to reach specific objectives."
+        },
+        {
+          "kind": "item",
+          "term": "Katz & Kahn (1966)",
+          "text": "Open systems consisting of activities interwoven with individuals."
+        },
+        {
+          "kind": "item",
+          "term": "Schein (1970)",
+          "text": "The rational coordination of activities of a number of people pursuing common goals, through a division of work and functions, hierarchy and responsibilities."
+        },
+        {
+          "kind": "item",
+          "term": "Crozier (1977)",
+          "text": "An answer to the problem of collective action."
+        },
+        {
+          "kind": "item",
+          "term": "Aldrich (1979)",
+          "text": "A set of activity systems oriented toward an end and maintaining their frontiers."
+        },
+        {
+          "kind": "item",
+          "term": "Mintzberg (1989)",
+          "text": "A collective action in search of a common mission."
+        },
+        {
+          "kind": "item",
+          "term": "Course definition",
+          "text": "Stable collaboration of actors · common general objectives · division of work and functions · specific coordination mechanisms."
+        }
+      ]
+    },
+    {
+      "heading": "Organisations shape behaviour",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Stanford prison experiment (Zimbardo, 1971)",
+          "text": "Students randomly assigned to be guards or prisoners quickly adopted abusive or submissive behaviour – the role and the setting, not personality, drove behaviour."
+        },
+        {
+          "kind": "item",
+          "term": "RCMP case (Nuttall & Korody)",
+          "text": "Two marginalised people were convicted of terrorism in 2015; in 2016 the Supreme Court of British Columbia overturned the verdict because the police had essentially created the plot. Class question: which organisational features (i) and mindsets (ii) led to this outcome, and what would you recommend to the RCMP?"
+        },
+        {
+          "kind": "item",
+          "term": "Other examples",
+          "text": "Jérôme Kerviel (Société Générale) and Kenneth Lay (Enron): individual misconduct that the organisation made possible."
+        }
+      ]
+    },
+    {
+      "heading": "Course map and assessment",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Topics",
+          "text": "1 Introduction · 2 Historical perspectives – work · 3 Structure · 4 Culture · 5 Incentives · 6 Power – legitimacy · 7 Decision-making · 8 Conclusion."
+        },
+        {
+          "kind": "item",
+          "term": "Assessment",
+          "text": "Attendance and involvement 20 % · in-class closed-book works 30 % (MCQ, short essays, cases, usually unannounced) · final exam 50 %."
+        },
+        {
+          "kind": "item",
+          "term": "Final exam",
+          "text": "Closed book: a short case with a few questions asking you to apply the models and concepts of the course."
+        }
+      ]
+    }
+  ]
+}

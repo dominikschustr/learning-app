@@ -1,0 +1,154 @@
+{
+  "lecture": "o5",
+  "title": "O5 – Incentives: Hawthorne, March & Simon, Hirschman, Etzioni",
+  "source": "Zusammenfassung von Session 5 „Incentives“ (Olivier Wurtz)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Incentives answer the question: why do people contribute to an organisation, and how can it steer their behaviour?"
+        },
+        {
+          "kind": "item",
+          "text": "Hawthorne (Mayo): social factors – attention, group morale, informal norms – matter more than physical working conditions."
+        },
+        {
+          "kind": "item",
+          "text": "March & Simon: people stay as long as retributions ≥ contributions – as they perceive them (psychological contract). If the balance breaks, they reduce contributions or increase retributions themselves."
+        },
+        {
+          "kind": "item",
+          "text": "Hirschman: when an organisation no longer meets people's expectations they react by exit, voice, exit & voice or loyalty."
+        },
+        {
+          "kind": "item",
+          "text": "Etzioni: organisations combine three incentive and control mechanisms – coercion (stick), remuneration (carrot) and identification (heart)."
+        }
+      ]
+    },
+    {
+      "heading": "The Hawthorne experiment (Elton Mayo, 1924–1932)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Harvard team at Western Electric's Hawthorne plant (Chicago) tested the effect of lighting, breaks, working hours, heat or talking on productivity – expecting, as scientific management predicts, that better conditions raise output."
+        },
+        {
+          "kind": "item",
+          "text": "Surprise: productivity rose whatever was changed (more or less light, longer or shorter breaks)."
+        },
+        {
+          "kind": "item",
+          "term": "Hawthorne effect",
+          "text": "Feeling observed changes behaviour · showing people you care raises performance · affective relations, group morale and informal leaders matter – the informal organisation counts more than the formal one · groups set strict informal rules (don't produce too much or too little, never tell the boss anything that harms a member, don't play the boss)."
+        }
+      ]
+    },
+    {
+      "heading": "Extrinsic and intrinsic motivation",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Extrinsic",
+          "text": "Comes from outside the individual: money, grades, rewards."
+        },
+        {
+          "kind": "item",
+          "term": "Intrinsic",
+          "text": "Comes from within: the reward is doing the task itself (accomplishment, pleasure, meaning)."
+        },
+        {
+          "kind": "item",
+          "term": "Daycare example",
+          "text": "When a daycare introduced a fine for parents who picked up their children late, lateness increased: a moral obligation turned into a price – extrinsic incentives can crowd out intrinsic motives."
+        }
+      ]
+    },
+    {
+      "heading": "March & Simon: the contribution–retribution equilibrium",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "People stay in an organisation as long as retributions ≥ contributions (psychological contract)."
+        },
+        {
+          "kind": "item",
+          "term": "Retributions",
+          "text": "Salary, status, work satisfaction, personal development, social interactions, power, meaning …"
+        },
+        {
+          "kind": "item",
+          "term": "Contributions",
+          "text": "Working time, effort, subordination, expertise, skills …"
+        },
+        {
+          "kind": "item",
+          "text": "Both can be material or immaterial; what counts is the subjective, sometimes symbolic perception, not the objective value (weekend work feels very costly; using company property privately feels worth more than its price)."
+        },
+        {
+          "kind": "item",
+          "text": "If the balance breaks, people restore it by reducing contributions (lateness, absenteeism) or increasing retributions (theft, fraudulent expenses)."
+        },
+        {
+          "kind": "item",
+          "text": "Google exercise: high retributions (pay, prestige, perks, interesting problems) but also high contributions (workload, availability at night, pressure, conformism) and some missing retributions (recognition, promotion, meaning for non-stars)."
+        }
+      ]
+    },
+    {
+      "heading": "Hirschman: exit, voice and loyalty",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Exit",
+          "text": "Leave silently – possible when an external labour market exists."
+        },
+        {
+          "kind": "item",
+          "term": "Exit & voice",
+          "text": "Leave and voice concerns – can harm the firm's reputation."
+        },
+        {
+          "kind": "item",
+          "term": "Voice",
+          "text": "Stay and protest, hoping management will change things."
+        },
+        {
+          "kind": "item",
+          "term": "Loyalty",
+          "text": "Stay and accept – out of loyalty or out of resignation and lack of alternatives."
+        },
+        {
+          "kind": "item",
+          "text": "Two axes: stay vs leave × keep silent vs complain."
+        }
+      ]
+    },
+    {
+      "heading": "Etzioni (1961): three incentive and control mechanisms",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "Coercion",
+          "text": "Coercive power: control and sanctions – punishments (the stick)."
+        },
+        {
+          "kind": "item",
+          "term": "Speculation",
+          "text": "Remunerative power: compensation and promises – rewards (the carrot)."
+        },
+        {
+          "kind": "item",
+          "term": "Identification",
+          "text": "Symbolic (normative) power: belonging, vision, values – the heart."
+        },
+        {
+          "kind": "item",
+          "text": "Organisations use all three in variable proportions; the mix must fit the kind of work and people."
+        }
+      ]
+    }
+  ]
+}

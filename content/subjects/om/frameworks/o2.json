@@ -1,0 +1,247 @@
+[
+  {
+    "id": "scott-timeline",
+    "lecture": "o2",
+    "name": "Timeline of organisation theory",
+    "origin": "Richard Scott",
+    "purpose": "How did thinking about organisations evolve?",
+    "parts": [
+      {
+        "label": "1900–1930 · Organise to produce efficiently",
+        "points": [
+          "Order through formal rules",
+          "Weber, Taylor, Fayol"
+        ]
+      },
+      {
+        "label": "1930–1960 · Motivate",
+        "points": [
+          "Group, morale, work conditions",
+          "Mayo, McGregor, Maslow, Herzberg"
+        ]
+      },
+      {
+        "label": "1960–1970 · Adjust the structure",
+        "points": [
+          "Shaped by outside forces",
+          "Chandler, Lawrence & Lorsch, Woodward, Perrow"
+        ]
+      },
+      {
+        "label": "1970– · Motivate through culture",
+        "points": [
+          "Complexity, change, adhocracy",
+          "Weick, March, Ouchi, Crozier, DiMaggio & Powell"
+        ]
+      }
+    ],
+    "apply": [
+      "Place any author of the course in one quadrant to show his view of people and environment"
+    ],
+    "pitfalls": [
+      "Mixing up the axes: system (closed/open) is about the environment, individual (rational/social) about people"
+    ],
+    "example": "",
+    "visual": {
+      "type": "quad",
+      "count": 4,
+      "x": [
+        "Rational individual",
+        "Social individual"
+      ],
+      "y": [
+        "Closed system",
+        "Open system"
+      ]
+    }
+  },
+  {
+    "id": "fayol",
+    "lecture": "o2",
+    "name": "Fayol's 14 principles of management",
+    "origin": "Fayol (1916), Administration industrielle et générale",
+    "purpose": "How should managers run an organisation?",
+    "parts": [
+      {
+        "label": "Rationality & efficiency",
+        "points": [
+          "Division of labour",
+          "Order",
+          "Discipline"
+        ]
+      },
+      {
+        "label": "Top-down authority",
+        "points": [
+          "Centralisation",
+          "Scalar chain",
+          "Unity of command",
+          "Unity of direction",
+          "Authority"
+        ]
+      },
+      {
+        "label": "A focus on people",
+        "points": [
+          "Stability of tenure",
+          "Initiative",
+          "Esprit de corps"
+        ]
+      },
+      {
+        "label": "Rewarding",
+        "points": [
+          "Remuneration",
+          "Equity"
+        ]
+      },
+      {
+        "label": "Interest of the organisation",
+        "points": [
+          "Subordination of individual interest to the general interest"
+        ]
+      }
+    ],
+    "apply": [
+      "Check which principles a case firm follows or violates (e.g. a matrix breaks unity of command)"
+    ],
+    "pitfalls": [
+      "Forgetting that Fayol also defines 6 functions and 6 qualities of the manager"
+    ],
+    "example": "Mining context: danger made unity of command and good supervisors vital.",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "weber-legitimacy",
+    "lecture": "o2",
+    "name": "Weber's three types of legitimate authority",
+    "origin": "Weber (1922), Economy and Society",
+    "purpose": "Why do people obey an authority?",
+    "parts": [
+      {
+        "label": "Traditional",
+        "points": [
+          "Custom, “it has always been so”",
+          "Dynasties, Kennedy family"
+        ]
+      },
+      {
+        "label": "Charismatic",
+        "points": [
+          "Devotion to an exceptional leader",
+          "Prophets, Napoleon, Steve Jobs"
+        ]
+      },
+      {
+        "label": "Rational-legal",
+        "points": [
+          "Stable, impersonal rules – obey the function",
+          "Police officer, elected chancellor"
+        ]
+      }
+    ],
+    "apply": [
+      "Identify the source of a leader's authority in the case and what happens when it is challenged"
+    ],
+    "pitfalls": [
+      "Real leaders often combine several types – say which one dominates"
+    ],
+    "example": "Only rational-legal authority grounds bureaucracy.",
+    "visual": {
+      "type": "triangle"
+    }
+  },
+  {
+    "id": "weber-bureaucracy",
+    "lecture": "o2",
+    "name": "Weber's bureaucracy",
+    "origin": "Weber (1922)",
+    "purpose": "What makes the bureaucratic ideal type efficient – and what goes wrong?",
+    "parts": [
+      {
+        "label": "Aims",
+        "points": [
+          "Precision, speed, clarity",
+          "Regularity, reliability, efficiency"
+        ]
+      },
+      {
+        "label": "Principles",
+        "points": [
+          "Rational rules",
+          "Impersonal authority",
+          "Legal demarcation of roles",
+          "Selection on qualifications, appointment, fixed salary",
+          "Life-long careers, strict discipline"
+        ]
+      },
+      {
+        "label": "Drawbacks",
+        "points": [
+          "Red tape, slowness, uncreative",
+          "Complex rules and chains of command",
+          "Goal displacement (Merton)"
+        ]
+      }
+    ],
+    "apply": [],
+    "pitfalls": [
+      "Bureaucracy is an ideal type, not a description of every administration"
+    ],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "taylor",
+    "lecture": "o2",
+    "name": "Taylor's scientific management",
+    "origin": "Taylor (1911), The Principles of Scientific Management",
+    "purpose": "How to replace empirical management by an efficient system?",
+    "parts": [
+      {
+        "label": "Problem",
+        "points": [
+          "Powerless hierarchy",
+          "Soldiering",
+          "Workers own the know-how"
+        ]
+      },
+      {
+        "label": "Scientific study of work",
+        "points": [
+          "Observe 10–15 skilled workers",
+          "Divide and time tasks",
+          "One best way"
+        ]
+      },
+      {
+        "label": "Selection & pay",
+        "points": [
+          "Right man in the right place",
+          "Individual pay +30–100 %"
+        ]
+      },
+      {
+        "label": "Separate supervision",
+        "points": [
+          "4 functional foremen",
+          "Central methods department"
+        ]
+      }
+    ],
+    "apply": [
+      "Look for vertical (design vs execution) and horizontal (task) division of labour in the case"
+    ],
+    "pitfalls": [
+      "Taylor's functional foremen contradict Fayol's unity of command"
+    ],
+    "example": "Today: fast food, call centres, warehouses.",
+    "visual": {
+      "type": "flow"
+    }
+  }
+]

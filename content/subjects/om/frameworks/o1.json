@@ -1,0 +1,45 @@
+[
+  {
+    "id": "org-definitions",
+    "lecture": "o1",
+    "name": "What is an organisation?",
+    "origin": "Session 1 · Parsons, Katz & Kahn, Schein, Crozier, Aldrich, Mintzberg",
+    "purpose": "Which elements define an organisation?",
+    "parts": [
+      {
+        "label": "Stable collaboration of actors",
+        "points": [
+          "People work together over time"
+        ]
+      },
+      {
+        "label": "Common general objectives",
+        "points": [
+          "A shared mission"
+        ]
+      },
+      {
+        "label": "Division of work and functions",
+        "points": [
+          "Specialised tasks and roles"
+        ]
+      },
+      {
+        "label": "Coordination mechanisms",
+        "points": [
+          "Hierarchy, rules, objectives, training, mutual adjustment"
+        ]
+      }
+    ],
+    "apply": [
+      "Start a case answer by naming what is divided and how it is coordinated"
+    ],
+    "pitfalls": [
+      "Reducing an organisation to its legal form or its organisation chart"
+    ],
+    "example": "Perf(orga) ≠ Σ Perf(i): the same people perform differently depending on how they are organised.",
+    "visual": {
+      "type": "pillars"
+    }
+  }
+]

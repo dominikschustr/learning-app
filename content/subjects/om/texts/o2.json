@@ -1,0 +1,165 @@
+{
+  "lecture": "o2",
+  "title": "O2 – Historical perspectives: Fayol, Weber, Follett, Taylor",
+  "source": "Zusammenfassung von Session 2 „Historical Perspectives – Work“ (Olivier Wurtz)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Organisation and management theory developed in four periods (Richard Scott), along two axes: closed vs open system and rational vs social individual."
+        },
+        {
+          "kind": "item",
+          "text": "Large organisations appeared with industrialisation (Chicago slaughterhouses, Coca-Cola). Three changes created the modern company: new industries, labour law (work contracts, subordination) and directors (control passes from owners to managers; business schools)."
+        },
+        {
+          "kind": "item",
+          "text": "The founding figures – Fayol, Weber and Taylor – favour a rational, universal and scientific approach (“one best way”). Mary Parker Follett adds the human and social side."
+        }
+      ]
+    },
+    {
+      "heading": "Scott's timeline of organisation theory",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "1900–1930 · closed system, rational individual",
+          "text": "Organise to produce efficiently – “order through formal rules”: Weber, Taylor, Fayol (directive management)."
+        },
+        {
+          "kind": "item",
+          "term": "1930–1960 · closed system, social individual",
+          "text": "Motivate – “group, morale and work conditions”: Mayo, McGregor, Maslow, Herzberg (human relations)."
+        },
+        {
+          "kind": "item",
+          "term": "1960–1970 · open system, rational individual",
+          "text": "Adjust the structure – “the organisation is shaped by outside forces”: Chandler, Lawrence & Lorsch, Woodward, Perrow (contingency and planning)."
+        },
+        {
+          "kind": "item",
+          "term": "1970– · open system, social individual",
+          "text": "Motivate through culture – “complexity, change, turbulence and adhocracy”: Weick, March, Ouchi, Simon, Crozier, DiMaggio & Powell (participative management, culture and leadership)."
+        }
+      ]
+    },
+    {
+      "heading": "Birth of the modern company",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "19th century: very small, family companies; workers were craftspeople, the owner supervised directly. Companies then grow (rural exodus) and need skilful leaders and managers between owner and workers. Strong trust in science (positivism)."
+        },
+        {
+          "kind": "item",
+          "term": "Three main changes",
+          "text": "What turned small family firms into modern companies:",
+          "children": [
+            "Emergence of new industries and sectors",
+            "Labour law: work contracts create a subordination link",
+            "Appearance of “directors”: control passes from owners to managers; creation of business schools"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Adam Smith (1776) first formalised the economic value of the division of labour (the pin factory)."
+        }
+      ]
+    },
+    {
+      "heading": "Henri Fayol (1841–1925) · the manager and the hierarchy",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "French mining engineer and top manager; “Administration industrielle et générale” (1916) – one of the first management books."
+        },
+        {
+          "kind": "item",
+          "term": "Six functions of the company",
+          "text": "Technical · commercial · financial · security · accounting · administrative. The administrative function – planning, organising, leading, controlling – was ignored before Fayol."
+        },
+        {
+          "kind": "item",
+          "term": "14 principles",
+          "text": "Rationality and efficiency: division of labour, order, discipline · Top-down authority: centralisation, scalar chain, unity of command, unity of direction, authority · People: stability of tenure, initiative, esprit de corps · Rewarding: remuneration, equity · Subordination of individual interest to the general interest."
+        },
+        {
+          "kind": "item",
+          "term": "Qualities of the manager",
+          "text": "Physical, mental, moral, education, technical, experience."
+        },
+        {
+          "kind": "item",
+          "text": "Mining context (gas, floods, landslides): unity of command and the quality of supervisors were vital."
+        }
+      ]
+    },
+    {
+      "heading": "Max Weber (1864–1920) · bureaucracy",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "German sociologist: instead of asking why people break rules, he asked why they obey."
+        },
+        {
+          "kind": "item",
+          "term": "Three types of legitimate authority",
+          "text": "Traditional (custom, “it has always been so”) · charismatic (devotion to an exceptional leader) · rational-legal (stable, explicit, impersonal rules; people obey the function, not the person)."
+        },
+        {
+          "kind": "item",
+          "term": "Bureaucracy as ideal type",
+          "text": "Aims at precision, speed, clarity, regularity, reliability, efficiency. Principles: rational rules; authority exercised by impersonal function; legal demarcation of roles; selection on technical qualifications, appointment, fixed salary; life-long careers; strict discipline and operating rules."
+        },
+        {
+          "kind": "item",
+          "term": "Pejorative meaning today",
+          "text": "Red tape, slowness, lack of creativity, complex rules. Merton: goal displacement – the rules become more important than the objectives behind them."
+        }
+      ]
+    },
+    {
+      "heading": "Mary Parker Follett (1868–1933) · the human side",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "“Mother of modern management”, forerunner of the human relations movement."
+        },
+        {
+          "kind": "item",
+          "text": "Integrative conflict resolution (integrate perspectives instead of domination or compromise) · “power with” instead of “power over” · groups, not individuals, are the primary unit of organisational life."
+        }
+      ]
+    },
+    {
+      "heading": "Frederick W. Taylor (1856–1915) · scientific management",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Engineer at Midvale Steel; “The Principles of Scientific Management” (1911)."
+        },
+        {
+          "kind": "item",
+          "term": "Diagnosis",
+          "text": "A powerless hierarchy: workers practise “soldiering” (working below capacity to avoid ever-rising targets) and control the know-how, so they choose their own methods."
+        },
+        {
+          "kind": "item",
+          "term": "Principles",
+          "text": "Three building blocks:",
+          "children": [
+            "Observe 10–15 skilled workers, divide work into tasks, time each task, remove useless gestures → the one best way",
+            "Selection (“the right man in the right place”) and individual performance pay (+30 % to +100 %)",
+            "Supervision separated from production: four functional foremen per worker and a powerful methods department"
+          ]
+        },
+        {
+          "kind": "item",
+          "text": "Result: vertical division (design vs execution) and horizontal division (specialised tasks). Taylorism survives today (call centres, fast food, logistics)."
+        }
+      ]
+    }
+  ]
+}

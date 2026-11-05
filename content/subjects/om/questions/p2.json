@@ -1,0 +1,69 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p2-01",
+    "lecture": "o3",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "openai",
+    "prompt": "Using Mintzberg's framework, identify the key parts of the organisation and the coordinating mechanisms at OpenAI. What organisational structure(s) best characterise(s) OpenAI? Explain your answer using Mintzberg's framework and examples from the case.",
+    "modelAnswer": "Key parts: the operating core (researchers and engineers) and the expert support staff are extremely powerful – when 700 of them threatened to leave, the board had to reinstate Altman within days. The strategic apex is very powerful too, but split: the board has formal authority, while Altman and his inner circle hold the real influence (authority vs influence). Middle line and technostructure are weak – few hierarchical layers, few procedures.\nCoordination: standardisation of skills – a race to recruit highly talented, heterogeneous experts who work autonomously; mutual adjustment within small research and product teams; some direct supervision from Altman and his circle on major decisions; little standardisation of outputs or processes.\nConfiguration: a hybrid – professional bureaucracy (power of experts, standardisation of skills) and adhocracy (innovation, mutual adjustment, complex and dynamic environment, young firm, sophisticated technology), with elements of a simple structure (centralisation around a charismatic leader). Growth and commercialisation put pressure toward more formal structures.",
+    "keyPoints": [
+      "Powerful operating core / expert staff (letter of 700)",
+      "Apex: board (formal) vs Altman (real influence)",
+      "Weak middle line and technostructure",
+      "Skills + mutual adjustment, some direct supervision",
+      "Hybrid: professional bureaucracy + adhocracy + simple-structure elements"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-02",
+    "lecture": "o4",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "openai",
+    "prompt": "Using Schein's framework, analyse the organisational culture of OpenAI. Use examples from the case to justify your analysis.",
+    "modelAnswer": "Artifacts: the name “Open” AI (open-source origins, sharing, openness); open, modern Silicon Valley offices with plants; a logo designed by the founders; casual, techie, young style; hero – Sam Altman, idealised like Steve Jobs (dropout, prodigy), so central that the company seemed unable to survive without him; myth – AI that will save the world and benefit humanity; rites – Altman's tours of world leaders, product launches; taboos – profit and how to control what is being created.\nShared values: innovation that changes the world, science and excellence, elitism, openness and sharing, passion and commitment to the mission, hostility to processes and managerial power – except Altman's.\nShared assumptions: image of the organisation – an exceptional, privileged place where history is being made, destined to revolutionise the world (and generate huge revenues); image of the profession – a brilliant, creative scientist fully committed to the mission; image of the power structure – officially the non-profit board, in reality Sam Altman.\nTensions: espoused openness and non-profit mission vs enacted commercial race (taboo of profit); safety vs speed.",
+    "keyPoints": [
+      "Artifacts incl. hero, myth, rites, taboos",
+      "Values with evidence",
+      "Three images of assumptions",
+      "Gap board vs Altman / openness vs profit"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-03",
+    "lecture": "o6",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "openai",
+    "prompt": "Based on your answers to questions 1 and 2, explain employees' reaction to the firing of Sam Altman.",
+    "modelAnswer": "Structure: as a professional bureaucracy/adhocracy, OpenAI concentrates power in the operating core – scarce experts who control the critical resource (Crozier: control of expertise; resource dependency – the firm cannot replace them, and Microsoft offered an alternative). They could therefore strongly contest a decision of the strategic apex that went against their norms. With few intermediate layers, Altman had direct influence on every employee.\nCulture: Altman is the hero and the embodiment of the mission; the assumption was that real power lay with him, not with the board. Firing him violated the shared assumptions and was seen as illegitimate (charismatic vs rational-legal authority).\nReaction: an open letter signed by over 700 of ~770 employees and the threat to leave for Microsoft – collective voice backed by a credible threat of exit (Hirschman). Result: Altman reinstated, board replaced. The episode also shows that growth challenges the structure: an informal, founder-centred organisation lacks governance mechanisms.",
+    "keyPoints": [
+      "Structure: powerful operating core, few layers",
+      "Culture: Altman as hero, real vs formal power",
+      "Legitimacy (charismatic vs rational-legal)",
+      "Voice backed by exit (letter, Microsoft)",
+      "Link to power theories"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-04",
+    "lecture": "o5",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "apple-rto",
+    "prompt": "Using the concept of psychological contract, explain how Apple's decisions about work flexibility are likely to affect its ability to hire and retain talent. Provide full arguments and evidence for your statements.",
+    "modelAnswer": "Psychological contract (March & Simon): employees join and stay as long as perceived retributions ≥ contributions; what counts is the subjective, symbolic perception; when the balance breaks, people reduce contributions, seek extra retributions or leave.\nAfter COVID-19, flexibility became a major perceived retribution for knowledge workers (data cited in the excerpt), and commuting/office presence a heavy perceived contribution (time, family, well-being). Apple's return-to-office mandate removes a retribution and adds contributions – the open letter says employees feel forced to choose between family, well-being and doing their best work, or Apple.\nApple tries to compensate with perks, swag, mission statements and nice offices; but these do not weigh as much in employees' perception, so the balance is not restored.\nConsequences: retention – Hirschman's reactions: exit (Ian Goodfellow's resignation, a top talent with external options), voice (the open letter), loyalty out of resignation or reduced contribution among those who stay. Hiring – the employer brand is shaped by policy more than by logos; candidates with alternatives (competitors offering remote or hybrid work) will prefer them, especially scarce profiles such as AI experts. Apple's strong brand and pay may limit the damage, but the most mobile talent is the first to leave.",
+    "keyPoints": [
+      "Psychological contract and perception",
+      "Flexibility as retribution, office as contribution",
+      "Perks do not restore the balance",
+      "Retention: exit (Goodfellow), voice (letter), loyalty/withdrawal",
+      "Hiring: employer brand, competition for talent"
+    ]
+  }
+]

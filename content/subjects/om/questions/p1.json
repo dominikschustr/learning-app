@@ -1,0 +1,69 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p1-01",
+    "lecture": "o3",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "buurtzorg",
+    "prompt": "Use Mintzberg's model, with all its elements, to characterise Buurtzorg's organisation. Do you think Buurtzorg should maintain this configuration or should adopt another one? Please explain your rationale.",
+    "modelAnswer": "Five parts:\n• Operating core: the self-managed nurse teams – by far the dominant part, holding the critical skills and most decisions (intake, planning, recruitment).\n• Strategic apex: very small – the founder and a co-director; strong symbolic influence (“humanity over bureaucracy”) but little operational control.\n• Middle line: virtually absent – regional coaches support on request without hierarchical authority.\n• Technostructure: minimal – the web platform, the solution-oriented meeting method and training standardise some practices and give productivity indicators.\n• Support staff: a lean back office (~50 people for 10,000+ nurses) for invoicing, payroll, insurers; buffers the teams from administration.\nCoordination: standardisation of skills (qualified nurses, common training) is dominant, complemented by mutual adjustment inside teams (consensus) and across teams (platform). Little direct supervision, no standardisation of work processes (unlike the sector's time slots), only light standardisation of outputs (team indicators).\nPull: professionalisation (the operating core wants autonomy), with a pull to collaborate.\nContingency: complex but relatively stable task (care knowledge is complex, technical system simple), external qualification standards, large but decentralised.\nConfiguration: a professional bureaucracy with strong adhocratic features (self-organised teams, mutual adjustment) – a network of small professional units rather than a machine bureaucracy.\nRecommendation: maintain it – it fits the work (individualised, unpredictable home care), explains the low overhead, high patient and employee satisfaction, and the machine-bureaucratic alternative is precisely what failed in the sector. Watch the risks: coordination and consistent quality as size grows, coach overload, dependence on the founder (simple-structure element), pull toward bureaucratisation from insurers and regulation, peer pressure inside teams. Remedies: keep teams small and split them when they grow, invest in the platform and coaching, light output indicators, prepare succession.",
+    "keyPoints": [
+      "Five parts with case evidence (strong core, tiny apex, no middle line, minimal technostructure, lean support)",
+      "Coordination: skills + mutual adjustment; little supervision/process standardisation",
+      "Pull to professionalise / collaborate; contingency factors",
+      "Configuration: professional bureaucracy with adhocratic features",
+      "Reasoned recommendation incl. risks of growth and founder dependence"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-02",
+    "lecture": "o4",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "buurtzorg",
+    "prompt": "Analyse the organisational culture of Buurtzorg using Schein's framework and discuss the degree of coherence across the various elements of culture at Buurtzorg.",
+    "modelAnswer": "Artifacts: the name (“neighbourhood care”); modest team offices, no prestigious headquarters; no managers or titles – “coaches” instead; the internal platform where nurses help each other; the founder's story (a nurse who rebelled against bureaucracy) as founding myth and hero; rituals of consensus-based team meetings; the motto “humanity over bureaucracy”; awards as best employer; language of “clients” and “neighbourhood”.\nShared values: humanity and care for the whole person; patient independence; trust in professionals and autonomy; simplicity and small scale; cooperation and consensus; creativity and solution orientation; frugality (overhead seen as waste).\nShared assumptions: image of the organisation – a caring, protective network of small teams, not a hierarchy; the organisation exists to serve patients and nurses. Image of the profession – a good nurse is an autonomous, holistic professional who uses judgement and works as a team player. Image of the power structure – power belongs to the teams and the patients; managers and bureaucracy are seen as obstacles; the founder is a moral reference rather than a boss.\nCoherence: very high. Espoused values are enacted: the structure (no managers, self-managed teams), the tools (platform), the lean back office and the hiring by teams all confirm the values; artifacts express them. This explains the strong commitment and the smooth integration of 2,500 newcomers. Possible tensions: the founder's central symbolic role vs the claim of no hierarchy; peer pressure and consensus can be hard in teams; growth and internationalisation may dilute the culture; financial pressure from insurers could push espoused and enacted values apart. A strong, coherent culture is an amplifier – good as long as the environment and values stay sound.",
+    "keyPoints": [
+      "Artifacts with case facts",
+      "Shared values (espoused and enacted)",
+      "Assumptions on the three images",
+      "Coherence across levels argued with evidence",
+      "Tensions / limits of a strong culture"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-03",
+    "lecture": "o3",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "buurtzorg",
+    "prompt": "To what extent do you think Buurtzorg's model could be applied to other organisations and other industries? Explain your view by stating what could impede or facilitate the transfer of this model to other organisations; use examples of other companies and organisations you know to support your answer.",
+    "modelAnswer": "Facilitating factors: simple principles (small autonomous teams, few rules, lean support); an IT platform that replaces middle management for information sharing; professionals with standardised skills who can coordinate by themselves; work that is local, divisible into small units and benefits from flexibility; a strong culture and an inspiring mission; proof of scalability (10,000 nurses, integration of 2,500 newcomers).\nImpeding factors: the model needs highly qualified, autonomous people – hard where skills are low or turnover high; strongly interdependent, large-scale or safety-critical operations need standardisation of processes (assembly lines, airlines, nuclear plants); economies of scale and capital intensity favour central planning; regulators and payers may demand formal controls (pull toward bureaucracy); existing middle managers would lose their zones of uncertainty and resist (Crozier); national culture and expectations of hierarchy; founder-dependent culture is hard to copy; costs of mutual adjustment and peer pressure.\nExamples: self-managed teams work at W.L. Gore (lattice organisation), Morning Star, FAVI or Haier's micro-enterprises; Spotify's squads in software; similar models in other care services (childminder networks, social work). Zappos' holacracy led to many departures and partial retreat; Buurtzorg's own foreign subsidiaries had mixed results depending on funding systems.\nConclusion: transferable to knowledge- and service-based activities organised around small local units with professional staff (care, education, consulting, software); much harder in standardised, interdependent or highly regulated industries – there it can inspire parts (autonomous teams, lean HQ) rather than be copied whole.",
+    "keyPoints": [
+      "Facilitating factors",
+      "Impeding factors (skills, interdependence, regulation, resistance, culture)",
+      "Concrete examples of other organisations",
+      "Nuanced conclusion: where it fits, where not"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-04",
+    "lecture": "o5",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "buurtzorg",
+    "prompt": "Using March & Simon's framework (psychological contract), analyse the incentive scheme at Buurtzorg. Do you think this scheme is appropriate for the specificities of the company? Please explain your rationale.",
+    "modelAnswer": "March & Simon: nurses stay and contribute as long as the retributions they perceive are at least equal to their contributions.\nIn the sector: retributions were low (time-slot work, no autonomy, no relationship with patients, loss of meaning) while contributions were high (pressure, administrative burden) → imbalance → high turnover (a third of German care workers leave within a year).\nAt Buurtzorg – retributions: meaning and professional pride (holistic care, patients' gratitude), autonomy and participation in decisions, social ties in a small team, learning and versatility through shared roles, recognition (best employer), less bureaucracy; pay is in line with the sector rather than exceptional. Contributions: care work plus team tasks (planning, recruitment, office, budget), responsibility, consensus meetings, creativity, flexibility.\nBalance: perceived retributions largely exceed contributions – mostly immaterial, intrinsic and identification-based (Etzioni's “heart”) rather than money. Nurses even contribute beyond their role (innovation, recruiting good colleagues by word of mouth).\nFit: appropriate – professionals in care are largely intrinsically motivated; extrinsic incentives (piece rates per visit) were what destroyed motivation in the sector. Risks: the extra team tasks could become a burden for some (balance may tip), peer pressure, pay may become an issue in a tight labour market or abroad; monitor workload and offer coaching.",
+    "keyPoints": [
+      "Model and equilibrium condition",
+      "Retributions with case facts (mostly immaterial)",
+      "Contributions incl. team tasks",
+      "Comparison with the sector's imbalance",
+      "Judgement on fit and risks"
+    ]
+  }
+]
