@@ -1,0 +1,151 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p4-01",
+    "lecture": "h4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain, with at least two theoretical arguments, why companies may need to attract and recruit people with disabilities.",
+    "modelAnswer": "1) Business case for diversity: heterogeneous teams bring different perspectives and innovate more; people with disabilities bring problem-solving experience and understanding of customers with disabilities (a large market). 2) Talent and labour market: recruitment struggles to attract enough suitable candidates (CIPD) – excluding a whole group shrinks the pool; a broader, targeted recruitment strategy increases the quality of hires. 3) Reasons for sustainable HRM: compliance (quotas such as the 7 % target, anti-discrimination law), instrumental/strategic (employer brand, attract talent, impress investors) and mission-led (consistency with values) – the social dimension of the triple bottom line. 4) Meritocracy: if selection is truly based on merit, disability should not be a criterion; excluding qualified candidates is inequality/discrimination.",
+    "keyPoints": [
+      "At least two distinct theoretical arguments",
+      "Diversity business case (innovation, customers)",
+      "Larger talent pool / labour market argument",
+      "Sustainable HRM: compliance, instrumental, mission-led",
+      "Meritocracy vs discrimination"
+    ],
+    "case": "hr19-disability"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-02",
+    "lecture": "h4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Analyse why recruiting people with disabilities remains a challenge rather than a reality for many companies.",
+    "modelAnswer": "Perceived costs and risks (workplace adjustments, absence, productivity) dominate, while benefits are seen only as “the right thing to do” – it is not part of the talent strategy. Unconscious bias in R&S: stereotypes, similar-to-me bias and “cultural fit” judged as “like us”; halo/horns effects once a disability is visible. Standard signals disadvantage candidates: gaps in CVs, fewer conventional degrees or internships – signals whose cost depends on resources, not ability. Process design: inaccessible job ads, channels and assessment methods (e.g. timed tests, unstructured interviews) screen people out before their competences are assessed. Missing actors and data: no partnerships with disability organisations, homogeneous panels, no monitoring of hiring data, managers lack knowledge about adjustments.",
+    "keyPoints": [
+      "Costs/risks perceived as higher than benefits",
+      "Unconscious bias, stereotypes, cultural fit as “like us”",
+      "Biased signals (CV gaps, degrees)",
+      "Inaccessible recruitment and selection methods",
+      "No targeted channels, no monitoring"
+    ],
+    "case": "hr19-disability"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-03",
+    "lecture": "h3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Propose two types of practices that could increase the number of people with disabilities recruited.",
+    "modelAnswer": "1) Recruitment (attract the pool): targeted channels – partnerships with disability organisations, universities' disability services, specialised job boards; inclusive, accessible job ads that state that adjustments are possible and focus on essential job requirements (job analysis); internship or apprenticeship pathways. 2) Selection (inclusive process): criteria set in advance and linked to the job; structured interviews and work samples with scoring (valid and reliable); reasonable adjustments in tests and interviews; anonymised first screening; diverse, trained interview panels to reduce unconscious bias; monitoring of hiring data by stage. Each practice should be justified on validity, reliability and practicability (cost-effective), and supported by onboarding and workplace adjustments so hires stay.",
+    "keyPoints": [
+      "Targeted recruitment channels and accessible job ads",
+      "Inclusive selection: criteria in advance, structured methods",
+      "Reasonable adjustments, diverse trained panels",
+      "Justified with validity, reliability, practicability"
+    ],
+    "case": "hr19-disability"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-04",
+    "lecture": "h5",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the forced distribution ranking system championed by Jack Welch at General Electric and its disadvantages.",
+    "modelAnswer": "Forced distribution (“vitality curve”, rank and yank): managers must rank employees against each other and place them in fixed shares – e.g. top 20 % rewarded and promoted, vital 70 % developed, bottom 10 % let go – regardless of the team's absolute performance. Purpose: accountability, differentiation, continuous upgrading of the workforce. Disadvantages: demotivation of the large middle group; infighting and less collaboration (why help a colleague who may push you into the bottom 10 %?); horse-trading and lobbying before reviews; high cost and time of administration; does not value diversity of talents; short-termism; ratings are relative, so a strong team must still label someone a low performer – unfair and legally risky; little room for development and coaching.",
+    "keyPoints": [
+      "Relative ranking into fixed shares (20/70/10)",
+      "Bottom group exits, top rewarded",
+      "Demotivation of the middle, infighting",
+      "Horse-trading, admin cost, short-termism",
+      "No value for diversity, little development"
+    ],
+    "case": "hr19-pm"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-05",
+    "lecture": "h5",
+    "difficulty": 1,
+    "verb": "state",
+    "prompt": "What business imperatives are pushing leading companies to abandon traditional performance appraisals?",
+    "modelAnswer": "Cappelli & Tavis: 1) Return of people development – tight labour markets mean firms must grow their own talent; employees want continuous coaching, not a once-a-year rating. 2) Need for agility – annual goals become obsolete quickly in fast-changing markets; short-term, flexible goals and frequent check-ins are needed. 3) Centrality of teamwork – work is organised in teams and projects, and individual ratings and rankings undermine collaboration. In addition: the annual process is costly and time-consuming and rarely improves performance.",
+    "keyPoints": [
+      "People development (talent shortage)",
+      "Agility (goals change fast)",
+      "Teamwork (individual ratings hurt cooperation)"
+    ],
+    "case": "hr19-pm"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-06",
+    "lecture": "h5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Give an example of a new type of performance appraisal (from class or from companies) and discuss it against a traditional system using the criteria for performance management.",
+    "modelAnswer": "Example: Adobe's “check-ins” (or Deloitte's performance snapshots): no annual rating; frequent, informal manager–employee conversations on expectations, feedback and development; pay decisions by the manager based on these conversations. Purposes: development and communication are much stronger (frequent, forward-looking feedback, goals adjusted during the year); accountability is weaker – fewer documented, comparable ratings to defend pay or exit decisions. Design choices: autonomy over control, qualitative over quantitative indicators, continuous instead of annual, often team-oriented. Criteria: better strategic fit for agile, knowledge-based work; acceptability to employees is higher; but reliability and fairness depend on managers' coaching skills and can suffer from bias without common criteria; administration is lighter (less time for rating rounds) but managers spend more time on conversations. Conclusion: works when managers are trained and some documentation is kept for reward decisions.",
+    "keyPoints": [
+      "Concrete example (e.g. Adobe check-ins, Deloitte)",
+      "Compared with annual rating system",
+      "Purposes: development/communication vs accountability",
+      "Design choices (continuous, qualitative, autonomy)",
+      "Trade-offs: bias, manager skills, documentation"
+    ],
+    "case": "hr19-pm"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-07",
+    "lecture": "h2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Classify Callahan's well-being initiatives with the sustainable-HRM framework (dimensions, inside/outside the organisation, time horizon). Which notable areas does Callahan fail to address?",
+    "modelAnswer": "Callahan's initiatives belong to the social dimension (invest in physical and psychological health): seminars, gym, well-being advisor, health checks, counselling, healthy canteen, leisure-centre discounts, sports leagues. They reach inside and outside the workplace (families use the gym, leisure centre) and are long-term investments; they also serve the financial dimension (absence, turnover, productivity). Most measures act on the individual – they help people cope or change lifestyle (awareness, fitness, treatment of strain). Not addressed: the causes of dissatisfaction in the job itself – repetitive, boring work, the intense pace set by the line, 12-hour shifts and unsocial hours; no job rotation or enrichment, no voice in shift design, no development or career paths, nothing on pay or job security. In sustainable-HRM terms this is a “sin of omission”: HR does not tackle unsafe or unhealthy working conditions at the source.",
+    "keyPoints": [
+      "Social dimension: physical and psychological health",
+      "Inside and outside the organisation, long term",
+      "Individual-focused, lifestyle measures",
+      "Missing: job design, pace, shift hours",
+      "Sin of omission"
+    ],
+    "case": "callahan"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-08",
+    "lecture": "h2",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Critically evaluate Callahan's well-being programme as a sustainable HRM strategy: why does Callahan do it, and what are its limits and possible side effects?",
+    "modelAnswer": "Reasons: mainly instrumental/strategic – reduce costly absence and turnover, raise productivity and quality; partly values-driven (quality of life inside and outside work, families included); not compliance-driven, it goes beyond the law. Strengths: tackles real health risks found in the audit, long-term investment, inside and outside the organisation, early intervention reduces injury, rehabilitation brings absentees back. Limits: dissatisfaction comes from job demands (repetition, pace, 12-hour shifts) that the programme does not change – healthier workers in the same jobs may still leave; it treats symptoms rather than causes. Side effects: risk of paternalism and control over private lifestyle (smoking, drinking, diet), uneven take-up (those most at risk may not join), costs without measured outcomes. A sustainable strategy would balance financial and social goals, measure outcomes (absence, turnover, survey) and add changes to work design.",
+    "keyPoints": [
+      "Instrumental vs mission-led reasons",
+      "Strengths with case facts",
+      "Does not change job demands – symptoms not causes",
+      "Side effects: paternalism, take-up, cost",
+      "Need for measurement and work redesign"
+    ],
+    "case": "callahan"
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-09",
+    "lecture": "h2",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Based on your two previous answers, recommend two measures Callahan's managers should implement.",
+    "modelAnswer": "1) Redesign work: job rotation across machines and tasks (less repetition and strain, broader skills that also reduce dependence on temps), shorter or more predictable shifts designed with employees, more breaks at high line speed. 2) Voice and development: involve employees in the programme and in shift planning (survey follow-up, team meetings), offer training and internal promotion paths to make routine jobs more meaningful. Alternatively: link the programme to measurable goals (absence, turnover, satisfaction) and review it regularly. Each measure targets a gap from the analysis (job demands) and supports both the social and the financial goals (absence, turnover, quality).",
+    "keyPoints": [
+      "Two concrete measures",
+      "Linked to the gaps found (job design, hours)",
+      "Employee involvement / development",
+      "Social and financial benefits"
+    ],
+    "case": "callahan"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "personality-tests",
+    "title": "Case 1: Faking your type to “pass” a personality test",
+    "text": [
+      "Based on a Seattle Times article (2005). More and more employers use written personality tests to screen applicants and predict how new hires will perform – for jobs from accountant to sales manager. Applicants answer true/false items or rate statements from “strongly disagree” to “strongly agree”; items measure traits such as openness or emotional stability.",
+      "The tests are popular because research has linked specific traits to performance in specific jobs – calm, steady people make good supervisors and security officers, persistent people with a strong sense of self suit commission-based sales – and tests have proved at least as predictive as interviews or simulations.",
+      "Critics say the tests are easy to manipulate: in experiments, people score consistently higher on positive traits when they believe they are applying for a job than when asked to answer honestly. A researcher warns applicants that faking may get them a job they end up hating."
+    ],
+    "tables": []
+  },
+  {
+    "id": "safelite",
+    "title": "Case 2: Linking pay to performance at Safelite",
+    "text": [
+      "Based on Lazear (2000). Safelite Glass, the largest US installer of car glass, moved its installers from an hourly wage to a piece rate – pay per glass unit installed – because management felt productivity was too low.",
+      "How a job runs: a customer calls the customer service department, which books mobile or in-store service; the system picks the first slot based on glass and technician availability, orders the glass from the warehouse and assigns a technician. The manager routes the jobs and prints schedules; warehouse staff pick and check the parts and load them for each technician; the technician checks the parts, loads the truck and drives to the customers.",
+      "The technician's job depends on others: scheduling errors, miscommunication and wrong or missing glass from the warehouse are common. Demand also fluctuates with miles driven and the weather – storms and hail cause sudden peaks."
+    ],
+    "tables": []
+  }
+]

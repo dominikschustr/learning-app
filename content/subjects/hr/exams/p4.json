@@ -1,0 +1,57 @@
+[
+  {
+    "id": "exam-2019",
+    "title": "Final exam December 2019 (Nachbau, aktueller Stoff)",
+    "subtitle": "Nach der Abschlussklausur HRM vom Dezember 2019 (2 Stunden, ohne Unterlagen): Recruitment von Menschen mit Behinderung, Performance Appraisal und der Fall Callahan Packaging. Teil C fragte ursprünglich nach Clarke & Cooper und dem Job-Demands-Resources-Modell; hier wird er mit Sustainable HRM aus dem aktuellen Stoff gelöst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Final exam Human Resource Management, Dezember 2019",
+      "faithful": false
+    },
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Part A – Recruitment and selection",
+        "instructions": "Answer in a concise and structured way. Use theoretical references and give examples. [6 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p4-01", "points": 2 },
+              { "q": "sa-p4-02", "points": 2 },
+              { "q": "sa-p4-03", "points": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part B – Performance appraisal",
+        "instructions": "[8 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p4-04", "points": 3 },
+              { "q": "sa-p4-05", "points": 2 },
+              { "q": "sa-p4-06", "points": 3 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part C – Employee well-being: Callahan Packaging",
+        "instructions": "Read the case and answer the questions. [6 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p4-07", "points": 2 },
+              { "q": "sa-p4-08", "points": 2 },
+              { "q": "sa-p4-09", "points": 2 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "exam-2020",
+    "title": "Final exam December 2020 – Netflix (Nachbau)",
+    "subtitle": "Nach der Abschlussklausur „Human Resource for Managers“ vom 17.12.2020 (2 Stunden, open book): Fall Netflix mit vier Fragen zu Keeper Test, Cappelli & Tavis, Diversity und marktbasierter Vergütung. Fall in eigenen Worten zusammengefasst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Final exam Human Resource for Managers, 17.12.2020",
+      "faithful": true
+    },
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Case questions – Netflix",
+        "instructions": "Read the case and answer all four questions in a concise and structured way. Use theoretical references (including the articles read for the sessions) and examples. [20 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p5-01", "points": 5 },
+              { "q": "sa-p5-02", "points": 5 },
+              { "q": "sa-p5-03", "points": 5 },
+              { "q": "sa-p5-04", "points": 5 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

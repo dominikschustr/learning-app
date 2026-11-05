@@ -1,0 +1,36 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p7-01",
+    "lecture": "h3",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Propose a selection strategy to hire a new CFO for TechSoft. Apply the criteria discussed in the course to justify your choices.",
+    "modelAnswer": "Start with a job analysis: technical finance (reporting, IFRS, capital markets, investor relations for a listed firm), strategic advisor to the CEO, knowledge of the software/financial-services industry, leadership of the finance team, fit with TechSoft's values. Recruitment: no internal candidate is ready, so external – targeted channels (executive search firm, networks), informing and attracting (realistic view of the role and company), start now given the one-year horizon; optionally hire a deputy who can be developed. Selection: CV screening against criteria set in advance; structured competency interviews with the CEO and board members (valid and reliable with scoring guides); a case or work sample – e.g. analyse TechSoft's financials and present to the board/investor-style audience – to test technical and communication skills; meetings with the outgoing CFO and team for person–organisation fit (defined as shared values, not similarity); thorough references. Criteria: each method linked to a requirement, combined to increase validity and reliability, practicable – costly but justified by the role's impact; diverse panel to limit bias. Plan an overlap/handover with the outgoing CFO to transfer knowledge of the company's financial history.",
+    "keyPoints": [
+      "Job analysis: technical, strategic advisor, listed firm",
+      "External, targeted recruitment (search firm)",
+      "Structured interviews + case/work sample + references",
+      "Validity, reliability, practicability justified",
+      "P–O fit and handover with outgoing CFO"
+    ],
+    "case": "techsoft"
+  },
+  {
+    "type": "short",
+    "id": "sa-p7-02",
+    "lecture": "h5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "To choose the future Head of Product Development, the CEO considers ranking the five young candidates against each other over the next three years. What could be the drawbacks of this approach?",
+    "modelAnswer": "A ranking is a form of forced distribution/relative evaluation. Drawbacks: competition instead of collaboration in a team that must work closely together (infighting, knowledge hoarding); four of five will “lose” – demotivation and likely turnover of scarce technical talent the firm just hired; horse-trading and politicking for visibility with the CEO; short-termism – candidates optimise ranked indicators rather than long-term product quality; bias – subjective comparisons (similar-to-me, halo, recency) and possibly reproduced homogeneity; accountability dominates while development and communication purposes are neglected – the candidates need coaching for leadership, not only evaluation; three years is long – the uncertainty about the outcome creates stress. Better: define the role's competences, give all candidates development opportunities (job rotation, project leadership, mentoring by the current head, leadership training), use absolute criteria and multiple sources of feedback (360°), and consider shared leadership or alternative career paths for those not chosen.",
+    "keyPoints": [
+      "Relative ranking = forced distribution logic",
+      "Infighting, less collaboration",
+      "Demotivation and turnover of the non-winners",
+      "Bias and politicking; accountability over development",
+      "Alternative: development, absolute criteria, 360°"
+    ],
+    "case": "techsoft"
+  }
+]

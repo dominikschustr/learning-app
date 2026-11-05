@@ -1,0 +1,28 @@
+[
+  {
+    "id": "exam-2024",
+    "title": "Final exam 2024 – TechSoft (Nachbau, Fallteil)",
+    "subtitle": "Nach der Klausur „Human Resources for Managers“ 2024: Fall TechSoft GmbH zur Nachfolgeplanung mit zwei Fragen à 5 Punkte. Der Multiple-Choice-Teil der Originalklausur liegt nicht vor und fehlt hier.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Final exam Human Resources for Managers 2024",
+      "faithful": false
+    },
+    "minutes": 40,
+    "parts": [
+      {
+        "title": "Case study – TechSoft GmbH",
+        "instructions": "Answer each question in a concise and structured manner. Use the course materials (including the articles) and examples. [10 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p7-01", "points": 5 },
+              { "q": "sa-p7-02", "points": 5 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

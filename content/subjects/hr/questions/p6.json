@@ -1,0 +1,68 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p6-01",
+    "lecture": "h3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain the pros and cons of personality tests as a selection tool, using the criteria for selection methods. Would you ultimately recommend them?",
+    "modelAnswer": "Validity: some traits predict performance in specific jobs (conscientiousness broadly; emotional stability for supervisors, persistence for sales), and the case cites predictive power similar to interviews – but only if the trait is linked to the job analysis; generic tests have modest validity and faking lowers it. Reliability: standardised, scored the same way for everyone – high consistency across raters; but applicants inflate positive traits when applying, so results differ from honest answers. Practicability: cheap, fast, scalable for many applicants, online; but candidates may find intrusive items unacceptable, and there are legal/privacy and bias concerns (cultural norms, disability). Recommendation: not as a stand-alone or knock-out tool; use only validated, job-related tests, combined with structured interviews and work samples, interpret results in a follow-up conversation, and consider practicability (cost per hire, volume). Faking can be reduced with forced-choice formats and consistency checks.",
+    "keyPoints": [
+      "Validity: job-related traits vs generic tests, faking",
+      "Reliability: standardised but self-presentation",
+      "Practicability: cheap, scalable; acceptance, legal issues",
+      "Conditional recommendation, combined with other methods"
+    ],
+    "case": "personality-tests"
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-02",
+    "lecture": "h4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Which selection methods would you recommend instead of personality tests to ensure person–organisation fit?",
+    "modelAnswer": "First define the organisation's values and the job requirements (job analysis) and set criteria in advance – fit must mean shared values and goals, not “people like us” (similar-to-me bias). Methods: structured behavioural and situational interviews with questions on values in action (“tell me about a time…”) and scoring guides – valid and reliable; work samples, role-plays or an assessment centre showing how candidates behave in realistic situations (teamwork, customer contact); realistic job previews (informing, not only attracting) so candidates can self-select – fit works both ways; trial days or meeting future colleagues; references focused on behaviour. Use diverse, trained panels to reduce bias, and combine methods so each criterion is covered without unnecessary repetition (cost-effectiveness).",
+    "keyPoints": [
+      "Define P–O fit via values, not similarity",
+      "Structured behavioural/situational interviews",
+      "Work samples, assessment centre, role-plays",
+      "Realistic job preview, self-selection",
+      "Diverse panels; validity, reliability, practicability"
+    ],
+    "case": "personality-tests"
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-03",
+    "lecture": "h6",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Referring to concepts taught in class, explain three reasons why a piece rate may not be ideal as an incentive plan for Safelite's installers.",
+    "modelAnswer": "1) Control and contingency: output depends on others – scheduling, routing, warehouse picking, wrong or damaged glass – and on weather-driven demand; the installer cannot fully control the measured result, so expectancy (effort → performance) is weakened and pay feels unfair. 2) Measurement matches only part of the goal: units installed ignore quality, safety and customer service; piece rates invite rushing, defects and leaks (unless rework is unpaid); cooperation with warehouse and colleagues is not rewarded. 3) Pay uncertainty: income fluctuates with demand (storms vs quiet weeks) – insecurity, stress, overwork; agency theory: risk-averse employees want a premium for bearing risk. Also: interdependent work where individual incentives undermine collaboration, and potential crowding-out of intrinsic motivation.",
+    "keyPoints": [
+      "Limited control (interdependence, weather)",
+      "Quantity vs quality/customer service",
+      "Income uncertainty, stress",
+      "Expectancy/agency theory reference"
+    ],
+    "case": "safelite"
+  },
+  {
+    "type": "short",
+    "id": "sa-p6-04",
+    "lecture": "h7",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "As Head of HR, which incentive plan would you introduce instead of a pure piece rate, and why?",
+    "modelAnswer": "A mixed plan: a guaranteed base wage (security, reduces pay uncertainty) plus variable pay. Variable part: (a) individual piece-rate bonus above a threshold, with a quality condition – unpaid rework of defects and customer-satisfaction scores; (b) a team or branch component (installers + warehouse + scheduling) tied to jobs completed, quality and on-time rate, to reward the interdependent process and encourage cooperation (collective PFP: alignment vs line of sight). Make it clear, smooth and secure: rules and KPIs set and discussed in advance, frequent feedback, measurement over longer periods or across a team to smooth weather-driven swings, higher share of base pay. Contingency and contiguity: pay quickly after performance. Check the conditions for PRP: measure matches goal (units + quality), employee controls much of the result, results known before payment – then PRP works, as Lazear found productivity rising when piece rates were combined with a guaranteed minimum.",
+    "keyPoints": [
+      "Base pay + variable component",
+      "Quality condition / customer satisfaction",
+      "Team component for interdependent work",
+      "Clear, smooth, secure",
+      "Justified with PRP conditions / Lazear evidence"
+    ],
+    "case": "safelite"
+  }
+]

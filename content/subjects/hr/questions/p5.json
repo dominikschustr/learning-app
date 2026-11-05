@@ -1,0 +1,70 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p5-01",
+    "lecture": "h5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "What are the potential HR problems of using the “keeper test” as the basis for deciding whether to retain employees? Refer to the purposes, types and criteria of performance management.",
+    "modelAnswer": "Purposes: the keeper test serves only accountability (keep or exit); development and communication are missing – no feedback on what to improve, no goal setting, so people do not know where they stand. Type: a single, holistic and subjective judgement by one manager, relative to an imagined replacement – close to a ranking without criteria. Criteria: low reliability (different managers, different standards, mood and recent events), questionable validity (what is “performance” – results, behaviours, potential? no job-related standards), prone to bias (similar-to-me, halo/horns, favouritism) and hard to defend legally; acceptability suffers because the threat of exit creates anxiety, risk aversion and politicking; individual focus may undermine collaboration in a culture that values teamwork; constant turnover is costly (severance, recruitment, lost knowledge) and can hurt diversity if “keepers” look like the manager.",
+    "keyPoints": [
+      "Only accountability, no development/communication",
+      "Subjective single-rater judgement, no criteria",
+      "Reliability and validity problems, bias",
+      "Fear, risk aversion, politicking",
+      "Turnover costs, diversity risk"
+    ],
+    "case": "netflix"
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-02",
+    "lecture": "h5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Based on Cappelli & Tavis (2016), which business imperatives would push Netflix to abandon the keeper test? If Netflix keeps it, which other practices would be needed to make this appraisal effective?",
+    "modelAnswer": "Imperatives: 1) People development – in a tight labour market for creative and technical talent, firing “adequate” performers instead of developing them is costly; employees want coaching. 2) Agility – fast-changing content and technology need frequent goal adjustment and feedback, not a binary keep/exit judgement. 3) Teamwork – productions and tech projects are team-based; a test about individuals can undermine cooperation and candour. If the test stays: clear, communicated expectations and criteria (what makes a keeper), frequent feedback and check-ins so nobody is surprised, development plans and a chance to improve before exit, calibration across managers and multiple sources of input (peers, 360°) to improve reliability and reduce bias, documentation and appeal, training of managers, separating development conversations from the keep/exit decision, and monitoring exits by group to detect bias.",
+    "keyPoints": [
+      "Development, agility, teamwork applied to Netflix",
+      "Clear criteria and expectations",
+      "Frequent feedback and development before exit",
+      "Calibration, multiple raters, manager training",
+      "Monitoring for bias"
+    ],
+    "case": "netflix"
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-03",
+    "lecture": "h4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Why might a firm such as Netflix embrace inclusivity and diversity as a central part of its culture? Refer to the theoretical concepts studied in class.",
+    "modelAnswer": "Business case: diverse teams bring different perspectives and innovate more – ethnic diversity especially drives radical innovation and cannot be substituted by external collaboration; this fits a creative company producing content for a global, diverse audience (market knowledge, authentic stories, global expansion). Better decisions: differing perspectives reduce groupthink, consistent with candour and independent decision-making. Talent: an inclusive employer brand attracts the best people worldwide in a competitive labour market. Fighting bias: focusing on talent instead of similarity counters similar-to-me bias and “cultural fit” judged as “like us”, which would otherwise reproduce homogeneity. Sustainable HRM: instrumental (strategy, talent, investors) and values-driven reasons; social dimension of the triple bottom line. Link to the keeper test: inclusion norms are a safeguard so that subjective keep/exit judgements do not discriminate.",
+    "keyPoints": [
+      "Diversity → innovation (radical, ethnic diversity)",
+      "Global audience and content",
+      "Better decisions, talent attraction",
+      "Reduces similar-to-me bias / cultural fit trap",
+      "Sustainable HRM reasons"
+    ],
+    "case": "netflix"
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-04",
+    "lecture": "h6",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Netflix links pay explicitly to the labour market: an employee's salary is set at what comparable employees with the same skills earn at peer firms (top of their personal market). What are the advantages and disadvantages of this reward strategy?",
+    "modelAnswer": "This is a strong choice for external competitiveness (market pricing) over internal consistency. Advantages: attracts and retains top talent – no reason to leave for more money (lower quits, fits the dream-team logic); simple and transparent rationale; flexible for scarce skills; supports a high-performance employer brand; equity theory – employees compare with outside referents and feel fairly paid. Disadvantages: very expensive; market data are hard to obtain and estimate (subjective “personal market”); internal inconsistency – people in similar roles may earn very different pay, causing perceived inequity with internal referents; pay follows the market, not the value of the job or contribution, and can fall when the market drops; may attract people motivated mainly by money (extrinsic) and crowd out commitment; can reproduce market inequalities (e.g. gender pay gaps embedded in market rates); little variable pay means weak line of sight between performance and pay, although annual recalibration includes performance.",
+    "keyPoints": [
+      "External competitiveness vs internal consistency",
+      "Attraction and retention of talent",
+      "Cost and difficulty of market data",
+      "Internal inequity (equity theory)",
+      "Market can embed inequality; extrinsic motivation"
+    ],
+    "case": "netflix"
+  }
+]

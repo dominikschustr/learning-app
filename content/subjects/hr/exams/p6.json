@@ -1,0 +1,41 @@
+[
+  {
+    "id": "exam-2021",
+    "title": "Final exam 2020/21 – Personality tests & Safelite (Nachbau)",
+    "subtitle": "Nach der Klausur 2020/21 mit zwei Fällen: Persönlichkeitstests in der Personalauswahl (Seattle Times) und Akkordlohn bei Safelite (Lazear, 2000) – je zwei Fragen à 5 Punkte. Fälle in eigenen Worten zusammengefasst.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Final exam Human Resource Management 2020/21",
+      "faithful": true
+    },
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Case 1 – Personality tests",
+        "instructions": "Refer to the theoretical concepts studied in class. [10 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p6-01", "points": 5 },
+              { "q": "sa-p6-02", "points": 5 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Case 2 – Linking pay to performance",
+        "instructions": "Refer to the theoretical concepts studied in class. [10 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              { "q": "sa-p6-03", "points": 5 },
+              { "q": "sa-p6-04", "points": 5 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

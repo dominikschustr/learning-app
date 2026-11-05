@@ -1,0 +1,31 @@
+[
+  {
+    "id": "hr19-disability",
+    "title": "Part A: Hiring people with disabilities",
+    "text": [
+      "A Harvard Business Review article (2019) on disability inclusion observes that many companies still hold back from hiring people with disabilities. Managers often see it as “the right thing to do”, but not as part of a talent strategy that pays off – they expect extra costs and risks to outweigh the benefits.",
+      "A study by the US National Organization on Disability found that only about 13 % of US companies reach the Department of Labor's target of a 7 % share of employees with disabilities."
+    ],
+    "tables": []
+  },
+  {
+    "id": "hr19-pm",
+    "title": "Part B: The performance management revolution",
+    "text": [
+      "Cappelli and Tavis (Harvard Business Review, 2016) describe how many organisations drop or radically change their annual review in favour of less formal, more frequent feedback that follows the natural rhythm of work – the focus shifts from accountability to learning and development.",
+      "A well-known example of the traditional approach is the forced distribution (“rank and yank”) system that Jack Welch championed at General Electric."
+    ],
+    "tables": []
+  },
+  {
+    "id": "callahan",
+    "title": "Part C: Callahan Packaging – a workplace well-being programme",
+    "text": [
+      "Callahan Packaging (adapted from Wilton) makes rigid plastic containers for the food industry in South Wales and employs about 450 people. Most work on a production line that runs 24/7 in four shift teams on 12-hour shifts. The work is largely repetitive and routine, but training someone on a machine takes time and money – so sickness absence and turnover are expensive, and short-notice temps hurt productivity and quality.",
+      "Many workers come from a deprived area with high unemployment and poor health. A health audit found low physical fitness even among young workers, 45 % smokers, over 60 % drinking to excess at least weekly, little exercise and poor diets. The first employee attitude survey showed that only 48 % were satisfied with their jobs, 28 % were actively looking to leave and 56 % would consider leaving. Employees complained about repetitive work, the intense pace set by the line and unsocial working hours; most found the work boring.",
+      "Callahan first funded health seminars by experts (smoking, heart disease). Surprised by the interest, management – supported by occupational health practitioners – launched a broader programme to improve quality of life inside and outside work, raise health awareness, improve fitness, reduce work-related injury and illness, and raise productivity, attendance and morale.",
+      "Since then Callahan has built an on-site gym for staff and their families (used by long-term absentees to rehabilitate and return to work) and hired a full-time well-being advisor who does risk assessments, supports stopping smoking, intervenes early on injuries such as repetitive strain, runs health checks, offers counselling for stress and mental health, and runs a slimming club and healthy-eating seminars. The canteen serves only healthy food, with two free meals per shift. Outside work, a nearby leisure centre offers staff discounted classes, and the advisor organises company sports leagues."
+    ],
+    "tables": []
+  }
+]
