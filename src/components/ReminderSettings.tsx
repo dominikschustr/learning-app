@@ -1,14 +1,15 @@
 "use client";
 
 import { Bell, Loader2, Share, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import {
   REMINDER_HOURS,
-  disableReminder,
   enableReminder,
   notificationPermission,
   reminderSupport,
+  setDailyReminder,
   setReminderHour,
+  setSocialPush,
   useReminder,
   type ReminderSupport,
 } from "@/lib/push";
@@ -54,10 +55,22 @@ function IosHint() {
   );
 }
 
-/** Einstellungen → Erinnerung ans Tagesziel (pro Gerät). */
+function Row({ title, text, children }: { title: string; text: string; children: ReactNode }) {
+  return (
+    <div className="flex items-start justify-between gap-4">
+      <div>
+        <p className="font-semibold">{title}</p>
+        <p className="text-sm text-muted">{text}</p>
+      </div>
+      {children}
+    </div>
+  );
+}
+
+/** Einstellungen → Mitteilungen (pro Gerät): Erinnerung ans Tagesziel und Rangliste. */
 export function ReminderSettings() {
   const support = useSupport();
-  const { on, hour } = useReminder();
+  const { on, social, hour } = useReminder();
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
 
@@ -65,7 +78,7 @@ export function ReminderSettings() {
     if (support === null) return null;
     return (
       <section className="card p-6">
-        <h2 className="text-lg font-semibold">Erinnerung</h2>
+        <h2 className="text-lg font-semibold">Mitteilungen</h2>
         <p className="text-sm text-muted">Dieser Browser unterstützt keine Mitteilungen.</p>
       </section>
     );
@@ -85,34 +98,32 @@ export function ReminderSettings() {
   };
 
   const blocked = notificationPermission() === "denied";
+  const toggle = (label: string, checked: boolean, set: (v: boolean) => Promise<void>, what: string) =>
+    busy ? (
+      <Loader2 className="mt-1 size-5 shrink-0 animate-spin text-muted" />
+    ) : (
+      <Switch
+        checked={checked}
+        disabled={support !== "ok"}
+        label={label}
+        onChange={(v) => void run(() => set(v), `${what} ist ${v ? "an" : "aus"}.`)}
+      />
+    );
 
   return (
     <section className="card p-6">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <h2 className="text-lg font-semibold">Erinnerung ans Tagesziel</h2>
-          <p className="text-sm text-muted">
-            Hast du dein Tagesziel abends noch nicht geschafft, bekommst du eine Mitteilung. Gilt für dieses Gerät.
-          </p>
-        </div>
-        {busy ? (
-          <Loader2 className="mt-1 size-5 shrink-0 animate-spin text-muted" />
-        ) : (
-          <Switch
-            checked={on}
-            disabled={support !== "ok"}
-            label="Erinnerung ans Tagesziel"
-            onChange={(v) =>
-              void run(v ? () => enableReminder() : disableReminder, v ? "Erinnerung ist an." : "Erinnerung ist aus.")
-            }
-          />
-        )}
-      </div>
+      <h2 className="text-lg font-semibold">Mitteilungen</h2>
+      <p className="mb-4 text-sm text-muted">Gilt für dieses Gerät.</p>
 
-      {support === "ios-install" && <IosHint />}
+      <Row
+        title="Erinnerung ans Tagesziel"
+        text="Hast du dein Tagesziel abends noch nicht geschafft, bekommst du eine Mitteilung."
+      >
+        {toggle("Erinnerung ans Tagesziel", on, setDailyReminder, "Die Erinnerung")}
+      </Row>
 
-      {support === "ok" && (
-        <div className="mt-4 flex flex-wrap items-center gap-2">
+      {support === "ok" && on && (
+        <div className="mt-3 flex flex-wrap items-center gap-2">
           <span className="text-sm text-ink-2">Uhrzeit</span>
           {REMINDER_HOURS.map((h) => (
             <button
@@ -131,7 +142,15 @@ export function ReminderSettings() {
         </div>
       )}
 
-      {blocked && !on && support === "ok" && (
+      <div className="my-4 border-t border-line" />
+
+      <Row title="Rangliste" text="Mitteilung, wenn jemand aus der Rangliste gerade lernt (höchstens alle drei Stunden pro Person).">
+        {toggle("Mitteilung, wenn jemand aus der Rangliste lernt", social, setSocialPush, "Die Ranglisten-Mitteilung")}
+      </Row>
+
+      {support === "ios-install" && <IosHint />}
+
+      {blocked && !on && !social && support === "ok" && (
         <p className="mt-3 text-sm text-bad">
           Mitteilungen sind für Lernwerk blockiert – erlaube sie in den Einstellungen des Browsers bzw. des iPhones.
         </p>
@@ -144,11 +163,11 @@ export function ReminderSettings() {
 /** Einmaliger Hinweis auf der Startseite, die Erinnerung einzuschalten. */
 export function ReminderPrompt() {
   const support = useSupport();
-  const { on, dismissed, hour } = useReminder();
+  const { on, social, dismissed, hour } = useReminder();
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
 
-  if (!support || support === "unsupported" || on || dismissed) return null;
+  if (!support || support === "unsupported" || on || social || dismissed) return null;
   if (support === "ok" && notificationPermission() === "denied") return null;
 
   return (
@@ -157,11 +176,11 @@ export function ReminderPrompt() {
         <Bell className="size-5" />
       </span>
       <div className="min-w-0 flex-1 pr-6 sm:pr-0">
-        <p className="font-semibold">Erinnerung ans Tagesziel?</p>
+        <p className="font-semibold">Mitteilungen einschalten?</p>
         <p className="text-sm text-muted">
           {support === "ios-install"
-            ? "Füge Lernwerk zum Home-Bildschirm hinzu (Teilen → Zum Home-Bildschirm) – dann erinnert dich die App abends, wenn dein Tagesziel noch offen ist."
-            : `Um ${hour}:00 Uhr kommt eine Mitteilung, falls du dein Tagesziel noch nicht geschafft hast. Ändern kannst du das in den Einstellungen.`}
+            ? "Füge Lernwerk zum Home-Bildschirm hinzu (Teilen → Zum Home-Bildschirm) – dann erinnert dich die App abends an dein Tagesziel und meldet, wenn jemand aus der Rangliste lernt."
+            : `Um ${hour}:00 Uhr eine Erinnerung, falls dein Tagesziel noch offen ist, und eine Mitteilung, wenn jemand aus der Rangliste lernt. Ändern kannst du das in den Einstellungen.`}
         </p>
         {msg && <p className="mt-1 text-sm text-bad">{msg}</p>}
       </div>

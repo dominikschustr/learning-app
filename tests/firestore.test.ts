@@ -123,8 +123,10 @@ describe.skipIf(!EMULATOR || !AUTH)("Konten und Firestore-Regeln", () => {
   });
 
   it("Erinnerung: Abo speichern, nicht lesbar, nur eigenes löschen", async () => {
-    const sub = { uid: anna.uid, sub: JSON.stringify({ endpoint: "https://push.example/abc", keys: {} }), hour: 20, tz: "Europe/Berlin" };
+    const sub = { uid: anna.uid, sub: JSON.stringify({ endpoint: "https://push.example/abc", keys: {} }), hour: 20, tz: "Europe/Berlin", daily: true, social: true };
     await cloud.pushPut("dev1", anna.token, sub);
+    // nur Rangliste, ohne Erinnerung
+    await cloud.pushPut("dev1", anna.token, { ...sub, daily: false });
     await cloud.pushPut("dev1", anna.token, { ...sub, hour: 21 });
     // niemand kann Abos lesen
     expect(await raw("GET", "push/dev1", anna.token)).toBe(403);
@@ -133,6 +135,28 @@ describe.skipIf(!EMULATOR || !AUTH)("Konten und Firestore-Regeln", () => {
     await expect(cloud.pushPut("dev2", ben.token, sub)).rejects.toThrow();
     // ungültige Uhrzeit
     await expect(cloud.pushPut("dev3", anna.token, { ...sub, hour: 30 })).rejects.toThrow();
+    // Schalter müssen Wahrheitswerte sein
+    const commit = (social: unknown) =>
+      fetch(`${ROOT}:commit`, {
+        method: "POST",
+        headers: { authorization: `Bearer ${anna.token}`, "content-type": "application/json" },
+        body: JSON.stringify({
+          writes: [
+            {
+              update: {
+                name: `projects/${PROJECT}/databases/(default)/documents/push/dev4`,
+                fields: { uid: { stringValue: anna.uid }, sub: { stringValue: sub.sub }, hour: { integerValue: "20" }, tz: { stringValue: "Europe/Berlin" }, social },
+              },
+              updateTransforms: [{ fieldPath: "at", setToServerValue: "REQUEST_TIME" }],
+            },
+          ],
+        }),
+      }).then((r) => r.status);
+    expect(await commit({ booleanValue: true })).toBe(200);
+    expect(await commit({ stringValue: "ja" })).toBe(403);
+    // den Zustand des Versand-Workflows kann kein Konto lesen oder schreiben
+    expect(await raw("GET", "notify/activity", anna.token)).toBe(403);
+    expect(await raw("PATCH", "notify/activity", anna.token, { fields: { state: { stringValue: "{}" } } })).toBe(403);
     // Ben darf Annas Abo nicht löschen (403 gilt als „nicht da“), es bleibt bestehen …
     await cloud.pushDelete("dev1", ben.token);
     expect(await raw("DELETE", "push/dev1", ben.token)).toBe(403);

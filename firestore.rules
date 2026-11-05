@@ -1,7 +1,7 @@
 rules_version = '2';
 
-// Regeln für Lernwerk (Konten, Synchronisation, Rangliste). In der Firebase-Konsole unter
-// Firestore Database → Regeln komplett einfügen und „Veröffentlichen“. Siehe README.
+// Regeln für Lernwerk (Konten, Synchronisation, Rangliste, Mitteilungen). Werden bei jedem Push auf main
+// automatisch veröffentlicht (.github/workflows/deploy.yml → scripts/deploy-rules.mjs). Siehe README.
 service cloud.firestore {
   match /databases/{database}/documents {
 
@@ -36,9 +36,11 @@ service cloud.firestore {
       allow delete: if isOwner(uid);
     }
 
-    // Erinnerung ans Tagesziel: Push-Abo eines Geräts (id = Hash des Endpoints). Lesen kann es kein Konto –
+    // Mitteilungen (Web Push): Push-Abo eines Geräts (id = Hash des Endpoints). Lesen kann es kein Konto –
     // nur der Versand-Workflow mit Dienstkonto (umgeht die Regeln). Schreiben nur für sich selbst; ein Gerät
     // darf sein Abo einem anderen Konto übergeben (Kontowechsel). sent setzt nur der Workflow.
+    // daily = Erinnerung ans Tagesziel, social = Mitteilung, wenn jemand aus der Rangliste lernt (beide optional).
+    // notify/* (Zustand des Versand-Workflows) hat keine Regel und ist damit für alle Konten gesperrt.
     match /push/{id} {
       allow create: if validPush(request.resource.data) && !('sent' in request.resource.data);
       allow update: if validPush(request.resource.data)
@@ -48,8 +50,10 @@ service cloud.firestore {
 
     function validPush(p) {
       return signedIn()
-        && p.keys().hasOnly(['uid', 'sub', 'hour', 'tz', 'at', 'sent'])
+        && p.keys().hasOnly(['uid', 'sub', 'hour', 'tz', 'daily', 'social', 'at', 'sent'])
         && p.uid == request.auth.uid
+        && (!('daily' in p) || p.daily is bool)
+        && (!('social' in p) || p.social is bool)
         && p.sub is string && p.sub.size() >= 10 && p.sub.size() <= 4000
         && p.hour is int && p.hour >= 0 && p.hour <= 23
         && p.tz is string && p.tz.size() >= 1 && p.tz.size() <= 64

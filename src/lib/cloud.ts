@@ -183,11 +183,12 @@ export async function userDelete(uid: string, token: string): Promise<void> {
 /**
  * Push-Abo eines Geräts speichern (push/{id}, id = Hash des Endpoints). Gelesen wird es nur vom
  * Versand-Workflow; hour = Uhrzeit der Erinnerung in der Zeitzone tz. sent (letzter Versandtag) bleibt erhalten.
+ * daily = Erinnerung ans Tagesziel, social = Mitteilung, wenn jemand aus der Rangliste lernt.
  */
 export async function pushPut(
   id: string,
   token: string,
-  p: { uid: string; sub: string; hour: number; tz: string },
+  p: { uid: string; sub: string; hour: number; tz: string; daily: boolean; social: boolean },
 ): Promise<void> {
   const res = await call(token, "POST", `${firebaseSettings().root}:commit`, {}, {
     writes: [
@@ -199,9 +200,11 @@ export async function pushPut(
             sub: { stringValue: p.sub },
             hour: { integerValue: String(p.hour) },
             tz: { stringValue: p.tz },
+            daily: { booleanValue: p.daily },
+            social: { booleanValue: p.social },
           },
         },
-        updateMask: { fieldPaths: ["uid", "sub", "hour", "tz"] },
+        updateMask: { fieldPaths: ["uid", "sub", "hour", "tz", "daily", "social"] },
         updateTransforms: [{ fieldPath: "at", setToServerValue: "REQUEST_TIME" }],
       },
     ],

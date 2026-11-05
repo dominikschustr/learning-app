@@ -53,7 +53,7 @@ Die App läuft nur mit Konto. Konten, Lernstände und Rangliste liegen in einem 
 2. **Authentication → Jetzt starten → Anmeldemethode → E-Mail-Adresse/Passwort** einschalten und speichern.
 3. **Firestore Database → Datenbank erstellen**: Standort in Europa, **Produktionsmodus**.
 4. Im Firestore-Tab **Regeln** den gesamten Inhalt von [`firestore.rules`](firestore.rules) einfügen und
-   **Veröffentlichen**. Nach jeder Änderung an `firestore.rules` hier erneut einfügen.
+   **Veröffentlichen**. Später übernimmt das der Deploy-Workflow automatisch (siehe 3., Secret `FIREBASE_SERVICE_ACCOUNT`).
 5. Zahnrad → **Projekteinstellungen → Meine Apps → Web-App hinzufügen**, `projectId` und `apiKey` in
    `src/config.ts` eintragen.
 
@@ -61,19 +61,32 @@ Was die Regeln sicherstellen: Den Lernstand (`progress/{uid}`) kann nur das eige
 die Rangliste (`users/{uid}`: Name, XP, Tagesstand, Tagesziel, Streak) sehen alle Angemeldeten, ändern kann
 jedes Konto nur den eigenen Eintrag.
 
-### 3. Erinnerung ans Tagesziel (Mitteilungen)
+### 3. Mitteilungen (Tagesziel und Rangliste)
 
-Wer die Erinnerung einschaltet (Einstellungen oder Hinweis auf der Startseite), bekommt abends zur gewählten
-Uhrzeit eine Mitteilung, falls das Tagesziel noch offen ist. Das Gerät speichert sein Push-Abo in Firestore
-(`push/{id}`); der Workflow [`remind.yml`](.github/workflows/remind.yml) läuft von 16 bis 23 Uhr stündlich, liest
-Abos und Ranglisten-Stand mit einem Dienstkonto und verschickt die Mitteilungen ([`scripts/reminders.mjs`](scripts/reminders.mjs)).
+Unter *Einstellungen → Mitteilungen* (oder über den Hinweis auf der Startseite) gibt es pro Gerät zwei Schalter:
 
-1. Die aktuelle [`firestore.rules`](firestore.rules) in der Firebase-Konsole einfügen und veröffentlichen.
-2. Firebase-Konsole → Projekteinstellungen → **Dienstkonten** → **Neuen privaten Schlüssel generieren**.
-3. GitHub → Repository → Settings → Secrets and variables → **Actions** → zwei Secrets anlegen:
+- **Erinnerung ans Tagesziel**: abends zur gewählten Uhrzeit eine Mitteilung, falls das Tagesziel noch offen ist.
+- **Rangliste**: eine Mitteilung, wenn jemand aus der Rangliste gerade lernt („Anna lernt gerade – schon 12
+  Antworten heute“). Pro lernender Person höchstens alle drei Stunden, nur zwischen 7 und 22 Uhr; mehrere
+  Lernende werden zusammengefasst. Tippen öffnet die Rangliste.
+
+Das Gerät speichert sein Push-Abo mit beiden Schaltern in Firestore (`push/{id}`). Der Workflow
+[`remind.yml`](.github/workflows/remind.yml) läuft tagsüber alle 10 Minuten (GitHub startet geplante Läufe oft
+einige Minuten später), liest Abos und Ranglisten-Stand mit einem Dienstkonto und verschickt die Mitteilungen
+([`scripts/reminders.mjs`](scripts/reminders.mjs)). Wer seit dem letzten Lauf gelernt hat, erkennt er am Stand
+in `users/{uid}`; den gemerkten Stand legt er in `notify/activity` ab (für Konten gesperrt).
+
+**`firestore.rules` werden automatisch veröffentlicht:** Bei jedem Push auf `main` testet der Deploy-Workflow
+die Regeln im Emulator und spielt sie mit dem Dienstkonto ins Firebase-Projekt ([`scripts/deploy-rules.mjs`](scripts/deploy-rules.mjs)).
+Einfügen in der Konsole ist nicht mehr nötig.
+
+Einmalig einrichten:
+
+1. Firebase-Konsole → Projekteinstellungen → **Dienstkonten** → **Neuen privaten Schlüssel generieren**.
+2. GitHub → Repository → Settings → Secrets and variables → **Actions** → zwei Secrets anlegen:
    - `FIREBASE_SERVICE_ACCOUNT`: kompletter Inhalt der heruntergeladenen JSON-Datei
    - `VAPID_PRIVATE_KEY`: privater Web-Push-Schlüssel (Gegenstück zu `PUSH.vapidPublicKey` in [`src/config.ts`](src/config.ts))
-4. Testen: Actions → **Remind** → **Run workflow**.
+3. Actions → **Deploy** → **Run workflow** (veröffentlicht die Regeln), danach Actions → **Remind** → **Run workflow**.
 
 Auf dem iPhone kommen Mitteilungen nur an die Home-Bildschirm-App (Safari → Teilen → Zum Home-Bildschirm, iOS 16.4+).
 Neue Schlüssel: `npx web-push generate-vapid-keys`, öffentlichen in `src/config.ts`, privaten als Secret.
@@ -95,8 +108,8 @@ Unter *Rangliste* (Pokal-Symbol oben) stehen alle Konten mit Level/XP, Antworten
 Streak sowie die **Wochenliga** (XP von Montag bis Sonntag, Neustart jeden Montag um 0 Uhr) – dazu Siegertreppchen, Ligen nach Level (Bronze bis Legende), Streak-Abzeichen, „Dein Duell“ mit den Plätzen
 vor und hinter dir, ein gemeinsames Tagesziel aller, Auf-/Abstiegspfeile und Überhol-Meldungen seit dem letzten Besuch
 (gemerkt auf dem Gerät) sowie vier Ranglisten-Achievements. Für die Wochenliga meldet jedes Konto zusätzlich `weekXp` und `week` (Montag der
-Woche); die XP je Tag werden dafür pro Gerät mitgezählt und synchronisiert. **Nach diesem Update `firestore.rules`
-einmal neu in der Firebase-Konsole einfügen** – bis dahin meldet die App automatisch ohne Wochenfelder weiter. Gemeldet wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur bei Änderungen),
+Woche); die XP je Tag werden dafür pro Gerät mitgezählt und synchronisiert. Solange die veröffentlichten
+`firestore.rules` die Wochenfelder nicht kennen, meldet die App automatisch ohne sie weiter. Gemeldet wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur bei Änderungen),
 geladen nur beim Öffnen der Rangliste. Name ändern, abmelden und Konto löschen unter *Einstellungen*.
 
 ## Umzug von der alten Vercel-Adresse

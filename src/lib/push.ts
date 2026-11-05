@@ -7,9 +7,11 @@ import { getIdToken, useAuth } from "./auth";
 import { cloudConfigured, pushDelete, pushPut } from "./cloud";
 
 /**
- * Erinnerung ans Tagesziel per Web Push – pro Gerät ein- und ausschaltbar.
- * Das Gerät meldet sein Push-Abo in Firestore (push/{id}); abends prüft ein GitHub-Workflow
- * (scripts/reminders.mjs), wer sein Tagesziel noch nicht erreicht hat, und schickt die Benachrichtigung.
+ * Mitteilungen per Web Push – pro Gerät ein- und ausschaltbar:
+ * - Erinnerung ans Tagesziel (on): abends zur gewählten Uhrzeit, falls das Tagesziel noch offen ist
+ * - Rangliste (social): wenn jemand aus der Rangliste gerade lernt
+ * Das Gerät meldet sein Push-Abo in Firestore (push/{id}); ein GitHub-Workflow (scripts/reminders.mjs)
+ * prüft regelmäßig, wem eine Mitteilung zusteht, und verschickt sie.
  */
 
 export const REMINDER_HOURS = [17, 18, 19, 20, 21, 22] as const;
@@ -18,19 +20,33 @@ const DEFAULT_HOUR = 20;
 const RESAVE_MS = 7 * 24 * 3600_000;
 
 type ReminderState = {
+  /** Erinnerung ans Tagesziel */
   on: boolean;
+  /** Mitteilung, wenn jemand aus der Rangliste lernt */
+  social: boolean;
   hour: number;
   /** Hinweis auf der Startseite weggeklickt */
   dismissed: boolean;
-  /** zuletzt gemeldet: Konto|Abo|Uhrzeit und wann */
+  /** zuletzt gemeldet: Konto|Abo|Uhrzeit|Schalter und wann */
   saved: string | null;
   savedAt: number;
 };
 
+type Choice = Pick<ReminderState, "on" | "social" | "hour">;
+
 export const useReminder = create<ReminderState>()(
   persist(
-    (): ReminderState => ({ on: false, hour: DEFAULT_HOUR, dismissed: false, saved: null, savedAt: 0 }),
-    { name: "lernwerk-reminder", storage: createJSONStorage(() => localStorage) },
+    (): ReminderState => ({ on: false, social: false, hour: DEFAULT_HOUR, dismissed: false, saved: null, savedAt: 0 }),
+    {
+      name: "lernwerk-reminder",
+      storage: createJSONStorage(() => localStorage),
+      version: 1,
+      // v0 kannte nur die Erinnerung: wer sie an hatte, bekommt auch die Ranglisten-Mitteilungen
+      migrate: (state, version) => {
+        const s = state as Partial<ReminderState>;
+        return (version < 1 ? { ...s, social: !!s.on, saved: null } : s) as ReminderState;
+      },
+    },
   ),
 );
 
@@ -80,20 +96,27 @@ async function subscription(reg: ServiceWorkerRegistration): Promise<PushSubscri
   );
 }
 
-async function save(sub: PushSubscription, hour: number, force = false): Promise<void> {
+async function save(sub: PushSubscription, c: Choice, force = false): Promise<void> {
   const uid = useAuth.getState().session?.uid;
   if (!uid) return;
   const id = await endpointId(sub.endpoint);
-  const key = `${uid}|${id}|${hour}`;
+  const key = `${uid}|${id}|${c.hour}|${+c.on}${+c.social}`;
   const { saved, savedAt } = useReminder.getState();
   if (!force && saved === key && Date.now() - savedAt < RESAVE_MS) return;
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "Europe/Berlin";
-  await pushPut(id, await getIdToken(), { uid, sub: JSON.stringify(sub.toJSON()), hour, tz });
+  await pushPut(id, await getIdToken(), { uid, sub: JSON.stringify(sub.toJSON()), hour: c.hour, tz, daily: c.on, social: c.social });
   useReminder.setState({ saved: key, savedAt: Date.now() });
 }
 
-/** Einschalten (fragt nach der Erlaubnis für Mitteilungen). Wirft mit verständlicher Meldung. */
-export async function enableReminder(hour = useReminder.getState().hour): Promise<void> {
+function choice(): Choice {
+  const { on, social, hour } = useReminder.getState();
+  return { on, social, hour };
+}
+
+/** Schalter ändern (fragt beim Einschalten nach der Erlaubnis für Mitteilungen). Wirft mit verständlicher Meldung. */
+async function change(patch: Partial<Choice>): Promise<void> {
+  const next = { ...choice(), ...patch };
+  if (!next.on && !next.social) return disableReminder();
   const permission = await Notification.requestPermission();
   if (permission !== "granted") {
     throw new Error(
@@ -102,14 +125,20 @@ export async function enableReminder(hour = useReminder.getState().hour): Promis
         : "Ohne Erlaubnis für Mitteilungen geht es nicht.",
     );
   }
-  const sub = await subscription(await registration());
-  await save(sub, hour, true);
-  useReminder.setState({ on: true, hour, dismissed: true });
+  await save(await subscription(await registration()), next, true);
+  useReminder.setState({ ...next, dismissed: true });
 }
 
-/** Ausschalten: Abo in Firestore löschen und beim Browser abmelden. */
+/** Alle Mitteilungen einschalten (Hinweis auf der Startseite). */
+export const enableReminder = () => change({ on: true, social: true });
+/** Erinnerung ans Tagesziel ein-/ausschalten. */
+export const setDailyReminder = (on: boolean) => change({ on });
+/** Mitteilung, wenn jemand aus der Rangliste lernt, ein-/ausschalten. */
+export const setSocialPush = (social: boolean) => change({ social });
+
+/** Alles ausschalten: Abo in Firestore löschen und beim Browser abmelden. */
 export async function disableReminder(): Promise<void> {
-  useReminder.setState({ on: false, saved: null, savedAt: 0 });
+  useReminder.setState({ on: false, social: false, saved: null, savedAt: 0 });
   if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) return;
   const reg = await navigator.serviceWorker.getRegistration(`${base}/`);
   const sub = await reg?.pushManager.getSubscription();
@@ -120,18 +149,19 @@ export async function disableReminder(): Promise<void> {
 
 export async function setReminderHour(hour: number): Promise<void> {
   useReminder.setState({ hour });
-  if (!useReminder.getState().on) return;
-  await save(await subscription(await registration()), hour, true);
+  const c = choice();
+  if (!c.on) return;
+  await save(await subscription(await registration()), c, true);
 }
 
 /** Beim Start: Abo prüfen und bei Bedarf neu melden (z. B. anderes Konto, erneuertes Abo). */
 export async function refreshReminder(): Promise<void> {
-  const { on, hour } = useReminder.getState();
-  if (!on || reminderSupport() !== "ok") return;
+  const c = choice();
+  if ((!c.on && !c.social) || reminderSupport() !== "ok") return;
   if (Notification.permission !== "granted") {
     // Erlaubnis entzogen → Schalter passend zurücksetzen
     if (Notification.permission === "denied") await disableReminder();
     return;
   }
-  await save(await subscription(await registration()), hour);
+  await save(await subscription(await registration()), c);
 }

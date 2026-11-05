@@ -1,4 +1,4 @@
-// Service Worker von Lernwerk: zeigt die Erinnerung ans Tagesziel (Web Push) und öffnet beim Tippen die App.
+// Service Worker von Lernwerk: zeigt Mitteilungen (Web Push: Tagesziel, Rangliste) und öffnet beim Tippen die App.
 // Er cacht nichts – die App lädt wie bisher direkt aus dem Netz.
 
 self.addEventListener("install", () => self.skipWaiting());
@@ -30,7 +30,11 @@ self.addEventListener("notificationclick", (event) => {
   event.waitUntil(
     self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) => {
       for (const client of list) {
-        if (client.url.startsWith(scope) && "focus" in client) return client.focus();
+        if (client.url.startsWith(scope) && "focus" in client) {
+          // zur Zielseite der Mitteilung wechseln (z. B. Rangliste), sonst nur nach vorne holen
+          const go = url !== scope && client.url !== url && "navigate" in client;
+          return client.focus().then((c) => (go ? (c || client).navigate(url).catch(() => c) : c));
+        }
       }
       return self.clients.openWindow(url);
     }),

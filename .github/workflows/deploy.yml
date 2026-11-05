@@ -1,5 +1,7 @@
 # Baut die App bei jedem Push auf main und veröffentlicht sie auf GitHub Pages.
 # Einmalig nötig: Repository → Settings → Pages → Source: „GitHub Actions“.
+# Außerdem: firestore.rules im Emulator testen und im Firebase-Projekt veröffentlichen
+# (braucht das Secret FIREBASE_SERVICE_ACCOUNT, siehe README → Mitteilungen).
 name: Deploy
 
 on:
@@ -46,3 +48,22 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+      - run: npm ci
+      - run: npm install -g firebase-tools@14
+      - run: npm run test:rules
+      - run: node scripts/deploy-rules.mjs
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
