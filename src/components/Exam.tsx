@@ -54,8 +54,9 @@ function partHint(t: QuestionType, questions: Question[]): string {
     return verbs.join(" / ");
   }
   if (t === "mc") {
-    const single = questions.some((q) => q.type === "mc" && q.single);
-    return single ? "eine oder mehrere richtig" : "mehrere richtig möglich";
+    const mc = questions.filter((q) => q.type === "mc");
+    if (mc.length && mc.every((q) => q.single)) return "genau eine richtig";
+    return mc.some((q) => q.single) ? "eine oder mehrere richtig" : "mehrere richtig möglich";
   }
   return "";
 }

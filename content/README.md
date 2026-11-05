@@ -77,6 +77,8 @@ geteilt durch die verbleibenden Tage). Prüfungen ohne eigenes Fach in der App s
 
 `difficulty` 1–3 (3 gibt Bonus-XP), `verb` ist `define`, `state`, `explain` oder `calculate`.
 MC-Fragen mit `"single": true` sind Single Choice (genau eine richtige Option, Radio-Buttons).
+Fragen mit `"checkup": true` stammen aus dem Check-up-Quiz am Ende einer Vorlesung. Hat ein Fach solche Fragen,
+bekommen Fach- und Kapitelseite die Kachel „Check-up-Fragen“, die nur diese Fragen übt (`practice?mode=checkup`).
 
 `cases/l01.json` – optional: Fallbeschreibungen mit Tabellen wie in der Prüfung. Fragen verweisen mit
 `"case": "<id>"` darauf; der Fall steht dann über der Frage, im Test folgen Fragen desselben Falls direkt

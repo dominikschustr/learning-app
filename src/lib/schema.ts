@@ -95,6 +95,8 @@ const base = {
   case: id.optional(),
   /** nur in Probeklausuren, nicht beim Üben, in Kapiteltests oder der Readiness */
   paperOnly: z.boolean().default(false),
+  /** Check-up-Frage vom Quiz am Ende der Vorlesung – eigener Übungsmodus „Check-up-Fragen“ */
+  checkup: z.boolean().default(false),
 };
 
 /** Ergebnis einer Rechenaufgabe, das automatisch geprüft wird (Prozent als Prozentzahl: 13.8 mit unit "%"). */
@@ -262,8 +264,8 @@ export type SubjectContent = {
 /** Leichte Übersicht für Dashboard/Readiness, ohne Fragetexte. */
 export type SubjectSummary = {
   subject: Subject;
-  /** ohne paperOnly-Fragen; calc = Rechenaufgabe mit automatisch geprüften Ergebnissen */
-  items: { id: string; type: QuestionType; lecture: string; calc: boolean }[];
+  /** ohne paperOnly-Fragen; calc = Rechenaufgabe mit automatisch geprüften Ergebnissen; checkup = Quiz der Vorlesung */
+  items: { id: string; type: QuestionType; lecture: string; calc: boolean; checkup: boolean }[];
   cards: { id: string; lecture: string }[];
   /** Kapitel, für die ein Lesetext hinterlegt ist */
   texts: string[];

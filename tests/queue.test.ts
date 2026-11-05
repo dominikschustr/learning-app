@@ -13,9 +13,19 @@ const pool: Question[] = Array.from({ length: 40 }, (_, i) => ({
   answer: true,
   explanation: "",
   paperOnly: false,
+  checkup: i % 10 === 0,
 }));
 
 const ids = (qs: Question[]) => qs.map((q) => q.id).sort().join(",");
+
+describe("buildQueue – Check-up-Fragen", () => {
+  it("zieht alle Check-up-Fragen und nur diese, auf Wunsch je Kapitel", () => {
+    const all = buildQueue({ mode: "checkup", subjectId: "s", questions: pool, items: {}, now: 0 });
+    expect(ids(all)).toBe("tf-0,tf-10,tf-20,tf-30");
+    const b = buildQueue({ mode: "checkup", subjectId: "s", questions: pool, items: {}, now: 0, lecture: "b" });
+    expect(b).toHaveLength(0);
+  });
+});
 
 describe("buildQueue – Kapitel-Übung", () => {
   it("zieht eine begrenzte, wechselnde Auswahl nur aus dem Kapitel", () => {

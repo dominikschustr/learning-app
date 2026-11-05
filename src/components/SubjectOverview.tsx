@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, Info, Layers, LayoutGrid, Play, RotateCcw, Sigma, Target, Trophy, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, Play, RotateCcw, Sigma, Target, Trophy, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
@@ -11,7 +11,8 @@ import { LevelBadge } from "./ChapterView";
 import { paperCountLabel } from "./Papers";
 import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
-import { alpha, cn, pct } from "@/lib/utils";
+import { statusCounts } from "@/lib/srs";
+import { alpha, cn, itemKey, pct } from "@/lib/utils";
 import { Bar, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
 export function SubjectOverview({ summary }: { summary: SubjectSummary }) {
@@ -61,6 +62,8 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const mobile = useMobile();
 
   const hasTf = summary.items.some((i) => i.type === "tf");
+  const checkups = summary.items.filter((i) => i.checkup);
+  const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
   const modes = [
     ...(summary.formulas.length
       ? [
@@ -91,6 +94,17 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       text: "Key Concepts aktiv abrufen",
       meta: `${st.cardsDue} fällig · ${st.cardsNew} neu`,
     },
+    ...(checkups.length
+      ? [
+          {
+            href: `${base}/practice?mode=checkup`,
+            icon: ClipboardCheck,
+            title: "Check-up-Fragen",
+            text: "Nur die Quiz-Aussagen vom Ende der Vorlesungen",
+            meta: `${checkupStatus.first + checkupStatus.recovered}/${checkups.length} richtig`,
+          },
+        ]
+      : []),
     {
       href: `${base}/practice?mode=due`,
       icon: RotateCcw,

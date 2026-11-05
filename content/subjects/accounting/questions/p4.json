@@ -129,7 +129,7 @@
     "lecture": "t3",
     "case": "novatel-lease",
     "difficulty": 3,
-    "prompt": "What are the impacts in N1? (select all that apply)",
+    "prompt": "Which of the following is NOT an impact of the lease in N1?",
     "options": [
       {
         "id": "a",
@@ -149,11 +149,10 @@
       }
     ],
     "correct": [
-      "a",
-      "b",
-      "c"
+      "d"
     ],
-    "explanation": "Depreciation 440,000/5 = 88,000. Interest 5% × 432,950 = 21,648. Liability = 432,950 + 21,648 − 100,000 = 354,598. No rent expense under IFRS 16."
+    "explanation": "Depreciation 440,000/5 = 88,000. Interest 5% × 432,950 = 21,648. Liability = 432,950 + 21,648 − 100,000 = 354,598. Under IFRS 16 the lessee recognises depreciation and interest – there is NO rent expense of 100,000.",
+    "single": true
   },
   {
     "type": "short",
@@ -177,30 +176,30 @@
     "lecture": "t4",
     "case": "orion-de",
     "difficulty": 2,
-    "prompt": "Which of Orion's instruments are financial liabilities? (select all that apply)",
+    "prompt": "Which of Orion's instruments are financial liabilities?",
     "options": [
       {
         "id": "a",
-        "text": "Bonds repayable in 7 years with a 3% coupon"
+        "text": "The bonds (7 years, 3% coupon) and the preference shares redeemable at the holders' request"
       },
       {
         "id": "b",
-        "text": "Perpetual notes whose coupon is paid only if Orion pays a dividend on ordinary shares"
+        "text": "Only the bonds (7 years, 3% coupon)"
       },
       {
         "id": "c",
-        "text": "Preference shares the holders can ask Orion to redeem at par"
+        "text": "The bonds, the dividend-linked perpetual notes and the redeemable preference shares"
       },
       {
         "id": "d",
-        "text": "Ordinary shares"
+        "text": "The redeemable preference shares and the ordinary shares"
       }
     ],
     "correct": [
-      "a",
-      "c"
+      "a"
     ],
-    "explanation": "Mandatory repayment/coupons and holder put options are contractual obligations → liabilities. Dividend-linked perpetual coupons can be avoided → equity."
+    "explanation": "Mandatory repayment/coupons (bonds) and holder put options (redeemable preference shares) are contractual obligations → liabilities. Coupons on the perpetual notes are only due if Orion pays a dividend, so Orion can avoid them → equity, like the ordinary shares.",
+    "single": true
   },
   {
     "type": "short",

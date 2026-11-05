@@ -171,7 +171,13 @@ export function getSummaries(): SubjectSummary[] {
     subject,
     items: questions
       .filter((q) => !q.paperOnly)
-      .map((q) => ({ id: q.id, type: q.type, lecture: q.lecture, calc: q.type === "short" && q.results.length > 0 })),
+      .map((q) => ({
+        id: q.id,
+        type: q.type,
+        lecture: q.lecture,
+        calc: q.type === "short" && q.results.length > 0,
+        checkup: q.checkup,
+      })),
     cards: cards.map((c) => ({ id: c.id, lecture: c.lecture })),
     texts: getTexts(subject.id).map((t) => t.lecture),
     frameworks: [...new Set(getFrameworks(subject.id).map((f) => f.lecture))],

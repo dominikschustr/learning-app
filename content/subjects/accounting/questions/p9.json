@@ -142,19 +142,17 @@
     "id": "mc-p9-04",
     "lecture": "t3",
     "difficulty": 2,
-    "single": false,
+    "single": true,
     "shuffle": false,
-    "prompt": "TWO of the following items are NOT part of the acquisition cost of a piece of equipment. Which ones?",
+    "prompt": "Which TWO of the following items are NOT part of the acquisition cost of a piece of equipment?\n(1) Insurance during transport · (2) Operating losses in the first months of use · (3) Estimated cost of dismantling the equipment at the end of its life · (4) Cost of special foundations · (5) Borrowing costs (the equipment is a qualifying asset) · (6) Cost of test runs before use · (7) Depreciation of the building in which the equipment is installed",
     "options": [
-      { "id": "a", "text": "Insurance during transport" },
-      { "id": "b", "text": "Operating losses in the first months of use" },
-      { "id": "c", "text": "Estimated cost of dismantling the equipment at the end of its life" },
-      { "id": "d", "text": "Cost of special foundations for the equipment" },
-      { "id": "e", "text": "Borrowing costs (the equipment is a qualifying asset)" },
-      { "id": "f", "text": "Cost of test runs before use" },
-      { "id": "g", "text": "Depreciation of the building in which the equipment is installed" }
+      { "id": "a", "text": "(2) and (7)" },
+      { "id": "b", "text": "(1) and (6)" },
+      { "id": "c", "text": "(3) and (5)" },
+      { "id": "d", "text": "(2) and (4)" },
+      { "id": "e", "text": "(5) and (7)" }
     ],
-    "correct": ["b", "g"],
+    "correct": ["a"],
     "explanation": "Initial operating losses arise after the asset is ready for use, and depreciation of the building is a cost of the building – neither is directly attributable to bringing the equipment to working condition. All others are part of cost under IAS 16 / IAS 23."
   },
   {

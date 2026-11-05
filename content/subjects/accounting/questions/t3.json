@@ -6,7 +6,8 @@
     "difficulty": 1,
     "statement": "IAS 38 requires that acquired brand names have to be amortised.",
     "answer": false,
-    "explanation": "Wrong. Amortisation depends on the useful life, not on how the asset was obtained. Brand names usually have an INDEFINITE useful life (no foreseeable limit to the period they generate cash) → no amortisation, but an impairment test at least once a year. Only intangibles with a finite life (licences, patents) are amortised."
+    "explanation": "Wrong. Amortisation depends on the useful life, not on how the asset was obtained. Brand names usually have an INDEFINITE useful life (no foreseeable limit to the period they generate cash) → no amortisation, but an impairment test at least once a year. Only intangibles with a finite life (licences, patents) are amortised.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -15,7 +16,8 @@
     "difficulty": 1,
     "statement": "Tangible assets have to be measured at fair value when using IFRS.",
     "answer": false,
-    "explanation": "Wrong. After initial recognition IAS 16 offers a choice per class of assets: the COST model (cost − accumulated depreciation − impairment) or the REVALUATION model (fair value at revaluation date − subsequent depreciation/impairment). In Europe the cost model is used almost exclusively."
+    "explanation": "Wrong. After initial recognition IAS 16 offers a choice per class of assets: the COST model (cost − accumulated depreciation − impairment) or the REVALUATION model (fair value at revaluation date − subsequent depreciation/impairment). In Europe the cost model is used almost exclusively.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -24,7 +26,8 @@
     "difficulty": 1,
     "statement": "Internally generated brand names, publishing titles and customer lists can be recognised as intangible assets if they are legally protected.",
     "answer": false,
-    "explanation": "Wrong. IAS 38.63 explicitly prohibits recognising internally generated brands, mastheads, publishing titles, customer lists and similar items as assets – their cost cannot be distinguished from the cost of developing the business as a whole. Legal protection does not change this. (If ACQUIRED, e.g. in a business combination, they are recognised.)"
+    "explanation": "Wrong. IAS 38.63 explicitly prohibits recognising internally generated brands, mastheads, publishing titles, customer lists and similar items as assets – their cost cannot be distinguished from the cost of developing the business as a whole. Legal protection does not change this. (If ACQUIRED, e.g. in a business combination, they are recognised.)",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -33,7 +36,8 @@
     "difficulty": 1,
     "statement": "When a non-current asset does not generate cash on its own, for impairment testing it should be associated with a group of assets so that this group generates cash.",
     "answer": true,
-    "explanation": "Correct. If the recoverable amount (especially the value in use) of an individual asset cannot be determined, the test is performed for the cash-generating unit (CGU): the smallest identifiable group of assets generating cash inflows largely independent of other assets (e.g. a store, a magazine title, a plant)."
+    "explanation": "Correct. If the recoverable amount (especially the value in use) of an individual asset cannot be determined, the test is performed for the cash-generating unit (CGU): the smallest identifiable group of assets generating cash inflows largely independent of other assets (e.g. a store, a magazine title, a plant).",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -42,7 +46,8 @@
     "difficulty": 1,
     "statement": "When the recoverable amount of an asset increases after a prior-year impairment, the carrying amount has to be increased up to its historical acquisition cost.",
     "answer": false,
-    "explanation": "Wrong. A reversal is required, but capped: the new carrying amount may not exceed the carrying amount that would have resulted (net of depreciation) had no impairment been recognised – i.e. depreciated cost, not historical cost. For goodwill, impairment losses can never be reversed."
+    "explanation": "Wrong. A reversal is required, but capped: the new carrying amount may not exceed the carrying amount that would have resulted (net of depreciation) had no impairment been recognised – i.e. depreciated cost, not historical cost. For goodwill, impairment losses can never be reversed.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -51,7 +56,8 @@
     "difficulty": 1,
     "statement": "Research costs are always expensed, whereas development costs are capitalised when they meet the requirements of IAS 38.",
     "answer": true,
-    "explanation": "Correct. Research (gaining new knowledge) → expense, because future benefits cannot be demonstrated. Development (applying research to a plan or design before commercial production) → MUST be capitalised once all IAS 38 criteria are met (technical feasibility, intention and ability to complete and use/sell, probable future economic benefits, adequate resources, reliable measurement). Amortisation starts when the product goes to market."
+    "explanation": "Correct. Research (gaining new knowledge) → expense, because future benefits cannot be demonstrated. Development (applying research to a plan or design before commercial production) → MUST be capitalised once all IAS 38 criteria are met (technical feasibility, intention and ability to complete and use/sell, probable future economic benefits, adequate resources, reliable measurement). Amortisation starts when the product goes to market.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -60,7 +66,8 @@
     "difficulty": 1,
     "statement": "If a rental agreement for buildings meets the definition of a lease under IFRS 16, the lessee recognises the lease payments as costs on a straight-line basis in the income statement.",
     "answer": false,
-    "explanation": "Wrong. Under IFRS 16 the lessee recognises a right-of-use ASSET and a lease LIABILITY. The income statement shows DEPRECIATION of the right of use and INTEREST on the liability – not rent. Straight-line rent expense is only allowed for the optional exemptions (short-term ≤ 12 months, low-value assets ≈ USD 5,000)."
+    "explanation": "Wrong. Under IFRS 16 the lessee recognises a right-of-use ASSET and a lease LIABILITY. The income statement shows DEPRECIATION of the right of use and INTEREST on the liability – not rent. Straight-line rent expense is only allowed for the optional exemptions (short-term ≤ 12 months, low-value assets ≈ USD 5,000).",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -69,7 +76,8 @@
     "difficulty": 1,
     "statement": "At the commencement date of a lease, the right-of-use asset is always equal to the lease liability.",
     "answer": false,
-    "explanation": "Wrong. ROU asset = lease liability (PV of future lease payments) + lease payments made at or before commencement (less incentives) + initial direct costs + dismantling/restoration costs. In the Adams example: liability 31,597 + first payment 9,968 = ROU 41,565."
+    "explanation": "Wrong. ROU asset = lease liability (PV of future lease payments) + lease payments made at or before commencement (less incentives) + initial direct costs + dismantling/restoration costs. In the Adams example: liability 31,597 + first payment 9,968 = ROU 41,565.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -157,7 +165,7 @@
     "id": "mc-t3-01",
     "lecture": "t3",
     "difficulty": 1,
-    "prompt": "Which conditions must be met to recognise an intangible asset under IAS 38?",
+    "prompt": "Which of the following is NOT a condition to recognise an intangible asset under IAS 38?",
     "options": [
       {
         "id": "a",
@@ -181,12 +189,10 @@
       }
     ],
     "correct": [
-      "a",
-      "b",
-      "c",
-      "d"
+      "e"
     ],
-    "explanation": "Legal protection is not required (and does not suffice for internally generated brands). For separately acquired assets the criteria are assumed to be met."
+    "explanation": "Legal protection is not required (and does not suffice for internally generated brands). For separately acquired assets the criteria are assumed to be met.",
+    "single": true
   },
   {
     "type": "mc",
@@ -223,30 +229,30 @@
     "id": "mc-t3-03",
     "lecture": "t3",
     "difficulty": 2,
-    "prompt": "An auction house with net assets of 10 million € is acquired for 30 million €. How can the difference be explained? (select all that apply)",
+    "prompt": "An auction house with net assets of 10 million € is acquired for 30 million €. How can the difference be explained?",
     "options": [
       {
         "id": "a",
-        "text": "Its brand was not recognised in its balance sheet (internally generated)"
+        "text": "Its internally generated brand was not recognised in its own balance sheet, and the rest is goodwill (reputation, know-how, synergies)"
       },
       {
         "id": "b",
-        "text": "Goodwill: reputation, know-how and expected synergies"
+        "text": "Its tangible assets were overvalued in its balance sheet"
       },
       {
         "id": "c",
-        "text": "Its tangible assets were overvalued"
+        "text": "Only by goodwill – brands are never recognised separately in a business combination"
       },
       {
         "id": "d",
-        "text": "Its provisions were too high"
+        "text": "The difference is an acquisition loss that the buyer expenses immediately"
       }
     ],
     "correct": [
-      "a",
-      "b"
+      "a"
     ],
-    "explanation": "Internally generated brands are not recognised in the target's own balance sheet but become identifiable assets at fair value in the acquirer's PPA; the remainder is goodwill."
+    "explanation": "Internally generated brands are not recognised in the target's own balance sheet but become identifiable assets at fair value in the acquirer's PPA; the remainder is goodwill.",
+    "single": true
   },
   {
     "type": "mc",
@@ -346,30 +352,30 @@
     "id": "mc-t3-07",
     "lecture": "t3",
     "difficulty": 2,
-    "prompt": "Kohlbuy's Pritt division (a CGU) has a carrying amount of $2,400,000 including goodwill of $900,000; its recoverable amount is $1,900,000. Which statements are correct?",
+    "prompt": "Kohlbuy's Pritt division (a CGU) has a carrying amount of $2,400,000 including goodwill of $900,000; its recoverable amount is $1,900,000. Which statement is correct?",
     "options": [
       {
         "id": "a",
-        "text": "The impairment loss is $500,000"
+        "text": "The impairment loss of $500,000 is entirely allocated to goodwill, which falls to $400,000"
       },
       {
         "id": "b",
-        "text": "It is entirely allocated to goodwill, which falls to $400,000"
+        "text": "The impairment loss of $500,000 is allocated pro rata to all assets including goodwill"
       },
       {
         "id": "c",
-        "text": "It is allocated pro rata to all assets including goodwill"
+        "text": "The impairment loss of $500,000 is allocated to goodwill and can be reversed later if the recoverable amount rises"
       },
       {
         "id": "d",
-        "text": "The goodwill impairment can be reversed later"
+        "text": "There is no impairment, because the goodwill exceeds the difference"
       }
     ],
     "correct": [
-      "a",
-      "b"
+      "a"
     ],
-    "explanation": "Goodwill absorbs the loss first; since 500,000 < 900,000, no other asset is affected. Goodwill impairment is never reversed."
+    "explanation": "Goodwill absorbs the loss first; since 500,000 < 900,000, no other asset is affected. Goodwill impairment is never reversed.",
+    "single": true
   },
   {
     "type": "mc",
@@ -564,7 +570,7 @@
     "lecture": "t3",
     "case": "prodi-financing",
     "difficulty": 3,
-    "prompt": "Which statements on the PRODI financing decision are correct?",
+    "prompt": "Which statement on the PRODI financing decision is NOT correct?",
     "options": [
       {
         "id": "a",
@@ -584,11 +590,10 @@
       }
     ],
     "correct": [
-      "a",
-      "b",
-      "c"
+      "d"
     ],
-    "explanation": "Lease liability = 1,000,000 + 4.76% × 1,000,000 (47,600) − 128,000 = 919,600. Under IFRS 16 the lease adds debt like a loan – the CFO's argument is wrong."
+    "explanation": "Lease liability = 1,000,000 + 4.76% × 1,000,000 (47,600) − 128,000 = 919,600. Under IFRS 16 the lease adds debt like a loan – the CFO's argument is wrong.",
+    "single": true
   },
   {
     "type": "mc",
@@ -599,26 +604,26 @@
     "options": [
       {
         "id": "a",
-        "text": "Short-term leases (12 months or less) – lessee only"
+        "text": "Short-term leases (12 months or less) and leases of low-value assets (≈ USD 5,000 when new) – lessee only"
       },
       {
         "id": "b",
-        "text": "Leases of low-value assets (≈ USD 5,000 when new) – lessee only"
+        "text": "Short-term leases and all leases of buildings – lessee and lessor"
       },
       {
         "id": "c",
-        "text": "All leases of buildings – lessee and lessor"
+        "text": "Leases of low-value assets and leases with variable payments – lessor only"
       },
       {
         "id": "d",
-        "text": "Leases with variable payments – lessor only"
+        "text": "There are no exemptions – every lease is recognised as a right-of-use asset"
       }
     ],
     "correct": [
-      "a",
-      "b"
+      "a"
     ],
-    "explanation": "With the exemptions, payments are expensed straight-line and disclosed. Leases of minerals/oil/gas and certain licences (films, patents) are outside IFRS 16."
+    "explanation": "With the exemptions, payments are expensed straight-line and disclosed. Leases of minerals/oil/gas and certain licences (films, patents) are outside IFRS 16.",
+    "single": true
   },
   {
     "type": "mc",

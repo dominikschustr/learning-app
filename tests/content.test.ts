@@ -53,6 +53,24 @@ describe("Framework-Steckbriefe", () => {
   });
 });
 
+describe("Accounting", () => {
+  const acc = loadAllContent().find((c) => c.subject.id === "accounting")!;
+
+  it("hat nur Single-Choice-Fragen mit genau einer richtigen Antwort", () => {
+    for (const q of acc.questions)
+      if (q.type === "mc") {
+        expect(q.single, q.id).toBe(true);
+        expect(q.correct, q.id).toHaveLength(1);
+      }
+  });
+
+  it("hat in jedem Kapitel die Check-up-Fragen vom Ende der Vorlesung", () => {
+    for (const l of acc.subject.lectures)
+      expect(acc.questions.filter((q) => q.checkup && q.lecture === l.id).length, l.id).toBeGreaterThan(0);
+    expect(acc.questions.filter((q) => q.checkup)).toHaveLength(45);
+  });
+});
+
 describe("Corporate Finance", () => {
   const cf = getAllContent().find((c) => c.subject.id === "corporate-finance")!;
 

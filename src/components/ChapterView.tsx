@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, Bookmark, FileText, Layers, LayoutGrid, ScrollText, Sigma, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Layers, LayoutGrid, ScrollText, Sigma, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { chapterFormat } from "@/lib/exam";
@@ -62,6 +62,8 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const cMarks = markedIds(s.marks, "c", subject.id);
   const markedQ = summary.items.filter((i) => i.lecture === chapterId && qMarks.has(i.id)).length;
   const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
+  const checkups = summary.items.filter((i) => i.lecture === chapterId && i.checkup);
+  const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
   const actions = [
     ...(summary.formulas.includes(chapterId)
       ? [
@@ -116,6 +118,17 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
       text: `Je Durchgang ${Math.min(LECTURE_SIZE, ch.total)} wechselnde aus ${ch.total} Fragen, mit sofortigem Feedback`,
       meta: `${ch.seen}/${ch.total} gesehen`,
     },
+    ...(checkups.length
+      ? [
+          {
+            href: `${base}/practice?mode=checkup&lecture=${chapterId}`,
+            icon: ClipboardCheck,
+            title: "Check-up-Fragen",
+            text: `Die ${checkups.length} Quiz-Aussagen vom Ende der Vorlesung`,
+            meta: `${checkupStatus.first + checkupStatus.recovered}/${checkups.length} richtig`,
+          },
+        ]
+      : []),
     {
       href: `${base}/exam?chapter=${chapterId}`,
       icon: FileText,

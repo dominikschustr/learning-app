@@ -2,7 +2,7 @@ import type { Question } from "./schema";
 import { isDue, itemStatus, weakness, type ItemState } from "./srs";
 import { itemKey, shuffle } from "./utils";
 
-export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong";
+export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup";
 
 export const MODE_TITLE: Record<PracticeMode, string> = {
   smart: "Empfohlene Session",
@@ -12,6 +12,7 @@ export const MODE_TITLE: Record<PracticeMode, string> = {
   marked: "Markierte Fragen",
   new: "Neue Fragen",
   wrong: "Falsche wiederholen",
+  checkup: "Check-up-Fragen",
 };
 
 const SESSION_SIZE = 12;
@@ -48,6 +49,9 @@ export function buildQueue(opts: {
       return unseen.slice(0, LECTURE_SIZE);
     case "wrong":
       return shuffle(questions.filter((q) => itemStatus(st(q)) === "wrong"));
+    case "checkup":
+      // Quiz-Aussagen vom Ende der Vorlesungen – immer alle, in zufälliger Reihenfolge
+      return shuffle(questions.filter((q) => q.checkup));
     case "marked":
       return shuffle(questions.filter((q) => opts.marked?.has(q.id)));
     case "weak":

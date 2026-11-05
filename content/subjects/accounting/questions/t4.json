@@ -6,7 +6,8 @@
     "difficulty": 1,
     "statement": "The distinction between equity and debt instruments is only important for the equity & liability side of the balance sheet, not for the asset side.",
     "answer": false,
-    "explanation": "Wrong. The ISSUER classifies the instrument as liability or equity (IAS 32). The HOLDER needs the same classification on the asset side: under IFRS 9, debt instruments (SPPI) can be measured at amortised cost or FVOCI, while equity instruments are measured at fair value (through P/L or optionally OCI). So the debt/equity nature of an instrument also determines how investors measure their financial assets."
+    "explanation": "Wrong. The ISSUER classifies the instrument as liability or equity (IAS 32). The HOLDER needs the same classification on the asset side: under IFRS 9, debt instruments (SPPI) can be measured at amortised cost or FVOCI, while equity instruments are measured at fair value (through P/L or optionally OCI). So the debt/equity nature of an instrument also determines how investors measure their financial assets.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -15,7 +16,8 @@
     "difficulty": 1,
     "statement": "A financial instrument that must be reimbursed by the company at the holder's request is equity if it is called a share.",
     "answer": false,
-    "explanation": "Wrong. IAS 32 looks at substance, not the label: if the issuer has a contractual obligation it cannot avoid to deliver cash (here: redeem at the holder's request – a puttable instrument), it is a financial liability. \"If you have to write a cheque, it can't be equity\" – the name 'share' is irrelevant."
+    "explanation": "Wrong. IAS 32 looks at substance, not the label: if the issuer has a contractual obligation it cannot avoid to deliver cash (here: redeem at the holder's request – a puttable instrument), it is a financial liability. \"If you have to write a cheque, it can't be equity\" – the name 'share' is irrelevant.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -24,7 +26,8 @@
     "difficulty": 1,
     "statement": "A financial instrument that contains no obligation to reimburse and no obligation to pay ongoing compensation is classified as equity.",
     "answer": true,
-    "explanation": "Correct. Equity is the residual interest: if the issuer can always avoid paying (no mandatory redemption, discretionary 'interest' or dividends), there is no contractual obligation and the instrument is equity – even if it is called a bond (e.g. some perpetual hybrid bonds)."
+    "explanation": "Correct. Equity is the residual interest: if the issuer can always avoid paying (no mandatory redemption, discretionary 'interest' or dividends), there is no contractual obligation and the instrument is equity – even if it is called a bond (e.g. some perpetual hybrid bonds).",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -33,7 +36,8 @@
     "difficulty": 1,
     "statement": "Transaction costs related to issuing equity or debt instruments are immediately expensed.",
     "answer": false,
-    "explanation": "Wrong. Equity: issue costs are deducted directly from equity (usually share premium) – no P/L impact. Debt: issue costs are deducted from the initial carrying amount of the liability and spread over its life through the effective interest rate (higher interest expense) – not expensed immediately."
+    "explanation": "Wrong. Equity: issue costs are deducted directly from equity (usually share premium) – no P/L impact. Debt: issue costs are deducted from the initial carrying amount of the liability and spread over its life through the effective interest rate (higher interest expense) – not expensed immediately.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -42,7 +46,8 @@
     "difficulty": 1,
     "statement": "The difference between the number of issued shares and the number of authorised shares can be explained by share buy-backs (treasury shares).",
     "answer": false,
-    "explanation": "Wrong. Authorised shares are the maximum the board may issue; the difference to issued shares are shares not (yet) issued. Treasury shares explain the difference between ISSUED and OUTSTANDING shares: outstanding ≤ issued ≤ authorised."
+    "explanation": "Wrong. Authorised shares are the maximum the board may issue; the difference to issued shares are shares not (yet) issued. Treasury shares explain the difference between ISSUED and OUTSTANDING shares: outstanding ≤ issued ≤ authorised.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -51,7 +56,8 @@
     "difficulty": 1,
     "statement": "Any difference between the buy-back price and the resale price of treasury shares is recognised not in the income statement but in the share premium account in equity.",
     "answer": true,
-    "explanation": "Correct. Transactions in own shares are transactions with owners: no gain or loss in P/L (IAS 32.33). Example: bought at $11, resold at $15 → cash +15, treasury shares +11 (less negative), share premium +4."
+    "explanation": "Correct. Transactions in own shares are transactions with owners: no gain or loss in P/L (IAS 32.33). Example: bought at $11, resold at $15 → cash +15, treasury shares +11 (less negative), share premium +4.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -60,7 +66,8 @@
     "difficulty": 1,
     "statement": "Shares on which the company must pay annual dividends and which the shareholders can ask to be reimbursed are classified as debt.",
     "answer": true,
-    "explanation": "Correct. Both a mandatory dividend and a redemption at the holder's option are contractual obligations to deliver cash – classic features of a financial liability. Such preference shares would worsen, not improve, the debt/equity ratio."
+    "explanation": "Correct. Both a mandatory dividend and a redemption at the holder's option are contractual obligations to deliver cash – classic features of a financial liability. Such preference shares would worsen, not improve, the debt/equity ratio.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -69,7 +76,8 @@
     "difficulty": 1,
     "statement": "Some financial instruments are composed of an equity and a debt component; in this case both components must be accounted for separately.",
     "answer": true,
-    "explanation": "Correct. Compound instruments (convertible bonds, bonds with warrants) require split accounting by the issuer: first measure the liability component (cash flows discounted at the market rate for similar debt without conversion option), the equity component is the remainder. Example: convertible bond 100 → debt 95, equity (share premium) 5."
+    "explanation": "Correct. Compound instruments (convertible bonds, bonds with warrants) require split accounting by the issuer: first measure the liability component (cash flows discounted at the market rate for similar debt without conversion option), the equity component is the remainder. Example: convertible bond 100 → debt 95, equity (share premium) 5.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -157,30 +165,31 @@
     "id": "mc-t4-02",
     "lecture": "t4",
     "difficulty": 2,
-    "prompt": "Classify the instruments (lecture exercises). Which are financial LIABILITIES? (select all that apply)",
+    "prompt": "Classify the instruments (lecture exercises). Which are financial LIABILITIES?\n(1) Repayable after 10 years, interest at Euribor · (2) Infinite duration, interest only if a dividend is paid on common shares · (3) Shares the holder can require the entity to redeem at par at any time · (4) Shares the entity has the option to redeem at par at any time",
     "options": [
       {
         "id": "a",
-        "text": "Repayable after 10 years, interest at Euribor"
+        "text": "(1) and (3)"
       },
       {
         "id": "b",
-        "text": "Infinite duration, interest only if a dividend is paid on common shares"
+        "text": "Only (1)"
       },
       {
         "id": "c",
-        "text": "Shares the holder can require the entity to redeem at par at any time"
+        "text": "(1), (2) and (3)"
       },
       {
         "id": "d",
-        "text": "Shares the entity has the option to redeem at par at any time"
+        "text": "(3) and (4)"
       }
     ],
     "correct": [
-      "a",
-      "c"
+      "a"
     ],
-    "explanation": "Euribor bond → liability (mandatory interest and repayment). Dividend-linked perpetual → equity (dividends on ordinary shares are discretionary, so the issuer can avoid paying). Holder put → liability (the issuer cannot refuse redemption). Issuer call → equity (the issuer can simply never redeem)."
+    "explanation": "Euribor bond → liability (mandatory interest and repayment). Dividend-linked perpetual → equity (dividends on ordinary shares are discretionary, so the issuer can avoid paying). Holder put → liability (the issuer cannot refuse redemption). Issuer call → equity (the issuer can simply never redeem).",
+    "shuffle": false,
+    "single": true
   },
   {
     "type": "mc",
@@ -558,7 +567,7 @@
     "id": "mc-t4-15",
     "lecture": "t4",
     "difficulty": 1,
-    "prompt": "Why do companies buy back their own shares?",
+    "prompt": "Which of the following is NOT a reason for companies to buy back their own shares?",
     "options": [
       {
         "id": "a",
@@ -582,12 +591,10 @@
       }
     ],
     "correct": [
-      "a",
-      "b",
-      "c",
-      "d"
+      "e"
     ],
-    "explanation": "All four are reasons given in the lecture. A buy-back reduces equity and the number of outstanding shares, which raises EPS and ROE mechanically. Trading own shares is a transaction with owners and never creates a gain or loss in P/L – differences go to share premium."
+    "explanation": "All four are reasons given in the lecture. A buy-back reduces equity and the number of outstanding shares, which raises EPS and ROE mechanically. Trading own shares is a transaction with owners and never creates a gain or loss in P/L – differences go to share premium.",
+    "single": true
   },
   {
     "type": "short",

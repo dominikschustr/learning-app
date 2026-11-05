@@ -6,7 +6,8 @@
     "difficulty": 1,
     "statement": "In 2026, the EU is the only jurisdiction in the world that requires IFRS for the consolidated financial statements of listed companies.",
     "answer": false,
-    "explanation": "Wrong. IFRS are issued by a private body (the IASB) but have been adopted by local regulators in more than 140 jurisdictions (e.g. UK, Australia, Canada, Brazil, South Korea). The notable exception is the USA, where domestic listed companies use US GAAP. The EU only made IFRS mandatory for the CONSOLIDATED statements of LISTED companies since 2005 – it is one of many adopters, not the only one."
+    "explanation": "Wrong. IFRS are issued by a private body (the IASB) but have been adopted by local regulators in more than 140 jurisdictions (e.g. UK, Australia, Canada, Brazil, South Korea). The notable exception is the USA, where domestic listed companies use US GAAP. The EU only made IFRS mandatory for the CONSOLIDATED statements of LISTED companies since 2005 – it is one of many adopters, not the only one.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -15,7 +16,8 @@
     "difficulty": 1,
     "statement": "In case of conflict between an IFRS and the Conceptual Framework, the IFRS overrides the Conceptual Framework.",
     "answer": true,
-    "explanation": "Correct. The Conceptual Framework is NOT a standard. In the IFRS hierarchy the individual standards (IFRS/IAS and their interpretations IFRIC/SIC) come first; the Framework helps the IASB develop standards and helps preparers develop an accounting policy when no standard applies. If a standard says something different, the standard wins (\"individual IFRS override the Framework\")."
+    "explanation": "Correct. The Conceptual Framework is NOT a standard. In the IFRS hierarchy the individual standards (IFRS/IAS and their interpretations IFRIC/SIC) come first; the Framework helps the IASB develop standards and helps preparers develop an accounting policy when no standard applies. If a standard says something different, the standard wins (\"individual IFRS override the Framework\").",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -24,7 +26,8 @@
     "difficulty": 1,
     "statement": "Accounts receivable maturing in more than one year have to be presented as non-current assets.",
     "answer": false,
-    "explanation": "Wrong. IAS 1 classifies an asset as current if it is expected to be realised within twelve months OR within the entity's normal operating cycle (or held for trading). Trade receivables that are part of the operating cycle are current even if they are collected after more than 12 months (e.g. in long construction or wine businesses). The 12-month rule is only one of the criteria – so \"have to be non-current\" is too absolute."
+    "explanation": "Wrong. IAS 1 classifies an asset as current if it is expected to be realised within twelve months OR within the entity's normal operating cycle (or held for trading). Trade receivables that are part of the operating cycle are current even if they are collected after more than 12 months (e.g. in long construction or wine businesses). The 12-month rule is only one of the criteria – so \"have to be non-current\" is too absolute.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -33,7 +36,8 @@
     "difficulty": 1,
     "statement": "Operating expenses can be disclosed either by nature or by function in the statement of comprehensive income.",
     "answer": true,
-    "explanation": "Correct. IAS 1.99 lets the entity choose the method that gives reliable and more relevant information: by NATURE (raw materials, staff costs, depreciation… – e.g. Orange) or by FUNCTION (cost of sales, selling & distribution, administrative expenses – e.g. Vodafone). Entities using the function method must disclose additional information on the nature of expenses (incl. depreciation and staff costs) in the notes."
+    "explanation": "Correct. IAS 1.99 lets the entity choose the method that gives reliable and more relevant information: by NATURE (raw materials, staff costs, depreciation… – e.g. Orange) or by FUNCTION (cost of sales, selling & distribution, administrative expenses – e.g. Vodafone). Entities using the function method must disclose additional information on the nature of expenses (incl. depreciation and staff costs) in the notes.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -42,7 +46,8 @@
     "difficulty": 1,
     "statement": "Operating profit is currently precisely defined under IFRS.",
     "answer": false,
-    "explanation": "Wrong. Under IAS 1 (still applicable until 2027) operating profit is neither mandatory nor defined – companies present it voluntarily and calculate it differently, which hurts comparability. This is exactly one of the reasons for IFRS 18 (from 1 January 2027), which introduces defined subtotals such as 'operating profit' and the operating/investing/financing categories in the income statement."
+    "explanation": "Wrong. Under IAS 1 (still applicable until 2027) operating profit is neither mandatory nor defined – companies present it voluntarily and calculate it differently, which hurts comparability. This is exactly one of the reasons for IFRS 18 (from 1 January 2027), which introduces defined subtotals such as 'operating profit' and the operating/investing/financing categories in the income statement.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -51,7 +56,8 @@
     "difficulty": 1,
     "statement": "Comprehensive income is equal to net income plus other comprehensive income.",
     "answer": true,
-    "explanation": "Correct. Total comprehensive income = profit or loss (net income) + other comprehensive income (OCI). OCI contains certain gains and losses that IFRS require to bypass the income statement (e.g. fair value changes of some financial assets, actuarial gains/losses on pensions). OCI items do not affect net income and therefore not EPS or dividend calculation, but they do change equity."
+    "explanation": "Correct. Total comprehensive income = profit or loss (net income) + other comprehensive income (OCI). OCI contains certain gains and losses that IFRS require to bypass the income statement (e.g. fair value changes of some financial assets, actuarial gains/losses on pensions). OCI items do not affect net income and therefore not EPS or dividend calculation, but they do change equity.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -60,7 +66,8 @@
     "difficulty": 1,
     "statement": "Operating cash flows must be presented according to the direct method in the statement of cash flows.",
     "answer": false,
-    "explanation": "Wrong. IAS 7 allows the DIRECT method (gross cash receipts and payments) or the INDIRECT method (start from net income and adjust for non-cash items such as depreciation and for changes in working capital) for operating cash flows. Most companies use the indirect method. Investing and financing cash flows are always shown gross (direct)."
+    "explanation": "Wrong. IAS 7 allows the DIRECT method (gross cash receipts and payments) or the INDIRECT method (start from net income and adjust for non-cash items such as depreciation and for changes in working capital) for operating cash flows. Most companies use the indirect method. Investing and financing cash flows are always shown gross (direct).",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -69,7 +76,8 @@
     "difficulty": 1,
     "statement": "The statement of changes in equity shows purchases and sales of treasury stock.",
     "answer": true,
-    "explanation": "Correct. IAS 1.106 requires the statement of changes in equity to show, for each component of equity, transactions with owners in their capacity as owners – contributions (share issues), distributions (dividends) and changes in own shares. Buying back treasury shares reduces equity, reselling them increases equity; neither goes through the income statement."
+    "explanation": "Correct. IAS 1.106 requires the statement of changes in equity to show, for each component of equity, transactions with owners in their capacity as owners – contributions (share issues), distributions (dividends) and changes in own shares. Buying back treasury shares reduces equity, reselling them increases equity; neither goes through the income statement.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -78,7 +86,8 @@
     "difficulty": 1,
     "statement": "IFRS 18 will replace IAS 7 'Statement of cash flows' from January 2027.",
     "answer": false,
-    "explanation": "Wrong. IFRS 18 'Presentation and Disclosure in Financial Statements' replaces IAS 1 (presentation of financial statements), not IAS 7. IAS 7 remains in force (with some consequential amendments). IFRS 18 introduces new defined subtotals in the income statement, disclosures on management-defined performance measures (MPMs) and principles for aggregation/disaggregation."
+    "explanation": "Wrong. IFRS 18 'Presentation and Disclosure in Financial Statements' replaces IAS 1 (presentation of financial statements), not IAS 7. IAS 7 remains in force (with some consequential amendments). IFRS 18 introduces new defined subtotals in the income statement, disclosures on management-defined performance measures (MPMs) and principles for aggregation/disaggregation.",
+    "checkup": true
   },
   {
     "type": "tf",
@@ -139,30 +148,30 @@
     "id": "mc-t1-01",
     "lecture": "t1",
     "difficulty": 2,
-    "prompt": "The Conceptual Framework …",
+    "prompt": "Which statement about the Conceptual Framework is correct?",
     "options": [
       {
         "id": "a",
-        "text": "is an IFRS"
+        "text": "It does not define standards for particular measurement or disclosure issues, but management uses it to develop an accounting policy when no specific IFRS applies"
       },
       {
         "id": "b",
-        "text": "overrides all other IFRS requirements"
+        "text": "It is an IFRS like any other standard"
       },
       {
         "id": "c",
-        "text": "does not define standards for any particular measurement or disclosure issue"
+        "text": "It overrides an IFRS when the two conflict"
       },
       {
         "id": "d",
-        "text": "is used by management – in the absence of a specific IFRS – to develop an accounting policy that results in useful information"
+        "text": "It is only used by the IASB and never by preparers of financial statements"
       }
     ],
     "correct": [
-      "c",
-      "d"
+      "a"
     ],
-    "explanation": "The Framework is not a standard and never overrides a standard. It sets out concepts (objective, qualitative characteristics, elements, measurement bases) used by the IASB to develop standards and by preparers to fill gaps when no IFRS applies (IAS 8 hierarchy)."
+    "explanation": "The Framework is not a standard and never overrides a standard. It sets out concepts (objective, qualitative characteristics, elements, measurement bases) used by the IASB to develop standards and by preparers to fill gaps when no IFRS applies (IAS 8 hierarchy).",
+    "single": true
   },
   {
     "type": "mc",
@@ -196,33 +205,33 @@
     "options": [
       {
         "id": "a",
-        "text": "Relevance (including materiality)"
+        "text": "Relevance (including materiality) and faithful representation"
       },
       {
         "id": "b",
-        "text": "Faithful representation (including substance over form)"
+        "text": "Comparability and verifiability"
       },
       {
         "id": "c",
-        "text": "Comparability"
+        "text": "Relevance and timeliness"
       },
       {
         "id": "d",
-        "text": "Timeliness"
+        "text": "Faithful representation and understandability"
       }
     ],
     "correct": [
-      "a",
-      "b"
+      "a"
     ],
-    "explanation": "Relevance and faithful representation are fundamental. Comparability, verifiability, timeliness and understandability are ENHANCING characteristics. The cost constraint and the going concern assumption are further elements of the Framework."
+    "explanation": "Relevance and faithful representation are fundamental. Comparability, verifiability, timeliness and understandability are ENHANCING characteristics. The cost constraint and the going concern assumption are further elements of the Framework.",
+    "single": true
   },
   {
     "type": "mc",
     "id": "mc-t1-04",
     "lecture": "t1",
     "difficulty": 1,
-    "prompt": "Which statements are REQUIRED by IAS 1 in a complete set of IFRS financial statements?",
+    "prompt": "Which of the following is NOT required by IAS 1 in a complete set of IFRS financial statements?",
     "options": [
       {
         "id": "a",
@@ -246,12 +255,10 @@
       }
     ],
     "correct": [
-      "a",
-      "b",
-      "c",
-      "d"
+      "e"
     ],
-    "explanation": "A management report or sustainability report is not required by IFRS but often by national law. Listed companies additionally present segment reporting (IFRS 8) and earnings per share (IAS 33)."
+    "explanation": "A management report or sustainability report is not required by IFRS but often by national law. Listed companies additionally present segment reporting (IFRS 8) and earnings per share (IAS 33).",
+    "single": true
   },
   {
     "type": "mc",
@@ -467,7 +474,7 @@
     "id": "mc-t1-12",
     "lecture": "t1",
     "difficulty": 1,
-    "prompt": "How do the cash flow categories of IAS 7 differ?",
+    "prompt": "Which description of the IAS 7 cash flow categories is NOT correct?",
     "options": [
       {
         "id": "a",
@@ -487,11 +494,10 @@
       }
     ],
     "correct": [
-      "a",
-      "b",
-      "c"
+      "d"
     ],
-    "explanation": "Investing and financing cash flows are presented gross (direct method); the operating section can start from net income (indirect)."
+    "explanation": "Operating: day-to-day activities (direct or indirect method); investing: buying and selling non-current assets; financing: debt and cash contributions by / distributions to owners. Customers do not pay dividends – dividends received come from investments. Investing and financing cash flows are presented gross (direct method); the operating section can start from net income (indirect).",
+    "single": true
   },
   {
     "type": "short",
