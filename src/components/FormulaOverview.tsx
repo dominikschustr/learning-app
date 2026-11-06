@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, ArrowLeft, ArrowRight, Eye, EyeOff, FileCheck2 } from "lucide-react";
+import { AlertTriangle, ArrowLeft, ArrowRight, Eye, EyeOff, FileCheck2, Lightbulb } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { Subject } from "@/lib/schema";
@@ -233,6 +233,16 @@ export function FormulaDetails({ f, color }: { f: RenderedFormula; color: string
           <AlertTriangle className="mt-0.5 size-4 shrink-0 text-bad" />
           <FormulaText text={f.pitfall} />
         </p>
+      )}
+      {f.example && (
+        <div className="mt-3 rounded-2xl p-3.5 text-sm leading-relaxed" style={{ background: alpha(color, 0.06) }}>
+          <p className="mb-1 flex items-center gap-1.5 font-semibold" style={{ color }}>
+            <Lightbulb className="size-4 shrink-0" /> Beispiel
+          </p>
+          {f.example.split("\n").map((line, i) => (
+            <FormulaText key={i} text={line} className="block text-ink-2" />
+          ))}
+        </div>
       )}
     </>
   );

@@ -232,6 +232,8 @@ export const FormulaSchema = z.object({
   vars: z.array(z.object({ symbol: z.string().min(1), meaning: z.string().min(1) })).min(1),
   /** typische Falle */
   pitfall: z.string().default(""),
+  /** durchgerechnetes Beispiel: welche Aufgabe dahintersteckt und wie man sie löst (mehrzeilig mit \n) */
+  example: z.string().default(""),
   /** steht auf dem Formelblatt der Klausur */
   sheet: z.boolean().default(false),
 });

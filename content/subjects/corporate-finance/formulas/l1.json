@@ -151,6 +151,7 @@
       }
     ],
     "pitfall": "Halved in 6 months → (0.5)² − 1 = −75% p.a., not −100%.",
+    "example": "Task type: a return is given for a period that is not one year – convert it to “per year” so it can be compared.\nStock goes from 100 to 110 in 6 months → R_h = 10%, h = 0.5\nR_annual = 1.10^(1/0.5) − 1 = 1.10² − 1 = 21% p.a. (not 2 × 10% = 20%)\n+33.1% over 3 years → h = 3 → 1.331^(1/3) − 1 = 10% p.a.",
     "sheet": false
   },
   {

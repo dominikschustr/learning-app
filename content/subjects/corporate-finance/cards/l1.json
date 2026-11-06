@@ -33,7 +33,7 @@
     "id": "c-annualize",
     "lecture": "l1",
     "front": "Formula: Annualizing a sub-period return",
-    "back": "Rannual = (1 + Rh)^(1/h) − 1\n\nUse: Return measured over h years (e.g. h = 0.5 for six months).\nTrap: Halved in 6 months → (0.5)² − 1 = −75% p.a., not −100%.\n\nNot on the formula sheet – learn it by heart."
+    "back": "Rannual = (1 + Rh)^(1/h) − 1\n\nUse: Return measured over h years (e.g. h = 0.5 for six months).\nTrap: Halved in 6 months → (0.5)² − 1 = −75% p.a., not −100%.\nExample: 100 → 110 in 6 months (Rh = 10%, h = 0.5) → 1.10² − 1 = 21% p.a., not 20%.\n\nNot on the formula sheet – learn it by heart."
   },
   {
     "id": "c-volatility",
