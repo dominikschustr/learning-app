@@ -24,6 +24,7 @@
       }
     ],
     "pitfall": "Weights are the probabilities – no T − 1 here.",
+    "example": "Task type: a table of economic states with probabilities and returns – find E(R) and the risk.\nBoom p = 0.3, R = 25%; normal p = 0.5, R = 10%; recession p = 0.2, R = −10%\nE(R) = 0.3 × 25% + 0.5 × 10% + 0.2 × (−10%) = 10.5%\nVar = 0.3 × 0.145² + 0.5 × 0.005² + 0.2 × 0.205² = 0.0147 → σ = 12.1%",
     "sheet": false
   },
   {
@@ -51,6 +52,7 @@
       }
     ],
     "pitfall": "Use the variance, not the volatility.",
+    "example": "Task type: several investments and the investor's risk aversion γ – which one does the investor pick?\nγ = 4. A: E = 10%, σ = 20% → U = 0.10 − 4/2 × 0.20² = 0.10 − 0.08 = 2%\nB: E = 7%, σ = 10% → U = 0.07 − 2 × 0.01 = 5% → the investor picks B",
     "sheet": false
   },
   {
@@ -90,6 +92,7 @@
       }
     ],
     "pitfall": "Historical data: T − 1, like the variance.",
+    "example": "Task type: returns of two assets (per period or per scenario) – do they move together?\nTwo states, p = 0.5 each: R_A = 20% / 0%, R_B = 5% / 15% → E(R_A) = 10%, E(R_B) = 10%\nCov = 0.5 × (0.10)(−0.05) + 0.5 × (−0.10)(0.05) = −0.005\nNegative → when A does well, B does badly.",
     "sheet": false
   },
   {
@@ -113,6 +116,7 @@
       }
     ],
     "pitfall": "Same sign as the covariance.",
+    "example": "Task type: turn a covariance into a correlation (or back) to judge diversification.\nCov = 0.006, σ_A = 20%, σ_B = 30% → ρ = 0.006 / (0.20 × 0.30) = 0.10\nBack: ρ = 0.5 → Cov = 0.5 × 0.20 × 0.30 = 0.03",
     "sheet": false
   },
   {
@@ -140,6 +144,7 @@
       }
     ],
     "pitfall": "Divide by the variance of the asset that does the moving.",
+    "example": "Task type: correlation and volatilities (or the covariance) are given – find how strongly the stock follows the market.\nρ_{j,M} = 0.6, σ_j = 30%, σ_M = 15% → β = 0.6 × 0.30 / 0.15 = 1.2\nSame with Cov = 0.027: β = 0.027 / 0.15² = 0.027 / 0.0225 = 1.2\nMarket +1% → stock +1.2% on average.",
     "sheet": true
   },
   {
@@ -163,6 +168,7 @@
       }
     ],
     "pitfall": "Weights on own money, not on the total position.",
+    "example": "Task type: amounts invested in several assets – find the portfolio's expected return.\n10,000 own money: 6,000 in A (E = 12%), 4,000 in B (E = 6%) → x_A = 0.6, x_B = 0.4\nE(R_p) = 0.6 × 12% + 0.4 × 6% = 9.6%\nShort 5,000 of B, put 15,000 into A → x_A = 1.5, x_B = −0.5 → 1.5 × 12% − 0.5 × 6% = 15%",
     "sheet": true
   },
   {
@@ -190,6 +196,7 @@
       }
     ],
     "pitfall": "Never forget the cross term; a short position flips its sign.",
+    "example": "Task type: weights, volatilities and the correlation of two assets – find the portfolio risk.\nx_1 = 0.6, σ_1 = 20%; x_2 = 0.4, σ_2 = 30%; ρ = 0.2\nσ_p² = 0.36 × 0.04 + 0.16 × 0.09 + 2 × 0.6 × 0.4 × 0.2 × 0.20 × 0.30 = 0.0346 → σ_p = 18.6%\nBelow the weighted average of 24% – that is diversification.",
     "sheet": true
   },
   {
@@ -217,6 +224,7 @@
       }
     ],
     "pitfall": "",
+    "example": "Task type: quick check of how much risk a mix of two assets removes, depending on ρ.\n50 / 50, σ_1 = 20%, σ_2 = 30%\nρ = +1 → σ_p = 0.5 × 20% + 0.5 × 30% = 25%\nρ = 0.2 → σ_p = 19.6% (below 25%)\nρ = −1 → σ_p = |10% − 15%| = 5%",
     "sheet": false
   }
 ]

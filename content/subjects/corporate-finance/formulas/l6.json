@@ -24,6 +24,7 @@
       }
     ],
     "pitfall": "Only valid for g < r. Constant dividends: P_0 = Div/r.",
+    "example": "Task type: value a stock with growing dividends – or back out the expected return from the price.\nDiv_1 = 3, g = 4%, r = 10% → P_0 = 3 / (0.10 − 0.04) = 50\nIndex at 2,000, next year's dividends 60, g = 5% → r = 60 / 2,000 + 5% = 8%",
     "sheet": true
   },
   {
@@ -59,6 +60,7 @@
       }
     ],
     "pitfall": "The YTM is the promised return; the coupon rate is irrelevant.",
+    "example": "Task type: risky debt – what return do lenders really expect?\nYTM y = 7%, default probability p = 2% p.a., loss rate L = 50% → r_D = 7% − 0.02 × 0.5 = 6%\nOr β_D = 0.2, r_f = 3%, E(R_M) = 8% → r_D = 3% + 0.2 × 5% = 4%",
     "sheet": true
   },
   {
@@ -86,6 +88,7 @@
       }
     ],
     "pitfall": "Use market values; risk-free debt → β_D = 0.",
+    "example": "Task type: take a levered comparable firm and find the cost of capital of its business alone.\nE = 600, D = 400 → weights 0.6 / 0.4; r_E = 12%, r_D = 5%\nr_U = 0.6 × 12% + 0.4 × 5% = 9.2%\nβ_E = 1.5, β_D = 0.2 → β_U = 0.6 × 1.5 + 0.4 × 0.2 = 0.98",
     "sheet": true
   },
   {
@@ -105,6 +108,7 @@
       }
     ],
     "pitfall": "Negative net debt makes β_U > β_E.",
+    "example": "Task type: the firm holds a lot of cash – use net debt for D before unlevering.\nDebt 300, cash 500, of which 100 needed for operations → excess cash 400\nNet debt = 300 − 400 = −100\nE = 1,000, β_E = 1.2, β_D = 0 → β_U = 1,000 / 900 × 1.2 = 1.33 > β_E",
     "sheet": false
   },
   {
@@ -140,6 +144,7 @@
       }
     ],
     "pitfall": "Only for the same risk and same leverage; otherwise start from r_U.",
+    "example": "Task type: discount rate for a project like the firm's own, financed like the firm, with taxes.\nE = 600, D = 400, r_E = 12%, r_D = 6%, τ_C = 25%\nr_WACC = 0.6 × 12% + 0.4 × 6% × 0.75 = 7.2% + 1.8% = 9.0%\nCheck: r_U = 9.6% → 9.6% − 0.25 × 0.4 × 6% = 9.0%",
     "sheet": true
   }
 ]

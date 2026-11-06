@@ -20,6 +20,7 @@
       }
     ],
     "pitfall": "Equity value = V_U − D, not the PV of equity cash flows at r_U.",
+    "example": "Task type: the firm changes its debt (perfect markets) – firm value stays, find the new equity value.\nUnlevered firm worth V_U = 1,000; it borrows D = 400 and pays it out to shareholders\nV_L = 1,000 still → equity E = 1,000 − 400 = 600",
     "sheet": false
   },
   {
@@ -47,6 +48,7 @@
       }
     ],
     "pitfall": "",
+    "example": "Task type: you computed r_E after a leverage change – check that the average still equals r_U.\nr_U = 10%, r_D = 5%, E = 600, D = 400 → r_E = 13.33% (MM II)\n0.6 × 13.33% + 0.4 × 5% = 8% + 2% = 10% = r_U ✓",
     "sheet": false
   },
   {
@@ -74,6 +76,7 @@
       }
     ],
     "pitfall": "",
+    "example": "Task type: show that investors can copy the firm's leverage themselves, so leverage cannot add value.\nLevered firm: E = 600, D = 400; unlevered twin U worth 1,000\nCopy 10% of E: buy 10% of U (100) and borrow 10% of D (40) → own money 60 = 10% of E\nPayoff: 10% of the firm's cash flow minus 10% of the interest – the same as holding 10% of E",
     "sheet": false
   }
 ]

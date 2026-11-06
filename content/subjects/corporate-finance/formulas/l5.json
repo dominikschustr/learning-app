@@ -28,6 +28,7 @@
       }
     ],
     "pitfall": "Compare a stock with its own required return, not with another stock.",
+    "example": "Task type: your own forecast vs. the CAPM – is the stock over- or undervalued?\nForecast E(R) = 12%; β = 1.2, r_f = 2%, E(R_M) = 8%\nRequired 2% + 1.2 × 6% = 9.2% → α = 12% − 9.2% = +2.8% → above the SML, buy",
     "sheet": false
   },
   {
@@ -55,6 +56,7 @@
       }
     ],
     "pitfall": "",
+    "example": "Task type: a stock has positive alpha – at what price would it be fairly priced?\nExpected P_1 + Div_1 = 110 + 2 = 112; required return (CAPM) 9.2%\nP_0 = 112 / 1.092 = 102.56 → trading at 100, buyers push it up to 102.56",
     "sheet": false
   },
   {
@@ -94,6 +96,7 @@
       }
     ],
     "pitfall": "",
+    "example": "Task type: factor betas and factor premiums are given – find the required return.\nr_f = 2%; MKT = 6%, SMB = 2%, HML = 3%, PR1YR = 4%\nβ_M = 1.1, β_S = 0.5, β_V = −0.2, β_{Mom} = 0.3\nE(R) = 2% + 6.6% + 1% − 0.6% + 1.2% = 10.2%",
     "sheet": false
   }
 ]

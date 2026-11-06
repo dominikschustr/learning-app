@@ -239,9 +239,11 @@ export function FormulaDetails({ f, color }: { f: RenderedFormula; color: string
           <p className="mb-1 flex items-center gap-1.5 font-semibold" style={{ color }}>
             <Lightbulb className="size-4 shrink-0" /> Beispiel
           </p>
-          {f.example.split("\n").map((line, i) => (
-            <FormulaText key={i} text={line} className="block text-ink-2" />
-          ))}
+          <div className="space-y-1.5">
+            {f.example.split("\n").map((line, i) => (
+              <FormulaText key={i} text={line} className="block text-ink-2" />
+            ))}
+          </div>
         </div>
       )}
     </>

@@ -28,6 +28,7 @@
       }
     ],
     "pitfall": "The premium, not E(R_M), multiplies beta.",
+    "example": "Task type: β, r_f and the market return are given – find the required return (cost of equity).\nr_f = 2%, E(R_M) = 8%, β = 1.5\nE(R) = 2% + 1.5 × (8% − 2%) = 11%",
     "sheet": true
   },
   {
@@ -51,6 +52,7 @@
       }
     ],
     "pitfall": "Single stocks are not on the CML – they lie below it.",
+    "example": "Task type: an efficient portfolio with a given volatility – what return can it expect?\nr_f = 2%, E(R_M) = 8%, σ_M = 15%, σ_p = 10%\nE(R_p) = 2% + (6% / 15%) × 10% = 6%",
     "sheet": false
   },
   {
@@ -74,6 +76,7 @@
       }
     ],
     "pitfall": "Average the betas first, then apply the CAPM.",
+    "example": "Task type: a portfolio of several stocks – find its beta, then its required return.\n40% in β = 1.5, 40% in β = 0.5, 20% risk-free (β = 0)\nβ_p = 0.4 × 1.5 + 0.4 × 0.5 + 0.2 × 0 = 0.8\nr_f = 2%, E(R_M) = 8% → E(R_p) = 2% + 0.8 × 6% = 6.8%",
     "sheet": false
   },
   {
@@ -105,6 +108,7 @@
       }
     ],
     "pitfall": "What matters is the correlation with P, not A's own volatility.",
+    "example": "Task type: should you add stock A to the portfolio you already hold?\nP: E = 9%, σ = 15%; r_f = 3%. A: E = 8%, σ = 30%, ρ_{A,P} = 0.2\nβ_{A,P} = 0.2 × 0.30 / 0.15 = 0.4 → hurdle 3% + 0.4 × 6% = 5.4%\n8% > 5.4% → adding A raises the Sharpe ratio, buy",
     "sheet": false
   }
 ]

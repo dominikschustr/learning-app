@@ -24,6 +24,7 @@
       }
     ],
     "pitfall": "Bond: use the coupon in EUR, not the coupon rate.",
+    "example": "Task type: start price, end price and dividend are given – find the return over the holding period.\nBuy at P_t = 50, sell at P_{t+1} = 54, dividend 1 → R = (54 + 1 − 50) / 50 = 10%\n= capital gain 8% + dividend yield 2%\nBond bought at 980, coupon 50 EUR, worth 1,000 a year later → (1,000 + 50 − 980) / 980 = 7.14%",
     "sheet": true
   },
   {
@@ -59,6 +60,7 @@
       }
     ],
     "pitfall": "Never compare one share's price before and after the split – compare the whole position.",
+    "example": "Task type: a split happens while you hold the stock – compare the whole position, not one share.\n100 shares at 60 = 6,000; 2-for-1 split → 200 shares, end price 33, dividends 100 EUR in total\nR = (200 × 33 + 100 − 6,000) / 6,000 = 700 / 6,000 = 11.7%\nWrong: (33 − 60) / 60 = −45%",
     "sheet": false
   },
   {
@@ -82,6 +84,7 @@
       }
     ],
     "pitfall": "Multiply (1 + R), never add returns.",
+    "example": "Task type: returns for several years (or between dividend dates) are given – find the total return.\n+10%, −5%, +20% → 1.10 × 0.95 × 1.20 − 1 = 25.4%\nnot 10 − 5 + 20 = 25%",
     "sheet": true
   },
   {
@@ -105,6 +108,7 @@
       }
     ],
     "pitfall": "Not the realized performance per year.",
+    "example": "Task type: past annual returns are given – estimate next year's expected return.\n+10%, −5%, +20% → R̄ = (10% − 5% + 20%) / 3 = 8.33%",
     "sheet": true
   },
   {
@@ -128,6 +132,7 @@
       }
     ],
     "pitfall": "−50% then +100%: arithmetic +25%, geometric 0%.",
+    "example": "Task type: past annual returns are given – what did the investment really earn per year?\n+10%, −5%, +20% → (1.10 × 0.95 × 1.20)^(1/3) − 1 = 1.254^(1/3) − 1 = 7.84% p.a.\nLower than the arithmetic average of 8.33%.",
     "sheet": true
   },
   {
@@ -187,6 +192,7 @@
       }
     ],
     "pitfall": "Divide by T − 1 for historical data; use decimals (0.25² = 0.0625) consistently.",
+    "example": "Task type: a series of past returns is given – find the risk of the asset.\n+10%, −5%, +20%, R̄ = 8.33% → deviations 0.0167, −0.1333, 0.1167\nVar = (0.0167² + 0.1333² + 0.1167²) / (3 − 1) = 0.0317 / 2 = 0.0158 → σ = 12.6%\nσ_monthly = 4% → σ_annual = 4% × √12 = 13.9%",
     "sheet": true
   }
 ]

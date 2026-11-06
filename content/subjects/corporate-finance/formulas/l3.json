@@ -20,6 +20,7 @@
       }
     ],
     "pitfall": "Expected returns play no role.",
+    "example": "Task type: two stocks – which mix has the lowest possible risk?\nσ_1 = 20%, σ_2 = 30%, ρ = 0.2\nx_1 = (0.09 − 0.2 × 0.06) / (0.04 + 0.09 − 2 × 0.2 × 0.06) = 0.078 / 0.106 = 73.6%\nx_2 = 26.4%",
     "sheet": false
   },
   {
@@ -43,6 +44,7 @@
       }
     ],
     "pitfall": "Special case ρ = 0: x_1 = σ_2² / (σ_1² + σ_2²).",
+    "example": "Task type: two assets with ρ = −1 – which mix removes all risk?\nσ_1 = 20%, σ_2 = 30% → x_1 = 0.30 / (0.20 + 0.30) = 60%, x_2 = 40%\nCheck: |0.6 × 20% − 0.4 × 30%| = 0",
     "sheet": false
   },
   {
@@ -70,6 +72,7 @@
       }
     ],
     "pitfall": "Leverage scales premium and risk in the same proportion – the Sharpe ratio stays.",
+    "example": "Task type: part of the money goes into a risky portfolio, the rest is lent or borrowed at r_f.\nP: E = 10%, σ = 20%; r_f = 2%\nx = 0.5 → E(R) = 2% + 0.5 × 8% = 6%, σ = 10%\nx = 1.5 (borrow 50%) → E(R) = 2% + 1.5 × 8% = 14%, σ = 30%",
     "sheet": false
   },
   {
@@ -97,6 +100,7 @@
       }
     ],
     "pitfall": "Positive Sharpe = beats r_f in expectation; it says nothing about 'above one'.",
+    "example": "Task type: several risky portfolios – which is best to combine with r_f?\nr_f = 2%. A: E = 10%, σ = 20% → S = 8% / 20% = 0.40\nB: E = 7%, σ = 10% → S = 5% / 10% = 0.50 → B is better",
     "sheet": true
   },
   {
@@ -124,6 +128,7 @@
       }
     ],
     "pitfall": "x > 1 means borrowing (negative risk-free weight).",
+    "example": "Task type: a portfolio is given – build one from T and r_f with the same risk but more return (or same return, less risk).\nT: E = 10%, σ = 20%; r_f = 2%\nTarget σ = 15% → x = 15% / 20% = 0.75 → E = 2% + 0.75 × 8% = 8%\nTarget E = 12% → x = 10% / 8% = 1.25 (borrow 25%) → σ = 25%",
     "sheet": false
   }
 ]

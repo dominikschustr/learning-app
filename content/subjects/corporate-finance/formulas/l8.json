@@ -24,6 +24,7 @@
       }
     ],
     "pitfall": "Uses D/E, not D/(D + E).",
+    "example": "Task type: the firm takes on debt (no taxes) – how much more do shareholders require?\nr_U = 10%, r_D = 5%, D/E = 0.5\nr_E = 10% + 0.5 × (10% − 5%) = 12.5%",
     "sheet": false
   },
   {
@@ -51,6 +52,7 @@
       }
     ],
     "pitfall": "Cheap debt is offset by dearer equity.",
+    "example": "Task type: show that the WACC stays the same at any leverage when there are no taxes.\nE/(E + D) = 2/3, r_E = 12.5%; D/(E + D) = 1/3, r_D = 5%\nr_WACC = 2/3 × 12.5% + 1/3 × 5% = 8.33% + 1.67% = 10% = r_U",
     "sheet": false
   },
   {
@@ -74,6 +76,7 @@
       }
     ],
     "pitfall": "Average asset betas across an industry, then relever.",
+    "example": "Task type: beta of a comparable at its leverage → beta for your project at a different leverage.\nComparable: β_E = 1.5, D/E = 0.5 → β_U = 1.5 / 1.5 = 1.0\nYour target D/E = 1 → β_E = 1.0 × (1 + 1) = 2.0",
     "sheet": true
   },
   {
@@ -101,6 +104,7 @@
       }
     ],
     "pitfall": "",
+    "example": "Task type: equity beta when the debt itself is risky (β_D > 0).\nβ_U = 1.0, β_D = 0.2, D/E = 0.5\nβ_E = 1.0 + 0.5 × (1.0 − 0.2) = 1.4",
     "sheet": false
   },
   {
@@ -124,6 +128,7 @@
       }
     ],
     "pitfall": "D/(D + E) = 0.5 means D/E = 1.",
+    "example": "Task type: the task gives one leverage ratio, the formula needs another.\nw = D/(D + E) = 40% → D/E = 0.4 / 0.6 = 0.67\nD/E = 0.25 → E/(D + E) = 1 / 1.25 = 80%, so w = 20%",
     "sheet": false
   },
   {
@@ -151,6 +156,7 @@
       }
     ],
     "pitfall": "Judge value, not leverage-dependent ratios.",
+    "example": "Task type: show that leverage raises the ratios even though no value is created.\nEarnings 100, E_market = 1,000 → earnings yield 10%; E_book = 500 → ROE 20%\nBuy back 200 of shares with debt at 5% (no taxes): earnings 100 − 10 = 90, E_market = 800\nEarnings yield 90 / 800 = 11.25% – higher, but firm value is unchanged",
     "sheet": false
   }
 ]
