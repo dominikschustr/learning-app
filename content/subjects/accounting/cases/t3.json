@@ -120,5 +120,180 @@
       "Discount factors at 10% for an annual amount: 30 years 9.42 · 25 years 9.08 · 24 years 8.98 · 20 years 8.51."
     ],
     "tables": []
+  },
+  {
+    "id": "malaga-machine",
+    "title": "Malaga – industrial machine (lecture case)",
+    "text": [
+      "Malaga (IFRS, listed) received an industrial machine on 1 October N; it was ready to use on 31 October N.",
+      "Purchase price excl. tax USD 600,000 (1 USD = 0.9 EUR on the purchase date). Transport €26,000. Installation by Malaga's own workers €5,000. User training by the constructor €10,000.",
+      "Depreciation is based on units produced: N 50,000 · N+1 150,000 · N+2 200,000 · N+3 100,000 units. Residual value (resale price) at the end: €200,000.",
+      "From 15 to 20 January N+2, modifications of €40,000 increase the production capacity. Production is now planned at 250,000 units in N+2 and 110,000 in N+3."
+    ]
+  },
+  {
+    "id": "malaga-building",
+    "title": "Malaga – building with a new roof (lecture case)",
+    "text": [
+      "In January N Malaga bought a new building for industrial use for €6,000,000. The useful life of the building is 30 years, but a new roof is planned after 15 years; the estimated cost of the new roof is €1,000,000. Straight-line depreciation, no residual value."
+    ]
+  },
+  {
+    "id": "malaga-patent",
+    "title": "Malaga – patent with deferred payments (lecture case)",
+    "text": [
+      "In January N Malaga acquired a patent: initial payment €30,000, followed by an annual licence fee of €10,000 for 10 years, payable at the end of each year. The discount rate usually applied by the company is 8%. The patent is amortised straight-line over 10 years.",
+      "Annuity factor at 8% for 10 years: 6.7101."
+    ]
+  },
+  {
+    "id": "bilbao-airplane",
+    "title": "Bilbao – impairment of an airplane (lecture case)",
+    "text": [
+      "In January N1 Bilbao acquired an airplane for €250 million, depreciated straight-line over 25 years (cost model).",
+      "On 31 December N5 airplane prices have fallen tremendously. The estimated selling price (net of costs to sell) is €180 million; a value in use above this amount cannot be demonstrated."
+    ]
+  },
+  {
+    "id": "seat-goodwill",
+    "title": "The goodwill of SEAT in the VW group (lecture case)",
+    "text": [
+      "VW acquired SEAT for 5,000 MU; the goodwill was 500 MU and has never been impaired. SEAT is an operating segment and a CGU; its assets only generate cash flows together.",
+      "Expected free cash flows before interest and taxes (MU): x2 750 · x3 700 · x4 650 · x5 590 · x6 and following years 540 (constant perpetuity). WACC 11%.",
+      "BMW offers 5,100 MU for SEAT's net operating assets until 31 December x1; VW would incur transaction costs of 350 MU.",
+      "Net operating assets of SEAT at 31 December x1: property 1,250 · plant and equipment 2,500 · goodwill 500 · finished goods 700 · receivables 950 · payables (400) = 5,500."
+    ]
+  },
+  {
+    "id": "porto-cgus",
+    "title": "Porto – impairment of three CGUs (lecture case)",
+    "text": [
+      "Porto consists of three CGUs (A, B, C), each with allocated goodwill from 100%-owned acquisitions. The building of CGU B is in a sector with falling property prices; it has not been tested individually and its value in use cannot be determined on its own. IAS 36 requires an annual test of all CGUs (they contain goodwill)."
+    ],
+    "tables": [
+      {
+        "caption": "CGU A",
+        "head": [
+          "Asset",
+          "Book value",
+          "Value in use",
+          "FV less costs to sell"
+        ],
+        "rows": [
+          [
+            "Building",
+            "400,000",
+            "600,000",
+            "800,000"
+          ],
+          [
+            "Machinery",
+            "2,000,000",
+            "n/d",
+            "n/d"
+          ],
+          [
+            "Goodwill",
+            "900,000",
+            "n/d",
+            "n/d"
+          ],
+          [
+            "Total",
+            "3,300,000",
+            "2,500,000",
+            "n/d"
+          ]
+        ]
+      },
+      {
+        "caption": "CGU B",
+        "head": [
+          "Asset",
+          "Book value",
+          "Value in use",
+          "FV less costs to sell"
+        ],
+        "rows": [
+          [
+            "Building",
+            "500,000",
+            "n/d",
+            "450,000"
+          ],
+          [
+            "Machinery",
+            "3,000,000",
+            "n/d",
+            "n/d"
+          ],
+          [
+            "Goodwill",
+            "200,000",
+            "n/d",
+            "n/d"
+          ],
+          [
+            "Total",
+            "3,700,000",
+            "3,300,000",
+            "n/d"
+          ]
+        ]
+      },
+      {
+        "caption": "CGU C",
+        "head": [
+          "Asset",
+          "Book value",
+          "Value in use",
+          "FV less costs to sell"
+        ],
+        "rows": [
+          [
+            "Building",
+            "700,000",
+            "n/d",
+            "n/d"
+          ],
+          [
+            "Machinery",
+            "1,000,000",
+            "n/d",
+            "n/d"
+          ],
+          [
+            "Goodwill",
+            "500,000",
+            "n/d",
+            "n/d"
+          ],
+          [
+            "Total",
+            "2,200,000",
+            "1,640,000",
+            "n/d"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rent-office",
+    "title": "RENT – lease of an office building (lecture case)",
+    "text": [
+      "On 1 January N1 RENT enters into a lease of an office building for its own use (useful life of the building 40 years, straight-line).",
+      "Lease payments: €300,000 per year. The first payment is made on 1 January N1; the following payments are made on 31 December of each year, the last one on 31 December N12. RENT's incremental borrowing rate is 4.5%.",
+      "Annuity factor at 4.5% for 12 years: 9.1186."
+    ]
+  },
+  {
+    "id": "bq-leases",
+    "title": "Burger Queen – scooters and a building (lecture case)",
+    "text": [
+      "On 1 January N1 the restaurant chain Burger Queen (BQ) enters into two leases (straight-line depreciation):",
+      "A) Delivery scooters: €10,000 per year at the end of each year for 5 years; incremental borrowing rate 4% (annuity factor 4.4518).",
+      "B) Building in Paris: 10-year lease with an option to extend by 5 years that BQ is NOT reasonably certain to exercise. Payments €50,000 at the end of each year. Initial direct costs €20,000, of which the owner reimburses the €5,000 real estate commission as an incentive. Incremental borrowing rate 5% (annuity factor 10 years 7.7217)."
+    ]
   }
 ]

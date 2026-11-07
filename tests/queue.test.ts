@@ -14,6 +14,7 @@ const pool: Question[] = Array.from({ length: 40 }, (_, i) => ({
   explanation: "",
   paperOnly: false,
   checkup: i % 10 === 0,
+  basis: [],
 }));
 
 const ids = (qs: Question[]) => qs.map((q) => q.id).sort().join(",");

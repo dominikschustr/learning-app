@@ -9,6 +9,7 @@ import { shortPassed, type OptionVerdict } from "@/lib/scoring";
 import type { ShortGrade } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { FormulaText } from "./FormulaText";
+import { BasisLine, DataTable, SolutionSteps } from "./Solution";
 import { Button } from "./ui";
 
 const VERB_LABEL = { define: "Define", state: "State", explain: "Explain", calculate: "Calculate" };
@@ -35,33 +36,7 @@ export function CaseContext({ c }: { c: Case }) {
           </p>
         ))}
         {c.tables.map((t, i) => (
-          <div key={i}>
-            {t.caption && <p className="mb-1.5 font-semibold text-ink">{t.caption}</p>}
-            <div className="overflow-x-auto rounded-xl border border-line bg-surface">
-              <table className="w-full min-w-max text-left text-[0.8rem] tabular-nums">
-                <thead className="bg-accent/10 text-ink">
-                  <tr>
-                    {t.head.map((h, j) => (
-                      <th key={j} className="px-2.5 py-1.5 font-semibold sm:px-3 sm:py-2">
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {t.rows.map((r, j) => (
-                    <tr key={j} className="border-t border-line even:bg-surface-2/50">
-                      {r.map((cell, k) => (
-                        <td key={k} className={cn("px-2.5 py-1 sm:px-3 sm:py-1.5", k === 0 && "font-medium text-ink")}>
-                          {cell}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <DataTable key={i} t={t} />
         ))}
       </div>
     </details>
@@ -72,15 +47,21 @@ export function QuestionMeta({
   kind,
   extra,
   label,
+  q,
 }: {
   kind: "mc" | "tf" | "short";
   extra?: React.ReactNode;
   label?: string;
+  /** zeigt „Orientiert an …“ und das Niveau, wenn die Frage eine Grundlage hat */
+  q?: Question;
 }) {
   return (
-    <div className="flex flex-wrap items-center gap-2">
-      <span className="eyebrow">{label ?? { mc: "Multiple Choice", tf: "True / False", short: "Kurzantwort" }[kind]}</span>
-      {extra}
+    <div>
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="eyebrow">{label ?? { mc: "Multiple Choice", tf: "True / False", short: "Kurzantwort" }[kind]}</span>
+        {extra}
+      </div>
+      {q && <BasisLine basis={q.basis} difficulty={q.difficulty} />}
     </div>
   );
 }
@@ -106,6 +87,7 @@ export function MCView({
       {context && <CaseContext c={context} />}
       <QuestionMeta
         kind="mc"
+        q={q}
         extra={
           <span className="text-xs text-muted">
             {q.single ? "· genau eine Antwort" : "· mehrere Antworten können richtig sein"}
@@ -173,7 +155,7 @@ export function TFView({
   return (
     <div>
       {context && <CaseContext c={context} />}
-      <QuestionMeta kind="tf" />
+      <QuestionMeta kind="tf" q={q} />
       <h2 className="mt-2 text-lg font-semibold leading-snug sm:mt-3 sm:text-2xl">{q.statement}</h2>
       <div className="mt-4 grid grid-cols-2 gap-3 sm:mt-6">
         {([true, false] as const).map((opt) => {
@@ -223,6 +205,7 @@ export function ShortInput({
       {context && <CaseContext c={context} />}
       <QuestionMeta
         kind="short"
+        q={q}
         extra={
           <span className="rounded-md bg-accent/10 px-2 py-0.5 text-xs font-bold uppercase tracking-wide text-accent">
             {VERB_LABEL[q.verb]}
@@ -264,6 +247,7 @@ function CalcInput({
       {context && <CaseContext c={context} />}
       <QuestionMeta
         kind="short"
+        q={q}
         label="Rechenaufgabe"
         extra={<span className="text-xs text-muted max-sm:hidden">· Ergebnisse werden automatisch geprüft</span>}
       />
@@ -447,16 +431,35 @@ export function ShortResult({
       )}
 
       <details className="group rounded-2xl border border-line bg-surface p-4" open={!!grade}>
-        <summary className="cursor-pointer text-sm font-semibold">{calc ? "Lösungsweg" : "Musterlösung"}</summary>
-        <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-ink-2">
-          {calc ? <FormulaText text={q.modelAnswer} /> : q.modelAnswer}
-        </p>
+        <summary className="cursor-pointer text-sm font-semibold">
+          {calc || q.steps.length ? "Lösungsweg" : "Musterlösung"}
+        </summary>
+        {q.steps.length ? (
+          <div className="mt-3">
+            <SolutionSteps steps={q.steps} pitfalls={q.pitfalls} />
+          </div>
+        ) : (
+          <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-ink-2">
+            {calc ? <FormulaText text={q.modelAnswer} /> : q.modelAnswer}
+          </p>
+        )}
       </details>
     </div>
   );
 }
 
-export function Explanation({ correct, text, partial }: { correct: boolean; text: string; partial?: number }) {
+export function Explanation({
+  correct,
+  text,
+  partial,
+  q,
+}: {
+  correct: boolean;
+  text: string;
+  partial?: number;
+  /** Multiple Choice mit Lösungsweg: Schritte unter der Erklärung */
+  q?: MCQuestion;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 8 }}
@@ -476,6 +479,14 @@ export function Explanation({ correct, text, partial }: { correct: boolean; text
         )}
       </p>
       {text && <p className="mt-2 text-sm leading-relaxed text-ink-2">{text}</p>}
+      {q && q.steps.length > 0 && (
+        <details className="mt-3 rounded-xl bg-surface p-3" open>
+          <summary className="cursor-pointer text-sm font-semibold">Lösungsweg</summary>
+          <div className="mt-3">
+            <SolutionSteps steps={q.steps} pitfalls={q.pitfalls} />
+          </div>
+        </details>
+      )}
     </motion.div>
   );
 }

@@ -4,7 +4,7 @@
     "id": "sa-p3-01",
     "lecture": "t1",
     "case": "gsk-bs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "GSK presents non-current assets, current assets, current liabilities and non-current liabilities, in this order. Is this order mandatory under IFRS? Explain.",
     "modelAnswer": "No. IAS 1 does not prescribe a specific format or order for the balance sheet. It requires the distinction between current and non-current items (unless a liquidity presentation is more relevant) and certain minimum line items, but entities may present current assets first, equity before liabilities, etc.",
@@ -12,6 +12,24 @@
       "Not mandatory",
       "IAS 1 prescribes no format/order",
       "Only current/non-current distinction and minimum line items required"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 1 – Balance sheet"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Recall IAS 1",
+        "why": "IAS 1 prescribes NO format or order for the statement of financial position. It requires (a) the current/non-current distinction (unless a liquidity presentation is more relevant) and (b) certain minimum line items."
+      },
+      {
+        "title": "Apply",
+        "why": "GSK's order (non-current assets first, liabilities before equity) is a common UK presentation, but others may list current assets first or equity before liabilities.",
+        "result": "Not mandatory"
+      }
     ]
   },
   {
@@ -19,7 +37,7 @@
     "id": "sa-p3-02",
     "lecture": "t1",
     "case": "gsk-bs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Why does GSK present liabilities in brackets as negative numbers to calculate 'net assets'? What is the meaning of net assets?",
     "modelAnswer": "Net assets = total assets − total liabilities = equity. Presenting liabilities as negatives lets GSK show net assets as a subtotal that equals total equity, whose detailed composition follows below. Net assets represent the book (accounting) value of the company for its owners – not its market value.",
@@ -27,6 +45,27 @@
       "Net assets = assets − liabilities",
       "Net assets = equity",
       "Book value of the company (not market value)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 1 – Balance sheet"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Show the arithmetic",
+        "lines": [
+          "Net assets = total assets − total liabilities",
+          "= equity (accounting identity)"
+        ]
+      },
+      {
+        "title": "Explain the presentation",
+        "why": "Writing liabilities as negatives lets GSK show a subtotal 'net assets' that equals total equity, whose composition follows below.",
+        "result": "Net assets = book value of the company for its owners (not market value)"
+      }
     ]
   },
   {
@@ -42,6 +81,24 @@
       "Equity of subsidiaries from minority shareholders",
       "Negative NCI → subsidiaries with negative equity",
       "Usually due to accumulated losses"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 1 – Balance sheet"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Define NCI",
+        "why": "NCI = minority shareholders' share in the equity of fully consolidated subsidiaries that are not 100% owned."
+      },
+      {
+        "title": "Interpret the negative amount",
+        "why": "NCI = NCI % × subsidiary equity. A negative NCI means the subsidiaries concerned have negative equity – typically after accumulated losses (or distributions above equity).",
+        "result": "Negative NCI → loss-making subsidiaries with negative equity"
+      }
     ]
   },
   {
@@ -59,6 +116,130 @@
       "Net income 260 = 120 + 190 − 50",
       "Equipment 1,050, inventory 280, cash 230, liabilities 1,150, capital 700",
       "Total 2,110"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Purchase price allocation at acquisition (31/12/N)",
+        "lines": [
+          "Book value of SA's net assets: 300",
+          "Brand name (fair value): +250",
+          "Goodwill = 900 − 300 − 250 = 350"
+        ]
+      },
+      {
+        "title": "Post-acquisition adjustment: brand impairment in N2",
+        "why": "The brand is an intangible with indefinite life recognised only in the consolidated accounts; its impairment is a consolidation entry.",
+        "lines": [
+          "Brand: 250 → 200 → impairment loss 50 (reduces consolidated net income)"
+        ]
+      },
+      {
+        "title": "Aggregate, eliminate, adjust",
+        "table": {
+          "head": [
+            "Item",
+            "PC",
+            "SA",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Equipment",
+              "700",
+              "350",
+              "",
+              "1,050"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+350",
+              "350"
+            ],
+            [
+              "Brand name",
+              "",
+              "",
+              "+250 − 50",
+              "200"
+            ],
+            [
+              "Investment in SA",
+              "900",
+              "",
+              "−900",
+              "0"
+            ],
+            [
+              "Inventory",
+              "",
+              "280",
+              "",
+              "280"
+            ],
+            [
+              "Cash",
+              "160",
+              "70",
+              "",
+              "230"
+            ],
+            [
+              "Total assets",
+              "1,760",
+              "700",
+              "",
+              "2,110"
+            ],
+            [
+              "Capital",
+              "700",
+              "300",
+              "−300",
+              "700"
+            ],
+            [
+              "Net income",
+              "120",
+              "190",
+              "−50",
+              "260"
+            ],
+            [
+              "Liabilities",
+              "940",
+              "210",
+              "",
+              "1,150"
+            ],
+            [
+              "Total E&L",
+              "1,760",
+              "700",
+              "",
+              "2,110"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Check",
+        "why": "SA's capital (bought at acquisition) is eliminated; SA's post-acquisition income (190) belongs to the group, less the brand impairment.",
+        "result": "Total 2,110; consolidated net income 260"
+      }
+    ],
+    "pitfalls": [
+      "Eliminating SA's net income – it was earned after the acquisition and belongs to the group.",
+      "Forgetting the impairment's impact on consolidated net income."
     ]
   },
   {
@@ -75,6 +256,39 @@
       "Increase of the brand + income in P/L",
       "Capped at the carrying amount without impairment (250)",
       "Reversal limited to 50"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Is a reversal allowed?",
+        "why": "IAS 36: impairment losses on assets OTHER than goodwill must be reversed when the recoverable amount increases. The brand is such an asset."
+      },
+      {
+        "title": "Apply the cap",
+        "lines": [
+          "Recoverable amount 400",
+          "Cap = carrying amount without impairment = 250 (indefinite life, no amortisation)",
+          "Reversal = 250 − 200 = 50"
+        ]
+      },
+      {
+        "title": "Accounting entry",
+        "lines": [
+          "Brand name +50 (balance sheet)",
+          "Reversal of impairment +50 (income statement)"
+        ],
+        "result": "Brand back to 250, income 50 – never up to 400"
+      }
+    ],
+    "pitfalls": [
+      "Writing the brand up to 400 – that would be a revaluation above cost.",
+      "Reversing goodwill impairments – forbidden."
     ]
   },
   {
@@ -91,6 +305,51 @@
       "Value in use 217.92 > selling price 210 → recoverable amount",
       "Impairment 32.08",
       "N6: depreciation ≈ 8.72, book value ≈ 209.2"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 3 – Impairment of a property (cost mo…"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Carrying amount before the test (31/12/N5)",
+        "lines": [
+          "Annual depreciation: 300 / 30 = 10",
+          "After 5 years: 300 − 5 × 10 = 250"
+        ]
+      },
+      {
+        "title": "Recoverable amount",
+        "lines": [
+          "FV less costs to sell: 210",
+          "Value in use: 24 × annuity factor 25 years at 10% = 24 × 9.08 = 217.92",
+          "Recoverable amount = higher = 217.92"
+        ]
+      },
+      {
+        "title": "Impairment at 31/12/N5",
+        "lines": [
+          "Impairment loss = 250 − 217.92 = 32.08",
+          "Entries N5: depreciation expense 10; impairment loss 32.08 (both reduce the building)"
+        ],
+        "result": "Book value 31/12/N5: 217.92 m€"
+      },
+      {
+        "title": "31/12/N6",
+        "why": "New depreciation basis over the remaining 25 years.",
+        "lines": [
+          "Depreciation N6: 217.92 / 25 = 8.72",
+          "Book value: 217.92 − 8.72 = 209.20"
+        ],
+        "result": "Book value 31/12/N6 ≈ 209.2 m€"
+      }
+    ],
+    "pitfalls": [
+      "Using 30 years for the annuity – only 25 years of rent remain.",
+      "Continuing to depreciate 10 per year after the impairment."
     ]
   },
   {
@@ -98,6 +357,7 @@
     "id": "mc-p3-01",
     "lecture": "t3",
     "difficulty": 2,
+    "single": true,
     "prompt": "Regarding the lease standard IFRS 16 it is WRONG to say that …",
     "options": [
       {
@@ -121,7 +381,13 @@
       "a"
     ],
     "explanation": "The lessor still distinguishes finance leases (derecognise the asset, recognise a receivable) from operating leases (keep the asset, recognise lease income). The single right-of-use model applies to the LESSEE only.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 4 – Multiple choice"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -129,6 +395,7 @@
     "id": "mc-p3-02",
     "lecture": "t5",
     "difficulty": 2,
+    "single": true,
     "prompt": "Which statement is CORRECT?",
     "options": [
       {
@@ -152,7 +419,13 @@
       "b"
     ],
     "explanation": "They are all required and defined by IFRS: IFRS 8 (segments), IFRS 5 (discontinued operations), IAS 33 (EPS).",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 4 – Multiple choice"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -160,6 +433,7 @@
     "id": "mc-p3-03",
     "lecture": "t5",
     "difficulty": 2,
+    "single": true,
     "prompt": "Regarding ROCE it is CORRECT to say that …",
     "options": [
       {
@@ -183,7 +457,13 @@
       "b"
     ],
     "explanation": "Capital employed = net non-current assets + working capital needs (asset side) = equity + net financial debt (liability side). ROCE uses operating profit (after tax), measures profitability (not liquidity) and concerns all capital providers.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 4 – Multiple choice"
+      }
+    ],
     "shuffle": false
   }
 ]

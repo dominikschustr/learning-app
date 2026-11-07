@@ -4,7 +4,7 @@
     "id": "sa-p6-01",
     "lecture": "t1",
     "case": "belcour-sci",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "IFRS offers two ways of presenting comprehensive income. Briefly describe both. Which one does Belcour use?",
     "modelAnswer": "Single-statement approach: one table that shows the income statement down to net profit and then continues with the items of other comprehensive income, ending with total comprehensive income.\nTwo-statement approach: a separate income statement ending with net profit, followed by a second statement that starts from net profit, lists the OCI items and ends with total comprehensive income.\nBelcour uses the two-statement approach (Table 1 ends with net profit, Table 2 starts from it).",
@@ -12,6 +12,28 @@
       "Single statement: P&L and OCI in one table, down to total comprehensive income",
       "Two statements: income statement, then a second statement starting from net profit",
       "Belcour: two-statement approach"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 1 – Statement of comprehensive income"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Single-statement approach",
+        "why": "One table: income statement down to net profit, then directly the OCI items, ending with total comprehensive income."
+      },
+      {
+        "title": "Two-statement approach",
+        "why": "A separate income statement ending with net profit, followed by a second statement that STARTS from net profit, lists the OCI items and ends with total comprehensive income."
+      },
+      {
+        "title": "Apply to Belcour",
+        "why": "Table 1 ends with net profit; Table 2 starts from net profit (1,336).",
+        "result": "Belcour uses the two-statement approach"
+      }
     ]
   },
   {
@@ -27,6 +49,39 @@
       "Not consolidated: 8.5% gives no control, joint control or significant influence",
       "Dividends in profit or loss as financial income (separate line after operating profit)",
       "Fair value change in OCI (FVOCI line, not reclassified)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 1 – Statement of comprehensive income"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Scope of consolidation",
+        "lines": [
+          "Control (> 50% or de facto) → full consolidation",
+          "Joint control → joint venture, equity method",
+          "Significant influence (presumed ≥ 20%) → associate, equity method",
+          "Otherwise → financial asset (IFRS 9)"
+        ],
+        "why": "8.5% without a board seat gives none of these.",
+        "result": "Vitapharm is not consolidated – it is a financial asset"
+      },
+      {
+        "title": "Dividends",
+        "why": "Dividends on equity instruments are always income in P/L, even under FVOCI.",
+        "result": "P/L: line 'Dividends from Vitapharm' (+142) after operating profit"
+      },
+      {
+        "title": "Change in market value",
+        "why": "Designated at FVOCI → fair value changes go to OCI and are never recycled to P/L.",
+        "result": "OCI: 'Change in fair value of equity investments' (+412)"
+      }
+    ],
+    "pitfalls": [
+      "Putting the fair value change into P/L – only the dividends go there."
     ]
   },
   {
@@ -46,9 +101,133 @@
       "Balance sheet total 2,180"
     ],
     "results": [
-      { "label": "Goodwill", "value": 130 },
-      { "label": "Consolidated net income", "value": 320 },
-      { "label": "Balance sheet total", "value": 2180 }
+      {
+        "label": "Goodwill",
+        "value": 130
+      },
+      {
+        "label": "Consolidated net income",
+        "value": 320
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 2180
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Purchase price allocation (31/12/N)",
+        "lines": [
+          "SC book value: 350",
+          "Brand (fair value): +420",
+          "Goodwill = 900 − 350 − 420 = 130"
+        ]
+      },
+      {
+        "title": "Brand impairment in N2",
+        "lines": [
+          "420 → 330: impairment 90 (reduces consolidated net income)"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet 31/12/N2",
+        "table": {
+          "head": [
+            "Item",
+            "HC",
+            "SC",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Equipment",
+              "760",
+              "450",
+              "",
+              "1,210"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+130",
+              "130"
+            ],
+            [
+              "Brand",
+              "",
+              "",
+              "+420 − 90",
+              "330"
+            ],
+            [
+              "Investment in SC",
+              "900",
+              "",
+              "−900",
+              "0"
+            ],
+            [
+              "Inventory",
+              "",
+              "230",
+              "",
+              "230"
+            ],
+            [
+              "Cash",
+              "190",
+              "90",
+              "",
+              "280"
+            ],
+            [
+              "Total assets",
+              "1,850",
+              "770",
+              "",
+              "2,180"
+            ],
+            [
+              "Capital",
+              "700",
+              "350",
+              "−350",
+              "700"
+            ],
+            [
+              "Net income",
+              "150",
+              "260",
+              "−90",
+              "320"
+            ],
+            [
+              "Liabilities",
+              "1,000",
+              "160",
+              "",
+              "1,160"
+            ],
+            [
+              "Total E&L",
+              "1,850",
+              "770",
+              "",
+              "2,180"
+            ]
+          ]
+        },
+        "result": "Goodwill 130; net income 320; total 2,180"
+      }
     ]
   },
   {
@@ -68,9 +247,55 @@
       "Balance sheet value 378.72"
     ],
     "results": [
-      { "label": "Carrying amount before impairment test", "value": 408 },
-      { "label": "Recoverable amount", "value": 378.72, "tol": 0.05 },
-      { "label": "Impairment loss", "value": 29.28, "tol": 0.05 }
+      {
+        "label": "Carrying amount before impairment test",
+        "value": 408
+      },
+      {
+        "label": "Recoverable amount",
+        "value": 378.72,
+        "tol": 0.05
+      },
+      {
+        "label": "Impairment loss",
+        "value": 29.28,
+        "tol": 0.05
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 3 – Impairment of a property (cost mo…"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Carrying amount before the test",
+        "lines": [
+          "Depreciation: 480 / 40 = 12 p.a.",
+          "31/12/N6: 480 − 6 × 12 = 408 (depreciation N6: 12)"
+        ]
+      },
+      {
+        "title": "Recoverable amount",
+        "lines": [
+          "FV less costs to sell: 300",
+          "Value in use: 36 × annuity factor (9%, 34 years) 10.52 = 378.72",
+          "Recoverable amount = higher = 378.72"
+        ]
+      },
+      {
+        "title": "Impairment and entries",
+        "lines": [
+          "Impairment loss = 408 − 378.72 = 29.28 (expense, reduces the park)",
+          "Entries 31/12/N6: depreciation 12; impairment loss 29.28"
+        ],
+        "result": "Balance sheet value 378.72 m€"
+      }
+    ],
+    "pitfalls": [
+      "Using 40 or 35 years in the annuity – 34 years of rent remain."
     ]
   },
   {
@@ -86,7 +311,35 @@
       "New depreciation based on the impaired amount: 378.72 / 34 ≈ 11.14",
       "Carrying amount ≈ 367.58"
     ],
-    "results": [{ "label": "Carrying amount 31 Dec N7", "value": 367.58, "tol": 0.1 }]
+    "results": [
+      {
+        "label": "Carrying amount 31 Dec N7",
+        "value": 367.58,
+        "tol": 0.1
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 3 – Impairment of a property (cost mo…"
+      }
+    ],
+    "steps": [
+      {
+        "title": "New depreciation basis",
+        "lines": [
+          "378.72 / 34 remaining years = 11.14 p.a."
+        ]
+      },
+      {
+        "title": "Carrying amount 31/12/N7",
+        "lines": [
+          "378.72 − 11.14 = 367.58"
+        ],
+        "result": "≈ 367.58 m€"
+      }
+    ]
   },
   {
     "type": "short",
@@ -102,6 +355,40 @@
       "IFRS 16: right-of-use asset + lease liability, depreciation + interest",
       "Lease liability counts as debt → plan does not avoid higher debt",
       "Off balance sheet only for short-term / low-value leases or service contracts"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 4 – Leases"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Bank loan",
+        "lines": [
+          "Equipment as PP&E, depreciated over 7 years",
+          "Loan = financial liability; interest expense"
+        ],
+        "result": "Financial debt ↑"
+      },
+      {
+        "title": "Lease under IFRS 16",
+        "why": "6 years is neither short-term (≤ 12 months) nor a low-value asset → no exemption.",
+        "lines": [
+          "Right-of-use asset (depreciated)",
+          "Lease liability (interest expense) = financial debt"
+        ],
+        "result": "Financial debt ↑ almost as with the loan"
+      },
+      {
+        "title": "Effect on the covenant (net debt ≤ 3 × EBITDA)",
+        "why": "EBITDA rises a little (no rent expense), but net debt rises by the full lease liability → the ratio does not improve meaningfully."
+      },
+      {
+        "title": "Conclusion",
+        "result": "Not a good idea: under IFRS 16 the lease is debt too. Only short-term/low-value leases or a real service contract stay off balance sheet."
+      }
     ]
   },
   {
@@ -121,10 +408,69 @@
       "Debt 31 Dec N = 141.98; equity component unchanged"
     ],
     "results": [
-      { "label": "Liability component at issue", "value": 139.61, "tol": 0.05 },
-      { "label": "Equity component", "value": 10.39, "tol": 0.05 },
-      { "label": "Interest expense N", "value": 8.38, "tol": 0.05 },
-      { "label": "Carrying amount of the debt 31 Dec N", "value": 141.98, "tol": 0.05 }
+      {
+        "label": "Liability component at issue",
+        "value": 139.61,
+        "tol": 0.05
+      },
+      {
+        "label": "Equity component",
+        "value": 10.39,
+        "tol": 0.05
+      },
+      {
+        "label": "Interest expense N",
+        "value": 8.38,
+        "tol": 0.05
+      },
+      {
+        "label": "Carrying amount of the debt 31 Dec N",
+        "value": 141.98,
+        "tol": 0.05
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 5 – Accounting for a convertible bond"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Split the compound instrument",
+        "why": "IAS 32: the liability component is the present value of the contractual cash flows (coupons + redemption) at the rate of a CONVENTIONAL bond (6%); equity is the residual.",
+        "lines": [
+          "PV of coupons: 6 × 3.4651 = 20.79",
+          "PV of redemption: 150 × 0.7921 = 118.82",
+          "Liability component = 20.79 + 118.82 = 139.61",
+          "Equity component = 150 − 139.61 = 10.39"
+        ]
+      },
+      {
+        "title": "1 January N – issuance",
+        "lines": [
+          "Cash +150",
+          "Financial debt +139.61",
+          "Equity +10.39"
+        ],
+        "result": "No income statement impact"
+      },
+      {
+        "title": "31 December N – first coupon",
+        "why": "Effective interest method: expense at the market rate on the carrying amount; cash at the coupon rate on the nominal value.",
+        "lines": [
+          "Interest expense = 139.61 × 6% = 8.38",
+          "Cash paid = 150 × 4% = 6",
+          "Unwinding = 8.38 − 6 = 2.38 → added to the debt",
+          "Debt end N = 139.61 + 2.38 ≈ 141.98 (unrounded figures)"
+        ],
+        "result": "Debt 141.98; equity component stays 10.39"
+      }
+    ],
+    "pitfalls": [
+      "Discounting at the 4% coupon – that gives a liability of 150 and no equity part.",
+      "Taking the cash coupon (6) as interest expense."
     ]
   },
   {
@@ -133,33 +479,75 @@
     "lecture": "t3",
     "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "Company B carries out a major overhaul of a machine in N, costing €400,000. The overhaul extends the machine's useful life by 3 years beyond the original estimate; the next overhaul will be due in 4 years. The overhaul cost should be …",
     "options": [
-      { "id": "a", "text": "expensed in N" },
-      { "id": "b", "text": "capitalised and depreciated over the remaining useful life of the machine" },
-      { "id": "c", "text": "capitalised as a separate component and depreciated until the next overhaul is due" },
-      { "id": "d", "text": "capitalised and only tested for impairment every year" }
+      {
+        "id": "a",
+        "text": "expensed in N"
+      },
+      {
+        "id": "b",
+        "text": "capitalised and depreciated over the remaining useful life of the machine"
+      },
+      {
+        "id": "c",
+        "text": "capitalised as a separate component and depreciated until the next overhaul is due"
+      },
+      {
+        "id": "d",
+        "text": "capitalised and only tested for impairment every year"
+      }
     ],
-    "correct": ["c"],
-    "explanation": "The overhaul creates future economic benefits (longer useful life), so it is capitalised. Under the component approach of IAS 16 it is a separate component whose benefits are consumed until the next overhaul – so it is depreciated over 4 years."
+    "correct": [
+      "c"
+    ],
+    "explanation": "The overhaul creates future economic benefits (longer useful life), so it is capitalised. Under the component approach of IAS 16 it is a separate component whose benefits are consumed until the next overhaul – so it is depreciated over 4 years.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 6 – Multiple choice"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
     "id": "mc-p6-02",
     "lecture": "t2",
-    "difficulty": 1,
+    "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "How is positive goodwill arising on a business combination treated under IFRS?",
     "options": [
-      { "id": "a", "text": "Recognised as an asset and tested for impairment at least annually" },
-      { "id": "b", "text": "Recognised as an asset and kept at its original amount forever" },
-      { "id": "c", "text": "Recognised as an asset and amortised over its useful life" },
-      { "id": "d", "text": "Expensed immediately in the income statement" }
+      {
+        "id": "a",
+        "text": "Recognised as an asset and tested for impairment at least annually"
+      },
+      {
+        "id": "b",
+        "text": "Recognised as an asset and kept at its original amount forever"
+      },
+      {
+        "id": "c",
+        "text": "Recognised as an asset and amortised over its useful life"
+      },
+      {
+        "id": "d",
+        "text": "Expensed immediately in the income statement"
+      }
     ],
-    "correct": ["a"],
-    "explanation": "IFRS 3 / IAS 36: goodwill is not amortised. It is tested for impairment every year (and whenever there is an indication of impairment); an impairment loss on goodwill can never be reversed."
+    "correct": [
+      "a"
+    ],
+    "explanation": "IFRS 3 / IAS 36: goodwill is not amortised. It is tested for impairment every year (and whenever there is an indication of impairment); an impairment loss on goodwill can never be reversed.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 6 – Multiple choice"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
@@ -167,16 +555,37 @@
     "lecture": "t4",
     "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "Which of the following items is recognised in the financial statements in the way described?",
     "options": [
-      { "id": "a", "text": "As a non-current liability: a provision for possible storm damage to buildings of a company located in a region with frequent storms" },
-      { "id": "b", "text": "In equity: the equity component of an issued convertible bond" },
-      { "id": "c", "text": "As a trade receivable: a €20,000 customer balance that has been sold to a factoring company without recourse" },
-      { "id": "d", "text": "In revenue: the full sales price of a machine that the seller must also service for three years under the sales contract" }
+      {
+        "id": "a",
+        "text": "As a non-current liability: a provision for possible storm damage to buildings of a company located in a region with frequent storms"
+      },
+      {
+        "id": "b",
+        "text": "In equity: the equity component of an issued convertible bond"
+      },
+      {
+        "id": "c",
+        "text": "As a trade receivable: a €20,000 customer balance that has been sold to a factoring company without recourse"
+      },
+      {
+        "id": "d",
+        "text": "In revenue: the full sales price of a machine that the seller must also service for three years under the sales contract"
+      }
     ],
-    "correct": ["b"],
-    "explanation": "A compound instrument is split into a liability and an equity component (IAS 32). (a) Future storm damage is no present obligation → no provision. (c) A receivable sold without recourse is derecognised. (d) The servicing obligation is a separate performance obligation – part of the price is deferred."
+    "correct": [
+      "b"
+    ],
+    "explanation": "A compound instrument is split into a liability and an equity component (IAS 32). (a) Future storm damage is no present obligation → no provision. (c) A receivable sold without recourse is derecognised. (d) The servicing obligation is a separate performance obligation – part of the price is deferred.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 6 – Multiple choice"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
@@ -184,16 +593,37 @@
     "lecture": "t5",
     "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "At 31 March N, Jorvik had equity of €400,000 and financial debt of €200,000. Gearing = debt / (debt + equity). Which transaction, taken on its own, increases Jorvik's gearing compared with the situation without the transaction?",
     "options": [
-      { "id": "a", "text": "A property is revalued upwards by €30,000 during the year." },
-      { "id": "b", "text": "Instead of paying a €60,000 dividend in cash, Jorvik issues new ordinary shares to its shareholders." },
-      { "id": "c", "text": "On 31 March N Jorvik leases equipment; the lease liability recognised is €40,000." },
-      { "id": "d", "text": "A provision for litigation is reduced during the year from €30,000 to €22,000." }
+      {
+        "id": "a",
+        "text": "A property is revalued upwards by €30,000 during the year."
+      },
+      {
+        "id": "b",
+        "text": "Instead of paying a €60,000 dividend in cash, Jorvik issues new ordinary shares to its shareholders."
+      },
+      {
+        "id": "c",
+        "text": "On 31 March N Jorvik leases equipment; the lease liability recognised is €40,000."
+      },
+      {
+        "id": "d",
+        "text": "A provision for litigation is reduced during the year from €30,000 to €22,000."
+      }
     ],
-    "correct": ["c"],
-    "explanation": "(c) The lease liability adds €40,000 of debt → gearing rises (240/640 = 37.5% vs 33.3%). (a) Revaluation surplus raises equity → gearing falls. (b) A scrip dividend only moves amounts within equity → no change compared with not paying it. (d) A provision is not financial debt; the release increases profit and equity → gearing falls."
+    "correct": [
+      "c"
+    ],
+    "explanation": "(c) The lease liability adds €40,000 of debt → gearing rises (240/640 = 37.5% vs 33.3%). (a) Revaluation surplus raises equity → gearing falls. (b) A scrip dividend only moves amounts within equity → no change compared with not paying it. (d) A provision is not financial debt; the release increases profit and equity → gearing falls.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 6 – Multiple choice"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
@@ -201,17 +631,41 @@
     "lecture": "t2",
     "difficulty": 3,
     "single": true,
-    "shuffle": false,
     "prompt": "In which of the following relationships is Kestrel necessarily the parent company?\n(i) Alder has 200,000 voting and 60,000 non-voting shares in issue, all with the same dividend rights. Kestrel owns all non-voting shares and 90,000 voting shares.\n(ii) Birch has 1 million shares in issue, of which Kestrel owns 35%. Kestrel also holds 70% of the bonds issued by Birch.\n(iii) Kestrel owns 46% of the shares of Cedar and, under an agreement with the other shareholders, has the right to appoint the majority of Cedar's board.",
     "options": [
-      { "id": "a", "text": "(i) only" },
-      { "id": "b", "text": "(i) and (ii) only" },
-      { "id": "c", "text": "(ii) and (iii) only" },
-      { "id": "d", "text": "(iii) only" },
-      { "id": "e", "text": "All three" }
+      {
+        "id": "a",
+        "text": "(i) only"
+      },
+      {
+        "id": "b",
+        "text": "(i) and (ii) only"
+      },
+      {
+        "id": "c",
+        "text": "(ii) and (iii) only"
+      },
+      {
+        "id": "d",
+        "text": "(iii) only"
+      },
+      {
+        "id": "e",
+        "text": "All three"
+      }
     ],
-    "correct": ["d"],
-    "explanation": "Control (IFRS 10) depends on power over the investee, not on the share of capital. (i) 90,000 of 200,000 votes = 45% – non-voting shares give no power → not necessarily control. (ii) 35% of the votes plus bonds: bonds carry no voting rights → significant influence at most. (iii) The right to appoint the board majority gives power → Kestrel controls Cedar."
+    "correct": [
+      "d"
+    ],
+    "explanation": "Control (IFRS 10) depends on power over the investee, not on the share of capital. (i) 90,000 of 200,000 votes = 45% – non-voting shares give no power → not necessarily control. (ii) 35% of the votes plus bonds: bonds carry no voting rights → significant influence at most. (iii) The right to appoint the board majority gives power → Kestrel controls Cedar.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 6 – Multiple choice"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
@@ -219,15 +673,36 @@
     "lecture": "t3",
     "difficulty": 3,
     "single": true,
-    "shuffle": false,
     "prompt": "Tamsin acquired an office building on 1 January N. Its initial carrying amount (€000) is made up of: land 3,000 · building structure 12,000 · lift system 3,000 – total 18,000. The structure has a useful life of 25 years, the lift system 10 years; at the end of its life the lift system can be dismantled and sold for €400,000. At what total amount (€000) are these assets shown in Tamsin's balance sheet at 31 December N?",
     "options": [
-      { "id": "a", "text": "17,400" },
-      { "id": "b", "text": "17,280" },
-      { "id": "c", "text": "17,260" },
-      { "id": "d", "text": "17,220" }
+      {
+        "id": "a",
+        "text": "17,400"
+      },
+      {
+        "id": "b",
+        "text": "17,280"
+      },
+      {
+        "id": "c",
+        "text": "17,260"
+      },
+      {
+        "id": "d",
+        "text": "17,220"
+      }
     ],
-    "correct": ["c"],
-    "explanation": "Component approach: land is not depreciated (3,000). Structure: 12,000 − 12,000/25 = 11,520. Lift system: 3,000 − (3,000 − 400)/10 = 2,740. Total 17,260. (17,220 ignores the residual value; 17,280 depreciates land too; 17,400 depreciates building and lifts together over 25 years.)"
+    "correct": [
+      "c"
+    ],
+    "explanation": "Component approach: land is not depreciated (3,000). Structure: 12,000 − 12,000/25 = 11,520. Lift system: 3,000 − (3,000 − 400)/10 = 2,740. Total 17,260. (17,220 ignores the residual value; 17,280 depreciates land too; 17,400 depreciates building and lifts together over 25 years.)",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 6 – Multiple choice"
+      }
+    ],
+    "shuffle": false
   }
 ]

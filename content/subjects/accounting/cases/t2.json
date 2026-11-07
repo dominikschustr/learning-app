@@ -280,5 +280,506 @@
       "On 31 December N+1, S reports a net income of 20 and Parent (individually) a net income of 30."
     ],
     "tables": []
+  },
+  {
+    "id": "pcsa-100-y1",
+    "title": "PC acquires 100% of SA – one year later (lecture case)",
+    "text": [
+      "PC acquired 100% of the shares of SA for 160 on 31 December N-1. At that date SA's equity was capital 100 + net income 60 = 160; book values equalled fair values.",
+      "SA's net income of N-1 was transferred to retained earnings. There are no intercompany transactions."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "360",
+            "Capital",
+            "300"
+          ],
+          [
+            "Investment in SA",
+            "160",
+            "Net income",
+            "80"
+          ],
+          [
+            "Cash",
+            "80",
+            "Liabilities",
+            "220"
+          ],
+          [
+            "Total",
+            "600",
+            "Total",
+            "600"
+          ]
+        ]
+      },
+      {
+        "caption": "SA – 31 December N",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "210",
+            "Capital",
+            "100"
+          ],
+          [
+            "Inventory",
+            "80",
+            "Retained earnings",
+            "60"
+          ],
+          [
+            "Cash",
+            "40",
+            "Net income",
+            "120"
+          ],
+          [
+            "",
+            "",
+            "Liabilities",
+            "50"
+          ],
+          [
+            "Total",
+            "330",
+            "Total",
+            "330"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pcsa-gw-brand",
+    "title": "PC acquires SA for 450 – brand name (lecture case)",
+    "text": [
+      "On 31 December N-1 PC acquired 100% of SA for 450. SA's equity at that date: capital 100 + net income 60 = 160. SA has developed a brand name whose fair value is estimated at 260 (indefinite useful life, not impaired in N). All other book values equal fair values."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "360",
+            "Capital",
+            "300"
+          ],
+          [
+            "Investment in SA",
+            "450",
+            "Net income",
+            "80"
+          ],
+          [
+            "Cash",
+            "80",
+            "Liabilities",
+            "510"
+          ],
+          [
+            "Total",
+            "890",
+            "Total",
+            "890"
+          ]
+        ]
+      },
+      {
+        "caption": "SA – 31 December N",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "210",
+            "Capital",
+            "100"
+          ],
+          [
+            "Inventory",
+            "80",
+            "Retained earnings",
+            "60"
+          ],
+          [
+            "Cash",
+            "40",
+            "Net income",
+            "120"
+          ],
+          [
+            "",
+            "",
+            "Liabilities",
+            "50"
+          ],
+          [
+            "Total",
+            "330",
+            "Total",
+            "330"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pcsa-fv-1950",
+    "title": "Parent buys a subsidiary for 1,950 – brand and PPE step-up (lecture case)",
+    "text": [
+      "A parent purchases 100% of the shares of a subsidiary for a cash price of 1,950. It values a brand name owned by the subsidiary (not on its balance sheet) at 300, and the subsidiary's PP&E has a fair value 500 above its book value. Any remaining excess relates to expected synergies."
+    ],
+    "tables": [
+      {
+        "caption": "Parent – at the acquisition date",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Cash",
+            "429",
+            "Common stock",
+            "818"
+          ],
+          [
+            "Receivables",
+            "640",
+            "Additional paid-in capital",
+            "607"
+          ],
+          [
+            "Inventory",
+            "970",
+            "Retained earnings",
+            "2,512"
+          ],
+          [
+            "PP&E",
+            "4,666",
+            "Current liabilities",
+            "718"
+          ],
+          [
+            "Investment in subsidiary",
+            "1,950",
+            "Long-term debt",
+            "4,000"
+          ],
+          [
+            "Total",
+            "8,655",
+            "Total",
+            "8,655"
+          ]
+        ]
+      },
+      {
+        "caption": "Subsidiary – at the acquisition date",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Cash",
+            "226",
+            "Common stock",
+            "100"
+          ],
+          [
+            "Receivables",
+            "348",
+            "Additional paid-in capital",
+            "125"
+          ],
+          [
+            "Inventory",
+            "447",
+            "Retained earnings",
+            "775"
+          ],
+          [
+            "PP&E",
+            "827",
+            "Current liabilities",
+            "348"
+          ],
+          [
+            "",
+            "",
+            "Long-term debt",
+            "500"
+          ],
+          [
+            "Total",
+            "1,848",
+            "Total",
+            "1,848"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pcsa-nci-20",
+    "title": "PC acquires 80% of SA – two years later (lecture case)",
+    "text": [
+      "On 31 December N-1 PC acquired 80% of SA for 160. SA's equity at that date: capital 140 + net income 60 = 200 (book value = fair value). Non-controlling interests are measured at their share of SA's net assets.",
+      "SA's results are retained (no dividends). There are no intercompany transactions."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N+1",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "480",
+            "Capital",
+            "300"
+          ],
+          [
+            "Investment in SA",
+            "160",
+            "Retained earnings",
+            "50"
+          ],
+          [
+            "Cash",
+            "110",
+            "Net income",
+            "110"
+          ],
+          [
+            "",
+            "",
+            "Liabilities",
+            "290"
+          ],
+          [
+            "Total",
+            "750",
+            "Total",
+            "750"
+          ]
+        ]
+      },
+      {
+        "caption": "SA – 31 December N+1",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "390",
+            "Capital",
+            "140"
+          ],
+          [
+            "Inventory",
+            "70",
+            "Retained earnings",
+            "190"
+          ],
+          [
+            "Accounts receivable",
+            "60",
+            "Net income",
+            "150"
+          ],
+          [
+            "Cash",
+            "140",
+            "Liabilities",
+            "180"
+          ],
+          [
+            "Total",
+            "660",
+            "Total",
+            "660"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pcsa-nci-30-is",
+    "title": "PC owns 70% of SA – consolidated income statement (lecture case)",
+    "text": [
+      "PC purchased a 70% interest in SA five years ago at book value. There were no intra-group transactions in the current year."
+    ],
+    "tables": [
+      {
+        "caption": "Income statements of the current year (EUR)",
+        "head": [
+          "",
+          "PC",
+          "SA"
+        ],
+        "rows": [
+          [
+            "Sales",
+            "7,800,000",
+            "1,250,000"
+          ],
+          [
+            "Cost of goods sold",
+            "(5,900,000)",
+            "(675,000)"
+          ],
+          [
+            "Gross profit",
+            "1,900,000",
+            "575,000"
+          ],
+          [
+            "Operating expenses",
+            "(1,650,000)",
+            "(280,000)"
+          ],
+          [
+            "Net income",
+            "250,000",
+            "295,000"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pc-ac-equity",
+    "title": "PC acquires 25% of AC – equity method (lecture case)",
+    "text": [
+      "On 1 April N, PC acquired 25% of AC for 40 and has significant influence. AC's equity at that date: capital 100 + net income 60 = 160 (book value = fair value). AC pays no dividends."
+    ],
+    "tables": [
+      {
+        "caption": "PC – 31 December N+1",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "480",
+            "Capital",
+            "300"
+          ],
+          [
+            "Investment in AC",
+            "40",
+            "Retained earnings",
+            "60"
+          ],
+          [
+            "Cash",
+            "230",
+            "Net income",
+            "100"
+          ],
+          [
+            "",
+            "",
+            "Liabilities",
+            "290"
+          ],
+          [
+            "Total",
+            "750",
+            "Total",
+            "750"
+          ]
+        ]
+      },
+      {
+        "caption": "AC – 31 December N+1",
+        "head": [
+          "Assets",
+          "",
+          "Equity & liabilities",
+          ""
+        ],
+        "rows": [
+          [
+            "Equipment",
+            "350",
+            "Capital",
+            "100"
+          ],
+          [
+            "Inventory",
+            "70",
+            "Retained earnings",
+            "180"
+          ],
+          [
+            "Accounts receivable",
+            "60",
+            "Net income",
+            "150"
+          ],
+          [
+            "Cash",
+            "140",
+            "Liabilities",
+            "190"
+          ],
+          [
+            "Total",
+            "620",
+            "Total",
+            "620"
+          ]
+        ]
+      }
+    ]
   }
 ]

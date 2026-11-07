@@ -3,7 +3,8 @@
     "type": "mc",
     "id": "mc-p1-01",
     "lecture": "t3",
-    "difficulty": 1,
+    "difficulty": 2,
+    "single": true,
     "prompt": "According to IAS 38 regarding the accounting for research and development costs it is CORRECT to say that …",
     "options": [
       {
@@ -27,7 +28,13 @@
       "b"
     ],
     "explanation": "Research never meets the recognition criteria (future benefits cannot be demonstrated) → expense. Development costs MUST be capitalised once all IAS 38 criteria are met (exam 2019 and 2024).",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 4 – Multiple choice"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -35,7 +42,7 @@
     "id": "sa-p1-01",
     "lecture": "t1",
     "case": "lumen-fs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "In which statement of Lumen Games can you find the staff costs expensed? Indicate the amount.",
     "modelAnswer": "Not on the face of the income statement: Lumen presents expenses by FUNCTION (cost of sales, R&D, selling, G&A), so staff costs are spread across these lines. They are disclosed in the notes (Note 7): 1,050 M€ (wages 820 + social charges 230). Under the function method IAS 1 requires such nature information in the notes.",
@@ -43,6 +50,27 @@
       "Income statement is by function → staff costs not visible as a line",
       "Found in the notes (Note 7)",
       "Amount 1,050 M€"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Decoding financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Check how the income statement is presented",
+        "why": "Lumen shows cost of sales, R&D, selling and G&A expenses → presentation BY FUNCTION. Staff costs are therefore spread over these lines and not visible on the face of the income statement."
+      },
+      {
+        "title": "Look in the notes",
+        "why": "IAS 1 requires entities that present by function to disclose additional information on the nature of expenses, including employee benefits expense, in the notes.",
+        "lines": [
+          "Note 7: wages and salaries 820 + social charges 230 = 1,050"
+        ],
+        "result": "Staff costs 1,050 M€, disclosed in the notes (Note 7)"
+      }
     ]
   },
   {
@@ -59,6 +87,36 @@
       "Share premium +117.6",
       "Cash received 120 (financing cash flow)",
       "24 million shares at €5"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Decoding financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Compare the equity lines",
+        "lines": [
+          "Share capital: 15.4 − 13.0 = +2.4",
+          "Share premium: 1,207.6 − 1,090.0 = +117.6",
+          "Total increase in equity from shares: 120.0"
+        ]
+      },
+      {
+        "title": "Confirm with the cash flow statement",
+        "why": "A CASH capital increase must appear in financing activities. 'Proceeds from capital increase' = 120 = 2.4 + 117.6 → the increase was paid in cash (not, e.g., a share dividend or a share-based acquisition).",
+        "result": "Yes – cash capital increase of 120 M€"
+      },
+      {
+        "title": "Derive the terms",
+        "lines": [
+          "Number of new shares = increase in share capital / par value = 2.4 M€ / €0.10 = 24 million",
+          "Issue price per share = 120 M€ / 24 million = €5.00 (par €0.10 + premium €4.90)"
+        ],
+        "result": "24 m shares at €5.00: capital +2.4, premium +117.6, cash +120"
+      }
     ]
   },
   {
@@ -66,7 +124,7 @@
     "id": "sa-p1-03",
     "lecture": "t1",
     "case": "lumen-fs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Explain why 'depreciation, amortisation, provisions' appears as a positive amount in the statement of cash flows.",
     "modelAnswer": "Lumen uses the indirect method: operating cash flow starts from net income and adds back expenses that did not cause a cash outflow. Depreciation, amortisation (e.g. of capitalised game development costs) and additions to provisions reduced net income by 900 M€ but no cash left the company in N, so they are added back (positive amount).",
@@ -74,6 +132,24 @@
       "Indirect method starts from net income",
       "These are non-cash expenses",
       "They are added back to reconcile to operating cash flow"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Decoding financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Identify the method",
+        "why": "The operating cash flow starts with net income → INDIRECT method: net income is reconciled to cash by removing non-cash items and working-capital changes."
+      },
+      {
+        "title": "Explain the add-back",
+        "why": "Depreciation, amortisation (e.g. of capitalised game development) and additions to provisions reduced net income by 900, but no cash left the company for them in N (the cash went out when the assets were bought). To get back to cash, they are added back.",
+        "result": "Non-cash expense → added back (positive) in the indirect method"
+      }
     ]
   },
   {
@@ -90,6 +166,28 @@
       "Share of profit of associates (IS)",
       "Adjustment in the cash flow statement",
       "Equity method = significant influence"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Decoding financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Recall the rule",
+        "why": "Significant influence (typically 20–50% of voting rights) → associate → equity method (IAS 28). So look for the equity-method footprints in all statements."
+      },
+      {
+        "title": "Collect the evidence",
+        "lines": [
+          "Balance sheet: 'Investments in associates' 35 (N−1: 31)",
+          "Income statement: 'Share of profit of associates' +4",
+          "Cash flow statement: 'Share of profit of associates, net of dividends' −4 (non-cash income removed)"
+        ],
+        "result": "Yes – Lumen has associates under significant influence"
+      }
     ]
   },
   {
@@ -97,7 +195,7 @@
     "id": "sa-p1-05",
     "lecture": "t1",
     "case": "lumen-fs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Are all Lumen subsidiaries 100% owned? Justify your answer.",
     "modelAnswer": "No. The balance sheet shows non-controlling interests of 12 (11 in N−1) in equity, and the income statement attributes 1 of net income to non-controlling interests. NCI only exist if minority shareholders hold part of at least one fully consolidated subsidiary.",
@@ -105,6 +203,24 @@
       "No",
       "Non-controlling interests in equity (12)",
       "Net income attributable to NCI (1)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Decoding financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Look for non-controlling interests",
+        "why": "NCI only arise when a fully consolidated subsidiary is not 100% owned: the minority shareholders' share of its equity and result is shown separately.",
+        "lines": [
+          "Balance sheet: non-controlling interests 12 (N−1: 11) within equity",
+          "Income statement: net income attributable to NCI +1"
+        ],
+        "result": "No – at least one subsidiary is not wholly owned"
+      }
     ]
   },
   {
@@ -112,7 +228,7 @@
     "id": "sa-p1-06",
     "lecture": "t1",
     "case": "lumen-fs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Does Lumen use leasing to finance any of its assets? List all items that support your answer.",
     "modelAnswer": "Yes. Balance sheet: right-of-use assets 180 and lease liabilities 195 (IFRS 16). Income statement: interest on lease liabilities (9) within financial expense (depreciation of ROU assets within the functional lines). Cash flow statement: 'Repayment of lease liabilities' (40) in financing activities.",
@@ -120,6 +236,28 @@
       "Right-of-use assets",
       "Lease liabilities",
       "Interest on lease liabilities / repayment of lease liabilities"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Decoding financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Recall IFRS 16",
+        "why": "Lessees recognise a right-of-use asset and a lease liability; the expense is split into depreciation and interest; repayments are financing cash flows."
+      },
+      {
+        "title": "Collect the evidence",
+        "lines": [
+          "Balance sheet: right-of-use assets 180; lease liabilities 195",
+          "Income statement: interest on lease liabilities 9 (in net financial expense); ROU depreciation inside the functional lines",
+          "Cash flow statement: repayment of lease liabilities −40 (financing)"
+        ],
+        "result": "Yes – Lumen leases assets (IFRS 16 items in all three statements)"
+      }
     ]
   },
   {
@@ -135,6 +273,33 @@
       "Cash outflow for acquisition of subsidiaries (18)",
       "Goodwill increase 230 → 241",
       "Goodwill not amortised → increase from acquisitions"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Decoding financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Look at the investing cash flows",
+        "lines": [
+          "'Acquisition of subsidiaries, net of cash acquired' −18"
+        ]
+      },
+      {
+        "title": "Look at goodwill",
+        "why": "Goodwill is not amortised; it only increases through new business combinations (or currency translation) and decreases through impairment or disposals.",
+        "lines": [
+          "Goodwill 230 → 241 (+11)"
+        ]
+      },
+      {
+        "title": "Conclude",
+        "why": "Both items point to new business combinations. Compared with sales of 2,300 the amounts are small.",
+        "result": "Yes – small acquisitions in N (cash −18, goodwill +11)"
+      }
     ]
   }
 ]

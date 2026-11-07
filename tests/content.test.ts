@@ -69,6 +69,21 @@ describe("Accounting", () => {
       expect(acc.questions.filter((q) => q.checkup && q.lecture === l.id).length, l.id).toBeGreaterThan(0);
     expect(acc.questions.filter((q) => q.checkup)).toHaveLength(45);
   });
+
+  it("jede Frage nennt ihre Grundlage (Altklausur, Folien oder Übung), jede offene Aufgabe hat einen Lösungsweg", () => {
+    for (const q of acc.questions) {
+      expect(q.basis.length, q.id).toBeGreaterThan(0);
+      if (q.type === "short") expect(q.steps.length, q.id).toBeGreaterThan(0);
+    }
+  });
+
+  it("übt die Übungsfälle der Vorlesung aus jedem Topic", () => {
+    for (const l of acc.subject.lectures)
+      expect(
+        acc.questions.some((q) => q.lecture === l.id && q.basis.some((b) => b.kind === "case")),
+        l.id,
+      ).toBe(true);
+  });
 });
 
 describe("Corporate Finance", () => {

@@ -7,6 +7,18 @@
     "statement": "IAS 38 requires that acquired brand names have to be amortised.",
     "answer": false,
     "explanation": "Wrong. Amortisation depends on the useful life, not on how the asset was obtained. Brand names usually have an INDEFINITE useful life (no foreseeable limit to the period they generate cash) → no amortisation, but an impairment test at least once a year. Only intangibles with a finite life (licences, patents) are amortised.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Quiz (Folie 60)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "checkup": true
   },
   {
@@ -17,6 +29,18 @@
     "statement": "Tangible assets have to be measured at fair value when using IFRS.",
     "answer": false,
     "explanation": "Wrong. After initial recognition IAS 16 offers a choice per class of assets: the COST model (cost − accumulated depreciation − impairment) or the REVALUATION model (fair value at revaluation date − subsequent depreciation/impairment). In Europe the cost model is used almost exclusively.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Quiz (Folie 60)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "checkup": true
   },
   {
@@ -27,6 +51,18 @@
     "statement": "Internally generated brand names, publishing titles and customer lists can be recognised as intangible assets if they are legally protected.",
     "answer": false,
     "explanation": "Wrong. IAS 38.63 explicitly prohibits recognising internally generated brands, mastheads, publishing titles, customer lists and similar items as assets – their cost cannot be distinguished from the cost of developing the business as a whole. Legal protection does not change this. (If ACQUIRED, e.g. in a business combination, they are recognised.)",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Quiz (Folie 60)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "checkup": true
   },
   {
@@ -37,6 +73,18 @@
     "statement": "When a non-current asset does not generate cash on its own, for impairment testing it should be associated with a group of assets so that this group generates cash.",
     "answer": true,
     "explanation": "Correct. If the recoverable amount (especially the value in use) of an individual asset cannot be determined, the test is performed for the cash-generating unit (CGU): the smallest identifiable group of assets generating cash inflows largely independent of other assets (e.g. a store, a magazine title, a plant).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Quiz (Folie 60)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "checkup": true
   },
   {
@@ -47,6 +95,18 @@
     "statement": "When the recoverable amount of an asset increases after a prior-year impairment, the carrying amount has to be increased up to its historical acquisition cost.",
     "answer": false,
     "explanation": "Wrong. A reversal is required, but capped: the new carrying amount may not exceed the carrying amount that would have resulted (net of depreciation) had no impairment been recognised – i.e. depreciated cost, not historical cost. For goodwill, impairment losses can never be reversed.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Quiz (Folie 60)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "checkup": true
   },
   {
@@ -57,6 +117,18 @@
     "statement": "Research costs are always expensed, whereas development costs are capitalised when they meet the requirements of IAS 38.",
     "answer": true,
     "explanation": "Correct. Research (gaining new knowledge) → expense, because future benefits cannot be demonstrated. Development (applying research to a plan or design before commercial production) → MUST be capitalised once all IAS 38 criteria are met (technical feasibility, intention and ability to complete and use/sell, probable future economic benefits, adequate resources, reliable measurement). Amortisation starts when the product goes to market.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Quiz (Folie 60)"
+      }
+    ],
     "checkup": true
   },
   {
@@ -67,6 +139,18 @@
     "statement": "If a rental agreement for buildings meets the definition of a lease under IFRS 16, the lessee recognises the lease payments as costs on a straight-line basis in the income statement.",
     "answer": false,
     "explanation": "Wrong. Under IFRS 16 the lessee recognises a right-of-use ASSET and a lease LIABILITY. The income statement shows DEPRECIATION of the right of use and INTEREST on the liability – not rent. Straight-line rent expense is only allowed for the optional exemptions (short-term ≤ 12 months, low-value assets ≈ USD 5,000).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Quiz (Folie 60)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "checkup": true
   },
   {
@@ -77,6 +161,13 @@
     "statement": "At the commencement date of a lease, the right-of-use asset is always equal to the lease liability.",
     "answer": false,
     "explanation": "Wrong. ROU asset = lease liability (PV of future lease payments) + lease payments made at or before commencement (less incentives) + initial direct costs + dismantling/restoration costs. In the Adams example: liability 31,597 + first payment 9,968 = ROU 41,565.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "checkup": true
   },
   {
@@ -86,7 +177,14 @@
     "difficulty": 1,
     "statement": "Indefinite-life intangible assets and goodwill must be tested for impairment at least once a year, even without any indication of impairment.",
     "answer": true,
-    "explanation": "Correct (IAS 36.10). For PPE and finite-life intangibles a test is only required when there are internal or external indications (market value decline, adverse technological/legal changes, rising interest rates, obsolescence, damage, worse performance)."
+    "explanation": "Correct (IAS 36.10). For PPE and finite-life intangibles a test is only required when there are internal or external indications (market value decline, adverse technological/legal changes, rising interest rates, obsolescence, damage, worse performance).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Impairment – when?"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -95,7 +193,19 @@
     "difficulty": 1,
     "statement": "The recoverable amount of an asset is the lower of its fair value less costs to sell and its value in use.",
     "answer": false,
-    "explanation": "Wrong – it is the HIGHER of the two. A rational entity would either sell the asset or keep using it, whichever gives more. An impairment loss is recognised only if the carrying amount exceeds this recoverable amount."
+    "explanation": "Wrong – it is the HIGHER of the two. A rational entity would either sell the asset or keep using it, whichever gives more. An impairment loss is recognised only if the carrying amount exceeds this recoverable amount.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Impairment loss allocation"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -104,7 +214,14 @@
     "difficulty": 1,
     "statement": "An impairment loss of a CGU is first allocated to goodwill and then to the other assets pro rata to their carrying amounts.",
     "answer": true,
-    "explanation": "Correct. But no individual asset may be reduced below the highest of its fair value less costs to sell, its value in use (if determinable) and zero; any excess is reallocated to the other assets."
+    "explanation": "Correct. But no individual asset may be reduced below the highest of its fair value less costs to sell, its value in use (if determinable) and zero; any excess is reallocated to the other assets.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Impairment loss allocation"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -113,7 +230,14 @@
     "difficulty": 1,
     "statement": "Value in use is calculated with pre-tax cash flows from continuing use and disposal of the asset, excluding financing and income tax cash flows, discounted at a pre-tax rate.",
     "answer": true,
-    "explanation": "Correct. Forecasts usually cover at most five years unless longer projections are reliable; if no asset-specific rate is available, the WACC can be used as a starting point."
+    "explanation": "Correct. Forecasts usually cover at most five years unless longer projections are reliable; if no asset-specific rate is available, the WACC can be used as a starting point.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Impairment of an individual asset"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -122,7 +246,14 @@
     "difficulty": 1,
     "statement": "Staff training costs incurred when a production process is robotised are added to the cost of the new machines.",
     "answer": false,
-    "explanation": "Wrong. Training costs (human capital) are expensed as incurred – the entity does not control its employees' know-how. Only costs directly attributable to bringing the asset to working condition (price, transport, installation, testing) are capitalised."
+    "explanation": "Wrong. Training costs (human capital) are expensed as incurred – the entity does not control its employees' know-how. Only costs directly attributable to bringing the asset to working condition (price, transport, installation, testing) are capitalised.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -131,7 +262,14 @@
     "difficulty": 1,
     "statement": "A contract to transport cargo on a specified ship, where the supplier operates the ship and the contract predetermines cargo and dates, is a lease.",
     "answer": false,
-    "explanation": "Wrong – it is a service contract (lecture exercise 3.3). Even though the ship is identified and the customer uses substantially all its capacity, the customer does not direct HOW and FOR WHAT PURPOSE the ship is used: the supplier operates it, and cargo and dates are predetermined by the contract, not decided by the customer during the period of use."
+    "explanation": "Wrong – it is a service contract (lecture exercise 3.3). Even though the ship is identified and the customer uses substantially all its capacity, the customer does not direct HOW and FOR WHAT PURPOSE the ship is used: the supplier operates it, and cargo and dates are predetermined by the contract, not decided by the customer during the period of use.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Exercise 3.3"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -140,16 +278,30 @@
     "difficulty": 1,
     "statement": "A 5-year contract for a specified ship, where the customer decides what cargo is transported and whether, when and to which ports the ship sails (within restrictions on piracy waters and hazardous cargo), is a lease even though the supplier operates the ship.",
     "answer": true,
-    "explanation": "Correct (lecture exercise 3.4). Identified asset, no substitution rights, the customer obtains substantially all economic benefits and directs how and for what purpose the ship is used. The restrictions are protective rights of the supplier; operating the ship is a service component that does not prevent lease classification."
+    "explanation": "Correct (lecture exercise 3.4). Identified asset, no substitution rights, the customer obtains substantially all economic benefits and directs how and for what purpose the ship is used. The restrictions are protective rights of the supplier; operating the ship is a service component that does not prevent lease classification.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Exercise 3.4"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-t3-16",
     "lecture": "t3",
-    "difficulty": 1,
+    "difficulty": 2,
     "statement": "A company leases delivery trucks for 4 years, but at the beginning of every quarter the lessor must approve the routes the trucks will travel. This is a lease.",
     "answer": false,
-    "explanation": "Not a lease (exam 2024). The lessor keeps the right to decide how and for what purpose the trucks are used (it approves the routes every quarter), so the customer does not have the right to direct the use of the identified asset."
+    "explanation": "Not a lease (exam 2024). The lessor keeps the right to decide how and for what purpose the trucks are used (it approves the routes every quarter), so the customer does not have the right to direct the use of the identified asset.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 4 – QCM"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -158,13 +310,21 @@
     "difficulty": 1,
     "statement": "A company leases vehicles for its sales force for 4 years; the vehicles must not leave the national territory and must not exceed 20,000 km per year. This is a lease.",
     "answer": true,
-    "explanation": "Yes. Territory and mileage limits are protective restrictions that define the scope of use; within them the customer decides how and for what purpose the vehicles are used and obtains substantially all economic benefits."
+    "explanation": "Yes. Territory and mileage limits are protective restrictions that define the scope of use; within them the customer decides how and for what purpose the vehicles are used and obtains substantially all economic benefits.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t3-01",
     "lecture": "t3",
     "difficulty": 1,
+    "single": true,
     "prompt": "Which of the following is NOT a condition to recognise an intangible asset under IAS 38?",
     "options": [
       {
@@ -192,13 +352,20 @@
       "e"
     ],
     "explanation": "Legal protection is not required (and does not suffice for internally generated brands). For separately acquired assets the criteria are assumed to be met.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Intangible assets (IAS 38)"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t3-02",
     "lecture": "t3",
     "difficulty": 2,
+    "single": true,
     "prompt": "A pharmaceutical company has spent several million euros researching a vaccine. It has reached stage 3 and countries have reserved millions of doses, but marketing approval has not yet been obtained. Where are these costs recognised?",
     "options": [
       {
@@ -222,13 +389,20 @@
       "a"
     ],
     "explanation": "Research costs are expensed. Without regulatory approval, the development criteria (technical feasibility, probable benefits) are not met in pharma – costs are expensed. Reservations are not revenue until the performance obligation is satisfied.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t3-03",
     "lecture": "t3",
     "difficulty": 2,
+    "single": true,
     "prompt": "An auction house with net assets of 10 million € is acquired for 30 million €. How can the difference be explained?",
     "options": [
       {
@@ -252,13 +426,20 @@
       "a"
     ],
     "explanation": "Internally generated brands are not recognised in the target's own balance sheet but become identifiable assets at fair value in the acquirer's PPA; the remainder is goodwill.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t3-04",
     "lecture": "t3",
     "difficulty": 1,
+    "single": true,
     "prompt": "Equipment: invoice price $540,000, transport $26,000, installation $5,000, party celebrating the installation $300. At what amount is the equipment recognised?",
     "options": [
       {
@@ -282,7 +463,13 @@
       "d"
     ],
     "explanation": "Cost includes the purchase price and all costs directly attributable to bringing the asset to its location and working condition (transport, installation). The party is not necessary → expense.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -290,6 +477,7 @@
     "id": "mc-t3-05",
     "lecture": "t3",
     "difficulty": 1,
+    "single": true,
     "prompt": "When is it NOT possible to perform an individual impairment test?",
     "options": [
       {
@@ -313,7 +501,13 @@
       "d"
     ],
     "explanation": "An individual test needs the asset's recoverable amount. If either fair value less costs to sell or value in use is available, it can be compared with the carrying amount. If the asset does not generate cash inflows largely independent of other assets (e.g. a single machine on a production line, a head-office building), its value in use cannot be determined – it is then tested as part of its cash-generating unit.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -321,6 +515,7 @@
     "lecture": "t3",
     "case": "verma-machine",
     "difficulty": 2,
+    "single": true,
     "prompt": "What is Verma's impairment loss and the depreciation for N+1?",
     "options": [
       {
@@ -344,7 +539,13 @@
       "a"
     ],
     "explanation": "Value in use = 40,000 × 3.993 ≈ 160,000 > fair value 150,000 → recoverable amount 160,000. Impairment = 200,000 − 160,000 = 40,000 (expense). New depreciation = 160,000 / 5 = 32,000.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Exercise 3.1"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -352,6 +553,7 @@
     "id": "mc-t3-07",
     "lecture": "t3",
     "difficulty": 2,
+    "single": true,
     "prompt": "Kohlbuy's Pritt division (a CGU) has a carrying amount of $2,400,000 including goodwill of $900,000; its recoverable amount is $1,900,000. Which statement is correct?",
     "options": [
       {
@@ -375,13 +577,20 @@
       "a"
     ],
     "explanation": "Goodwill absorbs the loss first; since 500,000 < 900,000, no other asset is affected. Goodwill impairment is never reversed.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Exercise 3.2 – CGU"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t3-08",
     "lecture": "t3",
     "difficulty": 1,
+    "single": true,
     "prompt": "A strong impairment of a CGU follows a coup in the UTOPIA region. What is the impact on the financial statements?",
     "options": [
       {
@@ -405,7 +614,13 @@
       "a"
     ],
     "explanation": "An impairment is a non-cash expense reducing the carrying amount of non-current assets (goodwill, PPE). Cash and debt are not affected.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -413,6 +628,7 @@
     "lecture": "t3",
     "case": "beta-cgu",
     "difficulty": 3,
+    "single": true,
     "prompt": "What is the total impairment loss for CGU A, and how is it allocated?",
     "options": [
       {
@@ -436,7 +652,18 @@
       "a"
     ],
     "explanation": "Building A: recoverable amount = max(400,000; 350,000) = 400,000 < 500,000 → individual impairment 100,000. CGU A after that: 3,700,000 vs recoverable 3,000,000 → 700,000 → goodwill (1,000,000 → 300,000). Land is not written up. Total 800,000.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 2 – Impairment"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 5 – Porto"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -445,6 +672,7 @@
     "lecture": "t3",
     "case": "beta-cgu",
     "difficulty": 3,
+    "single": true,
     "prompt": "What is the impairment loss for CGU B and the machinery's carrying amount after impairment?",
     "options": [
       {
@@ -468,7 +696,18 @@
       "a"
     ],
     "explanation": "Building B: recoverable max(550,000; 500,000) = 550,000 → individual impairment 50,000. CGU: recoverable = max(2,280,000; 2,000,000) = 2,280,000 vs 2,550,000 → 270,000: goodwill 200,000 → 0, remaining 70,000 – the building cannot go below its recoverable 550,000, so machinery takes 70,000 → 1,730,000. Total 320,000.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 2 – Impairment"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 5 – Porto"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -477,6 +716,7 @@
     "lecture": "t3",
     "case": "adams-lease",
     "difficulty": 3,
+    "single": true,
     "prompt": "What are the lease liability and the right-of-use asset at commencement, and the N1 expenses?",
     "options": [
       {
@@ -500,7 +740,13 @@
       "a"
     ],
     "explanation": "Liability = 9,968 × 3.169865 = 31,597 (4 future payments). ROU = 31,597 + 9,968 paid at commencement = 41,565, depreciated over the shorter of lease term (4) and useful life (6): 10,391. Interest = 10% × 31,597 = 3,160. Liability end N1 = 31,597 + 3,160 − 9,968 = 24,789.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Exercise 3.5"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -508,6 +754,7 @@
     "id": "mc-t3-12",
     "lecture": "t3",
     "difficulty": 3,
+    "single": true,
     "prompt": "Finchley leases an office building (fair value = PV of lease payments = 4,000,000; useful life 20 years; payment 300,000 per year on 31 December; effective rate 4.5%). Impact at 31 December of the first year?",
     "options": [
       {
@@ -531,7 +778,13 @@
       "c"
     ],
     "explanation": "Depreciation 4,000,000/20 = 200,000 → ROU 3,800,000. Interest 4.5% × 4,000,000 = 180,000. Debt = 4,000,000 + 180,000 − 300,000 = 3,880,000.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -539,6 +792,7 @@
     "id": "mc-t3-13",
     "lecture": "t3",
     "difficulty": 2,
+    "single": true,
     "prompt": "The CEO of a highly indebted company is reassured because most investments of the year were leased, not bought. What is the impact of leasing on the financial statements?",
     "options": [
       {
@@ -562,7 +816,13 @@
       "d"
     ],
     "explanation": "IFRS 16: ROU asset and lease liability (debt ↑), lease payments reduce cash, depreciation and interest reduce net income. Leasing is no longer off-balance-sheet financing for the lessee.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -570,6 +830,7 @@
     "lecture": "t3",
     "case": "prodi-financing",
     "difficulty": 3,
+    "single": true,
     "prompt": "Which statement on the PRODI financing decision is NOT correct?",
     "options": [
       {
@@ -593,13 +854,20 @@
       "d"
     ],
     "explanation": "Lease liability = 1,000,000 + 4.76% × 1,000,000 (47,600) − 128,000 = 919,600. Under IFRS 16 the lease adds debt like a loan – the CFO's argument is wrong.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 3 – Financing"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t3-15",
     "lecture": "t3",
     "difficulty": 2,
+    "single": true,
     "prompt": "Which exemptions from the right-of-use model exist under IFRS 16, and for whom?",
     "options": [
       {
@@ -623,7 +891,13 @@
       "a"
     ],
     "explanation": "With the exemptions, payments are expensed straight-line and disclosed. Leases of minerals/oil/gas and certain licences (films, patents) are outside IFRS 16.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Lease exemptions"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -631,6 +905,7 @@
     "lecture": "t3",
     "case": "ramon-mall",
     "difficulty": 3,
+    "single": true,
     "prompt": "What is the impairment loss on Ramon's mall at 31 December N5, and the book value at 31 December N6?",
     "options": [
       {
@@ -654,7 +929,18 @@
       "a"
     ],
     "explanation": "Carrying amount = 300 − 5 × 10 = 250. Value in use = 24 × 9.08 (25 remaining years) = 217.92 > fair value 210 → recoverable 217.92. Impairment 32.08. New depreciation 217.92/25 ≈ 8.72 → N6 ≈ 209.2.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 5 – Investment property"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 3 – Bilbao"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -672,6 +958,126 @@
       "CGU A: goodwill reduced to 300,000 (total 3,000,000)",
       "CGU B: goodwill to 0, machinery 1,730,000 (total 2,280,000)",
       "Net income N reduced by 1,120,000"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 2 – Impairment"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 5 – Porto"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Test the individual assets with an indication first",
+        "why": "IAS 36: when an asset shows an impairment indicator (drop in property prices) and its recoverable amount can be determined individually, test it alone BEFORE the CGU test. Recoverable amount = HIGHER of value in use and fair value less costs to sell.",
+        "lines": [
+          "Land A: max(450,000; 500,000) = 500,000 > book value 300,000 → no impairment (no write-up above cost)",
+          "Building A: max(400,000; 350,000) = 400,000 < 500,000 → impairment 100,000",
+          "Building B: max(550,000; 500,000) = 550,000 < 600,000 → impairment 50,000"
+        ]
+      },
+      {
+        "title": "CGU A – compare carrying amount with recoverable amount",
+        "lines": [
+          "Carrying amount after building test: 3,800,000 − 100,000 = 3,700,000",
+          "Recoverable amount (value in use) = 3,000,000",
+          "Impairment loss CGU = 700,000"
+        ]
+      },
+      {
+        "title": "CGU A – allocate the loss",
+        "why": "The loss is allocated first to goodwill, then pro rata to the other assets. 700,000 < goodwill 1,000,000, so goodwill absorbs everything.",
+        "table": {
+          "head": [
+            "CGU A",
+            "Before",
+            "After"
+          ],
+          "rows": [
+            [
+              "Land",
+              "300,000",
+              "300,000"
+            ],
+            [
+              "Building",
+              "500,000",
+              "400,000"
+            ],
+            [
+              "Machinery",
+              "2,000,000",
+              "2,000,000"
+            ],
+            [
+              "Goodwill",
+              "1,000,000",
+              "300,000"
+            ],
+            [
+              "Total",
+              "3,800,000",
+              "3,000,000"
+            ]
+          ]
+        },
+        "result": "Total impairment CGU A = 100,000 + 700,000 = 800,000"
+      },
+      {
+        "title": "CGU B – compare and allocate",
+        "lines": [
+          "Carrying amount after building test: 2,600,000 − 50,000 = 2,550,000",
+          "Recoverable amount = max(2,280,000; 2,000,000) = 2,280,000 → loss 270,000",
+          "Goodwill first: 200,000 → 0, remaining 70,000",
+          "Building already at its recoverable amount 550,000 → cannot go lower",
+          "Remaining 70,000 → machinery: 1,800,000 − 70,000 = 1,730,000"
+        ],
+        "table": {
+          "head": [
+            "CGU B",
+            "Before",
+            "After"
+          ],
+          "rows": [
+            [
+              "Building",
+              "600,000",
+              "550,000"
+            ],
+            [
+              "Machinery",
+              "1,800,000",
+              "1,730,000"
+            ],
+            [
+              "Goodwill",
+              "200,000",
+              "0"
+            ],
+            [
+              "Total",
+              "2,600,000",
+              "2,280,000"
+            ]
+          ]
+        },
+        "result": "Total impairment CGU B = 50,000 + 270,000 = 320,000"
+      },
+      {
+        "title": "Impact on the financial statements N",
+        "why": "Impairment losses are operating expenses (non-cash). Goodwill impairment can never be reversed later.",
+        "result": "Net income N −1,120,000 (800,000 + 320,000); assets −1,120,000"
+      }
+    ],
+    "pitfalls": [
+      "Taking the LOWER of value in use and fair value less costs to sell – IAS 36 uses the HIGHER.",
+      "Writing up the land to 500,000: under the cost model no revaluation above cost.",
+      "Allocating the remaining CGU B loss pro rata to the building below its own recoverable amount (550,000)."
     ]
   },
   {
@@ -688,6 +1094,82 @@
       "Lease: ROU 900,000, lease liability 919,600, depreciation 100,000 + interest 47,600",
       "Under IFRS 16 the lease also creates financial debt",
       "Conclusion: CFO is wrong – gearing increases in both cases"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 3 – Financing"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Solution 1 – bank loan",
+        "why": "The machine is bought (PP&E, straight-line over 10 years); the loan is repaid in fine, so the debt stays at 1,000,000 during N.",
+        "lines": [
+          "PP&E: 1,000,000 − depreciation 100,000 = 900,000",
+          "Financial debt: 1,000,000",
+          "Expenses: depreciation 100,000 + interest 4.65% × 1,000,000 = 46,500",
+          "Cash out N: 46,500 (interest only)"
+        ]
+      },
+      {
+        "title": "Solution 2 – lease under IFRS 16",
+        "why": "The lessee recognises a right-of-use asset and a lease liability = PV of lease payments = 1,000,000. The liability is then measured at amortised cost with the effective rate.",
+        "lines": [
+          "Right-of-use asset: 1,000,000 − depreciation 100,000 = 900,000",
+          "Interest: 4.76% × 1,000,000 = 47,600",
+          "Lease liability end N: 1,000,000 + 47,600 − 128,000 = 919,600",
+          "Expenses: depreciation 100,000 + interest 47,600 = 147,600",
+          "Cash out N: 128,000"
+        ]
+      },
+      {
+        "title": "Compare the effects",
+        "table": {
+          "head": [
+            "End of N",
+            "Loan",
+            "Lease"
+          ],
+          "rows": [
+            [
+              "Asset",
+              "PP&E 900,000",
+              "ROU 900,000"
+            ],
+            [
+              "Financial debt",
+              "1,000,000",
+              "919,600"
+            ],
+            [
+              "Depreciation",
+              "100,000",
+              "100,000"
+            ],
+            [
+              "Interest",
+              "46,500",
+              "47,600"
+            ],
+            [
+              "Total expense",
+              "146,500",
+              "147,600"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Answer the CFO",
+        "why": "Since IFRS 16 there is no off-balance-sheet operating lease for the lessee any more (exemptions only for short-term ≤ 12 months and low-value assets). Both solutions add roughly the same asset and financial debt, so gearing deteriorates in both cases; the lease is even slightly more expensive.",
+        "result": "The CFO is wrong: leasing does not improve gearing under IFRS 16"
+      }
+    ],
+    "pitfalls": [
+      "Treating the lease as a simple rent expense of 128,000 (pre-IFRS 16 thinking).",
+      "Computing lease interest on 128,000 instead of on the liability of 1,000,000."
     ]
   },
   {
@@ -703,6 +1185,47 @@
       "Development: apply knowledge before production → capitalise if criteria met",
       "Name IAS 38 criteria (feasibility, benefits, resources, measurement)",
       "Profit impact: immediate expense vs amortisation over useful life"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 4 – QCM"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Research phase",
+        "why": "Research = original, planned investigation to gain new knowledge (e.g. lab research for new molecules). At this stage future economic benefits cannot be demonstrated.",
+        "result": "Research costs → always expensed"
+      },
+      {
+        "title": "Development phase",
+        "why": "Development = applying research findings to a plan or design for new or substantially improved products/processes before commercial production (prototypes, pilot plants). IAS 38.57 requires capitalisation once ALL criteria are met:",
+        "lines": [
+          "Technical feasibility of completion",
+          "Intention to complete and use or sell",
+          "Ability to use or sell",
+          "Probable future economic benefits (market exists)",
+          "Adequate technical, financial and other resources",
+          "Reliable measurement of the expenditure"
+        ],
+        "result": "Development costs → intangible asset once the criteria are met"
+      },
+      {
+        "title": "Impact on profit",
+        "why": "Research hits profit immediately. Capitalised development is amortised from market launch over its useful life, so profit is reduced gradually.",
+        "result": "Expense now (research) vs amortisation over time (development)"
+      }
+    ],
+    "pitfalls": [
+      "Saying that all R&D can be capitalised – research never can.",
+      "Saying development is optional to capitalise: if all criteria are met, IAS 38 requires it."
     ]
   },
   {
@@ -718,6 +1241,791 @@
       "Right to substantially all economic benefits",
       "Right to direct how and for what purpose it is used",
       "Service: supplier controls the asset; lease → on balance sheet"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Lease definition"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Cases 6 & 7"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Start from the IFRS 16 definition",
+        "why": "A contract is (or contains) a lease if it conveys the right to CONTROL the use of an identified asset for a period of time in exchange for consideration."
+      },
+      {
+        "title": "Test 1 – identified asset",
+        "why": "The asset is specified explicitly or implicitly, and the supplier has NO substantive substitution right (i.e. it cannot practically and profitably swap the asset). Example: retail unit that the owner can relocate at any time at minimal cost → no identified asset."
+      },
+      {
+        "title": "Test 2 – economic benefits",
+        "why": "The customer obtains substantially all economic benefits from using the asset during the period."
+      },
+      {
+        "title": "Test 3 – right to direct the use",
+        "why": "The customer decides how and for what purpose the asset is used (or these decisions are predetermined and the customer operates/designed it). Example: lessor must approve truck routes each quarter → the customer does not direct the use."
+      },
+      {
+        "title": "Consequence",
+        "why": "All three tests met → lease: right-of-use asset + lease liability on the balance sheet. Otherwise → service contract: the supplier keeps control and the payments are expensed.",
+        "result": "Lease = identified asset + benefits + right to direct; otherwise service"
+      }
+    ],
+    "pitfalls": [
+      "Looking only at the contract's name ('rental', 'service') instead of the control tests."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-05",
+    "lecture": "t3",
+    "case": "malaga-machine",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "At what amount is the machine recognised on 31 October N? What is the depreciation for N, and the carrying amount on 31 December N+2?",
+    "modelAnswer": "Cost = 540,000 + 26,000 + 5,000 = 571,000 (training expensed). Rate = (571,000 − 200,000) / 500,000 = 0.742 per unit → N: 37,100; N+1: 111,300 → 422,600. Modification capitalised → 462,600; new rate (462,600 − 200,000) / 360,000 = 0.7294 → N+2: 182,361 → carrying amount 280,239.",
+    "keyPoints": [
+      "Cost 571,000 (price in € + transport + installation)",
+      "Training expensed",
+      "Units-of-production on 371,000 depreciable amount",
+      "Depreciation N 37,100",
+      "Modification capitalised; carrying amount end N+2 ≈ 280,239"
+    ],
+    "results": [
+      {
+        "label": "Initial cost",
+        "value": 571000
+      },
+      {
+        "label": "Depreciation N",
+        "value": 37100
+      },
+      {
+        "label": "Carrying amount 31 Dec N+2",
+        "value": 280239,
+        "tol": 5
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 1 – Malaga 1"
+      },
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "C.1 – Acquisition of a machine"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Initial cost (IAS 16)",
+        "why": "Include the purchase price and costs directly attributable to bringing the asset to working condition; training is never part of the cost.",
+        "lines": [
+          "Price: 600,000 × 0.9 = 540,000",
+          "+ transport 26,000",
+          "+ installation by own workers 5,000",
+          "= 571,000",
+          "Training 10,000 → expense"
+        ]
+      },
+      {
+        "title": "Depreciation N (units of production)",
+        "lines": [
+          "Depreciable amount: 571,000 − 200,000 = 371,000",
+          "Total units: 50,000 + 150,000 + 200,000 + 100,000 = 500,000",
+          "Rate: 371,000 / 500,000 = 0.742 per unit",
+          "N: 50,000 × 0.742 = 37,100 → 533,900"
+        ]
+      },
+      {
+        "title": "N+1",
+        "lines": [
+          "150,000 × 0.742 = 111,300 → 422,600"
+        ]
+      },
+      {
+        "title": "Modification in N+2",
+        "why": "Expenditure that increases capacity (future economic benefits) is capitalised; the remaining depreciation is recalculated prospectively.",
+        "lines": [
+          "422,600 + 40,000 = 462,600",
+          "New rate: (462,600 − 200,000) / (250,000 + 110,000) = 0.7294",
+          "N+2: 250,000 × 0.7294 = 182,361"
+        ],
+        "result": "Carrying amount 31/12/N+2 ≈ 280,239"
+      }
+    ],
+    "pitfalls": [
+      "Converting at a later exchange rate – use the rate at the purchase date.",
+      "Including training in the cost."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-06",
+    "lecture": "t3",
+    "case": "malaga-building",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Determine the depreciation expense for year N (component approach).",
+    "modelAnswer": "IAS 16 component approach: roof 1,000,000 / 15 = 66,667; rest of the building 5,000,000 / 30 = 166,667; total 233,333.",
+    "keyPoints": [
+      "Significant parts with different useful lives are depreciated separately",
+      "Roof 66,667",
+      "Structure 166,667",
+      "Total 233,333"
+    ],
+    "results": [
+      {
+        "label": "Depreciation of the roof",
+        "value": 66667,
+        "tol": 2
+      },
+      {
+        "label": "Depreciation of the structure",
+        "value": 166667,
+        "tol": 2
+      },
+      {
+        "label": "Total depreciation N",
+        "value": 233333,
+        "tol": 3
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 1C – Malaga building"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Component approach"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Component approach (IAS 16.43)",
+        "why": "Each significant part of an asset with a different useful life is depreciated separately. The roof is replaced after 15 years, the rest lasts 30."
+      },
+      {
+        "title": "Split the cost",
+        "lines": [
+          "Roof component: 1,000,000",
+          "Structure: 6,000,000 − 1,000,000 = 5,000,000"
+        ]
+      },
+      {
+        "title": "Depreciate each component",
+        "lines": [
+          "Roof: 1,000,000 / 15 = 66,667",
+          "Structure: 5,000,000 / 30 = 166,667"
+        ],
+        "result": "Depreciation N = 233,333"
+      }
+    ],
+    "pitfalls": [
+      "6,000,000 / 30 = 200,000 ignores the component with the shorter life."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-07",
+    "lecture": "t3",
+    "case": "malaga-patent",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "What is the acquisition cost of the patent, and what are the amortisation, the interest expense and the liability on 31 December N?",
+    "modelAnswer": "Liability = 10,000 × 6.7101 = 67,101; cost = 30,000 + 67,101 = 97,101. 31/12/N: amortisation 9,710; interest 8% × 67,101 = 5,368; liability 67,101 + 5,368 − 10,000 = 62,469.",
+    "keyPoints": [
+      "Cost = cash paid + PV of deferred fees = 97,101",
+      "Liability 67,101 at amortised cost",
+      "Amortisation 9,710",
+      "Interest 5,368; liability 62,469"
+    ],
+    "results": [
+      {
+        "label": "Acquisition cost",
+        "value": 97101,
+        "tol": 5
+      },
+      {
+        "label": "Amortisation N",
+        "value": 9710,
+        "tol": 2
+      },
+      {
+        "label": "Interest expense N",
+        "value": 5368,
+        "tol": 2
+      },
+      {
+        "label": "Liability 31 Dec N",
+        "value": 62469,
+        "tol": 5
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 2A – Malaga 3"
+      },
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "C1 – Machine with deferred payment"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Cost = cash price equivalent",
+        "why": "Deferred payments are included at their present value (IAS 38); the rest is interest.",
+        "lines": [
+          "PV of fees: 10,000 × 6.7101 = 67,101",
+          "Cost: 30,000 + 67,101 = 97,101"
+        ]
+      },
+      {
+        "title": "January N entries",
+        "lines": [
+          "Patent +97,101",
+          "Cash −30,000",
+          "Liability +67,101"
+        ]
+      },
+      {
+        "title": "31 December N",
+        "lines": [
+          "Amortisation: 97,101 / 10 = 9,710",
+          "Interest: 8% × 67,101 = 5,368",
+          "Fee paid: 10,000",
+          "Liability: 67,101 + 5,368 − 10,000 = 62,469"
+        ],
+        "result": "Expenses N: amortisation 9,710 + interest 5,368"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-08",
+    "lecture": "t3",
+    "case": "bilbao-airplane",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "What value appears for the airplane on 31 December N5, what is the impairment loss, and what is the book value on 31 December N6?",
+    "modelAnswer": "Carrying amount 31/12/N5 = 250 − 5 × 10 = 200. Recoverable amount 180 → impairment 20 (expense). N6: 180 / 20 remaining years = 9 → book value 171.",
+    "keyPoints": [
+      "Carrying amount 200",
+      "Recoverable amount 180",
+      "Impairment 20",
+      "New depreciation 9 → 171"
+    ],
+    "results": [
+      {
+        "label": "Impairment loss N5 (€m)",
+        "value": 20
+      },
+      {
+        "label": "Book value 31 Dec N5 (€m)",
+        "value": 180
+      },
+      {
+        "label": "Book value 31 Dec N6 (€m)",
+        "value": 171
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 3 – Bilbao"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 5 – Ramon mall"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Measurement options after purchase",
+        "why": "IAS 16: cost model (cost − depreciation − impairment) or revaluation model (fair value). Bilbao uses the cost model."
+      },
+      {
+        "title": "Carrying amount before the test",
+        "lines": [
+          "250 / 25 = 10 p.a.",
+          "31/12/N5: 250 − 5 × 10 = 200"
+        ]
+      },
+      {
+        "title": "Impairment test (price fall = external indication)",
+        "lines": [
+          "Recoverable amount = 180 (no higher value in use)",
+          "Impairment = 200 − 180 = 20 (expense)"
+        ]
+      },
+      {
+        "title": "31/12/N6",
+        "lines": [
+          "180 / 20 remaining years = 9",
+          "180 − 9 = 171"
+        ],
+        "result": "171 €m"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-09",
+    "lecture": "t3",
+    "case": "seat-goodwill",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Perform the impairment test for the SEAT segment as of 31 December x1 (discount the x2–x5 cash flows and the perpetuity from x6). Quantify the value in use, the recoverable amount and the impairment loss.",
+    "modelAnswer": "Value in use: 750/1.11 + 700/1.11² + 650/1.11³ + 590/1.11⁴ = 2,107.7; perpetuity 540/0.11 = 4,909.1 discounted 4 years = 3,233.8 → VIU 5,341.5. FV less costs = 5,100 − 350 = 4,750. Recoverable amount 5,341.5 < 5,500 → impairment 158.5, allocated to goodwill (500 → 341.5).",
+    "keyPoints": [
+      "VIU ≈ 5,341.5 (explicit years + discounted perpetuity)",
+      "FVLCS 4,750",
+      "Recoverable amount = higher = 5,341.5",
+      "Impairment ≈ 158.5 on goodwill"
+    ],
+    "results": [
+      {
+        "label": "Value in use",
+        "value": 5341.5,
+        "tol": 3
+      },
+      {
+        "label": "Fair value less costs of disposal",
+        "value": 4750
+      },
+      {
+        "label": "Impairment loss",
+        "value": 158.5,
+        "tol": 3
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 4 – Goodwill of SEAT"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2b–c – recoverable amount of goodwill"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Is there an indication?",
+        "why": "Economic crisis in Spain and a takeover offer below the carrying amount are external indicators; goodwill must be tested annually anyway (IAS 36)."
+      },
+      {
+        "title": "Value in use – explicit years",
+        "lines": [
+          "x2: 750 / 1.11 = 675.7",
+          "x3: 700 / 1.11² = 568.1",
+          "x4: 650 / 1.11³ = 475.3",
+          "x5: 590 / 1.11⁴ = 388.7",
+          "Sum = 2,107.7"
+        ]
+      },
+      {
+        "title": "Value in use – perpetuity from x6",
+        "lines": [
+          "Value at end of x5: 540 / 0.11 = 4,909.1",
+          "Discounted 4 years: 4,909.1 / 1.11⁴ = 3,233.8"
+        ],
+        "result": "VIU = 2,107.7 + 3,233.8 = 5,341.5"
+      },
+      {
+        "title": "Fair value less costs of disposal",
+        "lines": [
+          "5,100 − 350 = 4,750"
+        ]
+      },
+      {
+        "title": "Compare and allocate",
+        "lines": [
+          "Recoverable amount = max(5,341.5; 4,750) = 5,341.5",
+          "Carrying amount 5,500 → impairment 158.5",
+          "Allocated to goodwill first: 500 → 341.5"
+        ],
+        "result": "Impairment ≈ 158.5 MU, goodwill 341.5"
+      },
+      {
+        "title": "Room for discretion",
+        "why": "Value in use depends on cash flow forecasts, the growth/perpetuity assumption and the discount rate. A slightly lower WACC or higher terminal cash flow would remove the impairment – that is why auditors challenge these assumptions."
+      }
+    ],
+    "pitfalls": [
+      "Using the BMW offer without deducting the transaction costs.",
+      "Taking the LOWER of the two values."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-10",
+    "lecture": "t3",
+    "case": "porto-cgus",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Determine and allocate the impairment loss of each CGU on 31 December N. Give the total impairment and the carrying amounts of building B and machinery C after impairment.",
+    "modelAnswer": "A: 3,300,000 − 2,500,000 = 800,000 → goodwill 900,000 → 100,000. B: 400,000 → goodwill 200,000 → 0; remaining 200,000 pro rata 500:3,000 → building −28,571 (471,429 ≥ 450,000), machinery −171,429. C: 560,000 → goodwill 500,000 → 0; remaining 60,000 pro rata 700:1,000 → building −24,706, machinery −35,294 (964,706). Total 1,760,000.",
+    "keyPoints": [
+      "Recoverable amounts: A 2.5 m, B 3.3 m, C 1.64 m",
+      "Goodwill reduced first",
+      "Pro rata allocation of the remainder",
+      "Building B floor 450,000 respected",
+      "Total impairment 1,760,000"
+    ],
+    "results": [
+      {
+        "label": "Total impairment loss",
+        "value": 1760000
+      },
+      {
+        "label": "Building B after impairment",
+        "value": 471429,
+        "tol": 3
+      },
+      {
+        "label": "Machinery C after impairment",
+        "value": 964706,
+        "tol": 3
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 5 – Porto"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 2 – CGU A and B"
+      }
+    ],
+    "steps": [
+      {
+        "title": "CGU A",
+        "lines": [
+          "Loss = 3,300,000 − 2,500,000 = 800,000",
+          "Goodwill 900,000 absorbs everything → 100,000"
+        ],
+        "why": "The building of A has no indication (and VIU/FV are above book value) → no individual loss."
+      },
+      {
+        "title": "CGU B – why no individual test of the building?",
+        "why": "Its value in use cannot be determined alone and FV less costs (450,000) < book value, so its recoverable amount is determined at CGU level; 450,000 becomes the floor."
+      },
+      {
+        "title": "CGU B – allocate",
+        "lines": [
+          "Loss = 3,700,000 − 3,300,000 = 400,000",
+          "Goodwill 200,000 → 0; remaining 200,000",
+          "Building: 200,000 × 500/3,500 = 28,571 → 471,429 (≥ 450,000 ✓)",
+          "Machinery: 200,000 × 3,000/3,500 = 171,429 → 2,828,571"
+        ]
+      },
+      {
+        "title": "CGU C – allocate",
+        "lines": [
+          "Loss = 2,200,000 − 1,640,000 = 560,000",
+          "Goodwill 500,000 → 0; remaining 60,000",
+          "Building: 60,000 × 700/1,700 = 24,706 → 675,294",
+          "Machinery: 60,000 × 1,000/1,700 = 35,294 → 964,706"
+        ]
+      },
+      {
+        "title": "Total",
+        "lines": [
+          "800,000 + 400,000 + 560,000 = 1,760,000 (expense N)"
+        ],
+        "result": "Total impairment 1,760,000"
+      }
+    ],
+    "pitfalls": [
+      "Allocating pro rata to goodwill and the other assets together.",
+      "Ignoring the floor of an asset's own fair value less costs to sell."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-11",
+    "lecture": "t3",
+    "case": "rent-office",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Show the impact of the lease on RENT's balance sheet and income statement of N1: lease liability and right-of-use asset at commencement, depreciation, interest and the lease liability at 31 December N1.",
+    "modelAnswer": "Liability = PV of the 12 year-end payments = 300,000 × 9.1186 = 2,735,575. ROU = 2,735,575 + 300,000 paid at commencement = 3,035,575, depreciated over the lease term of 12 years = 252,965. Interest N1 = 4.5% × 2,735,575 = 123,101. Liability 31/12/N1 = 2,735,575 + 123,101 − 300,000 = 2,558,676.",
+    "keyPoints": [
+      "Liability = PV of the 12 remaining payments",
+      "ROU includes the payment at commencement",
+      "Depreciation over the 12-year lease term (not 40)",
+      "Interest 123,101",
+      "Liability end N1 2,558,676"
+    ],
+    "results": [
+      {
+        "label": "Lease liability at commencement",
+        "value": 2735575,
+        "tol": 50
+      },
+      {
+        "label": "Right-of-use asset at commencement",
+        "value": 3035575,
+        "tol": 50
+      },
+      {
+        "label": "Depreciation N1",
+        "value": 252965,
+        "tol": 10
+      },
+      {
+        "label": "Interest expense N1",
+        "value": 123101,
+        "tol": 5
+      },
+      {
+        "label": "Lease liability 31 Dec N1",
+        "value": 2558676,
+        "tol": 50
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 8 – RENT"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 3 – PRODI lease"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Which payments form the liability?",
+        "why": "The payment on 1 January N1 is paid at commencement → not a liability. The liability is the PV of the 12 payments at the end of N1 … N12."
+      },
+      {
+        "title": "Lease liability and ROU asset",
+        "lines": [
+          "Liability: 300,000 × 9.1186 = 2,735,575",
+          "ROU: 2,735,575 + 300,000 = 3,035,575"
+        ]
+      },
+      {
+        "title": "Depreciation",
+        "why": "Without transfer of ownership, the ROU asset is depreciated over the SHORTER of lease term (12 years) and useful life (40 years).",
+        "lines": [
+          "3,035,575 / 12 = 252,965"
+        ]
+      },
+      {
+        "title": "Interest and liability at year end",
+        "lines": [
+          "Interest: 4.5% × 2,735,575 = 123,101",
+          "Liability 31/12/N1: 2,735,575 + 123,101 − 300,000 = 2,558,676"
+        ]
+      },
+      {
+        "title": "Summary N1",
+        "table": {
+          "head": [
+            "Statement",
+            "Item",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "Balance sheet",
+              "ROU asset (3,035,575 − 252,965)",
+              "2,782,610"
+            ],
+            [
+              "Balance sheet",
+              "Lease liability",
+              "2,558,676"
+            ],
+            [
+              "Income statement",
+              "Depreciation",
+              "252,965"
+            ],
+            [
+              "Income statement",
+              "Interest expense",
+              "123,101"
+            ],
+            [
+              "Cash flow",
+              "Payments",
+              "600,000"
+            ]
+          ]
+        }
+      }
+    ],
+    "pitfalls": [
+      "Discounting 13 payments.",
+      "Depreciating over the building's 40-year life."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-12",
+    "lecture": "t3",
+    "case": "bq-leases",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Calculate (A) the scooter lease liability at 31 December N1 and (B) the lease term, the lease liability and the right-of-use asset of the building at commencement.",
+    "modelAnswer": "A: liability 10,000 × 4.4518 = 44,518; interest 1,781; end N1 = 44,518 + 1,781 − 10,000 = 36,299 (depreciation 8,904). B: lease term 10 years (option not reasonably certain); liability 50,000 × 7.7217 = 386,087; ROU = 386,087 + 20,000 − 5,000 = 401,087.",
+    "keyPoints": [
+      "Scooters: 44,518 → 36,299 end N1",
+      "Lease term 10 years",
+      "Building liability 386,087",
+      "ROU = liability + initial direct costs − incentive = 401,087"
+    ],
+    "results": [
+      {
+        "label": "A – scooter lease liability 31 Dec N1",
+        "value": 36299,
+        "tol": 5
+      },
+      {
+        "label": "B – lease term (years)",
+        "value": 10,
+        "tol": 0.5
+      },
+      {
+        "label": "B – lease liability at commencement",
+        "value": 386087,
+        "tol": 10
+      },
+      {
+        "label": "B – right-of-use asset at commencement",
+        "value": 401087,
+        "tol": 10
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 9 – Burger Queen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "IFRS 16 – initial measurement"
+      }
+    ],
+    "steps": [
+      {
+        "title": "A – scooters at commencement and N1",
+        "lines": [
+          "Liability = ROU = 10,000 × 4.4518 = 44,518",
+          "Depreciation: 44,518 / 5 = 8,904",
+          "Interest: 4% × 44,518 = 1,781",
+          "Liability end N1: 44,518 + 1,781 − 10,000 = 36,299"
+        ]
+      },
+      {
+        "title": "B – lease term",
+        "why": "Lease term = non-cancellable period + extension options only if reasonably certain to be exercised.",
+        "lines": [
+          "10 years (the 5-year option is not reasonably certain)"
+        ]
+      },
+      {
+        "title": "B – lease liability",
+        "lines": [
+          "50,000 × 7.7217 = 386,087"
+        ]
+      },
+      {
+        "title": "B – right-of-use asset",
+        "why": "ROU = lease liability + payments before commencement + initial direct costs − lease incentives received.",
+        "lines": [
+          "386,087 + 20,000 − 5,000 = 401,087"
+        ]
+      },
+      {
+        "title": "Journal entries at commencement (B)",
+        "lines": [
+          "Dr ROU asset 386,087 / Cr lease liability 386,087",
+          "Dr ROU asset 20,000 / Cr cash 20,000",
+          "Dr cash (receivable) 5,000 / Cr ROU asset 5,000"
+        ],
+        "result": "ROU 401,087; liability 386,087"
+      }
+    ],
+    "pitfalls": [
+      "Including the extension option in the lease term.",
+      "Adding the incentive instead of deducting it."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t3-13",
+    "lecture": "t3",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Lecture cases 6 and 7: (1) BRAND rents Retail Unit A for 5 years; the owner may relocate BRAND to a similar unit but must pay the relocation costs; BRAND decides on assortment, prices and stock and controls access. (2) SAUSAGE rents 'a space' for 3 years that the operator may move at any time at minimal cost; many suitable areas exist. Lease or service contract?",
+    "modelAnswer": "(1) Lease: Retail Unit A is an identified asset – the owner's substitution right is not substantive because relocation is costly for him (he pays BRAND's costs); BRAND obtains substantially all benefits and directs the use. The cleaning/security/advertising services are non-lease components. (2) Service contract: the operator has a substantive substitution right (practical ability to move SAUSAGE at any time, many alternative areas, minimal cost, benefits from relocating) → no identified asset → payments expensed.",
+    "keyPoints": [
+      "Test identified asset / substitution right",
+      "Case 1: substitution not substantive (costly) → lease",
+      "Services are non-lease components",
+      "Case 2: substantive substitution right → service contract"
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Cases 6 & 7 – BRAND / SAUSAGE"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 4e – trucks"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Apply the IFRS 16 tests",
+        "lines": [
+          "1. Identified asset (no substantive substitution right)?",
+          "2. Customer gets substantially all economic benefits?",
+          "3. Customer directs how and for what purpose the asset is used?"
+        ]
+      },
+      {
+        "title": "BRAND – Retail Unit A",
+        "why": "A substitution right is only substantive if the supplier can practically substitute AND benefits economically. Here the owner must provide a similar unit and pay BRAND's relocation costs → no economic benefit → not substantive. BRAND decides on assortment, prices, stock and controls access → directs the use.",
+        "result": "Lease (services like cleaning/security are separate non-lease components)"
+      },
+      {
+        "title": "SAUSAGE – a space in the building",
+        "why": "The operator can move SAUSAGE at any time, many suitable areas exist, costs are minimal and relocating helps him use the space best → substantive substitution right → no identified asset.",
+        "result": "Service contract – payments expensed"
+      }
     ]
   }
 ]

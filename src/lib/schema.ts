@@ -40,19 +40,18 @@ export const SubjectSchema = z.object({
 export const CalendarEntrySchema = z.object({ name: z.string().min(1), date: isoDate });
 
 /** Fallbeschreibung mit Tabellen, auf die sich mehrere Fragen beziehen (wie in der Prüfung). */
+/** Tabelle wie in der Prüfung (Fallbeschreibung, Lösungsschritt). */
+export const TableSchema = z.object({
+  caption: z.string().optional(),
+  head: z.array(z.string()).min(1),
+  rows: z.array(z.array(z.string())).min(1),
+});
+
 export const CaseSchema = z.object({
   id,
   title: z.string().min(1),
   text: z.array(z.string().min(1)).default([]),
-  tables: z
-    .array(
-      z.object({
-        caption: z.string().optional(),
-        head: z.array(z.string()).min(1),
-        rows: z.array(z.array(z.string())).min(1),
-      }),
-    )
-    .default([]),
+  tables: z.array(TableSchema).default([]),
 });
 
 /** Feste Probeklausur im Aufbau der echten Prüfung: Teile → Aufgaben → Fragen mit Punkten. */
@@ -89,6 +88,13 @@ export const PaperSchema = z.object({
     .min(1),
 });
 
+/** Grundlage einer Aufgabe, z. B. { kind: "exam", source: "Altklausur 2024", ref: "Part 2 – CGU impairment" } */
+export const BasisSchema = z.object({
+  kind: z.enum(["exam", "slides", "case"]),
+  source: z.string().min(1),
+  ref: z.string().default(""),
+});
+
 const base = {
   id,
   lecture: id,
@@ -97,6 +103,27 @@ const base = {
   paperOnly: z.boolean().default(false),
   /** Check-up-Frage vom Quiz am Ende der Vorlesung – eigener Übungsmodus „Check-up-Fragen“ */
   checkup: z.boolean().default(false),
+  /** Woran die Aufgabe orientiert ist: Altklausur, Vorlesungsfolien oder Übungsfall der Vorlesung */
+  basis: z.array(BasisSchema).default([]),
+};
+
+/** Ein Schritt des Lösungswegs: was man tut, warum (Regel), Rechnung/Buchung, Zwischenergebnis. */
+export const StepSchema = z.object({
+  title: z.string().min(1),
+  /** Begründung: Standard, Regel, Überlegung */
+  why: z.string().default(""),
+  /** Rechen- oder Buchungszeilen, je Zeile ein Eintrag */
+  lines: z.array(z.string()).default([]),
+  table: TableSchema.optional(),
+  /** Ergebnis dieses Schritts */
+  result: z.string().default(""),
+});
+
+const solution = {
+  /** ausführlicher Lösungsweg in Schritten (ersetzt in der Anzeige die Musterlösung) */
+  steps: z.array(StepSchema).default([]),
+  /** typische Fehler bei dieser Aufgabe */
+  pitfalls: z.array(z.string().min(1)).default([]),
 };
 
 /** Ergebnis einer Rechenaufgabe, das automatisch geprüft wird (Prozent als Prozentzahl: 13.8 mit unit "%"). */
@@ -119,6 +146,7 @@ export const MCQuestionSchema = z.object({
   single: z.boolean().default(false),
   explanation: z.string().default(""),
   shuffle: z.boolean().default(true),
+  ...solution,
 });
 
 export const TFQuestionSchema = z.object({
@@ -140,6 +168,7 @@ export const ShortQuestionSchema = z.object({
   keyPoints: z.array(z.string().min(1)).min(1),
   /** Rechenaufgabe: Ergebnisse werden automatisch geprüft statt per KI/Selbstbewertung */
   results: z.array(CalcResultSchema).default([]),
+  ...solution,
 });
 
 export const QuestionSchema = z.discriminatedUnion("type", [
@@ -254,6 +283,9 @@ export type Framework = z.infer<typeof FrameworkSchema>;
 export type Formula = z.infer<typeof FormulaSchema>;
 export type CalendarEntry = z.infer<typeof CalendarEntrySchema>;
 export type CalcResult = z.infer<typeof CalcResultSchema>;
+export type Basis = z.infer<typeof BasisSchema>;
+export type Step = z.infer<typeof StepSchema>;
+export type Table = z.infer<typeof TableSchema>;
 
 export type SubjectContent = {
   subject: Subject;

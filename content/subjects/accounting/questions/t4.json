@@ -7,6 +7,18 @@
     "statement": "The distinction between equity and debt instruments is only important for the equity & liability side of the balance sheet, not for the asset side.",
     "answer": false,
     "explanation": "Wrong. The ISSUER classifies the instrument as liability or equity (IAS 32). The HOLDER needs the same classification on the asset side: under IFRS 9, debt instruments (SPPI) can be measured at amortised cost or FVOCI, while equity instruments are measured at fair value (through P/L or optionally OCI). So the debt/equity nature of an instrument also determines how investors measure their financial assets.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ],
     "checkup": true
   },
   {
@@ -17,6 +29,13 @@
     "statement": "A financial instrument that must be reimbursed by the company at the holder's request is equity if it is called a share.",
     "answer": false,
     "explanation": "Wrong. IAS 32 looks at substance, not the label: if the issuer has a contractual obligation it cannot avoid to deliver cash (here: redeem at the holder's request – a puttable instrument), it is a financial liability. \"If you have to write a cheque, it can't be equity\" – the name 'share' is irrelevant.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      }
+    ],
     "checkup": true
   },
   {
@@ -27,6 +46,18 @@
     "statement": "A financial instrument that contains no obligation to reimburse and no obligation to pay ongoing compensation is classified as equity.",
     "answer": true,
     "explanation": "Correct. Equity is the residual interest: if the issuer can always avoid paying (no mandatory redemption, discretionary 'interest' or dividends), there is no contractual obligation and the instrument is equity – even if it is called a bond (e.g. some perpetual hybrid bonds).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ],
     "checkup": true
   },
   {
@@ -37,6 +68,18 @@
     "statement": "Transaction costs related to issuing equity or debt instruments are immediately expensed.",
     "answer": false,
     "explanation": "Wrong. Equity: issue costs are deducted directly from equity (usually share premium) – no P/L impact. Debt: issue costs are deducted from the initial carrying amount of the liability and spread over its life through the effective interest rate (higher interest expense) – not expensed immediately.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ],
     "checkup": true
   },
   {
@@ -47,6 +90,18 @@
     "statement": "The difference between the number of issued shares and the number of authorised shares can be explained by share buy-backs (treasury shares).",
     "answer": false,
     "explanation": "Wrong. Authorised shares are the maximum the board may issue; the difference to issued shares are shares not (yet) issued. Treasury shares explain the difference between ISSUED and OUTSTANDING shares: outstanding ≤ issued ≤ authorised.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ],
     "checkup": true
   },
   {
@@ -57,6 +112,18 @@
     "statement": "Any difference between the buy-back price and the resale price of treasury shares is recognised not in the income statement but in the share premium account in equity.",
     "answer": true,
     "explanation": "Correct. Transactions in own shares are transactions with owners: no gain or loss in P/L (IAS 32.33). Example: bought at $11, resold at $15 → cash +15, treasury shares +11 (less negative), share premium +4.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ],
     "checkup": true
   },
   {
@@ -67,6 +134,13 @@
     "statement": "Shares on which the company must pay annual dividends and which the shareholders can ask to be reimbursed are classified as debt.",
     "answer": true,
     "explanation": "Correct. Both a mandatory dividend and a redemption at the holder's option are contractual obligations to deliver cash – classic features of a financial liability. Such preference shares would worsen, not improve, the debt/equity ratio.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      }
+    ],
     "checkup": true
   },
   {
@@ -77,6 +151,18 @@
     "statement": "Some financial instruments are composed of an equity and a debt component; in this case both components must be accounted for separately.",
     "answer": true,
     "explanation": "Correct. Compound instruments (convertible bonds, bonds with warrants) require split accounting by the issuer: first measure the liability component (cash flows discounted at the market rate for similar debt without conversion option), the equity component is the remainder. Example: convertible bond 100 → debt 95, equity (share premium) 5.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ],
     "checkup": true
   },
   {
@@ -86,7 +172,14 @@
     "difficulty": 1,
     "statement": "A perpetual bond issued by a company is classified as debt because it is called a bond.",
     "answer": false,
-    "explanation": "Wrong. The name is irrelevant. A perpetual bond without redemption obligation whose coupons can be deferred at the issuer's discretion (e.g. only paid if a dividend is paid on ordinary shares) is equity. If coupons are mandatory, it is a liability even without redemption."
+    "explanation": "Wrong. The name is irrelevant. A perpetual bond without redemption obligation whose coupons can be deferred at the issuer's discretion (e.g. only paid if a dividend is paid on ordinary shares) is equity. If coupons are mandatory, it is a liability even without redemption.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -95,7 +188,14 @@
     "difficulty": 1,
     "statement": "The interest expense of a bond measured at amortised cost equals its nominal (coupon) rate multiplied by its issuance amount.",
     "answer": false,
-    "explanation": "Wrong. Interest expense = EFFECTIVE interest rate × carrying amount at the beginning of the period. The coupon (nominal rate × nominal value) is the cash paid; the difference amortises the discount/premium and increases (decreases) the carrying amount towards the nominal value."
+    "explanation": "Wrong. Interest expense = EFFECTIVE interest rate × carrying amount at the beginning of the period. The coupon (nominal rate × nominal value) is the cash paid; the difference amortises the discount/premium and increases (decreases) the carrying amount towards the nominal value.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -104,7 +204,19 @@
     "difficulty": 1,
     "statement": "The classification of a financial instrument as debt or equity determines how its ongoing compensation is accounted for.",
     "answer": true,
-    "explanation": "Correct. Compensation on liabilities ('interest') is an expense in P/L (income determination); compensation on equity instruments ('dividends') is a distribution of profit recognised directly in equity – regardless of what the payments are called."
+    "explanation": "Correct. Compensation on liabilities ('interest') is an expense in P/L (income determination); compensation on equity instruments ('dividends') is a distribution of profit recognised directly in equity – regardless of what the payments are called.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Quiz (Folie 39)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -113,7 +225,14 @@
     "difficulty": 1,
     "statement": "An instrument repayable after 10 years that pays 5% interest only if a central bank reference rate is above 4% on 31 December is equity, because the interest is conditional.",
     "answer": false,
-    "explanation": "Wrong. The condition is outside the control of BOTH the issuer and the holder; the issuer cannot avoid paying if it occurs, and the principal must be repaid anyway → financial liability. Conditions only make an instrument equity if the issuer can unconditionally avoid the payment."
+    "explanation": "Wrong. The condition is outside the control of BOTH the issuer and the holder; the issuer cannot avoid paying if it occurs, and the principal must be repaid anyway → financial liability. Conditions only make an instrument equity if the issuer can unconditionally avoid the payment.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Principle – exercises"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -122,7 +241,14 @@
     "difficulty": 1,
     "statement": "Shares that the ISSUING ENTITY has the option to redeem at par at any time are equity.",
     "answer": true,
-    "explanation": "Correct. A call option of the issuer creates no obligation – the entity can choose never to redeem. Compare: if the HOLDER can require redemption (put), the shares are a liability."
+    "explanation": "Correct. A call option of the issuer creates no obligation – the entity can choose never to redeem. Compare: if the HOLDER can require redemption (put), the shares are a liability.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Principle – exercises"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -131,13 +257,21 @@
     "difficulty": 1,
     "statement": "A 'green' bond repayable after 15 years with 3% interest, whose rate steps up (or which becomes immediately repayable) if CO2 targets are missed, is a financial liability.",
     "answer": true,
-    "explanation": "Correct. Interest and repayment are contractual obligations; the ESG-linked condition only changes the amount or timing of payments and is not under the issuer's unconditional control."
+    "explanation": "Correct. Interest and repayment are contractual obligations; the ESG-linked condition only changes the amount or timing of payments and is not under the issuer's unconditional control.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Principle – exercises"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t4-01",
     "lecture": "t4",
     "difficulty": 2,
+    "single": true,
     "prompt": "Which of the following financial instruments represents a DEBT?",
     "options": [
       {
@@ -157,7 +291,18 @@
       "a"
     ],
     "explanation": "Mandatory interest and repayment → liability. In the other two cases the issuer can avoid any payment (dividends on ordinary shares are discretionary) → equity (exam 2024 type).",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 4 – QCM"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Principle – exercises"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -165,6 +310,7 @@
     "id": "mc-t4-02",
     "lecture": "t4",
     "difficulty": 2,
+    "single": true,
     "prompt": "Classify the instruments (lecture exercises). Which are financial LIABILITIES?\n(1) Repayable after 10 years, interest at Euribor · (2) Infinite duration, interest only if a dividend is paid on common shares · (3) Shares the holder can require the entity to redeem at par at any time · (4) Shares the entity has the option to redeem at par at any time",
     "options": [
       {
@@ -188,14 +334,26 @@
       "a"
     ],
     "explanation": "Euribor bond → liability (mandatory interest and repayment). Dividend-linked perpetual → equity (dividends on ordinary shares are discretionary, so the issuer can avoid paying). Holder put → liability (the issuer cannot refuse redemption). Issuer call → equity (the issuer can simply never redeem).",
-    "shuffle": false,
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Principle – exercises"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T4",
+        "ref": "Exercise 2 – debt or equity"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
     "id": "mc-t4-03",
     "lecture": "t4",
     "difficulty": 2,
+    "single": true,
     "prompt": "The CFO wants to improve the debt/equity ratio with preferred shares: 5% guaranteed cumulative dividend and a holder right to request buy-back after 2 years. What do you advise?",
     "options": [
       {
@@ -219,13 +377,20 @@
       "a"
     ],
     "explanation": "Guaranteed (cumulative) dividends and the holder's redemption right are contractual obligations → the instrument is debt and would worsen the ratio.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Preferred shares case"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t4-04",
     "lecture": "t4",
     "difficulty": 2,
+    "single": true,
     "prompt": "A company issues 1,000 shares with a par value of €5 at €15 per share; issue costs are €300. What is the impact?",
     "options": [
       {
@@ -249,13 +414,25 @@
       "a"
     ],
     "explanation": "Par value goes to share capital (5,000), the excess to share premium (10,000); issue costs of equity are deducted from equity (share premium), not expensed.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Share issue"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t4-05",
     "lecture": "t4",
     "difficulty": 2,
+    "single": true,
     "prompt": "A company bought back 20,000 own shares at €15. It now sells 2,000 of them at €20. What is the impact?",
     "options": [
       {
@@ -279,13 +456,20 @@
       "a"
     ],
     "explanation": "Treasury shares are released at their cost (2,000 × 15 = 30,000); the excess of 10,000 goes to share premium – never to P/L.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 5 – Multiple choice"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t4-06",
     "lecture": "t4",
     "difficulty": 2,
+    "single": true,
     "prompt": "In N−1 a corporation bought back 40,000 own shares (€30 par) for €45 each. In N it sold 1,000 of them for €40 each. What is the effect on equity in N?",
     "options": [
       {
@@ -309,13 +493,20 @@
       "a"
     ],
     "explanation": "Released at cost 45,000; the shortfall of 5,000 reduces share premium. No gain or loss in P/L or OCI (exam 2023).",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 5 – Multiple choice"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t4-07",
     "lecture": "t4",
     "difficulty": 3,
+    "single": true,
     "prompt": "Pacific bought 10,000 treasury shares at $11 (par $1) and now CANCELS 1,000 of them. What is the impact?",
     "options": [
       {
@@ -339,7 +530,18 @@
       "a"
     ],
     "explanation": "Cancellation removes the shares from issued capital at par (1,000), the rest of their cost reduces share premium; total equity is unchanged (it was reduced at buy-back).",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Treasury shares"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 5 – Multiple choice"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -347,6 +549,7 @@
     "lecture": "t4",
     "case": "equity-section",
     "difficulty": 2,
+    "single": true,
     "prompt": "How many new shares did the company issue in 2020?",
     "options": [
       {
@@ -370,7 +573,18 @@
       "a"
     ],
     "explanation": "Share capital increased by 885 − 777 = 108 M€; with a par value of €2 → 54 million new shares.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T4",
+        "ref": "Exercise 3 – Airbus equity"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -379,6 +593,7 @@
     "lecture": "t4",
     "case": "equity-section",
     "difficulty": 2,
+    "single": true,
     "prompt": "For what total issue price were the new shares issued in 2020?",
     "options": [
       {
@@ -402,7 +617,18 @@
       "a"
     ],
     "explanation": "Issue price = increase in share capital (108) + increase in share premium (3,555 − 2,941 = 614) = 722 M€ (≈ €13.37 per share). Assumes no other movements in share premium.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T4",
+        "ref": "Exercise 3 – Airbus equity"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -411,6 +637,7 @@
     "lecture": "t4",
     "case": "equity-section",
     "difficulty": 2,
+    "single": true,
     "prompt": "What does the change in treasury shares tell you?",
     "options": [
       {
@@ -434,7 +661,18 @@
       "a"
     ],
     "explanation": "Treasury shares became more negative by 32 M€ (from −50 to −82): net buy-backs at cost. The number of shares cannot be derived because treasury shares are carried at purchase price, not par.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T4",
+        "ref": "Exercise 3 – Airbus equity"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -443,6 +681,7 @@
     "lecture": "t4",
     "case": "bond-b",
     "difficulty": 3,
+    "single": true,
     "prompt": "What are the impacts of the bond in N1?",
     "options": [
       {
@@ -466,7 +705,13 @@
       "a"
     ],
     "explanation": "Issue: 5,000 × 90 = 450,000. Interest = 7% × 450,000 = 31,500; coupon = 6% × 500,000 = 30,000; the difference 1,500 increases the carrying amount → 451,500.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 4 – Bond"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -475,6 +720,7 @@
     "lecture": "t4",
     "case": "bond-b",
     "difficulty": 3,
+    "single": true,
     "prompt": "What is the interest expense in N2 and the carrying amount at the end of N2?",
     "options": [
       {
@@ -498,7 +744,13 @@
       "a"
     ],
     "explanation": "Interest N2 = 7% × 451,500 = 31,605; carrying amount = 451,500 + 31,605 − 30,000 = 453,105. Over 10 years it accretes to 500,000.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 4 – Bond"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -506,6 +758,7 @@
     "id": "mc-t4-13",
     "lecture": "t4",
     "difficulty": 3,
+    "single": true,
     "prompt": "A bond with nominal value 1,000 M€ is issued on 1 January year 1 at 900 M€; coupon 4% (paid annually), effective rate 8%, 5 years. Impact in YEAR 2?",
     "options": [
       {
@@ -529,7 +782,13 @@
       "a"
     ],
     "explanation": "Year 1: interest 8% × 900 = 72, coupon 40 → 932. Year 2: interest 8% × 932 = 74.56, coupon 40 → 966.56.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -537,6 +796,7 @@
     "id": "mc-t4-14",
     "lecture": "t4",
     "difficulty": 1,
+    "single": true,
     "prompt": "In IFRS, 'split accounting' means that …",
     "options": [
       {
@@ -560,13 +820,20 @@
       "a"
     ],
     "explanation": "Liability component first (discounted cash flows at the market rate for similar non-convertible debt), equity component = remainder.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t4-15",
     "lecture": "t4",
     "difficulty": 1,
+    "single": true,
     "prompt": "Which of the following is NOT a reason for companies to buy back their own shares?",
     "options": [
       {
@@ -594,7 +861,13 @@
       "e"
     ],
     "explanation": "All four are reasons given in the lecture. A buy-back reduces equity and the number of outstanding shares, which raises EPS and ROE mechanically. Trading own shares is a transaction with owners and never creates a gain or loss in P/L – differences go to share premium.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Share buy-back"
+      }
+    ]
   },
   {
     "type": "short",
@@ -610,6 +883,72 @@
       "Interest expense = effective rate × carrying amount (31,500; 31,605)",
       "Cash coupon = 6% × nominal = 30,000 per year",
       "Carrying amounts 451,500 and 453,105"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 4 – Bond"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Initial recognition (1 January N1)",
+        "why": "A bond measured at amortised cost is recognised at the amount received (issue price), not at nominal value.",
+        "lines": [
+          "Cash received: 5,000 × €90 = 450,000",
+          "Financial liability: 450,000 (nominal 500,000 → discount 50,000)"
+        ]
+      },
+      {
+        "title": "N1 – interest expense with the EFFECTIVE rate",
+        "why": "Interest expense = effective rate × opening carrying amount. The cash coupon is based on the NOMINAL rate × nominal value. The difference increases the liability (amortisation of the discount).",
+        "lines": [
+          "Interest expense: 7% × 450,000 = 31,500 (P/L)",
+          "Coupon paid: 6% × 500,000 = 30,000 (cash)",
+          "Carrying amount end N1: 450,000 + 31,500 − 30,000 = 451,500"
+        ]
+      },
+      {
+        "title": "N2 – same logic on the new carrying amount",
+        "lines": [
+          "Interest expense: 7% × 451,500 = 31,605",
+          "Coupon paid: 30,000",
+          "Carrying amount end N2: 451,500 + 31,605 − 30,000 = 453,105"
+        ]
+      },
+      {
+        "title": "Summary of impacts",
+        "table": {
+          "head": [
+            "",
+            "N1",
+            "N2"
+          ],
+          "rows": [
+            [
+              "Interest expense (P/L)",
+              "31,500",
+              "31,605"
+            ],
+            [
+              "Cash outflow (coupon)",
+              "30,000",
+              "30,000"
+            ],
+            [
+              "Liability at year end",
+              "451,500",
+              "453,105"
+            ]
+          ]
+        },
+        "result": "The liability grows each year until it reaches 500,000 at the end of N10"
+      }
+    ],
+    "pitfalls": [
+      "Using the coupon (30,000) as interest expense.",
+      "Recognising the liability at nominal 500,000 on day one."
     ]
   },
   {
@@ -625,6 +964,45 @@
       "Label and probability irrelevant",
       "Conditions outside issuer's control don't help",
       "Correct classification of examples"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Debt vs equity principle"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T4",
+        "ref": "Exercise 2 – debt or equity"
+      }
+    ],
+    "steps": [
+      {
+        "title": "State the IAS 32 criterion",
+        "why": "Financial liability = contractual obligation of the issuer to deliver cash (or another financial asset) that it CANNOT avoid – for repayment and/or ongoing compensation. No such obligation → equity (residual interest)."
+      },
+      {
+        "title": "What does not matter",
+        "lines": [
+          "The label ('share', 'bond', 'dividend', 'interest')",
+          "The probability that payment will happen",
+          "Conditions outside the issuer's control do not remove the obligation"
+        ]
+      },
+      {
+        "title": "Apply to examples",
+        "lines": [
+          "10-year bond, fixed 6% coupon → obligation to pay and repay → LIABILITY",
+          "Perpetual note, coupon only if the issuer pays an ordinary dividend → issuer can avoid paying → EQUITY",
+          "Preference shares redeemable at the HOLDER's option → issuer cannot avoid repayment → LIABILITY",
+          "Preference shares redeemable at the ISSUER's option, non-cumulative dividend → EQUITY"
+        ],
+        "result": "Obligation the issuer cannot avoid → liability; otherwise equity"
+      }
+    ],
+    "pitfalls": [
+      "Classifying by name ('perpetual bond' is often equity, 'preference share' can be debt)."
     ]
   },
   {
@@ -640,6 +1018,138 @@
       "Liability = PV of cash flows at market rate without option",
       "Equity = residual",
       "Example / subsequent amortised cost of the liability"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Compound instruments"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 7 – Convertible bond"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Recognise the compound instrument",
+        "why": "A convertible bond contains (1) a liability: the obligation to pay coupons and repay principal, and (2) an equity component: the holder's option to convert into a fixed number of shares. IAS 32 requires split accounting at issuance."
+      },
+      {
+        "title": "Measure the liability component first",
+        "why": "Discount the contractual cash flows (coupons + principal) at the market rate of a similar bond WITHOUT conversion option.",
+        "lines": [
+          "Liability = coupon × annuity factor + nominal × discount factor (at the market rate)"
+        ]
+      },
+      {
+        "title": "Equity component = residual",
+        "lines": [
+          "Equity component = proceeds − liability component"
+        ],
+        "why": "It is recognised directly in equity (e.g. share premium / other reserves) and never remeasured."
+      },
+      {
+        "title": "Example",
+        "lines": [
+          "Proceeds 150; coupon 4% (6 p.a.), 5 years; market rate 6%",
+          "Liability = 6 × 4.2124 + 150 × 0.7473 = 25.27 + 112.09 = 137.36",
+          "Equity = 150 − 137.36 = 12.64"
+        ],
+        "why": "Afterwards the liability is measured at amortised cost: interest expense at 6% on the carrying amount, cash coupon 6."
+      }
+    ],
+    "pitfalls": [
+      "Discounting at the bond's own coupon rate – that would give a liability equal to the proceeds and no equity component.",
+      "Measuring equity first: the equity part is always the residual."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t4-04",
+    "lecture": "t4",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Lecture exercise 2 (IAS 32): classify as debt or equity – (A) ordinary shares; (B) preference shares, non-cumulative 5% dividend, non-redeemable; (C) preference shares, cumulative 5% dividend, redeemable at the holder's option; (D) preference shares, cumulative 5% dividend, redeemable at the issuer's option; (E) obligation to deliver as many own shares as equal €100,000; (F) options giving the holder the right to buy 100,000 shares at €1 each.",
+    "modelAnswer": "A equity (residual interest). B equity (no obligation to pay or repay). C liability (holder can force repayment). D equity (issuer can avoid repayment; dividends remain discretionary). E liability (variable number of own shares = used like cash; fails fixed-for-fixed). F equity (fixed number of shares for fixed amount).",
+    "keyPoints": [
+      "Criterion: unavoidable obligation to deliver cash",
+      "A, B, D equity",
+      "C liability (holder's redemption right)",
+      "E liability (variable number of shares)",
+      "F equity (fixed-for-fixed)"
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T4",
+        "ref": "Exercise 2 – debt or equity"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 4c – which instrument is debt?"
+      }
+    ],
+    "steps": [
+      {
+        "title": "The test",
+        "why": "IAS 32: liability if the issuer has a contractual obligation it cannot avoid to deliver cash/financial assets – or to deliver a VARIABLE number of own shares. Equity if it can avoid payment, or delivers a fixed number of shares for a fixed amount (fixed-for-fixed)."
+      },
+      {
+        "title": "Apply to each instrument",
+        "table": {
+          "head": [
+            "",
+            "Instrument",
+            "Obligation?",
+            "Classification"
+          ],
+          "rows": [
+            [
+              "A",
+              "Ordinary shares",
+              "No – residual interest",
+              "Equity"
+            ],
+            [
+              "B",
+              "Non-cumulative, non-redeemable prefs",
+              "No – dividends discretionary, no repayment",
+              "Equity"
+            ],
+            [
+              "C",
+              "Cumulative prefs, redeemable by holder",
+              "Yes – holder can demand repayment",
+              "Liability"
+            ],
+            [
+              "D",
+              "Cumulative prefs, redeemable by issuer",
+              "No – issuer decides",
+              "Equity"
+            ],
+            [
+              "E",
+              "Shares worth €100,000",
+              "Yes – variable number of shares (like cash)",
+              "Liability"
+            ],
+            [
+              "F",
+              "Options: 100,000 shares at €1",
+              "No – fixed for fixed",
+              "Equity"
+            ]
+          ]
+        }
+      }
+    ],
+    "pitfalls": [
+      "Classifying by name ('preference share' ≠ automatically equity).",
+      "Thinking 'settled in shares' always means equity – a variable number is a liability."
     ]
   }
 ]

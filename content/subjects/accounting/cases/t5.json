@@ -80,5 +80,69 @@
         ]
       }
     ]
+  },
+  {
+    "id": "cleanmotors",
+    "title": "CleanMotors – ROCE (lecture case)",
+    "text": [
+      "CleanMotors manufactures electric motors for yachting; ROCE is its main KPI. Use a normative tax rate of 20%. Capital employed = equity + net financial debt (borrowings + lease debt − cash − current financial assets), at year end."
+    ],
+    "tables": [
+      {
+        "caption": "Key figures (€000)",
+        "head": [
+          "",
+          "N",
+          "N−1"
+        ],
+        "rows": [
+          [
+            "Net sales",
+            "270,000",
+            "250,000"
+          ],
+          [
+            "Operational profit (before non-recurring items)",
+            "28,900",
+            "12,125"
+          ],
+          [
+            "Other non-recurring income and expenses",
+            "(7,400)",
+            "(500)"
+          ],
+          [
+            "Operating profit",
+            "21,500",
+            "11,625"
+          ],
+          [
+            "Equity",
+            "100,000",
+            "80,000"
+          ],
+          [
+            "Borrowings (long and short term)",
+            "126,000",
+            "49,600"
+          ],
+          [
+            "Lease debt (non-current and current)",
+            "141,200",
+            "40,500"
+          ],
+          [
+            "Cash and cash equivalents",
+            "23,800",
+            "24,500"
+          ],
+          [
+            "Current financial assets",
+            "23,000",
+            "12,000"
+          ]
+        ]
+      }
+    ]
   }
 ]

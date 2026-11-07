@@ -4,13 +4,33 @@
     "id": "sa-p2-01",
     "lecture": "t1",
     "case": "is-excerpt-2023",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Do you think that this income statement is based on IFRS? Justify with one element.",
     "modelAnswer": "No (at least not fully IFRS-compliant). It shows an 'extraordinary result' line – IAS 1.87 prohibits presenting any item of income or expense as extraordinary. (Any one justified element suffices.)",
     "keyPoints": [
       "Extraordinary items are prohibited under IFRS (IAS 1.87)",
       "Conclusion: not IFRS"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 1 – Financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Scan for elements IFRS does not allow",
+        "why": "IAS 1.87: no item of income or expense may be presented as 'extraordinary' – neither in the income statement nor in the notes.",
+        "lines": [
+          "The statement shows 'Extraordinary result' (−640)"
+        ],
+        "result": "No – not an IFRS income statement"
+      }
+    ],
+    "pitfalls": [
+      "Arguing with 'by nature' – presenting by nature IS allowed under IFRS, so it is no evidence."
     ]
   },
   {
@@ -18,7 +38,7 @@
     "id": "sa-p2-02",
     "lecture": "t1",
     "case": "is-excerpt-2023",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Do you think that this income statement is a consolidated income statement? Justify with one element.",
     "modelAnswer": "Probably not. A consolidated income statement would split net income between owners of the parent and non-controlling interests, and would typically show a share of profit of associates; neither appears. (Hint for a consolidated statement would be the opposite elements.)",
@@ -26,6 +46,27 @@
       "No split of net income into group share / non-controlling interests",
       "No share of profit of associates",
       "Conclusion: likely individual statement"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 1 – Financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Recall what a consolidated income statement must show",
+        "why": "IFRS 10/IAS 1: net income is split into 'attributable to owners of the parent' and 'attributable to non-controlling interests'; associates appear as 'share of profit of associates'."
+      },
+      {
+        "title": "Check the statement",
+        "lines": [
+          "No split of the net result into group share / NCI",
+          "No share of profit of associates"
+        ],
+        "result": "Probably not consolidated – an individual income statement"
+      }
     ]
   },
   {
@@ -41,6 +82,32 @@
       "Short-term lease exemption (≤ 12 months)",
       "Low-value asset exemption",
       "Service/non-lease components and variable payments are expensed"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 1 – Financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Recall the IFRS 16 lessee model",
+        "why": "In principle every lease → right-of-use asset + lease liability, expenses = depreciation (the line 'depreciation of right-of-use assets') + interest. So a rent expense needs a reason."
+      },
+      {
+        "title": "Reason 1 – optional exemptions",
+        "lines": [
+          "Short-term leases: lease term ≤ 12 months",
+          "Leases of low-value assets (≈ USD 5,000 when new, e.g. laptops)"
+        ],
+        "why": "For these the lessee may expense the payments straight-line as rent."
+      },
+      {
+        "title": "Reason 2 – payments outside the lease liability",
+        "why": "Service components (maintenance, cleaning, service charges = 'associated charges') and variable payments not linked to an index are not part of the lease liability and are expensed.",
+        "result": "Rent = exempt leases + non-lease/variable components"
+      }
     ]
   },
   {
@@ -48,13 +115,31 @@
     "id": "sa-p2-04",
     "lecture": "t2",
     "case": "airline-goodwill",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Explain why there is no goodwill amortisation in 2022.",
     "modelAnswer": "Under IFRS goodwill has an indefinite useful life and is not amortised (IFRS 3/IAS 38); instead it is tested for impairment at least annually (IAS 36). As no impairment was necessary, the amount is unchanged.",
     "keyPoints": [
       "Goodwill is not amortised under IFRS",
       "Annual impairment test instead"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Recall the IFRS rule",
+        "why": "Goodwill has an indefinite useful life → it is NOT amortised (IFRS 3). Instead IAS 36 requires an impairment test at least once a year."
+      },
+      {
+        "title": "Apply to the note",
+        "why": "The test did not show an impairment, so goodwill stays at 365 M£.",
+        "result": "No amortisation; annual impairment test → no loss in 2022"
+      }
     ]
   },
   {
@@ -71,6 +156,37 @@
       "Recoverable amount = higher of FV less costs of disposal and value in use",
       "Value in use = PV of future cash flows",
       "Airline: 5-year plan, 2% growth, pre-tax discount rate"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Test level: CGU",
+        "why": "Goodwill generates no cash flows on its own, so it is allocated to the cash-generating unit(s) that benefit from the acquisition and tested together with their assets."
+      },
+      {
+        "title": "General formula",
+        "lines": [
+          "Recoverable amount = HIGHER of fair value less costs of disposal and value in use",
+          "Value in use = present value of the CGU's expected future cash flows",
+          "Impairment if carrying amount (incl. goodwill) > recoverable amount → goodwill reduced first"
+        ]
+      },
+      {
+        "title": "This airline",
+        "lines": [
+          "Recoverable amount = value in use of the airline CGU",
+          "Cash flows from the board-approved 5-year plan",
+          "Extrapolated with long-term growth of 2%",
+          "Discounted with a pre-tax rate (11.0% in 2022)"
+        ],
+        "result": "VIU-based test at CGU level, 5-year plan + 2% growth, 11% pre-tax rate"
+      }
     ]
   },
   {
@@ -87,6 +203,31 @@
       "Higher fuel price → lower cash flows",
       "Recoverable amount decreases",
       "2022 assumptions more prudent"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Effect of the discount rate (9.5% → 11.0%)",
+        "why": "A higher discount rate lowers the present value of the same future cash flows → value in use falls."
+      },
+      {
+        "title": "Effect of the fuel price ($650 → $900 per tonne)",
+        "why": "Fuel is a major cost: higher price → lower forecast cash flows → value in use falls."
+      },
+      {
+        "title": "Conclude",
+        "why": "Both changes reduce the recoverable amount and the headroom over the carrying amount; an impairment becomes more likely.",
+        "result": "2022 assumptions are stricter / more prudent than 2021"
+      }
+    ],
+    "pitfalls": [
+      "Concluding that a lower recoverable amount means an impairment was booked – it only reduces the headroom (goodwill was unchanged)."
     ]
   },
   {
@@ -103,6 +244,60 @@
       "N3: recoverable 175,000 (VIU > FV − costs 152,000) → impairment 35,000",
       "N4: depreciation 25,000 → 150,000",
       "Reversal capped at 180,000 → reversal 30,000"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 3 – Measurement of non-current assets"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Annual depreciation",
+        "lines": [
+          "300,000 / 10 years = 30,000 per year"
+        ]
+      },
+      {
+        "title": "N1 and N2 – no indication of impairment",
+        "why": "IAS 36: PP&E is only tested when there is an INDICATION of impairment. Production runs as planned → no test, even though value in use is slightly below the carrying amount.",
+        "lines": [
+          "N1: carrying amount 300,000 − 30,000 = 270,000",
+          "N2: 270,000 − 30,000 = 240,000"
+        ]
+      },
+      {
+        "title": "N3 – new law = external indication → impairment test",
+        "lines": [
+          "Carrying amount before test: 240,000 − 30,000 = 210,000",
+          "FV less costs to sell: 170,000 − 18,000 = 152,000",
+          "Value in use: 175,000",
+          "Recoverable amount = higher = 175,000",
+          "Impairment loss = 210,000 − 175,000 = 35,000 (expense)"
+        ],
+        "result": "Carrying amount end N3: 175,000"
+      },
+      {
+        "title": "N4 – new depreciation basis",
+        "why": "After an impairment, the new carrying amount is depreciated over the remaining useful life (7 years).",
+        "lines": [
+          "Depreciation N4: 175,000 / 7 = 25,000 → 150,000"
+        ]
+      },
+      {
+        "title": "N4 – transition measure = indication of reversal",
+        "lines": [
+          "Recoverable amount = max(200,000 − 15,000; 190,000) = 190,000",
+          "Cap: carrying amount had there been no impairment = 300,000 − 4 × 30,000 = 180,000",
+          "Reversal = 180,000 − 150,000 = 30,000 (income)"
+        ],
+        "result": "Carrying amount end N4: 180,000 (afterwards depreciation 30,000 p.a. again)"
+      }
+    ],
+    "pitfalls": [
+      "Testing in N1/N2 without an indication.",
+      "Reversing up to the recoverable amount (190,000) instead of the cap (180,000)."
     ]
   }
 ]

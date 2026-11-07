@@ -373,7 +373,7 @@ function Session({
 
           <div className="mt-6 space-y-4">
             {revealed && q.type === "mc" && mc && (
-              <Explanation correct={wasCorrect} text={q.explanation} partial={mc.partial} />
+              <Explanation correct={wasCorrect} text={q.explanation} partial={mc.partial} q={q} />
             )}
             {revealed && q.type === "tf" && <Explanation correct={wasCorrect} text={q.explanation} />}
             {q.type === "short" && (revealed || pending) && (

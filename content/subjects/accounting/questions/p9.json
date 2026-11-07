@@ -4,7 +4,7 @@
     "id": "sa-p9-01",
     "lecture": "t1",
     "case": "vectis-cfs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "define",
     "prompt": "Briefly define the operating, investing and financing activities distinguished in the statement of cash flows.",
     "modelAnswer": "Operating activities: the principal revenue-producing activities of the entity (cash from customers, payments to suppliers and employees, taxes) and other activities that are not investing or financing.\nInvesting activities: acquisition and disposal of long-term assets and other investments – PPE, intangibles, subsidiaries, financial investments.\nFinancing activities: changes in the size and composition of equity and borrowings – issuing or buying back shares, dividends paid, raising or repaying loans, lease liability repayments.",
@@ -12,6 +12,27 @@
       "Operating: main revenue-producing activities",
       "Investing: acquisition/disposal of non-current assets and investments",
       "Financing: equity and financial liabilities (shares, dividends, borrowings)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 1 – Cash flow statement"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Operating activities",
+        "why": "Main revenue-producing activities: cash from customers, payments to suppliers and employees, taxes – plus everything that is not investing or financing."
+      },
+      {
+        "title": "Investing activities",
+        "why": "Acquisition and disposal of long-term assets and investments: PPE, intangibles, subsidiaries, financial investments."
+      },
+      {
+        "title": "Financing activities",
+        "why": "Changes in equity and borrowings: share issues and buy-backs, dividends paid, new loans and repayments, lease liability repayments."
+      }
     ]
   },
   {
@@ -19,7 +40,7 @@
     "id": "sa-p9-02",
     "lecture": "t1",
     "case": "vectis-cfs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "IFRS allows two methods to present cash flows from operating activities. Briefly explain both. Which one does Vectis use?",
     "modelAnswer": "Direct method: shows the major classes of gross cash receipts and payments (cash received from customers, cash paid to suppliers and employees, …).\nIndirect method: starts from profit and adjusts it for non-cash items (depreciation, provisions), for items that belong to investing or financing (e.g. gains on disposals) and for changes in working capital.\nVectis uses the indirect method – its statement starts with net profit and adds back depreciation, provisions and working capital changes.",
@@ -27,6 +48,28 @@
       "Direct: gross cash receipts and payments",
       "Indirect: profit adjusted for non-cash items, investing/financing items and working capital",
       "Vectis: indirect method"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 1 – Cash flow statement"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Direct method",
+        "why": "Gross cash receipts and payments by class (from customers, to suppliers, to employees …)."
+      },
+      {
+        "title": "Indirect method",
+        "why": "Starts from profit and adjusts for non-cash items (depreciation, provisions), investing/financing items (gains on disposal) and working-capital changes."
+      },
+      {
+        "title": "Vectis",
+        "why": "Starts with net profit 8,200 and adds back depreciation, provisions …",
+        "result": "Indirect method"
+      }
     ]
   },
   {
@@ -34,7 +77,7 @@
     "id": "sa-p9-03",
     "lecture": "t1",
     "case": "vectis-cfs",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Vectis' cash flow from investing activities is negative. Is this good or bad news? Explain briefly.",
     "modelAnswer": "Generally good news: a negative investing cash flow means Vectis invests more in non-current assets (PPE, intangibles, an acquisition) than it sells. Without investment a company cannot sustain revenue and cash generation in the long run or grow. The quality of the investments still has to be analysed; here they are comfortably financed by operating cash flow (11,650 > 8,700).",
@@ -42,6 +85,24 @@
       "Negative = net investment in non-current assets",
       "Usually positive sign for future revenues and growth",
       "Quality of the investments must be assessed"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 1 – Cash flow statement"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Read the sign",
+        "why": "Negative investing cash flow = Vectis spends more on non-current assets (capex 6,800, an acquisition 2,300) than it receives from disposals (400)."
+      },
+      {
+        "title": "Interpret",
+        "why": "Investment is needed to sustain and grow future revenue → usually good news. It is comfortably covered by operating cash flow (11,650 > 8,700). The quality of the investments still has to be judged.",
+        "result": "Generally good news"
+      }
     ]
   },
   {
@@ -61,10 +122,65 @@
       "Consolidated total 1,520"
     ],
     "results": [
-      { "label": "Parent Company PPE", "value": 470 },
-      { "label": "Goodwill", "value": 110 },
-      { "label": "Consolidated accounts payable", "value": 960 },
-      { "label": "Consolidated balance sheet total", "value": 1520 }
+      {
+        "label": "Parent Company PPE",
+        "value": 470
+      },
+      {
+        "label": "Goodwill",
+        "value": 110
+      },
+      {
+        "label": "Consolidated accounts payable",
+        "value": 960
+      },
+      {
+        "label": "Consolidated balance sheet total",
+        "value": 1520
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 2 – Consolidated financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Parent's capital",
+        "why": "At the acquisition date consolidated equity = parent's equity (the subsidiary's equity is eliminated).",
+        "lines": [
+          "Parent capital = consolidated capital = 510"
+        ]
+      },
+      {
+        "title": "Parent's totals and PPE",
+        "lines": [
+          "Total E&L = 510 + 50 + 910 = 1,470 = total assets",
+          "PPE = 1,470 − 860 − 140 = 470",
+          "Check: 470 + 560 = 1,030 = consolidated PPE ✓"
+        ]
+      },
+      {
+        "title": "Goodwill",
+        "lines": [
+          "Subsidiary net assets: 240 + 130 = 370",
+          "Goodwill = 860 − 370 − brand 380 = 110"
+        ]
+      },
+      {
+        "title": "Remaining consolidated amounts",
+        "lines": [
+          "Consolidated net income = parent's 50 (pre-acquisition results eliminated)",
+          "Accounts payable = 910 + 190 − 140 intercompany = 960",
+          "Total = 110 + 380 + 1,030 = 1,520 = 510 + 50 + 960"
+        ],
+        "result": "PPE 470; goodwill 110; payables 960; total 1,520"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting to eliminate the intercompany receivable/payable of 140."
     ]
   },
   {
@@ -80,23 +196,59 @@
       "Intercompany receivables/payables eliminated",
       "Subsidiary's pre-acquisition retained earnings eliminated against the investment",
       "No post-acquisition earnings yet at the acquisition date"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 2 – Consolidated financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Accounts receivable",
+        "why": "All of the parent's receivables are owed by the subsidiary – within the group they are intercompany and are eliminated against the matching payables."
+      },
+      {
+        "title": "Retained earnings",
+        "why": "The parent has none; the subsidiary's retained earnings (130) were earned before the acquisition and are eliminated with the investment. At the acquisition date the group has no post-acquisition earnings yet.",
+        "result": "Both disappear through consolidation entries"
+      }
     ]
   },
   {
     "type": "mc",
     "id": "mc-p9-01",
     "lecture": "t3",
-    "difficulty": 1,
+    "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "Company A stops a machine for 2 months in N for major maintenance costing €250,000. Afterwards the machine can be used exactly as before over its remaining useful life – no extra output, life or quality. The maintenance cost should be …",
     "options": [
-      { "id": "a", "text": "expensed" },
-      { "id": "b", "text": "capitalised and depreciated over the remaining useful life of the machine" },
-      { "id": "c", "text": "capitalised and depreciated until the next maintenance is due" }
+      {
+        "id": "a",
+        "text": "expensed"
+      },
+      {
+        "id": "b",
+        "text": "capitalised and depreciated over the remaining useful life of the machine"
+      },
+      {
+        "id": "c",
+        "text": "capitalised and depreciated until the next maintenance is due"
+      }
     ],
-    "correct": ["a"],
-    "explanation": "Subsequent costs are capitalised only if they generate additional future economic benefits (more output, longer life, better quality). Here the work merely maintains the machine → expense."
+    "correct": [
+      "a"
+    ],
+    "explanation": "Subsequent costs are capitalised only if they generate additional future economic benefits (more output, longer life, better quality). Here the work merely maintains the machine → expense.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 3 – Non-current assets"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
@@ -105,18 +257,45 @@
     "case": "kerris-building",
     "difficulty": 3,
     "single": true,
-    "shuffle": false,
     "prompt": "At what amount is the building shown in Kerris' balance sheet on 31 December N+5?",
     "options": [
-      { "id": "a", "text": "€3,000,000" },
-      { "id": "b", "text": "€2,300,000" },
-      { "id": "c", "text": "€1,800,000" },
-      { "id": "d", "text": "€1,750,000" },
-      { "id": "e", "text": "€1,400,000" },
-      { "id": "f", "text": "€1,200,000" }
+      {
+        "id": "a",
+        "text": "€3,000,000"
+      },
+      {
+        "id": "b",
+        "text": "€2,300,000"
+      },
+      {
+        "id": "c",
+        "text": "€1,800,000"
+      },
+      {
+        "id": "d",
+        "text": "€1,750,000"
+      },
+      {
+        "id": "e",
+        "text": "€1,400,000"
+      },
+      {
+        "id": "f",
+        "text": "€1,200,000"
+      }
     ],
-    "correct": ["d"],
-    "explanation": "After the impairment (1,800,000 at N+3) depreciation is 1,800,000 / 9 = 200,000 → carrying amount N+5 before the test 1,400,000. The reversal is capped at the amount without any impairment: 3,000,000 − 5 × 250,000 = 1,750,000. The recoverable amount (2,300,000) is higher, so the building is shown at 1,750,000."
+    "correct": [
+      "d"
+    ],
+    "explanation": "After the impairment (1,800,000 at N+3) depreciation is 1,800,000 / 9 = 200,000 → carrying amount N+5 before the test 1,400,000. The reversal is capped at the amount without any impairment: 3,000,000 − 5 × 250,000 = 1,750,000. The recoverable amount (2,300,000) is higher, so the building is shown at 1,750,000.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 3 – Non-current assets"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
@@ -125,17 +304,41 @@
     "case": "kerris-building",
     "difficulty": 3,
     "single": true,
-    "shuffle": false,
     "prompt": "What is the impact of the impairment reversal on Kerris' income statement for N+5?",
     "options": [
-      { "id": "a", "text": "0" },
-      { "id": "b", "text": "€350,000 profit" },
-      { "id": "c", "text": "€450,000 profit" },
-      { "id": "d", "text": "€500,000 profit" },
-      { "id": "e", "text": "€900,000 profit" }
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "€350,000 profit"
+      },
+      {
+        "id": "c",
+        "text": "€450,000 profit"
+      },
+      {
+        "id": "d",
+        "text": "€500,000 profit"
+      },
+      {
+        "id": "e",
+        "text": "€900,000 profit"
+      }
     ],
-    "correct": ["b"],
-    "explanation": "Reversal = capped amount 1,750,000 − carrying amount before the reversal 1,400,000 = 350,000, recognised as income in profit or loss (no revaluation model). 900,000 ignores the cap."
+    "correct": [
+      "b"
+    ],
+    "explanation": "Reversal = capped amount 1,750,000 − carrying amount before the reversal 1,400,000 = 350,000, recognised as income in profit or loss (no revaluation model). 900,000 ignores the cap.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 3 – Non-current assets"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
@@ -143,17 +346,41 @@
     "lecture": "t3",
     "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "Which TWO of the following items are NOT part of the acquisition cost of a piece of equipment?\n(1) Insurance during transport · (2) Operating losses in the first months of use · (3) Estimated cost of dismantling the equipment at the end of its life · (4) Cost of special foundations · (5) Borrowing costs (the equipment is a qualifying asset) · (6) Cost of test runs before use · (7) Depreciation of the building in which the equipment is installed",
     "options": [
-      { "id": "a", "text": "(2) and (7)" },
-      { "id": "b", "text": "(1) and (6)" },
-      { "id": "c", "text": "(3) and (5)" },
-      { "id": "d", "text": "(2) and (4)" },
-      { "id": "e", "text": "(5) and (7)" }
+      {
+        "id": "a",
+        "text": "(2) and (7)"
+      },
+      {
+        "id": "b",
+        "text": "(1) and (6)"
+      },
+      {
+        "id": "c",
+        "text": "(3) and (5)"
+      },
+      {
+        "id": "d",
+        "text": "(2) and (4)"
+      },
+      {
+        "id": "e",
+        "text": "(5) and (7)"
+      }
     ],
-    "correct": ["a"],
-    "explanation": "Initial operating losses arise after the asset is ready for use, and depreciation of the building is a cost of the building – neither is directly attributable to bringing the equipment to working condition. All others are part of cost under IAS 16 / IAS 23."
+    "correct": [
+      "a"
+    ],
+    "explanation": "Initial operating losses arise after the asset is ready for use, and depreciation of the building is a cost of the building – neither is directly attributable to bringing the equipment to working condition. All others are part of cost under IAS 16 / IAS 23.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 3 – Non-current assets"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "short",
@@ -168,6 +395,63 @@
       "Capitalising: 0 / 150,000 / 300,000 / 450,000 / 600,000",
       "Difference only in the build-up years; same expense from N+4 with stable spending",
       "Capitalising also creates an intangible asset"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 3 – Non-current assets"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Option 1 – expense",
+        "lines": [
+          "N to N+4: 600,000 expense every year"
+        ]
+      },
+      {
+        "title": "Option 2 – capitalise and amortise over the next 4 years",
+        "table": {
+          "head": [
+            "Year",
+            "Amortisation from spending of …",
+            "Expense"
+          ],
+          "rows": [
+            [
+              "N",
+              "–",
+              "0"
+            ],
+            [
+              "N+1",
+              "N",
+              "150,000"
+            ],
+            [
+              "N+2",
+              "N, N+1",
+              "300,000"
+            ],
+            [
+              "N+3",
+              "N, N+1, N+2",
+              "450,000"
+            ],
+            [
+              "N+4",
+              "N, N+1, N+2, N+3",
+              "600,000"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Compare",
+        "why": "Capitalising lowers expenses and raises profit in the build-up years N to N+3 and creates an intangible asset. With constant spending, from N+4 both options give the same annual expense – only the balance sheet differs.",
+        "result": "Timing effect only; steady state identical"
+      }
     ]
   },
   {
@@ -182,6 +466,29 @@
       "Names two relevant issues (depreciation, impairment test, capitalised intangibles, fair values)",
       "Explains that they rest on management judgment/estimates",
       "Explains the effect on profit or assets"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 4 – Critical accounting issues relate…"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Pick two issues and name the judgment",
+        "lines": [
+          "Depreciation: useful life, residual value, method = estimates",
+          "Impairment tests: cash flow forecasts, growth and discount rates",
+          "Capitalised intangibles: whether IAS 38 criteria are met",
+          "Revaluation/fair values: estimates without an active market"
+        ]
+      },
+      {
+        "title": "Explain why it is critical",
+        "why": "These estimates are made by management, are hard to verify and directly change profit and asset values – so they can be used to smooth or manage earnings.",
+        "result": "Any two issues + why they rest on judgment + effect on profit/assets"
+      }
     ]
   },
   {
@@ -198,6 +505,46 @@
       "B: right-of-use asset + lease liability; nearly identical to A, no legal ownership",
       "C: no lease – no asset, no debt, fees expensed",
       "Criteria: debt/gearing, effective cost (interest rates), ownership/flexibility, expense profile"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2015",
+        "ref": "Ex. 5 – Leasing"
+      }
+    ],
+    "steps": [
+      {
+        "title": "A – loan + purchase",
+        "lines": [
+          "PPE (depreciated, impairment-tested)",
+          "Financial liability; instalments = interest + repayment"
+        ]
+      },
+      {
+        "title": "B – lease (IFRS 16)",
+        "lines": [
+          "Right-of-use asset (depreciated) + lease liability",
+          "Payments = interest + repayment"
+        ],
+        "why": "Almost identical to A; difference: no legal ownership (asset cannot serve as collateral)."
+      },
+      {
+        "title": "C – service contract",
+        "why": "The supplier may substitute the equipment → no identified asset that Fennick controls → not a lease.",
+        "lines": [
+          "No asset, no debt; fees expensed as incurred"
+        ]
+      },
+      {
+        "title": "Criteria for the choice",
+        "lines": [
+          "Debt, gearing and covenants (C keeps debt off balance sheet)",
+          "Effective cost: loan rate vs rate implicit in the lease",
+          "Ownership vs flexibility",
+          "Expense profile and EBITDA (A/B: depreciation + interest, higher EBITDA; C: constant service expense)"
+        ]
+      }
     ]
   }
 ]

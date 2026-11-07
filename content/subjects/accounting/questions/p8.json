@@ -3,52 +3,115 @@
     "type": "mc",
     "id": "mc-p8-01",
     "lecture": "t1",
-    "difficulty": 1,
+    "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "If the Conceptual Framework and an IFRS standard conflict, …",
     "options": [
-      { "id": "a", "text": "the Conceptual Framework always prevails over the standard" },
-      { "id": "b", "text": "the standard always prevails over the Conceptual Framework" },
-      { "id": "c", "text": "the entity must develop its own accounting policy to resolve the conflict" },
-      { "id": "d", "text": "it depends on the nature of the conflict" }
+      {
+        "id": "a",
+        "text": "the Conceptual Framework always prevails over the standard"
+      },
+      {
+        "id": "b",
+        "text": "the standard always prevails over the Conceptual Framework"
+      },
+      {
+        "id": "c",
+        "text": "the entity must develop its own accounting policy to resolve the conflict"
+      },
+      {
+        "id": "d",
+        "text": "it depends on the nature of the conflict"
+      }
     ],
-    "correct": ["b"],
-    "explanation": "The Conceptual Framework is not a standard and overrides no IFRS requirement. It guides the IASB and helps entities only where no standard applies."
+    "correct": [
+      "b"
+    ],
+    "explanation": "The Conceptual Framework is not a standard and overrides no IFRS requirement. It guides the IASB and helps entities only where no standard applies.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. A – Conceptual framework and present…"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
     "id": "mc-p8-02",
     "lecture": "t1",
-    "difficulty": 1,
+    "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "Which statement about the use of IFRS in the European Union is correct?",
     "options": [
-      { "id": "a", "text": "IFRS are mandatory for the consolidated financial statements of all groups, listed or not" },
-      { "id": "b", "text": "IFRS are mandatory for the consolidated financial statements of listed companies" },
-      { "id": "c", "text": "IFRS are forbidden for the separate (individual) financial statements of listed companies in every member state" },
-      { "id": "d", "text": "IFRS are forbidden for the consolidated financial statements of non-listed groups" }
+      {
+        "id": "a",
+        "text": "IFRS are mandatory for the consolidated financial statements of all groups, listed or not"
+      },
+      {
+        "id": "b",
+        "text": "IFRS are mandatory for the consolidated financial statements of listed companies"
+      },
+      {
+        "id": "c",
+        "text": "IFRS are forbidden for the separate (individual) financial statements of listed companies in every member state"
+      },
+      {
+        "id": "d",
+        "text": "IFRS are forbidden for the consolidated financial statements of non-listed groups"
+      }
     ],
-    "correct": ["b"],
-    "explanation": "The IAS Regulation (2002) requires IFRS as adopted by the EU for the consolidated accounts of listed companies. For other consolidated accounts and for separate accounts, member states may permit or require IFRS – so neither a general obligation nor a general ban applies."
+    "correct": [
+      "b"
+    ],
+    "explanation": "The IAS Regulation (2002) requires IFRS as adopted by the EU for the consolidated accounts of listed companies. For other consolidated accounts and for separate accounts, member states may permit or require IFRS – so neither a general obligation nor a general ban applies.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. A – Conceptual framework and present…"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "mc",
     "id": "mc-p8-03",
     "lecture": "t1",
-    "difficulty": 1,
+    "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "Who are the primary users of general purpose financial statements according to the IASB?",
     "options": [
-      { "id": "a", "text": "Employees" },
-      { "id": "b", "text": "Statutory auditors" },
-      { "id": "c", "text": "Providers of capital (investors, lenders and other creditors)" },
-      { "id": "d", "text": "Tax authorities" }
+      {
+        "id": "a",
+        "text": "Employees"
+      },
+      {
+        "id": "b",
+        "text": "Statutory auditors"
+      },
+      {
+        "id": "c",
+        "text": "Providers of capital (investors, lenders and other creditors)"
+      },
+      {
+        "id": "d",
+        "text": "Tax authorities"
+      }
     ],
-    "correct": ["c"],
-    "explanation": "The Conceptual Framework names existing and potential investors, lenders and other creditors as primary users."
+    "correct": [
+      "c"
+    ],
+    "explanation": "The Conceptual Framework names existing and potential investors, lenders and other creditors as primary users.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. A – Conceptual framework and present…"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "short",
@@ -63,6 +126,28 @@
       "Mixed: some lines by function, some by nature",
       "Intermediate results are not mandatory under IAS 1",
       "Additional subtotals allowed if relevant, clear and consistent"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. A – Conceptual framework and present…"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Classify each expense line",
+        "lines": [
+          "By function: cost of sales, selling expenses, G&A expenses",
+          "By nature: personnel costs, depreciation and amortisation"
+        ],
+        "result": "Mixed presentation"
+      },
+      {
+        "title": "Intermediate results",
+        "why": "IAS 1 prescribes no intermediate operating result. Extra subtotals (gross margin, contribution margin, EBIT) are allowed if they consist of IFRS amounts, are clearly labelled, relevant and presented consistently.",
+        "result": "The three subtotals are compliant"
+      }
     ]
   },
   {
@@ -70,13 +155,31 @@
     "id": "sa-p8-02",
     "lecture": "t2",
     "case": "vestra-is",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "In Vestra's income statement, the net profit attributable to non-controlling interests is zero. What is the reason?",
     "modelAnswer": "All subsidiaries are wholly owned (100%). Non-controlling interests only arise when the parent owns less than 100% of a consolidated subsidiary; then the share of profit belonging to the other shareholders is shown separately.",
     "keyPoints": [
       "All subsidiaries are 100% owned",
       "NCI exist only for subsidiaries owned less than 100%"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. B – Consolidated financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "When do NCI arise?",
+        "why": "Only when a fully consolidated subsidiary is owned less than 100%."
+      },
+      {
+        "title": "Apply",
+        "why": "All of Vestra's subsidiaries are wholly owned.",
+        "result": "NCI = 0"
+      }
     ]
   },
   {
@@ -96,9 +199,127 @@
       "Total 31,000; equity = Norda's only"
     ],
     "results": [
-      { "label": "Goodwill", "value": 1200 },
-      { "label": "Consolidated cash", "value": 3000 },
-      { "label": "Balance sheet total", "value": 31000 }
+      {
+        "label": "Goodwill",
+        "value": 1200
+      },
+      {
+        "label": "Consolidated cash",
+        "value": 3000
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 31000
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. B – Consolidated financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Purchase price allocation",
+        "lines": [
+          "Sudo book value: 6,000 + 2,500 = 8,500",
+          "Brand: +2,300",
+          "Goodwill = 12,000 − 8,500 − 2,300 = 1,200"
+        ]
+      },
+      {
+        "title": "Don't forget the payment",
+        "why": "Norda's balance sheet is given BEFORE the acquisition: the 12,000 cash leaves Norda and becomes the investment.",
+        "lines": [
+          "Norda cash after payment: 13,500 − 12,000 = 1,500"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet 31/12/N-1",
+        "table": {
+          "head": [
+            "Item",
+            "Norda",
+            "Sudo",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Plant and equipment",
+              "11,000",
+              "9,000",
+              "",
+              "20,000"
+            ],
+            [
+              "Inventory",
+              "",
+              "4,500",
+              "",
+              "4,500"
+            ],
+            [
+              "Cash",
+              "1,500",
+              "1,500",
+              "",
+              "3,000"
+            ],
+            [
+              "Brand",
+              "",
+              "",
+              "+2,300",
+              "2,300"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+1,200",
+              "1,200"
+            ],
+            [
+              "Total assets",
+              "",
+              "",
+              "",
+              "31,000"
+            ],
+            [
+              "Capital",
+              "9,000",
+              "6,000",
+              "−6,000",
+              "9,000"
+            ],
+            [
+              "Retained earnings",
+              "1,500",
+              "2,500",
+              "−2,500",
+              "1,500"
+            ],
+            [
+              "Liabilities",
+              "14,000",
+              "6,500",
+              "",
+              "20,500"
+            ],
+            [
+              "Total E&L",
+              "",
+              "",
+              "",
+              "31,000"
+            ]
+          ]
+        },
+        "result": "Goodwill 1,200; cash 3,000; total 31,000"
+      }
     ]
   },
   {
@@ -117,8 +338,139 @@
       "Total 33,400"
     ],
     "results": [
-      { "label": "Consolidated net income", "value": 2050 },
-      { "label": "Balance sheet total", "value": 33400 }
+      {
+        "label": "Consolidated net income",
+        "value": 2050
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 33400
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. B – Consolidated financial statements"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Elimination stays the same",
+        "why": "Investment 12,000 = Sudo's equity at acquisition 8,500 + brand 2,300 + goodwill 1,200. Brand and goodwill have indefinite lives and are not impaired → unchanged."
+      },
+      {
+        "title": "Post-acquisition result belongs to the group",
+        "lines": [
+          "Consolidated net income = 950 + 1,100 = 2,050"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet 31/12/N",
+        "table": {
+          "head": [
+            "Item",
+            "Norda",
+            "Sudo",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Plant and equipment",
+              "11,000",
+              "10,200",
+              "",
+              "21,200"
+            ],
+            [
+              "Inventory",
+              "",
+              "5,300",
+              "",
+              "5,300"
+            ],
+            [
+              "Trade receivables",
+              "900",
+              "",
+              "",
+              "900"
+            ],
+            [
+              "Cash",
+              "1,600",
+              "900",
+              "",
+              "2,500"
+            ],
+            [
+              "Brand",
+              "",
+              "",
+              "+2,300",
+              "2,300"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+1,200",
+              "1,200"
+            ],
+            [
+              "Investment in Sudo",
+              "12,000",
+              "",
+              "−12,000",
+              "0"
+            ],
+            [
+              "Total assets",
+              "25,500",
+              "16,400",
+              "",
+              "33,400"
+            ],
+            [
+              "Capital",
+              "9,000",
+              "6,000",
+              "−6,000",
+              "9,000"
+            ],
+            [
+              "Retained earnings",
+              "1,500",
+              "2,500",
+              "−2,500",
+              "1,500"
+            ],
+            [
+              "Net income",
+              "950",
+              "1,100",
+              "",
+              "2,050"
+            ],
+            [
+              "Liabilities",
+              "14,050",
+              "6,800",
+              "",
+              "20,850"
+            ],
+            [
+              "Total E&L",
+              "25,500",
+              "16,400",
+              "",
+              "33,400"
+            ]
+          ]
+        },
+        "result": "Net income 2,050; total 33,400"
+      }
     ]
   },
   {
@@ -137,9 +489,73 @@
       "Carrying amount 1,797,500 on 31 December N"
     ],
     "results": [
-      { "label": "Acquisition cost", "value": 1900000 },
-      { "label": "Depreciation N", "value": 102500 },
-      { "label": "Carrying amount 31 Dec N", "value": 1797500 }
+      {
+        "label": "Acquisition cost",
+        "value": 1900000
+      },
+      {
+        "label": "Depreciation N",
+        "value": 102500
+      },
+      {
+        "label": "Carrying amount 31 Dec N",
+        "value": 1797500
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. C – Non-current assets"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Cost of the machine",
+        "lines": [
+          "Purchase price 1,800,000",
+          "+ customs 45,000",
+          "+ transport insurance 15,000",
+          "+ transport 40,000",
+          "= 1,900,000"
+        ],
+        "why": "Training (25,000) is not a cost of bringing the asset to working condition → expense. 60 days is a normal credit term → no discounting."
+      },
+      {
+        "title": "Start of depreciation",
+        "why": "Depreciation starts when the asset is READY FOR USE (1 July), not at delivery (1 April).",
+        "lines": [
+          "(1,900,000 − 260,000) / 8 = 205,000 p.a.",
+          "N: 6/12 × 205,000 = 102,500"
+        ]
+      },
+      {
+        "title": "Summary",
+        "table": {
+          "head": [
+            "",
+            "1 July N",
+            "31 Dec N"
+          ],
+          "rows": [
+            [
+              "PPE",
+              "1,900,000",
+              "1,797,500"
+            ],
+            [
+              "Expenses",
+              "training 25,000",
+              "depreciation 102,500"
+            ]
+          ]
+        },
+        "result": "Carrying amount 31/12/N: 1,797,500"
+      }
+    ],
+    "pitfalls": [
+      "Depreciating from 1 April.",
+      "Ignoring the residual value."
     ]
   },
   {
@@ -156,6 +572,43 @@
       "N: 1,400,000 expensed",
       "N+1: 600,000 expensed; advertising 120,000 expensed",
       "No intangible asset recognised"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2019",
+        "ref": "Sec. C – Non-current assets"
+      }
+    ],
+    "steps": [
+      {
+        "title": "When can development be capitalised?",
+        "why": "IAS 38: only once ALL criteria are met (technical feasibility, intention/ability to complete and sell, probable benefits, resources, reliable measurement). For a drug, the decisive point is the regulatory approval – here 1 November N+1."
+      },
+      {
+        "title": "Year N",
+        "lines": [
+          "1,400,000 → expense (before approval)"
+        ]
+      },
+      {
+        "title": "Year N+1",
+        "lines": [
+          "600,000 (Jan–Oct, before approval) → expense",
+          "Advertising 120,000 → always an expense"
+        ],
+        "result": "No intangible asset in N or N+1"
+      },
+      {
+        "title": "Cash",
+        "lines": [
+          "N: −1,400,000",
+          "N+1: −720,000"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Capitalising costs incurred before the approval retroactively – not allowed."
     ]
   }
 ]

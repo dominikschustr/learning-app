@@ -27,6 +27,7 @@ import { cn, formatClock, pct } from "@/lib/utils";
 import { MarkButton } from "./MarkButton";
 import { PaperList, fmtPoints, paperSlots, slotLabel, type PaperSlot } from "./Papers";
 import { CaseContext, MCView, ShortInput, ShortResult, TFView, answerText, useCaseOf } from "./Questions";
+import { SolutionSteps } from "./Solution";
 import { Bar, Button, ButtonLink, Chip, ProgressRing, Skeleton } from "./ui";
 
 export function Exam({ content }: { content: SubjectContent }) {
@@ -687,6 +688,14 @@ function ReviewItem({
                 context={context}
               />
               {q.explanation && <p className="mt-4 text-sm leading-relaxed text-ink-2">{q.explanation}</p>}
+              {q.steps.length > 0 && (
+                <details className="mt-4 rounded-2xl border border-line bg-surface p-4" open>
+                  <summary className="cursor-pointer text-sm font-semibold">Lösungsweg</summary>
+                  <div className="mt-3">
+                    <SolutionSteps steps={q.steps} pitfalls={q.pitfalls} />
+                  </div>
+                </details>
+              )}
             </>
           )}
           {q.type === "tf" && (

@@ -169,6 +169,21 @@ bzw. `σ^{2}` tief- und hochgestellt; `sheet: true` heißt „steht auf dem Form
 }]
 ```
 
+**Grundlage und Lösungsweg** (alle Fragetypen, optional): `basis` nennt, woran sich eine Aufgabe orientiert – `kind` ist
+`exam` (Altklausur, Midterm, Mock-Fragen), `slides` (Vorlesungsfolien) oder `case` (Übungsfall der Vorlesung). Die App zeigt
+darüber „Orientiert an …“ und das Niveau (`difficulty` 1 = wie das Folien-Quiz, 2 = wie eine Einzelfrage der Klausur,
+3 = wie ein ganzer Klausurteil). Kurzantworten und Multiple Choice können zusätzlich `steps` (Lösungsweg in Schritten:
+`title`, Begründung `why`, Rechenzeilen `lines`, optional `table`, Ergebnis `result`) und `pitfalls` (typische Fehler)
+haben; dann ersetzt der Lösungsweg die Musterlösung in der Anzeige. `modelAnswer` bleibt Pflicht (Grundlage der KI-Bewertung).
+
+```json
+{
+  "basis": [{ "kind": "exam", "source": "Altklausur 2024", "ref": "Part 2 – Impairment" }, { "kind": "case", "source": "Übung T3", "ref": "Case 5 – Porto" }],
+  "steps": [{ "title": "Goodwill first", "why": "IAS 36: …", "lines": ["Goodwill 200,000 → 0"], "result": "Remaining loss 70,000" }],
+  "pitfalls": ["Taking the LOWER of value in use and fair value less costs to sell"]
+}
+```
+
 `cards/l01.json`
 
 ```json

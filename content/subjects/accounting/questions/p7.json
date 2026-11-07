@@ -3,89 +3,177 @@
     "type": "tf",
     "id": "tf-p7-01",
     "lecture": "t1",
+    "difficulty": 2,
     "statement": "In the statement of comprehensive income, operating expenses may be presented either by nature or by function.",
     "answer": true,
-    "explanation": "IAS 1 allows both classifications; an entity presenting by function must disclose additional information by nature (e.g. depreciation, staff costs) in the notes."
+    "explanation": "IAS 1 allows both classifications; an entity presenting by function must disclose additional information by nature (e.g. depreciation, staff costs) in the notes.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-02",
     "lecture": "t1",
+    "difficulty": 2,
     "statement": "Total comprehensive income equals net income minus other comprehensive income.",
     "answer": false,
-    "explanation": "Total comprehensive income = net income PLUS other comprehensive income."
+    "explanation": "Total comprehensive income = net income PLUS other comprehensive income.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-03",
     "lecture": "t1",
+    "difficulty": 2,
     "statement": "According to the Conceptual Framework, financial reporting aims to provide information that is useful to existing and potential investors, lenders and other creditors (providers of capital).",
     "answer": true,
-    "explanation": "These capital providers are the primary users of general purpose financial reports; their information needs define what is useful."
+    "explanation": "These capital providers are the primary users of general purpose financial reports; their information needs define what is useful.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-04",
     "lecture": "t2",
+    "difficulty": 2,
     "statement": "Company A holds 12% of the shares of entity B and has no other rights over B. B is outside A's scope of consolidation.",
     "answer": true,
-    "explanation": "12% without further rights gives neither control nor joint control nor significant influence (presumed from 20%). B is a simple financial investment for A."
+    "explanation": "12% without further rights gives neither control nor joint control nor significant influence (presumed from 20%). B is a simple financial investment for A.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-05",
     "lecture": "t2",
+    "difficulty": 2,
     "statement": "Company A holds no shares at all in entity C. C can nevertheless be part of A's scope of consolidation.",
     "answer": true,
-    "explanation": "Consolidation depends on control, not on ownership. A can control C through contracts (e.g. a structured entity whose relevant activities A directs and whose returns A bears)."
+    "explanation": "Consolidation depends on control, not on ownership. A can control C through contracts (e.g. a structured entity whose relevant activities A directs and whose returns A bears).",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-06",
     "lecture": "t2",
+    "difficulty": 2,
     "statement": "Positive goodwill is amortised over its useful life.",
     "answer": false,
-    "explanation": "Goodwill is not amortised under IFRS; it is tested for impairment at least once a year."
+    "explanation": "Goodwill is not amortised under IFRS; it is tested for impairment at least once a year.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-07",
     "lecture": "t3",
+    "difficulty": 2,
     "statement": "The cost of training the staff who will operate a new machine is part of the machine's acquisition cost.",
     "answer": false,
-    "explanation": "IAS 16 lists staff training as a cost that is NOT directly attributable to bringing the asset to working condition – it is expensed."
+    "explanation": "IAS 16 lists staff training as a cost that is NOT directly attributable to bringing the asset to working condition – it is expensed.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-08",
     "lecture": "t3",
+    "difficulty": 2,
     "statement": "Internally generated brands, mastheads and customer lists cannot be recognised as intangible assets, even if they are legally protected.",
     "answer": true,
-    "explanation": "IAS 38 prohibits recognising these internally generated items, because their cost cannot be distinguished from the cost of developing the business as a whole."
+    "explanation": "IAS 38 prohibits recognising these internally generated items, because their cost cannot be distinguished from the cost of developing the business as a whole.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-09",
     "lecture": "t3",
+    "difficulty": 2,
     "statement": "When the recoverable amount of an asset rises after an impairment in a prior year, its carrying amount is increased up to its original acquisition cost.",
     "answer": false,
-    "explanation": "The reversal is capped at the carrying amount the asset would have had without the impairment, i.e. acquisition cost net of the depreciation that would have been charged."
+    "explanation": "The reversal is capped at the carrying amount the asset would have had without the impairment, i.e. acquisition cost net of the depreciation that would have been charged.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-10",
     "lecture": "t2",
+    "difficulty": 2,
     "statement": "Goodwill only needs to be tested for impairment when the company sees internal or external indications that its value has declined.",
     "answer": false,
-    "explanation": "Goodwill (like intangible assets with indefinite lives) must be tested at least annually, in addition to whenever there is an indication of impairment."
+    "explanation": "Goodwill (like intangible assets with indefinite lives) must be tested at least annually, in addition to whenever there is an indication of impairment.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-p7-11",
     "lecture": "t3",
+    "difficulty": 2,
     "statement": "Research and development expenditure is capitalised as soon as it meets the criteria of IAS 38.",
     "answer": false,
-    "explanation": "Research expenditure is always expensed. Only development expenditure is capitalised, from the moment all IAS 38 criteria are met."
+    "explanation": "Research expenditure is always expensed. Only development expenditure is capitalised, from the moment all IAS 38 criteria are met.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. A – True/false"
+      }
+    ]
   },
   {
     "type": "short",
@@ -104,9 +192,135 @@
       "Consolidated total 1,210; net income = PC's 170"
     ],
     "results": [
-      { "label": "Goodwill", "value": 160 },
-      { "label": "Consolidated equipment", "value": 680 },
-      { "label": "Balance sheet total", "value": 1210 }
+      {
+        "label": "Goodwill",
+        "value": 160
+      },
+      {
+        "label": "Consolidated equipment",
+        "value": 680
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 1210
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. B – Preparation of consolidated fina…"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Book value of SA's net assets",
+        "lines": [
+          "Capital 220 + net income 70 = 290"
+        ]
+      },
+      {
+        "title": "Fair value adjustments",
+        "lines": [
+          "Equipment: 330 − 240 = +90",
+          "Brand (internally developed, never recognised): +280"
+        ],
+        "result": "Fair value of net assets = 290 + 90 + 280 = 660"
+      },
+      {
+        "title": "Goodwill",
+        "lines": [
+          "Goodwill = 820 − 660 = 160"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet 31/12/N-1",
+        "table": {
+          "head": [
+            "Item",
+            "PC",
+            "SA",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Equipment",
+              "350",
+              "240",
+              "+90",
+              "680"
+            ],
+            [
+              "Vehicles",
+              "",
+              "90",
+              "",
+              "90"
+            ],
+            [
+              "Brand",
+              "",
+              "",
+              "+280",
+              "280"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+160",
+              "160"
+            ],
+            [
+              "Investment in SA",
+              "820",
+              "",
+              "−820",
+              "0"
+            ],
+            [
+              "Total assets",
+              "1,170",
+              "330",
+              "",
+              "1,210"
+            ],
+            [
+              "Capital",
+              "550",
+              "220",
+              "−220",
+              "550"
+            ],
+            [
+              "Net income",
+              "170",
+              "70",
+              "−70",
+              "170"
+            ],
+            [
+              "Liabilities",
+              "450",
+              "40",
+              "",
+              "490"
+            ],
+            [
+              "Total E&L",
+              "1,170",
+              "330",
+              "",
+              "1,210"
+            ]
+          ]
+        },
+        "result": "Goodwill 160; equipment 680; total 1,210"
+      }
+    ],
+    "pitfalls": [
+      "Keeping SA's net income (70) – at the acquisition date it is pre-acquisition equity and is eliminated."
     ]
   },
   {
@@ -116,17 +330,41 @@
     "case": "pc-sa-75",
     "difficulty": 2,
     "single": true,
-    "shuffle": false,
     "prompt": "What amount of non-controlling interests is recognised in the consolidated balance sheet at the acquisition date?",
     "options": [
-      { "id": "a", "text": "70" },
-      { "id": "b", "text": "52.5" },
-      { "id": "c", "text": "280" },
-      { "id": "d", "text": "210" },
-      { "id": "e", "text": "20" }
+      {
+        "id": "a",
+        "text": "70"
+      },
+      {
+        "id": "b",
+        "text": "52.5"
+      },
+      {
+        "id": "c",
+        "text": "280"
+      },
+      {
+        "id": "d",
+        "text": "210"
+      },
+      {
+        "id": "e",
+        "text": "20"
+      }
     ],
-    "correct": ["a"],
-    "explanation": "NCI = 25% × SA's net assets (200 + 80 = 280) = 70. The consolidated balance sheet then shows equipment 590, capital 360, net income 40, NCI 70, liabilities 120 (total 590). 52.5 is 25% of the price, 20 is 25% of SA's net income only."
+    "correct": [
+      "a"
+    ],
+    "explanation": "NCI = 25% × SA's net assets (200 + 80 = 280) = 70. The consolidated balance sheet then shows equipment 590, capital 360, net income 40, NCI 70, liabilities 120 (total 590). 52.5 is 25% of the price, 20 is 25% of SA's net income only.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. B – Preparation of consolidated fina…"
+      }
+    ],
+    "shuffle": false
   },
   {
     "type": "short",
@@ -141,6 +379,30 @@
       "No goodwill",
       "Price 210 = 75% × net assets 280",
       "Book values assumed equal to fair values"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. B – Preparation of consolidated fina…"
+      }
+    ],
+    "steps": [
+      {
+        "title": "PC's share of SA's net assets",
+        "why": "No fair values given → book values are taken as fair values.",
+        "lines": [
+          "SA net assets = 200 + 80 = 280",
+          "PC's share = 75% × 280 = 210"
+        ]
+      },
+      {
+        "title": "Compare with the price",
+        "lines": [
+          "Goodwill = 210 − 210 = 0"
+        ],
+        "result": "No goodwill – the price equals the share acquired"
+      }
     ]
   },
   {
@@ -160,11 +422,104 @@
       "PPE 702,500 on 31 December N"
     ],
     "results": [
-      { "label": "Acquisition cost of the machine", "value": 742000 },
-      { "label": "Depreciation N", "value": 39500 },
-      { "label": "Interest expense N", "value": 21000 },
-      { "label": "Carrying amount of the machine 31 Dec N", "value": 702500 },
-      { "label": "Supplier payable 31 Dec N", "value": 721000 }
+      {
+        "label": "Acquisition cost of the machine",
+        "value": 742000
+      },
+      {
+        "label": "Depreciation N",
+        "value": 39500
+      },
+      {
+        "label": "Interest expense N",
+        "value": 21000
+      },
+      {
+        "label": "Carrying amount of the machine 31 Dec N",
+        "value": 702500
+      },
+      {
+        "label": "Supplier payable 31 Dec N",
+        "value": 721000
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. C – Non-current assets: PPE"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Deferred payment → discount the price",
+        "why": "IAS 16: if payment is deferred beyond normal credit terms, the cost is the cash-price equivalent; the difference is interest over the credit period.",
+        "lines": [
+          "Present value: 742,000 / 1.06 = 700,000"
+        ]
+      },
+      {
+        "title": "Cost of the machine (IAS 16)",
+        "why": "Include costs directly attributable to bringing the asset to working condition; staff training and advertising are explicitly excluded.",
+        "lines": [
+          "Price (PV) 700,000",
+          "+ transport insurance 24,000",
+          "+ transport 18,000",
+          "= 742,000",
+          "Expensed: training 30,000; advertising 50,000"
+        ]
+      },
+      {
+        "title": "Depreciation",
+        "why": "Depreciate over Torvik's expected period of USE (8 years, not the technical 15) down to the residual value at that date.",
+        "lines": [
+          "(742,000 − 110,000) / 8 = 79,000 p.a.",
+          "N (1 July – 31 Dec, 6 months): 39,500"
+        ]
+      },
+      {
+        "title": "Interest on the deferred payment",
+        "lines": [
+          "700,000 × 6% × 6/12 = 21,000 → payable 721,000"
+        ]
+      },
+      {
+        "title": "Summary",
+        "table": {
+          "head": [
+            "",
+            "1 July N",
+            "31 Dec N"
+          ],
+          "rows": [
+            [
+              "PPE",
+              "742,000",
+              "702,500"
+            ],
+            [
+              "Supplier payable",
+              "700,000",
+              "721,000"
+            ],
+            [
+              "Cash",
+              "−122,000",
+              ""
+            ],
+            [
+              "Expenses",
+              "training 30,000; advertising 50,000",
+              "depreciation 39,500; interest 21,000"
+            ]
+          ]
+        }
+      }
+    ],
+    "pitfalls": [
+      "Capitalising the nominal price 742,000 without discounting.",
+      "Depreciating over 15 years.",
+      "Including training or advertising in the cost."
     ]
   },
   {
@@ -181,6 +536,35 @@
       "N: land 6,750,000; +350,000 in OCI (revaluation surplus)",
       "N+1: land 6,520,000; −230,000 in OCI against the surplus",
       "No impact on net income"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. C – Non-current assets: PPE"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Rules of the revaluation model (IAS 16)",
+        "why": "Land is not depreciated. Increases → OCI (revaluation surplus in equity). Decreases → OCI as far as a surplus exists, beyond that → P/L."
+      },
+      {
+        "title": "31 December N",
+        "lines": [
+          "Land: 6,400,000 → 6,750,000",
+          "+350,000 in OCI → revaluation surplus 350,000"
+        ],
+        "result": "No impact on net income"
+      },
+      {
+        "title": "31 December N+1",
+        "lines": [
+          "Land: 6,750,000 → 6,520,000",
+          "−230,000 in OCI against the surplus → surplus 120,000"
+        ],
+        "result": "Still no impact on net income (value stays above cost)"
+      }
     ]
   },
   {
@@ -188,7 +572,7 @@
     "id": "sa-p7-05",
     "lecture": "t3",
     "case": "torvik-land",
-    "difficulty": 1,
+    "difficulty": 2,
     "verb": "explain",
     "prompt": "Same land, but Torvik uses the cost model. What is the impact on 31 December N and 31 December N+1?",
     "modelAnswer": "The land stays at its cost of 6,400,000 on both dates. Land is not depreciated and fair value changes are ignored, so there is no impact on net income or OCI (an impairment test would only matter if the recoverable amount fell below 6,400,000).",
@@ -196,6 +580,27 @@
       "Land at 6,400,000 on both dates",
       "No depreciation, fair value changes ignored",
       "No impact on net income or OCI"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": "Sec. C – Non-current assets: PPE"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Rules of the cost model",
+        "why": "Land stays at historical cost; it is not depreciated and fair value changes are ignored (only an impairment below cost would matter)."
+      },
+      {
+        "title": "Apply",
+        "lines": [
+          "31 Dec N: 6,400,000",
+          "31 Dec N+1: 6,400,000"
+        ],
+        "result": "No impact on net income or OCI"
+      }
     ]
   }
 ]

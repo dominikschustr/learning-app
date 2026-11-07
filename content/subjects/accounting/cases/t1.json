@@ -1,0 +1,102 @@
+[
+  {
+    "id": "xx-nature-function",
+    "title": "Company XX – income statement by nature (lecture case)",
+    "text": [
+      "After a takeover, the new owners of Company XX want the income statement presented by FUNCTION instead of by nature.",
+      "Allocation of expenses (€ million): raw materials consumption entirely to cost of sales; taxes other than on income to selling, general & administrative (SG&A); other expenses to 'other income and expenses'."
+    ],
+    "tables": [
+      {
+        "caption": "Income statement by nature (€ million)",
+        "head": [
+          "Item",
+          "Amount"
+        ],
+        "rows": [
+          [
+            "Sales revenue",
+            "31,155"
+          ],
+          [
+            "Other revenues",
+            "197"
+          ],
+          [
+            "Gain on sale of non-current assets",
+            "20"
+          ],
+          [
+            "Raw materials consumption",
+            "(11,400)"
+          ],
+          [
+            "Other purchases & expenses",
+            "(3,788)"
+          ],
+          [
+            "Taxes other than on income",
+            "(420)"
+          ],
+          [
+            "Employee costs",
+            "(7,540)"
+          ],
+          [
+            "Other expenses",
+            "(387)"
+          ],
+          [
+            "Depreciation",
+            "(1,269)"
+          ],
+          [
+            "Operating profit",
+            "6,568"
+          ],
+          [
+            "Net financial expenses",
+            "(1,056)"
+          ],
+          [
+            "Income tax",
+            "(2,502)"
+          ],
+          [
+            "Net income",
+            "3,010"
+          ]
+        ]
+      },
+      {
+        "caption": "Split by function (€ million)",
+        "head": [
+          "Expense",
+          "Total",
+          "Production (cost of sales)",
+          "SG&A"
+        ],
+        "rows": [
+          [
+            "Other purchases & expenses",
+            "3,788",
+            "1,050",
+            "2,738"
+          ],
+          [
+            "Employee costs",
+            "7,540",
+            "5,210",
+            "2,330"
+          ],
+          [
+            "Depreciation",
+            "1,269",
+            "1,200",
+            "69"
+          ]
+        ]
+      }
+    ]
+  }
+]

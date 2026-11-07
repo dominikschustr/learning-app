@@ -7,6 +7,13 @@
     "statement": "Individual financial statements are generally prepared under IFRS in Europe.",
     "answer": false,
     "explanation": "Wrong. The EU IFRS Regulation only requires IFRS for the CONSOLIDATED statements of LISTED companies. Individual (separate) statements of legal entities are generally prepared under local GAAP (they serve tax and dividend purposes); some countries allow or require IFRS for them, France does not. That is why subsidiaries' statements must first be converted to IFRS before consolidation.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 39)"
+      }
+    ],
     "checkup": true
   },
   {
@@ -17,16 +24,40 @@
     "statement": "A group is an economic entity composed of different legal entities.",
     "answer": true,
     "explanation": "Correct. Each legal entity (parent, subsidiaries) prepares its own individual statements; the consolidated statements present the group as ONE economic entity – as if parent and subsidiaries were a single company (e.g. IAG with British Airways, Iberia, Vueling).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "checkup": true
   },
   {
     "type": "tf",
     "id": "tf-t2-03",
     "lecture": "t2",
-    "difficulty": 1,
+    "difficulty": 2,
     "statement": "Company A owns 10% of entity E1. Based on this percentage of ownership, E1 is included in the scope of consolidation of A.",
     "answer": false,
     "explanation": "Wrong. With 10% of the voting rights A normally has neither control nor significant influence (presumed from 20%). The investment is a passive financial asset measured under IFRS 9 – E1 is not consolidated and not equity-accounted. (Only other facts, e.g. board representation, could create significant influence.)",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": ""
+      }
+    ],
     "checkup": true
   },
   {
@@ -37,6 +68,18 @@
     "statement": "Company A has a controlling influence on entity E2. E2 is included in the scope of consolidation of A.",
     "answer": true,
     "explanation": "Correct. Control (IFRS 10) → E2 is a subsidiary and is fully consolidated: 100% of its assets, liabilities, income and expenses are included, with non-controlling interests shown separately if A owns less than 100%.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "checkup": true
   },
   {
@@ -47,6 +90,18 @@
     "statement": "Company A owns 0% of entity E3. It is absolutely impossible to include E3 in A's scope of consolidation.",
     "answer": false,
     "explanation": "Wrong. Consolidation is based on CONTROL, not ownership. A can control an entity without holding shares – e.g. a structured/special purpose entity governed by contracts where A has power over the relevant activities and is exposed to variable returns. Then E3 must be consolidated (IFRS 10).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 39)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "checkup": true
   },
   {
@@ -57,6 +112,18 @@
     "statement": "The only possibility to control another company is to own more than 50% of its voting rights.",
     "answer": false,
     "explanation": "Wrong. More than 50% creates a presumption of control, but control can also exist with less: shareholders' agreements, the right to appoint the majority of the board, double voting rights, potential voting rights, or a dispersed shareholding of the other investors. Conversely, >50% may not give control if another party has contractual power.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 40)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "checkup": true
   },
   {
@@ -67,6 +134,18 @@
     "statement": "Goodwill is always equal to the difference between the purchase price of the shares and the book value of these shares.",
     "answer": false,
     "explanation": "Wrong. First the purchase price allocation (PPA) assigns the difference to identifiable assets and liabilities at fair value (valuation differences, e.g. brand names, higher fair value of buildings). Goodwill = purchase price − FAIR VALUE of the identifiable net assets acquired (× % acquired). Only the remainder (synergies, workforce, market position…) is goodwill.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 40)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "checkup": true
   },
   {
@@ -77,6 +156,13 @@
     "statement": "Consolidated net income = net income of the parent + 100% of the (post-acquisition, adjusted) net income of the subsidiary, even when the parent owns less than 100%.",
     "answer": true,
     "explanation": "Correct. Under full consolidation 100% of the subsidiary's revenues and expenses are included because the parent controls them. The result is then split into a group share and a non-controlling interest share (e.g. 60% subsidiary with NI 20: group share 12, NCI 8).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 40)"
+      }
+    ],
     "checkup": true
   },
   {
@@ -87,6 +173,18 @@
     "statement": "Non-controlling interests provide equity to a subsidiary. Therefore, they are included in consolidated equity.",
     "answer": true,
     "explanation": "Correct. Minority shareholders are owners of the subsidiary, not creditors – their share of the subsidiary's net assets is presented in consolidated EQUITY, separately from equity attributable to owners of the parent (IFRS 10.22).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 40)"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "checkup": true
   },
   {
@@ -97,6 +195,13 @@
     "statement": "The equity method consists in measuring the investment in an associate at fair value (e.g. market value).",
     "answer": false,
     "explanation": "Wrong. Under the equity method (IAS 28) the investment is initially recognised at cost and then adjusted for the investor's share of the associate's post-acquisition changes in equity (mainly profit/loss, less dividends received). Market value is irrelevant; the investment appears as one line in the balance sheet and the share of profit as one line in the income statement.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Quiz (Folie 40)"
+      }
+    ],
     "checkup": true
   },
   {
@@ -106,16 +211,35 @@
     "difficulty": 1,
     "statement": "A negative goodwill (badwill) is recognised immediately as a gain in the income statement of the year of acquisition.",
     "answer": true,
-    "explanation": "Correct. If the fair value of the identifiable net assets exceeds the purchase price (bargain purchase), IFRS 3 requires the acquirer to reassess the PPA and then recognise the remaining difference immediately as a gain in profit or loss."
+    "explanation": "Correct. If the fair value of the identifiable net assets exceeds the purchase price (bargain purchase), IFRS 3 requires the acquirer to reassess the PPA and then recognise the remaining difference immediately as a gain in profit or loss.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Example 2 – goodwill"
+      }
+    ]
   },
   {
     "type": "tf",
     "id": "tf-t2-12",
     "lecture": "t2",
-    "difficulty": 1,
+    "difficulty": 2,
     "statement": "A positive goodwill is amortised over its useful life under IFRS.",
     "answer": false,
-    "explanation": "Wrong. Goodwill has an indefinite useful life under IFRS: it is NOT amortised but tested for impairment at least annually (at the level of the CGU(s) to which it is allocated). Goodwill impairment losses can never be reversed."
+    "explanation": "Wrong. Goodwill has an indefinite useful life under IFRS: it is NOT amortised but tested for impairment at least annually (at the level of the CGU(s) to which it is allocated). Goodwill impairment losses can never be reversed.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Midterm 2017",
+        "ref": ""
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -124,13 +248,26 @@
     "difficulty": 1,
     "statement": "Companies over which the parent has significant influence are fully consolidated.",
     "answer": false,
-    "explanation": "Wrong. Significant influence (presumed from 20% of voting rights) makes the company an ASSOCIATE, accounted for using the equity method (IAS 28) – one line in the balance sheet and in the income statement, no line-by-line integration, no NCI."
+    "explanation": "Wrong. Significant influence (presumed from 20% of voting rights) makes the company an ASSOCIATE, accounted for using the equity method (IAS 28) – one line in the balance sheet and in the income statement, no line-by-line integration, no NCI.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 8 – Equity method"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t2-01",
     "lecture": "t2",
     "difficulty": 1,
+    "single": true,
     "prompt": "Match the type of relationship with the accounting method. Which pair is NOT correct?",
     "options": [
       {
@@ -158,13 +295,20 @@
       "e"
     ],
     "explanation": "Passive investments are financial assets under IFRS 9 (fair value). Thresholds are indicative: 20% significant influence, >50% control.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Scope & methods"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t2-02",
     "lecture": "t2",
     "difficulty": 1,
+    "single": true,
     "prompt": "Which of the following is NOT a step of full consolidation?",
     "options": [
       {
@@ -192,7 +336,13 @@
       "e"
     ],
     "explanation": "Before that: determine the scope of consolidation and prepare the individual statements (convert to IFRS, uniform accounting policies, currency conversion).",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Consolidation steps"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -200,6 +350,7 @@
     "lecture": "t2",
     "case": "palma-ibiza",
     "difficulty": 2,
+    "single": true,
     "prompt": "Calculate the goodwill paid by Palma at the acquisition.",
     "options": [
       {
@@ -223,7 +374,13 @@
       "a"
     ],
     "explanation": "Book value of Ibiza's equity = 400 + 1,000 + 200 = 1,600. Fair value of identifiable net assets = 1,600 + brand 600 = 2,200. Goodwill = 2,600 − 2,200 = 400 K€. (1,000 would ignore the brand name.)",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 1 – Consolidation"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -232,6 +389,7 @@
     "lecture": "t2",
     "case": "palma-ibiza",
     "difficulty": 3,
+    "single": true,
     "prompt": "What is the total of Palma's consolidated balance sheet at the acquisition date?",
     "options": [
       {
@@ -255,7 +413,18 @@
       "a"
     ],
     "explanation": "Land 700 + other NCA 2,800 + brand 600 + goodwill 400 + current assets 1,400 = 5,900. Equity = Palma's equity only (3,400) + liabilities 2,500 = 5,900. The investment (2,600) is eliminated against Ibiza's equity (1,600) + the valuation difference (600) + goodwill (400).",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 1 – Consolidation"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -264,6 +433,7 @@
     "lecture": "t2",
     "case": "pc-sa-2023",
     "difficulty": 2,
+    "single": true,
     "prompt": "What is the goodwill in the PC/SA acquisition?",
     "options": [
       {
@@ -287,7 +457,13 @@
       "a"
     ],
     "explanation": "SA equity = 200 + 825 + 175 = 1,200. Fair value of net assets = 1,200 + brand 600 + building 400 = 2,200. Goodwill = 3,000 − 2,200 = 800. Expected synergies are NOT an identifiable asset – they are part of goodwill.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -296,6 +472,7 @@
     "lecture": "t2",
     "case": "pc-sa-2023",
     "difficulty": 3,
+    "single": true,
     "prompt": "Which amount does NOT appear in PC's consolidated balance sheet at the acquisition date?",
     "options": [
       {
@@ -319,7 +496,13 @@
       "d"
     ],
     "explanation": "PP&E = 4,600 + 870 + 400 fair value adjustment = 5,870; brand 600 and goodwill 800 are recognised. Consolidated equity at acquisition = parent's equity only (900 + 700 + 1,210 = 2,810); SA's pre-acquisition equity is eliminated, so there is no equity of 4,010. Synergies are part of goodwill, not a separate asset. Total = 10,660.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -327,6 +510,7 @@
     "lecture": "t2",
     "case": "pc-sa-2019",
     "difficulty": 3,
+    "single": true,
     "prompt": "Which amount does NOT appear in the consolidated balance sheet of 31 December N2?",
     "options": [
       {
@@ -354,7 +538,13 @@
       "e"
     ],
     "explanation": "Goodwill = 900 − 300 − 250 = 350 (unchanged). Brand impaired by 50 → 200. Consolidated NI = 120 + 190 − 50 = 260. Capital = parent's capital only (700); SA's capital of 300 is eliminated. Total 2,110.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 2 – Consolidation"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -362,6 +552,7 @@
     "lecture": "t2",
     "case": "pc-sa-2019",
     "difficulty": 2,
+    "single": true,
     "prompt": "On 31 December N3 the brand name's value rises to 400 €. What is the accounting impact?",
     "options": [
       {
@@ -385,7 +576,18 @@
       "a"
     ],
     "explanation": "Impairment losses on assets other than goodwill must be reversed when the reason no longer exists, but only up to the carrying amount without impairment (here the original 250, as the brand is not amortised).",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 2 – Consolidation"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -394,6 +596,7 @@
     "lecture": "t2",
     "case": "nci-60",
     "difficulty": 2,
+    "single": true,
     "prompt": "Which amount does NOT appear in the consolidated balance sheet at 31 December N (acquisition date)?",
     "options": [
       {
@@ -421,7 +624,18 @@
       "e"
     ],
     "explanation": "NCI = 40% × 150 = 60. Purchase price 90 = 60% × 150 → no goodwill. Assets = 140 + 170 = 310, liabilities 150, group equity 100.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Example 3 – NCI"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 6 – Conso NCI 20"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -429,6 +643,7 @@
     "lecture": "t2",
     "case": "nci-60",
     "difficulty": 2,
+    "single": true,
     "prompt": "What is the split of consolidated net income at 31 December N+1?",
     "options": [
       {
@@ -452,7 +667,18 @@
       "a"
     ],
     "explanation": "Consolidated NI = 30 + 100% × 20 = 50, of which NCI = 40% × 20 = 8 and group share = 30 + 12 = 42.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Example 3 – NCI"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 6 – Conso NCI 20"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -460,6 +686,7 @@
     "id": "mc-t2-11",
     "lecture": "t2",
     "difficulty": 2,
+    "single": true,
     "prompt": "Mamy owns 70% of Filia (borrowings €500,000) and has exclusive control, but consolidated Filia by the equity method. This mistake …",
     "options": [
       {
@@ -479,7 +706,13 @@
       "c"
     ],
     "explanation": "Under full consolidation 100% of Filia's liabilities would be included (500,000), irrespective of the 70% ownership. The equity method shows only one investment line, so the full 500,000 of debt is missing (exam 2024).",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 4 – QCM"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -487,6 +720,7 @@
     "id": "mc-t2-12",
     "lecture": "t2",
     "difficulty": 3,
+    "single": true,
     "prompt": "F owns 70% of E1, acquired for 1,000. E1's equity was 800; a piece of land recorded at 100 had a fair value of 280. What goodwill is recognised (parent's share)?",
     "options": [
       {
@@ -510,7 +744,13 @@
       "b"
     ],
     "explanation": "Fair value of net assets = 800 + (280 − 100) = 980. Group share 70% × 980 = 686. Goodwill = 1,000 − 686 = 314.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -518,6 +758,7 @@
     "id": "mc-t2-13",
     "lecture": "t2",
     "difficulty": 3,
+    "single": true,
     "prompt": "M owns 80% of F, acquired for 600 when F's equity was 750 (share capital 500, reserves 250). At 31/12/N: M: share capital 800, reserves 1,500, NI 400; F: share capital 500, reserves 300, NI 100. What is consolidated equity attributable to the group?",
     "options": [
       {
@@ -541,7 +782,13 @@
       "a"
     ],
     "explanation": "Goodwill = 600 − 80% × 750 = 0. F's post-acquisition reserves = 300 − 250 = 50 → group share 40 → reserves 1,540. Group NI = 400 + 80% × 100 = 480. Only the parent's share capital appears.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -549,6 +796,7 @@
     "id": "mc-t2-14",
     "lecture": "t2",
     "difficulty": 2,
+    "single": true,
     "prompt": "Can a parent control another company while owning only 45% of its shares?",
     "options": [
       {
@@ -572,13 +820,20 @@
       "a"
     ],
     "explanation": "Control (IFRS 10) = power over relevant activities + exposure to variable returns + ability to use power. Voting agreements, board appointment rights or double voting rights can give power below 50%.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
   },
   {
     "type": "mc",
     "id": "mc-t2-15",
     "lecture": "t2",
     "difficulty": 2,
+    "single": true,
     "prompt": "Why are consolidated statements important for creditors? P (equity 1,000, debt 1,000) invests 2,000 in S1 (debt 2,000), which invests 4,000 in S2 (debt 4,000) buying fixed assets of 8,000. Individual debt/equity ratios are 1. What is the consolidated debt/equity ratio?",
     "options": [
       {
@@ -602,7 +857,13 @@
       "c"
     ],
     "explanation": "Group: assets 8,000; equity = only P's external equity 1,000; financial debt = 1,000 + 2,000 + 4,000 = 7,000 → D/E = 7. The individual statements hide the leverage of the group.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Individual vs consolidated FS"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -610,6 +871,7 @@
     "id": "mc-t2-16",
     "lecture": "t2",
     "difficulty": 2,
+    "single": true,
     "prompt": "Parent acquired 40% of company A for 60 (significant influence). A's net income in N+1 is 20. How does the investment appear in the parent's consolidated statements at the end of N+1?",
     "options": [
       {
@@ -633,7 +895,18 @@
       "a"
     ],
     "explanation": "Equity method: cost 60 + 40% × 20 = 68 in one balance-sheet line, and 8 in one income-statement line. No line-by-line integration and no NCI.",
-    "single": true
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Equity method"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 9 – Equity method 2"
+      }
+    ]
   },
   {
     "type": "short",
@@ -650,6 +923,148 @@
       "Goodwill 400",
       "Assets: land 700, other NCA 2,800, current 1,400, brand 600, GW 400 = 5,900",
       "Equity = parent's only (3,400), liabilities 2,500"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 1 – Consolidation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Book value of the net assets acquired",
+        "why": "Start the purchase price allocation (PPA) with the subsidiary's equity at the acquisition date – all equity lines count, including the net income of the year.",
+        "lines": [
+          "Ibiza equity = share capital 400 + retained earnings 1,000 + net income 200 = 1,600"
+        ]
+      },
+      {
+        "title": "Identify fair value adjustments",
+        "why": "IFRS 3: all identifiable assets and liabilities are remeasured at fair value. Ibiza's internally developed brand is not on its own balance sheet (IAS 38 forbids it), but in a business combination it is identifiable and must be recognised.",
+        "lines": [
+          "Brand name: fair value 600 − book value 0 = +600",
+          "Other assets: fair value = book value → no adjustment"
+        ],
+        "result": "Fair value of net assets = 1,600 + 600 = 2,200"
+      },
+      {
+        "title": "Calculate goodwill",
+        "lines": [
+          "Goodwill = purchase price − fair value of net assets",
+          "= 2,600 − 2,200 = 400"
+        ],
+        "result": "Goodwill 400 K€"
+      },
+      {
+        "title": "Aggregate and eliminate",
+        "why": "Full consolidation: add up 100% of the assets and liabilities of both companies, replace the investment in Ibiza by Ibiza's net assets at fair value plus goodwill, and eliminate Ibiza's equity (it is 'bought', so it is not group equity).",
+        "table": {
+          "head": [
+            "Item",
+            "Palma",
+            "Ibiza",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Land",
+              "400",
+              "300",
+              "",
+              "700"
+            ],
+            [
+              "Other non-current assets",
+              "1,600",
+              "1,200",
+              "",
+              "2,800"
+            ],
+            [
+              "Brand name",
+              "",
+              "",
+              "+600",
+              "600"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+400",
+              "400"
+            ],
+            [
+              "Investment in Ibiza",
+              "2,600",
+              "",
+              "−2,600",
+              "0"
+            ],
+            [
+              "Current assets",
+              "400",
+              "1,000",
+              "",
+              "1,400"
+            ],
+            [
+              "Total assets",
+              "5,000",
+              "2,500",
+              "",
+              "5,900"
+            ],
+            [
+              "Share capital",
+              "800",
+              "400",
+              "−400",
+              "800"
+            ],
+            [
+              "Retained earnings",
+              "2,400",
+              "1,000",
+              "−1,000",
+              "2,400"
+            ],
+            [
+              "Net income",
+              "200",
+              "200",
+              "−200",
+              "200"
+            ],
+            [
+              "Liabilities",
+              "1,600",
+              "900",
+              "",
+              "2,500"
+            ],
+            [
+              "Total E&L",
+              "5,000",
+              "2,500",
+              "",
+              "5,900"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Check",
+        "why": "At the acquisition date, group equity equals the parent's equity (800 + 2,400 + 200 = 3,400) – the subsidiary has not yet earned anything for the group.",
+        "result": "Consolidated balance sheet total 5,900 K€"
+      }
+    ],
+    "pitfalls": [
+      "Using only share capital (400) as Ibiza's book value – retained earnings and net income belong to equity too.",
+      "Keeping Ibiza's net income in group equity at the acquisition date.",
+      "Forgetting the brand: an internally generated brand is recognised in the PPA."
     ]
   },
   {
@@ -666,6 +1081,163 @@
       "Goodwill 800 (synergies not separately recognised)",
       "PP&E 5,870, brand 600, other assets added",
       "Equity = PC only (2,810); liabilities 3,200 + 4,650; total 10,660"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2 – Consolidation"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 4 – FV-BV differences"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Book value of SA's equity",
+        "lines": [
+          "Share capital 200 + share premium 825 + retained earnings 175 = 1,200"
+        ]
+      },
+      {
+        "title": "Fair value adjustments (IFRS 3)",
+        "lines": [
+          "Brand name (not on SA's balance sheet): +600",
+          "Building (part of PP&E): fair value − book value = +400"
+        ],
+        "result": "Fair value of net assets = 1,200 + 600 + 400 = 2,200"
+      },
+      {
+        "title": "Goodwill",
+        "why": "Expected synergies (800) cannot be separately identified and measured – they are exactly what goodwill represents. They are NOT added as a separate asset.",
+        "lines": [
+          "Goodwill = 3,000 − 2,200 = 800"
+        ],
+        "result": "Goodwill 800 (= the synergies)"
+      },
+      {
+        "title": "Consolidated balance sheet at the acquisition date",
+        "table": {
+          "head": [
+            "Item",
+            "PC",
+            "SA",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Cash",
+              "500",
+              "380",
+              "",
+              "880"
+            ],
+            [
+              "Receivables",
+              "740",
+              "420",
+              "",
+              "1,160"
+            ],
+            [
+              "Inventory",
+              "820",
+              "530",
+              "",
+              "1,350"
+            ],
+            [
+              "PP&E",
+              "4,600",
+              "870",
+              "+400",
+              "5,870"
+            ],
+            [
+              "Brand name",
+              "",
+              "",
+              "+600",
+              "600"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+800",
+              "800"
+            ],
+            [
+              "Investment in SA",
+              "3,000",
+              "",
+              "−3,000",
+              "0"
+            ],
+            [
+              "Total assets",
+              "9,660",
+              "2,200",
+              "",
+              "10,660"
+            ],
+            [
+              "Share capital",
+              "900",
+              "200",
+              "−200",
+              "900"
+            ],
+            [
+              "Share premium",
+              "700",
+              "825",
+              "−825",
+              "700"
+            ],
+            [
+              "Retained earnings",
+              "1,210",
+              "175",
+              "−175",
+              "1,210"
+            ],
+            [
+              "Current liabilities",
+              "2,850",
+              "350",
+              "",
+              "3,200"
+            ],
+            [
+              "Long-term debt",
+              "4,000",
+              "650",
+              "",
+              "4,650"
+            ],
+            [
+              "Total E&L",
+              "9,660",
+              "2,200",
+              "",
+              "10,660"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Check",
+        "why": "Group equity = PC's equity only (900 + 700 + 1,210 = 2,810). Both sides total 10,660.",
+        "result": "Total 10,660"
+      }
+    ],
+    "pitfalls": [
+      "Recognising the synergies (800) as a separate intangible AND as goodwill – that counts them twice.",
+      "Forgetting to add the +400 fair value step-up to PP&E."
     ]
   },
   {
@@ -681,6 +1253,871 @@
       "100% integration despite <100% ownership",
       "Presented within equity, separately",
       "Net income split into group share and NCI"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Example 3 – NCI"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 1 – Balance sheet"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Define NCI",
+        "why": "Non-controlling interest = the share of a subsidiary's equity (net assets) and of its net income that does not belong to the parent, i.e. that belongs to the minority shareholders. Example: parent owns 80% → NCI 20%."
+      },
+      {
+        "title": "Why NCI appears at all",
+        "why": "Under control (IFRS 10) the parent fully consolidates: 100% of the subsidiary's assets, liabilities, income and expenses are included, even if it owns less than 100%. The part that is not the parent's has to be shown separately."
+      },
+      {
+        "title": "Presentation in the balance sheet",
+        "why": "NCI is presented WITHIN consolidated equity, separately from 'equity attributable to owners of the parent' – minority shareholders are owners, not creditors.",
+        "lines": [
+          "NCI = NCI % × subsidiary's equity (at fair value, + share of post-acquisition results)"
+        ]
+      },
+      {
+        "title": "Presentation in the income statement",
+        "why": "Consolidated net income is calculated with 100% of the subsidiary's result and then split into 'attributable to owners of the parent' and 'attributable to NCI'.",
+        "result": "NCI: inside equity, separate line; net income split group share / NCI"
+      }
+    ],
+    "pitfalls": [
+      "Presenting NCI as a liability.",
+      "Consolidating only the parent's percentage of the assets (that is proportionate consolidation, not IFRS 10)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t2-04",
+    "lecture": "t2",
+    "case": "pcsa-100-y1",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Prepare PC's consolidated balance sheet as of 31 December N. Give goodwill, consolidated net income and the balance sheet total.",
+    "modelAnswer": "Goodwill = 160 − 160 = 0. Investment 160 eliminated against SA's capital 100 and pre-acquisition retained earnings 60. Equipment 570, inventory 80, cash 120 → 770. Capital 300, net income 80 + 120 = 200, liabilities 270 → 770.",
+    "keyPoints": [
+      "Goodwill 0",
+      "Investment eliminated against capital 100 + pre-acquisition RE 60",
+      "Net income 200 (SA's N result is post-acquisition)",
+      "Total 770"
+    ],
+    "results": [
+      {
+        "label": "Goodwill",
+        "value": 0,
+        "tol": 0.5
+      },
+      {
+        "label": "Consolidated net income",
+        "value": 200
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 770
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 1 – Conso PCSA 100"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2019",
+        "ref": "Ex. 2 – consolidation after acquisition"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Goodwill at acquisition",
+        "lines": [
+          "SA equity at 31/12/N-1: 100 + 60 = 160",
+          "Goodwill = 160 − 160 = 0"
+        ]
+      },
+      {
+        "title": "Split SA's equity into pre- and post-acquisition",
+        "why": "Equity existing at the acquisition date was 'bought' and is eliminated against the investment. Everything earned afterwards belongs to the group.",
+        "lines": [
+          "Pre-acquisition: capital 100 + retained earnings 60 → eliminated",
+          "Post-acquisition: net income N 120 → group"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet 31/12/N",
+        "table": {
+          "head": [
+            "Item",
+            "PC",
+            "SA",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Equipment",
+              "360",
+              "210",
+              "",
+              "570"
+            ],
+            [
+              "Inventory",
+              "",
+              "80",
+              "",
+              "80"
+            ],
+            [
+              "Cash",
+              "80",
+              "40",
+              "",
+              "120"
+            ],
+            [
+              "Investment in SA",
+              "160",
+              "",
+              "−160",
+              "0"
+            ],
+            [
+              "Total assets",
+              "600",
+              "330",
+              "",
+              "770"
+            ],
+            [
+              "Capital",
+              "300",
+              "100",
+              "−100",
+              "300"
+            ],
+            [
+              "Retained earnings",
+              "",
+              "60",
+              "−60",
+              "0"
+            ],
+            [
+              "Net income",
+              "80",
+              "120",
+              "",
+              "200"
+            ],
+            [
+              "Liabilities",
+              "220",
+              "50",
+              "",
+              "270"
+            ],
+            [
+              "Total E&L",
+              "600",
+              "330",
+              "",
+              "770"
+            ]
+          ]
+        },
+        "result": "Net income 200; total 770"
+      }
+    ],
+    "pitfalls": [
+      "Eliminating SA's net income of N – it was earned after the acquisition."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t2-05",
+    "lecture": "t2",
+    "case": "pcsa-gw-brand",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare the purchase price allocation and PC's consolidated balance sheet as of 31 December N.",
+    "modelAnswer": "PPA: 450 − 160 = 290; brand 260; goodwill 30. Consolidated BS 31/12/N: equipment 570, brand 260, goodwill 30, inventory 80, cash 120 → 1,060. Capital 300, net income 200, liabilities 560 → 1,060.",
+    "keyPoints": [
+      "Brand 260 recognised",
+      "Goodwill 30",
+      "Net income 200",
+      "Total 1,060"
+    ],
+    "results": [
+      {
+        "label": "Goodwill",
+        "value": 30
+      },
+      {
+        "label": "Consolidated net income",
+        "value": 200
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 1060
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 3 – Conso GW 100"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 1 – Palma/Ibiza"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Purchase price allocation (31/12/N-1)",
+        "lines": [
+          "Price 450 − SA equity 160 = 290 difference",
+          "Brand (internally developed, fair value) 260",
+          "Goodwill = 290 − 260 = 30"
+        ]
+      },
+      {
+        "title": "Carry the PPA to 31/12/N",
+        "why": "Brand (indefinite life) and goodwill are not amortised and not impaired → unchanged. SA's N result is post-acquisition."
+      },
+      {
+        "title": "Consolidated balance sheet 31/12/N",
+        "table": {
+          "head": [
+            "Item",
+            "PC",
+            "SA",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Equipment",
+              "360",
+              "210",
+              "",
+              "570"
+            ],
+            [
+              "Brand",
+              "",
+              "",
+              "+260",
+              "260"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+30",
+              "30"
+            ],
+            [
+              "Inventory",
+              "",
+              "80",
+              "",
+              "80"
+            ],
+            [
+              "Cash",
+              "80",
+              "40",
+              "",
+              "120"
+            ],
+            [
+              "Investment in SA",
+              "450",
+              "",
+              "−450",
+              "0"
+            ],
+            [
+              "Total assets",
+              "890",
+              "330",
+              "",
+              "1,060"
+            ],
+            [
+              "Capital",
+              "300",
+              "100",
+              "−100",
+              "300"
+            ],
+            [
+              "Retained earnings",
+              "",
+              "60",
+              "−60",
+              "0"
+            ],
+            [
+              "Net income",
+              "80",
+              "120",
+              "",
+              "200"
+            ],
+            [
+              "Liabilities",
+              "510",
+              "50",
+              "",
+              "560"
+            ],
+            [
+              "Total E&L",
+              "890",
+              "330",
+              "",
+              "1,060"
+            ]
+          ]
+        },
+        "result": "Goodwill 30; total 1,060"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t2-06",
+    "lecture": "t2",
+    "case": "pcsa-fv-1950",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare the purchase price allocation and the consolidated balance sheet at the acquisition date.",
+    "modelAnswer": "Subsidiary equity 100 + 125 + 775 = 1,000; brand +300; PP&E +500 → fair value of net assets 1,800; goodwill 150. Consolidated: cash 655, receivables 988, inventory 1,417, PP&E 5,993, brand 300, goodwill 150 → 9,503. Common stock 818, APIC 607, RE 2,512, current liabilities 1,066, long-term debt 4,500 → 9,503.",
+    "keyPoints": [
+      "Book value of net assets 1,000",
+      "Brand 300 and PP&E +500",
+      "Goodwill 150",
+      "PP&E 5,993",
+      "Total 9,503; equity = parent's only"
+    ],
+    "results": [
+      {
+        "label": "Goodwill",
+        "value": 150
+      },
+      {
+        "label": "Consolidated PP&E",
+        "value": 5993
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 9503
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 4 – Conso GW 100 with FV-BV differences"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 2d – PC/SA"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Book value of the subsidiary's net assets",
+        "lines": [
+          "100 + 125 + 775 = 1,000"
+        ]
+      },
+      {
+        "title": "Fair value adjustments",
+        "lines": [
+          "Brand: +300",
+          "PP&E: +500",
+          "Fair value of net assets = 1,800"
+        ]
+      },
+      {
+        "title": "Goodwill",
+        "lines": [
+          "1,950 − 1,800 = 150 (the synergies)"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet",
+        "table": {
+          "head": [
+            "Item",
+            "Parent",
+            "Sub",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Cash",
+              "429",
+              "226",
+              "",
+              "655"
+            ],
+            [
+              "Receivables",
+              "640",
+              "348",
+              "",
+              "988"
+            ],
+            [
+              "Inventory",
+              "970",
+              "447",
+              "",
+              "1,417"
+            ],
+            [
+              "PP&E",
+              "4,666",
+              "827",
+              "+500",
+              "5,993"
+            ],
+            [
+              "Brand",
+              "",
+              "",
+              "+300",
+              "300"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+150",
+              "150"
+            ],
+            [
+              "Investment",
+              "1,950",
+              "",
+              "−1,950",
+              "0"
+            ],
+            [
+              "Total assets",
+              "8,655",
+              "1,848",
+              "",
+              "9,503"
+            ],
+            [
+              "Common stock",
+              "818",
+              "100",
+              "−100",
+              "818"
+            ],
+            [
+              "APIC",
+              "607",
+              "125",
+              "−125",
+              "607"
+            ],
+            [
+              "Retained earnings",
+              "2,512",
+              "775",
+              "−775",
+              "2,512"
+            ],
+            [
+              "Current liabilities",
+              "718",
+              "348",
+              "",
+              "1,066"
+            ],
+            [
+              "Long-term debt",
+              "4,000",
+              "500",
+              "",
+              "4,500"
+            ],
+            [
+              "Total E&L",
+              "8,655",
+              "1,848",
+              "",
+              "9,503"
+            ]
+          ]
+        },
+        "result": "Goodwill 150; total 9,503"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t2-07",
+    "lecture": "t2",
+    "case": "pcsa-nci-20",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare PC's consolidated balance sheet as of 31 December N+1. Give consolidated retained earnings, the group share of net income, NCI and the total.",
+    "modelAnswer": "Goodwill = 160 − 80% × 200 = 0. SA post-acquisition: RE 190 − 60 = 130, NI 150. Group RE = 50 + 80% × 130 = 154; group NI = 110 + 80% × 150 = 230; NCI = 20% × 480 = 96. Assets 870 + 70 + 60 + 250 = 1,250; E&L 300 + 154 + 230 + 96 + 470 = 1,250.",
+    "keyPoints": [
+      "Goodwill 0",
+      "Post-acquisition RE 130 and NI 150 split 80/20",
+      "Group RE 154, group NI 230",
+      "NCI 96 = 20% × 480",
+      "Total 1,250"
+    ],
+    "results": [
+      {
+        "label": "Consolidated retained earnings",
+        "value": 154
+      },
+      {
+        "label": "Net income – group share",
+        "value": 230
+      },
+      {
+        "label": "Non-controlling interests",
+        "value": 96
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 1250
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 6 – Conso NCI 20"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Non-controlling interests"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Goodwill and NCI at acquisition",
+        "lines": [
+          "PC's share: 80% × 200 = 160 → goodwill = 160 − 160 = 0",
+          "NCI at acquisition: 20% × 200 = 40"
+        ]
+      },
+      {
+        "title": "SA's equity at N+1: pre- vs post-acquisition",
+        "lines": [
+          "Total SA equity: 140 + 190 + 150 = 480",
+          "Pre-acquisition: capital 140 + RE 60 = 200",
+          "Post-acquisition: RE 190 − 60 = 130 (N result) + NI N+1 150"
+        ]
+      },
+      {
+        "title": "Split the post-acquisition results 80 / 20",
+        "lines": [
+          "Group RE = PC 50 + 80% × 130 = 154",
+          "Group NI = PC 110 + 80% × 150 = 230",
+          "NCI = 20% × 480 = 96 (= 40 + 20% × 130 + 20% × 150)"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet 31/12/N+1",
+        "why": "Full consolidation: 100% of SA's assets and liabilities.",
+        "table": {
+          "head": [
+            "Item",
+            "PC",
+            "SA",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Equipment",
+              "480",
+              "390",
+              "870"
+            ],
+            [
+              "Inventory",
+              "",
+              "70",
+              "70"
+            ],
+            [
+              "Accounts receivable",
+              "",
+              "60",
+              "60"
+            ],
+            [
+              "Cash",
+              "110",
+              "140",
+              "250"
+            ],
+            [
+              "Investment in SA",
+              "160",
+              "",
+              "0"
+            ],
+            [
+              "Total assets",
+              "750",
+              "660",
+              "1,250"
+            ],
+            [
+              "Capital",
+              "300",
+              "140",
+              "300"
+            ],
+            [
+              "Retained earnings",
+              "50",
+              "190",
+              "154"
+            ],
+            [
+              "Net income (group share)",
+              "110",
+              "150",
+              "230"
+            ],
+            [
+              "Non-controlling interests",
+              "",
+              "",
+              "96"
+            ],
+            [
+              "Liabilities",
+              "290",
+              "180",
+              "470"
+            ],
+            [
+              "Total E&L",
+              "750",
+              "660",
+              "1,250"
+            ]
+          ]
+        },
+        "result": "RE 154; NI group 230; NCI 96; total 1,250"
+      }
+    ],
+    "pitfalls": [
+      "Integrating only 80% of SA's assets.",
+      "Giving the whole post-acquisition profit to the group – 20% belongs to the NCI."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t2-08",
+    "lecture": "t2",
+    "case": "pcsa-nci-30-is",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Prepare the consolidated income statement for the current year, including the split of net income.",
+    "modelAnswer": "Sales 9,050,000; COGS 6,575,000; gross profit 2,475,000; operating expenses 1,930,000; consolidated net income 545,000, of which NCI 30% × 295,000 = 88,500 and owners of the parent 456,500.",
+    "keyPoints": [
+      "100% of SA's income and expenses added",
+      "Consolidated net income 545,000",
+      "NCI 88,500",
+      "Group share 456,500"
+    ],
+    "results": [
+      {
+        "label": "Consolidated net income",
+        "value": 545000
+      },
+      {
+        "label": "Attributable to NCI",
+        "value": 88500
+      },
+      {
+        "label": "Attributable to owners of the parent",
+        "value": 456500
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 7 – Conso NCI 30, income statement"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Add 100% of each line",
+        "why": "Full consolidation integrates all income and expenses of SA, even though PC owns 70%.",
+        "lines": [
+          "Sales 7,800,000 + 1,250,000 = 9,050,000",
+          "COGS 5,900,000 + 675,000 = 6,575,000",
+          "Gross profit 2,475,000",
+          "Operating expenses 1,650,000 + 280,000 = 1,930,000",
+          "Net income 545,000"
+        ]
+      },
+      {
+        "title": "Split net income",
+        "lines": [
+          "NCI: 30% × 295,000 = 88,500",
+          "Owners of the parent: 545,000 − 88,500 = 456,500 (= 250,000 + 70% × 295,000)"
+        ],
+        "result": "Group share 456,500; NCI 88,500"
+      }
+    ],
+    "pitfalls": [
+      "Adding only 70% of SA's sales and expenses."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-t2-09",
+    "lecture": "t2",
+    "case": "pc-ac-equity",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Prepare PC's consolidated balance sheet as of 31 December N+1 using the equity method. Give the investment in AC, consolidated net income and the total. What would change if PC had paid 45 instead of 40?",
+    "modelAnswer": "AC equity N+1 = 430; increase since acquisition 270 → PC's share 25% = 67.5. Investment in AC = 40 + 67.5 = 107.5. Consolidated RE = 60 + 25% × 120 = 90; NI = 100 + 25% × 150 = 137.5. Total 480 + 107.5 + 230 = 817.5 = 300 + 90 + 137.5 + 290. If paid 45: goodwill 5 included in the investment (not shown separately) → investment 112.5.",
+    "keyPoints": [
+      "Equity method: no line-by-line integration",
+      "Investment 40 + 25% × 270 = 107.5",
+      "NI 137.5 incl. share of AC's profit 37.5",
+      "Total 817.5",
+      "Price 45: goodwill 5 inside the investment"
+    ],
+    "results": [
+      {
+        "label": "Investment in AC",
+        "value": 107.5
+      },
+      {
+        "label": "Consolidated net income",
+        "value": 137.5
+      },
+      {
+        "label": "Balance sheet total",
+        "value": 817.5
+      }
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 8 – Equity method"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Equity method"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Equity method principle (IAS 28)",
+        "why": "Associates are NOT consolidated line by line. The investment is carried at cost and increased/decreased by the investor's share of the associate's post-acquisition results (dividends reduce it)."
+      },
+      {
+        "title": "AC's post-acquisition equity",
+        "lines": [
+          "AC equity at acquisition: 160",
+          "AC equity 31/12/N+1: 100 + 180 + 150 = 430",
+          "Increase: 270 (RE +120 from year N, NI N+1 150)"
+        ]
+      },
+      {
+        "title": "Investment in AC",
+        "lines": [
+          "40 + 25% × 270 = 40 + 67.5 = 107.5"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet 31/12/N+1",
+        "table": {
+          "head": [
+            "Item",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Equipment",
+              "480"
+            ],
+            [
+              "Investment in AC (equity method)",
+              "107.5"
+            ],
+            [
+              "Cash",
+              "230"
+            ],
+            [
+              "Total assets",
+              "817.5"
+            ],
+            [
+              "Capital",
+              "300"
+            ],
+            [
+              "Retained earnings (60 + 25% × 120)",
+              "90"
+            ],
+            [
+              "Net income (100 + 25% × 150)",
+              "137.5"
+            ],
+            [
+              "Liabilities",
+              "290"
+            ],
+            [
+              "Total E&L",
+              "817.5"
+            ]
+          ]
+        },
+        "result": "Investment 107.5; net income 137.5; total 817.5"
+      },
+      {
+        "title": "Price 45 instead of 40",
+        "lines": [
+          "25% × 160 = 40 → goodwill 5",
+          "Goodwill stays inside the investment line (not shown separately) → investment 112.5"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Adding AC's assets line by line (that is full consolidation).",
+      "Showing the goodwill of an associate as a separate asset."
     ]
   }
 ]

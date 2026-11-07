@@ -13,6 +13,48 @@
       "Group share 80% = 1,200",
       "Goodwill 300",
       "NCI = 20% × 1,500 = 300"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Example 3 – NCI"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 6 – Conso NCI 20"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Fair value of Stella's identifiable net assets",
+        "lines": [
+          "Book value of equity: 500 + 600 + 100 = 1,200",
+          "Customer list (not on Stella's balance sheet, identifiable in the PPA): +300",
+          "Fair value of net assets = 1,500"
+        ]
+      },
+      {
+        "title": "Goodwill on Nova's share (partial goodwill)",
+        "why": "With partial goodwill, Nova compares its price with ITS share of the net assets.",
+        "lines": [
+          "Nova's share: 80% × 1,500 = 1,200",
+          "Goodwill = 1,500 − 1,200 = 300"
+        ]
+      },
+      {
+        "title": "Non-controlling interest",
+        "why": "NCI are measured at their share of the fair value of the identifiable net assets (no goodwill for them).",
+        "lines": [
+          "NCI = 20% × 1,500 = 300"
+        ],
+        "result": "Goodwill 300 K€; NCI 300 K€"
+      }
+    ],
+    "pitfalls": [
+      "Computing goodwill with 100% of the net assets (1,500 − 1,500 = 0).",
+      "Forgetting the customer list."
     ]
   },
   {
@@ -30,6 +72,141 @@
       "Group equity = Nova's equity 3,000",
       "NCI 300 within equity",
       "Total 5,300"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T2",
+        "ref": "Example 3 – NCI"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T2",
+        "ref": "Case 6 – Conso NCI 20"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Start from goodwill and NCI",
+        "lines": [
+          "Goodwill 300; customer list 300; NCI 300 (see previous question)"
+        ]
+      },
+      {
+        "title": "Integrate 100% of Stella and eliminate",
+        "why": "Control → full consolidation: 100% of Stella's assets and liabilities, even though Nova owns 80%. The investment (1,500) is replaced by the net assets; Stella's equity is eliminated and the minority part becomes NCI.",
+        "table": {
+          "head": [
+            "Item",
+            "Nova",
+            "Stella",
+            "Adjustment",
+            "Group"
+          ],
+          "rows": [
+            [
+              "Land",
+              "900",
+              "",
+              "",
+              "900"
+            ],
+            [
+              "Other non-current assets",
+              "1,500",
+              "1,000",
+              "",
+              "2,500"
+            ],
+            [
+              "Customer list",
+              "",
+              "",
+              "+300",
+              "300"
+            ],
+            [
+              "Goodwill",
+              "",
+              "",
+              "+300",
+              "300"
+            ],
+            [
+              "Investment in Stella",
+              "1,500",
+              "",
+              "−1,500",
+              "0"
+            ],
+            [
+              "Current assets",
+              "600",
+              "700",
+              "",
+              "1,300"
+            ],
+            [
+              "Total assets",
+              "4,500",
+              "1,700",
+              "",
+              "5,300"
+            ],
+            [
+              "Share capital",
+              "1,000",
+              "500",
+              "−500",
+              "1,000"
+            ],
+            [
+              "Retained earnings",
+              "1,700",
+              "600",
+              "−600",
+              "1,700"
+            ],
+            [
+              "Net income",
+              "300",
+              "100",
+              "−100",
+              "300"
+            ],
+            [
+              "Non-controlling interests",
+              "",
+              "",
+              "+300",
+              "300"
+            ],
+            [
+              "Liabilities",
+              "1,500",
+              "500",
+              "",
+              "2,000"
+            ],
+            [
+              "Total E&L",
+              "4,500",
+              "1,700",
+              "",
+              "5,300"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Check",
+        "why": "Equity attributable to owners of the parent = Nova's equity (3,000); NCI 300 shown within equity.",
+        "result": "Total 5,300 K€"
+      }
+    ],
+    "pitfalls": [
+      "Integrating only 80% of Stella's assets.",
+      "Showing NCI as a liability."
     ]
   },
   {
@@ -38,6 +215,7 @@
     "lecture": "t3",
     "case": "store-lyon",
     "difficulty": 1,
+    "single": true,
     "prompt": "What is the impairment loss of the Lyon store?",
     "options": [
       {
@@ -61,7 +239,13 @@
       "a"
     ],
     "explanation": "Recoverable amount = higher of value in use (1,050,000) and FV less costs to sell (980,000) = 1,050,000. Impairment = 1,400,000 − 1,050,000 = 350,000.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": ""
+      }
+    ],
     "shuffle": false
   },
   {
@@ -79,6 +263,97 @@
       "Building floor at 600,000 (−50,000 only)",
       "Reallocation: fittings 300,000, IT 150,000",
       "Total equals recoverable amount 1,050,000"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 2 – Impairment"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 5 – Porto"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Impairment loss of the CGU",
+        "lines": [
+          "Recoverable amount = max(value in use 1,050,000; FV less costs to sell 980,000) = 1,050,000",
+          "Carrying amount 1,400,000 → loss 350,000"
+        ]
+      },
+      {
+        "title": "Step 1 – goodwill first",
+        "lines": [
+          "Goodwill 150,000 → 0; remaining loss 200,000"
+        ]
+      },
+      {
+        "title": "Step 2 – pro rata to the other assets",
+        "lines": [
+          "Basis: 650,000 + 400,000 + 200,000 = 1,250,000",
+          "Building: 200,000 × 650/1,250 = 104,000 → would give 546,000"
+        ]
+      },
+      {
+        "title": "Step 3 – respect the floor",
+        "why": "IAS 36.105: no asset may be reduced below the highest of its fair value less costs to sell, its value in use and zero. Building floor = 600,000 → only −50,000.",
+        "lines": [
+          "Unallocated: 200,000 − 50,000 = 150,000 → reallocate to fittings and IT (400 : 200)",
+          "Fittings: 150,000 × 2/3 = 100,000 → 300,000",
+          "IT: 150,000 × 1/3 = 50,000 → 150,000"
+        ]
+      },
+      {
+        "title": "Result",
+        "table": {
+          "head": [
+            "Asset",
+            "Before",
+            "Impairment",
+            "After"
+          ],
+          "rows": [
+            [
+              "Goodwill",
+              "150,000",
+              "−150,000",
+              "0"
+            ],
+            [
+              "Building",
+              "650,000",
+              "−50,000",
+              "600,000"
+            ],
+            [
+              "Fittings",
+              "400,000",
+              "−100,000",
+              "300,000"
+            ],
+            [
+              "IT equipment",
+              "200,000",
+              "−50,000",
+              "150,000"
+            ],
+            [
+              "Total",
+              "1,400,000",
+              "−350,000",
+              "1,050,000"
+            ]
+          ]
+        },
+        "result": "Total after impairment = recoverable amount 1,050,000"
+      }
+    ],
+    "pitfalls": [
+      "Allocating pro rata including goodwill.",
+      "Pushing the building below its fair value less costs to sell."
     ]
   },
   {
@@ -89,7 +364,14 @@
     "difficulty": 2,
     "statement": "If the Lyon store's recoverable amount rises again next year, ShopCo must reverse the goodwill impairment of 150,000.",
     "answer": false,
-    "explanation": "Wrong. Goodwill impairment losses can never be reversed (IAS 36.124). Only the impairments of the building, fittings and IT equipment may be reversed – capped at their carrying amounts without impairment."
+    "explanation": "Wrong. Goodwill impairment losses can never be reversed (IAS 36.124). Only the impairments of the building, fittings and IT equipment may be reversed – capped at their carrying amounts without impairment.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": ""
+      }
+    ]
   },
   {
     "type": "mc",
@@ -97,6 +379,7 @@
     "lecture": "t3",
     "case": "novatel-lease",
     "difficulty": 2,
+    "single": true,
     "prompt": "What are the lease liability and the right-of-use asset at commencement?",
     "options": [
       {
@@ -120,7 +403,18 @@
       "a"
     ],
     "explanation": "Liability = 100,000 × 4.3295 = 432,950. ROU = liability + initial direct costs 7,050 = 440,000.",
-    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung T3",
+        "ref": "Case 9 – Leases no. 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Exercise 3.5"
+      }
+    ],
     "shuffle": false
   },
   {
@@ -129,6 +423,7 @@
     "lecture": "t3",
     "case": "novatel-lease",
     "difficulty": 3,
+    "single": true,
     "prompt": "Which of the following is NOT an impact of the lease in N1?",
     "options": [
       {
@@ -152,7 +447,18 @@
       "d"
     ],
     "explanation": "Depreciation 440,000/5 = 88,000. Interest 5% × 432,950 = 21,648. Liability = 432,950 + 21,648 − 100,000 = 354,598. Under IFRS 16 the lessee recognises depreciation and interest – there is NO rent expense of 100,000.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 5 – Leases"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   },
   {
     "type": "short",
@@ -168,6 +474,47 @@
       "Financial debt increases (lease liability)",
       "Total N1 expenses 109,648 > 100,000 (front-loaded interest)",
       "Link to EBITDAaL / net debt"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T3",
+        "ref": "Leases: impacts"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 3 – Financing"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Measure the lease under IFRS 16",
+        "lines": [
+          "Lease liability = 100,000 × 4.3295 = 432,950",
+          "ROU asset = 432,950 + initial direct costs 7,050 = 440,000",
+          "Depreciation N1 = 440,000 / 5 = 88,000",
+          "Interest N1 = 5% × 432,950 = 21,648",
+          "Liability end N1 = 432,950 + 21,648 − 100,000 = 354,598"
+        ]
+      },
+      {
+        "title": "Effect on EBITDA",
+        "why": "Old model: rent 100,000 inside operating expenses (above EBITDA). IFRS 16: depreciation and interest are both below EBITDA.",
+        "result": "EBITDA +100,000"
+      },
+      {
+        "title": "Effect on gearing",
+        "why": "The lease liability (354,598 at year end) is financial debt; the ROU asset increases total assets.",
+        "result": "Net debt ↑ → gearing deteriorates"
+      },
+      {
+        "title": "Total expense",
+        "lines": [
+          "IFRS 16: 88,000 + 21,648 = 109,648 > 100,000 rent"
+        ],
+        "why": "Interest is front-loaded (high liability at the start), so total expenses are higher in early years. Analysts therefore use EBITDAaL and net debt incl. leases."
+      }
     ]
   },
   {
@@ -176,6 +523,7 @@
     "lecture": "t4",
     "case": "orion-de",
     "difficulty": 2,
+    "single": true,
     "prompt": "Which of Orion's instruments are financial liabilities?",
     "options": [
       {
@@ -199,7 +547,18 @@
       "a"
     ],
     "explanation": "Mandatory repayment/coupons (bonds) and holder put options (redeemable preference shares) are contractual obligations → liabilities. Coupons on the perpetual notes are only due if Orion pays a dividend, so Orion can avoid them → equity, like the ordinary shares.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 9 – Multiple choice and questions"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Hybrid instruments"
+      }
+    ]
   },
   {
     "type": "short",
@@ -214,6 +573,40 @@
       "Compound instrument → split accounting",
       "Liability 46,200,000",
       "Equity 3,800,000 (residual)"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": "Compound instruments"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2016",
+        "ref": "Ex. 7 – Convertible bond"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Identify a compound instrument",
+        "why": "Obligation to pay coupons and repay = liability; holder's right to convert into a fixed number of shares = equity. IAS 32 → split accounting."
+      },
+      {
+        "title": "Split the proceeds",
+        "lines": [
+          "Liability component = PV at the rate of similar non-convertible debt = 46,200,000",
+          "Equity component = 50,000,000 − 46,200,000 = 3,800,000"
+        ]
+      },
+      {
+        "title": "Entry at issuance",
+        "lines": [
+          "Cash +50,000,000",
+          "Financial debt +46,200,000 (then amortised cost)",
+          "Equity +3,800,000 (not remeasured)"
+        ],
+        "result": "Debt 46.2 m€, equity 3.8 m€"
+      }
     ]
   },
   {
@@ -222,6 +615,7 @@
     "lecture": "t4",
     "case": "orion-de",
     "difficulty": 2,
+    "single": true,
     "prompt": "What is the impact of reselling the 30,000 treasury shares?",
     "options": [
       {
@@ -245,7 +639,13 @@
       "a"
     ],
     "explanation": "Released at cost 30,000 × 20 = 600,000; received 30,000 × 18 = 540,000; shortfall 60,000 reduces share premium – no P/L impact.",
-    "single": true
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 5 – Multiple choice"
+      }
+    ]
   },
   {
     "type": "short",
@@ -261,6 +661,53 @@
       "NOPAT 1,800",
       "ROCE 9%",
       "EVA +200 → value created"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023",
+        "ref": "Ex. 5 – Multiple choice"
+      },
+      {
+        "kind": "case",
+        "source": "Übung T5",
+        "ref": "Exercise 1 – VW EVA"
+      }
+    ],
+    "steps": [
+      {
+        "title": "EBITDA",
+        "lines": [
+          "EBIT + D&A = 2,400 + 600 = 3,000"
+        ]
+      },
+      {
+        "title": "NOPAT",
+        "lines": [
+          "EBIT × (1 − t) = 2,400 × 0.75 = 1,800"
+        ]
+      },
+      {
+        "title": "ROCE",
+        "lines": [
+          "NOPAT / CE = 1,800 / 20,000 = 9.0%"
+        ]
+      },
+      {
+        "title": "EVA",
+        "lines": [
+          "NOPAT − WACC × CE = 1,800 − 8% × 20,000 = 1,800 − 1,600 = 200",
+          "Check: (9% − 8%) × 20,000 = 200"
+        ]
+      },
+      {
+        "title": "Interpret",
+        "why": "ROCE exceeds WACC by 1 percentage point → Orion earns more than its capital providers require.",
+        "result": "EVA +200 m€ → value creation"
+      }
+    ],
+    "pitfalls": [
+      "Using EBITDA instead of EBIT for NOPAT."
     ]
   },
   {
@@ -271,6 +718,13 @@
     "difficulty": 2,
     "statement": "All else equal, Orion's share buy-back increases its return on equity (ROE).",
     "answer": true,
-    "explanation": "ROE = net income / equity. Buying back shares reduces equity (treasury shares are deducted), so with unchanged net income ROE rises – one of the reasons companies buy back shares."
+    "explanation": "ROE = net income / equity. Buying back shares reduces equity (treasury shares are deducted), so with unchanged net income ROE rises – one of the reasons companies buy back shares.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien T4",
+        "ref": ""
+      }
+    ]
   }
 ]
