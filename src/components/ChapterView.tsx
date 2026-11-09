@@ -63,6 +63,8 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
   const checkups = summary.items.filter((i) => i.lecture === chapterId && i.checkup);
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
+  const paperQs = summary.paperItems.filter((i) => i.lecture === chapterId);
+  const paperStatus = statusCounts(paperQs.map((i) => s.items[itemKey(subject.id, i.id)]));
   const slides = subject.look === "slides";
   // Nachschlagen und Lesezeichen: schmale Links über den Übungs-Kacheln
   const links = [
@@ -112,6 +114,16 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             icon: ClipboardCheck,
             title: "Check-up-Fragen",
             meta: `${checkupStatus.first + checkupStatus.recovered}/${checkups.length} richtig`,
+          },
+        ]
+      : []),
+    ...(paperQs.length
+      ? [
+          {
+            href: `${base}/practice?mode=papers&lecture=${chapterId}`,
+            icon: ScrollText,
+            title: "Klausuraufgaben",
+            meta: `${paperStatus.first + paperStatus.recovered}/${paperQs.length} richtig`,
           },
         ]
       : []),

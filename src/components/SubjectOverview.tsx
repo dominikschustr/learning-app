@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, Play, RotateCcw, Sigma, Target, Trophy, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, Play, RotateCcw, ScrollText, Sigma, Target, Trophy, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
@@ -64,6 +64,14 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const hasTf = summary.items.some((i) => i.type === "tf");
   const checkups = summary.items.filter((i) => i.checkup);
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
+  // Klausuraufgaben je Kapitel: alle Aufgaben der Probeklausuren, nach Thema sortiert
+  const paperChapters = subject.lectures
+    .map((l, i) => {
+      const qs = summary.paperItems.filter((p) => p.lecture === l.id);
+      const c = statusCounts(qs.map((p) => s.items[itemKey(subject.id, p.id)]));
+      return { id: l.id, n: i + 1, code: l.title.split(" · ")[0], name: l.title.split(" · ").slice(1).join(" · "), total: qs.length, right: c.first + c.recovered };
+    })
+    .filter((c) => c.total > 0);
   // Üben: große Kacheln, nur Titel und Stand
   const modes = [
     {
@@ -263,6 +271,43 @@ function Inner({ summary }: { summary: SubjectSummary }) {
           </motion.li>
         </ol>
       </section>
+
+      {paperChapters.length > 0 && (
+        <section>
+          <div className="mb-3 flex items-end justify-between gap-4">
+            <div>
+              <h2 className="display text-2xl">Klausuraufgaben nach Kapitel</h2>
+              <p className="mt-1 text-sm text-muted">Alle Aufgaben aus den Probeklausuren, nach Thema sortiert</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
+            {paperChapters.map((c) => (
+              <Link
+                key={c.id}
+                href={`${base}/practice?mode=papers&lecture=${c.id}`}
+                className="card group flex flex-col p-3 transition hover:-translate-y-0.5 sm:p-4"
+              >
+                <span className="flex items-center gap-2">
+                  <span
+                    className="grid size-8 shrink-0 place-items-center rounded-lg"
+                    style={{ background: alpha(subject.color, 0.1), color: subject.color }}
+                  >
+                    <ScrollText className="size-4" />
+                  </span>
+                  <span className="eyebrow">Kapitel {c.n} · {c.code}</span>
+                </span>
+                <span className="mt-2 line-clamp-2 text-sm font-semibold leading-snug">{c.name}</span>
+                <span className="mt-auto pt-2">
+                  <Bar value={c.right / c.total} color={subject.color} />
+                  <span className="mt-1 block text-xs text-muted">
+                    {c.total} Aufgaben · {c.right} richtig
+                  </span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section>
         <h2 className="display mb-3 text-2xl">Freies Training</h2>

@@ -28,6 +28,17 @@ describe("buildQueue – Check-up-Fragen", () => {
   });
 });
 
+describe("buildQueue – Klausuraufgaben", () => {
+  it("zieht alle Klausuraufgaben des Kapitels in fester Reihenfolge, auch solche nur für Probeklausuren", () => {
+    const papers = [pool[36], { ...pool[2], paperOnly: true }, pool[1], pool[37]];
+    const a = buildQueue({ mode: "papers", subjectId: "s", questions: pool, items: {}, now: 0, lecture: "a", papers });
+    expect(a.map((q) => q.id)).toEqual(["tf-2", "tf-1"]);
+    const b = buildQueue({ mode: "papers", subjectId: "s", questions: pool, items: {}, now: 0, lecture: "b", papers });
+    expect(b.map((q) => q.id)).toEqual(["tf-36", "tf-37"]);
+    expect(buildQueue({ mode: "papers", subjectId: "s", questions: pool, items: {}, now: 0 })).toHaveLength(0);
+  });
+});
+
 describe("buildQueue – Kapitel-Übung", () => {
   it("zieht eine begrenzte, wechselnde Auswahl nur aus dem Kapitel", () => {
     const run = () => buildQueue({ mode: "lecture", subjectId: "s", questions: pool, items: {}, now: 0, lecture: "a" });

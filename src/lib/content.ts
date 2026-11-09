@@ -19,6 +19,7 @@ import {
   type Formula,
   type Framework,
   type LectureText,
+  type Question,
   type SubjectContent,
   type SubjectSummary,
 } from "./schema";
@@ -166,8 +167,32 @@ export function practiceContent(content: SubjectContent): SubjectContent {
   return { ...content, questions: content.questions.filter((q) => !q.paperOnly) };
 }
 
+const TYPE_ORDER = { short: 0, mc: 1, tf: 2 } as const;
+
+/**
+ * Alle Fragen der Probeklausuren, je einmal (auch paperOnly): erst die Rechen-/Kurzantwortaufgaben, dann Multiple
+ * Choice und True/False, jeweils in der Reihenfolge der Klausuren. Grundlage für „Klausuraufgaben“ je Kapitel.
+ */
+export function paperQuestions({ questions, papers }: SubjectContent): Question[] {
+  const byId = new Map(questions.map((q) => [q.id, q]));
+  const ids = [...new Set(papers.flatMap((p) => paperItems(p).map((i) => i.q)))];
+  return ids
+    .map((id) => byId.get(id))
+    .filter((q): q is Question => q !== undefined)
+    .map((q, i) => ({ q, i }))
+    .sort((a, b) => TYPE_ORDER[a.q.type] - TYPE_ORDER[b.q.type] || a.i - b.i)
+    .map(({ q }) => q);
+}
+
 export function getSummaries(): SubjectSummary[] {
-  return getAllContent().map(({ subject, questions, cards, papers }) => ({
+  return getAllContent().map((content) => ({
+    ...summaryOf(content),
+    paperItems: paperQuestions(content).map((q) => ({ id: q.id, lecture: q.lecture })),
+  }));
+}
+
+function summaryOf({ subject, questions, cards, papers }: SubjectContent): Omit<SubjectSummary, "paperItems"> {
+  return {
     subject,
     items: questions
       .filter((q) => !q.paperOnly)
@@ -188,5 +213,5 @@ export function getSummaries(): SubjectSummary[] {
       points: paperItems(p).reduce((s, i) => s + i.points, 0),
       kind: p.origin.kind,
     })),
-  }));
+  };
 }

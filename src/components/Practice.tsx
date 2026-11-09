@@ -23,9 +23,18 @@ import { Button, ButtonLink, Skeleton } from "./ui";
 type Entry = { q: Question; order: string[]; retry: boolean };
 type Outcome = { q: Question; correct: boolean };
 
-const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup"];
+const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "papers"];
 
-export function Practice({ content, formulas = [] }: { content: SubjectContent; formulas?: RenderedFormula[] }) {
+export function Practice({
+  content,
+  formulas = [],
+  papers = [],
+}: {
+  content: SubjectContent;
+  formulas?: RenderedFormula[];
+  /** Aufgaben der Probeklausuren (auch paperOnly) für mode "papers" */
+  papers?: Question[];
+}) {
   const hydrated = useHydrated();
   const params = useSearchParams();
   const raw = params.get("mode") as PracticeMode;
@@ -39,6 +48,7 @@ export function Practice({ content, formulas = [] }: { content: SubjectContent; 
       key={`${mode}-${lecture}-${run}`}
       content={content}
       formulas={formulas}
+      papers={papers}
       mode={mode}
       lecture={lecture}
       onRestart={() => setRun((r) => r + 1)}
@@ -53,6 +63,7 @@ function Session({
   lecture,
   onRestart,
   only,
+  papers,
 }: {
   content: SubjectContent;
   formulas: RenderedFormula[];
@@ -60,6 +71,7 @@ function Session({
   lecture?: string;
   onRestart: () => void;
   only?: Question[];
+  papers?: Question[];
 }) {
   const { subject } = content;
   const caseOf = useCaseOf(content.cases);
@@ -78,6 +90,7 @@ function Session({
         now: Date.now(),
         lecture,
         marked: markedIds(useApp.getState().marks, "q", subject.id),
+        papers,
       });
     return qs.map((q) => ({ q, order: optionOrder(q), retry: false }));
   });
@@ -263,7 +276,9 @@ function Session({
                   ? "Nichts falsch"
                   : mode === "checkup"
                     ? "Keine Check-up-Fragen"
-                    : "Keine Fragen"}
+                    : mode === "papers"
+                      ? "Keine Klausuraufgaben"
+                      : "Keine Fragen"}
         </h1>
         <p className="mt-2 text-muted">
           {mode === "due"
@@ -276,7 +291,9 @@ function Session({
                   ? "Keine Frage ist gerade als falsch beantwortet markiert – stark!"
                   : mode === "checkup"
                     ? "Für diese Auswahl sind keine Check-up-Fragen aus den Vorlesungen hinterlegt."
-                    : "Für diese Auswahl gibt es noch keine Fragen."}
+                    : mode === "papers"
+                      ? "In den Probeklausuren gibt es zu diesem Kapitel keine Aufgaben."
+                      : "Für diese Auswahl gibt es noch keine Fragen."}
         </p>
         <div className="mt-6 flex justify-center gap-2">
           <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>

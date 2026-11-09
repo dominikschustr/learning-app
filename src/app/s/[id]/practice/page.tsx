@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { Practice } from "@/components/Practice";
 import { Skeleton } from "@/components/ui";
-import { getAllContent, getFormulas, getSubjectContent, practiceContent } from "@/lib/content";
+import { getAllContent, getFormulas, getSubjectContent, paperQuestions, practiceContent } from "@/lib/content";
 import { renderFormula } from "@/lib/tex";
 
 export const metadata = { title: "Üben" };
@@ -18,7 +18,11 @@ export default async function PracticePage({ params }: PageProps<"/s/[id]/practi
   if (!content) notFound();
   return (
     <Suspense fallback={<Skeleton className="h-96" />}>
-      <Practice content={practiceContent(content)} formulas={getFormulas(id).map(renderFormula)} />
+      <Practice
+        content={practiceContent(content)}
+        formulas={getFormulas(id).map(renderFormula)}
+        papers={paperQuestions(content)}
+      />
     </Suspense>
   );
 }

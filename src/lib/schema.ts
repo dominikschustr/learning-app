@@ -309,6 +309,8 @@ export type SubjectSummary = {
   formulas: string[];
   /** Probeklausuren (nur Kopfdaten) */
   papers: { id: string; title: string; points: number; kind: Paper["origin"]["kind"] }[];
+  /** Fragen aus den Probeklausuren (auch paperOnly), je einmal – für „Klausuraufgaben“ je Kapitel */
+  paperItems: { id: string; lecture: string }[];
 };
 
 /** Prüft Querverweise, die zod allein nicht sieht. Gibt Fehlermeldungen zurück. */

@@ -2,7 +2,7 @@ import type { Question } from "./schema";
 import { isDue, itemStatus, weakness, type ItemState } from "./srs";
 import { itemKey, shuffle } from "./utils";
 
-export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup";
+export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "papers";
 
 export const MODE_TITLE: Record<PracticeMode, string> = {
   smart: "Empfohlene Session",
@@ -13,6 +13,7 @@ export const MODE_TITLE: Record<PracticeMode, string> = {
   new: "Neue Fragen",
   wrong: "Falsche wiederholen",
   checkup: "Check-up-Fragen",
+  papers: "Klausuraufgaben",
 };
 
 const SESSION_SIZE = 12;
@@ -29,6 +30,8 @@ export function buildQueue(opts: {
   lecture?: string;
   /** ids der markierten Fragen (für mode "marked") */
   marked?: Set<string>;
+  /** Fragen der Probeklausuren in fester Reihenfolge (für mode "papers") */
+  papers?: Question[];
 }): Question[] {
   const { mode, subjectId, items, now } = opts;
   const st = (q: Question) => items[itemKey(subjectId, q.id)];
@@ -52,6 +55,9 @@ export function buildQueue(opts: {
     case "checkup":
       // Quiz-Aussagen vom Ende der Vorlesungen – immer alle, in zufälliger Reihenfolge
       return shuffle(questions.filter((q) => q.checkup));
+    case "papers":
+      // alle Aufgaben der Probeklausuren zu diesem Kapitel, in Klausurreihenfolge (Teilfragen a, b bleiben zusammen)
+      return (opts.papers ?? []).filter((q) => !opts.lecture || q.lecture === opts.lecture);
     case "marked":
       return shuffle(questions.filter((q) => opts.marked?.has(q.id)));
     case "weak":
