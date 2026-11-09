@@ -22,6 +22,73 @@
         "value": 13.8654,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Scenario table",
+        "table": {
+          "head": [
+            "Scenario",
+            "Probability",
+            "Return"
+          ],
+          "rows": [
+            [
+              "Boom",
+              "0.3",
+              "25%"
+            ],
+            [
+              "Normal",
+              "0.5",
+              "10%"
+            ],
+            [
+              "Recession",
+              "0.2",
+              "−15%"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Expected return",
+        "why": "Weight each return with its probability and add up.",
+        "lines": [
+          "E(R) = 0.3 × 25% + 0.5 × 10% + 0.2 × (−15%)",
+          "E(R) = 7.5% + 5.0% − 3.0%"
+        ],
+        "result": "E(R) = 9.50%"
+      },
+      {
+        "title": "Squared deviations from the expected return",
+        "why": "Deviation = scenario return − 9.5 (in percentage points), then square it.",
+        "lines": [
+          "Boom: 25 − 9.5 = 15.5 → 15.5² = 240.25",
+          "Normal: 10 − 9.5 = 0.5 → 0.5² = 0.25",
+          "Recession: −15 − 9.5 = −24.5 → 24.5² = 600.25"
+        ]
+      },
+      {
+        "title": "Variance",
+        "why": "With scenarios (probabilities) you weight the squared deviations by the probabilities – there is no T − 1 here.",
+        "lines": [
+          "Var = 0.3 × 240.25 + 0.5 × 0.25 + 0.2 × 600.25",
+          "Var = 72.075 + 0.125 + 120.05 = 192.25 (%²)",
+          "In decimals: 192.25 / 10,000 = 0.019225"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σ = √0.019225 = 0.1387"
+        ],
+        "result": "Volatility = 13.87%"
+      }
+    ],
+    "pitfalls": [
+      "Dividing by n − 1 – that rule is only for historical data, not for scenarios with probabilities.",
+      "Forgetting to take the square root (reporting the variance)."
     ]
   },
   {
@@ -60,7 +127,87 @@
         "unit": "%"
       }
     ],
-    "case": "l2-hist"
+    "case": "l2-hist",
+    "steps": [
+      {
+        "title": "Average returns",
+        "why": "Add the four yearly returns and divide by 4.",
+        "lines": [
+          "A: (14 − 2 + 8 + 4) / 4 = 24 / 4 = 6.00%",
+          "B: (3 + 7 − 1 + 7) / 4 = 16 / 4 = 4.00%"
+        ],
+        "result": "Average A = 6.00%, Average B = 4.00%"
+      },
+      {
+        "title": "Deviations from the mean (in percentage points)",
+        "table": {
+          "head": [
+            "Year",
+            "A − 6",
+            "(A − 6)²",
+            "B − 4",
+            "(B − 4)²"
+          ],
+          "rows": [
+            [
+              "2022",
+              "+8",
+              "64",
+              "−1",
+              "1"
+            ],
+            [
+              "2023",
+              "−8",
+              "64",
+              "+3",
+              "9"
+            ],
+            [
+              "2024",
+              "+2",
+              "4",
+              "−5",
+              "25"
+            ],
+            [
+              "2025",
+              "−2",
+              "4",
+              "+3",
+              "9"
+            ],
+            [
+              "Sum",
+              "",
+              "136",
+              "",
+              "44"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Variance and volatility of A",
+        "why": "Historical data → divide the sum of squares by T − 1 = 3.",
+        "lines": [
+          "Var(A) = 136 / 3 = 45.33 %² = 0.004533",
+          "σ(A) = √0.004533 = 0.0673"
+        ],
+        "result": "Volatility A = 6.73%"
+      },
+      {
+        "title": "Variance and volatility of B",
+        "lines": [
+          "Var(B) = 44 / 3 = 14.67 %² = 0.001467",
+          "σ(B) = √0.001467 = 0.0383"
+        ],
+        "result": "Volatility B = 3.83%"
+      }
+    ],
+    "pitfalls": [
+      "Dividing by 4 instead of 3 for historical data."
+    ]
   },
   {
     "type": "short",
@@ -95,7 +242,84 @@
         "tol": 0.01
       }
     ],
-    "case": "l2-hist"
+    "case": "l2-hist",
+    "steps": [
+      {
+        "title": "Deviations from part (a)",
+        "why": "Use the same deviations as before (in percentage points): A − 6% and B − 4%.",
+        "table": {
+          "head": [
+            "Year",
+            "A − 6",
+            "B − 4",
+            "Product"
+          ],
+          "rows": [
+            [
+              "2022",
+              "+8",
+              "−1",
+              "−8"
+            ],
+            [
+              "2023",
+              "−8",
+              "+3",
+              "−24"
+            ],
+            [
+              "2024",
+              "+2",
+              "−5",
+              "−10"
+            ],
+            [
+              "2025",
+              "−2",
+              "+3",
+              "−6"
+            ],
+            [
+              "Sum",
+              "",
+              "",
+              "−48"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Covariance",
+        "why": "Historical data → divide the sum of products by T − 1 = 3.",
+        "lines": [
+          "Cov = −48 / 3 = −16 %²",
+          "In decimals: −16 / 10,000"
+        ],
+        "result": "Covariance = −0.0016"
+      },
+      {
+        "title": "Correlation",
+        "why": "Correlation = covariance divided by both volatilities. It always lies between −1 and +1.",
+        "lines": [
+          "ρ = Cov / (σA × σB)",
+          "ρ = −0.0016 / (0.0673 × 0.0383)",
+          "ρ = −0.0016 / 0.002578"
+        ],
+        "result": "Correlation = −0.6205"
+      },
+      {
+        "title": "Beta of B with respect to A",
+        "why": "Beta = covariance divided by the variance of the reference asset (here A).",
+        "lines": [
+          "β = Cov / Var(A) = −0.0016 / 0.004533"
+        ],
+        "result": "Beta of B on A = −0.3529"
+      }
+    ],
+    "pitfalls": [
+      "Dividing the covariance by Var(B) – the beta \"of B on A\" uses the variance of A.",
+      "Mixing units: keep everything in decimals (0.0016, 0.004533), not percent."
+    ]
   },
   {
     "type": "short",
@@ -121,7 +345,51 @@
         "unit": "%"
       }
     ],
-    "case": "l2-hist"
+    "case": "l2-hist",
+    "steps": [
+      {
+        "title": "Expected return of the portfolio",
+        "why": "The portfolio return is the weighted average of the returns.",
+        "lines": [
+          "E(Rp) = 0.5 × 6% + 0.5 × 4%"
+        ],
+        "result": "E(Rp) = 5.00%"
+      },
+      {
+        "title": "Inputs for the variance",
+        "lines": [
+          "Var(A) = 0.004533, Var(B) = 0.001467, Cov(A,B) = −0.0016"
+        ]
+      },
+      {
+        "title": "Portfolio variance",
+        "why": "Var(Rp) = xA² Var(A) + xB² Var(B) + 2 xA xB Cov(A,B)",
+        "lines": [
+          "xA² Var(A) = 0.25 × 0.004533 = 0.001133",
+          "xB² Var(B) = 0.25 × 0.001467 = 0.000367",
+          "2 xA xB Cov = 2 × 0.5 × 0.5 × (−0.0016) = −0.000800",
+          "Var(Rp) = 0.001133 + 0.000367 − 0.000800 = 0.000700"
+        ]
+      },
+      {
+        "title": "Portfolio volatility",
+        "lines": [
+          "σp = √0.000700 = 0.0265"
+        ],
+        "result": "Portfolio volatility = 2.65%"
+      },
+      {
+        "title": "Compare",
+        "why": "A alone: 6.73%, B alone: 3.83%, the mix: only 2.65%. The negative covariance means that A tends to be high when B is low, so the risks cancel out.",
+        "lines": [
+          "Check: portfolio returns per year 8.5%, 2.5%, 3.5%, 5.5% → same σ = 2.65%"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Taking the weighted average of the volatilities (5.28%) – that ignores the covariance.",
+      "Forgetting the factor 2 in front of the covariance term."
+    ]
   },
   {
     "type": "short",
@@ -146,6 +414,45 @@
         "value": 20.3715,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Portfolio weights",
+        "why": "Weight = amount in the stock / total amount invested.",
+        "lines": [
+          "Total = 3,000 + 1,000 = 4,000",
+          "xA = 3,000 / 4,000 = 0.75",
+          "xB = 1,000 / 4,000 = 0.25"
+        ]
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "E(Rp) = 0.75 × 6% + 0.25 × 16% = 4.5% + 4.0%"
+        ],
+        "result": "E(Rp) = 8.50%"
+      },
+      {
+        "title": "Portfolio variance – term by term",
+        "why": "Var = xA² σA² + xB² σB² + 2 xA xB ρ σA σB",
+        "lines": [
+          "xA² σA² = 0.75² × 0.20² = 0.5625 × 0.04 = 0.0225",
+          "xB² σB² = 0.25² × 0.40² = 0.0625 × 0.16 = 0.0100",
+          "2 xA xB ρ σA σB = 2 × 0.75 × 0.25 × 0.3 × 0.20 × 0.40 = 0.0090",
+          "Var = 0.0225 + 0.0100 + 0.0090 = 0.0415"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σp = √0.0415 = 0.2037"
+        ],
+        "result": "Volatility = 20.37%"
+      }
+    ],
+    "pitfalls": [
+      "Using amounts (3,000 / 1,000) instead of weights in the formula.",
+      "Using the correlation instead of the covariance: the cross term needs ρ × σA × σB."
     ]
   },
   {
@@ -185,6 +492,49 @@
         "value": 26.8179,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Portfolio weights on your own money",
+        "why": "Weights are always measured relative to your own capital (EUR 10,000). A short position gets a negative weight. The weights still add up to 1.",
+        "lines": [
+          "xA = 14,000 / 10,000 = 1.4",
+          "xB = −4,000 / 10,000 = −0.4",
+          "Check: 1.4 + (−0.4) = 1 ✓"
+        ],
+        "result": "Weight A = 1.4, weight B = −0.4"
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "E(Rp) = 1.4 × 10% + (−0.4) × 6% = 14.0% − 2.4%"
+        ],
+        "result": "E(Rp) = 11.60%"
+      },
+      {
+        "title": "Portfolio variance – term by term",
+        "lines": [
+          "xA² σA² = 1.4² × 0.20² = 1.96 × 0.04 = 0.0784",
+          "xB² σB² = (−0.4)² × 0.15² = 0.16 × 0.0225 = 0.0036",
+          "2 xA xB ρ σA σB = 2 × 1.4 × (−0.4) × 0.3 × 0.20 × 0.15 = −0.01008",
+          "Var = 0.0784 + 0.0036 − 0.01008 = 0.07192"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σp = √0.07192 = 0.2682"
+        ],
+        "result": "Volatility = 26.82%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "Squared weights are always positive, so the short position still adds its own risk. Only the cross term changes sign."
+      }
+    ],
+    "pitfalls": [
+      "Using 14,000/18,000 as weights – the base is your own money, not the gross position.",
+      "Making xB² negative: (−0.4)² = +0.16."
     ]
   },
   {
@@ -210,6 +560,42 @@
         "value": 2.625,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "The formula",
+        "why": "U = E(R) − (γ/2) × Var(R). With γ = 3 the penalty is 1.5 × variance. Use decimals!",
+        "lines": [
+          "γ/2 = 3/2 = 1.5"
+        ]
+      },
+      {
+        "title": "Utility of investment 1",
+        "lines": [
+          "Var = 0.10² = 0.01",
+          "Penalty = 1.5 × 0.01 = 0.015",
+          "U₁ = 0.08 − 0.015 = 0.065"
+        ],
+        "result": "U₁ = 6.50%"
+      },
+      {
+        "title": "Utility of investment 2",
+        "lines": [
+          "Var = 0.25² = 0.0625",
+          "Penalty = 1.5 × 0.0625 = 0.09375",
+          "U₂ = 0.12 − 0.09375 = 0.02625"
+        ],
+        "result": "U₂ = 2.62%"
+      },
+      {
+        "title": "Decision",
+        "why": "The investor chooses the higher utility: investment 1. Investment 2 offers 4 percentage points more return, but the risk penalty is more than 6 percentage points higher.",
+        "result": "Prefers investment 1"
+      }
+    ],
+    "pitfalls": [
+      "Using the volatility instead of the variance in the penalty.",
+      "Calculating in percent (8 − 1.5 × 10²) – the formula only works in decimals."
     ]
   },
   {
@@ -237,6 +623,38 @@
         "unit": "",
         "tol": 0.005
       }
+    ],
+    "steps": [
+      {
+        "title": "What you know",
+        "lines": [
+          "Cov(A,B) = 0.012, σA = 0.20, σB = 0.30"
+        ]
+      },
+      {
+        "title": "Correlation",
+        "why": "Correlation = covariance divided by the product of both volatilities.",
+        "lines": [
+          "ρ = 0.012 / (0.20 × 0.30) = 0.012 / 0.06"
+        ],
+        "result": "Correlation = 0.20"
+      },
+      {
+        "title": "Beta of A with respect to B",
+        "why": "Beta = covariance divided by the variance of the reference asset B.",
+        "lines": [
+          "Var(B) = 0.30² = 0.09",
+          "β = 0.012 / 0.09"
+        ],
+        "result": "Beta of A on B = 0.1333"
+      },
+      {
+        "title": "Note",
+        "why": "All three measures start from the covariance; they only differ in what you divide by."
+      }
+    ],
+    "pitfalls": [
+      "Dividing by σB (0.30) instead of the variance σB² (0.09) for the beta."
     ]
   },
   {
@@ -262,6 +680,41 @@
         "value": 16.9706,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "The general formula",
+        "lines": [
+          "σp² = xA² σA² + xB² σB² + 2 xA xB ρ σA σB",
+          "xA = 0.6, σA = 0.20; xB = 0.4, σB = 0.30"
+        ]
+      },
+      {
+        "title": "(a) ρ = +1: no diversification",
+        "why": "With perfect correlation the formula becomes a perfect square, so the volatility is just the weighted average.",
+        "lines": [
+          "σp = xA σA + xB σB = 0.6 × 20% + 0.4 × 30% = 12% + 12%"
+        ],
+        "result": "(a) σp = 24.00%"
+      },
+      {
+        "title": "(b) ρ = 0: the cross term disappears",
+        "lines": [
+          "xA² σA² = 0.36 × 0.04 = 0.0144",
+          "xB² σB² = 0.16 × 0.09 = 0.0144",
+          "2 xA xB ρ σA σB = 0",
+          "Var = 0.0144 + 0.0144 = 0.0288",
+          "σp = √0.0288 = 0.1697"
+        ],
+        "result": "(b) σp = 16.97%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "Whenever ρ < 1, the portfolio volatility lies below the weighted average of the volatilities – that is diversification."
+      }
+    ],
+    "pitfalls": [
+      "Using the weighted average of volatilities when ρ ≠ 1."
     ]
   },
   {

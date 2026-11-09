@@ -244,7 +244,36 @@
       }
     ],
     "case": "p4-returns",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Arithmetic average",
+        "why": "Add the four returns and divide by 4.",
+        "lines": [
+          "(4.41% − 16.15% + 43.68% + 0.62%) / 4",
+          "= 32.56% / 4"
+        ],
+        "result": "Arithmetic average = 8.14%"
+      },
+      {
+        "title": "Geometric average for comparison",
+        "why": "Multiply the growth factors, take the 4th root.",
+        "lines": [
+          "1.0441 × 0.8385 = 0.8755",
+          "0.8755 × 1.4368 = 1.2579",
+          "1.2579 × 1.0062 = 1.2657",
+          "1.2657^(1/4) − 1 = 1.0607 − 1"
+        ],
+        "result": "Geometric average ≈ 6.07%"
+      },
+      {
+        "title": "Comparison",
+        "why": "The geometric average is lower whenever returns vary from year to year – a loss of 16% needs more than a 16% gain to recover. The more volatile the returns, the bigger the gap (geometric ≈ arithmetic − ½ × variance)."
+      }
+    ],
+    "pitfalls": [
+      "Thinking the two averages are the same – they only coincide if every year has the same return."
+    ]
   },
   {
     "type": "short",
@@ -294,7 +323,30 @@
       }
     ],
     "case": "p4-pernod",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Weights on your own money",
+        "why": "Divide each position by your own capital (EUR 5,000). The short sale gets a negative weight.",
+        "lines": [
+          "Pernod Ricard: 7,500 / 5,000 = 1.5",
+          "Carrefour: −2,500 / 5,000 = −0.5",
+          "Check: 1.5 − 0.5 = 1 ✓"
+        ],
+        "result": "Weights: Pernod 1.5, Carrefour −0.5"
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "E(R) = 1.5 × 13% + (−0.5) × 3%",
+          "E(R) = 19.5% − 1.5%"
+        ],
+        "result": "Expected return = 18.00%"
+      }
+    ],
+    "pitfalls": [
+      "Dividing by the gross position (10,000) instead of your own money."
+    ]
   },
   {
     "type": "short",
@@ -317,7 +369,29 @@
       }
     ],
     "case": "p4-pernod",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Variance – term by term",
+        "lines": [
+          "1.5² × 0.25² = 2.25 × 0.0625 = 0.140625",
+          "(−0.5)² × 0.20² = 0.25 × 0.04 = 0.010000",
+          "2 × 1.5 × (−0.5) × 0.25 × 0.25 × 0.20 = −0.018750",
+          "Var = 0.140625 + 0.010000 − 0.018750 = 0.131875"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σ = √0.131875 = 0.3631"
+        ],
+        "result": "Volatility = 36.31%"
+      }
+    ],
+    "pitfalls": [
+      "Making the second term negative: (−0.5)² = +0.25.",
+      "Forgetting that the cross term turns negative because one weight is negative."
+    ]
   },
   {
     "type": "short",
@@ -352,7 +426,35 @@
       }
     ],
     "case": "p4-gamestop",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Idea",
+        "why": "Under the CAPM, the best portfolios mix the market with the risk-free asset. Find the mix with GameStop's expected return.",
+        "lines": [
+          "E = x × 8% + (1 − x) × 4% = 4% + x × 4%"
+        ]
+      },
+      {
+        "title": "Weight in the market",
+        "lines": [
+          "4% + x × 4% = 10%",
+          "x = (10% − 4%) / (8% − 4%) = 6 / 4 = 1.5",
+          "Risk-free asset: 1 − 1.5 = −0.5 (borrowing)"
+        ],
+        "result": "Market 1.5, risk-free −0.5"
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σ = 1.5 × 20%"
+        ],
+        "result": "Volatility = 30.00% (GameStop: 50%)"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting that the risk-free weight is negative (you borrow)."
+    ]
   },
   {
     "type": "short",
@@ -377,7 +479,33 @@
       }
     ],
     "case": "p4-gamestop",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Slope of the CML",
+        "why": "The CML goes from the risk-free asset through the market portfolio. Its slope is the market's Sharpe ratio.",
+        "lines": [
+          "Slope = (8% − 4%) / 20% = 4 / 20"
+        ],
+        "result": "Slope of the CML = 0.20"
+      },
+      {
+        "title": "Points in the figure (volatility, expected return)",
+        "lines": [
+          "Risk-free asset: (0%, 4%) – start of the line",
+          "Market portfolio: (20%, 8%) – on the line",
+          "Portfolio from (a): (30%, 10%) – on the line, beyond the market (leverage)",
+          "GameStop: (50%, 10%) – right of and below the line"
+        ]
+      },
+      {
+        "title": "Interpretation",
+        "why": "GameStop offers the same return as the portfolio from (a) with much more volatility: most of its risk is diversifiable and not rewarded."
+      }
+    ],
+    "pitfalls": [
+      "Drawing beta on the x-axis – that would be the SML."
+    ]
   },
   {
     "type": "short",
@@ -408,7 +536,31 @@
       }
     ],
     "case": "p4-campari",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Before the acquisition",
+        "why": "All-equity firm → the equity beta is the asset beta.",
+        "result": "Asset beta before = 1.20"
+      },
+      {
+        "title": "After the acquisition",
+        "why": "The firm's assets are now a portfolio of two businesses. Weight each asset beta by its value. The financing does not matter for the asset beta.",
+        "lines": [
+          "Total assets = 2.0 + 0.5 = 2.5bn",
+          "β_U = (2.0 / 2.5) × 1.2 + (0.5 / 2.5) × 0.6",
+          "β_U = 0.8 × 1.2 + 0.2 × 0.6 = 0.96 + 0.12"
+        ],
+        "result": "Asset beta after = 1.08"
+      },
+      {
+        "title": "Why it changes",
+        "why": "The acquired business is less risky (0.6), so the mix is less risky than before."
+      }
+    ],
+    "pitfalls": [
+      "Letting the debt financing change the asset beta – debt only affects the equity beta."
+    ]
   },
   {
     "type": "short",
@@ -433,7 +585,31 @@
       }
     ],
     "case": "p4-campari",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Capital structure after the deal",
+        "lines": [
+          "Assets: 2.5bn = debt 0.5bn + equity 2.0bn",
+          "D / E = 0.5 / 2.0 = 0.25"
+        ]
+      },
+      {
+        "title": "Relever (risk-free debt)",
+        "lines": [
+          "β_E = β_U × (1 + D/E)",
+          "β_E = 1.08 × 1.25"
+        ],
+        "result": "Equity beta after = 1.35"
+      },
+      {
+        "title": "Compare with before",
+        "why": "The equity beta rises from 1.20 to 1.35. Equity beta = business risk + financial risk: the business became safer (1.08 < 1.20), but the new debt adds more risk for shareholders than that."
+      }
+    ],
+    "pitfalls": [
+      "Using D/V = 0.2 in the relevering formula (gives 1.296)."
+    ]
   },
   {
     "type": "short",
@@ -454,7 +630,21 @@
       }
     ],
     "case": "p4-bluthner",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Growing perpetuity",
+        "why": "A cash flow that starts next year and grows at g forever is worth FCF₁ / (r − g).",
+        "lines": [
+          "V = 15 / (7% − 5%)",
+          "V = 15 / 0.02"
+        ],
+        "result": "Firm value = EUR 750m"
+      }
+    ],
+    "pitfalls": [
+      "Growing the first cash flow once more (15 × 1.05) – FCF₁ is already next year's cash flow."
+    ]
   },
   {
     "type": "short",
@@ -482,7 +672,36 @@
       }
     ],
     "case": "p4-bluthner",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Equity value (MM I)",
+        "why": "In perfect markets the recap does not change the firm value.",
+        "lines": [
+          "V = 750",
+          "E = 750 − 375"
+        ],
+        "result": "Equity value = EUR 375m"
+      },
+      {
+        "title": "Cost of equity (MM II)",
+        "lines": [
+          "D / E = 375 / 375 = 1",
+          "r_E = r_U + (D/E) × (r_U − r_D)",
+          "r_E = 7% + 1 × (7% − 4%) = 7% + 3%"
+        ],
+        "result": "Equity cost of capital = 10.00%"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "WACC = 0.5 × 10% + 0.5 × 4% = 7% = r_U ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Discounting the cash flows again at a different rate – with no taxes, firm value stays 750."
+    ]
   },
   {
     "type": "short",
@@ -505,7 +724,39 @@
       }
     ],
     "case": "p4-alpha-bond",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Cash flows of the bond",
+        "why": "Two years remain: a coupon at the end of year 1, and coupon plus face value at the end of year 2.",
+        "lines": [
+          "Coupon = 7.5% × 500 = 37.5",
+          "Year 1: 37.5",
+          "Year 2: 37.5 + 500 = 537.5"
+        ]
+      },
+      {
+        "title": "Discount rate",
+        "why": "Use the yield that investors currently demand for BB bonds: 5% (not the coupon rate, not the risk-free rate)."
+      },
+      {
+        "title": "Present value",
+        "lines": [
+          "Year 1: 37.5 / 1.05 = 35.7143",
+          "Year 2: 537.5 / 1.05² = 537.5 / 1.1025 = 487.5283",
+          "Value = 35.7143 + 487.5283"
+        ],
+        "result": "Market value = EUR 523.24m"
+      },
+      {
+        "title": "Expected return vs discount rate",
+        "why": "The 5% yield is a promised return – it assumes all payments are made. Because BB bonds can default, the expected return for debt holders is lower than 5%."
+      }
+    ],
+    "pitfalls": [
+      "Discounting at the coupon rate of 7.5% (value would be 500).",
+      "Forgetting the face value in year 2."
+    ]
   },
   {
     "type": "short",
@@ -528,7 +779,30 @@
       }
     ],
     "case": "p4-alpha-bond",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Expected loss",
+        "why": "You lose 60% in default, which happens with 2% probability per year.",
+        "lines": [
+          "Expected loss = 2% × 60% = 1.2%"
+        ]
+      },
+      {
+        "title": "Debt cost of capital",
+        "lines": [
+          "r_D = yield − expected loss = 5% − 1.2%"
+        ],
+        "result": "Debt cost of capital = 3.80%"
+      },
+      {
+        "title": "Plausibility",
+        "why": "The result lies between the risk-free rate (1%) and the promised yield (5%)."
+      }
+    ],
+    "pitfalls": [
+      "Subtracting the full 2% default rate instead of 2% × 60%."
+    ]
   },
   {
     "type": "short",
@@ -559,6 +833,31 @@
       }
     ],
     "case": "p4-sharpe",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Which measure?",
+        "why": "If you combine a fund with the risk-free asset, you move along a straight line from rf through the fund. The steeper the line, the more return per unit of risk. Its slope is the Sharpe ratio."
+      },
+      {
+        "title": "Sharpe ratios",
+        "lines": [
+          "X: (12% − 3%) / 25% = 9 / 25 = 0.36",
+          "Y: (9% − 3%) / 15% = 6 / 15 = 0.40"
+        ],
+        "result": "Sharpe X = 0.36, Sharpe Y = 0.40"
+      },
+      {
+        "title": "Decision",
+        "why": "Choose Y. With borrowing, Y beats X at every level of risk.",
+        "lines": [
+          "Example at 25% volatility: weight in Y = 25 / 15 = 1.67",
+          "E = 3% + 0.40 × 25% = 13% > 12% (fund X)"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Choosing X because of its higher expected return – with borrowing allowed, the Sharpe ratio decides."
+    ]
   }
 ]

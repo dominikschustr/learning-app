@@ -520,7 +520,34 @@
       }
     ],
     "case": "p3-lumen",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Which price for which return?",
+        "why": "The adjusted close already includes the dividends (as if reinvested). So: total return → adjusted close; capital gain → normal close."
+      },
+      {
+        "title": "Total return",
+        "lines": [
+          "49.20 / 45.30 − 1 = 1.0861 − 1"
+        ],
+        "result": "Total return = 8.61%"
+      },
+      {
+        "title": "Capital gain rate",
+        "lines": [
+          "49.20 / 47.10 − 1 = 1.0446 − 1"
+        ],
+        "result": "Capital gain rate = 4.46%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "The difference (about 4.15%) is the dividend yield of that year."
+      }
+    ],
+    "pitfalls": [
+      "Using the normal close for the total return – that misses the dividend."
+    ]
   },
   {
     "type": "short",
@@ -547,7 +574,30 @@
       }
     ],
     "case": "p3-lumen",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Return over four years",
+        "why": "Adjusted prices already contain all reinvested dividends, so you can compare the first and the last adjusted price directly – no need to chain yearly returns.",
+        "lines": [
+          "49.20 / 36.12 − 1 = 1.3621 − 1"
+        ],
+        "result": "Return over four years = 36.21%"
+      },
+      {
+        "title": "Geometric average",
+        "why": "4th root of the growth factor (4 years).",
+        "lines": [
+          "1.3621^(1/4) = 1.0803",
+          "1.0803 − 1"
+        ],
+        "result": "Geometric average = 8.03% per year"
+      }
+    ],
+    "pitfalls": [
+      "Using the normal close (49.20 / 42.00) – that ignores the dividends.",
+      "Dividing 36.21% by 4 instead of taking the 4th root."
+    ]
   },
   {
     "type": "short",
@@ -593,7 +643,89 @@
       }
     ],
     "case": "p3-scen",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Expected returns",
+        "why": "Probability-weighted average of the scenario returns.",
+        "lines": [
+          "E(R_A) = 0.25 × 20% + 0.5 × 8% + 0.25 × (−6%) = 5% + 4% − 1.5% = 7.50%",
+          "E(R_B) = 0.25 × 2% + 0.5 × 6% + 0.25 × 12% = 0.5% + 3% + 3% = 6.50%"
+        ],
+        "result": "E(R_A) = 7.50%, E(R_B) = 6.50%"
+      },
+      {
+        "title": "Deviations from the expected return (decimals)",
+        "table": {
+          "head": [
+            "State",
+            "Prob.",
+            "A − 0.075",
+            "B − 0.065"
+          ],
+          "rows": [
+            [
+              "Boom",
+              "0.25",
+              "+0.125",
+              "−0.045"
+            ],
+            [
+              "Normal",
+              "0.50",
+              "+0.005",
+              "−0.005"
+            ],
+            [
+              "Recession",
+              "0.25",
+              "−0.135",
+              "+0.055"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Variance and volatility of A",
+        "why": "Scenarios → weight the squared deviations by the probabilities (no n − 1).",
+        "lines": [
+          "Var_A = 0.25 × 0.125² + 0.5 × 0.005² + 0.25 × 0.135²",
+          "Var_A = 0.003906 + 0.0000125 + 0.004556 = 0.008475",
+          "σ_A = √0.008475"
+        ],
+        "result": "σ_A = 9.21%"
+      },
+      {
+        "title": "Variance and volatility of B",
+        "lines": [
+          "Var_B = 0.25 × 0.045² + 0.5 × 0.005² + 0.25 × 0.055²",
+          "Var_B = 0.000506 + 0.0000125 + 0.000756 = 0.001275",
+          "σ_B = √0.001275"
+        ],
+        "result": "σ_B = 3.57%"
+      },
+      {
+        "title": "Covariance",
+        "why": "Probability-weighted products of the deviations of A and B.",
+        "lines": [
+          "0.25 × (0.125)(−0.045) = −0.001406",
+          "0.5 × (0.005)(−0.005) = −0.0000125",
+          "0.25 × (−0.135)(0.055) = −0.001856",
+          "Cov = −0.003275"
+        ]
+      },
+      {
+        "title": "Correlation",
+        "lines": [
+          "ρ = Cov / (σ_A σ_B) = −0.003275 / (0.0921 × 0.0357)",
+          "ρ = −0.003275 / 0.003287"
+        ],
+        "result": "Correlation = −0.9963 (almost perfectly negative)"
+      }
+    ],
+    "pitfalls": [
+      "Dividing by n − 1 = 2 – with probabilities there is no n − 1."
+    ]
   },
   {
     "type": "short",
@@ -620,7 +752,42 @@
       }
     ],
     "case": "p3-scen",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Expected return",
+        "lines": [
+          "E = 0.5 × 7.50% + 0.5 × 6.50%"
+        ],
+        "result": "Expected return = 7.00%"
+      },
+      {
+        "title": "Variance – term by term",
+        "lines": [
+          "0.5² × Var_A = 0.25 × 0.008475 = 0.002119",
+          "0.5² × Var_B = 0.25 × 0.001275 = 0.000319",
+          "2 × 0.5 × 0.5 × Cov = 0.5 × (−0.003275) = −0.001638",
+          "Var = 0.002119 + 0.000319 − 0.001638 = 0.000800"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σ = √0.000800 = 0.0283"
+        ],
+        "result": "Volatility = 2.83%"
+      },
+      {
+        "title": "Check with the portfolio returns",
+        "why": "Portfolio return in each state: boom (20 + 2)/2 = 11%, normal (8 + 6)/2 = 7%, recession (−6 + 12)/2 = 3%.",
+        "lines": [
+          "Var = 0.25 × 0.04² + 0.5 × 0² + 0.25 × 0.04² = 0.0008 ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Taking the average of the volatilities (6.39%) – the strong negative correlation removes most of the risk."
+    ]
   },
   {
     "type": "short",
@@ -647,7 +814,35 @@
       }
     ],
     "case": "p3-tobin",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Formulas",
+        "why": "Mix of the fund (weight x) and the risk-free asset. The risk-free asset adds no risk.",
+        "lines": [
+          "σ = x × 20%",
+          "E = 3% + x × (12% − 3%) = 3% + x × 9%"
+        ]
+      },
+      {
+        "title": "Weight for 15% volatility",
+        "lines": [
+          "x × 20% = 15%",
+          "x = 15 / 20 = 0.75"
+        ],
+        "result": "Weight in the fund = 75% (25% lent at 3%)"
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "E = 3% + 0.75 × 9% = 3% + 6.75%"
+        ],
+        "result": "Expected return = 9.75%"
+      }
+    ],
+    "pitfalls": [
+      "Computing E = 0.75 × 12% = 9% and forgetting the interest on the 25% lent."
+    ]
   },
   {
     "type": "short",
@@ -675,7 +870,35 @@
       }
     ],
     "case": "p3-tobin",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Weight for 16.5% expected return",
+        "lines": [
+          "3% + x × 9% = 16.5%",
+          "x × 9% = 13.5%",
+          "x = 1.5"
+        ]
+      },
+      {
+        "title": "Borrowing",
+        "why": "x = 1.5 means: for every EUR of own money you invest EUR 1.50 in the fund, so you borrow EUR 0.50.",
+        "lines": [
+          "Borrowing = 1.5 − 1 = 0.5"
+        ],
+        "result": "Borrow EUR 0.50 per EUR of own money"
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σ = 1.5 × 20%"
+        ],
+        "result": "Volatility = 30.00%"
+      }
+    ],
+    "pitfalls": [
+      "Reporting 1.5 as the amount borrowed – 1.5 is the amount invested in the fund."
+    ]
   },
   {
     "type": "short",
@@ -703,7 +926,28 @@
       }
     ],
     "case": "p3-kappa",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Beta",
+        "lines": [
+          "β = ρ × σ_K / σ_M = 0.6 × 30% / 18%",
+          "β = 0.6 × 1.6667"
+        ],
+        "result": "Beta = 1.00"
+      },
+      {
+        "title": "Required return (CAPM)",
+        "lines": [
+          "Market risk premium = 9% − 3% = 6%",
+          "r = 3% + 1.0 × 6%"
+        ],
+        "result": "Required return = 9.00%"
+      }
+    ],
+    "pitfalls": [
+      "Using σ_K / σ_M = 1.67 as beta without the correlation."
+    ]
   },
   {
     "type": "short",
@@ -730,7 +974,31 @@
       }
     ],
     "case": "p3-kappa",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Alpha",
+        "lines": [
+          "α = expected return − required return = 11% − 9%"
+        ],
+        "result": "Alpha = +2.00% → the analyst sees Kappa as undervalued"
+      },
+      {
+        "title": "Efficient portfolio with 30% volatility (CML)",
+        "lines": [
+          "Slope of the CML = (9% − 3%) / 18% = 0.3333",
+          "E = 3% + 0.3333 × 30% = 3% + 10%"
+        ],
+        "result": "Return on the CML = 13.00%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "Even with a positive alpha, Kappa alone (11%) is a poor deal compared with the market plus leverage (13%) at the same risk: 1 − ρ² = 1 − 0.36 = 64% of its variance is idiosyncratic and not rewarded."
+      }
+    ],
+    "pitfalls": [
+      "Using Kappa's beta on the CML – the CML is about volatility."
+    ]
   },
   {
     "type": "short",
@@ -751,7 +1019,33 @@
       }
     ],
     "case": "p3-wacc",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Weights",
+        "lines": [
+          "V = 600 + 400 = 1,000",
+          "E / V = 0.6, D / V = 0.4"
+        ]
+      },
+      {
+        "title": "After-tax cost of debt",
+        "lines": [
+          "5% × (1 − 0.25) = 3.75%"
+        ]
+      },
+      {
+        "title": "WACC",
+        "lines": [
+          "WACC = 0.6 × 11% + 0.4 × 3.75%",
+          "WACC = 6.6% + 1.5%"
+        ],
+        "result": "WACC = 8.10%"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the tax shield on debt (gives 8.60%)."
+    ]
   },
   {
     "type": "short",
@@ -772,7 +1066,26 @@
       }
     ],
     "case": "p3-wacc",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Unlevered cost of capital",
+        "why": "Same weights, but with the pre-tax cost of debt – r_U is the return on the assets.",
+        "lines": [
+          "r_U = 0.6 × 11% + 0.4 × 5%",
+          "r_U = 6.6% + 2.0%"
+        ],
+        "result": "r_U = 8.60%"
+      },
+      {
+        "title": "Which rate for an all-equity project?",
+        "why": "The WACC contains the interest tax shield. A project financed with equity only has no tax shield, so it must be discounted at r_U.",
+        "result": "Use 8.60%, not the WACC of 8.10%"
+      }
+    ],
+    "pitfalls": [
+      "Using the WACC for a project that is not financed with debt."
+    ]
   },
   {
     "type": "short",
@@ -801,7 +1114,34 @@
       }
     ],
     "case": "p3-cafe",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Expected cash flow",
+        "lines": [
+          "0.5 × 780 + 0.5 × 520 = 390 + 260"
+        ],
+        "result": "E(CF) = 650"
+      },
+      {
+        "title": "Value of the firm",
+        "why": "Discount at the unlevered cost of capital (30%). By MM I, debt does not change the firm value.",
+        "lines": [
+          "V = 650 / 1.30"
+        ],
+        "result": "Firm value = EUR 500"
+      },
+      {
+        "title": "Value of the equity",
+        "lines": [
+          "E = V − D = 500 − 300"
+        ],
+        "result": "Equity value = EUR 200"
+      }
+    ],
+    "pitfalls": [
+      "Using the investment (400) instead of the market value (500) to compute the equity."
+    ]
   },
   {
     "type": "short",
@@ -834,7 +1174,43 @@
       }
     ],
     "case": "p3-cafe",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Debt repayment",
+        "lines": [
+          "300 × 1.04 = 312 in both states (risk-free, because 520 > 312)"
+        ]
+      },
+      {
+        "title": "Cash flows to shareholders",
+        "lines": [
+          "Strong: 780 − 312 = 468",
+          "Weak: 520 − 312 = 208"
+        ]
+      },
+      {
+        "title": "Returns",
+        "why": "Return = equity cash flow / equity value today (200) − 1.",
+        "lines": [
+          "Strong: 468 / 200 − 1 = 134.00%",
+          "Weak: 208 / 200 − 1 = 4.00%",
+          "Expected: 0.5 × 134% + 0.5 × 4% = 69.00%"
+        ],
+        "result": "Strong 134.00%, weak 4.00%, expected 69.00%"
+      },
+      {
+        "title": "Verify with MM II",
+        "lines": [
+          "r_E = r_U + (D/E) × (r_U − r_D)",
+          "r_E = 30% + (300/200) × (30% − 4%)",
+          "r_E = 30% + 1.5 × 26% = 30% + 39% = 69% ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Computing the returns on the 100 of equity the entrepreneur put in – use today's market value of equity (200)."
+    ]
   },
   {
     "type": "short",
@@ -868,6 +1244,42 @@
         "unit": "%"
       }
     ],
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Unlever the comparables",
+        "why": "β_U = β_E / (1 + D/E) with risk-free debt.",
+        "lines": [
+          "X: 1.4 / (1 + 0.75) = 1.4 / 1.75 = 0.80",
+          "Y: 1.1 / (1 + 0.375) = 1.1 / 1.375 = 0.80",
+          "Average = 0.80"
+        ],
+        "result": "Industry asset beta = 0.80"
+      },
+      {
+        "title": "Convert the target D/(D + E) into D/E",
+        "lines": [
+          "D/V = 0.2 → E/V = 0.8",
+          "D/E = 0.2 / 0.8 = 0.25"
+        ]
+      },
+      {
+        "title": "Relever",
+        "lines": [
+          "β_E = 0.80 × (1 + 0.25)"
+        ],
+        "result": "Equity beta = 1.00"
+      },
+      {
+        "title": "Cost of equity (CAPM)",
+        "lines": [
+          "r_E = 3% + 1.00 × 5%"
+        ],
+        "result": "Cost of equity = 8.00%"
+      }
+    ],
+    "pitfalls": [
+      "Plugging D/V = 0.2 into the relevering formula instead of D/E = 0.25."
+    ]
   }
 ]

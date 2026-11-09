@@ -16,6 +16,27 @@
         "value": 9.65,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "The CAPM formula",
+        "why": "Required return = risk-free rate + beta × market risk premium. The market risk premium is E(R_M) − rf.",
+        "lines": [
+          "E(R) = rf + β × (E(R_M) − rf)"
+        ]
+      },
+      {
+        "title": "Plug in",
+        "lines": [
+          "rf = 2.5%, β = 1.3, market risk premium = 5.5%",
+          "E(R) = 2.5% + 1.3 × 5.5%",
+          "E(R) = 2.5% + 7.15%"
+        ],
+        "result": "Required return = 9.65%"
+      }
+    ],
+    "pitfalls": [
+      "Multiplying beta with E(R_M) instead of the premium – here the premium (5.5%) is already given."
     ]
   },
   {
@@ -42,6 +63,34 @@
         "value": 7.75,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Beta from correlation and volatilities",
+        "why": "Beta measures only the part of the stock's risk that moves with the market: correlation × (stock volatility / market volatility).",
+        "lines": [
+          "β = ρ × σ_i / σ_M",
+          "β = 0.45 × 35% / 18%",
+          "β = 0.45 × 1.9444"
+        ],
+        "result": "Beta = 0.875"
+      },
+      {
+        "title": "Expected return under the CAPM",
+        "lines": [
+          "Market risk premium = 8.5% − 2.5% = 6%",
+          "E(R) = 2.5% + 0.875 × 6%",
+          "E(R) = 2.5% + 5.25%"
+        ],
+        "result": "Expected return = 7.75%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "The stock is almost twice as volatile as the market, but its beta is below 1: most of its risk is idiosyncratic and is not rewarded."
+      }
+    ],
+    "pitfalls": [
+      "Using σ_i / σ_M as beta without multiplying by the correlation."
     ]
   },
   {
@@ -68,6 +117,35 @@
         "value": 12.1,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Portfolio beta",
+        "why": "The beta of a portfolio is the weighted average of the betas. The risk-free asset has beta 0.",
+        "lines": [
+          "βp = 0.6 × 2.25 + 0.4 × 0",
+          "βp = 1.35"
+        ],
+        "result": "Portfolio beta = 1.35"
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "E(Rp) = rf + βp × market risk premium",
+          "E(Rp) = 4% + 1.35 × 6%",
+          "E(Rp) = 4% + 8.1%"
+        ],
+        "result": "Expected return = 12.10%"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "Directly: 0.6 × (4% + 2.25 × 6%) + 0.4 × 4% = 0.6 × 17.5% + 1.6% = 12.10% ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Giving the risk-free asset a beta of 1 instead of 0."
     ]
   },
   {
@@ -88,6 +166,21 @@
         "unit": "",
         "tol": 0.005
       }
+    ],
+    "steps": [
+      {
+        "title": "Solve the CAPM for beta",
+        "lines": [
+          "E(R) = rf + β × (E(R_M) − rf)",
+          "12% = 4% + β × (12.5% − 4%)",
+          "12% − 4% = β × 8.5%",
+          "β = 8% / 8.5%"
+        ],
+        "result": "Beta = 0.9412"
+      }
+    ],
+    "pitfalls": [
+      "Dividing by E(R_M) = 12.5% instead of the market risk premium 8.5%."
     ]
   },
   {
@@ -120,6 +213,39 @@
         "value": 1.5,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Beta",
+        "why": "Correlation with the market is zero → beta is zero, however volatile the stock is.",
+        "lines": [
+          "β = ρ × σ_i / σ_M = 0 × 15% / 18% = 0"
+        ],
+        "result": "(a) Beta = 0"
+      },
+      {
+        "title": "(a) Required return",
+        "lines": [
+          "E(R) = rf + β × (E(R_M) − rf)",
+          "E(R) = 2.5% + 0 × (11% − 2.5%)"
+        ],
+        "result": "(a) Required return = 2.50%"
+      },
+      {
+        "title": "(b) Alpha",
+        "why": "Alpha = expected return − required return. A positive alpha means the stock lies above the security market line.",
+        "lines": [
+          "α = 4% − 2.5%"
+        ],
+        "result": "(b) Alpha = +1.50%"
+      },
+      {
+        "title": "(b) Should you add it?",
+        "why": "Yes. Adding a little of a positive-alpha stock raises the Sharpe ratio of your portfolio. Its low stand-alone return does not matter – what matters is the return relative to the market risk it adds (none). It lies below the CML (a single stock with only idiosyncratic risk), but above the SML: it is undervalued."
+      }
+    ],
+    "pitfalls": [
+      "Rejecting the stock because 4% is below the market's 11%."
     ]
   },
   {
@@ -152,6 +278,37 @@
         "value": 7.0,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Slope of the CML",
+        "why": "The CML plots expected return against volatility. Its slope is the Sharpe ratio of the market: extra return per unit of volatility.",
+        "lines": [
+          "Slope = (E(R_M) − rf) / σ_M",
+          "= (10% − 2.5%) / 25% = 7.5 / 25"
+        ],
+        "result": "(a) Slope of the CML = 0.30"
+      },
+      {
+        "title": "(b) Slope of the SML",
+        "why": "The SML plots expected return against beta. Its slope is the market risk premium: extra return per unit of beta.",
+        "lines": [
+          "Slope = E(R_M) − rf = 10% − 2.5%"
+        ],
+        "result": "(b) Slope of the SML = 7.5%"
+      },
+      {
+        "title": "(c) Efficient portfolio with 15% volatility",
+        "why": "Efficient portfolios lie on the CML.",
+        "lines": [
+          "E = rf + slope × σ",
+          "E = 2.5% + 0.30 × 15% = 2.5% + 4.5%"
+        ],
+        "result": "(c) Expected return = 7.00%"
+      }
+    ],
+    "pitfalls": [
+      "Mixing up the axes: the CML uses volatility, the SML uses beta."
     ]
   },
   {
@@ -184,6 +341,39 @@
         "value": 13.0,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Beta of A",
+        "lines": [
+          "β = ρ × σ_A / σ_M = 0.4 × 24% / 16%",
+          "β = 0.4 × 1.5"
+        ],
+        "result": "(a) Beta = 0.60"
+      },
+      {
+        "title": "(a) Expected return of A (SML)",
+        "lines": [
+          "Market risk premium = 10% − 4% = 6%",
+          "E(R_A) = 4% + 0.6 × 6% = 4% + 3.6%"
+        ],
+        "result": "(a) Expected return = 7.60%"
+      },
+      {
+        "title": "(b) Efficient portfolio with σ = 24% (CML)",
+        "lines": [
+          "Slope of the CML = 6% / 16% = 0.375",
+          "E = 4% + 0.375 × 24% = 4% + 9%"
+        ],
+        "result": "(b) Return on the CML = 13.00%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "Same volatility, but 13% vs 7.6%: most of A's volatility is idiosyncratic. Only the market part (beta) earns a premium."
+      }
+    ],
+    "pitfalls": [
+      "Putting stock A on the CML – single stocks lie on the SML, only efficient portfolios lie on the CML."
     ]
   },
   {
@@ -203,6 +393,24 @@
         "value": 1.5,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "CAPM with a negative beta",
+        "lines": [
+          "Market risk premium = 9% − 3% = 6%",
+          "E(R) = 3% + (−0.25) × 6%",
+          "E(R) = 3% − 1.5%"
+        ],
+        "result": "Required return = 1.50%"
+      },
+      {
+        "title": "Why below the risk-free rate?",
+        "why": "A negative beta means the stock tends to rise when the market falls. It acts like insurance for the portfolio, so investors accept an expected return even below the risk-free rate."
+      }
+    ],
+    "pitfalls": [
+      "Dropping the minus sign (result 4.5%)."
     ]
   },
   {
@@ -229,7 +437,36 @@
         "unit": "%"
       }
     ],
-    "case": "l4-esg"
+    "case": "l4-esg",
+    "steps": [
+      {
+        "title": "Expected return of the market",
+        "why": "The market is 50% green and 50% brown (equal total value).",
+        "lines": [
+          "E(R_M) = 0.5 × 10% + 0.5 × 15% = 5% + 7.5%"
+        ],
+        "result": "E(R_M) = 12.50%"
+      },
+      {
+        "title": "Variance of the market – term by term",
+        "lines": [
+          "0.5² × 0.18² = 0.25 × 0.0324 = 0.0081",
+          "0.5² × 0.24² = 0.25 × 0.0576 = 0.0144",
+          "2 × 0.5 × 0.5 × 0.5 × 0.18 × 0.24 = 0.0108",
+          "Var(R_M) = 0.0081 + 0.0144 + 0.0108 = 0.0333"
+        ]
+      },
+      {
+        "title": "Volatility of the market",
+        "lines": [
+          "σ_M = √0.0333 = 0.1825"
+        ],
+        "result": "σ_M = 18.25%"
+      }
+    ],
+    "pitfalls": [
+      "Taking the average of the volatilities (21%) – that ignores the diversification from ρ = 0.5."
+    ]
   },
   {
     "type": "short",
@@ -256,7 +493,42 @@
         "unit": "%"
       }
     ],
-    "case": "l4-esg"
+    "case": "l4-esg",
+    "steps": [
+      {
+        "title": "Covariance of green with the market",
+        "why": "The market is 0.5 G + 0.5 B, so Cov(G, M) = 0.5 × Var(G) + 0.5 × Cov(G, B).",
+        "lines": [
+          "Var(G) = 0.18² = 0.0324",
+          "Cov(G, B) = 0.5 × 0.18 × 0.24 = 0.0216",
+          "Cov(G, M) = 0.5 × 0.0324 + 0.5 × 0.0216 = 0.0162 + 0.0108"
+        ],
+        "result": "Cov(G, M) = 0.0270"
+      },
+      {
+        "title": "Beta of green",
+        "lines": [
+          "β_G = Cov(G, M) / Var(M) = 0.0270 / 0.0333"
+        ],
+        "result": "β_G = 0.8108"
+      },
+      {
+        "title": "Required return under the CAPM",
+        "lines": [
+          "Market risk premium = 12.5% − 2% = 10.5%",
+          "E(R_G) = 2% + 0.8108 × 10.5% = 2% + 8.51%"
+        ],
+        "result": "Required return = 10.51%"
+      },
+      {
+        "title": "Does the CAPM hold?",
+        "why": "Green stocks only offer 10%, slightly less than the 10.51% the CAPM requires: alpha ≈ −0.51%. If an asset is off the SML, the market portfolio is not efficient, so the CAPM does not hold – e.g. because investors also care about sustainability, not only mean and variance.",
+        "result": "No – green has a negative alpha of about −0.51%"
+      }
+    ],
+    "pitfalls": [
+      "Using Var(G) instead of Var(M) as the denominator of beta."
+    ]
   },
   {
     "type": "short",

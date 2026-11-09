@@ -23,7 +23,49 @@
         "unit": "%"
       }
     ],
-    "case": "l1-belair"
+    "case": "l1-belair",
+    "steps": [
+      {
+        "title": "Read the data for 2022",
+        "why": "The return over one year compares what you have at the end (price plus dividend received) with what you paid at the start.",
+        "lines": [
+          "Price at start (31/12/2021): P₀ = 48.00",
+          "Price at end (31/12/2022): P₁ = 51.20",
+          "Dividend paid on 31/12/2022: Div₁ = 1.60"
+        ]
+      },
+      {
+        "title": "Total return",
+        "why": "Total return = (end price + dividend) / start price − 1. It counts everything the shareholder receives.",
+        "lines": [
+          "R = (P₁ + Div₁) / P₀ − 1",
+          "R = (51.20 + 1.60) / 48.00 − 1",
+          "R = 52.80 / 48.00 − 1 = 1.1000 − 1"
+        ],
+        "result": "Total return = 10.00%"
+      },
+      {
+        "title": "Capital gain rate",
+        "why": "The capital gain rate only looks at the price change and ignores the dividend.",
+        "lines": [
+          "Capital gain rate = P₁ / P₀ − 1",
+          "= 51.20 / 48.00 − 1 = 1.0667 − 1"
+        ],
+        "result": "Capital gain rate = 6.67%"
+      },
+      {
+        "title": "Check: the gap is the dividend yield",
+        "lines": [
+          "Dividend yield = Div₁ / P₀ = 1.60 / 48.00 = 3.33%",
+          "6.67% + 3.33% = 10.00% ✓"
+        ],
+        "result": "Total return = capital gain rate + dividend yield"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the dividend in the total return.",
+      "Dividing by the end price P₁ instead of the start price P₀."
+    ]
   },
   {
     "type": "short",
@@ -49,7 +91,69 @@
         "unit": "%"
       }
     ],
-    "case": "l1-belair"
+    "case": "l1-belair",
+    "steps": [
+      {
+        "title": "Idea: chain the yearly returns",
+        "why": "If dividends are reinvested, the money grows each year by (1 + total return of that year). Over several years you multiply these growth factors.",
+        "lines": [
+          "Yearly total return: R_t = (P_t + Div_t) / P_{t−1} − 1"
+        ]
+      },
+      {
+        "title": "2022",
+        "lines": [
+          "(51.20 + 1.60) / 48.00 = 52.80 / 48.00 = 1.1000"
+        ],
+        "result": "R₂₀₂₂ = +10.00%"
+      },
+      {
+        "title": "2023",
+        "lines": [
+          "(44.80 + 1.70) / 51.20 = 46.50 / 51.20 = 0.9082"
+        ],
+        "result": "R₂₀₂₃ = −9.18%"
+      },
+      {
+        "title": "2024",
+        "lines": [
+          "(53.10 + 1.75) / 44.80 = 54.85 / 44.80 = 1.2243"
+        ],
+        "result": "R₂₀₂₄ = +22.43%"
+      },
+      {
+        "title": "2025",
+        "lines": [
+          "(57.40 + 1.90) / 53.10 = 59.30 / 53.10 = 1.1168"
+        ],
+        "result": "R₂₀₂₅ = +11.68%"
+      },
+      {
+        "title": "Overall return 2021–2025",
+        "why": "Multiply the four growth factors, then subtract 1.",
+        "lines": [
+          "1 + R_total = 1.1000 × 0.9082 × 1.2243 × 1.1168",
+          "  1.1000 × 0.9082 = 0.9990",
+          "  0.9990 × 1.2243 = 1.2231",
+          "  1.2231 × 1.1168 = 1.3659",
+          "R_total = 1.3659 − 1"
+        ],
+        "result": "Overall return = 36.59%"
+      },
+      {
+        "title": "Geometric average per year",
+        "why": "The geometric average is the constant yearly return that gives the same overall result after 4 years: take the 4th root of the growth factor.",
+        "lines": [
+          "(1 + R_geo)⁴ = 1.3659",
+          "1 + R_geo = 1.3659^(1/4) = 1.0811"
+        ],
+        "result": "Geometric average = 8.11% per year"
+      }
+    ],
+    "pitfalls": [
+      "Adding the yearly returns instead of multiplying the growth factors (1 + R).",
+      "Dividing the overall return by 4 (36.59%/4 = 9.15%) instead of taking the 4th root."
+    ]
   },
   {
     "type": "short",
@@ -69,7 +173,40 @@
         "unit": "%"
       }
     ],
-    "case": "l1-belair"
+    "case": "l1-belair",
+    "steps": [
+      {
+        "title": "The four yearly total returns",
+        "why": "From part (b): each return = (price + dividend) / previous price − 1.",
+        "lines": [
+          "2022: +10.00%",
+          "2023: −9.18%",
+          "2024: +22.43%",
+          "2025: +11.68%"
+        ]
+      },
+      {
+        "title": "Arithmetic average",
+        "why": "Simply add the returns and divide by the number of years.",
+        "lines": [
+          "(10.00% − 9.18% + 22.43% + 11.68%) / 4",
+          "= 34.93% / 4"
+        ],
+        "result": "Arithmetic average = 8.73%"
+      },
+      {
+        "title": "Why it is higher than the geometric average (8.11%)",
+        "why": "Returns that go up and down hurt compounding: after −9.18% you need more than +9.18% to get back. The arithmetic mean ignores this, the geometric mean includes it.",
+        "lines": [
+          "Rule of thumb: geometric ≈ arithmetic − ½ × variance",
+          "The more volatile the returns, the bigger the gap."
+        ],
+        "result": "Use the geometric mean for past (realized) performance, the arithmetic mean as an estimate for one future year."
+      }
+    ],
+    "pitfalls": [
+      "Thinking the two averages should be equal – they are only equal if the return is the same every year."
+    ]
   },
   {
     "type": "short",
@@ -88,6 +225,47 @@
         "value": 7.1667,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Why the share price alone is misleading",
+        "why": "After a 2:1 split each old share becomes two new shares, so the price roughly halves. Comparing EUR 120 with EUR 63.50 would suggest a big loss that never happened. Compare the value of your whole position instead."
+      },
+      {
+        "title": "Value at the start",
+        "lines": [
+          "200 shares × EUR 120.00"
+        ],
+        "result": "Investment = EUR 24,000"
+      },
+      {
+        "title": "Number of shares after the split",
+        "lines": [
+          "2:1 split → 200 × 2 = 400 shares"
+        ],
+        "result": "400 new shares"
+      },
+      {
+        "title": "Value at the end (shares + dividends)",
+        "lines": [
+          "Shares: 400 × 63.50 = EUR 25,400",
+          "Dividends: 400 × 0.80 = EUR 320",
+          "Total: 25,400 + 320 = EUR 25,720"
+        ],
+        "result": "End value = EUR 25,720"
+      },
+      {
+        "title": "Return",
+        "lines": [
+          "R = (End value − Start value) / Start value",
+          "R = (25,720 − 24,000) / 24,000 = 1,720 / 24,000"
+        ],
+        "result": "Return = 7.17%"
+      }
+    ],
+    "pitfalls": [
+      "Comparing the price before and after the split: 63.50/120 − 1 = −47% is wrong.",
+      "Paying the dividend on 200 shares instead of the 400 new shares."
     ]
   },
   {
@@ -107,6 +285,41 @@
         "value": 17.5,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Work with one old share",
+        "why": "You paid USD 2.00 for one old share. Follow what happens to exactly this share.",
+        "lines": [
+          "Start value = USD 2.00"
+        ]
+      },
+      {
+        "title": "Dividend",
+        "why": "The dividend is paid before the reverse split, so it is paid per old share.",
+        "lines": [
+          "Dividend received = USD 0.05"
+        ]
+      },
+      {
+        "title": "Effect of the 1:5 reverse split",
+        "why": "5 old shares become 1 new share, so one old share equals 1/5 of a new share.",
+        "lines": [
+          "Value of one old share at year-end = 11.50 / 5"
+        ],
+        "result": "USD 2.30"
+      },
+      {
+        "title": "Return",
+        "lines": [
+          "R = (End value + Dividend − Start value) / Start value",
+          "R = (2.30 + 0.05 − 2.00) / 2.00 = 0.35 / 2.00"
+        ],
+        "result": "Return = 17.50%"
+      }
+    ],
+    "pitfalls": [
+      "Comparing 11.50 with 2.00 directly (that would be +475%) – the share count changed."
     ]
   },
   {
@@ -132,6 +345,39 @@
         "value": -41.4338,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "The annualizing rule",
+        "why": "A return earned over part of a year is turned into a yearly return by compounding: raise the growth factor (1 + R) to the power \"12 / number of months\" – as if the same return were earned again and again until the year is full.",
+        "lines": [
+          "R_annual = (1 + R)^(12 / months) − 1"
+        ]
+      },
+      {
+        "title": "(a) +12% in 3 months",
+        "lines": [
+          "Growth factor = 1.12",
+          "Exponent = 12 / 3 = 4 (four quarters in a year)",
+          "1.12⁴ = 1.12 × 1.12 × 1.12 × 1.12 = 1.5735",
+          "R_annual = 1.5735 − 1"
+        ],
+        "result": "(a) Annualized return = 57.35%"
+      },
+      {
+        "title": "(b) −30% in 8 months",
+        "lines": [
+          "Growth factor = 1 − 0.30 = 0.70",
+          "Exponent = 12 / 8 = 1.5",
+          "0.70^1.5 = 0.70 × √0.70 = 0.70 × 0.8367 = 0.5857",
+          "R_annual = 0.5857 − 1"
+        ],
+        "result": "(b) Annualized return = −41.43%"
+      }
+    ],
+    "pitfalls": [
+      "Multiplying instead of compounding: 12% × 4 = 48% ignores interest on interest.",
+      "Using 8/12 as the exponent instead of 12/8."
     ]
   },
   {
@@ -163,6 +409,48 @@
         "value": -11.8,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Growth factors of the two years",
+        "lines": [
+          "Year 1: +80% → 1.80",
+          "Year 2: −51% → 0.49"
+        ]
+      },
+      {
+        "title": "Arithmetic average",
+        "why": "Add the returns and divide by 2.",
+        "lines": [
+          "(80% + (−51%)) / 2 = 29% / 2"
+        ],
+        "result": "Arithmetic average = 14.50%"
+      },
+      {
+        "title": "Total return over two years",
+        "why": "Multiply the growth factors and subtract 1.",
+        "lines": [
+          "1.80 × 0.49 = 0.882",
+          "0.882 − 1 = −0.118"
+        ],
+        "result": "Total return = −11.80% (you lost money)"
+      },
+      {
+        "title": "Geometric average",
+        "why": "The constant yearly return that gives the same total: take the square root (two years).",
+        "lines": [
+          "√0.882 = 0.9391",
+          "0.9391 − 1"
+        ],
+        "result": "Geometric average = −6.09% per year"
+      },
+      {
+        "title": "Interpretation",
+        "why": "The arithmetic average says +14.5% per year, but you actually lost 11.8%. For past performance only the geometric average is meaningful."
+      }
+    ],
+    "pitfalls": [
+      "Reporting the arithmetic average as your realized return."
     ]
   },
   {
@@ -194,6 +482,84 @@
         "value": 13.8564,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Average return",
+        "why": "Add the five returns and divide by 5.",
+        "lines": [
+          "(8 − 6 + 15 + 3 + 10) / 5 = 30 / 5"
+        ],
+        "result": "Mean = 6.00%"
+      },
+      {
+        "title": "(a) Deviations from the mean",
+        "why": "For each year: return − mean. Work in percentage points to keep numbers simple.",
+        "table": {
+          "head": [
+            "Year",
+            "Return",
+            "Deviation",
+            "Squared"
+          ],
+          "rows": [
+            [
+              "1",
+              "8%",
+              "+2",
+              "4"
+            ],
+            [
+              "2",
+              "−6%",
+              "−12",
+              "144"
+            ],
+            [
+              "3",
+              "15%",
+              "+9",
+              "81"
+            ],
+            [
+              "4",
+              "3%",
+              "−3",
+              "9"
+            ],
+            [
+              "5",
+              "10%",
+              "+4",
+              "16"
+            ]
+          ]
+        },
+        "result": "Sum of squared deviations = 254"
+      },
+      {
+        "title": "(a) Variance and volatility",
+        "why": "With historical data you divide by T − 1 = 4 (not by T = 5). Volatility is the square root of the variance.",
+        "lines": [
+          "Var = 254 / (5 − 1) = 63.5 (%²)",
+          "In decimals: 63.5 / 10,000 = 0.00635",
+          "σ = √0.00635 = 0.0797"
+        ],
+        "result": "(a) Volatility = 7.97%"
+      },
+      {
+        "title": "(b) Annualize a monthly volatility",
+        "why": "Variances add up over independent months, so the variance grows with 12 and the volatility with √12.",
+        "lines": [
+          "σ_annual = σ_monthly × √12",
+          "= 4% × 3.4641"
+        ],
+        "result": "(b) Annualized volatility = 13.86%"
+      }
+    ],
+    "pitfalls": [
+      "Dividing by 5 instead of 4 for historical data (gives 7.13%).",
+      "Multiplying the monthly volatility by 12 instead of √12."
     ]
   },
   {
@@ -213,6 +579,31 @@
         "value": 2.5381,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Treat the bond like a stock",
+        "why": "Return = (price change + cash received) / price paid. For a bond the cash received is the coupon."
+      },
+      {
+        "title": "Coupon",
+        "lines": [
+          "Coupon = 5% × face value 100 = EUR 5.00"
+        ]
+      },
+      {
+        "title": "Return",
+        "lines": [
+          "R = (P₁ + Coupon − P₀) / P₀",
+          "R = (96.00 + 5.00 − 98.50) / 98.50",
+          "R = 2.50 / 98.50"
+        ],
+        "result": "Return on the bond = 2.54%"
+      }
+    ],
+    "pitfalls": [
+      "Taking the coupon rate (5%) as the return – the price fell, which reduces the return.",
+      "Computing the coupon on the price (5% × 98.50) instead of on the face value."
     ]
   },
   {

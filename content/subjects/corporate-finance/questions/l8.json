@@ -22,6 +22,37 @@
         "value": 22.5,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "MM proposition II",
+        "why": "The cost of equity rises with leverage: shareholders earn r_U plus a premium proportional to D/E.",
+        "lines": [
+          "r_E = r_U + (D/E) × (r_U − r_D)",
+          "r_U − r_D = 12% − 5% = 7%"
+        ]
+      },
+      {
+        "title": "(a) D/E = 0.5",
+        "lines": [
+          "r_E = 12% + 0.5 × 7% = 12% + 3.5%"
+        ],
+        "result": "(a) r_E = 15.50%"
+      },
+      {
+        "title": "(b) D/E = 1.5",
+        "lines": [
+          "r_E = 12% + 1.5 × 7% = 12% + 10.5%"
+        ],
+        "result": "(b) r_E = 22.50%"
+      },
+      {
+        "title": "Note",
+        "why": "The WACC stays 12% in both cases – cheaper debt is exactly offset by more expensive equity."
+      }
+    ],
+    "pitfalls": [
+      "Using D/V instead of D/E in the formula."
     ]
   },
   {
@@ -47,6 +78,42 @@
         "value": 17.0,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Unlevered cost of capital today",
+        "why": "With no taxes, r_U = WACC = weighted average of equity and debt costs.",
+        "lines": [
+          "V = 300 + 150 = 450",
+          "r_U = (300/450) × 14% + (150/450) × 5%",
+          "r_U = 9.33% + 1.67%"
+        ],
+        "result": "r_U = 11.00%"
+      },
+      {
+        "title": "(a) Repay all debt",
+        "why": "With no debt, equity holders own the assets directly.",
+        "result": "(a) r_E = r_U = 11.00%"
+      },
+      {
+        "title": "(b) New capital structure",
+        "why": "The assets (450) stay the same; 75m more debt replaces 75m of equity.",
+        "lines": [
+          "D = 150 + 75 = 225",
+          "E = 300 − 75 = 225",
+          "D/E = 225 / 225 = 1"
+        ]
+      },
+      {
+        "title": "(b) Cost of equity (MM II)",
+        "lines": [
+          "r_E = 11% + 1 × (11% − 5%) = 11% + 6%"
+        ],
+        "result": "(b) r_E = 17.00%"
+      }
+    ],
+    "pitfalls": [
+      "Applying MM II with the old r_E (14%) instead of r_U (11%)."
     ]
   },
   {
@@ -72,6 +139,41 @@
         "value": 14.0,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Weights from D/E",
+        "why": "D/E = 1.5 means: for every 1 of equity there is 1.5 of debt, so V = 2.5.",
+        "lines": [
+          "D / V = 1.5 / 2.5 = 0.6",
+          "E / V = 1 / 2.5 = 0.4"
+        ]
+      },
+      {
+        "title": "(a) WACC",
+        "lines": [
+          "WACC = 0.4 × 20% + 0.6 × 5% = 8% + 3%"
+        ],
+        "result": "(a) WACC = 11.00%"
+      },
+      {
+        "title": "(b) Cost of equity at D/E = 0.5",
+        "why": "The assets do not change, so r_U = WACC = 11% (no taxes). Apply MM II with the new D/E.",
+        "lines": [
+          "r_E = 11% + 0.5 × (11% − 5%) = 11% + 3%"
+        ],
+        "result": "(b) r_E = 14.00%"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "New weights: E/V = 1/1.5 = 2/3, D/V = 1/3",
+          "(2/3) × 14% + (1/3) × 5% = 9.33% + 1.67% = 11% ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Using 1.5 directly as the debt weight – D/E is not D/V."
     ]
   },
   {
@@ -106,6 +208,53 @@
         "unit": "",
         "tol": 0.01
       }
+    ],
+    "steps": [
+      {
+        "title": "Formula for risk-free debt",
+        "why": "With β_D = 0, the equity beta is the asset beta scaled up by leverage.",
+        "lines": [
+          "β_E = β_U × (1 + D/E) ⇔ β_U = β_E / (1 + D/E)"
+        ]
+      },
+      {
+        "title": "(a) Asset beta",
+        "lines": [
+          "β_U = 1.7 / (1 + 2) = 1.7 / 3"
+        ],
+        "result": "(a) β_U = 0.5667"
+      },
+      {
+        "title": "(b) Translate D/V into D/E",
+        "lines": [
+          "D/(D + E) = 0.5 → D = E → D/E = 1"
+        ]
+      },
+      {
+        "title": "(b) Relever",
+        "lines": [
+          "β_E = 0.5667 × (1 + 1) = 0.5667 × 2"
+        ],
+        "result": "(b) β_E = 1.1333"
+      },
+      {
+        "title": "(c) Translate D/V into D/E",
+        "lines": [
+          "D/V = 0.4 → E/V = 0.6",
+          "D/E = 0.4 / 0.6 = 0.6667"
+        ]
+      },
+      {
+        "title": "(c) New equity beta",
+        "why": "Without debt, the equity beta 0.9 is the asset beta.",
+        "lines": [
+          "β_E = 0.9 × (1 + 0.6667) = 0.9 × 1.6667"
+        ],
+        "result": "(c) β_E = 1.50"
+      }
+    ],
+    "pitfalls": [
+      "Plugging D/V (0.4) into the formula that needs D/E."
     ]
   },
   {
@@ -148,7 +297,28 @@
         "tol": 0.005
       }
     ],
-    "case": "l8-bikes"
+    "case": "l8-bikes",
+    "steps": [
+      {
+        "title": "Unlever each comparable",
+        "why": "The comparables have different leverage, so their equity betas are not comparable. Strip out the leverage first: β_U = β_E / (1 + D/E).",
+        "lines": [
+          "Velo A: 1.30 / (1 + 0.60) = 1.30 / 1.60 = 0.8125",
+          "Velo B: 0.90 / (1 + 0.20) = 0.90 / 1.20 = 0.7500",
+          "Velo C: 1.50 / (1 + 1.00) = 1.50 / 2.00 = 0.7500"
+        ]
+      },
+      {
+        "title": "Industry asset beta",
+        "lines": [
+          "(0.8125 + 0.7500 + 0.7500) / 3 = 2.3125 / 3"
+        ],
+        "result": "Industry asset beta = 0.7708"
+      }
+    ],
+    "pitfalls": [
+      "Averaging the equity betas (1.23) – always average the asset betas."
+    ]
   },
   {
     "type": "short",
@@ -181,7 +351,41 @@
         "unit": "%"
       }
     ],
-    "case": "l8-bikes"
+    "case": "l8-bikes",
+    "steps": [
+      {
+        "title": "Relever to the target D/E = 0.5",
+        "lines": [
+          "β_E = β_U × (1 + D/E) = 0.7708 × (1 + 0.5) = 0.7708 × 1.5"
+        ],
+        "result": "Equity beta = 1.1562"
+      },
+      {
+        "title": "Cost of equity (CAPM)",
+        "lines": [
+          "r_E = 3% + 1.1562 × 5% = 3% + 5.78%"
+        ],
+        "result": "Cost of equity = 8.78%"
+      },
+      {
+        "title": "WACC (no taxes)",
+        "why": "Without taxes, the WACC equals the unlevered cost of capital, which follows from the asset beta.",
+        "lines": [
+          "WACC = r_U = 3% + 0.7708 × 5% = 3% + 3.85%"
+        ],
+        "result": "WACC = 6.85%"
+      },
+      {
+        "title": "Check with the weights",
+        "lines": [
+          "D/E = 0.5 → E/V = 2/3, D/V = 1/3",
+          "(2/3) × 8.78% + (1/3) × 3% = 5.85% + 1.00% = 6.85% ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Using the levered equity beta for the WACC – the WACC belongs to the assets."
+    ]
   },
   {
     "type": "short",
@@ -230,7 +434,38 @@
         "tol": 0.01
       }
     ],
-    "case": "l8-conglo"
+    "case": "l8-conglo",
+    "steps": [
+      {
+        "title": "Unlever each peer",
+        "why": "With risk-free debt: β_U = E/(D + E) × β_E. E/(D + E) = 1 − D/(D + E).",
+        "lines": [
+          "Food: (1 − 0.30) × 0.90 = 0.7 × 0.90 = 0.6300",
+          "Tech: (1 − 0.10) × 1.50 = 0.9 × 1.50 = 1.3500",
+          "Energy: (1 − 0.40) × 1.10 = 0.6 × 1.10 = 0.6600"
+        ]
+      },
+      {
+        "title": "Asset beta of Trident",
+        "why": "A conglomerate's asset beta is the value-weighted average of its divisions.",
+        "lines": [
+          "0.5 × 0.63 + 0.3 × 1.35 + 0.2 × 0.66",
+          "= 0.315 + 0.405 + 0.132"
+        ],
+        "result": "Asset beta Trident = 0.852"
+      },
+      {
+        "title": "Equity beta of Trident",
+        "why": "Relever with Trident's own leverage: E/(D + E) = 1 − 0.25 = 0.75.",
+        "lines": [
+          "β_E = β_U / (E/V) = 0.852 / 0.75"
+        ],
+        "result": "Equity beta Trident = 1.136"
+      }
+    ],
+    "pitfalls": [
+      "Averaging the peers' equity betas – each peer has different leverage."
+    ]
   },
   {
     "type": "short",
@@ -268,7 +503,39 @@
         "unit": "%"
       }
     ],
-    "case": "l8-conglo"
+    "case": "l8-conglo",
+    "steps": [
+      {
+        "title": "Market risk premium",
+        "lines": [
+          "9% − 3% = 6%"
+        ]
+      },
+      {
+        "title": "Cost of capital of each division",
+        "why": "A division is a business, not a stock – use its asset beta.",
+        "lines": [
+          "Food: 3% + 0.63 × 6% = 3% + 3.78% = 6.78%",
+          "Tech: 3% + 1.35 × 6% = 3% + 8.10% = 11.10%",
+          "Energy: 3% + 0.66 × 6% = 3% + 3.96% = 6.96%"
+        ]
+      },
+      {
+        "title": "Trident's WACC",
+        "why": "No taxes → WACC = r_U, based on the firm's asset beta.",
+        "lines": [
+          "WACC = 3% + 0.852 × 6% = 3% + 5.11%"
+        ],
+        "result": "WACC Trident = 8.11%"
+      },
+      {
+        "title": "Why this matters",
+        "why": "A Tech project must be discounted at 11.10%, not at the group WACC of 8.11% – otherwise risky projects look too good."
+      }
+    ],
+    "pitfalls": [
+      "Using Trident's equity beta (1.136) for the divisions."
+    ]
   },
   {
     "type": "short",
@@ -294,7 +561,33 @@
         "unit": "%"
       }
     ],
-    "case": "l8-perks"
+    "case": "l8-perks",
+    "steps": [
+      {
+        "title": "Gordon growth model",
+        "why": "A cash flow that grows at g forever is worth V = CF / (r − g). Here we know V and solve for r.",
+        "lines": [
+          "150 = 12 / (r − 4%)",
+          "r − 4% = 12 / 150 = 8%",
+          "r = 8% + 4%"
+        ],
+        "result": "Cost of capital r_U = 12.00%"
+      },
+      {
+        "title": "Earnings yield",
+        "lines": [
+          "Earnings / market value = 12 / 150"
+        ],
+        "result": "Earnings yield = 8.00%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "Earnings yield = r − g. A low earnings yield reflects expected growth – it is not a sign of poor performance."
+      }
+    ],
+    "pitfalls": [
+      "Using the book equity (90) instead of the market value (150)."
+    ]
   },
   {
     "type": "short",
@@ -327,7 +620,47 @@
         "unit": "%"
       }
     ],
-    "case": "l8-perks"
+    "case": "l8-perks",
+    "steps": [
+      {
+        "title": "New debt and equity (MM I)",
+        "why": "The assets do not change, so D + E stays 150.",
+        "lines": [
+          "D / E = 2 → D = 2E",
+          "2E + E = 150 → E = 50, D = 100"
+        ],
+        "result": "Debt = EUR 100m, equity = EUR 50m"
+      },
+      {
+        "title": "Cost of equity (MM II)",
+        "lines": [
+          "r_E = 12% + 2 × (12% − 5%) = 12% + 14%"
+        ],
+        "result": "Cost of equity = 26.00%"
+      },
+      {
+        "title": "New earnings",
+        "why": "Shareholders now receive the cash flow minus the interest.",
+        "lines": [
+          "Interest = 5% × 100 = 5",
+          "Earnings = 12 − 5 = 7"
+        ]
+      },
+      {
+        "title": "New earnings yield",
+        "lines": [
+          "7 / 50"
+        ],
+        "result": "Earnings yield = 14.00%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "The earnings yield rose from 8% to 14%, but no value was created: it only reflects the riskier equity (r_E went from 12% to 26%)."
+      }
+    ],
+    "pitfalls": [
+      "Keeping the old earnings (12) after the recap – interest must be deducted."
+    ]
   },
   {
     "type": "short",
@@ -353,6 +686,43 @@
         "unit": "",
         "tol": 0.005
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Cost of capital",
+        "lines": [
+          "V = 400 + 200 = 600",
+          "WACC = (400/600) × 8% + (200/600) × 3%",
+          "WACC = 5.33% + 1.00%"
+        ],
+        "result": "(a) Cost of capital = 6.33%"
+      },
+      {
+        "title": "(b) Balance sheet after the sale",
+        "why": "The clinic is sold at a fair price and the money repays debt. Shareholders neither win nor lose (MM), so equity stays at 400.",
+        "lines": [
+          "Debt: 200 − 160 = 40",
+          "Equity: 400"
+        ]
+      },
+      {
+        "title": "(b) Asset beta of what remains",
+        "why": "Only the online-education business is left, so take the industry asset beta.",
+        "lines": [
+          "β_U = 0.45"
+        ]
+      },
+      {
+        "title": "(b) Relever",
+        "lines": [
+          "D/E = 40 / 400 = 0.1",
+          "β_E = 0.45 × (1 + 0.1)"
+        ],
+        "result": "(b) Equity beta after = 0.495"
+      }
+    ],
+    "pitfalls": [
+      "Using the old leverage (200/400) for the new equity beta."
     ]
   },
   {

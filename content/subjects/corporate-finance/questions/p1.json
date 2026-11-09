@@ -552,7 +552,44 @@
       }
     ],
     "case": "p1-danone",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Read the data",
+        "lines": [
+          "Price on 31/10/2019: P₀ = 58.60",
+          "Price on 31/10/2020: P₁ = 52.63",
+          "Dividend paid in that year: Div₁ = 2.88"
+        ]
+      },
+      {
+        "title": "Total return",
+        "why": "Total return = (end price + dividend) / start price − 1.",
+        "lines": [
+          "R = (52.63 + 2.88) / 58.60 − 1",
+          "R = 55.51 / 58.60 − 1 = 0.9473 − 1"
+        ],
+        "result": "Total return = −5.27%"
+      },
+      {
+        "title": "Capital gain rate",
+        "why": "Only the price change, without the dividend.",
+        "lines": [
+          "52.63 / 58.60 − 1 = 0.8981 − 1"
+        ],
+        "result": "Capital gain rate = −10.19%"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "Dividend yield = 2.88 / 58.60 = 4.91%",
+          "−10.19% + 4.91% = −5.27% ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the dividend in the total return."
+    ]
   },
   {
     "type": "short",
@@ -579,7 +616,43 @@
       }
     ],
     "case": "p1-danone",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Yearly total returns",
+        "why": "Each year: (price + dividend) / previous price. These growth factors show how reinvested money grows.",
+        "lines": [
+          "2020: (52.63 + 2.88) / 58.60 = 55.51 / 58.60 = 0.9473 → −5.27%",
+          "2021: (30.33 + 2.43) / 52.63 = 32.76 / 52.63 = 0.6225 → −37.75%",
+          "2022: (50.11 + 3.61) / 30.33 = 53.72 / 30.33 = 1.7712 → +77.12%",
+          "2023: (54.77 + 3.13) / 50.11 = 57.90 / 50.11 = 1.1555 → +15.55%"
+        ]
+      },
+      {
+        "title": "Overall return",
+        "why": "Multiply the growth factors (reinvested dividends compound).",
+        "lines": [
+          "0.9473 × 0.6225 = 0.5896",
+          "0.5896 × 1.7712 = 1.0444",
+          "1.0444 × 1.1555 = 1.2067",
+          "1.2067 − 1"
+        ],
+        "result": "Overall return = 20.67%"
+      },
+      {
+        "title": "Geometric average",
+        "why": "Constant yearly return that gives the same result over 4 years: 4th root.",
+        "lines": [
+          "1.2067^(1/4) = 1.0481",
+          "1.0481 − 1"
+        ],
+        "result": "Geometric average = 4.81% per year"
+      }
+    ],
+    "pitfalls": [
+      "Adding the yearly returns (49.65%) instead of multiplying the growth factors.",
+      "Dividing 20.67% by 4 instead of taking the 4th root."
+    ]
   },
   {
     "type": "short",
@@ -606,7 +679,33 @@
       }
     ],
     "case": "p1-negcorr",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Key idea for ρ = −1",
+        "why": "The stocks always move in opposite directions, so their risks can cancel completely. The portfolio volatility is |xA σA − xB σB|; set it to zero.",
+        "lines": [
+          "xA × 15% = xB × 30% and xA + xB = 1"
+        ]
+      },
+      {
+        "title": "Solve",
+        "lines": [
+          "xA = σB / (σA + σB) = 30% / 45%",
+          "xB = σA / (σA + σB) = 15% / 45%"
+        ],
+        "result": "Weight in A = 66.67%, weight in B = 33.33%"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "0.6667 × 15% = 10% and 0.3333 × 30% = 10% → 10% − 10% = 0 ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Giving the larger weight to the riskier stock – the less volatile stock gets the larger weight."
+    ]
   },
   {
     "type": "short",
@@ -627,7 +726,20 @@
       }
     ],
     "case": "p1-negcorr",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Weighted average of the expected returns",
+        "lines": [
+          "E = 2/3 × 8% + 1/3 × 12%",
+          "E = 5.33% + 4.00%"
+        ],
+        "result": "Expected return = 9.33% (and the portfolio is risk-free)"
+      }
+    ],
+    "pitfalls": [
+      "Using equal weights (10%) instead of the weights from part (a)."
+    ]
   },
   {
     "type": "short",
@@ -662,7 +774,37 @@
       }
     ],
     "case": "p1-nintendo",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Tools",
+        "why": "Under the CAPM the efficient portfolios mix the market portfolio with the risk-free asset. x = weight in the market.",
+        "lines": [
+          "σ = x × σ_M",
+          "E = x × E(R_M) + (1 − x) × rf"
+        ]
+      },
+      {
+        "title": "Same volatility as Nintendo",
+        "lines": [
+          "x × 16% = 40%",
+          "x = 40 / 16 = 2.5",
+          "Weight in the risk-free asset = 1 − 2.5 = −1.5 (borrowing)"
+        ],
+        "result": "x_M = 2.5, x_rf = −1.5"
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "E = 2.5 × 8% + (−1.5) × 4%",
+          "E = 20% − 6%"
+        ],
+        "result": "Expected return = 14.00% (Nintendo: only 10%)"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the cost of borrowing: 2.5 × 8% = 20% is not the answer."
+    ]
   },
   {
     "type": "short",
@@ -690,7 +832,32 @@
       }
     ],
     "case": "p1-nintendo",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Same expected return as Nintendo",
+        "lines": [
+          "E = rf + x × (E(R_M) − rf)",
+          "10% = 4% + x × (8% − 4%)",
+          "6% = x × 4% → x = 1.5"
+        ],
+        "result": "Weight in the market = 1.5"
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σ = 1.5 × 16%"
+        ],
+        "result": "Volatility = 24.00% (Nintendo: 40%)"
+      },
+      {
+        "title": "Position relative to the CML",
+        "why": "The CML is E = 4% + (4%/16%) × σ = 4% + 0.25 σ. Both mixes of the market and the risk-free asset lie on this line. Nintendo lies below it: 4% + 0.25 × 40% = 14% > 10%. Part of Nintendo's volatility is idiosyncratic and not rewarded."
+      }
+    ],
+    "pitfalls": [
+      "Thinking a single stock can lie on the CML – only efficient portfolios do."
+    ]
   },
   {
     "type": "short",
@@ -711,7 +878,27 @@
       }
     ],
     "case": "p1-sp500",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Fundamental approach (Gordon growth model)",
+        "why": "If dividends grow at a constant rate forever, P₀ = Div₁ / (r − g). Solved for r: expected return = dividend yield + growth rate.",
+        "lines": [
+          "r_M = Div₁ / P₀ + g",
+          "r_M = 4% + 2%"
+        ],
+        "result": "Expected market return = 6.00%"
+      },
+      {
+        "title": "Bonus: implied market risk premium",
+        "lines": [
+          "6% − 1% = 5%"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Adding the risk-free rate as well (4% + 2% + 1%)."
+    ]
   },
   {
     "type": "short",
@@ -748,7 +935,29 @@
       }
     ],
     "case": "p1-eduhos",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Weights",
+        "lines": [
+          "V = E + D = 300 + 200 = 500",
+          "E / V = 300 / 500 = 3/5",
+          "D / V = 200 / 500 = 2/5"
+        ]
+      },
+      {
+        "title": "Cost of capital",
+        "why": "Perfect capital markets (no taxes) → the cost of capital is the weighted average of equity and debt costs.",
+        "lines": [
+          "r_U = 3/5 × 7% + 2/5 × 3%",
+          "r_U = 4.2% + 1.2%"
+        ],
+        "result": "Cost of capital = 5.40%"
+      }
+    ],
+    "pitfalls": [
+      "Using D/E = 2/3 as the debt weight."
+    ]
   },
   {
     "type": "short",
@@ -770,7 +979,40 @@
       }
     ],
     "case": "p1-eduhos",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Balance sheet after the sale",
+        "why": "The hospital is sold at a fair price and the money repays debt. Equity value does not change (MM).",
+        "lines": [
+          "Debt: 200 − 150 = 50",
+          "Equity: 300"
+        ]
+      },
+      {
+        "title": "Asset beta after the sale",
+        "why": "Only the university is left.",
+        "lines": [
+          "β_U = 0.4"
+        ]
+      },
+      {
+        "title": "Relever (risk-free debt)",
+        "lines": [
+          "β_E = β_U × (1 + D/E)",
+          "D/E = 50 / 300 = 0.1667",
+          "β_E = 0.4 × 1.1667"
+        ],
+        "result": "Equity beta after = 0.4667"
+      },
+      {
+        "title": "Equity beta before (no calculation)",
+        "why": "Before, EduHos had more debt (200 instead of 50) and also owned the riskier hospital (asset beta 0.6). Both raise the equity beta, so it must have been higher than 0.4667."
+      }
+    ],
+    "pitfalls": [
+      "Averaging the two asset betas after the hospital is already sold."
+    ]
   },
   {
     "type": "short",
@@ -799,7 +1041,39 @@
       }
     ],
     "case": "p1-hexa",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Value of Hexa (unlevered)",
+        "lines": [
+          "V_U = 8m × EUR 30 = EUR 240m"
+        ]
+      },
+      {
+        "title": "MM proposition I",
+        "why": "Identical assets → identical total value, regardless of financing.",
+        "lines": [
+          "V_L = V_U = 240m"
+        ]
+      },
+      {
+        "title": "Equity of Octo",
+        "lines": [
+          "E = 240 − 60"
+        ],
+        "result": "Equity value = EUR 180m"
+      },
+      {
+        "title": "Share price of Octo",
+        "lines": [
+          "180m / 12m shares"
+        ],
+        "result": "Share price = EUR 15"
+      }
+    ],
+    "pitfalls": [
+      "Using Hexa's share price (EUR 30) for Octo."
+    ]
   },
   {
     "type": "short",
@@ -848,6 +1122,38 @@
         "unit": "%"
       }
     ],
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Expected return",
+        "lines": [
+          "E(R) = (43 + 1.20) / 40 − 1",
+          "E(R) = 44.20 / 40 − 1 = 1.105 − 1"
+        ],
+        "result": "Expected return = 10.50%"
+      },
+      {
+        "title": "Required return (CAPM)",
+        "lines": [
+          "r = 3% + 0.8 × 5% = 3% + 4%"
+        ],
+        "result": "Required return = 7.00%"
+      },
+      {
+        "title": "Alpha",
+        "lines": [
+          "α = 10.50% − 7.00%"
+        ],
+        "result": "Alpha = +3.50%"
+      },
+      {
+        "title": "Over- or undervalued?",
+        "why": "Positive alpha: the stock offers more than its market risk requires (above the SML) → buy, it is undervalued.",
+        "result": "Undervalued"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the dividend (expected return would only be 7.5%)."
+    ]
   }
 ]

@@ -518,7 +518,42 @@
       }
     ],
     "case": "p2-abc",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Split the period at the dividend date",
+        "why": "A dividend is paid in the middle of the period. With reinvestment, compute the return up to the dividend date and from there to the end, then chain them.",
+        "lines": [
+          "Sub-period 1: 1 Oct 2021 → 9 May 2022",
+          "Sub-period 2: 9 May 2022 → 31 Oct 2022"
+        ]
+      },
+      {
+        "title": "Sub-period 1 (with dividend)",
+        "lines": [
+          "(340.40 + 4) / 350.40 = 344.40 / 350.40 = 0.9829"
+        ],
+        "result": "R₁ = −1.71%"
+      },
+      {
+        "title": "Sub-period 2 (no dividend)",
+        "lines": [
+          "380.20 / 340.40 = 1.1169"
+        ],
+        "result": "R₂ = +11.69%"
+      },
+      {
+        "title": "Chain the growth factors",
+        "lines": [
+          "0.9829 × 1.1169 = 1.0978",
+          "1.0978 − 1"
+        ],
+        "result": "Total return = 9.78%"
+      }
+    ],
+    "pitfalls": [
+      "Computing (380.20 + 4) / 350.40 − 1 = 9.65% – this ignores that the reinvested dividend also grows in sub-period 2."
+    ]
   },
   {
     "type": "short",
@@ -545,7 +580,34 @@
       }
     ],
     "case": "p2-abc",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Capital gain rate",
+        "why": "Only the price change from 1 October 2021 to 9 May 2022.",
+        "lines": [
+          "340.40 / 350.40 − 1 = 0.9715 − 1"
+        ],
+        "result": "Capital gain rate = −2.85%"
+      },
+      {
+        "title": "Dividend yield",
+        "why": "Dividend divided by the price at the start of the period.",
+        "lines": [
+          "4 / 350.40"
+        ],
+        "result": "Dividend yield = 1.14%"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "−2.85% + 1.14% = −1.71% = total return of sub-period 1 ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Dividing the dividend by the price on the dividend date (340.40) instead of the start price."
+    ]
   },
   {
     "type": "short",
@@ -566,7 +628,28 @@
       }
     ],
     "case": "p2-port",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Weights",
+        "lines": [
+          "Total = 2,000 + 1,000 = 3,000",
+          "xA = 2,000 / 3,000 = 2/3",
+          "xB = 1,000 / 3,000 = 1/3"
+        ]
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "E = 2/3 × 8% + 1/3 × 20%",
+          "E = 5.33% + 6.67%"
+        ],
+        "result": "Expected return = 12.00%"
+      }
+    ],
+    "pitfalls": [
+      "Using equal weights (14%) – weight by the amounts invested."
+    ]
   },
   {
     "type": "short",
@@ -587,7 +670,29 @@
       }
     ],
     "case": "p2-port",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Variance – term by term",
+        "why": "Var = xA² σA² + xB² σB² + 2 xA xB ρ σA σB",
+        "lines": [
+          "xA² σA² = (2/3)² × 0.25² = 0.4444 × 0.0625 = 0.02778",
+          "xB² σB² = (1/3)² × 0.50² = 0.1111 × 0.25 = 0.02778",
+          "2 xA xB ρ σA σB = 2 × (2/3) × (1/3) × 0.4 × 0.25 × 0.50 = 0.02222",
+          "Var = 0.02778 + 0.02778 + 0.02222 = 0.07778"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "σ = √0.07778 = 0.2789"
+        ],
+        "result": "Volatility = 27.89%"
+      }
+    ],
+    "pitfalls": [
+      "Taking the weighted average of the volatilities (33.33%) – correct only if ρ = 1."
+    ]
   },
   {
     "type": "short",
@@ -614,7 +719,35 @@
       }
     ],
     "case": "p2-esg",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Expected return of the market",
+        "lines": [
+          "E(R_M) = 0.5 × 12% + 0.5 × 17% = 6% + 8.5%"
+        ],
+        "result": "E(R_M) = 14.50%"
+      },
+      {
+        "title": "Variance of the market – term by term",
+        "lines": [
+          "0.5² × 0.20² = 0.25 × 0.04 = 0.0100",
+          "0.5² × 0.21² = 0.25 × 0.0441 = 0.011025",
+          "2 × 0.5 × 0.5 × 0.6 × 0.20 × 0.21 = 0.0126",
+          "Var = 0.0100 + 0.011025 + 0.0126 = 0.033625"
+        ]
+      },
+      {
+        "title": "Volatility of the market",
+        "lines": [
+          "σ_M = √0.033625 = 0.1834"
+        ],
+        "result": "σ_M = 18.34%"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the covariance term (σ_M would be 14.6%)."
+    ]
   },
   {
     "type": "short",
@@ -642,7 +775,41 @@
       }
     ],
     "case": "p2-esg",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Covariance of the sustainable portfolio with the market",
+        "why": "The market is 0.5 S + 0.5 U, so Cov(S, M) = 0.5 × Var(S) + 0.5 × Cov(S, U).",
+        "lines": [
+          "Var(S) = 0.20² = 0.04",
+          "Cov(S, U) = 0.6 × 0.20 × 0.21 = 0.0252",
+          "Cov(S, M) = 0.5 × 0.04 + 0.5 × 0.0252 = 0.0200 + 0.0126 = 0.0326"
+        ]
+      },
+      {
+        "title": "Beta of the sustainable portfolio",
+        "lines": [
+          "β_S = Cov(S, M) / Var(M) = 0.0326 / 0.033625"
+        ],
+        "result": "β_S = 0.9695"
+      },
+      {
+        "title": "CAPM required return",
+        "lines": [
+          "Market risk premium = 14.5% − 3% = 11.5%",
+          "r_S = 3% + 0.9695 × 11.5% = 3% + 11.15%"
+        ],
+        "result": "Required return = 14.15%"
+      },
+      {
+        "title": "Does the CAPM hold?",
+        "why": "The sustainable portfolio only offers 12% < 14.15%: negative alpha (and the unsustainable one a positive alpha). Then the market is not efficient. Same conclusion with Sharpe ratios: unsustainable (17 − 3)/21 = 0.67 > market (14.5 − 3)/18.34 = 0.63.",
+        "result": "No – the market portfolio is not efficient, so the CAPM does not hold"
+      }
+    ],
+    "pitfalls": [
+      "Dividing the covariance by Var(S) instead of Var(M)."
+    ]
   },
   {
     "type": "short",
@@ -676,7 +843,38 @@
       }
     ],
     "case": "p2-broker",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Beta of ESCP",
+        "why": "Zero correlation with the market → beta = 0.",
+        "lines": [
+          "β = ρ × σ_ESCP / σ_M = 0 × 10% / 20%"
+        ],
+        "result": "Beta = 0"
+      },
+      {
+        "title": "Required return",
+        "lines": [
+          "r = 2% + 0 × (14% − 2%)"
+        ],
+        "result": "Required return = 2.00%"
+      },
+      {
+        "title": "Alpha",
+        "lines": [
+          "α = 5% − 2%"
+        ],
+        "result": "Alpha = +3.00%"
+      },
+      {
+        "title": "Is the broker right?",
+        "why": "Yes. With a positive alpha, adding a small position of ESCP raises the Sharpe ratio of your portfolio. Its low return compared with the market (5% vs 14%) is irrelevant – it adds no market risk."
+      }
+    ],
+    "pitfalls": [
+      "Rejecting ESCP because 5% < 14%."
+    ]
   },
   {
     "type": "short",
@@ -715,7 +913,29 @@
       }
     ],
     "case": "p2-music",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Unlever each comparable",
+        "why": "With zero debt betas: β_U = E / (D + E) × β_E. Use the debt and equity values from the table.",
+        "lines": [
+          "Music Star: 50 / (100 + 50) × 1.20 = 0.3333 × 1.20 = 0.4000",
+          "Virtuoso: 200 / (75 + 200) × 0.80 = 0.7273 × 0.80 = 0.5818",
+          "VivaMo: 110 / (10 + 110) × 0.60 = 0.9167 × 0.60 = 0.5500"
+        ]
+      },
+      {
+        "title": "Average asset beta",
+        "lines": [
+          "(0.4000 + 0.5818 + 0.5500) / 3 = 1.5318 / 3"
+        ],
+        "result": "Asset beta = 0.5106"
+      }
+    ],
+    "pitfalls": [
+      "Averaging the equity betas – the firms have very different leverage.",
+      "Using D/(D + E) instead of E/(D + E) as the multiplier."
+    ]
   },
   {
     "type": "short",
@@ -737,7 +957,20 @@
       }
     ],
     "case": "p2-music",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Relever with the private firm's D/E = 1",
+        "lines": [
+          "β_E = β_U × (1 + D/E)",
+          "β_E = 0.5106 × (1 + 1) = 0.5106 × 2"
+        ],
+        "result": "Equity beta = 1.0212"
+      }
+    ],
+    "pitfalls": [
+      "Using D/V = 0.5 in place of D/E = 1 (gives 0.766)."
+    ]
   },
   {
     "type": "short",
@@ -766,7 +999,38 @@
       }
     ],
     "case": "p2-zeta",
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Value of Zeta (unlevered)",
+        "lines": [
+          "V_U = 10m × EUR 22 = EUR 220m"
+        ]
+      },
+      {
+        "title": "MM proposition I",
+        "lines": [
+          "V_L = V_U = 220m"
+        ]
+      },
+      {
+        "title": "Equity of Omicron",
+        "lines": [
+          "E = 220 − 60"
+        ],
+        "result": "Equity value = EUR 160m"
+      },
+      {
+        "title": "Share price of Omicron",
+        "lines": [
+          "160m / 20m shares"
+        ],
+        "result": "Share price = EUR 8"
+      }
+    ],
+    "pitfalls": [
+      "Using Zeta's share price (EUR 22) for Omicron."
+    ]
   },
   {
     "type": "short",
@@ -809,6 +1073,41 @@
         "unit": "%"
       }
     ],
-    "paperOnly": true
+    "paperOnly": true,
+    "steps": [
+      {
+        "title": "Unlevered cost of capital",
+        "lines": [
+          "V = 200 + 100 = 300",
+          "r_U = (200/300) × 15% + (100/300) × 6%",
+          "r_U = 10% + 2%"
+        ],
+        "result": "r_U = 12.00%"
+      },
+      {
+        "title": "(a) All equity",
+        "why": "Without debt, equity holders bear exactly the asset risk.",
+        "result": "(a) r_E = r_U = 12.00%"
+      },
+      {
+        "title": "(b) New capital structure",
+        "lines": [
+          "D = 100 + 50 = 150",
+          "E = 200 − 50 = 150",
+          "D/E = 1"
+        ]
+      },
+      {
+        "title": "(b) MM II",
+        "lines": [
+          "r_E = r_U + (D/E) × (r_U − r_D)",
+          "r_E = 12% + 1 × (12% − 6%) = 12% + 6%"
+        ],
+        "result": "(b) r_E = 18.00%"
+      }
+    ],
+    "pitfalls": [
+      "Starting MM II from the old r_E (15%) instead of r_U (12%)."
+    ]
   }
 ]

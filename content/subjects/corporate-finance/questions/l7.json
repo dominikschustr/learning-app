@@ -25,7 +25,34 @@
         "tol": 0.5
       }
     ],
-    "case": "l7-bistro"
+    "case": "l7-bistro",
+    "steps": [
+      {
+        "title": "Expected cash flow next year",
+        "lines": [
+          "E(CF) = 0.5 × 1,080 + 0.5 × 720 = 540 + 360"
+        ],
+        "result": "E(CF) = 900"
+      },
+      {
+        "title": "Value of the unlevered firm",
+        "why": "Discount the expected cash flow at the project's (unlevered) cost of capital of 20%.",
+        "lines": [
+          "V_U = 900 / 1.20"
+        ],
+        "result": "V_U = EUR 750"
+      },
+      {
+        "title": "NPV",
+        "lines": [
+          "NPV = −Investment + V_U = −600 + 750"
+        ],
+        "result": "NPV = EUR 150"
+      }
+    ],
+    "pitfalls": [
+      "Discounting at the risk-free rate (5%) – the cash flows are risky."
+    ]
   },
   {
     "type": "short",
@@ -60,7 +87,37 @@
         "tol": 0.5
       }
     ],
-    "case": "l7-bistro"
+    "case": "l7-bistro",
+    "steps": [
+      {
+        "title": "Is the debt risk-free?",
+        "lines": [
+          "Repayment = 400 × 1.05 = 420",
+          "Even in the weak state the project pays 720 > 420 → lenders are always paid in full."
+        ],
+        "result": "Lenders receive 420 in both states"
+      },
+      {
+        "title": "Cash flows to shareholders",
+        "why": "Shareholders get what is left after the lenders are paid.",
+        "lines": [
+          "Strong: 1,080 − 420 = 660",
+          "Weak: 720 − 420 = 300"
+        ],
+        "result": "Equity cash flows: 660 (strong) and 300 (weak)"
+      },
+      {
+        "title": "Value of equity today (MM I)",
+        "why": "In a perfect market, splitting the cash flows into debt and equity does not change their total value: V_L = V_U = 750.",
+        "lines": [
+          "E = V_L − D = 750 − 400"
+        ],
+        "result": "Equity value today = EUR 350"
+      }
+    ],
+    "pitfalls": [
+      "Discounting the equity cash flows at 20% – levered equity is riskier and needs a higher rate (see part c)."
+    ]
   },
   {
     "type": "short",
@@ -92,7 +149,42 @@
         "unit": "%"
       }
     ],
-    "case": "l7-bistro"
+    "case": "l7-bistro",
+    "steps": [
+      {
+        "title": "Return in each state",
+        "why": "Return = cash flow to shareholders / equity value today − 1.",
+        "lines": [
+          "Strong: 660 / 350 − 1 = 1.8857 − 1 = 88.57%",
+          "Weak: 300 / 350 − 1 = 0.8571 − 1 = −14.29%"
+        ],
+        "result": "Strong 88.57%, weak −14.29%"
+      },
+      {
+        "title": "Expected return of levered equity",
+        "lines": [
+          "E(R_E) = 0.5 × 88.57% + 0.5 × (−14.29%)",
+          "= 44.29% − 7.14%"
+        ],
+        "result": "E(R_E) = 37.14%"
+      },
+      {
+        "title": "Check: weighted average cost of capital",
+        "why": "Equity and debt together must earn the unlevered 20%.",
+        "lines": [
+          "E / V = 350 / 750, D / V = 400 / 750",
+          "(350/750) × 37.14% + (400/750) × 5%",
+          "= 17.33% + 2.67% = 20.00% ✓"
+        ]
+      },
+      {
+        "title": "Interpretation",
+        "why": "Unlevered, the returns would be +44% / −4% (1,080/750 and 720/750). Debt makes equity much riskier, so shareholders require more – but the firm is not worth more."
+      }
+    ],
+    "pitfalls": [
+      "Computing the returns on the original investment (600) instead of today's equity value (350)."
+    ]
   },
   {
     "type": "short",
@@ -113,7 +205,31 @@
         "tol": 0.5
       }
     ],
-    "case": "l7-bistro"
+    "case": "l7-bistro",
+    "steps": [
+      {
+        "title": "Her calculation",
+        "lines": [
+          "Expected equity cash flow = 0.5 × 660 + 0.5 × 300 = 480",
+          "480 / 1.20"
+        ],
+        "result": "Her value = EUR 400 (higher than 350)"
+      },
+      {
+        "title": "Her mistake",
+        "why": "20% is the right rate for the unlevered firm only. Levered equity is riskier (returns +88.6% / −14.3% instead of +44% / −4%), so it needs the levered cost of equity of 37.14%."
+      },
+      {
+        "title": "Correct value",
+        "lines": [
+          "480 / 1.3714 = 350 ✓"
+        ],
+        "result": "Borrowing does not create value – the discount rate must rise with leverage"
+      }
+    ],
+    "pitfalls": [
+      "Using the same discount rate for levered and unlevered equity."
+    ]
   },
   {
     "type": "short",
@@ -140,6 +256,38 @@
         "unit": "EUR",
         "tol": 0.01
       }
+    ],
+    "steps": [
+      {
+        "title": "Value of Alpha (unlevered)",
+        "lines": [
+          "V_U = 12m shares × EUR 25 = EUR 300m"
+        ]
+      },
+      {
+        "title": "Value of Beta (MM I)",
+        "why": "Same assets and cash flows → same total value, no matter how they are financed.",
+        "lines": [
+          "V_L = V_U = 300m"
+        ]
+      },
+      {
+        "title": "Equity of Beta",
+        "lines": [
+          "E = V_L − D = 300 − 90"
+        ],
+        "result": "Equity value Beta = EUR 210m"
+      },
+      {
+        "title": "Share price of Beta",
+        "lines": [
+          "210m / 15m shares"
+        ],
+        "result": "Share price Beta = EUR 14.00"
+      }
+    ],
+    "pitfalls": [
+      "Setting Beta's share price equal to Alpha's (EUR 25) – the share counts and the debt differ."
     ]
   },
   {
@@ -174,6 +322,41 @@
         "unit": "m",
         "tol": 0.01
       }
+    ],
+    "steps": [
+      {
+        "title": "Goal",
+        "why": "1% of Beta's equity = 1% of Beta's cash flow minus 1% of Beta's debt payments. You can copy this with Alpha's shares and a personal loan (\"homemade leverage\")."
+      },
+      {
+        "title": "Buy 1% of Alpha",
+        "lines": [
+          "1% × 300m = EUR 3.0m"
+        ],
+        "result": "Investment in Alpha = EUR 3.0m"
+      },
+      {
+        "title": "Borrow 1% of Beta's debt",
+        "lines": [
+          "1% × 90m = EUR 0.9m"
+        ],
+        "result": "Borrowing = EUR 0.9m"
+      },
+      {
+        "title": "Own money needed",
+        "lines": [
+          "3.0 − 0.9 = EUR 2.1m",
+          "= 1% of Beta's equity (1% × 210m) ✓"
+        ],
+        "result": "Own money = EUR 2.1m"
+      },
+      {
+        "title": "Why this matters",
+        "why": "Investors can create leverage themselves at the same cost, so they will not pay a premium for a levered firm – that is MM I."
+      }
+    ],
+    "pitfalls": [
+      "Investing 1% of Beta's equity (2.1m) in Alpha without borrowing – that copies an unlevered position."
     ]
   },
   {
@@ -215,6 +398,44 @@
         "unit": "m",
         "tol": 0.5
       }
+    ],
+    "steps": [
+      {
+        "title": "Share price before the recap",
+        "lines": [
+          "500m / 25m shares"
+        ],
+        "result": "EUR 20 per share"
+      },
+      {
+        "title": "(a) Repurchase price",
+        "why": "In a perfect market, the recap only changes how the value is split – the assets are still worth 500m. Shareholders would not sell for less than the fair price, and the firm would not pay more, so the price stays at EUR 20.",
+        "result": "(a) Repurchase price = EUR 20"
+      },
+      {
+        "title": "(a) Number of shares repurchased",
+        "lines": [
+          "150m / EUR 20"
+        ],
+        "result": "(a) 7.5m shares"
+      },
+      {
+        "title": "(b) Shares remaining and equity value",
+        "lines": [
+          "Shares: 25m − 7.5m = 17.5m",
+          "Equity: 17.5m × 20 = 350m"
+        ],
+        "result": "(b) 17.5m shares, equity EUR 350m"
+      },
+      {
+        "title": "Market value balance sheet",
+        "lines": [
+          "Assets 500 = Debt 150 + Equity 350 ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Thinking the price rises because the firm \"buys back\" shares – under MM nothing changes per share."
     ]
   },
   {
@@ -235,6 +456,39 @@
         "unit": "m",
         "tol": 0.05
       }
+    ],
+    "steps": [
+      {
+        "title": "Compare the values",
+        "lines": [
+          "V_L = D + E = 300 + 480 = 780",
+          "V_U = 820"
+        ],
+        "result": "U is too expensive (820 > 780)"
+      },
+      {
+        "title": "Arbitrage strategy",
+        "why": "Sell what is expensive, buy what is cheap. Owning all of L's debt and equity gives exactly the firm's cash flows – the same as U.",
+        "lines": [
+          "Today: short U → +820",
+          "Today: buy all of L's debt and equity → −780",
+          "Future: L's debt + equity pay exactly what you owe on U → net 0"
+        ]
+      },
+      {
+        "title": "Riskless profit today",
+        "lines": [
+          "820 − 780"
+        ],
+        "result": "Arbitrage profit = EUR 40m"
+      },
+      {
+        "title": "Result",
+        "why": "This trade continues until V_U = V_L (MM I)."
+      }
+    ],
+    "pitfalls": [
+      "Buying only L's equity – you need both debt and equity to get the full cash flows."
     ]
   },
   {

@@ -50,7 +50,7 @@ export function SolutionSteps({ steps, pitfalls = [] }: { steps: Step[]; pitfall
               <span className="pt-0.5">{s.title}</span>
             </p>
             <div className="mt-2 space-y-2.5 sm:pl-[2.125rem]">
-              {s.why && <p className="leading-relaxed text-ink-2">{s.why}</p>}
+              {s.why && <FormulaText text={s.why} className="block leading-relaxed text-ink-2" />}
               {s.lines.length > 0 && (
                 <div className="space-y-1 overflow-x-auto rounded-lg border border-line bg-surface px-3 py-2 text-[13px] tabular-nums leading-relaxed text-ink">
                   {s.lines.map((l, j) => (

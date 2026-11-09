@@ -34,6 +34,39 @@
         "value": -1.0,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Market risk premium",
+        "lines": [
+          "E(R_M) − rf = 10% − 4% = 6%"
+        ]
+      },
+      {
+        "title": "Required return of each stock (CAPM)",
+        "why": "The required return is what the stock must offer for its market risk (beta).",
+        "lines": [
+          "X: 4% + 1.2 × 6% = 4% + 7.2% = 11.20%",
+          "Y: 4% + 0.5 × 6% = 4% + 3.0% = 7.00%"
+        ]
+      },
+      {
+        "title": "Alpha of each stock",
+        "why": "Alpha = expected return − required return.",
+        "lines": [
+          "X: 13% − 11.2% = +1.80%",
+          "Y: 6% − 7% = −1.00%"
+        ],
+        "result": "α_X = +1.80%, α_Y = −1.00%"
+      },
+      {
+        "title": "Decision",
+        "why": "Positive alpha: the stock pays more than its risk requires (above the SML) → buy. Negative alpha: it pays less (below the SML) → sell or underweight.",
+        "result": "Buy X, sell Y"
+      }
+    ],
+    "pitfalls": [
+      "Comparing X's 13% with Y's 6% – each stock is judged against its own required return."
     ]
   },
   {
@@ -59,6 +92,33 @@
         "value": -1.0,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Required return (CAPM)",
+        "why": "Here the market risk premium (8%) is given directly.",
+        "lines": [
+          "r = 4% + 1.5 × 8% = 4% + 12%"
+        ],
+        "result": "Required return = 16.00%"
+      },
+      {
+        "title": "Alpha",
+        "lines": [
+          "α = expected return − required return",
+          "α = 15% − 16%"
+        ],
+        "result": "Alpha = −1.00%"
+      },
+      {
+        "title": "Over- or undervalued?",
+        "why": "Negative alpha: the stock offers less than its risk requires. Investors would sell, so the price is too high today.",
+        "result": "Overvalued"
+      }
+    ],
+    "pitfalls": [
+      "Using 8% as E(R_M) and computing 4% + 1.5 × (8% − 4%).",
+      "Thinking a negative alpha means \"cheap\" – it means the price is too high."
     ]
   },
   {
@@ -91,7 +151,35 @@
         "unit": "%"
       }
     ],
-    "case": "l5-zeta"
+    "case": "l5-zeta",
+    "steps": [
+      {
+        "title": "Expected return",
+        "why": "Return = (expected price in one year + dividend) / price today − 1.",
+        "lines": [
+          "E(R) = (56.50 + 2.50) / 52.00 − 1",
+          "E(R) = 59.00 / 52.00 − 1 = 1.1346 − 1"
+        ],
+        "result": "Expected return = 13.46%"
+      },
+      {
+        "title": "Required return (CAPM)",
+        "lines": [
+          "r = 3% + 0.9 × 6.5% = 3% + 5.85%"
+        ],
+        "result": "Required return = 8.85%"
+      },
+      {
+        "title": "Alpha",
+        "lines": [
+          "α = 13.46% − 8.85%"
+        ],
+        "result": "Alpha = +4.61% → investors want to buy"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the dividend in the expected return."
+    ]
   },
   {
     "type": "short",
@@ -112,7 +200,34 @@
         "tol": 0.02
       }
     ],
-    "case": "l5-zeta"
+    "case": "l5-zeta",
+    "steps": [
+      {
+        "title": "Idea",
+        "why": "Investors buy Zeta until the alpha is gone. The expected payoff in one year stays the same (59.00); only today's price rises. Alpha = 0 means the expected return equals exactly the required return of 8.85%.",
+        "lines": [
+          "Expected payoff = 56.50 + 2.50 = 59.00"
+        ]
+      },
+      {
+        "title": "Discount the payoff at the required return",
+        "lines": [
+          "P₀ × (1 + 8.85%) = 59.00",
+          "P₀ = 59.00 / 1.0885"
+        ],
+        "result": "Price with alpha = 0: EUR 54.20"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "59.00 / 54.20 − 1 = 8.85% ✓"
+        ],
+        "why": "The price rises from 52.00 to 54.20, which pushes the expected return down to the required 8.85%."
+      }
+    ],
+    "pitfalls": [
+      "Discounting only the price (56.50) and forgetting the dividend."
+    ]
   },
   {
     "type": "short",
@@ -131,6 +246,31 @@
         "value": 70.0,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Set up the price as an expected value",
+        "why": "After the announcement, the price is the probability-weighted value of the two outcomes: success (34.00) or failure (25.00).",
+        "lines": [
+          "31.30 = p × 34.00 + (1 − p) × 25.00"
+        ]
+      },
+      {
+        "title": "Solve for p",
+        "lines": [
+          "31.30 = 25.00 + p × (34.00 − 25.00)",
+          "6.30 = p × 9.00",
+          "p = 6.30 / 9.00"
+        ],
+        "result": "Implied probability of success = 70.00%"
+      },
+      {
+        "title": "Why the 2.70 gap is no free lunch",
+        "why": "The gap 34.00 − 31.30 = 2.70 is the reward for bearing the risk that the deal fails (then you lose 6.30 per share). Public news is priced at once."
+      }
+    ],
+    "pitfalls": [
+      "Computing 31.30 / 34.00 = 92% – that ignores the price after a failed deal."
     ]
   },
   {
@@ -156,6 +296,37 @@
         "value": -0.4,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Required return of the fund (CAPM)",
+        "lines": [
+          "r = 2% + 1.1 × 6% = 2% + 6.6%"
+        ],
+        "result": "Required return = 8.60%"
+      },
+      {
+        "title": "Gross alpha (before fees)",
+        "lines": [
+          "α_gross = 9.4% − 8.6%"
+        ],
+        "result": "Gross alpha = +0.80% → the manager has some skill"
+      },
+      {
+        "title": "Net alpha (after fees)",
+        "why": "Investors only receive the return after fees.",
+        "lines": [
+          "α_net = 0.80% − 1.20%"
+        ],
+        "result": "Net alpha = −0.40%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "The skill is fully eaten by the fees: investors would do better in an index fund. This matches the evidence on mutual funds – slightly positive gross, slightly negative net alpha on average."
+      }
+    ],
+    "pitfalls": [
+      "Subtracting the fee from the required return instead of from the fund return."
     ]
   },
   {
@@ -181,6 +352,34 @@
         "value": 8.5,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Four-factor model",
+        "why": "Required return = rf + sum of (factor beta × factor premium). A negative beta (momentum) lowers the required return.",
+        "lines": [
+          "Market: 1.1 × 5% = 5.5%",
+          "Size: 0.4 × 2.5% = 1.0%",
+          "Value: 0.3 × 3% = 0.9%",
+          "Momentum: −0.1 × 6% = −0.6%",
+          "r = 3% + 5.5% + 1.0% + 0.9% − 0.6%"
+        ],
+        "result": "Four-factor required return = 9.80%"
+      },
+      {
+        "title": "CAPM (market only)",
+        "lines": [
+          "r = 3% + 1.1 × 5% = 3% + 5.5%"
+        ],
+        "result": "CAPM required return = 8.50%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "The difference (1.3 percentage points) comes from the size, value and momentum exposures that the CAPM ignores."
+      }
+    ],
+    "pitfalls": [
+      "Adding the momentum term with a plus sign."
     ]
   },
   {

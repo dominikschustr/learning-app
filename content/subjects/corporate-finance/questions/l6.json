@@ -22,6 +22,36 @@
         "value": 11.8,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Total risk vs market risk",
+        "why": "Total risk is measured by volatility, market risk by beta.",
+        "lines": [
+          "Volatility: Renault 35% > Air Liquide 22%",
+          "Beta: Renault 1.60 > Air Liquide 0.85"
+        ],
+        "result": "(a) Renault has both more total risk and more market risk"
+      },
+      {
+        "title": "(b) Market risk premium",
+        "lines": [
+          "8.5% − 3% = 5.5%"
+        ]
+      },
+      {
+        "title": "(b) Cost of equity (CAPM)",
+        "why": "Only beta enters the cost of capital – volatility does not.",
+        "lines": [
+          "Air Liquide: 3% + 0.85 × 5.5% = 3% + 4.675% = 7.675%",
+          "Renault: 3% + 1.60 × 5.5% = 3% + 8.8% = 11.80%"
+        ],
+        "result": "(b) Air Liquide ≈ 7.68%, Renault = 11.80%"
+      }
+    ],
+    "pitfalls": [
+      "Using the volatility instead of beta in the CAPM.",
+      "Multiplying beta with 8.5% (the market return) instead of the premium 5.5%."
     ]
   },
   {
@@ -54,6 +84,43 @@
         "unit": "EUR",
         "tol": 0.02
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Gordon growth model solved for r",
+        "why": "If dividends grow at a constant rate g forever, P₀ = Div₁ / (r − g). Rearranged: r = dividend yield + growth.",
+        "lines": [
+          "r_M = Div₁ / P₀ + g",
+          "r_M = 3.5% + 3%"
+        ],
+        "result": "(a) Expected market return = 6.50%"
+      },
+      {
+        "title": "(a) Implied market risk premium",
+        "lines": [
+          "6.5% − 2%"
+        ],
+        "result": "(a) Market risk premium = 4.50%"
+      },
+      {
+        "title": "(b) Required return of the stock",
+        "lines": [
+          "r = 5% + 2 × 6% = 5% + 12%"
+        ],
+        "result": "r = 17%"
+      },
+      {
+        "title": "(b) Price of a perpetuity",
+        "why": "A constant dividend forever, first paid in one year: P₀ = Div / r.",
+        "lines": [
+          "P₀ = 4 / 0.17"
+        ],
+        "result": "(b) Price = EUR 23.53"
+      }
+    ],
+    "pitfalls": [
+      "Using 6.5% for part (b) – part (b) has its own data (rf 5%, premium 6%).",
+      "Multiplying 4 by (1 + r) – the first dividend is already paid in one year."
     ]
   },
   {
@@ -79,6 +146,35 @@
         "value": 2.85,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Expected loss per year",
+        "why": "The yield to maturity is the promised return. In default you lose part of it. Expected loss = default probability × loss rate.",
+        "lines": [
+          "Expected loss = 2.2% × 0.55 = 1.21%"
+        ]
+      },
+      {
+        "title": "(a) Cost of debt = yield − expected loss",
+        "lines": [
+          "r_D = 5.2% − 1.21%"
+        ],
+        "result": "(a) r_D = 3.99%"
+      },
+      {
+        "title": "(b) Cost of debt with the CAPM",
+        "why": "Debt also has a (small) beta. Use the CAPM like for equity.",
+        "lines": [
+          "r_D = rf + β_D × market risk premium",
+          "r_D = 2% + 0.17 × 5% = 2% + 0.85%"
+        ],
+        "result": "(b) r_D = 2.85%"
+      }
+    ],
+    "pitfalls": [
+      "Taking the yield (5.2%) as the cost of debt – with default risk the expected return is lower.",
+      "Using the full default rate (2.2%) as the loss – only 55% is lost in default."
     ]
   },
   {
@@ -98,6 +194,25 @@
         "value": 7.125,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Choose the beta",
+        "why": "The competitor has no debt, so its equity beta equals its asset beta – and that is the beta of the business (your project).",
+        "lines": [
+          "β_project = β_E = 0.75"
+        ]
+      },
+      {
+        "title": "Cost of capital (CAPM)",
+        "lines": [
+          "r = 3% + 0.75 × 5.5% = 3% + 4.125%"
+        ],
+        "result": "Project cost of capital = 7.13%"
+      }
+    ],
+    "pitfalls": [
+      "Levering or unlevering the beta although the comparable has no debt."
     ]
   },
   {
@@ -129,6 +244,48 @@
         "value": 7.125,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Cost of equity of the comparable",
+        "lines": [
+          "r_E = 3% + 1.1 × 5% = 3% + 5.5%"
+        ],
+        "result": "(a) r_E = 8.50%"
+      },
+      {
+        "title": "(b) Weights",
+        "lines": [
+          "E + D = 18 + 6 = 24bn",
+          "E / (E + D) = 18 / 24 = 75%",
+          "D / (E + D) = 6 / 24 = 25%",
+          "r_D = yield = 4% (negligible default risk)"
+        ]
+      },
+      {
+        "title": "(b) Unlevered cost via returns",
+        "why": "The firm's assets are financed by equity and debt, so the asset return is the weighted average (pre-tax).",
+        "lines": [
+          "r_U = 0.75 × 8.50% + 0.25 × 4%",
+          "r_U = 6.375% + 1.00%"
+        ],
+        "result": "r_U via returns = 7.38%"
+      },
+      {
+        "title": "(b) Unlevered cost via betas",
+        "lines": [
+          "β_U = 0.75 × 1.1 + 0.25 × 0 = 0.825",
+          "r_U = 3% + 0.825 × 5% = 3% + 4.125%"
+        ],
+        "result": "r_U via betas = 7.13%"
+      },
+      {
+        "title": "Why the two results differ",
+        "why": "A yield of 4% when rf = 3% implies a small positive debt beta (about 0.2). Setting β_D = 0 therefore gives a slightly lower r_U."
+      }
+    ],
+    "pitfalls": [
+      "Using book values or forgetting to weight – use market values E and D."
     ]
   },
   {
@@ -162,6 +319,45 @@
         "value": 8.5,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) Net debt",
+        "why": "Excess cash can be used to repay debt, so it counts as negative debt.",
+        "lines": [
+          "Net debt = Debt − Cash = 3 − 8"
+        ],
+        "result": "(a) Net debt = −5bn"
+      },
+      {
+        "title": "Value of the business (enterprise value)",
+        "lines": [
+          "V = E + net debt = 40 + (−5) = 35bn"
+        ]
+      },
+      {
+        "title": "(a) Asset beta",
+        "lines": [
+          "β_U = (E / V) × β_E + (D / V) × β_D",
+          "β_U = (40 / 35) × 1.05 + (−5 / 35) × 0",
+          "β_U = 1.1429 × 1.05"
+        ],
+        "result": "(a) Asset beta = 1.20"
+      },
+      {
+        "title": "(b) Cost of capital of the business",
+        "lines": [
+          "r_U = 2.5% + 1.20 × 5% = 2.5% + 6%"
+        ],
+        "result": "(b) Cost of capital = 8.50%"
+      },
+      {
+        "title": "Interpretation",
+        "why": "The asset beta is higher than the equity beta: the shares also contain safe cash, which makes them less risky than the business itself."
+      }
+    ],
+    "pitfalls": [
+      "Ignoring the cash and using β_U = 40/43 × 1.05 = 0.98."
     ]
   },
   {
@@ -193,6 +389,51 @@
         "value": 9.375,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "(a) After-tax cost of debt",
+        "why": "Interest is tax-deductible, so the cost of debt for the firm is lower by the tax rate.",
+        "lines": [
+          "r_D × (1 − τ) = 4.5% × (1 − 0.25) = 4.5% × 0.75"
+        ],
+        "result": "(a) After-tax cost of debt = 3.38%"
+      },
+      {
+        "title": "Weights",
+        "lines": [
+          "V = 450 + 150 = 600m",
+          "E / V = 450 / 600 = 75%",
+          "D / V = 150 / 600 = 25%"
+        ]
+      },
+      {
+        "title": "(b) WACC",
+        "lines": [
+          "WACC = 0.75 × 11% + 0.25 × 3.375%",
+          "WACC = 8.25% + 0.84%"
+        ],
+        "result": "(b) WACC = 9.09%"
+      },
+      {
+        "title": "(c) Unlevered cost of capital (pre-tax)",
+        "why": "Same weights, but with the pre-tax cost of debt.",
+        "lines": [
+          "r_U = 0.75 × 11% + 0.25 × 4.5%",
+          "r_U = 8.25% + 1.125%"
+        ],
+        "result": "(c) r_U = 9.38%"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "WACC = r_U − τ × (D / V) × r_D",
+          "= 9.375% − 0.25 × 0.25 × 4.5% = 9.375% − 0.28% = 9.09% ✓"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Using the after-tax cost of debt in r_U – the tax shield belongs in the WACC only."
     ]
   },
   {
@@ -212,6 +453,34 @@
         "value": 9.1667,
         "unit": "%"
       }
+    ],
+    "steps": [
+      {
+        "title": "Weights",
+        "lines": [
+          "V = 40 + 20 = 60m",
+          "E / V = 40 / 60 = 2/3",
+          "D / V = 20 / 60 = 1/3"
+        ]
+      },
+      {
+        "title": "After-tax cost of debt",
+        "lines": [
+          "5% × (1 − 0.30) = 3.5%"
+        ]
+      },
+      {
+        "title": "WACC",
+        "lines": [
+          "WACC = 2/3 × 12% + 1/3 × 3.5%",
+          "WACC = 8.00% + 1.17%"
+        ],
+        "result": "WACC = 9.17%"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the tax shield (gives 9.67%).",
+      "Using D/E = 0.5 as the debt weight instead of D/V = 1/3."
     ]
   },
   {
@@ -232,6 +501,30 @@
         "unit": "EUR",
         "tol": 0.05
       }
+    ],
+    "steps": [
+      {
+        "title": "What kind of risk is this?",
+        "why": "The technical problem is specific to this firm – it has nothing to do with the market and can be diversified. Such risk goes into the expected cash flow, not into the discount rate."
+      },
+      {
+        "title": "Expected cash flow",
+        "lines": [
+          "E(CF) = 0.8 × 120 + 0.2 × 0 = 96"
+        ]
+      },
+      {
+        "title": "NPV",
+        "lines": [
+          "NPV = −100 + 96 / 1.08",
+          "NPV = −100 + 88.89"
+        ],
+        "result": "NPV = −11.11 → reject the project"
+      }
+    ],
+    "pitfalls": [
+      "Discounting 120 at a higher rate \"for the risk\" – that mixes firm-specific and market risk.",
+      "Discounting 120 without the 20% failure probability (NPV would be +11.11)."
     ]
   },
   {
