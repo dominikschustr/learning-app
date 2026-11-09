@@ -71,8 +71,8 @@ Unter *Einstellungen → Mitteilungen* (oder über den Hinweis auf der Startseit
   Lernende werden zusammengefasst. Tippen öffnet die Rangliste.
 
 Das Gerät speichert sein Push-Abo mit beiden Schaltern in Firestore (`push/{id}`). Der Workflow
-[`remind.yml`](.github/workflows/remind.yml) läuft tagsüber alle 10 Minuten (GitHub startet geplante Läufe oft
-einige Minuten später), liest Abos und Ranglisten-Stand mit einem Dienstkonto und verschickt die Mitteilungen
+[`remind.yml`](.github/workflows/remind.yml) läuft tagsüber alle 10 Minuten (angestoßen von cron-job.org, siehe
+Schritt 4 unten), liest Abos und Ranglisten-Stand mit einem Dienstkonto und verschickt die Mitteilungen
 ([`scripts/reminders.mjs`](scripts/reminders.mjs)). Wer seit dem letzten Lauf gelernt hat, erkennt er am Stand
 in `users/{uid}`; den gemerkten Stand legt er in `notify/activity` ab (für Konten gesperrt).
 
@@ -87,6 +87,21 @@ Einmalig einrichten:
    - `FIREBASE_SERVICE_ACCOUNT`: kompletter Inhalt der heruntergeladenen JSON-Datei
    - `VAPID_PRIVATE_KEY`: privater Web-Push-Schlüssel (Gegenstück zu `PUSH.vapidPublicKey` in [`src/config.ts`](src/config.ts))
 3. Actions → **Deploy** → **Run workflow** (veröffentlicht die Regeln), danach Actions → **Remind** → **Run workflow**.
+4. **Takt von außen** – GitHubs eigener Zeitplan (`schedule`) startet den Workflow bei diesem Repository nur alle
+   4–12 Stunden, die Mitteilungen kämen dann Stunden zu spät. Deshalb stößt ihn ein kostenloser Cron-Dienst an:
+   1. GitHub → Settings → Developer settings → **Fine-grained tokens** → *Generate new token*: Name `remind-trigger`,
+      Ablauf z. B. 1 Jahr, *Only select repositories* → `learning-app`, *Permissions* → **Actions: Read and write**
+      (sonst nichts). Token kopieren.
+   2. [cron-job.org](https://cron-job.org) → Konto anlegen → **Create cronjob**:
+      - URL: `https://api.github.com/repos/dominikschustr/learning-app/actions/workflows/remind.yml/dispatches`
+      - Zeitplan: *Custom* → Minuten `*/10` (bzw. „alle 10 Minuten“), Stunden 6–23, Zeitzone Europe/Berlin
+      - Reiter *Advanced*: Request method **POST**, Request body `{"ref":"main"}`, Headers
+        `Accept: application/vnd.github+json`, `Authorization: Bearer <Token>`, `X-GitHub-Api-Version: 2022-11-28`
+      - *Notify on failure* einschalten (meldet z. B. einen abgelaufenen Token)
+   3. *Test run* → Antwort **204** heißt: Lauf gestartet, unter Actions → Remind sichtbar (Ereignis `workflow_dispatch`).
+
+   Der Token kann nur Workflows dieses Repositorys starten, keinen Code lesen oder ändern. Läuft er ab: neuen erzeugen
+   und im Cronjob den `Authorization`-Header ersetzen.
 
 Auf dem iPhone kommen Mitteilungen nur an die Home-Bildschirm-App (Safari → Teilen → Zum Home-Bildschirm, iOS 16.4+).
 Neue Schlüssel: `npx web-push generate-vapid-keys`, öffentlichen in `src/config.ts`, privaten als Secret.
