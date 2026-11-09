@@ -4,6 +4,13 @@
     "id": "cf-l5-01",
     "lecture": "l5",
     "difficulty": 1,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Example: computing an alpha · Folie 16"
+      }
+    ],
     "verb": "calculate",
     "prompt": "rf = 4%, E(R_M) = 10%. Stock X has a beta of 1.2 and an expected return of 13%; stock Y has a beta of 0.5 and an expected return of 6%. Compute the required return and the alpha of each stock. Which would you buy, which sell? Report percentages with two decimals.",
     "modelAnswer": "Required (CAPM) return: X = 4% + 1.2 × 6% = 11.2%, Y = 4% + 0.5 × 6% = 7%.\nα = E(R) − required: X = 13% − 11.2% = +1.8% → buy (above the SML); Y = 6% − 7% = −1% → sell / underweight (below the SML).\nJudge each stock against its own required return, never against the other stock.",
@@ -74,6 +81,13 @@
     "id": "cf-l5-02",
     "lecture": "l5",
     "difficulty": 1,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übungsblatt 2022/23",
+        "ref": "Part 3 · Exercise 6 – Fenway Corp."
+      }
+    ],
     "verb": "calculate",
     "prompt": "Fenway Corp. has a beta of 1.5. An analyst expects a return of 15% over the next year. The market risk premium is 8% and the risk-free rate 4%. What is the stock's alpha? Does the analyst consider the stock over- or undervalued? Report percentages with two decimals.",
     "modelAnswer": "Required return = 4% + 1.5 × 8% = 16%.\nα = 15% − 16% = −1% < 0 → the stock pays less than its risk requires: it is overvalued (its price is too high).",
@@ -126,6 +140,13 @@
     "id": "cf-l5-03",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Example: computing an alpha · Folie 16"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What are Zeta's expected return, required return and alpha? Report percentages with two decimals.",
     "modelAnswer": "Expected return = (56.50 + 2.50)/52.00 − 1 = 13.46%.\nRequired return = 3% + 0.9 × 6.5% = 8.85%.\nα = 13.46% − 8.85% = 4.61% > 0 → investors want to buy.",
@@ -186,6 +207,13 @@
     "id": "cf-l5-04",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Competition pushes alphas to zero · Folien 17–18"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Competition among investors pushes the alpha to zero. At what price today is Zeta's alpha exactly zero? Report the price with two decimals.",
     "modelAnswer": "With the same expected payoff (56.50 + 2.50 = 59.00), the price must give exactly the required return:\nP₀ = 59.00/(1 + 8.85%) = 54.20.\nBuying pressure lifts the price from 52.00 to 54.20, which lowers the expected return to the required 8.85%.",
@@ -234,6 +262,13 @@
     "id": "cf-l5-05",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Trading on news: takeover offers · Folien 31–32"
+      }
+    ],
     "verb": "calculate",
     "prompt": "Target SA trades at EUR 25.00. A bidder announces an offer of EUR 34.00 per share, and Target's price jumps to EUR 31.30 the same day. If the deal fails, the price falls back to EUR 25.00. What probability of success does the market price imply? Why is the 2.70 gap not a free lunch?",
     "modelAnswer": "31.30 = p × 34.00 + (1 − p) × 25.00 → p = 6.30/9.00 = 70.00%.\nPublic news is priced at once. The remaining gap of 2.70 compensates for the risk that the deal fails; buying at 31.30 is not a riskless gain.",
@@ -278,6 +313,13 @@
     "id": "cf-l5-06",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Do fund managers have skill? · Folien 33–35"
+      }
+    ],
     "verb": "calculate",
     "prompt": "A mutual fund earned 9.4% per year before fees. Its beta is 1.1, the risk-free rate 2% and the market risk premium 6%. The fund charges fees of 1.2% per year. Compute the fund's gross alpha (before fees) and net alpha (after fees). Report percentages with two decimals.",
     "modelAnswer": "Required return = 2% + 1.1 × 6% = 8.6%.\nGross α = 9.4% − 8.6% = 0.80% → the manager has some skill.\nNet α = 0.80% − 1.2% = -0.40% → investors only earn the net alpha and lose compared with an index fund. This matches the evidence: positive gross, slightly negative net alpha on average.",
@@ -334,6 +376,13 @@
     "id": "cf-l5-07",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "If beta is not enough: more factors · Folie 41"
+      }
+    ],
     "verb": "calculate",
     "prompt": "A stock has the following factor betas: market 1.1, size (small minus big) 0.4, value (high minus low) 0.3, momentum (winners minus losers) −0.1. The factor premiums are 5%, 2.5%, 3% and 6%; the risk-free rate is 3%. Compute the required return with the four-factor model and with the CAPM (market beta only). Report percentages with two decimals.",
     "modelAnswer": "Four factors: 3% + 1.1 × 5% + 0.4 × 2.5% + 0.3 × 3% − 0.1 × 6% = 3% + 5.5% + 1% + 0.9% − 0.6% = 9.80%.\nCAPM: 3% + 1.1 × 5% = 8.50%.\nThe extra factors capture the size, value and momentum patterns the CAPM misses.",
@@ -387,6 +436,13 @@
     "id": "cf-l5-08",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Every buyer needs a seller (Jérôme) · Folien 19–21"
+      }
+    ],
     "verb": "explain",
     "prompt": "Explain why the average investor earns an alpha of zero, and how an uninformed investor can guarantee herself a non-negative alpha.",
     "modelAnswer": "All investors together hold the market portfolio, so the value-weighted average of their returns is the market return: the average alpha is zero. Every buyer needs a seller – one investor's positive alpha is another investor's negative alpha. An uninformed investor simply holds the market portfolio (index fund/ETF): she earns the market return, an alpha of zero, whatever the others know or do, at low fees. She only loses if she moves away from the market (e.g. trades on mistakes or pays high fees).",
@@ -402,6 +458,18 @@
     "id": "cf-l5-09",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Behavioral biases · Folien 25–29"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 7 – disposition effect"
+      }
+    ],
     "verb": "explain",
     "prompt": "Define the disposition effect and explain under which condition behavioral biases of individual investors move market prices.",
     "modelAnswer": "Disposition effect: investors sell winners too early and hold on to losers too long (they are about twice as likely to sell at a gain; the losers they keep do worse). Individual, random mistakes cancel out across investors and do not move prices. Prices are affected only if many investors make the same mistake (systematic, persistent biases such as the disposition effect, attention/mood effects or herding) and informed investors cannot fully trade against it.",

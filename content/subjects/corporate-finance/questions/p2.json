@@ -4,6 +4,13 @@
     "id": "cf-p2-mc01",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 1"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -44,6 +51,13 @@
     "id": "cf-p2-mc02",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 2"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -76,6 +90,13 @@
     "id": "cf-p2-mc03",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 3"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -108,6 +129,13 @@
     "id": "cf-p2-mc04",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 4"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -140,6 +168,13 @@
     "id": "cf-p2-mc05",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 5"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -172,6 +207,13 @@
     "id": "cf-p2-mc06",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 6"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -212,6 +254,13 @@
     "id": "cf-p2-mc07",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 7"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -244,6 +293,13 @@
     "id": "cf-p2-mc08",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 8"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -276,6 +332,13 @@
     "id": "cf-p2-mc09",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 9"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -308,6 +371,13 @@
     "id": "cf-p2-mc10",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 10"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -344,6 +414,13 @@
     "id": "cf-p2-mc11",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 11"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -376,6 +453,13 @@
     "id": "cf-p2-mc12",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Unlevering the comparable's beta · Folien 43–46"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -408,6 +492,13 @@
     "id": "cf-p2-mc13",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Stock price indices · Folien 29–32"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -440,6 +531,13 @@
     "id": "cf-p2-mc14",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Three patterns the CAPM misses · Folien 37–41"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -472,6 +570,18 @@
     "id": "cf-p2-mc15",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übungsblatt 2022/23",
+        "ref": "Part 2 · Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Diversification and risk · Folien 54–57"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -504,6 +614,13 @@
     "id": "cf-p2-01a",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "Exercise 1a – ABC"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What was the total return (assuming dividend reinvestment) from 1 October 2021 to 31 October 2022?",
     "modelAnswer": "Sub-period 1: (340.40 + 4)/350.40 − 1 = -1.71%. Sub-period 2: 380.20/340.40 − 1 = 11.69%.\nTotal: (1 -0.0171)(1 + 0.1169) − 1 = 9.78%.",
@@ -560,6 +677,13 @@
     "id": "cf-p2-01b",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "Exercise 1b – ABC"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) What was the capital gain from 1 October 2021 to 9 May 2022? What was the dividend yield over this period?",
     "modelAnswer": "Capital gain: 340.40/350.40 − 1 = -2.85%. Dividend yield: 4/350.40 = 1.14%. Together -1.71%.",
@@ -614,6 +738,13 @@
     "id": "cf-p2-02a",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "Exercise 2a – portfolio return"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What is the expected return of your portfolio?",
     "modelAnswer": "Weights 2/3 and 1/3: 2/3 × 8% + 1/3 × 20% = 12%.",
@@ -656,6 +787,13 @@
     "id": "cf-p2-02b",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "Exercise 2b – portfolio risk"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) What is the volatility of your portfolio?",
     "modelAnswer": "Var = (2/3)² × 0.25² + (1/3)² × 0.5² + 2 × (2/3)(1/3) × 0.4 × 0.25 × 0.5 = 0.0778 → σ = 27.89%.",
@@ -699,6 +837,13 @@
     "id": "cf-p2-03a",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "Exercise 3a – sustainable vs unsustainable"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What are the expected return and the volatility of the market portfolio (a 50–50 combination of the two portfolios)?",
     "modelAnswer": "E(R_M) = 0.5 × 12% + 0.5 × 17% = 14.5%.\nVar = 0.25 × 0.04 + 0.25 × 0.0441 + 2 × 0.25 × 0.6 × 0.2 × 0.21 = 0.033625 → σ_M = 18.34%.",
@@ -754,6 +899,13 @@
     "id": "cf-p2-03b",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "Exercise 3b – is the market efficient?"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Does the CAPM hold in this economy? (Hint: is the market portfolio efficient?) Support your answer with the beta and the CAPM required return of the sustainable portfolio.",
     "modelAnswer": "Cov(S, M) = 0.5 × 0.04 + 0.5 × 0.6 × 0.2 × 0.21 = 0.0326 → β_S = 0.9695; required return = 3% + 0.9695 × 11.5% = 14.15% > 12%.\nThe sustainable portfolio has a negative alpha (the unsustainable one a positive alpha). Equivalently, the Sharpe ratio of the unsustainable portfolio (14/21 = 0.67) exceeds that of the market (0.63), so the market is not efficient and the CAPM does not hold.",
@@ -816,6 +968,13 @@
     "id": "cf-p2-04a",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 3a – ESCP Corporation"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) Is your broker right? Support your answer with ESCP's beta, its required return and its alpha.",
     "modelAnswer": "β = 0 × 10%/20% = 0 → required return = 2%. ESCP offers 5% → α = +3%: adding a small position raises the Sharpe ratio of your portfolio, so the broker is right – even though ESCP's return is far below the market's.",
@@ -881,6 +1040,13 @@
     "id": "cf-p2-04b",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 3b – SML and CML"
+      }
+    ],
     "verb": "explain",
     "prompt": "(b) What can you conclude about the valuation of ESCP (over-, under- or correctly valued)? Is it above or below the SML? Above or below the CML?",
     "modelAnswer": "ESCP is undervalued: its expected return (5%) exceeds its required return (2%), so it lies above the SML (positive alpha). On the CML, a portfolio with 10% volatility earns 2% + (12%/20%) × 10% = 8% > 5%, so ESCP lies below the CML – like any single stock, its volatility is idiosyncratic risk that is not rewarded.",
@@ -898,6 +1064,13 @@
     "id": "cf-p2-05a",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 4a – Music Star & Co."
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What is the asset (unlevered) beta of the private firm?",
     "modelAnswer": "β_U = E/(D + E) × β_E for each comparable:\nMusic Star: 50/150 × 1.2 = 0.4000\nVirtuoso Instruments: 200/275 × 0.8 = 0.5818\nVivaMo: 110/120 × 0.6 = 0.5500\nAverage = 0.5106.",
@@ -942,6 +1115,13 @@
     "id": "cf-p2-05b",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 4b – equity beta"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Given your answer to the previous question, what is the equity beta of the private firm?",
     "modelAnswer": "β_E = β_U (1 + D/E) = 0.5106 × 2 = 1.0212.",
@@ -977,6 +1157,13 @@
     "id": "cf-p2-06a",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 5a – Zeta and Omicron"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) According to MM Proposition I, what are the equity value and the stock price of Omicron?",
     "modelAnswer": "V_U = 10m × 22 = 220m = V_L → E = 220 − 60 = 160m → price = 160/20 = EUR 8.",
@@ -1037,6 +1224,13 @@
     "id": "cf-p2-06b",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 5b – arbitrage"
+      }
+    ],
     "verb": "explain",
     "prompt": "(b) Suppose Omicron stock currently trades at EUR 11 per share. What arbitrage opportunity is available? Which assumptions are necessary to exploit it?",
     "modelAnswer": "At EUR 11, E = 220m and V_L = 280m > V_U = 220m: Omicron is overpriced. Sell Omicron's shares short and create the same levered position with homemade leverage: buy Zeta shares and borrow – e.g. per 1%: sell Omicron shares for 2.2m, buy 1% of Zeta for 2.2m and borrow 0.6m → +0.6m today with identical future cash flows. Required: investors can borrow at the same rate as the firm, short selling is allowed, no transaction costs or taxes (perfect capital markets).",
@@ -1054,6 +1248,13 @@
     "id": "cf-p2-07",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "Exercise 4 – Mast-Jägermeister"
+      }
+    ],
     "verb": "calculate",
     "prompt": "Mast-Jägermeister SE has common stock worth EUR 200 million and debt worth EUR 100 million. Investors expect a 15% return on the stock and a 6% return on the debt. Assume perfect capital markets. (a) MJ issues EUR 100 million of new stock to buy back all its debt: what is its cost of equity afterwards? (b) Instead, MJ issues EUR 50 million of new debt (same risk) to repurchase shares: what is its cost of equity afterwards?",
     "modelAnswer": "r_U = 2/3 × 15% + 1/3 × 6% = 12%.\n(a) All equity → r_E = r_U = 12%.\n(b) D = 150, E = 150 → r_E = 12% + 1 × (12% − 6%) = 18%.",

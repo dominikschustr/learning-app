@@ -4,6 +4,13 @@
     "id": "cf-p4-mc01",
     "lecture": "l1",
     "difficulty": 1,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "MC 1 – realized return"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -52,6 +59,13 @@
     "id": "cf-p4-mc05",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "MC 5 – slope of the CML"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -96,6 +110,13 @@
     "id": "cf-p4-mc12",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "MM Proposition I and homemade leverage · Folien 36–42"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -128,6 +149,13 @@
     "id": "cf-p4-mc13",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Holding the market / the CAPM · Folien 19–24"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -160,6 +188,13 @@
     "id": "cf-p4-mc14",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Estimating beta: the regression · Folien 27–30"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -192,6 +227,13 @@
     "id": "cf-p4-mc15",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "MM Proposition II · Folien 18–24"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -228,6 +270,13 @@
     "id": "cf-p4-01a",
     "lecture": "l1",
     "difficulty": 1,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 1a – arithmetic vs geometric"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) Calculate the arithmetic average of these returns. With or without calculations, discuss how it compares with the geometric average of the same returns.",
     "modelAnswer": "Arithmetic average = (4.41% − 16.15% + 43.68% + 0.62%) / 4 = 8.14%.\nThe geometric average is lower: (1.0441 × 0.8385 × 1.4368 × 1.0062)^(1/4) − 1 ≈ 6.07%. The geometric average is always below the arithmetic average when returns vary – the more volatile the returns, the larger the gap.",
@@ -280,6 +329,13 @@
     "id": "cf-p4-01b",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 1b – risk and return of single stocks"
+      }
+    ],
     "verb": "explain",
     "prompt": "(b) How does the relationship between historical average return and historical volatility of individual stocks differ from that of large, well-diversified portfolios? Explain briefly.",
     "modelAnswer": "For large, well-diversified portfolios there is generally a positive relation between average return and volatility: more risk, higher average return. For individual stocks there is no such clear relation, because a large part of their volatility is idiosyncratic (diversifiable) risk, which is not rewarded with a risk premium – only systematic risk is.",
@@ -295,6 +351,13 @@
     "id": "cf-p4-02a",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 2a – short selling"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What are your portfolio weights, and what is the expected return of your portfolio?",
     "modelAnswer": "Weights: Pernod Ricard 7,500 / 5,000 = 1.5; Carrefour −2,500 / 5,000 = −0.5.\nE(R) = 1.5 × 13% + (−0.5) × 3% = 18%.",
@@ -353,6 +416,13 @@
     "id": "cf-p4-02b",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 2b – portfolio volatility"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) What is the volatility of your portfolio?",
     "modelAnswer": "σ² = 1.5² × 0.25² + (−0.5)² × 0.20² + 2 × 1.5 × (−0.5) × 0.25 × 0.20 × 0.25 = 0.140625 + 0.01 − 0.01875 = 0.131875.\nσ = √0.131875 = 36.31%.",
@@ -398,6 +468,13 @@
     "id": "cf-p4-03a",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 3a – GameStop"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) According to the CAPM, which alternative investment provides the same expected return as GameStop but a lower risk? Calculate the portfolio weights and the volatility.",
     "modelAnswer": "Combine the market portfolio and the risk-free asset: 8% × x + 4% × (1 − x) = 10% → x = (10% − 4%) / (8% − 4%) = 1.5 in the market and −0.5 in the risk-free asset (borrowing).\nVolatility = 1.5 × 20% = 30% < 50%.",
@@ -461,6 +538,13 @@
     "id": "cf-p4-03b",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 3b – capital market line"
+      }
+    ],
     "verb": "explain",
     "prompt": "(b) Describe the capital market line in a figure with volatility on the x-axis and expected return on the y-axis: where are the risk-free asset, the market portfolio, GameStop and the portfolio from (a)? What is the slope of the CML?",
     "modelAnswer": "The CML is a straight line starting at the risk-free asset (σ = 0, E = 4%) and passing through the market portfolio (20%, 8%); its slope is the market Sharpe ratio (8% − 4%) / 20% = 0.2. The portfolio from (a) lies on the CML beyond the market portfolio (30%, 10%) – leverage. GameStop (50%, 10%) lies to the right of and below the CML: same expected return with much more volatility, because most of its risk is diversifiable.",
@@ -512,6 +596,13 @@
     "id": "cf-p4-04a",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 4a – asset beta"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What is Campari-Milano's asset (unlevered) beta before and after the acquisition? Explain the change.",
     "modelAnswer": "Before: all-equity, so asset beta = equity beta = 1.2.\nAfter: the firm's assets are a portfolio of the old business (2 bn) and Molinari (0.5 bn): βU = 2/2.5 × 1.2 + 0.5/2.5 × 0.6 = 0.96 + 0.12 = 1.08.\nThe asset beta falls because the acquired business has a lower beta; the financing (debt) does not affect the asset beta.",
@@ -567,6 +658,13 @@
     "id": "cf-p4-04b",
     "lecture": "l8",
     "difficulty": 3,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 4b – equity beta"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Calculate Campari-Milano's equity beta after the acquisition and compare it with the one before. Explain the change.",
     "modelAnswer": "After the deal: equity 2 bn, risk-free debt 0.5 bn → D/E = 0.25.\nβE = βU × (1 + D/E) = 1.08 × 1.25 = 1.35 (equivalently 1.08 × 2.5 / 2).\nThe equity beta rises from 1.2 to 1.35: equity beta reflects business risk and financial risk. The lower business risk (asset beta 1.08) is more than offset by the leverage the firm takes on.",
@@ -616,6 +714,13 @@
     "id": "cf-p4-05a",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Constant growth formula · Folien 25, 67"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What is the value of Blüthner as an all-equity firm? (replaces a question on the interest tax shield)",
     "modelAnswer": "Growing perpetuity: V = FCF1 / (r − g) = 15 / (7% − 5%) = EUR 750 million.",
@@ -651,6 +756,18 @@
     "id": "cf-p4-05b",
     "lecture": "l7",
     "difficulty": 3,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 5 – Blüthner"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "MM Proposition II · Folien 18–24"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Blüthner issues EUR 375 million of risk-free debt at 4% and uses the proceeds to repurchase shares. In perfect capital markets, what are the value of its equity and its equity cost of capital after the recapitalization?",
     "modelAnswer": "MM I: firm value stays 750; equity = 750 − 375 = EUR 375 million (D/E = 1).\nMM II: rE = rU + D/E × (rU − rD) = 7% + 1 × (7% − 4%) = 10%.\nThe WACC stays 7% (0.5 × 10% + 0.5 × 4%).",
@@ -708,6 +825,13 @@
     "id": "cf-p4-06a",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 6a – BB-rated bond"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) Calculate the market value of the bond (EUR million) and discuss whether the expected return for Alpha's debt holders is larger than, smaller than or equal to the discount rate you used.",
     "modelAnswer": "Coupon = 7.5% × 500 = 37.5. Value = 37.5 / 1.05 + 537.5 / 1.05² = 35.7143 + 487.5283 = EUR 523.2426 million.\nThe 5% yield to maturity is a promised return that assumes all payments are made. Because a BB bond has a non-negligible default risk, the expected return to debt holders is below 5%.",
@@ -763,6 +887,13 @@
     "id": "cf-p4-06b",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Default rates and expected loss · Folien 33–37"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) BB-rated debt has an average annual default rate of 2%, and investors lose 60% of the value in default. Estimate Alpha's debt cost of capital. (replaces a question on bond covenants)",
     "modelAnswer": "Expected return = yield − probability of default × expected loss rate = 5% − 2% × 60% = 3.8%. It lies between the risk-free rate (1%) and the promised yield (5%).",
@@ -809,6 +940,13 @@
     "id": "cf-p4-07",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Sharpe ratio: compare the lines · Folien 46–47"
+      }
+    ],
     "verb": "calculate",
     "prompt": "Which fund should you combine with the risk-free asset, and why? Calculate the relevant measure for both funds. (replaces an exercise on option payoffs, which are not part of lectures 1–8)",
     "modelAnswer": "Compare the Sharpe ratios (slope of the line from the risk-free asset through each fund):\nX: (12% − 3%) / 25% = 0.36.\nY: (9% − 3%) / 15% = 0.40.\nChoose Y: combined with borrowing or lending it offers the highest expected return for every level of volatility – e.g. with 25% volatility (weight 25/15 = 1.67 in Y) the expected return is 3% + 0.40 × 25% = 13% > 12% for X.",

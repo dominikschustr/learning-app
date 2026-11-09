@@ -4,6 +4,18 @@
     "id": "cf-l1-01",
     "lecture": "l1",
     "difficulty": 1,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 1a – Danone"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Dividend return and capital gains · Folie 18"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What was the total (realized) return of Bel Air between 31/12/2021 and 31/12/2022, and what was the capital gain rate? Report percentages with two decimals.",
     "modelAnswer": "Total return = (P₁ + Div₁)/P₀ − 1 = (51.20 + 1.60)/48.00 − 1 = 10.00%.\nCapital gain rate = P₁/P₀ − 1 = 51.20/48.00 − 1 = 6.67%.\nThe difference, 1.60/48.00 = 3.33%, is the dividend yield.",
@@ -72,6 +84,18 @@
     "id": "cf-l1-02",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 1b – Danone"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Reinvested dividends · Folie 25"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Assuming that dividends are immediately reinvested in Bel Air stock, what is the overall return from 31/12/2021 to 31/12/2025? What is the annualized return (geometric average)? Report percentages with two decimals.",
     "modelAnswer": "Yearly total returns (P + Div)/P_prev − 1:\n2022: (51.20 + 1.60)/48.00 − 1 = 10.00%\n2023: (44.80 + 1.70)/51.20 − 1 = -9.18%\n2024: (53.10 + 1.75)/44.80 − 1 = 22.43%\n2025: (57.40 + 1.90)/53.10 − 1 = 11.68%\nOverall = (1 +0.1000)(1 -0.0918)(1 +0.2243)(1 +0.1168) − 1 = 36.59%.\nGeometric average = (1 + 36.59%)^(1/4) − 1 = 8.11% per year.",
@@ -160,6 +184,18 @@
     "id": "cf-l1-03",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 1a – arithmetic vs geometric"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Average returns · Folien 20–22"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(c) What is the arithmetic average of the four yearly total returns? Why is it higher than the geometric average? Report percentages with two decimals.",
     "modelAnswer": "Arithmetic average = (10.00% + -9.18% + 22.43% + 11.68%)/4 = 8.73%.\nIt is higher than the geometric average (8.11%) because returns vary from year to year (geometric ≈ arithmetic − ½ × variance). The geometric mean is the realized compound return; the arithmetic mean is the estimate for one future year.",
@@ -213,6 +249,13 @@
     "id": "cf-l1-04",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Returns and stock splits (CIGNA) · Folie 26"
+      }
+    ],
     "verb": "calculate",
     "prompt": "You bought 200 shares of a company at EUR 120.00 at the start of the year. During the year the company carries out a 2:1 stock split (each old share becomes two new shares). At year-end it pays a dividend of EUR 0.80 per new share and the share trades at EUR 63.50. What is your return over the year? Report percentages with two decimals.",
     "modelAnswer": "Compare the whole position, never the share price across a split.\nStart: 200 × 120.00 = 24,000.\nEnd: 400 shares × 63.50 = 25,400 plus dividends 400 × 0.80 = 320.\nR = (25,400 + 320 − 24,000)/24,000 = 7.17%.",
@@ -273,6 +316,13 @@
     "id": "cf-l1-05",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Quiz: reverse split and dividend · Folie 41"
+      }
+    ],
     "verb": "calculate",
     "prompt": "A stock is worth USD 2.00 at the beginning of the year. During the year the company pays a dividend of USD 0.05 per share and then carries out a 1:5 reverse split (5 old shares become 1 new share). At year-end one new share is worth USD 11.50. What is the return on the investment? Report percentages with two decimals.",
     "modelAnswer": "Work per old share (the one bought for USD 2.00).\nAfter the 1:5 reverse split one old share is 1/5 of a new share: 11.50/5 = 2.30.\nAdd the dividend on the old share: 0.05.\nR = (2.30 + 0.05 − 2.00)/2.00 = 17.50%.",
@@ -327,6 +377,13 @@
     "id": "cf-l1-06",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Quiz: value halved in six months · Folie 41"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) A stock gains 12% in three months. What is the annualized return?\n(b) Another stock loses 30% of its value in eight months. What is its annualized return? (No dividends, no splits.) Report percentages with two decimals.",
     "modelAnswer": "Annualize a return over h years with (1 + R)^(1/h) − 1.\n(a) h = 3/12 → (1.12)^4 − 1 = 57.35%.\n(b) h = 8/12 → (0.70)^(12/8) − 1 = -41.43%.",
@@ -385,6 +442,18 @@
     "id": "cf-l1-07",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übungsblatt 2022/23",
+        "ref": "Part 1 · Exercise 1 – Return Ltd"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Quiz: −20 %, then +20 % · Folie 41"
+      }
+    ],
     "verb": "calculate",
     "prompt": "Two years ago you bought a share of Return Ltd. In the first year the stock returned +80%, in the second year −51%. Compute the arithmetic average, the geometric average and the total return over the two years. Report percentages with two decimals.",
     "modelAnswer": "Arithmetic: (80% − 51%)/2 = 14.50%.\nTotal: (1.80)(0.49) − 1 = -11.80%.\nGeometric: √(1.80 × 0.49) − 1 = -6.09%.\nThe arithmetic mean is positive although you lost money – for realized performance use the geometric mean.",
@@ -458,6 +527,13 @@
     "id": "cf-l1-08",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Common measures of risk · Folie 35"
+      }
+    ],
     "verb": "calculate",
     "prompt": "A stock had the following yearly returns: 8%, −6%, 15%, 3%, 10%. (a) Compute the average return and the volatility (historical data). (b) A second stock has a monthly volatility of 4%. What is its annualized volatility? Report percentages with two decimals.",
     "modelAnswer": "(a) Mean = (8 − 6 + 15 + 3 + 10)/5 = 6.00%.\nDeviations (in %-points): 2, −12, 9, −3, 4 → squares 4, 144, 81, 9, 16 → sum 254.\nVariance = 254/(5 − 1) = 63.5 %² = 0.0063 → σ = √0.00635 = 7.97%.\nHistorical data → divide by T − 1.\n(b) σ_annual = σ_monthly × √12 = 4% × 3.4641 = 13.86%.",
@@ -567,6 +643,13 @@
     "id": "cf-l1-09",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Critical thinking: return on a bond · Folie 43"
+      }
+    ],
     "verb": "calculate",
     "prompt": "A bond with a face value of EUR 100 trades at EUR 98.50 at the beginning of the year. It pays an annual coupon of 5% of face value at year-end, when it trades at EUR 96.00. What is the return on the bond over the year? Report percentages with two decimals.",
     "modelAnswer": "Same logic as a stock: price change plus cash received.\nR = (96.00 + 5.00 − 98.50)/98.50 = 2.50/98.50 = 2.54%.\nThe coupon rate (5%) is not the return.",
@@ -611,6 +694,18 @@
     "id": "cf-l1-10",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Arithmetic vs geometric mean · Folien 20–22"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 1a – discussion"
+      }
+    ],
     "verb": "explain",
     "prompt": "Explain when you use the arithmetic average and when the geometric average of past returns. Illustrate with a stock that first falls by 50% and then rises by 100%.",
     "modelAnswer": "The geometric average (compound annual return, CAGR) measures what an investment actually earned per year in the past: the constant yearly return that turns the initial into the final wealth. The arithmetic average is the best estimate of the expected return of one future period and is used as E(R). They are equal only if all returns are identical; otherwise arithmetic > geometric (≈ arithmetic − ½ variance). Example: −50% then +100% → arithmetic (−50 + 100)/2 = +25%, but 100 → 50 → 100, so the geometric average is 0%: you earned nothing.",

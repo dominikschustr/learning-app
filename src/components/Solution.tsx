@@ -86,7 +86,27 @@ export function SolutionSteps({ steps, pitfalls = [] }: { steps: Step[]; pitfall
   );
 }
 
-const BASIS_ICON = { exam: ScrollText, slides: Presentation, case: BookOpenCheck };
+/** Art der Quelle: Symbol, Bezeichnung und Farbe (Folien blau, Altklausur orange, Übung violett). */
+const BASIS_KIND = {
+  slides: {
+    Icon: Presentation,
+    label: "Folien",
+    cls: "border-sky-300 bg-sky-50 text-sky-900 dark:border-sky-400/40 dark:bg-sky-400/10 dark:text-sky-100",
+    tag: "bg-sky-600 text-white dark:bg-sky-400 dark:text-sky-950",
+  },
+  exam: {
+    Icon: ScrollText,
+    label: "Altklausur",
+    cls: "border-amber-300 bg-amber-50 text-amber-950 dark:border-amber-400/40 dark:bg-amber-400/10 dark:text-amber-100",
+    tag: "bg-amber-500 text-white dark:bg-amber-400 dark:text-amber-950",
+  },
+  case: {
+    Icon: BookOpenCheck,
+    label: "Übung",
+    cls: "border-violet-300 bg-violet-50 text-violet-950 dark:border-violet-400/40 dark:bg-violet-400/10 dark:text-violet-100",
+    tag: "bg-violet-600 text-white dark:bg-violet-400 dark:text-violet-950",
+  },
+} as const;
 /** Niveau gemessen an den Unterlagen: Wissensfrage wie im Folien-Quiz, Einzelfrage wie in der Klausur, ganzer Klausurteil */
 const LEVEL = { 1: "Niveau Folien-Quiz", 2: "Niveau Klausurfrage", 3: "Niveau Klausur-Hauptaufgabe" } as const;
 
@@ -97,12 +117,22 @@ export function BasisLine({ basis, difficulty }: { basis: Basis[]; difficulty?: 
     <div className="mt-2 flex flex-wrap items-center gap-1.5 text-xs text-muted">
       <span>Orientiert an</span>
       {basis.map((b, i) => {
-        const Icon = BASIS_ICON[b.kind];
+        const k = BASIS_KIND[b.kind];
+        // „Folien L3“ → Etikett „Folien“ + „L3“; sonst Quelle vollständig zeigen
+        const rest = b.source.startsWith(`${k.label} `) ? b.source.slice(k.label.length + 1) : b.source;
         return (
-          <span key={i} className="inline-flex items-center gap-1 rounded-md bg-surface-2 px-2 py-0.5 text-ink-2">
-            <Icon className="size-3 shrink-0" />
-            {b.source}
-            {b.ref && <span className="text-muted">· {b.ref}</span>}
+          <span
+            key={i}
+            className={cn("inline-flex max-w-full items-center gap-1.5 rounded-full border py-0.5 pr-2.5 pl-0.5", k.cls)}
+          >
+            <span className={cn("inline-flex shrink-0 items-center gap-1 rounded-full px-2 py-0.5 font-semibold", k.tag)}>
+              <k.Icon className="size-3 shrink-0" />
+              {k.label}
+            </span>
+            <span className="min-w-0">
+              <span className="font-medium">{rest}</span>
+              {b.ref && <span className="opacity-75"> · {b.ref}</span>}
+            </span>
           </span>
         );
       })}

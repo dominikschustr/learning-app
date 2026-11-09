@@ -4,6 +4,13 @@
     "id": "cf-p1-mc01",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 1"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -36,6 +43,13 @@
     "id": "cf-p1-mc02",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 2"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -68,6 +82,13 @@
     "id": "cf-p1-mc03",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 3"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -100,6 +121,13 @@
     "id": "cf-p1-mc04",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 4"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -136,6 +164,13 @@
     "id": "cf-p1-mc05",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 5"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -180,6 +215,13 @@
     "id": "cf-p1-mc06",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 6"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -224,6 +266,13 @@
     "id": "cf-p1-mc07",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 7"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -256,6 +305,13 @@
     "id": "cf-p1-mc08",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 8"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -296,6 +352,13 @@
     "id": "cf-p1-mc09",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 9"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -328,6 +391,13 @@
     "id": "cf-p1-mc10",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 10"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -372,6 +442,13 @@
     "id": "cf-p1-mc11",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 11"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -404,6 +481,13 @@
     "id": "cf-p1-mc12",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "MM Proposition I and homemade leverage · Folien 36–42"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -436,6 +520,13 @@
     "id": "cf-p1-mc13",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Competition pushes alphas to zero · Folie 18"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -468,6 +559,13 @@
     "id": "cf-p1-mc14",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "Equity issuance and dilution · Folie 45"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -500,6 +598,13 @@
     "id": "cf-p1-mc15",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Negative weights · Folien 42–44"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -532,6 +637,13 @@
     "id": "cf-p1-01a",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 1a – Danone"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What was the stock's total (realized) return between 31/10/2019 and 31/10/2020, and what was the capital gain rate?",
     "modelAnswer": "Total return: (52.63 + 2.88)/58.60 − 1 = -5.27%.\nCapital gain rate: 52.63/58.60 − 1 = -10.19%.",
@@ -596,6 +708,13 @@
     "id": "cf-p1-01b",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 1b – Danone"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Assuming that dividends were immediately reinvested in Danone stock, calculate the overall return over the four years from 31/10/2019 to 31/10/2023. What is the annualized return (geometric average)?",
     "modelAnswer": "Yearly returns: -5.27%, -37.75%, 77.12%, 15.55%.\nOverall: (1 − 5.27%)(1 − 37.75%)(1 + 77.12%)(1 + 15.55%) − 1 = 20.67%.\nGeometric average: (1 + 20.67%)^(1/4) − 1 = 4.81%.",
@@ -659,6 +778,13 @@
     "id": "cf-p1-02a",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 2a – minimum-risk portfolio"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What is the portfolio of these two stocks that has the lowest risk?",
     "modelAnswer": "With ρ = −1: xA = σB/(σA + σB) = 30%/45% = 66.67%, xB = 15%/45% = 33.33%. The portfolio's volatility is zero.",
@@ -712,6 +838,13 @@
     "id": "cf-p1-02b",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 2b – minimum-risk portfolio"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) What is the expected return of the portfolio calculated in the previous question?",
     "modelAnswer": "2/3 × 8% + 1/3 × 12% = 9.33%.",
@@ -746,6 +879,13 @@
     "id": "cf-p1-03a",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 3a – Nintendo"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) According to the CAPM, which alternative investment provides the same volatility as Nintendo but a higher expected return? Calculate the portfolio weights and the expected return.",
     "modelAnswer": "Combine the risk-free asset with the market portfolio: 16% × x = 40% → x = 2.5 in the market, −1.5 in the risk-free asset (borrowing).\nE = 8% × 2.5 + 4% × (−1.5) = 14% > 10%.",
@@ -811,6 +951,13 @@
     "id": "cf-p1-03b",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 3b – capital market line"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Which mix of the market and the risk-free asset offers the same expected return as Nintendo, and what is its volatility? Where do Nintendo and both portfolios lie relative to the capital market line? (replaces drawing the CML)",
     "modelAnswer": "4% + x × (8% − 4%) = 10% → x = 1.5, σ = 1.5 × 16% = 24% < 40%.\nBoth mixes of the market and the risk-free asset lie on the CML (E = 4% + 0.25σ); Nintendo lies below it, because part of its volatility is idiosyncratic and not rewarded.",
@@ -864,6 +1011,13 @@
     "id": "cf-p1-04a",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 4a – fundamental approach"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What is your estimate of the expected market return according to the fundamental approach?",
     "modelAnswer": "Constant-growth model: r_M = Div₁/P₀ + g = 4% + 2% = 6%.",
@@ -905,6 +1059,13 @@
     "id": "cf-p1-04b",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 4b – historical approach"
+      }
+    ],
     "verb": "explain",
     "prompt": "(b) Explain briefly the historical approach as an alternative method to estimate the expected market return. What are its two main drawbacks?",
     "modelAnswer": "The historical approach takes the average return of the market over a long sample of past returns and uses it as the estimate of the future expected market return (or the average excess return as the risk premium). Drawbacks: (1) it is data intensive but still imprecise – realized returns are so volatile that even decades of data leave a large standard error; (2) it is backward looking by construction and may not reflect current expectations.",
@@ -921,6 +1082,13 @@
     "id": "cf-p1-05a",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 5a – EduHos"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What is EduHos's cost of capital?",
     "modelAnswer": "3/5 × 7% + 2/5 × 3% = 5.4% (no taxes → WACC = r_U).",
@@ -964,6 +1132,13 @@
     "id": "cf-p1-05b",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 5b – EduHos"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) EduHos sells its hospital division for EUR 150 million and uses the money to pay back part of its debt. The typical asset betas of hospitals and universities are 0.6 and 0.4. What is EduHos's equity beta after these transactions? What can you say about its equity beta before (no calculation needed)?",
     "modelAnswer": "After the sale only the university remains (β_U = 0.4), debt = 200 − 150 = 50, equity = 300.\nβ_E = 0.4 × (1 + 50/300) = 0.4 × 1.1667 = 0.4667.\nBefore, EduHos had more leverage and a higher asset beta (hospitals 0.6 > 0.4), so its equity beta must have been higher than 0.4667.",
@@ -1019,6 +1194,18 @@
     "id": "cf-p1-06a",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 5a – Zeta and Omicron"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "MM Proposition I · Folie 36"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) According to MM Proposition I, what are the equity value and the share price of Octo?",
     "modelAnswer": "V_U = 8m × 30 = 240m = V_L. E_Octo = 240 − 60 = 180m → price = 180/12 = EUR 15.",
@@ -1080,6 +1267,18 @@
     "id": "cf-p1-06b",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 5b – arbitrage"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "Proof of MM I · Folien 42–44"
+      }
+    ],
     "verb": "explain",
     "prompt": "(b) Suppose Octo stock trades at EUR 16. What arbitrage opportunity is available, and which assumptions are needed to exploit it?",
     "modelAnswer": "At EUR 16, E_Octo = 192m and V_L = 252m > V_U = 240m: Octo is overpriced. Arbitrage: sell (short) Octo shares and replicate them with homemade leverage – e.g. sell 1% of Octo's shares (1.92m), buy 1% of Hexa (2.4m) and borrow 1% of Octo's debt (0.6m): net +0.12m today, identical future cash flows. It requires perfect capital markets: investors can borrow at the same rate as the firm, short selling is possible, no transaction costs or taxes.",
@@ -1097,6 +1296,13 @@
     "id": "cf-p1-07",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Example: computing an alpha · Folie 16"
+      }
+    ],
     "verb": "calculate",
     "prompt": "A stock trades at EUR 40 today. Analysts expect a price of EUR 43 in one year plus a dividend of EUR 1.20. The stock's beta is 0.8, the risk-free rate 3% and the market risk premium 5%. Compute the expected return, the required return and the alpha. Is the stock over- or undervalued? (replaces the option question)",
     "modelAnswer": "Expected return = (43 + 1.20)/40 − 1 = 10.50%. Required = 3% + 0.8 × 5% = 7.00%. α = 3.50% > 0 → undervalued (above the SML): buy.",

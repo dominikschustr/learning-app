@@ -4,6 +4,18 @@
     "id": "cf-p3-mc01",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2022/23",
+        "ref": "MC 1 – realized return"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Dividend return and capital gains · Folie 18"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -40,6 +52,13 @@
     "id": "cf-p3-mc02",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Common measures of risk and quiz · Folien 35, 42"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -72,6 +91,13 @@
     "id": "cf-p3-mc03",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Diversification and correlation · Folie 40"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -104,6 +130,18 @@
     "id": "cf-p3-mc04",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Negative weights · Folien 42–44"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 2 – short selling"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -136,6 +174,13 @@
     "id": "cf-p3-mc05",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "The minimum-variance portfolio · Folien 23–25"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -172,6 +217,18 @@
     "id": "cf-p3-mc06",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Sharpe ratio: compare the lines · Folien 46–47"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 4 – Sharpe ratio"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -204,6 +261,13 @@
     "id": "cf-p3-mc07",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Two types of risk · Folien 54–57"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -236,6 +300,18 @@
     "id": "cf-p3-mc08",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "Example 1: expected return of a stock · Folie 36"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 6 – CAPM required return"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -272,6 +348,18 @@
     "id": "cf-p3-mc09",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "The beta of a portfolio · Folie 39"
+      },
+      {
+        "kind": "case",
+        "source": "Übungsblatt 2022/23",
+        "ref": "Part 3 · Exercise 7 – Fast Semiconductor"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -304,6 +392,13 @@
     "id": "cf-p3-mc10",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "Two lines: CML and SML · Folie 38"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -336,6 +431,13 @@
     "id": "cf-p3-mc11",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Example: computing an alpha · Folie 16"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -368,6 +470,18 @@
     "id": "cf-p3-mc12",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Promised is not expected · Folien 33–35"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24 (Mod. A)",
+        "ref": "Exercise 6 – cost of debt"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -404,6 +518,13 @@
     "id": "cf-p3-mc13",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Cash is negative debt (Accenture) · Folien 49–51"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -436,6 +557,13 @@
     "id": "cf-p3-mc14",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "What is a perfect capital market? · Folie 35"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -468,6 +596,13 @@
     "id": "cf-p3-mc15",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "MM Proposition II and the WACC · Folien 18–27"
+      }
+    ],
     "single": true,
     "shuffle": false,
     "paperOnly": true,
@@ -500,6 +635,18 @@
     "id": "cf-p3-01a",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 1a – adjusted close (TotalEnergies)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Adjusted close · Folie 28"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What was Lumen's total return between 31/10/2024 and 31/10/2025, and what was the capital gain?",
     "modelAnswer": "Total return uses the adjusted close: 49.20/45.30 − 1 = 8.61%.\nCapital gain uses the close: 49.20/47.10 − 1 = 4.46%. The difference is the dividend yield.",
@@ -554,6 +701,18 @@
     "id": "cf-p3-01b",
     "lecture": "l1",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 1b – adjusted close (TotalEnergies)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Adjusted close · Folie 28"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) Use the adjusted close to calculate the return from 31/10/2021 to 31/10/2025. What is the annualized return (geometric average)?",
     "modelAnswer": "Adjusted prices already include reinvested dividends: 49.20/36.12 − 1 = 36.21%.\nGeometric average: (1 + 36.21%)^(1/4) − 1 = 8.03%.",
@@ -604,6 +763,13 @@
     "id": "cf-p3-02a",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Covariance with scenarios · Folie 30"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) Compute the expected return and the volatility of each stock and their correlation.",
     "modelAnswer": "E(R_A) = 0.25 × 20% + 0.5 × 8% + 0.25 × (−6%) = 7.50%; E(R_B) = 6.50%.\nVar_A = 0.25 × 0.125² + 0.5 × 0.005² + 0.25 × 0.135² = 0.008475 → σ_A = 9.21%.\nVar_B = 0.25 × 0.045² + 0.5 × 0.005² + 0.25 × 0.055² = 0.001275 → σ_B = 3.57%.\nCov = 0.25 × (0.125)(−0.045) + 0.5 × (0.005)(−0.005) + 0.25 × (−0.135)(0.055) = -0.003275 → ρ = -0.9963.",
@@ -732,6 +898,13 @@
     "id": "cf-p3-02b",
     "lecture": "l2",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Risk of a portfolio with two stocks · Folien 39–40"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) What are the expected return and the volatility of a portfolio invested 50% in A and 50% in B?",
     "modelAnswer": "E = 0.5 × 7.50% + 0.5 × 6.50% = 7.00%.\nVar = 0.25 × 0.008475 + 0.25 × 0.001275 + 2 × 0.25 × (-0.003275) = 0.000800 → σ = 2.83%.\nCheck: the portfolio returns 11%, 7%, 3% give the same variance.",
@@ -794,6 +967,13 @@
     "id": "cf-p3-03a",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Tobin's example: lending · Folien 41–42"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) You want a volatility of 15%. How much of your money do you invest in the fund, and what is your expected return?",
     "modelAnswer": "x × 20% = 15% → x = 75% in the fund, 25% lent at 3%. E = 3% + 0.75 × 9% = 9.75%.",
@@ -849,6 +1029,18 @@
     "id": "cf-p3-03b",
     "lecture": "l3",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Tobin's example: borrowing · Folien 43–44"
+      },
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 2 – leverage"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) You want an expected return of 16.5%. How much must you borrow per EUR of own money, and what is the volatility of your position?",
     "modelAnswer": "3% + x × 9% = 16.5% → x = 1.5: invest 1.5 EUR in the fund per EUR, borrowing 0.5 EUR. σ = 1.5 × 20% = 30%.",
@@ -905,6 +1097,13 @@
     "id": "cf-p3-04a",
     "lecture": "l4",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "Example 1: expected return of a stock · Folie 36"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What are Kappa's beta and its required return under the CAPM?",
     "modelAnswer": "β = 0.6 × 30%/18% = 1.00. Required return = 3% + 1.0 × 6% = 9%.",
@@ -954,6 +1153,18 @@
     "id": "cf-p3-04b",
     "lecture": "l5",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "Exercise 3 – CML vs single stock"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Example: computing an alpha · Folie 16"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) What is Kappa's alpha according to the analyst? What would an efficient portfolio with the same volatility as Kappa earn?",
     "modelAnswer": "α = 11% − 9% = +2% → the analyst sees Kappa as undervalued.\nCML: 3% + (6%/18%) × 30% = 13%. Even with its positive alpha, Kappa alone is a poor investment compared with the market plus leverage: 64% of its variance (1 − ρ²) is idiosyncratic.",
@@ -1005,6 +1216,18 @@
     "id": "cf-p3-05a",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Exercise: Michelon · Folien 60–61"
+      },
+      {
+        "kind": "exam",
+        "source": "Altklausur 2023/24",
+        "ref": "MC 10 – WACC"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What is Orion's WACC?",
     "modelAnswer": "0.6 × 11% + 0.4 × 5% × 0.75 = 6.6% + 1.5% = 8.10%.",
@@ -1052,6 +1275,13 @@
     "id": "cf-p3-05b",
     "lecture": "l6",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Unlevered cost or WACC? · Folie 59"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) What is Orion's unlevered cost of capital? Which rate should Orion use for a project with the same risk as the firm that is financed with equity only?",
     "modelAnswer": "r_U = 0.6 × 11% + 0.4 × 5% = 8.60%. A project financed with equity only does not generate the interest tax saving built into the WACC → discount it at r_U = 8.60%, not at the WACC of 8.10%.",
@@ -1092,6 +1322,13 @@
     "id": "cf-p3-06a",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "Tour moche SA · Folien 18–26"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(a) What are the value of the firm and the value of the equity today?",
     "modelAnswer": "Expected cash flow = 0.5 × 780 + 0.5 × 520 = 650 → V_U = 650/1.30 = 500. MM I: V_L = 500 → E = 500 − 300 = 200.",
@@ -1148,6 +1385,18 @@
     "id": "cf-p3-06b",
     "lecture": "l7",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "Exercise: borrow only 200 · Folien 32–33"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "MM Proposition II · Folien 23–24"
+      }
+    ],
     "verb": "calculate",
     "prompt": "(b) What return do the shareholders earn in each state, and what is their expected return? Verify with MM Proposition II.",
     "modelAnswer": "Debt repayment 300 × 1.04 = 312 in both states (risk-free, 520 > 312).\nStrong: (780 − 312)/200 − 1 = 134.00%; weak: (520 − 312)/200 − 1 = 4.00%; expected 69.00%.\nMM II: 30% + (300/200) × (30% − 4%) = 69.00% ✓.",
@@ -1217,6 +1466,18 @@
     "id": "cf-p3-07",
     "lecture": "l8",
     "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Klausur 2022/23",
+        "ref": "Exercise 4 – industry asset beta"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "Beta of an industry · Folie 42"
+      }
+    ],
     "verb": "calculate",
     "prompt": "You need the cost of equity of a private firm with a target debt ratio D/(D + E) of 20%. Two listed comparables: X has an equity beta of 1.4 and D/E = 0.75; Y has an equity beta of 1.1 and D/E = 0.375. There are no taxes and debt is risk-free. The risk-free rate is 3% and the market risk premium 5%. Compute the industry asset beta, the private firm's equity beta and its cost of equity.",
     "modelAnswer": "Unlever: X 1.4/1.75 = 0.80; Y 1.1/1.375 = 0.80 → average 0.80.\nTarget D/(D + E) = 0.2 → D/E = 0.25 → β_E = 0.80 × 1.25 = 1.00.\nr_E = 3% + 1.00 × 5% = 8%.",
