@@ -99,6 +99,8 @@ export const BasisSchema = z.object({
 const base = {
   id,
   lecture: id,
+  /** konkretes Thema der Aufgabe, z. B. „IAS 38 – research vs. development costs“ (Aufgabentabelle der Probeklausuren) */
+  topic: z.string().default(""),
   case: id.optional(),
   /** nur in Probeklausuren, nicht beim Üben, in Kapiteltests oder der Readiness */
   paperOnly: z.boolean().default(false),

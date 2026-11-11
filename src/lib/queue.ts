@@ -32,6 +32,8 @@ export function buildQueue(opts: {
   marked?: Set<string>;
   /** Fragen der Probeklausuren in fester Reihenfolge (für mode "papers") */
   papers?: Question[];
+  /** gezielt ausgewählte Klausuraufgaben (mode "papers", aus der Aufgabentabelle) – in dieser Reihenfolge */
+  ids?: string[];
 }): Question[] {
   const { mode, subjectId, items, now } = opts;
   const st = (q: Question) => items[itemKey(subjectId, q.id)];
@@ -55,9 +57,15 @@ export function buildQueue(opts: {
     case "checkup":
       // Quiz-Aussagen vom Ende der Vorlesungen – immer alle, in zufälliger Reihenfolge
       return shuffle(questions.filter((q) => q.checkup));
-    case "papers":
+    case "papers": {
+      if (opts.ids?.length) {
+        // in der Aufgabentabelle ausgewählt: genau diese Aufgaben, in der Reihenfolge der Auswahl
+        const byId = new Map((opts.papers ?? []).map((q) => [q.id, q]));
+        return unique(opts.ids.flatMap((id) => byId.get(id) ?? []));
+      }
       // alle Aufgaben der Probeklausuren zu diesem Kapitel, in Klausurreihenfolge (Teilfragen a, b bleiben zusammen)
       return (opts.papers ?? []).filter((q) => !opts.lecture || q.lecture === opts.lecture);
+    }
     case "marked":
       return shuffle(questions.filter((q) => opts.marked?.has(q.id)));
     case "weak":

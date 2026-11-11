@@ -1,11 +1,13 @@
 "use client";
 
-import { ArrowLeft, CheckCircle2, Clock, FileText, Flag, History, Info, Play } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Clock, FileText, Flag, History, Info, LayoutList, Play, Table2 } from "lucide-react";
 import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { createPaperExam } from "@/lib/exam";
 import { paperItems, type Paper, type SubjectContent } from "@/lib/schema";
 import { examScore, useApp } from "@/lib/store";
-import { pct } from "@/lib/utils";
+import { cn, pct } from "@/lib/utils";
+import { PaperTasks } from "./PaperTasks";
 import { Button, Chip } from "./ui";
 
 /** Punkte mit höchstens zwei Nachkommastellen, deutsch formatiert. */
@@ -90,6 +92,12 @@ export function PaperList({ content }: { content: SubjectContent }) {
   const hasCalc = content.questions.some((q) => q.type === "short" && q.results.length > 0);
   // Reihenfolge wie angezeigt: erst Nachbauten von Altklausuren, dann neue Klausuren
   const shown = [...papers.filter((p) => p.origin.kind === "altklausur"), ...papers.filter((p) => p.origin.kind !== "altklausur")];
+  // Ansicht: ganze Klausuren oder alle Aufgaben einzeln als Tabelle (?view=tasks, damit „Zurück“ aus dem Üben hierher führt)
+  const params = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+  const view = params.get("view") === "tasks" ? "tasks" : "papers";
+  const setView = (v: "tasks" | "papers") => router.replace(v === "tasks" ? `${pathname}?view=tasks` : pathname, { scroll: false });
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -99,9 +107,40 @@ export function PaperList({ content }: { content: SubjectContent }) {
       <p className="eyebrow mt-8">Probeklausuren · {subject.examFormat.name}</p>
       <h1 className="display text-4xl sm:text-5xl mt-2">Klausur schreiben</h1>
       <p className="mt-3 text-muted">
-        {papers.length} vollständige Klausuren mit Punkten. Feedback und Lösungen gibt es nach der Abgabe.
+        {view === "tasks"
+          ? "Alle Aufgaben der Probeklausuren einzeln: welches Thema sie behandeln, ob du sie schon bearbeitet hast – und gezielt üben."
+          : `${papers.length} vollständige Klausuren mit Punkten. Feedback und Lösungen gibt es nach der Abgabe.`}
       </p>
 
+      <div role="tablist" className="mt-6 flex rounded-full border border-line bg-surface p-1 sm:inline-flex">
+        {(
+          [
+            ["papers", LayoutList, "Ganze Klausuren"],
+            ["tasks", Table2, "Aufgaben-Tabelle"],
+          ] as const
+        ).map(([v, I, label]) => (
+          <button
+            key={v}
+            type="button"
+            role="tab"
+            aria-selected={view === v}
+            onClick={() => setView(v)}
+            className={cn(
+              "inline-flex h-9 flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full px-3 text-sm font-semibold transition sm:flex-none sm:px-4",
+              view === v ? "bg-ink text-bg" : "text-ink-2 hover:bg-surface-2",
+            )}
+          >
+            <I className="size-4 max-sm:hidden" /> {label}
+          </button>
+        ))}
+      </div>
+
+      {view === "tasks" ? (
+        <div className="mt-6">
+          <PaperTasks content={content} papers={shown} />
+        </div>
+      ) : (
+      <>
       <details className="mt-5 text-sm text-ink-2">
         <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 font-semibold">
           <Info className="size-4 text-muted" /> Hinweise zur Bewertung
@@ -182,6 +221,8 @@ export function PaperList({ content }: { content: SubjectContent }) {
           </section>
         );
       })}
+      </>
+      )}
     </div>
   );
 }

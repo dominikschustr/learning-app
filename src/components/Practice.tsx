@@ -40,17 +40,19 @@ export function Practice({
   const raw = params.get("mode") as PracticeMode;
   const mode = MODES.includes(raw) ? raw : "smart";
   const lecture = params.get("lecture") ?? undefined;
+  const picked = params.get("q") ?? "";
   const [run, setRun] = useState(0);
 
   if (!hydrated) return <Skeleton className="h-96" />;
   return (
     <Session
-      key={`${mode}-${lecture}-${run}`}
+      key={`${mode}-${lecture}-${picked}-${run}`}
       content={content}
       formulas={formulas}
       papers={papers}
       mode={mode}
       lecture={lecture}
+      ids={mode === "papers" && picked ? picked.split(",").filter(Boolean) : undefined}
       onRestart={() => setRun((r) => r + 1)}
     />
   );
@@ -64,6 +66,7 @@ function Session({
   onRestart,
   only,
   papers,
+  ids,
 }: {
   content: SubjectContent;
   formulas: RenderedFormula[];
@@ -72,11 +75,14 @@ function Session({
   onRestart: () => void;
   only?: Question[];
   papers?: Question[];
+  /** in der Aufgabentabelle ausgewählte Klausuraufgaben */
+  ids?: string[];
 }) {
   const { subject } = content;
   const caseOf = useCaseOf(content.cases);
   const base = `/s/${subject.id}`;
-  const home = lecture ? `${base}/c/${lecture}` : base;
+  // aus der Aufgabentabelle gestartet → zurück zur Tabelle
+  const home = ids ? `${base}/exam?view=tasks` : lecture ? `${base}/c/${lecture}` : base;
   const answer = useApp((s) => s.answer);
 
   const [queue, setQueue] = useState<Entry[]>(() => {
@@ -91,6 +97,7 @@ function Session({
         lecture,
         marked: markedIds(useApp.getState().marks, "q", subject.id),
         papers,
+        ids,
       });
     return qs.map((q) => ({ q, order: optionOrder(q), retry: false }));
   });

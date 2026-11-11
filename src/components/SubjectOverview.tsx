@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, Play, RotateCcw, ScrollText, Sigma, Target, Trophy, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, Play, RotateCcw, ScrollText, Sigma, Table2, Target, Trophy, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
@@ -279,6 +279,12 @@ function Inner({ summary }: { summary: SubjectSummary }) {
               <h2 className="display text-2xl">Klausuraufgaben nach Kapitel</h2>
               <p className="mt-1 text-sm text-muted">Alle Aufgaben aus den Probeklausuren, nach Thema sortiert</p>
             </div>
+            <Link
+              href={`${base}/exam?view=tasks`}
+              className="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-ink-2 hover:text-ink"
+            >
+              <Table2 className="size-4" style={{ color: subject.color }} /> Aufgaben-Tabelle
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
             {paperChapters.map((c) => (

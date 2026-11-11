@@ -8,6 +8,7 @@ const pool: Question[] = Array.from({ length: 40 }, (_, i) => ({
   type: "tf",
   id: `tf-${i}`,
   lecture: i < 35 ? "a" : "b",
+  topic: "",
   difficulty: 1,
   statement: `Statement ${i}`,
   answer: true,
@@ -36,6 +37,12 @@ describe("buildQueue – Klausuraufgaben", () => {
     const b = buildQueue({ mode: "papers", subjectId: "s", questions: pool, items: {}, now: 0, lecture: "b", papers });
     expect(b.map((q) => q.id)).toEqual(["tf-36", "tf-37"]);
     expect(buildQueue({ mode: "papers", subjectId: "s", questions: pool, items: {}, now: 0 })).toHaveLength(0);
+  });
+
+  it("zieht nur die in der Aufgabentabelle ausgewählten Aufgaben, in der Reihenfolge der Auswahl", () => {
+    const papers = [pool[36], { ...pool[2], paperOnly: true }, pool[1], pool[37]];
+    const picked = buildQueue({ mode: "papers", subjectId: "s", questions: pool, items: {}, now: 0, papers, ids: ["tf-37", "tf-2", "tf-2", "gibt-es-nicht"] });
+    expect(picked.map((q) => q.id)).toEqual(["tf-37", "tf-2"]);
   });
 });
 
