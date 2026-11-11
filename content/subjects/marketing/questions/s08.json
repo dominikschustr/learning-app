@@ -28,7 +28,14 @@
       "b",
       "c"
     ],
-    "explanation": "Slower population growth and maturing markets make acquisition more expensive and shift the focus to existing customers."
+    "explanation": "Slower population growth and maturing markets make acquisition more expensive and shift the focus to existing customers.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 5 – Some Major Consumer Trends Highlighting the"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -64,7 +71,14 @@
       "c",
       "d"
     ],
-    "explanation": "CRM analyses marketing databases to maximise the lifetime value of each (typical) customer."
+    "explanation": "CRM analyses marketing databases to maximise the lifetime value of each (typical) customer.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 7 – Defining CRM"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -100,7 +114,14 @@
       "c",
       "d"
     ],
-    "explanation": "Further reasons: better forecasting, efficient resource allocation, higher firm value, more share of wallet."
+    "explanation": "Further reasons: better forecasting, efficient resource allocation, higher firm value, more share of wallet.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 8 – Why a Customer Value-based Approach?"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -131,7 +152,14 @@
       "b",
       "c"
     ],
-    "explanation": "Customer value comes not only from the current transaction but also from the opportunity of repurchase (loyalty)."
+    "explanation": "Customer value comes not only from the current transaction but also from the opportunity of repurchase (loyalty).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 13 – Customer Lifetime Value (CLV)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -162,7 +190,14 @@
     ],
     "explanation": "CLV analytics: traditional (market share, sales growth), acquisition (acquisition rate, acquisition cost), activity (inter-purchase time, retention/attrition, survival, lifetime duration). Past exam question.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 14"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -198,7 +233,14 @@
       "c",
       "d"
     ],
-    "explanation": "Acquisition rate and acquisition cost are acquisition metrics."
+    "explanation": "Acquisition rate and acquisition cost are acquisition metrics.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 15 – CLV analytics*"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -229,7 +271,14 @@
       "a"
     ],
     "explanation": "MS = 100 × 1,000,000 / 3,000,000 = 33.3%.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S8",
+        "ref": "Seite 17 – Beispiel MadCool"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -260,7 +309,14 @@
       "a"
     ],
     "explanation": "Growth = 100 × (1,200,000 − 1,000,000) / 1,000,000 = 20%.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S8",
+        "ref": "Seite 17 – Beispiel MadCool"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -291,7 +347,14 @@
       "a"
     ],
     "explanation": "Acquisition rate = 60,000 / 200,000 = 30%. Acquisition cost = €3,000,000 / 60,000 = €50.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S8",
+        "ref": "Seite 17 – Beispiel MadCool"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -321,7 +384,14 @@
       "a"
     ],
     "explanation": "Lifetime = 1 / (1 − Rr) → 4 = 1/(1 − Rr) → Rr = 0.75.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 22 – If the average customer lifetime"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -353,7 +423,14 @@
       "b",
       "c"
     ],
-    "explanation": "SR4 = 0.73 × 0.2319 ≈ 16.9% → ≈ 169 customers. The retention rate of a period is not the survival rate."
+    "explanation": "SR4 = 0.73 × 0.2319 ≈ 16.9% → ≈ 169 customers. The retention rate of a period is not the survival rate.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S8",
+        "ref": "Seite 24 – Beispiel MadCool: Retention & Survival"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -384,7 +461,14 @@
       "a"
     ],
     "explanation": "Lifetime revenues = 10 € × 12 × 10 = 1,200 €; CLV = 1,200 − 200 = 1,000 €.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S8",
+        "ref": "Seite 27 – Beispiel CLV"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -415,7 +499,14 @@
       "a"
     ],
     "explanation": "Lifetime = 1 / (1 − 0.9) = 10 years → same CLV of 1,000 €.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S8",
+        "ref": "Seite 27 – Beispiel CLV"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -446,7 +537,19 @@
       "a"
     ],
     "explanation": "Education: 3,000 × 5 × 0.8 − 1,500 = 10,500. Consultancy: 5,000 × 2 × 0.8 − 1,000 = 7,000. Public: 2,000 × 3 × 0.8 − 2,000 = 2,800. Retail: 2,500 × 1 × 0.8 − 1,000 = 1,000.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Mini case Polkaly b) – CLV je Segment"
+      },
+      {
+        "kind": "exam",
+        "source": "Sample exam 2019/20",
+        "ref": "Mini case Polkaly c)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -478,7 +581,14 @@
       "b",
       "c"
     ],
-    "explanation": "Retail: 1 = 1/(1 − Rr) → Rr = 0%. Using these rates in CLV = revenue × 1/(1 − Rr) × 80% − CAC gives the same results."
+    "explanation": "Retail: 1 = 1/(1 − Rr) → Rr = 0%. Using these rates in CLV = revenue × 1/(1 − Rr) × 80% − CAC gives the same results.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Mini case Polkaly"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -515,7 +625,14 @@
       "c",
       "d"
     ],
-    "explanation": "Margin m1 = 100 × 2 = 200. Rr m2 = 600/1,000 = 60%; Rr m3 = 120/600 = 20%. SR m3 = 60% × 20% = 12%. Profit m3 = 600 × 12% = 72; cumulative = 550 + 72 = 622."
+    "explanation": "Margin m1 = 100 × 2 = 200. Rr m2 = 600/1,000 = 60%; Rr m3 = 120/600 = 20%. SR m3 = 60% × 20% = 12%. Profit m3 = 600 × 12% = 72; cumulative = 550 + 72 = 622.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Question B.2 – Customer value of two segments a)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -547,7 +664,14 @@
       "b",
       "c"
     ],
-    "explanation": "Profit m2 = 1,200 × 70% = 840 (cumulative 100 + 840 = 940 ✓). Cumulative m3 = 940 + 980 = 1,920 vs 622 for A – B's higher retention more than compensates its higher acquisition cost."
+    "explanation": "Profit m2 = 1,200 × 70% = 840 (cumulative 100 + 840 = 940 ✓). Cumulative m3 = 940 + 980 = 1,920 vs 622 for A – B's higher retention more than compensates its higher acquisition cost.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Question B.2 – Customer value of two segments b)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -556,7 +680,14 @@
     "difficulty": 1,
     "statement": "CRM is the practice of analysing marketing databases and leveraging communication technologies to maximise the lifetime value of each (typical) customer.",
     "answer": true,
-    "explanation": "\"Typical\" = representative of a segment."
+    "explanation": "\"Typical\" = representative of a segment.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 7 – Defining CRM"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -565,7 +696,14 @@
     "difficulty": 1,
     "statement": "Loyalty is a deeply held commitment to re-buy a preferred product in the future despite situational influences and marketing efforts that could cause switching.",
     "answer": true,
-    "explanation": "HBR (2010) definition."
+    "explanation": "HBR (2010) definition.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 9 – Customer Lifetime Value (CLV)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -574,7 +712,14 @@
     "difficulty": 2,
     "statement": "Meta-analytic evidence shows a positive association between customer satisfaction and customer-level outcomes such as retention, word of mouth, spending and price.",
     "answer": true,
-    "explanation": "Satisfaction–loyalty–profit chain (Mittal et al., 2023); also firm-level outcomes, moderated by context."
+    "explanation": "Satisfaction–loyalty–profit chain (Mittal et al., 2023); also firm-level outcomes, moderated by context.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 11 – The Satisfaction – Loyalty – Profit Chain"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -583,7 +728,14 @@
     "difficulty": 1,
     "statement": "CLV calculations are precise because they are based on historical accounting data.",
     "answer": false,
-    "explanation": "CLV is forward-looking and predictive, not precise."
+    "explanation": "CLV is forward-looking and predictive, not precise.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 13 – Customer Lifetime Value (CLV)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -592,7 +744,14 @@
     "difficulty": 1,
     "statement": "CLV allows estimating the value of a company's overall customer equity.",
     "answer": true,
-    "explanation": "It also helps segment customers by value and allocate resources between retention and acquisition."
+    "explanation": "It also helps segment customers by value and allocate resources between retention and acquisition.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 14 – Tell what your individual customer is worth"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -601,7 +760,14 @@
     "difficulty": 1,
     "statement": "The retention rate is the proportion of customers who purchase in period t, given that they also purchased in period t−1.",
     "answer": true,
-    "explanation": "Attrition/defection = those who do not purchase in t although they did in t−1. Rr = 100% − defection rate."
+    "explanation": "Attrition/defection = those who do not purchase in t although they did in t−1. Rr = 100% − defection rate.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 20 – Customer Activity Metrics"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -610,7 +776,14 @@
     "difficulty": 1,
     "statement": "With a constant retention rate, the average lifetime duration equals 1 / (1 − Rr).",
     "answer": true,
-    "explanation": "E.g. Rr = 75% → 4 periods; Rr = 90% → 10 periods."
+    "explanation": "E.g. Rr = 75% → 4 periods; Rr = 90% → 10 periods.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 28 – Customer Lifetime Value (another alternative)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -619,7 +792,14 @@
     "difficulty": 1,
     "statement": "The survival rate gives the share of customers still active in period t from the moment the company acquired the cohort.",
     "answer": true,
-    "explanation": "SR_t = Rr_t × SR_(t−1); SR_1 = Rr_1."
+    "explanation": "SR_t = Rr_t × SR_(t−1); SR_1 = Rr_1.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 23 – Survival Rate"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -628,7 +808,14 @@
     "difficulty": 2,
     "statement": "The survival rate can be higher than the retention rate of the same period (after period 1).",
     "answer": false,
-    "explanation": "SR_t = Rr_t × SR_(t−1) and SR_(t−1) ≤ 1, so SR_t ≤ Rr_t."
+    "explanation": "SR_t = Rr_t × SR_(t−1) and SR_(t−1) ≤ 1, so SR_t ≤ Rr_t.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 24 – Example: Consider MadCool has 1,000"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -637,7 +824,14 @@
     "difficulty": 2,
     "statement": "Average lifetime duration can be computed as Σ (t × number of retained customers in t) / cohort size N.",
     "answer": true,
-    "explanation": "Formula from the session."
+    "explanation": "Formula from the session.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 25 – Lifetime Duration"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -646,7 +840,14 @@
     "difficulty": 1,
     "statement": "Market share data come entirely from internal records.",
     "answer": false,
-    "explanation": "The numerator (own sales) is internal; the denominator (category sales) comes from market research reports or competitive intelligence."
+    "explanation": "The numerator (own sales) is internal; the denominator (category sales) comes from market research reports or competitive intelligence.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 16 – Market Share"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -656,7 +857,14 @@
     "difficulty": 1,
     "statement": "Retail customers in the Polkaly case have a retention rate of 0% if their average lifetime is one year.",
     "answer": true,
-    "explanation": "1 = 1/(1 − Rr) → Rr = 0."
+    "explanation": "1 = 1/(1 − Rr) → Rr = 0.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Mini case Polkaly"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -666,7 +874,14 @@
     "difficulty": 1,
     "statement": "Segment A has the higher retention in month 3.",
     "answer": false,
-    "explanation": "Segment A: 20%, Segment B: 50%."
+    "explanation": "Segment A: 20%, Segment B: 50%.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Klausur 2019/20, Question B.2 (zwei Segmente)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -675,7 +890,14 @@
     "difficulty": 2,
     "statement": "In the Maru Batting Centre case, a ward with twice as many Little League players is automatically the more attractive sponsorship.",
     "answer": false,
-    "explanation": "Attractiveness depends on response rate, retention, cost per player and resulting CLV – a larger base with lower response (8%) and retention (65%) can be worth less."
+    "explanation": "Attractiveness depends on response rate, retention, cost per player and resulting CLV – a larger base with lower response (8%) and retention (65%) can be worth less.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 34 – Case Maru Batting Centre – Question 5"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -684,7 +906,14 @@
     "difficulty": 2,
     "statement": "When calculating CLV with discounting, a customer's annual profits are converted into net present values.",
     "answer": true,
-    "explanation": "In the Maru case the customer is assumed lost once the NPV of annual profit falls below ¥100."
+    "explanation": "In the Maru case the customer is assumed lost once the NPV of annual profit falls below ¥100.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 32 – Case Maru Batting Centre – Question 3"
+      }
+    ]
   },
   {
     "type": "short",
@@ -701,6 +930,13 @@
       "F) 72, G) 622",
       "H) 840, I) 1,920",
       "Prefer Segment B (retention outweighs higher CAC)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Question B.2 a) + b) – Tabelle ausfüllen"
+      }
     ]
   },
   {
@@ -717,6 +953,18 @@
       "Consultancy 7,000; Education 10,500",
       "Public 2,800; Retail 1,000",
       "Education most attractive"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Mini case Polkaly b)"
+      },
+      {
+        "kind": "exam",
+        "source": "Sample exam 2019/20",
+        "ref": "Mini case Polkaly c)"
+      }
     ]
   },
   {
@@ -732,6 +980,13 @@
       "Survival: cumulative share of original cohort",
       "SR_t = Rr_t × SR_(t−1)",
       "Lifetime = 1/(1 − Rr)"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 20 – Customer Activity Metrics"
+      }
     ]
   },
   {
@@ -749,6 +1004,254 @@
       "More targeted marketing",
       "Predict purchase behaviour",
       "Efficient allocation retention vs acquisition"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 14 – Tell what your individual customer is worth"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s08-18",
+    "lecture": "s08",
+    "case": "streaming-cohort",
+    "difficulty": 2,
+    "prompt": "What is the survival rate of the cohort in year 3?",
+    "options": [
+      {
+        "id": "a",
+        "text": "33.6%"
+      },
+      {
+        "id": "b",
+        "text": "80%"
+      },
+      {
+        "id": "c",
+        "text": "42%"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "SR1 = 0.60; SR2 = 0.70 × 0.60 = 0.42; SR3 = 0.80 × 0.42 = 0.336 = 33.6%. 42% is the survival rate of year 2, 80% only the retention rate of year 3.",
+    "single": true,
+    "shuffle": false,
+    "steps": [
+      {
+        "title": "Year 1",
+        "why": "In the initial period SR1 = Rr1",
+        "lines": [
+          "SR1 = 0.60"
+        ]
+      },
+      {
+        "title": "Year 2",
+        "why": "SR_t = Rr_t × SR_(t−1)",
+        "lines": [
+          "SR2 = 0.70 × 0.60 = 0.42"
+        ]
+      },
+      {
+        "title": "Year 3",
+        "lines": [
+          "SR3 = 0.80 × 0.42 = 0.336"
+        ],
+        "result": "33.6%"
+      }
+    ],
+    "pitfalls": [
+      "Multiplying only the last two retention rates",
+      "Confusing the retention rate of a period with the survival rate"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Sample exam 2019/20, Question B.3 (Retention and survival)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 23 – Survival Rate"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 24 – Example: MadCool survival rate"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s08-19",
+    "lecture": "s08",
+    "case": "streaming-cohort",
+    "difficulty": 2,
+    "prompt": "How many customers of the cohort are still active at the end of year 3?",
+    "options": [
+      {
+        "id": "a",
+        "text": "672"
+      },
+      {
+        "id": "b",
+        "text": "1,600"
+      },
+      {
+        "id": "c",
+        "text": "840"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Customers remaining = cohort size × survival rate: 2,000 × 0.336 = 672 (year 1: 1,200; year 2: 840).",
+    "single": true,
+    "shuffle": false,
+    "steps": [
+      {
+        "title": "Customers per year",
+        "why": "Cohort × survival rate",
+        "lines": [
+          "Year 1: 2,000 × 0.60 = 1,200",
+          "Year 2: 2,000 × 0.42 = 840",
+          "Year 3: 2,000 × 0.336 = 672"
+        ],
+        "result": "672 customers"
+      }
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Sample exam 2019/20, Question B.3 (Retention and survival)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 24 – Example: MadCool survival rate"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s08-20",
+    "lecture": "s08",
+    "case": "streaming-cohort",
+    "difficulty": 2,
+    "prompt": "From year 4 on, the retention rate stays constant at 80%. What is the average lifetime duration of a customer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5 years"
+      },
+      {
+        "id": "b",
+        "text": "1.25 years"
+      },
+      {
+        "id": "c",
+        "text": "8 years"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "With a constant retention rate, average lifetime duration = 1 / (1 − Rr) = 1 / (1 − 0.8) = 1 / 0.2 = 5 years.",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Sample exam 2019/20, Question B.3 (Retention and survival)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 21 – Retention and Attrition Rate"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s08-21",
+    "lecture": "s08",
+    "case": "streaming-cohort",
+    "difficulty": 2,
+    "prompt": "A subscription costs 10 € per month, the average lifetime is 5 years and acquiring a customer costs 150 €. What is the CLV per customer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "450 €"
+      },
+      {
+        "id": "b",
+        "text": "600 €"
+      },
+      {
+        "id": "c",
+        "text": "750 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lifetime revenues = 10 € × 12 months × 5 years = 600 €. CLV = 600 € − 150 € = 450 €.",
+    "single": true,
+    "shuffle": false,
+    "steps": [
+      {
+        "title": "Lifetime revenues",
+        "why": "Monthly price × 12 × lifetime in years",
+        "lines": [
+          "10 × 12 × 5 = 600 €"
+        ]
+      },
+      {
+        "title": "CLV",
+        "why": "CLV = lifetime revenues − acquisition costs",
+        "lines": [
+          "600 − 150"
+        ],
+        "result": "450 €"
+      }
+    ],
+    "pitfalls": [
+      "Adding the acquisition costs instead of subtracting them (750 €)",
+      "Forgetting the acquisition costs (600 €)"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Sample exam 2019/20, Question B.3 (Retention and survival)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 27 – Customer Lifetime Value (one alternative)"
+      }
     ]
   }
 ]

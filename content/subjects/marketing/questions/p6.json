@@ -29,7 +29,19 @@
     ],
     "explanation": "Promoters 200/400 = 50%, detractors 80/400 = 20% → NPS = 50 − 20 = +30.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Umfragedaten & CX-Kennzahlen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 9 – Customer Experience (CX) Metrics"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -61,7 +73,19 @@
     ],
     "explanation": "CSAT = (180 + 120) / 400 × 100 = 75%.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Umfragedaten & CX-Kennzahlen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 10 – CSAT"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -98,7 +122,19 @@
       "c",
       "d"
     ],
-    "explanation": "Booking channel has no hierarchy (nominal); nights have a true zero (ratio); Likert scales are interval; stay frequency is ordered (ordinal)."
+    "explanation": "Booking channel has no hierarchy (nominal); nights have a true zero (ratio); Likert scales are interval; stay frequency is ordered (ordinal).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Umfragedaten & CX-Kennzahlen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 4 – Nominal data"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -130,7 +166,19 @@
     ],
     "explanation": "A = 20 + 0 + 0 − 30 = −10. B = 12 + 6 + 10 − 14 = 14. C = 0 + 6 + 10 + 0 = 16 → C.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Mini case Ralph"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 29 – Exercise ESCP Merch (conjoint)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -162,7 +210,19 @@
     ],
     "explanation": "Ranges: range 20, helmet 6, insurance 10, price 30 (of 66 in total ≈ 45%).",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Mini case Ralph"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 29 – Exercise ESCP Merch (conjoint)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -172,7 +232,19 @@
     "difficulty": 2,
     "statement": "For this respondent, upgrading from basic to full insurance is worth less than paying 29 € instead of 39 €.",
     "answer": true,
-    "explanation": "Full insurance = 10 points; 29 € instead of 39 € = −14 − (−30) = 16 points."
+    "explanation": "Full insurance = 10 points; 29 € instead of 39 € = −14 − (−30) = 16 points.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Mini case Ralph"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 20 – A conjoint analysis showing one customer’s"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -203,7 +275,19 @@
       "b"
     ],
     "explanation": "3 × 2 × 2 × 3 = 36 profiles.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Mini case Ralph"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 27 – Creating Product Profiles"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -240,7 +324,19 @@
       "d"
     ],
     "explanation": "p < 0.05: SEA (0.000), delivery time (0.004), North (0.031). Influencer posts (0.180) and South (0.640) are not significant.",
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 20 – Which variables are significant?"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -271,7 +367,19 @@
       "a"
     ],
     "explanation": "Dummy coefficients compare with the baseline (West), ceteris paribus.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 20 – Which variables are significant?"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -303,7 +411,19 @@
     ],
     "explanation": "Significant variables only: 40.2 + 2.8 × 10 − 3.5 × 3 = 40.2 + 28 − 10.5 = 57.7 k€. South (n.s.) and influencer posts (n.s.) are left out (60.1 adds the posts; 56.5 adds South).",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 21 – Exercise 2: Grocery Shopping"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -313,7 +433,19 @@
     "difficulty": 3,
     "statement": "Because faster delivery is associated with higher revenue, we can be sure that cutting delivery time will cause revenue to rise.",
     "answer": false,
-    "explanation": "The coefficient is an association. Causality could be blurred by omitted variables (e.g. regions with better logistics also have richer customers) or reverse causality (high-revenue regions get more warehouses). Only an exogenous change (experiment) proves causality."
+    "explanation": "The coefficient is an association. Causality could be blurred by omitted variables (e.g. regions with better logistics also have richer customers) or reverse causality (high-revenue regions get more warehouses). Only an exogenous change (experiment) proves causality.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 11 – Causality"
+      }
+    ]
   },
   {
     "type": "short",
@@ -329,6 +461,18 @@
       "Triggers: burglary fears, cheap AI chips, smartphones, privacy scandals",
       "Expectation: effortless installation",
       "Expectation: privacy-respecting security"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Mini cases"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 38 – Drivers of Change"
+      }
     ]
   },
   {
@@ -345,6 +489,18 @@
       "C2: attractive if ease of installation and privacy are addressed",
       "C3 and C4 unattractive (low intention / price fights)",
       "Clear recommendation: C1 (+ C2)"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Mini cases"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 31 – Company’s Strengths and Competences"
+      }
     ]
   },
   {
@@ -361,6 +517,18 @@
       "C2 = 4.0",
       "Second dimension: Lumo's strengths per segment",
       "C1 invest/build, C2 expand selectively"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Mini cases"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 18 – Company’s Strengths and Competences"
+      }
     ]
   },
   {
@@ -377,6 +545,18 @@
       "GDPR: consent, transparency, purpose, user rights, enforcement",
       "Avoid surveillance-capitalism practices",
       "Privacy by design (local processing, encryption, opt-in) as differentiation"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Mini cases"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 37 – Surveillance Capitalism Regulation"
+      }
     ]
   }
 ]

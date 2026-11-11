@@ -90,7 +90,8 @@ export const PaperSchema = z.object({
 
 /** Grundlage einer Aufgabe, z. B. { kind: "exam", source: "Altklausur 2024", ref: "Part 2 – CGU impairment" } */
 export const BasisSchema = z.object({
-  kind: z.enum(["exam", "slides", "case"]),
+  /** exam = Altklausur, slides = Folien, case = Übung aus der Vorlesung, quiz = Quiz der Vorlesung, own = selbst erstellte Aufgabe (z. B. im Klausurstil) */
+  kind: z.enum(["exam", "slides", "case", "quiz", "own"]),
   source: z.string().min(1),
   ref: z.string().default(""),
 });

@@ -86,6 +86,22 @@ describe("Accounting", () => {
   });
 });
 
+describe("Marketing", () => {
+  const mk = getAllContent().find((c) => c.subject.id === "marketing")!;
+
+  it("jede Frage nennt ihre Grundlage (Altklausur, Quiz, Folien, Übung oder eigene Aufgabe)", () => {
+    for (const q of mk.questions) expect(q.basis.length, q.id).toBeGreaterThan(0);
+  });
+
+  it("jedes Kapitel hat Aufgaben aus Altklausuren oder im Klausurstil", () => {
+    for (const l of mk.subject.lectures)
+      expect(
+        mk.questions.filter((q) => q.lecture === l.id && q.basis.some((b) => b.kind === "exam" || b.kind === "own")).length,
+        l.id,
+      ).toBeGreaterThanOrEqual(5);
+  });
+});
+
 describe("Corporate Finance", () => {
   const cf = getAllContent().find((c) => c.subject.id === "corporate-finance")!;
 

@@ -28,7 +28,14 @@
       "b",
       "c"
     ],
-    "explanation": "STP: identify segments → select segments → create competitive advantage."
+    "explanation": "STP: identify segments → select segments → create competitive advantage.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 4 – STP – Introduction"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -59,7 +66,14 @@
       "b",
       "c"
     ],
-    "explanation": "Demographics are still available, but they explain less of consumer behaviour."
+    "explanation": "Demographics are still available, but they explain less of consumer behaviour.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 6 – Post-demographic segmentation"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -90,7 +104,14 @@
       "b",
       "c"
     ],
-    "explanation": "The choice of bases and descriptors depends on the objective, e.g. psychographic/behavioural bases to tailor campaigns, geographic bases to expand into new areas."
+    "explanation": "The choice of bases and descriptors depends on the objective, e.g. psychographic/behavioural bases to tailor campaigns, geographic bases to expand into new areas.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 11 – SEGMENTATION BASES"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -120,7 +141,14 @@
       "a",
       "b"
     ],
-    "explanation": "Segmentation is usually multidimensional (more than two variables)."
+    "explanation": "Segmentation is usually multidimensional (more than two variables).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 12 – Segmentation"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -150,7 +178,14 @@
       "a"
     ],
     "explanation": "The higher the agreement between the two solutions, the more robust the original cluster analysis.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 12 – Segmentation"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -181,7 +216,14 @@
       "b",
       "c"
     ],
-    "explanation": "Three groups of criteria: size & growth, structural characteristics, product-market fit."
+    "explanation": "Three groups of criteria: size & growth, structural characteristics, product-market fit.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 16 – Evaluating Segment Attractiveness"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -217,7 +259,14 @@
       "c",
       "d"
     ],
-    "explanation": "Dimensions: segment attractiveness and the company's strengths and competences."
+    "explanation": "Dimensions: segment attractiveness and the company's strengths and competences.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 17 – Selecting Target Segments"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -247,7 +296,14 @@
       "a"
     ],
     "explanation": "Strong + high: invest for growth, diversify globally, consolidate position, focus on long-term cash flow.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 18 – Company’s Strengths and Competences"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -277,7 +333,14 @@
       "a"
     ],
     "explanation": "Weak + low: exit the market or prune the product line, time it to preserve maximum value. Weak + average = harvest; weak + high = capitalize on attractiveness.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 18 – Company’s Strengths and Competences"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -308,7 +371,14 @@
     ],
     "explanation": "Positioning analysis starts by SELECTING a target segment; identifying segments is part of segmentation. Past exam question.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 10"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -339,7 +409,14 @@
       "b",
       "c"
     ],
-    "explanation": "Preferences, choice or market share can be integrated, but the map itself shows perceptions."
+    "explanation": "Preferences, choice or market share can be integrated, but the map itself shows perceptions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 38 – Perceptual maps allow a visual representation of"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -370,7 +447,14 @@
       "b",
       "c"
     ],
-    "explanation": "Perceptual maps use two (occasionally three) quantifiable dimensions from survey ratings; brand association maps capture depth and richness of brand meaning."
+    "explanation": "Perceptual maps use two (occasionally three) quantifiable dimensions from survey ratings; brand association maps capture depth and richness of brand meaning.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 40 – Perceptual Maps vs. Brand Association Maps"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -402,7 +486,14 @@
     ],
     "explanation": "Cluster 4 has the lowest satisfaction score (3.5).",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 2 – Cluster analysis (shopping centre) a)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -434,7 +525,14 @@
     ],
     "explanation": "Cluster 4 rates retail offer (6.5) and design/layout (5.3) as most important; events (2.6) and loyalty (2.3) matter little.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 2 – Cluster analysis (shopping centre) b)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -466,7 +564,14 @@
     ],
     "explanation": "Cluster 1: satisfaction 5.7, all aspects important except the loyalty program (3.4).",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 2 – Cluster analysis (shopping centre) c)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -498,7 +603,14 @@
     ],
     "explanation": "Cluster 3 (largest, N = 328) values design and layout most (6.7), events and loyalty less.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 2 – Cluster analysis (shopping centre) d)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -530,7 +642,14 @@
     ],
     "explanation": "The tables only inform segment attractiveness. The GE/McKinsey matrix also needs the company's strengths and competences per segment – which are not given.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 2 – Cluster analysis (shopping centre) f)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -562,7 +681,14 @@
       "c"
     ],
     "explanation": "Cluster 1: high satisfaction and visit frequency (55% more than monthly). Cluster 3: largest segment, satisfaction above the midpoint, good visit frequency. Cluster 2 is the smallest (medium); Cluster 4 is small, dissatisfied and visits rarely (low).",
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 2 – Cluster analysis (shopping centre) e)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -594,7 +720,14 @@
       "b",
       "c"
     ],
-    "explanation": "Cluster 3 is the green, engaged segment – but rates MyNatural products lowest (2.13), a gap the brand must address. Cluster 2 has the lowest purchase likelihood (2.49)."
+    "explanation": "Cluster 3 is the green, engaged segment – but rates MyNatural products lowest (2.13), a gap the brand must address. Cluster 2 has the lowest purchase likelihood (2.49).",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S5",
+        "ref": "Seite 20 – In-class case MyNatural"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -630,7 +763,14 @@
       "b",
       "c"
     ],
-    "explanation": "The clusters were formed on the attitudinal variables (GreenValues, Knowledge, Evaluation, ProductBeliefs, Social). Demographics and behavioural variables (purchase frequency, WillingTry, PurchaseLikely, Recommendation) profile the clusters."
+    "explanation": "The clusters were formed on the attitudinal variables (GreenValues, Knowledge, Evaluation, ProductBeliefs, Social). Demographics and behavioural variables (purchase frequency, WillingTry, PurchaseLikely, Recommendation) profile the clusters.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S5",
+        "ref": "Seite 20 – In-class case MyNatural"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -661,7 +801,19 @@
       "a"
     ],
     "explanation": "A = 0.4·4 + 0.3·3 + 0.3·2 = 1.6 + 0.9 + 0.6 = 3.1. B = 0.4·2 + 0.3·5 + 0.3·4 = 0.8 + 1.5 + 1.2 = 3.5 → B is more attractive.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zahlen erfunden, Verfahren nach den Folien"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 17 – GE/McKinsey: Gewichtung der Treiber"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -670,7 +822,14 @@
     "difficulty": 1,
     "statement": "A market segment is a group of customers who have similar needs and show similar behaviour or lifestyle.",
     "answer": true,
-    "explanation": "Segmentation groups consumers into relatively homogeneous segments."
+    "explanation": "Segmentation groups consumers into relatively homogeneous segments.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 8 – Segmentation – Definitions"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -679,7 +838,14 @@
     "difficulty": 1,
     "statement": "Customers who are brand loyal mean that more marketing resources are needed over time to maintain market share.",
     "answer": false,
-    "explanation": "Brand loyalty creates a barrier to competition, and FEWER resources are needed over time to maintain share."
+    "explanation": "Brand loyalty creates a barrier to competition, and FEWER resources are needed over time to maintain share.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 5 – How STP adds value to a company"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -688,7 +854,14 @@
     "difficulty": 1,
     "statement": "The basic idea of segmentation research is to analyse a small (random) sample of consumers and leverage the insights across the entire customer base.",
     "answer": true,
-    "explanation": "Four phases: planning & design, qualitative assessment, quantitative measurement, analysis & implementation."
+    "explanation": "Four phases: planning & design, qualitative assessment, quantitative measurement, analysis & implementation.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 10 – Internal Assessment"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -697,7 +870,14 @@
     "difficulty": 1,
     "statement": "Cluster analysis and cluster profiling belong to phase I (planning and design) of a segmentation study.",
     "answer": false,
-    "explanation": "They belong to phase IV (analysis and implementation). Phase I is internal assessment and planning (objectives, resources, constraints)."
+    "explanation": "They belong to phase IV (analysis and implementation). Phase I is internal assessment and planning (objectives, resources, constraints).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 10 – Internal Assessment"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -706,7 +886,14 @@
     "difficulty": 2,
     "statement": "Salesforce allocation and pricing are examples of short-term applications of segmentation.",
     "answer": true,
-    "explanation": "Longer-term applications include emerging needs, new segments, lead users and market driving."
+    "explanation": "Longer-term applications include emerging needs, new segments, lead users and market driving.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 9 – Applications of segmentation"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -715,7 +902,14 @@
     "difficulty": 1,
     "statement": "Individuals within a cluster are similar to each other but different from individuals in other clusters.",
     "answer": true,
-    "explanation": "That is the goal of cluster analysis."
+    "explanation": "That is the goal of cluster analysis.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 12 – Segmentation"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -724,7 +918,14 @@
     "difficulty": 2,
     "statement": "Euromonitor's Consumer Types were derived with k-means cluster models fitted to lifestyle survey data in each country.",
     "answer": true,
-    "explanation": "Online panel in 40 countries (n ≈ 40,000), nested quotas for age and gender; types profiled with demographics."
+    "explanation": "Online panel in 40 countries (n ≈ 40,000), nested quotas for age and gender; types profiled with demographics.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 14 – Data collection"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -733,7 +934,14 @@
     "difficulty": 1,
     "statement": "Differentiation and positioning mean exactly the same thing.",
     "answer": false,
-    "explanation": "Differentiation creates differences on attributes vs competitors; positioning is the set of strategies to differentiate the offering IN THE MINDS of target customers."
+    "explanation": "Differentiation creates differences on attributes vs competitors; positioning is the set of strategies to differentiate the offering IN THE MINDS of target customers.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 35 – Positioning – Definitions"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -742,7 +950,14 @@
     "difficulty": 1,
     "statement": "\"Positioning is not what you do to a product. Positioning is what you do to the mind of a prospect\" (Ries & Trout).",
     "answer": true,
-    "explanation": "Positioning lives in the customer's mind."
+    "explanation": "Positioning lives in the customer's mind.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 35 – Positioning – Definitions"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -751,7 +966,14 @@
     "difficulty": 1,
     "statement": "A successful positioning results in a distinct, relevant and sustainable position in the minds of target customers.",
     "answer": true,
-    "explanation": "Definition from the session."
+    "explanation": "Definition from the session.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 35 – Positioning – Definitions"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -760,7 +982,14 @@
     "difficulty": 1,
     "statement": "The first step of the 7-step positioning analysis is to plot a perceptual map.",
     "answer": false,
-    "explanation": "The first step is to select the target segment; plotting comes fifth, after selecting competitors, differentiator dimensions and collecting ratings."
+    "explanation": "The first step is to select the target segment; plotting comes fifth, after selecting competitors, differentiator dimensions and collecting ratings.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 37 – Mapping techniques"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -769,7 +998,14 @@
     "difficulty": 1,
     "statement": "Perceptual maps oversimplify because they are limited to the chosen dimensions.",
     "answer": true,
-    "explanation": "Their strength is easy interpretation and spotting positioning gaps."
+    "explanation": "Their strength is easy interpretation and spotting positioning gaps.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 40 – Perceptual Maps vs. Brand Association Maps"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -779,7 +1015,14 @@
     "difficulty": 1,
     "statement": "Cluster 2 visits the shopping centre more often than Cluster 1.",
     "answer": false,
-    "explanation": "55% of Cluster 1 visit more often than monthly vs 29% of Cluster 2."
+    "explanation": "55% of Cluster 1 visit more often than monthly vs 29% of Cluster 2.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam (Revision Session), Exercise 2 (Shopping centre)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -789,7 +1032,14 @@
     "difficulty": 1,
     "statement": "The loyalty program is very important for Cluster 2.",
     "answer": true,
-    "explanation": "Cluster 2 rates the loyalty program at 6.0."
+    "explanation": "Cluster 2 rates the loyalty program at 6.0.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam (Revision Session), Exercise 2 (Shopping centre)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -799,7 +1049,14 @@
     "difficulty": 1,
     "statement": "Cluster 4 is mainly composed of young consumers aged 18–34.",
     "answer": true,
-    "explanation": "68% of Cluster 4 are 18–34 years old."
+    "explanation": "68% of Cluster 4 are 18–34 years old.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam (Revision Session), Exercise 2 (Shopping centre)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -809,7 +1066,14 @@
     "difficulty": 2,
     "statement": "For MyNatural, Cluster 2 is the most attractive target for the new line because it evaluates the brand best.",
     "answer": false,
-    "explanation": "Cluster 2's evaluation (2.75) is still below the midpoint, and it has the weakest green values, purchase frequency, purchase likelihood and recommendation. Cluster 3 is the most attractive, though MyNatural must improve its product evaluation there."
+    "explanation": "Cluster 2's evaluation (2.75) is still below the midpoint, and it has the weakest green values, purchase frequency, purchase likelihood and recommendation. Cluster 3 is the most attractive, though MyNatural must improve its product evaluation there.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S5",
+        "ref": "Seite 20 – In-class case MyNatural"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -819,7 +1083,19 @@
     "difficulty": 1,
     "statement": "With weights 0.4/0.3/0.3, Segment B is more attractive than Segment A.",
     "answer": true,
-    "explanation": "B scores 3.5 vs 3.1 for A."
+    "explanation": "B scores 3.5 vs 3.1 for A.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zahlen erfunden, Verfahren nach den Folien"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 17 – GE/McKinsey: Gewichtung der Treiber"
+      }
+    ]
   },
   {
     "type": "short",
@@ -835,6 +1111,13 @@
       "Cluster 2 medium (smallest, satisfied)",
       "Cluster 3 high (largest, frequent visits)",
       "Cluster 4 low (dissatisfied, rare visits)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 2 e) – Attraktivität der Cluster"
+      }
     ]
   },
   {
@@ -851,6 +1134,13 @@
       "Address low evaluation of MyNatural in Cluster 3",
       "Use social influence / referrals",
       "Cluster 2 least attractive"
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S5",
+        "ref": "Seite 20 – In-class case MyNatural"
+      }
     ]
   },
   {
@@ -866,6 +1156,13 @@
       "Descriptors: profile and reach segments",
       "Examples for each",
       "Choice depends on the objective"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 11 – SEGMENTATION BASES"
+      }
     ]
   },
   {
@@ -884,6 +1181,13 @@
       "Perceptual map",
       "Integrate preferences/choice/share",
       "Positioning statement"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 37 – Mapping techniques"
+      }
     ]
   }
 ]

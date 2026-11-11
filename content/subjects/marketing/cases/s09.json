@@ -169,5 +169,55 @@
         ]
       }
     ]
+  },
+  {
+    "id": "beauty-regression",
+    "title": "Online beauty retailer – what drives the basket value?",
+    "text": [
+      "You are the CRM manager of an online beauty retailer and build a model of the basket value of an order (in €) from last year's orders.",
+      "Independent variables: order channel [app: website = 0, app = 1] · loyalty programme [member: no = 0, yes = 1] · age of the customer [age, in years] · discount code used [discount: no = 0, yes = 1] · newsletter subscriber [newsletter: no = 0, yes = 1].",
+      "Y (basket value in €) = β0 + β1 · app + β2 · member + β3 · age + β4 · discount + β5 · newsletter. The overall model has an R² of 48% and is statistically significant."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Coefficient",
+          "P>|t| (p-value)"
+        ],
+        "rows": [
+          [
+            "_cons (Intercept)",
+            "18.5",
+            "0.000"
+          ],
+          [
+            "App",
+            "6.2",
+            "0.010"
+          ],
+          [
+            "Member",
+            "14.8",
+            "0.001"
+          ],
+          [
+            "Age",
+            "0.6",
+            "0.020"
+          ],
+          [
+            "Discount",
+            "−9.4",
+            "0.003"
+          ],
+          [
+            "Newsletter",
+            "3.1",
+            "0.410"
+          ]
+        ]
+      }
+    ]
   }
 ]

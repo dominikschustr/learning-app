@@ -79,5 +79,46 @@
       "A store manager records the number of items in the baskets of eight randomly selected customers: 2, 4, 4, 4, 5, 5, 7, 9."
     ],
     "tables": []
+  },
+  {
+    "id": "delivery-survey",
+    "title": "Food-delivery app – survey of ten customers",
+    "text": [
+      "A food-delivery app asked ten customers five questions after their last order: (1) Gender (female / male / diverse); (2) Age group (18–24 / 25–34 / 35+); (3) Number of orders in the last month; (4) \"How satisfied are you with the app?\" on a 7-point Likert scale (1 = very dissatisfied … 7 = very satisfied); (5) \"Rank the following features from most to least important: price, delivery time, choice of restaurants.\"",
+      "The answers to question 3 are shown below. The Pearson correlation between the number of orders and satisfaction is r = 0.58."
+    ],
+    "tables": [
+      {
+        "caption": "Number of orders in the last month",
+        "head": [
+          "Customer",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "rows": [
+          [
+            "Orders",
+            "3",
+            "1",
+            "15",
+            "3",
+            "4",
+            "2",
+            "8",
+            "3",
+            "6",
+            "5"
+          ]
+        ]
+      }
+    ]
   }
 ]

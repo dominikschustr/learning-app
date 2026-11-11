@@ -41,5 +41,49 @@
         ]
       }
     ]
+  },
+  {
+    "id": "shoe-listening",
+    "title": "Running-shoe launch – social listening before and after a viral video",
+    "text": [
+      "A running-shoe brand launched its new model X-Run on 1 March. On 15 March, a viral video showed the sole of an X-Run coming off after a few runs. The social media team extracted the following Brand24 metrics for the two weeks before and after the video. Sentiment ratio = positive mentions / negative mentions.",
+      "Four posts from the period: P1 \"Ran 10k in my new X-Run this morning – fantastic cushioning!\" · P2 \"Sole came off after three runs. Terrible quality, I hate wasting money.\" · P3 \"The X-Run is available in five colours from 1 March.\" · P4 \"Disgusting customer service, still no reply to my complaint.\""
+    ],
+    "tables": [
+      {
+        "head": [
+          "Metric",
+          "1–14 March",
+          "15–28 March"
+        ],
+        "rows": [
+          [
+            "Volume of mentions",
+            "4,000",
+            "12,500"
+          ],
+          [
+            "Positive mentions",
+            "1,800",
+            "2,500"
+          ],
+          [
+            "Negative mentions",
+            "600",
+            "5,000"
+          ],
+          [
+            "Social media reach",
+            "2.1 m",
+            "9.8 m"
+          ],
+          [
+            "Non-social media reach",
+            "0.4 m",
+            "1.6 m"
+          ]
+        ]
+      }
+    ]
   }
 ]

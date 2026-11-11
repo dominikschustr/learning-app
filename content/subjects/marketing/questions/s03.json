@@ -28,7 +28,14 @@
       "b",
       "c"
     ],
-    "explanation": "Marketing research ≠ marketing insights: research is one of the tools for discovery, insights are the deeper understanding that results."
+    "explanation": "Marketing research ≠ marketing insights: research is one of the tools for discovery, insights are the deeper understanding that results.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 6 – Marketing insights – Definition"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -59,7 +66,14 @@
       "b",
       "c"
     ],
-    "explanation": "Looking back, real time and looking forward."
+    "explanation": "Looking back, real time and looking forward.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 7 – Key Moments for Marketing Insights"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -89,7 +103,14 @@
       "a"
     ],
     "explanation": "Primary data are collected for a specific purpose and can be experimental/non-experimental and qualitative/quantitative. Data collected for other purposes and internal/external sources describe secondary research. Past exam question.",
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 9"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -120,7 +141,14 @@
       "b",
       "c"
     ],
-    "explanation": "Data collected for a specific purpose = primary research."
+    "explanation": "Data collected for a specific purpose = primary research.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 9 – Primary Research"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -161,7 +189,14 @@
       "d",
       "e"
     ],
-    "explanation": "A market analysis assesses market size (volume and value), segments, competition, channels, barriers to entry and regulation (incl. compliance costs)."
+    "explanation": "A market analysis assesses market size (volume and value), segments, competition, channels, barriers to entry and regulation (incl. compliance costs).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 12 – Industry description and outlook"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -191,7 +226,14 @@
       "a"
     ],
     "explanation": "Euromonitor: international market analyses, consumer/country/company data. Statista: international statistics portal. Xerfi: industry studies on French and international markets.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 14 – Euromonitor Global"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -222,7 +264,14 @@
     ],
     "explanation": "The fundamental trend elements are basic needs, drivers of change and innovations (Mason et al., 2015). Maturity, industry and locality are used to EVALUATE a trend for opportunity. Past exam question.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 12"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -253,7 +302,14 @@
       "b",
       "c"
     ],
-    "explanation": "How are the expectations behind the trend playing out now (maturity), in my target locality, and in my industry?"
+    "explanation": "How are the expectations behind the trend playing out now (maturity), in my target locality, and in my industry?",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 31 – Choosing which trend to apply"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -284,7 +340,14 @@
       "b",
       "c"
     ],
-    "explanation": "The maker movement and the wellness boom are examples of macro trends."
+    "explanation": "The maker movement and the wellness boom are examples of macro trends.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 21 – Micro vs. Macro Trends"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -315,7 +378,14 @@
       "b",
       "c"
     ],
-    "explanation": "Weak signals (anomalies, meaningful in clusters), cultural brailling (Faith Popcorn: sensing change daily), horizon scanning (structured scanning of the STEEPLE landscape)."
+    "explanation": "Weak signals (anomalies, meaningful in clusters), cultural brailling (Faith Popcorn: sensing change daily), horizon scanning (structured scanning of the STEEPLE landscape).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 28 – Weak signals/ Cultural brailling/"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -355,7 +425,14 @@
       "c",
       "d"
     ],
-    "explanation": "Innovation potential and \"Who\" belong to the APPLY section."
+    "explanation": "Innovation potential and \"Who\" belong to the APPLY section.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 33 – A tool for generating trend-driven"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -386,7 +463,14 @@
       "b",
       "d"
     ],
-    "explanation": "Aging society, rich–poor divide, climate challenge, people on the move, urban transition and emerging middle class are SHIFTS."
+    "explanation": "Aging society, rich–poor divide, climate challenge, people on the move, urban transition and emerging middle class are SHIFTS.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 38 – Drivers of Change"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -422,7 +506,14 @@
       "c",
       "d"
     ],
-    "explanation": "Vision (long-term), business model (new venture/brand), product/service/experience, marketing & communication."
+    "explanation": "Vision (long-term), business model (new venture/brand), product/service/experience, marketing & communication.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 41 – Innovation Potential"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -454,7 +545,19 @@
       "b",
       "c"
     ],
-    "explanation": "The text names the climate challenge (shift), the cost-of-living crisis after the 2022 energy shock (trigger) and AI-powered resale apps (technology trigger). Aging is not mentioned – stick to the text."
+    "explanation": "The text names the climate challenge (shift), the cost-of-living crisis after the 2022 energy shock (trigger) and AI-powered resale apps (technology trigger). Aging is not mentioned – stick to the text.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 3 (Trendanalyse)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 38 – Drivers of Change"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -485,7 +588,19 @@
       "a",
       "b"
     ],
-    "explanation": "The text describes expectations of take-back, certified resale and repair, and effortless reselling. Cheaper fast fashion or faster delivery are not supported by the text."
+    "explanation": "The text describes expectations of take-back, certified resale and repair, and effortless reselling. Cheaper fast fashion or faster delivery are not supported by the text.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 3 (Trendanalyse)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 39 – Emerging Consumer Expectations"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -516,7 +631,19 @@
       "a",
       "b"
     ],
-    "explanation": "A rare vintage piece is a badge of taste (status, self-expression); keeping up with fashion more cheaply addresses financial security. The other options are not in the text."
+    "explanation": "A rare vintage piece is a badge of taste (status, self-expression); keeping up with fashion more cheaply addresses financial security. The other options are not in the text.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 3 (Trendanalyse)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 37 – Basic Needs"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -525,7 +652,14 @@
     "difficulty": 1,
     "statement": "A consumer trend is a new manifestation among people – in behaviour, attitude or expectation – of a fundamental human need, want or desire.",
     "answer": true,
-    "explanation": "Definition by Mason et al. (2015)."
+    "explanation": "Definition by Mason et al. (2015).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 20 – Trend – a definition"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -534,7 +668,14 @@
     "difficulty": 1,
     "statement": "Innovations are trends.",
     "answer": false,
-    "explanation": "Innovations are not trends but examples of how a trend exists. On-trend innovations cater to needs while anticipating or responding to change."
+    "explanation": "Innovations are not trends but examples of how a trend exists. On-trend innovations cater to needs while anticipating or responding to change.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 22 – The Fundamental Trend Elements"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -543,7 +684,14 @@
     "difficulty": 1,
     "statement": "Basic human needs change frequently, which is why trends emerge.",
     "answer": false,
-    "explanation": "Basic needs are fundamental and rarely-if-ever-changing; what changes are the drivers of change and the ways needs are served."
+    "explanation": "Basic needs are fundamental and rarely-if-ever-changing; what changes are the drivers of change and the ways needs are served.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 22 – The Fundamental Trend Elements"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -552,7 +700,14 @@
     "difficulty": 1,
     "statement": "There are no trends without change.",
     "answer": true,
-    "explanation": "Analysing change (drivers of change) is at the core of trend forecasting."
+    "explanation": "Analysing change (drivers of change) is at the core of trend forecasting.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 22 – The Fundamental Trend Elements"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -561,7 +716,14 @@
     "difficulty": 1,
     "statement": "Trend forecasting combines intuition, hard data and experience.",
     "answer": true,
-    "explanation": "The anatomy of a trend: intuition + hard data + experience."
+    "explanation": "The anatomy of a trend: intuition + hard data + experience.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 19 – The Anatomy of a Trend"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -570,7 +732,14 @@
     "difficulty": 1,
     "statement": "Horizon scanning is the unstructured, daily sensing of changes through feeling, smelling and tasting.",
     "answer": false,
-    "explanation": "That describes cultural brailling (Faith Popcorn). Horizon scanning is a more organised, structured approach to detect shifts in the social, technological, economic, environmental, political, legal and ethical landscape."
+    "explanation": "That describes cultural brailling (Faith Popcorn). Horizon scanning is a more organised, structured approach to detect shifts in the social, technological, economic, environmental, political, legal and ethical landscape.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 28 – Weak signals/ Cultural brailling/"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -579,7 +748,14 @@
     "difficulty": 1,
     "statement": "Weak signals become meaningful when they are organised in clusters across industries.",
     "answer": true,
-    "explanation": "On their own they are random, disconnected and could be surreal."
+    "explanation": "On their own they are random, disconnected and could be surreal.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 28 – Weak signals/ Cultural brailling/"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -588,7 +764,14 @@
     "difficulty": 2,
     "statement": "Because adoption of new products is fluid, the traditional innovation adoption curve (Rogers, 1962) may be unreliable in today's dynamic contexts.",
     "answer": true,
-    "explanation": "That is why trends must be adapted for today (trend maturity)."
+    "explanation": "That is why trends must be adapted for today (trend maturity).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 31 – Choosing which trend to apply"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -597,7 +780,14 @@
     "difficulty": 1,
     "statement": "New consumer expectations are usually set within your own industry.",
     "answer": false,
-    "explanation": "New expectations of quality of service are usually set OUTSIDE your industry and affect it later – monitor other industries."
+    "explanation": "New expectations of quality of service are usually set OUTSIDE your industry and affect it later – monitor other industries.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 39 – Emerging Consumer Expectations"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -606,7 +796,14 @@
     "difficulty": 1,
     "statement": "Emerging consumer expectations can be identified by looking for gaps between what consumers want and what they currently have.",
     "answer": true,
-    "explanation": "Expectation gaps reveal unmet needs."
+    "explanation": "Expectation gaps reveal unmet needs.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 39 – Emerging Consumer Expectations"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -615,7 +812,14 @@
     "difficulty": 1,
     "statement": "A persona is a rich description of one fictional person exemplifying a specific group of people.",
     "answer": true,
-    "explanation": "Personas help to create empathy and better ideas in the APPLY section (\"Who\")."
+    "explanation": "Personas help to create empathy and better ideas in the APPLY section (\"Who\").",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 42 – Consumer Trend Canvas: Apply"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -624,7 +828,14 @@
     "difficulty": 1,
     "statement": "Secondary data is usually more time- and cost-effective than primary data.",
     "answer": true,
-    "explanation": "It has already been compiled and is often widely available."
+    "explanation": "It has already been compiled and is often widely available.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 9 – Primary Research"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -633,7 +844,14 @@
     "difficulty": 1,
     "statement": "The marketing research process has five steps: problem formulation, sources & research design, data collection method, data collection, data analysis & interpretation.",
     "answer": true,
-    "explanation": "Steps 2 and 3 concern the types of data and methods to collect them."
+    "explanation": "Steps 2 and 3 concern the types of data and methods to collect them.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 9 – Primary Research"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -642,7 +860,14 @@
     "difficulty": 1,
     "statement": "Regulation in a market analysis includes estimating compliance costs.",
     "answer": true,
-    "explanation": "Compliance costs are costs a company incurs to adhere to industry- or country-specific regulations."
+    "explanation": "Compliance costs are costs a company incurs to adhere to industry- or country-specific regulations.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 12 – Industry description and outlook"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -652,7 +877,19 @@
     "difficulty": 2,
     "statement": "The rising popularity of resale apps among Gen Z is a basic need.",
     "answer": false,
-    "explanation": "It is an innovation/manifestation. The underlying basic needs are e.g. status/self-expression and security."
+    "explanation": "It is an innovation/manifestation. The underlying basic needs are e.g. status/self-expression and security.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 3 (Trendanalyse)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 37 – Basic Needs"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -662,7 +899,14 @@
     "difficulty": 1,
     "statement": "Based on the text, ageing society is a driver of change of the Generation I trend.",
     "answer": false,
-    "explanation": "The trend is driven by digital natives growing up with intuitive technology and by more wealth/spending power – ageing is not mentioned."
+    "explanation": "The trend is driven by digital natives growing up with intuitive technology and by more wealth/spending power – ageing is not mentioned.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Klausur 2019/20, Mini case Generation I"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -672,7 +916,14 @@
     "difficulty": 1,
     "statement": "According to the text, Generation I members have access to more wealth than previous generations.",
     "answer": true,
-    "explanation": "Toys worth £1,200, allowances of $780 a year, influence on $1.12 trillion of family spending."
+    "explanation": "Toys worth £1,200, allowances of $780 a year, influence on $1.12 trillion of family spending.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Klausur 2019/20, Mini case Generation I"
+      }
+    ]
   },
   {
     "type": "short",
@@ -688,6 +939,13 @@
       "Intuitive touch devices, apps, video calls (triggers)",
       "Shorter cognitive processes, expectation of immediacy",
       "More wealth / spending power and influence on family spending"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Mini case Generation I & Playmobil a)"
+      }
     ]
   },
   {
@@ -704,6 +962,13 @@
       "Product/experience: interactive, intuitive, customisable (digital + physical)",
       "Marketing via digital channels, simple and direct",
       "Consider both kids (influence) and parents (payers)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Mini case Generation I & Playmobil b)"
+      }
     ]
   },
   {
@@ -719,6 +984,13 @@
       "Drivers of change = shifts and triggers",
       "Apply: innovation potential (vision, business model, product/service/experience, marketing)",
       "Apply: who – target customer groups / personas"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 38 – Drivers of Change"
+      }
     ]
   },
   {
@@ -736,6 +1008,13 @@
       "Distribution channels",
       "Barriers to entry",
       "Regulation"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 12 – Industry description and outlook"
+      }
     ]
   },
   {
@@ -744,7 +1023,14 @@
     "lecture": "s03",
     "statement": "Trend identification draws on very diverse sources of inspiration, e.g. geopolitics, local subcultures, influencers, biotechnology and demographic shifts.",
     "answer": true,
-    "explanation": "Horizon scanning looks far beyond one's own industry to spot weak signals early."
+    "explanation": "Horizon scanning looks far beyond one's own industry to spot weak signals early.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -752,7 +1038,14 @@
     "lecture": "s03",
     "statement": "Uber changing what people expect from transport (instant, one-touch service) is an example of expectation transfer.",
     "answer": true,
-    "explanation": "Once experienced, such expectations transfer to other industries – people expect the same convenience from banks, food delivery, healthcare."
+    "explanation": "Once experienced, such expectations transfer to other industries – people expect the same convenience from banks, food delivery, healthcare.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -760,7 +1053,14 @@
     "lecture": "s03",
     "statement": "Basic needs, drivers of change and innovations are the fundamental elements of a consumer trend.",
     "answer": true,
-    "explanation": "Trend = basic needs + drivers of change (shifts, triggers) → innovations → new consumer expectations."
+    "explanation": "Trend = basic needs + drivers of change (shifts, triggers) → innovations → new consumer expectations.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -768,7 +1068,14 @@
     "lecture": "s03",
     "statement": "Emerging consumer expectations are tied to a specific geography, industry and market and do not spread across borders.",
     "answer": false,
-    "explanation": "Expectations spread across industries (expectation transfer) and countries, especially through digital media."
+    "explanation": "Expectations spread across industries (expectation transfer) and countries, especially through digital media.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -776,7 +1083,14 @@
     "lecture": "s03",
     "statement": "A new consumer trend emerges when an external change unlocks a new way to serve basic human needs.",
     "answer": true,
-    "explanation": "Needs stay stable; change (technology, society, economy) creates new ways to serve them."
+    "explanation": "Needs stay stable; change (technology, society, economy) creates new ways to serve them.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -784,7 +1098,14 @@
     "lecture": "s03",
     "statement": "Consumer trends are only about fashion and design.",
     "answer": false,
-    "explanation": "Trends concern how we live, eat, travel, work, consume media and relate to each other."
+    "explanation": "Trends concern how we live, eat, travel, work, consume media and relate to each other.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -792,7 +1113,14 @@
     "lecture": "s03",
     "statement": "Consumer trends are created by trend forecasting agencies such as WGSN, TrendWatching or The Future Laboratory.",
     "answer": false,
-    "explanation": "Agencies identify and describe trends; trends emerge from changes in society and consumer behaviour."
+    "explanation": "Agencies identify and describe trends; trends emerge from changes in society and consumer behaviour.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -800,7 +1128,14 @@
     "lecture": "s03",
     "statement": "Macro trends matter mainly to fashion companies and much less to the mass market.",
     "answer": false,
-    "explanation": "Macro trends are broad, long-lasting shifts affecting many industries and mass markets."
+    "explanation": "Macro trends are broad, long-lasting shifts affecting many industries and mass markets.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -808,7 +1143,14 @@
     "lecture": "s03",
     "statement": "Innovations are manifestations of how a trend exists.",
     "answer": true,
-    "explanation": "Innovations are evidence of a trend, not the trend itself – the trend is the underlying shift in behaviour or expectations."
+    "explanation": "Innovations are evidence of a trend, not the trend itself – the trend is the underlying shift in behaviour or expectations.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -816,7 +1158,14 @@
     "lecture": "s03",
     "statement": "Trend forecasting is a method for identifying short-term changes in the retail and service industries.",
     "answer": false,
-    "explanation": "It looks at medium- to long-term shifts in consumer needs and expectations across all industries."
+    "explanation": "It looks at medium- to long-term shifts in consumer needs and expectations across all industries.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -824,6 +1173,13 @@
     "lecture": "s03",
     "statement": "Macro trends affect a variety of industries and have a long-lasting effect on consumer behaviour.",
     "answer": true,
-    "explanation": "They unfold over many years (e.g. digitalisation, ageing, sustainability) and shape many markets."
+    "explanation": "They unfold over many years (e.g. digitalisation, ageing, sustainability) and shape many markets.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 2 (Unit 4)",
+        "ref": "Trends"
+      }
+    ]
   }
 ]

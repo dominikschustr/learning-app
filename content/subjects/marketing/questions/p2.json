@@ -14,6 +14,13 @@
       "Cluster 2: price",
       "Cluster 3: target",
       "Cluster 4: price"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Mini case Ralph × Fortnite a)"
+      }
     ]
   },
   {
@@ -30,6 +37,13 @@
       "C1 1.72, C2 3.02",
       "C3 4.24, C4 0.52",
       "Target Cluster 3"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Mini case Ralph × Fortnite b)"
+      }
     ]
   },
   {
@@ -46,6 +60,13 @@
       "Cluster 3 still highest (4.63)",
       "Utility loss at €150 smaller than at €100",
       "Price increase is a good idea (luxury signal)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Mini case Ralph × Fortnite c)"
+      }
     ]
   }
 ]

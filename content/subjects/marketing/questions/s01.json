@@ -38,7 +38,14 @@
       "d",
       "e"
     ],
-    "explanation": "The 5 Vs (Marr, 2014) are Volume, Velocity, Variety, Veracity and Value. Validity is a quality criterion of measurement, not one of the 5 Vs."
+    "explanation": "The 5 Vs (Marr, 2014) are Volume, Velocity, Variety, Veracity and Value. Validity is a quality criterion of measurement, not one of the 5 Vs.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 11 – Velocity"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -69,7 +76,14 @@
       "b",
       "c"
     ],
-    "explanation": "Prescriptive analytics answers \"So what? And now what? What is required to do more?\" – it leads to a decision/action. \"Why\" is diagnostic analytics."
+    "explanation": "Prescriptive analytics answers \"So what? And now what? What is required to do more?\" – it leads to a decision/action. \"Why\" is diagnostic analytics.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 15 – Types of Analytics and Research Questions"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -100,7 +114,14 @@
     ],
     "explanation": "Diagnostic analytics asks why something is happening (past exam question 2019/20).",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 7"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -131,7 +152,14 @@
     ],
     "explanation": "The research types are exploratory (ambiguous problem), descriptive (aware of problem) and causal (clearly defined problem). Past exam question.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 3"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -162,7 +190,14 @@
     ],
     "explanation": "Big Data analytics shift the focus towards prediction and data science; traditional analytics look back (what happened, why). Past exam question.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 8"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -198,7 +233,14 @@
       "c",
       "d"
     ],
-    "explanation": "Causal research determines cause-and-effect relationships via experiments (manipulation + control). Flexibility and being the front end of the design describe exploratory research."
+    "explanation": "Causal research determines cause-and-effect relationships via experiments (manipulation + control). Flexibility and being the front end of the design describe exploratory research.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 18 – Exploratory Descriptive Causal"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -234,7 +276,14 @@
       "c",
       "d"
     ],
-    "explanation": "Exploratory research discovers ideas and insights for an ambiguous problem (\"Our sales are declining… why?\"). Experiments belong to causal research."
+    "explanation": "Exploratory research discovers ideas and insights for an ambiguous problem (\"Our sales are declining… why?\"). Experiments belong to causal research.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 18 – Exploratory Descriptive Causal"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -264,7 +313,14 @@
       "b"
     ],
     "explanation": "Descriptive research is used when you are aware of the problem and want to describe market characteristics, e.g. via surveys, panels or quantitatively analysed secondary data.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 16 – Exploratory"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -295,7 +351,14 @@
       "b",
       "c"
     ],
-    "explanation": "The three approaches are data as a tool (improving specific functions), data as an industry (selling data products/services) and data as a strategy (data drives competitive strategy and business models)."
+    "explanation": "The three approaches are data as a tool (improving specific functions), data as an industry (selling data products/services) and data as a strategy (data drives competitive strategy and business models).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 20 – 3 approaches to value creation"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -325,7 +388,14 @@
       "b"
     ],
     "explanation": "Providers of big data products or services (technology and data-as-a-service) represent \"data as an industry\".",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 23 – Providers of big data products"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -355,7 +425,14 @@
       "c"
     ],
     "explanation": "Data as a strategy: big data drives competitive strategy, new business models and ecosystem development (Rolls-Royce example).",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 25 – Big data as a driver of"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -391,7 +468,14 @@
       "c",
       "d"
     ],
-    "explanation": "GDPR (enforced May 2018): clear language, consent, transparency, stronger rights, stronger enforcement (European Data Protection Board). The 45-million-user threshold belongs to the Digital Services Act."
+    "explanation": "GDPR (enforced May 2018): clear language, consent, transparency, stronger rights, stronger enforcement (European Data Protection Board). The 45-million-user threshold belongs to the Digital Services Act.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 15"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -422,7 +506,14 @@
     ],
     "explanation": "People say they care about privacy but still disclose data and use data-hungry services – an attitude–behaviour gap. Past exam question.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 5"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -453,7 +544,14 @@
       "b",
       "c"
     ],
-    "explanation": "Deep Brew: from short-term response to long-term value maximisation; Sephora: from A/B testing to continuous real-time adaptation based on feedback, 1:1 digital selling."
+    "explanation": "Deep Brew: from short-term response to long-term value maximisation; Sephora: from A/B testing to continuous real-time adaptation based on feedback, 1:1 digital selling.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 27 – 1/ Predictive Customer Journey: The Starbuck …"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -489,7 +587,14 @@
       "c",
       "d"
     ],
-    "explanation": "Preservation (keep the role of the state), Domination (reduce unaccountable power imbalances), Democracy (civic values in tech), Parsimony (state restrains others only if strictly necessary)."
+    "explanation": "Preservation (keep the role of the state), Domination (reduce unaccountable power imbalances), Democracy (civic values in tech), Parsimony (state restrains others only if strictly necessary).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 41 – The four principles of a Digital Republic"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -520,7 +625,14 @@
       "b",
       "c"
     ],
-    "explanation": "The DSA is a \"basic law for the Internet\" for all firms offering digital services in the EU; the strictest rules apply above 45 million monthly users. A Digital Services Board and national coordinators enforce it."
+    "explanation": "The DSA is a \"basic law for the Internet\" for all firms offering digital services in the EU; the strictest rules apply above 45 million monthly users. A Digital Services Board and national coordinators enforce it.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 39 – Digital Services Act"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -529,7 +641,14 @@
     "difficulty": 1,
     "statement": "According to Netflix co-founder Marc Randolph, good decisions should rely on data instead of intuition.",
     "answer": false,
-    "explanation": "Randolph says \"you need both\": data tells you the red button does 2.7% better, but never which of 16.7 million colours to test. Data should inform intuition, explore and validate assumptions."
+    "explanation": "Randolph says \"you need both\": data tells you the red button does 2.7% better, but never which of 16.7 million colours to test. Data should inform intuition, explore and validate assumptions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 2 – Gut Instinct vs Data-driven Decisions from"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -538,7 +657,14 @@
     "difficulty": 1,
     "statement": "Unstructured data (e.g. texts, images, videos) require sense-making before they can be analysed.",
     "answer": true,
-    "explanation": "Structured data fit predefined fields; unstructured data need processing (e.g. text mining) to make sense of them."
+    "explanation": "Structured data fit predefined fields; unstructured data need processing (e.g. text mining) to make sense of them.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 13 – Unstructured Data and Sense-making"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -547,7 +673,14 @@
     "difficulty": 1,
     "statement": "Prescriptive analytics answers the question \"What is likely to happen in the future?\".",
     "answer": false,
-    "explanation": "That is predictive analytics. Prescriptive analytics answers \"So what? Now what? What is required to do more?\" and leads to decisions/actions."
+    "explanation": "That is predictive analytics. Prescriptive analytics answers \"So what? Now what? What is required to do more?\" and leads to decisions/actions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 15 – Types of Analytics and Research Questions"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -556,7 +689,14 @@
     "difficulty": 2,
     "statement": "Along the analytics continuum, descriptive and diagnostic analytics deliver information/insights, while prescriptive analytics leads to a decision or action.",
     "answer": true,
-    "explanation": "Information → insights → decision/action: descriptive (what), diagnostic (why), predictive (what will), prescriptive (now what)."
+    "explanation": "Information → insights → decision/action: descriptive (what), diagnostic (why), predictive (what will), prescriptive (now what).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 15 – Types of Analytics and Research Questions"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -565,7 +705,14 @@
     "difficulty": 1,
     "statement": "\"Will our customers purchase more with a change in our website?\" is a typical question for exploratory research.",
     "answer": false,
-    "explanation": "It is a clearly defined cause-effect question → causal research (experiment, e.g. A/B test)."
+    "explanation": "It is a clearly defined cause-effect question → causal research (experiment, e.g. A/B test).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 16 – Exploratory"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -574,7 +721,14 @@
     "difficulty": 1,
     "statement": "A strong correlation between two variables proves that one causes the other.",
     "answer": false,
-    "explanation": "Correlation is not causation – a third variable or chance can explain the association."
+    "explanation": "Correlation is not causation – a third variable or chance can explain the association.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 17 – Correlation is not causation!"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -583,7 +737,14 @@
     "difficulty": 2,
     "statement": "Descriptive research is marked by the prior formulation of specific hypotheses and a preplanned, structured design.",
     "answer": true,
-    "explanation": "Exploratory research is flexible; descriptive research is preplanned and structured; causal research manipulates and controls variables."
+    "explanation": "Exploratory research is flexible; descriptive research is preplanned and structured; causal research manipulates and controls variables.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 18 – Exploratory Descriptive Causal"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -592,7 +753,14 @@
     "difficulty": 1,
     "statement": "\"Data as a tool\" means actively collecting data and building analytical capabilities internally to improve specific areas such as marketing, sales or customer service.",
     "answer": true,
-    "explanation": "This is the first of Mazzei & Noble's three approaches to value creation through data."
+    "explanation": "This is the first of Mazzei & Noble's three approaches to value creation through data.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 20 – 3 approaches to value creation"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -601,7 +769,14 @@
     "difficulty": 1,
     "statement": "Shoshana Zuboff defines surveillance capitalism as an economic order that claims human experience as free raw material for hidden commercial practices of extraction, prediction and sales.",
     "answer": true,
-    "explanation": "This is the first meaning in Zuboff's definition; she also describes it as a parasitic logic of behavioural modification and a new instrumentarian power."
+    "explanation": "This is the first meaning in Zuboff's definition; she also describes it as a parasitic logic of behavioural modification and a new instrumentarian power.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 30 – What does Surveillance Capitalism mean?"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -610,7 +785,14 @@
     "difficulty": 1,
     "statement": "Information privacy is violated when a person's efforts to seclude or conceal himself or herself physically are frustrated.",
     "answer": false,
-    "explanation": "That is physical privacy. Information privacy is disturbed when data, facts or conversations a person wishes to keep secret are acquired or disclosed."
+    "explanation": "That is physical privacy. Information privacy is disturbed when data, facts or conversations a person wishes to keep secret are acquired or disclosed.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 36 – Justice at a new frontier of power"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -619,7 +801,14 @@
     "difficulty": 1,
     "statement": "Under the GDPR, a user who does not object (silence) has given valid consent.",
     "answer": false,
-    "explanation": "GDPR requires affirmative consent – silence is no consent."
+    "explanation": "GDPR requires affirmative consent – silence is no consent.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 37 – Surveillance Capitalism Regulation"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -628,7 +817,14 @@
     "difficulty": 2,
     "statement": "Kollnig et al. (2021) found that GDPR led to a strong decline of third-party trackers in Android apps.",
     "answer": false,
-    "explanation": "They studied ~2 million apps: only limited change, and further concentration in the firms owning trackers (danger of data monopolies/gatekeepers)."
+    "explanation": "They studied ~2 million apps: only limited change, and further concentration in the firms owning trackers (danger of data monopolies/gatekeepers).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 38 – GDPR Breaches*"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -637,7 +833,14 @@
     "difficulty": 1,
     "statement": "Under the Digital Services Act, the strictest rules apply to companies with more than 45 million monthly users.",
     "answer": true,
-    "explanation": "Very large platforms (>45 million monthly users in the EU) face the strictest obligations."
+    "explanation": "Very large platforms (>45 million monthly users in the EU) face the strictest obligations.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 39 – Digital Services Act"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -646,7 +849,14 @@
     "difficulty": 1,
     "statement": "Cathy O'Neil argues that algorithms are objective because they are based on mathematics.",
     "answer": false,
-    "explanation": "O'Neil (\"Weapons of Math Destruction\") warns against blind faith in big data: algorithms embed the opinions and biases of their builders and can increase inequality."
+    "explanation": "O'Neil (\"Weapons of Math Destruction\") warns against blind faith in big data: algorithms embed the opinions and biases of their builders and can increase inequality.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 43 – Additional material (literature)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -655,7 +865,14 @@
     "difficulty": 2,
     "statement": "Byung-Chul Han describes Big Data as a psychopolitical instrument that makes human behaviour predictable and controllable.",
     "answer": true,
-    "explanation": "In \"The Palliative Society\" Han argues the digital surveillance regime degrades the person to a profitable data set and creates a crisis of freedom."
+    "explanation": "In \"The Palliative Society\" Han argues the digital surveillance regime degrades the person to a profitable data set and creates a crisis of freedom.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 33 – Byung-Chul Han: Palliativgesellschaft"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -664,7 +881,14 @@
     "difficulty": 1,
     "statement": "Sephora's AI Beauty Advisor illustrates a shift from campaign-based promotion to AI-powered 1:1 digital selling.",
     "answer": true,
-    "explanation": "Virtual Artist (Smart Skin Scan) + agentic Beauty Advisor recommend routines, book appointments and offer discounts."
+    "explanation": "Virtual Artist (Smart Skin Scan) + agentic Beauty Advisor recommend routines, book appointments and offer discounts.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 28 – 2/ Agentic AI: The Sephora Case"
+      }
+    ]
   },
   {
     "type": "short",
@@ -680,6 +904,13 @@
       "Predictive: what is likely to happen",
       "Prescriptive: what should we do / now what",
       "Progression from information to insight to decision/action"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 15 – Types of Analytics and Research Questions"
+      }
     ]
   },
   {
@@ -695,6 +926,13 @@
       "Descriptive: aware of problem, describe characteristics, structured with hypotheses, surveys/panels",
       "Causal: clearly defined problem, cause-effect",
       "Causal research uses experiments (manipulation + control)"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 18 – Exploratory Descriptive Causal"
+      }
     ]
   },
   {
@@ -711,6 +949,13 @@
       "More transparency",
       "Stronger rights (breach notification, portability, access, deletion)",
       "Stronger enforcement / fines"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 37 – Surveillance Capitalism Regulation"
+      }
     ]
   },
   {
@@ -726,6 +971,13 @@
       "Data as an industry – sell data products/services",
       "Data as a strategy – data drives business model/ecosystem",
       "Relevant example for each"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 25 – Big data as a driver of"
+      }
     ]
   },
   {
@@ -734,7 +986,14 @@
     "lecture": "s01",
     "statement": "Economies of action extend surveillance from monitoring behaviour to actively shaping and modifying it.",
     "answer": true,
-    "explanation": "Zuboff: after economies of scale and scope, economies of action intervene in behaviour (nudging, tuning, herding) to produce predictable outcomes."
+    "explanation": "Zuboff: after economies of scale and scope, economies of action intervene in behaviour (nudging, tuning, herding) to produce predictable outcomes.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -742,7 +1001,14 @@
     "lecture": "s01",
     "statement": "Companies only use data that customers actively provide to them.",
     "answer": false,
-    "explanation": "Much more is collected: behavioural surplus from clicks, location, sensors, cookies and third parties – far beyond what users actively hand over."
+    "explanation": "Much more is collected: behavioural surplus from clicks, location, sensors, cookies and third parties – far beyond what users actively hand over.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -750,7 +1016,14 @@
     "lecture": "s01",
     "statement": "In surveillance markets, behavioural modification is mostly limited to the sphere of consumption.",
     "answer": false,
-    "explanation": "It reaches far beyond shopping – e.g. political opinions and voting (Cambridge Analytica), health, social behaviour."
+    "explanation": "It reaches far beyond shopping – e.g. political opinions and voting (Cambridge Analytica), health, social behaviour.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -758,7 +1031,14 @@
     "lecture": "s01",
     "statement": "Only “tech” companies operate in surveillance markets.",
     "answer": false,
-    "explanation": "Insurers, retailers, car makers, banks and many others also collect and monetise behavioural data."
+    "explanation": "Insurers, retailers, car makers, banks and many others also collect and monetise behavioural data.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -766,7 +1046,14 @@
     "lecture": "s01",
     "statement": "In Zuboff's dispossession cycle, “habituation” describes the speed at which surveillance markets emerged.",
     "answer": false,
-    "explanation": "Habituation means people get used to the incursion until it appears normal and inevitable; the cycle is incursion → habituation → adaptation → redirection."
+    "explanation": "Habituation means people get used to the incursion until it appears normal and inevitable; the cycle is incursion → habituation → adaptation → redirection.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -774,7 +1061,14 @@
     "lecture": "s01",
     "statement": "Under surveillance capitalism, the market for personal data is information-symmetric between the companies that collect data and the individuals who reveal it.",
     "answer": false,
-    "explanation": "It is strongly asymmetric: companies know far more about users than users know about what is collected and how it is used."
+    "explanation": "It is strongly asymmetric: companies know far more about users than users know about what is collected and how it is used.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -782,7 +1076,14 @@
     "lecture": "s01",
     "statement": "Behavioural surplus is the information companies collect beyond what they need to improve their products and services.",
     "answer": true,
-    "explanation": "This surplus is turned into prediction products sold in behavioural futures markets."
+    "explanation": "This surplus is turned into prediction products sold in behavioural futures markets.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -790,7 +1091,14 @@
     "lecture": "s01",
     "statement": "The extraction imperative states that all information that can be collected will be collected.",
     "answer": true,
-    "explanation": "Prediction quality depends on the volume and variety of data, so firms are driven to extract ever more."
+    "explanation": "Prediction quality depends on the volume and variety of data, so firms are driven to extract ever more.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -798,7 +1106,14 @@
     "lecture": "s01",
     "statement": "Economies of scope are irrelevant in surveillance markets.",
     "answer": false,
-    "explanation": "Variety matters: data from many areas of life (location, voice, health, social) improve predictions – economies of scope."
+    "explanation": "Variety matters: data from many areas of life (location, voice, health, social) improve predictions – economies of scope.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -806,7 +1121,14 @@
     "lecture": "s01",
     "statement": "Companies collect data solely to improve their services.",
     "answer": false,
-    "explanation": "Data also train models that predict and influence behaviour, which are sold to third parties (advertisers, insurers …)."
+    "explanation": "Data also train models that predict and influence behaviour, which are sold to third parties (advertisers, insurers …).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -814,7 +1136,14 @@
     "lecture": "s01",
     "statement": "In surveillance markets, companies can run large-scale online experiments on users without their awareness.",
     "answer": true,
-    "explanation": "Example: Facebook's emotional contagion experiment or A/B tests that modify feeds without users knowing."
+    "explanation": "Example: Facebook's emotional contagion experiment or A/B tests that modify feeds without users knowing.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -822,6 +1151,154 @@
     "lecture": "s01",
     "statement": "Cambridge Analytica collected personal information from millions of Facebook profiles without consent and combined it with other sources for political advertising.",
     "answer": true,
-    "explanation": "The case illustrates behavioural modification beyond consumption and why consent rules like the GDPR matter."
+    "explanation": "The case illustrates behavioural modification beyond consumption and why consent rules like the GDPR matter.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 1 (Unit 2)",
+        "ref": "Surveillance Capitalism"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-29",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "A retailer wants to understand why its online sales fell last quarter but has no clear hypothesis yet. Expert interviews and a pilot survey are an appropriate first step.",
+    "answer": true,
+    "explanation": "The problem is still ambiguous (\"Our sales are declining … why?\"), so exploratory research fits. Its typical methods are expert surveys, pilot surveys, qualitative research and qualitatively analysed secondary data.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part A (True/false on applied theory and frameworks)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 16 – Research Types"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 18 – Exploratory / Descriptive / Causal"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-30",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "A bank randomly shows customers either its old or its redesigned website and controls all other factors to see whether the new design makes them buy more. This is descriptive research.",
+    "answer": false,
+    "explanation": "Manipulating one independent variable (the website version) and controlling the others is an experiment – the typical method of CAUSAL research (\"Will our customers purchase more with a change in our website?\"). Descriptive research only describes characteristics, e.g. with surveys or panels.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part A (True/false on applied theory and frameworks)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 16 – Research Types"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 18 – Exploratory / Descriptive / Causal"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-31",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "Under the GDPR, a pre-ticked consent box on a newsletter sign-up form counts as valid consent as long as the user does not untick it.",
+    "answer": false,
+    "explanation": "The GDPR requires affirmative consent: silence or inactivity is no consent. A pre-ticked box the user merely leaves untouched is therefore not valid consent.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part A (True/false on applied theory and frameworks)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 37 – GDPR – Main Features"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-32",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "A customer asks an online shop for a copy of all personal data it holds about her. Under the GDPR, the shop has to provide it.",
+    "answer": true,
+    "explanation": "Among the GDPR's stronger rights is the right to access a copy of one's own data (next to data portability, the right to deletion and being informed about data breaches).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part A (True/false on applied theory and frameworks)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 37 – GDPR – Main Features"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-33",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "A company that sells analytics software and data-as-a-service to many other firms creates value through \"data as an industry\" (Mazzei & Noble).",
+    "answer": true,
+    "explanation": "\"Data as an industry\" describes providers of big data products or services to a broad range of companies – intensive in technical knowledge and offering technology and data-as-a-service.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part A (True/false on applied theory and frameworks)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 23 – 2/ Data as an industry"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s01-34",
+    "lecture": "s01",
+    "difficulty": 2,
+    "statement": "A supermarket uses its loyalty-card data to improve its product range and promotions. According to Mazzei & Noble, this is \"data as a strategy\".",
+    "answer": false,
+    "explanation": "Improving specific areas such as product development, marketing or sales with actively collected data is \"data as a tool\". \"Data as a strategy\" means big data drives the competitive strategy and new business models (ecosystems built on accumulated data).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part A (True/false on applied theory and frameworks)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 21 – 1/ Data as a tool"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 25 – 3/ Data as a strategy"
+      }
+    ]
   }
 ]

@@ -138,5 +138,54 @@
         ]
       }
     ]
+  },
+  {
+    "id": "sportswear-sales",
+    "title": "Sportswear retailer – drivers of annual sales per country",
+    "text": [
+      "An analyst at a sportswear retailer explains annual sales per country (in m€, 2015–2024) with the number of stores [stores], spending on online advertising [online_ads], TV advertising [tv_ads] and sponsoring of local sports clubs [sponsoring] (all spending in m€), last year's sales [last_sales] and the average price level [price_index].",
+      "y = α + β1 · stores + β2 · online_ads + β3 · tv_ads + β4 · sponsoring + β5 · last_sales + β6 · price_index + ε"
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Beta coefficient",
+          "Significance (p-value)"
+        ],
+        "rows": [
+          [
+            "stores (β1)",
+            "1.85",
+            "p < 0.01"
+          ],
+          [
+            "online_ads (β2)",
+            "2.40",
+            "p < 0.05"
+          ],
+          [
+            "tv_ads (β3)",
+            "0.15",
+            "p > 0.05"
+          ],
+          [
+            "sponsoring (β4)",
+            "0.90",
+            "p < 0.05"
+          ],
+          [
+            "last_sales (β5)",
+            "0.65",
+            "p < 0.01"
+          ],
+          [
+            "price_index (β6)",
+            "−0.30",
+            "p > 0.05"
+          ]
+        ]
+      }
+    ]
   }
 ]

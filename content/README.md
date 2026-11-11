@@ -170,7 +170,9 @@ bzw. `σ^{2}` tief- und hochgestellt; `sheet: true` heißt „steht auf dem Form
 ```
 
 **Grundlage und Lösungsweg** (alle Fragetypen, optional): `basis` nennt, woran sich eine Aufgabe orientiert – `kind` ist
-`exam` (Altklausur, Midterm, Mock-Fragen), `slides` (Vorlesungsfolien) oder `case` (Übungsfall der Vorlesung). Die App zeigt
+`exam` (Altklausur, Midterm, Mock-Fragen), `slides` (Vorlesungsfolien), `case` (Übungsfall der Vorlesung), `quiz`
+(Quiz der Vorlesung) oder `own` (selbst erstellte Aufgabe, z. B. „im Stil von Mock exam 2025/26, Exercise 1“; `source` dann
+`"Eigene Aufgabe"`, die Anzeige zeigt nur `ref`). Die App zeigt
 darüber „Orientiert an …“ und das Niveau (`difficulty` 1 = wie das Folien-Quiz, 2 = wie eine Einzelfrage der Klausur,
 3 = wie ein ganzer Klausurteil). Kurzantworten und Multiple Choice können zusätzlich `steps` (Lösungsweg in Schritten:
 `title`, Begründung `why`, Rechenzeilen `lines`, optional `table`, Ergebnis `result`) und `pitfalls` (typische Fehler)

@@ -28,7 +28,14 @@
       "b",
       "c"
     ],
-    "explanation": "Visual mining extracts trends, patterns and insights from visual data (images, video) with data mining, computer vision and visualisation. Determining emotional tone is sentiment analysis."
+    "explanation": "Visual mining extracts trends, patterns and insights from visual data (images, video) with data mining, computer vision and visualisation. Determining emotional tone is sentiment analysis.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 33 – Definitions (text mining, sentiment …)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -59,7 +66,14 @@
       "b",
       "c"
     ],
-    "explanation": "Predictive analytics is a branch of advanced analytics forecasting future outcomes."
+    "explanation": "Predictive analytics is a branch of advanced analytics forecasting future outcomes.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 33 – Definitions (text mining, sentiment …)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -89,7 +103,14 @@
       "a"
     ],
     "explanation": "Tokenization splits text into tokens. Stemming/lemmatization reduces words to their root, NER identifies names/locations, TF-IDF weighs term frequency.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 11 – Text mining techniques"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -120,7 +141,14 @@
       "b",
       "c"
     ],
-    "explanation": "Topic modelling is an analysis step that extracts hidden themes; the other three clean and normalise the text."
+    "explanation": "Topic modelling is an analysis step that extracts hidden themes; the other three clean and normalise the text.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 11 – Text mining techniques"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -150,7 +178,14 @@
       "a"
     ],
     "explanation": "NER identifies and classifies named entities (names, locations, organisations) in text.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 11 – Text mining techniques"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -186,7 +221,14 @@
       "c",
       "d"
     ],
-    "explanation": "Success factors: data quality, cleansing, algorithm selection, scalability, model evaluation, ethical boundaries."
+    "explanation": "Success factors: data quality, cleansing, algorithm selection, scalability, model evaluation, ethical boundaries.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 12 – Text Mining"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -217,7 +259,14 @@
       "b",
       "c"
     ],
-    "explanation": "Regression predicts continuous numerical values (linear, logistic regression). Detecting fraud is anomaly detection."
+    "explanation": "Regression predicts continuous numerical values (linear, logistic regression). Detecting fraud is anomaly detection.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 18 – Data mining algorithms"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -247,7 +296,14 @@
       "a"
     ],
     "explanation": "Anomaly detection identifies unusual patterns, e.g. fraud.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 19 – Areas of application"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -278,7 +334,14 @@
       "b",
       "c"
     ],
-    "explanation": "Demand forecasting uses historical data: time series models, regression and sequential pattern mining. Conjoint analysis measures preferences for product attributes, not demand over time."
+    "explanation": "Demand forecasting uses historical data: time series models, regression and sequential pattern mining. Conjoint analysis measures preferences for product attributes, not demand over time.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 11"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -309,7 +372,14 @@
     ],
     "explanation": "Objectives and engagement/response are done in-house; collection, analysis, insights and monitoring rely on tools/platforms.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 27 – Social Listening"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -340,7 +410,14 @@
     ],
     "explanation": "Social listening matters for responsiveness, reputation, acquisition and insights – not because it is technically easy. Past exam question.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 4"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -376,7 +453,14 @@
       "c",
       "d"
     ],
-    "explanation": "Further applications: customer research/feedback, social media, financial and political analysis."
+    "explanation": "Further applications: customer research/feedback, social media, financial and political analysis.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 28 – Sentiment Analysis - Applications"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -407,7 +491,14 @@
       "a"
     ],
     "explanation": "Nova: 12,000 / 6,000 = 2.0. Orbit: 9,000 / 2,000 = 4.5 → Orbit has the higher sentiment ratio despite fewer mentions.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S4",
+        "ref": "Seite 41 – Übung Brand24 (Social Listening)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -439,7 +530,14 @@
       "b",
       "c"
     ],
-    "explanation": "Nova has 6,000 negative mentions vs 2,000 for Orbit. High volume with a low sentiment ratio can signal a reputational issue worth investigating (what events drove it?)."
+    "explanation": "Nova has 6,000 negative mentions vs 2,000 for Orbit. High volume with a low sentiment ratio can signal a reputational issue worth investigating (what events drove it?).",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S4",
+        "ref": "Seite 41 – Übung Brand24 (Social Listening)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -470,7 +568,14 @@
       "b",
       "c"
     ],
-    "explanation": "Visual mining uses computer vision to analyse the images themselves – over half of social posts monitored by YouScan are images."
+    "explanation": "Visual mining uses computer vision to analyse the images themselves – over half of social posts monitored by YouScan are images.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 36 – Visual Data Mining"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -479,7 +584,14 @@
     "difficulty": 1,
     "statement": "Sentiment analysis aims to detect whether sentiment around a brand or topic is positive, negative or neutral.",
     "answer": true,
-    "explanation": "It determines how the author feels about a topic."
+    "explanation": "It determines how the author feels about a topic.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 33 – Definitions (text mining, sentiment …)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -488,7 +600,14 @@
     "difficulty": 1,
     "statement": "Neutral sentiment expresses strong emotion in favour of a brand.",
     "answer": false,
-    "explanation": "Neutral sentiment is a lack of emotion and bias – objective statements."
+    "explanation": "Neutral sentiment is a lack of emotion and bias – objective statements.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 29 – Sentiment Analysis"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -497,7 +616,14 @@
     "difficulty": 1,
     "statement": "Stemming/lemmatization reduces words to their root or base form.",
     "answer": true,
-    "explanation": "E.g. \"buying\", \"bought\" → \"buy\"."
+    "explanation": "E.g. \"buying\", \"bought\" → \"buy\".",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 11 – Text mining techniques"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -506,7 +632,14 @@
     "difficulty": 1,
     "statement": "TF-IDF is a statistical calculation that determines the frequency and weight of a word in a document relative to a collection of documents.",
     "answer": true,
-    "explanation": "Term Frequency – Inverse Document Frequency."
+    "explanation": "Term Frequency – Inverse Document Frequency.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 11 – Text mining techniques"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -515,7 +648,14 @@
     "difficulty": 2,
     "statement": "Topic modelling identifies hidden themes in a text corpus, while text classification assigns predetermined labels.",
     "answer": true,
-    "explanation": "Both are grouped as \"topic modelling & text classification\"."
+    "explanation": "Both are grouped as \"topic modelling & text classification\".",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 11 – Text mining techniques"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -524,7 +664,14 @@
     "difficulty": 2,
     "statement": "Clustering predicts categorical labels for new instances based on labelled training data.",
     "answer": false,
-    "explanation": "That is classification. Clustering groups similar data points without predefined labels."
+    "explanation": "That is classification. Clustering groups similar data points without predefined labels.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 18 – Data mining algorithms"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -533,7 +680,14 @@
     "difficulty": 1,
     "statement": "Sequential pattern mining discovers patterns in sequential data such as time series or transactional data.",
     "answer": true,
-    "explanation": "E.g. typical purchase sequences."
+    "explanation": "E.g. typical purchase sequences.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 18 – Data mining algorithms"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -542,7 +696,14 @@
     "difficulty": 1,
     "statement": "Neural networks are models inspired by the structure of the human brain.",
     "answer": true,
-    "explanation": "They are among the data mining algorithms discussed."
+    "explanation": "They are among the data mining algorithms discussed.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 18 – Data mining algorithms"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -551,7 +712,14 @@
     "difficulty": 1,
     "statement": "In the social listening process, engagement and response is typically handled in-house.",
     "answer": true,
-    "explanation": "Objectives and engagement/response are in-house; collection, analysis, insights and monitoring use tools/platforms."
+    "explanation": "Objectives and engagement/response are in-house; collection, analysis, insights and monitoring use tools/platforms.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 27 – Social Listening"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -560,7 +728,14 @@
     "difficulty": 1,
     "statement": "Social listening only matters for crisis management after a reputational damage has happened.",
     "answer": false,
-    "explanation": "It supports reputation monitoring, customer research, acquisition, service and market research – and helps prevent crises."
+    "explanation": "It supports reputation monitoring, customer research, acquisition, service and market research – and helps prevent crises.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 28 – Sentiment Analysis - Applications"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -569,7 +744,14 @@
     "difficulty": 1,
     "statement": "After the China Eastern Airlines Boeing 737-800 crash, sentiment analysis and a reputation score could be used to monitor Boeing's reputational damage.",
     "answer": true,
-    "explanation": "Example from class."
+    "explanation": "Example from class.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 30 – Sentiment Analysis - Boeing"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -578,7 +760,14 @@
     "difficulty": 2,
     "statement": "In the cryptocurrency study discussed, social media sentiment was used to predict short-term price changes, and the final model was profitable.",
     "answer": true,
-    "explanation": "Linear regression, boosting and neural networks; sentiment measured three times per day."
+    "explanation": "Linear regression, boosting and neural networks; sentiment measured three times per day.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 31 – Sentiment analysis of cryptocurrencies"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -587,7 +776,14 @@
     "difficulty": 1,
     "statement": "Coca-Cola's Social Hub monitors and analyses social media mentions in real time to support marketers worldwide.",
     "answer": true,
-    "explanation": "Coca-Cola is mentioned more than 30 times per minute in English alone."
+    "explanation": "Coca-Cola is mentioned more than 30 times per minute in English alone.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 6 – Video: Coca-Cola Social Hub"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -596,7 +792,14 @@
     "difficulty": 1,
     "statement": "A sentiment ratio below 1 means that there are more positive than negative mentions.",
     "answer": false,
-    "explanation": "Sentiment ratio = positive / negative; below 1 means more negative than positive mentions."
+    "explanation": "Sentiment ratio = positive / negative; below 1 means more negative than positive mentions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 41 – Team Activity: Sentiment Analysis"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -606,7 +809,14 @@
     "difficulty": 1,
     "statement": "A higher volume of mentions always indicates a better brand reputation.",
     "answer": false,
-    "explanation": "Volume measures buzz, not tone – Nova has more mentions but a lower sentiment ratio than Orbit."
+    "explanation": "Volume measures buzz, not tone – Nova has more mentions but a lower sentiment ratio than Orbit.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S4",
+        "ref": "Seite 41 – Übung Brand24 (Social Listening)"
+      }
+    ]
   },
   {
     "type": "short",
@@ -624,6 +834,13 @@
       "Engagement and response",
       "Monitoring",
       "Objectives and engagement in-house"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 27 – Social Listening"
+      }
     ]
   },
   {
@@ -640,6 +857,13 @@
       "Orbit ratio 4.5",
       "Volume/reach ≠ positive tone",
       "Investigate events behind negative mentions / take action"
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S4",
+        "ref": "Seite 41 – Übung Brand24 (Social Listening)"
+      }
     ]
   },
   {
@@ -658,6 +882,13 @@
       "NER",
       "Sentiment analysis",
       "Topic modelling / classification"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 11 – Text mining techniques"
+      }
     ]
   },
   {
@@ -666,7 +897,14 @@
     "lecture": "s04",
     "statement": "Social listening can only be used for brand and industry intelligence.",
     "answer": false,
-    "explanation": "It also supports customer care, campaign tracking, influencer identification, crisis management, product development and innovation."
+    "explanation": "It also supports customer care, campaign tracking, influencer identification, crisis management, product development and innovation.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 3 (Unit 7)",
+        "ref": "Social Listening"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -674,7 +912,14 @@
     "lecture": "s04",
     "statement": "When tracking campaigns, social listening can help identify top influencers.",
     "answer": true,
-    "explanation": "It shows who drives reach and engagement around a campaign or topic."
+    "explanation": "It shows who drives reach and engagement around a campaign or topic.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 3 (Unit 7)",
+        "ref": "Social Listening"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -682,7 +927,14 @@
     "lecture": "s04",
     "statement": "Social listening allows proactive decisions and responses to emerging trends.",
     "answer": true,
-    "explanation": "Monitoring conversations in real time reveals shifts early, before they show up in sales data."
+    "explanation": "Monitoring conversations in real time reveals shifts early, before they show up in sales data.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 3 (Unit 7)",
+        "ref": "Social Listening"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -690,7 +942,14 @@
     "lecture": "s04",
     "statement": "Social monitoring explains the “why” behind a phenomenon.",
     "answer": false,
-    "explanation": "Monitoring tracks what is said (mentions, volume, alerts); listening analyses the conversations to understand why."
+    "explanation": "Monitoring tracks what is said (mentions, volume, alerts); listening analyses the conversations to understand why.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 3 (Unit 7)",
+        "ref": "Social Listening"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -698,7 +957,14 @@
     "lecture": "s04",
     "statement": "Social listening can be used to recover from service failures by responding quickly to customers.",
     "answer": true,
-    "explanation": "Complaints are detected in real time and can be answered before they escalate."
+    "explanation": "Complaints are detected in real time and can be answered before they escalate.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 3 (Unit 7)",
+        "ref": "Social Listening"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -706,7 +972,14 @@
     "lecture": "s04",
     "statement": "Social media listening means analysing only the conversations about one's own brand.",
     "answer": false,
-    "explanation": "It also covers competitors, the industry, topics, trends and campaigns."
+    "explanation": "It also covers competitors, the industry, topics, trends and campaigns.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 3 (Unit 7)",
+        "ref": "Social Listening"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -714,7 +987,14 @@
     "lecture": "s04",
     "statement": "Social listening cannot be used to track collaborative campaigns.",
     "answer": false,
-    "explanation": "Co-branded and influencer collaborations can be tracked like any campaign (mentions, sentiment, reach)."
+    "explanation": "Co-branded and influencer collaborations can be tracked like any campaign (mentions, sentiment, reach).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 3 (Unit 7)",
+        "ref": "Social Listening"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -722,6 +1002,248 @@
     "lecture": "s04",
     "statement": "Social listening supports innovation by monitoring changes in the market.",
     "answer": true,
-    "explanation": "Unmet needs, product complaints and new usage ideas surface in online conversations."
+    "explanation": "Unmet needs, product complaints and new usage ideas surface in online conversations.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz 3 (Unit 7)",
+        "ref": "Social Listening"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-16",
+    "lecture": "s04",
+    "case": "shoe-listening",
+    "difficulty": 2,
+    "prompt": "Which posts carry a NEGATIVE sentiment? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "P1"
+      },
+      {
+        "id": "b",
+        "text": "P2"
+      },
+      {
+        "id": "c",
+        "text": "P3"
+      },
+      {
+        "id": "d",
+        "text": "P4"
+      }
+    ],
+    "correct": [
+      "b",
+      "d"
+    ],
+    "explanation": "P2 (\"terrible\", \"hate\") and P4 (\"disgusting\") use typical negative words. P1 is positive (\"fantastic\"); P3 is neutral – it states a fact without emotion or bias.",
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Brand24-Übung (S4) und von Part B"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 29 – Sentiment Analysis – Example"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-17",
+    "lecture": "s04",
+    "case": "shoe-listening",
+    "difficulty": 2,
+    "prompt": "What are the sentiment ratios before and after the video?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3.0 before, 0.5 after"
+      },
+      {
+        "id": "b",
+        "text": "0.33 before, 2.0 after"
+      },
+      {
+        "id": "c",
+        "text": "45% before, 20% after"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Sentiment ratio = positive / negative mentions: 1,800 / 600 = 3.0 before; 2,500 / 5,000 = 0.5 after. Before the video there were three positive mentions per negative one, afterwards only one per two negative ones.",
+    "single": true,
+    "shuffle": false,
+    "steps": [
+      {
+        "title": "Before (1–14 March)",
+        "why": "Sentiment ratio = positive mentions / negative mentions",
+        "lines": [
+          "1,800 / 600"
+        ],
+        "result": "3.0"
+      },
+      {
+        "title": "After (15–28 March)",
+        "lines": [
+          "2,500 / 5,000"
+        ],
+        "result": "0.5"
+      }
+    ],
+    "pitfalls": [
+      "Dividing negative by positive mentions",
+      "Dividing by the total volume of mentions (that is a share, not the ratio)"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Brand24-Übung (S4) und von Part B"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 41 – Team Activity: Sentiment Analysis"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-18",
+    "lecture": "s04",
+    "case": "shoe-listening",
+    "difficulty": 2,
+    "prompt": "Which conclusions are supported by the data? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "After the video, there are twice as many negative as positive mentions"
+      },
+      {
+        "id": "b",
+        "text": "The higher reach after the video shows that the brand's reputation has improved"
+      },
+      {
+        "id": "c",
+        "text": "The share of neutral mentions stayed at 40% in both periods"
+      },
+      {
+        "id": "d",
+        "text": "A sentiment ratio below 1 means that there are more positive than negative mentions"
+      }
+    ],
+    "correct": [
+      "a",
+      "c"
+    ],
+    "explanation": "After the video: 5,000 negative vs 2,500 positive mentions (twice as many). Neutral = volume − positive − negative: 4,000 − 2,400 = 1,600 (40%) before and 12,500 − 7,500 = 5,000 (40%) after. Reach grew because the brand was talked about more – mostly negatively, so it does not indicate a better reputation. A ratio below 1 means more negative than positive mentions.",
+    "steps": [
+      {
+        "title": "Neutral mentions",
+        "why": "Volume of mentions = positive + negative + neutral",
+        "lines": [
+          "Before: 4,000 − 1,800 − 600 = 1,600 → 1,600 / 4,000 = 40%",
+          "After: 12,500 − 2,500 − 5,000 = 5,000 → 5,000 / 12,500 = 40%"
+        ],
+        "result": "Share unchanged at 40%"
+      },
+      {
+        "title": "Negative vs positive after the video",
+        "lines": [
+          "5,000 / 2,500 = 2"
+        ],
+        "result": "Twice as many negative mentions"
+      }
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Brand24-Übung (S4) und von Part B"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 41 – Team Activity: Sentiment Analysis"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s04-19",
+    "lecture": "s04",
+    "case": "shoe-listening",
+    "difficulty": 2,
+    "prompt": "Which steps of the social listening process should the brand handle IN-HOUSE during this crisis? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set marketing objectives"
+      },
+      {
+        "id": "b",
+        "text": "Data collection"
+      },
+      {
+        "id": "c",
+        "text": "Engagement and response"
+      },
+      {
+        "id": "d",
+        "text": "Monitoring"
+      }
+    ],
+    "correct": [
+      "a",
+      "c"
+    ],
+    "explanation": "Of the six steps, setting marketing objectives and engagement and response are done in-house; data collection, data analysis, insights generation and monitoring are supported by tools/platforms.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Brand24-Übung (S4) und von Part B"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 27 – Social Listening Process"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s04-24",
+    "lecture": "s04",
+    "case": "shoe-listening",
+    "difficulty": 2,
+    "statement": "Detecting the viral video early through sentiment analysis and responding quickly is an application of sentiment analysis for crisis prevention or management.",
+    "answer": true,
+    "explanation": "Crisis prevention or management is one of the listed applications of sentiment analysis (next to brand reputation management, customer research, market research, social media/financial/political analysis and customer service).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Brand24-Übung (S4) und von Part B"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 28 – Sentiment Analysis – Applications"
+      }
+    ]
   }
 ]

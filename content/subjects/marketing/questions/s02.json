@@ -31,7 +31,14 @@
       "a",
       "b"
     ],
-    "explanation": "Ratio data have equal intervals and a true zero point (age, income, revenues, sales). Likert scales are interval, product category is nominal, frequency groups are ordinal."
+    "explanation": "Ratio data have equal intervals and a true zero point (age, income, revenues, sales). Likert scales are interval, product category is nominal, frequency groups are ordinal.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 4 – Nominal data"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -66,7 +73,14 @@
       "b",
       "d"
     ],
-    "explanation": "Nominal (gender, region) and ordinal (age groups) data are non-metric. Rating scales such as NPS/Likert are treated as interval (metric); income is ratio."
+    "explanation": "Nominal (gender, region) and ordinal (age groups) data are non-metric. Rating scales such as NPS/Likert are treated as interval (metric); income is ratio.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 4 – Nominal data"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -97,7 +111,14 @@
       "b",
       "c"
     ],
-    "explanation": "Multiple choice (select many) generates a non-metric NOMINAL variable; select one generates nominal or ordinal."
+    "explanation": "Multiple choice (select many) generates a non-metric NOMINAL variable; select one generates nominal or ordinal.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 6 – Question Types [1]"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -127,7 +148,14 @@
       "a"
     ],
     "explanation": "The mode can be computed for any type of variable. The median requires an order (not possible for nominal data); mean and SD require metric data.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 15 – Univariate statistics"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -158,7 +186,14 @@
       "b",
       "c"
     ],
-    "explanation": "Variance and SD measure how spread-out observations are and require metric variables."
+    "explanation": "Variance and SD measure how spread-out observations are and require metric variables.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 16 – Descriptive Statistics – Univariate"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -188,7 +223,14 @@
       "a",
       "b"
     ],
-    "explanation": "r shows direction and strength of a LINEAR relationship (−1 ≤ r ≤ 1). It does not prove causation."
+    "explanation": "r shows direction and strength of a LINEAR relationship (−1 ≤ r ≤ 1). It does not prove causation.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 17 – Bivariate & multivariate analysis"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -224,7 +266,14 @@
       "c",
       "d"
     ],
-    "explanation": "Closed-ended questions form the major part of surveys because they are more effective for quantitative data."
+    "explanation": "Closed-ended questions form the major part of surveys because they are more effective for quantitative data.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 5 – Data Collection Methods: The Questionnaire"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -255,7 +304,14 @@
       "b",
       "c"
     ],
-    "explanation": "NPS = % promoters (9–10) − % detractors (0–6). Scores 7–8 are passives."
+    "explanation": "NPS = % promoters (9–10) − % detractors (0–6). Scores 7–8 are passives.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 10 – CSAT"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -286,7 +342,19 @@
       "a"
     ],
     "explanation": "CSAT = satisfied customers (scores 4 and 5) / responses × 100 = (80 + 60) / 200 × 100 = 70%.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Kennzahlen CSAT/NPS/CES rechnen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 10 – CSAT"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -317,7 +385,19 @@
       "a"
     ],
     "explanation": "Promoters (9–10) = 90/200 = 45%; detractors (0–6) = 50/200 = 25%; NPS = 45 − 25 = +20. Passives (7–8) are ignored.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Kennzahlen CSAT/NPS/CES rechnen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 9 – Customer Experience (CX) Metrics"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -348,7 +428,19 @@
       "a"
     ],
     "explanation": "CES = respondents agreeing (5, 6, 7) / responses × 100 = (30 + 50 + 40) / 200 × 100 = 60%.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Kennzahlen CSAT/NPS/CES rechnen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 9 – Customer Experience (CX) Metrics"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -381,7 +473,19 @@
       "c",
       "d"
     ],
-    "explanation": "Mean = 40/8 = 5. Median = average of 4th and 5th value = (4+5)/2 = 4.5. Mode = 4 (three times). Variance = (9+1+1+1+0+0+4+16)/8 = 4 → SD = 2."
+    "explanation": "Mean = 40/8 = 5. Median = average of 4th and 5th value = (4+5)/2 = 4.5. Mode = 4 (three times). Variance = (9+1+1+1+0+0+4+16)/8 = 4 → SD = 2.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Lage- und Streuungsmaße rechnen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 16 – Descriptive Statistics – Univariate"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -411,7 +515,14 @@
       "a",
       "b"
     ],
-    "explanation": "Pie charts show relative proportions (max. 6–7 categories); part-to-whole can also be shown with area/stacked charts. Scatter plots show correlation, histograms distributions."
+    "explanation": "Pie charts show relative proportions (max. 6–7 categories); part-to-whole can also be shown with area/stacked charts. Scatter plots show correlation, histograms distributions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 30 – Different Visualisations for Different Purposes"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -441,7 +552,14 @@
       "a"
     ],
     "explanation": "Gauge/bullet charts show how a metric performs against a target and are used for KPIs and NPS scores.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 31 – Different Visualisations for Different Purposes"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -482,7 +600,14 @@
       "d",
       "e"
     ],
-    "explanation": "LATCH: Location, Alphabet, Time, Category, Hierarchy (Wurman, Information Anxiety 2). Colour is a visual variable."
+    "explanation": "LATCH: Location, Alphabet, Time, Category, Hierarchy (Wurman, Information Anxiety 2). Colour is a visual variable.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 26 – Location"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -518,7 +643,14 @@
       "c",
       "d"
     ],
-    "explanation": "Checks: data, statistics, aesthetics, coordinates, position, guides, geometry, colour theme, manipulation, subjective appeal."
+    "explanation": "Checks: data, statistics, aesthetics, coordinates, position, guides, geometry, colour theme, manipulation, subjective appeal.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 28 – Grammar for Visual Creation"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -527,7 +659,14 @@
     "difficulty": 1,
     "statement": "Interval data have equal intervals but no true zero point (e.g. Likert scales, IQ scores).",
     "answer": true,
-    "explanation": "Ratio data additionally have a true zero point (age, income, sales)."
+    "explanation": "Ratio data additionally have a true zero point (age, income, sales).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 4 – Nominal data"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -536,7 +675,14 @@
     "difficulty": 1,
     "statement": "Ordinal data have a hierarchy, e.g. age groups or purchase frequency.",
     "answer": true,
-    "explanation": "Ordinal = ordered categories; nominal = no hierarchy."
+    "explanation": "Ordinal = ordered categories; nominal = no hierarchy.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 4 – Nominal data"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -545,7 +691,14 @@
     "difficulty": 1,
     "statement": "A rank order question generates a metric interval variable.",
     "answer": false,
-    "explanation": "Rank order questions generate a non-metric ORDINAL variable."
+    "explanation": "Rank order questions generate a non-metric ORDINAL variable.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 6 – Question Types [1]"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -554,7 +707,14 @@
     "difficulty": 1,
     "statement": "A Likert-scale question usually offers 5, 7 or 9 response options and can be organised as a semantic differential or a matrix.",
     "answer": true,
-    "explanation": "Likert scales generate metric interval variables."
+    "explanation": "Likert scales generate metric interval variables.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 8 – LIKERT SCALE"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -563,7 +723,14 @@
     "difficulty": 1,
     "statement": "When designing multiple-choice questions, you should include a \"don't know\" and an \"other – please specify\" option where applicable.",
     "answer": true,
-    "explanation": "This was the advice on multiple choice (select many) questions."
+    "explanation": "This was the advice on multiple choice (select many) questions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 7 – MULTIPLE CHOICE: SELECT MANY"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -572,7 +739,14 @@
     "difficulty": 1,
     "statement": "The median can be computed for nominal variables.",
     "answer": false,
-    "explanation": "The median requires ordering the data by magnitude; it cannot be computed for non-metric nominal variables."
+    "explanation": "The median requires ordering the data by magnitude; it cannot be computed for non-metric nominal variables.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 15 – Univariate statistics"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -581,7 +755,14 @@
     "difficulty": 1,
     "statement": "Relative frequencies are absolute frequencies divided by the total number of observations.",
     "answer": true,
-    "explanation": "They express the percentage of the total sample."
+    "explanation": "They express the percentage of the total sample.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 15 – Univariate statistics"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -590,7 +771,14 @@
     "difficulty": 2,
     "statement": "A Pearson correlation of r = 0 means that there is no relationship at all between two variables.",
     "answer": false,
-    "explanation": "r = 0 means no LINEAR relationship; a non-linear relationship may still exist."
+    "explanation": "r = 0 means no LINEAR relationship; a non-linear relationship may still exist.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 17 – Bivariate & multivariate analysis"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -599,7 +787,14 @@
     "difficulty": 1,
     "statement": "Univariate analysis examines the relationship between a dependent and several independent variables.",
     "answer": false,
-    "explanation": "Univariate analysis involves a single variable; multivariate analysis examines two (bivariate) or more variables."
+    "explanation": "Univariate analysis involves a single variable; multivariate analysis examines two (bivariate) or more variables.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 17 – Bivariate & multivariate analysis"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -608,7 +803,14 @@
     "difficulty": 1,
     "statement": "CSAT counts respondents who give 4 or 5 on a 5-point scale as satisfied.",
     "answer": true,
-    "explanation": "CSAT = satisfied customers (4 and 5) / survey responses × 100."
+    "explanation": "CSAT = satisfied customers (4 and 5) / survey responses × 100.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 10 – CSAT"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -617,7 +819,14 @@
     "difficulty": 1,
     "statement": "Detractors in the NPS are respondents scoring 0 to 6.",
     "answer": true,
-    "explanation": "Promoters 9–10, passives 7–8, detractors 0–6."
+    "explanation": "Promoters 9–10, passives 7–8, detractors 0–6.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 11 – Net Promoter Score"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -626,7 +835,14 @@
     "difficulty": 1,
     "statement": "Bar charts work well with many categories (more than 20 bars).",
     "answer": false,
-    "explanation": "Avoid bar charts with too many categories – no more than about 10 bars."
+    "explanation": "Avoid bar charts with too many categories – no more than about 10 bars.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 30 – Different Visualisations for Different Purposes"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -635,7 +851,14 @@
     "difficulty": 1,
     "statement": "Line charts are suited for continuous data that change over time and can display multiple series on the same timeline.",
     "answer": true,
-    "explanation": "Line charts visualise trends rather than exact values."
+    "explanation": "Line charts visualise trends rather than exact values.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 30 – Different Visualisations for Different Purposes"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -644,7 +867,14 @@
     "difficulty": 1,
     "statement": "Pie charts should be limited to about 6–7 categories.",
     "answer": true,
-    "explanation": "With more categories, slices become hard to compare."
+    "explanation": "With more categories, slices become hard to compare.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 30 – Different Visualisations for Different Purposes"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -653,7 +883,14 @@
     "difficulty": 1,
     "statement": "Data visualisation is the process of converting raw data into easily understood pictures of information that enable fast and effective decisions.",
     "answer": true,
-    "explanation": "Definition from the session."
+    "explanation": "Definition from the session.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 24 – Visual Data Analysis"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -662,7 +899,14 @@
     "difficulty": 2,
     "statement": "In a survey with 200 respondents, if 10 detractors become passives (all else equal), the NPS increases by 5 points.",
     "answer": true,
-    "explanation": "Detractors fall by 10/200 = 5 percentage points; promoters are unchanged, so NPS = %promoters − %detractors rises by 5. Passives themselves do not enter the formula."
+    "explanation": "Detractors fall by 10/200 = 5 percentage points; promoters are unchanged, so NPS = %promoters − %detractors rises by 5. Passives themselves do not enter the formula.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 4 – Nominal data"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -671,7 +915,14 @@
     "difficulty": 1,
     "statement": "A scatter plot is the appropriate chart to show correlation and clusters between two metric variables.",
     "answer": true,
-    "explanation": "Scatter plots show correlation and clustering; the order of the points is not essential."
+    "explanation": "Scatter plots show correlation and clustering; the order of the points is not essential.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 31 – Different Visualisations for Different Purposes"
+      }
+    ]
   },
   {
     "type": "short",
@@ -687,6 +938,13 @@
       "Interval: equal intervals, no true zero + example",
       "Ratio: true zero point + example",
       "Nominal/ordinal = non-metric, interval/ratio = metric"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 4 – Nominal data"
+      }
     ]
   },
   {
@@ -703,6 +961,18 @@
       "NPS = 45% − 25% = +20",
       "CES = 60% (scores 5–7)",
       "Calculation steps shown"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Kennzahlen CSAT/NPS/CES rechnen"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 9 – Customer Experience (CX) Metrics"
+      }
     ]
   },
   {
@@ -719,6 +989,310 @@
       "Mean: metric data",
       "Variance/SD: metric data",
       "Pearson correlation: two metric variables"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 15 – Univariate statistics"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-17",
+    "lecture": "s02",
+    "case": "delivery-survey",
+    "difficulty": 2,
+    "prompt": "Which of the five questions generate a METRIC variable? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gender"
+      },
+      {
+        "id": "b",
+        "text": "Age group"
+      },
+      {
+        "id": "c",
+        "text": "Number of orders in the last month"
+      },
+      {
+        "id": "d",
+        "text": "Satisfaction on the 7-point Likert scale"
+      },
+      {
+        "id": "e",
+        "text": "Ranking of the three features"
+      }
+    ],
+    "correct": [
+      "c",
+      "d"
+    ],
+    "explanation": "Number of orders is ratio data (equal intervals, true zero). A Likert scale generates a metric, interval variable. Gender is nominal; age groups and a rank order question generate ordinal (non-metric) variables.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part B (Short exercises)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 4 – Different Types of Data and Variables"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 6 – Question Types [1]"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 8 – Question Types [3]"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-18",
+    "lecture": "s02",
+    "case": "delivery-survey",
+    "difficulty": 2,
+    "prompt": "Which statements on the number of orders are correct? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "The mean is 5.0 orders"
+      },
+      {
+        "id": "b",
+        "text": "The median is 3.5 orders"
+      },
+      {
+        "id": "c",
+        "text": "The mode is 3 orders"
+      },
+      {
+        "id": "d",
+        "text": "The median is 4 orders"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Sorted: 1, 2, 3, 3, 3, 4, 5, 6, 8, 15. Mean = 50 / 10 = 5.0. With ten values, the median is the average of the 5th and 6th value: (3 + 4) / 2 = 3.5. The mode (most frequent value) is 3.",
+    "steps": [
+      {
+        "title": "Sort the data",
+        "why": "Median and mode are easiest to read from ordered data.",
+        "lines": [
+          "1, 2, 3, 3, 3, 4, 5, 6, 8, 15"
+        ]
+      },
+      {
+        "title": "Mean",
+        "why": "Sum of all values divided by the number of observations.",
+        "lines": [
+          "(1+2+3+3+3+4+5+6+8+15) / 10 = 50 / 10"
+        ],
+        "result": "5.0 orders"
+      },
+      {
+        "title": "Median",
+        "why": "Even number of observations → average of the two middle values (5th and 6th).",
+        "lines": [
+          "(3 + 4) / 2"
+        ],
+        "result": "3.5 orders"
+      },
+      {
+        "title": "Mode",
+        "why": "Most frequent value.",
+        "lines": [
+          "3 occurs three times"
+        ],
+        "result": "3 orders"
+      }
+    ],
+    "pitfalls": [
+      "Taking the 5th value (3) or the 6th value (4) alone as the median",
+      "Computing the median from the unsorted list"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part B (Short exercises)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 15 – Descriptive Statistics – Univariate"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-19",
+    "lecture": "s02",
+    "case": "delivery-survey",
+    "difficulty": 2,
+    "prompt": "Customer 3 (15 orders) is replaced by a customer with 5 orders. What happens to mean and median?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The mean falls to 4.0, the median stays at 3.5"
+      },
+      {
+        "id": "b",
+        "text": "Mean and median both fall by 1.0"
+      },
+      {
+        "id": "c",
+        "text": "The mean stays at 5.0, the median falls to 3.0"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "New sum = 50 − 15 + 5 = 40 → mean 4.0. Sorted: 1, 2, 3, 3, 3, 4, 5, 5, 6, 8 → the 5th and 6th values are still 3 and 4, median 3.5. The extreme value moved the mean, not the median.",
+    "single": true,
+    "shuffle": false,
+    "steps": [
+      {
+        "title": "New mean",
+        "lines": [
+          "50 − 15 + 5 = 40",
+          "40 / 10 = 4.0"
+        ],
+        "result": "Mean 4.0"
+      },
+      {
+        "title": "New median",
+        "lines": [
+          "1, 2, 3, 3, 3, 4, 5, 5, 6, 8",
+          "(3 + 4) / 2 = 3.5"
+        ],
+        "result": "Median unchanged at 3.5"
+      }
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part B (Short exercises)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 15 – Descriptive Statistics – Univariate"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-20",
+    "lecture": "s02",
+    "case": "delivery-survey",
+    "difficulty": 2,
+    "prompt": "Which statements on the correlation r = 0.58 between orders and satisfaction are correct? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customers who order more often tend to be more satisfied"
+      },
+      {
+        "id": "b",
+        "text": "The relationship between the two variables is positive"
+      },
+      {
+        "id": "c",
+        "text": "The result proves that ordering more often makes customers more satisfied"
+      },
+      {
+        "id": "d",
+        "text": "58% of the customers are satisfied with the app"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "A positive r means that as one variable increases, so does the other; r shows direction and strength of a linear relationship. It says nothing about cause and effect (correlation is not causation) and is not a share of customers.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part B (Short exercises)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 17 – Pearson correlation coefficient"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S1",
+        "ref": "Seite 17 – Correlation is not causation!"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s02-21",
+    "lecture": "s02",
+    "case": "delivery-survey",
+    "difficulty": 2,
+    "prompt": "The manager wants to show (i) the share of customers per age group (three groups) and (ii) the number of orders per week over the last twelve months. Which combination of charts fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "(i) pie chart, (ii) line chart"
+      },
+      {
+        "id": "b",
+        "text": "(i) line chart, (ii) pie chart"
+      },
+      {
+        "id": "c",
+        "text": "(i) scatter plot, (ii) bar chart with 52 bars"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A pie chart shows part-to-whole relations for few categories (no more than 6–7). A line chart suits continuous data that change over time. A scatter plot shows correlation between two metric variables, and bar charts should have no more than about 10 bars.",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Part B (Short exercises)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 30 – Different Visualisations for Different Purposes"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S2",
+        "ref": "Seite 31 – Different Visualisations for Different Purposes"
+      }
     ]
   }
 ]

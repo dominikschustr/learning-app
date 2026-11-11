@@ -66,7 +66,8 @@ export function buildQueue(opts: {
       // Vorrang: fällig → neu → unsicher → Rest; neue und übrige Fragen werden zufällig gezogen,
       // daher bekommt jeder Durchgang eine andere Auswahl und der ganze Pool wird nach und nach abgedeckt.
       const rest = shuffle(questions.filter((q) => st(q) && !isDue(st(q), now)));
-      return shuffle(unique([...due, ...unseen, ...weak, ...rest]).slice(0, LECTURE_SIZE));
+      // Teilfragen eines Falls wie in der Klausur hintereinander (a, b, c …)
+      return groupCases(shuffle(unique([...due, ...unseen, ...weak, ...rest]).slice(0, LECTURE_SIZE)), questions);
     }
     case "smart": {
       const picked = unique([...due.slice(0, 6), ...unseen.slice(0, SESSION_SIZE), ...weak]).slice(0, SESSION_SIZE);
@@ -77,6 +78,25 @@ export function buildQueue(opts: {
       return shuffle(picked);
     }
   }
+}
+
+/**
+ * Hält die Fragen eines Falls zusammen: alle gezogenen Teilfragen stehen an der Stelle der ersten,
+ * in der Reihenfolge des Fragenpools (wie a), b), c) in der Klausur). Fragen ohne Fall bleiben, wo sie sind.
+ */
+export function groupCases(qs: Question[], pool: Question[]): Question[] {
+  const pos = new Map(pool.map((q, i) => [q.id, i]));
+  const byCase = new Map<string, Question[]>();
+  for (const q of qs) if (q.case) byCase.set(q.case, [...(byCase.get(q.case) ?? []), q]);
+  const out: Question[] = [];
+  for (const q of qs) {
+    if (!q.case) out.push(q);
+    else if (byCase.has(q.case)) {
+      out.push(...byCase.get(q.case)!.sort((x, y) => (pos.get(x.id) ?? 0) - (pos.get(y.id) ?? 0)));
+      byCase.delete(q.case);
+    }
+  }
+  return out;
 }
 
 /** Optionsreihenfolge für MC-Fragen (gemischt, außer shuffle: false). */

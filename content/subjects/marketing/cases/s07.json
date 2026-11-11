@@ -439,5 +439,49 @@
         ]
       }
     ]
+  },
+  {
+    "id": "sportswear-portfolio",
+    "title": "Sportswear company – four product lines in the BCG matrix",
+    "text": [
+      "You are the portfolio manager of a sportswear company with four product lines. For each line, your analysts provide your market share, the market share of the largest competitor and the annual growth of the market.",
+      "Relative market share = own market share / market share of the largest competitor (high if above 1). Market growth counts as high above 10% per year."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Product line",
+          "Own market share",
+          "Largest competitor",
+          "Market growth p.a."
+        ],
+        "rows": [
+          [
+            "Running shoes",
+            "30%",
+            "20%",
+            "15%"
+          ],
+          [
+            "Yoga wear",
+            "8%",
+            "24%",
+            "18%"
+          ],
+          [
+            "Football boots",
+            "35%",
+            "14%",
+            "3%"
+          ],
+          [
+            "Tennis rackets",
+            "5%",
+            "25%",
+            "2%"
+          ]
+        ]
+      }
+    ]
   }
 ]

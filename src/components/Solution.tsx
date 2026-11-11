@@ -1,4 +1,4 @@
-import { AlertTriangle, BookOpenCheck, Presentation, ScrollText } from "lucide-react";
+import { AlertTriangle, BookOpenCheck, ListChecks, PenLine, Presentation, ScrollText } from "lucide-react";
 import type { Basis, Step, Table } from "@/lib/schema";
 import { cn } from "@/lib/utils";
 import { FormulaText } from "./FormulaText";
@@ -86,7 +86,7 @@ export function SolutionSteps({ steps, pitfalls = [] }: { steps: Step[]; pitfall
   );
 }
 
-/** Art der Quelle: Symbol, Bezeichnung und Farbe (Folien blau, Altklausur orange, Übung violett). */
+/** Art der Quelle: Symbol, Bezeichnung und Farbe (Folien blau, Altklausur orange, Übung violett, Quiz grün, eigene Aufgabe rosa). */
 const BASIS_KIND = {
   slides: {
     Icon: Presentation,
@@ -106,6 +106,18 @@ const BASIS_KIND = {
     cls: "border-violet-300 bg-violet-50 text-violet-950 dark:border-violet-400/40 dark:bg-violet-400/10 dark:text-violet-100",
     tag: "bg-violet-600 text-white dark:bg-violet-400 dark:text-violet-950",
   },
+  quiz: {
+    Icon: ListChecks,
+    label: "Quiz",
+    cls: "border-emerald-300 bg-emerald-50 text-emerald-950 dark:border-emerald-400/40 dark:bg-emerald-400/10 dark:text-emerald-100",
+    tag: "bg-emerald-600 text-white dark:bg-emerald-400 dark:text-emerald-950",
+  },
+  own: {
+    Icon: PenLine,
+    label: "Eigene Aufgabe",
+    cls: "border-pink-300 bg-pink-50 text-pink-950 dark:border-pink-400/40 dark:bg-pink-400/10 dark:text-pink-100",
+    tag: "bg-pink-600 text-white dark:bg-pink-400 dark:text-pink-950",
+  },
 } as const;
 /** Niveau gemessen an den Unterlagen: Wissensfrage wie im Folien-Quiz, Einzelfrage wie in der Klausur, ganzer Klausurteil */
 const LEVEL = { 1: "Niveau Folien-Quiz", 2: "Niveau Klausurfrage", 3: "Niveau Klausur-Hauptaufgabe" } as const;
@@ -118,8 +130,9 @@ export function BasisLine({ basis, difficulty }: { basis: Basis[]; difficulty?: 
       <span>Orientiert an</span>
       {basis.map((b, i) => {
         const k = BASIS_KIND[b.kind];
-        // „Folien L3“ → Etikett „Folien“ + „L3“; sonst Quelle vollständig zeigen
-        const rest = b.source.startsWith(`${k.label} `) ? b.source.slice(k.label.length + 1) : b.source;
+        // „Folien L3“ → Etikett „Folien“ + „L3“; Quelle gleich Etikett („Eigene Aufgabe“) → nur die Angabe; sonst Quelle vollständig
+        const rest =
+          b.source === k.label ? "" : b.source.startsWith(`${k.label} `) ? b.source.slice(k.label.length + 1) : b.source;
         return (
           <span
             key={i}
@@ -130,8 +143,8 @@ export function BasisLine({ basis, difficulty }: { basis: Basis[]; difficulty?: 
               {k.label}
             </span>
             <span className="min-w-0">
-              <span className="font-medium">{rest}</span>
-              {b.ref && <span className="opacity-75"> · {b.ref}</span>}
+              {rest && <span className="font-medium">{rest}</span>}
+              {b.ref && <span className={rest ? "opacity-75" : ""}>{rest ? ` · ${b.ref}` : b.ref}</span>}
             </span>
           </span>
         );

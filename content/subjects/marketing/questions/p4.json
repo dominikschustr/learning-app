@@ -34,7 +34,19 @@
       "d"
     ],
     "explanation": "p < 0.05: temperature (0.012), promo (0.001), weekend (0.000). Price (0.210) and app users (0.074) are not significant at the 5% level.",
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 16 – Dependent and independent variables"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -66,7 +78,19 @@
     ],
     "explanation": "Only significant variables plus the intercept: 820 − 6.5 × 20 + 140 + 260 = 820 − 130 + 400 = 1,090 €. (909 € wrongly adds price and app users; 1,220 € ignores temperature; 830 € forgets the weekend.)",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 47 – First Step: Visualisation of the Observation"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -97,7 +121,19 @@
       "a"
     ],
     "explanation": "Promo is a dummy: its coefficient is the difference between promotion days (1) and other days (0), ceteris paribus.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 10 – Margarine example: data"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -107,7 +143,19 @@
     "difficulty": 2,
     "statement": "A temperature increase of 10 °C is associated with about 65 € lower daily revenue, all else equal.",
     "answer": true,
-    "explanation": "−6.5 € per °C × 10 = −65 €; temperature is significant (p = 0.012)."
+    "explanation": "−6.5 € per °C × 10 = −65 €; temperature is significant (p = 0.012).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 16 – Dependent and independent variables"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -117,7 +165,19 @@
     "difficulty": 1,
     "statement": "CoffeeCo should lower its latte price because price has a negative coefficient.",
     "answer": false,
-    "explanation": "Price is not significant (p = 0.210) – no recommendation can be based on it."
+    "explanation": "Price is not significant (p = 0.210) – no recommendation can be based on it.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 43 – T-test"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -149,7 +209,19 @@
     ],
     "explanation": "Each position needs 2 halogen lamps per year: 600 × 2 × 4 € = 4,800 €.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 23 – Calculating VIU (ESCP chips)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -181,7 +253,19 @@
     ],
     "explanation": "An LED lasts 2 years = 4 halogen lamps: 4 × 4 € = 16 €.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 24 – Calculating VIU – Questions"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -213,7 +297,19 @@
     ],
     "explanation": "Electricity saving 20 − 5 = 15 € per year × 2 years = 30 €. VIU = 16 € + 30 € = 46 €.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 23 – Calculating VIU (ESCP chips)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -245,7 +341,19 @@
     ],
     "explanation": "Over 2 years: 4 halogen replacements × 2 € = 8 € vs 1 LED replacement × 2 € = 2 € → labour saving 6 €. VIU = 16 + 30 + 6 = 52 €.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 24 – Calculating VIU – Questions"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -273,7 +381,19 @@
     ],
     "explanation": "The price (45 €) is below the maximum willingness to pay (52 €): the hotel saves 7 € per lamp over its lifetime. Without energy and labour savings (16 €), the LED would look far too expensive.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 23 – Calculating VIU (ESCP chips)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -305,7 +425,19 @@
       "b",
       "c"
     ],
-    "explanation": "Triggers: post-pandemic burnout and sleep-tracking wearables. Shift: urban transition. Aging is not mentioned – stick to the text."
+    "explanation": "Triggers: post-pandemic burnout and sleep-tracking wearables. Shift: urban transition. Aging is not mentioned – stick to the text.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 38 – Drivers of Change"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -336,7 +468,19 @@
       "a",
       "b"
     ],
-    "explanation": "The text names protecting/improving rest and proving it with data. The other options are not supported by the text."
+    "explanation": "The text names protecting/improving rest and proving it with data. The other options are not supported by the text.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 39 – Emerging Consumer Expectations"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -367,7 +511,19 @@
       "a",
       "b"
     ],
-    "explanation": "Rest addresses health/wellbeing and, according to the text, has become a status symbol. Community and saving money are not in the text."
+    "explanation": "Rest addresses health/wellbeing and, according to the text, has become a status symbol. Community and saving money are not in the text.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S3",
+        "ref": "Seite 37 – Basic Needs"
+      }
+    ]
   },
   {
     "type": "short",
@@ -383,6 +539,18 @@
       "Seniors ≈ question mark / rising star (fast growth)",
       "Families ≈ cash cow, students ≈ dog",
       "Implication: focus on growing segments"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Mini case"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 7 – Goals of reviewing offerings"
+      }
     ]
   },
   {
@@ -399,6 +567,18 @@
       "Students 35 €, Young professionals 150 €",
       "Families 44 €, Seniors 270 €",
       "Seniors most valuable"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Mini case"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 33 – Case Maru Batting Centre – Question 4"
+      }
     ]
   },
   {
@@ -415,6 +595,18 @@
       "Young professionals: 24/7, coaching, app, 39 € = 8.00",
       "Families: 24/7, group, app, 39 € = 6.10",
       "Seniors: standard hours, coaching, app, 39 € = 6.70"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Mini case"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 17 – Conjoint Analysis"
+      }
     ]
   },
   {
@@ -432,6 +624,18 @@
       "Young professionals: opening hours",
       "Families: price",
       "Seniors: training / coaching"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Mini case"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 17 – Conjoint Analysis"
+      }
     ]
   },
   {
@@ -448,6 +652,18 @@
       "Low price sensitivity → 59 € still above midpoint",
       "Young professionals as secondary target (24/7 + coaching)",
       "Students/families price-driven, low CLV"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Mini case"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 29 – Exercise ESCP Merch (conjoint)"
+      }
     ]
   }
 ]

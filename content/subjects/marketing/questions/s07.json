@@ -33,7 +33,14 @@
       "c",
       "d"
     ],
-    "explanation": "Reviews can also lead to eliminating underperforming products in unattractive markets."
+    "explanation": "Reviews can also lead to eliminating underperforming products in unattractive markets.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 6 – Why companies review their offerings"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -63,7 +70,14 @@
       "a"
     ],
     "explanation": "Star: high growth, high share. Cash cow: low growth, high share. Dog: low growth, low share.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 9 – BCG Portfolio matrix"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -94,7 +108,14 @@
       "b",
       "c"
     ],
-    "explanation": "Market growth and relative market share are the BCG axes."
+    "explanation": "Market growth and relative market share are the BCG axes.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 10 – GE/McKinsey matrix"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -124,7 +145,14 @@
       "a",
       "b"
     ],
-    "explanation": "Both are used in NPD for target customers and to review existing offerings."
+    "explanation": "Both are used in NPD for target customers and to review existing offerings.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 11 – A/B Testing (see session “Customer …"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -155,7 +183,14 @@
       "c"
     ],
     "explanation": "Conjoint is decompositional: respondents evaluate whole profiles and the part-worths are DERIVED – they are not stated directly. Past exam question.",
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Part A, Frage 6"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -186,7 +221,14 @@
       "b",
       "c"
     ],
-    "explanation": "Part-worth = contribution of an attribute level to the total perceived value. A task is one choice/rating the respondent makes."
+    "explanation": "Part-worth = contribution of an attribute level to the total perceived value. A task is one choice/rating the respondent makes.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 16 – Terminology and mathematical model"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -216,7 +258,14 @@
       "b"
     ],
     "explanation": "3 × 3 × 2 × 3 = 54 – too many for one study, so an efficient (fractional) design is used.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 27 – Creating Product Profiles"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -246,7 +295,14 @@
       "a"
     ],
     "explanation": "3 × 4 × 3 × 3 × 3 = 324 pizzas; 3 + 4 + 3 + 3 + 3 = 16 parameters.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 18 – Conjoint Analysis"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -273,7 +329,14 @@
       "a"
     ],
     "explanation": "Meat-Lover's: 15 + 30 + 3 + 10 − 35 = 23. Veggie: 0 + 10 + 0 + 0 + 0 = 10. Aloha: 0 + 0 + 10 + 8 − 15 = 3.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S7",
+        "ref": "Seite 19 – Beispiel Tiefkühlpizza"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -305,7 +368,14 @@
       "b",
       "c"
     ],
-    "explanation": "Price is the MOST important attribute (35 points)."
+    "explanation": "Price is the MOST important attribute (35 points).",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S7",
+        "ref": "Seite 19 – Beispiel Tiefkühlpizza"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -341,7 +411,14 @@
       "c",
       "d"
     ],
-    "explanation": "Selecting attributes and levels is stage 1 (designing the study); stage 2 obtains the data and computes part-worths."
+    "explanation": "Selecting attributes and levels is stage 1 (designing the study); stage 2 obtains the data and computes part-worths.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 22 – Steps to conduct Conjoint Analysis"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -371,7 +448,14 @@
       "a"
     ],
     "explanation": "Importance shows the leverage of moving from the worst to the best level.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 16 – Terminology and mathematical model"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -402,7 +486,19 @@
       "a"
     ],
     "explanation": "4.18 + 1.24 + 2.94 + 1.59 + 0 = 9.95. (Option 2 is consultancy's best, option 3 retail's best; with 50 participants education only reaches 8.64.)",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Mini case Polkaly c) – beste Kombination"
+      },
+      {
+        "kind": "exam",
+        "source": "Sample exam 2019/20",
+        "ref": "Mini case Polkaly d)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -434,7 +530,19 @@
       "b",
       "c"
     ],
-    "explanation": "Ranges: consultancy participants 2.31 (vs price 2.24); education groups 2.94; public sector price 3.72; retail live chat 2.92 – ahead of participants (2.01)."
+    "explanation": "Ranges: consultancy participants 2.31 (vs price 2.24); education groups 2.94; public sector price 3.72; retail live chat 2.92 – ahead of participants (2.01).",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Mini case Polkaly d) – wichtigstes Merkmal"
+      },
+      {
+        "kind": "exam",
+        "source": "Sample exam 2019/20",
+        "ref": "Mini case Polkaly e)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -466,7 +574,14 @@
       "b",
       "c"
     ],
-    "explanation": "Public sector part-worth for in-window display is −0.089 – slightly negative."
+    "explanation": "Public sector part-worth for in-window display is −0.089 – slightly negative.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Mini case Polkaly"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -498,7 +613,14 @@
       "b",
       "c"
     ],
-    "explanation": "Ranges – C1: target 0.56 − (−0.97) = 1.53. C2: price 0 − (−2.01) = 2.01. C3: target 1.62 − (−0.12) = 1.74. C4: price 0.97 − (−0.45) = 1.42 is the largest, ahead of target (1.24) and design (0.96). Clusters 1 & 3 share target; 2 & 4 share price."
+    "explanation": "Ranges – C1: target 0.56 − (−0.97) = 1.53. C2: price 0 − (−2.01) = 2.01. C3: target 1.62 − (−0.12) = 1.74. C4: price 0.97 − (−0.45) = 1.42 is the largest, ahead of target (1.24) and design (0.96). Clusters 1 & 3 share target; 2 & 4 share price.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Mini case Ralph × Fortnite a)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -530,7 +652,14 @@
     ],
     "explanation": "C1 = 1.21 + 0.19 + 0 + 0.56 − 0.24 = 1.72; C2 = 2.15 + 0.65 + 1.35 − 1.13 = 3.02; C3 = 3.02 + 0.36 + 1.62 − 0.76 = 4.24; C4 = 1.07 + 0.02 − 0.12 − 0.45 = 0.52 → Cluster 3 has the highest total utility.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Mini case Ralph × Fortnite b)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -561,7 +690,14 @@
       "a"
     ],
     "explanation": "Cluster 3: 3.02 + 0.36 + 1.62 − 0.37 = 4.63 > 4.24. In this luxury context, the €150 level has a smaller utility loss than €100 – a higher price signals quality.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Mini case Ralph × Fortnite c)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -570,7 +706,14 @@
     "difficulty": 1,
     "statement": "Organisations group similar products into product lines and group lines of business targeting a common set of customers into Strategic Business Units (SBUs).",
     "answer": true,
-    "explanation": "Example: Johnson & Johnson with hundreds of products."
+    "explanation": "Example: Johnson & Johnson with hundreds of products.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 5 – Case: Johnson & Johnson"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -579,7 +722,14 @@
     "difficulty": 1,
     "statement": "In the BCG matrix, a cash cow has high market growth and high market share.",
     "answer": false,
-    "explanation": "A cash cow dominates a slow-growth market (low growth, high share). High growth + high share = star."
+    "explanation": "A cash cow dominates a slow-growth market (low growth, high share). High growth + high share = star.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 9 – BCG Portfolio matrix"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -588,7 +738,14 @@
     "difficulty": 1,
     "statement": "Products grouped as \"dogs\" are candidates for elimination in unattractive markets.",
     "answer": true,
-    "explanation": "Low growth, low share."
+    "explanation": "Low growth, low share.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 9 – BCG Portfolio matrix"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -597,7 +754,14 @@
     "difficulty": 1,
     "statement": "Conjoint analysis decomposes preferences for product bundles into the value of each attribute level (part-worths).",
     "answer": true,
-    "explanation": "That is the definition used in the session."
+    "explanation": "That is the definition used in the session.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 14 – Conjoint Analysis – Definition"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -606,7 +770,14 @@
     "difficulty": 1,
     "statement": "In the simplest conjoint model, the total perceived value of a profile is the sum of its part-worths (including price).",
     "answer": true,
-    "explanation": "The basic model is additive."
+    "explanation": "The basic model is additive.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 17 – Conjoint Analysis"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -615,7 +786,14 @@
     "difficulty": 2,
     "statement": "Firms that clearly define their products for targeted customers are 3.3 times as likely to be successful (Cooper, 1993).",
     "answer": true,
-    "explanation": "Conjoint analysis offers sharper product definitions."
+    "explanation": "Conjoint analysis offers sharper product definitions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 14 – Conjoint Analysis – Definition"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -624,7 +802,14 @@
     "difficulty": 1,
     "statement": "Relative importance shows how much total perceived value changes when moving from the worst to the best level of an attribute.",
     "answer": true,
-    "explanation": "Range of the attribute / sum of ranges."
+    "explanation": "Range of the attribute / sum of ranges.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 16 – Terminology and mathematical model"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -633,7 +818,14 @@
     "difficulty": 2,
     "statement": "A rating-based conjoint was chosen for the water bottle study because people do not have to buy just one bottle and different preferences can be observed.",
     "answer": true,
-    "explanation": "With 54 possible profiles, an efficient design with 19 profiles was used."
+    "explanation": "With 54 possible profiles, an efficient design with 19 profiles was used.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 26 – Creating Product Profiles"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -642,7 +834,14 @@
     "difficulty": 1,
     "statement": "In a market simulation with the maximum-utility choice rule, each respondent is assumed to buy the option with the highest total value for him/her.",
     "answer": true,
-    "explanation": "A twist: only if the highest value exceeds a threshold (e.g. 4, the scale mean)."
+    "explanation": "A twist: only if the highest value exceeds a threshold (e.g. 4, the scale mean).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 29 – Exercise ESCP Merch (conjoint)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -651,7 +850,14 @@
     "difficulty": 3,
     "statement": "The maximum willingness to pay for an option can be found by raising its price until its total value falls below the threshold or below the respondent's second-best option.",
     "answer": true,
-    "explanation": "Used in the water bottle exercise (questions 5–6)."
+    "explanation": "Used in the water bottle exercise (questions 5–6).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 29 – Exercise ESCP Merch (conjoint)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -661,7 +867,14 @@
     "difficulty": 1,
     "statement": "For Polkaly's consultancy segment, a price of 70 instead of 30 reduces utility by 2.24.",
     "answer": true,
-    "explanation": "Consultancy part-worth at price 70 = −2.24 (baseline 30 = 0)."
+    "explanation": "Consultancy part-worth at price 70 = −2.24 (baseline 30 = 0).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Mini case Polkaly"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -671,7 +884,14 @@
     "difficulty": 3,
     "statement": "For the education segment, the best product at a price of 70 still has a total utility above the midpoint of the 1–10 scale.",
     "answer": true,
-    "explanation": "4.18 + 1.24 + 2.94 + 1.59 − 2.71 = 7.24 > 5.5 – education shows strong preference for the features and willingness to compromise on price."
+    "explanation": "4.18 + 1.24 + 2.94 + 1.59 − 2.71 = 7.24 > 5.5 – education shows strong preference for the features and willingness to compromise on price.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Mini case Polkaly"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -681,7 +901,14 @@
     "difficulty": 1,
     "statement": "Retail is the segment that values the in-window chat display the most.",
     "answer": true,
-    "explanation": "Retail part-worth 2.92, the highest across segments."
+    "explanation": "Retail part-worth 2.92, the highest across segments.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Mini case Polkaly"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -691,7 +918,14 @@
     "difficulty": 1,
     "statement": "For Ralph's Cluster 4, the bomber jacket increases utility compared to the polo.",
     "answer": false,
-    "explanation": "Cluster 4 bomber jacket part-worth = −0.96 → it reduces utility."
+    "explanation": "Cluster 4 bomber jacket part-worth = −0.96 → it reduces utility.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam (Revision Session), Mini case Ralph × Fortnite"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -701,7 +935,14 @@
     "difficulty": 1,
     "statement": "Based on the segment table, the public sector is a cash-cow-like segment: largest size but lowest growth.",
     "answer": true,
-    "explanation": "50% size, 1% growth."
+    "explanation": "50% size, 1% growth.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Mini case Polkaly"
+      }
+    ]
   },
   {
     "type": "short",
@@ -717,6 +958,18 @@
       "Education: in-window, unlimited, 100, 30 = 9.95",
       "Public: side window, no groups, 50, 30 = 7.15",
       "Retail: in-window, limited, 50, 30 = 9.35"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Mini case Polkaly c)"
+      },
+      {
+        "kind": "exam",
+        "source": "Sample exam 2019/20",
+        "ref": "Mini case Polkaly d)"
+      }
     ]
   },
   {
@@ -734,6 +987,18 @@
       "Education: group breakout sessions",
       "Public sector: price",
       "Retail: live chat"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Mini case Polkaly d)"
+      },
+      {
+        "kind": "exam",
+        "source": "Sample exam 2019/20",
+        "ref": "Mini case Polkaly e)"
+      }
     ]
   },
   {
@@ -750,6 +1015,18 @@
       "Rising demand in education mentioned",
       "Classification via BCG (question mark / rising star)",
       "Conclusion: promising entry with caveats"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Mini case Polkaly a)"
+      },
+      {
+        "kind": "exam",
+        "source": "Sample exam 2019/20",
+        "ref": "Mini case Polkaly b)"
+      }
     ]
   },
   {
@@ -766,6 +1043,18 @@
       "Product: in-window chat, unlimited groups, 100 participants",
       "Price 70 still yields utility 7.24",
       "Supported by highest CLV / growth; retail less attractive"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Mini case Polkaly e)"
+      },
+      {
+        "kind": "exam",
+        "source": "Sample exam 2019/20",
+        "ref": "Mini case Polkaly f)"
+      }
     ]
   },
   {
@@ -782,6 +1071,195 @@
       "At €100 Cluster 3 highest (4.24)",
       "At €150 Cluster 3 still highest (4.63)",
       "Price increase is a good idea (luxury effect)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Mini case Ralph × Fortnite a) + b)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-19",
+    "lecture": "s07",
+    "case": "sportswear-portfolio",
+    "difficulty": 2,
+    "prompt": "What is the relative market share of running shoes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.5"
+      },
+      {
+        "id": "b",
+        "text": "0.67"
+      },
+      {
+        "id": "c",
+        "text": "10 percentage points"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Relative market share = own share / share of the largest competitor = 30% / 20% = 1.5. It is a ratio, not a difference in percentage points.",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Sample exam 2019/20, Question B.1 (Product portfolio)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 9 – BCG Portfolio matrix"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-20",
+    "lecture": "s07",
+    "case": "sportswear-portfolio",
+    "difficulty": 2,
+    "prompt": "Which classifications in the BCG matrix are correct? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Running shoes – Star"
+      },
+      {
+        "id": "b",
+        "text": "Yoga wear – Cash cow"
+      },
+      {
+        "id": "c",
+        "text": "Football boots – Cash cow"
+      },
+      {
+        "id": "d",
+        "text": "Tennis rackets – Question mark"
+      }
+    ],
+    "correct": [
+      "a",
+      "c"
+    ],
+    "explanation": "Running shoes: RMS 1.5 (high), growth 15% (high) → Star. Yoga wear: RMS 0.33 (low), growth 18% (high) → Question mark. Football boots: RMS 2.5 (high), growth 3% (low) → Cash cow. Tennis rackets: RMS 0.2 (low), growth 2% (low) → Dog.",
+    "steps": [
+      {
+        "title": "Relative market shares",
+        "why": "Own share / largest competitor; high if above 1",
+        "lines": [
+          "Running 30/20 = 1.5",
+          "Yoga 8/24 = 0.33",
+          "Football 35/14 = 2.5",
+          "Tennis 5/25 = 0.2"
+        ]
+      },
+      {
+        "title": "Market growth",
+        "why": "High above 10% p.a.",
+        "lines": [
+          "Running 15% high, Yoga 18% high, Football 3% low, Tennis 2% low"
+        ]
+      },
+      {
+        "title": "Quadrants",
+        "lines": [
+          "High share + high growth = Star",
+          "Low share + high growth = Question mark",
+          "High share + low growth = Cash cow",
+          "Low share + low growth = Dog"
+        ],
+        "result": "Running = Star, Yoga = Question mark, Football = Cash cow, Tennis = Dog"
+      }
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Sample exam 2019/20, Question B.1 (Product portfolio)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 9 – BCG Portfolio matrix"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s07-21",
+    "lecture": "s07",
+    "case": "sportswear-portfolio",
+    "difficulty": 2,
+    "prompt": "The company has a limited budget for growth investments. Which recommendation follows from the BCG logic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the cash generated by football boots to invest selectively in yoga wear and to keep running shoes strong"
+      },
+      {
+        "id": "b",
+        "text": "Invest mainly in tennis rackets, because their market share is the lowest"
+      },
+      {
+        "id": "c",
+        "text": "Stop investing in running shoes and use them only to generate cash"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Cash cows (football boots) finance the portfolio; stars (running shoes) need investment to defend their position in a growing market; question marks (yoga wear) are candidates for selective investment. Dogs (tennis rackets) are candidates for harvesting or divesting, not for growth investments.",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Sample exam 2019/20, Question B.1 (Product portfolio)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 9 – BCG Portfolio matrix"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s07-16",
+    "lecture": "s07",
+    "case": "sportswear-portfolio",
+    "difficulty": 2,
+    "statement": "Applied to these four lines, the GE/McKinsey matrix would rate them on industry attractiveness and business unit strength (low–medium–high) instead of only market growth and relative market share.",
+    "answer": true,
+    "explanation": "The GE/McKinsey matrix expands the BCG matrix: its axes are industry attractiveness and business unit strength with low–medium–high ratings, giving a broader view than the two BCG indicators.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Sample exam 2019/20, Question B.1 (Product portfolio)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S7",
+        "ref": "Seite 10 – GE/McKinsey matrix"
+      }
     ]
   }
 ]

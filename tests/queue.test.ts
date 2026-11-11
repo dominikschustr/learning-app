@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { LECTURE_SIZE, buildQueue } from "@/lib/queue";
+import { LECTURE_SIZE, buildQueue, groupCases } from "@/lib/queue";
 import type { Question } from "@/lib/schema";
 import { itemStatus, review } from "@/lib/srs";
 import { itemKey } from "@/lib/utils";
@@ -88,5 +88,13 @@ describe("Bearbeitungsstand", () => {
     expect(fresh.some((q) => q.id === "tf-0" || q.id === "tf-1")).toBe(false);
     expect(fresh.length).toBe(LECTURE_SIZE);
     expect(buildQueue({ ...opts, mode: "wrong" }).map((q) => q.id)).toEqual(["tf-1"]);
+  });
+});
+
+describe("groupCases – Teilfragen eines Falls zusammen", () => {
+  it("stellt die Fragen eines Falls an die Stelle der ersten, in Pool-Reihenfolge", () => {
+    const withCase = pool.slice(0, 6).map((q, i) => (i % 2 ? { ...q, case: "fall" } : q));
+    const drawn = [withCase[4], withCase[5], withCase[0], withCase[3], withCase[1], withCase[2]];
+    expect(groupCases(drawn, withCase).map((q) => q.id)).toEqual(["tf-4", "tf-1", "tf-3", "tf-5", "tf-0", "tf-2"]);
   });
 });

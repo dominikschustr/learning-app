@@ -13,6 +13,13 @@
       "Cumulative profit 1,920 vs 622",
       "Higher retention/survival of B",
       "Higher CAC of B is outweighed"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Question B.2 – Customer value of two segments c)"
+      }
     ]
   },
   {
@@ -29,6 +36,13 @@
       "Parents as buyers / payers of Christmas gifts",
       "Link to regression: billboard/TV and smaller boxes",
       "Clear recommendation with reasoning"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Mini case Generation I & Playmobil g)"
+      }
     ]
   }
 ]

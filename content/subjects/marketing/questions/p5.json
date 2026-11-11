@@ -7,7 +7,19 @@
     "difficulty": 1,
     "statement": "You want to know whether a \"10% off\" banner or a \"free shipping\" banner on the homepage leads to more orders.",
     "answer": true,
-    "explanation": "Two versions of one element, visitors randomly split, orders as KPI → classic A/B test."
+    "explanation": "Two versions of one element, visitors randomly split, orders as KPI → classic A/B test.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 40 – A/B Testing – Definition"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -17,7 +29,19 @@
     "difficulty": 2,
     "statement": "You want to know whether customers in Spain spend more per order than customers in Italy.",
     "answer": false,
-    "explanation": "Country is not something you can randomly assign – this is a comparison of existing groups (descriptive analysis or regression), not an A/B test."
+    "explanation": "Country is not something you can randomly assign – this is a comparison of existing groups (descriptive analysis or regression), not an A/B test.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 10 – How to Calculate Customer Acquisition Cost)?"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -27,7 +51,19 @@
     "difficulty": 1,
     "statement": "You want to know whether sending your reminder email at 8 am instead of 6 pm increases the open rate.",
     "answer": true,
-    "explanation": "One element (send time) varied between randomly split recipients, open rate as KPI."
+    "explanation": "One element (send time) varied between randomly split recipients, open rate as KPI.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 40 – A/B Testing – Definition"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -58,7 +94,19 @@
       "a",
       "b"
     ],
-    "explanation": "Categorical KPI (choice) → chi-square; metric KPI compared between two groups → t-test."
+    "explanation": "Categorical KPI (choice) → chi-square; metric KPI compared between two groups → t-test.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "A/B-Test auswerten"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 49 – Exercise: t-test and chi-square"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -90,7 +138,19 @@
     ],
     "explanation": "Rejecting H0 (no difference) although it is true is a type I error; its probability is controlled by α = 5%.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "A/B-Test auswerten"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S6",
+        "ref": "Seite 39 – How a statistical test works (2/2)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -122,7 +182,19 @@
     ],
     "explanation": "Cluster 3 has the lowest satisfaction (3.2) – and the highest churn (41%).",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 7 – Segmentation – steps"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -154,7 +226,19 @@
     ],
     "explanation": "Cluster 3 rates live sports at 6.8 – far above all other aspects.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 27 – Segmentation Solution"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -185,7 +269,19 @@
       "a"
     ],
     "explanation": "Cluster 2: low price is most important (6.6), satisfaction 4.1, churn 34%.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 29 – MyNatural – cluster profiles"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -217,7 +313,19 @@
       "d"
     ],
     "explanation": "Clusters 1 and 4: large/medium size, high satisfaction (5.8, 6.1) and low churn (12%, 8%), valuing content StreamCo can monetise. Cluster 2 is large but price-driven and churns; Cluster 3 is small, dissatisfied and churns most.",
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 27 – Segmentation Solution"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -249,7 +357,19 @@
     ],
     "explanation": "The tables only describe segment attractiveness. The GE/McKinsey matrix also requires StreamCo's competitive strengths per segment.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 31 – Company’s Strengths and Competences"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -259,7 +379,19 @@
     "difficulty": 1,
     "statement": "Cluster 4 is the most loyal cluster.",
     "answer": true,
-    "explanation": "Cluster 4 has the lowest churn (8%) and the highest satisfaction (6.1)."
+    "explanation": "Cluster 4 has the lowest churn (8%) and the highest satisfaction (6.1).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision), Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S5",
+        "ref": "Seite 7 – Segmentation – steps"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -290,7 +422,19 @@
       "a"
     ],
     "explanation": "AirNova: 9,000 / 15,000 = 0.6. SkyLine: 10,500 / 3,500 = 3.0.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Brand24-Übung (S4)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 41 – Team Activity: Sentiment Analysis"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -322,7 +466,19 @@
       "b",
       "c"
     ],
-    "explanation": "AirNova: high volume and reach, ratio below 1 → a reputational issue worth investigating. SkyLine reaches fewer people (90 m vs 210 m) but more positively."
+    "explanation": "AirNova: high volume and reach, ratio below 1 → a reputational issue worth investigating. SkyLine reaches fewer people (90 m vs 210 m) but more positively.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Brand24-Übung (S4)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S4",
+        "ref": "Seite 41 – Team Activity: Sentiment Analysis"
+      }
+    ]
   },
   {
     "type": "short",
@@ -338,6 +494,18 @@
       "Instagram profit 18 and 7.20, cumulative 33.20",
       "Referral survival month 3 = 64%",
       "Referral profit 30.72, cumulative 70.52"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Mini cases (CLV, Akquisition)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 24 – Example: Consider MadCool has 1,000"
+      }
     ]
   },
   {
@@ -354,6 +522,18 @@
       "Lower acquisition cost of referral",
       "Much higher retention/survival of referred customers",
       "Instagram: volume but high churn"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Mini cases (CLV, Akquisition)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 19 – Customer Acquisition Metrics"
+      }
     ]
   },
   {
@@ -369,6 +549,18 @@
       "Acquisition rate = 4%",
       "Acquisition cost = 30 € per customer",
       "Formulas: acquired/targeted; spend/acquired"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Mini cases (CLV, Akquisition)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 19 – Customer Acquisition Metrics"
+      }
     ]
   },
   {
@@ -385,6 +577,18 @@
       "Reduce early churn of Instagram cohort (onboarding/retention offers)",
       "Allocate resources by customer value / compare CAC with CLV",
       "Concrete, justified actions"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil der Mini cases (CLV, Akquisition)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S8",
+        "ref": "Seite 5 – Some Major Consumer Trends Highlighting the"
+      }
     ]
   }
 ]

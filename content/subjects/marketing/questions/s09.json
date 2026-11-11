@@ -29,7 +29,14 @@
       "b"
     ],
     "explanation": "Only coefficients with p < 0.05 are significant: gender (0.002), age (0.030) – and channel (0.004), which is not an option. Duration (0.567) and social (0.832) are not significant, so we cannot interpret them despite their large coefficients.",
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Exercise 1 – Predictive model (Adidas) a)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -61,7 +68,14 @@
     ],
     "explanation": "Male online: β0 − 23.1. Female offline: β0 + 12.7. Difference = 12.7 − (−23.1) = 35.8 in favour of female/offline.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Exercise 1 – Predictive model (Adidas) b)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -93,7 +107,14 @@
     ],
     "explanation": "Include only significant variables (plus the intercept): 52.3 + 12.7 (female) + 1.4 × 24 (= 33.6) − 23.1 (online) = 75.50 €. Duration and social are not significant and are left out.",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Exercise 1 – Predictive model (Adidas) c)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -124,7 +145,14 @@
       "a",
       "b"
     ],
-    "explanation": "R² = explained variance / total variance – an indication of how precise the predictions are."
+    "explanation": "R² = explained variance / total variance – an indication of how precise the predictions are.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Exercise 1 (Adidas)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -160,7 +188,14 @@
       "c",
       "d"
     ],
-    "explanation": "Regression analyses relationships between a dependent and independent variables to explain and predict."
+    "explanation": "Regression analyses relationships between a dependent and independent variables to explain and predict.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 5 – Regression in marketing planning"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -191,7 +226,14 @@
       "b",
       "c"
     ],
-    "explanation": "The DV must be metric. Nominal IVs must be dummy-coded; ordinal variables are not used in traditional regression."
+    "explanation": "The DV must be metric. Nominal IVs must be dummy-coded; ordinal variables are not used in traditional regression.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 14 – Measurement scales (of variables)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -221,7 +263,14 @@
       "a"
     ],
     "explanation": "k categories → k−1 dummies; the omitted category is the reference. Same in the start-up example: three states, two dummies, Florida as baseline.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 14 – Measurement scales (of variables)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -252,7 +301,14 @@
     ],
     "explanation": "Formulation (incl. checking linearity with scatter plots), estimation (OLS), test of the function (R², F), test of coefficients (t-test).",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 42 – Flow of a regression analysis"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -282,7 +338,14 @@
       "a"
     ],
     "explanation": "Residual = observed − estimated value; OLS chooses b0, b1 so that Σ residuals² is minimal.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 28 – Model estimation (OLS)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -313,7 +376,14 @@
     ],
     "explanation": "The intercept is the ESTIMATED value of Y at X = 0 (recap quiz of session 10).",
     "single": true,
-    "shuffle": false
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 19 – Linear vs. non-linear relationships"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -344,7 +414,14 @@
       "a"
     ],
     "explanation": "144.482 + 10.487 × 102 + 0.664 × 1,500 = 144.48 + 1,069.67 + 996 ≈ 2,210. Residual = observed − estimated = 2,278 − 2,210 = 68.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S9",
+        "ref": "Seite 7 – Beispiel Margarine"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -375,7 +452,14 @@
       "a"
     ],
     "explanation": "In multiple regression, coefficients are interpreted ceteris paribus. Absolute coefficient sizes are not comparable when variables use different units – standardise first.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S9",
+        "ref": "Seite 7 – Beispiel Margarine"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -411,7 +495,14 @@
       "b",
       "c"
     ],
-    "explanation": "p-values: SEM 0.018, social media 0.044, season 0.000 – all < 0.05. Price (0.130) and intercept (0.165) are not significant."
+    "explanation": "p-values: SEM 0.018, social media 0.044, season 0.000 – all < 0.05. Price (0.130) and intercept (0.165) are not significant.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S9",
+        "ref": "Seite 47 – Übung Monatsabsatz"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -442,7 +533,14 @@
       "a"
     ],
     "explanation": "Both channels are significant and measured in € – social media yields ~1.38 units per € vs ~0.47 for SEM. Price is not significant.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S9",
+        "ref": "Seite 47 – Übung Monatsabsatz"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -474,7 +572,14 @@
       "b",
       "c"
     ],
-    "explanation": "The New York dummy has p = 0.55 → not significant; we cannot conclude a location effect."
+    "explanation": "The New York dummy has p = 0.55 → not significant; we cannot conclude a location effect.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S9",
+        "ref": "Seite 49 – Übung 50 Start-ups"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -483,7 +588,14 @@
     "difficulty": 1,
     "statement": "Regression analysis is used both to explain relationships between variables and to predict values of the dependent variable.",
     "answer": true,
-    "explanation": "Simple regression: one IV; multiple regression: several IVs."
+    "explanation": "Simple regression: one IV; multiple regression: several IVs.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 13 – Regression analysis is used to"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -492,7 +604,14 @@
     "difficulty": 1,
     "statement": "The selection of the dependent and independent variables must be based on conceptual or theoretical grounds.",
     "answer": true,
-    "explanation": "Otherwise there is a danger of spurious correlations (e.g. ice cream sales and murders – both driven by the weather)."
+    "explanation": "Otherwise there is a danger of spurious correlations (e.g. ice cream sales and murders – both driven by the weather).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 15 – Causal Relationship"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -501,7 +620,14 @@
     "difficulty": 1,
     "statement": "Linear regression assumes a linear relationship between the dependent and each independent variable, which can be checked with scatter plots.",
     "answer": true,
-    "explanation": "Linearity assumption."
+    "explanation": "Linearity assumption.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 19 – Linear vs. non-linear relationships"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -510,7 +636,14 @@
     "difficulty": 1,
     "statement": "The slope coefficient indicates the change in the dependent variable due to a one-unit change in the independent variable.",
     "answer": true,
-    "explanation": "E.g. one more salesman visit → +18.881 packages (simple regression)."
+    "explanation": "E.g. one more salesman visit → +18.881 packages (simple regression).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 23 – Intercept and slope of the regression function"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -519,7 +652,14 @@
     "difficulty": 1,
     "statement": "A residual is the difference between the observed and the estimated value of the dependent variable.",
     "answer": true,
-    "explanation": "It expresses the impact of factors that are not / cannot be measured."
+    "explanation": "It expresses the impact of factors that are not / cannot be measured.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 27 – Residual"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -528,7 +668,14 @@
     "difficulty": 2,
     "statement": "R² can decrease when an additional independent variable is added to the model.",
     "answer": false,
-    "explanation": "R² grows (or at least does not change) when IVs are added – even irrelevant ones. That is why the adjusted R² is used."
+    "explanation": "R² grows (or at least does not change) when IVs are added – even irrelevant ones. That is why the adjusted R² is used.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 40 – Number of observations"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -537,7 +684,14 @@
     "difficulty": 1,
     "statement": "R² is the proportion of explained variance in the dependent variable and ranges from 0 to 1.",
     "answer": true,
-    "explanation": "Close to 1 = very good fit."
+    "explanation": "Close to 1 = very good fit.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 39 – Explained variance"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -546,7 +700,14 @@
     "difficulty": 1,
     "statement": "The t-test of a regression coefficient tests H0: βj = 0.",
     "answer": true,
-    "explanation": "If the true coefficient differs from 0, the IV has a significant influence."
+    "explanation": "If the true coefficient differs from 0, the IV has a significant influence.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 43 – T-test"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -555,7 +716,14 @@
     "difficulty": 1,
     "statement": "A coefficient is significant at the 5% level if its p-value is greater than 0.05.",
     "answer": false,
-    "explanation": "Significant if p < 0.05 (|t_emp| > t_tab)."
+    "explanation": "Significant if p < 0.05 (|t_emp| > t_tab).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 44 – T-test (two-tailed)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -564,7 +732,14 @@
     "difficulty": 1,
     "statement": "The empirical t-value is the coefficient divided by its standard error.",
     "answer": true,
-    "explanation": "t = b_j / SE(b_j); t-values can be negative."
+    "explanation": "t = b_j / SE(b_j); t-values can be negative.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 45 – Probability of a 1st degree error"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -573,7 +748,14 @@
     "difficulty": 1,
     "statement": "A non-significant coefficient should still be used to make predictions because its value is large.",
     "answer": false,
-    "explanation": "Always check significance first; non-significant variables are not interpreted and left out of the forecast."
+    "explanation": "Always check significance first; non-significant variables are not interpreted and left out of the forecast.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 43 – T-test"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -582,7 +764,14 @@
     "difficulty": 2,
     "statement": "If variables are measured in different units, the absolute size of their coefficients shows their relative importance.",
     "answer": false,
-    "explanation": "Coefficients must be standardised to compare importance."
+    "explanation": "Coefficients must be standardised to compare importance.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 35 – Interpretation of multiple regression results"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -591,7 +780,14 @@
     "difficulty": 1,
     "statement": "The F-statistic assesses whether the regression model as a whole is useful for revealing the relationship in the population.",
     "answer": true,
-    "explanation": "Together with R² it tests the regression function."
+    "explanation": "Together with R² it tests the regression function.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 38 – Testing the Regression Function"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -601,7 +797,14 @@
     "difficulty": 1,
     "statement": "In the margarine example, the simple regression predicts 39.534 packages for an area with zero salesman visits.",
     "answer": true,
-    "explanation": "That is the intercept."
+    "explanation": "That is the intercept.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S9",
+        "ref": "Seite 7 – Beispiel Margarine"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -611,7 +814,14 @@
     "difficulty": 1,
     "statement": "In the monthly sales model, price has a significant negative effect on units sold.",
     "answer": false,
-    "explanation": "Price's p-value is 0.130 > 0.05 → not significant."
+    "explanation": "Price's p-value is 0.130 > 0.05 → not significant.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S9",
+        "ref": "Seite 47 – Übung Monatsabsatz"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -621,7 +831,14 @@
     "difficulty": 1,
     "statement": "In the Adidas model, online purchases are associated with a lower transaction value than offline purchases.",
     "answer": true,
-    "explanation": "Channel coefficient −23.1 (p = 0.004)."
+    "explanation": "Channel coefficient −23.1 (p = 0.004).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Exercise 1 (Adidas)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -631,7 +848,14 @@
     "difficulty": 1,
     "statement": "In the Adidas model, social media followers spend 27.6 € more on average.",
     "answer": false,
-    "explanation": "Social is not significant (p = 0.832), so this coefficient cannot be interpreted."
+    "explanation": "Social is not significant (p = 0.832), so this coefficient cannot be interpreted.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Mock exam 2023/24 & 2025/26, Exercise 1 (Adidas)"
+      }
+    ]
   },
   {
     "type": "short",
@@ -647,6 +871,13 @@
       "Exclude duration and social (p > 0.05)",
       "52.3 + 12.7 + 33.6 − 23.1",
       "Result 75.50 €"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam 2023/24 & 2025/26",
+        "ref": "Exercise 1 c) – Prognose"
+      }
     ]
   },
   {
@@ -662,6 +893,13 @@
       "Estimation via OLS",
       "Test function: R², adjusted R², F",
       "Test coefficients: t-test, p-value"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 28 – Model estimation (OLS)"
+      }
     ]
   },
   {
@@ -678,6 +916,298 @@
       "SEM, social media, season significant",
       "Price not significant",
       "Invest in social media (higher return per €)"
+    ],
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S9",
+        "ref": "Seite 47 – Übung Monatsabsatz"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-16",
+    "lecture": "s09",
+    "case": "beauty-regression",
+    "difficulty": 2,
+    "prompt": "From this model, which element(s) have a significant impact on the basket value? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "App"
+      },
+      {
+        "id": "b",
+        "text": "Member"
+      },
+      {
+        "id": "c",
+        "text": "Discount"
+      },
+      {
+        "id": "d",
+        "text": "Newsletter"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Check the p-values against 0.05: app (0.010), member (0.001) and discount (0.003) are significant; newsletter (0.410) is not. Age (0.020) is significant too but is not among the options.",
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1 (Adidas)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 43 – T-test"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-17",
+    "lecture": "s09",
+    "case": "beauty-regression",
+    "difficulty": 2,
+    "prompt": "Disregarding age, what is the difference in basket value between a loyalty member ordering in the app without a discount code and a non-member ordering on the website with a discount code?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Member/app spends 30.4 € more"
+      },
+      {
+        "id": "b",
+        "text": "Member/app spends 21.0 € more"
+      },
+      {
+        "id": "c",
+        "text": "Non-member/website spends 9.4 € less"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Member/app/no discount: 18.5 + 6.2 + 14.8 = 39.5 €. Non-member/website/discount: 18.5 − 9.4 = 9.1 €. Difference: 39.5 − 9.1 = 30.4 €.",
+    "single": true,
+    "shuffle": false,
+    "steps": [
+      {
+        "title": "Member, app, no discount",
+        "why": "Dummies = 1 add their coefficient, dummies = 0 drop out",
+        "lines": [
+          "18.5 + 6.2 × 1 + 14.8 × 1 − 9.4 × 0 = 39.5 €"
+        ]
+      },
+      {
+        "title": "Non-member, website, discount",
+        "lines": [
+          "18.5 + 6.2 × 0 + 14.8 × 0 − 9.4 × 1 = 9.1 €"
+        ]
+      },
+      {
+        "title": "Difference",
+        "lines": [
+          "39.5 − 9.1"
+        ],
+        "result": "Member/app spends 30.4 € more"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the discount effect of the second customer (21.0 €)"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1 (Adidas)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 35 – Interpretation of multiple regression results"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-18",
+    "lecture": "s09",
+    "case": "beauty-regression",
+    "difficulty": 3,
+    "prompt": "A 30-year-old loyalty member orders on the website, uses a discount code and subscribes to the newsletter. What is her forecast basket value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "41.90 €"
+      },
+      {
+        "id": "b",
+        "text": "45.00 €"
+      },
+      {
+        "id": "c",
+        "text": "51.30 €"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Only significant variables plus the intercept are used: 18.5 + 14.8 (member) + 0.6 × 30 (= 18.0) − 9.4 (discount) = 41.90 €. Website means app = 0; the newsletter is not significant and is left out (with it: 45.00 €).",
+    "single": true,
+    "shuffle": false,
+    "steps": [
+      {
+        "title": "Select the variables",
+        "why": "Only coefficients with p < 0.05 are interpreted and used for the forecast",
+        "lines": [
+          "Use: intercept, app, member, age, discount",
+          "Drop: newsletter (p = 0.410)"
+        ]
+      },
+      {
+        "title": "Insert the customer's values",
+        "lines": [
+          "18.5 + 6.2 × 0 + 14.8 × 1 + 0.6 × 30 − 9.4 × 1",
+          "= 18.5 + 0 + 14.8 + 18.0 − 9.4"
+        ],
+        "result": "41.90 €"
+      }
+    ],
+    "pitfalls": [
+      "Including the non-significant newsletter coefficient (45.00 €)",
+      "Forgetting the negative discount effect (51.30 €)"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1 (Adidas)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 43 – T-test"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s09-19",
+    "lecture": "s09",
+    "case": "beauty-regression",
+    "difficulty": 2,
+    "prompt": "Which statements on the model are correct? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "The model explains 48% of the variance in basket value"
+      },
+      {
+        "id": "b",
+        "text": "Using a discount code is associated with a 9.4 € lower basket value, all else equal"
+      },
+      {
+        "id": "c",
+        "text": "Because its coefficient is positive, newsletter subscribers spend 3.1 € more"
+      },
+      {
+        "id": "d",
+        "text": "Age has no effect on the basket value because its coefficient is small"
+      }
+    ],
+    "correct": [
+      "a",
+      "b"
+    ],
+    "explanation": "R² is the share of explained variance (48%). The discount coefficient is significant: −9.4 € all else equal. The newsletter coefficient is not significant (p = 0.410), so it cannot be interpreted. Age is significant: each additional year adds 0.6 € – a small coefficient does not mean no effect.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1 (Adidas)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 38 – Testing the regression function"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 43 – T-test"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s09-04",
+    "lecture": "s09",
+    "case": "beauty-regression",
+    "difficulty": 2,
+    "verb": "calculate",
+    "prompt": "Forecast the basket value of a 45-year-old customer who is not a loyalty member, orders in the app without a discount code and subscribes to the newsletter. Show which variables you include.",
+    "modelAnswer": "Only significant variables (p < 0.05) plus the intercept are used; the newsletter (p = 0.410) is left out.\nY = 18.5 + 6.2 × 1 (app) + 14.8 × 0 (member) + 0.6 × 45 (age) − 9.4 × 0 (discount) = 18.5 + 6.2 + 27.0 = 51.70 €.",
+    "keyPoints": [
+      "Use only significant variables + intercept",
+      "Exclude newsletter (p > 0.05)",
+      "18.5 + 6.2 + 0.6 × 45",
+      "Result 51.70 €"
+    ],
+    "results": [
+      {
+        "label": "Forecast basket value",
+        "value": 51.7,
+        "unit": "€"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Select the variables",
+        "why": "Only coefficients with p < 0.05 are used",
+        "lines": [
+          "Use: intercept, app, member, age, discount",
+          "Drop: newsletter (p = 0.410)"
+        ]
+      },
+      {
+        "title": "Insert the customer's values",
+        "lines": [
+          "18.5 + 6.2 × 1 + 14.8 × 0 + 0.6 × 45 − 9.4 × 0",
+          "= 18.5 + 6.2 + 27.0"
+        ],
+        "result": "51.70 €"
+      }
+    ],
+    "pitfalls": [
+      "Adding the newsletter coefficient (54.80 €)",
+      "Forgetting to multiply the age coefficient by the age"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam 2025/26, Exercise 1 (Adidas)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S9",
+        "ref": "Seite 43 – T-test"
+      }
     ]
   }
 ]

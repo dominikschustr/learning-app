@@ -28,7 +28,14 @@
       "b",
       "c"
     ],
-    "explanation": "Temporal order, reliable correlation and no alternative explanations."
+    "explanation": "Temporal order, reliable correlation and no alternative explanations.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 9 – Causality – Reminder"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -59,7 +66,14 @@
       "b",
       "c"
     ],
-    "explanation": "Only if x is exogenous (e.g. manipulated by an external force) can β be interpreted causally."
+    "explanation": "Only if x is exogenous (e.g. manipulated by an external force) can β be interpreted causally.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 10 – Causality"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -89,7 +103,14 @@
       "a"
     ],
     "explanation": "Recall: you can only derive policy implications from causal effects.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 15 – Causality"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -120,7 +141,14 @@
       "a",
       "b"
     ],
-    "explanation": "box_age has a larger coefficient but is NOT significant (p > 0.05). Among significant variables, outlet_number and box_size (negative) have the largest absolute coefficients – keeping in mind that units differ."
+    "explanation": "box_age has a larger coefficient but is NOT significant (p > 0.05). Among significant variables, outlet_number and box_size (negative) have the largest absolute coefficients – keeping in mind that units differ.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Mini case Generation I & Playmobil c)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -151,7 +179,14 @@
       "a"
     ],
     "explanation": "Billboard (0.76, p < 0.01) has the strongest significant effect among channels, ahead of TV (0.45). Online spending is not significant.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Mini case Generation I & Playmobil d)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -182,7 +217,14 @@
       "a"
     ],
     "explanation": "box_size is significant and negative (−0.89, p < 0.001): fewer pieces are associated with higher sales. box_age is not significant, so no recommendation on age suitability.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Mini case Generation I & Playmobil e)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -213,7 +255,14 @@
       "a",
       "b"
     ],
-    "explanation": "Both are significant with the largest positive coefficients. new_products is not significant."
+    "explanation": "Both are significant with the largest positive coefficients. new_products is not significant.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 3 – Regression (H&M) a)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -244,7 +293,14 @@
       "a"
     ],
     "explanation": "First check p-values (all three channels are significant), then compare the betas: online (1.39) > TV (0.31) > billboard (0.03).",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 3 – Regression (H&M) b)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -275,7 +331,14 @@
       "a"
     ],
     "explanation": "120 + 3.5 × 45 + 45 × 1 + 22 × 37 + 180 × 1 = 120 + 157.5 + 45 + 814 + 180 = 1,316.50.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S10",
+        "ref": "Seite 19 – Übung Grocery Shopping (Koeffizienten erfunden)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -306,7 +369,14 @@
       "a"
     ],
     "explanation": "A dummy coefficient compares the coded group (female = 1) with the baseline (male = 0), ceteris paribus.",
-    "single": true
+    "single": true,
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S10",
+        "ref": "Seite 19 – Übung Grocery Shopping (Koeffizienten erfunden)"
+      }
+    ]
   },
   {
     "type": "mc",
@@ -342,7 +412,14 @@
       "c",
       "d"
     ],
-    "explanation": "Then re-run a refined model and use it for prediction."
+    "explanation": "Then re-run a refined model and use it for prediction.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 19 – Exercise 2: Grocery Shopping"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -351,7 +428,14 @@
     "difficulty": 1,
     "statement": "Reverse causality means that the dependent variable may also influence the independent variable.",
     "answer": true,
-    "explanation": "Simultaneity – e.g. firms open more outlets where sales are already high."
+    "explanation": "Simultaneity – e.g. firms open more outlets where sales are already high.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 10 – Causality"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -360,7 +444,14 @@
     "difficulty": 1,
     "statement": "Omitted variables can bias a regression coefficient so that it should only be interpreted as an association.",
     "answer": true,
-    "explanation": "The independent variable is then endogenous."
+    "explanation": "The independent variable is then endogenous.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 11 – Causality"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -369,7 +460,14 @@
     "difficulty": 1,
     "statement": "A regression coefficient can be interpreted causally if the independent variable is exogenous, e.g. manipulated by an external force.",
     "answer": true,
-    "explanation": "As in an experiment."
+    "explanation": "As in an experiment.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 15 – Causality"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -378,7 +476,14 @@
     "difficulty": 1,
     "statement": "Spurious correlations show that two series can be strongly correlated without any causal link.",
     "answer": true,
-    "explanation": "See tylervigen.com."
+    "explanation": "See tylervigen.com.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 12 – Causality"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -387,7 +492,14 @@
     "difficulty": 1,
     "statement": "Identifying causal effects helps to explain past events and to give appropriate policy recommendations.",
     "answer": true,
-    "explanation": "From the causality section."
+    "explanation": "From the causality section.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 13 – Causality"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -397,7 +509,14 @@
     "difficulty": 1,
     "statement": "In the Playmobil model, online advertising has a significant positive effect on sales.",
     "answer": false,
-    "explanation": "online_spend: 0.18 with p > 0.05 – not significant."
+    "explanation": "online_spend: 0.18 with p > 0.05 – not significant.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Klausur 2019/20, Mini case Playmobil"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -407,7 +526,14 @@
     "difficulty": 2,
     "statement": "Because box_age has the largest absolute coefficient, Playmobil should design boxes for younger children.",
     "answer": false,
-    "explanation": "box_age is not significant (p > 0.05) – no recommendation can be based on it."
+    "explanation": "box_age is not significant (p > 0.05) – no recommendation can be based on it.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Klausur 2019/20, Mini case Playmobil"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -417,7 +543,14 @@
     "difficulty": 2,
     "statement": "A key limitation of the Playmobil model is that the coefficients are not standardised and the variables are measured in different units.",
     "answer": true,
-    "explanation": "Other limitations: no R² reported, possible omitted variables (price, competitors), seasonality and causality concerns."
+    "explanation": "Other limitations: no R² reported, possible omitted variables (price, competitors), seasonality and causality concerns.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Zusatzfrage zum Fall aus Klausur 2019/20, Mini case Playmobil"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -427,7 +560,14 @@
     "difficulty": 2,
     "statement": "The negative and significant coefficient of old_sales suggests a negative sales trend for H&M over the years.",
     "answer": true,
-    "explanation": "As discussed in the revision session: the sales trend is declining, not increasing."
+    "explanation": "As discussed in the revision session: the sales trend is declining, not increasing.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 3 – Regression (H&M) c)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -437,7 +577,14 @@
     "difficulty": 1,
     "statement": "A major limitation of the H&M model is that the time frame of the dependent variable \"sales\" (monthly, quarterly, annual) is not defined.",
     "answer": true,
-    "explanation": "Define the DV better; add product types, consumer data, trends and cycles, other spending categories."
+    "explanation": "Define the DV better; add product types, consumer data, trends and cycles, other spending categories.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 3 – Regression (H&M) d)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -447,7 +594,14 @@
     "difficulty": 1,
     "statement": "In the grocery model, being a loyalty programme member is associated with 180 USD higher annual spending, all else equal.",
     "answer": true,
-    "explanation": "Dummy coefficient for membership."
+    "explanation": "Dummy coefficient for membership.",
+    "basis": [
+      {
+        "kind": "case",
+        "source": "Übung S10",
+        "ref": "Seite 19 – Übung Grocery Shopping (Koeffizienten erfunden)"
+      }
+    ]
   },
   {
     "type": "tf",
@@ -456,7 +610,14 @@
     "difficulty": 2,
     "statement": "In the movie exercise, adding predictors such as runtime and rating to budget should bring the forecast for \"1917\" closer to its actual box office.",
     "answer": true,
-    "explanation": "Compare simple vs multiple regression forecasts with the actual revenue (365.2 million)."
+    "explanation": "Compare simple vs multiple regression forecasts with the actual revenue (365.2 million).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 23 – What predicts movie box office sales?"
+      }
+    ]
   },
   {
     "type": "short",
@@ -472,6 +633,13 @@
       "Strongest: outlet_number and box_size (negative)",
       "Advertising: billboards (then TV), not online",
       "Product: smaller boxes; box_age not significant"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Mini case Playmobil c) + d)"
+      }
     ]
   },
   {
@@ -489,6 +657,13 @@
       "Omitted variables (price, seasonality, competition)",
       "Causality/endogeneity concerns",
       "Concrete improvements"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2019/20",
+        "ref": "Mini case Generation I & Playmobil f)"
+      }
     ]
   },
   {
@@ -505,6 +680,13 @@
       "Recommend online advertising",
       "old_sales negative & significant → negative trend",
       "new_products not significant"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock exam (Revision Session)",
+        "ref": "Exercise 3 a)–c) – H&M"
+      }
     ]
   },
   {
@@ -520,6 +702,172 @@
       "Omitted variables",
       "Causal if x exogenous (experiment)",
       "Recommendations only from causal effects"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 15 – Causality"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-12",
+    "lecture": "s10",
+    "case": "sportswear-sales",
+    "difficulty": 2,
+    "prompt": "Based on the analysis, in which advertising channel would you invest an additional budget?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Online advertising"
+      },
+      {
+        "id": "b",
+        "text": "TV advertising"
+      },
+      {
+        "id": "c",
+        "text": "Sponsoring of local sports clubs"
+      },
+      {
+        "id": "d",
+        "text": "None of the other answers"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "First check significance, then compare the significant coefficients of the advertising channels (all in m€): online_ads 2.40 (p < 0.05) > sponsoring 0.90 (p < 0.05); tv_ads is not significant and cannot be interpreted.",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision Session), Exercise 3 (H&M)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 6 – Recap Session 9 – significant relationship"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-13",
+    "lecture": "s10",
+    "case": "sportswear-sales",
+    "difficulty": 2,
+    "statement": "The positive and significant coefficient of last_sales suggests a positive sales trend over the years.",
+    "answer": true,
+    "explanation": "As in the H&M exercise, the coefficient of the previous year's sales indicates the trend: positive and significant (0.65, p < 0.01) → sales build on the previous year, i.e. a positive trend. A negative coefficient would indicate a declining trend.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision Session), Exercise 3 (H&M)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-14",
+    "lecture": "s10",
+    "case": "sportswear-sales",
+    "difficulty": 2,
+    "statement": "Because TV advertising has a positive coefficient, every additional m€ spent on TV raises sales by 0.15 m€.",
+    "answer": false,
+    "explanation": "tv_ads is not significant (p > 0.05). A non-significant coefficient cannot be interpreted – the effect may well be zero.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision Session), Exercise 3 (H&M)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 7 – Recap Session 9 – insignificant coefficient"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s10-13",
+    "lecture": "s10",
+    "case": "sportswear-sales",
+    "difficulty": 2,
+    "prompt": "Before shifting the budget, the CMO asks whether the online advertising coefficient can be read as a causal effect. Which concerns are valid? (Please select all that apply)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reverse causality: countries with high sales may receive larger online budgets"
+      },
+      {
+        "id": "b",
+        "text": "Omitted variables: e.g. a country's sports participation could drive both online advertising and sales"
+      },
+      {
+        "id": "c",
+        "text": "The coefficient is significant, so it is automatically a causal effect"
+      },
+      {
+        "id": "d",
+        "text": "The relationship between online advertising and sales could be a spurious correlation"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "A coefficient must be read as an association if the independent variable is potentially endogenous – the two major reasons are reverse causality (simultaneity) and omitted variables. Significance only shows a reliable correlation; strong correlations can be spurious. Policy recommendations require causal effects.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision Session), Exercise 3 (H&M)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 10 – Causality – Reverse causality"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 11 – Causality – Omitted variables"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 12 – Spurious correlations"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s10-15",
+    "lecture": "s10",
+    "case": "sportswear-sales",
+    "difficulty": 2,
+    "statement": "If the online advertising budgets had been randomly assigned to the countries (an experiment), the coefficient could be interpreted as a causal effect.",
+    "answer": true,
+    "explanation": "A regression coefficient can be interpreted causally if the independent variable is exogenous, e.g. manipulated by an external force such as random assignment. Only then can policy recommendations be derived.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Mock exam (Revision Session), Exercise 3 (H&M)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien S10",
+        "ref": "Seite 15 – Causality – exogenous variables"
+      }
     ]
   }
 ]

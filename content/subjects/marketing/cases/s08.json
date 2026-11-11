@@ -228,5 +228,43 @@
       "Average order value: 10 €. Average purchase frequency: 12 per year. Acquisition costs: 200 €. Use CLV = lifetime revenues − acquisition costs (per client)."
     ],
     "tables": []
+  },
+  {
+    "id": "streaming-cohort",
+    "title": "Streaming service – retention and survival of a cohort",
+    "text": [
+      "A streaming service acquired a cohort of 2,000 customers at the beginning of year 1. The retention rates of the cohort were 60% in year 1, 70% in year 2 and 80% in year 3.",
+      "Survival rate: SR1 = Rr1 and SR_t = Rr_t × SR_(t−1). Average lifetime duration with a constant retention rate = 1 / (1 − Rr). CLV = lifetime revenues − acquisition costs (per client)."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Year",
+          "Retention rate Rr",
+          "Survival rate SR",
+          "Customers remaining"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.60",
+            "?",
+            "?"
+          ],
+          [
+            "2",
+            "0.70",
+            "?",
+            "?"
+          ],
+          [
+            "3",
+            "0.80",
+            "?",
+            "?"
+          ]
+        ]
+      }
+    ]
   }
 ]
