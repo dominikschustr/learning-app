@@ -1,0 +1,1187 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-h3-01",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Job analysis – definition",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "What is job analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The process of collecting, analysing and setting out information about jobs"
+      },
+      {
+        "id": "b",
+        "text": "Practices carried out to identify and attract potential employees"
+      },
+      {
+        "id": "c",
+        "text": "Application of techniques to select and appoint a competent person"
+      },
+      {
+        "id": "d",
+        "text": "The rationale for HR planning and selection decision making"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Job analysis collects and sets out information about the job (→ job description and person specification). Identifying and attracting candidates is recruitment; applying techniques to appoint a competent person is selection.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot Session 2",
+        "ref": "Kahoot"
+      },
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Job analysis"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-02",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Selection – definition",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "What is selection?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The process of collecting, analysing and setting out information about jobs"
+      },
+      {
+        "id": "b",
+        "text": "Practices carried out to identify and attract potential employees"
+      },
+      {
+        "id": "c",
+        "text": "Application of techniques to select and appoint a competent person"
+      },
+      {
+        "id": "d",
+        "text": "The rationale for HR planning and selection decision making"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Selection applies techniques to choose the right candidate out of the pool. Attracting the pool is recruitment – good recruitment makes selection possible.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot Session 2",
+        "ref": "Kahoot"
+      },
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "The process"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-03",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Job analysis vs P-O fit",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The video describes two parallel activities at the start of recruitment: job analysis and person-organisation fit. Which question does P-O fit answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "What does the job involve?"
+      },
+      {
+        "id": "b",
+        "text": "What kind of attitudes and behaviours are essential to succeed here?"
+      },
+      {
+        "id": "c",
+        "text": "How much does the job pay compared with the market?"
+      },
+      {
+        "id": "d",
+        "text": "Which recruitment agency should we use?"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Job analysis: what does the job involve (can the person do the job?). P-O fit: will the person fit and succeed in this organisation?",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Two parallel activities"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-04",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Job description vs person specification",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which item belongs in the PERSON SPECIFICATION rather than the job description?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Location"
+      },
+      {
+        "id": "b",
+        "text": "Responsible to (reporting line)"
+      },
+      {
+        "id": "c",
+        "text": "Experience level"
+      },
+      {
+        "id": "d",
+        "text": "Working conditions"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "The job description describes the job (title, location, reporting lines, purpose, tasks, conditions); the person specification describes the ideal person (education, experience, skills, attitudes).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Job analysis"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-05",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Job description vs person specification",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which item does NOT belong in the JOB DESCRIPTION?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Job title"
+      },
+      {
+        "id": "b",
+        "text": "Main purpose and responsibilities"
+      },
+      {
+        "id": "c",
+        "text": "Tasks"
+      },
+      {
+        "id": "d",
+        "text": "Attitudes of the ideal candidate"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Attitudes belong to the person specification.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Job analysis"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-06",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Person specification – disqualifying factors",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "In a person specification, which of the following is a “disqualifying factor”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A candidate prefers part-time work"
+      },
+      {
+        "id": "b",
+        "text": "Lack of an essential licence or accreditation"
+      },
+      {
+        "id": "c",
+        "text": "A candidate has less experience than desirable"
+      },
+      {
+        "id": "d",
+        "text": "A candidate studied abroad"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Disqualifying factors rule a candidate out, e.g. a missing essential accreditation. “Less than desirable” is a nice-to-have, not a knock-out.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Job analysis"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-07",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Essential vs desirable",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "What does the distinction “essential vs desirable characteristics” in a person specification mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Must-haves vs nice-to-haves"
+      },
+      {
+        "id": "b",
+        "text": "Technical vs behavioural competencies"
+      },
+      {
+        "id": "c",
+        "text": "Internal vs external candidates"
+      },
+      {
+        "id": "d",
+        "text": "Hard vs soft disqualifying factors"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Essential = the candidate must have it; desirable = it is an advantage but not required.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Job analysis"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-08",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "P-O fit – four points",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT one of the video's points on person-organisation fit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify an organisational philosophy"
+      },
+      {
+        "id": "b",
+        "text": "Focus on competencies (behavioural and technical)"
+      },
+      {
+        "id": "c",
+        "text": "Firm and people analyses rather than job analysis"
+      },
+      {
+        "id": "d",
+        "text": "Hire only internal candidates"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The four points: organisational philosophy, competencies, firm and people analyses, and the critique of “cloning” (reduced diversity).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Person-organisation fit"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-09",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "P-O fit – competencies",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is a BEHAVIOURAL (rather than technical) competency?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coding in Python"
+      },
+      {
+        "id": "b",
+        "text": "Preparing IFRS financial statements"
+      },
+      {
+        "id": "c",
+        "text": "Customer focus"
+      },
+      {
+        "id": "d",
+        "text": "Operating a forklift"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Behavioural competencies describe how people work (teamwork, initiative, customer focus); technical ones are specialist skills.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Person-organisation fit"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-10",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "P-O fit – firm and people analyses",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "When are “firm and people analyses rather than job analysis” particularly useful?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When jobs change quickly and one fixed job description would soon be outdated"
+      },
+      {
+        "id": "b",
+        "text": "When the firm hires only for routine jobs"
+      },
+      {
+        "id": "c",
+        "text": "When the firm wants to minimise recruitment costs"
+      },
+      {
+        "id": "d",
+        "text": "When the law requires a job description"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Looking at what the whole firm needs and what kind of people succeed there helps when jobs are fluid.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Person-organisation fit"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-11",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Closed vs open searches",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of the following is not a CLOSED type of recruitment method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Word of mouth"
+      },
+      {
+        "id": "b",
+        "text": "Links to universities"
+      },
+      {
+        "id": "c",
+        "text": "Recruitment agencies"
+      },
+      {
+        "id": "d",
+        "text": "The company's website"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The company's website is an open (public) search, like adverts, other websites and social networks. Closed: word of mouth, links with schools/colleges/universities, recruitment agencies.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot Session 2",
+        "ref": "Kahoot"
+      },
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Recruitment methods"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-12",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Closed vs open searches",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What is the main drawback of closed searches such as referrals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are expensive and slow"
+      },
+      {
+        "id": "b",
+        "text": "The pool is small and candidates resemble current staff – less diversity"
+      },
+      {
+        "id": "c",
+        "text": "They attract too many unsuitable applications"
+      },
+      {
+        "id": "d",
+        "text": "They are illegal in the EU"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Closed searches are cheap, fast and pre-filtered, but the pool is small and reproduces the current workforce (social capital, in-group favouritism).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Recruitment methods"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-13",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Closed vs open searches",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What is the main drawback of open searches such as job boards and newspaper adverts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pool is too homogeneous"
+      },
+      {
+        "id": "b",
+        "text": "Many unsuitable applications have to be screened, which costs time and money"
+      },
+      {
+        "id": "c",
+        "text": "Candidates are pre-filtered by the agency"
+      },
+      {
+        "id": "d",
+        "text": "They exclude external candidates"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Open searches give a large, more diverse pool – but more screening and cost (CIPD: 58 % saw more applications).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Recruitment methods"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-14",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Selection methods",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of the following is a RECRUITMENT method rather than one of the selection methods listed in the video?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Self-selection"
+      },
+      {
+        "id": "b",
+        "text": "Assessment centres"
+      },
+      {
+        "id": "c",
+        "text": "Probationary periods"
+      },
+      {
+        "id": "d",
+        "text": "Newspaper adverts"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Adverts attract candidates (recruitment). The video's selection methods: self-selection, application forms, CV, references, interviews, assessment centres, tests, probationary periods, innovative methods.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Selection methods"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-15",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Selection methods – self-selection",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What does “self-selection” mean as a selection method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The candidate chooses the interviewers"
+      },
+      {
+        "id": "b",
+        "text": "Candidates drop out themselves after getting a realistic picture of the job"
+      },
+      {
+        "id": "c",
+        "text": "Employees select their own successors"
+      },
+      {
+        "id": "d",
+        "text": "The candidate rates his or her own performance"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "A realistic job preview lets unsuitable candidates opt out themselves – cheap and effective.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Selection methods"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-16",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Validity",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "A selection method “accurately measures what it is supposed to measure”. Which criterion is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Validity"
+      },
+      {
+        "id": "b",
+        "text": "Reliability"
+      },
+      {
+        "id": "c",
+        "text": "Practicability"
+      },
+      {
+        "id": "d",
+        "text": "Specificity"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Validity: a good score on the method predicts good job performance.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Deciding how to select"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-17",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Reliability",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Two interviewers assess the same candidate with the same method and reach very different scores. Which criterion is violated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Validity"
+      },
+      {
+        "id": "b",
+        "text": "Reliability"
+      },
+      {
+        "id": "c",
+        "text": "Practicability"
+      },
+      {
+        "id": "d",
+        "text": "Acceptability"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Reliability = consistency: same method, same result – whoever applies it and whenever.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Deciding how to select"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-18",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Practicability",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A retailer considers a two-day assessment centre for 5,000 store assistants. Which criterion is most at risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Validity"
+      },
+      {
+        "id": "b",
+        "text": "Reliability"
+      },
+      {
+        "id": "c",
+        "text": "Practicability"
+      },
+      {
+        "id": "d",
+        "text": "Person-organisation fit"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Practicability: acceptable to all parties and cost-effective. An assessment centre may be valid but is far too costly at this volume.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Deciding how to select"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-19",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Employer branding – definitions",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "According to Universum, what is the employer brand?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The distinctive attributes and qualities of an organisation as an employer"
+      },
+      {
+        "id": "b",
+        "text": "What makes the organisation the employer of choice for a desired target group"
+      },
+      {
+        "id": "c",
+        "text": "The logo and colours used in job adverts"
+      },
+      {
+        "id": "d",
+        "text": "The firm's ranking on Glassdoor"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Universum → value proposition for employees; CIPD → distinctive attributes and qualities (reputation as an employer).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Employer branding",
+        "ref": "Two definitions"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-20",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Employer branding – relevance",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which statement about employer branding is NOT in the video?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There is a global need for talent and a highly competitive labour market"
+      },
+      {
+        "id": "b",
+        "text": "A strong employer brand brings about twice as many applications"
+      },
+      {
+        "id": "c",
+        "text": "Online employer information is easy to find but not always accurate"
+      },
+      {
+        "id": "d",
+        "text": "A strong employer brand removes the need for selection methods"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "If the firm does not shape its brand, others do (Glassdoor, LinkedIn, Facebook reviews). It supports attraction – selection is still needed.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Employer branding",
+        "ref": "Why is it relevant?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-21",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Employer branding – psychological contract",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "The video says employer branding helps to “manage the psychological contract through the brand”. What does this mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The brand sets employees' unwritten expectations before they join – and the promise must then be kept"
+      },
+      {
+        "id": "b",
+        "text": "The brand replaces the written employment contract"
+      },
+      {
+        "id": "c",
+        "text": "The brand allows the firm to lower pay"
+      },
+      {
+        "id": "d",
+        "text": "The brand obliges employees to stay for a minimum period"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The brand creates expectations; if the employment experience does not match, the psychological contract is broken.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Employer branding",
+        "ref": "Why is it relevant?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-22",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Employer branding – business case",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT one of the three reasons in the video's “why is it relevant?” slide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Manage the psychological contract through the brand"
+      },
+      {
+        "id": "b",
+        "text": "Signal organisational values and prestige"
+      },
+      {
+        "id": "c",
+        "text": "Make the brand a source of common identity for employees"
+      },
+      {
+        "id": "d",
+        "text": "Reduce statutory employer contributions"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The three reasons: psychological contract, signalling values and prestige, common identity → commitment.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Employer branding",
+        "ref": "Why is it relevant?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-23",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Recruitment strategy – informing vs attracting",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "According to the Inditex feedback, recruitment activities must balance the organisation's and the candidate's needs. What is the tension?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Informing (a realistic picture) vs attracting (selling the job)"
+      },
+      {
+        "id": "b",
+        "text": "Validity vs reliability"
+      },
+      {
+        "id": "c",
+        "text": "Internal vs external candidates"
+      },
+      {
+        "id": "d",
+        "text": "Cost vs speed of selection"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Recruitment must both inform candidates realistically and attract them.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "Inditex case · key feedback points"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-24",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Recruitment strategy – internal recruitment",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which option does the Inditex feedback explicitly ask you to consider in a recruitment strategy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outsourcing the whole HR function"
+      },
+      {
+        "id": "b",
+        "text": "Internal recruitment"
+      },
+      {
+        "id": "c",
+        "text": "Removing the job description"
+      },
+      {
+        "id": "d",
+        "text": "Hiring only through agencies"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "“Consider the possibility of internal recruitment”: known performers, motivation and lower cost.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "Inditex case · key feedback points"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-25",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Building a selection strategy",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which check is NOT part of the Inditex feedback on proposing selection methods?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Which aspect of performance in the job description does each method measure?"
+      },
+      {
+        "id": "b",
+        "text": "How do the methods work together to increase validity and reliability?"
+      },
+      {
+        "id": "c",
+        "text": "Are all relevant requirements of the job description evaluated?"
+      },
+      {
+        "id": "d",
+        "text": "Which method does the hiring manager personally prefer?"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The feedback asks what each method measures, how the methods work together, whether repetitions are necessary and cost-effective, and whether all requirements are covered – not personal preferences.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "Inditex case · key feedback points"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-26",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "Inditex – context",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The two Inditex positions are in the same firm but in different countries. Why does this matter for the recommendation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It does not matter – the same strategy must be used everywhere"
+      },
+      {
+        "id": "b",
+        "text": "Labour markets, channels and culture differ, so the recruitment and selection strategy should be adapted to the context"
+      },
+      {
+        "id": "c",
+        "text": "Only the salary needs to be adjusted"
+      },
+      {
+        "id": "d",
+        "text": "Different countries require different job descriptions by law"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The task explicitly asks you to consider the context, P-O fit, validity/reliability/practicability and cost-effectiveness.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "Inditex case study"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-27",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "CIPD 2026 – volume vs quality",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What does the CIPD (2026) report show about the number of applications?",
+    "options": [
+      {
+        "id": "a",
+        "text": "More applications led to equally more suitable candidates"
+      },
+      {
+        "id": "b",
+        "text": "58 % of employers saw more applications, but only 33 % saw more suitable candidates"
+      },
+      {
+        "id": "c",
+        "text": "Applications fell for most employers"
+      },
+      {
+        "id": "d",
+        "text": "Suitable candidates rose faster than applications"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "More applications ≠ better hires – a key argument for targeted recruitment.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "CIPD Resourcing and Talent Planning Report 2026"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-28",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "CIPD 2026 – attraction methods",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which attraction method did employers rate as most effective in the CIPD (2026) report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Own corporate website"
+      },
+      {
+        "id": "b",
+        "text": "Employee referrals"
+      },
+      {
+        "id": "c",
+        "text": "Recruitment/search consultants"
+      },
+      {
+        "id": "d",
+        "text": "Radio or TV adverts"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Own corporate website (40 %), generic job boards (35 %), internal advertising (32 %), consultants (29 %), professional networks (28 %), referrals and organic content (24 % each).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "CIPD Resourcing and Talent Planning Report 2026"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-29",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "CIPD 2026 – cost per hire",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What was the median cost per hire for senior managers/directors in the CIPD (2026) report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "£500"
+      },
+      {
+        "id": "b",
+        "text": "£2,000"
+      },
+      {
+        "id": "c",
+        "text": "£3,500"
+      },
+      {
+        "id": "d",
+        "text": "£10,000"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "£3,500 for senior managers/directors and £2,000 for other employees (technology, advertising, agency fees, tests, onboarding).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "CIPD Resourcing and Talent Planning Report 2026"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h3-30",
+    "lecture": "h3",
+    "mcSet": true,
+    "topic": "CIPD 2026 – attraction difficulties",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "For which roles did employers report the greatest difficulty attracting candidates (CIPD, 2026)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Low-skilled roles"
+      },
+      {
+        "id": "b",
+        "text": "Senior and skilled roles"
+      },
+      {
+        "id": "c",
+        "text": "Internships"
+      },
+      {
+        "id": "d",
+        "text": "Temporary roles"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "53 % had difficulties, mainly for senior and skilled roles (18 % also for low-skilled).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "CIPD Resourcing and Talent Planning Report 2026"
+      }
+    ]
+  }
+]

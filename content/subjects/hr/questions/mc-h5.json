@@ -1,0 +1,1177 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-h5-01",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Purposes of PM – strategic",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which purpose of performance management links employees' activities to the organisation's goals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Strategic"
+      },
+      {
+        "id": "b",
+        "text": "Administrative"
+      },
+      {
+        "id": "c",
+        "text": "Informational"
+      },
+      {
+        "id": "d",
+        "text": "Documentation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Strategic purpose: link employees' activities with the organisation's goals.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Six purposes"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-02",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Purposes of PM – administrative",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which purpose of PM furnishes valid information for decisions on pay, promotion and dismissal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Developmental"
+      },
+      {
+        "id": "b",
+        "text": "Administrative"
+      },
+      {
+        "id": "c",
+        "text": "Organisational maintenance"
+      },
+      {
+        "id": "d",
+        "text": "Informational"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Administrative purpose: valid and useful information for administrative decisions about employees.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Six purposes"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-03",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Purposes of PM – organisational maintenance",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Creating a talent inventory for workforce planning and the allocation of human resources is which purpose of PM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Strategic"
+      },
+      {
+        "id": "b",
+        "text": "Documentation"
+      },
+      {
+        "id": "c",
+        "text": "Organisational maintenance"
+      },
+      {
+        "id": "d",
+        "text": "Developmental"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Organisational maintenance: talent inventory for workforce planning and allocation.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Six purposes"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-04",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Purposes of PM",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of the following is NOT one of the six purposes of performance management in the video?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Informational"
+      },
+      {
+        "id": "b",
+        "text": "Developmental"
+      },
+      {
+        "id": "c",
+        "text": "Documentation"
+      },
+      {
+        "id": "d",
+        "text": "Recruitment"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The six purposes: strategic, administrative, informational, developmental, organisational maintenance, documentation.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Six purposes"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-05",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Purposes of PM – conflict",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Why is it difficult to achieve all purposes with one appraisal system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because the law forbids combining them"
+      },
+      {
+        "id": "b",
+        "text": "Because when ratings decide pay and dismissal, employees hide weaknesses – which blocks development"
+      },
+      {
+        "id": "c",
+        "text": "Because developmental feedback is too expensive"
+      },
+      {
+        "id": "d",
+        "text": "Because strategic goals change every year"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The administrative and the developmental purpose pull in different directions – the shift Cappelli & Tavis describe.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Six purposes"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Cappelli & Tavis (2016)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-06",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Measurement methods – relative standards",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is a RELATIVE standards method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Graphic rating scale"
+      },
+      {
+        "id": "b",
+        "text": "Paired comparison"
+      },
+      {
+        "id": "c",
+        "text": "BARS"
+      },
+      {
+        "id": "d",
+        "text": "Management by objectives"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Relative standards compare people with each other: simple ranking, paired comparison, forced distribution.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "How to measure performance"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-07",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Measurement methods – absolute standards",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which absolute-standards methods assess ATTRIBUTES (traits) rather than behaviours?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Graphic rating scales and mixed standard scales"
+      },
+      {
+        "id": "b",
+        "text": "Critical incident method and BARS"
+      },
+      {
+        "id": "c",
+        "text": "Simple ranking and forced distribution"
+      },
+      {
+        "id": "d",
+        "text": "Management by objectives"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Attributes: graphic rating scales, mixed standard scales. Behaviours: critical incidents, BARS, BOS.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "How to measure performance"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-08",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Measurement methods – results",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which method measures actual RESULTS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paired comparison"
+      },
+      {
+        "id": "b",
+        "text": "Behavioural observation scale (BOS)"
+      },
+      {
+        "id": "c",
+        "text": "Management by objectives (MBO)"
+      },
+      {
+        "id": "d",
+        "text": "Mixed standard scale"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "MBO: agree goals, then check whether they were achieved.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "How to measure performance"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-09",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Behaviour-based methods",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What does a BARS (behaviourally anchored rating scale) do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ranks everyone from best to worst"
+      },
+      {
+        "id": "b",
+        "text": "Describes each score on the scale with typical behaviour"
+      },
+      {
+        "id": "c",
+        "text": "Records how often a behaviour occurs"
+      },
+      {
+        "id": "d",
+        "text": "Forces a fixed share of employees into each category"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "BARS anchors each rating point in concrete behaviour. BOS records frequency; critical incidents record concrete good/bad events.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Behaviour-based methods"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-10",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Simple ranking",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "What is the main weakness of simple ranking according to the video?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It takes too long"
+      },
+      {
+        "id": "b",
+        "text": "It is unsystematic (gut feeling)"
+      },
+      {
+        "id": "c",
+        "text": "It requires a computer"
+      },
+      {
+        "id": "d",
+        "text": "It ignores the best performer"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Simple ranking orders everyone from highest to lowest – quick, but unsystematic.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Simple ranking and paired comparison"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-11",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Paired comparison – formula",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "With paired comparison, how many pairs must a manager compare for 10 employees?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10"
+      },
+      {
+        "id": "b",
+        "text": "20"
+      },
+      {
+        "id": "c",
+        "text": "45"
+      },
+      {
+        "id": "d",
+        "text": "90"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "P = N(N−1)/2 = 10 × 9 / 2 = 45 – more systematic than ranking, but laborious for big teams.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Simple ranking and paired comparison"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-12",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Forced distribution – examples",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which firm used forced distribution under the name “vitality curve”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deloitte"
+      },
+      {
+        "id": "b",
+        "text": "GE (Jack Welch)"
+      },
+      {
+        "id": "c",
+        "text": "Netflix"
+      },
+      {
+        "id": "d",
+        "text": "Accenture"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Deloitte, Accenture, PwC and GE (“vitality curve”) used it – none of them applies it any more.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Forced distribution"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-13",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Criteria for effective PM",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of the following is NOT one of the five criteria for effective performance management?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fit with strategy"
+      },
+      {
+        "id": "b",
+        "text": "Validity"
+      },
+      {
+        "id": "c",
+        "text": "Acceptability"
+      },
+      {
+        "id": "d",
+        "text": "Profitability"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The five criteria: fit with strategy, validity, reliability, acceptability, specificity.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Five criteria"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-14",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Contamination vs deficiency",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A salesperson is rated on how likeable he is. Which validity problem is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deficiency"
+      },
+      {
+        "id": "b",
+        "text": "Contamination"
+      },
+      {
+        "id": "c",
+        "text": "Low specificity"
+      },
+      {
+        "id": "d",
+        "text": "Procedural injustice"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Contamination: irrelevant information is measured. Deficiency: relevant information is missing.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Two ways validity fails"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-15",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Contamination vs deficiency",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A call-centre appraisal counts only the number of calls, not customer satisfaction. Which validity problem is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contamination"
+      },
+      {
+        "id": "b",
+        "text": "Deficiency"
+      },
+      {
+        "id": "c",
+        "text": "Low reliability"
+      },
+      {
+        "id": "d",
+        "text": "Distributive injustice"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Relevant information (customer satisfaction) is not gathered → deficiency.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Two ways validity fails"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-16",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Distributive vs procedural justice",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "An employee says: “The criteria were never explained and I had no chance to respond.” Which kind of justice is at stake?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Distributive justice"
+      },
+      {
+        "id": "b",
+        "text": "Procedural justice"
+      },
+      {
+        "id": "c",
+        "text": "Interactional pay equity"
+      },
+      {
+        "id": "d",
+        "text": "Specificity"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Procedural justice: is the process fair (clear criteria, consistency, a chance to respond)? Distributive justice: are the outcomes fair?",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Two kinds of fairness"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-17",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Appraisal process – steps",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "In Lussier & Hendon's (2016) appraisal process, what is Step 3?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Job analysis"
+      },
+      {
+        "id": "b",
+        "text": "Develop standards and measurement methods; communicate them"
+      },
+      {
+        "id": "c",
+        "text": "Informal appraisal – coaching and discipline"
+      },
+      {
+        "id": "d",
+        "text": "Prepare for and conduct the formal appraisal"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Step 1 job analysis, step 2 standards and methods, step 3 informal appraisal (coaching and discipline), step 4 formal appraisal – all around the mission and objectives.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Designing an appraisal (Lussier & Hendon, 2016)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-18",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Designing an appraisal – who?",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "In the five design questions, appraisal by several sources together (manager, peers, subordinates, clients) is called …",
+    "options": [
+      {
+        "id": "a",
+        "text": "360° feedback"
+      },
+      {
+        "id": "b",
+        "text": "Forced distribution"
+      },
+      {
+        "id": "c",
+        "text": "Management by objectives"
+      },
+      {
+        "id": "d",
+        "text": "Self-selection"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "“Who appraises?” – direct manager, colleagues, peers, subordinates, clients; several together = 360° feedback.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Performance management",
+        "ref": "Five design questions"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-19",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Defining performance",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT one of the things a performance theory must stipulate according to Latham, Sulsky & Macdonald (2007)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The relevant performance dimensions"
+      },
+      {
+        "id": "b",
+        "text": "How situational constraints should be weighted"
+      },
+      {
+        "id": "c",
+        "text": "Absolute vs relative comparison standards"
+      },
+      {
+        "id": "d",
+        "text": "The size of the bonus pool"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "(a) dimensions, (b) standards, (c) situational constraints, (d) number of levels, (e) absolute vs relative.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 4",
+        "ref": "What does performance mean? (Latham et al., 2007)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-20",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Role play – key issue",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "In the manager–employee role play, what is the key issue behind the disagreement on the appraisal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The salary level"
+      },
+      {
+        "id": "b",
+        "text": "A different understanding of what performance means"
+      },
+      {
+        "id": "c",
+        "text": "The length of the appraisal meeting"
+      },
+      {
+        "id": "d",
+        "text": "The rating software"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Before measuring, the parties must agree on what performance is – which is why Latham et al.'s checklist comes first.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 4",
+        "ref": "Role play"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-21",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Evaluation systems and behaviour",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which behaviour does “individual evaluation with ranking on a normal distribution” mainly encourage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Knowledge sharing"
+      },
+      {
+        "id": "b",
+        "text": "Competition – and less sharing"
+      },
+      {
+        "id": "c",
+        "text": "Free riding"
+      },
+      {
+        "id": "d",
+        "text": "Peer teaching"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Ranking makes colleagues rivals: competition, possibly sabotage, no sharing, stress.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 4",
+        "ref": "Evaluation systems shape behaviour"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-22",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Evaluation systems and behaviour",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Team evaluation on a case study encourages cooperation. What is its typical risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sabotage"
+      },
+      {
+        "id": "b",
+        "text": "Free riding"
+      },
+      {
+        "id": "c",
+        "text": "Too much individual accountability"
+      },
+      {
+        "id": "d",
+        "text": "Short-termism"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Team grades reward cooperation but let some members ride on others' work.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 4",
+        "ref": "Evaluation systems shape behaviour"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-23",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Why firms drop appraisals",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is NOT one of Cappelli & Tavis's (2016) three arguments for dropping traditional appraisals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The return of people development"
+      },
+      {
+        "id": "b",
+        "text": "The need for agility"
+      },
+      {
+        "id": "c",
+        "text": "The centrality of teamwork"
+      },
+      {
+        "id": "d",
+        "text": "Lower legal risk"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The three core arguments: people development, agility, teamwork.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Cappelli & Tavis (2016)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-24",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Why firms drop appraisals – agility",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Why does the “need for agility” argue against annual appraisals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Annual goals become obsolete quickly – short-term goals and frequent check-ins fit better"
+      },
+      {
+        "id": "b",
+        "text": "Annual appraisals are too cheap"
+      },
+      {
+        "id": "c",
+        "text": "Agile firms do not need goals"
+      },
+      {
+        "id": "d",
+        "text": "Agility requires forced ranking"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fast-changing work makes yearly goals outdated; firms move to frequent check-ins.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Cappelli & Tavis (2016)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-25",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Why firms drop appraisals – limits",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Why do appraisals not disappear completely, even in firms that drop annual ratings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because employees prefer annual ratings"
+      },
+      {
+        "id": "b",
+        "text": "Because firms still need decisions on pay and promotion"
+      },
+      {
+        "id": "c",
+        "text": "Because the law requires an annual meeting"
+      },
+      {
+        "id": "d",
+        "text": "Because feedback apps are too expensive"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The administrative purpose remains – firms still need a basis for pay and promotion decisions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Cappelli & Tavis (2016)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-26",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Forced distribution – disadvantages",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is NOT a disadvantage of forced distribution listed in the lecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Demotivation of the majority in the middle"
+      },
+      {
+        "id": "b",
+        "text": "Horse-trading"
+      },
+      {
+        "id": "c",
+        "text": "Short-termism"
+      },
+      {
+        "id": "d",
+        "text": "Too little differentiation between employees"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Forced distribution differentiates by design. Its disadvantages: demotivation, infighting, admin cost, horse-trading, not valuing diversity, short-termism.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Forced distribution: disadvantages"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-27",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Forced distribution – horse-trading",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "What does “horse-trading” mean in performance reviews?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Swapping employees between teams"
+      },
+      {
+        "id": "b",
+        "text": "Lobbying, politicking and trading favours before reviews"
+      },
+      {
+        "id": "c",
+        "text": "Paying bonuses in kind"
+      },
+      {
+        "id": "d",
+        "text": "Ranking employees by seniority"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Managers lobby and trade favours to protect their people from the bottom category – time wasted on politics.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Forced distribution: disadvantages"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-28",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Beach House – key problem",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What is the key problem the new PM system at Beach House must solve?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High labour costs"
+      },
+      {
+        "id": "b",
+        "text": "Lack of innovation"
+      },
+      {
+        "id": "c",
+        "text": "Too many sick days"
+      },
+      {
+        "id": "d",
+        "text": "Legal disputes"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Key problem: lack of innovation – so measuring innovators with output targets would kill what the firm needs.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Beach House: key feedback points"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-29",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Beach House – purposes",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which purposes of a new PM system does the Beach House feedback ask you to consider (Lussier & Hendon, 2016)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accountability, development, communication"
+      },
+      {
+        "id": "b",
+        "text": "Recruitment, selection, induction"
+      },
+      {
+        "id": "c",
+        "text": "Direction, fairness, workability"
+      },
+      {
+        "id": "d",
+        "text": "Economic, social, cultural"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Choose the main purpose first – accountability, development or communication – and design to it.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Beach House: key feedback points"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h5-30",
+    "lecture": "h5",
+    "mcSet": true,
+    "topic": "Beach House – segmentation",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "The feedback asks whether the “A Team” can be managed like the “Tweakers”. What is the underlying point?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All employees must be managed identically for fairness"
+      },
+      {
+        "id": "b",
+        "text": "The nature of the work differs, so one system may not fit both groups"
+      },
+      {
+        "id": "c",
+        "text": "Tweakers should be paid more"
+      },
+      {
+        "id": "d",
+        "text": "The A Team should be outsourced"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Design follows the nature of the work: control vs autonomy, quantitative vs qualitative indicators – and analyse the externalities.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 5",
+        "ref": "Beach House: key feedback points"
+      }
+    ]
+  }
+]

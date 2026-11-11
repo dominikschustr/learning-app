@@ -90,8 +90,8 @@ export const PaperSchema = z.object({
 
 /** Grundlage einer Aufgabe, z. B. { kind: "exam", source: "Altklausur 2024", ref: "Part 2 – CGU impairment" } */
 export const BasisSchema = z.object({
-  /** exam = Altklausur, slides = Folien, case = Übung aus der Vorlesung, quiz = Quiz der Vorlesung, own = selbst erstellte Aufgabe (z. B. im Klausurstil) */
-  kind: z.enum(["exam", "slides", "case", "quiz", "own"]),
+  /** exam = Altklausur, slides = Folien, case = Übung aus der Vorlesung, quiz = Quiz der Vorlesung, video = Theorievideo, own = selbst erstellte Aufgabe (z. B. im Klausurstil) */
+  kind: z.enum(["exam", "slides", "case", "quiz", "video", "own"]),
   source: z.string().min(1),
   ref: z.string().default(""),
 });
@@ -106,6 +106,8 @@ const base = {
   paperOnly: z.boolean().default(false),
   /** Check-up-Frage vom Quiz am Ende der Vorlesung – eigener Übungsmodus „Check-up-Fragen“ */
   checkup: z.boolean().default(false),
+  /** Multiple-Choice-Set des Kapitels – eigener Übungsmodus „Multiple Choice“, nicht in „Üben“, Kapiteltest und Prüfungssimulation */
+  mcSet: z.boolean().default(false),
   /** Woran die Aufgabe orientiert ist: Altklausur, Vorlesungsfolien oder Übungsfall der Vorlesung */
   basis: z.array(BasisSchema).default([]),
 };
@@ -301,8 +303,8 @@ export type SubjectContent = {
 /** Leichte Übersicht für Dashboard/Readiness, ohne Fragetexte. */
 export type SubjectSummary = {
   subject: Subject;
-  /** ohne paperOnly-Fragen; calc = Rechenaufgabe mit automatisch geprüften Ergebnissen; checkup = Quiz der Vorlesung */
-  items: { id: string; type: QuestionType; lecture: string; calc: boolean; checkup: boolean }[];
+  /** ohne paperOnly-Fragen; calc = Rechenaufgabe mit automatisch geprüften Ergebnissen; checkup = Quiz der Vorlesung; mcSet = Multiple-Choice-Set des Kapitels */
+  items: { id: string; type: QuestionType; lecture: string; calc: boolean; checkup: boolean; mcSet: boolean }[];
   cards: { id: string; lecture: string }[];
   /** Kapitel, für die ein Lesetext hinterlegt ist */
   texts: string[];

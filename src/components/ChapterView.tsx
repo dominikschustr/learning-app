@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Layers, LayoutGrid, ScrollText, Sigma, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Layers, LayoutGrid, ListChecks, ScrollText, Sigma, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -66,6 +66,11 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
   const checkups = summary.items.filter((i) => i.lecture === chapterId && i.checkup);
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
+  const mcSet = summary.items.filter((i) => i.lecture === chapterId && i.mcSet);
+  const mcStatus = statusCounts(mcSet.map((i) => s.items[itemKey(subject.id, i.id)]));
+  const practiceSeen = summary.items.filter(
+    (i) => i.lecture === chapterId && !i.mcSet && s.items[itemKey(subject.id, i.id)],
+  ).length;
   const paperQs = summary.paperItems.filter((i) => i.lecture === chapterId);
   const paperStatus = statusCounts(paperQs.map((i) => s.items[itemKey(subject.id, i.id)]));
   const slides = subject.look === "slides";
@@ -102,7 +107,8 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
       href: `${base}/practice?mode=lecture&lecture=${chapterId}`,
       icon: BookOpen,
       title: "Üben",
-      meta: `${ch.seen}/${ch.total} gesehen`,
+      // ohne Multiple-Choice-Set – das hat eine eigene Kachel
+      meta: mcSet.length ? `${practiceSeen}/${ch.total - mcSet.length} gesehen` : `${ch.seen}/${ch.total} gesehen`,
     },
     {
       href: `${base}/cards?lecture=${chapterId}`,
@@ -117,6 +123,16 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             icon: ClipboardCheck,
             title: "Check-up-Fragen",
             meta: `${checkupStatus.first + checkupStatus.recovered}/${checkups.length} richtig`,
+          },
+        ]
+      : []),
+    ...(mcSet.length
+      ? [
+          {
+            href: `${base}/practice?mode=mc&lecture=${chapterId}`,
+            icon: ListChecks,
+            title: "Multiple Choice",
+            meta: `${mcStatus.first + mcStatus.recovered}/${mcSet.length} richtig`,
           },
         ]
       : []),

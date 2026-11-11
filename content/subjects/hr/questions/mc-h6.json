@@ -1,0 +1,1182 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-h6-01",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Expectancy theory – formula",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "According to Vroom's expectancy theory, motivation equals …",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy × Instrumentality × Valence"
+      },
+      {
+        "id": "b",
+        "text": "Effort + Performance + Reward"
+      },
+      {
+        "id": "c",
+        "text": "Pay × Seniority"
+      },
+      {
+        "id": "d",
+        "text": "Direction × Fairness × Workability"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Motivation = E × I × V – if one link is zero, motivation drops.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Expectancy theory (Vroom)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-02",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Expectancy theory – expectancy",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "“If I try harder I will do better.” Which link of expectancy theory is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy"
+      },
+      {
+        "id": "b",
+        "text": "Instrumentality"
+      },
+      {
+        "id": "c",
+        "text": "Valence"
+      },
+      {
+        "id": "d",
+        "text": "Contiguity"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Expectancy: effort → performance.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Expectancy theory (Vroom)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-03",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Expectancy theory – instrumentality",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "“If I do better I will be rewarded.” Which link is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy"
+      },
+      {
+        "id": "b",
+        "text": "Instrumentality"
+      },
+      {
+        "id": "c",
+        "text": "Valence"
+      },
+      {
+        "id": "d",
+        "text": "Equity"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Instrumentality: performance → outcome (reward).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Expectancy theory (Vroom)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-04",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Expectancy theory – valence",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "“I value the reward.” Which link is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy"
+      },
+      {
+        "id": "b",
+        "text": "Instrumentality"
+      },
+      {
+        "id": "c",
+        "text": "Valence"
+      },
+      {
+        "id": "d",
+        "text": "Contingency"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Valence: the value the person attaches to the outcome.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Expectancy theory (Vroom)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-05",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Expectancy theory – broken links",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "At Safelite, interdependent work would weaken individual piece rates. Which link of expectancy theory breaks first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy – my effort no longer clearly drives my measured performance"
+      },
+      {
+        "id": "b",
+        "text": "Valence – employees stop valuing money"
+      },
+      {
+        "id": "c",
+        "text": "Instrumentality – the firm refuses to pay"
+      },
+      {
+        "id": "d",
+        "text": "None – interdependence strengthens motivation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "If results depend on others, effort → performance is weak. In large collective schemes, performance → MY reward (instrumentality) weakens too.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Expectancy theory (Vroom)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Safelite case"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-06",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Expectancy theory – broken links",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A bonus is paid at the manager's discretion, without written criteria. Which link is weakest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy"
+      },
+      {
+        "id": "b",
+        "text": "Instrumentality"
+      },
+      {
+        "id": "c",
+        "text": "Valence"
+      },
+      {
+        "id": "d",
+        "text": "None"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Unclear or discretionary criteria break performance → reward (National Office Supplies).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Expectancy theory (Vroom)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Vroom"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-07",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "What to pay for",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "According to the lecture, what is the key question about pay?",
+    "options": [
+      {
+        "id": "a",
+        "text": "How much?"
+      },
+      {
+        "id": "b",
+        "text": "What for?"
+      },
+      {
+        "id": "c",
+        "text": "When?"
+      },
+      {
+        "id": "d",
+        "text": "Who decides?"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Not “how much” but “what for” – internal consistency, external competitiveness, individual contributions.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "What to pay for? (Renard, 2008)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-08",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "What to pay for – three groups",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which is NOT one of Renard's (2008) three groups of reasons for pay differences?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internal consistency"
+      },
+      {
+        "id": "b",
+        "text": "External competitiveness"
+      },
+      {
+        "id": "c",
+        "text": "Individual contributions"
+      },
+      {
+        "id": "d",
+        "text": "Individual looks and age"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Pay based on individual characteristics (gender, age, ethnicity, looks) is unwise or illegal.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "What to pay for? (Renard, 2008)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-09",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Internal consistency vs external competitiveness",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Pat earns more than Chris partly because Pat's firm is larger, more profitable and unionised. Which group of reasons is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internal consistency"
+      },
+      {
+        "id": "b",
+        "text": "External competitiveness"
+      },
+      {
+        "id": "c",
+        "text": "Individual contributions"
+      },
+      {
+        "id": "d",
+        "text": "Individual characteristics"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Size, profitability, unions, industry, market and cost of living are external competitiveness reasons.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Pat vs Chris (Renard, 2008)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-10",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Internal consistency vs external competitiveness",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Pat's job requires a Master's degree, more languages and four years' experience. Which group of reasons is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internal consistency"
+      },
+      {
+        "id": "b",
+        "text": "External competitiveness"
+      },
+      {
+        "id": "c",
+        "text": "Individual contributions"
+      },
+      {
+        "id": "d",
+        "text": "Pay transparency"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Abilities, duties, education, experience, job complexity and level are properties of the job → internal consistency.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Pat vs Chris (Renard, 2008)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-11",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Internal consistency vs external competitiveness",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is an EXTERNAL competitiveness reason?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Job complexity"
+      },
+      {
+        "id": "b",
+        "text": "Education required"
+      },
+      {
+        "id": "c",
+        "text": "Supply and demand in the labour market"
+      },
+      {
+        "id": "d",
+        "text": "Supervision duties"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Supply and demand belongs to the external market; the others describe the job (internal).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Pat vs Chris (Renard, 2008)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-12",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Salary structure",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "How does a salary structure come about according to the lecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Job analysis → job evaluation (internal) + market data (external) → grades and pay ranges"
+      },
+      {
+        "id": "b",
+        "text": "Market data → performance ratings → bonus"
+      },
+      {
+        "id": "c",
+        "text": "Seniority → job title → salary"
+      },
+      {
+        "id": "d",
+        "text": "CEO decision → HR approval → payroll"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Internal consistency (job evaluation) and external competitiveness (market pricing) combine into the salary structure.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "From job analysis to salary structure"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-13",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Pay for skills vs pay for performance",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is PAY FOR SKILLS rather than pay for performance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Meeting objectives"
+      },
+      {
+        "id": "b",
+        "text": "Going the extra mile"
+      },
+      {
+        "id": "c",
+        "text": "Rewarding formal education and competencies"
+      },
+      {
+        "id": "d",
+        "text": "Achievements"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Pay for skills rewards education, experience and abilities; pay for performance rewards achievements, objectives, extra mile.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Pay for skills vs pay for performance"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-14",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Why PRP might work",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is NOT one of the four mechanisms through which PRP might work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Culture"
+      },
+      {
+        "id": "b",
+        "text": "Keep the good (sorting)"
+      },
+      {
+        "id": "c",
+        "text": "Motivation (expectancy theory)"
+      },
+      {
+        "id": "d",
+        "text": "Lower administration cost"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Culture, keep the good, motivation, focused effort (agency theory). Administration cost is a practical PROBLEM of PRP.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Why might PRP work?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-15",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Why PRP might work – sorting",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "After Safelite introduced piece rates, part of the productivity gain came from who joined and who stayed. Which mechanism is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focused effort"
+      },
+      {
+        "id": "b",
+        "text": "Keep the good (sorting)"
+      },
+      {
+        "id": "c",
+        "text": "Culture"
+      },
+      {
+        "id": "d",
+        "text": "Contiguity"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Sorting: PRP attracts and retains high performers, low performers leave.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Why might PRP work? · Safelite"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-16",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Agency theory",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "According to agency theory, how can a principal make an agent act in the principal's interest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Supervision or incentive pay"
+      },
+      {
+        "id": "b",
+        "text": "Job evaluation"
+      },
+      {
+        "id": "c",
+        "text": "Employer branding"
+      },
+      {
+        "id": "d",
+        "text": "Equal pay for all"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Monitor behaviour directly (costly when hard to observe) or pay for output: deferred pay, collective schemes, individual PRP.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Agency theory"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-17",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Agency theory – focused effort",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which PRP mechanism is explained by agency theory?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Culture"
+      },
+      {
+        "id": "b",
+        "text": "Sorting"
+      },
+      {
+        "id": "c",
+        "text": "Focused effort"
+      },
+      {
+        "id": "d",
+        "text": "Valence"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Agency theory: incentives focus the agent's effort on the principal's goals.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Agency theory"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-18",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Evidence on PRP",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which study is the classic success case for piece rates (windscreen installers)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Safelite (Lazear, 2000)"
+      },
+      {
+        "id": "b",
+        "text": "Jockeys (Fernie & Metcalf, 1999)"
+      },
+      {
+        "id": "c",
+        "text": "Marsden et al. (2009)"
+      },
+      {
+        "id": "d",
+        "text": "Nyberg et al. (2020)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "At Safelite output rose sharply, pay rose and labour cost per unit fell.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Effect of PRP on performance"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-19",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Evidence on PRP – Marsden",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Marsden et al. (2009) surveyed employees under PRP. Which finding stands out?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Most say PRP gave them strong incentives to work beyond requirements"
+      },
+      {
+        "id": "b",
+        "text": "Only 17 % say PRP gave them incentives to work beyond job requirements"
+      },
+      {
+        "id": "c",
+        "text": "No one thinks PRP is a good principle"
+      },
+      {
+        "id": "d",
+        "text": "PRP was universally welcomed"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "51.5 % call PRP a good principle, but only 33 % say it recognises good work and only 17 % that it gave incentives beyond requirements.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Effect of PRP on performance (Marsden et al., 2009)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-20",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Practical problems of PRP",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is NOT one of the practical problems with PRP listed in the lecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identification and measurement"
+      },
+      {
+        "id": "b",
+        "text": "Appraisal bias"
+      },
+      {
+        "id": "c",
+        "text": "Need for precision"
+      },
+      {
+        "id": "d",
+        "text": "Too much employee loyalty"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Measurement, appraisal bias, need for precision, contingency & contiguity, administration cost.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Practical problems with PRP"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-21",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Contingency and contiguity",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What does the CONTIGUITY principle require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The reward clearly depends on performance"
+      },
+      {
+        "id": "b",
+        "text": "The reward follows the performance closely in time"
+      },
+      {
+        "id": "c",
+        "text": "Everyone receives the same reward"
+      },
+      {
+        "id": "d",
+        "text": "The reward is paid in shares"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Contingency: the reward depends on performance. Contiguity: it follows soon after.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Practical problems with PRP"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-22",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Contingency and contiguity – City bonuses",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "City bonuses were paid before losses on the deals appeared years later. Which principle do they clash with?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contiguity – and contingency on real performance"
+      },
+      {
+        "id": "b",
+        "text": "Valence"
+      },
+      {
+        "id": "c",
+        "text": "Internal consistency"
+      },
+      {
+        "id": "d",
+        "text": "Pay for skills"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Bonuses were paid before results were known; the losses came later – the reward did not truly depend on (or follow) real performance.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "PRP case studies: the financial sector"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-23",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Need for precision",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Why is “need for precision” a problem for PRP?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Small rating errors can lead to big pay differences"
+      },
+      {
+        "id": "b",
+        "text": "Bonuses must be paid to the cent"
+      },
+      {
+        "id": "c",
+        "text": "Precision makes PRP too cheap"
+      },
+      {
+        "id": "d",
+        "text": "Employees prefer imprecise targets"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "When pay hangs on ratings, inaccurate measurement becomes costly and unfair.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "Practical problems with PRP"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-24",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "PRP case – Vatican",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The Vatican's PRP scheme rewarded “dedication, professionalism, productivity and politeness”. What is the main problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The criteria are hard to measure and may clash with mission-driven motivation"
+      },
+      {
+        "id": "b",
+        "text": "The bonuses were too large"
+      },
+      {
+        "id": "c",
+        "text": "The criteria were too easy to measure"
+      },
+      {
+        "id": "d",
+        "text": "Employees could not see the bonus"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Subjective criteria, few comparable units and a risk of crowding out intrinsic, mission-driven motivation.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "PRP case studies: the Vatican"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-25",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "When PRP works",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which condition from the cases makes PRP more likely to work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The employee controls the result and the measure matches the real goal"
+      },
+      {
+        "id": "b",
+        "text": "Results become known only years after payment"
+      },
+      {
+        "id": "c",
+        "text": "Performance is judged entirely subjectively"
+      },
+      {
+        "id": "d",
+        "text": "The firm bears all costs of failure"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Safelite: measure matched the goal, installers controlled output, results were known before payment and unpaid rework kept quality.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "When does PRP work?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-26",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "When PRP works – Safelite design",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "How did Safelite protect quality and employees under piece rates?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A guaranteed hourly floor and unpaid rework of faulty installations"
+      },
+      {
+        "id": "b",
+        "text": "Annual bonuses paid in shares"
+      },
+      {
+        "id": "c",
+        "text": "Forced distribution of installers"
+      },
+      {
+        "id": "d",
+        "text": "No measurement of output"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The floor limited income risk; unpaid rework made installers bear the cost of poor quality.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "When does PRP work?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-27",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "“Rewarding A while hoping for B”",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What does Kerr's (1975) phrase “rewarding A while hoping for B” warn against?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paying too little"
+      },
+      {
+        "id": "b",
+        "text": "Incentives tied to a measure that differs from the behaviour the firm really wants"
+      },
+      {
+        "id": "c",
+        "text": "Using team bonuses"
+      },
+      {
+        "id": "d",
+        "text": "Paying bonuses too often"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "If the measure does not match the goal, people deliver the measure, not the goal (e.g. short-term results without risk).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "When does PRP work?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-28",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "PRP in banking – Stiglitz",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Stiglitz argued bankers were “paid to gamble”. Which design fix does the lecture's synthesis suggest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold bonuses in escrow / defer them with clawback"
+      },
+      {
+        "id": "b",
+        "text": "Abolish base pay"
+      },
+      {
+        "id": "c",
+        "text": "Pay bonuses monthly"
+      },
+      {
+        "id": "d",
+        "text": "Use forced distribution"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Bankers shared in gains but not losses; deferring bonuses until results are known restores contiguity with real performance.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "PRP case studies (Stiglitz)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-29",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "PRP depends on PM",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Why does the lecture stress that PRP schemes are “totally dependent on performance management systems”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because PRP can only be as good as the measurement and appraisal behind it"
+      },
+      {
+        "id": "b",
+        "text": "Because PM is required by law for PRP"
+      },
+      {
+        "id": "c",
+        "text": "Because PRP replaces PM"
+      },
+      {
+        "id": "d",
+        "text": "Because PM decides the base salary"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Measurement problems, appraisal bias and need for precision all come from the PM system.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "PRP and the PM system"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h6-30",
+    "lecture": "h6",
+    "mcSet": true,
+    "topic": "Incentives and creative tasks",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "What does the candle problem suggest about incentives?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Incentives always improve performance"
+      },
+      {
+        "id": "b",
+        "text": "Incentives can worsen performance on creative tasks"
+      },
+      {
+        "id": "c",
+        "text": "Incentives only work for managers"
+      },
+      {
+        "id": "d",
+        "text": "Incentives have no effect at all"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "On tasks that need creativity, a narrow focus on the reward can hurt performance – a limit of PRP.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 6",
+        "ref": "The candle problem"
+      }
+    ]
+  }
+]

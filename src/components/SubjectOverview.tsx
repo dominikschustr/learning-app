@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, Play, RotateCcw, ScrollText, Sigma, Table2, Target, Trophy, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, ListChecks, Play, RotateCcw, ScrollText, Sigma, Table2, Target, Trophy, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -68,6 +68,8 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const hasTf = summary.items.some((i) => i.type === "tf");
   const checkups = summary.items.filter((i) => i.checkup);
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
+  const mcSet = summary.items.filter((i) => i.mcSet);
+  const mcStatus = statusCounts(mcSet.map((i) => s.items[itemKey(subject.id, i.id)]));
   // Klausuraufgaben je Kapitel: alle Aufgaben der Probeklausuren, nach Thema sortiert
   const paperChapters = subject.lectures
     .map((l, i) => {
@@ -103,6 +105,16 @@ function Inner({ summary }: { summary: SubjectSummary }) {
             icon: ClipboardCheck,
             title: "Check-up-Fragen",
             meta: `${checkupStatus.first + checkupStatus.recovered}/${checkups.length} richtig`,
+          },
+        ]
+      : []),
+    ...(mcSet.length
+      ? [
+          {
+            href: `${base}/practice?mode=mc`,
+            icon: ListChecks,
+            title: "Multiple Choice",
+            meta: `${mcStatus.first + mcStatus.recovered}/${mcSet.length} richtig`,
           },
         ]
       : []),

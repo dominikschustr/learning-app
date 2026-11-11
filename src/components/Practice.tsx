@@ -23,7 +23,7 @@ import { Button, ButtonLink, Skeleton } from "./ui";
 type Entry = { q: Question; order: string[]; retry: boolean };
 type Outcome = { q: Question; correct: boolean };
 
-const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "papers"];
+const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "papers"];
 
 export function Practice({
   content,
@@ -292,9 +292,11 @@ function Session({
                   ? "Nichts falsch"
                   : mode === "checkup"
                     ? "Keine Check-up-Fragen"
-                    : mode === "papers"
-                      ? "Keine Klausuraufgaben"
-                      : "Keine Fragen"}
+                    : mode === "mc"
+                      ? "Keine Multiple-Choice-Fragen"
+                      : mode === "papers"
+                        ? "Keine Klausuraufgaben"
+                        : "Keine Fragen"}
         </h1>
         <p className="mt-2 text-muted">
           {mode === "due"
@@ -307,9 +309,11 @@ function Session({
                   ? "Keine Frage ist gerade als falsch beantwortet markiert – stark!"
                   : mode === "checkup"
                     ? "Für diese Auswahl sind keine Check-up-Fragen aus den Vorlesungen hinterlegt."
-                    : mode === "papers"
-                      ? "In den Probeklausuren gibt es zu diesem Kapitel keine Aufgaben."
-                      : "Für diese Auswahl gibt es noch keine Fragen."}
+                    : mode === "mc"
+                      ? "Für diese Auswahl ist kein Multiple-Choice-Set hinterlegt."
+                      : mode === "papers"
+                        ? "In den Probeklausuren gibt es zu diesem Kapitel keine Aufgaben."
+                        : "Für diese Auswahl gibt es noch keine Fragen."}
         </p>
         <div className="mt-6 flex justify-center gap-2">
           <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>

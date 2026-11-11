@@ -1,0 +1,1172 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-h1-01",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "RBV – three kinds of resources",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "According to the Resource-Based View in the theory video, which kind of resource is usually the hardest for competitors to buy or copy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Physical capital resources (plants, machines, money)"
+      },
+      {
+        "id": "b",
+        "text": "Organisational capital resources (structures, systems, processes)"
+      },
+      {
+        "id": "c",
+        "text": "Human capital resources (knowledge and skills of people)"
+      },
+      {
+        "id": "d",
+        "text": "Financial capital raised on the stock market"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Physical and organisational resources can usually be bought or copied; human capital often cannot – which is why people can be a source of lasting advantage.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "Resource-Based View"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-02",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "VRIO – order of the questions",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "In the VRIO framework, a resource is checked with four questions from left to right. Which order is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Valuable? → Rare? → Difficult to imitate? → Supported by the organisation?"
+      },
+      {
+        "id": "b",
+        "text": "Rare? → Valuable? → Organised? → Inimitable?"
+      },
+      {
+        "id": "c",
+        "text": "Valuable? → Inimitable? → Rare? → Organised?"
+      },
+      {
+        "id": "d",
+        "text": "Organised? → Valuable? → Rare? → Inimitable?"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "V – R – I – O: valuable, rare, difficult to imitate, supported by the organisation. A “no” at any step stops the advantage.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "VRIO framework"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-03",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "VRIO – outcomes",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A firm's resource is valuable, but every competitor has it as well. What does the VRIO framework conclude?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Competitive disadvantage"
+      },
+      {
+        "id": "b",
+        "text": "Competitive parity"
+      },
+      {
+        "id": "c",
+        "text": "Temporary competitive advantage"
+      },
+      {
+        "id": "d",
+        "text": "Sustained competitive advantage"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Valuable but not rare → competitive parity: everyone has it, so it does not set the firm apart.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "VRIO framework"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-04",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "VRIO – outcomes",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A consulting firm has a team with rare and valuable expertise, but a rival can hire away and train similar people within a year. What does VRIO predict?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Competitive parity"
+      },
+      {
+        "id": "b",
+        "text": "Advantage not exploited"
+      },
+      {
+        "id": "c",
+        "text": "Temporary competitive advantage"
+      },
+      {
+        "id": "d",
+        "text": "Sustained competitive advantage"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Valuable and rare, but not difficult to imitate → the advantage is only temporary.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "VRIO framework"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-05",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "VRIO – the “O”",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A resource is valuable, rare and difficult to imitate, but the firm's systems, culture and HRM do not allow it to be used. What is the result according to VRIO?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sustained competitive advantage"
+      },
+      {
+        "id": "b",
+        "text": "Advantage not exploited"
+      },
+      {
+        "id": "c",
+        "text": "Competitive disadvantage"
+      },
+      {
+        "id": "d",
+        "text": "Competitive parity"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The “O” asks whether the organisation is set up to use the resource. If not, the potential advantage is not exploited – this is where HRM comes in.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "VRIO framework"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-06",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "VRIO – outcomes",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which outcome does VRIO assign to a resource that is NOT valuable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Competitive parity"
+      },
+      {
+        "id": "b",
+        "text": "Temporary competitive advantage"
+      },
+      {
+        "id": "c",
+        "text": "Competitive disadvantage"
+      },
+      {
+        "id": "d",
+        "text": "Advantage not exploited"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "If the resource does not help to create value or cut costs, the answer to the first question is “no” → competitive disadvantage.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "VRIO framework"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-07",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Human capital – Becker (1964)",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Becker (1964) defines human capital as “the knowledge, information, ideas, skills, and … of individuals”. What is the missing element?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Health"
+      },
+      {
+        "id": "b",
+        "text": "Wealth"
+      },
+      {
+        "id": "c",
+        "text": "Social networks"
+      },
+      {
+        "id": "d",
+        "text": "Seniority"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Becker's definition: knowledge, information, ideas, skills and health – everything a person brings to work that makes him or her productive.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "What is human capital?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-08",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Human capital – why “capital”",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Why is it called human “capital”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because employees appear as assets on the balance sheet"
+      },
+      {
+        "id": "b",
+        "text": "Because education and training cost time and money today and pay off later through higher productivity and higher pay"
+      },
+      {
+        "id": "c",
+        "text": "Because only highly paid employees count as capital"
+      },
+      {
+        "id": "d",
+        "text": "Because the firm owns the knowledge of its employees"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "It works like an investment: costs today, returns later – for the firm (productivity) and for the person (pay).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "What is human capital?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-09",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Types of human capital – portability",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The video orders the types of human capital from least to most portable. Which order is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "General → strategic → industry → relationship → specific"
+      },
+      {
+        "id": "b",
+        "text": "Specific → relationship → industry → strategic → general"
+      },
+      {
+        "id": "c",
+        "text": "Relationship → specific → general → industry → strategic"
+      },
+      {
+        "id": "d",
+        "text": "Industry → specific → relationship → general → strategic"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Specific (this firm) and relationship (particular colleagues/clients) are worth little elsewhere; general skills (management, analysis, communication) are useful everywhere.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "Types of human capital"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-10",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Types of human capital",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "An executive has led two companies through a turnaround. Which type of human capital does this experience represent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Specific human capital"
+      },
+      {
+        "id": "b",
+        "text": "Relationship human capital"
+      },
+      {
+        "id": "c",
+        "text": "Strategic human capital"
+      },
+      {
+        "id": "d",
+        "text": "Industry human capital"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Strategic human capital = experience with a type of situation, such as growth or turnaround – useful in similar situations.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "Types of human capital"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-11",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Types of human capital",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A retiring CFO knows the firm's financial history in detail and enjoys the CEO's personal trust. Which type of human capital is the CEO's trust?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Specific human capital"
+      },
+      {
+        "id": "b",
+        "text": "Relationship human capital"
+      },
+      {
+        "id": "c",
+        "text": "General human capital"
+      },
+      {
+        "id": "d",
+        "text": "Industry human capital"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Ties with particular people (the CEO's trust) are relationship human capital; the firm's financial history is specific human capital. Both are hardly portable – an external successor lacks them (TechSoft 2024).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "Types of human capital"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-12",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Portability – firm vs employee interests",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which statement about portable human capital is NOT in line with the video?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Firms prefer to invest in specific human capital because it stays in the firm"
+      },
+      {
+        "id": "b",
+        "text": "Employees prefer general human capital because it raises their market value"
+      },
+      {
+        "id": "c",
+        "text": "Training in general skills lowers the risk that people leave"
+      },
+      {
+        "id": "d",
+        "text": "Rewards and development must help retain people whose general skills have been trained"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "General training makes people more attractive to other employers – it increases, not lowers, the risk of leaving. Hence rewards and development must support retention.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "Why “portable” matters"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-13",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Human capital & HR practices",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "In the video, each HR practice is a way of managing human capital. Which pairing is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recruitment & selection – build human capital inside the firm"
+      },
+      {
+        "id": "b",
+        "text": "Training & development – buy human capital from the labour market"
+      },
+      {
+        "id": "c",
+        "text": "Performance management – direct human capital to the firm's goals and develop it"
+      },
+      {
+        "id": "d",
+        "text": "Rewards & compensation – measure human capital"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "R&S buys human capital, T&D builds it, PM directs and develops it, rewards motivate and retain it.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Why people matter: RBV & human capital",
+        "ref": "Human capital & HR"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-14",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "HR's double role",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "How does the lecture describe the relationship between HR as “strategic business partner” and HR as “employee advocate”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are alternatives – a firm must choose one"
+      },
+      {
+        "id": "b",
+        "text": "They are two sides of one role (yin-yang), not a choice"
+      },
+      {
+        "id": "c",
+        "text": "Business partner is the modern role, employee advocate is outdated"
+      },
+      {
+        "id": "d",
+        "text": "Employee advocacy belongs to unions, not to HR"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The lecture shows both roles as yin and yang: HR serves the business AND the employees.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Strategic business partner vs employee advocate"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-15",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "HR activities",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of the following is NOT one of HR's activities in today's organisations listed in the lecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Administrative activities"
+      },
+      {
+        "id": "b",
+        "text": "Transformational activities (strategic HRM)"
+      },
+      {
+        "id": "c",
+        "text": "Data analytics"
+      },
+      {
+        "id": "d",
+        "text": "Statutory financial auditing"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The lecture lists administrative, operational, transformational (strategic HRM) activities and data analytics.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "HR's role in today's organizations"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-16",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Who does HRM?",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "According to the lecture, who does HRM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the HR department"
+      },
+      {
+        "id": "b",
+        "text": "Only top management"
+      },
+      {
+        "id": "c",
+        "text": "All managers"
+      },
+      {
+        "id": "d",
+        "text": "External consultants and HR software"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "“ALL MANAGERS”: line managers run most HR practices day to day – the HR department is not the only actor.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Who does HRM?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-17",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Individual HR cycle",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "In the individual human resource cycle (Boxall & Purcell, 2008), which steps make up the staffing process?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Job analysis, recruitment, selection, induction"
+      },
+      {
+        "id": "b",
+        "text": "Recruitment, training, performance management, rewards"
+      },
+      {
+        "id": "c",
+        "text": "Employer branding, discipline, dismissal"
+      },
+      {
+        "id": "d",
+        "text": "Job evaluation, market pricing, salary structure"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Staffing = job analysis → recruitment → selection → induction; then training & development, performance management, compensation & rewards, discipline & dismissal.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Individual HR cycle (Boxall & Purcell, 2008)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-18",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Why bother about HRM?",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which TWO arguments does the lecture use to answer “Why bother about HRM?”",
+    "options": [
+      {
+        "id": "a",
+        "text": "Influence on company performance (HCT, RBV) and impact on individual, environmental & societal well-being"
+      },
+      {
+        "id": "b",
+        "text": "Legal obligations and cost reduction"
+      },
+      {
+        "id": "c",
+        "text": "Employer branding and recruitment volume"
+      },
+      {
+        "id": "d",
+        "text": "Union pressure and government subsidies"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The two arguments are performance (HCT, RBV) and well-being – of individuals, the environment and society.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Why bother about HRM?"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-19",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Control approach",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of the following is NOT a feature of the “control” approach to HRM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Close monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Precise and narrow job descriptions"
+      },
+      {
+        "id": "c",
+        "text": "Reward per piece"
+      },
+      {
+        "id": "d",
+        "text": "Self-managed teams"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Control (Bentham's Panopticon, Ford): close monitoring, narrow jobs, precise evaluations, piece rates. Self-managed teams belong to the commitment approach.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "From “control”…"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-20",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Control approach – value logic",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "How does HRM create value under the control approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By maximising employee trust and commitment"
+      },
+      {
+        "id": "b",
+        "text": "By minimising labour cost and maximising output through monitoring and control"
+      },
+      {
+        "id": "c",
+        "text": "By fitting HR practices to the local context"
+      },
+      {
+        "id": "d",
+        "text": "By balancing financial, social and ecological goals"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Control: value through low labour cost and maximum output, secured by monitoring. Commitment: value through trust.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "From “control”…"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-21",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Commitment approach",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What is the core idea of the “commitment” approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Success depends on securing commitment from people, not controlling them – committed employees go the extra mile"
+      },
+      {
+        "id": "b",
+        "text": "Employees are committed when they are monitored closely"
+      },
+      {
+        "id": "c",
+        "text": "Commitment is achieved through piece rates"
+      },
+      {
+        "id": "d",
+        "text": "Commitment matters only in public organisations"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "HRM creates value by maximising employee trust and commitment; a committed workforce is more likely to go the extra mile.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "… to “Commitment”"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-22",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Japanese production model",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What does the comparison of Japanese plants in Japan, US plants and Japanese plants in North America (Womack et al., 1990) suggest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Productivity differences are explained only by technology"
+      },
+      {
+        "id": "b",
+        "text": "Japanese-owned plants in North America came much closer to Japanese productivity than US plants – management practices travel"
+      },
+      {
+        "id": "c",
+        "text": "US plants were the most productive on average"
+      },
+      {
+        "id": "d",
+        "text": "The Japanese model only works with Japanese employees"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Average hours per vehicle: Japan 16.8, Japanese in North America 20.9, US 24.9. The way people are managed matters, not only the location.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "The Japanese production model (Womack et al., 1990)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-23",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Best practice – Pfeffer",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is NOT one of Pfeffer's (1998) practices for “building profits by putting people first”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Employment security"
+      },
+      {
+        "id": "b",
+        "text": "Selective hiring"
+      },
+      {
+        "id": "c",
+        "text": "Forced ranking of employees"
+      },
+      {
+        "id": "d",
+        "text": "Reduction of status differences"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Pfeffer's seven: employment security, selective hiring, self-managed teams, high pay contingent on company performance, extensive training, reduced status differences, sharing information.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Universalism (Pfeffer, 1998)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-24",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Best practice – Pfeffer",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of the following is NOT on Pfeffer's (1998) list of best practices?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High pay contingent on company performance"
+      },
+      {
+        "id": "b",
+        "text": "Extensive training"
+      },
+      {
+        "id": "c",
+        "text": "Sharing information"
+      },
+      {
+        "id": "d",
+        "text": "Narrow job descriptions"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Narrow job descriptions are a control practice. Pfeffer's list stands for the commitment philosophy.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Universalism (Pfeffer, 1998)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-25",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Best practice vs best fit",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What does the best-fit (contingency) approach claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One bundle of HR practices improves performance in every organisation"
+      },
+      {
+        "id": "b",
+        "text": "The most effective way of managing varies with the organisation's context – HR must fit it tightly (“matching model”)"
+      },
+      {
+        "id": "c",
+        "text": "HR should copy the practices of the most successful competitor"
+      },
+      {
+        "id": "d",
+        "text": "HR practices do not affect performance"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Best fit (Jackson & Schuler, 1984; Paauwe & Farndale, 2017): tight fit between HR and context. The first option describes universalism (best practice).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Best fit / contingency approach"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-26",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Best practice vs best fit",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "A group wants to roll out the HR practices of its most successful site to all countries unchanged. Which line of argument reflects the lecture best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Universalism shows this will always work"
+      },
+      {
+        "id": "b",
+        "text": "Best fit warns that context differs – keep the principles that travel, but adapt the design to each context"
+      },
+      {
+        "id": "c",
+        "text": "HR practices never travel between countries"
+      },
+      {
+        "id": "d",
+        "text": "Only the Harvard Model is relevant here"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Use best practice vs best fit whenever a firm wants to copy practices: principles may travel, designs need adapting to context.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Best practice vs best fit"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-27",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Harvard Model – structure",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "In the Harvard Model (Beer et al., 1984), what shapes HRM policy choices?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stakeholder interests and situational factors"
+      },
+      {
+        "id": "b",
+        "text": "HR outcomes and long-term consequences only"
+      },
+      {
+        "id": "c",
+        "text": "The CEO's personal preferences"
+      },
+      {
+        "id": "d",
+        "text": "The labour law of the home country only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Stakeholder interests + situational factors → HRM policy choices → HR outcomes → long-term consequences, with feedback loops.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "The Harvard Model (Beer et al., 1984)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-28",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Harvard Model – policy choices",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which are the four HRM policy areas in the Harvard Model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Employee influence, human resource flow, reward systems, work systems"
+      },
+      {
+        "id": "b",
+        "text": "Recruitment, selection, induction, dismissal"
+      },
+      {
+        "id": "c",
+        "text": "Commitment, competence, congruence, cost-effectiveness"
+      },
+      {
+        "id": "d",
+        "text": "Administrative, operational, transformational, analytics"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The 4 Cs (commitment, competence, congruence, cost-effectiveness) are the HR outcomes, not the policy choices.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "The Harvard Model (Beer et al., 1984)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-29",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Harvard Model – 4 Cs",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is NOT one of the HR outcomes (the “4 Cs”) in the Harvard Model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Commitment"
+      },
+      {
+        "id": "b",
+        "text": "Competence"
+      },
+      {
+        "id": "c",
+        "text": "Congruence"
+      },
+      {
+        "id": "d",
+        "text": "Control"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The 4 Cs are commitment, competence, congruence (of goals) and cost-effectiveness.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "The Harvard Model (Beer et al., 1984)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h1-30",
+    "lecture": "h1",
+    "mcSet": true,
+    "topic": "Harvard Model – consequences",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT a level of long-term consequences in the Harvard Model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Individual well-being"
+      },
+      {
+        "id": "b",
+        "text": "Organisational effectiveness"
+      },
+      {
+        "id": "c",
+        "text": "Societal well-being"
+      },
+      {
+        "id": "d",
+        "text": "Shareholder value only"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Long-term consequences are individual, organisational and societal – the model is a stakeholder map, not a shareholder model.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "The Harvard Model (Beer et al., 1984)"
+      }
+    ]
+  }
+]

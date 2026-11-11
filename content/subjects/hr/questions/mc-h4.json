@@ -1,0 +1,1187 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-h4-01",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "P-O fit – cloning critique",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What is the “cloning” critique of person-organisation fit in the theory video?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Firms copy job descriptions from competitors"
+      },
+      {
+        "id": "b",
+        "text": "If “fit” means “people like us”, firms hire the same profile again and again – diversity falls"
+      },
+      {
+        "id": "c",
+        "text": "Candidates copy each other's CVs"
+      },
+      {
+        "id": "d",
+        "text": "Firms re-hire former employees"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The video flags that P-O fit can reduce diversity – the link to Lecture 3 on cultural fit and inequality.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Person-organisation fit"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-02",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Closed searches and in-group favouritism",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Why can a heavy reliance on referrals (word-of-mouth) work against diversity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Referrals are more expensive than open searches"
+      },
+      {
+        "id": "b",
+        "text": "Employees tend to refer people from their own networks – social capital and in-group favouritism reproduce the current workforce"
+      },
+      {
+        "id": "c",
+        "text": "Referred candidates are legally protected"
+      },
+      {
+        "id": "d",
+        "text": "Referrals attract too many unsuitable applications"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Closed searches draw on existing networks (Bourdieu's social capital); in-group favouritism constrains diversity (Bell, 2013).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Recruitment methods"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Unconscious bias in R&S"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-03",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Selection methods – references",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "How does the theory-video summary rate references as a selection method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Highly valid and reliable"
+      },
+      {
+        "id": "b",
+        "text": "Former employers' views with usually low validity"
+      },
+      {
+        "id": "c",
+        "text": "The most practicable method for senior roles"
+      },
+      {
+        "id": "d",
+        "text": "Illegal in most EU countries"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "References are cheap but tend to be positive and unspecific – low validity.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Selection methods"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-04",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Structured interviews",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Why are structured interviews recommended both for validity/reliability and for reducing bias?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are shorter than free conversations"
+      },
+      {
+        "id": "b",
+        "text": "Every candidate gets the same job-related questions, scored against criteria set in advance"
+      },
+      {
+        "id": "c",
+        "text": "They let the interviewer follow his or her gut feeling"
+      },
+      {
+        "id": "d",
+        "text": "They replace the need for a job analysis"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Standardised, job-related questions and scoring make interviews more valid and reliable – and limit halo, horns and similar-to-me effects.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Selection methods"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Inclusive selection"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-05",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Selection methods – tests",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which statement about tests as a selection method is NOT in line with the video summary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They can measure ability, personality or skills"
+      },
+      {
+        "id": "b",
+        "text": "They are cheap and standardised"
+      },
+      {
+        "id": "c",
+        "text": "Personality tests can be faked"
+      },
+      {
+        "id": "d",
+        "text": "They are always more valid than probationary periods"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Probationary periods observe real work and are very valid – but costly if the hire fails.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Selection methods"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-06",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Innovative methods – AI screening",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What risk does the video summary attach to innovative selection methods such as AI screening?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are too slow"
+      },
+      {
+        "id": "b",
+        "text": "Bias risk"
+      },
+      {
+        "id": "c",
+        "text": "They can only be used for senior roles"
+      },
+      {
+        "id": "d",
+        "text": "They violate reliability by design"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "AI screening can reproduce historical bias – compare “algorithmically biased recruitment” as a sin of commission (Session 1).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Selection methods"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Unconscious bias in R&S"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-07",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Validity – CV signals",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "A firm screens CVs mainly on university prestige. Using the video's criteria, what is the main concern?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Practicability – CV screening is too expensive"
+      },
+      {
+        "id": "b",
+        "text": "Validity – prestige may not predict performance in the job"
+      },
+      {
+        "id": "c",
+        "text": "Reliability – CVs cannot be read twice"
+      },
+      {
+        "id": "d",
+        "text": "None – prestige is a perfect predictor"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The question is whether the signal measures what predicts job performance. Lecture 3 adds that such signals are partly produced by class origins.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Recruitment & selection",
+        "ref": "Deciding how to select"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-08",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Meritocracy",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "What is a meritocratic system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A system in which actors are rewarded for their talent and hard work"
+      },
+      {
+        "id": "b",
+        "text": "A system in which riches and rule are inherited"
+      },
+      {
+        "id": "c",
+        "text": "A system in which all employees earn the same"
+      },
+      {
+        "id": "d",
+        "text": "A system in which seniority decides promotion"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "In a meritocracy, riches and rule are earned, not inherited; power and privilege are allocated by individual merit, not social background.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "Meritocratic systems"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-09",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Meritocracy – formula",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which formula summarises merit in the lecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "IQ + Effort = Merit"
+      },
+      {
+        "id": "b",
+        "text": "Education × Experience = Merit"
+      },
+      {
+        "id": "c",
+        "text": "Talent − Luck = Merit"
+      },
+      {
+        "id": "d",
+        "text": "Signals + Networks = Merit"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "IQ + Effort = Merit – a promise that Ingram (2021) questions: what looks like merit is partly produced by class origins.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 2",
+        "ref": "Meritocratic systems"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-10",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Bourdieu – capitals",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "In Bourdieu's theory (as used by Ingram, 2021), what is SOCIAL capital?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Command over financial resources"
+      },
+      {
+        "id": "b",
+        "text": "Resources based on group membership, relations and networks of influence and support"
+      },
+      {
+        "id": "c",
+        "text": "Knowledge, skills and education"
+      },
+      {
+        "id": "d",
+        "text": "The prestige of an employer"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Economic = money and assets; social = networks; cultural = knowledge, skills, education and expectations.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Bourdieu's three capitals"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-11",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Bourdieu – capitals",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A candidate could afford several unpaid internships in London thanks to family money. Which capital mainly explains this CV entry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Economic capital"
+      },
+      {
+        "id": "b",
+        "text": "Social capital"
+      },
+      {
+        "id": "c",
+        "text": "Cultural capital"
+      },
+      {
+        "id": "d",
+        "text": "Human capital"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Financial resources (economic capital) made the unpaid internships possible – the signal is produced by money, not only ability.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Bourdieu's three capitals"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-12",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Bourdieu – capitals",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A candidate interviews with confidence and “polish” and has high expectations of his career because his parents are academics. Which capital is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Economic capital"
+      },
+      {
+        "id": "b",
+        "text": "Social capital"
+      },
+      {
+        "id": "c",
+        "text": "Cultural capital"
+      },
+      {
+        "id": "d",
+        "text": "Signalling capital"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Cultural capital: forms of knowledge, skills, education and any advantages giving higher standing, including high expectations.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Bourdieu's three capitals"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-13",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Signaling theory",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT a reason given by Baron & Kreps (1999) for relying on signals such as degrees?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Signals are expensive to obtain"
+      },
+      {
+        "id": "b",
+        "text": "They are granted by institutions that screen the candidate pool"
+      },
+      {
+        "id": "c",
+        "text": "Their acquisition requires acquiring knowledge"
+      },
+      {
+        "id": "d",
+        "text": "They are free of bias"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The lecture adds: “But careful: signals can be biased!”",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Signaling theory (Baron & Kreps, 1999)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-14",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Signals and bias",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "What is the HR challenge that the “Spoiled for choice” case illustrates?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignoring all signals on a CV"
+      },
+      {
+        "id": "b",
+        "text": "Distinguishing the signal from the underlying job-relevant capability"
+      },
+      {
+        "id": "c",
+        "text": "Hiring only candidates from top schools"
+      },
+      {
+        "id": "d",
+        "text": "Reading the evidence on the CV literally"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "“Evidence-based” selection is not the same as reading the evidence literally – weigh signals once you know how they were produced.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Signaling theory"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-15",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Spoiled for choice",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "In “Spoiled for choice”, why might a prestige-oriented CV screen undervalue Peter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peter has no work experience"
+      },
+      {
+        "id": "b",
+        "text": "His experiences may reveal capabilities (e.g. responsibility, resilience, work experience) that conventional prestige signals do not capture"
+      },
+      {
+        "id": "c",
+        "text": "Peter does not fit EIC's culture"
+      },
+      {
+        "id": "d",
+        "text": "Peter's CV contains false information"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The case asks which skills Peter may have acquired that John did not – and why a standard screen misses them.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Spoiled for choice"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-16",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Cultural fit and inequality",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "According to the lecture, can the search for “fit” reproduce inequality?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No – fit is always a neutral criterion"
+      },
+      {
+        "id": "b",
+        "text": "Yes – the problem is how cultural fit is defined and assessed"
+      },
+      {
+        "id": "c",
+        "text": "Only in public organisations"
+      },
+      {
+        "id": "d",
+        "text": "Only if the firm uses open searches"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Fit judged as “like us” turns into similar-to-me bias and reproduces homogeneity.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Person–organisation fit vs “cultural fit”"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-17",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Inequality, discrimination, bias",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which definition is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inequality: a cognitive or attitudinal process"
+      },
+      {
+        "id": "b",
+        "text": "Discrimination: differential treatment associated with group membership"
+      },
+      {
+        "id": "c",
+        "text": "Bias: unequal outcomes between groups"
+      },
+      {
+        "id": "d",
+        "text": "All three terms are interchangeable"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Inequality = unequal outcomes; discrimination = differential treatment; bias = a cognitive/attitudinal process. Related, but NOT interchangeable.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Important conceptual distinctions"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-18",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Inequality vs discrimination",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "A firm hires women less often than men. What can you conclude from this observation alone?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The firm discriminates against women"
+      },
+      {
+        "id": "b",
+        "text": "There is inequality in outcomes – discrimination is not yet proven"
+      },
+      {
+        "id": "c",
+        "text": "Recruiters are biased"
+      },
+      {
+        "id": "d",
+        "text": "The firm's selection methods are invalid"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "An outcome gap is inequality. To show discrimination you must rule out differences between candidates – e.g. with a field experiment.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Important conceptual distinctions"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-19",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Biases in people perception",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "An interviewer is impressed by a candidate's top-school degree and then rates everything else about the candidate positively. Which bias is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Horns effect"
+      },
+      {
+        "id": "b",
+        "text": "Halo effect"
+      },
+      {
+        "id": "c",
+        "text": "Self-delusion"
+      },
+      {
+        "id": "d",
+        "text": "Stereotyping"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Halo effect: one positive feature → only positives are seen. The horns effect is the negative version.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Common biases (Weston & Woods)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-20",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Biases in people perception",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "A manager says: “I'm completely objective, bias is not an issue for me.” Which bias does Weston & Woods call this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Similar-to-me"
+      },
+      {
+        "id": "b",
+        "text": "Self-delusion"
+      },
+      {
+        "id": "c",
+        "text": "Halo effect"
+      },
+      {
+        "id": "d",
+        "text": "In-group favouritism"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Self-delusion: believing oneself immune from bias – remedy: training and monitoring data.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Common biases (Weston & Woods)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-21",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Biases in people perception",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "An interviewer treats himself as the “gold standard” and prefers candidates with his own background. Which bias, and which remedy fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Similar-to-me – diverse interview panels"
+      },
+      {
+        "id": "b",
+        "text": "Halo effect – longer interviews"
+      },
+      {
+        "id": "c",
+        "text": "Stereotyping – more references"
+      },
+      {
+        "id": "d",
+        "text": "Horns effect – fewer criteria"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Similar-to-me bias is reduced by involving a variety of actors, e.g. diverse panels.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Common biases (Weston & Woods)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-22",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Unconscious bias – surgeon riddle",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "What does the surgeon riddle (“I cannot operate on this boy, he is my son”) illustrate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Halo effect"
+      },
+      {
+        "id": "b",
+        "text": "Unconscious gender stereotypes – many do not think of the doctor being his mother"
+      },
+      {
+        "id": "c",
+        "text": "Self-selection"
+      },
+      {
+        "id": "d",
+        "text": "Signalling theory"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The doctor is the boy's mother; the difficulty shows unconscious gender stereotypes.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "A story (surgeon riddle)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-23",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Unconscious bias – mechanisms",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT a mechanism of unconscious bias in R&S named in the lecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gendered wording in job ads (Gaucher et al., 2011)"
+      },
+      {
+        "id": "b",
+        "text": "In-group favouritism (Bell, 2013)"
+      },
+      {
+        "id": "c",
+        "text": "Conformity to standardised approaches screening out neurodiverse people (Austin & Pisano, 2017)"
+      },
+      {
+        "id": "d",
+        "text": "Self-selection after a realistic job preview"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Self-selection is a selection method from the theory video, not a bias mechanism.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Unconscious bias in R&S practices"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-24",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Unconscious bias – neurodiversity",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Austin & Pisano (2017) argue that conventional R&S methods screen out neurodiverse people. What follows for selection design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standardisation should be abolished"
+      },
+      {
+        "id": "b",
+        "text": "Standardisation helps reliability, but the process must allow reasonable adjustments"
+      },
+      {
+        "id": "c",
+        "text": "Neurodiverse candidates should be hired without selection"
+      },
+      {
+        "id": "d",
+        "text": "Only interviews should be used"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Absolute conformity to standard approaches excludes some talent – keep structure but allow adjustments.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Unconscious bias in R&S practices"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-25",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Field experiments",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "How do the field experiments in Quillian et al.'s (2019) meta-analysis measure discrimination?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By comparing the hiring rates of real applicants"
+      },
+      {
+        "id": "b",
+        "text": "By sending applications that are equivalent in job-relevant characteristics and vary only racial/ethnic cues such as names"
+      },
+      {
+        "id": "c",
+        "text": "By interviewing recruiters about their attitudes"
+      },
+      {
+        "id": "d",
+        "text": "By analysing firms' diversity reports"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Only the cue differs, so a callback gap can be causally attributed to discrimination.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Field experiments (Quillian et al., 2019)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-26",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Field experiments – causal inference",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "What does the field-experiment design allow us to say that comparing real applicants cannot?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That candidates differ in qualifications"
+      },
+      {
+        "id": "b",
+        "text": "That the callback gap is caused by the group cue – causal inference"
+      },
+      {
+        "id": "c",
+        "text": "That discrimination is illegal"
+      },
+      {
+        "id": "d",
+        "text": "That recruiters are aware of their bias"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Real applicants differ in many ways; equivalent constructed applications isolate the effect of the cue.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Field experiments (Quillian et al., 2019)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-27",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Discrimination ratio",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "How is the discrimination ratio defined in Quillian et al. (2019)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Callback rate of the target group / callback rate of white natives"
+      },
+      {
+        "id": "b",
+        "text": "Callback rate of white natives / callback rate of the target group"
+      },
+      {
+        "id": "c",
+        "text": "Share of minority employees in the firm"
+      },
+      {
+        "id": "d",
+        "text": "Number of applications / number of hires"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "A ratio above 1 means white natives receive more callbacks than the target group.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Field experiments (Quillian et al., 2019)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-28",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Field experiments – scope",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "How many field experiments does the Quillian et al. (2019) meta-analysis cover?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12"
+      },
+      {
+        "id": "b",
+        "text": "97"
+      },
+      {
+        "id": "c",
+        "text": "200,000"
+      },
+      {
+        "id": "d",
+        "text": "9"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "97 field experiments with more than 200,000 job applications in nine countries in Europe and North America.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Field experiments (Quillian et al., 2019)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-29",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Diversity and innovation",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which finding of Mohammadi, Broström & Franzoni (2017) is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ethnic diversity can be replaced by collaborating with external partners"
+      },
+      {
+        "id": "b",
+        "text": "Disciplinary diversity can be substituted by intense collaboration with external partners"
+      },
+      {
+        "id": "c",
+        "text": "Ethnic diversity mainly facilitates incremental innovation"
+      },
+      {
+        "id": "d",
+        "text": "Diversity has no link with innovation"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Disciplinary diversity can be substituted by external collaboration and helps radical and incremental innovation; ethnic diversity can neither be replaced nor complemented and mainly facilitates radical innovation.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "Why reduce bias and increase diversity? (Mohammadi et al., 2017)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h4-30",
+    "lecture": "h4",
+    "mcSet": true,
+    "topic": "Inclusive R&S process",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT a core idea of an inclusive recruitment and selection process in the lecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Systematic and transparent criteria"
+      },
+      {
+        "id": "b",
+        "text": "Putting standard signals and preconceptions into question"
+      },
+      {
+        "id": "c",
+        "text": "Involving a variety of actors"
+      },
+      {
+        "id": "d",
+        "text": "Relying on the hiring manager's gut feeling about fit"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Gut feeling about fit is exactly what produces similar-to-me bias; criteria should be set in advance and linked to the job.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 3",
+        "ref": "R&S core ideas · CIPD 2024 & 2026"
+      }
+    ]
+  }
+]

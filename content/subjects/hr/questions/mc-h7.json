@@ -1,0 +1,1187 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-h7-01",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Total compensation – structure",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "In the video, total compensation is first split into …",
+    "options": [
+      {
+        "id": "a",
+        "text": "Intrinsic and extrinsic rewards"
+      },
+      {
+        "id": "b",
+        "text": "Direct and indirect pay"
+      },
+      {
+        "id": "c",
+        "text": "Fixed and variable pay"
+      },
+      {
+        "id": "d",
+        "text": "Cash and equity"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Total compensation → intrinsic and extrinsic rewards; extrinsic → non-financial and financial; financial → direct and indirect.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Total compensation"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-02",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Intrinsic rewards",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of the following is NOT an intrinsic reward?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Learning"
+      },
+      {
+        "id": "b",
+        "text": "A job well done"
+      },
+      {
+        "id": "c",
+        "text": "Interest in the job"
+      },
+      {
+        "id": "d",
+        "text": "A company car"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Intrinsic rewards come from the work itself: learning, a job well done, competence, interest. A company car is an indirect financial reward.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Intrinsic rewards"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-03",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Extrinsic non-financial rewards",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is an EXTRINSIC NON-FINANCIAL reward?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salary"
+      },
+      {
+        "id": "b",
+        "text": "An award or participation in training"
+      },
+      {
+        "id": "c",
+        "text": "Pension"
+      },
+      {
+        "id": "d",
+        "text": "Feeling competent"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Extrinsic rewards are given by the organisation; non-financial ones include awards and participation in training.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Extrinsic rewards"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-04",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Direct vs indirect financial rewards",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is a DIRECT financial reward?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Health insurance"
+      },
+      {
+        "id": "b",
+        "text": "Childcare"
+      },
+      {
+        "id": "c",
+        "text": "Bonus"
+      },
+      {
+        "id": "d",
+        "text": "Gift vouchers"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Direct = money paid out (salary, bonus, commission); indirect = benefits with monetary value (pension, health insurance, vouchers, company car, childcare).",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Financial rewards"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-05",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Indirect financial rewards",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Why are indirect financial rewards such as childcare or vouchers often attractive for employer and employee?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are often tax-advantaged"
+      },
+      {
+        "id": "b",
+        "text": "They are always cheaper than salary"
+      },
+      {
+        "id": "c",
+        "text": "They do not count as compensation"
+      },
+      {
+        "id": "d",
+        "text": "They are required by law"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The video notes that benefits are often tax-advantaged – for employer and employee.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Financial rewards"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-06",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Intrinsic rewards and Herzberg",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Which statement links intrinsic rewards correctly to Herzberg's model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Intrinsic rewards correspond to hygiene factors"
+      },
+      {
+        "id": "b",
+        "text": "Intrinsic rewards correspond to motivators and create real satisfaction"
+      },
+      {
+        "id": "c",
+        "text": "Intrinsic rewards are paid out by the firm"
+      },
+      {
+        "id": "d",
+        "text": "Intrinsic rewards only remove dissatisfaction"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Nobody hands out intrinsic rewards, but the firm shapes them through job design, autonomy and development – they match Herzberg's motivators.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Intrinsic rewards"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Herzberg"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-07",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Rewards ≠ compensation",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What is the take-away “rewards ≠ compensation”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rewards and compensation are synonyms"
+      },
+      {
+        "id": "b",
+        "text": "Pay is only one part of the rewards a firm offers"
+      },
+      {
+        "id": "c",
+        "text": "Compensation is always non-financial"
+      },
+      {
+        "id": "d",
+        "text": "Rewards are illegal in the EU"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Total rewards include intrinsic and non-financial extrinsic rewards – not just pay.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Total compensation"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Types of rewards"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-08",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Direction–fairness–workability",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which three corners does the model for evaluating compensation design use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Direction, fairness, workability"
+      },
+      {
+        "id": "b",
+        "text": "Validity, reliability, practicability"
+      },
+      {
+        "id": "c",
+        "text": "Expectancy, instrumentality, valence"
+      },
+      {
+        "id": "d",
+        "text": "Clear, smooth, secure"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Direction (right behaviour?), fairness (seen as fair?), workability (easy to implement?) – with trade-offs between them.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Analysing compensation design"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-09",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Direction–fairness–workability – workability",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "In the compensation design model, what does WORKABILITY mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The system steers people towards the right behaviour"
+      },
+      {
+        "id": "b",
+        "text": "Employees see pay decisions as fair"
+      },
+      {
+        "id": "c",
+        "text": "The system is easy to implement – simple, measurable, affordable"
+      },
+      {
+        "id": "d",
+        "text": "Employees work longer hours"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Workability = easy to implement.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Analysing compensation design"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-10",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Judgement-based pay",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which corner is the weak point of a JUDGEMENT-BASED pay system (the manager decides)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Direction"
+      },
+      {
+        "id": "b",
+        "text": "Fairness"
+      },
+      {
+        "id": "c",
+        "text": "Workability"
+      },
+      {
+        "id": "d",
+        "text": "None"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Flexible and simple, but decisions look subjective → fairness suffers.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Analysing compensation design"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-11",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Pay-for-seniority",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which corner is the weak point of PAY-FOR-SENIORITY?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Direction"
+      },
+      {
+        "id": "b",
+        "text": "Fairness"
+      },
+      {
+        "id": "c",
+        "text": "Workability"
+      },
+      {
+        "id": "d",
+        "text": "None"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fair and easy, but it rewards tenure, not the behaviour the firm needs → weak direction.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Analysing compensation design"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-12",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Pay-for-performance",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which corner is the weak point of PAY-FOR-PERFORMANCE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Direction"
+      },
+      {
+        "id": "b",
+        "text": "Fairness"
+      },
+      {
+        "id": "c",
+        "text": "Workability"
+      },
+      {
+        "id": "d",
+        "text": "None"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Right direction and fair, but measuring performance is hard and costly → weak workability.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Analysing compensation design"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-13",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Compensation trade-offs",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "A firm introduces very precise individual sales targets with a detailed bonus formula. What is the likely trade-off?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Direction ↑, workability ↓"
+      },
+      {
+        "id": "b",
+        "text": "Direction ↓, fairness ↑"
+      },
+      {
+        "id": "c",
+        "text": "Fairness ↓, workability ↑"
+      },
+      {
+        "id": "d",
+        "text": "No trade-off"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A fix for one corner usually costs another: precise targets steer behaviour but are costly to measure and administer.",
+    "basis": [
+      {
+        "kind": "video",
+        "source": "Rewards & compensation",
+        "ref": "Analysing compensation design"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Trade-offs in compensation design"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-14",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "PFP – costs",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is NOT a cost of pay for performance listed by Dahl & Pierce (2020)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Competition and reduced cooperation"
+      },
+      {
+        "id": "b",
+        "text": "Stress and poorer employee health"
+      },
+      {
+        "id": "c",
+        "text": "Burnout and turnover"
+      },
+      {
+        "id": "d",
+        "text": "Attracting higher performers"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Attracting higher performers is a reason organisations USE PFP.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Pay for performance: pros and cons (Dahl & Pierce, 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-15",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Uncertainty mechanism",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "According to Sayre et al. (2026), what is the real source of harm in PFP?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PFP itself"
+      },
+      {
+        "id": "b",
+        "text": "Pay uncertainty"
+      },
+      {
+        "id": "c",
+        "text": "High base pay"
+      },
+      {
+        "id": "d",
+        "text": "Team bonuses"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Uncertainty → insecurity → overwork and neglected recovery → stress and burnout.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "The uncertainty mechanism (Sayre et al., 2026)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-16",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Uncertainty mechanism – experiment",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "In Sayre et al.'s experiment, one group earned a certain 12 tokens per correct answer, another an uncertain 1–23 tokens (same average). What happened?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The uncertain group worked longer and reported more stress"
+      },
+      {
+        "id": "b",
+        "text": "Both groups behaved identically"
+      },
+      {
+        "id": "c",
+        "text": "The certain group worked longer"
+      },
+      {
+        "id": "d",
+        "text": "The uncertain group stopped working early"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "People kept working even when pay became negligible. Limit: lab experiments with simple tasks.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "The uncertainty mechanism (Sayre et al., 2026)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-17",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Clear, smooth, secure",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which fix belongs to “SMOOTH variable income”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Define bonus criteria in advance"
+      },
+      {
+        "id": "b",
+        "text": "Evaluate performance over longer periods and at team/company level"
+      },
+      {
+        "id": "c",
+        "text": "Increase the proportion of base pay"
+      },
+      {
+        "id": "d",
+        "text": "Publish individual salaries"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Clear = rules known in advance; smooth = longer periods, collective outcomes, fewer fluctuations; secure = more base pay.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Clear, Smooth, Secure (Sayre et al., 2026)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-18",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Clear, smooth, secure",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A firm raises the share of base pay to reduce dependence on bonuses. Which of the three fixes is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Make the rules clear"
+      },
+      {
+        "id": "b",
+        "text": "Smooth variable income"
+      },
+      {
+        "id": "c",
+        "text": "Reduce financial insecurity"
+      },
+      {
+        "id": "d",
+        "text": "Pay transparency"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Reducing financial insecurity lowers uncertainty about HOW MUCH employees earn.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Clear, Smooth, Secure (Sayre et al., 2026)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-19",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Collective PFP",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What is the central trade-off of collective PFP (Nyberg et al., 2020)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alignment vs line of sight"
+      },
+      {
+        "id": "b",
+        "text": "Validity vs reliability"
+      },
+      {
+        "id": "c",
+        "text": "Cash vs equity"
+      },
+      {
+        "id": "d",
+        "text": "Hygiene vs motivators"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The further the reward from what I influence, the weaker effort → performance → MY reward. Also free riding.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Collective pay for performance (Nyberg et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-20",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Collective PFP – when",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "When does the lecture recommend collective PFP?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When work is interdependent"
+      },
+      {
+        "id": "b",
+        "text": "When work is fully individual and measurable"
+      },
+      {
+        "id": "c",
+        "text": "When the firm wants maximum competition"
+      },
+      {
+        "id": "d",
+        "text": "Never"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Collective PFP supports common goals, knowledge sharing and cooperation – especially in interdependent work.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Collective pay for performance (Nyberg et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-21",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Line of sight",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What does “line of sight” mean in reward design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "How clearly an employee sees the connection between own effort, performance and reward"
+      },
+      {
+        "id": "b",
+        "text": "Whether employees can see their colleagues' salaries"
+      },
+      {
+        "id": "c",
+        "text": "The time between performance and payment"
+      },
+      {
+        "id": "d",
+        "text": "The manager's span of control"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Line of sight weakens when rewards depend on large collective outcomes. Seeing others' pay is transparency; timing is contiguity.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Collective pay for performance"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-22",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "How to pay – decisions",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which is NOT one of Groysberg's (2021) “how to pay” decisions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fixed vs variable"
+      },
+      {
+        "id": "b",
+        "text": "Short-term vs long-term"
+      },
+      {
+        "id": "c",
+        "text": "Cash vs equity"
+      },
+      {
+        "id": "d",
+        "text": "Internal vs external recruitment"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The four decisions: fixed vs variable, short vs long term, cash vs equity, individual vs collective goals.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "How to pay? (Groysberg, 2021)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-23",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Herzberg – hygiene factors",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "In Herzberg's two-factor model, compensation is a …",
+    "options": [
+      {
+        "id": "a",
+        "text": "Motivator"
+      },
+      {
+        "id": "b",
+        "text": "Hygiene factor"
+      },
+      {
+        "id": "c",
+        "text": "Valence"
+      },
+      {
+        "id": "d",
+        "text": "Signal"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Hygiene factors (pay, policy, supervision, work conditions, relationships) prevent dissatisfaction but rarely create satisfaction.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Herzberg's two-factor model"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-24",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Herzberg – motivators",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of these is a MOTIVATOR in Herzberg's model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Work conditions"
+      },
+      {
+        "id": "b",
+        "text": "Company policy"
+      },
+      {
+        "id": "c",
+        "text": "Recognition"
+      },
+      {
+        "id": "d",
+        "text": "Relationship with peers"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Motivators: achievement, recognition, the work itself, responsibility, advancement and growth.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Herzberg's two-factor model"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-25",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Equity theory",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What do people compare according to equity theory (Adams, 1963)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Their outcome/input ratio with a referent's outcome/input ratio"
+      },
+      {
+        "id": "b",
+        "text": "Their pay with the inflation rate"
+      },
+      {
+        "id": "c",
+        "text": "Their effort with their performance"
+      },
+      {
+        "id": "d",
+        "text": "Their skills with the job description"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Perceived inequity leads to reactions: less effort, asking for more, distorting perceptions, changing the referent, leaving.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Equity theory (Adams, 1963)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-26",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "Pay transparency",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Employees know how jobs are valued, the salary bands and the criteria for increases – but not individual salaries. Which level is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Low transparency"
+      },
+      {
+        "id": "b",
+        "text": "Process transparency"
+      },
+      {
+        "id": "c",
+        "text": "Outcome transparency"
+      },
+      {
+        "id": "d",
+        "text": "Full transparency"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Process transparency = how pay is determined. Outcome transparency = resulting pay levels and gaps. Full = individual salaries visible.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "Pay transparency"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-27",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "EU pay transparency directive",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which rule is part of the EU pay transparency directive (2023/970)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Employers may ask about salary history"
+      },
+      {
+        "id": "b",
+        "text": "Applicants receive the starting pay or range before employment"
+      },
+      {
+        "id": "c",
+        "text": "Only firms with 1,000+ employees are covered"
+      },
+      {
+        "id": "d",
+        "text": "Pay criteria may stay confidential"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Before recruitment: pay range given, no salary-history questions. During employment: right to information, gender-neutral criteria.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "The EU pay transparency directive (2023/970)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-28",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "EU pay transparency directive – joint assessment",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Under the directive, what can trigger a joint pay assessment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An unexplained gender pay gap of at least 5 % in a category"
+      },
+      {
+        "id": "b",
+        "text": "Any employee complaint"
+      },
+      {
+        "id": "c",
+        "text": "A pay rise above inflation"
+      },
+      {
+        "id": "d",
+        "text": "Hiring more than 100 people"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Gender pay-gap reporting applies to employers with 100+ employees; a ≥ 5 % unexplained gap can trigger a joint pay assessment.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "The EU pay transparency directive (2023/970)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-29",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "National Office Supplies – Scotland",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "In National Office Supplies, the Scotland office splits the pot equally. What is the main risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High pay uncertainty"
+      },
+      {
+        "id": "b",
+        "text": "Free riding and little reason to stand out"
+      },
+      {
+        "id": "c",
+        "text": "Too much competition"
+      },
+      {
+        "id": "d",
+        "text": "Illegal pay discrimination"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Scotland: “certainty without pay for performance” – no uncertainty, but free-riding risk. London: “pay for performance without certainty”.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "National Office Supplies"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h7-30",
+    "lecture": "h7",
+    "mcSet": true,
+    "topic": "National Office Supplies – recommendation",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Which recommendation for National Office Supplies applies the “make the rules clear” fix?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Written bonus criteria for all offices"
+      },
+      {
+        "id": "b",
+        "text": "Turning Jeff's discretionary pot into a London allowance"
+      },
+      {
+        "id": "c",
+        "text": "An office team share instead of a monthly top-seller prize"
+      },
+      {
+        "id": "d",
+        "text": "Abolishing all bonuses"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Clear = written criteria known in advance; the allowance is “secure”; the team share is “smooth”.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 7",
+        "ref": "National Office Supplies"
+      }
+    ]
+  }
+]

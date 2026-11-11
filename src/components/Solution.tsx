@@ -1,4 +1,4 @@
-import { AlertTriangle, BookOpenCheck, ListChecks, PenLine, Presentation, ScrollText } from "lucide-react";
+import { AlertTriangle, BookOpenCheck, ListChecks, MonitorPlay, PenLine, Presentation, ScrollText } from "lucide-react";
 import type { Basis, Step, Table } from "@/lib/schema";
 import { cn } from "@/lib/utils";
 import { FormulaText } from "./FormulaText";
@@ -86,7 +86,7 @@ export function SolutionSteps({ steps, pitfalls = [] }: { steps: Step[]; pitfall
   );
 }
 
-/** Art der Quelle: Symbol, Bezeichnung und Farbe (Folien blau, Altklausur orange, Übung violett, Quiz grün, eigene Aufgabe rosa). */
+/** Art der Quelle: Symbol, Bezeichnung und Farbe (Folien blau, Altklausur orange, Übung violett, Quiz grün, Theorievideo rot, eigene Aufgabe rosa). */
 const BASIS_KIND = {
   slides: {
     Icon: Presentation,
@@ -111,6 +111,12 @@ const BASIS_KIND = {
     label: "Quiz",
     cls: "border-emerald-300 bg-emerald-50 text-emerald-950 dark:border-emerald-400/40 dark:bg-emerald-400/10 dark:text-emerald-100",
     tag: "bg-emerald-600 text-white dark:bg-emerald-400 dark:text-emerald-950",
+  },
+  video: {
+    Icon: MonitorPlay,
+    label: "Theorievideo",
+    cls: "border-red-300 bg-red-50 text-red-950 dark:border-red-400/40 dark:bg-red-400/10 dark:text-red-100",
+    tag: "bg-red-600 text-white dark:bg-red-400 dark:text-red-950",
   },
   own: {
     Icon: PenLine,

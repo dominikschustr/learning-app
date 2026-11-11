@@ -1,0 +1,1172 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-h2-01",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Sustainable HRM – definition",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which goals does sustainable HRM aim to achieve according to Ehnert et al. (2016)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Financial, social and ecological goals"
+      },
+      {
+        "id": "b",
+        "text": "Financial goals only, with social goals as a constraint"
+      },
+      {
+        "id": "c",
+        "text": "Ecological goals only"
+      },
+      {
+        "id": "d",
+        "text": "Legal compliance goals"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Sustainable HRM: HRM strategies and practices that enable the achievement of financial, social and ecological goals.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Definition (Ehnert et al., 2016)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-02",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Sustainable HRM – definition",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT part of Ehnert et al.'s (2016) definition of sustainable HRM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An impact inside and outside the organisation"
+      },
+      {
+        "id": "b",
+        "text": "A long-term time horizon"
+      },
+      {
+        "id": "c",
+        "text": "Controlling for unintended side effects and negative feedback"
+      },
+      {
+        "id": "d",
+        "text": "Maximising short-term shareholder returns"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The four elements: triple goals, inside AND outside, long term, control of side effects and negative feedback.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Definition (Ehnert et al., 2016)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-03",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Sustainable HRM – definition",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A firm introduces a well-being programme that also reduces turnover, but it ignores the extra workload it creates for line managers. Which element of the definition is neglected?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The long-term time horizon"
+      },
+      {
+        "id": "b",
+        "text": "Controlling for unintended side effects"
+      },
+      {
+        "id": "c",
+        "text": "The financial goal"
+      },
+      {
+        "id": "d",
+        "text": "The impact outside the organisation"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Sustainable HRM explicitly asks HR to control for unintended side effects and negative feedback – here, the managers' workload.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Definition (Ehnert et al., 2016)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-04",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Triple bottom line",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Who introduced the triple bottom line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elkington (1997)"
+      },
+      {
+        "id": "b",
+        "text": "Ehnert et al. (2016)"
+      },
+      {
+        "id": "c",
+        "text": "Pfeffer (1998)"
+      },
+      {
+        "id": "d",
+        "text": "Stahl et al. (2020)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The triple bottom line goes back to Elkington (1997); the definition of sustainable HRM to Ehnert et al. (2016).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Triple Bottom Line (Elkington, 1997)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-05",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Triple bottom line",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which dimension of the triple bottom line covers “people & community”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Financial"
+      },
+      {
+        "id": "b",
+        "text": "Ecological"
+      },
+      {
+        "id": "c",
+        "text": "Social"
+      },
+      {
+        "id": "d",
+        "text": "Operational"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Social = people & community; ecological = environmental impact; financial = profitability & investments.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Triple Bottom Line (Elkington, 1997)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-06",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Triple bottom line – trade-offs",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What is sustainable HRM mainly about when it uses the triple bottom line as its lens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximising one dimension at a time"
+      },
+      {
+        "id": "b",
+        "text": "Managing trade-offs between the social, ecological and financial dimensions"
+      },
+      {
+        "id": "c",
+        "text": "Reporting environmental data"
+      },
+      {
+        "id": "d",
+        "text": "Replacing financial goals with social ones"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Many HR decisions help one dimension and hurt another – sustainable HRM makes these trade-offs explicit and manages them.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Triple Bottom Line (Elkington, 1997)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-07",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Triple bottom line – trade-offs",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "AI-based recruitment cuts hiring costs but may introduce bias against some groups. How does this show on the triple bottom line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Financial + / social −"
+      },
+      {
+        "id": "b",
+        "text": "Ecological + / financial −"
+      },
+      {
+        "id": "c",
+        "text": "Social + / financial −"
+      },
+      {
+        "id": "d",
+        "text": "No trade-off – all three dimensions improve"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Lower recruitment costs help the financial dimension; algorithmic bias harms the social dimension – a typical sustainability trade-off.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sustainable HRM practices · group work"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-08",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "HR Director exercise",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "In the HR Director exercise, the CEO wants 12 % lower labour costs AND sustainability leadership. Which option mainly helps the financial dimension while harming the social one?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Invest €5m in employee reskilling"
+      },
+      {
+        "id": "b",
+        "text": "Freeze recruitment and increase workloads"
+      },
+      {
+        "id": "c",
+        "text": "Link executive bonuses to carbon reduction and employee well-being"
+      },
+      {
+        "id": "d",
+        "text": "Introduce a living-wage commitment throughout the supply chain"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Freezing recruitment and raising workloads saves labour cost (financial +) but burdens employees (social −) – it conflicts with the sustainability ambition.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "An exercise: “You are the HR Director”"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-09",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "HR Director exercise",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Which option from the HR Director exercise is mainly a cost-cutting move with a social downside?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Introduce a living-wage commitment throughout the supply chain"
+      },
+      {
+        "id": "b",
+        "text": "Invest €5m in employee reskilling"
+      },
+      {
+        "id": "c",
+        "text": "Replace some European jobs with lower-cost contractors"
+      },
+      {
+        "id": "d",
+        "text": "Link executive bonuses to carbon reduction and employee well-being"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Replacing jobs with cheaper contractors cuts labour cost (financial +) but hurts employees (social −). The other three strengthen the social or ecological dimension.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "An exercise: “You are the HR Director”"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-10",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Strategic vs sustainable HRM",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which feature belongs to the sustainable (rather than the strategic) HRM philosophy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "HRM responsibility focuses on the own organisation"
+      },
+      {
+        "id": "b",
+        "text": "Shorter-term orientation in planning and evaluation"
+      },
+      {
+        "id": "c",
+        "text": "Responsibility also encompasses communities and other organisations"
+      },
+      {
+        "id": "d",
+        "text": "Financial performance is the most important goal"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Sustainable HRM goes beyond the boundaries of the own organisation. The other three describe the strategic HRM philosophy.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Strategic vs sustainable HRM philosophy"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-11",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Strategic vs sustainable HRM",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "How does control work in the sustainable HRM philosophy compared with strategic HRM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Top-down control only"
+      },
+      {
+        "id": "b",
+        "text": "Top-down + bottom-up control"
+      },
+      {
+        "id": "c",
+        "text": "Bottom-up control only"
+      },
+      {
+        "id": "d",
+        "text": "No control – full employee autonomy"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Strategic HRM: top-down control. Sustainable HRM: top-down plus bottom-up.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Strategic vs sustainable HRM philosophy"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-12",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Strategic vs sustainable HRM",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these does NOT describe the strategic HRM philosophy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Low integration of HRM activities with business operations"
+      },
+      {
+        "id": "b",
+        "text": "Reactive or responsive HRM function"
+      },
+      {
+        "id": "c",
+        "text": "Change agent focused on implementation"
+      },
+      {
+        "id": "d",
+        "text": "Environmental, social and financial performance of equal importance"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Equal importance of the three performances is the sustainable philosophy; strategic HRM puts financial performance first.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Strategic vs sustainable HRM philosophy"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-13",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Strategic vs sustainable HRM",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "What role does the HR function play in the sustainable HRM philosophy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A reactive function that implements decisions"
+      },
+      {
+        "id": "b",
+        "text": "A proactive and activist function that initiates, guides and sustains change"
+      },
+      {
+        "id": "c",
+        "text": "An administrative function that keeps records"
+      },
+      {
+        "id": "d",
+        "text": "An external function outsourced to consultants"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Sustainable HRM: proactive & activist; initiating, guiding and sustaining change – not only implementing.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Strategic vs sustainable HRM philosophy"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-14",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Strategic vs sustainable HRM",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which time orientation characterises sustainable HRM in planning and evaluation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shorter-term"
+      },
+      {
+        "id": "b",
+        "text": "Longer-term"
+      },
+      {
+        "id": "c",
+        "text": "Quarterly"
+      },
+      {
+        "id": "d",
+        "text": "No time orientation"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Sustainable HRM has a longer-term orientation; strategic HRM a shorter-term one.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Strategic vs sustainable HRM philosophy"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-15",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Reasons for sustainable HRM",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which three groups of reasons for implementing sustainable HRM do Stahl et al. (2020) distinguish?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compliance-related, instrumental/strategic, mission-led/values-driven"
+      },
+      {
+        "id": "b",
+        "text": "Financial, social, ecological"
+      },
+      {
+        "id": "c",
+        "text": "Administrative, operational, transformational"
+      },
+      {
+        "id": "d",
+        "text": "Internal, external, individual"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Compliance (avoid sanctions, ethical obligations), instrumental (fit strategy, attract talent, impress investors), mission-led (do the right thing, consistency with values).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Reasons for sustainable HRM (Stahl et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-16",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Reasons for sustainable HRM",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A firm introduces a sustainability-oriented HR policy mainly to attract talent and impress investors. Which reason is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compliance-related"
+      },
+      {
+        "id": "b",
+        "text": "Instrumental/strategic"
+      },
+      {
+        "id": "c",
+        "text": "Mission-led/values-driven"
+      },
+      {
+        "id": "d",
+        "text": "Sin of omission"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Attracting talent, impressing investors and complementing the business model are instrumental/strategic reasons.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Reasons for sustainable HRM (Stahl et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-17",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Reasons for sustainable HRM",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which reasons for sustainable HRM go beyond regulations and laws according to Stahl et al. (2020)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compliance-related reasons only"
+      },
+      {
+        "id": "b",
+        "text": "Instrumental/strategic and mission-led/values-driven reasons"
+      },
+      {
+        "id": "c",
+        "text": "Compliance-related and instrumental reasons"
+      },
+      {
+        "id": "d",
+        "text": "None – all three stay within the law"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Compliance-related reasons stay within the law; instrumental and mission-led actions go beyond regulations and laws.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Reasons for sustainable HRM (Stahl et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-18",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Reasons for sustainable HRM",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A family firm says: “We pay a living wage because it is the right thing to do and fits who we are.” Which reason is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compliance-related"
+      },
+      {
+        "id": "b",
+        "text": "Instrumental/strategic"
+      },
+      {
+        "id": "c",
+        "text": "Mission-led/values-driven"
+      },
+      {
+        "id": "d",
+        "text": "Financial dimension"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Doing the “right” thing and consistency with the company's mission and values = mission-led/values-driven.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Reasons for sustainable HRM (Stahl et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-19",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Reasons for sustainable HRM – case use",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Why is it useful to identify the firm's motive (compliance, instrumental, mission) in a case answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It decides which triple bottom line dimension matters"
+      },
+      {
+        "id": "b",
+        "text": "It tells you how far the firm is likely to go and how to sell your recommendation"
+      },
+      {
+        "id": "c",
+        "text": "It shows whether the firm is legally compliant"
+      },
+      {
+        "id": "d",
+        "text": "It replaces the analysis of trade-offs"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "A compliance-driven firm will do the minimum; an instrumental firm needs a business case; a mission-led firm responds to values – adapt your argument.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Reasons for sustainable HRM (Stahl et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-20",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Practices by dimension",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which practice does the lecture list under the ECOLOGICAL dimension?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Employee stock-ownership programmes"
+      },
+      {
+        "id": "b",
+        "text": "Link employee green behaviour to promotional opportunities"
+      },
+      {
+        "id": "c",
+        "text": "Company-sponsored volunteerism"
+      },
+      {
+        "id": "d",
+        "text": "Decent pay"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Ecological: hire people who embrace sustainability goals, link green behaviour to promotion, eco-education. ESOPs are financial; volunteering and decent pay are social.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sustainable HRM practices (Stahl et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-21",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Practices by dimension",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Under which dimension does the lecture list “integrate triple-bottom-line-based incentives in managerial compensation”?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Financial"
+      },
+      {
+        "id": "b",
+        "text": "Ecological"
+      },
+      {
+        "id": "c",
+        "text": "Social"
+      },
+      {
+        "id": "d",
+        "text": "None – it is a sin of commission"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Financial dimension: ESOPs, long-term leadership development, talent retention, TBL-based incentives in managerial compensation.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sustainable HRM practices (Stahl et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-22",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Practices by dimension",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which practice does the lecture list under the SOCIAL dimension?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Employee stock-ownership programmes"
+      },
+      {
+        "id": "b",
+        "text": "Employee education regarding eco-friendly practices"
+      },
+      {
+        "id": "c",
+        "text": "Eliminating child and forced labour along the supply chain"
+      },
+      {
+        "id": "d",
+        "text": "Talent retention"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Social: volunteering, a positive work environment, health investments, no child/forced labour in the supply chain, decent pay. ESOPs and retention are financial; eco-education is ecological.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sustainable HRM practices (Stahl et al., 2020)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-23",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Sins of commission and omission",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "What is a “sin of omission” in HRM (Brewster & Brookes, 2024)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "HR actively contributes to a problem"
+      },
+      {
+        "id": "b",
+        "text": "HR fails to prevent a problem"
+      },
+      {
+        "id": "c",
+        "text": "HR breaks the law"
+      },
+      {
+        "id": "d",
+        "text": "HR omits a practice from Pfeffer's list"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Commission = HR contributes to a problem; omission = HR fails to prevent it.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sins of commission and omission (Brewster & Brookes, 2024)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-24",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Sins of commission and omission",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT a sin of commission?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Excessive performance pressure"
+      },
+      {
+        "id": "b",
+        "text": "Algorithmically biased recruitment"
+      },
+      {
+        "id": "c",
+        "text": "Ignoring harassment"
+      },
+      {
+        "id": "d",
+        "text": "Precarious contracts"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Ignoring harassment is a sin of omission – HR fails to act. The others are practices HR actively uses.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sins of commission and omission (Brewster & Brookes, 2024)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-25",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Sins of commission and omission",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which of these is NOT a sin of omission?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Failing to address pay inequality"
+      },
+      {
+        "id": "b",
+        "text": "Not challenging unsafe working conditions"
+      },
+      {
+        "id": "c",
+        "text": "Layoffs purely to raise short-term profitability"
+      },
+      {
+        "id": "d",
+        "text": "Failing to develop workers whose jobs are threatened by AI"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Layoffs purely for short-term profit are an active choice – a sin of commission.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sins of commission and omission (Brewster & Brookes, 2024)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-26",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Sins of commission and omission",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A firm pays its executives 300 times the median employee salary. How do Brewster & Brookes (2024) classify this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sin of commission – extreme executive/employee pay gaps"
+      },
+      {
+        "id": "b",
+        "text": "Sin of omission – failing to address pay inequality"
+      },
+      {
+        "id": "c",
+        "text": "Instrumental sustainable HRM"
+      },
+      {
+        "id": "d",
+        "text": "Social dimension practice"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Extreme executive/employee pay gaps are listed as a sin of commission: HR's pay design actively creates the problem.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sins of commission and omission (Brewster & Brookes, 2024)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-27",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Sins of commission and omission – case use",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Why does the lecture recommend looking explicitly for sins of omission in a case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are always illegal"
+      },
+      {
+        "id": "b",
+        "text": "What HR tolerates or does not do is easy to miss in a case text"
+      },
+      {
+        "id": "c",
+        "text": "They only affect the financial dimension"
+      },
+      {
+        "id": "d",
+        "text": "They are more costly than sins of commission"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Practices are visible in a case; inaction (ignored harassment, unaddressed pay gaps) is not – so you have to look for it.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sins of commission and omission (Brewster & Brookes, 2024)"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-28",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Is sustainable HRM new?",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Which statement best captures how the lecture positions sustainable HRM relative to strategic HRM?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sustainable HRM is identical to strategic HRM with a new name"
+      },
+      {
+        "id": "b",
+        "text": "Sustainable HRM widens the scope: beyond the firm, longer-term, more integrated and proactive, with three equally important performances"
+      },
+      {
+        "id": "c",
+        "text": "Sustainable HRM drops financial performance as a goal"
+      },
+      {
+        "id": "d",
+        "text": "Sustainable HRM is only about environmental management"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The lecture contrasts the two philosophies on seven points; sustainable HRM keeps financial performance but puts it on a par with social and ecological performance.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sustainable HRM vs strategic HRM"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-29",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "HRM and corporate sustainability",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Which question is NOT among those the lecture raises when linking HRM to sustainability research?",
+    "options": [
+      {
+        "id": "a",
+        "text": "How do we define sustainability?"
+      },
+      {
+        "id": "b",
+        "text": "Which stakeholders are addressed?"
+      },
+      {
+        "id": "c",
+        "text": "What are sustainable HRM practices?"
+      },
+      {
+        "id": "d",
+        "text": "How can HR minimise the number of employees?"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The lecture asks how to define sustainability, which stakeholders are addressed, what sustainable HRM practices are, which role(s) HRM plays and how to conceptualise sustainable HRM.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sustainability research and HRM"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-h2-30",
+    "lecture": "h2",
+    "mcSet": true,
+    "topic": "Triple bottom line – trade-offs",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "A firm moves to full remote work. Its office emissions fall, but some employees feel isolated. How would you describe this on the triple bottom line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ecological + / social ±"
+      },
+      {
+        "id": "b",
+        "text": "Financial − / ecological −"
+      },
+      {
+        "id": "c",
+        "text": "Social + / ecological −"
+      },
+      {
+        "id": "d",
+        "text": "No trade-off"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Less commuting and office space help the ecological dimension; the social effect is mixed (flexibility vs isolation) – the lecture's brainstorm asks for exactly such trade-offs.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien Session 1",
+        "ref": "Sustainable HRM practices · group work"
+      }
+    ]
+  }
+]

@@ -15,6 +15,7 @@ const pool: Question[] = Array.from({ length: 40 }, (_, i) => ({
   explanation: "",
   paperOnly: false,
   checkup: i % 10 === 0,
+  mcSet: false,
   basis: [],
 }));
 
@@ -26,6 +27,27 @@ describe("buildQueue – Check-up-Fragen", () => {
     expect(ids(all)).toBe("tf-0,tf-10,tf-20,tf-30");
     const b = buildQueue({ mode: "checkup", subjectId: "s", questions: pool, items: {}, now: 0, lecture: "b" });
     expect(b).toHaveLength(0);
+  });
+});
+
+describe("buildQueue – Multiple-Choice-Set", () => {
+  // Kapitel a: tf-0 … tf-34; davon tf-1, tf-2, tf-3 im Multiple-Choice-Set
+  const withSet = pool.map((q, i) => ({ ...q, mcSet: i >= 1 && i <= 3 }));
+
+  it("zieht alle Fragen des Sets und nur diese, auf Wunsch je Kapitel", () => {
+    const all = buildQueue({ mode: "mc", subjectId: "s", questions: withSet, items: {}, now: 0 });
+    expect(ids(all)).toBe("tf-1,tf-2,tf-3");
+    expect(buildQueue({ mode: "mc", subjectId: "s", questions: withSet, items: {}, now: 0, lecture: "b" })).toHaveLength(0);
+  });
+
+  it("„Üben“ im Kapitel lässt das Set aus, solange es andere Fragen gibt", () => {
+    for (let run = 0; run < 20; run++) {
+      const q = buildQueue({ mode: "lecture", subjectId: "s", questions: withSet, items: {}, now: 0, lecture: "a" });
+      expect(q).toHaveLength(LECTURE_SIZE);
+      expect(q.some((x) => x.mcSet)).toBe(false);
+    }
+    const onlySet = withSet.map((q) => ({ ...q, mcSet: true }));
+    expect(buildQueue({ mode: "lecture", subjectId: "s", questions: onlySet, items: {}, now: 0, lecture: "b" })).toHaveLength(5);
   });
 });
 

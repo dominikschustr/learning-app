@@ -23,11 +23,12 @@ function pickSpread(questions: Question[], n: number): Question[] {
 
 /** Format eines Kapiteltests: kleiner als die Prüfung, gleiche Zeit pro Frage. */
 export function chapterFormat(
-  questions: Pick<Question, "lecture" | "type">[],
+  questions: Pick<Question, "lecture" | "type" | "mcSet">[],
   lecture: string,
   full: ExamFormat,
 ): ExamFormat {
-  const of = (t: QuestionType) => questions.filter((q) => q.lecture === lecture && q.type === t).length;
+  // Multiple-Choice-Sets gehören nicht zum Prüfungsformat
+  const of = (t: QuestionType) => questions.filter((q) => q.lecture === lecture && q.type === t && !q.mcSet).length;
   // Prüfungen nur mit offenen Fragen: mehrere Kurzantworten statt einer
   const short = Math.min(full.mc + full.tf ? 1 : 3, of("short"));
   const mc = Math.min(6, of("mc"));
@@ -64,7 +65,7 @@ export function createExam(
   now: number,
   lecture?: string,
 ): ActiveExam {
-  const questions = lecture ? allQuestions.filter((q) => q.lecture === lecture) : allQuestions;
+  const questions = (lecture ? allQuestions.filter((q) => q.lecture === lecture) : allQuestions).filter((q) => !q.mcSet);
   const of = (t: QuestionType) => questions.filter((q) => q.type === t);
   const picked = format.order.flatMap((t) => groupByCase(pickSpread(of(t), format[t]), questions));
   return {

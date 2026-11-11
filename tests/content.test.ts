@@ -53,6 +53,35 @@ describe("Framework-Steckbriefe", () => {
   });
 });
 
+describe("HRM – Multiple-Choice-Set", () => {
+  const hr = loadAllContent().find((c) => c.subject.id === "hr")!;
+  const set = hr.questions.filter((q) => q.mcSet);
+
+  it("hat in jedem Kapitel 30 Single-Choice-Fragen mit genau einer richtigen Antwort", () => {
+    for (const l of hr.subject.lectures) {
+      const qs = set.filter((q) => q.lecture === l.id);
+      expect(qs, l.id).toHaveLength(30);
+      for (const q of qs) {
+        expect(q.type, q.id).toBe("mc");
+        if (q.type !== "mc") continue;
+        expect(q.single, q.id).toBe(true);
+        expect(q.correct, q.id).toHaveLength(1);
+        expect(q.paperOnly, q.id).toBe(false);
+      }
+    }
+  });
+
+  it("jede Frage nennt ihre Herkunft: Lecture-Folien, Kahoot oder Theorievideo", () => {
+    for (const q of set) {
+      expect(q.basis.length, q.id).toBeGreaterThan(0);
+      for (const b of q.basis) expect(["slides", "video", "quiz"], q.id).toContain(b.kind);
+    }
+    // Theorievideos zu H1 (RBV), H3/H4 (R&S, Employer Branding), H5 (PM), H6/H7 (Rewards); H2 hat kein Video
+    for (const id of ["h1", "h3", "h4", "h5", "h6", "h7"])
+      expect(set.some((q) => q.lecture === id && q.basis.some((b) => b.kind === "video")), id).toBe(true);
+  });
+});
+
 describe("Accounting", () => {
   const acc = loadAllContent().find((c) => c.subject.id === "accounting")!;
 
