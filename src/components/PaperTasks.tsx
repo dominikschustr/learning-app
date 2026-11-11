@@ -2,6 +2,7 @@
 
 import { Check, Minus, Play, X } from "lucide-react";
 import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { paperItems, type Paper, type Question, type SubjectContent } from "@/lib/schema";
 import { itemStatus, type ItemStatus } from "@/lib/srs";
@@ -54,7 +55,15 @@ function rowsOf(paper: Paper, byId: Map<string, Question>): Row[] {
 export function PaperTasks({ content, papers }: { content: SubjectContent; papers: Paper[] }) {
   const { subject } = content;
   const items = useApp((s) => s.items);
-  const [chapter, setChapter] = useState<string>("all");
+  // Kapitelfilter steht in der URL (?lecture=t2): so öffnet die Kapitel-Auswahl die Tabelle vorgefiltert,
+  // und „Zurück“ aus dem Üben landet wieder beim selben Filter
+  const params = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+  const fromUrl = params.get("lecture");
+  const chapter = subject.lectures.some((l) => l.id === fromUrl) ? fromUrl! : "all";
+  const setChapter = (c: string) =>
+    router.replace(`${pathname}?view=tasks${c === "all" ? "" : `&lecture=${c}`}`, { scroll: false });
   const [status, setStatus] = useState<StatusFilter>("all");
   const [selected, setSelected] = useState<string[]>([]);
 
@@ -85,7 +94,8 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
   // Üben in Tabellenreihenfolge, jede Frage einmal
   const order = unique.map((q) => q.id);
   const pickedInOrder = order.filter((id) => sel.has(id));
-  const practiceHref = (ids: string[]) => `/s/${subject.id}/practice?mode=papers&q=${ids.join(",")}`;
+  const practiceHref = (ids: string[]) =>
+    `/s/${subject.id}/practice?mode=papers&q=${ids.join(",")}${chapter === "all" ? "" : `&lecture=${chapter}`}`;
 
   const visible = groups.map((g) => ({ ...g, rows: g.rows.filter(passes) })).filter((g) => g.rows.length);
 

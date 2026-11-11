@@ -3,11 +3,13 @@
 import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, Play, RotateCcw, ScrollText, Sigma, Table2, Target, Trophy, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { useState } from "react";
 import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
 import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { LevelBadge } from "./ChapterView";
+import { PaperChoice, type PaperChoiceTarget } from "./PaperChoice";
 import { paperCountLabel } from "./Papers";
 import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
@@ -48,6 +50,8 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const s = useApp();
   const now = useNow();
   const st = subjectStats(summary, s.items, s.cards, now, chapterBests(s.exams, subject.id));
+  // Klick auf ein Kapitel unter „Klausuraufgaben nach Kapitel“: zufällig üben oder aus der Tabelle wählen
+  const [paperChoice, setPaperChoice] = useState<PaperChoiceTarget | null>(null);
   const f = subject.examFormat;
   const base = `/s/${subject.id}`;
   const exams = s.exams.filter((e) => e.subjectId === subject.id && !e.lecture).toReversed();
@@ -69,7 +73,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
     .map((l, i) => {
       const qs = summary.paperItems.filter((p) => p.lecture === l.id);
       const c = statusCounts(qs.map((p) => s.items[itemKey(subject.id, p.id)]));
-      return { id: l.id, n: i + 1, code: l.title.split(" · ")[0], name: l.title.split(" · ").slice(1).join(" · "), total: qs.length, right: c.first + c.recovered };
+      return { id: l.id, n: i + 1, code: l.title.split(" · ")[0], name: l.title.split(" · ").slice(1).join(" · "), total: qs.length, right: c.first + c.recovered, open: c.new };
     })
     .filter((c) => c.total > 0);
   // Üben: große Kacheln, nur Titel und Stand
@@ -288,10 +292,13 @@ function Inner({ summary }: { summary: SubjectSummary }) {
           </div>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
             {paperChapters.map((c) => (
-              <Link
+              <button
+                type="button"
                 key={c.id}
-                href={`${base}/practice?mode=papers&lecture=${c.id}`}
-                className="card group flex flex-col p-3 transition hover:-translate-y-0.5 sm:p-4"
+                onClick={() =>
+                  setPaperChoice({ id: c.id, label: `Kapitel ${c.n} · ${c.code}`, title: c.name, total: c.total, open: c.open })
+                }
+                className="card group flex flex-col p-3 text-left transition hover:-translate-y-0.5 sm:p-4"
               >
                 <span className="flex items-center gap-2">
                   <span
@@ -309,9 +316,10 @@ function Inner({ summary }: { summary: SubjectSummary }) {
                     {c.total} Aufgaben · {c.right} richtig
                   </span>
                 </span>
-              </Link>
+              </button>
             ))}
           </div>
+          <PaperChoice subjectId={subject.id} target={paperChoice} color={subject.color} onClose={() => setPaperChoice(null)} />
         </section>
       )}
 

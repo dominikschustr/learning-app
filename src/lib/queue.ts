@@ -34,6 +34,8 @@ export function buildQueue(opts: {
   papers?: Question[];
   /** gezielt ausgewählte Klausuraufgaben (mode "papers", aus der Aufgabentabelle) – in dieser Reihenfolge */
   ids?: string[];
+  /** mode "papers": zufällige Reihenfolge statt Klausurreihenfolge (Teilaufgaben eines Falls bleiben zusammen) */
+  random?: boolean;
 }): Question[] {
   const { mode, subjectId, items, now } = opts;
   const st = (q: Question) => items[itemKey(subjectId, q.id)];
@@ -64,7 +66,8 @@ export function buildQueue(opts: {
         return unique(opts.ids.flatMap((id) => byId.get(id) ?? []));
       }
       // alle Aufgaben der Probeklausuren zu diesem Kapitel, in Klausurreihenfolge (Teilfragen a, b bleiben zusammen)
-      return (opts.papers ?? []).filter((q) => !opts.lecture || q.lecture === opts.lecture);
+      const qs = (opts.papers ?? []).filter((q) => !opts.lecture || q.lecture === opts.lecture);
+      return opts.random ? groupCases(shuffle(qs), qs) : qs;
     }
     case "marked":
       return shuffle(questions.filter((q) => opts.marked?.has(q.id)));

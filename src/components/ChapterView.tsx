@@ -3,6 +3,7 @@
 import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Layers, LayoutGrid, ScrollText, Sigma, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { useState } from "react";
 import { chapterFormat } from "@/lib/exam";
 import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
 import type { QuestionType, SubjectSummary } from "@/lib/schema";
@@ -11,6 +12,7 @@ import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
 import { statusCounts, type ItemState, type ItemStatus } from "@/lib/srs";
 import { alpha, cn, itemKey, pct } from "@/lib/utils";
+import { PaperChoice, type PaperChoiceTarget } from "./PaperChoice";
 import { Bar, ButtonLink, Chip, LinkRow, ProgressRing, Skeleton } from "./ui";
 
 export function ChapterView({ summary, chapterId }: { summary: SubjectSummary; chapterId: string }) {
@@ -48,6 +50,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const base = `/s/${subject.id}`;
   const [code, ...rest] = ch.title.split(" · ");
   const title = rest.join(" · ") || ch.title;
+  const [paperChoice, setPaperChoice] = useState<PaperChoiceTarget | null>(null);
 
   const tests = s.exams.filter((e) => e.subjectId === subject.id && e.lecture === chapterId).toReversed();
   const fmt = chapterFormat(summary.items, chapterId, subject.examFormat);
@@ -94,7 +97,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         ]
       : []),
   ];
-  const actions = [
+  const actions: { href: string; icon: typeof BookOpen; title: string; meta: string; onClick?: () => void }[] = [
     {
       href: `${base}/practice?mode=lecture&lecture=${chapterId}`,
       icon: BookOpen,
@@ -120,10 +123,19 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
     ...(paperQs.length
       ? [
           {
-            href: `${base}/practice?mode=papers&lecture=${chapterId}`,
+            href: `${base}/practice?mode=papers&lecture=${chapterId}&order=random`,
             icon: ScrollText,
             title: "Klausuraufgaben",
             meta: `${paperStatus.first + paperStatus.recovered}/${paperQs.length} richtig`,
+            // statt direkt loszulegen: zufällig üben oder aus der Tabelle wählen
+            onClick: () =>
+              setPaperChoice({
+                id: chapterId,
+                label: `Kapitel ${index + 1} · ${code}`,
+                title,
+                total: paperQs.length,
+                open: paperStatus.new,
+              }),
           },
         ]
       : []),
@@ -169,7 +181,17 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         <div className={cn("grid grid-cols-2 gap-2 sm:gap-3", actions.length === 4 ? "sm:grid-cols-4" : "sm:grid-cols-3")}>
           {actions.map((a, i) => (
             <motion.div key={a.title} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
-              <Link href={a.href} className="card group flex h-full flex-col p-3 transition hover:-translate-y-0.5 sm:p-5">
+              <Link
+                href={a.href}
+                onClick={
+                  a.onClick &&
+                  ((e) => {
+                    e.preventDefault();
+                    a.onClick?.();
+                  })
+                }
+                className="card group flex h-full flex-col p-3 transition hover:-translate-y-0.5 sm:p-5"
+              >
                 <span
                   className="grid size-9 place-items-center rounded-xl sm:size-11"
                   style={{ background: alpha(subject.color, 0.1), color: subject.color }}
@@ -186,6 +208,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           ))}
         </div>
         <LinkRow links={links} color={subject.color} className="mt-3" />
+        <PaperChoice subjectId={subject.id} target={paperChoice} color={subject.color} onClose={() => setPaperChoice(null)} />
       </section>
 
       <section className="card grid grid-cols-[auto_1fr] items-center gap-4 p-4 sm:gap-6 sm:p-8">

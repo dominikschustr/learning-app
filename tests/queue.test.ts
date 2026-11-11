@@ -44,6 +44,12 @@ describe("buildQueue – Klausuraufgaben", () => {
     const picked = buildQueue({ mode: "papers", subjectId: "s", questions: pool, items: {}, now: 0, papers, ids: ["tf-37", "tf-2", "tf-2", "gibt-es-nicht"] });
     expect(picked.map((q) => q.id)).toEqual(["tf-37", "tf-2"]);
   });
+
+  it("mischt auf Wunsch alle Aufgaben des Kapitels, ohne welche zu verlieren", () => {
+    const papers = pool.slice(0, 20);
+    const r = buildQueue({ mode: "papers", subjectId: "s", questions: pool, items: {}, now: 0, lecture: "a", papers, random: true });
+    expect(ids(r)).toBe(ids(papers));
+  });
 });
 
 describe("buildQueue – Kapitel-Übung", () => {
