@@ -75,7 +75,7 @@ function Inner({ summary }: { summary: SubjectSummary }) {
     .map((l, i) => {
       const qs = summary.paperItems.filter((p) => p.lecture === l.id);
       const c = statusCounts(qs.map((p) => s.items[itemKey(subject.id, p.id)]));
-      return { id: l.id, n: i + 1, code: l.title.split(" · ")[0], name: l.title.split(" · ").slice(1).join(" · "), total: qs.length, right: c.first + c.recovered, open: c.new };
+      return { id: l.id, n: i + 1, code: l.title.split(" · ")[0], name: l.title.split(" · ").slice(1).join(" · "), total: qs.length, done: qs.length - c.new, open: c.new };
     })
     .filter((c) => c.total > 0);
   // Üben: große Kacheln, nur Titel und Stand
@@ -323,9 +323,9 @@ function Inner({ summary }: { summary: SubjectSummary }) {
                 </span>
                 <span className="mt-2 line-clamp-2 text-sm font-semibold leading-snug">{c.name}</span>
                 <span className="mt-auto pt-2">
-                  <Bar value={c.right / c.total} color={subject.color} />
+                  <Bar value={c.done / c.total} color={subject.color} />
                   <span className="mt-1 block text-xs text-muted">
-                    {c.total} Aufgaben · {c.right} richtig
+                    <span className="font-semibold text-ink-2">{c.done} bearbeitet</span> · {c.open} offen
                   </span>
                 </span>
               </button>

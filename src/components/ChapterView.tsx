@@ -142,7 +142,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             href: `${base}/practice?mode=papers&lecture=${chapterId}&order=random`,
             icon: ScrollText,
             title: "Klausuraufgaben",
-            meta: `${paperStatus.first + paperStatus.recovered}/${paperQs.length} richtig`,
+            meta: `${paperQs.length - paperStatus.new} bearbeitet · ${paperStatus.new} offen`,
             // statt direkt loszulegen: zufällig üben oder aus der Tabelle wählen
             onClick: () =>
               setPaperChoice({

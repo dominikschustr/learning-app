@@ -9,7 +9,7 @@ import { itemStatus, type ItemStatus } from "@/lib/srs";
 import { useApp } from "@/lib/store";
 import { cn, itemKey } from "@/lib/utils";
 import { fmtPoints, slotLabel } from "./Papers";
-import { ButtonLink } from "./ui";
+import { Bar, ButtonLink } from "./ui";
 
 type Row = {
   key: string;
@@ -84,9 +84,15 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
   // Gesamtstand über alle Aufgaben (jede Frage einmal, auch wenn sie in zwei Klausuren steht)
   const unique = [...new Map(groups.flatMap((g) => g.rows).map((r) => [r.q.id, r.q])).values()];
   const doneCount = unique.filter((q) => st(q) !== "new").length;
+  // Stand je Kapitel: wie viele Aufgaben schon bearbeitet, wie viele noch offen
   const chapterCounts = subject.lectures
-    .map((l) => ({ id: l.id, code: code(l.title), title: l.title, n: unique.filter((q) => q.lecture === l.id).length }))
+    .map((l) => {
+      const qs = unique.filter((q) => q.lecture === l.id);
+      const done = qs.filter((q) => st(q) !== "new").length;
+      return { id: l.id, code: code(l.title), title: l.title, n: qs.length, done, open: qs.length - done };
+    })
     .filter((c) => c.n > 0);
+  const current = chapterCounts.find((c) => c.id === chapter);
 
   const sel = new Set(selected);
   const toggle = (ids: string[], on: boolean) =>
@@ -102,22 +108,38 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
   return (
     <div className={cn(selected.length > 0 && "pb-24")}>
       <p className="text-sm text-muted">
-        {unique.length} Aufgaben · <span className="font-semibold text-ink-2">{doneCount} bearbeitet</span> ·{" "}
-        {unique.length - doneCount} offen. Tippe eine Zeile an, um sie auszuwählen, oder starte sie direkt mit ▶.
+        {current ? `${current.code}: ` : ""}
+        {current?.n ?? unique.length} Aufgaben ·{" "}
+        <span className="font-semibold text-ink-2">{current?.done ?? doneCount} bearbeitet</span> ·{" "}
+        {current?.open ?? unique.length - doneCount} offen. Tippe eine Zeile an, um sie auszuwählen, oder starte sie direkt mit ▶.
       </p>
 
-      {/* Filter */}
-      <div className="mt-4 space-y-2">
-        <div className="flex flex-wrap gap-1.5">
-          <FilterChip active={chapter === "all"} onClick={() => setChapter("all")}>
-            Alle Kapitel
-          </FilterChip>
-          {chapterCounts.map((c) => (
-            <FilterChip key={c.id} active={chapter === c.id} onClick={() => setChapter(c.id)} title={c.title}>
-              {c.code} <span className="opacity-60">{c.n}</span>
-            </FilterChip>
-          ))}
-        </div>
+      {/* Stand je Kapitel – zugleich Kapitelfilter */}
+      <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <ChapterTile
+          active={chapter === "all"}
+          onClick={() => setChapter("all")}
+          code="Alle Kapitel"
+          done={doneCount}
+          total={unique.length}
+          color={subject.color}
+        />
+        {chapterCounts.map((c) => (
+          <ChapterTile
+            key={c.id}
+            active={chapter === c.id}
+            onClick={() => setChapter(c.id)}
+            code={c.code}
+            title={c.title.split(" · ").slice(1).join(" · ")}
+            done={c.done}
+            total={c.n}
+            color={subject.color}
+          />
+        ))}
+      </div>
+
+      {/* Filter nach Stand */}
+      <div className="mt-3">
         <div className="flex flex-wrap gap-1.5">
           {(
             [
@@ -289,6 +311,54 @@ function Box({ checked, mixed, onClick, label }: { checked: boolean; mixed?: boo
       )}
     >
       {checked ? <Check className="size-3.5" strokeWidth={3} /> : mixed ? <Minus className="size-3.5" strokeWidth={3} /> : null}
+    </button>
+  );
+}
+
+/** Kachel im Kapitelfilter: Kapitel, Fortschrittsbalken, bearbeitet / offen. */
+function ChapterTile({
+  active,
+  onClick,
+  code,
+  title,
+  done,
+  total,
+  color,
+}: {
+  active: boolean;
+  onClick: () => void;
+  code: string;
+  title?: string;
+  done: number;
+  total: number;
+  color: string;
+}) {
+  const open = total - done;
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      title={title ? `${code} · ${title}` : undefined}
+      aria-pressed={active}
+      className={cn(
+        "flex min-w-0 flex-col rounded-xl border p-2.5 text-left transition",
+        active ? "border-ink bg-surface-2 ring-1 ring-ink" : "border-line bg-surface hover:bg-surface-2",
+      )}
+    >
+      <span className="flex items-baseline justify-between gap-2">
+        <span className="truncate text-xs font-semibold">{code}</span>
+        <span className="shrink-0 text-xs tabular-nums text-muted">
+          {done}/{total}
+        </span>
+      </span>
+      {title && <span className="mt-0.5 truncate text-xs text-muted">{title}</span>}
+      <Bar value={total ? done / total : 0} color={color} className="mt-2" />
+      <span className="mt-1.5 text-xs text-muted">
+        <span className={cn(done ? "font-semibold text-ink-2" : "")}>{done} bearbeitet</span> ·{" "}
+        <span className={cn(open ? "" : "font-semibold")} style={open ? undefined : { color: "var(--good)" }}>
+          {open} offen
+        </span>
+      </span>
     </button>
   );
 }
