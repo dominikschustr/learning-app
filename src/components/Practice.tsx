@@ -1,9 +1,9 @@
 "use client";
 
-import { ArrowRight, Bookmark, PartyPopper, RotateCcw, Sigma, SkipForward } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, PartyPopper, RotateCcw, Sigma, SkipForward } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { answerXp } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
@@ -22,6 +22,17 @@ import { Button, ButtonLink, Skeleton } from "./ui";
 
 type Entry = { q: Question; order: string[]; retry: boolean };
 type Outcome = { q: Question; correct: boolean };
+/** Antwortzustand einer Frage – gemerkt, damit man zu ihr zurückgehen kann. */
+type Snap = {
+  selected: string[];
+  tf: boolean | null;
+  text: string;
+  mc: MCResult | null;
+  shortGrade: ShortGrade | null;
+  revealed: boolean;
+  wasCorrect: boolean;
+};
+const BLANK: Snap = { selected: [], tf: null, text: "", mc: null, shortGrade: null, revealed: false, wasCorrect: false };
 
 const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "papers"];
 
@@ -129,6 +140,12 @@ function Session({
   const [wasCorrect, setWasCorrect] = useState(false);
   const [retryMode, setRetryMode] = useState<Question[] | null>(null);
   const [formulasOpen, setFormulasOpen] = useState(false);
+  // Zurückgehen: Antwortzustand je Frage (am Eintrag, nicht am Index – Wiederholungen schieben die Indizes)
+  const snaps = useRef(new Map<Entry, Snap>());
+  const skippedEntries = useRef(new Set<Entry>());
+  const [dir, setDir] = useState(1);
+  // wiederhergestellte Frage: kein erneutes „+XP“
+  const [restored, setRestored] = useState(false);
   const closeFormulas = useCallback(() => setFormulasOpen(false), []);
 
   const entry = queue[index];
@@ -148,6 +165,9 @@ function Session({
       setLastXp((l) => ({ amount: xp, n: l.n + 1 }));
       setWasCorrect(correct);
       setRevealed(true);
+      setRestored(false);
+      // vorher übersprungen und jetzt doch beantwortet
+      if (skippedEntries.current.delete(entry)) setSkipped((n) => n - 1);
       if (!retry) setOutcomes((o) => [...o, { q, correct }]);
       if (!correct && !retry) {
         // Falsche Frage kommt in dieser Session noch einmal
@@ -191,22 +211,38 @@ function Session({
     [entry, revealed, finish],
   );
 
-  const next = useCallback(() => {
-    setIndex((i) => i + 1);
-    setSelected([]);
-    setTf(null);
-    setText("");
-    setMc(null);
-    setShortGrade(null);
-    setRevealed(false);
-  }, []);
+  /** Zu einer anderen Frage wechseln: Stand der aktuellen merken, den der Zielfrage (falls schon besucht) laden. */
+  const go = useCallback(
+    (to: number) => {
+      if (entry) snaps.current.set(entry, { selected, tf, text, mc, shortGrade, revealed, wasCorrect });
+      const snap = (queue[to] && snaps.current.get(queue[to])) || BLANK;
+      setDir(to < index ? -1 : 1);
+      setIndex(to);
+      setSelected(snap.selected);
+      setTf(snap.tf);
+      setText(snap.text);
+      setMc(snap.mc);
+      setShortGrade(snap.shortGrade);
+      setRevealed(snap.revealed);
+      setWasCorrect(snap.wasCorrect);
+      setRestored(snap !== BLANK);
+    },
+    [entry, queue, index, selected, tf, text, mc, shortGrade, revealed, wasCorrect],
+  );
+  const next = useCallback(() => go(index + 1), [go, index]);
+  const back = useCallback(() => {
+    if (index > 0 && !pending) go(index - 1);
+  }, [go, index, pending]);
 
   const canContinue = revealed && (entry?.q.type !== "short" || !!shortGrade);
 
   /** Frage auslassen: zählt weder als richtig noch als falsch, Lernstand bleibt unverändert. */
   const skip = useCallback(() => {
     if (!entry || revealed || pending) return;
-    setSkipped((n) => n + 1);
+    if (!skippedEntries.current.has(entry)) {
+      skippedEntries.current.add(entry);
+      setSkipped((n) => n + 1);
+    }
     setCombo(0);
     next();
   }, [entry, revealed, pending, next]);
@@ -236,6 +272,11 @@ function Session({
         skip();
         return;
       }
+      if (e.key === "Backspace" || (e.key === "ArrowLeft" && (revealed || entry.q.type !== "tf"))) {
+        e.preventDefault();
+        back();
+        return;
+      }
       if (revealed) return;
       const q = entry.q;
       if (q.type === "mc") {
@@ -251,7 +292,7 @@ function Session({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [entry, revealed, canContinue, next, check, pickTf, subject.id, skip, formulasOpen]);
+  }, [entry, revealed, canContinue, next, back, check, pickTf, subject.id, skip, formulasOpen]);
 
   if (retryMode) {
     return <Session content={content} formulas={formulas} mode={mode} onRestart={onRestart} only={retryMode} />;
@@ -377,12 +418,18 @@ function Session({
         </span>
       </div>
 
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" custom={dir}>
         <motion.div
           key={index}
-          initial={{ opacity: 0, x: 24 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -24 }}
+          custom={dir}
+          variants={{
+            enter: (d: number) => ({ opacity: 0, x: 24 * d }),
+            center: { opacity: 1, x: 0 },
+            leave: (d: number) => ({ opacity: 0, x: -24 * d }),
+          }}
+          initial="enter"
+          animate="center"
+          exit="leave"
           transition={{ duration: 0.22 }}
           className="relative"
         >
@@ -391,7 +438,7 @@ function Session({
               <RotateCcw className="size-3" /> Zweiter Versuch
             </span>
           )}
-          <XpFloat amount={lastXp.amount} trigger={revealed ? lastXp.n : 0} />
+          <XpFloat amount={lastXp.amount} trigger={revealed && !restored ? lastXp.n : 0} />
 
           {q.type === "mc" && (
             <MCView
@@ -431,6 +478,18 @@ function Session({
       </AnimatePresence>
 
       <div className="sticky bottom-[calc(1rem+env(safe-area-inset-bottom))] mt-8 flex items-center justify-end gap-2">
+        {index > 0 && (
+          <Button
+            variant="ghost"
+            onClick={back}
+            disabled={pending}
+            className={cn("text-muted", (revealed || pending) && "mr-auto")}
+            title="Zur vorigen Frage"
+            aria-label="Zur vorigen Frage"
+          >
+            <ArrowLeft className="size-4" /> <span className="max-sm:hidden">Zurück</span>
+          </Button>
+        )}
         {!revealed && !pending && (
           <Button variant="ghost" onClick={skip} className="mr-auto text-muted">
             <SkipForward className="size-4" /> Überspringen <span className="kbd ml-1 hidden sm:inline-flex">S</span>
