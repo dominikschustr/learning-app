@@ -355,7 +355,7 @@
     "topic": "PPE – acquisition cost items",
     "difficulty": 2,
     "single": true,
-    "prompt": "Which TWO of the following items are NOT part of the acquisition cost of a piece of equipment?\n(1) Insurance during transport · (2) Operating losses in the first months of use · (3) Estimated cost of dismantling the equipment at the end of its life · (4) Cost of special foundations · (5) Borrowing costs (the equipment is a qualifying asset) · (6) Cost of test runs before use · (7) Depreciation of the building in which the equipment is installed",
+    "prompt": "Which TWO of the following items are NOT part of the acquisition cost of a piece of equipment?\n(1) Insurance during transport · (2) Operating losses in the first months of use · (3) Estimated cost of dismantling the equipment at the end of its life · (4) Cost of special foundations · (5) Non-refundable import duties · (6) Cost of test runs before use · (7) Depreciation of the building in which the equipment is installed",
     "options": [
       {
         "id": "a",
@@ -381,7 +381,7 @@
     "correct": [
       "a"
     ],
-    "explanation": "Initial operating losses arise after the asset is ready for use, and depreciation of the building is a cost of the building – neither is directly attributable to bringing the equipment to working condition. All others are part of cost under IAS 16 / IAS 23.",
+    "explanation": "Initial operating losses arise after the asset is ready for use, and depreciation of the building is a cost of the building – neither is directly attributable to bringing the equipment to working condition. All others are part of cost under IAS 16.",
     "basis": [
       {
         "kind": "exam",
@@ -472,9 +472,9 @@
     "difficulty": 2,
     "verb": "explain",
     "prompt": "Give two examples of critical accounting issues related to non-current assets (PPE, goodwill or intangible assets) for financial analysts and auditors, and briefly explain why they are critical.",
-    "modelAnswer": "Any two, with a short explanation, for example:\n– Depreciation: useful lives, residual values and methods are management estimates that directly drive profit.\n– Impairment tests (goodwill, CGUs): value in use depends on cash flow forecasts, growth and discount rates – highly judgmental, can delay or accelerate losses.\n– Capitalised intangibles / development costs: whether IAS 38 criteria are met is a judgment; capitalising raises profit and assets.\n– Fair values under the revaluation model: estimates without an active market make values volatile and hard to verify.",
+    "modelAnswer": "Any two, with a short explanation, for example:\n– Depreciation: useful lives, residual values and methods are management estimates that directly drive profit.\n– Impairment tests (goodwill, CGUs): value in use depends on cash flow forecasts, growth and discount rates – highly judgmental, can delay or accelerate losses.\n– Capitalised intangibles / development costs: whether IAS 38 criteria are met is a judgment; capitalising raises profit and assets.",
     "keyPoints": [
-      "Names two relevant issues (depreciation, impairment test, capitalised intangibles, fair values)",
+      "Names two relevant issues (depreciation, impairment test, capitalised intangibles)",
       "Explains that they rest on management judgment/estimates",
       "Explains the effect on profit or assets"
     ],
@@ -491,8 +491,7 @@
         "lines": [
           "Depreciation: useful life, residual value, method = estimates",
           "Impairment tests: cash flow forecasts, growth and discount rates",
-          "Capitalised intangibles: whether IAS 38 criteria are met",
-          "Revaluation/fair values: estimates without an active market"
+          "Capitalised intangibles: whether IAS 38 criteria are met"
         ]
       },
       {

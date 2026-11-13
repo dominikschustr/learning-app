@@ -45,12 +45,11 @@
     "case": "belcour-sci",
     "difficulty": 2,
     "verb": "explain",
-    "prompt": "Is Vitapharm part of Belcour's scope of consolidation? Justify. Where do the dividends received from Vitapharm appear, and where does the change in the market value of the Vitapharm shares appear?",
-    "modelAnswer": "No. 8.5% of the shares, without board representation or other rights, gives Belcour neither control (full consolidation) nor joint control nor significant influence (equity method, presumed from 20%). Vitapharm is simply a financial asset (equity investment) for Belcour.\nDividends: recognised in profit or loss as financial income – the separate line 'Dividends from Vitapharm' after operating profit (shown separately because of their size).\nChange in market value: because the shares are designated at FVOCI, it goes to other comprehensive income – the line 'Change in fair value of equity investments' in Table 2, an item that is never reclassified to profit or loss.",
+    "prompt": "Is Vitapharm part of Belcour's scope of consolidation? Justify. Where do the dividends received from Vitapharm appear?",
+    "modelAnswer": "No. 8.5% of the shares, without board representation or other rights, gives Belcour neither control (full consolidation) nor joint control nor significant influence (equity method, presumed from 20%). Vitapharm is simply a financial asset (equity investment) for Belcour.\nDividends: recognised in profit or loss as financial income – the separate line 'Dividends from Vitapharm' after operating profit (shown separately because of their size).",
     "keyPoints": [
       "Not consolidated: 8.5% gives no control, joint control or significant influence",
-      "Dividends in profit or loss as financial income (separate line after operating profit)",
-      "Fair value change in OCI (FVOCI line, not reclassified)"
+      "Dividends in profit or loss as financial income (separate line after operating profit)"
     ],
     "basis": [
       {
@@ -73,17 +72,12 @@
       },
       {
         "title": "Dividends",
-        "why": "Dividends on equity instruments are always income in P/L, even under FVOCI.",
+        "why": "Vitapharm is not consolidated, so Belcour only shows the dividends it receives as financial income.",
         "result": "P/L: line 'Dividends from Vitapharm' (+142) after operating profit"
-      },
-      {
-        "title": "Change in market value",
-        "why": "Designated at FVOCI → fair value changes go to OCI and are never recycled to P/L.",
-        "result": "OCI: 'Change in fair value of equity investments' (+412)"
       }
     ],
     "pitfalls": [
-      "Putting the fair value change into P/L – only the dividends go there."
+      "Applying the equity method – 8.5% without a board seat gives no significant influence."
     ]
   },
   {
@@ -569,7 +563,7 @@
     "options": [
       {
         "id": "a",
-        "text": "As a non-current liability: a provision for possible storm damage to buildings of a company located in a region with frequent storms"
+        "text": "As an intangible asset: the research costs of a new vaccine that has not yet received marketing approval"
       },
       {
         "id": "b",
@@ -577,22 +571,27 @@
       },
       {
         "id": "c",
-        "text": "As a trade receivable: a €20,000 customer balance that has been sold to a factoring company without recourse"
+        "text": "In equity: preference shares with a guaranteed annual dividend that the holders can ask to be redeemed after 5 years"
       },
       {
         "id": "d",
-        "text": "In revenue: the full sales price of a machine that the seller must also service for three years under the sales contract"
+        "text": "In share capital: the full issue price of new shares issued above their par value"
       }
     ],
     "correct": [
       "b"
     ],
-    "explanation": "A compound instrument is split into a liability and an equity component (IAS 32). (a) Future storm damage is no present obligation → no provision. (c) A receivable sold without recourse is derecognised. (d) The servicing obligation is a separate performance obligation – part of the price is deferred.",
+    "explanation": "A compound instrument is split into a liability and an equity component (IAS 32). (a) Research costs are always expensed (IAS 38). (c) Guaranteed dividends and a holder's redemption right are contractual obligations → financial liability, whatever the name. (d) Only the par value goes to share capital; the excess goes to share premium.",
     "basis": [
       {
         "kind": "exam",
         "source": "Altklausur 2016",
         "ref": "Ex. 6 – Multiple choice"
+      },
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Distraktoren auf den Stoff von T3/T4 umgestellt"
       }
     ],
     "shuffle": false
@@ -608,7 +607,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A property is revalued upwards by €30,000 during the year."
+        "text": "Jorvik issues 10,000 new shares at €3 each for cash."
       },
       {
         "id": "b",
@@ -620,18 +619,23 @@
       },
       {
         "id": "d",
-        "text": "A provision for litigation is reduced during the year from €30,000 to €22,000."
+        "text": "Jorvik repays €20,000 of its bank loan in cash."
       }
     ],
     "correct": [
       "c"
     ],
-    "explanation": "(c) The lease liability adds €40,000 of debt → gearing rises (240/640 = 37.5% vs 33.3%). (a) Revaluation surplus raises equity → gearing falls. (b) A scrip dividend only moves amounts within equity → no change compared with not paying it. (d) A provision is not financial debt; the release increases profit and equity → gearing falls.",
+    "explanation": "(c) The lease liability adds €40,000 of debt → gearing rises (240/640 = 37.5% vs 33.3%). (a) The share issue raises equity → gearing falls. (b) A scrip dividend keeps the €60,000 in equity instead of paying it out → gearing is lower than with a cash dividend. (d) Repaying debt lowers debt → gearing falls.",
     "basis": [
       {
         "kind": "exam",
         "source": "Altklausur 2016",
         "ref": "Ex. 6 – Multiple choice"
+      },
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Distraktoren auf den Stoff von T4 umgestellt"
       }
     ],
     "shuffle": false

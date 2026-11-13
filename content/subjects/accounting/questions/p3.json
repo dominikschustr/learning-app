@@ -369,7 +369,7 @@
     "options": [
       {
         "id": "a",
-        "text": "In the lessor's balance sheet operating and finance leases are accounted for in the same way: a right of use on the assets side and a debt on the liability side"
+        "text": "In the lessee's balance sheet, short-term leases and leases of low-value assets must always be recognised as a right-of-use asset and a lease liability"
       },
       {
         "id": "b",
@@ -381,13 +381,13 @@
       },
       {
         "id": "d",
-        "text": "In the lessor's financial statements amounts received for operating leases are recognised as revenue"
+        "text": "In the lessee's income statement a lease leads to depreciation of the right-of-use asset and interest on the lease liability"
       }
     ],
     "correct": [
       "a"
     ],
-    "explanation": "The lessor still distinguishes finance leases (derecognise the asset, recognise a receivable) from operating leases (keep the asset, recognise lease income). The single right-of-use model applies to the LESSEE only.",
+    "explanation": "Short-term leases (12 months or less) and leases of low-value assets are EXEMPTIONS: the lessee may simply expense the payments. All other leases follow the single right-of-use model (b, d); service contracts are expensed (c). (In the original exam the wrong statement concerned the lessor, which is not part of this course.)",
     "basis": [
       {
         "kind": "exam",

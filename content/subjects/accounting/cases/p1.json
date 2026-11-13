@@ -164,5 +164,720 @@
         ]
       }
     ]
+  },
+  {
+    "id": "ubisoft-fs",
+    "title": "Ubisoft – consolidated financial statements at 31 March 2024 (€ millions, original from the 2024 exam)",
+    "text": [
+      "Ubisoft is a listed French video game publisher (financial year ending 31 March). Below are its IFRS consolidated financial statements for the year ended 31 March 2024 as printed in the exam. Note numbers are omitted; the notes themselves were not provided in the exam."
+    ],
+    "tables": [
+      {
+        "caption": "Statement of financial position – assets",
+        "head": [
+          "",
+          "03/31/24",
+          "03/31/23"
+        ],
+        "rows": [
+          [
+            "Goodwill",
+            "73.3",
+            "73.2"
+          ],
+          [
+            "Other intangible assets",
+            "2,075.4",
+            "1,776.1"
+          ],
+          [
+            "Property, plant and equipment",
+            "164.3",
+            "187.9"
+          ],
+          [
+            "Right-of-use assets",
+            "278.4",
+            "271.9"
+          ],
+          [
+            "Investments in associates",
+            "—",
+            "—"
+          ],
+          [
+            "Non-current financial assets",
+            "50.9",
+            "53.7"
+          ],
+          [
+            "Deferred tax assets",
+            "186.6",
+            "252.0"
+          ],
+          [
+            "Non-current assets",
+            "2,828.9",
+            "2,614.9"
+          ],
+          [
+            "Inventory",
+            "8.8",
+            "18.5"
+          ],
+          [
+            "Trade receivables",
+            "746.2",
+            "268.3"
+          ],
+          [
+            "Other receivables",
+            "247.0",
+            "206.5"
+          ],
+          [
+            "Current financial assets",
+            "0.1",
+            "0.7"
+          ],
+          [
+            "Current tax assets",
+            "85.3",
+            "71.1"
+          ],
+          [
+            "Cash management financial assets",
+            "—",
+            "—"
+          ],
+          [
+            "Cash and cash equivalents",
+            "1,205.2",
+            "1,490.9"
+          ],
+          [
+            "Current assets",
+            "2,292.7",
+            "2,056.0"
+          ],
+          [
+            "TOTAL ASSETS",
+            "5,121.6",
+            "4,670.8"
+          ]
+        ]
+      },
+      {
+        "caption": "Statement of financial position – liabilities and equity",
+        "head": [
+          "",
+          "03/31/24",
+          "03/31/23"
+        ],
+        "rows": [
+          [
+            "Capital",
+            "9.9",
+            "9.7"
+          ],
+          [
+            "Premiums",
+            "675.0",
+            "630.2"
+          ],
+          [
+            "Consolidated reserves",
+            "1,034.0",
+            "1,333.4"
+          ],
+          [
+            "Consolidated earnings",
+            "157.8",
+            "−494.2"
+          ],
+          [
+            "Equity attributable to owners of the parent company",
+            "1,876.6",
+            "1,479.2"
+          ],
+          [
+            "Non-controlling interests",
+            "2.6",
+            "3.5"
+          ],
+          [
+            "Total equity",
+            "1,879.3",
+            "1,482.6"
+          ],
+          [
+            "Provisions",
+            "21.9",
+            "20.9"
+          ],
+          [
+            "Employee benefit",
+            "20.3",
+            "17.1"
+          ],
+          [
+            "Long-term borrowings and other financial liabilities",
+            "2,082.4",
+            "2,325.2"
+          ],
+          [
+            "Deferred tax liabilities",
+            "36.9",
+            "69.5"
+          ],
+          [
+            "Other non-current liabilities",
+            "23.3",
+            "16.7"
+          ],
+          [
+            "Non-current liabilities",
+            "2,184.8",
+            "2,449.3"
+          ],
+          [
+            "Short-term borrowings and other financial liabilities",
+            "427.4",
+            "137.1"
+          ],
+          [
+            "Trade payables",
+            "157.1",
+            "123.1"
+          ],
+          [
+            "Other liabilities",
+            "450.2",
+            "464.6"
+          ],
+          [
+            "Current tax liabilities",
+            "22.8",
+            "14.2"
+          ],
+          [
+            "Current liabilities",
+            "1,057.5",
+            "738.9"
+          ],
+          [
+            "TOTAL LIABILITIES",
+            "5,121.6",
+            "4,670.8"
+          ]
+        ]
+      },
+      {
+        "caption": "Consolidated income statement",
+        "head": [
+          "",
+          "03/31/24",
+          "03/31/23"
+        ],
+        "rows": [
+          [
+            "Sales",
+            "2,300.9",
+            "1,814.3"
+          ],
+          [
+            "Cost of sales",
+            "(204.2)",
+            "(216.6)"
+          ],
+          [
+            "Gross profit",
+            "2,096.7",
+            "1,597.8"
+          ],
+          [
+            "R&D costs",
+            "(1,071.0)",
+            "(1,440.4)"
+          ],
+          [
+            "Marketing costs",
+            "(413.3)",
+            "(343.2)"
+          ],
+          [
+            "Administrative and IT costs",
+            "(291.1)",
+            "(301.5)"
+          ],
+          [
+            "Profit (loss) from ordinary operating activities",
+            "321.2",
+            "(487.3)"
+          ],
+          [
+            "Other non-current operating expenses",
+            "(7.7)",
+            "(103.0)"
+          ],
+          [
+            "Other non-current operating income",
+            "—",
+            "4.6"
+          ],
+          [
+            "Operating profit (loss)",
+            "313.6",
+            "(585.8)"
+          ],
+          [
+            "Net borrowing costs (interest expense 74.8 / 36.0; interest income 24.9 / 12.5)",
+            "(49.8)",
+            "(23.5)"
+          ],
+          [
+            "Net foreign exchange gains/losses",
+            "(6.2)",
+            "4.4"
+          ],
+          [
+            "Other financial expenses",
+            "(12.5)",
+            "(7.2)"
+          ],
+          [
+            "Other financial income",
+            "9.6",
+            "8.2"
+          ],
+          [
+            "Net financial income (loss)",
+            "(58.9)",
+            "(18.1)"
+          ],
+          [
+            "Share of profit of associates",
+            "—",
+            "—"
+          ],
+          [
+            "Income tax",
+            "(96.8)",
+            "109.1"
+          ],
+          [
+            "CONSOLIDATED NET INCOME (LOSS)",
+            "157.9",
+            "(494.7)"
+          ],
+          [
+            "… attributable to owners of the parent company",
+            "157.8",
+            "(494.2)"
+          ],
+          [
+            "… attributable to non-controlling interests",
+            "0.1",
+            "(0.6)"
+          ],
+          [
+            "Basic / diluted earnings per share (€)",
+            "1.27 / 1.24",
+            "(4.08) / (4.08)"
+          ]
+        ]
+      },
+      {
+        "caption": "Statement of comprehensive income",
+        "head": [
+          "",
+          "03/31/24",
+          "03/31/23"
+        ],
+        "rows": [
+          [
+            "Net profit (loss) for the period",
+            "157.9",
+            "(494.7)"
+          ],
+          [
+            "Items reclassified subsequently to profit or loss",
+            "4.2",
+            "(52.6)"
+          ],
+          [
+            "– Foreign exchange gains and losses on foreign operations",
+            "5.0",
+            "(53.0)"
+          ],
+          [
+            "– Effective part of the change in fair value of cash flow hedges",
+            "(0.8)",
+            "0.4"
+          ],
+          [
+            "Items not reclassified subsequently to profit or loss",
+            "(0.9)",
+            "5.5"
+          ],
+          [
+            "– Actuarial gains and losses on post-employment obligations",
+            "(1.1)",
+            "6.5"
+          ],
+          [
+            "– Tax on these items",
+            "0.3",
+            "(1.6)"
+          ],
+          [
+            "– Other",
+            "—",
+            "0.6"
+          ],
+          [
+            "Other comprehensive income",
+            "3.3",
+            "(47.2)"
+          ],
+          [
+            "COMPREHENSIVE INCOME FOR THE PERIOD",
+            "161.2",
+            "(541.9)"
+          ],
+          [
+            "… attributable to owners of the parent company",
+            "161.1",
+            "(541.3)"
+          ],
+          [
+            "… attributable to non-controlling interests",
+            "0.1",
+            "(0.5)"
+          ]
+        ]
+      },
+      {
+        "caption": "Consolidated table of changes in equity – year to 31 March 2024",
+        "head": [
+          "",
+          "Capital",
+          "Premiums",
+          "Reserves",
+          "Own shares",
+          "FX",
+          "Year net income",
+          "Owners of parent",
+          "NCI",
+          "Total equity"
+        ],
+        "rows": [
+          [
+            "Situation at 03/31/23",
+            "9.7",
+            "630.2",
+            "1,568.9",
+            "(186.7)",
+            "(48.8)",
+            "(494.2)",
+            "1,479.2",
+            "3.5",
+            "1,482.6"
+          ],
+          [
+            "Profit (loss)",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "157.8",
+            "157.8",
+            "0.1",
+            "157.9"
+          ],
+          [
+            "Other comprehensive income",
+            "—",
+            "—",
+            "(1.7)",
+            "—",
+            "5.0",
+            "—",
+            "3.3",
+            "—",
+            "3.3"
+          ],
+          [
+            "Allocation of consolidated profit (loss) N−1",
+            "—",
+            "—",
+            "(494.2)",
+            "—",
+            "—",
+            "494.2",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "Change in scope",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "Change in the share capital of the parent company",
+            "0.1",
+            "44.8",
+            "—",
+            "—",
+            "—",
+            "—",
+            "44.9",
+            "—",
+            "44.9"
+          ],
+          [
+            "Changes in ownership interests in subsidiaries without gain/loss of control",
+            "—",
+            "—",
+            "0.9",
+            "—",
+            "—",
+            "—",
+            "0.9",
+            "(0.9)",
+            "—"
+          ],
+          [
+            "Share-based payments (IFRS 2)",
+            "—",
+            "—",
+            "59.6",
+            "—",
+            "—",
+            "—",
+            "59.6",
+            "—",
+            "59.6"
+          ],
+          [
+            "Equity component",
+            "—",
+            "—",
+            "104.6",
+            "—",
+            "—",
+            "—",
+            "104.6",
+            "—",
+            "104.6"
+          ],
+          [
+            "Sales and purchases of own shares",
+            "—",
+            "—",
+            "(42.0)",
+            "68.1",
+            "—",
+            "—",
+            "26.1",
+            "—",
+            "26.1"
+          ],
+          [
+            "Commitment to purchase minority shareholders' shares",
+            "—",
+            "—",
+            "0.2",
+            "—",
+            "—",
+            "—",
+            "0.2",
+            "—",
+            "0.2"
+          ],
+          [
+            "Situation at 03/31/24",
+            "9.9",
+            "675.0",
+            "1,196.3",
+            "(118.6)",
+            "(43.8)",
+            "157.8",
+            "1,876.6",
+            "2.6",
+            "1,879.3"
+          ]
+        ]
+      },
+      {
+        "caption": "Cash flow statement",
+        "head": [
+          "",
+          "03/31/24",
+          "03/31/23"
+        ],
+        "rows": [
+          [
+            "Consolidated profit (loss)",
+            "157.9",
+            "(494.7)"
+          ],
+          [
+            "Share of profit of associates",
+            "—",
+            "—"
+          ],
+          [
+            "Net amortisation and depreciation on PP&E and intangible assets",
+            "776.0",
+            "1,287.1"
+          ],
+          [
+            "Net provisions",
+            "(4.6)",
+            "21.7"
+          ],
+          [
+            "Cost of stock-based compensation",
+            "59.6",
+            "62.0"
+          ],
+          [
+            "Gains/losses on disposals",
+            "0.5",
+            "0.6"
+          ],
+          [
+            "Other income and expenses calculated",
+            "17.2",
+            "(4.1)"
+          ],
+          [
+            "Income tax expense",
+            "96.8",
+            "(109.1)"
+          ],
+          [
+            "Cash flow from operations",
+            "1,103.4",
+            "763.4"
+          ],
+          [
+            "Change in working capital linked to operating activities",
+            "(455.2)",
+            "5.2"
+          ],
+          [
+            "Current income tax expense",
+            "(110.7)",
+            "(79.1)"
+          ],
+          [
+            "Cash flow generated by operating activities (incl. interest paid 57.7 / 22.4)",
+            "537.6",
+            "689.6"
+          ],
+          [
+            "Payments for internal and external developments",
+            "(887.0)",
+            "(998.7)"
+          ],
+          [
+            "Payments for other intangible assets",
+            "(88.7)",
+            "(23.4)"
+          ],
+          [
+            "Payments for property, plant and equipment",
+            "(27.5)",
+            "(48.2)"
+          ],
+          [
+            "Proceeds from disposals of intangible assets and PP&E",
+            "0.1",
+            "0.1"
+          ],
+          [
+            "Payments for the acquisition of financial assets",
+            "(5.6)",
+            "(51.4)"
+          ],
+          [
+            "Refund of loans and other financial assets",
+            "1.0",
+            "45.8"
+          ],
+          [
+            "Change in scope",
+            "—",
+            "(30.8)"
+          ],
+          [
+            "Cash used in investing activities",
+            "(1,007.6)",
+            "(1,106.6)"
+          ],
+          [
+            "New borrowings",
+            "1,170.8",
+            "1,437.3"
+          ],
+          [
+            "Refund of borrowings in relation to leases",
+            "(43.9)",
+            "(45.0)"
+          ],
+          [
+            "Refund of borrowings",
+            "(978.5)",
+            "(949.1)"
+          ],
+          [
+            "Funds received from shareholders in capital increases",
+            "44.9",
+            "—"
+          ],
+          [
+            "Sales/purchases of own shares",
+            "11.5",
+            "100.4"
+          ],
+          [
+            "Cash generated by financing activities",
+            "204.7",
+            "543.6"
+          ],
+          [
+            "NET CHANGE IN CASH AND CASH EQUIVALENTS",
+            "(265.2)",
+            "126.5"
+          ],
+          [
+            "Cash and cash equivalents at the beginning of the period",
+            "1,464.6",
+            "1,391.4"
+          ],
+          [
+            "Foreign exchange losses/gains",
+            "3.1",
+            "(53.4)"
+          ],
+          [
+            "Cash and cash equivalents at the end of the period",
+            "1,202.4",
+            "1,464.6"
+          ]
+        ]
+      }
+    ]
   }
 ]

@@ -2032,5 +2032,42 @@
         "result": "Service contract – payments expensed"
       }
     ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t3-17",
+    "lecture": "t3",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A local industrial company has developed a prototype that can recover wind energy together with a foreign partner. Commercialisation is doubtful: the selling price needed to cover manufacturing costs would be too high for potential buyers. These prototype development costs …",
+    "options": [
+      {
+        "id": "a",
+        "text": "will be capitalised because the project is identifiable and controlled by the company"
+      },
+      {
+        "id": "b",
+        "text": "will be capitalised because the project is controlled, the costs can be measured reliably and future profits will be shared between the partners"
+      },
+      {
+        "id": "c",
+        "text": "will be expensed as there is no expectation of future profits"
+      },
+      {
+        "id": "d",
+        "text": "will be expensed because future profits will be shared between the two partners"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "IAS 38: development costs are capitalised only if ALL criteria are met – including the ability to generate probable future economic benefits (a market / commercial viability). Without expected profits the costs are expensed. Sharing profits with a partner is irrelevant.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 3"
+      }
+    ]
   }
 ]

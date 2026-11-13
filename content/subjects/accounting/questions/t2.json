@@ -2124,5 +2124,443 @@
       "Adding AC's assets line by line (that is full consolidation).",
       "Showing the goodwill of an associate as a separate asset."
     ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-t2-14",
+    "lecture": "t2",
+    "difficulty": 1,
+    "statement": "Consolidated financial statements represent the financial situation of economic entities.",
+    "answer": true,
+    "explanation": "True. Consolidated statements present the group – several legal entities under common control – as ONE economic entity.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-t2-15",
+    "lecture": "t2",
+    "difficulty": 1,
+    "statement": "A parent company is a company that controls another company by owning at least 20% of the voting rights of the controlled entity.",
+    "answer": false,
+    "explanation": "Wrong. 20% is the presumption for SIGNIFICANT INFLUENCE (associate). Control is presumed above 50% of the voting rights – and what counts is control itself (power, exposure to variable returns, link between them), not a percentage.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-t2-16",
+    "lecture": "t2",
+    "difficulty": 2,
+    "statement": "Companies under significant influence of the parent company are part of the scope of consolidation.",
+    "answer": true,
+    "explanation": "True in the broad sense: the scope of consolidation covers all entities the group accounts for with a consolidation method – subsidiaries (full consolidation) AND associates (equity method). Careful: associates are NOT fully consolidated. (The mock questions also contain the opposite version – read 'scope' as 'accounted for by a consolidation method'.)",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-t2-17",
+    "lecture": "t2",
+    "difficulty": 1,
+    "statement": "A parent company holding more than 50% of another company usually reflects a relationship of significant influence.",
+    "answer": false,
+    "explanation": "Wrong. More than 50% of the voting rights usually means CONTROL → subsidiary, full consolidation. Significant influence is presumed between 20% and 50%. Hinweis: Der Lösungsschlüssel der Mock-Fragen markiert hier 'True' – nach IFRS 10 / IAS 28 ist das falsch.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-t2-18",
+    "lecture": "t2",
+    "difficulty": 1,
+    "statement": "Non-controlling interest is essentially the portion of equity (net assets) in a subsidiary that is not attributable to the parent company.",
+    "answer": true,
+    "explanation": "True – this is the IFRS 10 definition: equity in a subsidiary not attributable, directly or indirectly, to the parent. It is presented within consolidated equity, separately from the parent's share. Hinweis: Der Lösungsschlüssel der Mock-Fragen markiert hier 'False' – die Aussage entspricht aber wörtlich der Definition.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-17",
+    "lecture": "t2",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Non-controlling interest in the consolidated balance sheet represents …",
+    "options": [
+      {
+        "id": "a",
+        "text": "investments (financial assets) in companies that the parent company does not control"
+      },
+      {
+        "id": "b",
+        "text": "equity provided by shareholders (other than the parent's shareholders) to subsidiaries that the parent does not own 100%"
+      },
+      {
+        "id": "c",
+        "text": "debt provided to subsidiaries that the parent company does not own 100%"
+      },
+      {
+        "id": "d",
+        "text": "investments in companies on which the parent company has significant influence"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "NCI = the minority shareholders' share in the equity of subsidiaries that are not wholly owned. It is equity (not debt) and has nothing to do with financial assets or associates (those appear as investments on the asset side).",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-18",
+    "lecture": "t2",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Company A buys 100% of the shares of Company B for 800. The book value of B is 500. At the acquisition date B had internally developed a brand name with a fair value of 100. Which statement about the consolidated financial statements is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The goodwill of this acquisition is 300"
+      },
+      {
+        "id": "b",
+        "text": "When accounting for Company B the full consolidation method has to be applied"
+      },
+      {
+        "id": "c",
+        "text": "Since the brand name is internally generated it cannot be accounted for"
+      },
+      {
+        "id": "d",
+        "text": "If the brand name is accounted for, IFRS require it to be amortised over its useful life"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "100% → control → full consolidation. In the purchase price allocation the brand IS recognised (internally generated for B, but acquired for the group): goodwill = 800 − (500 + 100) = 200, not 300. A brand usually has an indefinite useful life → no amortisation, annual impairment test.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-19",
+    "lecture": "t2",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "IOWA bought 100% of VIP Ltd on 31 December N1; goodwill of 800,000 was recognised in IOWA's consolidated statements. What do you recommend for goodwill in the N2 consolidated statements?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Goodwill has to be amortised over a free term, depending on IOWA's estimates"
+      },
+      {
+        "id": "b",
+        "text": "Goodwill is not amortised, but an impairment test has to be performed every year"
+      },
+      {
+        "id": "c",
+        "text": "The value of goodwill was estimated at the acquisition date and will never change"
+      },
+      {
+        "id": "d",
+        "text": "Goodwill is re-estimated every year: written down if the new estimate is below 800,000 and increased if it is above"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "IFRS 3 / IAS 36: goodwill is not amortised but tested for impairment at least annually. It can be written down, but never written up (an impairment of goodwill is never reversed).",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-20",
+    "lecture": "t2",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Non-controlling interests (NCI) in a consolidated balance sheet have strongly increased in N compared with the previous year. Which explanation is CORRECT? NCI increased because …",
+    "options": [
+      {
+        "id": "a",
+        "text": "the parent invested in another company, acquiring 20% and hence significant influence"
+      },
+      {
+        "id": "b",
+        "text": "for one subsidiary the parent sold part of its shares, decreasing its ownership from 80% to 60%"
+      },
+      {
+        "id": "c",
+        "text": "the parent company increased its share capital in N"
+      },
+      {
+        "id": "d",
+        "text": "the parent invested in another company, acquiring 100% and hence control"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Selling shares while keeping control raises the minorities' share from 20% to 40% → NCI increase. An associate (20%) does not create NCI; a parent's capital increase raises the group share of equity; a 100% acquisition creates no NCI.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-21",
+    "lecture": "t2",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "When a subsidiary is acquired some time after the first day of the fiscal year, which statement is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Income from the subsidiary is not recognised until there is an entire year of consolidated operations"
+      },
+      {
+        "id": "b",
+        "text": "Income from the subsidiary is recognised from the date of acquisition to year-end"
+      },
+      {
+        "id": "c",
+        "text": "The excess of cost over the acquired net assets is recognised at the beginning of the fiscal year"
+      },
+      {
+        "id": "d",
+        "text": "Income from the subsidiary is recognised for the entire year"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "A subsidiary is consolidated from the date control is obtained: only income and expenses earned after the acquisition date enter the consolidated income statement. Profits before that date are part of the acquired equity.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-22",
+    "lecture": "t2",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "When a company holds 50% of the capital (ordinary shares) of another company, it exercises …",
+    "options": [
+      {
+        "id": "a",
+        "text": "exclusive control in all cases"
+      },
+      {
+        "id": "b",
+        "text": "joint control in all cases"
+      },
+      {
+        "id": "c",
+        "text": "exclusive control in some cases"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "50% is not a majority. Control depends on the facts: e.g. a shareholders' agreement, the right to appoint the majority of the board or double voting rights can give exclusive control; otherwise it may be joint control or significant influence.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-23",
+    "lecture": "t2",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "On 31 December year 1, PC acquired 100% of SA's shares for $450. SA's equity is $160 on its balance sheet. SA has developed a brand name whose fair value is estimated at $250 at the acquisition date. What goodwill is recognised in the consolidated balance sheet?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$40"
+      },
+      {
+        "id": "b",
+        "text": "$200"
+      },
+      {
+        "id": "c",
+        "text": "$290"
+      },
+      {
+        "id": "d",
+        "text": "$30"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fair value of SA's identifiable net assets = 160 + brand 250 = 410. Goodwill = 450 − 410 = 40. (290 forgets the brand.)",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-24",
+    "lecture": "t2",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "PC acquired 100% of SA for $150 on 31 December N−1, when SA's equity was $150 (capital 100, net income 50). On 31 December N, SA's equity shows capital 100, retained earnings 50 and net income 130. PC reports a net income of $80. What is the consolidated net income for year N?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$200"
+      },
+      {
+        "id": "b",
+        "text": "$260"
+      },
+      {
+        "id": "c",
+        "text": "$210"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Consolidated net income = PC 80 + 100% of SA's post-acquisition result 130 = 210. SA's retained earnings of 50 were earned BEFORE the acquisition – they are part of the acquired equity and eliminated against the investment. Hinweis: Der Lösungsschlüssel der Mock-Fragen markiert hier $260 – das zählt die vor dem Erwerb erzielten 50 mit und ist nicht nachvollziehbar.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-25",
+    "lecture": "t2",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Goodwill corresponds to …",
+    "options": [
+      {
+        "id": "a",
+        "text": "the difference between the acquisition price of the shares and the share held in the subsidiary's equity"
+      },
+      {
+        "id": "b",
+        "text": "the difference between the purchase price of the shares and the share held in the subsidiary's equity revalued at fair value at the date of acquisition"
+      },
+      {
+        "id": "c",
+        "text": "the difference between the purchase price of the shares and the share held in the subsidiary's equity remeasured at fair value at the date of consolidation"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Goodwill = purchase price − share in the FAIR VALUE of the identifiable net assets, measured at the ACQUISITION date (purchase price allocation). Book values (a) or later remeasurements (c) are wrong.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t2-26",
+    "lecture": "t2",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "PC acquired 70% of SA for $210 on 31 December N. SA's equity is $300 (capital 140, net income 160) and its liabilities are $60. What non-controlling interest is reported in the consolidated balance sheet on that date?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$42"
+      },
+      {
+        "id": "b",
+        "text": "$330"
+      },
+      {
+        "id": "c",
+        "text": "$90"
+      },
+      {
+        "id": "d",
+        "text": "$108"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "NCI = 30% × SA's equity 300 = 90 (liabilities are not part of equity). Goodwill = 210 − 70% × 300 = 0.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 2"
+      }
+    ]
   }
 ]

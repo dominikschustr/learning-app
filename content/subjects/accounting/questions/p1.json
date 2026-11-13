@@ -55,9 +55,9 @@
     ],
     "basis": [
       {
-        "kind": "exam",
-        "source": "Altklausur 2024",
-        "ref": "Part 5 – Decoding financial statements"
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Altklausur 2024, Part 5 (fiktiver Abschluss statt Ubisoft)"
       }
     ],
     "steps": [
@@ -93,9 +93,9 @@
     ],
     "basis": [
       {
-        "kind": "exam",
-        "source": "Altklausur 2024",
-        "ref": "Part 5 – Decoding financial statements"
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Altklausur 2024, Part 5 (fiktiver Abschluss statt Ubisoft)"
       }
     ],
     "steps": [
@@ -139,9 +139,9 @@
     ],
     "basis": [
       {
-        "kind": "exam",
-        "source": "Altklausur 2024",
-        "ref": "Part 5 – Decoding financial statements"
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Altklausur 2024, Part 5 (fiktiver Abschluss statt Ubisoft)"
       }
     ],
     "steps": [
@@ -174,9 +174,9 @@
     ],
     "basis": [
       {
-        "kind": "exam",
-        "source": "Altklausur 2024",
-        "ref": "Part 5 – Decoding financial statements"
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Altklausur 2024, Part 5 (fiktiver Abschluss statt Ubisoft)"
       }
     ],
     "steps": [
@@ -212,9 +212,9 @@
     ],
     "basis": [
       {
-        "kind": "exam",
-        "source": "Altklausur 2024",
-        "ref": "Part 5 – Decoding financial statements"
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Altklausur 2024, Part 5 (fiktiver Abschluss statt Ubisoft)"
       }
     ],
     "steps": [
@@ -246,9 +246,9 @@
     ],
     "basis": [
       {
-        "kind": "exam",
-        "source": "Altklausur 2024",
-        "ref": "Part 5 – Decoding financial statements"
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Altklausur 2024, Part 5 (fiktiver Abschluss statt Ubisoft)"
       }
     ],
     "steps": [
@@ -284,9 +284,9 @@
     ],
     "basis": [
       {
-        "kind": "exam",
-        "source": "Altklausur 2024",
-        "ref": "Part 5 – Decoding financial statements"
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Altklausur 2024, Part 5 (fiktiver Abschluss statt Ubisoft)"
       }
     ],
     "steps": [
@@ -308,6 +308,297 @@
         "why": "Both items point to new business combinations. Compared with sales of 2,300 the amounts are small.",
         "result": "Yes – small acquisitions in N (cash −18, goodwill +11)"
       }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-08",
+    "lecture": "t1",
+    "topic": "Staff costs – presentation by function",
+    "case": "ubisoft-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "In which statement of Ubisoft can you find the staff costs expensed? Indicate the amount if possible.",
+    "modelAnswer": "Not on the face of the income statement: Ubisoft presents expenses by FUNCTION (cost of sales, R&D costs, marketing costs, administrative and IT costs), so staff costs are spread over these lines. Under the function method IAS 1 requires the nature of expenses, including employee benefits expense, to be disclosed in the NOTES – the amount can only be read there (the notes are not reproduced in the exam). The only staff-related figure visible in the statements is the cost of stock-based compensation (59.6 M€) added back in the cash flow statement and shown in the statement of changes in equity (IFRS 2: 59.6).",
+    "keyPoints": [
+      "Income statement by function → no staff cost line",
+      "Staff costs are disclosed in the notes (nature of expenses)",
+      "Only share-based compensation 59.6 visible (cash flow statement, changes in equity)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Ubisoft (Original)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "How is the income statement presented?",
+        "why": "Lines are cost of sales, R&D, marketing, administrative and IT costs → presentation BY FUNCTION. Staff costs are included in each of these functions.",
+        "result": "No separate 'staff costs' line"
+      },
+      {
+        "title": "Where to look instead",
+        "why": "IAS 1: an entity classifying by function must disclose additional information on the nature of expenses (depreciation, employee benefits) in the notes.",
+        "lines": [
+          "Notes → employee benefits expense",
+          "Visible in the statements: stock-based compensation 59.6 (cash flow statement, changes in equity)"
+        ],
+        "result": "Staff costs: in the notes; amount not shown on the face of the statements"
+      }
+    ],
+    "pitfalls": [
+      "Looking for a 'personnel costs' line – it only exists in an income statement BY NATURE."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-09",
+    "lecture": "t4",
+    "topic": "Cash capital increase from the statements",
+    "case": "ubisoft-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Was there a cash capital increase in the year ended 31 March 2024? If yes, specify its terms by indicating the items concerned (increase in share capital, share premium and cash received).",
+    "modelAnswer": "Yes. In the statement of changes in equity the line 'Change in the share capital of the parent company' shows capital +0.1 and premiums +44.8 = 44.9 M€ (balance sheet: capital 9.7 → 9.9, premiums 630.2 → 675.0). The cash flow statement shows in financing activities 'Funds received from shareholders in capital increases' of 44.9 M€ → the shares were paid in cash. Terms: share capital +0.1 M€ (par value of the new shares), share premium +44.8 M€, cash +44.9 M€.",
+    "keyPoints": [
+      "Share capital +0.1 (9.7 → 9.9)",
+      "Share premium +44.8 (630.2 → 675.0)",
+      "Cash received 44.9 in financing activities",
+      "Same 44.9 in the statement of changes in equity"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Ubisoft (Original)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Equity lines",
+        "lines": [
+          "Capital: 9.9 − 9.7 = +0.1 (rounded)",
+          "Premiums: 675.0 − 630.2 = +44.8",
+          "Changes in equity: 'Change in the share capital of the parent company' 0.1 + 44.8 = 44.9"
+        ]
+      },
+      {
+        "title": "Was it paid in cash?",
+        "why": "A cash capital increase must appear in financing cash flows; a share dividend or shares issued for an acquisition would not.",
+        "lines": [
+          "Cash flow statement: 'Funds received from shareholders in capital increases' 44.9"
+        ],
+        "result": "Yes – cash capital increase of 44.9 M€: capital +0.1, premium +44.8"
+      }
+    ],
+    "pitfalls": [
+      "Taking the increase in total equity (+396.7) – it also contains net income, share-based payments, own shares etc.",
+      "Treating the sale of own shares (11.5) as a capital increase – treasury shares are not new shares."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-10",
+    "lecture": "t1",
+    "topic": "Indirect method – non-cash expenses added back",
+    "case": "ubisoft-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Explain why the line 'Net amortisation and depreciation on property, plant and equipment and intangible assets' appears as a positive amount (776.0) in Ubisoft's statement of cash flows.",
+    "modelAnswer": "Ubisoft uses the INDIRECT method: operating cash flow starts from consolidated net income (157.9). Depreciation and amortisation were deducted as expenses to compute net income but cause no cash outflow (the cash left when the assets were bought – shown in investing activities). They are therefore added back as a positive amount. The same logic applies to provisions: an increase is a non-cash expense (added back), a release is non-cash income (deducted – here −4.6).",
+    "keyPoints": [
+      "Indirect method starts from net income",
+      "D&A is an expense without cash outflow → added back",
+      "Cash outflow was in investing activities when the asset was bought",
+      "Provisions: increase added back, release deducted (−4.6)"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Ubisoft (Original)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Starting point",
+        "why": "Indirect method: net income → adjust for non-cash items and working capital changes.",
+        "lines": [
+          "Consolidated profit 157.9"
+        ]
+      },
+      {
+        "title": "Why add D&A back?",
+        "why": "Depreciation/amortisation reduced net income but no cash left the company in the year; the cash outflow happened when the asset was acquired (investing activities, e.g. payments for developments 887.0).",
+        "lines": [
+          "+ 776.0 net amortisation and depreciation"
+        ],
+        "result": "Positive amount = reversal of a non-cash expense"
+      }
+    ],
+    "pitfalls": [
+      "Saying that depreciation 'generates' cash – it only does not consume cash."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-11",
+    "lecture": "t2",
+    "topic": "Associates – evidence of significant influence",
+    "case": "ubisoft-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Does Ubisoft have significant influence over any associates? List all items in the financial statements that support your answer.",
+    "modelAnswer": "No (at least none with any amount). Associates (significant influence, IAS 28) are accounted for with the equity method, which would show up in three places – all of them are empty ('—') for both years: balance sheet 'Investments in associates' —; income statement 'Share of profit of associates' —; cash flow statement 'Share of profit of associates' —.",
+    "keyPoints": [
+      "Equity method items would show associates",
+      "Balance sheet: investments in associates —",
+      "Income statement: share of profit of associates —",
+      "Cash flow statement: share of profit of associates —"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Ubisoft (Original)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Where associates appear",
+        "why": "Significant influence → equity method: one line on the asset side and the share of profit in the income statement (reversed in the indirect cash flow statement).",
+        "lines": [
+          "Balance sheet: 'Investments in associates' — / —",
+          "Income statement: 'Share of profit of associates' — / —",
+          "Cash flow statement: 'Share of profit of associates' — / —"
+        ],
+        "result": "No associates with any value → no significant influence reported"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-12",
+    "lecture": "t2",
+    "topic": "Subsidiaries & non-controlling interests",
+    "case": "ubisoft-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Are all Ubisoft subsidiaries 100% owned? Justify your answer.",
+    "modelAnswer": "No. Non-controlling interests exist, which is only possible if some subsidiaries are not wholly owned: balance sheet NCI 2.6 M€ (3.5); net income attributable to NCI 0.1 (−0.6); comprehensive income attributable to NCI 0.1; a separate NCI column in the statement of changes in equity, including 'Changes in ownership interests in subsidiaries without gain/loss of control' (NCI −0.9: Ubisoft bought out part of the minorities) and a 'Commitment to purchase minority shareholders' shares'. The amounts are very small, so the minority stakes are marginal.",
+    "keyPoints": [
+      "NCI in equity 2.6 (3.5)",
+      "Net income attributable to NCI 0.1",
+      "NCI column in the statement of changes in equity",
+      "Changes in ownership without loss of control (−0.9) and commitment to buy minority shares",
+      "Amounts small → minor minority stakes"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Ubisoft (Original)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Logic",
+        "why": "Full consolidation integrates 100% of a subsidiary; the share of equity and profit not owned by the parent is shown as non-controlling interest. NCI ≠ 0 ⇒ at least one subsidiary is not 100% owned."
+      },
+      {
+        "title": "Evidence",
+        "lines": [
+          "Balance sheet: non-controlling interests 2.6 (3.5)",
+          "Income statement: net income attributable to NCI 0.1 (−0.6)",
+          "Comprehensive income: attributable to NCI 0.1",
+          "Changes in equity: NCI column; ownership change −0.9; commitment to purchase minority shares"
+        ],
+        "result": "Not all subsidiaries are 100% owned (but minorities are small)"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-13",
+    "lecture": "t3",
+    "topic": "Leases – evidence in the statements",
+    "case": "ubisoft-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Does Ubisoft use leasing to finance any of its assets? List all items in the financial statements that support your answer.",
+    "modelAnswer": "Yes. Under IFRS 16 the lessee recognises a right-of-use asset and a lease liability: balance sheet 'Right-of-use assets' 278.4 M€ (271.9); the lease liabilities are included in 'Long-term / Short-term borrowings and other financial liabilities'; cash flow statement (financing) 'Refund of borrowings in relation to leases' (43.9) – the repayment of the lease liability. The depreciation of the right-of-use assets is part of the depreciation added back in operating cash flow, and the interest on lease liabilities is part of the interest expense.",
+    "keyPoints": [
+      "Right-of-use assets 278.4",
+      "Lease liabilities within borrowings / financial liabilities",
+      "Financing cash flow: refund of borrowings in relation to leases (43.9)",
+      "Depreciation of ROU and interest in the income statement"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Ubisoft (Original)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "IFRS 16 footprint of a lessee",
+        "lines": [
+          "Asset: right-of-use assets 278.4 (271.9)",
+          "Liability: lease liabilities inside borrowings and other financial liabilities",
+          "Cash flow (financing): refund of borrowings in relation to leases (43.9)",
+          "Income statement: depreciation of ROU + interest on the lease liability"
+        ],
+        "result": "Yes – Ubisoft leases assets (mainly offices)"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-14",
+    "lecture": "t2",
+    "topic": "New acquisitions – evidence in the statements",
+    "case": "ubisoft-fs",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Do you think Ubisoft made any new (small) acquisitions in the year ended 31 March 2024? List all items in the financial statements that support your answer.",
+    "modelAnswer": "Probably not. An acquisition of a subsidiary would show (1) a cash outflow 'Change in scope' in investing activities – it is '—' in 2024 (but (30.8) in 2023, when Ubisoft did acquire companies); (2) new goodwill – goodwill is practically unchanged (73.2 → 73.3, the +0.1 is likely an exchange difference); (3) a 'Change in scope' line in the statement of changes in equity – also '—'. So no new acquisitions in 2024.",
+    "keyPoints": [
+      "Cash flow statement: change in scope — in 2024 (30.8 in 2023)",
+      "Goodwill almost unchanged 73.2 → 73.3",
+      "Changes in equity: change in scope —",
+      "Conclusion: no new acquisitions in 2024"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2024",
+        "ref": "Part 5 – Ubisoft (Original)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Where an acquisition leaves traces",
+        "lines": [
+          "Investing cash flow: 'Change in scope' (price paid net of cash acquired)",
+          "Balance sheet: new goodwill / brands",
+          "Changes in equity: 'Change in scope' (e.g. new NCI)"
+        ]
+      },
+      {
+        "title": "Read Ubisoft's figures",
+        "lines": [
+          "Change in scope (cash flow): — (2023: −30.8)",
+          "Goodwill: 73.3 vs 73.2",
+          "Change in scope (equity): —"
+        ],
+        "result": "No new acquisitions in 2024 (there were some in 2023)"
+      }
+    ],
+    "pitfalls": [
+      "Reading the large increase in other intangible assets (+299) as an acquisition – it comes from capitalised game developments (payments for developments 887.0)."
     ]
   }
 ]

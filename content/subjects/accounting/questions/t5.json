@@ -1145,5 +1145,80 @@
       "Using net income instead of operating profit after tax.",
       "Forgetting lease debt in capital employed."
     ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t5-15",
+    "lecture": "t5",
+    "topic": "EVA – calculation",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "At 31 December 2019 Rovi reports: net revenues 381,313; EBITDA 60,864; EBIT 34,648; income tax rate 25%; profit for the period 33,986; WACC 6%; capital employed 355,400 (thousand €). What is Rovi's EVA?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4,662 thousand €"
+      },
+      {
+        "id": "b",
+        "text": "10,662 thousand €"
+      },
+      {
+        "id": "c",
+        "text": "12,662 thousand €"
+      },
+      {
+        "id": "d",
+        "text": "25,986 thousand €"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "NOPAT = EBIT × (1 − t) = 34,648 × 0.75 = 25,986. Capital charge = 6% × 355,400 = 21,324. EVA = 25,986 − 21,324 = 4,662. (12,662 wrongly uses net profit; 25,986 is NOPAT.) Hinweis: Der Lösungsschlüssel der Mock-Fragen markiert hier 10,662 – mit den angegebenen Zahlen ergibt sich 4,662.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 5"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t5-16",
+    "lecture": "t5",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Dividends paid …",
+    "options": [
+      {
+        "id": "a",
+        "text": "do not affect the free cash flow to the firm nor the free cash flow to equity"
+      },
+      {
+        "id": "b",
+        "text": "reduce the free cash flow to the firm"
+      },
+      {
+        "id": "c",
+        "text": "reduce the free cash flow to equity but not to the firm"
+      },
+      {
+        "id": "d",
+        "text": "reduce both free cash flows"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "FCFF is the cash available to ALL capital providers, FCFE the cash available to shareholders – both are measured BEFORE any distribution. Dividends are a use of FCFE, not a deduction from it.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 5"
+      }
+    ]
   }
 ]

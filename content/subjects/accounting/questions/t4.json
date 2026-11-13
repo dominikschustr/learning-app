@@ -1157,5 +1157,21 @@
       "Classifying by name ('preference share' ≠ automatically equity).",
       "Thinking 'settled in shares' always means equity – a variable number is a liability."
     ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-t4-15",
+    "lecture": "t4",
+    "difficulty": 1,
+    "statement": "Preferred shares issued by the company are classified as equity because they are called shares.",
+    "answer": false,
+    "explanation": "Wrong. The name is irrelevant (IAS 32). Preferred shares with a mandatory dividend or a redemption obligation (e.g. at the holder's request) contain a contractual obligation to pay cash → financial liability.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 4"
+      }
+    ]
   }
 ]

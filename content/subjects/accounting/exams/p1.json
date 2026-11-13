@@ -2,11 +2,11 @@
   {
     "id": "exam-2024",
     "title": "Final exam 2024 (Nachbau)",
-    "subtitle": "Wie die Abschlussklausur CM01 2024: 5 unabhängige Teile, 60 Punkte, 75 Minuten, Unterlagen erlaubt. Teil 5 nutzt einen fiktiven Konzernabschluss statt Ubisoft.",
+    "subtitle": "Wie die Abschlussklausur CM01 2024: 5 unabhängige Teile, 60 Punkte, 75 Minuten, Unterlagen erlaubt. Teil 5 mit den originalen Ubisoft-Abschlüssen zum 31.03.2024.",
     "origin": {
       "kind": "altklausur",
       "exam": "Abschlussklausur IFRS (CM01) 2024",
-      "faithful": false
+      "faithful": true
     },
     "minutes": 75,
     "parts": [
@@ -92,37 +92,37 @@
       },
       {
         "title": "Part 5 – Decoding financial statements",
-        "instructions": "Refer to the Lumen Games financial statements. [18 points]",
+        "instructions": "Refer to the Ubisoft financial statements at 03/31/24. [18 points]",
         "sections": [
           {
-            "title": "Lumen Games",
+            "title": "Ubisoft",
             "items": [
               {
-                "q": "sa-p1-01",
+                "q": "sa-p1-08",
                 "points": 2
               },
               {
-                "q": "sa-p1-02",
+                "q": "sa-p1-09",
                 "points": 4
               },
               {
-                "q": "sa-p1-03",
+                "q": "sa-p1-10",
                 "points": 2
               },
               {
-                "q": "sa-p1-04",
+                "q": "sa-p1-11",
                 "points": 3
               },
               {
-                "q": "sa-p1-05",
+                "q": "sa-p1-12",
                 "points": 3
               },
               {
-                "q": "sa-p1-06",
+                "q": "sa-p1-13",
                 "points": 2
               },
               {
-                "q": "sa-p1-07",
+                "q": "sa-p1-14",
                 "points": 2
               }
             ]

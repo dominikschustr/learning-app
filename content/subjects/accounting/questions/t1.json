@@ -978,5 +978,128 @@
       "Putting sales revenue's 'other revenues' into revenue – it belongs to other income.",
       "Ending with a different operating profit: reclassification never changes the total."
     ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-13",
+    "lecture": "t1",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "The income statement contains …",
+    "options": [
+      {
+        "id": "a",
+        "text": "revenues and expenses both based on cash flows"
+      },
+      {
+        "id": "b",
+        "text": "revenues based on cash flows and accrued expenses"
+      },
+      {
+        "id": "c",
+        "text": "accrued revenues and expenses based on cash flows"
+      },
+      {
+        "id": "d",
+        "text": "accrued revenues and accrued expenses"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The income statement follows accrual accounting: revenues are recognised when earned and expenses when incurred, regardless of when cash is received or paid. Cash flows are shown in the statement of cash flows.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 1"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-14",
+    "lecture": "t1",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "The objective of general purpose financial reporting is …",
+    "options": [
+      {
+        "id": "a",
+        "text": "to provide financial information about the reporting entity that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the entity"
+      },
+      {
+        "id": "b",
+        "text": "to inform government statistics"
+      },
+      {
+        "id": "c",
+        "text": "to support the filing of the entity's tax return"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Conceptual Framework, chapter 1: decision-useful information for the PRIMARY users – existing and potential investors, lenders and other creditors. Statistics and taxes are not the objective.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 1"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-t1-15",
+    "lecture": "t1",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "(Total) comprehensive income corresponds to …",
+    "options": [
+      {
+        "id": "a",
+        "text": "net income plus other comprehensive income"
+      },
+      {
+        "id": "b",
+        "text": "revenues plus gains/losses (e.g. from disposals of non-current assets)"
+      },
+      {
+        "id": "c",
+        "text": "operating profit minus interest minus income tax"
+      },
+      {
+        "id": "d",
+        "text": "an indicator that companies often publish voluntarily to better inform about their performance"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Total comprehensive income = net income (profit or loss) + OCI. It is a mandatory IAS 1 total, not a voluntary indicator; operating profit − interest − tax is (roughly) net income only.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 1"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-t1-16",
+    "lecture": "t1",
+    "difficulty": 1,
+    "statement": "According to the Conceptual Framework, the objective of financial reporting is to provide useful information to all users.",
+    "answer": false,
+    "explanation": "Wrong. The Framework targets the PRIMARY users – existing and potential investors, lenders and other creditors – not all users (e.g. not regulators, tax authorities or the public, who may still find the information useful).",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock-Fragen",
+        "ref": "Topic 1"
+      }
+    ]
   }
 ]

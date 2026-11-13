@@ -539,64 +539,18 @@
   },
   {
     "type": "short",
-    "id": "sa-p7-04",
-    "lecture": "t3",
-    "topic": "Land – revaluation model",
-    "case": "torvik-land",
-    "difficulty": 2,
-    "verb": "explain",
-    "prompt": "Show the impact on the balance sheet and on the income statement / other comprehensive income of Torvik on 31 December N and 31 December N+1 if Torvik uses the revaluation model for this land.",
-    "modelAnswer": "Land is not depreciated.\n31 December N: land 6,750,000 (6,400,000 + 350,000). The increase of 350,000 goes to OCI and accumulates in a revaluation surplus in equity – no effect on net income.\n31 December N+1: land 6,520,000. The decrease of 230,000 is recognised in OCI as well, because it reverses part of the existing surplus (surplus now 120,000). Only a decrease below the original cost (i.e. beyond the surplus) would hit net income.",
-    "keyPoints": [
-      "No depreciation of land",
-      "N: land 6,750,000; +350,000 in OCI (revaluation surplus)",
-      "N+1: land 6,520,000; −230,000 in OCI against the surplus",
-      "No impact on net income"
-    ],
-    "basis": [
-      {
-        "kind": "exam",
-        "source": "Midterm 2017",
-        "ref": "Sec. C – Non-current assets: PPE"
-      }
-    ],
-    "steps": [
-      {
-        "title": "Rules of the revaluation model (IAS 16)",
-        "why": "Land is not depreciated. Increases → OCI (revaluation surplus in equity). Decreases → OCI as far as a surplus exists, beyond that → P/L."
-      },
-      {
-        "title": "31 December N",
-        "lines": [
-          "Land: 6,400,000 → 6,750,000",
-          "+350,000 in OCI → revaluation surplus 350,000"
-        ],
-        "result": "No impact on net income"
-      },
-      {
-        "title": "31 December N+1",
-        "lines": [
-          "Land: 6,750,000 → 6,520,000",
-          "−230,000 in OCI against the surplus → surplus 120,000"
-        ],
-        "result": "Still no impact on net income (value stays above cost)"
-      }
-    ]
-  },
-  {
-    "type": "short",
     "id": "sa-p7-05",
     "lecture": "t3",
     "topic": "Land – cost model",
     "case": "torvik-land",
     "difficulty": 2,
     "verb": "explain",
-    "prompt": "Same land, but Torvik uses the cost model. What is the impact on 31 December N and 31 December N+1?",
-    "modelAnswer": "The land stays at its cost of 6,400,000 on both dates. Land is not depreciated and fair value changes are ignored, so there is no impact on net income or OCI (an impairment test would only matter if the recoverable amount fell below 6,400,000).",
+    "prompt": "Torvik uses the cost model for this land. What is the impact on its financial statements on 31 December N and 31 December N+1?",
+    "modelAnswer": "The land stays at its cost of 6,400,000 on both dates. Land is not depreciated and fair value changes are ignored under the cost model, so there is no impact on net income (an impairment test would only matter if the recoverable amount fell below 6,400,000).",
     "keyPoints": [
       "Land at 6,400,000 on both dates",
       "No depreciation, fair value changes ignored",
-      "No impact on net income or OCI"
+      "No impact on net income"
     ],
     "basis": [
       {
@@ -616,7 +570,7 @@
           "31 Dec N: 6,400,000",
           "31 Dec N+1: 6,400,000"
         ],
-        "result": "No impact on net income or OCI"
+        "result": "No impact on net income"
       }
     ]
   }
