@@ -6,6 +6,7 @@ import type { Entry, Stats } from "./ranking";
  * Jede Anfrage trägt das ID-Token des angemeldeten Kontos; was erlaubt ist, regelt firestore.rules:
  * - progress/{uid}: Lernstand als JSON mit Versionsnummer – nur das eigene Konto darf lesen und schreiben.
  * - users/{uid}: Name und Stand für die Rangliste – alle Angemeldeten dürfen lesen, nur das eigene Konto schreiben.
+ * - highlights/{uid}: Fragen, die ein Konto für alle hervorgehoben hat – alle Angemeldeten lesen, nur das eigene Konto schreibt.
  */
 
 const env = (k: string) => (typeof process !== "undefined" ? process.env[k] : undefined);
@@ -216,4 +217,80 @@ export async function pushPut(
 export async function pushDelete(id: string, token: string): Promise<void> {
   const res = await call(token, "DELETE", doc(`push/${id}`));
   if (!res.ok && res.status !== 404 && res.status !== 403) await fail(res, "Erinnerung entfernen");
+}
+
+// ---------- Hervorhebungen für die Lerngruppe ----------
+
+/** Fragen, die ein Konto für alle hervorgehoben hat (items = markKey, z. B. „q:accounting:t3-12“). */
+export type HighlightDoc = { uid: string; name: string; items: string[]; at: number };
+
+/** Alle Hervorhebungen aller Konten. */
+export async function highlightList(token: string): Promise<HighlightDoc[]> {
+  const out: HighlightDoc[] = [];
+  let pageToken = "";
+  do {
+    const res = await call(token, "GET", doc("highlights"), { pageSize: "300", ...(pageToken ? { pageToken } : {}) });
+    if (!res.ok) return fail(res, "Laden");
+    const json = (await res.json()) as {
+      documents?: {
+        name: string;
+        fields?: { name?: Value; items?: { arrayValue?: { values?: Value[] } }; at?: Value };
+      }[];
+      nextPageToken?: string;
+    };
+    for (const d of json.documents ?? []) {
+      const f = d.fields ?? {};
+      const items = (f.items?.arrayValue?.values ?? []).flatMap((v) => (v.stringValue ? [v.stringValue] : []));
+      out.push({
+        uid: d.name.split("/").pop()!,
+        name: f.name?.stringValue ?? "",
+        items,
+        at: Date.parse(f.at?.timestampValue ?? "") || 0,
+      });
+    }
+    pageToken = json.nextPageToken ?? "";
+  } while (pageToken);
+  return out;
+}
+
+/**
+ * Eine Frage für alle hervorheben (on) oder die Hervorhebung zurücknehmen. Das Hinzufügen bzw. Entfernen
+ * passiert in Firestore selbst (appendMissingElements/removeAllFromArray) – so überschreiben sich zwei Geräte
+ * desselben Kontos nicht gegenseitig.
+ */
+export async function highlightSet(uid: string, token: string, name: string, key: string, on: boolean): Promise<void> {
+  const values = { values: [{ stringValue: key }] };
+  const res = await call(token, "POST", `${firebaseSettings().root}:commit`, {}, {
+    writes: [
+      {
+        update: { name: doc(`highlights/${uid}`), fields: { name: { stringValue: name } } },
+        updateMask: { fieldPaths: ["name"] },
+        updateTransforms: [
+          on ? { fieldPath: "items", appendMissingElements: values } : { fieldPath: "items", removeAllFromArray: values },
+          { fieldPath: "at", setToServerValue: "REQUEST_TIME" },
+        ],
+      },
+    ],
+  });
+  if (!res.ok) await fail(res, "Hervorheben");
+}
+
+/** Namen in den eigenen Hervorhebungen nachziehen (nach dem Umbenennen). Gibt es noch keine, passiert nichts. */
+export async function highlightRename(uid: string, token: string, name: string): Promise<void> {
+  const res = await call(token, "POST", `${firebaseSettings().root}:commit`, {}, {
+    writes: [
+      {
+        update: { name: doc(`highlights/${uid}`), fields: { name: { stringValue: name } } },
+        updateMask: { fieldPaths: ["name"] },
+        updateTransforms: [{ fieldPath: "at", setToServerValue: "REQUEST_TIME" }],
+        currentDocument: { exists: true },
+      },
+    ],
+  });
+  if (!res.ok && res.status !== 404 && res.status !== 400) await fail(res, "Umbenennen");
+}
+
+export async function highlightDelete(uid: string, token: string): Promise<void> {
+  const res = await call(token, "DELETE", doc(`highlights/${uid}`));
+  if (!res.ok && res.status !== 404) await fail(res, "Löschen");
 }

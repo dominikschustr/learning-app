@@ -1,6 +1,6 @@
 rules_version = '2';
 
-// Regeln für Lernwerk (Konten, Synchronisation, Rangliste, Mitteilungen). Werden bei jedem Push auf main
+// Regeln für Lernwerk (Konten, Synchronisation, Rangliste, Hervorhebungen, Mitteilungen). Werden bei jedem Push auf main
 // automatisch veröffentlicht (.github/workflows/deploy.yml → scripts/deploy-rules.mjs). Siehe README.
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -34,6 +34,21 @@ service cloud.firestore {
       allow read: if signedIn();
       allow create, update: if isOwner(uid) && validUser(request.resource.data);
       allow delete: if isOwner(uid);
+    }
+
+    // Hervorhebungen: Fragen, die ein Konto für seine Lerngruppe markiert hat („Dominik hat die Frage hervorgehoben“).
+    // Alle Angemeldeten sehen alle, ändern nur die eigenen. items = Schlüssel der Fragen (wie die Lesezeichen).
+    match /highlights/{uid} {
+      allow read: if signedIn();
+      allow create, update: if isOwner(uid) && validHighlights(request.resource.data);
+      allow delete: if isOwner(uid);
+    }
+
+    function validHighlights(h) {
+      return h.keys().hasOnly(['name', 'items', 'at'])
+        && h.name is string && h.name.size() >= 1 && h.name.size() <= 24
+        && h.items is list && h.items.size() <= 2000
+        && h.at == request.time;
     }
 
     // Mitteilungen (Web Push): Push-Abo eines Geräts (id = Hash des Endpoints). Lesen kann es kein Konto –

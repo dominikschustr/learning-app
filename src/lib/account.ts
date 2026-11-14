@@ -1,7 +1,8 @@
 "use client";
 
 import { clearSession, deleteAuthAccount, getIdToken, reauthenticate, useAuth } from "./auth";
-import { progressDelete, userDelete } from "./cloud";
+import { highlightDelete, progressDelete, userDelete } from "./cloud";
+import { clearHighlights } from "./highlights";
 import { publishNow, useBoard, writePublished } from "./leaderboard";
 import { disableReminder } from "./push";
 import { useApp } from "./store";
@@ -14,6 +15,7 @@ function clearLocal() {
   writePublished(null);
   useBoard.setState({ entries: [], status: "idle", error: null, loadedAt: null });
   useSync.setState({ lastSync: null, status: "idle", error: null });
+  clearHighlights();
 }
 
 /**
@@ -33,12 +35,13 @@ export async function signOut(force = false): Promise<boolean> {
   return true;
 }
 
-/** Konto samt Lernstand und Ranglisten-Eintrag endgültig löschen. */
+/** Konto samt Lernstand, Ranglisten-Eintrag und Hervorhebungen endgültig löschen. */
 export async function deleteAccount(password: string): Promise<void> {
   const token = await reauthenticate(password);
   const uid = useAuth.getState().session!.uid;
   await progressDelete(uid, token);
   await userDelete(uid, token);
+  await highlightDelete(uid, token);
   await disableReminder().catch(() => undefined);
   await deleteAuthAccount(token);
   clearSession();

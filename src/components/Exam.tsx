@@ -24,6 +24,7 @@ import { gradeMC, shortPassed, toggleOption } from "@/lib/scoring";
 import { examScore, questionCredit, useApp, useHydrated, type ActiveExam, type AnswerEvent, type ExamRecord, type ShortGrade } from "@/lib/store";
 import { announceAll, celebrate } from "@/lib/toast";
 import { cn, formatClock, pct } from "@/lib/utils";
+import { HighlightButton, HighlightNote } from "./HighlightButton";
 import { MarkButton } from "./MarkButton";
 import { PaperList, fmtPoints, paperSlots, slotLabel, type PaperSlot } from "./Papers";
 import { CaseContext, MCView, ShortInput, ShortResult, TFView, answerText, useCaseOf } from "./Questions";
@@ -672,8 +673,10 @@ function ReviewItem({
               : `Frage ${index + 1}`}
           </span>
           <span className="font-medium">{q.type === "tf" ? q.statement : q.prompt}</span>
+          <HighlightNote subjectId={record.subjectId} id={q.id} className="mt-2 flex w-fit" />
         </span>
       </button>
+      <HighlightButton subjectId={record.subjectId} id={q.id} label={false} className="mt-3" />
       <MarkButton kind="q" subjectId={record.subjectId} id={q.id} label={false} className="mt-3" />
       </div>
       {open && (

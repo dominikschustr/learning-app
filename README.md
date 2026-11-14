@@ -58,8 +58,9 @@ Die App läuft nur mit Konto. Konten, Lernstände und Rangliste liegen in einem 
    `src/config.ts` eintragen.
 
 Was die Regeln sicherstellen: Den Lernstand (`progress/{uid}`) kann nur das eigene Konto lesen und schreiben;
-die Rangliste (`users/{uid}`: Name, XP, Tagesstand, Tagesziel, Streak) sehen alle Angemeldeten, ändern kann
-jedes Konto nur den eigenen Eintrag.
+die Rangliste (`users/{uid}`: Name, XP, Tagesstand, Tagesziel, Streak) und die Hervorhebungen
+(`highlights/{uid}`: Name und hervorgehobene Fragen) sehen alle Angemeldeten, ändern kann jedes Konto nur den
+eigenen Eintrag.
 
 ### 3. Mitteilungen (Tagesziel und Rangliste)
 
@@ -126,6 +127,13 @@ vor und hinter dir, ein gemeinsames Tagesziel aller, Auf-/Abstiegspfeile und Üb
 Woche); die XP je Tag werden dafür pro Gerät mitgezählt und synchronisiert. Solange die veröffentlichten
 `firestore.rules` die Wochenfelder nicht kennen, meldet die App automatisch ohne sie weiter. Gemeldet wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur bei Änderungen),
 geladen nur beim Öffnen der Rangliste. Name ändern, abmelden und Konto löschen unter *Einstellungen*.
+
+**Fragen für die Lerngruppe hervorheben:** Das Textmarker-Symbol (beim Üben auch Taste `H`, in der
+Aufgaben-Tabelle der Probeklausuren und in der Auswertung neben dem Lesezeichen) hebt eine Frage für alle hervor.
+Die anderen sehen dann über der Frage und in der Tabelle „Dominik hat diese Frage hervorgehoben“; der Filter
+*Hervorgehoben* in der Aufgaben-Tabelle zeigt nur diese Aufgaben. Anders als das Lesezeichen ist das nicht privat.
+Gespeichert wird je Konto in `highlights/{uid}` (Hinzufügen/Entfernen atomar in Firestore, damit sich zwei Geräte
+nicht überschreiben); geladen beim Start, beim Zurückkehren in die App und alle drei Minuten.
 
 ## Umzug von der alten Vercel-Adresse
 

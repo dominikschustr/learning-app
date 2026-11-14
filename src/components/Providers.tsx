@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
 import { useAuth, useAuthHydrated } from "@/lib/auth";
+import { startHighlights, useHighlights } from "@/lib/highlights";
 import { startAutoPublish } from "@/lib/leaderboard";
 import { refreshReminder } from "@/lib/push";
 import { useApp, useHydrated } from "@/lib/store";
@@ -18,10 +19,13 @@ export function Providers({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     void useAuth.persist.rehydrate();
     void useApp.persist.rehydrate();
+    void useHighlights.persist.rehydrate();
   }, []);
   // Automatische Synchronisation erst, wenn der lokale Stand geladen ist
   useEffect(() => (hydrated ? startAutoSync() : undefined), [hydrated]);
   useEffect(() => (hydrated ? startAutoPublish() : undefined), [hydrated]);
+  // Hervorhebungen der Lerngruppe laden und aktuell halten
+  useEffect(() => (hydrated ? startHighlights() : undefined), [hydrated]);
   // Erinnerung ans Tagesziel: Abo dieses Geräts beim Start (und nach Kontowechsel) prüfen und melden
   const uid = useAuth((s) => s.session?.uid);
   useEffect(() => {
@@ -75,13 +79,14 @@ function Toaster() {
             </span>
             <span className="min-w-0">
               <span className="eyebrow block">
-                {t.kind === "achievement"
+                {t.eyebrow ??
+                  (t.kind === "achievement"
                   ? "Achievement freigeschaltet"
                   : t.kind === "level"
                     ? "Level-Up"
                     : t.kind === "rank"
                       ? "Rangliste"
-                      : "Geschafft"}
+                      : "Geschafft")}
               </span>
               <span className="block font-semibold">{t.title}</span>
               {t.body && <span className="block text-sm text-muted">{t.body}</span>}

@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { answerXp } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
+import { toggleHighlight } from "@/lib/highlights";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
 import type { Question, SubjectContent } from "@/lib/schema";
 import type { RenderedFormula } from "@/lib/tex";
@@ -15,6 +16,7 @@ import { announce, celebrate } from "@/lib/toast";
 import { refreshNow } from "@/lib/useNow";
 import { cn, pct } from "@/lib/utils";
 import { FormulaDrawer, sideBySide } from "./FormulaDrawer";
+import { HighlightButton, HighlightNote } from "./HighlightButton";
 import { MarkButton } from "./MarkButton";
 import { Explanation, MCView, ShortInput, ShortResult, TFView, useCaseOf } from "./Questions";
 import { SessionBar, XpFloat } from "./SessionBar";
@@ -268,6 +270,10 @@ function Session({
         useApp.getState().toggleMark(markKey("q", subject.id, entry.q.id));
         return;
       }
+      if (e.key === "h") {
+        void toggleHighlight(markKey("q", subject.id, entry.q.id));
+        return;
+      }
       if (e.key === "s") {
         skip();
         return;
@@ -414,6 +420,7 @@ function Session({
               <Sigma className="size-4" /> Formeln
             </button>
           )}
+          <HighlightButton subjectId={subject.id} id={q.id} shortcut="H" />
           <MarkButton kind="q" subjectId={subject.id} id={q.id} shortcut="M" />
         </span>
       </div>
@@ -438,6 +445,7 @@ function Session({
               <RotateCcw className="size-3" /> Zweiter Versuch
             </span>
           )}
+          <HighlightNote subjectId={subject.id} id={q.id} className={cn("mb-3", entry.retry && "ml-2")} />
           <XpFloat amount={lastXp.amount} trigger={revealed && !restored ? lastXp.n : 0} />
 
           {q.type === "mc" && (

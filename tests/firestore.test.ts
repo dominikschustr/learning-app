@@ -122,6 +122,33 @@ describe.skipIf(!EMULATOR || !AUTH)("Konten und Firestore-Regeln", () => {
     expect(e).toMatchObject({ name: "Ben", weekXp: 0, week: null });
   });
 
+  it("Hervorhebungen: alle sehen alle, jedes Konto ändert nur die eigenen", async () => {
+    await cloud.highlightSet(anna.uid, anna.token, "Anna", "q:acc:1", true);
+    await cloud.highlightSet(anna.uid, anna.token, "Anna", "q:acc:2", true);
+    // doppelt hervorheben ändert nichts, zurücknehmen entfernt genau diese Frage
+    await cloud.highlightSet(anna.uid, anna.token, "Anna", "q:acc:1", true);
+    await cloud.highlightSet(anna.uid, anna.token, "Anna", "q:acc:2", false);
+    await cloud.highlightSet(ben.uid, ben.token, "Ben", "q:acc:1", true);
+    const list = await cloud.highlightList(ben.token);
+    expect(list.find((h) => h.uid === anna.uid)).toMatchObject({ name: "Anna", items: ["q:acc:1"] });
+    expect(list.find((h) => h.uid === ben.uid)?.items).toEqual(["q:acc:1"]);
+
+    // Umbenennen zieht den Namen nach; ohne Hervorhebungen entsteht kein leerer Eintrag
+    await cloud.highlightRename(anna.uid, anna.token, "Anna M.");
+    expect((await cloud.highlightList(anna.token)).find((h) => h.uid === anna.uid)?.name).toBe("Anna M.");
+
+    // ohne Anmeldung nichts sichtbar; fremde Einträge weder ändern noch löschen
+    expect(await raw("GET", "highlights")).toBe(403);
+    await expect(cloud.highlightSet(anna.uid, ben.token, "Hacker", "q:acc:9", true)).rejects.toThrow();
+    expect(await raw("DELETE", `highlights/${anna.uid}`, ben.token)).toBe(403);
+    // ungültige Felder werden abgelehnt
+    expect(await raw("PATCH", `highlights/${ben.uid}`, ben.token, { fields: { name: { stringValue: "Ben" }, items: { stringValue: "x" } } })).toBe(403);
+    await expect(cloud.highlightSet(ben.uid, ben.token, "x".repeat(25), "q:acc:3", true)).rejects.toThrow();
+
+    await cloud.highlightDelete(ben.uid, ben.token);
+    expect((await cloud.highlightList(anna.token)).map((h) => h.uid)).toEqual([anna.uid]);
+  });
+
   it("Erinnerung: Abo speichern, nicht lesbar, nur eigenes löschen", async () => {
     const sub = { uid: anna.uid, sub: JSON.stringify({ endpoint: "https://push.example/abc", keys: {} }), hour: 20, tz: "Europe/Berlin", daily: true, social: true };
     await cloud.pushPut("dev1", anna.token, sub);
@@ -173,6 +200,7 @@ describe.skipIf(!EMULATOR || !AUTH)("Konten und Firestore-Regeln", () => {
     const token = await auth.reauthenticate("geheim123");
     await cloud.progressDelete(c.uid, token);
     await cloud.userDelete(c.uid, token);
+    await cloud.highlightDelete(c.uid, token);
     await auth.deleteAuthAccount(token);
     expect((await cloud.userList(anna.token)).map((e) => e.id)).not.toContain(c.uid);
     await expect(auth.signIn("clara@example.com", "geheim123")).rejects.toThrow(/E-Mail-Adresse oder Passwort/);

@@ -1,13 +1,15 @@
 "use client";
 
-import { Check, Minus, Play, X } from "lucide-react";
+import { Check, Highlighter, Minus, Play, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { paperItems, type Paper, type Question, type SubjectContent } from "@/lib/schema";
 import { itemStatus, type ItemStatus } from "@/lib/srs";
-import { useApp } from "@/lib/store";
+import { useHighlightIndex, whoText } from "@/lib/highlights";
+import { markKey, useApp } from "@/lib/store";
 import { cn, itemKey } from "@/lib/utils";
+import { HighlightButton } from "./HighlightButton";
 import { fmtPoints, slotLabel } from "./Papers";
 import { Bar, ButtonLink } from "./ui";
 
@@ -22,7 +24,7 @@ type Row = {
   points: number;
 };
 
-type StatusFilter = "all" | "open" | "done" | "wrong";
+type StatusFilter = "all" | "open" | "done" | "wrong" | "highlighted";
 
 const STATUS: Record<ItemStatus, { label: string; color: string }> = {
   new: { label: "Offen", color: "var(--line-strong)" },
@@ -55,6 +57,8 @@ function rowsOf(paper: Paper, byId: Map<string, Question>): Row[] {
 export function PaperTasks({ content, papers }: { content: SubjectContent; papers: Paper[] }) {
   const { subject } = content;
   const items = useApp((s) => s.items);
+  const highlights = useHighlightIndex();
+  const highlightedBy = (q: Question) => highlights.get(markKey("q", subject.id, q.id)) ?? [];
   // Kapitelfilter steht in der URL (?lecture=t2): so öffnet die Kapitel-Auswahl die Tabelle vorgefiltert,
   // und „Zurück“ aus dem Üben landet wieder beim selben Filter
   const params = useSearchParams();
@@ -78,6 +82,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
     if (status === "open") return s === "new";
     if (status === "done") return s !== "new";
     if (status === "wrong") return s === "wrong";
+    if (status === "highlighted") return highlightedBy(r.q).length > 0;
     return true;
   };
 
@@ -93,6 +98,8 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
     })
     .filter((c) => c.n > 0);
   const current = chapterCounts.find((c) => c.id === chapter);
+  // Hervorgehobene Aufgaben (im gewählten Kapitel) – für den Filter
+  const highlightedCount = unique.filter((q) => (chapter === "all" || q.lecture === chapter) && highlightedBy(q).length).length;
 
   const sel = new Set(selected);
   const toggle = (ids: string[], on: boolean) =>
@@ -153,6 +160,15 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
               {label}
             </FilterChip>
           ))}
+          {(highlightedCount > 0 || status === "highlighted") && (
+            <FilterChip
+              active={status === "highlighted"}
+              onClick={() => setStatus("highlighted")}
+              title="Aufgaben, die du oder jemand aus deiner Lerngruppe hervorgehoben hat"
+            >
+              <Highlighter className="size-3.5" /> Hervorgehoben · {highlightedCount}
+            </FilterChip>
+          )}
         </div>
       </div>
 
@@ -185,7 +201,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                     <th className="w-16 py-2 pr-3 font-semibold">Kapitel</th>
                     <th className="w-14 py-2 pr-3 text-right font-semibold">Punkte</th>
                     <th className="w-[9.5rem] py-2 pr-2 font-semibold">Stand</th>
-                    <th className="w-12 py-2 pr-3" />
+                    <th className="w-[5.5rem] py-2 pr-3" />
                   </tr>
                 </thead>
                 <tbody>
@@ -194,6 +210,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                     const status = STATUS[itemStatus(s)];
                     const on = sel.has(r.q.id);
                     const lecture = lectureOf.get(r.q.lecture) ?? r.q.lecture;
+                    const who = highlightedBy(r.q);
                     return (
                       <tr
                         key={r.key}
@@ -223,6 +240,15 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                               <StatusLabel color={status.color} label={status.label} seen={s?.seen ?? 0} />
                             </span>
                           </span>
+                          {who.length > 0 && (
+                            <span
+                              title={`Hervorgehoben von ${who.map((h) => (h.me ? "dir" : h.name)).join(", ")}`}
+                              className="mt-1.5 inline-flex max-w-full items-center gap-1 rounded-full bg-warn-soft px-2 py-0.5 text-xs font-semibold text-warn"
+                            >
+                              <Highlighter className="size-3 shrink-0" />
+                              <span className="truncate">{whoText(who)}</span>
+                            </span>
+                          )}
                         </td>
                         <td className="w-16 py-3 pr-3 max-sm:hidden">
                           <span
@@ -237,16 +263,19 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                         <td className="w-[9.5rem] py-3 pr-2 max-sm:hidden">
                           <StatusLabel color={status.color} label={status.label} seen={s?.seen ?? 0} />
                         </td>
-                        <td className="w-12 py-2 pr-3 text-right">
-                          <Link
-                            href={practiceHref([r.q.id])}
-                            onClick={(e) => e.stopPropagation()}
-                            title="Nur diese Aufgabe üben"
-                            aria-label={`${r.slot} üben`}
-                            className="inline-grid size-9 place-items-center rounded-full text-ink-2 transition hover:bg-ink hover:text-bg"
-                          >
-                            <Play className="size-4" />
-                          </Link>
+                        <td className="w-12 py-2 pr-3 text-right sm:w-[5.5rem]">
+                          <span className="inline-flex items-center justify-end gap-0.5 max-sm:flex-col-reverse">
+                            <HighlightButton subjectId={subject.id} id={r.q.id} label={false} className="size-9" />
+                            <Link
+                              href={practiceHref([r.q.id])}
+                              onClick={(e) => e.stopPropagation()}
+                              title="Nur diese Aufgabe üben"
+                              aria-label={`${r.slot} üben`}
+                              className="inline-grid size-9 place-items-center rounded-full text-ink-2 transition hover:bg-ink hover:text-bg"
+                            >
+                              <Play className="size-4" />
+                            </Link>
+                          </span>
                         </td>
                       </tr>
                     );
