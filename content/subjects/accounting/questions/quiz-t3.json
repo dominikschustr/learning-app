@@ -1,0 +1,478 @@
+[
+  {
+    "type": "mc",
+    "id": "qz-t3-01",
+    "lecture": "t3",
+    "topic": "Acquisition premium – unrecognised brand",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The SB auction house (strong reputation) was acquired for 30 M€; its net assets are 10 M€. How can the difference be explained?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tangible assets were overvalued"
+      },
+      {
+        "id": "b",
+        "text": "The SB brand was not recognized in its balance sheet"
+      },
+      {
+        "id": "c",
+        "text": "Research costs were not recognized"
+      },
+      {
+        "id": "d",
+        "text": "Provisions were too high"
+      },
+      {
+        "id": "e",
+        "text": "Dividends had not been distributed"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Eine selbst geschaffene Marke darf nach IAS 38 nicht aktiviert werden – sie fehlt also im Nettovermögen von SB. Beim Erwerb wird sie in der Kaufpreisallokation zum Fair Value angesetzt.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 1"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-02",
+    "lecture": "t3",
+    "topic": "IAS 38 – which items are intangible assets",
+    "difficulty": 3,
+    "single": false,
+    "prompt": "Which items are intangible assets (IAS 38) in A's financial statements? (Several answers possible; wrong answers give negative points.)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internally generated goodwill valued at 1.5 M€"
+      },
+      {
+        "id": "b",
+        "text": "Licences purchased from B one year ago"
+      },
+      {
+        "id": "c",
+        "text": "Goodwill on acquisition of subsidiary Vita Ltd."
+      },
+      {
+        "id": "d",
+        "text": "A's retail store top locations"
+      },
+      {
+        "id": "e",
+        "text": "Knowledge acquired through research"
+      },
+      {
+        "id": "f",
+        "text": "A's reputation"
+      },
+      {
+        "id": "g",
+        "text": "Brands obtained from the acquisition of subsidiary Velo"
+      }
+    ],
+    "correct": [
+      "b",
+      "c",
+      "g"
+    ],
+    "explanation": "Erworbene Lizenzen und bei einem Unternehmenserwerb erworbene Marken sind sicher Intangibles. Goodwill aus dem Erwerb von Vita zählt laut Vorlesung ebenfalls dazu (streng genommen regeln ihn IFRS 3/IAS 36 – leichtes Restrisiko). Selbst geschaffener Goodwill, gute Standorte, Forschungswissen und Reputation sind nicht identifizierbar bzw. Aufwand.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-03",
+    "lecture": "t3",
+    "topic": "IFRS 16 – impact of leasing",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The CEO of a highly indebted company is reassured because most investments were leased. What is the impact of leasing on the financial statements?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decreases net income and cash by the rent"
+      },
+      {
+        "id": "b",
+        "text": "Decreases assets and cash by the rent"
+      },
+      {
+        "id": "c",
+        "text": "Increases non-current assets, decreases cash, increases financial debt and net income"
+      },
+      {
+        "id": "d",
+        "text": "Increases non-current assets and financial debt, decreases cash and net income"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Nach IFRS 16 gibt es kein Off-Balance-Leasing mehr: Right-of-use Asset und Lease Liability werden bilanziert. Abschreibung und Zins senken das Net Income, die Zahlungen senken den Cash.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 3"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-04",
+    "lecture": "t3",
+    "topic": "Training costs",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A company robotizes its production with a very heavy training program for staff. How is the training cost accounted for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Income statement as operating expenses"
+      },
+      {
+        "id": "b",
+        "text": "Added to the acquisition cost of the asset"
+      },
+      {
+        "id": "c",
+        "text": "Provision on the liability side"
+      },
+      {
+        "id": "d",
+        "text": "Intangible assets"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Schulungskosten sind Aufwand: Das Know-how der Mitarbeiter kontrolliert das Unternehmen nicht, es ist kein Vermögenswert und gehört auch nicht zu den Anschaffungskosten der Anlage.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 4"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-05",
+    "lecture": "t3",
+    "topic": "CGU impairment – allocation",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "After a volcanic eruption, an impairment of 100,000 € is recognised for a CGU with these assets: building 310,000, machines 50,000, equipment 40,000, goodwill 50,000. What is the carrying amount of the equipment after allocation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "40,000"
+      },
+      {
+        "id": "b",
+        "text": "35,000"
+      },
+      {
+        "id": "c",
+        "text": "35,556"
+      },
+      {
+        "id": "d",
+        "text": "31,111"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Zuerst wird der Goodwill abgeschrieben (−50.000). Die restlichen 50.000 werden pro rata auf die übrigen 400.000 verteilt: Equipment hat 10 % → −5.000 → 35.000.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 5"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-06",
+    "lecture": "t3",
+    "topic": "Short-term lease exemption",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A company leases a copy machine for 12 months at 3,500 €/year. To minimize lease liabilities, the company …",
+    "options": [
+      {
+        "id": "a",
+        "text": "must recognize a ROU asset and lease liability of 3,500"
+      },
+      {
+        "id": "b",
+        "text": "can expense the lease payment"
+      },
+      {
+        "id": "c",
+        "text": "must recognize ROU/liability but can opt out of depreciation"
+      },
+      {
+        "id": "d",
+        "text": "can ignore the contract"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Short-term Exemption nach IFRS 16 (Laufzeit ≤ 12 Monate): Die Leasingrate darf als Aufwand gebucht werden, es entsteht keine Lease Liability.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 6"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-07",
+    "lecture": "t3",
+    "topic": "IFRS 16 – first-year figures",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Finchley leases a building: FV = PV of payments = 4,000,000; 20 years; payment 300,000 p.a. at year-end; interest rate 4.5%. What is the impact in 2021 (first year)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rent expense and cash outflow 300,000"
+      },
+      {
+        "id": "b",
+        "text": "ROU 4,000,000, debt 4,000,000, depreciation 200,000, rent expense 300,000"
+      },
+      {
+        "id": "c",
+        "text": "ROU 3,800,000, debt 3,880,000, interest 180,000, depreciation 200,000, cash outflow 300,000"
+      },
+      {
+        "id": "d",
+        "text": "ROU 3,800,000, debt 4,000,000, depreciation 200,000, rent expense 300,000"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Zins = 4,5 % × 4.000.000 = 180.000; Tilgung = 300.000 − 180.000 = 120.000 → Schuld 3.880.000. Abschreibung = 4.000.000 / 20 = 200.000 → ROU 3.800.000. Cash-Abfluss 300.000, keine Mietaufwand-Buchung.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 7"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-08",
+    "lecture": "t3",
+    "topic": "Research costs – vaccine",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A pharma company is researching a COVID vaccine: stage 3, pre-orders received, no marketing approval yet. Where is the cost included?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Intangible assets"
+      },
+      {
+        "id": "b",
+        "text": "Income statement as operating expenses"
+      },
+      {
+        "id": "c",
+        "text": "Operating income for vaccines reserved"
+      },
+      {
+        "id": "d",
+        "text": "Intangible assets and income for vaccines reserved"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Ohne Zulassung sind die Kriterien für die Aktivierung von Entwicklungskosten nicht erfüllt → Aufwand. Vorbestellungen sind noch kein Umsatz.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 8"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-09",
+    "lecture": "t3",
+    "topic": "Impairment – impact",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A strong impairment of the CGU UTOPIA is recognised after a military coup. What is the impact?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decrease in profit and in non-current assets"
+      },
+      {
+        "id": "b",
+        "text": "Decrease in profit, increase in financial debt"
+      },
+      {
+        "id": "c",
+        "text": "Decrease in profit and in cash"
+      },
+      {
+        "id": "d",
+        "text": "Decrease in profit and in current assets"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Impairment ist ein nicht zahlungswirksamer Aufwand: Er senkt den Gewinn und den Buchwert langfristiger Vermögenswerte (Goodwill, PPE, Intangibles). Cash und Schulden ändern sich nicht.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 9"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-10",
+    "lecture": "t3",
+    "topic": "IFRS 16 – interest over two years",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "A machine is leased for 2 years at 50,000 € payable at year-end; the incremental borrowing rate is 10%. Based on IFRS 16:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Interest expense is 8,678 in N and 4,546 in N+1"
+      },
+      {
+        "id": "b",
+        "text": "ROU asset and lease liability are 100,000"
+      },
+      {
+        "id": "c",
+        "text": "ROU asset and lease liability are 91,323"
+      },
+      {
+        "id": "d",
+        "text": "Depreciation is 43,388 in N and 35,983 in N+1"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Barwert = 50.000/1,1 + 50.000/1,1² = 86.777 (ROU und Liability). Zins N = 10 % × 86.777 = 8.678; Liability danach 86.777 + 8.678 − 50.000 = 45.455 → Zins N+1 = 4.546. Abschreibung linear 43.388 p. a.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 10"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t3-11",
+    "lecture": "t3",
+    "topic": "Lease definition – right to direct the use",
+    "difficulty": 2,
+    "statement": "A truck fleet is leased for 4 years; the lessor must approve the routes each quarter. This contract is a lease.",
+    "answer": false,
+    "explanation": "Falsch. Der Kunde hat kein Right to direct the use (der Leasinggeber bestimmt die Routen) → kein Lease, sondern ein Servicevertrag.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 11"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t3-12",
+    "lecture": "t3",
+    "topic": "CGU impairment – goodwill first",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A CGU impairment loss of 600 € is recognised. Assets: goodwill 1,000; buildings 2,000; P&E 1,500. What is the carrying amount of goodwill after allocation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0"
+      },
+      {
+        "id": "b",
+        "text": "400"
+      },
+      {
+        "id": "c",
+        "text": "600"
+      },
+      {
+        "id": "d",
+        "text": "867"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Der Impairment-Verlust wird zuerst dem Goodwill zugeordnet: 1.000 − 600 = 400. Die übrigen Vermögenswerte bleiben unverändert.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 3 · Frage 12"
+      }
+    ]
+  }
+]

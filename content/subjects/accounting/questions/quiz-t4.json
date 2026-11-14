@@ -1,0 +1,270 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-t4-01",
+    "lecture": "t4",
+    "topic": "Hybrid bonds – loss absorption",
+    "difficulty": 1,
+    "statement": "A hybrid bond enables issuing firms to absorb losses in times of financial distress due to its subordination to senior debt.",
+    "answer": true,
+    "explanation": "Richtig. Hybride sind nachrangig → geringere Recovery Rates für die Investoren; sie wirken verlustabsorbierend (Folie Hybrid Instruments).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 1"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t4-02",
+    "lecture": "t4",
+    "topic": "Debt vs. equity – ongoing compensation",
+    "difficulty": 1,
+    "statement": "The classification of a financial instrument as debt or equity influences the way the ongoing compensation is accounted for.",
+    "answer": true,
+    "explanation": "Richtig. Equity → Vergütung ist Ausschüttung (direkt im Eigenkapital, nicht in der GuV); Debt → Zinsaufwand in der GuV.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t4-03",
+    "lecture": "t4",
+    "topic": "Bond at amortised cost – year 2",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "A bond with nominal 1,000 M€ is issued on 1 January year 1 at 900 M€; coupon 4%; effective rate 8%; 5 years. What is the impact in year 2?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cash −40, liabilities 966.56, interest expense 74.56"
+      },
+      {
+        "id": "b",
+        "text": "Cash −80, liabilities 1,000, interest 80"
+      },
+      {
+        "id": "c",
+        "text": "Cash −40, liabilities 1,066.56, interest 74.56"
+      },
+      {
+        "id": "d",
+        "text": "Cash −40, liabilities 980, interest 80"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Jahr 1: 900 + 8 % × 900 (= 72) − Kupon 40 = 932. Jahr 2: Zins 8 % × 932 = 74,56; Kupon 40 → Buchwert 932 + 74,56 − 40 = 966,56. Cash-Abfluss = nur der Kupon (40).",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 3"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t4-04",
+    "lecture": "t4",
+    "topic": "Equity – number of new shares",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Equity (2020, 2019 in brackets): share capital 885 (777), share premium 3,555 (2,941), retained earnings 6,241 (5,923), treasury shares (82) ((50)). Par value 2 €. Regarding 2020, the company …",
+    "options": [
+      {
+        "id": "a",
+        "text": "issued 54 million new shares"
+      },
+      {
+        "id": "b",
+        "text": "issued 108 million new shares"
+      },
+      {
+        "id": "c",
+        "text": "issued 722 million new shares"
+      },
+      {
+        "id": "d",
+        "text": "issued 361 million new shares"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Δ Grundkapital = 885 − 777 = 108 M€; geteilt durch den Nennwert von 2 € = 54 Mio. neue Aktien.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 4"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t4-05",
+    "lecture": "t4",
+    "topic": "Equity – issuance price",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Same equity data (2020, 2019 in brackets): share capital 885 (777), share premium 3,555 (2,941), par value 2 €. What was the total issuance price of the new shares?",
+    "options": [
+      {
+        "id": "a",
+        "text": "54 M€"
+      },
+      {
+        "id": "b",
+        "text": "108 M€"
+      },
+      {
+        "id": "c",
+        "text": "722 M€"
+      },
+      {
+        "id": "d",
+        "text": "361 M€"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Emissionserlös = Δ Share Capital 108 + Δ Share Premium 614 = 722 M€ (rund 13,37 € je Aktie).",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 5"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t4-06",
+    "lecture": "t4",
+    "topic": "Preferred shares – classification",
+    "difficulty": 1,
+    "statement": "Preferred shares issued by the company are always classified as equity.",
+    "answer": false,
+    "explanation": "Falsch. Bei garantierter Dividende oder Rückgaberecht des Inhabers besteht eine Zahlungspflicht → Debt (Management Issue der Vorlesung).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 6"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t4-07",
+    "lecture": "t4",
+    "topic": "Compound instrument – split accounting",
+    "difficulty": 1,
+    "statement": "A compound financial instrument issued for 10 M€ is classified as debt of 10 M€.",
+    "answer": false,
+    "explanation": "Falsch. Split Accounting: Der Schuldanteil wird als Barwert zum Marktzins angesetzt, der Rest ist Equity.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 7"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t4-08",
+    "lecture": "t4",
+    "topic": "Effective interest method",
+    "difficulty": 1,
+    "statement": "Interest expense on an issued bond at amortized cost = nominal rate × issuance amount.",
+    "answer": false,
+    "explanation": "Falsch. Effektivzinsmethode: Zinsaufwand = Effektivzins × aktueller Buchwert der Anleihe.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 8"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t4-09",
+    "lecture": "t4",
+    "topic": "No obligation → equity",
+    "difficulty": 1,
+    "statement": "A debt instrument without obligation to reimburse and for ongoing compensation is classified as equity.",
+    "answer": true,
+    "explanation": "Richtig. Ohne vertragliche Zahlungspflicht (weder Rückzahlung noch Vergütung) ist das Instrument Equity – die Bezeichnung „debt“ ist egal.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 9"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t4-10",
+    "lecture": "t4",
+    "topic": "Treasury shares – resale",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "A company acquired 20,000 own shares at 15 € and now sells 2,000 of them at 20 €. What is the impact?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cash +40,000; treasury shares item increases by 30,000; share premium +10,000"
+      },
+      {
+        "id": "b",
+        "text": "Cash +40,000; treasury shares decreases by 30,000; share premium +10,000"
+      },
+      {
+        "id": "c",
+        "text": "Cash +40,000; treasury shares +30,000; share capital +10,000"
+      },
+      {
+        "id": "d",
+        "text": "Cash +40,000; treasury shares +40,000"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Der Minusposten Treasury Shares wird um die Anschaffungskosten 2.000 × 15 = 30.000 ausgebucht (der Posten steigt in der Notation des Pacific-Beispiels um 30.000); die Differenz 10.000 geht in die Share Premium. Kein Effekt in der GuV.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 4 · Frage 10"
+      }
+    ]
+  }
+]

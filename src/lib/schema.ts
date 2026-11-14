@@ -108,6 +108,8 @@ const base = {
   checkup: z.boolean().default(false),
   /** Multiple-Choice-Set des Kapitels – eigener Übungsmodus „Multiple Choice“, nicht in „Üben“, Kapiteltest und Prüfungssimulation */
   mcSet: z.boolean().default(false),
+  /** Quizfrage der Vorlesung (Online-Quiz je Kapitel) – eigener Übungsmodus „Quiz“ in Originalreihenfolge, nicht in „Üben“, Kapiteltest und Prüfungssimulation */
+  quiz: z.boolean().default(false),
   /** Woran die Aufgabe orientiert ist: Altklausur, Vorlesungsfolien oder Übungsfall der Vorlesung */
   basis: z.array(BasisSchema).default([]),
 };
@@ -303,8 +305,8 @@ export type SubjectContent = {
 /** Leichte Übersicht für Dashboard/Readiness, ohne Fragetexte. */
 export type SubjectSummary = {
   subject: Subject;
-  /** ohne paperOnly-Fragen; calc = Rechenaufgabe mit automatisch geprüften Ergebnissen; checkup = Quiz der Vorlesung; mcSet = Multiple-Choice-Set des Kapitels */
-  items: { id: string; type: QuestionType; lecture: string; calc: boolean; checkup: boolean; mcSet: boolean }[];
+  /** ohne paperOnly-Fragen; calc = Rechenaufgabe mit automatisch geprüften Ergebnissen; checkup = Check-up-Fragen vom Ende der Vorlesung; mcSet = Multiple-Choice-Set des Kapitels; quiz = Quiz des Kapitels */
+  items: { id: string; type: QuestionType; lecture: string; calc: boolean; checkup: boolean; mcSet: boolean; quiz: boolean }[];
   cards: { id: string; lecture: string }[];
   /** Kapitel, für die ein Lesetext hinterlegt ist */
   texts: string[];
@@ -313,7 +315,7 @@ export type SubjectSummary = {
   /** Kapitel, für die eine Formelübersicht hinterlegt ist */
   formulas: string[];
   /** Probeklausuren (nur Kopfdaten) */
-  papers: { id: string; title: string; points: number; kind: Paper["origin"]["kind"] }[];
+  papers: { id: string; title: string; points: number; kind: Paper["origin"]["kind"]; minutes: number; questions: string[] }[];
   /** Fragen aus den Probeklausuren (auch paperOnly), je einmal – für „Klausuraufgaben“ je Kapitel */
   paperItems: { id: string; lecture: string }[];
 };
@@ -364,6 +366,11 @@ export function checkContent({ subject, questions, cards, cases, papers }: Subje
     );
   }
   return errors;
+}
+
+/** Eigenes Set mit eigenem Übungsmodus (Multiple-Choice-Set, Quiz) – nicht in „Üben“, Kapiteltest und Prüfungssimulation. */
+export function inOwnSet(q: { mcSet: boolean; quiz: boolean }): boolean {
+  return q.mcSet || q.quiz;
 }
 
 /** Alle Fragen einer Probeklausur in Reihenfolge, mit Teil, Aufgabe und Teilfrage-Buchstabe. */

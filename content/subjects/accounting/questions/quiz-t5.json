@@ -1,0 +1,358 @@
+[
+  {
+    "type": "mc",
+    "id": "qz-t5-01",
+    "lecture": "t5",
+    "topic": "EVA – calculation",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Company D: sales 32,770; EBITDA 3,710; EBIT 1,232; EBT 1,050; tax rate 25%; net income 787.5; WACC 6.5%; capital employed 21,853. What is the EVA?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−496.4"
+      },
+      {
+        "id": "b",
+        "text": "−188.4"
+      },
+      {
+        "id": "c",
+        "text": "2,289.6"
+      },
+      {
+        "id": "d",
+        "text": "−370.4"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "NOPAT = EBIT × (1 − t) = 1.232 × 0,75 = 924. Kapitalkosten = 6,5 % × 21.853 = 1.420,4. EVA = 924 − 1.420,4 = −496,4.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 1"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t5-02",
+    "lecture": "t5",
+    "topic": "Analysts' adjustments",
+    "difficulty": 1,
+    "statement": "Analysts adjust for distortions because standards may not reflect economic reality or analysts disagree with estimates; adjustments ensure comparable data.",
+    "answer": true,
+    "explanation": "Richtig – Rahmen nach Palepu/Healy/Peek, z. B. unterschiedliche Abschreibungsannahmen bei Lufthansa und Ryanair.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t5-03",
+    "lecture": "t5",
+    "topic": "FCFE – Telefónica",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Telefónica 2022: cash flow from operations 11,763 (net interest × (1 − t) of −292 is included in operating); cash flow from investing −5,327; change in financial debt −6,727; dividends −1,397. What is the FCFE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6,728"
+      },
+      {
+        "id": "b",
+        "text": "−583"
+      },
+      {
+        "id": "c",
+        "text": "−291"
+      },
+      {
+        "id": "d",
+        "text": "6,436"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "FCFF = (11.763 + 292) − 5.327 = 6.728 (Zinsen nach Steuern zurückaddieren). FCFE = 6.728 − 292 − 6.727 = −291. Dividenden werden nicht abgezogen – sie sind Verwendung des FCFE.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 3"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t5-04",
+    "lecture": "t5",
+    "topic": "ROCE – depreciation method",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Tecnicas Reunidas: two projects with the same EBITDA, capex and capital; project 1 uses accelerated depreciation, project 2 straight-line. Conclusion?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Same ROCE; project 1 better in PV"
+      },
+      {
+        "id": "b",
+        "text": "Project 1 has a lower ROCE at the beginning, but is better in PV (earlier tax savings)"
+      },
+      {
+        "id": "c",
+        "text": "Project 2 has a higher ROCE at the beginning and higher cash flows / PV"
+      },
+      {
+        "id": "d",
+        "text": "None of the answers"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Höhere Abschreibung am Anfang → niedrigeres EBIT und ROCE in den ersten Jahren; die frühere Steuerersparnis erhöht aber den Barwert der Cashflows.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 4"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t5-05",
+    "lecture": "t5",
+    "topic": "ROCE drivers – margin vs. turnover",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Company E: sales 40,000; NOPAT 2,600; capital employed 33,500. Company F: NOPAT margin 8.9%; capital employed turnover 1. Compared to E, F has …",
+    "options": [
+      {
+        "id": "a",
+        "text": "lower margin, lower turnover"
+      },
+      {
+        "id": "b",
+        "text": "lower margin, higher turnover"
+      },
+      {
+        "id": "c",
+        "text": "higher margin, higher turnover"
+      },
+      {
+        "id": "d",
+        "text": "higher margin, lower turnover"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "E: Marge 2.600 / 40.000 = 6,5 %, Umschlag 40.000 / 33.500 = 1,19. F: 8,9 % und 1,0 → höhere Marge, niedrigerer Umschlag.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 5"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t5-06",
+    "lecture": "t5",
+    "topic": "EBITDA – how to increase it",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Company C has a negative EBITDA. To increase EBITDA it could …",
+    "options": [
+      {
+        "id": "a",
+        "text": "reduce its debt/equity ratio"
+      },
+      {
+        "id": "b",
+        "text": "increase shareholders' equity"
+      },
+      {
+        "id": "c",
+        "text": "capitalize all eligible (IFRS) intangible assets"
+      },
+      {
+        "id": "d",
+        "text": "reduce D&A and impairment expenses"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Aktivieren verschiebt Aufwand in die Abschreibung – und die liegt unterhalb des EBITDA. D&A und Impairment beeinflussen das EBITDA nicht; Verschuldung und Eigenkapital betreffen nur die Finanzierung.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 6"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t5-07",
+    "lecture": "t5",
+    "topic": "EVA – definition",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The Economic Value Added (EVA) of the firm …",
+    "options": [
+      {
+        "id": "a",
+        "text": "= profit after taxes, corrected for the cost of equity"
+      },
+      {
+        "id": "b",
+        "text": "= operating profit after taxes, corrected for the cost of debt and the cost of equity"
+      },
+      {
+        "id": "c",
+        "text": "= operating profit after taxes, corrected for the cost of debt"
+      },
+      {
+        "id": "d",
+        "text": "= profit after taxes, corrected for the cost of debt and equity"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "EVA = NOPAT − WACC × Capital Employed. Der WACC enthält Fremd- und Eigenkapitalkosten.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 7"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t5-08",
+    "lecture": "t5",
+    "topic": "EBITDAaL – regulated by IFRS?",
+    "difficulty": 1,
+    "statement": "EBITDAaL is often used for telecoms, is regulated by IFRS and helps comparing companies with different capital structures/depreciation policies.",
+    "answer": false,
+    "explanation": "Falsch. EBITDAaL ist eine Non-GAAP-Kennzahl und nicht durch IFRS geregelt.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 8"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t5-09",
+    "lecture": "t5",
+    "topic": "Capital employed and post-tax ROCE",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Company B 2021: operating profit 2,478; D&A 235; tax rate 25%; financial debt 16,670; trade payables 4,186; equity 4,490; cash 2,307. Capital employed and post-tax ROCE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "25,346 and 7.3%"
+      },
+      {
+        "id": "b",
+        "text": "23,039 and 8.1%"
+      },
+      {
+        "id": "c",
+        "text": "21,160 and 8.8%"
+      },
+      {
+        "id": "d",
+        "text": "18,853 and 4.9%"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Capital Employed = Equity + Net Debt = 4.490 + 16.670 − 2.307 = 18.853 – Trade Payables gehören nicht hinein. Die offizielle Quizlösung ist 18.853 und 4,9 %. Achtung: rechnerisch ergibt sich 2.478 × 0,75 / 18.853 = 9,9 % – die 4,9 % sind vermutlich ein Fehler im Quiz.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 9"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t5-10",
+    "lecture": "t5",
+    "topic": "ROCE – lower depreciation",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "2021–2022: same EBITDA and capital employed; D&A is lower in 2022. Accordingly:",
+    "options": [
+      {
+        "id": "a",
+        "text": "ROCE 2021 is higher"
+      },
+      {
+        "id": "b",
+        "text": "ROCE 2021 is lower than ROCE 2022"
+      },
+      {
+        "id": "c",
+        "text": "ROCE is equal"
+      },
+      {
+        "id": "d",
+        "text": "It cannot be determined"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Niedrigere Abschreibung → höheres EBIT bzw. NOPAT bei gleichem Capital Employed → ROCE 2022 ist höher als 2021.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 5 · Frage 10"
+      }
+    ]
+  }
+]

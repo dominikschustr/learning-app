@@ -38,7 +38,22 @@ type Snap = {
 };
 const BLANK: Snap = { selected: [], tf: null, text: "", mc: null, shortGrade: null, revealed: false, wasCorrect: false };
 
-const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "papers", "highlighted"];
+/** Titel und Hinweis, wenn eine Session leer ist */
+const EMPTY: Partial<Record<PracticeMode, [string, string]>> = {
+  due: ["Nichts fällig", "Alles, was du gelernt hast, sitzt gerade. Lerne neue Fragen oder komm später wieder."],
+  weak: ["Keine Schwächen gefunden", "Beantworte erst ein paar Fragen – dann weiß die App, wo du unsicher bist."],
+  new: [
+    "Alles schon gesehen",
+    "Du hast jede Frage hier mindestens einmal bearbeitet. Weiter geht es mit Wiederholung und Kapiteltest.",
+  ],
+  wrong: ["Nichts falsch", "Keine Frage ist gerade als falsch beantwortet markiert – stark!"],
+  checkup: ["Keine Check-up-Fragen", "Für diese Auswahl sind keine Check-up-Fragen aus den Vorlesungen hinterlegt."],
+  mc: ["Keine Multiple-Choice-Fragen", "Für diese Auswahl ist kein Multiple-Choice-Set hinterlegt."],
+  quiz: ["Kein Quiz", "Für diese Auswahl ist kein Quiz hinterlegt."],
+  papers: ["Keine Klausuraufgaben", "In den Probeklausuren gibt es zu diesem Kapitel keine Aufgaben."],
+};
+
+const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "quiz", "papers", "highlighted"];
 
 export function Practice({
   content,
@@ -362,38 +377,10 @@ function Session({
       <div className="mx-auto max-w-lg py-16 text-center">
         <PartyPopper className="mx-auto size-12 text-good" />
         <h1 className="display text-4xl sm:text-5xl mt-4">
-          {mode === "due"
-            ? "Nichts fällig"
-            : mode === "weak"
-              ? "Keine Schwächen gefunden"
-              : mode === "new"
-                ? "Alles schon gesehen"
-                : mode === "wrong"
-                  ? "Nichts falsch"
-                  : mode === "checkup"
-                    ? "Keine Check-up-Fragen"
-                    : mode === "mc"
-                      ? "Keine Multiple-Choice-Fragen"
-                      : mode === "papers"
-                        ? "Keine Klausuraufgaben"
-                        : "Keine Fragen"}
+          {EMPTY[mode]?.[0] ?? "Keine Fragen"}
         </h1>
         <p className="mt-2 text-muted">
-          {mode === "due"
-            ? "Alles, was du gelernt hast, sitzt gerade. Lerne neue Fragen oder komm später wieder."
-            : mode === "weak"
-              ? "Beantworte erst ein paar Fragen – dann weiß die App, wo du unsicher bist."
-              : mode === "new"
-                ? "Du hast jede Frage hier mindestens einmal bearbeitet. Weiter geht es mit Wiederholung und Kapiteltest."
-                : mode === "wrong"
-                  ? "Keine Frage ist gerade als falsch beantwortet markiert – stark!"
-                  : mode === "checkup"
-                    ? "Für diese Auswahl sind keine Check-up-Fragen aus den Vorlesungen hinterlegt."
-                    : mode === "mc"
-                      ? "Für diese Auswahl ist kein Multiple-Choice-Set hinterlegt."
-                      : mode === "papers"
-                        ? "In den Probeklausuren gibt es zu diesem Kapitel keine Aufgaben."
-                        : "Für diese Auswahl gibt es noch keine Fragen."}
+          {EMPTY[mode]?.[1] ?? "Für diese Auswahl gibt es noch keine Fragen."}
         </p>
         <div className="mt-6 flex justify-center gap-2">
           <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>

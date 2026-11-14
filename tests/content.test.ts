@@ -85,9 +85,9 @@ describe("HRM – Multiple-Choice-Set", () => {
 describe("Accounting", () => {
   const acc = loadAllContent().find((c) => c.subject.id === "accounting")!;
 
-  it("hat nur Single-Choice-Fragen mit genau einer richtigen Antwort", () => {
+  it("hat nur Single-Choice-Fragen mit genau einer richtigen Antwort (außer im Quiz der Vorlesung)", () => {
     for (const q of acc.questions)
-      if (q.type === "mc") {
+      if (q.type === "mc" && !q.quiz) {
         expect(q.single, q.id).toBe(true);
         expect(q.correct, q.id).toHaveLength(1);
       }
@@ -97,6 +97,21 @@ describe("Accounting", () => {
     for (const l of acc.subject.lectures)
       expect(acc.questions.filter((q) => q.checkup && q.lecture === l.id).length, l.id).toBeGreaterThan(0);
     expect(acc.questions.filter((q) => q.checkup)).toHaveLength(45);
+  });
+
+  it("hat das Quiz zu Topic 2–5 vollständig, in Originalreihenfolge und mit fester Optionsreihenfolge", () => {
+    const quiz = acc.questions.filter((q) => q.quiz);
+    const per = Object.fromEntries(acc.subject.lectures.map((l) => [l.id, quiz.filter((q) => q.lecture === l.id).length]));
+    expect(per).toEqual({ t1: 0, t2: 11, t3: 12, t4: 10, t5: 10 });
+    for (const q of quiz) {
+      expect(q.basis[0]?.kind, q.id).toBe("quiz");
+      expect(q.checkup || q.mcSet || q.paperOnly, q.id).toBe(false);
+      if (q.type === "mc") expect(q.shuffle, q.id).toBe(false);
+    }
+    for (const l of ["t2", "t3", "t4", "t5"]) {
+      const nums = quiz.filter((q) => q.lecture === l).map((q) => Number(q.basis[0].ref.split("Frage ")[1]));
+      expect(nums, l).toEqual(nums.map((_, i) => i + 1));
+    }
   });
 
   it("jede Frage nennt ihre Grundlage (Altklausur, Folien oder Übung), jede offene Aufgabe hat einen Lösungsweg", () => {

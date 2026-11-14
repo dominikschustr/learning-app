@@ -2,6 +2,7 @@
 
 import { ArrowLeft, CheckCircle2, Clock, FileText, Flag, History, Info, LayoutList, Play, Table2 } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { createPaperExam } from "@/lib/exam";
 import { paperItems, type Paper, type SubjectContent } from "@/lib/schema";
@@ -97,6 +98,11 @@ export function PaperList({ content }: { content: SubjectContent }) {
   const router = useRouter();
   const pathname = usePathname();
   const view = params.get("view") === "tasks" ? "tasks" : "papers";
+  // aus der Fach-Übersicht verlinkt (#paper-<id>): direkt zur Klausur scrollen
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash.startsWith("paper-")) document.getElementById(hash)?.scrollIntoView({ block: "start" });
+  }, []);
   const setView = (v: "tasks" | "papers") => router.replace(v === "tasks" ? `${pathname}?view=tasks` : pathname, { scroll: false });
 
   return (
@@ -180,7 +186,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
           const parts = partPoints(p);
           const max = parts.reduce((s, x) => s + x.points, 0);
           return (
-            <div key={p.id} className="card min-w-0 p-5 sm:p-6">
+            <div key={p.id} id={`paper-${p.id}`} className="card min-w-0 scroll-mt-24 p-5 sm:p-6">
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="min-w-0">
                   <p className="eyebrow">Klausur {i + 1}</p>

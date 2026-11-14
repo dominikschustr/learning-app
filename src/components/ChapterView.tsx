@@ -1,12 +1,12 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Highlighter, Layers, LayoutGrid, ListChecks, ScrollText, Sigma, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Highlighter, Layers, LayoutGrid, ListChecks, MessageCircleQuestion, ScrollText, Sigma, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 import { chapterFormat } from "@/lib/exam";
 import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
-import type { QuestionType, SubjectSummary } from "@/lib/schema";
+import { inOwnSet, type QuestionType, type SubjectSummary } from "@/lib/schema";
 import { highlightedIn, useHighlightIndex } from "@/lib/highlights";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { useMobile } from "@/lib/useMobile";
@@ -74,9 +74,11 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
   const mcSet = summary.items.filter((i) => i.lecture === chapterId && i.mcSet);
   const mcStatus = statusCounts(mcSet.map((i) => s.items[itemKey(subject.id, i.id)]));
-  const practiceSeen = summary.items.filter(
-    (i) => i.lecture === chapterId && !i.mcSet && s.items[itemKey(subject.id, i.id)],
-  ).length;
+  const quiz = summary.items.filter((i) => i.lecture === chapterId && i.quiz);
+  const quizStatus = statusCounts(quiz.map((i) => s.items[itemKey(subject.id, i.id)]));
+  // „Üben“ ohne Multiple-Choice-Set und Quiz – die haben eigene Kacheln
+  const practicePool = summary.items.filter((i) => i.lecture === chapterId && !inOwnSet(i));
+  const practiceSeen = practicePool.filter((i) => s.items[itemKey(subject.id, i.id)]).length;
   const paperQs = summary.paperItems.filter((i) => i.lecture === chapterId);
   const paperStatus = statusCounts(paperQs.map((i) => s.items[itemKey(subject.id, i.id)]));
   const slides = subject.look === "slides";
@@ -122,8 +124,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
       href: `${base}/practice?mode=lecture&lecture=${chapterId}`,
       icon: BookOpen,
       title: "Üben",
-      // ohne Multiple-Choice-Set – das hat eine eigene Kachel
-      meta: mcSet.length ? `${practiceSeen}/${ch.total - mcSet.length} gesehen` : `${ch.seen}/${ch.total} gesehen`,
+      meta: `${practiceSeen}/${practicePool.length} gesehen`,
     },
     {
       href: `${base}/cards?lecture=${chapterId}`,
@@ -138,6 +139,16 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             icon: ClipboardCheck,
             title: "Check-up-Fragen",
             meta: `${checkupStatus.first + checkupStatus.recovered}/${checkups.length} richtig`,
+          },
+        ]
+      : []),
+    ...(quiz.length
+      ? [
+          {
+            href: `${base}/practice?mode=quiz&lecture=${chapterId}`,
+            icon: MessageCircleQuestion,
+            title: "Quiz",
+            meta: `${quizStatus.first + quizStatus.recovered}/${quiz.length} richtig`,
           },
         ]
       : []),

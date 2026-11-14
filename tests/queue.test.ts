@@ -16,6 +16,7 @@ const pool: Question[] = Array.from({ length: 40 }, (_, i) => ({
   paperOnly: false,
   checkup: i % 10 === 0,
   mcSet: false,
+  quiz: false,
   basis: [],
 }));
 
@@ -48,6 +49,25 @@ describe("buildQueue – Multiple-Choice-Set", () => {
     }
     const onlySet = withSet.map((q) => ({ ...q, mcSet: true }));
     expect(buildQueue({ mode: "lecture", subjectId: "s", questions: onlySet, items: {}, now: 0, lecture: "b" })).toHaveLength(5);
+  });
+});
+
+describe("buildQueue – Quiz", () => {
+  // Kapitel a: tf-5 … tf-8 im Quiz, Kapitel b: tf-38, tf-39
+  const withQuiz = pool.map((q, i) => ({ ...q, quiz: (i >= 5 && i <= 8) || i >= 38 }));
+
+  it("zieht alle Quizfragen in Originalreihenfolge, auf Wunsch je Kapitel", () => {
+    const all = buildQueue({ mode: "quiz", subjectId: "s", questions: withQuiz, items: {}, now: 0 });
+    expect(all.map((q) => q.id)).toEqual(["tf-5", "tf-6", "tf-7", "tf-8", "tf-38", "tf-39"]);
+    const b = buildQueue({ mode: "quiz", subjectId: "s", questions: withQuiz, items: {}, now: 0, lecture: "b" });
+    expect(b.map((q) => q.id)).toEqual(["tf-38", "tf-39"]);
+  });
+
+  it("„Üben“ im Kapitel lässt das Quiz aus", () => {
+    for (let run = 0; run < 20; run++) {
+      const q = buildQueue({ mode: "lecture", subjectId: "s", questions: withQuiz, items: {}, now: 0, lecture: "a" });
+      expect(q.some((x) => x.quiz)).toBe(false);
+    }
   });
 });
 

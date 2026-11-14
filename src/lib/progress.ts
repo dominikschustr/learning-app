@@ -4,7 +4,18 @@ import { isDue, mastery, type ItemState } from "./srs";
 import { itemKey } from "./utils";
 
 export type SubjectStats = {
+  /** Gesamtstand des Fachs (0–1): Prognose aus den Übungsfragen, bei Fächern mit Probeklausuren zusammen mit den bearbeiteten Klausuren */
   readiness: number;
+  /** Prognose für die Prüfung allein aus den Übungsfragen (Sicherheit je Fragetyp, gewichtet mit dem Prüfungsformat) */
+  questionReadiness: number;
+  /** Probeklausuren: Anteil bearbeiteter Aufgaben je Klausur (0–1) */
+  papers: { id: string; progress: number }[];
+  /** Anteil der Probeklausuren am Gesamtstand (0, wenn das Fach keine hat) */
+  paperWeight: number;
+  /** Fortschritt über alle Probeklausuren (0–1) */
+  paperProgress: number;
+  /** vollständig bearbeitete Probeklausuren */
+  papersDone: number;
   coverage: number;
   seen: number;
   total: number;
@@ -65,6 +76,9 @@ export function chapterLevel(combined: number, testBest: number): ChapterLevel {
   return { level, name: LEVEL_NAMES[level], progress, hint };
 }
 
+/** Anteil der Probeklausuren (Altklausuren und neue Klausuren) am Gesamtstand eines Fachs */
+export const PAPER_WEIGHT = 0.3;
+
 const avg = (xs: number[]) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0);
 
 export function subjectStats(
@@ -85,8 +99,22 @@ export function subjectStats(
   const seen = summary.items.filter((i) => state(i.id)).length;
   const cardStates = summary.cards.map((c) => cards[itemKey(subject.id, c.id)]);
 
+  const questionReadiness = examReadiness(subject.examFormat, masteryByType);
+  // Probeklausuren: bearbeitet = Aufgabe beantwortet, egal ob in der ganzen Klausur oder einzeln unter „Klausuraufgaben“
+  const papers = summary.papers.map((p) => ({
+    id: p.id,
+    progress: p.questions.length ? p.questions.filter((id) => state(id)).length / p.questions.length : 0,
+  }));
+  const paperWeight = papers.length ? PAPER_WEIGHT : 0;
+  const paperProgress = avg(papers.map((p) => p.progress));
+
   return {
-    readiness: examReadiness(subject.examFormat, masteryByType),
+    readiness: (1 - paperWeight) * questionReadiness + paperWeight * paperProgress,
+    questionReadiness,
+    papers,
+    paperWeight,
+    paperProgress,
+    papersDone: papers.filter((p) => p.progress >= 1).length,
     coverage: summary.items.length ? seen / summary.items.length : 0,
     seen,
     total: summary.items.length,

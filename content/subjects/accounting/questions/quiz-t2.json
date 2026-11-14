@@ -1,0 +1,342 @@
+[
+  {
+    "type": "mc",
+    "id": "qz-t2-01",
+    "lecture": "t2",
+    "topic": "Acquisition during the year – consolidated net income",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "When a subsidiary is acquired sometime after the first day of the fiscal year, which statement is true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Income from the subsidiary does not impact consolidated net income until there is an entire year of consolidated operations"
+      },
+      {
+        "id": "b",
+        "text": "Excess cost over acquisition-date fair value is recognized at the beginning of the fiscal year"
+      },
+      {
+        "id": "c",
+        "text": "Income from the subsidiary impacts consolidated net income from the date of acquisition to year-end"
+      },
+      {
+        "id": "d",
+        "text": "Income from the subsidiary impacts consolidated net income for the entire year"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Konsolidiert wird ab dem Zeitpunkt, an dem Control erlangt wird. Ins Konzernergebnis fließt deshalb nur das Ergebnis nach dem Erwerb (Erwerbszeitpunkt bis Jahresende). Gewinne vor dem Erwerb stecken im erworbenen Eigenkapital und werden bei der Kapitalkonsolidierung eliminiert.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 1"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t2-02",
+    "lecture": "t2",
+    "topic": "Scope of consolidation – control below 50 %",
+    "difficulty": 1,
+    "statement": "When considering the scope of consolidation, control can also be achieved even if the ownership is below 50% if, e.g., the organization has substantial operational influence over another entity.",
+    "answer": true,
+    "explanation": "Richtig. Entscheidend ist Control nach IFRS 10, nicht der Prozentsatz. Control ist auch unter 50 % möglich – z. B. durch Verträge, Stimmrechtsvereinbarungen oder breit gestreuten Restbesitz.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t2-03",
+    "lecture": "t2",
+    "topic": "Goodwill – definition",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Goodwill corresponds to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Difference between purchase price and share held in equity of the subsidiary remeasured at fair value at the date of consolidation"
+      },
+      {
+        "id": "b",
+        "text": "Difference between purchase price and share held in the subsidiary's equity"
+      },
+      {
+        "id": "c",
+        "text": "Difference between purchase price and share held in the subsidiary's equity revalued at fair value at the date of acquisition"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Goodwill = Kaufpreis − Anteil × Fair Value des Nettovermögens zum Erwerbszeitpunkt. Die Variante „share held in the subsidiary's equity“ nimmt den Buchwert statt des Fair Value; die Variante „date of consolidation“ nimmt den falschen Zeitpunkt.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 3"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t2-04",
+    "lecture": "t2",
+    "topic": "NCI – why it increases",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Non-controlling interests (NCI) increased in year N compared to the previous year. NCI increased because …",
+    "options": [
+      {
+        "id": "a",
+        "text": "the parent sold part of its shares in a subsidiary, decreasing its ownership from 80% to 60%"
+      },
+      {
+        "id": "b",
+        "text": "the parent acquired 20% of another company (significant influence)"
+      },
+      {
+        "id": "c",
+        "text": "the parent increased its share capital"
+      },
+      {
+        "id": "d",
+        "text": "the parent acquired 100% of another company"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Mit 60 % behält die Mutter Control → weiter Vollkonsolidierung, aber der Minderheitenanteil steigt von 20 % auf 40 %. 20 % mit maßgeblichem Einfluss = Equity-Methode (kein NCI); eine Kapitalerhöhung der Mutter erhöht den Group Share; bei 100 % entsteht kein NCI.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 4"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t2-05",
+    "lecture": "t2",
+    "topic": "Associate vs. financial investment",
+    "difficulty": 1,
+    "statement": "Company A holds 35% of B with significant influence. B is considered a financial investment under IFRS 9 by A.",
+    "answer": false,
+    "explanation": "Falsch. Maßgeblicher Einfluss → B ist ein Associate und wird nach IAS 28 at equity bilanziert, nicht als Finanzinvestition nach IFRS 9.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 5"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t2-06",
+    "lecture": "t2",
+    "topic": "Joint arrangement – joint operation",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "A and B teamed up to create a video series for C via a project agreement sharing certain resources (no separate company). Which accounting method applies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Consolidation under IFRS 10 & IFRS 3"
+      },
+      {
+        "id": "b",
+        "text": "Equity method under IAS 28"
+      },
+      {
+        "id": "c",
+        "text": "Consider the contract as an investment under IFRS 9"
+      },
+      {
+        "id": "d",
+        "text": "Proportionate accounting for the joint operation under IFRS 11"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Eine vertragliche Zusammenarbeit ohne eigene Gesellschaft ist eine Joint Operation: Jeder Partner erfasst seinen Anteil an Vermögenswerten, Schulden, Erträgen und Aufwendungen (IFRS 11).",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 6"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t2-07",
+    "lecture": "t2",
+    "topic": "Goodwill – fair value adjustment on land",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "F owns 100% of E1, acquired for 1,000 on 12/31/N-1. E1's equity is 800; it owns land with a book value of 100 and a fair value of 280. What is the goodwill?",
+    "options": [
+      {
+        "id": "a",
+        "text": "200"
+      },
+      {
+        "id": "b",
+        "text": "20"
+      },
+      {
+        "id": "c",
+        "text": "180"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Fair Value des Nettovermögens = 800 + (280 − 100) = 980. Goodwill = 1.000 − 980 = 20. (200 wäre Kaufpreis − Buchwert, 180 nur die Bewertungsdifferenz.)",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 7"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t2-08",
+    "lecture": "t2",
+    "topic": "Consolidated equity – group share",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "M owns 80% of F, acquired for 600 in N-2 (F's equity was then 750). On 12/31/N: M has share capital 800, reserves 1,500, net income 400; F has share capital 500, reserves 300, net income 100. What is consolidated equity (group share)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SC 800, Reserves 1,740, NI 480"
+      },
+      {
+        "id": "b",
+        "text": "SC 1,200, Reserves 1,740, NI 480"
+      },
+      {
+        "id": "c",
+        "text": "SC 800, Reserves 1,540, NI 480"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Share Capital = nur das der Mutter (800). Reserves = 1.500 + 80 % × (800 − 750) = 1.540 – nur die Rücklagen der Tochter nach dem Erwerb. Net Income = 400 + 80 % × 100 = 480.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 8"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t2-09",
+    "lecture": "t2",
+    "topic": "Full consolidation – 100 % of the items",
+    "difficulty": 1,
+    "statement": "P owns 60% of S. P needs to consolidate only 60% of the financial results of S.",
+    "answer": false,
+    "explanation": "Falsch. Vollkonsolidierung: 100 % aller Posten der Tochter werden übernommen; die 40 % der Minderheiten werden separat als NCI gezeigt.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 9"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t2-10",
+    "lecture": "t2",
+    "topic": "Goodwill under IFRS",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Under IFRS, which statement about goodwill is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Goodwill is amortized annually up to max. 20 years"
+      },
+      {
+        "id": "b",
+        "text": "If negative, it is reported as a gain in the income statement"
+      },
+      {
+        "id": "c",
+        "text": "If positive, it is reported as a current asset"
+      },
+      {
+        "id": "d",
+        "text": "If negative, it is reported as a loss in the income statement"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Negativer Goodwill (Badwill, bargain purchase) ist sofort Ertrag in der GuV. Positiver Goodwill wird nicht planmäßig abgeschrieben, sondern jährlich auf Impairment getestet, und ist ein langfristiger immaterieller Vermögenswert.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 10"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t2-11",
+    "lecture": "t2",
+    "topic": "NCI – definition",
+    "difficulty": 1,
+    "statement": "NCI is essentially the portion of equity (net assets) in a subsidiary not attributable to the parent.",
+    "answer": true,
+    "explanation": "Richtig – das ist die Definition der Non-controlling Interests (Folie 27).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 2 · Frage 11"
+      }
+    ]
+  }
+]

@@ -79,6 +79,13 @@ geteilt durch die verbleibenden Tage). Prüfungen ohne eigenes Fach in der App s
 MC-Fragen mit `"single": true` sind Single Choice (genau eine richtige Option, Radio-Buttons).
 Fragen mit `"checkup": true` stammen aus dem Check-up-Quiz am Ende einer Vorlesung. Hat ein Fach solche Fragen,
 bekommen Fach- und Kapitelseite die Kachel „Check-up-Fragen“, die nur diese Fragen übt (`practice?mode=checkup`).
+Fragen mit `"quiz": true` sind das Quiz eines Kapitels (z. B. `questions/quiz-t2.json`): Kachel „Quiz“ auf Fach- und
+Kapitelseite (`practice?mode=quiz`), immer alle Fragen in der Reihenfolge der Datei. Wie Fragen mit `"mcSet": true`
+kommen sie nicht in „Üben“, Kapiteltest und Prüfungssimulation; für feste Optionsreihenfolge `"shuffle": false`.
+
+**Stand eines Fachs** (Prozent auf Startseite und Fachseite): Prognose aus den Übungsfragen (Sicherheit je Fragetyp,
+gewichtet wie das Prüfungsformat). Hat das Fach Probeklausuren, zählen sie zu 30 % mit – je Klausur der Anteil
+bearbeiteter Aufgaben, egal ob als ganze Klausur geschrieben oder einzeln unter „Klausuraufgaben“ geübt.
 
 `cases/l01.json` – optional: Fallbeschreibungen mit Tabellen wie in der Prüfung. Fragen verweisen mit
 `"case": "<id>"` darauf; der Fall steht dann über der Frage, im Test folgen Fragen desselben Falls direkt

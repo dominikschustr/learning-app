@@ -203,6 +203,7 @@ function summaryOf({ subject, questions, cards, papers }: SubjectContent): Omit<
         calc: q.type === "short" && q.results.length > 0,
         checkup: q.checkup,
         mcSet: q.mcSet,
+        quiz: q.quiz,
       })),
     cards: cards.map((c) => ({ id: c.id, lecture: c.lecture })),
     texts: getTexts(subject.id).map((t) => t.lecture),
@@ -213,6 +214,8 @@ function summaryOf({ subject, questions, cards, papers }: SubjectContent): Omit<
       title: p.title,
       points: paperItems(p).reduce((s, i) => s + i.points, 0),
       kind: p.origin.kind,
+      minutes: p.minutes,
+      questions: paperItems(p).map((i) => i.q),
     })),
   };
 }

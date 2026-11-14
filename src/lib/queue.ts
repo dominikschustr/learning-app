@@ -1,8 +1,8 @@
-import type { Question } from "./schema";
+import { inOwnSet, type Question } from "./schema";
 import { isDue, itemStatus, weakness, type ItemState } from "./srs";
 import { itemKey, shuffle } from "./utils";
 
-export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "mc" | "papers" | "highlighted";
+export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "mc" | "quiz" | "papers" | "highlighted";
 
 export const MODE_TITLE: Record<PracticeMode, string> = {
   smart: "Empfohlene Session",
@@ -14,6 +14,7 @@ export const MODE_TITLE: Record<PracticeMode, string> = {
   wrong: "Falsche wiederholen",
   checkup: "Check-up-Fragen",
   mc: "Multiple Choice",
+  quiz: "Quiz",
   papers: "Klausuraufgaben",
   highlighted: "Hervorgehobene Fragen",
 };
@@ -66,6 +67,9 @@ export function buildQueue(opts: {
     case "mc":
       // Multiple-Choice-Set der Kapitel (Folien und Theorievideos) – immer alle, in zufälliger Reihenfolge
       return shuffle(questions.filter((q) => q.mcSet));
+    case "quiz":
+      // Quiz der Kapitel – immer alle, in der Reihenfolge des Quiz (Kapitel für Kapitel, Frage 1, 2, …)
+      return questions.filter((q) => q.quiz);
     case "papers": {
       if (opts.ids?.length) {
         // in der Aufgabentabelle ausgewählt: genau diese Aufgaben, in der Reihenfolge der Auswahl
@@ -88,8 +92,8 @@ export function buildQueue(opts: {
     case "weak":
       return weak.slice(0, SESSION_SIZE);
     case "lecture": {
-      // das Multiple-Choice-Set hat einen eigenen Modus; „Üben“ bleibt bei den übrigen Fragen des Kapitels
-      const own = questions.filter((q) => !q.mcSet);
+      // Multiple-Choice-Set und Quiz haben eigene Modi; „Üben“ bleibt bei den übrigen Fragen des Kapitels
+      const own = questions.filter((q) => !inOwnSet(q));
       if (own.length && own.length < questions.length) return buildQueue({ ...opts, mode, questions: own });
       // Vorrang: fällig → neu → unsicher → Rest; neue und übrige Fragen werden zufällig gezogen,
       // daher bekommt jeder Durchgang eine andere Auswahl und der ganze Pool wird nach und nach abgedeckt.
