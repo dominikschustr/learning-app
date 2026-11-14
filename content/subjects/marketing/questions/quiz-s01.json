@@ -1,0 +1,182 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s01-01",
+    "lecture": "s01",
+    "topic": "Surveillance markets – data quality & variety",
+    "difficulty": 1,
+    "statement": "Not only volume, but also quality and variety of data is key to companies on surveillance markets.",
+    "answer": true,
+    "explanation": "Richtig. Es geht nicht nur um Masse (economies of scale), sondern auch um Vielfalt und Qualität der Verhaltensdaten (economies of scope) – je vielfältiger und genauer die Daten, desto besser die Vorhersageprodukte.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 25, Liste 2 · Nr. 15"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-02",
+    "lecture": "s01",
+    "topic": "Four types of analytics – decision value",
+    "difficulty": 2,
+    "statement": "Decision value decreases from descriptive to predictive analytics.",
+    "answer": false,
+    "explanation": "Falsch. Der Entscheidungswert steigt: Descriptive (what happened?) → Diagnostic (why?) → Predictive (what is likely to happen?) → Prescriptive (so what / now what?). Je weiter rechts, desto näher an der Entscheidung bzw. Handlung.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 26"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-03",
+    "lecture": "s01",
+    "topic": "Research types – clearly defined problem",
+    "difficulty": 2,
+    "statement": "In the case of a clearly defined problem, descriptive research is the most meaningful approach.",
+    "answer": false,
+    "explanation": "Falsch. Bei einem klar definierten Problem passt Causal research (Experimente, z. B. „Erhöht eine Website-Änderung die Käufe?“). Exploratory = mehrdeutiges Problem, Descriptive = man ist sich des Problems bewusst („Wer kauft unsere Produkte?“).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 27"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-04",
+    "lecture": "s01",
+    "topic": "Surveillance markets – speed of competition",
+    "difficulty": 1,
+    "statement": "Competition on ‘Surveillance’ markets evolved rather slowly.",
+    "answer": false,
+    "explanation": "Falsch. Der Wettbewerb um Verhaltensdaten hat sich sehr schnell entwickelt: Wer mehr Daten hat, verbessert seine Vorhersageprodukte schneller – ein sich selbst verstärkender Wettlauf.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 28"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-05",
+    "lecture": "s01",
+    "topic": "Surveillance Capitalism – democracy",
+    "difficulty": 1,
+    "statement": "According to many experts, Surveillance Capitalism could undermine democracy.",
+    "answer": true,
+    "explanation": "Richtig. Zuboff beschreibt eine beispiellose Konzentration von Wissen und Macht (instrumentarian power) und Verhaltensmodifikation – das kann demokratische Prozesse und individuelle Autonomie untergraben.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 29"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-06",
+    "lecture": "s01",
+    "topic": "Behavioural surplus",
+    "difficulty": 1,
+    "statement": "Behavioural surplus represents the information that companies collect beyond the information required to improve their products and services.",
+    "answer": true,
+    "explanation": "Richtig. Behavioural surplus sind die Daten, die über das zur Produktverbesserung Nötige hinaus gesammelt werden (Klicks, Standort, Sensoren, Cookies) und in Vorhersageprodukte verwandelt werden.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 30"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-07",
+    "lecture": "s01",
+    "topic": "Surveillance markets – online experiments",
+    "difficulty": 1,
+    "statement": "In ‘Surveillance’ markets, companies can easily implement and run large-scale online experiments without the users’ awareness.",
+    "answer": true,
+    "explanation": "Richtig. Plattformen können A/B-Tests und Verhaltensexperimente mit Millionen Nutzern laufen lassen, ohne dass diese es merken – Grundlage der economies of action (nudging, tuning, herding).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 13"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-08",
+    "lecture": "s01",
+    "topic": "Research types – secondary data in descriptive research",
+    "difficulty": 1,
+    "statement": "Secondary data is often used in descriptive research.",
+    "answer": true,
+    "explanation": "Richtig. Typische Methoden der Descriptive research: Surveys, Panels, Beobachtung und quantitativ ausgewertete Sekundärdaten. (Qualitativ ausgewertete Sekundärdaten gehören zur Exploratory research.)",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 14"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-09",
+    "lecture": "s01",
+    "topic": "Research types – methods of causal research",
+    "difficulty": 1,
+    "statement": "Expert surveys are one of the core methods employed in causal research.",
+    "answer": false,
+    "explanation": "Falsch. Expert- und Pilot-Surveys sind Methoden der Exploratory research. Causal research arbeitet mit Experimenten: unabhängige Variablen werden manipuliert, andere kontrolliert.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 16"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s01-10",
+    "lecture": "s01",
+    "topic": "Surveillance Capitalism – monitor and influence",
+    "difficulty": 1,
+    "statement": "In the logic of Surveillance Capitalism, systems (such as algorithms) are designed to monitor and influence users.",
+    "answer": true,
+    "explanation": "Richtig. Systeme sollen Verhalten nicht nur beobachten, sondern auch beeinflussen (behavioural modification), um vorhersagbare Ergebnisse zu erzeugen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 18"
+      }
+    ]
+  }
+]

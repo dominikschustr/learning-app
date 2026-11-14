@@ -1,0 +1,182 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s05-01",
+    "lecture": "s05",
+    "topic": "Segmentation vs. positioning – mental landscape",
+    "difficulty": 2,
+    "statement": "Segmentation assists marketing managers in understanding the positioning of a brand in consumers’ mental landscapes.",
+    "answer": false,
+    "explanation": "Falsch. Das leistet die Positionierungsanalyse mit Perceptual maps („visual image of consumers’ mental landscape“). Segmentierung identifiziert und gruppiert Kunden mit ähnlichen Bedürfnissen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 1, Liste 2 · Nr. 23"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-02",
+    "lecture": "s05",
+    "topic": "STP approach – benefit",
+    "difficulty": 1,
+    "statement": "Through the STP approach, companies can better understand their customers and target their marketing efforts efficiently and effectively.",
+    "answer": true,
+    "explanation": "Richtig. Segmentation → Targeting → Positioning: Bedürfnisse werden besser erfüllt, das schafft Loyalität, höheren Marktanteil und Profitabilität bei geringerem Ressourceneinsatz.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-03",
+    "lecture": "s05",
+    "topic": "Targeting – evaluate, not profile",
+    "difficulty": 2,
+    "statement": "When targeting, companies profile segments based on segment size and growth potential and product-market fit.",
+    "answer": false,
+    "explanation": "Falsch (Lösung unsicher). Beim Targeting werden Segmente bewertet (evaluate segment attractiveness: Größe & Wachstum, strukturelle Merkmale, Product-Market Fit) und ausgewählt. Profiling (mit Descriptors) gehört zur Segmentierung.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 3"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-04",
+    "lecture": "s05",
+    "topic": "Successful positioning",
+    "difficulty": 1,
+    "statement": "A successful positioning reflects a distinct, relevant, and sustainable position in the minds of target customers.",
+    "answer": true,
+    "explanation": "Richtig. Definition aus der Vorlesung: Positionierung differenziert das Angebot in den Köpfen der Zielkunden – distinct, relevant, sustainable.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 4, Liste 2 · Nr. 19"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-05",
+    "lecture": "s05",
+    "topic": "GE/McKinsey matrix – targeting",
+    "difficulty": 1,
+    "statement": "The GE/McKinsey Portfolio Matrix is a useful tool to select which segment(s) to serve.",
+    "answer": true,
+    "explanation": "Richtig. Die Matrix stellt Segmentattraktivität den eigenen Stärken gegenüber (Treiber gewichten → Segmente bewerten → Gewichte × Ratings → plotten → Sensitivitätsanalyse) und hilft so bei der Auswahl.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 5"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-06",
+    "lecture": "s05",
+    "topic": "Market segment – homogeneity",
+    "difficulty": 1,
+    "statement": "A market segment includes customers with similar consumption behaviour and different lifestyles.",
+    "answer": false,
+    "explanation": "Falsch. Ein Segment ist innen homogen: Kunden mit ähnlichen Bedürfnissen, ähnlichem Verhalten und ähnlichem Lebensstil – nicht unterschiedlichem.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 6"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-07",
+    "lecture": "s05",
+    "topic": "Segmentation phases – order",
+    "difficulty": 2,
+    "statement": "When segmenting, first managers need to analyse the clusters and then they should conduct qualitative interviews with target customers to identify their “deep needs”.",
+    "answer": false,
+    "explanation": "Falsch – die Reihenfolge ist umgekehrt. Phase II: qualitative Interviews zu den „deep needs“; Phase III: quantitative Messung; erst in Phase IV Clusteranalyse und Profiling.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 20"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-08",
+    "lecture": "s05",
+    "topic": "Perceptual maps – dimensions",
+    "difficulty": 1,
+    "statement": "Perceptual maps can be only two-dimensional according to the number of attributes used to develop them.",
+    "answer": false,
+    "explanation": "Falsch. Perceptual maps sind meist zweidimensional, gelegentlich aber auch dreidimensional; die Achsen sind zugrunde liegende Dimensionen, die mehrere Attribute zusammenfassen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 21"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-09",
+    "lecture": "s05",
+    "topic": "Segmentation bases vs. descriptors",
+    "difficulty": 2,
+    "statement": "Segmentation bases are customer characteristics that enable marketers to profile each segment.",
+    "answer": false,
+    "explanation": "Falsch. Das beschreibt Descriptors (Demografie, Firmografie, Werte, Kaufhäufigkeit), mit denen Segmente profiliert und erreicht werden. Bases sind die Variablen, die Segmente bilden – warum Kunden sich unterscheiden (Bedürfnisse, Einstellungen, Verhalten).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 22"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s05-10",
+    "lecture": "s05",
+    "topic": "Brand association maps – source",
+    "difficulty": 1,
+    "statement": "Brand association maps are generated by monitoring consumers' conversations about a brand.",
+    "answer": true,
+    "explanation": "Richtig. Brand association maps (z. B. Nielsen) entstehen aus Konsumentengesprächen über die Marke; Nähe = statistische Korrelation, keine festen Achsen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 24"
+      }
+    ]
+  }
+]

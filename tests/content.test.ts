@@ -137,6 +137,19 @@ describe("Marketing", () => {
     for (const q of mk.questions) expect(q.basis.length, q.id).toBeGreaterThan(0);
   });
 
+  it("hat das DDM-Quiz zu Session 1–5 (beide Listen, ohne Dopplungen) als eigenen Quiz-Modus", () => {
+    const quiz = mk.questions.filter((q) => q.quiz);
+    const per = Object.fromEntries(mk.subject.lectures.map((l) => [l.id, quiz.filter((q) => q.lecture === l.id).length]));
+    expect(per).toMatchObject({ s01: 10, s02: 13, s03: 8, s04: 10, s05: 10, s06: 0 });
+    const statements = quiz.map((q) => (q.type === "tf" ? q.statement : ""));
+    expect(new Set(statements).size).toBe(51);
+    for (const q of quiz) {
+      expect(q.type, q.id).toBe("tf");
+      expect(q.basis[0]?.kind, q.id).toBe("quiz");
+      expect(q.checkup || q.mcSet || q.paperOnly, q.id).toBe(false);
+    }
+  });
+
   it("jedes Kapitel hat Aufgaben aus Altklausuren oder im Klausurstil", () => {
     for (const l of mk.subject.lectures)
       expect(

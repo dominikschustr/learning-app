@@ -1,0 +1,182 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s04-01",
+    "lecture": "s04",
+    "topic": "Sentiment analysis – definition",
+    "difficulty": 1,
+    "statement": "One could define sentiment analysis as classifying text as positive, negative, or neutral, to determine emotion.",
+    "answer": true,
+    "explanation": "Richtig. Sentiment analysis bestimmt den emotionalen Ton eines Textes – positiv, negativ oder neutral –, also wie der Autor über ein Thema denkt.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 13, Liste 2 · Nr. 26"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-02",
+    "lecture": "s04",
+    "topic": "Text mining – success factors",
+    "difficulty": 1,
+    "statement": "Strong synergies between departments is a discussed success factor in effective text mining.",
+    "answer": false,
+    "explanation": "Falsch. Die besprochenen Erfolgsfaktoren: Datenqualität (garbage in, garbage out), Data cleansing, Wahl des Algorithmus, Skalierbarkeit, Modellevaluation und ethische Grenzen. Synergien zwischen Abteilungen gehören nicht dazu.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 14, Liste 2 · Nr. 25"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-03",
+    "lecture": "s04",
+    "topic": "Social listening – definition",
+    "difficulty": 1,
+    "statement": "Social listening involves identifying and assessing what is being said about a company, individual, product, or brand on the internet.",
+    "answer": true,
+    "explanation": "Richtig. Das ist die Definition aus der Vorlesung. Prozess: Ziele → Datensammlung → Analyse → Insights → Engagement & Response → Monitoring.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 15"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-04",
+    "lecture": "s04",
+    "topic": "Predictive analytics with AI",
+    "difficulty": 1,
+    "statement": "For the marketer, the use of Artificial Intelligence in Predictive Analytics to predict customer behaviour and demand forecasting would be highly interesting.",
+    "answer": true,
+    "explanation": "Richtig. Predictive analytics sagt mit Statistik, Data Mining und Machine Learning künftige Ergebnisse aus historischen Daten voraus – u. a. Kundenverhalten und Nachfrage (demand forecasting).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 16"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-05",
+    "lecture": "s04",
+    "topic": "Visual mining – untapped imagery",
+    "difficulty": 2,
+    "statement": "Up to 85% of visual imagery remains largely untapped.",
+    "answer": true,
+    "explanation": "Laut Quiz richtig. Die Folie sagt: „above 80 %“ der Bilder und Videos werden nicht ausgewertet – die Aussage „up to 85 %“ zielt auf dieselbe Kernaussage (riesiges ungenutztes Potenzial). Unsicher: Im ersten Quizversuch wurde hier False angekreuzt, vermutlich war das die falsche Antwort.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 17"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-06",
+    "lecture": "s04",
+    "topic": "Visual mining vs. text mining",
+    "difficulty": 1,
+    "statement": "Visual mining is the process of analyzing text data to identify trends and patterns in consumer sentiment.",
+    "answer": false,
+    "explanation": "Falsch. Visual mining analysiert visuelle Daten (Bilder, Videos) mit Data Mining, Computer Vision und Datenvisualisierung. Textdaten auf Stimmung zu analysieren ist Sentiment analysis bzw. Text mining.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 18"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-07",
+    "lecture": "s04",
+    "topic": "Text mining – stemming",
+    "difficulty": 1,
+    "statement": "Stemming can be defined as reducing words to their root or base form.",
+    "answer": true,
+    "explanation": "Richtig. Stemming/Lemmatization führt Wörter auf ihre Grundform zurück (z. B. „buying“ → „buy“). Pipeline: Tokenization → Stop-word elimination → Stemming/Lemmatization → TF-IDF → NER, Sentiment, Topic modelling.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 27"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-08",
+    "lecture": "s04",
+    "topic": "Sentiment analysis – main application",
+    "difficulty": 1,
+    "statement": "The most prominent feature of sentiment analysis for a marketer would be brand reputation management and monitoring.",
+    "answer": true,
+    "explanation": "Richtig. Brand reputation monitoring steht an erster Stelle der Anwendungen; weitere: Kundenfeedback, Marktforschung, Krisenprävention, Kundenservice.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 28"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-09",
+    "lecture": "s04",
+    "topic": "Sentiment analysis – emotional tone",
+    "difficulty": 1,
+    "statement": "Sentiment analysis is the process of analyzing online text to determine the emotional tone they carry.",
+    "answer": true,
+    "explanation": "Richtig. Sentiment analysis analysiert Online-Texte und bestimmt ihren emotionalen Ton (positiv, negativ, neutral).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 29"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s04-10",
+    "lecture": "s04",
+    "topic": "Data mining algorithms – regression",
+    "difficulty": 1,
+    "statement": "As a data mining example, the regression algorithm predicts continuous numerical values. E.g., linear regression, logistic regression, would be considered the most commonly used.",
+    "answer": true,
+    "explanation": "Richtig (so auf der Folie). Regression sagt stetige numerische Werte voraus; als gängigste Verfahren werden lineare und logistische Regression genannt. Abgrenzung: Classification sagt Kategorien voraus, Anomaly detection erkennt Betrug.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 30"
+      }
+    ]
+  }
+]

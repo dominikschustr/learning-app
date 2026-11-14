@@ -1,0 +1,236 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s02-01",
+    "lecture": "s02",
+    "topic": "Question types – select many",
+    "difficulty": 1,
+    "statement": "Multiple-choice questions (select many) often generate metric variables.",
+    "answer": false,
+    "explanation": "Falsch. Multiple Choice (select many) erzeugt nominale, also nicht-metrische Variablen. Metrisch (Intervall) sind z. B. Likert-Skalen und semantische Differentiale.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 7"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-02",
+    "lecture": "s02",
+    "topic": "Data visualisation – hidden patterns",
+    "difficulty": 1,
+    "statement": "Visualizations can support identifying hidden patterns within the data.",
+    "answer": true,
+    "explanation": "Richtig. Visualisierung macht Muster, Ausreißer und Zusammenhänge sichtbar, die in Tabellen untergehen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 8"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-03",
+    "lecture": "s02",
+    "topic": "Relative frequencies vs. key characteristics",
+    "difficulty": 2,
+    "statement": "Relative frequencies describe a key characteristic of an empirical quantity and not the entire (empirical) distribution of that quantity.",
+    "answer": false,
+    "explanation": "Falsch – genau umgekehrt. (Relative) Häufigkeiten enthalten die gesamte Information der empirischen Verteilung. Kennzahlen wie Mittelwert oder Varianz fassen nur ein Merkmal (Lage, Streuung) zusammen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 9"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-04",
+    "lecture": "s02",
+    "topic": "Data visualisation process – first step",
+    "difficulty": 1,
+    "statement": "The first step of data visualization is to jump straight to execution.",
+    "answer": false,
+    "explanation": "Falsch. Am Anfang steht der Zweck: Was soll gezeigt werden, für wen, welche Entscheidung soll unterstützt werden? Die Umsetzung (execution) kommt erst danach.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 10"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-05",
+    "lecture": "s02",
+    "topic": "Data visualisation process – purpose",
+    "difficulty": 1,
+    "statement": "The final step to data visualization is to think about the purpose.",
+    "answer": false,
+    "explanation": "Falsch. Über den Zweck denkt man zuerst nach, nicht zuletzt – er bestimmt Inhalt, Diagrammtyp und Gestaltung.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 11"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-06",
+    "lecture": "s02",
+    "topic": "Pearson correlation – sign",
+    "difficulty": 1,
+    "statement": "A Pearson correlation coefficient = 0.56 denotes a positive correlation.",
+    "answer": true,
+    "explanation": "Richtig. r liegt zwischen −1 und +1; ein positives r (hier 0,56, mittlere Stärke) bedeutet einen positiven linearen Zusammenhang.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 12"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-07",
+    "lecture": "s02",
+    "topic": "Variance – dispersion, not central tendency",
+    "difficulty": 1,
+    "statement": "The variance is a measure of central tendency.",
+    "answer": false,
+    "explanation": "Falsch. Die Varianz ist ein Streuungsmaß (mittlere quadrierte Abweichung vom Mittelwert). Lagemaße (central tendency) sind Mittelwert, Median und Modus.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 7"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-08",
+    "lecture": "s02",
+    "topic": "Likert scale – interval",
+    "difficulty": 1,
+    "statement": "A Likert scale is a good example of an interval (and thus numerical) scale.",
+    "answer": true,
+    "explanation": "Richtig. Im Kurs gelten Likert-Skalen (Zufriedenheit, NPS, Markeneinstellung) als metrisch-intervallskaliert: gleiche Abstände, aber kein echter Nullpunkt.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 8"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-09",
+    "lecture": "s02",
+    "topic": "Age – numerical data",
+    "difficulty": 1,
+    "statement": "Age is an example of numerical data.",
+    "answer": true,
+    "explanation": "Richtig. Alter in Jahren ist metrisch, sogar verhältnisskaliert (ratio): gleiche Abstände und echter Nullpunkt. (Altersgruppen wären dagegen ordinal.)",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 9"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-10",
+    "lecture": "s02",
+    "topic": "Mean – central tendency, not dispersion",
+    "difficulty": 1,
+    "statement": "The mean is a measure of dispersion.",
+    "answer": false,
+    "explanation": "Falsch. Der Mittelwert ist ein Lagemaß. Streuungsmaße sind Varianz und Standardabweichung.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 10"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-11",
+    "lecture": "s02",
+    "topic": "Data visualisation – definition",
+    "difficulty": 1,
+    "statement": "Data visualisation is a process through which we wish to get at some truth and move people to feel it—to see what could not be seen.",
+    "answer": true,
+    "explanation": "Richtig. Visualisierung soll eine Wahrheit in den Daten erkennbar machen und sie so zeigen, dass Menschen sie verstehen und fühlen – also sichtbar machen, was vorher nicht zu sehen war.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 11"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-12",
+    "lecture": "s02",
+    "topic": "Question types – dichotomous",
+    "difficulty": 1,
+    "statement": "Dichotomous questions generate metric variables.",
+    "answer": false,
+    "explanation": "Falsch. Dichotome Fragen (ja/nein) erzeugen nominale, also nicht-metrische Variablen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 12"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s02-13",
+    "lecture": "s02",
+    "topic": "Correlation vs. causation",
+    "difficulty": 1,
+    "statement": "Causation and correlation are equivalent.",
+    "answer": false,
+    "explanation": "Falsch. Korrelation misst nur Richtung und Stärke eines linearen Zusammenhangs. Kausalität (eine Änderung von X bewirkt eine Änderung von Y) braucht z. B. ein Experiment.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 17"
+      }
+    ]
+  }
+]

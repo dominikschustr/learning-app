@@ -1,0 +1,146 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s03-01",
+    "lecture": "s03",
+    "topic": "Trend forecasting – long-term changes",
+    "difficulty": 1,
+    "statement": "Trend forecasting is a method through which identifying short-term changes in the retail and services industries.",
+    "answer": false,
+    "explanation": "Falsch. Trend forecasting zielt auf längerfristige Veränderungen im Konsumentenverhalten (looking forward). Kurzfristige Schwankungen sind keine Trends.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 19, Liste 2 · Nr. 3"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s03-02",
+    "lecture": "s03",
+    "topic": "Macro trends",
+    "difficulty": 1,
+    "statement": "Macro trends impact a variety of industries and have a long-lasting effect on consumer behaviour.",
+    "answer": true,
+    "explanation": "Richtig. Makrotrends dauern mindestens fünf Jahre und betreffen viele Branchen (z. B. Maker-Bewegung, Wellness-Boom). Mikrotrends sind kleinere Ausprägungen davon.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 20"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s03-03",
+    "lecture": "s03",
+    "topic": "Emergence of a consumer trend",
+    "difficulty": 1,
+    "statement": "A new consumer trend emerges when external change unlocks a new way to serve basic human needs.",
+    "answer": true,
+    "explanation": "Richtig. Ein Trend entsteht, wenn ein Veränderungstreiber (shift oder trigger) eine neue Möglichkeit eröffnet, ein grundlegendes menschliches Bedürfnis zu erfüllen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 21, Liste 2 · Nr. 6"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s03-04",
+    "lecture": "s03",
+    "topic": "What trends are",
+    "difficulty": 1,
+    "statement": "Trends can be shifts in how we will live tomorrow, from the food we eat, the way we listen to music, to the way we connect with each other.",
+    "answer": true,
+    "explanation": "Richtig. Trends sind Veränderungen in Verhalten, Einstellungen oder Erwartungen, die alle Lebensbereiche betreffen – Ernährung, Musik, Kommunikation usw.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 22"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s03-05",
+    "lecture": "s03",
+    "topic": "Trends beyond fashion",
+    "difficulty": 1,
+    "statement": "Trends are merely about fashion and design.",
+    "answer": false,
+    "explanation": "Falsch. Konsumententrends betreffen jedes Feld, in dem sich Verhalten, Einstellungen oder Erwartungen ändern – nicht nur Mode und Design.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 23, Liste 2 · Nr. 5"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s03-06",
+    "lecture": "s03",
+    "topic": "Trends and innovators",
+    "difficulty": 1,
+    "statement": "Trends emerge as innovators address people’s basic human needs and wants in novel ways.",
+    "answer": true,
+    "explanation": "Richtig. Ein Trend ist eine neue Ausprägung eines grundlegenden Bedürfnisses; Innovatoren machen sie sichtbar, indem sie dieses Bedürfnis auf neue Weise bedienen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 1 · Nr. 24, Liste 2 · Nr. 4"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s03-07",
+    "lecture": "s03",
+    "topic": "Innovations – manifestations of a trend",
+    "difficulty": 1,
+    "statement": "Innovations are manifestations of how a trend exists.",
+    "answer": true,
+    "explanation": "Richtig. Innovationen sind Beispiele dafür, wie ein Trend existiert – nicht der Trend selbst. Die drei Elemente eines Trends: basic needs, drivers of change, innovations.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 1"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s03-08",
+    "lecture": "s03",
+    "topic": "Micro trends – path to mass adoption",
+    "difficulty": 1,
+    "statement": "A micro trend moves to mass adoption within one to two years after having reached early influencers.",
+    "answer": true,
+    "explanation": "Richtig. Mikrotrends gehen von frühen Influencern innerhalb von ein bis zwei Jahren in die Masse über; Makrotrends dauern mindestens fünf Jahre.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 1–5",
+        "ref": "Liste 2 · Nr. 2"
+      }
+    ]
+  }
+]
