@@ -66,6 +66,25 @@ export function useHighlightIndex(): Map<string, Highlighter[]> {
   return highlightIndex(docs, uid);
 }
 
+/** ids der Fragen (bzw. Karten) eines Fachs, die jemand hervorgehoben hat → wer. */
+export function highlightedIn(
+  index: Map<string, Highlighter[]>,
+  subjectId: string,
+  kind: "q" | "c" = "q",
+): Map<string, Highlighter[]> {
+  const prefix = `${kind}:${subjectId}:`;
+  const out = new Map<string, Highlighter[]>();
+  for (const [k, who] of index) if (k.startsWith(prefix)) out.set(k.slice(prefix.length), who);
+  return out;
+}
+
+/** Wer in einer Auswahl von Fragen etwas hervorgehoben hat (ohne Doppelte, eigenes Konto zuerst). */
+export function highlightersOf(byId: Map<string, Highlighter[]>, ids: Iterable<string>): Highlighter[] {
+  const out = new Map<string, Highlighter>();
+  for (const id of ids) for (const h of byId.get(id) ?? []) out.set(h.uid, h);
+  return [...out.values()].sort((a, b) => (a.me ? -1 : b.me ? 1 : a.name.localeCompare(b.name, "de")));
+}
+
 /** „Du“, „Lisa“, „Du und Lisa“, „Lisa, Ben und 2 weitere“ */
 export function whoText(list: Highlighter[], max = 2): string {
   const names = list.map((h) => (h.me ? "Du" : h.name));

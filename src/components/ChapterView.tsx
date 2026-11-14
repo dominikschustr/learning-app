@@ -1,12 +1,13 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Layers, LayoutGrid, ListChecks, ScrollText, Sigma, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Highlighter, Layers, LayoutGrid, ListChecks, ScrollText, Sigma, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 import { chapterFormat } from "@/lib/exam";
 import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
 import type { QuestionType, SubjectSummary } from "@/lib/schema";
+import { highlightedIn, useHighlightIndex } from "@/lib/highlights";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
@@ -64,6 +65,11 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const cMarks = markedIds(s.marks, "c", subject.id);
   const markedQ = summary.items.filter((i) => i.lecture === chapterId && qMarks.has(i.id)).length;
   const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
+  // von der Lerngruppe hervorgehobene Fragen dieses Kapitels (auch Klausuraufgaben)
+  const hlIds = highlightedIn(useHighlightIndex(), subject.id);
+  const highlightedQ = new Set(
+    [...summary.items, ...summary.paperItems].filter((i) => i.lecture === chapterId && hlIds.has(i.id)).map((i) => i.id),
+  ).size;
   const checkups = summary.items.filter((i) => i.lecture === chapterId && i.checkup);
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
   const mcSet = summary.items.filter((i) => i.lecture === chapterId && i.mcSet);
@@ -89,6 +95,15 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             href: `${base}/practice?mode=marked&lecture=${chapterId}`,
             icon: Bookmark,
             label: `${markedQ} ${markedQ === 1 ? "markierte Frage" : "markierte Fragen"}`,
+          },
+        ]
+      : []),
+    ...(highlightedQ
+      ? [
+          {
+            href: `${base}/practice?mode=highlighted&lecture=${chapterId}`,
+            icon: Highlighter,
+            label: `${highlightedQ} ${highlightedQ === 1 ? "hervorgehobene Frage" : "hervorgehobene Fragen"}`,
           },
         ]
       : []),

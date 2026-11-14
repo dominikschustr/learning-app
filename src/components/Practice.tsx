@@ -1,12 +1,14 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, PartyPopper, RotateCcw, Sigma, SkipForward } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, Highlighter, PartyPopper, RotateCcw, Sigma, SkipForward } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { answerXp } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
-import { toggleHighlight } from "@/lib/highlights";
+import { useAuth } from "@/lib/auth";
+import { cloudConfigured } from "@/lib/cloud";
+import { highlightIndex, highlightedIn, toggleHighlight, useHighlights } from "@/lib/highlights";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
 import type { Question, SubjectContent } from "@/lib/schema";
 import type { RenderedFormula } from "@/lib/tex";
@@ -36,7 +38,7 @@ type Snap = {
 };
 const BLANK: Snap = { selected: [], tf: null, text: "", mc: null, shortGrade: null, revealed: false, wasCorrect: false };
 
-const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "papers"];
+const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "papers", "highlighted"];
 
 export function Practice({
   content,
@@ -56,8 +58,16 @@ export function Practice({
   const picked = params.get("q") ?? "";
   const random = params.get("order") === "random";
   const [run, setRun] = useState(0);
+  // Hervorgehobene Fragen: erst starten, wenn die Liste der Lerngruppe da ist (oder nicht geladen werden kann)
+  const highlightsReady = useHighlights(
+    (s) =>
+      s.loadedAt !== null ||
+      s.status === "error" ||
+      !cloudConfigured() ||
+      (typeof navigator !== "undefined" && !navigator.onLine),
+  );
 
-  if (!hydrated) return <Skeleton className="h-96" />;
+  if (!hydrated || (mode === "highlighted" && !highlightsReady)) return <Skeleton className="h-96" />;
   return (
     <Session
       key={`${mode}-${lecture}-${picked}-${random}-${run}`}
@@ -117,6 +127,9 @@ function Session({
         now: Date.now(),
         lecture,
         marked: markedIds(useApp.getState().marks, "q", subject.id),
+        highlighted: new Set(
+          highlightedIn(highlightIndex(useHighlights.getState().docs, useAuth.getState().session?.uid), subject.id).keys(),
+        ),
         papers,
         ids,
         random,
@@ -305,6 +318,26 @@ function Session({
   }
 
   if (!queue.length) {
+    if (mode === "highlighted") {
+      return (
+        <div className="mx-auto max-w-lg py-16 text-center">
+          <Highlighter className="mx-auto size-12 text-warn" />
+          <h1 className="display text-4xl sm:text-5xl mt-4">Noch nichts hervorgehoben</h1>
+          <p className="mt-2 text-muted">
+            Tippe beim Üben, in der Auswertung oder in der Aufgaben-Tabelle auf den Textmarker (oder drücke H) – die
+            Frage landet dann hier, für dich und deine Lerngruppe.
+          </p>
+          <div className="mt-6 flex justify-center gap-2">
+            <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>
+              Jetzt üben
+            </ButtonLink>
+            <ButtonLink variant="secondary" href={home}>
+              Zurück
+            </ButtonLink>
+          </div>
+        </div>
+      );
+    }
     if (mode === "marked") {
       return (
         <div className="mx-auto max-w-lg py-16 text-center">

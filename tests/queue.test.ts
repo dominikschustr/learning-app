@@ -133,3 +133,16 @@ describe("groupCases – Teilfragen eines Falls zusammen", () => {
     expect(groupCases(drawn, withCase).map((q) => q.id)).toEqual(["tf-4", "tf-1", "tf-3", "tf-5", "tf-0", "tf-2"]);
   });
 });
+
+describe("buildQueue – hervorgehobene Fragen", () => {
+  // reine Klausuraufgabe (nicht im Übungspool), Kapitel b
+  const paper: Question = { ...pool[0], id: "paper-1", lecture: "b", paperOnly: true };
+  const highlighted = new Set(["tf-1", "tf-36", "paper-1", "gibt-es-nicht"]);
+
+  it("zieht alle hervorgehobenen Fragen des Fachs, auch reine Klausuraufgaben – auf Wunsch je Kapitel", () => {
+    const opts = { mode: "highlighted" as const, subjectId: "s", questions: pool, papers: [paper, pool[1]], items: {}, now: 0, highlighted };
+    expect(ids(buildQueue(opts))).toBe("paper-1,tf-1,tf-36");
+    expect(ids(buildQueue({ ...opts, lecture: "b" }))).toBe("paper-1,tf-36");
+    expect(buildQueue({ ...opts, highlighted: new Set() })).toHaveLength(0);
+  });
+});

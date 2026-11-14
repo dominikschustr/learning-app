@@ -2,7 +2,7 @@ import type { Question } from "./schema";
 import { isDue, itemStatus, weakness, type ItemState } from "./srs";
 import { itemKey, shuffle } from "./utils";
 
-export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "mc" | "papers";
+export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "mc" | "papers" | "highlighted";
 
 export const MODE_TITLE: Record<PracticeMode, string> = {
   smart: "Empfohlene Session",
@@ -15,6 +15,7 @@ export const MODE_TITLE: Record<PracticeMode, string> = {
   checkup: "Check-up-Fragen",
   mc: "Multiple Choice",
   papers: "Klausuraufgaben",
+  highlighted: "Hervorgehobene Fragen",
 };
 
 const SESSION_SIZE = 12;
@@ -31,6 +32,8 @@ export function buildQueue(opts: {
   lecture?: string;
   /** ids der markierten Fragen (für mode "marked") */
   marked?: Set<string>;
+  /** ids der Fragen, die jemand aus der Lerngruppe hervorgehoben hat (für mode "highlighted") */
+  highlighted?: Set<string>;
   /** Fragen der Probeklausuren in fester Reihenfolge (für mode "papers") */
   papers?: Question[];
   /** gezielt ausgewählte Klausuraufgaben (mode "papers", aus der Aufgabentabelle) – in dieser Reihenfolge */
@@ -75,6 +78,13 @@ export function buildQueue(opts: {
     }
     case "marked":
       return shuffle(questions.filter((q) => opts.marked?.has(q.id)));
+    case "highlighted": {
+      // alle hervorgehobenen Fragen des Fachs (bzw. Kapitels) – auch reine Klausuraufgaben; Teilfragen eines Falls zusammen
+      const pool = unique([...opts.questions, ...(opts.papers ?? [])]).filter(
+        (q) => (!opts.lecture || q.lecture === opts.lecture) && opts.highlighted?.has(q.id),
+      );
+      return groupCases(shuffle(pool), pool);
+    }
     case "weak":
       return weak.slice(0, SESSION_SIZE);
     case "lecture": {

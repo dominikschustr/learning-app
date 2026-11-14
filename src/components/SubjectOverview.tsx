@@ -1,12 +1,13 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Info, Layers, LayoutGrid, ListChecks, Play, RotateCcw, ScrollText, Sigma, Table2, Target, Trophy, Zap } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, Brain, CalendarClock, ClipboardCheck, Highlighter, Info, Layers, LayoutGrid, ListChecks, Play, RotateCcw, ScrollText, Sigma, Table2, Target, Trophy, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
 import { subjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
+import { highlightedIn, highlightersOf, useHighlightIndex, whoText } from "@/lib/highlights";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { LevelBadge } from "./ChapterView";
 import { PaperChoice, type PaperChoiceTarget } from "./PaperChoice";
@@ -64,6 +65,11 @@ function Inner({ summary }: { summary: SubjectSummary }) {
   const markedQ = [...markedIds(s.marks, "q", subject.id)].filter((id) => qIds.has(id)).length;
   const markedC = [...markedIds(s.marks, "c", subject.id)].filter((id) => cIds.has(id)).length;
   const mobile = useMobile();
+  // Hervorgehobene Fragen der Lerngruppe (auch reine Klausuraufgaben)
+  const highlightIdx = useHighlightIndex();
+  const pIds = new Set([...qIds, ...summary.paperItems.map((p) => p.id)]);
+  const highlighted = [...highlightedIn(highlightIdx, subject.id)].filter(([id]) => pIds.has(id));
+  const highlighters = highlightersOf(new Map(highlighted), highlighted.map(([id]) => id));
 
   const hasTf = summary.items.some((i) => i.type === "tf");
   const checkups = summary.items.filter((i) => i.checkup);
@@ -98,6 +104,16 @@ function Inner({ summary }: { summary: SubjectSummary }) {
       title: "Schwächen",
       meta: st.seen ? "unsicherste Fragen" : "nach ein paar Fragen",
     },
+    ...(highlighted.length
+      ? [
+          {
+            href: `${base}/practice?mode=highlighted`,
+            icon: Highlighter,
+            title: "Hervorgehoben",
+            meta: `${highlighted.length} ${highlighted.length === 1 ? "Frage" : "Fragen"} · ${whoText(highlighters)}`,
+          },
+        ]
+      : []),
     ...(checkups.length
       ? [
           {
