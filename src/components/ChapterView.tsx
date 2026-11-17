@@ -1,13 +1,13 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Layers, LayoutGrid, ListChecks, MessageCircleQuestion, ScrollText, Sigma, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Bookmark, ClipboardCheck, FileText, Layers, LayoutGrid, ListChecks, MessageCircleQuestion, ScrollText, Sigma, Trophy, Users } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 import { chapterFormat } from "@/lib/exam";
 import { LEVEL_NAMES, subjectStats, type ChapterStats } from "@/lib/progress";
 import { inOwnSet, type QuestionType, type SubjectSummary } from "@/lib/schema";
-import { highlightedIn, useHighlightIndex } from "@/lib/highlights";
+import { highlightedIn, splitMarks, useHighlightIndex } from "@/lib/highlights";
 import { chapterBests, examScore, markedIds, useApp, useHydrated } from "@/lib/store";
 import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
@@ -63,11 +63,11 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
   const hasText = summary.texts.includes(chapterId);
   const cMarks = markedIds(s.marks, "c", subject.id);
   const markedC = summary.cards.filter((c) => c.lecture === chapterId && cMarks.has(c.id)).length;
-  // markierte Fragen dieses Kapitels – deine und die der Lerngruppe (auch Klausuraufgaben)
-  const qMarks = highlightedIn(useHighlightIndex(), subject.id);
-  const markedQ = new Set(
-    [...summary.items, ...summary.paperItems].filter((i) => i.lecture === chapterId && qMarks.has(i.id)).map((i) => i.id),
-  ).size;
+  // markierte Fragen dieses Kapitels – deine und die der Lerngruppe getrennt (auch Klausuraufgaben)
+  const { mine: myMarks, others: otherMarks } = splitMarks(highlightedIn(useHighlightIndex(), subject.id));
+  const inChapter = new Set([...summary.items, ...summary.paperItems].filter((i) => i.lecture === chapterId).map((i) => i.id));
+  const markedQ = [...inChapter].filter((id) => myMarks.has(id)).length;
+  const othersQ = [...inChapter].filter((id) => otherMarks.has(id)).length;
   const checkups = summary.items.filter((i) => i.lecture === chapterId && i.checkup);
   const checkupStatus = statusCounts(checkups.map((i) => s.items[itemKey(subject.id, i.id)]));
   const mcSet = summary.items.filter((i) => i.lecture === chapterId && i.mcSet);
@@ -94,7 +94,16 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           {
             href: `${base}/practice?mode=marked&lecture=${chapterId}`,
             icon: Bookmark,
-            label: `${markedQ} ${markedQ === 1 ? "markierte Frage" : "markierte Fragen"}`,
+            label: `${markedQ} ${markedQ === 1 ? "Frage" : "Fragen"} von dir markiert`,
+          },
+        ]
+      : []),
+    ...(othersQ
+      ? [
+          {
+            href: `${base}/practice?mode=others&lecture=${chapterId}`,
+            icon: Users,
+            label: `${othersQ} von anderen markiert`,
           },
         ]
       : []),

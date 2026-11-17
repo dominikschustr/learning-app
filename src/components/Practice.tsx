@@ -1,13 +1,13 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, PartyPopper, RotateCcw, Sigma, SkipForward } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, PartyPopper, RotateCcw, Sigma, SkipForward, Users } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { answerXp } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
 import { cloudConfigured } from "@/lib/cloud";
-import { currentMarkIndex, highlightedIn, toggleQuestionMark, useHighlights } from "@/lib/highlights";
+import { currentMarkIndex, highlightedIn, splitMarks, toggleQuestionMark, useHighlights } from "@/lib/highlights";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
 import type { Question, SubjectContent } from "@/lib/schema";
 import type { RenderedFormula } from "@/lib/tex";
@@ -51,7 +51,7 @@ const EMPTY: Partial<Record<PracticeMode, [string, string]>> = {
   papers: ["Keine Klausuraufgaben", "In den Probeklausuren gibt es zu diesem Kapitel keine Aufgaben."],
 };
 
-const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "quiz", "papers"];
+const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "quiz", "papers", "others"];
 
 export function Practice({
   content,
@@ -81,7 +81,7 @@ export function Practice({
       (typeof navigator !== "undefined" && !navigator.onLine),
   );
 
-  if (!hydrated || (mode === "marked" && !highlightsReady)) return <Skeleton className="h-96" />;
+  if (!hydrated || ((mode === "marked" || mode === "others") && !highlightsReady)) return <Skeleton className="h-96" />;
   return (
     <Session
       key={`${mode}-${lecture}-${picked}-${random}-${run}`}
@@ -140,7 +140,7 @@ function Session({
         items: useApp.getState().items,
         now: Date.now(),
         lecture,
-        marked: new Set(highlightedIn(currentMarkIndex(), subject.id).keys()),
+        marked: new Set(splitMarks(highlightedIn(currentMarkIndex(), subject.id))[mode === "others" ? "others" : "mine"].keys()),
         papers,
         ids,
         random,
@@ -325,14 +325,19 @@ function Session({
   }
 
   if (!queue.length) {
-    if (mode === "marked") {
+    if (mode === "marked" || mode === "others") {
       return (
         <div className="mx-auto max-w-lg py-16 text-center">
-          <Bookmark className="mx-auto size-12 text-accent" />
-          <h1 className="display text-4xl sm:text-5xl mt-4">Nichts markiert</h1>
+          {mode === "others" ? (
+            <Users className="mx-auto size-12 text-accent" />
+          ) : (
+            <Bookmark className="mx-auto size-12 text-accent" />
+          )}
+          <h1 className="display text-4xl sm:text-5xl mt-4">{mode === "others" ? "Noch nichts von anderen" : "Nichts markiert"}</h1>
           <p className="mt-2 text-muted">
-            Tippe beim Üben, in der Auswertung oder in der Aufgaben-Tabelle auf „Markieren“ (oder drücke M) – die
-            Frage landet dann hier, für dich und deine Lerngruppe.
+            {mode === "others"
+              ? "Sobald jemand aus deiner Lerngruppe eine Frage markiert, landet sie hier."
+              : "Tippe beim Üben, in der Auswertung oder in der Aufgaben-Tabelle auf „Markieren“ (oder drücke M) – die Frage landet dann hier."}
           </p>
           <div className="mt-6 flex justify-center gap-2">
             <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>

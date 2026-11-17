@@ -1,6 +1,6 @@
 "use client";
 
-import { Bookmark, Check, Minus, Play, X } from "lucide-react";
+import { Bookmark, Check, Minus, Play, Users, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
@@ -24,7 +24,7 @@ type Row = {
   points: number;
 };
 
-type StatusFilter = "all" | "open" | "done" | "wrong" | "marked";
+type StatusFilter = "all" | "open" | "done" | "wrong" | "marked" | "others";
 
 const STATUS: Record<ItemStatus, { label: string; color: string }> = {
   new: { label: "Offen", color: "var(--line-strong)" },
@@ -82,7 +82,8 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
     if (status === "open") return s === "new";
     if (status === "done") return s !== "new";
     if (status === "wrong") return s === "wrong";
-    if (status === "marked") return highlightedBy(r.q).length > 0;
+    if (status === "marked") return highlightedBy(r.q).some((h) => h.me);
+    if (status === "others") return highlightedBy(r.q).some((h) => !h.me);
     return true;
   };
 
@@ -98,8 +99,10 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
     })
     .filter((c) => c.n > 0);
   const current = chapterCounts.find((c) => c.id === chapter);
-  // Markierte Aufgaben (im gewählten Kapitel, von dir oder der Lerngruppe) – für den Filter
-  const highlightedCount = unique.filter((q) => (chapter === "all" || q.lecture === chapter) && highlightedBy(q).length).length;
+  // Markierte Aufgaben im gewählten Kapitel – von dir bzw. von der Lerngruppe – für die Filter
+  const inChapter = unique.filter((q) => chapter === "all" || q.lecture === chapter);
+  const myCount = inChapter.filter((q) => highlightedBy(q).some((h) => h.me)).length;
+  const othersCount = inChapter.filter((q) => highlightedBy(q).some((h) => !h.me)).length;
 
   const sel = new Set(selected);
   const toggle = (ids: string[], on: boolean) =>
@@ -160,13 +163,18 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
               {label}
             </FilterChip>
           ))}
-          {(highlightedCount > 0 || status === "marked") && (
+          {(myCount > 0 || status === "marked") && (
+            <FilterChip active={status === "marked"} onClick={() => setStatus("marked")} title="Aufgaben, die du markiert hast">
+              <Bookmark className="size-3.5" /> Von mir markiert · {myCount}
+            </FilterChip>
+          )}
+          {(othersCount > 0 || status === "others") && (
             <FilterChip
-              active={status === "marked"}
-              onClick={() => setStatus("marked")}
-              title="Aufgaben, die du oder jemand aus deiner Lerngruppe markiert hat"
+              active={status === "others"}
+              onClick={() => setStatus("others")}
+              title="Aufgaben, die jemand aus deiner Lerngruppe markiert hat"
             >
-              <Bookmark className="size-3.5" /> Markiert · {highlightedCount}
+              <Users className="size-3.5" /> Von anderen markiert · {othersCount}
             </FilterChip>
           )}
         </div>

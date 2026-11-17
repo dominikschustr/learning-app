@@ -164,5 +164,7 @@ describe("buildQueue – markierte Fragen der Lerngruppe", () => {
     expect(ids(buildQueue(opts))).toBe("paper-1,tf-1,tf-36");
     expect(ids(buildQueue({ ...opts, lecture: "b" }))).toBe("paper-1,tf-36");
     expect(buildQueue({ ...opts, marked: new Set() })).toHaveLength(0);
+    // „Von anderen markiert“ zieht genauso aus der übergebenen Auswahl
+    expect(ids(buildQueue({ ...opts, mode: "others" }))).toBe("paper-1,tf-1,tf-36");
   });
 });

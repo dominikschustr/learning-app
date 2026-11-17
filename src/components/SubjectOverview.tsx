@@ -21,6 +21,7 @@ import {
   Table2,
   Target,
   Trophy,
+  Users,
   Zap,
 } from "lucide-react";
 import { motion } from "motion/react";
@@ -29,7 +30,7 @@ import { useEffect, useState } from "react";
 import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
 import { subjectStats, type SubjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
-import { highlightedIn, highlightersOf, useHighlightIndex, whoText } from "@/lib/highlights";
+import { highlightedIn, highlightersOf, splitMarks, useHighlightIndex, whoText } from "@/lib/highlights";
 import { chapterBests, examScore, markedIds, useApp, useHydrated, type ExamRecord } from "@/lib/store";
 import { LevelBadge } from "./ChapterView";
 import { PaperChoice, type PaperChoiceTarget } from "./PaperChoice";
@@ -505,8 +506,9 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
   // Markierte Fragen – deine und die der Lerngruppe (auch reine Klausuraufgaben)
   const markIdx = useHighlightIndex();
   const pIds = new Set([...qIds, ...summary.paperItems.map((p) => p.id)]);
-  const marked = [...highlightedIn(markIdx, subject.id)].filter(([id]) => pIds.has(id));
-  const markers = highlightersOf(new Map(marked), marked.map(([id]) => id));
+  const { mine, others } = splitMarks(new Map([...highlightedIn(markIdx, subject.id)].filter(([id]) => pIds.has(id))));
+  const otherNames = highlightersOf(others, others.keys());
+  const fragen = (n: number) => `${n} ${n === 1 ? "Frage" : "Fragen"}`;
   const set = (pick: (i: SubjectSummary["items"][number]) => boolean) => {
     const qs = summary.items.filter(pick);
     const c = statusCounts(qs.map((i) => s.items[itemKey(subject.id, i.id)]));
@@ -524,13 +526,16 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
         { href: `${base}/practice?mode=due`, icon: RotateCcw, title: "Wiederholung", meta: st.due ? `${st.due} fällig` : "nichts fällig" },
         { href: `${base}/cards`, icon: Layers, title: "Karteikarten", meta: `${st.cardsDue} fällig · ${st.cardsNew} neu` },
         { href: `${base}/practice?mode=weak`, icon: Target, title: "Schwächen", meta: st.seen ? "unsicherste Fragen" : "nach ein paar Fragen" },
-        ...(marked.length
+        ...(mine.size
+          ? [{ href: `${base}/practice?mode=marked`, icon: Bookmark, title: "Meine markierten", meta: fragen(mine.size) }]
+          : []),
+        ...(others.size
           ? [
               {
-                href: `${base}/practice?mode=marked`,
-                icon: Bookmark,
-                title: "Markiert",
-                meta: `${marked.length} ${marked.length === 1 ? "Frage" : "Fragen"} · ${whoText(markers)}`,
+                href: `${base}/practice?mode=others`,
+                icon: Users,
+                title: "Von anderen markiert",
+                meta: `${fragen(others.size)} · ${whoText(otherNames)}`,
               },
             ]
           : []),

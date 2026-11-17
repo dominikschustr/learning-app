@@ -109,6 +109,21 @@ export function highlightedIn(
   return out;
 }
 
+/** Teilt markierte Fragen in eigene (du hast markiert) und die der anderen (mindestens jemand anderes hat markiert). */
+export function splitMarks(byId: Map<string, Highlighter[]>): {
+  mine: Map<string, Highlighter[]>;
+  others: Map<string, Highlighter[]>;
+} {
+  const mine = new Map<string, Highlighter[]>();
+  const others = new Map<string, Highlighter[]>();
+  for (const [id, who] of byId) {
+    if (who.some((h) => h.me)) mine.set(id, who);
+    const rest = who.filter((h) => !h.me);
+    if (rest.length) others.set(id, rest);
+  }
+  return { mine, others };
+}
+
 /** Wer in einer Auswahl von Fragen etwas markiert hat (ohne Doppelte, eigenes Konto zuerst). */
 export function highlightersOf(byId: Map<string, Highlighter[]>, ids: Iterable<string>): Highlighter[] {
   const out = new Map<string, Highlighter>();

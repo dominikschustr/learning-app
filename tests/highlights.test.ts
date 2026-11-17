@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { HighlightDoc } from "@/lib/cloud";
-import { highlightIndex, markIndex, whoSentence, whoText } from "@/lib/highlights";
+import { highlightIndex, markIndex, splitMarks, whoSentence, whoText } from "@/lib/highlights";
 
 const doc = (uid: string, name: string, items: string[]): HighlightDoc => ({ uid, name, items, at: 0 });
 
@@ -42,6 +42,14 @@ describe("Markierte Fragen der Lerngruppe", () => {
     expect(idx.has("c:acc:9")).toBe(false);
     // ohne lokale Markierungen bleibt es beim gemeinsamen Index
     expect(markIndex(docs, "me", {})).toBe(highlightIndex(docs, "me"));
+  });
+
+  it("trennt eigene Markierungen von denen der anderen", () => {
+    const { mine, others } = splitMarks(highlightIndex(docs, "me"));
+    expect([...mine.keys()]).toEqual(["q:acc:1"]);
+    expect([...others.keys()].sort()).toEqual(["q:acc:1", "q:acc:2"]);
+    // bei den anderen nur die anderen Namen
+    expect(others.get("q:acc:1")?.map((h) => h.name)).toEqual(["Anna", "Ben"]);
   });
 
   it("formuliert, wer markiert hat", () => {

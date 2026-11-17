@@ -131,9 +131,11 @@ geladen nur beim Öffnen der Rangliste. Name ändern, abmelden und Konto lösche
 **Fragen markieren – für dich und die Lerngruppe:** Es gibt eine einzige Markierung für Fragen: „Markieren“
 (Lesezeichen-Symbol, beim Üben auch Taste `M`, außerdem in der Aufgaben-Tabelle der Probeklausuren und in der
 Auswertung). Markierte Fragen sieht die ganze Lerngruppe: über der Frage steht „Adrian hat diese Frage markiert“,
-in der Aufgaben-Tabelle stehen die Namen und der Filter *Markiert* zeigt nur diese Aufgaben. Die Kachel *Markiert*
-auf der Fachseite (Training) bzw. der Link auf der Kapitelseite übt alle markierten Fragen – deine und die der
-anderen, auch reine Klausuraufgaben (`/practice?mode=marked`; alte Links mit `mode=highlighted` führen dorthin).
+in der Aufgaben-Tabelle stehen die Namen. Eigene und fremde Markierungen sind getrennte Kategorien: Kachel
+*Meine markierten* (`/practice?mode=marked`) und *Von anderen markiert* (`/practice?mode=others`) auf der Fachseite
+(Training), dazu je ein Link auf der Kapitelseite und die Filter *Von mir markiert* / *Von anderen markiert* in der
+Aufgaben-Tabelle – jeweils auch reine Klausuraufgaben. Haben du und jemand anderes dieselbe Frage markiert, steht
+sie in beiden. Alte Links mit `mode=highlighted` führen zu *Meine markierten*.
 Gespeichert wird je Konto in `highlights/{uid}` (Hinzufügen/Entfernen atomar in Firestore, damit sich zwei Geräte
 nicht überschreiben); geladen beim Start, beim Zurückkehren in die App und alle drei Minuten. Ohne Konto bleiben
 Markierungen lokal; frühere private Markierungen (`marks`, „q:…“) übernimmt die App nach dem Laden einmalig in die

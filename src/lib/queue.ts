@@ -2,20 +2,21 @@ import { inOwnSet, type Question } from "./schema";
 import { isDue, itemStatus, weakness, type ItemState } from "./srs";
 import { itemKey, shuffle } from "./utils";
 
-export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "mc" | "quiz" | "papers";
+export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "mc" | "quiz" | "papers" | "others";
 
 export const MODE_TITLE: Record<PracticeMode, string> = {
   smart: "Empfohlene Session",
   due: "Wiederholung",
   weak: "Schwächen-Training",
   lecture: "Vorlesung üben",
-  marked: "Markierte Fragen",
+  marked: "Meine markierten Fragen",
   new: "Neue Fragen",
   wrong: "Falsche wiederholen",
   checkup: "Check-up-Fragen",
   mc: "Multiple Choice",
   quiz: "Quiz",
   papers: "Klausuraufgaben",
+  others: "Von anderen markiert",
 };
 
 const SESSION_SIZE = 12;
@@ -30,7 +31,7 @@ export function buildQueue(opts: {
   items: Record<string, ItemState>;
   now: number;
   lecture?: string;
-  /** ids der Fragen, die du oder jemand aus der Lerngruppe markiert hat (für mode "marked") */
+  /** ids der markierten Fragen – für mode "marked" deine, für mode "others" die der Lerngruppe */
   marked?: Set<string>;
   /** Fragen der Probeklausuren in fester Reihenfolge (für mode "papers") */
   papers?: Question[];
@@ -77,7 +78,8 @@ export function buildQueue(opts: {
       const qs = (opts.papers ?? []).filter((q) => !opts.lecture || q.lecture === opts.lecture);
       return opts.random ? groupCases(shuffle(qs), qs) : qs;
     }
-    case "marked": {
+    case "marked":
+    case "others": {
       // alle markierten Fragen des Fachs (bzw. Kapitels) – auch reine Klausuraufgaben; Teilfragen eines Falls zusammen
       const pool = unique([...opts.questions, ...(opts.papers ?? [])]).filter(
         (q) => (!opts.lecture || q.lecture === opts.lecture) && opts.marked?.has(q.id),
