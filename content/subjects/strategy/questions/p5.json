@@ -1,0 +1,108 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p5-01",
+    "lecture": "f4",
+    "topic": "Diffusion of innovation – adoption barriers",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "too-good-to-go",
+    "prompt": "When Too Good To Go launched its platform, what impeded potential users from adopting it? Propose two factors influencing the pace of the diffusion of their innovative model and analyze how these factors evolved in terms of strength. (3 points)",
+    "modelAnswer": "Adoption barriers at launch: a two-sided platform with a chicken-and-egg problem – consumers only come if there are many offers nearby, businesses only list if there are buyers; partners were sceptical (selling food “about to be discarded” could damage their brand, uncertain extra revenue, effort to change routines); consumers faced uncertainty about quality and the content of the “magic bag” and had no habit of buying surplus food.\nFactor 1 – Network effects / critical mass (two-sided): weak at the start (handful of Copenhagen restaurants, few users) so diffusion was slow; it strengthened sharply after the 2016 winter (more surplus → more offers → more users → more partners) and is now strong in mature markets (Denmark 48 % penetration) but still weak where the base is small (USA 1 %, Ireland/Poland 7 %).\nFactor 2 – Legitimacy / perceived risk and compatibility with norms: low at first (fear of brand damage, food-safety doubts, food waste not a public priority); reinforced by an endorsement from a reputed sustainable restaurant (Amass), then by large retailers (Carrefour, Spar), B Corp certification, education campaigns (“Look, Smell, Taste”) and supportive regulation (French donation law, SDG 12.3). Now strong in Europe, still weak in markets with different cultural attitudes to food waste (China, India).\nOther acceptable factors: relative advantage/price (strengthened by inflation and Covid-19), observability/word of mouth among under-35s, simplicity of the app (trialability – free for consumers).\nLink to the course: in the introduction stage of the industry life cycle, demand is uncertain and buyers must be educated; once these barriers fall, growth accelerates (growth stage).",
+    "keyPoints": [
+      "Barriers named: chicken-and-egg (two-sided platform), partner scepticism/brand risk, consumer uncertainty",
+      "Factor 1 explained (e.g. network effects / critical mass)",
+      "Factor 2 explained (e.g. legitimacy, regulation, price advantage)",
+      "Evolution of each factor's strength over time with case evidence (Amass, 2016 winter, retailers, penetration data)",
+      "Differences between markets (Denmark vs. USA/Asia)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-02",
+    "lecture": "f3",
+    "topic": "PESTEL – macro drivers of the food-waste management industry",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "too-good-to-go",
+    "prompt": "At the macro level, what drivers are influencing the growth of the food waste management industry? Propose three key factors. (3 points)",
+    "modelAnswer": "Use PESTEL and pick three factors with a clear effect on growth:\n1) Political/Legal – regulation and public policy: UN SDG 12.3, French law obliging supermarkets to donate unsold food (2016), Italian tax incentives, campaigns in Germany and Denmark, state rules in California and New York → creates obligations and incentives for businesses to reduce or reroute waste, raises demand for solutions; but fragmented and less developed outside Europe.\n2) Socio-cultural – sustainability awareness: 73 % of consumers willing to change habits, millennials and Gen Z drive demand (56 % of users under 35), food insecurity makes cheap surplus food socially valuable → stronger consumer pull; cultural attitudes vary by country.\n3) Economic – rising food prices (inflation, Covid-19) make discounted food attractive to consumers, and businesses want to recoup costs of unsold stock → both sides gain economically.\nAlso acceptable: Environmental – food waste = 8 % of GHG emissions, water and land use, climate pressure and corporate ESG reporting; Technological – smartphones, apps, data analytics and logistics make matching surplus with demand cheap and scalable.\nConclusion: these drivers explain the expected growth of the market from $81bn (2024) to $152bn (2034); the strength of each driver differs by region, which matters for expansion.",
+    "keyPoints": [
+      "Three distinct PESTEL factors, not a list of six",
+      "Each with case evidence (laws, consumer data, inflation, emissions)",
+      "Explains how each driver increases growth (mechanism, not just a description)",
+      "Notes regional differences or link to market growth forecast"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-03",
+    "lecture": "f5",
+    "topic": "VRIO – Too Good To Go's resources",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "too-good-to-go",
+    "prompt": "Using a VRIO analysis, propose two resources or capabilities providing Too Good To Go with a competitive advantage. (4 points)",
+    "modelAnswer": "1) The two-sided network of partners and users (170,000 businesses, 85m users, high local density, e.g. Denmark 48 %): Valuable – more offers near each user and more buyers for each partner; lets it capture commissions and subscriptions; Rare – rivals are much smaller (ResQ Club) or niche (Karma premium restaurants, Olio peer-to-peer); Inimitable – network effects and local critical mass took years to build and are path dependent; switching is easy for single users, but a rival must win both sides at once in each city; Organized – app, partner onboarding, local teams, fee model (subscription + commission) → sustained competitive advantage (as long as density is maintained).\n2) The brand and mission-driven legitimacy (“the” anti-food-waste app; B Corp since 2019, education campaigns, lobbying, partnerships with governments, charities, Carrefour/Spar): Valuable – reassures sceptical partners, attracts sustainability-minded consumers and talent, opens doors with regulators (France entry); Rare – few rivals have such scale and recognition; Inimitable – built through history, first-mover position and trust (social complexity); Organized – impact reporting, policy team, campaigns, certification → competitive advantage, though the mission can be copied in words and must stay credible.\nAlternative acceptable: relationships with large retailers (B2B partnerships) or the operational capability to scale across markets (technology platform, data, local teams) – but the app technology alone is valuable and not rare/inimitable (easy to copy) → only competitive parity.\nA good answer applies the four questions in order and concludes on the type of advantage (parity, temporary, sustained).",
+    "keyPoints": [
+      "Resource 1 specified (e.g. two-sided network / local density)",
+      "Resource 2 specified (e.g. brand, mission legitimacy, retailer partnerships)",
+      "V, R, I, O each argued with case facts",
+      "Inimitability explained (network effects, history, social complexity, path dependence)",
+      "Conclusion on type of advantage; app technology alone = parity"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-04",
+    "lecture": "f8",
+    "topic": "Economic vs. social/environmental goals – stakeholder analysis",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "too-good-to-go",
+    "prompt": "Why and how do the economic, social, and environmental goals conflict for the company? Provide two examples of conflicts. Using a stakeholder analysis, provide two examples of ways these conflicts can be mitigated or resolved. (4 points)",
+    "modelAnswer": "Why: as a profit-making B Corp, Too Good To Go must generate revenue growth for investors (it only became profitable in 2023) while its legitimacy rests on reducing waste (environment) and offering affordable food (social). Revenues grow with the number of bags sold and fees – not necessarily with less waste.\nExamples of conflicts:\n1) Volume vs. prevention: the business model earns more when businesses have more surplus; real environmental impact means preventing waste upstream (better forecasting), which would shrink its supply and revenue. Partners might even over-produce to sell magic bags.\n2) Affordability vs. profitability: raising commissions, a premium consumer subscription or paid features improve margins but make bags more expensive or less accessible for low-income users and students – conflicting with the social mission.\nOther valid conflicts: international expansion and logistics (costs, emissions) vs. focus; serving large corporations (big volumes, revenue) vs. small businesses and consumers; donating surplus to food banks vs. selling it.\nStakeholder analysis (map interests and power): key stakeholders – consumers (price, quality), partner businesses (recover costs, brand), large retailers (volume, ESG reporting, compliance), investors (growth, profit), regulators/governments (waste reduction targets), NGOs/food banks (food for those in need), employees (mission).\nMitigation:\n1) Align revenue with impact for retailers: sell waste-tracking and reporting tools (paid by large partners' ESG budgets) so the company earns from prevention, not only from surplus – satisfies retailers and regulators and reduces dependence on volume; measure and publish impact (meals saved, CO2) to keep NGOs and regulators on board.\n2) Protect consumers and small partners: keep the consumer app free and bag prices capped at 25–50 % of value; differentiate fees (lower for small shops, higher for large chains); partner with food banks for what remains unsold; involve stakeholders in governance (B Corp standards, impact report). These moves keep legitimacy with high-interest stakeholders while securing profit with high-power ones (investors, large retailers).",
+    "keyPoints": [
+      "Why conflicts arise: revenue tied to surplus volume and fees vs. mission",
+      "Conflict 1 with case evidence (e.g. volume vs. waste prevention)",
+      "Conflict 2 with case evidence (e.g. affordability vs. premium/commissions)",
+      "Stakeholders identified with their interests/power",
+      "Two concrete mitigation measures linked to specific stakeholders"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-05",
+    "lecture": "f9",
+    "topic": "International expansion – effect on resources and capabilities",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "too-good-to-go",
+    "prompt": "What challenges and opportunities does international expansion present concerning the resources and capabilities you highlighted in question 3? (4 points)",
+    "modelAnswer": "Network (two-sided local density):\n• Challenge – network effects are local, not global: each new city/country starts from zero and needs critical mass on both sides (USA only 1 % penetration after years; Asia and Latin America even less developed); costly onboarding, local teams, logistics; local rivals (Karma, Olio, ResQ, delivery apps) may already hold the market.\n• Opportunity – the playbook built in Denmark/France can be replicated; large multinational retailers (Carrefour, Spar) can open several countries at once; scale spreads fixed costs of the technology platform; more data to improve matching.\nBrand and mission legitimacy:\n• Challenge – legitimacy is built on European norms and regulation (SDG 12.3, French law); in China or India attitudes to food waste and food safety differ, regulation of food safety and e-commerce is less developed or fragmented (US states), so the “magic bag” may not be understood or trusted; consumer education is costly; rapid growth can dilute culture and mission; a food-safety incident abroad would damage the brand everywhere.\n• Opportunity – the global B Corp/anti-waste brand helps enter new markets through governments and NGOs (as in France), attract partners and talent; growing global awareness and regulation (US cities, SDG) reinforce it.\nCourse link (internationalization): drivers (Yip) – market (similar young, sustainability-minded customers), cost (scale of the platform), government (regulation pushes adoption) – vs. the need for local adaptation (cultural, administrative, geographic distance). Recommendation: expand selectively to markets with supportive regulation and dense cities, with local partnerships (big retailers, authorities), while protecting the resources that make the advantage.",
+    "keyPoints": [
+      "Links back explicitly to the two resources from question 3",
+      "Challenges for each resource (local network effects, cultural/regulatory distance, dilution)",
+      "Opportunities for each resource (replicable playbook, multinational retailers, global brand)",
+      "Uses internationalization concepts (drivers, adaptation vs. standardization, distance)",
+      "Market-specific evidence (USA 1 %, China/India, France entry)"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-06",
+    "lecture": "f6",
+    "topic": "New services – data analytics and waste-management tools",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "too-good-to-go",
+    "prompt": "What are the key challenges associated with the data analytics and waste management services Too Good To Go is considering? (2 points)",
+    "modelAnswer": "1) Business-model and mission tension: helping partners prevent waste reduces the surplus that feeds the magic-bag marketplace – the new service may cannibalise the core revenue (commissions) and requires a new value proposition and pricing (B2B software/subscription instead of commissions).\n2) New capabilities and competition: data analytics and waste-tracking require different resources (software engineers, data scientists, enterprise sales, integration with retailers' IT/ERP systems, customer support) and put the company against specialised B2B players (waste-management and analytics firms, ERP providers); its current advantage (consumer network, brand) does not transfer automatically.\n3) Customer focus and data: over-reliance on large corporate clients could shift attention away from consumers and small businesses that made the platform successful; data sharing raises confidentiality and privacy issues (partners' sales and waste data, GDPR) and requires trust; complexity contradicts the simplicity of the app.\nAny two well-argued challenges get full marks; better answers note that the move can also reinforce the mission (prevention) and diversify revenue if managed as a separate offer.",
+    "keyPoints": [
+      "Challenge: cannibalisation / tension with marketplace model and mission",
+      "Challenge: new capabilities and B2B competitors",
+      "Challenge: dependence on large clients, data confidentiality, complexity",
+      "Brief reasoning, not just a list (2 points)"
+    ]
+  }
+]

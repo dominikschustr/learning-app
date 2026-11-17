@@ -1,0 +1,130 @@
+[
+  {
+    "id": "too-good-to-go",
+    "title": "Too Good To Go: the battle against food waste (mock exam, summarized)",
+    "text": [
+      "Too Good To Go is a Copenhagen-based app that lets restaurants, cafés, bakeries and supermarkets sell their unsold food at the end of the day to nearby consumers. Founded in 2015 by a group of Danish and French entrepreneurs, it operated by early 2024 in 19 countries with about 170,000 partner businesses and more than 85 million registered users. In 2023 it was profitable for the first time, saved 122 million meals (+46 % vs. 2022; one meal = 1 kg of food, i.e. about 2.5 kg of CO2 avoided) and it has been a certified B Corp since 2019. CEO Mette Lykke (former founder of Endomondo) joined in 2017.",
+      "The core offer is the “magic bag”: customers pay 25–50 % of the original retail value for a bag of fresh surplus food without knowing exactly what is in it. The app is free for consumers. Partners pay an annual subscription to be listed and a commission on each bag sold (in the UK: £39 per year and 25 % of the bag price, at least £1.09).",
+      "The start was difficult. With their own savings the founders built a prototype with a handful of Copenhagen restaurants, but many owners were sceptical about selling food that was about to be thrown away and feared damage to their brand; consumers' interest was uncertain. The team had to educate partners about extra revenue and growing demand for sustainable consumption. Credibility came when Amass, a renowned sustainable restaurant, joined, followed by bakeries and cafés. In the harsh winter of 2016 low foot traffic left businesses with more unsold food; they turned to the app to recover losses while consumers looked for cheap meals, and both sides of the platform grew fast. Denmark reached 48 % user penetration.",
+      "Growth across Europe and North America brought operational complexity: thousands of partners and millions of users, different food-waste practices, legal frameworks and consumer expectations, and large supermarket chains (e.g. Carrefour, 3.8m meals saved; Spar, 2.1m) that require robust technology, data management and customer support. Each market needs local teams, partnerships and adaptation. France – the first country to oblige supermarkets (2016) to donate unsold food – was entered through partnerships with local governments and national anti-waste campaigns; Carrefour and local restaurants joined within months. The company also partners with charities and food banks, runs education campaigns such as “Look, Smell, Taste” on best-before dates, and lobbies for better food-waste regulation.",
+      "Context: about one third of all food produced (1.3 billion tons a year) is wasted, accounting for about 8 % of greenhouse-gas emissions and large amounts of water and land; Europe wastes 58 million tons a year while millions face food insecurity. 73 % of consumers say they are willing to change habits to reduce their footprint; 56 % of the app's users are under 35. Inflation and Covid-19 raised food prices and made cheap meals attractive (e.g. UK, Spain). Regulation supports the model in Europe (UN SDG 12.3, French donation law, Italian tax incentives, campaigns in Germany and Denmark); the US is fragmented (state and city rules such as California and New York), and Asia and Latin America (e.g. China, India) have different attitudes to food waste and less developed rules on food safety, e-commerce and waste. The food-waste management market is forecast to grow from $81bn (2024) to $152bn (2034).",
+      "Competition: direct rivals include Olio (UK, peer-to-peer food sharing), Karma (Sweden, focus on premium restaurants, also in the UK and France) and ResQ Club (Finland/Nordics, smaller). Indirect competitors are food-delivery platforms (Uber Eats, Deliveroo, Just Eat), meal kits (HelloFresh) and quick-commerce grocery delivery (Gorillas, Getir), which target the same convenience-seeking, price-conscious consumers.",
+      "The way forward: management considers expansion into Asia and Latin America, a premium consumer subscription, and data-analytics and waste-management tools (food-waste tracking and reporting) sold to business partners for their ESG goals. Risks: alienating price-sensitive users with paid services, becoming over-dependent on large corporate clients at the expense of small businesses and consumers, losing the simplicity of the platform, and letting the drive for profit dilute the mission."
+    ],
+    "tables": [
+      {
+        "caption": "Table 1 – Users and partners in selected countries (2023)",
+        "head": [
+          "Country",
+          "Users",
+          "Users / population",
+          "Partners"
+        ],
+        "rows": [
+          [
+            "Denmark",
+            "2.8m",
+            "48 %",
+            "3,934"
+          ],
+          [
+            "Norway",
+            "2.0m",
+            "37 %",
+            "3,948"
+          ],
+          [
+            "Switzerland",
+            "2.0m",
+            "23 %",
+            "6,214"
+          ],
+          [
+            "Belgium",
+            "2.5m",
+            "22 %",
+            "7,360"
+          ],
+          [
+            "Netherlands",
+            "3.9m",
+            "22 %",
+            "9,524"
+          ],
+          [
+            "France",
+            "14.4m",
+            "21 %",
+            "37,009"
+          ],
+          [
+            "Austria",
+            "1.7m",
+            "19 %",
+            "6,440"
+          ],
+          [
+            "UK",
+            "12.1m",
+            "18 %",
+            "25,084"
+          ],
+          [
+            "Portugal",
+            "1.5m",
+            "15 %",
+            "3,780"
+          ],
+          [
+            "Italy",
+            "7.4m",
+            "13 %",
+            "24,346"
+          ],
+          [
+            "Spain",
+            "6.1m",
+            "13 %",
+            "17,011"
+          ],
+          [
+            "Germany",
+            "10.0m",
+            "12 %",
+            "18,961"
+          ],
+          [
+            "Sweden",
+            "1.0m",
+            "9 %",
+            "1,682"
+          ],
+          [
+            "Ireland",
+            "0.3m",
+            "7 %",
+            "1,350"
+          ],
+          [
+            "Poland",
+            "2.6m",
+            "7 %",
+            "4,549"
+          ],
+          [
+            "USA",
+            "4.1m",
+            "1 %",
+            "9,513"
+          ],
+          [
+            "Total",
+            "70.3m",
+            "9 %",
+            "171,192"
+          ]
+        ]
+      }
+    ]
+  }
+]
