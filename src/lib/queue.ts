@@ -2,7 +2,7 @@ import { inOwnSet, type Question } from "./schema";
 import { isDue, itemStatus, weakness, type ItemState } from "./srs";
 import { itemKey, shuffle } from "./utils";
 
-export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "mc" | "quiz" | "papers" | "highlighted";
+export type PracticeMode = "smart" | "due" | "weak" | "lecture" | "marked" | "new" | "wrong" | "checkup" | "mc" | "quiz" | "papers";
 
 export const MODE_TITLE: Record<PracticeMode, string> = {
   smart: "Empfohlene Session",
@@ -16,7 +16,6 @@ export const MODE_TITLE: Record<PracticeMode, string> = {
   mc: "Multiple Choice",
   quiz: "Quiz",
   papers: "Klausuraufgaben",
-  highlighted: "Hervorgehobene Fragen",
 };
 
 const SESSION_SIZE = 12;
@@ -31,10 +30,8 @@ export function buildQueue(opts: {
   items: Record<string, ItemState>;
   now: number;
   lecture?: string;
-  /** ids der markierten Fragen (für mode "marked") */
+  /** ids der Fragen, die du oder jemand aus der Lerngruppe markiert hat (für mode "marked") */
   marked?: Set<string>;
-  /** ids der Fragen, die jemand aus der Lerngruppe hervorgehoben hat (für mode "highlighted") */
-  highlighted?: Set<string>;
   /** Fragen der Probeklausuren in fester Reihenfolge (für mode "papers") */
   papers?: Question[];
   /** gezielt ausgewählte Klausuraufgaben (mode "papers", aus der Aufgabentabelle) – in dieser Reihenfolge */
@@ -80,12 +77,10 @@ export function buildQueue(opts: {
       const qs = (opts.papers ?? []).filter((q) => !opts.lecture || q.lecture === opts.lecture);
       return opts.random ? groupCases(shuffle(qs), qs) : qs;
     }
-    case "marked":
-      return shuffle(questions.filter((q) => opts.marked?.has(q.id)));
-    case "highlighted": {
-      // alle hervorgehobenen Fragen des Fachs (bzw. Kapitels) – auch reine Klausuraufgaben; Teilfragen eines Falls zusammen
+    case "marked": {
+      // alle markierten Fragen des Fachs (bzw. Kapitels) – auch reine Klausuraufgaben; Teilfragen eines Falls zusammen
       const pool = unique([...opts.questions, ...(opts.papers ?? [])]).filter(
-        (q) => (!opts.lecture || q.lecture === opts.lecture) && opts.highlighted?.has(q.id),
+        (q) => (!opts.lecture || q.lecture === opts.lecture) && opts.marked?.has(q.id),
       );
       return groupCases(shuffle(pool), pool);
     }

@@ -1,6 +1,6 @@
 rules_version = '2';
 
-// Regeln für Lernwerk (Konten, Synchronisation, Rangliste, Hervorhebungen, Mitteilungen). Werden bei jedem Push auf main
+// Regeln für Lernwerk (Konten, Synchronisation, Rangliste, markierte Fragen, Mitteilungen). Werden bei jedem Push auf main
 // automatisch veröffentlicht (.github/workflows/deploy.yml → scripts/deploy-rules.mjs). Siehe README.
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -36,7 +36,7 @@ service cloud.firestore {
       allow delete: if isOwner(uid);
     }
 
-    // Hervorhebungen: Fragen, die ein Konto für seine Lerngruppe markiert hat („Dominik hat die Frage hervorgehoben“).
+    // Markierte Fragen: Fragen, die ein Konto für seine Lerngruppe markiert hat („Adrian hat diese Frage markiert“).
     // Alle Angemeldeten sehen alle, ändern nur die eigenen. items = Schlüssel der Fragen (wie die Lesezeichen).
     match /highlights/{uid} {
       allow read: if signedIn();

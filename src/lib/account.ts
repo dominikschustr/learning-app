@@ -35,7 +35,7 @@ export async function signOut(force = false): Promise<boolean> {
   return true;
 }
 
-/** Konto samt Lernstand, Ranglisten-Eintrag und Hervorhebungen endgültig löschen. */
+/** Konto samt Lernstand, Ranglisten-Eintrag und markierten Fragen endgültig löschen. */
 export async function deleteAccount(password: string): Promise<void> {
   const token = await reauthenticate(password);
   const uid = useAuth.getState().session!.uid;

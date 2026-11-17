@@ -122,28 +122,28 @@ describe.skipIf(!EMULATOR || !AUTH)("Konten und Firestore-Regeln", () => {
     expect(e).toMatchObject({ name: "Ben", weekXp: 0, week: null });
   });
 
-  it("Hervorhebungen: alle sehen alle, jedes Konto ändert nur die eigenen", async () => {
-    await cloud.highlightSet(anna.uid, anna.token, "Anna", "q:acc:1", true);
-    await cloud.highlightSet(anna.uid, anna.token, "Anna", "q:acc:2", true);
-    // doppelt hervorheben ändert nichts, zurücknehmen entfernt genau diese Frage
-    await cloud.highlightSet(anna.uid, anna.token, "Anna", "q:acc:1", true);
-    await cloud.highlightSet(anna.uid, anna.token, "Anna", "q:acc:2", false);
-    await cloud.highlightSet(ben.uid, ben.token, "Ben", "q:acc:1", true);
+  it("Markierte Fragen: alle sehen alle, jedes Konto ändert nur die eigenen", async () => {
+    // mehrere auf einmal (Übernahme lokaler Markierungen nach dem Anmelden)
+    await cloud.highlightSet(anna.uid, anna.token, "Anna", ["q:acc:1", "q:acc:2"], true);
+    // doppelt markieren ändert nichts, zurücknehmen entfernt genau diese Frage
+    await cloud.highlightSet(anna.uid, anna.token, "Anna", ["q:acc:1"], true);
+    await cloud.highlightSet(anna.uid, anna.token, "Anna", ["q:acc:2"], false);
+    await cloud.highlightSet(ben.uid, ben.token, "Ben", ["q:acc:1"], true);
     const list = await cloud.highlightList(ben.token);
     expect(list.find((h) => h.uid === anna.uid)).toMatchObject({ name: "Anna", items: ["q:acc:1"] });
     expect(list.find((h) => h.uid === ben.uid)?.items).toEqual(["q:acc:1"]);
 
-    // Umbenennen zieht den Namen nach; ohne Hervorhebungen entsteht kein leerer Eintrag
+    // Umbenennen zieht den Namen nach; ohne Markierungen entsteht kein leerer Eintrag
     await cloud.highlightRename(anna.uid, anna.token, "Anna M.");
     expect((await cloud.highlightList(anna.token)).find((h) => h.uid === anna.uid)?.name).toBe("Anna M.");
 
     // ohne Anmeldung nichts sichtbar; fremde Einträge weder ändern noch löschen
     expect(await raw("GET", "highlights")).toBe(403);
-    await expect(cloud.highlightSet(anna.uid, ben.token, "Hacker", "q:acc:9", true)).rejects.toThrow();
+    await expect(cloud.highlightSet(anna.uid, ben.token, "Hacker", ["q:acc:9"], true)).rejects.toThrow();
     expect(await raw("DELETE", `highlights/${anna.uid}`, ben.token)).toBe(403);
     // ungültige Felder werden abgelehnt
     expect(await raw("PATCH", `highlights/${ben.uid}`, ben.token, { fields: { name: { stringValue: "Ben" }, items: { stringValue: "x" } } })).toBe(403);
-    await expect(cloud.highlightSet(ben.uid, ben.token, "x".repeat(25), "q:acc:3", true)).rejects.toThrow();
+    await expect(cloud.highlightSet(ben.uid, ben.token, "x".repeat(25), ["q:acc:3"], true)).rejects.toThrow();
 
     await cloud.highlightDelete(ben.uid, ben.token);
     expect((await cloud.highlightList(anna.token)).map((h) => h.uid)).toEqual([anna.uid]);

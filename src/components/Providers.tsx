@@ -24,7 +24,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   // Automatische Synchronisation erst, wenn der lokale Stand geladen ist
   useEffect(() => (hydrated ? startAutoSync() : undefined), [hydrated]);
   useEffect(() => (hydrated ? startAutoPublish() : undefined), [hydrated]);
-  // Hervorhebungen der Lerngruppe laden und aktuell halten
+  // Markierte Fragen der Lerngruppe laden und aktuell halten
   useEffect(() => (hydrated ? startHighlights() : undefined), [hydrated]);
   // Erinnerung ans Tagesziel: Abo dieses Geräts beim Start (und nach Kontowechsel) prüfen und melden
   const uid = useAuth((s) => s.session?.uid);

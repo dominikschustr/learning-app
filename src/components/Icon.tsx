@@ -1,4 +1,5 @@
 import {
+  Bookmark,
   Brain,
   CalendarCheck,
   Crown,
@@ -21,6 +22,7 @@ import {
 } from "lucide-react";
 
 const ICONS = {
+  bookmark: Bookmark,
   brain: Brain,
   "calendar-check": CalendarCheck,
   crown: Crown,

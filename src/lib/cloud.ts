@@ -6,7 +6,7 @@ import type { Entry, Stats } from "./ranking";
  * Jede Anfrage trägt das ID-Token des angemeldeten Kontos; was erlaubt ist, regelt firestore.rules:
  * - progress/{uid}: Lernstand als JSON mit Versionsnummer – nur das eigene Konto darf lesen und schreiben.
  * - users/{uid}: Name und Stand für die Rangliste – alle Angemeldeten dürfen lesen, nur das eigene Konto schreiben.
- * - highlights/{uid}: Fragen, die ein Konto für alle hervorgehoben hat – alle Angemeldeten lesen, nur das eigene Konto schreibt.
+ * - highlights/{uid}: Fragen, die ein Konto für seine Lerngruppe markiert hat – alle Angemeldeten lesen, nur das eigene Konto schreibt.
  */
 
 const env = (k: string) => (typeof process !== "undefined" ? process.env[k] : undefined);
@@ -219,12 +219,12 @@ export async function pushDelete(id: string, token: string): Promise<void> {
   if (!res.ok && res.status !== 404 && res.status !== 403) await fail(res, "Erinnerung entfernen");
 }
 
-// ---------- Hervorhebungen für die Lerngruppe ----------
+// ---------- Markierte Fragen der Lerngruppe ----------
 
-/** Fragen, die ein Konto für alle hervorgehoben hat (items = markKey, z. B. „q:accounting:t3-12“). */
+/** Fragen, die ein Konto für seine Lerngruppe markiert hat (items = markKey, z. B. „q:accounting:t3-12“). */
 export type HighlightDoc = { uid: string; name: string; items: string[]; at: number };
 
-/** Alle Hervorhebungen aller Konten. */
+/** Alle Markierungen aller Konten. */
 export async function highlightList(token: string): Promise<HighlightDoc[]> {
   const out: HighlightDoc[] = [];
   let pageToken = "";
@@ -254,12 +254,12 @@ export async function highlightList(token: string): Promise<HighlightDoc[]> {
 }
 
 /**
- * Eine Frage für alle hervorheben (on) oder die Hervorhebung zurücknehmen. Das Hinzufügen bzw. Entfernen
+ * Fragen für die Lerngruppe markieren (on) oder die Markierung zurücknehmen. Das Hinzufügen bzw. Entfernen
  * passiert in Firestore selbst (appendMissingElements/removeAllFromArray) – so überschreiben sich zwei Geräte
  * desselben Kontos nicht gegenseitig.
  */
-export async function highlightSet(uid: string, token: string, name: string, key: string, on: boolean): Promise<void> {
-  const values = { values: [{ stringValue: key }] };
+export async function highlightSet(uid: string, token: string, name: string, keys: string[], on: boolean): Promise<void> {
+  const values = { values: keys.map((k) => ({ stringValue: k })) };
   const res = await call(token, "POST", `${firebaseSettings().root}:commit`, {}, {
     writes: [
       {
@@ -272,10 +272,10 @@ export async function highlightSet(uid: string, token: string, name: string, key
       },
     ],
   });
-  if (!res.ok) await fail(res, "Hervorheben");
+  if (!res.ok) await fail(res, "Markieren");
 }
 
-/** Namen in den eigenen Hervorhebungen nachziehen (nach dem Umbenennen). Gibt es noch keine, passiert nichts. */
+/** Namen in den eigenen Markierungen nachziehen (nach dem Umbenennen). Gibt es noch keine, passiert nichts. */
 export async function highlightRename(uid: string, token: string, name: string): Promise<void> {
   const res = await call(token, "POST", `${firebaseSettings().root}:commit`, {}, {
     writes: [

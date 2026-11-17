@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Highlighter, Minus, Play, X } from "lucide-react";
+import { Bookmark, Check, Minus, Play, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
@@ -9,7 +9,7 @@ import { itemStatus, type ItemStatus } from "@/lib/srs";
 import { useHighlightIndex, whoText } from "@/lib/highlights";
 import { markKey, useApp } from "@/lib/store";
 import { cn, itemKey } from "@/lib/utils";
-import { HighlightButton } from "./HighlightButton";
+import { MarkButton } from "./MarkButton";
 import { fmtPoints, slotLabel } from "./Papers";
 import { Bar, ButtonLink } from "./ui";
 
@@ -24,7 +24,7 @@ type Row = {
   points: number;
 };
 
-type StatusFilter = "all" | "open" | "done" | "wrong" | "highlighted";
+type StatusFilter = "all" | "open" | "done" | "wrong" | "marked";
 
 const STATUS: Record<ItemStatus, { label: string; color: string }> = {
   new: { label: "Offen", color: "var(--line-strong)" },
@@ -82,7 +82,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
     if (status === "open") return s === "new";
     if (status === "done") return s !== "new";
     if (status === "wrong") return s === "wrong";
-    if (status === "highlighted") return highlightedBy(r.q).length > 0;
+    if (status === "marked") return highlightedBy(r.q).length > 0;
     return true;
   };
 
@@ -98,7 +98,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
     })
     .filter((c) => c.n > 0);
   const current = chapterCounts.find((c) => c.id === chapter);
-  // Hervorgehobene Aufgaben (im gewählten Kapitel) – für den Filter
+  // Markierte Aufgaben (im gewählten Kapitel, von dir oder der Lerngruppe) – für den Filter
   const highlightedCount = unique.filter((q) => (chapter === "all" || q.lecture === chapter) && highlightedBy(q).length).length;
 
   const sel = new Set(selected);
@@ -160,13 +160,13 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
               {label}
             </FilterChip>
           ))}
-          {(highlightedCount > 0 || status === "highlighted") && (
+          {(highlightedCount > 0 || status === "marked") && (
             <FilterChip
-              active={status === "highlighted"}
-              onClick={() => setStatus("highlighted")}
-              title="Aufgaben, die du oder jemand aus deiner Lerngruppe hervorgehoben hat"
+              active={status === "marked"}
+              onClick={() => setStatus("marked")}
+              title="Aufgaben, die du oder jemand aus deiner Lerngruppe markiert hat"
             >
-              <Highlighter className="size-3.5" /> Hervorgehoben · {highlightedCount}
+              <Bookmark className="size-3.5" /> Markiert · {highlightedCount}
             </FilterChip>
           )}
         </div>
@@ -242,10 +242,10 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                           </span>
                           {who.length > 0 && (
                             <span
-                              title={`Hervorgehoben von ${who.map((h) => (h.me ? "dir" : h.name)).join(", ")}`}
-                              className="mt-1.5 inline-flex max-w-full items-center gap-1 rounded-full bg-warn-soft px-2 py-0.5 text-xs font-semibold text-warn"
+                              title={`Markiert von ${who.map((h) => (h.me ? "dir" : h.name)).join(", ")}`}
+                              className="mt-1.5 inline-flex max-w-full items-center gap-1 rounded-full bg-accent/10 px-2 py-0.5 text-xs font-semibold text-accent"
                             >
-                              <Highlighter className="size-3 shrink-0" />
+                              <Bookmark className="size-3 shrink-0" fill="currentColor" />
                               <span className="truncate">{whoText(who)}</span>
                             </span>
                           )}
@@ -265,7 +265,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                         </td>
                         <td className="w-12 py-2 pr-3 text-right sm:w-[5.5rem]">
                           <span className="inline-flex items-center justify-end gap-0.5 max-sm:flex-col-reverse">
-                            <HighlightButton subjectId={subject.id} id={r.q.id} label={false} className="size-9" />
+                            <MarkButton kind="q" subjectId={subject.id} id={r.q.id} label={false} className="size-9" />
                             <Link
                               href={practiceHref([r.q.id])}
                               onClick={(e) => e.stopPropagation()}

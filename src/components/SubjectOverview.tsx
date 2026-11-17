@@ -9,7 +9,6 @@ import {
   CheckCircle2,
   ClipboardCheck,
   FileText,
-  Highlighter,
   History,
   Info,
   Layers,
@@ -502,13 +501,12 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
   const base = `/s/${subject.id}`;
   const qIds = new Set(summary.items.map((i) => i.id));
   const cIds = new Set(summary.cards.map((c) => c.id));
-  const markedQ = [...markedIds(s.marks, "q", subject.id)].filter((id) => qIds.has(id)).length;
   const markedC = [...markedIds(s.marks, "c", subject.id)].filter((id) => cIds.has(id)).length;
-  // Hervorgehobene Fragen der Lerngruppe (auch reine Klausuraufgaben)
-  const highlightIdx = useHighlightIndex();
+  // Markierte Fragen – deine und die der Lerngruppe (auch reine Klausuraufgaben)
+  const markIdx = useHighlightIndex();
   const pIds = new Set([...qIds, ...summary.paperItems.map((p) => p.id)]);
-  const highlighted = [...highlightedIn(highlightIdx, subject.id)].filter(([id]) => pIds.has(id));
-  const highlighters = highlightersOf(new Map(highlighted), highlighted.map(([id]) => id));
+  const marked = [...highlightedIn(markIdx, subject.id)].filter(([id]) => pIds.has(id));
+  const markers = highlightersOf(new Map(marked), marked.map(([id]) => id));
   const set = (pick: (i: SubjectSummary["items"][number]) => boolean) => {
     const qs = summary.items.filter(pick);
     const c = statusCounts(qs.map((i) => s.items[itemKey(subject.id, i.id)]));
@@ -526,13 +524,13 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
         { href: `${base}/practice?mode=due`, icon: RotateCcw, title: "Wiederholung", meta: st.due ? `${st.due} fällig` : "nichts fällig" },
         { href: `${base}/cards`, icon: Layers, title: "Karteikarten", meta: `${st.cardsDue} fällig · ${st.cardsNew} neu` },
         { href: `${base}/practice?mode=weak`, icon: Target, title: "Schwächen", meta: st.seen ? "unsicherste Fragen" : "nach ein paar Fragen" },
-        ...(highlighted.length
+        ...(marked.length
           ? [
               {
-                href: `${base}/practice?mode=highlighted`,
-                icon: Highlighter,
-                title: "Hervorgehoben",
-                meta: `${highlighted.length} ${highlighted.length === 1 ? "Frage" : "Fragen"} · ${whoText(highlighters)}`,
+                href: `${base}/practice?mode=marked`,
+                icon: Bookmark,
+                title: "Markiert",
+                meta: `${marked.length} ${marked.length === 1 ? "Frage" : "Fragen"} · ${whoText(markers)}`,
               },
             ]
           : []),
@@ -564,9 +562,6 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
   const links = [
     ...(summary.formulas.length ? [{ href: `${base}/formulas`, icon: Sigma, label: "Formelübersicht" }] : []),
     ...(summary.frameworks.length ? [{ href: `${base}/frameworks`, icon: LayoutGrid, label: "Framework-Übersicht" }] : []),
-    ...(markedQ
-      ? [{ href: `${base}/practice?mode=marked`, icon: Bookmark, label: `${markedQ} ${markedQ === 1 ? "markierte Frage" : "markierte Fragen"}` }]
-      : []),
     ...(markedC
       ? [{ href: `${base}/cards?marked=1`, icon: Bookmark, label: `${markedC} ${markedC === 1 ? "markierte Karte" : "markierte Karten"}` }]
       : []),

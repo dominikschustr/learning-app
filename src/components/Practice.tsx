@@ -1,25 +1,23 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Bookmark, Highlighter, PartyPopper, RotateCcw, Sigma, SkipForward } from "lucide-react";
+import { ArrowLeft, ArrowRight, Bookmark, PartyPopper, RotateCcw, Sigma, SkipForward } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { answerXp } from "@/lib/gamification";
 import { gradeShortAnswer, selfGrade } from "@/lib/grade";
-import { useAuth } from "@/lib/auth";
 import { cloudConfigured } from "@/lib/cloud";
-import { highlightIndex, highlightedIn, toggleHighlight, useHighlights } from "@/lib/highlights";
+import { currentMarkIndex, highlightedIn, toggleQuestionMark, useHighlights } from "@/lib/highlights";
 import { MODE_TITLE, buildQueue, optionOrder, type PracticeMode } from "@/lib/queue";
 import type { Question, SubjectContent } from "@/lib/schema";
 import type { RenderedFormula } from "@/lib/tex";
 import { gradeMC, gradeTF, shortPassed, toggleOption, type MCResult } from "@/lib/scoring";
-import { markKey, markedIds, useApp, useHydrated, type ShortGrade } from "@/lib/store";
+import { markKey, useApp, useHydrated, type ShortGrade } from "@/lib/store";
 import { announce, celebrate } from "@/lib/toast";
 import { refreshNow } from "@/lib/useNow";
 import { cn, pct } from "@/lib/utils";
 import { FormulaDrawer, sideBySide } from "./FormulaDrawer";
-import { HighlightButton, HighlightNote } from "./HighlightButton";
-import { MarkButton } from "./MarkButton";
+import { MarkButton, MarkNote } from "./MarkButton";
 import { Explanation, MCView, ShortInput, ShortResult, TFView, useCaseOf } from "./Questions";
 import { SessionBar, XpFloat } from "./SessionBar";
 import { Button, ButtonLink, Skeleton } from "./ui";
@@ -53,7 +51,7 @@ const EMPTY: Partial<Record<PracticeMode, [string, string]>> = {
   papers: ["Keine Klausuraufgaben", "In den Probeklausuren gibt es zu diesem Kapitel keine Aufgaben."],
 };
 
-const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "quiz", "papers", "highlighted"];
+const MODES: PracticeMode[] = ["smart", "due", "weak", "lecture", "marked", "new", "wrong", "checkup", "mc", "quiz", "papers"];
 
 export function Practice({
   content,
@@ -67,13 +65,14 @@ export function Practice({
 }) {
   const hydrated = useHydrated();
   const params = useSearchParams();
-  const raw = params.get("mode") as PracticeMode;
+  // „highlighted“: alte Links aus der Zeit, als Hervorheben und Markieren getrennt waren
+  const raw = (params.get("mode") === "highlighted" ? "marked" : params.get("mode")) as PracticeMode;
   const mode = MODES.includes(raw) ? raw : "smart";
   const lecture = params.get("lecture") ?? undefined;
   const picked = params.get("q") ?? "";
   const random = params.get("order") === "random";
   const [run, setRun] = useState(0);
-  // Hervorgehobene Fragen: erst starten, wenn die Liste der Lerngruppe da ist (oder nicht geladen werden kann)
+  // Markierte Fragen: erst starten, wenn die Liste der Lerngruppe da ist (oder nicht geladen werden kann)
   const highlightsReady = useHighlights(
     (s) =>
       s.loadedAt !== null ||
@@ -82,7 +81,7 @@ export function Practice({
       (typeof navigator !== "undefined" && !navigator.onLine),
   );
 
-  if (!hydrated || (mode === "highlighted" && !highlightsReady)) return <Skeleton className="h-96" />;
+  if (!hydrated || (mode === "marked" && !highlightsReady)) return <Skeleton className="h-96" />;
   return (
     <Session
       key={`${mode}-${lecture}-${picked}-${random}-${run}`}
@@ -141,10 +140,7 @@ function Session({
         items: useApp.getState().items,
         now: Date.now(),
         lecture,
-        marked: markedIds(useApp.getState().marks, "q", subject.id),
-        highlighted: new Set(
-          highlightedIn(highlightIndex(useHighlights.getState().docs, useAuth.getState().session?.uid), subject.id).keys(),
-        ),
+        marked: new Set(highlightedIn(currentMarkIndex(), subject.id).keys()),
         papers,
         ids,
         random,
@@ -295,11 +291,7 @@ function Session({
       // Ergebnisfelder von Rechenaufgaben: Enter prüft, Buchstaben sind Eingabe
       if (e.metaKey || e.ctrlKey || e.altKey || inText || tag === "INPUT") return;
       if (e.key === "m") {
-        useApp.getState().toggleMark(markKey("q", subject.id, entry.q.id));
-        return;
-      }
-      if (e.key === "h") {
-        void toggleHighlight(markKey("q", subject.id, entry.q.id));
+        void toggleQuestionMark(markKey("q", subject.id, entry.q.id));
         return;
       }
       if (e.key === "s") {
@@ -333,34 +325,14 @@ function Session({
   }
 
   if (!queue.length) {
-    if (mode === "highlighted") {
-      return (
-        <div className="mx-auto max-w-lg py-16 text-center">
-          <Highlighter className="mx-auto size-12 text-warn" />
-          <h1 className="display text-4xl sm:text-5xl mt-4">Noch nichts hervorgehoben</h1>
-          <p className="mt-2 text-muted">
-            Tippe beim Üben, in der Auswertung oder in der Aufgaben-Tabelle auf den Textmarker (oder drücke H) – die
-            Frage landet dann hier, für dich und deine Lerngruppe.
-          </p>
-          <div className="mt-6 flex justify-center gap-2">
-            <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>
-              Jetzt üben
-            </ButtonLink>
-            <ButtonLink variant="secondary" href={home}>
-              Zurück
-            </ButtonLink>
-          </div>
-        </div>
-      );
-    }
     if (mode === "marked") {
       return (
         <div className="mx-auto max-w-lg py-16 text-center">
           <Bookmark className="mx-auto size-12 text-accent" />
           <h1 className="display text-4xl sm:text-5xl mt-4">Nichts markiert</h1>
           <p className="mt-2 text-muted">
-            Tippe beim Üben oder in der Test-Auswertung auf „Markieren“ (oder drücke M) – die Frage landet dann hier
-            zum gezielten Wiederholen.
+            Tippe beim Üben, in der Auswertung oder in der Aufgaben-Tabelle auf „Markieren“ (oder drücke M) – die
+            Frage landet dann hier, für dich und deine Lerngruppe.
           </p>
           <div className="mt-6 flex justify-center gap-2">
             <ButtonLink href={lecture ? `${base}/practice?mode=lecture&lecture=${lecture}` : `${base}/practice?mode=smart`}>
@@ -440,7 +412,6 @@ function Session({
               <Sigma className="size-4" /> Formeln
             </button>
           )}
-          <HighlightButton subjectId={subject.id} id={q.id} shortcut="H" />
           <MarkButton kind="q" subjectId={subject.id} id={q.id} shortcut="M" />
         </span>
       </div>
@@ -465,7 +436,7 @@ function Session({
               <RotateCcw className="size-3" /> Zweiter Versuch
             </span>
           )}
-          <HighlightNote subjectId={subject.id} id={q.id} className={cn("mb-3", entry.retry && "ml-2")} />
+          <MarkNote subjectId={subject.id} id={q.id} className={cn("mb-3", entry.retry && "ml-2")} />
           <XpFloat amount={lastXp.amount} trigger={revealed && !restored ? lastXp.n : 0} />
 
           {q.type === "mc" && (
@@ -613,7 +584,7 @@ function Summary({
       {mistakes.length > 0 && (
         <div className="card mt-6 p-5 text-left">
           <p className="font-semibold">Diese Fragen solltest du dir nochmal ansehen</p>
-          <p className="text-sm text-muted">Mit dem Lesezeichen merkst du sie dir für später vor.</p>
+          <p className="text-sm text-muted">Markiere sie, um sie später gezielt zu wiederholen.</p>
           <ul className="mt-3 space-y-2 text-sm text-ink-2">
             {mistakes.map((q) => (
               <li key={q.id} className="flex items-start gap-2">

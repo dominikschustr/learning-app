@@ -9,7 +9,7 @@ export type Toast = {
   title: string;
   body?: string;
   icon?: string;
-  /** Überschrift statt der zur Art passenden (z. B. „Hervorheben“) */
+  /** Überschrift statt der zur Art passenden (z. B. „Markieren“) */
   eyebrow?: string;
 };
 

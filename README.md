@@ -58,8 +58,8 @@ Die App läuft nur mit Konto. Konten, Lernstände und Rangliste liegen in einem 
    `src/config.ts` eintragen.
 
 Was die Regeln sicherstellen: Den Lernstand (`progress/{uid}`) kann nur das eigene Konto lesen und schreiben;
-die Rangliste (`users/{uid}`: Name, XP, Tagesstand, Tagesziel, Streak) und die Hervorhebungen
-(`highlights/{uid}`: Name und hervorgehobene Fragen) sehen alle Angemeldeten, ändern kann jedes Konto nur den
+die Rangliste (`users/{uid}`: Name, XP, Tagesstand, Tagesziel, Streak) und die markierten Fragen
+(`highlights/{uid}`: Name und markierte Fragen) sehen alle Angemeldeten, ändern kann jedes Konto nur den
 eigenen Eintrag.
 
 ### 3. Mitteilungen (Tagesziel und Rangliste)
@@ -128,14 +128,16 @@ Woche); die XP je Tag werden dafür pro Gerät mitgezählt und synchronisiert. S
 `firestore.rules` die Wochenfelder nicht kennen, meldet die App automatisch ohne sie weiter. Gemeldet wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur bei Änderungen),
 geladen nur beim Öffnen der Rangliste. Name ändern, abmelden und Konto löschen unter *Einstellungen*.
 
-**Fragen für die Lerngruppe hervorheben:** Das Textmarker-Symbol (beim Üben auch Taste `H`, in der
-Aufgaben-Tabelle der Probeklausuren und in der Auswertung neben dem Lesezeichen) hebt eine Frage für alle hervor.
-Die anderen sehen dann über der Frage und in der Tabelle „Dominik hat diese Frage hervorgehoben“; der Filter
-*Hervorgehoben* in der Aufgaben-Tabelle zeigt nur diese Aufgaben. Nur die hervorgehobenen Fragen lernen: Kachel
-*Hervorgehoben* unter „Freies Training“ auf der Fachseite (alle Kapitel) bzw. der Link auf der Kapitelseite
-(`/practice?mode=highlighted`, auch reine Klausuraufgaben). Anders als das Lesezeichen ist das nicht privat.
+**Fragen markieren – für dich und die Lerngruppe:** Es gibt eine einzige Markierung für Fragen: „Markieren“
+(Lesezeichen-Symbol, beim Üben auch Taste `M`, außerdem in der Aufgaben-Tabelle der Probeklausuren und in der
+Auswertung). Markierte Fragen sieht die ganze Lerngruppe: über der Frage steht „Adrian hat diese Frage markiert“,
+in der Aufgaben-Tabelle stehen die Namen und der Filter *Markiert* zeigt nur diese Aufgaben. Die Kachel *Markiert*
+auf der Fachseite (Training) bzw. der Link auf der Kapitelseite übt alle markierten Fragen – deine und die der
+anderen, auch reine Klausuraufgaben (`/practice?mode=marked`; alte Links mit `mode=highlighted` führen dorthin).
 Gespeichert wird je Konto in `highlights/{uid}` (Hinzufügen/Entfernen atomar in Firestore, damit sich zwei Geräte
-nicht überschreiben); geladen beim Start, beim Zurückkehren in die App und alle drei Minuten.
+nicht überschreiben); geladen beim Start, beim Zurückkehren in die App und alle drei Minuten. Ohne Konto bleiben
+Markierungen lokal; frühere private Markierungen (`marks`, „q:…“) übernimmt die App nach dem Laden einmalig in die
+gemeinsame Liste. Karteikarten-Markierungen bleiben privat.
 
 ## Umzug von der alten Vercel-Adresse
 

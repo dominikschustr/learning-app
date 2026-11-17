@@ -154,15 +154,15 @@ describe("groupCases – Teilfragen eines Falls zusammen", () => {
   });
 });
 
-describe("buildQueue – hervorgehobene Fragen", () => {
+describe("buildQueue – markierte Fragen der Lerngruppe", () => {
   // reine Klausuraufgabe (nicht im Übungspool), Kapitel b
   const paper: Question = { ...pool[0], id: "paper-1", lecture: "b", paperOnly: true };
-  const highlighted = new Set(["tf-1", "tf-36", "paper-1", "gibt-es-nicht"]);
+  const marked = new Set(["tf-1", "tf-36", "paper-1", "gibt-es-nicht"]);
 
-  it("zieht alle hervorgehobenen Fragen des Fachs, auch reine Klausuraufgaben – auf Wunsch je Kapitel", () => {
-    const opts = { mode: "highlighted" as const, subjectId: "s", questions: pool, papers: [paper, pool[1]], items: {}, now: 0, highlighted };
+  it("zieht alle markierten Fragen des Fachs, auch reine Klausuraufgaben – auf Wunsch je Kapitel", () => {
+    const opts = { mode: "marked" as const, subjectId: "s", questions: pool, papers: [paper, pool[1]], items: {}, now: 0, marked };
     expect(ids(buildQueue(opts))).toBe("paper-1,tf-1,tf-36");
     expect(ids(buildQueue({ ...opts, lecture: "b" }))).toBe("paper-1,tf-36");
-    expect(buildQueue({ ...opts, highlighted: new Set() })).toHaveLength(0);
+    expect(buildQueue({ ...opts, marked: new Set() })).toHaveLength(0);
   });
 });

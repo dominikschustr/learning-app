@@ -4,12 +4,17 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { getIdToken, useAuth } from "./auth";
 import { cloudConfigured, highlightList, highlightRename, highlightSet, type HighlightDoc } from "./cloud";
+import type { Mark } from "./merge";
+import { useApp } from "./store";
 import { useToasts } from "./toast";
 
 /**
- * Hervorhebungen für die Lerngruppe: Jedes Konto kann Fragen hervorheben, alle anderen sehen dann
- * „Dominik hat diese Frage hervorgehoben“. Anders als die Lesezeichen (privat, im Lernstand) liegen sie
- * in Firestore unter highlights/{uid}; geladen wird beim Start, beim Zurückkehren in die App und alle paar Minuten.
+ * Markierte Fragen der Lerngruppe: Jedes Konto kann Fragen markieren, alle anderen sehen dann
+ * „Adrian hat diese Frage markiert“. Die Markierungen liegen in Firestore unter highlights/{uid}; geladen wird
+ * beim Start, beim Zurückkehren in die App und alle paar Minuten.
+ *
+ * Ohne Konto bleiben Fragen-Markierungen lokal im Lernstand (marks, „q:…“). Nach dem Anmelden werden sie
+ * einmalig in die gemeinsame Liste übernommen (shareLocalMarks). Karteikarten-Markierungen bleiben privat.
  */
 
 type State = {
@@ -30,7 +35,7 @@ export const useHighlights = create<State>()(
 
 export type Highlighter = { uid: string; name: string; me: boolean };
 
-/** Schlüssel → wer ihn hervorgehoben hat (eigenes Konto zuerst). Je Liste und Konto einmal berechnet. */
+/** Schlüssel → wer ihn markiert hat (eigenes Konto zuerst). Je Liste und Konto einmal berechnet. */
 const indexCache = new WeakMap<HighlightDoc[], { uid: string | undefined; idx: Map<string, Highlighter[]> }>();
 
 export function highlightIndex(docs: HighlightDoc[], myUid: string | undefined): Map<string, Highlighter[]> {
@@ -50,23 +55,49 @@ export function highlightIndex(docs: HighlightDoc[], myUid: string | undefined):
   return idx;
 }
 
-const EMPTY: Highlighter[] = [];
+/** Gemeinsamer Index plus eigene, noch nicht geteilte Fragen-Markierungen (zählen als „Du“). */
+const withLocalCache = new WeakMap<Record<string, Mark>, { base: Map<string, Highlighter[]>; idx: Map<string, Highlighter[]> }>();
 
-/** Wer die Frage bzw. Karte (markKey) hervorgehoben hat. */
-export function useHighlighters(key: string): Highlighter[] {
-  const docs = useHighlights((s) => s.docs);
-  const uid = useAuth((s) => s.session?.uid);
-  return highlightIndex(docs, uid).get(key) ?? EMPTY;
+export function markIndex(
+  docs: HighlightDoc[],
+  myUid: string | undefined,
+  marks: Record<string, Mark>,
+): Map<string, Highlighter[]> {
+  const base = highlightIndex(docs, myUid);
+  const hit = withLocalCache.get(marks);
+  if (hit && hit.base === base) return hit.idx;
+  const local = Object.keys(marks).filter((k) => marks[k].on && k.startsWith("q:") && !base.get(k)?.some((h) => h.me));
+  let idx = base;
+  if (local.length) {
+    idx = new Map(base);
+    const me: Highlighter = { uid: myUid ?? "me", name: "Du", me: true };
+    for (const k of local) idx.set(k, [me, ...(base.get(k) ?? [])]);
+  }
+  withLocalCache.set(marks, { base, idx });
+  return idx;
 }
 
-/** Alle Hervorhebungen als Index (für Listen und Tabellen). */
+/** Aktueller Index außerhalb von React (z. B. beim Zusammenstellen einer Übung). */
+export function currentMarkIndex(): Map<string, Highlighter[]> {
+  return markIndex(useHighlights.getState().docs, useAuth.getState().session?.uid, useApp.getState().marks);
+}
+
+const EMPTY: Highlighter[] = [];
+
+/** Wer die Frage (markKey) markiert hat – eigenes Konto zuerst. */
+export function useHighlighters(key: string): Highlighter[] {
+  return useHighlightIndex().get(key) ?? EMPTY;
+}
+
+/** Alle Markierungen der Lerngruppe als Index (für Listen und Tabellen). */
 export function useHighlightIndex(): Map<string, Highlighter[]> {
   const docs = useHighlights((s) => s.docs);
   const uid = useAuth((s) => s.session?.uid);
-  return highlightIndex(docs, uid);
+  const marks = useApp((s) => s.marks);
+  return markIndex(docs, uid, marks);
 }
 
-/** ids der Fragen (bzw. Karten) eines Fachs, die jemand hervorgehoben hat → wer. */
+/** ids der Fragen eines Fachs, die jemand markiert hat → wer. */
 export function highlightedIn(
   index: Map<string, Highlighter[]>,
   subjectId: string,
@@ -78,7 +109,7 @@ export function highlightedIn(
   return out;
 }
 
-/** Wer in einer Auswahl von Fragen etwas hervorgehoben hat (ohne Doppelte, eigenes Konto zuerst). */
+/** Wer in einer Auswahl von Fragen etwas markiert hat (ohne Doppelte, eigenes Konto zuerst). */
 export function highlightersOf(byId: Map<string, Highlighter[]>, ids: Iterable<string>): Highlighter[] {
   const out = new Map<string, Highlighter>();
   for (const id of ids) for (const h of byId.get(id) ?? []) out.set(h.uid, h);
@@ -99,37 +130,71 @@ export function whoText(list: Highlighter[], max = 2): string {
 export function whoSentence(list: Highlighter[], noun = "diese Frage"): string {
   if (!list.length) return "";
   const verb = list.length === 1 ? (list[0].me ? "hast" : "hat") : "haben";
-  const tail = list.length === 1 && list[0].me ? "für alle hervorgehoben" : "hervorgehoben";
-  return `${whoText(list)} ${verb} ${noun} ${tail}`;
+  return `${whoText(list)} ${verb} ${noun} markiert`;
 }
 
-function setMine(uid: string, name: string, key: string, on: boolean) {
+function setMine(uid: string, name: string, keys: string[], on: boolean) {
   const docs = useHighlights.getState().docs;
   const mine = docs.find((d) => d.uid === uid);
-  const items = mine ? mine.items.filter((k) => k !== key) : [];
-  if (on) items.push(key);
+  const items = mine ? mine.items.filter((k) => !keys.includes(k)) : [];
+  if (on) items.push(...keys);
   const next: HighlightDoc = { uid, name, items, at: Date.now() };
   useHighlights.setState({ docs: mine ? docs.map((d) => (d.uid === uid ? next : d)) : [...docs, next] });
 }
 
-/** Hebt eine Frage für alle hervor bzw. nimmt die Hervorhebung zurück (sofort sichtbar, dann gespeichert). */
-export async function toggleHighlight(key: string): Promise<void> {
+/** Lokale Fragen-Markierungen ausschalten (sie liegen dann in der gemeinsamen Liste). */
+function clearLocal(keys: string[]) {
+  if (!keys.length) return;
+  const at = Date.now();
+  useApp.setState((s) => ({ marks: { ...s.marks, ...Object.fromEntries(keys.map((k) => [k, { on: false, at }])) } }));
+}
+
+/**
+ * Markiert eine Frage für die Lerngruppe bzw. nimmt die Markierung zurück (sofort sichtbar, dann gespeichert).
+ * Ohne Konto bleibt die Markierung lokal.
+ */
+export async function toggleQuestionMark(key: string): Promise<void> {
   const session = useAuth.getState().session;
-  if (!session || !cloudConfigured()) return;
-  const on = !useHighlights.getState().docs.some((d) => d.uid === session.uid && d.items.includes(key));
-  setMine(session.uid, session.name, key, on);
+  const local = !!useApp.getState().marks[key]?.on;
+  if (!session || !cloudConfigured()) {
+    useApp.getState().toggleMark(key);
+    return;
+  }
+  const shared = useHighlights.getState().docs.some((d) => d.uid === session.uid && d.items.includes(key));
+  const on = !(shared || local);
+  if (local) clearLocal([key]);
+  // nur lokal markiert → ist damit schon zurückgenommen
+  if (!on && !shared) return;
+  setMine(session.uid, session.name, [key], on);
   try {
-    await highlightSet(session.uid, await getIdToken(), session.name, key, on);
+    await highlightSet(session.uid, await getIdToken(), session.name, [key], on);
   } catch (e) {
-    setMine(session.uid, session.name, key, !on);
+    setMine(session.uid, session.name, [key], !on);
+    if (local) useApp.getState().toggleMark(key);
     useToasts.getState().push({
       kind: "info",
-      eyebrow: "Hervorheben",
-      title: on ? "Hervorheben hat nicht geklappt" : "Zurücknehmen hat nicht geklappt",
+      eyebrow: "Markieren",
+      title: on ? "Markieren hat nicht geklappt" : "Zurücknehmen hat nicht geklappt",
       body: (e as Error).message,
-      icon: "highlighter",
+      icon: "bookmark",
     });
   }
+}
+
+/** Übernimmt eigene, bisher nur lokal markierte Fragen in die gemeinsame Liste (z. B. nach dem Anmelden). */
+async function shareLocalMarks(): Promise<void> {
+  const session = useAuth.getState().session;
+  if (!session) return;
+  const marks = useApp.getState().marks;
+  const keys = Object.keys(marks).filter((k) => marks[k].on && k.startsWith("q:"));
+  if (!keys.length) return;
+  const mine = new Set(useHighlights.getState().docs.find((d) => d.uid === session.uid)?.items ?? []);
+  const missing = keys.filter((k) => !mine.has(k));
+  if (missing.length) {
+    await highlightSet(session.uid, await getIdToken(), session.name, missing, true);
+    setMine(session.uid, session.name, missing, true);
+  }
+  clearLocal(keys);
 }
 
 let loading: Promise<void> | null = null;
@@ -143,6 +208,7 @@ export function loadHighlights(): Promise<void> {
     try {
       const docs = await highlightList(await getIdToken());
       useHighlights.setState({ docs, loadedAt: Date.now(), status: "idle" });
+      await shareLocalMarks().catch(() => undefined);
     } catch {
       useHighlights.setState({ status: "error" });
     } finally {
@@ -154,7 +220,7 @@ export function loadHighlights(): Promise<void> {
 
 const REFRESH_MS = 3 * 60_000;
 
-/** Lädt die Hervorhebungen beim Start, beim Zurückkehren in die App und alle paar Minuten. Gibt eine Aufräumfunktion zurück. */
+/** Lädt die Markierungen beim Start, beim Zurückkehren in die App und alle paar Minuten. Gibt eine Aufräumfunktion zurück. */
 export function startHighlights(): () => void {
   const stale = () => Date.now() - (useHighlights.getState().loadedAt ?? 0) > REFRESH_MS;
   const quietly = () => void loadHighlights();
@@ -171,7 +237,7 @@ export function startHighlights(): () => void {
       useHighlights.setState({ docs: [], loadedAt: null });
       quietly();
     } else if (s.session.name !== prev.session?.name) {
-      // neuer Name auch bei den eigenen Hervorhebungen
+      // neuer Name auch bei den eigenen Markierungen
       const { uid, name } = s.session;
       const docs = useHighlights.getState().docs;
       if (docs.some((d) => d.uid === uid)) {
