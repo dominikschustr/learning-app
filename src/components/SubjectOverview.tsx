@@ -30,7 +30,9 @@ import { useEffect, useState } from "react";
 import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
 import { subjectStats, type SubjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
-import { highlightedIn, highlightersOf, splitMarks, useHighlightIndex, whoText } from "@/lib/highlights";
+import { useAuth } from "@/lib/auth";
+import { cloudConfigured } from "@/lib/cloud";
+import { highlightedIn, highlightersOf, splitMarks, useHighlightIndex, useHighlights, whoText } from "@/lib/highlights";
 import { chapterBests, examScore, markedIds, useApp, useHydrated, type ExamRecord } from "@/lib/store";
 import { LevelBadge } from "./ChapterView";
 import { PaperChoice, type PaperChoiceTarget } from "./PaperChoice";
@@ -508,6 +510,8 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
   const pIds = new Set([...qIds, ...summary.paperItems.map((p) => p.id)]);
   const { mine, others } = splitMarks(new Map([...highlightedIn(markIdx, subject.id)].filter(([id]) => pIds.has(id))));
   const otherNames = highlightersOf(others, others.keys());
+  const groupOn = useAuth((a) => !!a.session) && cloudConfigured();
+  const groupState = useHighlights((h) => (h.loadedAt === null && h.status === "loading" ? "loading" : h.status === "error" && h.loadedAt === null ? "error" : "ok"));
   const fragen = (n: number) => `${n} ${n === 1 ? "Frage" : "Fragen"}`;
   const set = (pick: (i: SubjectSummary["items"][number]) => boolean) => {
     const qs = summary.items.filter(pick);
@@ -529,13 +533,20 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
         ...(mine.size
           ? [{ href: `${base}/practice?mode=marked`, icon: Bookmark, title: "Meine markierten", meta: fragen(mine.size) }]
           : []),
-        ...(others.size
+        // immer sichtbar, sobald die Lerngruppe verfügbar ist – auch wenn noch niemand etwas markiert hat
+        ...(others.size || groupOn
           ? [
               {
                 href: `${base}/practice?mode=others`,
                 icon: Users,
                 title: "Von anderen markiert",
-                meta: `${fragen(others.size)} · ${whoText(otherNames)}`,
+                meta: others.size
+                  ? `${fragen(others.size)} · ${whoText(otherNames)}`
+                  : groupState === "loading"
+                    ? "wird geladen …"
+                    : groupState === "error"
+                      ? "gerade nicht erreichbar"
+                      : "noch keine",
               },
             ]
           : []),
