@@ -1,0 +1,181 @@
+[
+  {
+    "id": "p6-valmont",
+    "title": "Exercise 1 – Valmont SA",
+    "text": [
+      "Valmont SA pays one dividend per year on 31 December. In June 2024, Valmont did a 2-for-1 stock split (2 new shares for 1 old share). The table shows the closing prices and the dividends per share paid on each date; prices and dividends from 2024 on are per new share."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Date",
+          "Close (EUR)",
+          "Dividend (EUR)"
+        ],
+        "rows": [
+          [
+            "31/12/2022",
+            "84.00",
+            ""
+          ],
+          [
+            "31/12/2023",
+            "90.50",
+            "2.10"
+          ],
+          [
+            "31/12/2024",
+            "47.80",
+            "1.20"
+          ],
+          [
+            "31/12/2025",
+            "51.30",
+            "1.30"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p6-aurora",
+    "title": "Exercise 2 – Aurora and Borealis",
+    "text": [
+      "You invest EUR 12,000 in Aurora SE and EUR 8,000 in Borealis ASA. The returns of the two stocks have a correlation of 0.2."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Stock",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "Aurora SE",
+            "9%",
+            "18%"
+          ],
+          [
+            "Borealis ASA",
+            "14%",
+            "30%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p6-funds",
+    "title": "Exercise 3 – Fund North and Fund South",
+    "text": [
+      "You want to invest EUR 10,000 in one of two well-diversified funds, combined with the risk-free asset. You can borrow and lend at the risk-free rate of 3%."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Fund",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "Fund North",
+            "11%",
+            "16%"
+          ],
+          [
+            "Fund South",
+            "15%",
+            "28%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p6-addstock",
+    "title": "Exercise 4 – Improving your portfolio",
+    "text": [
+      "Your current portfolio P has an expected return of 9% and a volatility of 15%. The risk-free rate is 3%. You consider two stocks:"
+    ],
+    "tables": [
+      {
+        "head": [
+          "Stock",
+          "Expected return",
+          "Volatility",
+          "Correlation with P"
+        ],
+        "rows": [
+          [
+            "Atlas SA",
+            "11%",
+            "30%",
+            "0.4"
+          ],
+          [
+            "Boreas SA",
+            "6%",
+            "25%",
+            "0.6"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p6-lumiere",
+    "title": "Exercise 5 – Lumière SA and the four-factor model",
+    "text": [
+      "Lumière SA is a listed media company. The risk-free rate is 2%. The table shows the expected premium of each factor portfolio and Lumière's beta with each factor; Lumière's market beta in the CAPM is also 1.1."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Factor",
+          "Expected premium",
+          "Lumière's beta"
+        ],
+        "rows": [
+          [
+            "Market (MKT)",
+            "6%",
+            "1.1"
+          ],
+          [
+            "Small minus big (SMB)",
+            "2%",
+            "0.6"
+          ],
+          [
+            "Value minus growth (HML)",
+            "3%",
+            "−0.4"
+          ],
+          [
+            "Winners minus losers (PR1YR)",
+            "4%",
+            "0.2"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p6-fjord",
+    "title": "Exercise 6 – Fjord ASA",
+    "text": [
+      "Fjord ASA has a market capitalization of EUR 900 million and EUR 300 million of debt (no excess cash). Its bonds have a yield to maturity of 6%; debt with Fjord's rating has an average annual default rate of 2% and investors lose 50% of the value in default. Fjord's equity beta is 1.3, the risk-free rate is 2.5% and the market risk premium is 5%. The corporate tax rate is 25%."
+    ],
+    "tables": []
+  },
+  {
+    "id": "p6-saline",
+    "title": "Exercise 7 – Saline AG",
+    "text": [
+      "Saline AG is all-equity financed, with 50 million shares trading at EUR 40 and an (unlevered) cost of capital of 10%. Saline borrows EUR 800 million of risk-free debt at 4% and uses the money to repurchase shares at the market price. Assume perfect capital markets."
+    ],
+    "tables": []
+  }
+]

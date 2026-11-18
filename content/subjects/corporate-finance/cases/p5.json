@@ -1,0 +1,149 @@
+[
+  {
+    "id": "p5-ipsos",
+    "title": "Exercise 1 – Ipsos SA",
+    "text": [
+      "The company Ipsos SA pays dividends annually. The table below shows the exact date on which each dividend was paid, along with the corresponding amount of dividend paid and closing stock price (in EUR)."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Date",
+          "Stock price – close",
+          "Dividends"
+        ],
+        "rows": [
+          [
+            "30/09/2022",
+            "48.85",
+            ""
+          ],
+          [
+            "30/09/2023",
+            "46.40",
+            "1.35"
+          ],
+          [
+            "30/09/2024",
+            "45.44",
+            "1.65"
+          ],
+          [
+            "30/09/2025",
+            "36.44",
+            "1.85"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p5-lorna",
+    "title": "Exercise 2 – Lorna SE and Shore SE",
+    "text": [
+      "Assume that you have EUR 10,000 available to invest in the stock market. The only available stocks have the expected returns and volatilities listed below, and their returns have a correlation of −1."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Stock",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "Lorna SE",
+            "15%",
+            "10%"
+          ],
+          [
+            "Shore SE",
+            "20%",
+            "25%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p5-ai",
+    "title": "Exercise 3 – Innovative and non-innovative stocks",
+    "text": [
+      "Suppose you group all the stocks in the world into two mutually exclusive portfolios based on how much firms spend on AI-related innovation: innovative and non-innovative stocks. The two portfolios have equal sizes (in total market value), a correlation coefficient of −0.1, and the characteristics below. The risk-free rate is 2%."
+    ],
+    "tables": [
+      {
+        "head": [
+          "",
+          "Expected return",
+          "Volatility"
+        ],
+        "rows": [
+          [
+            "Innovative stocks",
+            "20%",
+            "40%"
+          ],
+          [
+            "Non-innovative stocks",
+            "5%",
+            "5%"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p5-smooth",
+    "title": "Exercise 4 – Smooth Operator SA",
+    "text": [
+      "Smooth Operator SA is a listed firm with a market capitalization of EUR 100 billion, EUR 50 billion of debt outstanding, and no excess cash. The expected return on its equity is 8%. The risk-free rate is 2% and the expected market return is 6%. Assume perfect capital markets."
+    ],
+    "tables": []
+  },
+  {
+    "id": "p5-clubmed",
+    "title": "Exercise 5 – Club Med's leveraged recapitalization",
+    "text": [
+      "The Chief Financial Officer of Club Med is analyzing the impact of a leveraged recapitalization on the firm's value. Club Med is currently all-equity financed: its equity is worth EUR 8 billion and its (unlevered) cost of capital is 9%. The firm plans to issue EUR 2 billion worth of perpetual bonds and to use the proceeds to repurchase EUR 2 billion worth of equity. The bonds are risk-free with an annual interest rate of 5%. Assume perfect capital markets (no taxes, no costs of financial distress).",
+      "In the original paper this exercise is on the interest tax shield, which is not part of lectures 1–8; it is rebuilt here for a perfect capital market."
+    ],
+    "tables": []
+  },
+  {
+    "id": "p5-ghost",
+    "title": "Exercise 6 – Ghost Writer",
+    "text": [
+      "Ghost Writer is a software company that specializes in detecting AI-generated content. Its shares trade at EUR 60 today. Analysts expect a share price of EUR 64 in one year and a dividend of EUR 1 per share at that date. Ghost Writer's equity beta is 1.3, the risk-free rate is 2% and the expected market return is 6%.",
+      "In the original paper this exercise is on an IPO auction, which is not part of lectures 1–8."
+    ],
+    "tables": []
+  },
+  {
+    "id": "p5-renault",
+    "title": "Exercise 7 – Renault",
+    "text": [
+      "Renault's stock had the following annual returns (dividends included). In the original paper this exercise is on the payoff of a short put option, which is not part of lectures 1–8."
+    ],
+    "tables": [
+      {
+        "head": [
+          "Year",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Return",
+            "22%",
+            "−8%",
+            "15%",
+            "−5%"
+          ]
+        ]
+      }
+    ]
+  }
+]

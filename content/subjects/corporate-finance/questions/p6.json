@@ -1,0 +1,1607 @@
+[
+  {
+    "type": "mc",
+    "id": "cf-p6-mc01",
+    "lecture": "l1",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2025/26, MC 1 (reverse split)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Return with a stock split"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "One year ago, you bought 50 shares of Valmont SA at EUR 60 per share. During the year, Valmont did a 2-for-1 stock split (2 new shares for 1 old share). Today the stock trades at EUR 33 and has just paid a dividend of EUR 0.80 per (new) share. Your total return over the year is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  -43.67%"
+      },
+      {
+        "id": "b",
+        "text": "B  10.00%"
+      },
+      {
+        "id": "c",
+        "text": "C  11.33%"
+      },
+      {
+        "id": "d",
+        "text": "D  12.67%"
+      },
+      {
+        "id": "e",
+        "text": "E  13.33%"
+      },
+      {
+        "id": "f",
+        "text": "F  None of the proposed alternatives is close to your total return."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "After the split you hold 100 shares. (100 × 33 + 100 × 0.80) / (50 × 60) − 1 = 3,380 / 3,000 − 1 = 12.67%.",
+    "steps": [
+      {
+        "title": "Shares and value",
+        "lines": [
+          "50 × 2 = 100 shares",
+          "100 × 33 + 100 × 0.80 = 3,380"
+        ]
+      },
+      {
+        "title": "Return",
+        "lines": [
+          "3,380 / 3,000 − 1"
+        ],
+        "result": "R = 12.67%"
+      }
+    ],
+    "pitfalls": [
+      "Ignoring the split: (33 + 0.80) / 60 − 1 = −43.67%.",
+      "Forgetting the dividend (10.00%)."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc02",
+    "lecture": "l1",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Annualizing a return"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Annualizing a sub-period return"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A fund earned 4% over the last six months. Assuming the same return in the next six months, its annual return is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  4.00%"
+      },
+      {
+        "id": "b",
+        "text": "B  8.00%"
+      },
+      {
+        "id": "c",
+        "text": "C  8.16%"
+      },
+      {
+        "id": "d",
+        "text": "D  16.99%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to the annual return."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Two half-years compound: (1.04)² − 1 = 8.16%. Simply doubling (8%) ignores compounding."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc03",
+    "lecture": "l1",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2025/26, MC 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Arithmetic vs geometric average"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The geometric average of past returns is always higher than their arithmetic average."
+      },
+      {
+        "id": "b",
+        "text": "B  The arithmetic average is the better estimate of an investment's expected return over the next year, while the geometric average better describes its past performance over the whole period."
+      },
+      {
+        "id": "c",
+        "text": "C  If an investment returns +50% one year and −50% the next, its geometric average return is 0%."
+      },
+      {
+        "id": "d",
+        "text": "D  The volatility of a stock measures its average return."
+      },
+      {
+        "id": "e",
+        "text": "E  All statements are false. (Select only in case all other statements are indeed false.)"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The geometric average (CAGR) is never above the arithmetic one. +50% then −50% leaves 1.5 × 0.5 = 0.75 of the money: geometric average √0.75 − 1 = −13.40% (the arithmetic average is 0%). Volatility measures dispersion, not the average."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc04",
+    "lecture": "l2",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Portfolio volatility with ρ = 0"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Portfolio volatility (two assets)"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Two stocks have volatilities of 20% and 30% and are uncorrelated. A portfolio invests 50% in each. Its volatility is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  25.00%"
+      },
+      {
+        "id": "b",
+        "text": "B  18.03%"
+      },
+      {
+        "id": "c",
+        "text": "C  13.00%"
+      },
+      {
+        "id": "d",
+        "text": "D  5.00%"
+      },
+      {
+        "id": "e",
+        "text": "E  3.25%"
+      },
+      {
+        "id": "f",
+        "text": "F  None of the proposed alternatives is close to the portfolio volatility."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "σp² = 0.5² × 0.20² + 0.5² × 0.30² + 0 = 0.0100 + 0.0225 = 0.0325 → σp = 18.03%. 25% (weighted average) would only hold with ρ = +1; 3.25% is the variance, not the volatility.",
+    "pitfalls": [
+      "Reporting the variance (0.0325) as a percentage.",
+      "Averaging the volatilities."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc05",
+    "lecture": "l2",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2025/26, MC 3"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Diversification"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  With enough stocks, diversification eliminates both firm-specific and systematic risk."
+      },
+      {
+        "id": "b",
+        "text": "B  In a large, well-diversified portfolio, the volatility is driven mainly by the covariances between the stocks, not by their individual variances."
+      },
+      {
+        "id": "c",
+        "text": "C  Adding a stock with a high volatility to a portfolio always increases the portfolio's volatility."
+      },
+      {
+        "id": "d",
+        "text": "D  Two stocks with a correlation of zero cannot be combined to reduce risk."
+      },
+      {
+        "id": "e",
+        "text": "E  All statements are false. (Select only in case all other statements are indeed false.)"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "With many stocks the weight of each own variance shrinks towards zero, while the covariance terms remain: they are the systematic (market) risk that cannot be diversified. A volatile stock with low correlation can lower portfolio risk, and any correlation below +1 offers diversification."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc06",
+    "lecture": "l3",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Target risk on the capital allocation line"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Hitting a target risk or return"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The tangent portfolio has an expected return of 12% and a volatility of 20%. The risk-free rate is 2%, and you can borrow and lend at this rate. You want a volatility of 15%. Which expected return can you achieve at best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  9.00%"
+      },
+      {
+        "id": "b",
+        "text": "B  9.50%"
+      },
+      {
+        "id": "c",
+        "text": "C  11.00%"
+      },
+      {
+        "id": "d",
+        "text": "D  12.00%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to the expected return."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Invest x = 15% / 20% = 0.75 in the tangent portfolio and 0.25 risk-free: E = 2% + 0.75 × (12% − 2%) = 9.50%.",
+    "steps": [
+      {
+        "title": "Weight",
+        "lines": [
+          "x = σ_target / σ_T = 15 / 20 = 0.75"
+        ]
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "2% + 0.75 × 10%"
+        ],
+        "result": "E = 9.50%"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc07",
+    "lecture": "l3",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Separation of the risky portfolio"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Efficient frontier with a risk-free asset"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Investors can borrow and lend at the risk-free rate. Which of the following statements is FALSE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Whatever their risk aversion, all investors combine the risk-free asset with the same tangent portfolio."
+      },
+      {
+        "id": "b",
+        "text": "B  A more risk-averse investor should choose a different portfolio of risky stocks with lower volatility, rather than holding more of the risk-free asset."
+      },
+      {
+        "id": "c",
+        "text": "C  The tangent portfolio has the highest Sharpe ratio of all portfolios of risky assets."
+      },
+      {
+        "id": "d",
+        "text": "D  Borrowing at the risk-free rate to invest more in the tangent portfolio increases both the expected return and the volatility."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Separation: the best risky portfolio is the tangent portfolio for everyone. Risk aversion only decides how much of it is combined with the risk-free asset (lending or borrowing), not which risky portfolio is held."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc08",
+    "lecture": "l4",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Beta from correlation and volatilities"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "Beta and the CAPM"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Stock K has a volatility of 40% and a correlation of 0.5 with the market. The market has a volatility of 20% and an expected return of 8%; the risk-free rate is 3%. Under the CAPM, the expected return of stock K is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  8.00%"
+      },
+      {
+        "id": "b",
+        "text": "B  10.50%"
+      },
+      {
+        "id": "c",
+        "text": "C  13.00%"
+      },
+      {
+        "id": "d",
+        "text": "D  5.50%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to the expected return."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "β = ρ × σK / σM = 0.5 × 40% / 20% = 1.00. E(R) = 3% + 1.00 × (8% − 3%) = 8.00%. Only the part of the volatility that moves with the market is priced.",
+    "pitfalls": [
+      "Using σK / σM = 2 as beta and forgetting the correlation (gives 13.00%)."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc09",
+    "lecture": "l4",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "CAPM: only beta is priced"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "CAPM / security market line"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Under the CAPM, which of the following statements is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Two stocks with the same beta must have the same expected return, even if their volatilities differ."
+      },
+      {
+        "id": "b",
+        "text": "B  A stock with a beta of zero has an expected return of zero."
+      },
+      {
+        "id": "c",
+        "text": "C  A stock's expected return increases with its total volatility."
+      },
+      {
+        "id": "d",
+        "text": "D  A stock with a negative beta should have an expected return above the risk-free rate."
+      },
+      {
+        "id": "e",
+        "text": "E  All statements are false. (Select only in case all other statements are indeed false.)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The CAPM prices only systematic risk (beta). A zero-beta stock earns the risk-free rate, and a negative-beta stock earns less than the risk-free rate because it acts as insurance."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc10",
+    "lecture": "l5",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Competition pushes alphas to zero"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Competition pushes alphas to zero · Folie 18"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Stock X costs EUR 100 today. Investors who have seen good news expect it to be worth EUR 113 in one year (no dividend). Its required return under the CAPM is 11.2%. In a competitive market, which outcome is most likely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Investors sell the stock until its price falls to about EUR 98.40."
+      },
+      {
+        "id": "b",
+        "text": "B  Investors buy the stock until its price rises to about EUR 101.62, where its alpha is zero."
+      },
+      {
+        "id": "c",
+        "text": "C  The price stays at EUR 100, because an alpha of 1.8% is too small to matter."
+      },
+      {
+        "id": "d",
+        "text": "D  Investors buy the stock until its price reaches EUR 113."
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is likely."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "At EUR 100 the expected return is 13% > 11.2% (alpha 1.8%). Buying pushes the price up until 113 / P = 1.112 → P = EUR 101.62; from there the expected return is 11.2% and the alpha is gone."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc11",
+    "lecture": "l5",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Investor biases"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Individual investor biases"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Investors who believe they know more than they actually do, and who therefore trade too much, display:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The disposition effect."
+      },
+      {
+        "id": "b",
+        "text": "B  Familiarity bias."
+      },
+      {
+        "id": "c",
+        "text": "C  Overconfidence."
+      },
+      {
+        "id": "d",
+        "text": "D  Herd behavior."
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Overconfidence leads to excessive trading and lower returns after costs. The disposition effect is holding losers and selling winners; familiarity bias is buying what you know; herding is copying other investors."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc12",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2023/24, Exercise 4"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Gordon growth / market return"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A stock index stands at 5,000 points. Its constituents are expected to pay dividends worth 150 index points next year, and dividends are expected to grow by 4% per year forever. The risk-free rate is 2.5%. What is the market risk premium implied by this (fundamental) approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  3.00%"
+      },
+      {
+        "id": "b",
+        "text": "B  4.50%"
+      },
+      {
+        "id": "c",
+        "text": "C  7.00%"
+      },
+      {
+        "id": "d",
+        "text": "D  1.50%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to the market risk premium."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Gordon growth: E(RM) = Div1 / P0 + g = 150 / 5,000 + 4% = 3% + 4% = 7%. Market risk premium = 7% − 2.5% = 4.50%.",
+    "pitfalls": [
+      "Stopping at the expected market return (7%) instead of subtracting the risk-free rate."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc13",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Asset beta with net debt"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Net debt · Unlevered beta"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Nordwind AG has a market capitalization of EUR 30bn, debt of EUR 12bn and excess cash of EUR 2bn. Its equity beta is 1.2 and its debt beta is 0.2; cash is risk-free. Its asset (unlevered) beta is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  0.86"
+      },
+      {
+        "id": "b",
+        "text": "B  0.90"
+      },
+      {
+        "id": "c",
+        "text": "C  0.91"
+      },
+      {
+        "id": "d",
+        "text": "D  0.95"
+      },
+      {
+        "id": "e",
+        "text": "E  1.20"
+      },
+      {
+        "id": "f",
+        "text": "F  None of the proposed alternatives is close to the asset beta."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Net debt = 12 − 2 = 10. βU = 30/40 × 1.2 + 10/40 × 0.2 = 0.90 + 0.05 = 0.95. With gross debt you would get 0.91.",
+    "steps": [
+      {
+        "title": "Net debt",
+        "lines": [
+          "12 − 2 = 10",
+          "E + D = 30 + 10 = 40"
+        ]
+      },
+      {
+        "title": "Asset beta",
+        "lines": [
+          "30/40 × 1.2 + 10/40 × 0.2"
+        ],
+        "result": "βU = 0.95"
+      }
+    ],
+    "pitfalls": [
+      "Using gross debt (0.91).",
+      "Forgetting the debt beta (0.90)."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc14",
+    "lecture": "l7",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2023/24, Exercise 6 (arbitrage)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "Homemade leverage"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Firms U and L have identical cash flows. U is all-equity financed and worth EUR 1,000m. L has risk-free debt worth EUR 400m, and its equity trades at EUR 650m. Assume perfect capital markets. Which statement is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  L's equity is correctly priced, because leverage adds value to a firm."
+      },
+      {
+        "id": "b",
+        "text": "B  Sell L's equity, buy U's equity and borrow EUR 400m on your own: you lock in a riskless profit of EUR 50m."
+      },
+      {
+        "id": "c",
+        "text": "C  Buy L's equity and sell U's equity short: you lock in a riskless profit of EUR 50m."
+      },
+      {
+        "id": "d",
+        "text": "D  There is no arbitrage, because investors cannot borrow at the same rate as firms."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "MM I: L's equity should be worth 1,000 − 400 = EUR 600m. Buying U and borrowing 400 replicates L's equity for 600 (homemade leverage). L's equity is overpriced at 650: sell it, buy the replica → riskless profit 50. Perfect markets assume equal borrowing rates."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p6-mc15",
+    "lecture": "l8",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Relevering a beta"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "Relevering betas"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "A firm has an asset beta of 0.8. It finances 40% of its value with risk-free debt (D/(D + E) = 40%). Assuming perfect capital markets, its equity beta is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  0.48"
+      },
+      {
+        "id": "b",
+        "text": "B  0.80"
+      },
+      {
+        "id": "c",
+        "text": "C  1.12"
+      },
+      {
+        "id": "d",
+        "text": "D  1.33"
+      },
+      {
+        "id": "e",
+        "text": "E  1.60"
+      },
+      {
+        "id": "f",
+        "text": "F  None of the proposed alternatives is close to the equity beta."
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "D/E = 0.4 / 0.6 = 0.6667. βE = βU × (1 + D/E) = 0.8 × 1.6667 = 1.33.",
+    "pitfalls": [
+      "Using the debt ratio 0.4 instead of D/E = 0.67 (gives 1.12)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-01a",
+    "lecture": "l1",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2025/26, Exercise 1a"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Return with a stock split"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) What was Valmont's total return in 2024 (from 31/12/2023 to 31/12/2024), and what was its capital gain rate?",
+    "modelAnswer": "One old share became two new shares. Total return = 2 × (47.80 + 1.20) / 90.50 − 1 = 98.00 / 90.50 − 1 = 8.29%.\nCapital gain rate = 2 × 47.80 / 90.50 − 1 = 5.64% (dividend yield 2.40 / 90.50 = 2.65%).",
+    "keyPoints": [
+      "Total return 8.29%",
+      "Capital gain 5.64%",
+      "Adjust for the split (× 2)"
+    ],
+    "results": [
+      {
+        "label": "Total return 2024",
+        "value": 8.29,
+        "unit": "%"
+      },
+      {
+        "label": "Capital gain rate",
+        "value": 5.64,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-valmont",
+    "steps": [
+      {
+        "title": "Adjust for the split",
+        "why": "Compare the value of what one old share became: two new shares, each with its dividend.",
+        "lines": [
+          "2 × (47.80 + 1.20) = 98.00"
+        ]
+      },
+      {
+        "title": "Total return",
+        "lines": [
+          "98.00 / 90.50 − 1"
+        ],
+        "result": "8.29%"
+      },
+      {
+        "title": "Capital gain",
+        "lines": [
+          "2 × 47.80 / 90.50 − 1"
+        ],
+        "result": "5.64%"
+      }
+    ],
+    "pitfalls": [
+      "Comparing EUR 47.80 with EUR 90.50 directly (−47%)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-01b",
+    "lecture": "l1",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2025/26, Exercise 1b"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Return over several periods · Geometric average"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) Assuming that dividends are immediately reinvested in Valmont stock, what was the total return from 31/12/2022 to 31/12/2025? What is the annualized (geometric average) return?",
+    "modelAnswer": "Yearly returns: 2023 (90.50 + 2.10)/84.00 − 1 = 10.24%; 2024 8.29%; 2025 (51.30 + 1.30)/47.80 − 1 = 10.04%.\nTotal = (1 + 0.1024) × (1 + 0.0829) × (1 + 0.1004) − 1 = 31.36%.\nAnnualized = (1 + 0.3136)^(1/3) − 1 = 9.52%.",
+    "keyPoints": [
+      "2023 10.24%, 2024 8.29%, 2025 10.04%",
+      "Total 31.36%",
+      "Annualized 9.52%"
+    ],
+    "results": [
+      {
+        "label": "Total return 2022–2025",
+        "value": 31.36,
+        "unit": "%"
+      },
+      {
+        "label": "Annualized return",
+        "value": 9.52,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-valmont",
+    "steps": [
+      {
+        "title": "Yearly returns",
+        "lines": [
+          "2023: 92.60 / 84.00 − 1 = 10.24%",
+          "2024: 98.00 / 90.50 − 1 = 8.29%",
+          "2025: 52.60 / 47.80 − 1 = 10.04%"
+        ]
+      },
+      {
+        "title": "Compound",
+        "lines": [
+          "1.1024 × 1.0829 × 1.1004 = 1.3136"
+        ],
+        "result": "Total = 31.36%"
+      },
+      {
+        "title": "Annualize",
+        "lines": [
+          "1.3136^(1/3) − 1"
+        ],
+        "result": "Geometric average = 9.52%"
+      }
+    ],
+    "pitfalls": [
+      "Adding the yearly returns instead of compounding them.",
+      "Dividing the total return by 3 instead of taking the cube root."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-02a",
+    "lecture": "l2",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Portfolio return"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Portfolio return"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) What are your portfolio weights and the expected return of your portfolio?",
+    "modelAnswer": "Total EUR 20,000: weight Aurora 12,000 / 20,000 = 0.60, Borealis 0.40.\nE(Rp) = 0.60 × 9% + 0.40 × 14% = 5.40% + 5.60% = 11.00%.",
+    "keyPoints": [
+      "Weights 0.60 / 0.40",
+      "E(Rp) 11.00 %"
+    ],
+    "results": [
+      {
+        "label": "Weight Aurora",
+        "value": 0.6,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Expected return",
+        "value": 11.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-aurora",
+    "steps": [
+      {
+        "title": "Weights",
+        "lines": [
+          "12,000 / 20,000 = 0.60",
+          "8,000 / 20,000 = 0.40"
+        ]
+      },
+      {
+        "title": "Expected return",
+        "lines": [
+          "0.60 × 9% + 0.40 × 14%"
+        ],
+        "result": "11.00%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-02b",
+    "lecture": "l2",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2022/23, Exercise 2"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Portfolio volatility (two assets)"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) What is the volatility of your portfolio? Compare it with the weighted average of the two volatilities and explain the difference.",
+    "modelAnswer": "σp² = 0.6² × 0.18² + 0.4² × 0.30² + 2 × 0.6 × 0.4 × 0.2 × 0.18 × 0.30 = 0.011664 + 0.014400 + 0.005184 = 0.031248 → σp = 17.68%.\nWeighted average = 0.6 × 18% + 0.4 × 30% = 22.80%. The portfolio is less risky because the correlation (0.2) is below +1: part of the stocks' movements offset each other (diversification).",
+    "keyPoints": [
+      "σp 17.68%",
+      "Weighted average 22.80 %",
+      "ρ < 1 → diversification"
+    ],
+    "results": [
+      {
+        "label": "Portfolio volatility",
+        "value": 17.68,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-aurora",
+    "steps": [
+      {
+        "title": "Variance",
+        "lines": [
+          "0.36 × 0.0324 = 0.011664",
+          "0.16 × 0.0900 = 0.014400",
+          "2 × 0.6 × 0.4 × 0.2 × 0.18 × 0.30 = 0.005184",
+          "Sum = 0.031248"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "√0.031248"
+        ],
+        "result": "σp = 17.68%"
+      },
+      {
+        "title": "Comparison",
+        "why": "Only with ρ = +1 would σp equal the weighted average (22.80%)."
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the factor 2 in the covariance term."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-03a",
+    "lecture": "l3",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2025/26, MC 4 (Sharpe ratio)"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Sharpe ratio"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) Which fund should you combine with the risk-free asset? Calculate the relevant measure for both funds.",
+    "modelAnswer": "Compare Sharpe ratios: North (11% − 3%) / 16% = 0.5000; South (15% − 3%) / 28% = 0.4286. Choose Fund North: its line from the risk-free asset is steeper, so it offers more expected return for every level of volatility.",
+    "keyPoints": [
+      "Sharpe North 0.50",
+      "Sharpe South 0.43",
+      "Choose North (steeper line)"
+    ],
+    "results": [
+      {
+        "label": "Sharpe ratio North",
+        "value": 0.5,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Sharpe ratio South",
+        "value": 0.4286,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-funds",
+    "steps": [
+      {
+        "title": "Sharpe ratios",
+        "lines": [
+          "North: 8% / 16% = 0.5000",
+          "South: 12% / 28% = 0.4286"
+        ],
+        "result": "Choose Fund North"
+      }
+    ],
+    "pitfalls": [
+      "Choosing South because of its higher expected return – with borrowing, the Sharpe ratio decides."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-03b",
+    "lecture": "l3",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Target return with leverage"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Hitting a target risk or return"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) You want an expected return of 15% (the same as Fund South) using Fund North and the risk-free asset. How much do you invest in Fund North and how much do you borrow? What is the volatility of your position?",
+    "modelAnswer": "15% = 3% + x × (11% − 3%) → x = 12% / 8% = 1.50. Invest EUR 15,000 in Fund North, of which EUR 5,000 is borrowed at 3%.\nVolatility = 1.5 × 16% = 24.00% < 28% of Fund South – same expected return with less risk.",
+    "keyPoints": [
+      "x = 1.50 → EUR 15,000 in North",
+      "Borrow EUR 5,000",
+      "σ = 24.00 % < 28 %"
+    ],
+    "results": [
+      {
+        "label": "Amount invested in North (EUR)",
+        "value": 15000,
+        "unit": "EUR",
+        "tol": 10
+      },
+      {
+        "label": "Volatility",
+        "value": 24.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-funds",
+    "steps": [
+      {
+        "title": "Weight",
+        "lines": [
+          "x = (15% − 3%) / (11% − 3%) = 1.5"
+        ]
+      },
+      {
+        "title": "Amounts",
+        "lines": [
+          "1.5 × 10,000 = 15,000 in North",
+          "Borrow 15,000 − 10,000 = 5,000"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "1.5 × 16%"
+        ],
+        "result": "24.00%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-04a",
+    "lecture": "l4",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Is a stock worth adding?"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "Is stock A worth adding to portfolio P?"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) Calculate the beta of Atlas SA with respect to your portfolio P and the return Atlas must offer to improve your portfolio. Should you buy Atlas?",
+    "modelAnswer": "β(Atlas, P) = ρ × σA / σP = 0.4 × 30% / 15% = 0.80. Required return = 3% + 0.80 × (9% − 3%) = 7.80%. Atlas offers 11% > 7.80% → buying Atlas raises the Sharpe ratio of your portfolio: buy.",
+    "keyPoints": [
+      "β = 0.80",
+      "Required 7.80%",
+      "11 % > required → buy"
+    ],
+    "results": [
+      {
+        "label": "Beta of Atlas with P",
+        "value": 0.8,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Required return",
+        "value": 7.8,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-addstock",
+    "steps": [
+      {
+        "title": "Beta with P",
+        "lines": [
+          "0.4 × 30% / 15%"
+        ],
+        "result": "β = 0.80"
+      },
+      {
+        "title": "Required return",
+        "lines": [
+          "3% + 0.80 × 6%"
+        ],
+        "result": "7.80%"
+      },
+      {
+        "title": "Decision",
+        "why": "If E(R) > rf + β × (E(RP) − rf), adding the stock increases the Sharpe ratio."
+      }
+    ],
+    "pitfalls": [
+      "Comparing Atlas's 11% with P's 9% – the higher volatility does not matter, only the beta with P."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-04b",
+    "lecture": "l4",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Is a stock worth adding?"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "Is stock A worth adding to portfolio P?"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) Do the same for Boreas SA. What should you do with Boreas if you already hold some of it in P?",
+    "modelAnswer": "β(Boreas, P) = 0.6 × 25% / 15% = 1.00. Required return = 3% + 1.00 × 6% = 9.00%. Boreas offers only 6% < 9.00% → it lowers your Sharpe ratio: sell (reduce) Boreas.",
+    "keyPoints": [
+      "β = 1.00",
+      "Required 9.00%",
+      "6 % < required → sell / reduce"
+    ],
+    "results": [
+      {
+        "label": "Beta of Boreas with P",
+        "value": 1.0,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Required return",
+        "value": 9.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-addstock",
+    "steps": [
+      {
+        "title": "Beta with P",
+        "lines": [
+          "0.6 × 25% / 15%"
+        ],
+        "result": "β = 1.00"
+      },
+      {
+        "title": "Required return",
+        "lines": [
+          "3% + 1.00 × 6%"
+        ],
+        "result": "9.00%"
+      },
+      {
+        "title": "Decision",
+        "why": "Expected return below the required return → reducing Boreas raises the Sharpe ratio."
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-05a",
+    "lecture": "l5",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Multi-factor model"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "If beta is not enough: more factors · Folie 41"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) What is Lumière's required return according to the four-factor model, and according to the CAPM?",
+    "modelAnswer": "Four factors: 2% + 1.1 × 6% + 0.6 × 2% − 0.4 × 3% + 0.2 × 4% = 2% + 6.6% + 1.2% − 1.2% + 0.8% = 9.40%.\nCAPM: 2% + 1.1 × 6% = 8.60%.",
+    "keyPoints": [
+      "Four-factor 9.40%",
+      "CAPM 8.60%"
+    ],
+    "results": [
+      {
+        "label": "Four-factor required return",
+        "value": 9.4,
+        "unit": "%"
+      },
+      {
+        "label": "CAPM required return",
+        "value": 8.6,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-lumiere",
+    "steps": [
+      {
+        "title": "Four-factor model",
+        "lines": [
+          "2% + 1.1 × 6% = 8.6%",
+          "+ 0.6 × 2% = +1.2%",
+          "− 0.4 × 3% = −1.2%",
+          "+ 0.2 × 4% = +0.8%"
+        ],
+        "result": "9.40%"
+      },
+      {
+        "title": "CAPM",
+        "lines": [
+          "2% + 1.1 × 6%"
+        ],
+        "result": "8.60%"
+      }
+    ],
+    "pitfalls": [
+      "Ignoring the negative sign of the HML beta (growth stock)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-05b",
+    "lecture": "l5",
+    "difficulty": 3,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Alpha under different models"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Size, value and momentum · more factors"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) An analyst expects Lumière to return 10%. What is Lumière's alpha under each model? Which alpha would you trust more, and why?",
+    "modelAnswer": "Alpha (four factors) = 10% − 9.40% = 0.60%; alpha (CAPM) = 10% − 8.60% = 1.40%.\nThe four-factor alpha is more reliable: part of the CAPM alpha is only a reward for Lumière's exposure to size and momentum, which have earned positive returns relative to the CAPM. The market portfolio is probably not exactly efficient, so the CAPM alone overstates the alpha.",
+    "keyPoints": [
+      "α four-factor 0.60%",
+      "α CAPM 1.40%",
+      "CAPM alpha partly rewards size/momentum exposure",
+      "Market portfolio not exactly efficient"
+    ],
+    "results": [
+      {
+        "label": "Alpha four-factor",
+        "value": 0.6,
+        "unit": "%",
+        "tol": 0.02
+      },
+      {
+        "label": "Alpha CAPM",
+        "value": 1.4,
+        "unit": "%",
+        "tol": 0.02
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-lumiere",
+    "steps": [
+      {
+        "title": "Alphas",
+        "lines": [
+          "10% − 9.40% = 0.60%",
+          "10% − 8.60% = 1.40%"
+        ]
+      },
+      {
+        "title": "Which to trust?",
+        "why": "Size, value and momentum have beaten the CAPM. A model that includes them explains part of what the CAPM calls alpha."
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-06a",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2023/24 (Mod. A), Exercise 6"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Cost of debt"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) Estimate Fjord's cost of debt and its cost of equity.",
+    "modelAnswer": "Cost of debt = yield − default probability × loss rate = 6% − 2% × 50% = 5.00%.\nCost of equity (CAPM) = 2.5% + 1.3 × 5% = 9.00%.",
+    "keyPoints": [
+      "rD 5.00%",
+      "rE 9.00%"
+    ],
+    "results": [
+      {
+        "label": "Cost of debt",
+        "value": 5.0,
+        "unit": "%"
+      },
+      {
+        "label": "Cost of equity",
+        "value": 9.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-fjord",
+    "steps": [
+      {
+        "title": "Cost of debt",
+        "why": "The yield is the promised return; subtract the expected loss.",
+        "lines": [
+          "6% − 0.02 × 0.50"
+        ],
+        "result": "5.00%"
+      },
+      {
+        "title": "Cost of equity",
+        "lines": [
+          "2.5% + 1.3 × 5%"
+        ],
+        "result": "9.00%"
+      }
+    ],
+    "pitfalls": [
+      "Using the yield of 6% as the cost of debt."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-06b",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "WACC and unlevered cost of capital"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "WACC with taxes · Unlevered cost of capital"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) What are Fjord's WACC and its unlevered cost of capital? Which rate should Fjord use for a new project with the same risk as the firm, financed with the same debt ratio?",
+    "modelAnswer": "Weights: E/V = 900/1,200 = 0.75, D/V = 0.25.\nWACC = 0.75 × 9.00% + 0.25 × 5.00% × (1 − 0.25) = 7.69%.\nrU = 0.75 × 9.00% + 0.25 × 5.00% = 8.00%.\nFor a project with the firm's risk and the same leverage, discount the free cash flows at the WACC (7.69%): it includes the tax benefit of debt. rU applies to an all-equity-financed project.",
+    "keyPoints": [
+      "WACC 7.69%",
+      "rU 8.00%",
+      "Same risk + same leverage → WACC"
+    ],
+    "results": [
+      {
+        "label": "WACC",
+        "value": 7.69,
+        "unit": "%"
+      },
+      {
+        "label": "Unlevered cost of capital",
+        "value": 8.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-fjord",
+    "steps": [
+      {
+        "title": "Weights",
+        "lines": [
+          "V = 900 + 300 = 1,200",
+          "E/V = 0.75, D/V = 0.25"
+        ]
+      },
+      {
+        "title": "WACC",
+        "lines": [
+          "0.75 × 9.00% + 0.25 × 5.00% × 0.75"
+        ],
+        "result": "7.69%"
+      },
+      {
+        "title": "Unlevered cost of capital",
+        "lines": [
+          "0.75 × 9.00% + 0.25 × 5.00%"
+        ],
+        "result": "8.00%"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the tax adjustment in the WACC (would give 8.00%, i.e. rU)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p6-07",
+    "lecture": "l8",
+    "difficulty": 3,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von Final exam 2023/24 (Mod. A), Exercise 5"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "MM Proposition II"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "After the repurchase: what is Saline's share price, how many shares does it buy back, and what is its cost of equity? Explain why the share price does not change.",
+    "modelAnswer": "MM I: V = 50m × 40 = EUR 2,000m, unchanged. Equity after = 2,000 − 800 = EUR 1,200m.\nShares repurchased = 800 / 40 = 20 million → 30 million left → price = 1,200 / 30 = EUR 40.\nMM II: rE = 10% + 800/1,200 × (10% − 4%) = 14.00%.\nThe price does not change because in a perfect market leverage creates no value: shareholders get a fair price in the buyback, and the higher expected return only compensates the higher risk of the levered equity.",
+    "keyPoints": [
+      "Price stays EUR 40",
+      "20 m shares repurchased",
+      "rE = 14.00%",
+      "No value created by leverage (MM I)"
+    ],
+    "results": [
+      {
+        "label": "Share price (EUR)",
+        "value": 40,
+        "unit": "EUR"
+      },
+      {
+        "label": "Shares repurchased (million)",
+        "value": 20,
+        "unit": ""
+      },
+      {
+        "label": "Cost of equity",
+        "value": 14.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p6-saline",
+    "steps": [
+      {
+        "title": "Firm and equity value",
+        "lines": [
+          "V = 50m × 40 = 2,000m (MM I)",
+          "E = 2,000 − 800 = 1,200m"
+        ]
+      },
+      {
+        "title": "Shares",
+        "lines": [
+          "800 / 40 = 20m repurchased",
+          "50m − 20m = 30m left",
+          "1,200 / 30 = EUR 40"
+        ]
+      },
+      {
+        "title": "Cost of equity",
+        "lines": [
+          "D/E = 800 / 1,200 = 0.6667",
+          "10% + 0.6667 × 6%"
+        ],
+        "result": "rE = 14.00%"
+      }
+    ],
+    "pitfalls": [
+      "Dividing the firm value of 2,000 by the remaining 30m shares (EUR 66.67)."
+    ]
+  }
+]

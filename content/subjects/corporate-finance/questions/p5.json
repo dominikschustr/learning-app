@@ -1,0 +1,1603 @@
+[
+  {
+    "type": "mc",
+    "id": "cf-p5-mc01",
+    "lecture": "l1",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 1 – return with a reverse stock split"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Return with a stock split"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "One year ago, you bought 100 shares of Atari SA for a price of EUR 20.25 per share. Today (one year later), Atari's stock is priced at EUR 42.00, but the company proceeded to a \"1:2 reverse stock split\" during the year (1 new share for 2 old shares). Over the same period, you also received a total amount of dividends of EUR 10.23 (on all your stocks). Your total return expressed in percent and rounded to two decimal places is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  None of the proposed alternatives is close to your total return."
+      },
+      {
+        "id": "b",
+        "text": "B  0%"
+      },
+      {
+        "id": "c",
+        "text": "C  -3.08%"
+      },
+      {
+        "id": "d",
+        "text": "D  3.70%"
+      },
+      {
+        "id": "e",
+        "text": "E  -4.21%"
+      },
+      {
+        "id": "f",
+        "text": "F  3.14%"
+      },
+      {
+        "id": "g",
+        "text": "G  4.21%"
+      },
+      {
+        "id": "h",
+        "text": "H  -3.20%"
+      }
+    ],
+    "correct": [
+      "g"
+    ],
+    "explanation": "After the reverse split you hold 100 / 2 = 50 shares worth 50 × 42.00 = EUR 2,100. With the dividends: (2,100 + 10.23) / (100 × 20.25) − 1 = 2,110.23 / 2,025 − 1 = 4.21%.",
+    "steps": [
+      {
+        "title": "Shares after the split",
+        "why": "1:2 reverse split: every 2 old shares become 1 new share.",
+        "lines": [
+          "100 old shares → 50 new shares"
+        ]
+      },
+      {
+        "title": "Value today incl. dividends",
+        "lines": [
+          "50 × 42.00 = 2,100.00",
+          "2,100.00 + 10.23 = 2,110.23"
+        ]
+      },
+      {
+        "title": "Return",
+        "lines": [
+          "Investment: 100 × 20.25 = 2,025.00",
+          "2,110.23 / 2,025.00 − 1"
+        ],
+        "result": "Total return = 4.21%"
+      }
+    ],
+    "pitfalls": [
+      "Comparing EUR 42.00 with EUR 20.25 per share without adjusting the number of shares (gives > 100%).",
+      "Dividing the number of shares the wrong way (200 shares instead of 50)."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc02",
+    "lecture": "l1",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 2 – CAGR vs arithmetic average"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Arithmetic vs geometric average"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "When should the compound annual growth rate of return (CAGR) be used instead of the arithmetic average of returns?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  When comparing the intertemporal performance of different investments."
+      },
+      {
+        "id": "b",
+        "text": "B  When determining the short-term performance of an investment."
+      },
+      {
+        "id": "c",
+        "text": "C  When estimating an investment's expected return over a future horizon."
+      },
+      {
+        "id": "d",
+        "text": "D  When estimating the required return of an investment."
+      },
+      {
+        "id": "e",
+        "text": "E  When computing the risk-free rate of return."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The CAGR (geometric average) describes the actual growth of an investment over a past period, so it is the right measure to compare the historical performance of different investments over time. The arithmetic average is the better estimate of the expected return over the next period."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc03",
+    "lecture": "l2",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 3 – diversification and volatility"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Diversification by correlation"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The diversification effect exists when the expected return of a portfolio is lower than the weighted average expected return of the individual stocks that compose it."
+      },
+      {
+        "id": "b",
+        "text": "B  The risk premium of an investment represents the excess volatility of an investment relative to the market portfolio."
+      },
+      {
+        "id": "c",
+        "text": "C  In finance, the variance of a return is also referred to as its volatility."
+      },
+      {
+        "id": "d",
+        "text": "D  All statements are false. (Select only in case all other statements are indeed false.)"
+      },
+      {
+        "id": "e",
+        "text": "E  When two stocks are perfectly and positively correlated, the portfolio volatility equals the weighted average volatility of the two stocks."
+      }
+    ],
+    "correct": [
+      "e"
+    ],
+    "explanation": "With ρ = +1 there is no diversification: σp = x1σ1 + x2σ2. A is wrong (diversification concerns volatility, the expected return is always the weighted average), B is wrong (the risk premium is an excess return, not excess volatility), C is wrong (volatility is the standard deviation, the square root of the variance)."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc04",
+    "lecture": "l3",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 4 – Sharpe ratio"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Sharpe ratio"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The UCL Fund has an expected return of 10% and a volatility of 10%. The PL Fund has an expected return of 14% and a volatility of 12%. The risk-free rate is 2%. Which statement below regarding the Sharpe ratio of the UCL Fund is CORRECT?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Since the Sharpe ratio of the UCL Fund is positive, it underperforms the risk-free asset."
+      },
+      {
+        "id": "b",
+        "text": "B  Since the Sharpe ratio of the UCL Fund is above one, it outperforms the PL Fund."
+      },
+      {
+        "id": "c",
+        "text": "C  Since the Sharpe ratio of the UCL Fund is below one, it underperforms the risk-free asset."
+      },
+      {
+        "id": "d",
+        "text": "D  Since the Sharpe ratio of the UCL Fund is above one, it offers an acceptable risk-return trade-off relative to the PL Fund."
+      },
+      {
+        "id": "e",
+        "text": "E  Since the Sharpe ratio of the UCL Fund is below one, it offers a poor risk-return trade-off relative to the PL Fund."
+      }
+    ],
+    "correct": [
+      "e"
+    ],
+    "explanation": "Sharpe UCL = (10% − 2%) / 10% = 0.80; Sharpe PL = (14% − 2%) / 12% = 1.00. UCL's ratio is below one and below PL's, so it offers less excess return per unit of risk than the PL Fund. A positive Sharpe ratio means the fund beats the risk-free rate, so A and C are wrong.",
+    "steps": [
+      {
+        "title": "Sharpe ratios",
+        "lines": [
+          "UCL: (10% − 2%) / 10% = 0.80",
+          "PL: (14% − 2%) / 12% = 1.00"
+        ],
+        "result": "UCL 0.80 < PL 1.00 → E"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc05",
+    "lecture": "l4",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 5 – slope of the SML"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "CAPM / security market line"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Suppose that the market portfolio has an expected return of 10% and a volatility of 25%. The risk-free rate is 2%. What is the slope of the Security Market Line (SML)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  0.08"
+      },
+      {
+        "id": "b",
+        "text": "B  0.06"
+      },
+      {
+        "id": "c",
+        "text": "C  0.3"
+      },
+      {
+        "id": "d",
+        "text": "D  0.24"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is a good estimate for slope of the SML."
+      },
+      {
+        "id": "f",
+        "text": "F  0.42"
+      },
+      {
+        "id": "g",
+        "text": "G  4"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The SML plots expected return against beta; its slope is the market risk premium E(RM) − rf = 10% − 2% = 8% = 0.08. The volatility is irrelevant here – (10% − 2%) / 25% = 0.32 would be the slope of the CML.",
+    "pitfalls": [
+      "Dividing by the market volatility – that gives the slope of the CML, not of the SML."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc06",
+    "lecture": "l4",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 6 – beta from the CAPM"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "CAPM / security market line"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Suppose the risk-free rate is 2% and the expected return on the market is 10%. Under the CAPM assumptions, the expected return on the stock of LandMarks PLC is 12%. What is the beta of LandMarks PLC relative to the market?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  1.75"
+      },
+      {
+        "id": "b",
+        "text": "B  1.50"
+      },
+      {
+        "id": "c",
+        "text": "C  1.25"
+      },
+      {
+        "id": "d",
+        "text": "D  1.20"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is as good estimate for LandMarks' beta."
+      },
+      {
+        "id": "f",
+        "text": "F  2.00"
+      },
+      {
+        "id": "g",
+        "text": "G  1.00"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "CAPM: 12% = 2% + β × (10% − 2%) → β = 10% / 8% = 1.25.",
+    "pitfalls": [
+      "Dividing 12% by 10% (gives 1.20) – both returns must be taken in excess of the risk-free rate."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc07",
+    "lecture": "l4",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 7 – CAPM and trading"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "Everyone holds the market portfolio"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Why does the CAPM imply that investors should trade very rarely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  Because stock prices only change very rarely."
+      },
+      {
+        "id": "b",
+        "text": "B  Investors should trade very rarely because the market portfolio changes very rarely."
+      },
+      {
+        "id": "c",
+        "text": "C  Because investors seek to minimize transaction costs, even though they should trade every period."
+      },
+      {
+        "id": "d",
+        "text": "D  The CAPM is about pricing, it implies nothing about trading."
+      },
+      {
+        "id": "e",
+        "text": "E  Because trades take too long to be executed."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Under the CAPM every investor holds the market portfolio (combined with the risk-free asset). The market portfolio is value-weighted, so its weights move automatically with prices – investors only need to trade when the composition of the market changes (new issues, buybacks, delistings), which happens rarely."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc08",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 8 – estimating the WACC"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Cost of debt: yield vs expected return"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the statements below regarding the estimation of the WACC of a firm is FALSE?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The best estimate for the cost of debt is a firm's weighted-average yield to maturity across all debt instruments."
+      },
+      {
+        "id": "b",
+        "text": "B  A firm's equity and debt should be estimated at their market value."
+      },
+      {
+        "id": "c",
+        "text": "C  The WACC represents the weighted average after-tax return required by the capital providers on the assets of a firm."
+      },
+      {
+        "id": "d",
+        "text": "D  The cost of equity can be estimated using historical price data, albeit with some error."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The yield to maturity is the promised return, which assumes that all payments are made. With default risk, the expected return to debtholders – the cost of debt – is lower: rD = y − p × L. The YTM is therefore an upper bound, not the best estimate (especially for risky debt).",
+    "pitfalls": [
+      "Treating the YTM as the expected return – it is only the return if the firm never defaults."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc09",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 9 – fixed costs and project risk"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Operating leverage · Folie 54"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Assume that the estimated costs of a project are completely fixed, while the estimated revenues of the same project are not. This implies that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  To estimate the NPV of the project, one should discount revenues and costs separately, as they have different risk profiles."
+      },
+      {
+        "id": "b",
+        "text": "B  The risk of the project is lower than what it would have been with variable costs."
+      },
+      {
+        "id": "c",
+        "text": "C  The beta of those costs is equal to the beta of the project."
+      },
+      {
+        "id": "d",
+        "text": "D  To estimate the NPV of the project, one should discount its cash flows at the risk-free rate."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fixed costs do not move with the market (their beta is close to zero), while revenues do. Because the two streams have different risk, they should be discounted at different rates. Fixed costs create operating leverage, which INCREASES the project's beta – so B is wrong, and C and D are wrong too."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc10",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "MC 10 – WACC with taxes"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "WACC with taxes"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "TesseracT SA has a market capitalization of EUR 50 million and EUR 30 million of debt outstanding. Its cost of equity is 10% and its pre-tax cost of debt is 5%. Assuming a corporate tax rate of 30%, TesseracT's WACC expressed in percent and rounded to 2 digits is closest to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  7.00%"
+      },
+      {
+        "id": "b",
+        "text": "B  8.12%"
+      },
+      {
+        "id": "c",
+        "text": "C  7.56%"
+      },
+      {
+        "id": "d",
+        "text": "D  7.84%"
+      },
+      {
+        "id": "e",
+        "text": "E  None of the proposed alternatives is close to the WACC."
+      },
+      {
+        "id": "f",
+        "text": "F  7.28%"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "V = 50 + 30 = 80. WACC = 50/80 × 10% + 30/80 × 5% × (1 − 0.30) = 6.25% + 1.3125% = 7.56%.",
+    "steps": [
+      {
+        "title": "Weights",
+        "lines": [
+          "V = 50 + 30 = 80",
+          "E/V = 0.625, D/V = 0.375"
+        ]
+      },
+      {
+        "title": "WACC",
+        "lines": [
+          "0.625 × 10% = 6.25%",
+          "0.375 × 5% × 0.70 = 1.3125%"
+        ],
+        "result": "WACC = 7.56%"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the tax shield on debt (gives 8.13%).",
+      "Using D/E = 30/50 as the weight of debt."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc11",
+    "lecture": "l8",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "MM Proposition II and the WACC"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "Which of the following statements is CORRECT? (replaces a question on taxes and the optimal capital structure, which are not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  In perfect capital markets, increasing the debt-to-equity ratio of a firm increases its value by the present value of all interest payments."
+      },
+      {
+        "id": "b",
+        "text": "B  In perfect capital markets, the WACC of a firm does not depend on its debt-to-equity ratio, even though its cost of equity rises with leverage."
+      },
+      {
+        "id": "c",
+        "text": "C  In perfect capital markets, financing choices can help increase the NPV of an investment project."
+      },
+      {
+        "id": "d",
+        "text": "D  Because debt is cheaper than equity, replacing equity by debt lowers the WACC in perfect capital markets."
+      },
+      {
+        "id": "e",
+        "text": "E  Increasing leverage lowers the risk of a firm's equity."
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "MM: without taxes the WACC equals the unlevered cost of capital rU at every leverage. Cheaper debt is exactly offset by the higher cost of equity (MM II: rE = rU + D/E × (rU − rD)). Leverage raises equity risk, and financing cannot change the NPV of a project in perfect markets."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc12",
+    "lecture": "l7",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "Leveraged recapitalization in a perfect market"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "AKEI SE is a (fictitious) firm listed on the Stockholm stock exchange. Its current stock price is 100kr (krona) per share, it has 100 million shares outstanding and no debt. It borrows 2,000 million kr and uses the money to repurchase shares at the market price. Assuming perfect capital markets, which statement is CORRECT? (replaces a question on rights issues, which are not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The share price stays at 100kr and AKEI has 80 million shares outstanding after the repurchase."
+      },
+      {
+        "id": "b",
+        "text": "B  The share price rises to 125kr, because the same firm value is now spread over 80 million shares."
+      },
+      {
+        "id": "c",
+        "text": "C  The share price falls to 80kr, because the new debt reduces the value of equity."
+      },
+      {
+        "id": "d",
+        "text": "D  The share price stays at 100kr and AKEI still has 100 million shares outstanding."
+      },
+      {
+        "id": "e",
+        "text": "E  All statements are false. (Select only in case all other statements are indeed false.)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "MM I: firm value stays 100 × 100m = 10,000m kr. After the recap, equity = 10,000 − 2,000 = 8,000m kr. AKEI buys back 2,000 / 100 = 20 million shares, leaving 80 million shares: 8,000 / 80 = 100kr. The share price does not change.",
+    "steps": [
+      {
+        "title": "Firm value (MM I)",
+        "lines": [
+          "V = 100kr × 100m = 10,000m kr – unchanged by the recap"
+        ]
+      },
+      {
+        "title": "Shares repurchased",
+        "lines": [
+          "2,000m / 100kr = 20m shares",
+          "100m − 20m = 80m shares left"
+        ]
+      },
+      {
+        "title": "Share price",
+        "lines": [
+          "E = 10,000 − 2,000 = 8,000m kr",
+          "8,000m / 80m = 100kr"
+        ],
+        "result": "Price unchanged at 100kr"
+      }
+    ],
+    "pitfalls": [
+      "Spreading the full firm value over the remaining shares (125kr) – the debt belongs to debtholders, not to shareholders."
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc13",
+    "lecture": "l5",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "When news arrives · Competition pushes alphas to zero · Folien 17–18"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "The management of the listed company FF01 SA unexpectedly announces news that raises the expected future cash flows of the firm. Assuming competitive markets in which investors quickly see the news, which of the following statements is CORRECT? (replaces a question on dividend policy, which is not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The stock price of FF01 SA will not be affected by this announcement."
+      },
+      {
+        "id": "b",
+        "text": "B  The stock price of FF01 SA will rise gradually over the next year, giving investors a positive alpha during the whole year."
+      },
+      {
+        "id": "c",
+        "text": "C  Investors buy the stock right after the announcement, which raises its price until its alpha is close to zero."
+      },
+      {
+        "id": "d",
+        "text": "D  The stock price of FF01 SA will fall, because its expected return increases."
+      },
+      {
+        "id": "e",
+        "text": "E  All statements are false. (Select only in case all other statements are indeed false.)"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Good news creates a positive alpha at the old price. Investors who see it buy the stock; buying raises the price, which lowers the expected return until the alpha is gone. In competitive markets this happens quickly, at the announcement – not gradually over a year."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc14",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Cost of debt: yield vs expected return"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "How does the yield to maturity (YTM) of a risky corporate bond relate to the expected return of its debtholders? (replaces a question on callable bonds, which are not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  The YTM equals the expected return, because it is the return promised by the issuer."
+      },
+      {
+        "id": "b",
+        "text": "B  The YTM understates the expected return, because debtholders also receive a default premium on top of it."
+      },
+      {
+        "id": "c",
+        "text": "C  The YTM overstates the expected return, because it assumes that all promised payments are made; with default risk the expected return is lower."
+      },
+      {
+        "id": "d",
+        "text": "D  The YTM overstates the expected return only if the bond's beta is negative."
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "The YTM is the return if the firm pays everything it promised. With a default probability p and a loss rate L, the expected return is approximately rD = y − p × L, which is lower than the yield."
+  },
+  {
+    "type": "mc",
+    "id": "cf-p5-mc15",
+    "lecture": "l2",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Short sales"
+      }
+    ],
+    "single": true,
+    "shuffle": false,
+    "paperOnly": true,
+    "prompt": "You short-sell 100 shares of a stock at EUR 27 and buy them back one year later at EUR 25 to close your position. The stock paid no dividend during the year. Your gain expressed in euro (EUR) is closest to: (replaces a question on option payoffs, which are not part of lectures 1–8)",
+    "options": [
+      {
+        "id": "a",
+        "text": "A  200.00"
+      },
+      {
+        "id": "b",
+        "text": "B  -200.00"
+      },
+      {
+        "id": "c",
+        "text": "C  0.00"
+      },
+      {
+        "id": "d",
+        "text": "D  2.00"
+      },
+      {
+        "id": "e",
+        "text": "E  -2.00"
+      },
+      {
+        "id": "f",
+        "text": "F  None of the proposed options is close to your gain."
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "You receive 100 × 27 = EUR 2,700 when you sell short and pay 100 × 25 = EUR 2,500 to buy the shares back: gain = EUR 200. A short position wins when the price falls.",
+    "pitfalls": [
+      "Computing the gain per share (EUR 2) instead of on all 100 shares.",
+      "Using the long-position sign: a falling price is a gain for the short seller."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-01a",
+    "lecture": "l1",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "Exercise 1a – total return and dividend yield"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) Assuming that dividends are reinvested immediately in the stock, what was the total realized return for Ipsos SA from 30 September 2024 to 30 September 2025? What was the dividend yield for the same period?",
+    "modelAnswer": "Total return = (36.44 + 1.85) / 45.44 − 1 = -15.74%.\nDividend yield = 1.85 / 45.44 = 4.07% (capital gain rate -19.81%).",
+    "keyPoints": [
+      "Total return -15.74 %",
+      "Dividend yield 4.07 %"
+    ],
+    "results": [
+      {
+        "label": "Total return",
+        "value": -15.74,
+        "unit": "%"
+      },
+      {
+        "label": "Dividend yield",
+        "value": 4.07,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-ipsos",
+    "steps": [
+      {
+        "title": "Total return",
+        "why": "Price at the end plus the dividend paid on that date, divided by the price at the start.",
+        "lines": [
+          "(36.44 + 1.85) / 45.44 − 1",
+          "= 38.29 / 45.44 − 1"
+        ],
+        "result": "R = -15.74%"
+      },
+      {
+        "title": "Dividend yield",
+        "lines": [
+          "1.85 / 45.44"
+        ],
+        "result": "Dividend yield = 4.07%"
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "Capital gain rate (36.44 − 45.44) / 45.44 = -19.81%",
+          "-19.81% + 4.07% = -15.74%"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Dividing the dividend by the end price (36.44) instead of the start price (45.44)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-01b",
+    "lecture": "l1",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "Exercise 1b – average return and its reliability"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Historical returns as estimates of expected returns"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) Assuming that the dividends were immediately reinvested in Ipsos SA stock, calculate the average realized return over the three years between 30 September 2022 and 30 September 2025. Briefly discuss whether this provides an accurate estimate of the expected return for an investor who invests in the Ipsos stock on 1 October 2025.",
+    "modelAnswer": "Yearly returns: 2022/23 (46.40 + 1.35)/48.85 − 1 = -2.25%; 2023/24 (45.44 + 1.65)/46.40 − 1 = 1.49%; 2024/25 -15.74%.\nAverage (arithmetic) = (-2.25% + 1.49% − 15.74%) / 3 = -5.50% (geometric: -5.80%).\nNot an accurate estimate: three observations are far too few given the volatility of a single stock (the estimate has a huge standard error); a negative average cannot be the expected return of a risky stock, which must lie above the risk-free rate. Past realized returns are a noisy estimate of the expected return – better use a model such as the CAPM.",
+    "keyPoints": [
+      "Yearly returns -2.25 %, 1.49 %, -15.74 %",
+      "Average -5.50 %",
+      "Too few observations, high volatility → large estimation error",
+      "Expected return of a risky stock should exceed rf → use CAPM"
+    ],
+    "results": [
+      {
+        "label": "Average annual return",
+        "value": -5.5,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-ipsos",
+    "steps": [
+      {
+        "title": "Yearly returns",
+        "lines": [
+          "2022/23: (46.40 + 1.35) / 48.85 − 1 = -2.25%",
+          "2023/24: (45.44 + 1.65) / 46.40 − 1 = 1.49%",
+          "2024/25: (36.44 + 1.85) / 45.44 − 1 = -15.74%"
+        ]
+      },
+      {
+        "title": "Average",
+        "lines": [
+          "(-2.25% + 1.49% + (-15.74%)) / 3"
+        ],
+        "result": "Average = -5.50%"
+      },
+      {
+        "title": "Is it a good estimate?",
+        "why": "No. With only three yearly observations and a volatile single stock, the standard error of the average is huge. A negative expected return for a risky stock makes no sense – investors require more than the risk-free rate. Use the CAPM (beta × market risk premium) instead."
+      }
+    ],
+    "pitfalls": [
+      "Taking the negative average at face value as the expected return."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-02a",
+    "lecture": "l2",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "Exercise 2a – weights for a target return"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Portfolio return"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) What are the weights of a portfolio composed of the two stocks that has an expected return of 18%?",
+    "modelAnswer": "18% = w × 15% + (1 − w) × 20% → w = (20% − 18%) / (20% − 15%) = 0.4000. Weights: Lorna SE 0.4000 (EUR 4,000), Shore SE 0.6000 (EUR 6,000).",
+    "keyPoints": [
+      "Lorna 0.40",
+      "Shore 0.60"
+    ],
+    "results": [
+      {
+        "label": "Weight Lorna SE",
+        "value": 0.4,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Weight Shore SE",
+        "value": 0.6,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-lorna",
+    "steps": [
+      {
+        "title": "Solve for the weight",
+        "lines": [
+          "18% = w × 15% + (1 − w) × 20%",
+          "18% = 20% − 5% × w",
+          "w = 2% / 5% = 0.40"
+        ],
+        "result": "Lorna 0.40 (EUR 4,000), Shore 0.60 (EUR 6,000)"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-02b",
+    "lecture": "l3",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "Exercise 2b – minimum volatility with ρ = −1"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L3",
+        "ref": "Risk-free mix when ρ = −1"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) What is the lowest volatility that can be achieved by combining the stocks of Lorna SE and Shore SE? How much should you invest in each stock to hold this portfolio?",
+    "modelAnswer": "With ρ = −1 the risk can be eliminated completely: lowest volatility = 0%. Weight in Lorna = σShore / (σLorna + σShore) = 25% / 35% = 0.7143, in Shore 0.2857. Invest EUR 7,142.86 in Lorna SE and EUR 2,857.14 in Shore SE (expected return 16.43%).",
+    "keyPoints": [
+      "ρ = −1 → σ = 0 possible",
+      "Lorna 0.7143 → EUR 7,142.86",
+      "Shore 0.2857 → EUR 2,857.14"
+    ],
+    "results": [
+      {
+        "label": "Lowest volatility",
+        "value": 0,
+        "unit": "%",
+        "tol": 0.01
+      },
+      {
+        "label": "Amount in Lorna SE (EUR)",
+        "value": 7142.86,
+        "unit": "EUR",
+        "tol": 5
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-lorna",
+    "steps": [
+      {
+        "title": "Why zero?",
+        "why": "With ρ = −1, σp = |x1σ1 − x2σ2|. Choose the weights so that the two terms cancel."
+      },
+      {
+        "title": "Weights",
+        "lines": [
+          "x_Lorna = σ_Shore / (σ_Lorna + σ_Shore) = 25 / 35",
+          "x_Lorna = 0.7143, x_Shore = 0.2857",
+          "Check: 0.7143 × 10% − 0.2857 × 25% = 0"
+        ]
+      },
+      {
+        "title": "Amounts",
+        "lines": [
+          "Lorna: 0.7143 × 10,000 = EUR 7,142.86",
+          "Shore: 0.2857 × 10,000 = EUR 2,857.14"
+        ],
+        "result": "σ = 0%"
+      }
+    ],
+    "pitfalls": [
+      "Swapping the volatilities: the LESS volatile stock gets the larger weight."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-03a",
+    "lecture": "l4",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "Exercise 3a – market portfolio"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L2",
+        "ref": "Portfolio volatility (two assets)"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) What are the expected return and the volatility of the market portfolio (an equally-weighted combination of the two portfolios)?",
+    "modelAnswer": "E(RM) = 0.5 × 20% + 0.5 × 5% = 12.50%.\nVar = 0.5² × 0.40² + 0.5² × 0.05² + 2 × 0.5 × 0.5 × (−0.1) × 0.40 × 0.05 = 0.039625 → σM = 19.91%.",
+    "keyPoints": [
+      "E(RM) 12.50 %",
+      "σM 19.91 %"
+    ],
+    "results": [
+      {
+        "label": "Expected market return",
+        "value": 12.5,
+        "unit": "%"
+      },
+      {
+        "label": "Market volatility",
+        "value": 19.91,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-ai",
+    "steps": [
+      {
+        "title": "Expected return",
+        "lines": [
+          "0.5 × 20% + 0.5 × 5% = 12.50%"
+        ]
+      },
+      {
+        "title": "Variance",
+        "lines": [
+          "0.25 × 0.16 = 0.040000",
+          "0.25 × 0.0025 = 0.000625",
+          "2 × 0.25 × (−0.1) × 0.40 × 0.05 = −0.001000",
+          "Var = 0.039625"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "√0.039625"
+        ],
+        "result": "σM = 19.91%"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting the negative covariance term.",
+      "Averaging the volatilities (22.5%)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-03b",
+    "lecture": "l4",
+    "difficulty": 3,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "Exercise 3b – does the CAPM hold?"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L4",
+        "ref": "The market portfolio must be efficient"
+      }
+    ],
+    "verb": "explain",
+    "prompt": "(b) Does the CAPM hold in this economy? (Hint: is the market portfolio efficient?)",
+    "modelAnswer": "Compare Sharpe ratios: market (12.5% − 2%) / 19.91% = 0.5275; non-innovative stocks (5% − 2%) / 5% = 0.6000 > market. A single portfolio offers a better risk-return trade-off than the market, so the market is not efficient and the CAPM does not hold.\nSame result with betas: β_non-innovative = Cov / Var(M) = 0.000250 / 0.039625 = 0.0063 → CAPM requires 2% + 0.0063 × 10.5% = 2.07% < 5% (positive alpha); β_innovative = 1.9937 → requires 22.93% > 20% (negative alpha).",
+    "keyPoints": [
+      "Sharpe market 0.53",
+      "Sharpe non-innovative 0.60 > market",
+      "Non-zero alphas → market not efficient",
+      "CAPM does not hold"
+    ],
+    "results": [
+      {
+        "label": "Sharpe ratio market",
+        "value": 0.5275,
+        "unit": "",
+        "tol": 0.005
+      },
+      {
+        "label": "Sharpe ratio non-innovative",
+        "value": 0.6,
+        "unit": "",
+        "tol": 0.005
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-ai",
+    "steps": [
+      {
+        "title": "Idea",
+        "why": "The CAPM holds only if the market portfolio is efficient – then no portfolio can have a higher Sharpe ratio and all alphas are zero."
+      },
+      {
+        "title": "Sharpe ratios",
+        "lines": [
+          "Market: 10.5% / 19.91% = 0.5275",
+          "Innovative: 18% / 40% = 0.4500",
+          "Non-innovative: 3% / 5% = 0.6000"
+        ]
+      },
+      {
+        "title": "Alphas (alternative check)",
+        "lines": [
+          "Cov(N, M) = 0.5 × 0.05² + 0.5 × (−0.1 × 0.40 × 0.05) = 0.000250",
+          "β_N = 0.0063 → required 2.07% vs expected 5% → α > 0",
+          "β_I = 1.9937 → required 22.93% vs expected 20% → α < 0"
+        ],
+        "result": "Market is not efficient → the CAPM does not hold"
+      }
+    ],
+    "pitfalls": [
+      "Concluding from the high volatility of innovative stocks alone – what matters is whether any portfolio beats the market's Sharpe ratio."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-04a",
+    "lecture": "l6",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "Exercise 4a – asset beta"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L6",
+        "ref": "Unlevered (asset) cost of capital and beta"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) Assuming that the debt of Smooth Operator is risk-free, what is its asset (unlevered) beta? (Hint: start by computing the firm's equity beta.) Briefly explain why the asset beta should differ from the equity beta.",
+    "modelAnswer": "Equity beta from the CAPM: 8% = 2% + βE × (6% − 2%) → βE = 1.5000.\nβU = E/(E+D) × βE + D/(E+D) × βD = 100/150 × 1.5 + 50/150 × 0 = 1.0000.\nThe equity beta is higher because leverage concentrates the risk of the assets on the shareholders: debtholders are paid first (risk-free), so equity bears all the business risk on a smaller amount of capital.",
+    "keyPoints": [
+      "βE = 1.50",
+      "βU = 1.00",
+      "Leverage amplifies equity risk"
+    ],
+    "results": [
+      {
+        "label": "Equity beta",
+        "value": 1.5,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Asset beta",
+        "value": 1.0,
+        "unit": "",
+        "tol": 0.01
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-smooth",
+    "steps": [
+      {
+        "title": "Equity beta",
+        "lines": [
+          "8% = 2% + βE × 4%",
+          "βE = 6% / 4% = 1.50"
+        ]
+      },
+      {
+        "title": "Asset beta",
+        "why": "The asset beta is the value-weighted average of the equity and debt betas; risk-free debt has βD = 0.",
+        "lines": [
+          "βU = 100/150 × 1.50 + 50/150 × 0"
+        ],
+        "result": "βU = 1.00"
+      },
+      {
+        "title": "Why different?",
+        "why": "Debt is paid first, so all the risk of the assets is borne by equity, which finances only 2/3 of them → βE = βU × (1 + D/E) = 1.0 × 1.5."
+      }
+    ],
+    "pitfalls": [
+      "Using D/E = 0.5 as the weight of debt instead of D/(D + E) = 1/3."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-04b",
+    "lecture": "l8",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Altklausur 2025/26 (Group A)",
+        "ref": "Exercise 4b – risky debt and the equity beta"
+      },
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "Beta version of MM II"
+      }
+    ],
+    "verb": "explain",
+    "prompt": "(b) Rocky Biz Ltd is one of Smooth Operator's main competitors. Both firms have similar assets with the same risk and the same market value, and the same leverage ratio. They only differ in that Rocky Biz's debt is not viewed as risk-free by investors. How should Rocky Biz's equity beta compare to Smooth Operator's equity beta? Briefly discuss. No calculation is needed.",
+    "modelAnswer": "Rocky Biz's equity beta is LOWER. Both firms have the same asset beta (same assets): βU = E/V × βE + D/V × βD. If Rocky Biz's debt is risky, βD > 0, so debtholders carry part of the asset risk; for the same βU and the same weights, βE must be lower: βE = βU + D/E × (βU − βD).",
+    "keyPoints": [
+      "Same asset beta",
+      "Risky debt → βD > 0",
+      "Debtholders bear part of the risk",
+      "→ lower equity beta"
+    ],
+    "results": [],
+    "paperOnly": true,
+    "case": "p5-smooth",
+    "steps": [
+      {
+        "title": "Same assets → same asset beta",
+        "lines": [
+          "βU = E/V × βE + D/V × βD (same for both firms)"
+        ]
+      },
+      {
+        "title": "Risky debt",
+        "why": "With βD > 0 the debtholders carry part of the asset risk, so less is left for shareholders.",
+        "lines": [
+          "βE = βU + D/E × (βU − βD)",
+          "βD ↑ → βE ↓"
+        ],
+        "result": "Rocky Biz's equity beta < Smooth Operator's (1.50)"
+      }
+    ],
+    "pitfalls": [
+      "Thinking riskier debt makes the equity riskier – for given assets and leverage, the risk is shared, not added."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-05a",
+    "lecture": "l7",
+    "difficulty": 1,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L7",
+        "ref": "MM Proposition I"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) Everything else being kept equal, what is the impact of the new bonds on the firm's value and on the value of Club Med's equity? (replaces a question on the interest tax shield)",
+    "modelAnswer": "MM Proposition I: in a perfect capital market, the capital structure does not change firm value: V stays EUR 8 billion. The EUR 2 billion of bonds replace EUR 2 billion of equity, so equity falls to EUR 6 billion – but shareholders received the EUR 2 billion in the buyback, so their wealth is unchanged.",
+    "keyPoints": [
+      "MM I: firm value unchanged at EUR 8 bn",
+      "Equity = 8 − 2 = EUR 6 bn",
+      "Shareholders' wealth unchanged"
+    ],
+    "results": [
+      {
+        "label": "Firm value (EUR bn)",
+        "value": 8,
+        "unit": "",
+        "tol": 0.01
+      },
+      {
+        "label": "Equity value (EUR bn)",
+        "value": 6,
+        "unit": "",
+        "tol": 0.01
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-clubmed",
+    "steps": [
+      {
+        "title": "Firm value",
+        "why": "MM I: V_L = V_U in perfect capital markets.",
+        "result": "V = EUR 8 bn"
+      },
+      {
+        "title": "Equity",
+        "lines": [
+          "E = V − D = 8 − 2"
+        ],
+        "result": "E = EUR 6 bn"
+      }
+    ],
+    "pitfalls": [
+      "Adding the debt to the firm value (EUR 10 bn) – the bonds only replace equity."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-05b",
+    "lecture": "l8",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L8",
+        "ref": "MM Proposition II · WACC without taxes"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) What are Club Med's cost of equity and its WACC after the recapitalization? A board member argues that the recap lowers the cost of capital, because the bonds only cost 5%. Briefly discuss.",
+    "modelAnswer": "MM II: rE = rU + D/E × (rU − rD) = 9% + 2/6 × (9% − 5%) = 10.33%.\nWACC = 6/8 × 10.33% + 2/8 × 5% = 9.00% = rU.\nThe board member is wrong: debt is cheaper, but it makes equity riskier, so the cost of equity rises exactly enough to keep the WACC at 9%.",
+    "keyPoints": [
+      "rE = 10.33 %",
+      "WACC = 9 % = rU",
+      "Cheaper debt offset by riskier equity"
+    ],
+    "results": [
+      {
+        "label": "Cost of equity",
+        "value": 10.33,
+        "unit": "%"
+      },
+      {
+        "label": "WACC",
+        "value": 9.0,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-clubmed",
+    "steps": [
+      {
+        "title": "Cost of equity (MM II)",
+        "lines": [
+          "D/E = 2 / 6 = 0.3333",
+          "rE = 9% + 0.3333 × (9% − 5%)"
+        ],
+        "result": "rE = 10.33%"
+      },
+      {
+        "title": "WACC",
+        "lines": [
+          "6/8 × 10.33% + 2/8 × 5% = 7.75% + 1.25%"
+        ],
+        "result": "WACC = 9.00%"
+      },
+      {
+        "title": "Discussion",
+        "why": "Without taxes, leverage does not lower the WACC: the higher equity cost exactly offsets the cheaper debt."
+      }
+    ],
+    "pitfalls": [
+      "Using D/(D + E) = 0.25 instead of D/E = 0.33 in MM II."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-06a",
+    "lecture": "l5",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Alpha"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(a) What are Ghost Writer's expected return according to the analysts, its required return under the CAPM, and its alpha? (replaces a question on IPO auctions)",
+    "modelAnswer": "Expected return = (64 + 1) / 60 − 1 = 8.33%.\nRequired return = 2% + 1.3 × (6% − 2%) = 7.20%.\nAlpha = 8.33% − 7.20% = 1.13% > 0: the stock lies above the SML (underpriced).",
+    "keyPoints": [
+      "Expected return 8.33 %",
+      "Required return 7.20 %",
+      "Alpha 1.13 %"
+    ],
+    "results": [
+      {
+        "label": "Expected return",
+        "value": 8.33,
+        "unit": "%"
+      },
+      {
+        "label": "Required return",
+        "value": 7.2,
+        "unit": "%"
+      },
+      {
+        "label": "Alpha",
+        "value": 1.13,
+        "unit": "%",
+        "tol": 0.02
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-ghost",
+    "steps": [
+      {
+        "title": "Expected return",
+        "lines": [
+          "(64 + 1) / 60 − 1"
+        ],
+        "result": "8.33%"
+      },
+      {
+        "title": "Required return (CAPM)",
+        "lines": [
+          "2% + 1.3 × 4%"
+        ],
+        "result": "7.20%"
+      },
+      {
+        "title": "Alpha",
+        "lines": [
+          "8.33% − 7.20%"
+        ],
+        "result": "α = 1.13%"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-06b",
+    "lecture": "l5",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L5",
+        "ref": "Competition pushes alphas to zero · Folie 18"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "(b) If the analysts are right and markets are competitive, what should happen to Ghost Writer's share price? At what price would its alpha be zero?",
+    "modelAnswer": "Investors buy the positive-alpha stock; buying raises the price and lowers the expected return until alpha = 0. Price with zero alpha: P0 = (64 + 1) / (1 + 7.20%) = EUR 60.63. Competition between informed investors should push the price there quickly.",
+    "keyPoints": [
+      "Buying pressure raises the price",
+      "Zero-alpha price EUR 60.63",
+      "Alpha disappears quickly in competitive markets"
+    ],
+    "results": [
+      {
+        "label": "Price with zero alpha (EUR)",
+        "value": 60.63,
+        "unit": "EUR"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-ghost",
+    "steps": [
+      {
+        "title": "What happens",
+        "why": "Positive alpha → investors buy → price rises → expected return falls until it equals the required return."
+      },
+      {
+        "title": "Zero-alpha price",
+        "lines": [
+          "P0 = E(P1 + Div1) / (1 + r)",
+          "P0 = 65 / 1.072"
+        ],
+        "result": "P0 = EUR 60.63"
+      }
+    ],
+    "pitfalls": [
+      "Discounting at the expected return of the analysts (gives back EUR 60)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "cf-p5-07",
+    "lecture": "l1",
+    "difficulty": 2,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Folien L1",
+        "ref": "Variance and volatility (historical)"
+      }
+    ],
+    "verb": "calculate",
+    "prompt": "Calculate Renault's average annual return and its (historical) volatility over the four years. Is the average a reliable estimate of the return Renault's investors can expect next year? (replaces an exercise on option payoffs)",
+    "modelAnswer": "Average = (22% − 8% + 15% − 5%) / 4 = 6.00%.\nVariance = [(16%)² + (−14%)² + (9%)² + (−11%)²] / (4 − 1) = 0.0654 / 3 = 0.0218 → volatility = 14.76%.\nNot reliable: with a volatility of about 15% and only four observations, the average is very imprecise (its standard error σ/√T ≈ 7.38%). Expected returns are better estimated with a model (CAPM) than with a short history of one stock.",
+    "keyPoints": [
+      "Average 6.00 %",
+      "Volatility 14.76 % (divide by T − 1)",
+      "Few observations + high volatility → imprecise estimate"
+    ],
+    "results": [
+      {
+        "label": "Average return",
+        "value": 6.0,
+        "unit": "%"
+      },
+      {
+        "label": "Volatility",
+        "value": 14.76,
+        "unit": "%"
+      }
+    ],
+    "paperOnly": true,
+    "case": "p5-renault",
+    "steps": [
+      {
+        "title": "Average",
+        "lines": [
+          "(22 − 8 + 15 − 5) / 4 = 24 / 4"
+        ],
+        "result": "6.00%"
+      },
+      {
+        "title": "Variance",
+        "why": "Historical variance: divide by T − 1 = 3.",
+        "lines": [
+          "Deviations: 16, −14, 9, −11 (%)",
+          "Squares: 0.0256 + 0.0196 + 0.0081 + 0.0121 = 0.0654",
+          "0.0654 / 3 = 0.0218"
+        ]
+      },
+      {
+        "title": "Volatility",
+        "lines": [
+          "√0.0218"
+        ],
+        "result": "σ = 14.76%"
+      },
+      {
+        "title": "Reliability",
+        "why": "Four noisy observations cannot pin down the expected return – the estimate could easily be off by more than 7 percentage points."
+      }
+    ],
+    "pitfalls": [
+      "Dividing by T = 4 instead of T − 1 = 3 (gives 12.79%)."
+    ]
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "id": "p6",
+    "title": "Konzeptklausur B",
+    "subtitle": "A second new paper in the exam format with fresh cases across all eight lectures: 15 multiple-choice questions and 7 calculation exercises, modelled on the 2022/23–2025/26 papers.",
+    "origin": {
+      "kind": "neu"
+    },
+    "minutes": 120,
+    "parts": [
+      {
+        "title": "Part 1 – Multiple choice questions",
+        "instructions": "Select the MOST appropriate response. Each question is worth 2/3 marks. [10 marks]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "cf-p6-mc01",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc02",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc03",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc04",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc05",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc06",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc07",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc08",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc09",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc10",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc11",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc12",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc13",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc14",
+                "points": 0.6666666666666666
+              },
+              {
+                "q": "cf-p6-mc15",
+                "points": 0.6666666666666666
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Short answer and calculation questions",
+        "instructions": "Report the main calculation steps and justify all your responses. Report numbers with four decimals and percentages with two decimals. [10 marks]",
+        "sections": [
+          {
+            "title": "Exercise 1 – Returns with a stock split",
+            "items": [
+              {
+                "q": "cf-p6-01a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p6-01b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 – Portfolio of two stocks",
+            "items": [
+              {
+                "q": "cf-p6-02a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p6-02b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 – Sharpe ratio and leverage",
+            "items": [
+              {
+                "q": "cf-p6-03a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p6-03b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 4 – Improving a portfolio",
+            "items": [
+              {
+                "q": "cf-p6-04a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p6-04b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 5 – Multi-factor model and alpha",
+            "items": [
+              {
+                "q": "cf-p6-05a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p6-05b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 6 – Cost of capital",
+            "items": [
+              {
+                "q": "cf-p6-06a",
+                "points": 0.75
+              },
+              {
+                "q": "cf-p6-06b",
+                "points": 0.75
+              }
+            ]
+          },
+          {
+            "title": "Exercise 7 – Leveraged recapitalization",
+            "items": [
+              {
+                "q": "cf-p6-07",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
