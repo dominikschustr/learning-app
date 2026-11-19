@@ -90,15 +90,18 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
   // Gesamtstand über alle Aufgaben (jede Frage einmal, auch wenn sie in zwei Klausuren steht)
   const unique = [...new Map(groups.flatMap((g) => g.rows).map((r) => [r.q.id, r.q])).values()];
   const doneCount = unique.filter((q) => st(q) !== "new").length;
-  // Stand je Kapitel: wie viele Aufgaben schon bearbeitet, wie viele noch offen
+  const wrongCount = unique.filter((q) => st(q) === "wrong").length;
+  // Stand je Kapitel: wie viele Aufgaben schon bearbeitet, wie viele noch offen, wie viele zuletzt falsch
   const chapterCounts = subject.lectures
     .map((l) => {
       const qs = unique.filter((q) => q.lecture === l.id);
       const done = qs.filter((q) => st(q) !== "new").length;
-      return { id: l.id, code: code(l.title), title: l.title, n: qs.length, done, open: qs.length - done };
+      const wrong = qs.filter((q) => st(q) === "wrong").length;
+      return { id: l.id, code: code(l.title), title: l.title, n: qs.length, done, open: qs.length - done, wrong };
     })
     .filter((c) => c.n > 0);
   const current = chapterCounts.find((c) => c.id === chapter);
+  const wrongNow = current?.wrong ?? wrongCount;
   // Markierte Aufgaben im gewählten Kapitel – von dir bzw. von der Lerngruppe – für die Filter
   const inChapter = unique.filter((q) => chapter === "all" || q.lecture === chapter);
   const myCount = inChapter.filter((q) => highlightedBy(q).some((h) => h.me)).length;
@@ -121,7 +124,11 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
         {current ? `${current.code}: ` : ""}
         {current?.n ?? unique.length} Aufgaben ·{" "}
         <span className="font-semibold text-ink-2">{current?.done ?? doneCount} bearbeitet</span> ·{" "}
-        {current?.open ?? unique.length - doneCount} offen. Tippe eine Zeile an, um sie auszuwählen, oder starte sie direkt mit ▶.
+        {current?.open ?? unique.length - doneCount} offen ·{" "}
+        <span className={cn(wrongNow > 0 && "font-semibold")} style={wrongNow > 0 ? { color: "var(--bad)" } : undefined}>
+          {wrongNow} falsch
+        </span>
+        . Tippe eine Zeile an, um sie auszuwählen, oder starte sie direkt mit ▶.
       </p>
 
       {/* Stand je Kapitel – zugleich Kapitelfilter */}
@@ -131,6 +138,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
           onClick={() => setChapter("all")}
           code="Alle Kapitel"
           done={doneCount}
+          wrong={wrongCount}
           total={unique.length}
           color={subject.color}
         />
@@ -142,6 +150,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
             code={c.code}
             title={c.title.split(" · ").slice(1).join(" · ")}
             done={c.done}
+            wrong={c.wrong}
             total={c.n}
             color={subject.color}
           />
@@ -161,6 +170,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
           ).map(([k, label]) => (
             <FilterChip key={k} active={status === k} onClick={() => setStatus(k)}>
               {label}
+              {k === "wrong" && ` · ${wrongNow}`}
             </FilterChip>
           ))}
           {(myCount > 0 || status === "marked") && (
@@ -352,13 +362,14 @@ function Box({ checked, mixed, onClick, label }: { checked: boolean; mixed?: boo
   );
 }
 
-/** Kachel im Kapitelfilter: Kapitel, Fortschrittsbalken, bearbeitet / offen. */
+/** Kachel im Kapitelfilter: Kapitel, Fortschrittsbalken, bearbeitet / offen / zuletzt falsch. */
 function ChapterTile({
   active,
   onClick,
   code,
   title,
   done,
+  wrong,
   total,
   color,
 }: {
@@ -367,6 +378,8 @@ function ChapterTile({
   code: string;
   title?: string;
   done: number;
+  /** Aufgaben, die zuletzt falsch beantwortet wurden */
+  wrong: number;
   total: number;
   color: string;
 }) {
@@ -396,6 +409,17 @@ function ChapterTile({
           {open} offen
         </span>
       </span>
+      {/* Wie viele davon zuletzt falsch beantwortet – eigene Zeile, damit nichts mitten im Satz umbricht */}
+      {done > 0 && (
+        <span
+          title="Aufgaben, die du zuletzt falsch beantwortet hast"
+          className={cn("mt-0.5 inline-flex items-center gap-1 text-xs", wrong > 0 ? "font-semibold" : "text-muted")}
+          style={wrong > 0 ? { color: "var(--bad)" } : undefined}
+        >
+          <X className="size-3 shrink-0" strokeWidth={3} />
+          {wrong} zuletzt falsch
+        </span>
+      )}
     </button>
   );
 }
