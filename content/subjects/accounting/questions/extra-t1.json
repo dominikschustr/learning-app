@@ -1,0 +1,303 @@
+[
+  {
+    "type": "short",
+    "id": "sa-x1-01",
+    "lecture": "t1",
+    "topic": "Comprehensive income – single or two statements? (Harlow)",
+    "case": "x-harlow-soci",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Look at Harlow's consolidated statement of comprehensive income. Which approach to presenting comprehensive income does Harlow use – the single-statement or the two-statement approach? Justify with reference to the statement.",
+    "modelAnswer": "Harlow uses the single-statement approach. One table starts with revenue, runs through all income and expenses down to profit for the year (505) and then continues directly with the items of other comprehensive income (−39) and ends with total comprehensive income (466). Under the two-statement approach the statement of comprehensive income would start from profit for the year, and revenue and expenses would appear in a separate income statement.",
+    "keyPoints": [
+      "Single-statement approach",
+      "One table from revenue down to profit for the year (505) …",
+      "… continued directly with OCI (−39) to total comprehensive income (466)"
+    ],
+    "paperOnly": true,
+    "extra": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Klausurstil · IAS 1 presentation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "The two approaches (IAS 1.10A)",
+        "why": "Single statement: ONE statement of profit or loss and other comprehensive income – from revenue down to profit for the year, then directly the OCI items, ending with total comprehensive income. Two statements: a separate income statement ending with profit for the year, PLUS a second statement that STARTS from profit for the year, lists the OCI items and ends with total comprehensive income."
+      },
+      {
+        "title": "Where does the statement start?",
+        "why": "Harlow's table starts with revenue – so profit or loss is part of this statement.",
+        "result": "P&L items included"
+      },
+      {
+        "title": "Where does it end?",
+        "why": "After profit for the year (505) the table continues with OCI: DB remeasurement 18, exchange differences −64, hedges 12, tax −5.",
+        "lines": [
+          "505 − 39 = 466 total comprehensive income"
+        ],
+        "result": "Single-statement approach"
+      }
+    ],
+    "pitfalls": [
+      "Deciding from the title alone – both approaches use the term 'statement of comprehensive income'.",
+      "Confusing 'profit for the year' (505) with total comprehensive income (466)."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-x1-02",
+    "lecture": "t1",
+    "topic": "Comprehensive income – single or two statements? (Ostrava)",
+    "case": "x-ostrava-soci",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Look at Ostrava's consolidated statement of comprehensive income. Does Ostrava use the single-statement or the two-statement approach? Justify. Is the title 'statement of comprehensive income' enough to decide?",
+    "modelAnswer": "Ostrava uses the two-statement approach. The statement of comprehensive income does not contain revenue or expenses: it starts from profit for the year (312), adds the OCI items (60) and ends with total comprehensive income (372). Profit for the year must therefore come from a separate consolidated income statement, which is the first of the two statements. The title is not enough: under both approaches the statement can be called 'statement of comprehensive income' – what matters is whether the table starts with revenue or with profit for the year.",
+    "keyPoints": [
+      "Two-statement approach",
+      "Statement starts from profit for the year (312) – no revenue or expenses",
+      "So there is a separate income statement",
+      "The title does not decide – the first line does"
+    ],
+    "paperOnly": true,
+    "extra": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Klausurstil · IAS 1 presentation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "The two approaches (IAS 1.10A)",
+        "why": "Single statement: ONE statement of profit or loss and other comprehensive income – from revenue down to profit for the year, then directly the OCI items, ending with total comprehensive income. Two statements: a separate income statement ending with profit for the year, PLUS a second statement that STARTS from profit for the year, lists the OCI items and ends with total comprehensive income."
+      },
+      {
+        "title": "Look at the first line",
+        "why": "The table starts with 'Profit for the year 312' – no revenue, no expenses.",
+        "result": "Profit comes from a separate income statement"
+      },
+      {
+        "title": "Follow the statement",
+        "lines": [
+          "312 + 60 OCI = 372 total comprehensive income",
+          "of which owners 351, NCI 21"
+        ],
+        "result": "Two-statement approach"
+      },
+      {
+        "title": "Title?",
+        "why": "IAS 1 allows other titles and uses 'statement of comprehensive income' for both approaches – the title is not a reliable indicator."
+      }
+    ],
+    "pitfalls": [
+      "Answering 'single statement' because the table is titled 'statement of comprehensive income'.",
+      "Thinking the attribution to owners and NCI belongs only in the income statement – total comprehensive income is attributed as well."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-x1-03",
+    "lecture": "t1",
+    "topic": "Comprehensive income – single or two statements? (Lumen)",
+    "case": "x-lumen-soci",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Lumen presents one table. Lumen's CFO claims that because profit for the year is attributed to owners and NCI and earnings per share are shown halfway down the table, the table really contains two statements. Which approach does Lumen use? Comment on the CFO's claim.",
+    "modelAnswer": "Lumen uses the single-statement approach: one statement of profit or loss and other comprehensive income that starts with revenue, shows profit for the year (234), and continues in the same table with OCI (−36) down to total comprehensive income (198). The CFO is wrong: IAS 1 requires the single statement to show both subtotals – profit for the year and total comprehensive income – each attributed to owners of the parent and non-controlling interests; EPS may be shown there as well. These items in the middle are therefore part of a single statement. Two statements would mean two separate tables, the second one starting from profit for the year.",
+    "keyPoints": [
+      "Single-statement approach",
+      "Starts with revenue, continues after profit (234) with OCI to TCI (198)",
+      "Attribution of profit and of TCI is required in the single statement too",
+      "CFO's claim is wrong – two statements = two separate tables"
+    ],
+    "paperOnly": true,
+    "extra": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Klausurstil · IAS 1 presentation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "The two approaches (IAS 1.10A)",
+        "why": "Single statement: ONE statement of profit or loss and other comprehensive income – from revenue down to profit for the year, then directly the OCI items, ending with total comprehensive income. Two statements: a separate income statement ending with profit for the year, PLUS a second statement that STARTS from profit for the year, lists the OCI items and ends with total comprehensive income."
+      },
+      {
+        "title": "One table or two?",
+        "why": "There is one table that starts with revenue and ends with total comprehensive income.",
+        "lines": [
+          "Profit for the year 234 (owners 219, NCI 15)",
+          "OCI −36 → total comprehensive income 198 (owners 186, NCI 12)"
+        ],
+        "result": "Single-statement approach"
+      },
+      {
+        "title": "The CFO's argument",
+        "why": "IAS 1.81B: profit or loss AND total comprehensive income are both attributed to owners and NCI. Showing profit attribution and EPS inside the table does not split it into two statements."
+      }
+    ],
+    "pitfalls": [
+      "Taking the profit attribution / EPS in the middle as the end of a separate income statement.",
+      "Forgetting that a two-statement presentation needs a second table that starts from profit for the year."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-x1-04",
+    "lecture": "t1",
+    "topic": "Expenses by nature or by function? (Kestrel)",
+    "case": "x-kestrel-is",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Does Kestrel present its operating expenses by nature or by function? Name two lines of the income statement that tell you. Can you determine Kestrel's gross profit (gross margin) from this income statement?",
+    "modelAnswer": "Kestrel presents its expenses by nature. Lines that show this: changes in inventories of finished goods and work in progress (35), raw materials and consumables used (−1,420), employee benefits expense (−980), depreciation, amortisation and impairment (−265) – expenses are grouped by what they are, not by the activity they serve. The gross profit cannot be determined: there is no cost of sales line, and the staff costs and depreciation would have to be allocated to production, selling and administration – information that the income statement by nature does not give.",
+    "keyPoints": [
+      "By nature",
+      "Indicators: change in inventories, raw materials used, employee benefits expense, D&A",
+      "No cost of sales → gross profit cannot be determined"
+    ],
+    "paperOnly": true,
+    "extra": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Klausurstil · IAS 1 presentation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Nature vs. function (IAS 1.102–103)",
+        "why": "By nature: expenses grouped by type (materials, staff costs, depreciation …), adjusted for the change in inventories. By function: expenses grouped by activity (cost of sales, distribution, administration …), usually with gross profit."
+      },
+      {
+        "title": "Read the lines",
+        "lines": [
+          "Change in inventories +35",
+          "Raw materials and consumables −1,420",
+          "Employee benefits −980",
+          "D&A and impairment −265"
+        ],
+        "result": "Income statement by nature"
+      },
+      {
+        "title": "Gross profit?",
+        "why": "Cost of sales would need staff costs and depreciation split between production and other functions – not visible here.",
+        "result": "Gross profit cannot be determined"
+      }
+    ],
+    "pitfalls": [
+      "Taking 'other operating expenses' as a sign of the function method – it exists in both formats.",
+      "Computing a 'gross margin' as revenue minus raw materials – that is not cost of sales."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-x1-05",
+    "lecture": "t1",
+    "topic": "Expenses by nature or by function? (Fenwick)",
+    "case": "x-fenwick-is",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Does Fenwick present its operating expenses by nature or by function? Justify. A colleague wants to know Fenwick's total staff costs and depreciation for 2025. Can she read them from the income statement? If not, where can she find them?",
+    "modelAnswer": "Fenwick presents its expenses by function (cost of sales method): cost of sales (−3,710), distribution costs (−840), administrative expenses (−520) and research and development costs (−310) group expenses by the activity they serve, and a gross profit (2,270) is shown. Staff costs and depreciation cannot be read from the income statement because they are spread over these functions. IAS 1.104 requires an entity that classifies by function to disclose additional information on the nature of expenses – including depreciation and amortisation and employee benefits expense – in the notes. Depreciation and amortisation can also be found in the cash flow statement (added back under the indirect method).",
+    "keyPoints": [
+      "By function (cost of sales method)",
+      "Indicators: cost of sales, gross profit, distribution, administrative, R&D costs",
+      "Staff costs and depreciation not visible – spread over functions",
+      "Disclosed in the notes (IAS 1.104); D&A also in the cash flow statement"
+    ],
+    "paperOnly": true,
+    "extra": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Klausurstil · IAS 1 presentation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Read the lines",
+        "lines": [
+          "Cost of sales −3,710 → gross profit 2,270",
+          "Distribution −840, administrative −520, R&D −310"
+        ],
+        "result": "Income statement by function"
+      },
+      {
+        "title": "Staff costs and depreciation",
+        "why": "Under the function method they are included in cost of sales, distribution, administration and R&D – no separate line.",
+        "result": "Not on the face of the income statement"
+      },
+      {
+        "title": "Where to find them",
+        "why": "IAS 1.104: entities classifying by function disclose the nature of expenses, including depreciation, amortisation and employee benefits expense, in the notes. D&A is also added back in the cash flow statement (indirect method).",
+        "result": "Notes (and cash flow statement for D&A)"
+      }
+    ],
+    "pitfalls": [
+      "Answering 'by nature' because of 'other operating expenses' – that line appears in both formats.",
+      "Saying the staff costs cannot be found at all – the notes must disclose them."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-x1-06",
+    "lecture": "t1",
+    "topic": "Expenses by nature or by function? (Beaumont)",
+    "case": "x-beaumont-is",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Does Beaumont present its operating expenses by nature or by function? Justify. A fellow student says: 'There is no cost of sales and no gross profit, so this cannot be an IFRS income statement.' Comment.",
+    "modelAnswer": "Beaumont presents its expenses by nature: purchases consumed (−742), external expenses (−318), staff costs (−455), taxes other than income taxes (−34) and depreciation, amortisation and provisions (−121) describe what the expenses are, not which function they serve. The student is wrong: IAS 1.99 lets the entity choose between nature and function, whichever is reliable and more relevant. Under the nature method there is by definition no cost of sales and no gross profit. The extra subtotals 'current operating income' and 'other non-recurring operating income and expenses' are additional line items and subtotals allowed by IAS 1.85 – as long as nothing is presented as 'extraordinary' (prohibited by IAS 1.87).",
+    "keyPoints": [
+      "By nature",
+      "Indicators: purchases consumed, external expenses, staff costs, D&A and provisions",
+      "IAS 1 allows nature OR function – no cost of sales under the nature method",
+      "Additional subtotals allowed; only 'extraordinary items' are prohibited"
+    ],
+    "paperOnly": true,
+    "extra": true,
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "Klausurstil · IAS 1 presentation"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Read the lines",
+        "lines": [
+          "Purchases consumed −742",
+          "External expenses −318",
+          "Staff costs −455",
+          "Depreciation, amortisation and provisions −121"
+        ],
+        "result": "Income statement by nature"
+      },
+      {
+        "title": "Is it IFRS?",
+        "why": "IAS 1.99: analysis of expenses by nature or by function, whichever provides reliable and more relevant information. A missing cost of sales line is normal under the nature method."
+      },
+      {
+        "title": "The extra subtotals",
+        "why": "'Current operating income' and 'non-recurring' items are additional subtotals (IAS 1.85) – allowed, unlike a line labelled 'extraordinary items' (IAS 1.87).",
+        "result": "Valid IFRS presentation by nature"
+      }
+    ],
+    "pitfalls": [
+      "Treating 'non-recurring' as 'extraordinary' – only the label 'extraordinary' is prohibited.",
+      "Assuming IFRS requires a gross profit – it is only shown under the function method."
+    ]
+  }
+]

@@ -14,6 +14,7 @@ const pool: Question[] = Array.from({ length: 40 }, (_, i) => ({
   answer: true,
   explanation: "",
   paperOnly: false,
+  extra: false,
   checkup: i % 10 === 0,
   mcSet: false,
   quiz: false,

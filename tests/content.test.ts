@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getAllContent, loadAllContent } from "@/lib/content";
+import { getAllContent, loadAllContent, paperQuestions, practiceContent } from "@/lib/content";
 
 describe("Content", () => {
   it("alle Fächer (auch Entwürfe) sind gültig", () => {
@@ -118,6 +118,19 @@ describe("Accounting", () => {
     for (const q of acc.questions) {
       expect(q.basis.length, q.id).toBeGreaterThan(0);
       if (q.type === "short") expect(q.steps.length, q.id).toBeGreaterThan(0);
+    }
+  });
+
+  it("hat in T1 sechs Zusatzaufgaben zur Darstellung (Single/Two statements, Nature/Function) als Klausuraufgaben", () => {
+    const extra = acc.questions.filter((q) => q.extra);
+    expect(extra).toHaveLength(6);
+    const inPapers = new Set(paperQuestions(acc).map((q) => q.id));
+    const inPractice = new Set(practiceContent(acc).questions.map((q) => q.id));
+    for (const q of extra) {
+      expect(q.lecture, q.id).toBe("t1");
+      expect(q.case, q.id).toBeTruthy();
+      expect(inPapers.has(q.id), q.id).toBe(true);
+      expect(inPractice.has(q.id), q.id).toBe(false);
     }
   });
 

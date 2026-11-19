@@ -1,0 +1,606 @@
+[
+  {
+    "id": "x-harlow-soci",
+    "title": "Harlow Group – consolidated statement of comprehensive income 2025 (M€, illustrative)",
+    "text": [
+      "Harlow Group, a listed manufacturer of building materials, publishes the following statement in its IFRS consolidated financial statements."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated statement of comprehensive income",
+        "head": [
+          "",
+          "2025",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "4,820",
+            "4,515"
+          ],
+          [
+            "Cost of sales",
+            "(2,950)",
+            "(2,790)"
+          ],
+          [
+            "Gross profit",
+            "1,870",
+            "1,725"
+          ],
+          [
+            "Selling and distribution expenses",
+            "(720)",
+            "(668)"
+          ],
+          [
+            "Administrative expenses",
+            "(410)",
+            "(392)"
+          ],
+          [
+            "Operating profit",
+            "740",
+            "665"
+          ],
+          [
+            "Finance costs",
+            "(85)",
+            "(79)"
+          ],
+          [
+            "Share of profit of associates",
+            "22",
+            "17"
+          ],
+          [
+            "Profit before tax",
+            "677",
+            "603"
+          ],
+          [
+            "Income tax expense",
+            "(172)",
+            "(151)"
+          ],
+          [
+            "Profit for the year",
+            "505",
+            "452"
+          ],
+          [
+            "Other comprehensive income",
+            "",
+            ""
+          ],
+          [
+            "Items that will not be reclassified to profit or loss:",
+            "",
+            ""
+          ],
+          [
+            "Remeasurement of defined benefit plans",
+            "18",
+            "(11)"
+          ],
+          [
+            "Items that may be reclassified to profit or loss:",
+            "",
+            ""
+          ],
+          [
+            "Exchange differences on translating foreign operations",
+            "(64)",
+            "37"
+          ],
+          [
+            "Cash flow hedges",
+            "12",
+            "(6)"
+          ],
+          [
+            "Income tax relating to items of other comprehensive income",
+            "(5)",
+            "3"
+          ],
+          [
+            "Other comprehensive income for the year, net of tax",
+            "(39)",
+            "23"
+          ],
+          [
+            "Total comprehensive income for the year",
+            "466",
+            "475"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "x-ostrava-soci",
+    "title": "Ostrava Group – consolidated statement of comprehensive income 2025 (M€, illustrative)",
+    "text": [
+      "Ostrava Group, a listed logistics company, publishes the following statement in its IFRS consolidated financial statements. It is reproduced in full."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated statement of comprehensive income",
+        "head": [
+          "",
+          "2025",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Profit for the year",
+            "312",
+            "287"
+          ],
+          [
+            "Items that will not be reclassified to profit or loss:",
+            "",
+            ""
+          ],
+          [
+            "Remeasurement of defined benefit plans",
+            "(26)",
+            "15"
+          ],
+          [
+            "Equity instruments at fair value through OCI",
+            "41",
+            "(12)"
+          ],
+          [
+            "Items that may be reclassified to profit or loss:",
+            "",
+            ""
+          ],
+          [
+            "Exchange differences on translating foreign operations",
+            "58",
+            "(33)"
+          ],
+          [
+            "Cash flow hedges",
+            "(9)",
+            "7"
+          ],
+          [
+            "Income tax relating to items of other comprehensive income",
+            "(4)",
+            "2"
+          ],
+          [
+            "Other comprehensive income for the year, net of tax",
+            "60",
+            "(21)"
+          ],
+          [
+            "Total comprehensive income for the year",
+            "372",
+            "266"
+          ],
+          [
+            "attributable to: owners of the parent",
+            "351",
+            "252"
+          ],
+          [
+            "attributable to: non-controlling interests",
+            "21",
+            "14"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "x-lumen-soci",
+    "title": "Lumen Group – consolidated statement of profit or loss and other comprehensive income 2025 (M€, illustrative)",
+    "text": [
+      "Lumen Group, a listed lighting manufacturer, publishes the following statement. Lumen has 100 million shares outstanding."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated statement of profit or loss and other comprehensive income",
+        "head": [
+          "",
+          "2025",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "2,140",
+            "2,026"
+          ],
+          [
+            "Cost of sales",
+            "(1,380)",
+            "(1,322)"
+          ],
+          [
+            "Gross profit",
+            "760",
+            "704"
+          ],
+          [
+            "Selling expenses",
+            "(265)",
+            "(251)"
+          ],
+          [
+            "General and administrative expenses",
+            "(148)",
+            "(140)"
+          ],
+          [
+            "Other operating income",
+            "17",
+            "9"
+          ],
+          [
+            "Operating profit",
+            "364",
+            "322"
+          ],
+          [
+            "Net finance costs",
+            "(46)",
+            "(51)"
+          ],
+          [
+            "Profit before tax",
+            "318",
+            "271"
+          ],
+          [
+            "Income tax expense",
+            "(84)",
+            "(70)"
+          ],
+          [
+            "Profit for the year",
+            "234",
+            "201"
+          ],
+          [
+            "attributable to: owners of the parent",
+            "219",
+            "190"
+          ],
+          [
+            "attributable to: non-controlling interests",
+            "15",
+            "11"
+          ],
+          [
+            "Basic earnings per share (€)",
+            "2.19",
+            "1.90"
+          ],
+          [
+            "Other comprehensive income",
+            "",
+            ""
+          ],
+          [
+            "Items that will not be reclassified to profit or loss:",
+            "",
+            ""
+          ],
+          [
+            "Revaluation of land and buildings (IAS 16)",
+            "30",
+            "–"
+          ],
+          [
+            "Remeasurement of defined benefit plans",
+            "(8)",
+            "5"
+          ],
+          [
+            "Items that may be reclassified to profit or loss:",
+            "",
+            ""
+          ],
+          [
+            "Exchange differences on translating foreign operations",
+            "(52)",
+            "18"
+          ],
+          [
+            "Income tax relating to items of other comprehensive income",
+            "(6)",
+            "(1)"
+          ],
+          [
+            "Other comprehensive income for the year, net of tax",
+            "(36)",
+            "22"
+          ],
+          [
+            "Total comprehensive income for the year",
+            "198",
+            "223"
+          ],
+          [
+            "attributable to: owners of the parent",
+            "186",
+            "209"
+          ],
+          [
+            "attributable to: non-controlling interests",
+            "12",
+            "14"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "x-kestrel-is",
+    "title": "Kestrel Group – consolidated income statement 2025 (M€, illustrative)",
+    "text": [
+      "Kestrel Group, a listed producer of agricultural machinery, publishes the following income statement in its IFRS consolidated financial statements."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated income statement",
+        "head": [
+          "",
+          "2025",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "3,460",
+            "3,212"
+          ],
+          [
+            "Other operating income",
+            "48",
+            "41"
+          ],
+          [
+            "Changes in inventories of finished goods and work in progress",
+            "35",
+            "(18)"
+          ],
+          [
+            "Raw materials and consumables used",
+            "(1,420)",
+            "(1,296)"
+          ],
+          [
+            "Employee benefits expense",
+            "(980)",
+            "(931)"
+          ],
+          [
+            "Depreciation, amortisation and impairment",
+            "(265)",
+            "(248)"
+          ],
+          [
+            "Other operating expenses",
+            "(410)",
+            "(377)"
+          ],
+          [
+            "Operating profit",
+            "468",
+            "383"
+          ],
+          [
+            "Finance income",
+            "12",
+            "9"
+          ],
+          [
+            "Finance costs",
+            "(70)",
+            "(66)"
+          ],
+          [
+            "Profit before tax",
+            "410",
+            "326"
+          ],
+          [
+            "Income tax expense",
+            "(103)",
+            "(82)"
+          ],
+          [
+            "Profit for the year",
+            "307",
+            "244"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "x-fenwick-is",
+    "title": "Fenwick Group – consolidated income statement 2025 (M€, illustrative)",
+    "text": [
+      "Fenwick Group, a listed consumer electronics company, publishes the following income statement in its IFRS consolidated financial statements."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated income statement",
+        "head": [
+          "",
+          "2025",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "5,980",
+            "5,640"
+          ],
+          [
+            "Cost of sales",
+            "(3,710)",
+            "(3,525)"
+          ],
+          [
+            "Gross profit",
+            "2,270",
+            "2,115"
+          ],
+          [
+            "Distribution costs",
+            "(840)",
+            "(797)"
+          ],
+          [
+            "Administrative expenses",
+            "(520)",
+            "(503)"
+          ],
+          [
+            "Research and development costs",
+            "(310)",
+            "(288)"
+          ],
+          [
+            "Other operating income",
+            "35",
+            "27"
+          ],
+          [
+            "Other operating expenses",
+            "(22)",
+            "(31)"
+          ],
+          [
+            "Operating profit",
+            "613",
+            "523"
+          ],
+          [
+            "Finance costs",
+            "(94)",
+            "(88)"
+          ],
+          [
+            "Share of profit of joint ventures",
+            "18",
+            "12"
+          ],
+          [
+            "Profit before tax",
+            "537",
+            "447"
+          ],
+          [
+            "Income tax expense",
+            "(139)",
+            "(116)"
+          ],
+          [
+            "Profit for the year",
+            "398",
+            "331"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "x-beaumont-is",
+    "title": "Beaumont SA – consolidated income statement 2025 (M€, illustrative)",
+    "text": [
+      "Beaumont SA is a French retailer listed on Euronext Paris. As a listed EU group it prepares its consolidated financial statements under IFRS. It publishes the following income statement."
+    ],
+    "tables": [
+      {
+        "caption": "Consolidated income statement",
+        "head": [
+          "",
+          "2025",
+          "2024"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "1,865",
+            "1,790"
+          ],
+          [
+            "Purchases consumed",
+            "(742)",
+            "(718)"
+          ],
+          [
+            "External expenses",
+            "(318)",
+            "(301)"
+          ],
+          [
+            "Staff costs",
+            "(455)",
+            "(437)"
+          ],
+          [
+            "Taxes other than income taxes",
+            "(34)",
+            "(33)"
+          ],
+          [
+            "Depreciation, amortisation and provisions",
+            "(121)",
+            "(115)"
+          ],
+          [
+            "Other operating income and expenses, net",
+            "9",
+            "4"
+          ],
+          [
+            "Current operating income",
+            "204",
+            "190"
+          ],
+          [
+            "Other non-recurring operating income and expenses",
+            "(27)",
+            "(12)"
+          ],
+          [
+            "Operating income",
+            "177",
+            "178"
+          ],
+          [
+            "Cost of net financial debt",
+            "(31)",
+            "(29)"
+          ],
+          [
+            "Profit before tax",
+            "146",
+            "149"
+          ],
+          [
+            "Income tax expense",
+            "(38)",
+            "(39)"
+          ],
+          [
+            "Net income",
+            "108",
+            "110"
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -10,6 +10,7 @@ import { useHighlightIndex, whoText } from "@/lib/highlights";
 import { markKey, useApp } from "@/lib/store";
 import { cn, itemKey } from "@/lib/utils";
 import { MarkButton } from "./MarkButton";
+import { ExtraBadge } from "./Questions";
 import { fmtPoints, slotLabel } from "./Papers";
 import { Bar, ButtonLink } from "./ui";
 
@@ -23,6 +24,8 @@ type Row = {
   topic: string;
   points: number;
 };
+
+type Group = { id: string; eyebrow: string; title: string; extra: boolean; rows: Row[] };
 
 type StatusFilter = "all" | "open" | "done" | "wrong" | "marked" | "others";
 
@@ -72,7 +75,24 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
   const [selected, setSelected] = useState<string[]>([]);
 
   const byId = useMemo(() => new Map(content.questions.map((q) => [q.id, q])), [content.questions]);
-  const groups = useMemo(() => papers.map((p, i) => ({ paper: p, n: i + 1, rows: rowsOf(p, byId) })), [papers, byId]);
+  // Zusatzaufgaben (in keiner Probeklausur) als eigene, hervorgehobene Gruppe vor den Klausuren
+  const groups = useMemo<Group[]>(() => {
+    const caseTitle = new Map(content.cases.map((c) => [c.id, c.title.split(" – ")[0]]));
+    const extraRows = content.questions
+      .filter((q) => q.extra)
+      .map((q, i) => ({
+        key: `extra:${q.id}`,
+        q,
+        slot: `Zusatzaufgabe ${i + 1}`,
+        section: (q.case && caseTitle.get(q.case)) || "",
+        topic: q.topic,
+        points: 0,
+      }));
+    return [
+      ...(extraRows.length ? [{ id: "extra", eyebrow: "Zusätzlich hinzugefügt", title: "Zusatzaufgaben", extra: true, rows: extraRows }] : []),
+      ...papers.map((p, i) => ({ id: p.id, eyebrow: `Klausur ${i + 1}`, title: p.title, extra: false, rows: rowsOf(p, byId) })),
+    ];
+  }, [papers, byId, content.questions, content.cases]);
   const lectureOf = useMemo(() => new Map(subject.lectures.map((l) => [l.id, l.title])), [subject.lectures]);
 
   const st = (q: Question) => itemStatus(items[itemKey(subject.id, q.id)]);
@@ -193,18 +213,30 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
       {!visible.length && <p className="card mt-6 p-6 text-center text-sm text-muted">Keine Aufgaben für diesen Filter.</p>}
 
       <div className="mt-6 space-y-6">
-        {visible.map(({ paper, n, rows }) => {
+        {visible.map(({ id, eyebrow, title, extra, rows }) => {
           const ids = [...new Set(rows.map((r) => r.q.id))];
           const all = ids.every((id) => sel.has(id));
           const some = !all && ids.some((id) => sel.has(id));
           const done = ids.filter((id) => st(byId.get(id)!) !== "new").length;
           return (
-            <section key={paper.id} className="card overflow-hidden">
-              <header className="flex items-center gap-3 border-b border-line bg-surface-2/60 px-3 py-2.5 sm:px-4">
-                <Box checked={all} mixed={some} onClick={() => toggle(ids, !all)} label={`Alle Aufgaben von ${paper.title} auswählen`} />
+            <section key={id} className={cn("card overflow-hidden", extra && "border-indigo-300 ring-1 ring-indigo-300 dark:border-indigo-400/40 dark:ring-indigo-400/40")}>
+              <header
+                className={cn(
+                  "flex items-center gap-3 border-b border-line px-3 py-2.5 sm:px-4",
+                  extra ? "bg-indigo-50 dark:bg-indigo-400/10" : "bg-surface-2/60",
+                )}
+              >
+                <Box checked={all} mixed={some} onClick={() => toggle(ids, !all)} label={`Alle Aufgaben von ${title} auswählen`} />
                 <div className="min-w-0 flex-1">
-                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-muted">Klausur {n}</p>
-                  <h3 className="truncate text-sm font-semibold sm:text-base">{paper.title}</h3>
+                  <p
+                    className={cn(
+                      "text-[0.7rem] font-semibold uppercase tracking-[0.08em]",
+                      extra ? "text-indigo-700 dark:text-indigo-300" : "text-muted",
+                    )}
+                  >
+                    {eyebrow}
+                  </p>
+                  <h3 className="truncate text-sm font-semibold sm:text-base">{title}</h3>
                 </div>
                 <span className="shrink-0 text-xs tabular-nums text-muted">
                   {done}/{ids.length} bearbeitet
@@ -235,6 +267,7 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                         onClick={() => toggle([r.q.id], !on)}
                         className={cn(
                           "cursor-pointer border-b border-line/70 align-top transition last:border-0 hover:bg-surface-2/60",
+                          r.q.extra && "bg-indigo-50/50 dark:bg-indigo-400/5",
                           on && "bg-accent/5",
                         )}
                       >
@@ -248,9 +281,11 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                         <td className="py-3 pr-3">
                           {/* Mobil: Position und Kapitel über dem Thema */}
                           <span className="mb-0.5 block truncate text-xs text-muted sm:hidden">
-                            {r.slot} · {code(lecture)} · {fmtPoints(r.points)} P.
+                            {r.slot} · {code(lecture)}
+                            {r.points > 0 && ` · ${fmtPoints(r.points)} P.`}
                           </span>
                           <span className="block font-semibold leading-snug">{r.topic}</span>
+                          {r.q.extra && <ExtraBadge className="mt-1" />}
                           <span className="mt-0.5 block text-xs text-muted">
                             {TYPE_LABEL(r.q)}
                             <span className="sm:hidden">
@@ -277,7 +312,9 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                             {code(lecture)}
                           </span>
                         </td>
-                        <td className="w-14 py-3 pr-3 text-right tabular-nums text-ink-2 max-sm:hidden">{fmtPoints(r.points)}</td>
+                        <td className="w-14 py-3 pr-3 text-right tabular-nums text-ink-2 max-sm:hidden">
+                          {r.points > 0 ? fmtPoints(r.points) : "–"}
+                        </td>
                         <td className="w-[9.5rem] py-3 pr-2 max-sm:hidden">
                           <StatusLabel color={status.color} label={status.label} seen={s?.seen ?? 0} />
                         </td>

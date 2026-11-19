@@ -171,11 +171,13 @@ const TYPE_ORDER = { short: 0, mc: 1, tf: 2 } as const;
 
 /**
  * Alle Fragen der Probeklausuren, je einmal (auch paperOnly): erst die Rechen-/Kurzantwortaufgaben, dann Multiple
- * Choice und True/False, jeweils in der Reihenfolge der Klausuren. Grundlage für „Klausuraufgaben“ je Kapitel.
+ * Choice und True/False, jeweils in der Reihenfolge der Klausuren, Zusatzaufgaben am Ende. Grundlage für
+ * „Klausuraufgaben“ je Kapitel.
  */
 export function paperQuestions({ questions, papers }: SubjectContent): Question[] {
   const byId = new Map(questions.map((q) => [q.id, q]));
-  const ids = [...new Set(papers.flatMap((p) => paperItems(p).map((i) => i.q)))];
+  // dazu die Zusatzaufgaben, die in keiner Probeklausur stehen
+  const ids = [...new Set([...papers.flatMap((p) => paperItems(p).map((i) => i.q)), ...questions.filter((q) => q.extra).map((q) => q.id)])];
   return ids
     .map((id) => byId.get(id))
     .filter((q): q is Question => q !== undefined)

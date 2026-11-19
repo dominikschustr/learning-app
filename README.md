@@ -141,6 +141,11 @@ nicht überschreiben); geladen beim Start, beim Zurückkehren in die App und all
 Markierungen lokal; frühere private Markierungen (`marks`, „q:…“) übernimmt die App nach dem Laden einmalig in die
 gemeinsame Liste. Karteikarten-Markierungen bleiben privat.
 
+**Zusatzaufgaben:** Fragen mit `"extra": true` (und `"paperOnly": true`) stehen in keiner Probeklausur, zählen aber
+zu den *Klausuraufgaben* ihres Kapitels. In der Aufgaben-Tabelle bilden sie die hervorgehobene Gruppe
+*Zusatzaufgaben* (ohne Punkte), beim Üben trägt die Frage das Etikett „Zusatzaufgabe“. Beispiel:
+`content/subjects/accounting/questions/extra-t1.json` (Single vs. two statements, nature vs. function).
+
 ## Umzug von der alten Vercel-Adresse
 
 Der Lernstand liegt im Browser und hängt an der Adresse. Auf der alten Seite

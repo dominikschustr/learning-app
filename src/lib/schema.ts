@@ -104,6 +104,11 @@ const base = {
   case: id.optional(),
   /** nur in Probeklausuren, nicht beim Üben, in Kapiteltests oder der Readiness */
   paperOnly: z.boolean().default(false),
+  /**
+   * Zusätzlich hinzugefügte Klausuraufgabe, die in keiner Probeklausur steht: zählt zu den „Klausuraufgaben“ des
+   * Kapitels und steht in der Aufgaben-Tabelle, wird aber überall als „Zusatzaufgabe“ hervorgehoben
+   */
+  extra: z.boolean().default(false),
   /** Check-up-Frage vom Quiz am Ende der Vorlesung – eigener Übungsmodus „Check-up-Fragen“ */
   checkup: z.boolean().default(false),
   /** Multiple-Choice-Set des Kapitels – eigener Übungsmodus „Multiple Choice“, nicht in „Üben“, Kapiteltest und Prüfungssimulation */
@@ -345,7 +350,9 @@ export function checkContent({ subject, questions, cards, cases, papers }: Subje
 
   const inPapers = new Set(papers.flatMap((p) => paperItems(p).map((i) => i.q)));
   for (const q of questions) {
-    if (q.paperOnly && !inPapers.has(q.id)) errors.push(`${q.id}: paperOnly, aber in keiner Probeklausur`);
+    if (q.paperOnly && !inPapers.has(q.id) && !q.extra) errors.push(`${q.id}: paperOnly, aber in keiner Probeklausur`);
+    if (q.extra && !q.paperOnly) errors.push(`${q.id}: Zusatzaufgabe muss paperOnly sein`);
+    if (q.extra && inPapers.has(q.id)) errors.push(`${q.id}: Zusatzaufgabe steht schon in einer Probeklausur`);
     if (q.case && !caseIds.has(q.case)) errors.push(`${q.id}: unbekannter Fall "${q.case}"`);
     if (q.type !== "mc") continue;
     if (q.single && q.correct.length !== 1) errors.push(`${q.id}: single braucht genau eine richtige Option`);

@@ -43,6 +43,22 @@ export function CaseContext({ c }: { c: Case }) {
   );
 }
 
+/** Hervorhebung einer zusätzlich hinzugefügten Klausuraufgabe (steht in keiner Probeklausur). */
+export function ExtraBadge({ className }: { className?: string }) {
+  return (
+    <span
+      title="Zusätzlich hinzugefügte Aufgabe – steht in keiner Probeklausur"
+      className={cn(
+        "inline-flex shrink-0 items-center gap-1 rounded-full bg-indigo-600 px-2 py-0.5 text-xs font-semibold text-white dark:bg-indigo-400 dark:text-indigo-950",
+        className,
+      )}
+    >
+      <Sparkles className="size-3 shrink-0" />
+      Zusatzaufgabe
+    </span>
+  );
+}
+
 export function QuestionMeta({
   kind,
   extra,
@@ -59,6 +75,7 @@ export function QuestionMeta({
     <div>
       <div className="flex flex-wrap items-center gap-2">
         <span className="eyebrow">{label ?? { mc: "Multiple Choice", tf: "True / False", short: "Kurzantwort" }[kind]}</span>
+        {q?.extra && <ExtraBadge />}
         {extra}
       </div>
       {q && <BasisLine basis={q.basis} difficulty={q.difficulty} />}
