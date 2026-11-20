@@ -1,15 +1,16 @@
 "use client";
 
-import { ArrowLeft, CheckCircle2, Clock, FileText, Flag, History, Info, LayoutList, Play, Table2 } from "lucide-react";
+import { ArrowLeft, CheckCircle2, ChevronDown, Clock, FileText, Flag, History, Info, LayoutList, Play, Table2 } from "lucide-react";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { createPaperExam } from "@/lib/exam";
-import { paperItems, type Paper, type SubjectContent } from "@/lib/schema";
+import { paperItems, type Paper, type Question, type SubjectContent } from "@/lib/schema";
+import { itemStatus } from "@/lib/srs";
 import { examScore, useApp } from "@/lib/store";
-import { cn, pct } from "@/lib/utils";
-import { PaperTasks } from "./PaperTasks";
-import { Button, Chip } from "./ui";
+import { cn, itemKey, pct } from "@/lib/utils";
+import { PaperTasks, rowsOf, SelectionBar, STATUS, TaskTable } from "./PaperTasks";
+import { Bar, Button, Chip } from "./ui";
 
 /** Punkte mit höchstens zwei Nachkommastellen, deutsch formatiert. */
 export function fmtPoints(n: number): string {
@@ -98,7 +99,22 @@ export function PaperList({ content }: { content: SubjectContent }) {
   const router = useRouter();
   const pathname = usePathname();
   const view = params.get("view") === "tasks" ? "tasks" : "papers";
-  // aus der Fach-Übersicht verlinkt (#paper-<id>): direkt zur Klausur scrollen
+  const items = useApp((s) => s.items);
+  const byId = useMemo(() => new Map(content.questions.map((q) => [q.id, q])), [content.questions]);
+  const st = (q: Question) => itemStatus(items[itemKey(subject.id, q.id)]);
+  // Aufgaben einzelner Klausuren auswählen und üben (eine Auswahl über alle Karten)
+  const [selected, setSelected] = useState<string[]>([]);
+  // aus dem Üben zurück (?open=<id>): Aufgabenliste dieser Klausur gleich aufgeklappt
+  const [openTasks, setOpenTasks] = useState<string[]>(() => [params.get("open") ?? ""].filter(Boolean));
+  const sel = new Set(selected);
+  const toggle = (ids: string[], on: boolean) =>
+    setSelected((cur) => (on ? [...new Set([...cur, ...ids])] : cur.filter((id) => !ids.includes(id))));
+  // „Zurück“ aus dem Üben führt zur Karte der Klausur (#paper-<id>)
+  const practiceHref = (paperId: string) => (ids: string[]) =>
+    `/s/${subject.id}/practice?mode=papers&q=${ids.join(",")}&paper=${paperId}`;
+  const selOrder = shown.flatMap((p) => paperItems(p).map((i) => i.q)).filter((id, i, a) => a.indexOf(id) === i && sel.has(id));
+  const selPaper = shown.find((p) => paperItems(p).some((i) => i.q === selOrder[0]))?.id ?? "";
+  // aus der Fach-Übersicht oder aus dem Üben verlinkt (#paper-<id>): direkt zur Klausur scrollen
   useEffect(() => {
     const hash = window.location.hash.slice(1);
     if (hash.startsWith("paper-")) document.getElementById(hash)?.scrollIntoView({ block: "start" });
@@ -106,7 +122,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
   const setView = (v: "tasks" | "papers") => router.replace(v === "tasks" ? `${pathname}?view=tasks` : pathname, { scroll: false });
 
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className={cn("mx-auto max-w-3xl", view === "papers" && selected.length > 0 && "pb-24")}>
       <Link href={`/s/${subject.id}`} className="inline-flex items-center gap-1 text-sm font-medium text-muted hover:text-ink">
         <ArrowLeft className="size-4" /> {subject.name}
       </Link>
@@ -185,6 +201,18 @@ export function PaperList({ content }: { content: SubjectContent }) {
           const best = done.reduce((b, e) => Math.max(b, examScore(e).score), 0);
           const parts = partPoints(p);
           const max = parts.reduce((s, x) => s + x.points, 0);
+          const rows = rowsOf(p, byId);
+          const ids = [...new Set(rows.map((r) => r.q.id))];
+          const doneQs = ids.filter((id) => st(byId.get(id)!) !== "new").length;
+          const wrongQs = ids.filter((id) => st(byId.get(id)!) === "wrong").length;
+          const open = openTasks.includes(p.id);
+          const all = ids.every((id) => sel.has(id));
+          // Stand je Teil: ein Punkt je Aufgabe in der Farbe ihres Stands
+          const partRows = (pi: number) =>
+            paperItems(p)
+              .filter((x) => x.part === pi)
+              .map((x) => byId.get(x.q))
+              .filter((q): q is Question => q !== undefined);
           return (
             <div key={p.id} id={`paper-${p.id}`} className="card min-w-0 scroll-mt-24 p-5 sm:p-6">
               <div className="flex flex-wrap items-start justify-between gap-3">
@@ -202,14 +230,80 @@ export function PaperList({ content }: { content: SubjectContent }) {
                 </div>
               </div>
               <div className="mt-4 grid gap-1.5 text-sm">
-                {parts.map((x) => (
-                  <div key={x.title} className="flex min-w-0 justify-between gap-4 text-ink-2">
+                {parts.map((x, pi) => (
+                  <div key={x.title} className="flex min-w-0 items-center justify-between gap-4 text-ink-2">
                     <span className="min-w-0 truncate">{x.title}</span>
+                    <span className="ml-auto flex shrink-0 gap-1" aria-hidden>
+                      {partRows(pi).map((q) => (
+                        <span
+                          key={q.id}
+                          title={`${q.topic || q.id}: ${STATUS[st(q)].label}`}
+                          className="size-2 rounded-full"
+                          style={{ background: STATUS[st(q)].color }}
+                        />
+                      ))}
+                    </span>
                     <span className="shrink-0 tabular-nums text-muted">
                       {x.count} {x.count === 1 ? "Frage" : "Fragen"} · {fmtPoints(x.points)} P.
                     </span>
                   </div>
                 ))}
+              </div>
+              {/* Aufgaben der Klausur: Stand, Auswahl, einzeln üben */}
+              <div className="mt-4 rounded-xl border border-line">
+                <button
+                  type="button"
+                  aria-expanded={open}
+                  onClick={() => setOpenTasks((cur) => (open ? cur.filter((x) => x !== p.id) : [...cur, p.id]))}
+                  className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left transition hover:bg-surface-2/60 sm:px-4"
+                >
+                  <span className="min-w-0 flex-1">
+                    <span className="flex flex-wrap items-baseline gap-x-2 text-sm">
+                      <span className="font-semibold">Aufgaben</span>
+                      <span className="text-muted">
+                        <span className={cn(doneQs > 0 && "font-semibold text-ink-2")}>
+                          {doneQs}/{ids.length} bearbeitet
+                        </span>
+                        {wrongQs > 0 && (
+                          <>
+                            {" · "}
+                            <span className="font-semibold" style={{ color: "var(--bad)" }}>
+                              {wrongQs} zuletzt falsch
+                            </span>
+                          </>
+                        )}
+                      </span>
+                    </span>
+                    <Bar value={ids.length ? doneQs / ids.length : 0} color={subject.color} className="mt-1.5 h-1.5" />
+                  </span>
+                  <span className="shrink-0 text-xs font-semibold text-ink-2">{open ? "Ausblenden" : "Anzeigen"}</span>
+                  <ChevronDown className={cn("size-4 shrink-0 text-muted transition", open && "rotate-180")} />
+                </button>
+                {open && (
+                  <div className="border-t border-line">
+                    <div className="flex items-center justify-between gap-3 px-3 py-2 text-xs text-muted sm:px-4">
+                      <span>Tippe Aufgaben an, um sie auszuwählen, oder starte eine direkt mit ▶.</span>
+                      <button
+                        type="button"
+                        onClick={() => toggle(ids, !all)}
+                        className="shrink-0 font-semibold text-ink-2 underline-offset-2 hover:underline"
+                      >
+                        {all ? "Auswahl aufheben" : "Alle auswählen"}
+                      </button>
+                    </div>
+                    <div className="border-t border-line">
+                      <TaskTable
+                        rows={rows}
+                        subjectId={subject.id}
+                        color={subject.color}
+                        sel={sel}
+                        toggle={toggle}
+                        practiceHref={practiceHref(p.id)}
+                        lectures={subject.lectures}
+                      />
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <Button onClick={() => startExam(createPaperExam(subject.id, p, Date.now()))}>
@@ -227,6 +321,9 @@ export function PaperList({ content }: { content: SubjectContent }) {
           </section>
         );
       })}
+      {selected.length > 0 && (
+        <SelectionBar count={selOrder.length} onClear={() => setSelected([])} href={practiceHref(selPaper)(selOrder)} />
+      )}
       </>
       )}
     </div>

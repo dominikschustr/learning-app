@@ -14,7 +14,7 @@ import { ExtraBadge } from "./Questions";
 import { fmtPoints, slotLabel } from "./Papers";
 import { Bar, ButtonLink } from "./ui";
 
-type Row = {
+export type Row = {
   key: string;
   q: Question;
   /** z. B. „Part 2 · b)“ */
@@ -29,7 +29,7 @@ type Group = { id: string; eyebrow: string; title: string; extra: boolean; rows:
 
 type StatusFilter = "all" | "open" | "done" | "wrong" | "marked" | "others";
 
-const STATUS: Record<ItemStatus, { label: string; color: string }> = {
+export const STATUS: Record<ItemStatus, { label: string; color: string }> = {
   new: { label: "Offen", color: "var(--line-strong)" },
   first: { label: "Richtig", color: "var(--good)" },
   recovered: { label: "Richtig nach Fehler", color: "var(--warn)" },
@@ -43,7 +43,7 @@ const TYPE_LABEL = (q: Question) =>
 const code = (title: string) => title.split(" · ")[0];
 
 /** Zeilen einer Klausur: jede Teilaufgabe einzeln, mit Position, Thema und Punkten. */
-function rowsOf(paper: Paper, byId: Map<string, Question>): Row[] {
+export function rowsOf(paper: Paper, byId: Map<string, Question>): Row[] {
   return paperItems(paper).flatMap((i) => {
     const q = byId.get(i.q);
     if (!q) return [];
@@ -93,7 +93,6 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
       ...papers.map((p, i) => ({ id: p.id, eyebrow: `Klausur ${i + 1}`, title: p.title, extra: false, rows: rowsOf(p, byId) })),
     ];
   }, [papers, byId, content.questions, content.cases]);
-  const lectureOf = useMemo(() => new Map(subject.lectures.map((l) => [l.id, l.title])), [subject.lectures]);
 
   const st = (q: Question) => itemStatus(items[itemKey(subject.id, q.id)]);
   const passes = (r: Row) => {
@@ -242,101 +241,15 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
                   {done}/{ids.length} bearbeitet
                 </span>
               </header>
-              <table className="w-full table-fixed border-collapse text-sm">
-                <thead className="max-sm:hidden">
-                  <tr className="border-b border-line text-left text-[0.7rem] font-semibold uppercase tracking-[0.06em] text-muted">
-                    <th className="w-11 py-2 pl-3 sm:pl-4" />
-                    <th className="w-[11rem] py-2 pr-3 font-semibold">Aufgabe</th>
-                    <th className="py-2 pr-3 font-semibold">Thema</th>
-                    <th className="w-16 py-2 pr-3 font-semibold">Kapitel</th>
-                    <th className="w-14 py-2 pr-3 text-right font-semibold">Punkte</th>
-                    <th className="w-[9.5rem] py-2 pr-2 font-semibold">Stand</th>
-                    <th className="w-[5.5rem] py-2 pr-3" />
-                  </tr>
-                </thead>
-                <tbody>
-                  {rows.map((r) => {
-                    const s = items[itemKey(subject.id, r.q.id)];
-                    const status = STATUS[itemStatus(s)];
-                    const on = sel.has(r.q.id);
-                    const lecture = lectureOf.get(r.q.lecture) ?? r.q.lecture;
-                    const who = highlightedBy(r.q);
-                    return (
-                      <tr
-                        key={r.key}
-                        onClick={() => toggle([r.q.id], !on)}
-                        className={cn(
-                          "cursor-pointer border-b border-line/70 align-top transition last:border-0 hover:bg-surface-2/60",
-                          r.q.extra && "bg-indigo-50/50 dark:bg-indigo-400/5",
-                          on && "bg-accent/5",
-                        )}
-                      >
-                        <td className="w-11 py-3 pl-3 sm:pl-4">
-                          <Box checked={on} onClick={() => toggle([r.q.id], !on)} label={`${r.slot} auswählen`} />
-                        </td>
-                        <td className="w-[11rem] py-3 pr-3 max-sm:hidden">
-                          <span className="block font-medium text-ink-2">{r.slot}</span>
-                          {r.section && <span className="block truncate text-xs text-muted">{r.section}</span>}
-                        </td>
-                        <td className="py-3 pr-3">
-                          {/* Mobil: Position und Kapitel über dem Thema */}
-                          <span className="mb-0.5 block truncate text-xs text-muted sm:hidden">
-                            {r.slot} · {code(lecture)}
-                            {r.points > 0 && ` · ${fmtPoints(r.points)} P.`}
-                          </span>
-                          <span className="block font-semibold leading-snug">{r.topic}</span>
-                          {r.q.extra && <ExtraBadge className="mt-1" />}
-                          <span className="mt-0.5 block text-xs text-muted">
-                            {TYPE_LABEL(r.q)}
-                            <span className="sm:hidden">
-                              {" · "}
-                              <StatusLabel color={status.color} label={status.label} seen={s?.seen ?? 0} />
-                            </span>
-                          </span>
-                          {who.length > 0 && (
-                            <span
-                              title={`Markiert von ${who.map((h) => (h.me ? "dir" : h.name)).join(", ")}`}
-                              className="mt-1.5 inline-flex max-w-full items-center gap-1 rounded-full bg-accent/10 px-2 py-0.5 text-xs font-semibold text-accent"
-                            >
-                              <Bookmark className="size-3 shrink-0" fill="currentColor" />
-                              <span className="truncate">{whoText(who)}</span>
-                            </span>
-                          )}
-                        </td>
-                        <td className="w-16 py-3 pr-3 max-sm:hidden">
-                          <span
-                            title={lecture}
-                            className="inline-flex rounded-md px-1.5 py-0.5 text-xs font-semibold"
-                            style={{ background: `color-mix(in srgb, ${subject.color} 12%, transparent)`, color: subject.color }}
-                          >
-                            {code(lecture)}
-                          </span>
-                        </td>
-                        <td className="w-14 py-3 pr-3 text-right tabular-nums text-ink-2 max-sm:hidden">
-                          {r.points > 0 ? fmtPoints(r.points) : "–"}
-                        </td>
-                        <td className="w-[9.5rem] py-3 pr-2 max-sm:hidden">
-                          <StatusLabel color={status.color} label={status.label} seen={s?.seen ?? 0} />
-                        </td>
-                        <td className="w-12 py-2 pr-3 text-right sm:w-[5.5rem]">
-                          <span className="inline-flex items-center justify-end gap-0.5 max-sm:flex-col-reverse">
-                            <MarkButton kind="q" subjectId={subject.id} id={r.q.id} label={false} className="size-9" />
-                            <Link
-                              href={practiceHref([r.q.id])}
-                              onClick={(e) => e.stopPropagation()}
-                              title="Nur diese Aufgabe üben"
-                              aria-label={`${r.slot} üben`}
-                              className="inline-grid size-9 place-items-center rounded-full text-ink-2 transition hover:bg-ink hover:text-bg"
-                            >
-                              <Play className="size-4" />
-                            </Link>
-                          </span>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+              <TaskTable
+                rows={rows}
+                subjectId={subject.id}
+                color={subject.color}
+                sel={sel}
+                toggle={toggle}
+                practiceHref={practiceHref}
+                lectures={subject.lectures}
+              />
             </section>
           );
         })}
@@ -344,26 +257,154 @@ export function PaperTasks({ content, papers }: { content: SubjectContent; paper
 
       {/* Auswahlleiste */}
       {selected.length > 0 && (
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-bg/90 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] backdrop-blur-md">
-          <div className="mx-auto flex max-w-3xl items-center gap-3">
-            <button
-              type="button"
-              onClick={() => setSelected([])}
-              className="inline-grid size-10 shrink-0 place-items-center rounded-full text-muted transition hover:bg-surface-2 hover:text-ink"
-              aria-label="Auswahl leeren"
-              title="Auswahl leeren"
-            >
-              <X className="size-5" />
-            </button>
-            <span className="min-w-0 flex-1 text-sm font-semibold">
-              {pickedInOrder.length} {pickedInOrder.length === 1 ? "Aufgabe" : "Aufgaben"} ausgewählt
-            </span>
-            <ButtonLink href={practiceHref(pickedInOrder)}>
-              <Play className="size-4" /> Auswahl üben
-            </ButtonLink>
-          </div>
-        </div>
+        <SelectionBar count={pickedInOrder.length} onClear={() => setSelected([])} href={practiceHref(pickedInOrder)} />
       )}
+    </div>
+  );
+}
+
+/** Tabelle der Aufgaben einer Klausur (bzw. der Zusatzaufgaben): Position, Thema, Kapitel, Punkte, Stand, Üben. */
+export function TaskTable({
+  rows,
+  subjectId,
+  color,
+  sel,
+  toggle,
+  practiceHref,
+  lectures,
+}: {
+  rows: Row[];
+  subjectId: string;
+  color: string;
+  sel: Set<string>;
+  toggle: (ids: string[], on: boolean) => void;
+  practiceHref: (ids: string[]) => string;
+  lectures: { id: string; title: string }[];
+}) {
+  const items = useApp((s) => s.items);
+  const highlights = useHighlightIndex();
+  const highlightedBy = (q: Question) => highlights.get(markKey("q", subjectId, q.id)) ?? [];
+  const lectureOf = new Map(lectures.map((l) => [l.id, l.title]));
+  return (
+    <table className="w-full table-fixed border-collapse text-sm">
+      <thead className="max-sm:hidden">
+        <tr className="border-b border-line text-left text-[0.7rem] font-semibold uppercase tracking-[0.06em] text-muted">
+          <th className="w-11 py-2 pl-3 sm:pl-4" />
+          <th className="w-[11rem] py-2 pr-3 font-semibold">Aufgabe</th>
+          <th className="py-2 pr-3 font-semibold">Thema</th>
+          <th className="w-16 py-2 pr-3 font-semibold">Kapitel</th>
+          <th className="w-14 py-2 pr-3 text-right font-semibold">Punkte</th>
+          <th className="w-[9.5rem] py-2 pr-2 font-semibold">Stand</th>
+          <th className="w-[5.5rem] py-2 pr-3" />
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => {
+          const s = items[itemKey(subjectId, r.q.id)];
+          const status = STATUS[itemStatus(s)];
+          const on = sel.has(r.q.id);
+          const lecture = lectureOf.get(r.q.lecture) ?? r.q.lecture;
+          const who = highlightedBy(r.q);
+          return (
+            <tr
+              key={r.key}
+              onClick={() => toggle([r.q.id], !on)}
+              className={cn(
+                "cursor-pointer border-b border-line/70 align-top transition last:border-0 hover:bg-surface-2/60",
+                r.q.extra && "bg-indigo-50/50 dark:bg-indigo-400/5",
+                on && "bg-accent/5",
+              )}
+            >
+              <td className="w-11 py-3 pl-3 sm:pl-4">
+                <Box checked={on} onClick={() => toggle([r.q.id], !on)} label={`${r.slot} auswählen`} />
+              </td>
+              <td className="w-[11rem] py-3 pr-3 max-sm:hidden">
+                <span className="block font-medium text-ink-2">{r.slot}</span>
+                {r.section && <span className="block truncate text-xs text-muted">{r.section}</span>}
+              </td>
+              <td className="py-3 pr-3">
+                {/* Mobil: Position und Kapitel über dem Thema */}
+                <span className="mb-0.5 block truncate text-xs text-muted sm:hidden">
+                  {r.slot} · {code(lecture)}
+                  {r.points > 0 && ` · ${fmtPoints(r.points)} P.`}
+                </span>
+                <span className="block font-semibold leading-snug">{r.topic}</span>
+                {r.q.extra && <ExtraBadge className="mt-1" />}
+                <span className="mt-0.5 block text-xs text-muted">
+                  {TYPE_LABEL(r.q)}
+                  <span className="sm:hidden">
+                    {" · "}
+                    <StatusLabel color={status.color} label={status.label} seen={s?.seen ?? 0} />
+                  </span>
+                </span>
+                {who.length > 0 && (
+                  <span
+                    title={`Markiert von ${who.map((h) => (h.me ? "dir" : h.name)).join(", ")}`}
+                    className="mt-1.5 inline-flex max-w-full items-center gap-1 rounded-full bg-accent/10 px-2 py-0.5 text-xs font-semibold text-accent"
+                  >
+                    <Bookmark className="size-3 shrink-0" fill="currentColor" />
+                    <span className="truncate">{whoText(who)}</span>
+                  </span>
+                )}
+              </td>
+              <td className="w-16 py-3 pr-3 max-sm:hidden">
+                <span
+                  title={lecture}
+                  className="inline-flex rounded-md px-1.5 py-0.5 text-xs font-semibold"
+                  style={{ background: `color-mix(in srgb, ${color} 12%, transparent)`, color: color }}
+                >
+                  {code(lecture)}
+                </span>
+              </td>
+              <td className="w-14 py-3 pr-3 text-right tabular-nums text-ink-2 max-sm:hidden">
+                {r.points > 0 ? fmtPoints(r.points) : "–"}
+              </td>
+              <td className="w-[9.5rem] py-3 pr-2 max-sm:hidden">
+                <StatusLabel color={status.color} label={status.label} seen={s?.seen ?? 0} />
+              </td>
+              <td className="w-12 py-2 pr-3 text-right sm:w-[5.5rem]">
+                <span className="inline-flex items-center justify-end gap-0.5 max-sm:flex-col-reverse">
+                  <MarkButton kind="q" subjectId={subjectId} id={r.q.id} label={false} className="size-9" />
+                  <Link
+                    href={practiceHref([r.q.id])}
+                    onClick={(e) => e.stopPropagation()}
+                    title="Nur diese Aufgabe üben"
+                    aria-label={`${r.slot} üben`}
+                    className="inline-grid size-9 place-items-center rounded-full text-ink-2 transition hover:bg-ink hover:text-bg"
+                  >
+                    <Play className="size-4" />
+                  </Link>
+                </span>
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}
+
+/** Leiste am unteren Rand: Anzahl ausgewählter Aufgaben, Auswahl leeren, Auswahl üben. */
+export function SelectionBar({ count, onClear, href }: { count: number; onClear: () => void; href: string }) {
+  return (
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-bg/90 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] backdrop-blur-md">
+      <div className="mx-auto flex max-w-3xl items-center gap-3">
+        <button
+          type="button"
+          onClick={onClear}
+          className="inline-grid size-10 shrink-0 place-items-center rounded-full text-muted transition hover:bg-surface-2 hover:text-ink"
+          aria-label="Auswahl leeren"
+          title="Auswahl leeren"
+        >
+          <X className="size-5" />
+        </button>
+        <span className="min-w-0 flex-1 text-sm font-semibold">
+          {count} {count === 1 ? "Aufgabe" : "Aufgaben"} ausgewählt
+        </span>
+        <ButtonLink href={href}>
+          <Play className="size-4" /> Auswahl üben
+        </ButtonLink>
+      </div>
     </div>
   );
 }

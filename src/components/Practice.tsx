@@ -70,6 +70,8 @@ export function Practice({
   const mode = MODES.includes(raw) ? raw : "smart";
   const lecture = params.get("lecture") ?? undefined;
   const picked = params.get("q") ?? "";
+  // aus der Aufgabenliste einer Klausurkarte gestartet → zurück zu dieser Karte
+  const fromPaper = params.get("paper") ?? undefined;
   const random = params.get("order") === "random";
   const [run, setRun] = useState(0);
   // Markierte Fragen: erst starten, wenn die Liste der Lerngruppe da ist (oder nicht geladen werden kann)
@@ -92,6 +94,7 @@ export function Practice({
       lecture={lecture}
       ids={mode === "papers" && picked ? picked.split(",").filter(Boolean) : undefined}
       random={random}
+      fromPaper={fromPaper}
       onRestart={() => setRun((r) => r + 1)}
     />
   );
@@ -107,6 +110,7 @@ function Session({
   papers,
   ids,
   random,
+  fromPaper,
 }: {
   content: SubjectContent;
   formulas: RenderedFormula[];
@@ -118,12 +122,15 @@ function Session({
   /** in der Aufgabentabelle ausgewählte Klausuraufgaben */
   ids?: string[];
   random?: boolean;
+  fromPaper?: string;
 }) {
   const { subject } = content;
   const caseOf = useCaseOf(content.cases);
   const base = `/s/${subject.id}`;
   // aus der Aufgabentabelle gestartet → zurück zur Tabelle
-  const home = ids
+  const home = ids && fromPaper
+    ? `${base}/exam?open=${fromPaper}#paper-${fromPaper}`
+    : ids
     ? `${base}/exam?view=tasks${lecture ? `&lecture=${lecture}` : ""}`
     : lecture
       ? `${base}/c/${lecture}`
