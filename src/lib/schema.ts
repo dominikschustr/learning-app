@@ -32,6 +32,8 @@ export const SubjectSchema = z.object({
   look: z.enum(["default", "slides"]).default("default"),
   /** Zweitfarbe für den Folien-Look, z. B. das ESCP-Gold der Titelboxen */
   accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
+  /** Zusatzzeile auf der Quiz-Kachel (Fach- und Kapitelseite), z. B. woher die Quizfragen stammen */
+  quizNote: z.string().optional(),
   lectures: z.array(LectureSchema).min(1),
   examFormat: ExamFormatSchema,
 });

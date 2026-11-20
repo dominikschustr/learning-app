@@ -82,6 +82,7 @@ bekommen Fach- und Kapitelseite die Kachel „Check-up-Fragen“, die nur diese 
 Fragen mit `"quiz": true` sind das Quiz eines Kapitels (z. B. `questions/quiz-t2.json`): Kachel „Quiz“ auf Fach- und
 Kapitelseite (`practice?mode=quiz`), immer alle Fragen in der Reihenfolge der Datei. Wie Fragen mit `"mcSet": true`
 kommen sie nicht in „Üben“, Kapiteltest und Prüfungssimulation; für feste Optionsreihenfolge `"shuffle": false`.
+Mit `"quizNote"` in `subject.json` bekommt die Quiz-Kachel eine Zusatzzeile (Accounting: „Aufgaben der Graded Quizzes“).
 
 **Stand eines Fachs** (Prozent auf Startseite und Fachseite): Prognose aus den Übungsfragen (Sicherheit je Fragetyp,
 gewichtet wie das Prüfungsformat). Hat das Fach Probeklausuren, zählen sie zu 30 % mit – je Klausur der Anteil

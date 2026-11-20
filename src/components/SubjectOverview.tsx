@@ -523,7 +523,7 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
   const mc = set((i) => i.mcSet);
   const hasTf = summary.items.some((i) => i.type === "tf");
 
-  const groups = [
+  const groups: { title: string; modes: { href: string; icon: typeof Layers; title: string; meta: string; note?: string }[] }[] = [
     {
       title: "Wiederholen",
       modes: [
@@ -555,7 +555,9 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
     {
       title: "Aus der Vorlesung",
       modes: [
-        ...(quiz.n ? [{ href: `${base}/practice?mode=quiz`, icon: MessageCircleQuestion, title: "Quiz", meta: quiz.meta }] : []),
+        ...(quiz.n
+          ? [{ href: `${base}/practice?mode=quiz`, icon: MessageCircleQuestion, title: "Quiz", meta: quiz.meta, note: subject.quizNote }]
+          : []),
         ...(checkup.n
           ? [{ href: `${base}/practice?mode=checkup`, icon: ClipboardCheck, title: "Check-up-Fragen", meta: checkup.meta }]
           : []),
@@ -599,6 +601,7 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
                     <m.icon className="size-5" />
                   </span>
                   <span className="mt-2 font-semibold leading-tight sm:mt-3">{m.title}</span>
+                  {m.note && <span className="mt-0.5 text-xs leading-snug text-muted">{m.note}</span>}
                   <span className="mt-auto flex items-center justify-between gap-2 pt-1 text-xs text-muted">
                     {m.meta}
                     <ArrowRight className="size-3.5 shrink-0 transition group-hover:translate-x-0.5" />

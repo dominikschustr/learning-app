@@ -6,6 +6,7 @@
   "description": "International Financial Reporting (CM01): IFRS-Abschlüsse, Konsolidierung, Anlagevermögen & Leasing, Fremd- und Eigenkapital, KPIs.",
   "examDate": "2026-11-24",
   "demo": false,
+  "quizNote": "Aufgaben der Graded Quizzes",
   "lectures": [
     { "id": "t1", "title": "T1 · IFRS in the EU & IFRS financial statements" },
     { "id": "t2", "title": "T2 · Business combinations & consolidation" },

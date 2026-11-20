@@ -117,7 +117,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
         ]
       : []),
   ];
-  const actions: { href: string; icon: typeof BookOpen; title: string; meta: string; onClick?: () => void }[] = [
+  const actions: { href: string; icon: typeof BookOpen; title: string; meta: string; note?: string; onClick?: () => void }[] = [
     {
       href: `${base}/practice?mode=lecture&lecture=${chapterId}`,
       icon: BookOpen,
@@ -147,6 +147,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
             icon: MessageCircleQuestion,
             title: "Quiz",
             meta: `${quizStatus.first + quizStatus.recovered}/${quiz.length} richtig`,
+            note: subject.quizNote,
           },
         ]
       : []),
@@ -239,6 +240,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
                   <a.icon className="size-5" />
                 </span>
                 <span className="mt-2 font-semibold sm:mt-4 sm:text-lg">{a.title}</span>
+                {a.note && <span className="mt-0.5 text-xs leading-snug text-muted">{a.note}</span>}
                 <span className="mt-auto flex items-center justify-between pt-1 text-xs text-muted sm:pt-3">
                   {a.meta}
                   <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
