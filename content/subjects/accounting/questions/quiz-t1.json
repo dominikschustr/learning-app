@@ -1,0 +1,438 @@
+[
+  {
+    "type": "mc",
+    "id": "qz-t1-01",
+    "lecture": "t1",
+    "topic": "Balance sheet presentation under IAS 1",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Companies that use IFRS",
+    "options": [
+      {
+        "id": "a",
+        "text": "may report all their assets on the balance sheet at fair value"
+      },
+      {
+        "id": "b",
+        "text": "may offset assets against liabilities and show net assets and net liabilities on their balance sheet, rather than the underlying detailed line items"
+      },
+      {
+        "id": "c",
+        "text": "may report current assets before non-current assets, and equity before liabilities on the balance sheet"
+      },
+      {
+        "id": "d",
+        "text": "can choose their balance sheet presentation as long as they present non-current and current assets, non-current and current liabilities, and equity"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "IAS 1 schreibt keine Reihenfolge der Bilanzposten vor – kurzfristige Vermögenswerte vor langfristigen und Eigenkapital vor Schulden ist zulässig. Falsch: Nicht alle Vermögenswerte dürfen zum Fair Value bewertet werden (z. B. Vorräte zu Anschaffungskosten bzw. niedrigerem Nettoveräußerungswert); Saldierung von Vermögenswerten und Schulden ist grundsätzlich verboten; und die Wahl ist nicht frei – IAS 1 verlangt Mindestposten, und statt der Fristigkeitsgliederung ist auch eine Gliederung nach Liquidität erlaubt, wenn sie verlässlicher ist.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 1"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t1-02",
+    "lecture": "t1",
+    "topic": "Treasury shares in the statement of changes in equity",
+    "difficulty": 3,
+    "single": true,
+    "prompt": "Last year a company bought back for 200 million Euros its own shares. This year the company sold 60% of those shares for 120 million Euros back to the market. How does this situation or transaction impact the statement of changes in equity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The column treasury shares shows a final negative amount of 80 million Euros"
+      },
+      {
+        "id": "b",
+        "text": "The line changes in treasury shares shows a negative amount of 80 million Euros"
+      },
+      {
+        "id": "c",
+        "text": "The column changes in treasury shares shows a negative amount of 120 million Euros"
+      },
+      {
+        "id": "d",
+        "text": "The column share capital increases by 120 million Euros"
+      },
+      {
+        "id": "e",
+        "text": "The column share capital increases (amount depending on the par value of the shares)"
+      },
+      {
+        "id": "f",
+        "text": "The column treasury shares shows a final negative amount of 120 million Euros"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Eigene Anteile werden in einer eigenen Eigenkapitalspalte als Abzugsposten geführt. Rückkauf im Vorjahr: −200. Verkauf von 60 % zu den Anschaffungskosten (60 % × 200 = 120) für 120: Zeile „Veräußerung eigener Anteile“ +120 → Endbestand der Spalte −200 + 120 = −80. Das gezeichnete Kapital ändert sich nicht, weil keine neuen Aktien ausgegeben werden, und es entsteht kein Gewinn in der GuV.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 2"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t1-03",
+    "lecture": "t1",
+    "topic": "Dividends – where to find them",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Dividends distributed by the parent company can be found in",
+    "options": [
+      {
+        "id": "a",
+        "text": "the statement of changes in equity"
+      },
+      {
+        "id": "b",
+        "text": "the income statement"
+      },
+      {
+        "id": "c",
+        "text": "the balance sheet"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Dividenden sind eine Transaktion mit den Eigentümern (Ausschüttung) und keine Aufwendung. Sie mindern die Gewinnrücklagen und erscheinen deshalb in der Eigenkapitalveränderungsrechnung – nicht in der GuV. In der Bilanz steht nur eine noch nicht gezahlte Dividende als Verbindlichkeit, nicht die Ausschüttung selbst.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 3"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t1-04",
+    "lecture": "t1",
+    "topic": "Current vs. non-current liabilities",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Which of the following is not a non-current liability?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bonds payable"
+      },
+      {
+        "id": "b",
+        "text": "Current maturities of long-term obligations"
+      },
+      {
+        "id": "c",
+        "text": "Long-term notes payable"
+      },
+      {
+        "id": "d",
+        "text": "Mortgages payable"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Der Teil langfristiger Schulden, der innerhalb von 12 Monaten fällig wird („current maturities“), wird als kurzfristige Schuld ausgewiesen. Anleihen, langfristige Schuldscheine und Hypothekendarlehen sind langfristig.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 4"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t1-05",
+    "lecture": "t1",
+    "topic": "IFRS in the EU – IAS Regulation",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The application of IFRS are mandatory everywhere in the European Union for",
+    "options": [
+      {
+        "id": "a",
+        "text": "consolidated financial statements of listed companies"
+      },
+      {
+        "id": "b",
+        "text": "consolidated financial statements of unlisted companies"
+      },
+      {
+        "id": "c",
+        "text": "consolidated financial statements of listed and unlisted companies"
+      },
+      {
+        "id": "d",
+        "text": "consolidated and individual financial statements of listed companies"
+      },
+      {
+        "id": "e",
+        "text": "consolidated and individual financial statements of unlisted companies"
+      },
+      {
+        "id": "f",
+        "text": "consolidated and individual financial statements of listed and unlisted companies"
+      },
+      {
+        "id": "g",
+        "text": "individual financial statements of listed and unlisted companies"
+      },
+      {
+        "id": "h",
+        "text": "individual financial statements of listed companies"
+      },
+      {
+        "id": "i",
+        "text": "individual financial statements of unlisted companies"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Die IAS-Verordnung (EG) Nr. 1606/2002 schreibt IFRS seit 2005 EU-weit nur für Konzernabschlüsse kapitalmarktorientierter Unternehmen vor. Für Einzelabschlüsse und nicht börsennotierte Unternehmen entscheiden die Mitgliedstaaten selbst (Wahlrecht bzw. Pflicht) – deshalb ist es nicht „überall in der EU“ verpflichtend.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 5"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t1-06",
+    "lecture": "t1",
+    "topic": "Objective of general purpose financial reporting",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "The objective of general purpose financial reporting is",
+    "options": [
+      {
+        "id": "a",
+        "text": "to provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the entity"
+      },
+      {
+        "id": "b",
+        "text": "to inform government statistics"
+      },
+      {
+        "id": "c",
+        "text": "to support the filing of the entity's tax return"
+      },
+      {
+        "id": "d",
+        "text": "to inform stock market or other regulators"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "So definiert das Conceptual Framework (Kapitel 1) das Ziel: entscheidungsnützliche Informationen für bestehende und potenzielle Investoren, Kreditgeber und andere Gläubiger. Statistik, Steuerbehörden und Regulatoren können die Abschlüsse zwar nutzen, sind aber nicht die primären Adressaten.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 6"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t1-07",
+    "lecture": "t1",
+    "topic": "Total comprehensive income",
+    "difficulty": 1,
+    "single": true,
+    "prompt": "Company AD presents a profit of 1,500 and Other Comprehensive Income (loss) of -300. The comprehensive income is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "1,200"
+      },
+      {
+        "id": "b",
+        "text": "1,800"
+      },
+      {
+        "id": "c",
+        "text": "-1,500"
+      },
+      {
+        "id": "d",
+        "text": "-300"
+      },
+      {
+        "id": "e",
+        "text": "-1,800"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Gesamtergebnis = Gewinn + OCI = 1.500 + (−300) = 1.200.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 7"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t1-08",
+    "lecture": "t1",
+    "topic": "Expenses by nature or by function",
+    "difficulty": 1,
+    "statement": "In the income statement expenses can be classified by nature or by function.",
+    "answer": true,
+    "explanation": "Richtig. IAS 1 lässt beide Gliederungen zu: nach Art (Material, Personal, Abschreibungen – Gesamtkostenverfahren) oder nach Funktion (Umsatzkosten, Vertrieb, Verwaltung – Umsatzkostenverfahren). Bei Gliederung nach Funktion sind zusätzlich Angaben nach Art (z. B. Abschreibungen, Personalaufwand) im Anhang nötig.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 8"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t1-09",
+    "lecture": "t1",
+    "topic": "Status of the Conceptual Framework",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "The Conceptual Framework",
+    "options": [
+      {
+        "id": "a",
+        "text": "is an IFRS"
+      },
+      {
+        "id": "b",
+        "text": "overrides all other IFRS requirements"
+      },
+      {
+        "id": "c",
+        "text": "does not define standards for any particular measurement or disclosure issue"
+      },
+      {
+        "id": "d",
+        "text": "is an element in the hierarchy of IFRS accounting that management must - in the absence of a specific IFRS requirement - apply in developing an accounting policy that results in information that is useful"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Das Conceptual Framework ist kein Standard und regelt deshalb keine konkrete Bewertungs- oder Angabefrage. Es geht keinem IFRS vor – bei Konflikten gilt der Standard. Fehlt ein Standard, muss das Management nach IAS 8 zuerst Standards zu ähnlichen Sachverhalten heranziehen und das Framework nur „berücksichtigen“ (refer to and consider) – es ist keine zwingend anzuwendende Regel.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 9"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "qz-t1-10",
+    "lecture": "t1",
+    "topic": "Cash flow from operating activities (indirect method)",
+    "difficulty": 2,
+    "single": true,
+    "prompt": "Determine cash flow from operating activities generated in Year 1 by Company XXL based on the following information: Net profit: 150; Depreciation and amortization: 90; Trade receivables as at 1st January Year 1: 80; Trade receivables as at 31st December Year 1: 70; cash purchase price for new equipment: 35. Cash flow from operating activities is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "250"
+      },
+      {
+        "id": "b",
+        "text": "215"
+      },
+      {
+        "id": "c",
+        "text": "230"
+      },
+      {
+        "id": "d",
+        "text": "160"
+      },
+      {
+        "id": "e",
+        "text": "240"
+      },
+      {
+        "id": "f",
+        "text": "205"
+      },
+      {
+        "id": "g",
+        "text": "195"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Indirekte Methode: Gewinn 150 + Abschreibungen 90 (nicht zahlungswirksam) + Rückgang der Forderungen 10 (80 → 70, Geld eingegangen) = 250. Der Kauf der Anlage (35) gehört zum Cashflow aus Investitionstätigkeit – wer ihn abzieht, landet bei 215.",
+    "shuffle": false,
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 10"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-t1-11",
+    "lecture": "t1",
+    "topic": "Operating profit – mandatory?",
+    "difficulty": 1,
+    "statement": "It is mandatory in an IFRS income statement to disclose operating profit as intermediary profit figure.",
+    "answer": false,
+    "explanation": "Falsch. Nach IAS 1 ist das Betriebsergebnis weder Pflicht noch definiert – Unternehmen zeigen es freiwillig und berechnen es unterschiedlich. Erst IFRS 18 (ab 1. Januar 2027) führt „operating profit“ als verpflichtende, definierte Zwischensumme ein.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "IFRS-Quiz",
+        "ref": "Topic 1 · Frage 11"
+      }
+    ]
+  }
+]

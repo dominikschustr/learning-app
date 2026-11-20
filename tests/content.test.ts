@@ -99,16 +99,16 @@ describe("Accounting", () => {
     expect(acc.questions.filter((q) => q.checkup)).toHaveLength(45);
   });
 
-  it("hat das Quiz zu Topic 2–5 vollständig, in Originalreihenfolge und mit fester Optionsreihenfolge", () => {
+  it("hat das Quiz zu Topic 1–5 vollständig, in Originalreihenfolge und mit fester Optionsreihenfolge", () => {
     const quiz = acc.questions.filter((q) => q.quiz);
     const per = Object.fromEntries(acc.subject.lectures.map((l) => [l.id, quiz.filter((q) => q.lecture === l.id).length]));
-    expect(per).toEqual({ t1: 0, t2: 11, t3: 12, t4: 10, t5: 10 });
+    expect(per).toEqual({ t1: 11, t2: 11, t3: 12, t4: 10, t5: 10 });
     for (const q of quiz) {
       expect(q.basis[0]?.kind, q.id).toBe("quiz");
       expect(q.checkup || q.mcSet || q.paperOnly, q.id).toBe(false);
       if (q.type === "mc") expect(q.shuffle, q.id).toBe(false);
     }
-    for (const l of ["t2", "t3", "t4", "t5"]) {
+    for (const l of ["t1", "t2", "t3", "t4", "t5"]) {
       const nums = quiz.filter((q) => q.lecture === l).map((q) => Number(q.basis[0].ref.split("Frage ")[1]));
       expect(nums, l).toEqual(nums.map((_, i) => i + 1));
     }
