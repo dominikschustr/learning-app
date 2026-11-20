@@ -11,6 +11,7 @@ import { startAutoSync } from "@/lib/sync";
 import { useToasts } from "@/lib/toast";
 import { AuthScreen } from "./AuthScreen";
 import { Icon } from "./Icon";
+import { WeekWinner } from "./WeekWinner";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const hydrated = useHydrated();
@@ -40,6 +41,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <>
       {children}
       <Toaster />
+      {hydrated && <WeekWinner />}
     </>
   );
 }

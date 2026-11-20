@@ -23,6 +23,7 @@ const stats = (patch = {}) => ({
   streakDay: "2026-10-28",
   weekXp: 180,
   week: "2026-10-26",
+  lastWeekXp: 240,
   ...patch,
 });
 
@@ -114,12 +115,18 @@ describe.skipIf(!EMULATOR || !AUTH)("Konten und Firestore-Regeln", () => {
     await expect(cloud.userPut(uid, token, stats({ day: "heute" }))).rejects.toThrow();
     await expect(cloud.userPut(uid, token, stats({ weekXp: -5 }))).rejects.toThrow();
     await expect(cloud.userPut(uid, token, stats({ week: "KW44" }))).rejects.toThrow();
+    await expect(cloud.userPut(uid, token, stats({ lastWeekXp: -1 }))).rejects.toThrow();
   });
 
   it("Rangliste: Einträge ohne Wochenliga (ältere App-Versionen) bleiben erlaubt", async () => {
     await cloud.userPut(ben.uid, ben.token, stats({ name: "Ben" }), true);
     const e = (await cloud.userList(anna.token)).find((x) => x.id === ben.uid);
-    expect(e).toMatchObject({ name: "Ben", weekXp: 0, week: null });
+    expect(e).toMatchObject({ name: "Ben", weekXp: 0, week: null, lastWeekXp: 0 });
+  });
+
+  it("Rangliste: XP der Vorwoche werden gespeichert und gelesen", async () => {
+    await cloud.userPut(anna.uid, anna.token, stats());
+    expect((await cloud.userList(ben.token)).find((x) => x.id === anna.uid)).toMatchObject({ weekXp: 180, lastWeekXp: 240 });
   });
 
   it("Markierte Fragen: alle sehen alle, jedes Konto ändert nur die eigenen", async () => {

@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { rankEntries, StatsSchema, statsFrom, type Entry } from "@/lib/ranking";
+import { lastWeekWinners, rankEntries, StatsSchema, statsFrom, type Entry } from "@/lib/ranking";
 
 const NOW = new Date(2026, 9, 9, 12).getTime();
 
 function entry(id: string, patch: Partial<Entry> = {}): Entry {
-  return { id, name: id, xp: 0, today: 0, day: "2026-10-09", goal: 30, streak: 0, streakDay: null, weekXp: 0, week: null, at: NOW, ...patch };
+  return { id, name: id, xp: 0, today: 0, day: "2026-10-09", goal: 30, streak: 0, streakDay: null, weekXp: 0, week: null, lastWeekXp: 0, at: NOW, ...patch };
 }
 
 describe("rankEntries", () => {
@@ -57,7 +57,7 @@ describe("Ranglisten-Meldung", () => {
       "  Anna ",
       NOW,
     );
-    expect(stats).toEqual({ name: "  Anna ", xp: 123, today: 7, day: "2026-10-09", goal: 20, streak: 4, streakDay: "2026-10-09", weekXp: 0, week: "2026-10-05" });
+    expect(stats).toEqual({ name: "  Anna ", xp: 123, today: 7, day: "2026-10-09", goal: 20, streak: 4, streakDay: "2026-10-09", weekXp: 0, week: "2026-10-05", lastWeekXp: 0 });
     expect(StatsSchema.parse(stats).name).toBe("Anna");
   });
 
@@ -149,5 +149,27 @@ describe("Wochenliga", () => {
     expect(rows.map((r) => [r.id, r.weekNow])).toEqual([["neu", 40], ["alt", 0]]);
     const s = statsFrom({ xp: 10, activity: {}, dailyGoal: 30, streak: { current: 0, lastDay: null }, counters: { x: { xp: 10, activity: {}, xpDays: { "2026-10-29": 10 } } } }, "Ich", now);
     expect([s.weekXp, s.week]).toEqual([10, "2026-10-26"]);
+  });
+
+  it("meldet die XP der Vorwoche und bestimmt daraus am Montag den Wochensieger", () => {
+    const monday = new Date(2026, 10, 2, 9).getTime(); // Montag, neue Woche ab 2026-11-02
+    const s = statsFrom(
+      { xp: 10, activity: {}, dailyGoal: 30, streak: { current: 0, lastDay: null }, counters: { x: { xp: 70, activity: {}, xpDays: { "2026-10-30": 60, "2026-11-02": 10 } } } },
+      "Ich",
+      monday,
+    );
+    expect([s.weekXp, s.lastWeekXp]).toEqual([10, 60]);
+    const result = lastWeekWinners(
+      [
+        entry("anna", { weekXp: 15, week: "2026-11-02", lastWeekXp: 300 }), // schon in der neuen Woche gemeldet
+        entry("ben", { weekXp: 280, week: "2026-10-26" }), // zuletzt in der Vorwoche gemeldet
+        entry("cem", { weekXp: 900, week: "2026-10-19" }), // ältere Woche zählt nicht
+      ],
+      monday,
+    );
+    expect(result.week).toBe("2026-10-26");
+    expect(result.xp).toBe(300);
+    expect(result.winners.map((e) => e.id)).toEqual(["anna"]);
+    expect(lastWeekWinners([entry("x", { week: "2026-11-02" })], monday).winners).toEqual([]);
   });
 });

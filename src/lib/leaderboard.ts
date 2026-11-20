@@ -64,12 +64,18 @@ async function publishOnce() {
   const last = readPublished();
   if (last?.uid === session.uid && last.payload === payload) return;
   const token = await getIdToken();
+  // Firestore-Regeln, die neuere Felder noch nicht kennen, lehnen sie ab → schrittweise ohne sie melden
+  const denied = (e: unknown) => e instanceof CloudError && e.status === 403;
   try {
     await userPut(session.uid, token, stats);
   } catch (e) {
-    // Firestore-Regeln ohne Wochenliga lehnen die neuen Felder ab → wie bisher ohne sie melden
-    if (!(e instanceof CloudError) || e.status !== 403) throw e;
-    await userPut(session.uid, token, stats, true);
+    if (!denied(e)) throw e;
+    try {
+      await userPut(session.uid, token, stats, "lastWeek");
+    } catch (e2) {
+      if (!denied(e2)) throw e2;
+      await userPut(session.uid, token, stats, true);
+    }
   }
   writePublished({ uid: session.uid, payload });
 }

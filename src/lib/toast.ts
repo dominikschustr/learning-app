@@ -33,10 +33,22 @@ export const useToasts = create<ToastState>()((set, get) => ({
   },
 }));
 
-async function confetti(opts: { particleCount: number; spread: number; origin?: { y: number } }) {
+async function confetti(opts: { particleCount: number; spread: number; angle?: number; origin?: { x?: number; y: number } }) {
   if (typeof window === "undefined" || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const { default: fire } = await import("canvas-confetti");
   fire({ ...opts, colors: ["#2f5bea", "#16865b", "#ee6a22", "#f2c14e", "#b04ae0"], disableForReducedMotion: true });
+}
+
+/** Konfetti von beiden Seiten in mehreren Salven – für den Wochensieger. */
+export function celebrateWinner() {
+  const burst = (x: number, angle: number) =>
+    void confetti({ particleCount: 70, spread: 70, angle, origin: { x, y: 0.75 } });
+  [0, 450, 900].forEach((ms) =>
+    setTimeout(() => {
+      burst(0, 60);
+      burst(1, 120);
+    }, ms),
+  );
 }
 
 export function celebrate(big = false) {

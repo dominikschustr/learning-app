@@ -121,6 +121,7 @@ function fromFields(id: string, f: Record<string, Value>): Entry | null {
     streakDay: str("streakDay") ?? null,
     weekXp: f.weekXp ? int("weekXp") : 0,
     week: str("week") ?? null,
+    lastWeekXp: f.lastWeekXp ? int("lastWeekXp") : 0,
     at: Date.parse(f.at?.timestampValue ?? "") || 0,
   };
   return e.name && [e.xp, e.today, e.goal, e.streak].every(Number.isFinite) ? e : null;
@@ -144,8 +145,11 @@ export async function userList(token: string): Promise<Entry[]> {
 }
 
 /** Eigenen Eintrag (Name + Stand) schreiben. */
-/** legacy: ohne Wochenfelder melden – für Firestore-Regeln, die sie noch nicht kennen. */
-export async function userPut(uid: string, token: string, stats: Stats, legacy = false): Promise<void> {
+/**
+ * legacy: ohne Wochenfelder melden – für Firestore-Regeln, die sie noch nicht kennen; "lastWeek": nur ohne
+ * `lastWeekXp` (Regeln mit Wochenliga, aber noch ohne Vorwoche).
+ */
+export async function userPut(uid: string, token: string, stats: Stats, legacy: boolean | "lastWeek" = false): Promise<void> {
   const res = await call(token, "POST", `${firebaseSettings().root}:commit`, {}, {
     writes: [
       {
@@ -159,12 +163,13 @@ export async function userPut(uid: string, token: string, stats: Stats, legacy =
             goal: { integerValue: String(stats.goal) },
             streak: { integerValue: String(stats.streak) },
             streakDay: stats.streakDay ? { stringValue: stats.streakDay } : { nullValue: null },
-            ...(legacy
+            ...(legacy === true
               ? {}
               : {
                   weekXp: { integerValue: String(stats.weekXp) },
                   week: stats.week ? { stringValue: stats.week } : { nullValue: null },
                 }),
+            ...(legacy ? {} : { lastWeekXp: { integerValue: String(stats.lastWeekXp) } }),
           },
         },
         updateTransforms: [{ fieldPath: "at", setToServerValue: "REQUEST_TIME" }],

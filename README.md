@@ -127,6 +127,12 @@ vor und hinter dir, ein gemeinsames Tagesziel aller, Auf-/Abstiegspfeile und Üb
 Woche); die XP je Tag werden dafür pro Gerät mitgezählt und synchronisiert. Solange die veröffentlichten
 `firestore.rules` die Wochenfelder nicht kennen, meldet die App automatisch ohne sie weiter. Gemeldet wird höchstens einmal pro Minute beim Lernen und beim Verlassen der App (nur bei Änderungen),
 geladen nur beim Öffnen der Rangliste. Name ändern, abmelden und Konto löschen unter *Einstellungen*.
+**Wochensieger:** Montags feiert die App beim ersten Öffnen kurz den Sieger der Wochenliga der Vorwoche (Pokal,
+Konfetti, bei Gleichstand alle). Dafür meldet jedes Konto zusätzlich `lastWeekXp` (XP der Vorwoche); wer zuletzt
+noch in der Vorwoche gemeldet hat, zählt mit `weekXp`. Gemerkt wird pro Gerät (`lernwerk-week-winner`).
+
+**Aufgaben je Klausur:** Unter *Ganze Klausuren* zeigt jede Karte je Teil einen Punkt pro Aufgabe in der Farbe ihres
+Stands und eine aufklappbare Aufgabenliste wie in der Aufgaben-Tabelle – auswählen, einzeln oder als Auswahl üben.
 
 **Fragen markieren – für dich und die Lerngruppe:** Es gibt eine einzige Markierung für Fragen: „Markieren“
 (Lesezeichen-Symbol, beim Üben auch Taste `M`, außerdem in der Aufgaben-Tabelle der Probeklausuren und in der

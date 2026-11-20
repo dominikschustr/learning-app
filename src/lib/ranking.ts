@@ -27,6 +27,8 @@ export const StatsSchema = z.object({
   /** XP der Woche `week` (Montag der Woche); fehlt bei Einträgen von vor der Wochenliga */
   weekXp: z.number().int().min(0).max(10_000_000).default(0),
   week: day.nullable().default(null),
+  /** XP der Woche vor `week` – damit der Wochensieger auch feststeht, wenn alle schon in der neuen Woche gemeldet haben */
+  lastWeekXp: z.number().int().min(0).max(10_000_000).default(0),
 });
 
 export type Stats = z.infer<typeof StatsSchema>;
@@ -68,7 +70,20 @@ export function statsFrom(
     streakDay: s.streak.lastDay,
     weekXp: weekXp(s.counters ?? {}, now),
     week: weekKey(now),
+    lastWeekXp: weekXp(s.counters ?? {}, addDays(now, -7).getTime()),
   };
+}
+
+/**
+ * Sieger der Wochenliga der Vorwoche (bei Gleichstand alle mit den meisten XP), dazu die Woche (Montag).
+ * Wochen-XP der Vorwoche: aus `weekXp`, wenn jemand zuletzt in der Vorwoche gemeldet hat, sonst aus `lastWeekXp`.
+ */
+export function lastWeekWinners(entries: Entry[], now: number): { week: string; xp: number; winners: Entry[] } {
+  const week = weekKey(addDays(now, -7));
+  const thisWeek = weekKey(now);
+  const xpOf = (e: Entry) => (e.week === week ? e.weekXp : e.week === thisWeek ? e.lastWeekXp : 0);
+  const xp = Math.max(0, ...entries.map(xpOf));
+  return { week, xp, winners: xp > 0 ? entries.filter((e) => xpOf(e) === xp).sort((a, b) => a.name.localeCompare(b.name, "de")) : [] };
 }
 
 /** Sortiert und nummeriert; gleiche Werte teilen sich den Platz. */
