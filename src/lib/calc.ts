@@ -30,18 +30,43 @@ export function decodeCalc(text: string, n: number): CalcAnswer {
   }
 }
 
-/** „13,8 %“, „1 400“, „−0.25“, „1e3“ → Zahl; leer oder unlesbar → null. */
-export function parseNumber(raw: string): number | null {
+const PLAIN = /^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?$/i;
+/** Nur Tausendergruppen, z. B. „2.832.000“ oder „118,000“ – führende Null ausgeschlossen („0.138“ bleibt Dezimalzahl). */
+const GROUPED = /^[-+]?[1-9]\d{0,2}([.,]\d{3})+$/;
+
+/**
+ * Alle sinnvollen Lesarten einer Eingabe. Deutsch („2.832.000“, „13,8“) und englisch („2,832,000“, „13.8“)
+ * werden beide verstanden; „118.000“ ist mehrdeutig und liefert 118 und 118000 – die Prüfung nimmt die passende.
+ */
+export function parseNumbers(raw: string): number[] {
   const s = raw
     .trim()
     .replace(/[−–]/g, "-")
     .replace(/[%€$\s]|EUR|USD/gi, "")
     .replace(/'/g, "");
-  if (!s) return null;
-  // Komma als Dezimaltrenner, außer es ist ein Tausendertrenner neben einem Punkt („1,400.5“)
-  const normalized = s.includes(".") ? s.replace(/,/g, "") : s.replace(",", ".");
-  if (!/^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?$/i.test(normalized)) return null;
-  return Number(normalized);
+  if (!s) return [];
+  const out: number[] = [];
+  const add = (t: string) => {
+    if (PLAIN.test(t)) out.push(Number(t));
+  };
+  const dots = (s.match(/\./g) ?? []).length;
+  const commas = (s.match(/,/g) ?? []).length;
+  if (dots && commas) {
+    // Beide Trenner: der letzte ist der Dezimaltrenner („1,400.5“ bzw. „1.400,5“)
+    add(s.lastIndexOf(".") > s.lastIndexOf(",") ? s.replace(/,/g, "") : s.replace(/\./g, "").replace(",", "."));
+  } else if (dots + commas > 1) {
+    // Mehrfach derselbe Trenner: nur als Tausendertrenner sinnvoll
+    if (GROUPED.test(s)) add(s.replace(/[.,]/g, ""));
+  } else {
+    add(s.replace(",", "."));
+    if (GROUPED.test(s)) add(s.replace(/[.,]/g, ""));
+  }
+  return out;
+}
+
+/** „13,8 %“, „1 400“, „−0.25“, „1e3“ → Zahl (bei Mehrdeutigkeit die Dezimal-Lesart); leer oder unlesbar → null. */
+export function parseNumber(raw: string): number | null {
+  return parseNumbers(raw)[0] ?? null;
 }
 
 export function tolerance(r: CalcResult): number {
@@ -50,11 +75,12 @@ export function tolerance(r: CalcResult): number {
 
 /** Richtig innerhalb der Toleranz; bei Prozent zählt auch die Dezimalschreibweise (0.138 für 13.8 %). */
 export function checkResult(r: CalcResult, raw: string): boolean {
-  const x = parseNumber(raw);
-  if (x === null) return false;
   const tol = tolerance(r) + 1e-9; // Gleitkomma: 219.05 − 219 ist minimal größer als 0.05
-  if (Math.abs(x - r.value) <= tol) return true;
-  return r.unit === "%" && !raw.includes("%") && Math.abs(x * 100 - r.value) <= tol;
+  return parseNumbers(raw).some(
+    (x) =>
+      Math.abs(x - r.value) <= tol ||
+      (r.unit === "%" && !raw.includes("%") && Math.abs(x * 100 - r.value) <= tol),
+  );
 }
 
 /** Zahl für die Anzeige, deutsch formatiert: Prozent mit zwei, sonst bis zu vier Nachkommastellen (wie in der Klausur). */

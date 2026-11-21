@@ -48,6 +48,26 @@ describe("Rechenaufgaben", () => {
     expect(decodeCalc("freier Text", 2)).toEqual({ values: ["", ""], work: "freier Text" });
   });
 
+  it("versteht deutsche und englische Tausendertrenner", () => {
+    const dep = { label: "Depreciation", value: 118000, unit: "" };
+    const ca = { label: "Carrying amount", value: 2832000, unit: "" };
+    for (const v of ["118.000", "118,000", "118 000", "118000", "118.000,00", "118,000.00"]) {
+      expect(checkResult(dep, v)).toBe(true);
+    }
+    for (const v of ["2.832.000", "2,832,000", "2832000", "2.832.000,5"]) {
+      expect(checkResult(ca, v)).toBe(true);
+    }
+    expect(checkResult(dep, "118.00")).toBe(false);
+    expect(checkResult(ca, "2882000")).toBe(false);
+    expect(checkResult(ca, "2.83.2000")).toBe(false);
+    // Mehrdeutiges „1.500“ passt zu 1,5 wie zu 1500; „0.138“ bleibt eine Dezimalzahl
+    expect(checkResult({ label: "x", value: 1.5, unit: "" }, "1.500")).toBe(true);
+    expect(checkResult({ label: "x", value: 1500, unit: "" }, "1.500")).toBe(true);
+    expect(checkResult({ label: "x", value: 138, unit: "" }, "0.138")).toBe(false);
+    expect(parseNumber("2.832.000")).toBe(2832000);
+    expect(parseNumber("1.400,5")).toBe(1400.5);
+  });
+
   it("bewertet nach Anteil richtiger Ergebnisse", () => {
     const g = gradeCalc(q, encodeCalc({ values: ["13.8", "0.9", "219.05"], work: "" }));
     expect(g.score).toBe(67);
