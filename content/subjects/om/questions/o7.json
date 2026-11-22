@@ -1,0 +1,320 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-o7-01",
+    "lecture": "o7",
+    "difficulty": 1,
+    "prompt": "What does the rational decision model assume?",
+    "options": [
+      { "id": "a", "text": "The decision maker can identify and evaluate all alternatives and all their consequences" },
+      { "id": "b", "text": "The decision maker picks the first satisfactory solution" },
+      { "id": "c", "text": "Decisions are negotiated between coalitions" },
+      { "id": "d", "text": "Preferences emerge during the decision process" }
+    ],
+    "correct": ["a"],
+    "explanation": "Rational choice (classical economics) assumes complete knowledge of alternatives and consequences → optimal decision. b is Simon's satisficing, c the Carnegie model.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-02",
+    "lecture": "o7",
+    "difficulty": 2,
+    "prompt": "Which elements limit rationality according to Herbert Simon?",
+    "options": [
+      { "id": "a", "text": "Incomplete and imperfect information" },
+      { "id": "b", "text": "Limited information-processing capacity" },
+      { "id": "c", "text": "Limited time for decision-making" },
+      { "id": "d", "text": "Preferences that are not clearly predefined" },
+      { "id": "e", "text": "An excess of reliable information that cannot be ignored" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Simon: information incomplete, limited processing capacity and selective perception, limited time, preferences not predefined. Too much information is not one of his limits."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-03",
+    "lecture": "o7",
+    "difficulty": 1,
+    "prompt": "“Satisficing” means …",
+    "options": [
+      { "id": "a", "text": "choosing the first satisfactory and sufficient solution" },
+      { "id": "b", "text": "choosing the solution that satisfies all stakeholders equally" },
+      { "id": "c", "text": "choosing the optimal solution after comparing all alternatives" },
+      { "id": "d", "text": "postponing the decision until all information is available" }
+    ],
+    "correct": ["a"],
+    "explanation": "Simon replaces optimisation criteria with satisfactory performance criteria: the first good-enough solution wins.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-04",
+    "lecture": "o7",
+    "difficulty": 2,
+    "prompt": "Which statements describe bounded rationality rather than the rational model?",
+    "options": [
+      { "id": "a", "text": "Sequential search for alternatives" },
+      { "id": "b", "text": "Synoptic evaluation of all alternatives" },
+      { "id": "c", "text": "The solution respects the organisational status quo" },
+      { "id": "d", "text": "The “real world” model of how managers decide" },
+      { "id": "e", "text": "Selection of the best course of action to optimise the firm's value system" }
+    ],
+    "correct": ["a", "c", "d"],
+    "explanation": "Bounded rationality: sequential, satisficing, status quo, real world. Synoptic evaluation and optimisation belong to the rational model."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-05",
+    "lecture": "o7",
+    "difficulty": 2,
+    "prompt": "How do organisations help to overcome bounded rationality?",
+    "options": [
+      { "id": "a", "text": "Division of labour reduces each person's attention and competency span" },
+      { "id": "b", "text": "Hierarchy spares people from questioning the soundness of orders" },
+      { "id": "c", "text": "Rules and procedures provide ready-made solutions" },
+      { "id": "d", "text": "Information channels separate those who collect information from those who use it" },
+      { "id": "e", "text": "They give every employee access to all information" }
+    ],
+    "correct": ["a", "b", "c", "d"],
+    "explanation": "Organisations are decision-support systems: division of labour, hierarchy and control, rules, information channels. They reduce complexity – not by giving everyone all information."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-06",
+    "lecture": "o7",
+    "difficulty": 1,
+    "prompt": "The Carnegie model of organisational decision-making is based on the work of …",
+    "options": [
+      { "id": "a", "text": "Cyert, March & Simon" },
+      { "id": "b", "text": "French & Raven" },
+      { "id": "c", "text": "Crozier & Friedberg" },
+      { "id": "d", "text": "Jones & George" }
+    ],
+    "correct": ["a"],
+    "explanation": "Richard Cyert, James March and Herbert Simon, all at Carnegie-Mellon University.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-07",
+    "lecture": "o7",
+    "difficulty": 2,
+    "prompt": "Which statements fit the Carnegie model?",
+    "options": [
+      { "id": "a", "text": "Large firms are coalitions of sub-groups with different interests" },
+      { "id": "b", "text": "Goals are compromises negotiated by the sub-groups" },
+      { "id": "c", "text": "The overall solution is the juxtaposition of local solutions" },
+      { "id": "d", "text": "Top management defines one optimal goal that all sub-groups pursue" },
+      { "id": "e", "text": "The process stops once a solution satisfactory to the hierarchy is found" }
+    ],
+    "correct": ["a", "b", "c", "e"],
+    "explanation": "Coalitions, negotiated goals in an implicit order of priority, sub-problems solved with standard procedures, satisficing, juxtaposition of local solutions. No single optimal goal."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-08",
+    "lecture": "o7",
+    "difficulty": 2,
+    "prompt": "Which are weaknesses of collective decision-making?",
+    "options": [
+      { "id": "a", "text": "Social loafing and ambiguous responsibility" },
+      { "id": "b", "text": "Group polarisation" },
+      { "id": "c", "text": "Greater commitment to the decision" },
+      { "id": "d", "text": "Sobriety of expression" },
+      { "id": "e", "text": "More complete information and knowledge" }
+    ],
+    "correct": ["a", "b", "d"],
+    "explanation": "Commitment and more complete information are strengths. Weaknesses: time, conformity, domination, social loafing, denial of intuition, sobriety of expression, polarisation, groupthink."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-09",
+    "lecture": "o7",
+    "difficulty": 2,
+    "prompt": "Which of the following are among Janis' eight symptoms of groupthink?",
+    "options": [
+      { "id": "a", "text": "Illusion of invulnerability" },
+      { "id": "b", "text": "Self-appointed mindguards" },
+      { "id": "c", "text": "Illusion of unanimity" },
+      { "id": "d", "text": "Social loafing" },
+      { "id": "e", "text": "Belief in inherent morality" }
+    ],
+    "correct": ["a", "b", "c", "e"],
+    "explanation": "Social loafing is a general weakness of groups (Ringelmann), not one of Janis' eight groupthink symptoms."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-10",
+    "lecture": "o7",
+    "difficulty": 2,
+    "prompt": "A group is especially vulnerable to groupthink when …",
+    "options": [
+      { "id": "a", "text": "its members have similar backgrounds" },
+      { "id": "b", "text": "it is insulated from outside opinions" },
+      { "id": "c", "text": "there are no clear rules for decision-making" },
+      { "id": "d", "text": "it includes a designated devil's advocate and outside experts" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Janis: similar backgrounds, insulation and missing decision rules. Outside experts and a devil's advocate counteract groupthink."
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-11",
+    "lecture": "o7",
+    "difficulty": 1,
+    "prompt": "In Allison's political model, a decision is …",
+    "options": [
+      { "id": "a", "text": "the output of negotiation and interplay between actors with specific interests" },
+      { "id": "b", "text": "shaped by organisational processes, structure and culture" },
+      { "id": "c", "text": "made by individuals with limited time and cognitive skills" },
+      { "id": "d", "text": "the optimal choice of a unified rational actor" }
+    ],
+    "correct": ["a"],
+    "explanation": "Political model: power games. b is the organisational model, c the bounded rationality model.",
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-o7-12",
+    "lecture": "o7",
+    "difficulty": 2,
+    "prompt": "Which focus belongs to which of Allison's models? Select the correct pairs.",
+    "options": [
+      { "id": "a", "text": "Bounded rationality model – biases" },
+      { "id": "b", "text": "Organisational model – structure, culture, incentives" },
+      { "id": "c", "text": "Political model – power games" },
+      { "id": "d", "text": "Organisational model – power games" }
+    ],
+    "correct": ["a", "b", "c"],
+    "explanation": "Bounded rationality → biases; organisational model → structure, culture, incentives; political model → power games."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-01",
+    "lecture": "o7",
+    "difficulty": 1,
+    "statement": "According to Simon, managers in the real world choose the optimal solution after evaluating all alternatives.",
+    "answer": false,
+    "explanation": "They choose the FIRST satisfactory and sufficient solution (satisficing), not the optimal one."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-02",
+    "lecture": "o7",
+    "difficulty": 1,
+    "statement": "The rational model of decision-making stems from classical economic theory.",
+    "answer": true,
+    "explanation": "It comes from economics (Adam Smith, Ricardo, Walras): decision as the result of intended rational choice."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-03",
+    "lecture": "o7",
+    "difficulty": 1,
+    "statement": "Herbert Simon received the Nobel Prize in economics for his bounded rationality model.",
+    "answer": true,
+    "explanation": "Simon (1916–2001) received the Nobel Prize in 1978."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-04",
+    "lecture": "o7",
+    "difficulty": 2,
+    "statement": "Under bounded rationality, decision-making is synoptic rather than sequential.",
+    "answer": false,
+    "explanation": "It is the other way round: sequential (one option after another), not synoptic (all at once)."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-05",
+    "lecture": "o7",
+    "difficulty": 2,
+    "statement": "In the Carnegie model, the overall solution of the organisation is the simple juxtaposition of local solutions.",
+    "answer": true,
+    "explanation": "Each sub-group solves its sub-problem with its standard procedures and stops at a satisfactory solution; the local solutions are put side by side."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-06",
+    "lecture": "o7",
+    "difficulty": 2,
+    "statement": "Group polarisation means that groups tend to settle on moderate compromise decisions.",
+    "answer": false,
+    "explanation": "Polarisation radicalises decisions: with a shared normative orientation, persuasive arguments escalate and groups can adopt extreme attitudes."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-07",
+    "lecture": "o7",
+    "difficulty": 1,
+    "statement": "The term groupthink was coined by Irving Janis.",
+    "answer": true,
+    "explanation": "Janis (1972): faulty decisions resulting from pressure within the group."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-08",
+    "lecture": "o7",
+    "difficulty": 2,
+    "statement": "“Sobriety of expression” refers to group members minimising warning signals so as not to be the messenger of bad news.",
+    "answer": true,
+    "explanation": "Example from class: pilots and the control tower."
+  },
+  {
+    "type": "tf",
+    "id": "tf-o7-09",
+    "lecture": "o7",
+    "difficulty": 2,
+    "statement": "In Allison's organisational model, the decision is mainly explained by power games between actors.",
+    "answer": false,
+    "explanation": "Power games are the political model. The organisational model focuses on structure, culture and incentives."
+  },
+  {
+    "type": "short",
+    "id": "sa-o7-01",
+    "lecture": "o7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "Compare the rational decision model with Simon's bounded rationality model. Why do organisations matter for decision-making?",
+    "modelAnswer": "Rational model (classical economics; Jones & George): the decision maker identifies and evaluates all alternatives and all their consequences, compares them synoptically and chooses the optimal course of action. Step by step: problem, objectives, data, all alternatives, best choice, implementation, feedback. It is an ideal – a utopia – because it ignores time constraints and the limits of human knowledge and information processing.\nBounded rationality (Simon, Nobel 1978): information is incomplete and imperfect, cognitive capacity and time are limited, preferences are not predefined, and not all alternatives and consequences can be known. Decision makers therefore satisfice: they search sequentially and choose the first satisfactory and sufficient solution, which respects the status quo and can be taken quickly. It is the “real world” model.\nOrganisations are decision-support systems that bring decisions closer to rationality: division of labour reduces each person's span of attention, hierarchy and control spare people from questioning orders, rules and procedures offer ready-made solutions, and information channels separate collection from use. They reduce complexity and absorb uncertainty.",
+    "keyPoints": [
+      "Rational: all alternatives and consequences, optimal, synoptic – utopia",
+      "Simon: limits of information, cognition, time, preferences",
+      "Satisficing and sequential search, first satisfactory solution",
+      "Organisations as decision-support systems: division of labour, hierarchy, rules, information channels"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-o7-02",
+    "lecture": "o7",
+    "difficulty": 2,
+    "verb": "explain",
+    "prompt": "What is groupthink? Present its symptoms and the conditions that make a group vulnerable to it, and suggest how a board could prevent it.",
+    "modelAnswer": "Groupthink (Irving Janis, 1972): a group makes faulty decisions because of “a deterioration of mental efficiency, reality testing and moral judgment resulting from pressure within the group”.\nEight symptoms: illusion of invulnerability (excessive optimism, extreme risks); collective rationalisation (warnings discounted); belief in inherent morality (ethical consequences ignored); stereotyped views of out-groups; direct pressure on dissenters; self-censorship; illusion of unanimity; self-appointed mindguards who shield the group and the leader from contradictory information.\nVulnerability: members with similar backgrounds, insulation from outside opinions, no clear rules for decision-making. Consequences: alternatives ignored, irrational actions, other groups dehumanised – e.g. Pearl Harbor, Bay of Pigs, Vietnam, Iraq.\nPrevention (derived from the risk factors): diverse members, outside experts and opinions, clear decision rules, a devil's advocate, leader states his view last, anonymous voting.",
+    "keyPoints": [
+      "Definition (Janis 1972)",
+      "Several of the 8 symptoms named and explained",
+      "Risk factors: similar backgrounds, insulation, no rules",
+      "Examples of fiascoes",
+      "Prevention linked to the risk factors"
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-o7-03",
+    "lecture": "o7",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Apply Allison's three approaches to analyse the US decision in the Cuban Missile Crisis.",
+    "modelAnswer": "Allison (Essence of Decision, 1971) explains one decision through three lenses.\n1 · Bounded rationality model (focus: biases): Kennedy and the ExComm decided under extreme time pressure with incomplete intelligence on the missiles and Soviet intentions. They could not evaluate all options and consequences and chose a satisfactory option – the naval blockade (“quarantine”) – rather than an optimised one; the choice was sequential and kept options open.\n2 · Organisational model (focus: structure, culture, incentives): the options available were limited by what the Navy, Air Force and CIA could do with their existing routines and procedures (air-strike plans, blockade procedures). Each organisation proposed what its standard procedures allowed; the decision reflects these processes more than a free choice.\n3 · Political model (focus: power games): the outcome was the result of bargaining between actors with different interests – military chiefs (hawks) pushing for air strikes or invasion vs advisers favouring diplomacy (doves) – and of negotiation between Kennedy and Khrushchev (withdrawal of missiles from Cuba against a no-invasion pledge and the later removal of US missiles from Turkey).\nThe three lenses complement each other; contrast with the Bay of Pigs (1961), a classic groupthink fiasco.",
+    "keyPoints": [
+      "Bounded rationality: time pressure, incomplete information, satisfactory option (blockade)",
+      "Organisational model: options limited by routines of Navy, Air Force, CIA",
+      "Political model: hawks vs doves, Kennedy–Khrushchev bargaining",
+      "Lenses complement each other"
+    ],
+    "case": "cuban-missile-crisis"
+  }
+]

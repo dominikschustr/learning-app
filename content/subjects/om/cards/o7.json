@@ -1,0 +1,98 @@
+[
+  {
+    "id": "c-o7-01",
+    "lecture": "o7",
+    "front": "Rational model: assumption",
+    "back": "The decision maker identifies and evaluates all alternatives and all their consequences → optimal decision (“no better”)."
+  },
+  {
+    "id": "c-o7-02",
+    "lecture": "o7",
+    "front": "Why is the rational model a utopia?",
+    "back": "It ignores time constraints and the limits of human knowledge and information processing."
+  },
+  {
+    "id": "c-o7-03",
+    "lecture": "o7",
+    "front": "Bounded rationality (Simon): 4 limits",
+    "back": "Incomplete/imperfect information · limited processing capacity · limited time · preferences not clearly predefined."
+  },
+  {
+    "id": "c-o7-04",
+    "lecture": "o7",
+    "front": "Satisficing",
+    "back": "Choose the FIRST satisfactory and sufficient solution, not the optimal one (Simon)."
+  },
+  {
+    "id": "c-o7-05",
+    "lecture": "o7",
+    "front": "Synoptic vs sequential",
+    "back": "Synoptic: all alternatives evaluated at once (rational model). Sequential: one after another (bounded rationality)."
+  },
+  {
+    "id": "c-o7-06",
+    "lecture": "o7",
+    "front": "Decision fatigue – class example",
+    "back": "Obama wore only grey or blue suits to avoid trivial daily decisions."
+  },
+  {
+    "id": "c-o7-07",
+    "lecture": "o7",
+    "front": "Organisations as decision-support systems",
+    "back": "Division of labour · hierarchy and control · rules and procedures · information channels."
+  },
+  {
+    "id": "c-o7-08",
+    "lecture": "o7",
+    "front": "Carnegie model: authors",
+    "back": "Cyert, March & Simon (Carnegie-Mellon University)."
+  },
+  {
+    "id": "c-o7-09",
+    "lecture": "o7",
+    "front": "Carnegie model: core idea",
+    "back": "Coalitions with different interests negotiate goals; sub-groups solve sub-problems and satisfice; outcome = juxtaposition of local solutions."
+  },
+  {
+    "id": "c-o7-10",
+    "lecture": "o7",
+    "front": "Group decisions: 4 strengths",
+    "back": "More information · diversity and creativity · acceptance and commitment · synergy and understanding."
+  },
+  {
+    "id": "c-o7-11",
+    "lecture": "o7",
+    "front": "Social loafing",
+    "back": "Ambiguous responsibility in groups → individuals put in less effort (Ringelmann's rope pull, free riders)."
+  },
+  {
+    "id": "c-o7-12",
+    "lecture": "o7",
+    "front": "Group polarisation",
+    "back": "Members with a shared normative orientation escalate arguments → the group adopts a more extreme decision."
+  },
+  {
+    "id": "c-o7-13",
+    "lecture": "o7",
+    "front": "Groupthink (Janis, 1972)",
+    "back": "Deterioration of mental efficiency, reality testing and moral judgment resulting from pressure within the group."
+  },
+  {
+    "id": "c-o7-14",
+    "lecture": "o7",
+    "front": "Groupthink: 8 symptoms",
+    "back": "Invulnerability · rationalisation · inherent morality · stereotyped out-groups · pressure on dissenters · self-censorship · illusion of unanimity · mindguards."
+  },
+  {
+    "id": "c-o7-15",
+    "lecture": "o7",
+    "front": "Groupthink: risk factors",
+    "back": "Similar backgrounds · insulation from outside opinions · no clear decision-making rules."
+  },
+  {
+    "id": "c-o7-16",
+    "lecture": "o7",
+    "front": "Allison: 3 models",
+    "back": "Bounded rationality (biases) · organisational model (structure, culture, incentives) · political model (power games)."
+  }
+]

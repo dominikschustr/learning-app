@@ -1,0 +1,235 @@
+{
+  "lecture": "o7",
+  "title": "O7 – Decision-making: rational model, Simon, Carnegie, Janis, Allison",
+  "source": "Zusammenfassung von Session 7 „Decision-Making“ (Olivier Wurtz)",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The rational model (classical economics) assumes the decision maker knows and evaluates all alternatives and all consequences and picks the optimal one – an ideal, but a utopia."
+        },
+        {
+          "kind": "item",
+          "text": "Simon's bounded rationality is the “real world” model: limited information, cognition and time → managers satisfice (first satisfactory solution) and search sequentially, not synoptically."
+        },
+        {
+          "kind": "item",
+          "text": "Organisations are decision-support systems: division of labour, hierarchy, rules and information channels reduce complexity and absorb uncertainty."
+        },
+        {
+          "kind": "item",
+          "text": "Carnegie model (Cyert, March & Simon): organisational decisions come from coalitions with different interests; goals are negotiated compromises; the overall solution is a juxtaposition of local solutions."
+        },
+        {
+          "kind": "item",
+          "text": "Groups decide with more information and commitment but suffer from conformity, social loafing, polarisation and groupthink (Janis, 8 symptoms)."
+        },
+        {
+          "kind": "item",
+          "text": "Allison analyses one decision through three lenses: bounded rationality (biases), organisational model (structure, culture, incentives) and political model (power games) – Cuban Missile Crisis 1962."
+        }
+      ]
+    },
+    {
+      "heading": "The rational model (rational choice)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Comes from economics (classical theory: Adam Smith, Ricardo, Walras). The decision maker can identify and evaluate all possible alternatives and all their consequences and rationally chooses the most appropriate course of action → the decision is optimal (“no better”) (Jones & George, 2008)."
+        },
+        {
+          "kind": "item",
+          "term": "Steps",
+          "text": "Recognise the problem → identify the objectives → gather and evaluate data, diagnose (synoptic evaluation from one point of view) → list and evaluate all alternatives (each analysed independently, all consequences in time and space, then compared) → select the best course of action to optimise the firm's value system → implement → gather feedback → follow up."
+        },
+        {
+          "kind": "item",
+          "term": "Critique",
+          "text": "An ideal managers strive for, but unrealistic: it ignores time constraints and the limits of human knowledge and information-processing capabilities."
+        },
+        {
+          "kind": "item",
+          "term": "Decision fatigue",
+          "text": "Deciding costs effort – Barack Obama wore only grey or blue suits to avoid trivial daily decisions."
+        }
+      ]
+    },
+    {
+      "heading": "Bounded rationality (Herbert Simon, Nobel Prize 1978)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "The environment is too complex for one person to understand and know."
+        },
+        {
+          "kind": "item",
+          "term": "Limits",
+          "text": "Information is incomplete and imperfect · limited information-processing capacity and selective perception · too many alternatives to consider them all · impossible to foresee all consequences in time and space · limited time · preferences not clearly predefined."
+        },
+        {
+          "kind": "item",
+          "term": "Satisficing",
+          "text": "“Optimisation” criteria are replaced by “satisfactory performance” criteria; the search is sequential (one option after another), not synoptic (all at once)."
+        },
+        {
+          "kind": "item",
+          "term": "Real-world model",
+          "text": "Managers choose the FIRST satisfactory and sufficient solution – not the optimal one – that respects the organisational status quo and can be taken quickly from incomplete information."
+        },
+        {
+          "kind": "item",
+          "term": "Class examples",
+          "text": "Jacques Chirac's dissolution of the National Assembly in 1997 (meant to strengthen his majority, it led to defeat and cohabitation with Lionel Jospin, 1997–2002); Daniel Kahneman: “We're blind to our blindness” – we have very little idea of how little we know."
+        }
+      ]
+    },
+    {
+      "heading": "Organisations as decision-support systems",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Organisations help overcome bounded rationality and get closer to rational decisions: structure, procedures, rules, culture and incentives reduce complexity and absorb uncertainty."
+        },
+        {
+          "kind": "item",
+          "term": "Division of labour",
+          "text": "Reduces each person's field of attention and competence to a manageable size."
+        },
+        {
+          "kind": "item",
+          "term": "Hierarchy and control",
+          "text": "Spares people from questioning whether orders are sound and releases them from responsibility (cf. Weber, Milgram's agentic state)."
+        },
+        {
+          "kind": "item",
+          "term": "Rules, standards, procedures",
+          "text": "Ready-made solutions."
+        },
+        {
+          "kind": "item",
+          "term": "Information channels",
+          "text": "Those who collect information are not those who use it."
+        }
+      ]
+    },
+    {
+      "heading": "The Carnegie model (Cyert, March & Simon)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "Researchers at Carnegie-Mellon University extended bounded rationality to the organisation: organisation-level decisions are based on coalitions among managers (Daft, 2009)."
+        },
+        {
+          "kind": "item",
+          "term": "Coalitions",
+          "text": "Large firms are coalitions of individuals or sub-groups (managers, stockholders, workers, suppliers …) with different interests; all take part in setting goals and making decisions."
+        },
+        {
+          "kind": "item",
+          "term": "Negotiated goals",
+          "text": "Specific goals (production, inventory, market share, sales, profits) are compromises negotiated by the sub-groups; priorities and information vary by group → potential conflicts. All goals must be satisfied, following an implicit order of priority."
+        },
+        {
+          "kind": "item",
+          "term": "Sub-problems",
+          "text": "The problem is split into sub-problems (secondary goals) solved by sub-groups by specialty, each with its standard procedures, to satisfy its own hierarchy."
+        },
+        {
+          "kind": "item",
+          "term": "Satisficing",
+          "text": "Once a solution satisfactory to the hierarchy is found, the process stops (satisficing, sequential). The overall solution is the simple juxtaposition of local solutions."
+        }
+      ]
+    },
+    {
+      "heading": "Group decision-making: strengths and liabilities",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "“Two heads are better than one” underpins democratic and judicial systems; selection committees, executive committees, parliaments, boards and juries decide as groups. Irving Janis studied their mechanisms and liabilities."
+        },
+        {
+          "kind": "item",
+          "term": "Strengths",
+          "text": "More complete information and knowledge · more diverse views and creativity by pooling resources · greater acceptance of and commitment to the decision (members had a voice) · synergy through mutual influence and better understanding of the decision."
+        },
+        {
+          "kind": "item",
+          "term": "Weaknesses",
+          "text": "Time-consuming · pressure to conform · discussion dominated by a few members, a clique or a forceful leader · ambiguous responsibility and social loafing (Ringelmann's rope pull, free riders)."
+        },
+        {
+          "kind": "item",
+          "term": "Denial of intuition",
+          "text": "All arguments must be based on facts; intimate conviction does not count in collective reasoning."
+        },
+        {
+          "kind": "item",
+          "term": "Sobriety of expression",
+          "text": "Warning signals are minimised so as not to be the messenger of bad news (pilots and control tower)."
+        },
+        {
+          "kind": "item",
+          "term": "Group polarisation",
+          "text": "When members share a common normative orientation, persuasive arguments escalate and members adopt the group's prototypical opinion → the decision radicalises, groups can adopt extreme attitudes."
+        }
+      ]
+    },
+    {
+      "heading": "Groupthink (Irving Janis, 1972)",
+      "blocks": [
+        {
+          "kind": "item",
+          "text": "A group makes faulty decisions because of “a deterioration of mental efficiency, reality testing, and moral judgment resulting from pressure within the group”."
+        },
+        {
+          "kind": "item",
+          "term": "8 symptoms",
+          "text": "Illusion of invulnerability (excessive optimism, extreme risks) · collective rationalisation (warnings discounted) · belief in inherent morality (ethical consequences ignored) · stereotyped views of out-groups (negotiation seems unnecessary) · direct pressure on dissenters (loyalty = adopting the group view) · self-censorship (doubts not expressed) · illusion of unanimity (majority view taken as unanimous) · self-appointed “mindguards” (shield the group and leader from contradictory information)."
+        },
+        {
+          "kind": "item",
+          "term": "Risk factors",
+          "text": "Members with similar backgrounds · group insulated from outside opinions · no clear rules for decision-making."
+        },
+        {
+          "kind": "item",
+          "term": "Consequences",
+          "text": "Alternatives are ignored; irrational actions that dehumanise other groups."
+        },
+        {
+          "kind": "item",
+          "term": "Fiascoes",
+          "text": "Pearl Harbor, Bay of Pigs invasion, escalation of the Vietnam War, the Iran hostage rescue; later the invasion of Iraq (Bush administration and Congress)."
+        }
+      ]
+    },
+    {
+      "heading": "Allison: three approaches to analyse decisions (1971)",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "1 · Bounded rationality model",
+          "text": "The decision is made by individuals with limited resources, limited time and limited cognitive skills. Focus: biases."
+        },
+        {
+          "kind": "item",
+          "term": "2 · Organisational model",
+          "text": "The decision is shaped by organisational processes and features. Focus: structure, culture, incentives (Sessions 3–5)."
+        },
+        {
+          "kind": "item",
+          "term": "3 · Political model",
+          "text": "The decision is the output of negotiation and interplay between actors with specific interests. Focus: power games (Session 6)."
+        },
+        {
+          "kind": "item",
+          "term": "Cuban Missile Crisis (1962)",
+          "text": "Allison, Essence of Decision (1971): the US response to Soviet missiles in Cuba explained with all three lenses – exercise in class: apply them yourself."
+        }
+      ]
+    }
+  ]
+}

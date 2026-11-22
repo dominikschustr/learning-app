@@ -1,0 +1,329 @@
+[
+  {
+    "id": "rational-model",
+    "lecture": "o7",
+    "name": "The rational decision model",
+    "origin": "Classical economics (Smith, Ricardo, Walras); Jones & George (2008)",
+    "purpose": "How would a perfectly rational decision maker decide?",
+    "parts": [
+      {
+        "label": "Problem",
+        "points": [
+          "Recognise the problem and the need to decide",
+          "Identify the objectives"
+        ]
+      },
+      {
+        "label": "Diagnose",
+        "points": [
+          "Gather and evaluate data",
+          "Synoptic evaluation from one point of view"
+        ]
+      },
+      {
+        "label": "Alternatives",
+        "points": [
+          "List ALL alternatives, analyse each independently",
+          "All consequences in time and space, compare"
+        ]
+      },
+      {
+        "label": "Choose",
+        "points": [
+          "Best course of action – optimise the firm's value system"
+        ]
+      },
+      {
+        "label": "Implement",
+        "points": [
+          "Implement, gather feedback, follow up"
+        ]
+      }
+    ],
+    "apply": [
+      "Use it as the benchmark: which step was skipped or impossible in the case?"
+    ],
+    "pitfalls": [
+      "A utopia: ignores time constraints and limits of knowledge and information processing"
+    ],
+    "example": "Decision fatigue: Obama wore only grey or blue suits to save decisions.",
+    "visual": {
+      "type": "flow"
+    }
+  },
+  {
+    "id": "bounded-rationality",
+    "lecture": "o7",
+    "name": "Bounded rationality vs rational model",
+    "origin": "Herbert Simon (Nobel Prize 1978)",
+    "purpose": "How do real decision makers decide?",
+    "parts": [
+      {
+        "label": "Bounded rationality – satisfice",
+        "points": [
+          "Incomplete, imperfect information; limited cognition and time",
+          "Alternatives examined one after another (sequential)",
+          "FIRST satisfactory solution, respects the status quo"
+        ]
+      },
+      {
+        "label": "Rational model – optimise",
+        "points": [
+          "Complete information",
+          "All alternatives evaluated at once (synoptic)",
+          "Optimal decision – normative ideal"
+        ]
+      }
+    ],
+    "apply": [
+      "Show how limited information, time and cognition led to a “good enough” choice"
+    ],
+    "pitfalls": [
+      "Satisficing ≠ irrational: it is rational within limits",
+      "Preferences are not clearly predefined"
+    ],
+    "example": "Chirac's 1997 dissolution of the National Assembly; Kahneman: “we're blind to our blindness”.",
+    "visual": {
+      "type": "versus"
+    }
+  },
+  {
+    "id": "org-decision-support",
+    "lecture": "o7",
+    "name": "Organisations as decision-support systems",
+    "origin": "Simon; Session 7",
+    "purpose": "How do organisations help overcome bounded rationality?",
+    "parts": [
+      {
+        "label": "Division of labour",
+        "points": [
+          "Reduces attention and competency span"
+        ]
+      },
+      {
+        "label": "Hierarchy & control",
+        "points": [
+          "No need to question orders; releases responsibility"
+        ]
+      },
+      {
+        "label": "Rules & procedures",
+        "points": [
+          "Ready-made solutions"
+        ]
+      },
+      {
+        "label": "Information channels",
+        "points": [
+          "Collectors ≠ users of information"
+        ]
+      }
+    ],
+    "apply": [
+      "Link each mechanism to the course: Taylor/Mintzberg, Weber/Milgram, bureaucracy, Crozier"
+    ],
+    "pitfalls": [
+      "The same mechanisms can also hinder: rigidity, agentic state, filtered information"
+    ],
+    "example": "",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "carnegie",
+    "lecture": "o7",
+    "name": "Carnegie model",
+    "origin": "Cyert, March & Simon (Carnegie-Mellon); Daft (2009)",
+    "purpose": "How does an organisation – not an individual – decide?",
+    "parts": [
+      {
+        "label": "Coalitions",
+        "points": [
+          "Managers, stockholders, workers, suppliers …",
+          "Different interests and information"
+        ]
+      },
+      {
+        "label": "Negotiated goals",
+        "points": [
+          "Production, inventory, market share, sales, profits",
+          "Compromises, implicit order of priority"
+        ]
+      },
+      {
+        "label": "Sub-problems",
+        "points": [
+          "Split by specialty",
+          "Each sub-group uses its standard procedures"
+        ]
+      },
+      {
+        "label": "Satisfice",
+        "points": [
+          "Stop at the first solution acceptable to the hierarchy"
+        ]
+      },
+      {
+        "label": "Outcome",
+        "points": [
+          "Juxtaposition of local solutions"
+        ]
+      }
+    ],
+    "apply": [
+      "Ask: which coalitions exist, whose goals won, which local solutions were stuck together?"
+    ],
+    "pitfalls": [
+      "Not one rational decision maker – conflicts between sub-groups are normal"
+    ],
+    "example": "",
+    "visual": {
+      "type": "flow"
+    }
+  },
+  {
+    "id": "group-decisions",
+    "lecture": "o7",
+    "name": "Group decision-making",
+    "origin": "Irving Janis; Ringelmann",
+    "purpose": "Are two heads better than one?",
+    "parts": [
+      {
+        "label": "Strengths",
+        "points": [
+          "More complete information and knowledge",
+          "Diversity of views, creativity",
+          "Acceptance and commitment",
+          "Synergy, better understanding"
+        ]
+      },
+      {
+        "label": "Weaknesses",
+        "points": [
+          "Time-consuming; conformity pressure",
+          "Domination by a few; social loafing (Ringelmann)",
+          "Denial of intuition; sobriety of expression",
+          "Group polarisation; groupthink"
+        ]
+      }
+    ],
+    "apply": [
+      "Boards, executive committees, juries: weigh commitment against conformity"
+    ],
+    "pitfalls": [
+      "Polarisation = more extreme decision, not a compromise"
+    ],
+    "example": "Sobriety of expression: pilots and control tower minimise warning signals.",
+    "visual": {
+      "type": "versus"
+    }
+  },
+  {
+    "id": "groupthink",
+    "lecture": "o7",
+    "name": "Groupthink – 8 symptoms",
+    "origin": "Irving Janis (1972)",
+    "purpose": "Why do cohesive groups make faulty decisions?",
+    "parts": [
+      {
+        "label": "Invulnerability",
+        "points": [
+          "Excessive optimism, extreme risks"
+        ]
+      },
+      {
+        "label": "Rationalisation",
+        "points": [
+          "Warnings discounted"
+        ]
+      },
+      {
+        "label": "Inherent morality",
+        "points": [
+          "Ethical consequences ignored"
+        ]
+      },
+      {
+        "label": "Stereotyped out-groups",
+        "points": [
+          "Negotiation with the “enemy” seems unnecessary"
+        ]
+      },
+      {
+        "label": "Pressure on dissenters",
+        "points": [
+          "Loyalty = adopting the group view"
+        ]
+      },
+      {
+        "label": "Self-censorship",
+        "points": [
+          "Doubts not expressed"
+        ]
+      },
+      {
+        "label": "Illusion of unanimity",
+        "points": [
+          "Majority taken as unanimous"
+        ]
+      },
+      {
+        "label": "Mindguards",
+        "points": [
+          "Shield group and leader from contradictory information"
+        ]
+      }
+    ],
+    "apply": [
+      "Find symptoms in the case, then the risk factors: similar backgrounds, insulation, no decision rules"
+    ],
+    "pitfalls": [
+      "Cohesion alone is not groupthink – look for the symptoms"
+    ],
+    "example": "Pearl Harbor, Bay of Pigs, Vietnam, Iran hostage rescue, Iraq invasion.",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "allison",
+    "lecture": "o7",
+    "name": "Allison's three models",
+    "origin": "Graham Allison, Essence of Decision (1971)",
+    "purpose": "Through which lenses can one decision be explained?",
+    "parts": [
+      {
+        "label": "Bounded rationality",
+        "points": [
+          "Individuals with limited resources, time, cognition",
+          "Focus: biases"
+        ]
+      },
+      {
+        "label": "Organisational model",
+        "points": [
+          "Shaped by organisational processes and features",
+          "Focus: structure, culture, incentives"
+        ]
+      },
+      {
+        "label": "Political model",
+        "points": [
+          "Output of negotiation between actors with own interests",
+          "Focus: power games"
+        ]
+      }
+    ],
+    "apply": [
+      "Analyse the same decision three times; link lens 2 to Sessions 3–5 and lens 3 to Session 6"
+    ],
+    "pitfalls": [
+      "The lenses complement each other – use all three, not one"
+    ],
+    "example": "Cuban Missile Crisis 1962: US response to Soviet missiles in Cuba.",
+    "visual": {
+      "type": "pillars"
+    }
+  }
+]
