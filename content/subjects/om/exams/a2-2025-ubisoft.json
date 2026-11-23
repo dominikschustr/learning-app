@@ -1,0 +1,38 @@
+[
+  {
+    "id": "exam-2025-ubisoft",
+    "title": "Klausur 2025 – Ubisoft",
+    "subtitle": "Fallklausur zu Ubisoft wie 2025: Mintzberg, Schein und Etzioni. Der Falltext lag nicht vor und ist aus öffentlichen Angaben in eigenen Worten zusammengestellt; Formulierung der Fragen, Punkte (je 20) und Zeit sind angenommen.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Organisation & Management, Klausur 2025 (Ubisoft)",
+      "faithful": false
+    },
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Case questions – Ubisoft",
+        "instructions": "Answer the three questions using the course models and evidence from the case. [60 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p5-01",
+                "points": 20
+              },
+              {
+                "q": "sa-p5-02",
+                "points": 20
+              },
+              {
+                "q": "sa-p5-03",
+                "points": 20
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

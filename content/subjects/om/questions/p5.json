@@ -1,0 +1,74 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p5-01",
+    "lecture": "o3",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "ubisoft",
+    "prompt": "Using Mintzberg's framework, identify the key parts of the organisation and the main coordinating mechanisms at Ubisoft. Which configuration(s) best characterise(s) the company? Justify your answer with examples from the case.",
+    "modelAnswer": "Five parts:\n• Strategic apex: the Guillemot family, CEO Yves Guillemot and the executive committee – strong, centralised family control.\n• Middle line: studio managing directors, producers and project leads who steer the co-developed games.\n• Operating core: programmers, artists, game designers, writers and testers in some 45 studios – creative professionals.\n• Technostructure: the Paris Editorial department, which validated every game at each stage and set the standards (the “Ubisoft formula”), production planning and milestones, shared engines and tools (Anvil, Snowdrop), common processes.\n• Support staff: HR, legal, marketing, IT, localisation, finance.\nCoordinating mechanisms:\n• Mutual adjustment within project teams and between co-developing studios.\n• Standardisation of skills: specialised creative and technical professionals.\n• Standardisation of work processes and outputs: shared engines, common processes, milestones and editorial validation; the recurring formula (towers, map icons, side missions) is a standardised output.\n• Direct supervision: producers and, above all, the Editorial team with the final word on every game.\nConfiguration: a divisionalised form (many studios, franchises as units, controlled from Paris; in 2025 a subsidiary built around Assassin's Creed, Far Cry and Rainbow Six), whose creative work would naturally call for an adhocracy (innovation, mutual adjustment, complex and dynamic environment, sophisticated technology). However, the centralised Editorial and the standardised production model add machine-bureaucracy features, and the family control adds simple-structure elements (centralisation on the founders). Tension: standardisation and centralisation make it possible to coordinate up to a dozen studios on one game, but they limit creativity (formulaic games) and concentrate power in a small, unchecked group in Paris – which also helped the 2020 abuses. Size, age and the 2022–2025 crisis push further toward control and cost cutting.",
+    "keyPoints": [
+      "Five parts identified with case facts (Guillemot family, studio heads/producers, developers, Paris Editorial and shared tools, support)",
+      "Editorial as centralised control / technostructure",
+      "Coordination: mutual adjustment, skills, standardised processes and outputs (formula), direct supervision",
+      "Configuration: divisionalised form with adhocracy needs, machine-bureaucracy and simple-structure elements",
+      "Tension creativity vs standardisation and centralisation"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2025",
+        "ref": "Ubisoft – Frage 1 (Mintzberg)"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-02",
+    "lecture": "o4",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "ubisoft",
+    "prompt": "Analyse the organisational culture of Ubisoft using Schein's framework. Discuss the coherence between the different levels of culture, using examples from the case.",
+    "modelAnswer": "Artifacts: the iconic games and characters (Assassin's Creed, Rabbids, Rayman); the founding story of five brothers from Brittany and the victory against Vivendi (myth and heroes); informal, young dress and language; studios around the world; crunch before launches; the “Ubisoft formula”; after 2020 – the new code of conduct, the alert line, the resignations.\nEspoused values: creativity and enriching players' lives; passion; family spirit; independence; respect and diversity (reaffirmed after 2020).\nEnacted values: before 2020 – tolerance of harassment and humiliation in Editorial, star creators untouchable, HR protecting managers; long hours, pay below the market; since 2022 – cost cutting, layoffs, studio closures, more office presence.\nShared basic assumptions:\n• Image of the organisation: a creative family that protects its members and its independence – but in reality a family controlled from the top.\n• Image of the profession: a passionate gamer-creator who accepts crunch and lower pay out of love for games.\n• Image of the power structure: power lies with the Guillemot family and a small group of star creators in Paris Editorial, beyond the reach of rules and HR.\nCoherence: weak. Strong coherence between artifacts and the passion assumption explains commitment and creative success. But there is a deep gap between espoused values (respect, family, creativity) and enacted values (the 2020 “boys' club”, formulaic games, layoffs presented as a family's decisions). The reforms after 2020 changed artifacts and espoused values (code of conduct, new Chief People Officer) faster than the underlying assumptions about power; the crisis since 2022 (layoffs, return to office) then broke the “family” narrative, leading to strikes in 2024.",
+    "keyPoints": [
+      "Artifacts with case facts (games, founders' myth, Vivendi, crunch, formula, post-2020 measures)",
+      "Espoused values vs enacted values",
+      "Assumptions on the three images (organisation, profession, power)",
+      "Coherence: passion consistent, but gap on respect/family/creativity",
+      "2020 scandal and 2022–2025 crisis as evidence; limits of cultural change"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2025",
+        "ref": "Ubisoft – Frage 2 (Schein)"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p5-03",
+    "lecture": "o5",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "ubisoft",
+    "prompt": "Using Etzioni's typology, analyse the incentive and control mechanisms Ubisoft relies on to obtain its employees' contribution. How has the crisis since 2020 affected this mix? Justify with examples from the case.",
+    "modelAnswer": "Etzioni (1961): organisations combine coercion (stick), remuneration (carrot) and identification (heart) in variable proportions; the mix must fit the work and the people.\nIdentification (heart) – dominant: passion for video games, pride in iconic franchises, creative identity, the “family” company and its founders' story, independence from Vivendi. This normative mechanism lets Ubisoft obtain strong commitment, crunch and acceptance of lower pay – moral involvement.\nRemuneration (carrot) – relatively weak: salaries often below other tech companies, careers dependent on projects; employee share plans lose value as the share price collapses.\nCoercion (stick): deadlines and milestones, editorial validation, crunch; since 2022 layoffs, studio closures and stricter office presence rules; on the other hand, before 2020 coercive control failed where it was needed – harassment was not sanctioned.\nEffect of the crisis: the mix relied on the heart. The 2020 scandal, then layoffs, cancelled projects and the return-to-office rule destroyed the credibility of the “family” and creative mission, so identification weakens. With a weak carrot, the only remaining lever becomes the stick, and involvement turns calculative or alienative. Employees react (Hirschman): voice – strikes in 2024 over wages and office presence; exit – departures of talent; loyalty becomes resignation. In March & Simon's terms, perceived contributions (crunch, presence, insecurity) now exceed perceived retributions.\nRecommendations: restore identification with credible enacted values (real sanctions, fair treatment, creative autonomy for studios), improve remuneration where the balance is broken, and use coercion only for clear rules (harassment, compliance), not as the main lever with creative professionals.",
+    "keyPoints": [
+      "Etzioni's three mechanisms defined",
+      "Identification dominant: passion, franchises, family, founders' story",
+      "Weak remuneration; coercion via deadlines, layoffs, office rules – and failing coercion on harassment",
+      "Crisis erodes identification → calculative/alienative involvement",
+      "Reactions: voice (strikes), exit; link to March & Simon – recommendations"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2025",
+        "ref": "Ubisoft – Frage 3 (Etzioni)"
+      }
+    ]
+  }
+]

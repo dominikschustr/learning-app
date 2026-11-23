@@ -1,0 +1,74 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p4-01",
+    "lecture": "o3",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "goldman-sachs",
+    "prompt": "Using Mintzberg's framework, identify the key parts of the organisation and the main coordinating mechanisms at Goldman Sachs. Which configuration(s) best characterise(s) the firm? Justify your answer with examples from the case.",
+    "modelAnswer": "Five parts:\n• Strategic apex: CEO David Solomon, the management committee and the board; the partners (elected every two years) form a powerful, elite group close to the apex.\n• Middle line: managing directors and vice presidents who run divisions, desks and deal teams; short but clear career ladder (analyst → associate → VP → MD → partner).\n• Operating core: bankers, traders and advisers who serve clients and generate revenues – highly qualified professionals.\n• Technostructure: very strong – Compliance, Risk, Legal and Controllers set limits, procedures and reporting rules; reinforced by regulation (bank holding company under the Fed since 2008), clawback rules, the annual ranking system.\n• Support staff: thousands of engineers and operations staff (trading platforms, transaction processing), HR, legal services.\nCoordinating mechanisms:\n• Standardisation of skills: elite recruitment from top universities, intensive training of analysts – professionals know what to do.\n• Standardisation of outputs: each division and desk has its own results; individual and team revenues drive bonuses and rankings.\n• Standardisation of work processes: compliance and risk procedures, limits, reporting.\n• Mutual adjustment: within small deal teams and trading desks under time pressure.\n• Direct supervision: juniors are closely supervised and trained by associates and VPs.\nConfiguration: a divisionalised form at group level (Global Banking & Markets, Asset & Wealth Management with their own results, controlled by outputs from the apex), whose front-office units work like a professional bureaucracy (power of experts, standardisation of skills) with adhocratic deal teams (mutual adjustment on complex, unique deals), while control and operations functions resemble a machine bureaucracy (rules, procedures, imposed by regulation). Contingency factors: large size, old firm, complex and regulated environment, sophisticated technology. Tension: the professional autonomy of revenue-generating experts vs the rising weight of the technostructure after the scandals (Abacus, 1MDB).",
+    "keyPoints": [
+      "Five parts identified with case facts (apex incl. partners, MDs/VPs, bankers and traders, Compliance/Risk, engineers and operations)",
+      "Strong technostructure due to regulation and risk",
+      "Coordination: skills, outputs, processes, mutual adjustment, direct supervision of juniors",
+      "Configuration: divisionalised form + professional bureaucracy / adhocracy in front office, machine bureaucracy in control functions",
+      "Contingency factors and tensions"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2026",
+        "ref": "Goldman Sachs – Frage 1 (Mintzberg)"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-02",
+    "lecture": "o4",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "goldman-sachs",
+    "prompt": "Analyse the organisational culture of Goldman Sachs using Schein's framework. Discuss the coherence between the different levels of culture, using examples from the case.",
+    "modelAnswer": "Artifacts: discreet headquarters at 200 West Street with hardly any signage; the partner title and the biennial election of new partners (rite of passage); annual bonus day; strict dress code (relaxed in 2019); long hours, late nights and weekend work; the written business principles (1979); language – “long-term greedy”, “Government Sachs”, and in Greg Smith's account clients called “muppets”; heroes – John Whitehead, Gus Levy, famous alumni in government; the CEO DJing at festivals; the analyst class as a cohort.\nEspoused values: clients' interests first, teamwork, integrity, excellence, partnership; people, capital and reputation as the firm's assets.\nEnacted values (behaviour): performance measured by revenue, competition between individuals (ranking, culling), money and bonuses as the main signal of success, extreme work commitment.\nShared basic assumptions:\n• Image of the organisation: an elite club, the best bank in the world, where only the best are admitted; a stepping stone to power (alumni in government).\n• Image of the profession: a good banker works without limits, is brilliant and tough, and proves his value by the revenue he brings in.\n• Image of the power structure: power belongs to the partners and the revenue generators; meritocracy measured in money.\nCoherence: strong culture at the level of excellence, elitism and commitment – artifacts (selection, partnership, hours) are consistent with the assumptions. But there is a clear gap between espoused and enacted values: “clients first” and integrity vs the Abacus and 1MDB scandals and the “muppets” episode; “teamwork” and “our assets are our people” vs individual ranking and the 2021 analysts' survey (100-hour weeks). The IPO turned the partnership into a symbol rather than shared ownership. Management reactions (higher junior pay, protected Saturdays, relaxed dress code, clawbacks) try to change artifacts and rules, but deep assumptions change slowly.",
+    "keyPoints": [
+      "Artifacts with case facts (HQ, partner election, bonus day, dress code, principles, language, heroes)",
+      "Espoused values vs enacted values",
+      "Assumptions on the three images (organisation, profession, power)",
+      "Coherence: strong where elitism and commitment meet, gap on clients first / integrity / teamwork",
+      "Scandals and the analysts' survey as evidence; limits of change from the top"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2026",
+        "ref": "Goldman Sachs – Frage 2 (Schein)"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-03",
+    "lecture": "o5",
+    "difficulty": 3,
+    "verb": "explain",
+    "case": "goldman-sachs",
+    "prompt": "Using Etzioni's typology, analyse the incentive and control mechanisms Goldman Sachs uses to obtain its employees' contribution. Is this mix appropriate? Justify with examples from the case.",
+    "modelAnswer": "Etzioni (1961): organisations combine three mechanisms in variable proportions – coercion (stick), remuneration (carrot) and identification (heart); the mix must fit the work and the people.\nRemuneration (carrot) – dominant: very high and largely variable pay, compensation ≈ a third of revenues; annual bonuses based on individual and team results; deferred shares; the promise of promotion up to partner; strong exit options (alumni careers). Employees' involvement is mainly calculative.\nCoercion (stick): annual ranking against peers and departure of the lowest performers; compliance rules, risk limits and controls; clawbacks of deferred pay in case of misconduct; strong pressure of hours and deadlines (100-hour weeks).\nIdentification (heart): elite identity and prestige of the brand; partnership tradition; written principles (clients first, teamwork); belonging to a club with powerful alumni.\nAppropriateness: for highly qualified, mobile experts, remuneration and prestige do attract and retain talent – it works. But a mix dominated by the carrot and the stick has limits: calculative involvement makes loyalty fragile (people leave for hedge funds or private equity – exit), pushes short-term revenue over clients and integrity (Abacus, 1MDB, “muppets”), and coercive hours lead to burnout (2021 analysts' survey – voice). Identification is weakened when espoused values are not enacted. Better balance: give more weight to normative identification (credible client-first values, “long-term greedy”), tie bonuses to behaviour and compliance (clawbacks, deferral), protect juniors' working time (Saturday rule) and raise pay where the contribution–retribution balance was broken (March & Simon).",
+    "keyPoints": [
+      "Etzioni's three mechanisms defined",
+      "Remuneration dominant: bonuses, deferred shares, partnership, exit options",
+      "Coercion: ranking/culling, compliance, clawbacks, hours",
+      "Identification: elite identity, principles, alumni",
+      "Assessment of the mix: calculative involvement, scandals, burnout, exit/voice – suggestions to rebalance"
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2026",
+        "ref": "Goldman Sachs – Frage 3 (Etzioni)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "exam-2026-goldman",
+    "title": "Klausur 2026 – Goldman Sachs",
+    "subtitle": "Fallklausur zu Goldman Sachs wie 2026: Mintzberg, Schein und Etzioni. Der Falltext lag nicht vor und ist aus öffentlichen Angaben in eigenen Worten zusammengestellt; Formulierung der Fragen, Punkte (je 20) und Zeit sind angenommen.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Organisation & Management, Klausur 2026 (Goldman Sachs)",
+      "faithful": false
+    },
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Case questions – Goldman Sachs",
+        "instructions": "Answer the three questions using the course models and evidence from the case. [60 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p4-01",
+                "points": 20
+              },
+              {
+                "q": "sa-p4-02",
+                "points": 20
+              },
+              {
+                "q": "sa-p4-03",
+                "points": 20
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
