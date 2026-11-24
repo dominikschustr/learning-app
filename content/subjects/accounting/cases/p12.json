@@ -1,0 +1,124 @@
+[
+  {
+    "id": "hermes-fs",
+    "title": "Hermès International – financial statements at 31 December 2024 (€ millions, simplified)",
+    "text": [
+      "Hermès International is a French luxury group listed on Euronext Paris. Below are its financial statements for 2024 and 2023 in a simplified, rounded form. Revenue, recurring operating income and net income attributable to owners match the published figures; the other lines are rounded and partly grouped, so they differ from the original statements printed in the exam."
+    ],
+    "tables": [
+      {
+        "caption": "Statement of financial position – assets",
+        "head": ["", "31/12/2024", "31/12/2023"],
+        "rows": [
+          ["Goodwill", "46", "44"],
+          ["Intangible assets", "260", "230"],
+          ["Right-of-use assets", "1,920", "1,820"],
+          ["Property, plant and equipment", "3,450", "2,910"],
+          ["Investment property", "60", "62"],
+          ["Investments in associates", "90", "70"],
+          ["Non-current financial assets", "820", "700"],
+          ["Deferred tax assets", "1,010", "880"],
+          ["Other non-current assets", "120", "110"],
+          ["Non-current assets", "7,776", "6,826"],
+          ["Inventories and work in progress", "2,560", "2,180"],
+          ["Trade and other receivables", "480", "460"],
+          ["Current tax receivables", "70", "60"],
+          ["Other current assets", "520", "480"],
+          ["Cash and cash equivalents", "11,800", "10,600"],
+          ["Current assets", "15,430", "13,780"],
+          ["TOTAL ASSETS", "23,206", "20,606"]
+        ]
+      },
+      {
+        "caption": "Statement of financial position – equity and liabilities",
+        "head": ["", "31/12/2024", "31/12/2023"],
+        "rows": [
+          ["Share capital", "54", "54"],
+          ["Share premium", "50", "50"],
+          ["Treasury shares", "(590)", "(520)"],
+          ["Reserves", "14,019", "12,018"],
+          ["Net income attributable to owners of the parent", "4,603", "4,311"],
+          ["Equity attributable to owners of the parent", "18,136", "15,913"],
+          ["Non-controlling interests", "20", "18"],
+          ["Total equity", "18,156", "15,931"],
+          ["Borrowings and financial liabilities – non-current", "30", "25"],
+          ["Lease liabilities – non-current", "1,830", "1,720"],
+          ["Provisions – non-current", "40", "35"],
+          ["Post-employment and other employee benefit obligations", "220", "210"],
+          ["Deferred tax liabilities", "80", "70"],
+          ["Other non-current liabilities", "110", "100"],
+          ["Non-current liabilities", "2,310", "2,160"],
+          ["Borrowings and financial liabilities – current", "50", "45"],
+          ["Lease liabilities – current", "300", "280"],
+          ["Provisions – current", "120", "110"],
+          ["Trade and other payables", "950", "870"],
+          ["Current tax liabilities", "320", "290"],
+          ["Other current liabilities", "1,000", "920"],
+          ["Current liabilities", "2,740", "2,515"],
+          ["TOTAL EQUITY AND LIABILITIES", "23,206", "20,606"]
+        ]
+      },
+      {
+        "caption": "Consolidated statement of income",
+        "head": ["", "2024", "2023"],
+        "rows": [
+          ["Revenue", "15,170", "13,427"],
+          ["Cost of sales", "(4,502)", "(3,756)"],
+          ["Gross margin", "10,668", "9,671"],
+          ["Sales and administrative expenses", "(3,415)", "(2,981)"],
+          ["Other income and expenses", "(1,103)", "(1,040)"],
+          ["Recurring operating income", "6,150", "5,650"],
+          ["Other non-recurring income and expenses", "—", "—"],
+          ["Operating income", "6,150", "5,650"],
+          ["Net financial income", "215", "243"],
+          ["Net income before tax", "6,365", "5,893"],
+          ["Income tax", "(1,787)", "(1,630)"],
+          ["Net income from associates", "40", "62"],
+          ["Consolidated net income", "4,618", "4,325"],
+          ["Non-controlling interests", "(15)", "(14)"],
+          ["Net income attributable to owners of the parent", "4,603", "4,311"]
+        ]
+      },
+      {
+        "caption": "Statement of cash flows – operating activities (extract)",
+        "head": ["", "2024", "2023"],
+        "rows": [
+          ["Consolidated net income", "4,618", "4,325"],
+          ["Depreciation and amortisation (incl. right-of-use assets)", "1,000", "880"],
+          ["Net income from associates", "(40)", "(62)"],
+          ["Dividends received from associates", "20", "25"],
+          ["Other non-cash items", "60", "52"],
+          ["Operating cash flows", "5,658", "5,220"],
+          ["Change in working capital requirement", "(350)", "(300)"],
+          ["Net cash from operating activities", "5,308", "4,920"]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tannery-equity",
+    "title": "Sellier SA – investment in Tannerie Morel (N and N+1)",
+    "text": [
+      "On 1 January N, Sellier SA, which prepares IFRS consolidated financial statements, acquires 35% of the shares of Tannerie Morel for €42 million in cash. The investment gives Sellier two seats out of seven on the board; Sellier does not control Tannerie Morel. On that date the fair value of Tannerie Morel's identifiable net assets is €100 million (equal to their carrying amount).",
+      "Tannerie Morel reports a net income of €20 million in N and pays a dividend of €8 million to its shareholders in N. In N+1 it reports a net loss of €6 million and pays no dividend. No impairment is necessary."
+    ],
+    "tables": []
+  },
+  {
+    "id": "boutique-lease",
+    "title": "Maison Vauclair – lease of a boutique",
+    "text": [
+      "On 1 January N, Maison Vauclair signs a 6-year lease for a boutique in Lyon. The annual lease payment of €500 thousand is paid at the end of each year (31 December). There is no purchase option and no renewal option, and ownership is not transferred. The interest rate implicit in the lease cannot be determined; Maison Vauclair's incremental borrowing rate is 4%. Maison Vauclair pays initial direct costs of €30 thousand on signature. The right-of-use asset is depreciated on a straight-line basis."
+    ],
+    "tables": []
+  },
+  {
+    "id": "lvmh-cancellation",
+    "title": "LVMH – cancellation of treasury shares",
+    "text": [
+      "LVMH Moët Hennessy Louis Vuitton SE regularly buys back its own shares under a share repurchase programme authorised by the shareholders' meeting. The par value of an LVMH share is €0.30.",
+      "Assume that during the year LVMH bought back 1.5 million of its own shares on the market at an average price of €650 per share and that the Board of Directors then decided to cancel these 1.5 million shares, thereby reducing the share capital."
+    ],
+    "tables": []
+  }
+]

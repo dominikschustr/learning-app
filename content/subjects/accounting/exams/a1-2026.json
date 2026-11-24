@@ -1,0 +1,172 @@
+[
+  {
+    "id": "exam-2026",
+    "title": "Klausur 2026 (Nachbau)",
+    "subtitle": "Aufbau der Abschlussklausur IFRS 2026 nach Gedächtnisprotokoll: Hermès (direkte oder indirekte Methode, IFRS, konsolidiert), Equity-Methode in N und N+1, Leasing, NOPAT/ROCE mit Margen, vier Instrumente Debt oder Equity, sechs Single-Choice-Fragen und die Einziehung von LVMH-Aktien. Zahlen, Fallangaben und Punkte (60) sind nachgebaut, nicht das Original; Hermès-Abschluss vereinfacht.",
+    "origin": {
+      "kind": "altklausur",
+      "exam": "Abschlussklausur IFRS (CM01) 2026 – Gedächtnisprotokoll",
+      "faithful": false
+    },
+    "minutes": 75,
+    "parts": [
+      {
+        "title": "Part 1 – Decoding financial statements",
+        "instructions": "Refer to the Hermès financial statements for 2024. [6 points]",
+        "sections": [
+          {
+            "title": "Hermès",
+            "items": [
+              {
+                "q": "sa-p12-01",
+                "points": 2
+              },
+              {
+                "q": "sa-p12-02",
+                "points": 2
+              },
+              {
+                "q": "sa-p12-03",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Equity method",
+        "instructions": "Sellier SA and Tannerie Morel, years N and N+1. [10 points]",
+        "sections": [
+          {
+            "title": "Sellier and Tannerie Morel",
+            "items": [
+              {
+                "q": "sa-p12-04",
+                "points": 4
+              },
+              {
+                "q": "sa-p12-05",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 3 – Leases",
+        "instructions": "Maison Vauclair's boutique lease. [8 points]",
+        "sections": [
+          {
+            "title": "Maison Vauclair",
+            "items": [
+              {
+                "q": "sa-p12-06",
+                "points": 5
+              },
+              {
+                "q": "sa-p12-07",
+                "points": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 4 – NOPAT, ROCE and margins",
+        "instructions": "Refer to the Hermès financial statements for 2024. [10 points]",
+        "sections": [
+          {
+            "title": "Hermès",
+            "items": [
+              {
+                "q": "sa-p12-08",
+                "points": 7
+              },
+              {
+                "q": "sa-p12-09",
+                "points": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 5 – Debt or equity?",
+        "instructions": "For each instrument, indicate its classification by the issuer under IAS 32. [8 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-p12-01",
+                "points": 2
+              },
+              {
+                "q": "mc-p12-02",
+                "points": 2
+              },
+              {
+                "q": "mc-p12-03",
+                "points": 2
+              },
+              {
+                "q": "mc-p12-04",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 6 – Single choice",
+        "instructions": "Only one right answer per question. [12 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-p12-05",
+                "points": 2
+              },
+              {
+                "q": "mc-p12-06",
+                "points": 2
+              },
+              {
+                "q": "mc-p12-07",
+                "points": 2
+              },
+              {
+                "q": "mc-p12-08",
+                "points": 2
+              },
+              {
+                "q": "mc-p12-09",
+                "points": 2
+              },
+              {
+                "q": "mc-p12-10",
+                "points": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 7 – Cancellation of shares",
+        "instructions": "LVMH. [6 points]",
+        "sections": [
+          {
+            "title": "LVMH",
+            "items": [
+              {
+                "q": "sa-p12-10",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
