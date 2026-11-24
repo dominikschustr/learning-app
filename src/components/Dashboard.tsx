@@ -98,8 +98,8 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
   return (
     <div className="space-y-6 sm:space-y-10">
       <section>
-        <p className="eyebrow">{greeting(new Date(now).getHours())}</p>
-        <h1 className="display mt-1 text-3xl sm:mt-2 sm:text-5xl">
+        <p className="text-sm font-medium text-muted sm:text-base">{greeting(new Date(now).getHours())}</p>
+        <h1 className="display mt-1 text-3xl sm:mt-1.5 sm:text-[3.4rem]">
           Was lernen wir <span className="text-accent">heute</span>?
         </h1>
       </section>
@@ -118,44 +118,44 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
         <Bar value={today / s.dailyGoal} color="var(--good)" className="mt-2" />
       </section>
 
-      <section className="hidden gap-4 sm:grid sm:grid-cols-3">
-        <div className="card flex items-center gap-5 p-5">
-          <ProgressRing value={today / s.dailyGoal} size={84} stroke={8} color="var(--good)">
+      <section className="card hidden divide-x divide-line sm:grid sm:grid-cols-[1fr_1fr_1.25fr]">
+        <div className="flex items-center gap-4 p-5 lg:gap-5 lg:p-6">
+          <ProgressRing value={today / s.dailyGoal} size={72} stroke={7} color="var(--good)">
             <span className="display text-lg tabular-nums">{today}</span>
           </ProgressRing>
-          <div>
+          <div className="min-w-0">
             <p className="eyebrow">Tagesziel</p>
-            <p className="mt-1 text-2xl font-semibold">
+            <p className="display mt-0.5 text-2xl tabular-nums">
               {today} <span className="text-muted">/ {s.dailyGoal}</span>
             </p>
             <p className="text-sm text-muted">
-              {today >= s.dailyGoal ? "Geschafft – alles Weitere ist Bonus." : `Noch ${s.dailyGoal - today} Antworten`}
+              {today >= s.dailyGoal ? "Geschafft – der Rest ist Bonus" : `Noch ${s.dailyGoal - today} Antworten`}
             </p>
           </div>
         </div>
 
-        <div className="card flex items-center gap-5 p-5">
-          <div className="grid size-[84px] shrink-0 place-items-center rounded-full bg-warn-soft">
-            <Flame className="size-9 text-flame" fill={streak ? "currentColor" : "none"} />
+        <div className="flex items-center gap-4 p-5 lg:gap-5 lg:p-6">
+          <div className="grid size-[72px] shrink-0 place-items-center rounded-full bg-warn-soft">
+            <Flame className="size-8 text-flame" fill={streak ? "currentColor" : "none"} />
           </div>
-          <div>
+          <div className="min-w-0">
             <p className="eyebrow">Streak</p>
-            <p className="mt-1 text-2xl font-semibold">
+            <p className="display mt-0.5 text-2xl">
               {streak} {streak === 1 ? "Tag" : "Tage"}
             </p>
             <p className="text-sm text-muted">Rekord: {s.streak.best}</p>
           </div>
         </div>
 
-        <div className="card flex flex-col justify-center gap-3 p-5">
-          <div className="flex items-baseline justify-between">
+        <div className="flex flex-col justify-center gap-2.5 p-5 lg:p-6">
+          <div className="flex items-baseline justify-between gap-3">
             <p className="eyebrow">Level {lvl.level}</p>
-            <p className="text-sm text-muted">{s.xp} XP</p>
+            <p className="text-sm tabular-nums text-muted">{s.xp} XP</p>
           </div>
           <p className="display text-2xl">{titleFor(lvl.level)}</p>
           <Bar value={lvl.progress} />
           <p className="text-xs text-muted">
-            {lvl.needed - lvl.into} XP bis Level {lvl.level + 1}
+            Noch {lvl.needed - lvl.into} XP bis Level {lvl.level + 1}
           </p>
         </div>
       </section>
@@ -322,7 +322,7 @@ function SubjectTile({
         <ProgressRing value={st.readiness} size={mobile ? 60 : 96} stroke={mobile ? 6 : 8} color={subject.color}>
           <span>
             <span className="display block text-base tabular-nums sm:text-xl">{Math.round(st.readiness * 100)}</span>
-            <span className="hidden text-[10px] font-semibold uppercase tracking-wider text-muted sm:block">Readiness</span>
+            <span className="hidden text-[11px] font-medium text-muted sm:block">Readiness</span>
           </span>
         </ProgressRing>
       </div>

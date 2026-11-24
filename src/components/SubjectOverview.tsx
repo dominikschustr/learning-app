@@ -420,7 +420,7 @@ function ExamsTab({ summary, st }: { summary: SubjectSummary; st: SubjectStats }
             <Trophy className="size-6" />
           </span>
           <span className="min-w-0 flex-1">
-            <span className="block text-[0.72rem] font-semibold uppercase tracking-[0.08em] opacity-60">
+            <span className="block text-xs font-medium opacity-60">
               Abschlusstest · {f.name}
             </span>
             <span className="block font-semibold sm:text-lg">Fragen aus allen {st.lectures.length} Kapiteln</span>
