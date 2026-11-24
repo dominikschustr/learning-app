@@ -66,7 +66,6 @@
   --color-warn-soft: var(--warn-soft);
   --color-flame: var(--flame);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-bricolage), var(--font-inter), ui-sans-serif, sans-serif;
   --shadow-soft: var(--shadow);
 }
 
@@ -150,13 +149,11 @@ p {
     margin: 0.85em 0;
   }
 
-  /* Überschriften & Kennzahlen in Bricolage Grotesque, Fließtext in Inter. */
+  /* Einheitliche Typo: eine Schrift (Inter), Überschriften & Kennzahlen fett und eng. */
   .display {
-    font-family: var(--font-display);
-    font-optical-sizing: auto;
     font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 1.08;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
     text-wrap: balance;
   }
 
