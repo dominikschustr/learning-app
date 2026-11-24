@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, CalendarClock, Check, ChevronDown, Flame, Info, Lock } from "lucide-react";
+import { ArrowRight, CalendarClock, Check, ChevronDown, ChevronLeft, ChevronRight, Flame, Info, Lock } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -424,7 +424,10 @@ function ExternalExam({ e }: { e: PlanEntry }) {
   );
 }
 
-/** Kompakte Kacheln; Antippen zeigt, wie man das Achievement freischaltet, und den Fortschritt. */
+/** Achievements je Seite: 3 bzw. 4 Spalten × 3–4 Reihen, damit die Karte so hoch bleibt wie „Aktivität“ daneben */
+const ACHIEVEMENTS_PER_PAGE = 12;
+
+/** Kompakte Kacheln zum Blättern; Antippen zeigt, wie man das Achievement freischaltet, und den Fortschritt. */
 function Achievements({
   unlocked,
   progress,
@@ -436,45 +439,108 @@ function Achievements({
   targets: Record<string, number>;
 }) {
   const [openId, setOpenId] = useState<string | null>(null);
+  const [page, setPage] = useState(0);
+  const [dir, setDir] = useState(0);
   const open = ACHIEVEMENTS.find((a) => a.id === openId);
+  // Freigeschaltete zuerst, dann die, denen am wenigsten fehlt
+  const sorted = ACHIEVEMENTS.toSorted((a, b) => {
+    const done = (x: typeof a) => (unlocked[x.id] ? 1 : 0);
+    const share = (x: typeof a) => Math.min(1, (progress[x.id] ?? 0) / (targets[x.id] ?? x.target));
+    return done(b) - done(a) || share(b) - share(a);
+  });
+  const pages = Math.ceil(sorted.length / ACHIEVEMENTS_PER_PAGE);
+  const go = (to: number) => {
+    const next = Math.max(0, Math.min(pages - 1, to));
+    if (next === page) return;
+    setDir(next > page ? 1 : -1);
+    setPage(next);
+    setOpenId(null);
+  };
+  const shown = sorted.slice(page * ACHIEVEMENTS_PER_PAGE, (page + 1) * ACHIEVEMENTS_PER_PAGE);
 
   return (
     <>
-      <div className="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4">
-        {/* Freigeschaltete zuerst, dann die, denen am wenigsten fehlt */}
-        {ACHIEVEMENTS.toSorted((a, b) => {
-          const done = (x: typeof a) => (unlocked[x.id] ? 1 : 0);
-          const share = (x: typeof a) => Math.min(1, (progress[x.id] ?? 0) / (targets[x.id] ?? x.target));
-          return done(b) - done(a) || share(b) - share(a);
-        }).map((a) => {
-          const got = !!unlocked[a.id];
-          const active = a.id === openId;
-          return (
-            <button
-              key={a.id}
-              type="button"
-              aria-expanded={active}
-              onClick={() => setOpenId(active ? null : a.id)}
-              className={cn(
-                "flex flex-col items-center gap-1.5 rounded-xl border p-2.5 text-center transition",
-                got ? "border-warn/30 bg-warn-soft" : "border-line",
-                !got && !active && "opacity-55 hover:opacity-80",
-                active && "ring-2 ring-accent/40",
-              )}
-            >
-              <span
+      <div className="mt-4 overflow-hidden">
+        <motion.div
+          key={page}
+          initial={dir ? { opacity: 0, x: dir * 40 } : false}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.22, ease: [0.2, 0.7, 0.2, 1] }}
+          // Wischen auf dem Handy
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.15}
+          onDragEnd={(_, info) => {
+            if (info.offset.x < -50) go(page + 1);
+            else if (info.offset.x > 50) go(page - 1);
+          }}
+          className="grid touch-pan-y grid-cols-3 gap-2 sm:grid-cols-4"
+        >
+          {shown.map((a) => {
+            const got = !!unlocked[a.id];
+            const active = a.id === openId;
+            return (
+              <button
+                key={a.id}
+                type="button"
+                aria-expanded={active}
+                onClick={() => setOpenId(active ? null : a.id)}
                 className={cn(
-                  "grid size-9 place-items-center rounded-full",
-                  got ? "bg-surface text-warn" : "bg-surface-2 text-muted",
+                  "flex flex-col items-center gap-1.5 rounded-xl border p-2.5 text-center transition",
+                  got ? "border-warn/30 bg-warn-soft" : "border-line",
+                  !got && !active && "opacity-55 hover:opacity-80",
+                  active && "ring-2 ring-accent/40",
                 )}
               >
-                {got ? <Icon name={a.icon} className="size-4" /> : <Lock className="size-3.5" />}
-              </span>
-              <span className="text-[11px] font-semibold leading-tight">{a.title}</span>
-            </button>
-          );
-        })}
+                <span
+                  className={cn(
+                    "grid size-9 place-items-center rounded-full",
+                    got ? "bg-surface text-warn" : "bg-surface-2 text-muted",
+                  )}
+                >
+                  {got ? <Icon name={a.icon} className="size-4" /> : <Lock className="size-3.5" />}
+                </span>
+                <span className="text-[11px] font-semibold leading-tight">{a.title}</span>
+              </button>
+            );
+          })}
+        </motion.div>
       </div>
+
+      {pages > 1 && (
+        <div className="mt-3 flex items-center justify-between">
+          <button
+            type="button"
+            onClick={() => go(page - 1)}
+            disabled={page === 0}
+            aria-label="Vorherige Seite"
+            className="grid size-9 place-items-center rounded-full text-ink-2 transition hover:bg-surface-2 disabled:opacity-30"
+          >
+            <ChevronLeft className="size-5" />
+          </button>
+          <div className="flex items-center gap-1.5">
+            {Array.from({ length: pages }, (_, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => go(i)}
+                aria-label={`Seite ${i + 1}`}
+                aria-current={i === page}
+                className={cn("h-2 rounded-full transition-all", i === page ? "w-5 bg-ink" : "w-2 bg-line-strong hover:bg-muted")}
+              />
+            ))}
+          </div>
+          <button
+            type="button"
+            onClick={() => go(page + 1)}
+            disabled={page === pages - 1}
+            aria-label="Nächste Seite"
+            className="grid size-9 place-items-center rounded-full text-ink-2 transition hover:bg-surface-2 disabled:opacity-30"
+          >
+            <ChevronRight className="size-5" />
+          </button>
+        </div>
+      )}
 
       <AnimatePresence initial={false}>
         {open && (
