@@ -92,7 +92,14 @@ function LeaderboardInner() {
       }
     };
     document.addEventListener("visibilitychange", onVisible);
-    return () => document.removeEventListener("visibilitychange", onVisible);
+    // Solange die Seite offen ist, jede Minute nachladen – sonst veraltet „online“
+    const timer = setInterval(() => {
+      if (document.visibilityState === "visible" && useBoard.getState().status !== "loading") void loadBoard();
+    }, 60_000);
+    return () => {
+      document.removeEventListener("visibilitychange", onVisible);
+      clearInterval(timer);
+    };
   }, []);
 
   // Eigene Zeile immer mit dem aktuellen lokalen Stand, auch bevor die nächste Meldung raus ist
@@ -222,6 +229,8 @@ function LeaderboardInner() {
           <p className="text-sm text-muted">Teile den Link zur App mit deinen Kommiliton:innen.</p>
         </div>
       ) : (
+        <>
+        <OnlineStrip rows={rows} myId={myId} now={now} />
         <ol className="card divide-y divide-line overflow-hidden">
           {rows.map((r, i) => (
             <motion.li
@@ -242,6 +251,7 @@ function LeaderboardInner() {
             </motion.li>
           ))}
         </ol>
+        </>
       )}
 
       <details className="text-xs leading-relaxed text-muted">
@@ -255,7 +265,10 @@ function LeaderboardInner() {
             Wochenprämie: Platz 1–3 bekommen {PODIUM_PRIZES.join(" / ")} Bonus-XP, abzuholen in der Woche danach (hinter dir muss
             noch jemand liegen) · Pokal = gewonnene Wochenligen
           </li>
-          <li>Grüner Punkt: lernt gerade (letzte 10 Minuten) · roter Punkt: heute noch nicht gelernt · 2×: gerade in der Fokus-Stunde</li>
+          <li>
+            Punkt am Profilbild: grün = online (in den letzten 10 Minuten aktiv), rot = heute noch nicht gelernt, ohne Punkt =
+            heute schon gelernt · 2×: gerade in der Fokus-Stunde
+          </li>
           <li>Liga nach Level: Bronze 1, Silber 3, Gold 5, Platin 8, Diamant 12, Legende 17</li>
           <li>Pfeile: Auf- und Abstiege seit deinem letzten Besuch</li>
         </ul>
@@ -278,16 +291,104 @@ function RankBadge({ rank }: { rank: number }) {
   );
 }
 
-function lastSeen(at: number, now: number): string | null {
-  const days = Math.floor((now - at) / 86_400_000);
-  if (days < 1) return null;
-  return days === 1 ? "gestern aktiv" : `vor ${days} Tagen aktiv`;
+type Presence = "online" | "today" | "idle";
+
+/** Online (letzte 10 Min.), heute schon gelernt oder heute noch nichts – mit kurzem Text dazu. */
+function presence(row: Row, now: number, me: boolean): { state: Presence; text: string | null } {
+  const ago = Math.max(0, now - row.at);
+  if (!me && ago < LIVE_MS) return { state: "online", text: "online" };
+  if (row.todayNow === 0) {
+    const days = Math.round((new Date(dayKey(now)).getTime() - new Date(dayKey(row.at)).getTime()) / 86_400_000);
+    const last = days <= 0 ? null : days === 1 ? "zuletzt gestern" : `zuletzt vor ${days} Tagen`;
+    return { state: "idle", text: me ? "heute noch nichts gelernt" : (last ?? "heute noch nichts gelernt") };
+  }
+  if (me) return { state: "today", text: null };
+  const min = Math.floor(ago / 60_000);
+  return { state: "today", text: min < 60 ? `vor ${min} Min. aktiv` : `vor ${Math.floor(min / 60)} Std. aktiv` };
+}
+
+const PRESENCE_LABEL: Record<Presence, string> = {
+  online: "Online",
+  today: "Heute schon gelernt",
+  idle: "Heute noch nicht gelernt",
+};
+
+// Gedämpfte Farben für Profilbilder, fest je Person
+const AVATAR_COLORS = ["#4f7cac", "#7a6aa8", "#3f8f7c", "#b0704a", "#a45d7a", "#5f8a3e", "#8a7740", "#4c8aa0"];
+function avatarColor(id: string): string {
+  let h = 0;
+  for (const c of id) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  return AVATAR_COLORS[h % AVATAR_COLORS.length];
+}
+
+/** Profilbild mit Anfangsbuchstaben und Statuspunkt unten rechts. */
+function Avatar({ row, state, size = "md" }: { row: Row; state?: Presence; size?: "sm" | "md" }) {
+  const color = avatarColor(row.id);
+  return (
+    <span className={cn("relative shrink-0", size === "md" ? "size-9" : "size-7")}>
+      <span
+        className={cn(
+          "grid size-full place-items-center rounded-[35%] font-bold",
+          size === "md" ? "text-sm" : "text-xs ring-2 ring-good",
+        )}
+        // Deckend auf der Fläche, damit gestapelte Bilder nicht durchscheinen
+        style={{ background: `linear-gradient(${alpha(color, 0.16)}, ${alpha(color, 0.16)}), var(--surface)`, color }}
+        aria-hidden
+      >
+        {row.name.slice(0, 1).toUpperCase()}
+      </span>
+      {state && state !== "today" && (
+        <span
+          title={PRESENCE_LABEL[state]}
+          aria-label={PRESENCE_LABEL[state]}
+          className={cn(
+            "absolute -right-0.5 -bottom-0.5 flex rounded-full ring-2 ring-surface",
+            size === "md" ? "size-3" : "size-2.5",
+          )}
+        >
+          {state === "online" && <span className="absolute inline-flex size-full animate-ping rounded-full bg-good opacity-50" />}
+          <span className={cn("relative inline-flex size-full rounded-full", state === "online" ? "bg-good" : "bg-bad")} />
+        </span>
+      )}
+    </span>
+  );
+}
+
+/** Wer gerade lernt: gestapelte Profilbilder mit Namen. */
+function OnlineStrip({ rows, myId, now }: { rows: Row[]; myId: string | null; now: number }) {
+  const online = rows.filter((r) => r.id !== myId && now - r.at < LIVE_MS);
+  const idle = rows.filter((r) => r.todayNow === 0).length;
+  if (!online.length && !idle) return null;
+  return (
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-1 text-sm">
+      {online.length > 0 ? (
+        <span className="flex min-w-0 items-center gap-2.5">
+          <span className="flex shrink-0 -space-x-2">
+            {online.slice(0, 4).map((r) => (
+              <Avatar key={r.id} row={r} size="sm" />
+            ))}
+          </span>
+          <span className="min-w-0 truncate text-ink-2">
+            <span className="font-semibold text-ink">{listNames(online)}</span> {online.length === 1 ? "lernt" : "lernen"} gerade
+          </span>
+        </span>
+      ) : (
+        <span className="flex items-center gap-2 text-muted">
+          <span className="size-2 rounded-full bg-line" /> Gerade niemand online
+        </span>
+      )}
+      {idle > 0 && (
+        <span className="flex items-center gap-1.5 text-muted">
+          <span className="size-2 rounded-full bg-bad" />
+          {idle === 1 ? "1 hat" : `${idle} haben`} heute noch nicht gelernt
+        </span>
+      )}
+    </div>
+  );
 }
 
 function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me: boolean; now: number; moved?: number; prize: number }) {
-  const seen = me ? null : lastSeen(row.at, now);
-  const live = !me && now - row.at < LIVE_MS;
-  const idle = !live && row.todayNow === 0;
+  const status = presence(row, now, me);
   const focus = row.focusUntil > now;
   const goalDone = row.todayNow >= row.goal;
   const league = leagueFor(row.level);
@@ -299,21 +400,9 @@ function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me:
         <RankBadge rank={row.rank} />
         <Moved n={moved} />
       </div>
+      <Avatar row={row} state={status.state} />
       <div className="min-w-0 flex-1">
         <p className="flex items-center gap-2">
-          {live && (
-            <span title="Gerade aktiv" aria-label="Gerade aktiv" className="relative flex size-2 shrink-0">
-              <span className="absolute inline-flex size-full animate-ping rounded-full bg-good opacity-60" />
-              <span className="relative inline-flex size-2 rounded-full bg-good" />
-            </span>
-          )}
-          {idle && (
-            <span
-              title="Heute noch nicht gelernt"
-              aria-label="Heute noch nicht gelernt"
-              className="inline-flex size-2 shrink-0 rounded-full bg-bad"
-            />
-          )}
           <span className="min-w-[3rem] truncate font-semibold">{row.name}</span>
           {me && <Chip className="border-accent/30 text-accent">Du</Chip>}
           {goalDone && (
@@ -332,6 +421,16 @@ function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me:
           )}
         </p>
         <p className="flex items-center gap-1.5 truncate text-xs text-muted">
+          {status.text && (
+            <span
+              className={cn(
+                "shrink-0 font-semibold",
+                status.state === "online" ? "text-good" : status.state === "idle" ? "text-bad" : "font-normal",
+              )}
+            >
+              {status.text}
+            </span>
+          )}
           {focus && (
             <span
               title="In der Fokus-Stunde: doppelte XP"
@@ -350,16 +449,17 @@ function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me:
             </span>
           )}
           <span
-            className="inline-flex shrink-0 items-center gap-1 rounded-full px-1.5 py-px text-[11px] font-semibold"
+            className={cn(
+              "shrink-0 items-center gap-1 rounded-full px-1.5 py-px text-[11px] font-semibold",
+              // Auf dem Handy hat der Status Vorrang vor der Liga
+              status.text ? "hidden sm:inline-flex" : "inline-flex",
+            )}
             style={{ background: alpha(league.color, 0.14), color: league.color }}
           >
             <span className="size-1.5 rounded-full" style={{ background: league.color }} />
             {league.name}
           </span>
-          <span className="truncate">
-            {titleFor(row.level)}
-            {seen && ` · ${seen}`}
-          </span>
+          <span className="truncate">{titleFor(row.level)}</span>
         </p>
         {by === "today" && <Bar value={row.todayNow / row.goal} color="var(--good)" className="mt-2 h-1.5" />}
       </div>
