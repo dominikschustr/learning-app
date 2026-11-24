@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { countdown, daysUntil, studyPlan } from "@/lib/plan";
+import { countdown, daysUntil, examDateFor, examOver, studyPlan } from "@/lib/plan";
 
 const now = new Date(2026, 10, 1, 15, 30).getTime(); // 1. November 2026, nachmittags
 
@@ -37,5 +37,26 @@ describe("Lernplan", () => {
     expect(by.mc.share).toBe(0);
     expect(by.hr.priority).toBeNull(); // nicht in der App
     expect(by.acc.perDay).toBeCloseTo(0.85 / 23, 6);
+  });
+
+  it("zählt eine Klausur ab 12 Uhr am Klausurtag als geschrieben", () => {
+    const morning = new Date(2026, 10, 24, 11, 59).getTime();
+    const noon = new Date(2026, 10, 24, 12, 0).getTime();
+    expect(examOver("2026-11-24", morning)).toBe(false);
+    expect(examOver("2026-11-24", noon)).toBe(true);
+    expect(examOver("2026-11-23", morning)).toBe(true);
+
+    const input = [{ key: "acc", name: "Accounting", date: "2026-11-24", readiness: 0.4 }];
+    expect(studyPlan(input, morning).upcoming.map((e) => e.key)).toEqual(["acc"]);
+    const after = studyPlan(input, noon);
+    expect(after.upcoming).toEqual([]);
+    expect(after.past.map((e) => [e.key, e.days])).toEqual([["acc", 0]]);
+  });
+
+  it("nimmt den eigenen Klausurtermin vor dem aus den Inhalten", () => {
+    expect(examDateFor("2026-11-24", { date: "2026-11-27" })).toBe("2026-11-27");
+    expect(examDateFor("2026-11-24", { date: "" })).toBe("2026-11-24");
+    expect(examDateFor(undefined, { date: "2026-11-27" })).toBe("2026-11-27");
+    expect(examDateFor(undefined)).toBeUndefined();
   });
 });

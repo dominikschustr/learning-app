@@ -8,6 +8,7 @@ import { addDays, dayKey, weekKey } from "./utils";
  * - Pro Frage/Karte gewinnt der zuletzt geübte Stand.
  * - Tests und Achievements werden vereinigt, Bestwerte als Maximum übernommen.
  * - Lesezeichen: pro Frage/Karte gewinnt das zuletzt gesetzte oder entfernte.
+ * - Eigene Klausurtermine: pro Fach gewinnt der zuletzt eingetragene.
  */
 
 /** xpDays: XP je Tag (seit der Wochenliga; ältere Zähler haben es nicht). */
@@ -15,6 +16,9 @@ export type Counter = { xp: number; activity: Record<string, number>; xpDays?: R
 
 /** Lesezeichen; on: false bleibt stehen, damit das Entfernen auf andere Geräte übertragen wird. */
 export type Mark = { on: boolean; at: number };
+
+/** Eigener Klausurtermin; date "" = zurückgesetzt (bleibt stehen, damit das Zurücksetzen synchronisiert wird). */
+export type ExamDate = { date: string; at: number };
 
 export type ExamLike = { id: string; results: Record<string, boolean | null> };
 
@@ -33,6 +37,8 @@ export type SyncData<E extends ExamLike = ExamLike> = {
   exams: E[];
   blitzBest: Record<string, number>;
   marks: Record<string, Mark>;
+  /** fehlt in älteren Cloud-Ständen */
+  examDates?: Record<string, ExamDate>;
 };
 
 function mergeRecord<T>(a: Record<string, T>, b: Record<string, T>, pick: (x: T, y: T) => T): Record<string, T> {
@@ -116,5 +122,6 @@ export function mergeSync<E extends ExamLike>(local: SyncData<E>, remote: SyncDa
     exams: [...exams.values()].sort((a, b) => a.id.localeCompare(b.id)),
     blitzBest: mergeRecord(local.blitzBest ?? {}, remote.blitzBest ?? {}, Math.max),
     marks: mergeRecord(local.marks ?? {}, remote.marks ?? {}, (x, y) => (y.at > x.at ? y : x)),
+    examDates: mergeRecord(local.examDates ?? {}, remote.examDates ?? {}, (x, y) => (y.at > x.at ? y : x)),
   };
 }

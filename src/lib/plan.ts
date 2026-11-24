@@ -36,6 +36,20 @@ function localDay(date: string): number {
   return new Date(y, m - 1, d).getTime();
 }
 
+/** Klausurtermin eines Fachs: der eigene, sonst der aus den Inhalten (subject.json). */
+export function examDateFor(fallback: string | undefined, own?: { date: string }): string | undefined {
+  return own?.date || fallback;
+}
+
+/** Ab dieser Uhrzeit am Klausurtag gilt die Klausur als geschrieben */
+export const EXAM_OVER_HOUR = 12;
+
+/** true ab 12 Uhr am Klausurtag (lokale Zeit) */
+export function examOver(date: string, now: number): boolean {
+  const [y, m, d] = date.split("-").map(Number);
+  return now >= new Date(y, m - 1, d, EXAM_OVER_HOUR).getTime();
+}
+
 /** Ganze Kalendertage von heute (lokal) bis zum Datum; negativ, wenn es vorbei ist. */
 export function daysUntil(date: string, now: number): number {
   const today = new Date(now);
@@ -43,6 +57,7 @@ export function daysUntil(date: string, now: number): number {
   return Math.round((localDay(date) - start) / 864e5);
 }
 
+/** upcoming: noch nicht geschrieben (der Klausurtag zählt bis 12 Uhr mit), past: vorbei */
 export function studyPlan(inputs: PlanInput[], now: number): { upcoming: PlanEntry[]; past: PlanEntry[] } {
   const rows = inputs
     .map((e) => {
@@ -54,7 +69,7 @@ export function studyPlan(inputs: PlanInput[], now: number): { upcoming: PlanEnt
     })
     .sort((a, b) => a.days - b.days || a.name.localeCompare(b.name));
 
-  const upcoming = rows.filter((r) => r.days >= 0);
+  const upcoming = rows.filter((r) => !examOver(r.date, now));
   const total = upcoming.reduce((s, r) => s + (r.perDay ?? 0), 0);
   const priority = (perDay: number | null, share: number): Priority | null => {
     if (perDay === null) return null;
@@ -67,7 +82,7 @@ export function studyPlan(inputs: PlanInput[], now: number): { upcoming: PlanEnt
       const share = total && r.perDay ? r.perDay / total : 0;
       return { ...r, share, priority: priority(r.perDay, share) };
     }),
-    past: rows.filter((r) => r.days < 0).map((r) => ({ ...r, share: 0, priority: null })),
+    past: rows.filter((r) => examOver(r.date, now)).map((r) => ({ ...r, share: 0, priority: null })),
   };
 }
 

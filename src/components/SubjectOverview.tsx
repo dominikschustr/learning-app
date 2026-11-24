@@ -6,6 +6,7 @@ import {
   Bookmark,
   Brain,
   CalendarClock,
+  Check,
   CheckCircle2,
   ClipboardCheck,
   FileText,
@@ -15,6 +16,7 @@ import {
   LayoutGrid,
   ListChecks,
   MessageCircleQuestion,
+  Pencil,
   Play,
   RotateCcw,
   Sigma,
@@ -27,7 +29,7 @@ import {
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { READINESS_TARGET, countdown, daysUntil, fmtExamDate } from "@/lib/plan";
+import { READINESS_TARGET, countdown, daysUntil, examDateFor, examOver, fmtExamDate } from "@/lib/plan";
 import { subjectStats, type SubjectStats } from "@/lib/progress";
 import type { SubjectSummary } from "@/lib/schema";
 import { useAuth } from "@/lib/auth";
@@ -116,7 +118,13 @@ function Inner({ summary }: { summary: SubjectSummary }) {
         </span>
         <h1 className="display mt-2 text-3xl sm:mt-3 sm:text-5xl">{subject.name}</h1>
         <p className="mt-2 max-w-2xl text-muted max-sm:hidden">{subject.description}</p>
-        {subject.examDate && <ExamCountdown date={subject.examDate} readiness={st.readiness} now={now} />}
+        <ExamCountdown
+          subjectId={subject.id}
+          fallback={subject.examDate}
+          own={s.examDates[subject.id]?.date}
+          readiness={st.readiness}
+          now={now}
+        />
       </header>
 
       {subject.demo && (
@@ -649,24 +657,122 @@ function SectionHead({
 const scoreColor = (x: number) => (x >= 0.8 ? "var(--good)" : x >= 0.5 ? "var(--ink)" : "var(--bad)");
 
 /** Klausurtermin mit Countdown und dem Tempo, das bis zur Ziel-Readiness nötig ist. */
-function ExamCountdown({ date, readiness, now }: { date: string; readiness: number; now: number }) {
+/**
+ * Klausurtermin mit Countdown und Lerntempo. Der Termin lässt sich hier selbst eintragen oder ändern
+ * (gilt für das eigene Konto); ab 12 Uhr am Klausurtag ist die Klausur geschrieben.
+ */
+function ExamCountdown({
+  subjectId,
+  fallback,
+  own,
+  readiness,
+  now,
+}: {
+  subjectId: string;
+  /** Termin aus subject.json */
+  fallback?: string;
+  /** eigener Termin, "" oder undefined = keiner */
+  own?: string;
+  readiness: number;
+  now: number;
+}) {
+  const setExamDate = useApp((s) => s.setExamDate);
+  const date = examDateFor(fallback, own ? { date: own } : undefined);
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState("");
+
+  if (editing) {
+    const save = () => {
+      if (/^\d{4}-\d{2}-\d{2}$/.test(draft)) setExamDate(subjectId, draft === fallback ? "" : draft);
+      setEditing(false);
+    };
+    return (
+      <form
+        className="mt-4 flex flex-wrap items-center gap-2 text-sm"
+        onSubmit={(e) => {
+          e.preventDefault();
+          save();
+        }}
+      >
+        <label className="inline-flex items-center gap-1.5 font-semibold">
+          <CalendarClock className="size-4" /> Klausur am
+          <input
+            type="date"
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            autoFocus
+            required
+            className="h-9 rounded-lg border border-line bg-surface px-2 font-normal tabular-nums text-ink"
+          />
+        </label>
+        <button type="submit" className="h-9 rounded-full bg-ink px-4 font-semibold text-bg">
+          Speichern
+        </button>
+        <button type="button" onClick={() => setEditing(false)} className="h-9 rounded-full px-3 font-semibold text-muted hover:text-ink">
+          Abbrechen
+        </button>
+        {own && fallback && own !== fallback && (
+          <button
+            type="button"
+            onClick={() => {
+              setExamDate(subjectId, "");
+              setEditing(false);
+            }}
+            className="h-9 rounded-full px-3 text-muted underline-offset-2 hover:text-ink hover:underline"
+          >
+            Zurück auf {fmtExamDate(fallback)}
+          </button>
+        )}
+      </form>
+    );
+  }
+
+  const edit = (
+    <button
+      type="button"
+      onClick={() => {
+        setDraft(date ?? "");
+        setEditing(true);
+      }}
+      className="inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs font-semibold text-muted transition hover:bg-surface-2 hover:text-ink"
+      aria-label={date ? "Klausurtermin ändern" : "Klausurtermin eintragen"}
+    >
+      <Pencil className="size-3.5" />
+      {date ? <span className="max-sm:hidden">Ändern</span> : "Klausurtermin eintragen"}
+    </button>
+  );
+
+  if (!date) return <p className="mt-4 text-sm">{edit}</p>;
+
+  if (examOver(date, now)) {
+    return (
+      <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+        <span className="inline-flex items-center gap-1 rounded-full bg-good-soft px-2.5 py-1 text-xs font-semibold text-good">
+          <Check className="size-3.5" strokeWidth={3} /> Abgeschlossen
+        </span>
+        <span className="text-muted">Klausur geschrieben · {fmtExamDate(date, true)}</span>
+        {edit}
+      </p>
+    );
+  }
+
   const days = daysUntil(date, now);
   const need = Math.max(0, READINESS_TARGET - readiness);
   const target = Math.round(READINESS_TARGET * 100);
   let pace: string;
-  if (days < 0) pace = "";
-  else if (!need) pace = `Ziel ${target} % erreicht`;
+  if (!need) pace = `Ziel ${target} % erreicht`;
   else {
     const perDay = ((need / Math.max(1, days)) * 100).toLocaleString("de-DE", { maximumFractionDigits: 1 });
     pace = `+${perDay} Pkt./Tag bis ${target} %`;
   }
   return (
     <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-      <span className={cn("inline-flex items-center gap-1.5 font-semibold", days >= 0 && days <= 7 && "text-bad")}>
+      <span className={cn("inline-flex items-center gap-1.5 font-semibold", days <= 7 && "text-bad")}>
         <CalendarClock className="size-4" />
         Klausur {fmtExamDate(date, true)} · {countdown(days)}
       </span>
       <span className="text-muted">{pace}</span>
+      {edit}
     </p>
   );
 }

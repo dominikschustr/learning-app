@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 import { ACHIEVEMENTS, levelInfo, titleFor } from "@/lib/gamification";
-import { READINESS_TARGET, countdown, fmtExamDate, studyPlan, type PlanEntry, type Priority } from "@/lib/plan";
+import { READINESS_TARGET, countdown, examDateFor, fmtExamDate, studyPlan, type PlanEntry, type Priority } from "@/lib/plan";
 import { subjectStats } from "@/lib/progress";
 import type { CalendarEntry, SubjectSummary } from "@/lib/schema";
 import { achievementProgress, useApp, useHydrated, visibleStreak } from "@/lib/store";
@@ -56,35 +56,38 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
   const subjects = summaries.map((summary) => ({ summary, st: subjectStats(summary, s.items, s.cards, now) }));
   const plan = studyPlan(
     [
-      ...subjects.flatMap(({ summary: { subject }, st }) =>
-        subject.examDate
+      ...subjects.flatMap(({ summary: { subject }, st }) => {
+        const date = examDateFor(subject.examDate, s.examDates[subject.id]);
+        return date
           ? [
               {
                 key: subject.id,
                 name: subject.name,
-                date: subject.examDate,
+                date,
                 short: subject.short,
                 color: subject.color,
                 href: `/s/${subject.id}`,
                 readiness: st.readiness,
               },
             ]
-          : [],
-      ),
+          : [];
+      }),
       ...calendar.map((c) => ({ key: `cal-${c.name}`, name: c.name, date: c.date })),
     ],
     now,
   );
   const daysTo = new Map([...plan.upcoming, ...plan.past].map((e) => [e.key, e.days]));
   const planOf = new Map(plan.upcoming.map((e) => [e.key, e]));
+  // Klausur geschrieben (ab 12 Uhr am Klausurtag)
+  const doneOf = new Map(plan.past.map((e) => [e.key, e]));
   // Fach mit dem größten Anteil der Lernzeit heute
   const focusKey = plan.upcoming.filter((e) => e.share > 0).toSorted((a, b) => b.share - a.share)[0]?.key;
   // Klausuren ohne Fach in der App (content/calendar.json)
   const external = plan.upcoming.filter((e) => e.readiness === undefined);
-  // Fächer nach Klausurtermin: anstehende zuerst, geschriebene und ohne Termin danach
+  // Fächer nach Klausurtermin: anstehende zuerst, dann ohne Termin, geschriebene ganz unten
   const order = (id: string) => {
     const d = daysTo.get(id);
-    return d === undefined ? 1e6 : d < 0 ? 1e5 - d : d;
+    return d === undefined ? 1e5 : doneOf.has(id) ? 1e6 - d : d;
   };
   const sorted = subjects.toSorted((a, b) => order(a.summary.subject.id) - order(b.summary.subject.id));
   const mobile = useMobile();
@@ -182,6 +185,7 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
                 st={st}
                 days={daysTo.get(summary.subject.id)}
                 entry={planOf.get(summary.subject.id)}
+                done={doneOf.get(summary.subject.id)}
                 focus={summary.subject.id === focusKey}
                 mobile={mobile}
               />
@@ -247,6 +251,7 @@ function SubjectTile({
   st,
   days,
   entry,
+  done,
   focus,
   mobile,
 }: {
@@ -254,10 +259,13 @@ function SubjectTile({
   st: Stats;
   days?: number;
   entry?: PlanEntry;
+  /** gesetzt = Klausur geschrieben */
+  done?: PlanEntry;
   focus: boolean;
   mobile: boolean;
 }) {
   const { subject } = summary;
+  if (done) return <DoneTile summary={summary} st={st} done={done} mobile={mobile} />;
   const soon = days !== undefined && days >= 0 && days <= 7;
   const priority = entry?.priority ? PRIORITY[entry.priority] : null;
   const share = entry && entry.share > 0 ? Math.round(entry.share * 100) : null;
@@ -282,7 +290,7 @@ function SubjectTile({
             {days !== undefined && (
               <Chip className={cn("sm:hidden", soon && "border-bad/40 text-bad")}>
                 <CalendarClock className="size-3" />
-                {days >= 0 ? `Klausur ${countdown(days)}` : "geschrieben"}
+                Klausur {countdown(days)}
               </Chip>
             )}
             {priority && (
@@ -297,10 +305,6 @@ function SubjectTile({
             <p className={cn("mt-1 flex items-center gap-1.5 text-sm max-sm:hidden", soon ? "font-semibold text-bad" : "text-muted")}>
               <CalendarClock className="size-3.5 shrink-0" />
               Klausur {fmtExamDate(entry.date)} · {countdown(days)}
-            </p>
-          ) : days !== undefined && days < 0 ? (
-            <p className="mt-1 flex items-center gap-1.5 text-sm text-muted max-sm:hidden">
-              <Check className="size-3.5 shrink-0" /> Klausur geschrieben
             </p>
           ) : (
             <p className="mt-1 line-clamp-2 text-sm text-muted max-sm:hidden">{subject.description}</p>
@@ -334,6 +338,69 @@ function SubjectTile({
             {share} % Lernzeit
           </span>
         )}
+      </div>
+    </Link>
+  );
+}
+
+/**
+ * Kachel nach der Klausur: in Graustufen, mit Stempel „Abgeschlossen“ und einem Haken, der sich einmal zeichnet.
+ * Bleibt anklickbar – zum Nachschlagen oder für eine Nachholklausur.
+ */
+function DoneTile({ summary, st, done, mobile }: { summary: SubjectSummary; st: Stats; done: PlanEntry; mobile: boolean }) {
+  const { subject } = summary;
+  const size = mobile ? 60 : 96;
+  return (
+    <Link
+      href={`/s/${subject.id}`}
+      className="card group relative block overflow-hidden bg-surface-2/50 p-4 transition hover:-translate-y-0.5 sm:p-6"
+    >
+      <div
+        className="absolute inset-x-0 top-0 h-1.5 opacity-60"
+        style={{
+          background: `repeating-linear-gradient(135deg, ${subject.color} 0 8px, transparent 8px 14px)`,
+          filter: "grayscale(1)",
+        }}
+        aria-hidden
+      />
+      <div className="flex items-center gap-4 sm:items-start sm:gap-5">
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="rounded-md bg-surface-2 px-2 py-0.5 text-xs font-bold text-muted">{subject.short}</span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-good-soft px-2.5 py-1 text-xs font-semibold text-good">
+              <Check className="size-3.5" strokeWidth={3} /> Abgeschlossen
+            </span>
+          </div>
+          <h3 className="display mt-2 truncate text-xl text-ink-2 sm:mt-3 sm:text-2xl">{subject.name}</h3>
+          <p className="mt-1 flex items-center gap-1.5 text-sm text-muted max-sm:text-xs">
+            <CalendarClock className="size-3.5 shrink-0 max-sm:hidden" />
+            Klausur geschrieben · {fmtExamDate(done.date)}
+          </p>
+        </div>
+        <div
+          className="relative grid shrink-0 place-items-center rounded-full border-2 border-dashed border-good/40 bg-good-soft"
+          style={{ width: size, height: size }}
+          title={`Endstand ${Math.round(st.readiness * 100)} % Readiness`}
+        >
+          <svg viewBox="0 0 24 24" className="size-1/2 text-good" fill="none" aria-hidden>
+            <motion.path
+              d="M5 12.5l4.5 4.5L19 7.5"
+              stroke="currentColor"
+              strokeWidth={2.75}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ delay: 0.35, duration: 0.55, ease: "easeOut" }}
+            />
+          </svg>
+        </div>
+      </div>
+      <div className="mt-5 hidden items-center justify-between gap-4 text-sm sm:flex">
+        <span className="inline-flex items-center gap-1 font-semibold text-muted group-hover:text-ink-2">
+          Zum Fach <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+        </span>
+        <span className="text-xs tabular-nums text-muted">Endstand {Math.round(st.readiness * 100)} % Readiness</span>
       </div>
     </Link>
   );

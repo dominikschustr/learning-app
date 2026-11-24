@@ -4,7 +4,7 @@ import { useSyncExternalStore } from "react";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { ACHIEVEMENTS, levelInfo, type AchievementDef } from "./gamification";
-import { mergeSync, totals, type Counter, type Mark, type SyncData } from "./merge";
+import { mergeSync, totals, type Counter, type ExamDate, type Mark, type SyncData } from "./merge";
 import { review, type ItemState } from "./srs";
 import { addDays, dayKey, itemKey, randomId } from "./utils";
 
@@ -78,6 +78,8 @@ type Data = {
   blitzBest: Record<string, number>;
   /** Lesezeichen für Fragen (q:…) und Karteikarten (c:…), siehe markKey */
   marks: Record<string, Mark>;
+  /** Eigene Klausurtermine je Fach (überschreiben subject.json); date "" = wieder der Termin aus den Inhalten */
+  examDates: Record<string, ExamDate>;
 };
 
 export type AnswerEvent = { xp: number; levelUp: number | null; achievements: AchievementDef[]; goalReached: boolean };
@@ -105,6 +107,8 @@ type Actions = {
   unlockBoardAchievements(ids: string[]): AchievementDef[];
   setDailyGoal(goal: number): void;
   toggleMark(key: string): void;
+  /** Eigener Klausurtermin (JJJJ-MM-TT); "" setzt auf den Termin aus den Inhalten zurück. */
+  setExamDate(subjectId: string, date: string): void;
   /** Übernimmt einen zusammengeführten Stand aus der Synchronisation. */
   applySync(data: SyncData<ExamRecord>): void;
   importData(data: unknown): boolean;
@@ -129,6 +133,7 @@ const initial: Data = {
   activeExam: null,
   blitzBest: {},
   marks: {},
+  examDates: {},
 };
 
 function nextStreak(streak: Streak, now: number): Streak {
@@ -212,6 +217,7 @@ export function syncSnapshot(s: Data): SyncData<ExamRecord> {
     exams: s.exams,
     blitzBest: s.blitzBest,
     marks: s.marks,
+    examDates: s.examDates,
   };
 }
 
@@ -369,6 +375,10 @@ export const useApp = create<AppState>()(
           set({ marks: { ...marks, [key]: { on: !marks[key]?.on, at: Date.now() } } });
         },
 
+        setExamDate(subjectId, date) {
+          set({ examDates: { ...get().examDates, [subjectId]: { date, at: Date.now() } } });
+        },
+
         importData(data) {
           if (!data || typeof data !== "object") return false;
           const d = (data as { state?: unknown }).state ?? data;
@@ -379,7 +389,7 @@ export const useApp = create<AppState>()(
         },
 
         applySync(data) {
-          set({ ...data, deviceId: get().deviceId || data.deviceId });
+          set({ ...data, examDates: data.examDates ?? get().examDates, deviceId: get().deviceId || data.deviceId });
         },
 
         reset() {

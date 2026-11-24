@@ -86,6 +86,18 @@ describe("mergeSync", () => {
       expect(m["c:mc:k"].on).toBe(true);
     }
   });
+
+  it("übernimmt pro Fach den zuletzt eingetragenen Klausurtermin, auch aus älteren Cloud-Ständen ohne Termine", () => {
+    const a = base("a", { examDates: { acc: { date: "2026-11-25", at: 10 }, om: { date: "2026-11-30", at: 30 } } });
+    const b = base("b", { examDates: { acc: { date: "", at: 20 }, om: { date: "2026-12-01", at: 5 } } });
+    for (const d of [mergeSync(a, b).examDates!, mergeSync(b, a).examDates!]) {
+      expect(d.acc.date).toBe("");
+      expect(d.om.date).toBe("2026-11-30");
+    }
+    const old = base("old");
+    delete old.examDates;
+    expect(mergeSync(a, old).examDates).toEqual(a.examDates);
+  });
 });
 
 describe("streakFromActivity", () => {
