@@ -63,7 +63,7 @@ export function XpFloat({ amount, trigger, boosted }: { amount: number; trigger:
           className="pointer-events-none absolute right-4 top-0 text-lg font-bold text-accent"
         >
           +{amount} XP
-          {boosted && <span className="ml-1 text-sm">(2×)</span>}
+          {boosted && <span className="focus-text ml-1 text-sm">2×</span>}
         </motion.span>
       )}
     </AnimatePresence>

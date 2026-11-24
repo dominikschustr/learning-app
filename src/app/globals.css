@@ -148,6 +148,61 @@ body {
   }
 }
 
+/* Fokus-Stunde: umlaufender Verlaufsrahmen (Akzent → Flamme → Violett) */
+@property --focus-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.focus-border {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--focus-fill, var(--surface)), var(--focus-fill, var(--surface))) padding-box,
+    conic-gradient(from var(--focus-angle), var(--accent), var(--flame), #b04ae0, var(--accent)) border-box;
+  animation: focus-spin 4s linear infinite;
+}
+
+.focus-gradient {
+  background: linear-gradient(135deg, var(--accent), #b04ae0 55%, var(--flame));
+}
+
+.focus-text {
+  background: linear-gradient(135deg, var(--accent), #b04ae0 55%, var(--flame));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes focus-spin {
+  to {
+    --focus-angle: 360deg;
+  }
+}
+
+@keyframes focus-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.06);
+  }
+}
+
+.focus-glow {
+  animation: focus-pulse 2.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .focus-border,
+  .focus-glow {
+    animation: none;
+  }
+}
+
 .flip-scene {
   perspective: 1600px;
 }
