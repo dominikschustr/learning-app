@@ -75,5 +75,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   { id: "rank-podium", title: "Aufs Treppchen", description: "Top 3 der Level-Rangliste", howTo: "Erreiche Platz 1–3 der Level-Rangliste (mit mindestens 4 Teilnehmenden).", icon: "medal", target: 1 },
   { id: "rank-week-podium", title: "Wochen-Treppchen", description: "Top 3 der Wochenliga", howTo: "Lande in der Wochenliga auf Platz 1–3 (mit mindestens 4 Aktiven in der Woche).", icon: "medal", target: 1 },
   { id: "rank-day-1", title: "Tagessieg", description: "Platz 1 bei „Heute“", howTo: "Beantworte an einem Tag die meisten Fragen und Karten (mindestens 3 sind heute aktiv).", icon: "crown", target: 1 },
+  { id: "focus-200", title: "Deep Work", description: "200 XP in einer Fokus-Stunde", howTo: "Starte die wöchentliche Fokus-Stunde (doppelte XP) und sammle darin 200 XP.", icon: "zap", target: 200 },
   { id: "level-5", title: "Aufsteiger", description: "Level 5 erreicht", howTo: "Sammle XP bis Level 5 – jede Antwort zählt.", icon: "trending-up", target: 5 },
 ];

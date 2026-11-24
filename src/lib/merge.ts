@@ -1,3 +1,4 @@
+import { mergeFocus, type FocusLog } from "./focus";
 import type { ItemState } from "./srs";
 import { addDays, dayKey, weekKey } from "./utils";
 
@@ -9,6 +10,7 @@ import { addDays, dayKey, weekKey } from "./utils";
  * - Tests und Achievements werden vereinigt, Bestwerte als Maximum übernommen.
  * - Lesezeichen: pro Frage/Karte gewinnt das zuletzt gesetzte oder entfernte.
  * - Eigene Klausurtermine: pro Fach gewinnt der zuletzt eingetragene.
+ * - Fokus-Stunde: pro Woche gewinnt der frühere Start, damit sie nur einmal läuft.
  */
 
 /** xpDays: XP je Tag (seit der Wochenliga; ältere Zähler haben es nicht). */
@@ -39,6 +41,8 @@ export type SyncData<E extends ExamLike = ExamLike> = {
   marks: Record<string, Mark>;
   /** fehlt in älteren Cloud-Ständen */
   examDates?: Record<string, ExamDate>;
+  /** Fokus-Stunden je Woche; fehlt in älteren Cloud-Ständen */
+  focus?: FocusLog;
 };
 
 function mergeRecord<T>(a: Record<string, T>, b: Record<string, T>, pick: (x: T, y: T) => T): Record<string, T> {
@@ -123,5 +127,6 @@ export function mergeSync<E extends ExamLike>(local: SyncData<E>, remote: SyncDa
     blitzBest: mergeRecord(local.blitzBest ?? {}, remote.blitzBest ?? {}, Math.max),
     marks: mergeRecord(local.marks ?? {}, remote.marks ?? {}, (x, y) => (y.at > x.at ? y : x)),
     examDates: mergeRecord(local.examDates ?? {}, remote.examDates ?? {}, (x, y) => (y.at > x.at ? y : x)),
+    focus: mergeFocus(local.focus, remote.focus),
   };
 }

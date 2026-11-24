@@ -31,4 +31,35 @@ export function useNow(): number {
 /** Zeitstempel sofort aktualisieren, z. B. nach einer Antwort. */
 export function refreshNow() {
   tick();
+  fastNow = now;
+  fastListeners.forEach((l) => l());
+}
+
+// Sekundentakt, nur solange jemand ihn braucht (z. B. Countdown der Fokus-Stunde)
+let fastNow = Date.now();
+const fastListeners = new Set<() => void>();
+let fastTimer: ReturnType<typeof setInterval> | undefined;
+
+function subscribeFast(cb: () => void) {
+  fastListeners.add(cb);
+  if (fastListeners.size === 1) {
+    fastNow = Date.now();
+    fastTimer = setInterval(() => {
+      fastNow = Date.now();
+      fastListeners.forEach((l) => l());
+    }, 1000);
+  }
+  return () => {
+    fastListeners.delete(cb);
+    if (!fastListeners.size) clearInterval(fastTimer);
+  };
+}
+
+const noSubscribe = () => () => {};
+
+/** Wie useNow, aber sekündlich, solange enabled. */
+export function useSecondNow(enabled: boolean): number {
+  const slow = useNow();
+  const fast = useSyncExternalStore(enabled ? subscribeFast : noSubscribe, () => fastNow, () => 0);
+  return enabled ? Math.max(fast, slow) : slow;
 }

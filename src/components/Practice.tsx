@@ -160,7 +160,7 @@ function Session({
   const [bestCombo, setBestCombo] = useState(0);
   const [sessionXp, setSessionXp] = useState(0);
   const [skipped, setSkipped] = useState(0);
-  const [lastXp, setLastXp] = useState({ amount: 0, n: 0 });
+  const [lastXp, setLastXp] = useState({ amount: 0, n: 0, boosted: false });
 
   // Antwortzustand der aktuellen Frage
   const [selected, setSelected] = useState<string[]>([]);
@@ -194,8 +194,9 @@ function Session({
       refreshNow();
       setCombo(newCombo);
       setBestCombo((b) => Math.max(b, newCombo));
-      setSessionXp((s) => s + xp);
-      setLastXp((l) => ({ amount: xp, n: l.n + 1 }));
+      // event.xp: tatsächlich gutgeschrieben (in der Fokus-Stunde doppelt)
+      setSessionXp((s) => s + event.xp);
+      setLastXp((l) => ({ amount: event.xp, n: l.n + 1, boosted: !!event.boosted }));
       setWasCorrect(correct);
       setRevealed(true);
       setRestored(false);
@@ -449,7 +450,7 @@ function Session({
             </span>
           )}
           <MarkNote subjectId={subject.id} id={q.id} className={cn("mb-3", entry.retry && "ml-2")} />
-          <XpFloat amount={lastXp.amount} trigger={revealed && !restored ? lastXp.n : 0} />
+          <XpFloat amount={lastXp.amount} boosted={lastXp.boosted} trigger={revealed && !restored ? lastXp.n : 0} />
 
           {q.type === "mc" && (
             <MCView

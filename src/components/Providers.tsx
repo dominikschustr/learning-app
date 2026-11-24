@@ -72,6 +72,8 @@ function Toaster() {
                 "grid size-10 shrink-0 place-items-center rounded-xl " +
                 (t.kind === "level"
                   ? "bg-accent text-white"
+                  : t.kind === "focus"
+                    ? "focus-gradient text-white"
                   : t.kind === "goal"
                     ? "bg-good-soft text-good"
                     : "bg-warn-soft text-warn")
@@ -88,7 +90,9 @@ function Toaster() {
                     ? "Level-Up"
                     : t.kind === "rank"
                       ? "Rangliste"
-                      : "Geschafft")}
+                      : t.kind === "focus"
+                        ? "Fokus-Stunde"
+                        : "Geschafft")}
               </span>
               <span className="block font-semibold">{t.title}</span>
               {t.body && <span className="block text-sm text-muted">{t.body}</span>}

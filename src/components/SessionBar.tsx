@@ -3,6 +3,7 @@
 import { Flame, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
+import { FocusBadge } from "./FocusHour";
 import { Bar } from "./ui";
 
 export function SessionBar({
@@ -43,13 +44,14 @@ export function SessionBar({
           </motion.span>
         )}
       </AnimatePresence>
+      <FocusBadge />
       {xp !== undefined && <span className="shrink-0 text-sm font-semibold tabular-nums text-accent">+{xp} XP</span>}
       {children}
     </div>
   );
 }
 
-export function XpFloat({ amount, trigger }: { amount: number; trigger: number }) {
+export function XpFloat({ amount, trigger, boosted }: { amount: number; trigger: number; boosted?: boolean }) {
   return (
     <AnimatePresence>
       {trigger > 0 && amount > 0 && (
@@ -61,6 +63,7 @@ export function XpFloat({ amount, trigger }: { amount: number; trigger: number }
           className="pointer-events-none absolute right-4 top-0 text-lg font-bold text-accent"
         >
           +{amount} XP
+          {boosted && <span className="focus-text ml-1 text-sm">2×</span>}
         </motion.span>
       )}
     </AnimatePresence>

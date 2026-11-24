@@ -106,9 +106,10 @@ function Deck({
     (known: boolean) => {
       if (!card || !flipped) return;
       const gain = XP.card + (known ? XP.cardKnown : 0);
-      announce(reviewCard({ subjectId: subject.id, cardId: card.id, known, xp: gain }));
+      const event = reviewCard({ subjectId: subject.id, cardId: card.id, known, xp: gain });
+      announce(event);
       refreshNow();
-      setXp((x) => x + gain);
+      setXp((x) => x + event.xp);
       if (!known) setUnknown((u) => [...u, card]);
       setFlipped(false);
       setIndex((i) => i + 1);

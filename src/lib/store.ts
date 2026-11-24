@@ -3,6 +3,7 @@
 import { useSyncExternalStore } from "react";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
+import { addFocusXp, bestFocusXp, focusMultiplier, startFocusRun, type FocusLog } from "./focus";
 import { ACHIEVEMENTS, levelInfo, type AchievementDef } from "./gamification";
 import { mergeSync, totals, type Counter, type ExamDate, type Mark, type SyncData } from "./merge";
 import { review, type ItemState } from "./srs";
@@ -80,9 +81,18 @@ type Data = {
   marks: Record<string, Mark>;
   /** Eigene Klausurtermine je Fach (überschreiben subject.json); date "" = wieder der Termin aus den Inhalten */
   examDates: Record<string, ExamDate>;
+  /** Fokus-Stunde je Woche (doppelte XP), siehe focus.ts */
+  focus: FocusLog;
 };
 
-export type AnswerEvent = { xp: number; levelUp: number | null; achievements: AchievementDef[]; goalReached: boolean };
+/** xp: tatsächlich gutgeschriebene XP (in der Fokus-Stunde verdoppelt); boosted: Fokus-Bonus war aktiv */
+export type AnswerEvent = {
+  xp: number;
+  levelUp: number | null;
+  achievements: AchievementDef[];
+  goalReached: boolean;
+  boosted?: boolean;
+};
 
 type Actions = {
   answer(input: {
@@ -109,6 +119,8 @@ type Actions = {
   toggleMark(key: string): void;
   /** Eigener Klausurtermin (JJJJ-MM-TT); "" setzt auf den Termin aus den Inhalten zurück. */
   setExamDate(subjectId: string, date: string): void;
+  /** Startet die Fokus-Stunde dieser Woche; false, wenn sie schon genutzt wurde. */
+  startFocus(): boolean;
   /** Übernimmt einen zusammengeführten Stand aus der Synchronisation. */
   applySync(data: SyncData<ExamRecord>): void;
   importData(data: unknown): boolean;
@@ -134,6 +146,7 @@ const initial: Data = {
   blitzBest: {},
   marks: {},
   examDates: {},
+  focus: {},
 };
 
 function nextStreak(streak: Streak, now: number): Streak {
@@ -151,7 +164,7 @@ export function visibleStreak(streak: Streak, now: number): number {
 }
 
 type AchievementInput = Pick<Data, "activity" | "cards" | "items" | "bestCombo" | "dailyGoal" | "streak" | "exams" | "blitzBest" | "xp"> &
-  Partial<Pick<Data, "achievements">>;
+  Partial<Pick<Data, "achievements" | "focus">>;
 
 /** Achievements, die die Rangliste freischaltet (nicht aus dem eigenen Lernstand berechenbar). */
 export const BOARD_ACHIEVEMENTS = ["rank-overtake", "rank-podium", "rank-week-podium", "rank-day-1"] as const;
@@ -173,6 +186,7 @@ export function achievementProgress(d: AchievementInput, now: number): Record<st
     "chapter-test": best(d.exams.filter((e) => e.lecture)),
     "blitz-15": Math.max(0, ...Object.values(d.blitzBest)),
     "level-5": levelInfo(d.xp).level,
+    "focus-200": bestFocusXp(d.focus),
     ...Object.fromEntries(BOARD_ACHIEVEMENTS.map((id) => [id, d.achievements?.[id] ? 1 : 0])),
   };
 }
@@ -218,6 +232,7 @@ export function syncSnapshot(s: Data): SyncData<ExamRecord> {
     blitzBest: s.blitzBest,
     marks: s.marks,
     examDates: s.examDates,
+    focus: s.focus,
   };
 }
 
@@ -265,9 +280,12 @@ export const useApp = create<AppState>()(
   persist(
     (set, get) => {
       /** Gemeinsamer Abschluss jeder Aktivität: XP, Streak, Tagesziel, Achievements. */
-      function commit(patch: Partial<Data>, xp: number, activity: number): AnswerEvent {
+      function commit(patch: Partial<Data>, baseXp: number, activity: number): AnswerEvent {
         const now = Date.now();
         const before = withDevice(get());
+        const multiplier = focusMultiplier(before.focus, now);
+        const xp = baseXp * multiplier;
+        const focus = addFocusXp(before.focus, now, xp) ?? {};
         const today = dayKey(now);
         const prevToday = before.activity[today] ?? 0;
         const own = before.counters[before.deviceId] ?? { xp: 0, activity: {} };
@@ -285,6 +303,7 @@ export const useApp = create<AppState>()(
           counters,
           ...totals(counters),
           streak: activity > 0 ? nextStreak(before.streak, now) : before.streak,
+          focus,
         };
         const newIds = unlocked(next, now);
         const achievements = { ...next.achievements };
@@ -297,6 +316,7 @@ export const useApp = create<AppState>()(
           streak: next.streak,
           activity: next.activity,
           achievements,
+          focus,
         });
 
         const levelBefore = levelInfo(before.xp).level;
@@ -306,6 +326,7 @@ export const useApp = create<AppState>()(
           levelUp: levelAfter > levelBefore ? levelAfter : null,
           achievements: ACHIEVEMENTS.filter((a) => newIds.includes(a.id)),
           goalReached: prevToday < before.dailyGoal && prevToday + activity >= before.dailyGoal,
+          boosted: multiplier > 1 && xp > 0,
         };
       }
 
@@ -379,6 +400,12 @@ export const useApp = create<AppState>()(
           set({ examDates: { ...get().examDates, [subjectId]: { date, at: Date.now() } } });
         },
 
+        startFocus() {
+          const focus = startFocusRun(get().focus, Date.now());
+          if (focus) set({ focus });
+          return !!focus;
+        },
+
         importData(data) {
           if (!data || typeof data !== "object") return false;
           const d = (data as { state?: unknown }).state ?? data;
@@ -389,7 +416,12 @@ export const useApp = create<AppState>()(
         },
 
         applySync(data) {
-          set({ ...data, examDates: data.examDates ?? get().examDates, deviceId: get().deviceId || data.deviceId });
+          set({
+            ...data,
+            examDates: data.examDates ?? get().examDates,
+            focus: data.focus ?? get().focus,
+            deviceId: get().deviceId || data.deviceId,
+          });
         },
 
         reset() {

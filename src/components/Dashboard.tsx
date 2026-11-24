@@ -12,6 +12,7 @@ import { achievementProgress, useApp, useHydrated, visibleStreak } from "@/lib/s
 import { useMobile } from "@/lib/useMobile";
 import { useNow } from "@/lib/useNow";
 import { alpha, cn, dayKey } from "@/lib/utils";
+import { FocusCard } from "./FocusHour";
 import { Heatmap } from "./Heatmap";
 import { Icon } from "./Icon";
 import { ReminderPrompt } from "./ReminderSettings";
@@ -158,6 +159,8 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
           </p>
         </div>
       </section>
+
+      <FocusCard href={focusKey ? planOf.get(focusKey)?.href : undefined} />
 
       <section>
         <div className="mb-3 flex items-baseline justify-between gap-3 sm:mb-4">

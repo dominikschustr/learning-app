@@ -8,6 +8,7 @@ import { useApp, useHydrated, visibleStreak } from "@/lib/store";
 import { useSync } from "@/lib/sync";
 import { useNow } from "@/lib/useNow";
 import { cn } from "@/lib/utils";
+import { FocusPill } from "./FocusHour";
 import { Logo } from "./Logo";
 
 export function Header() {
@@ -28,6 +29,7 @@ export function Header() {
         </Link>
 
         <div className={cn("ml-auto flex items-center gap-1.5 transition-opacity", hydrated ? "opacity-100" : "opacity-0")}>
+          <FocusPill />
           <span
             title={`${days} Tage Streak`}
             className={cn(
