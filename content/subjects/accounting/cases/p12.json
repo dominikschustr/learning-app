@@ -8,101 +8,511 @@
     "tables": [
       {
         "caption": "Statement of financial position – assets",
-        "head": ["", "31/12/2024", "31/12/2023"],
+        "head": [
+          "",
+          "31/12/2024",
+          "31/12/2023"
+        ],
         "rows": [
-          ["Goodwill", "46", "44"],
-          ["Intangible assets", "260", "230"],
-          ["Right-of-use assets", "1,920", "1,820"],
-          ["Property, plant and equipment", "3,450", "2,910"],
-          ["Investment property", "60", "62"],
-          ["Investments in associates", "90", "70"],
-          ["Non-current financial assets", "820", "700"],
-          ["Deferred tax assets", "1,010", "880"],
-          ["Other non-current assets", "120", "110"],
-          ["Non-current assets", "7,776", "6,826"],
-          ["Inventories and work in progress", "2,560", "2,180"],
-          ["Trade and other receivables", "480", "460"],
-          ["Current tax receivables", "70", "60"],
-          ["Other current assets", "520", "480"],
-          ["Cash and cash equivalents", "11,800", "10,600"],
-          ["Current assets", "15,430", "13,780"],
-          ["TOTAL ASSETS", "23,206", "20,606"]
+          [
+            "Goodwill",
+            "46",
+            "44"
+          ],
+          [
+            "Intangible assets",
+            "260",
+            "230"
+          ],
+          [
+            "Right-of-use assets",
+            "1,920",
+            "1,820"
+          ],
+          [
+            "Property, plant and equipment",
+            "3,450",
+            "2,910"
+          ],
+          [
+            "Investment property",
+            "60",
+            "62"
+          ],
+          [
+            "Investments in associates",
+            "90",
+            "70"
+          ],
+          [
+            "Non-current financial assets",
+            "820",
+            "700"
+          ],
+          [
+            "Deferred tax assets",
+            "1,010",
+            "880"
+          ],
+          [
+            "Other non-current assets",
+            "120",
+            "110"
+          ],
+          [
+            "Non-current assets",
+            "7,776",
+            "6,826"
+          ],
+          [
+            "Inventories and work in progress",
+            "2,560",
+            "2,180"
+          ],
+          [
+            "Trade and other receivables",
+            "480",
+            "460"
+          ],
+          [
+            "Current tax receivables",
+            "70",
+            "60"
+          ],
+          [
+            "Other current assets",
+            "520",
+            "480"
+          ],
+          [
+            "Cash and cash equivalents",
+            "11,800",
+            "10,600"
+          ],
+          [
+            "Current assets",
+            "15,430",
+            "13,780"
+          ],
+          [
+            "TOTAL ASSETS",
+            "23,206",
+            "20,606"
+          ]
         ]
       },
       {
         "caption": "Statement of financial position – equity and liabilities",
-        "head": ["", "31/12/2024", "31/12/2023"],
+        "head": [
+          "",
+          "31/12/2024",
+          "31/12/2023"
+        ],
         "rows": [
-          ["Share capital", "54", "54"],
-          ["Share premium", "50", "50"],
-          ["Treasury shares", "(590)", "(520)"],
-          ["Reserves", "14,019", "12,018"],
-          ["Net income attributable to owners of the parent", "4,603", "4,311"],
-          ["Equity attributable to owners of the parent", "18,136", "15,913"],
-          ["Non-controlling interests", "20", "18"],
-          ["Total equity", "18,156", "15,931"],
-          ["Borrowings and financial liabilities – non-current", "30", "25"],
-          ["Lease liabilities – non-current", "1,830", "1,720"],
-          ["Provisions – non-current", "40", "35"],
-          ["Post-employment and other employee benefit obligations", "220", "210"],
-          ["Deferred tax liabilities", "80", "70"],
-          ["Other non-current liabilities", "110", "100"],
-          ["Non-current liabilities", "2,310", "2,160"],
-          ["Borrowings and financial liabilities – current", "50", "45"],
-          ["Lease liabilities – current", "300", "280"],
-          ["Provisions – current", "120", "110"],
-          ["Trade and other payables", "950", "870"],
-          ["Current tax liabilities", "320", "290"],
-          ["Other current liabilities", "1,000", "920"],
-          ["Current liabilities", "2,740", "2,515"],
-          ["TOTAL EQUITY AND LIABILITIES", "23,206", "20,606"]
+          [
+            "Share capital",
+            "54",
+            "54"
+          ],
+          [
+            "Share premium",
+            "50",
+            "50"
+          ],
+          [
+            "Treasury shares",
+            "(590)",
+            "(520)"
+          ],
+          [
+            "Reserves",
+            "14,019",
+            "12,018"
+          ],
+          [
+            "Net income attributable to owners of the parent",
+            "4,603",
+            "4,311"
+          ],
+          [
+            "Equity attributable to owners of the parent",
+            "18,136",
+            "15,913"
+          ],
+          [
+            "Non-controlling interests",
+            "20",
+            "18"
+          ],
+          [
+            "Total equity",
+            "18,156",
+            "15,931"
+          ],
+          [
+            "Borrowings and financial liabilities – non-current",
+            "30",
+            "25"
+          ],
+          [
+            "Lease liabilities – non-current",
+            "1,830",
+            "1,720"
+          ],
+          [
+            "Provisions – non-current",
+            "40",
+            "35"
+          ],
+          [
+            "Post-employment and other employee benefit obligations",
+            "220",
+            "210"
+          ],
+          [
+            "Deferred tax liabilities",
+            "80",
+            "70"
+          ],
+          [
+            "Other non-current liabilities",
+            "110",
+            "100"
+          ],
+          [
+            "Non-current liabilities",
+            "2,310",
+            "2,160"
+          ],
+          [
+            "Borrowings and financial liabilities – current",
+            "50",
+            "45"
+          ],
+          [
+            "Lease liabilities – current",
+            "300",
+            "280"
+          ],
+          [
+            "Provisions – current",
+            "120",
+            "110"
+          ],
+          [
+            "Trade and other payables",
+            "950",
+            "870"
+          ],
+          [
+            "Current tax liabilities",
+            "320",
+            "290"
+          ],
+          [
+            "Other current liabilities",
+            "1,000",
+            "920"
+          ],
+          [
+            "Current liabilities",
+            "2,740",
+            "2,515"
+          ],
+          [
+            "TOTAL EQUITY AND LIABILITIES",
+            "23,206",
+            "20,606"
+          ]
         ]
       },
       {
         "caption": "Consolidated statement of income",
-        "head": ["", "2024", "2023"],
+        "head": [
+          "",
+          "2024",
+          "2023"
+        ],
         "rows": [
-          ["Revenue", "15,170", "13,427"],
-          ["Cost of sales", "(4,502)", "(3,756)"],
-          ["Gross margin", "10,668", "9,671"],
-          ["Sales and administrative expenses", "(3,415)", "(2,981)"],
-          ["Other income and expenses", "(1,103)", "(1,040)"],
-          ["Recurring operating income", "6,150", "5,650"],
-          ["Other non-recurring income and expenses", "—", "—"],
-          ["Operating income", "6,150", "5,650"],
-          ["Net financial income", "215", "243"],
-          ["Net income before tax", "6,365", "5,893"],
-          ["Income tax", "(1,787)", "(1,630)"],
-          ["Net income from associates", "40", "62"],
-          ["Consolidated net income", "4,618", "4,325"],
-          ["Non-controlling interests", "(15)", "(14)"],
-          ["Net income attributable to owners of the parent", "4,603", "4,311"]
+          [
+            "Revenue",
+            "15,170",
+            "13,427"
+          ],
+          [
+            "Cost of sales",
+            "(4,502)",
+            "(3,756)"
+          ],
+          [
+            "Gross margin",
+            "10,668",
+            "9,671"
+          ],
+          [
+            "Sales and administrative expenses",
+            "(3,415)",
+            "(2,981)"
+          ],
+          [
+            "Other income and expenses",
+            "(1,103)",
+            "(1,040)"
+          ],
+          [
+            "Recurring operating income",
+            "6,150",
+            "5,650"
+          ],
+          [
+            "Other non-recurring income and expenses",
+            "—",
+            "—"
+          ],
+          [
+            "Operating income",
+            "6,150",
+            "5,650"
+          ],
+          [
+            "Net financial income",
+            "215",
+            "243"
+          ],
+          [
+            "Net income before tax",
+            "6,365",
+            "5,893"
+          ],
+          [
+            "Income tax",
+            "(1,787)",
+            "(1,630)"
+          ],
+          [
+            "Net income from associates",
+            "40",
+            "62"
+          ],
+          [
+            "Consolidated net income",
+            "4,618",
+            "4,325"
+          ],
+          [
+            "Non-controlling interests",
+            "(15)",
+            "(14)"
+          ],
+          [
+            "Net income attributable to owners of the parent",
+            "4,603",
+            "4,311"
+          ]
         ]
       },
       {
         "caption": "Statement of cash flows – operating activities (extract)",
-        "head": ["", "2024", "2023"],
+        "head": [
+          "",
+          "2024",
+          "2023"
+        ],
         "rows": [
-          ["Consolidated net income", "4,618", "4,325"],
-          ["Depreciation and amortisation (incl. right-of-use assets)", "1,000", "880"],
-          ["Net income from associates", "(40)", "(62)"],
-          ["Dividends received from associates", "20", "25"],
-          ["Other non-cash items", "60", "52"],
-          ["Operating cash flows", "5,658", "5,220"],
-          ["Change in working capital requirement", "(350)", "(300)"],
-          ["Net cash from operating activities", "5,308", "4,920"]
+          [
+            "Consolidated net income",
+            "4,618",
+            "4,325"
+          ],
+          [
+            "Depreciation and amortisation (incl. right-of-use assets)",
+            "1,000",
+            "880"
+          ],
+          [
+            "Net income from associates",
+            "(40)",
+            "(62)"
+          ],
+          [
+            "Dividends received from associates",
+            "20",
+            "25"
+          ],
+          [
+            "Other non-cash items",
+            "60",
+            "52"
+          ],
+          [
+            "Operating cash flows",
+            "5,658",
+            "5,220"
+          ],
+          [
+            "Change in working capital requirement",
+            "(350)",
+            "(300)"
+          ],
+          [
+            "Net cash from operating activities",
+            "5,308",
+            "4,920"
+          ]
         ]
       }
     ]
   },
   {
     "id": "tannery-equity",
-    "title": "Sellier SA – investment in Tannerie Morel (N and N+1)",
+    "title": "Sellier SA and Tannerie Morel – consolidated balance sheet in N and N+1 (equity method)",
     "text": [
-      "On 1 January N, Sellier SA, which prepares IFRS consolidated financial statements, acquires 35% of the shares of Tannerie Morel for €42 million in cash. The investment gives Sellier two seats out of seven on the board; Sellier does not control Tannerie Morel. On that date the fair value of Tannerie Morel's identifiable net assets is €100 million (equal to their carrying amount).",
-      "Tannerie Morel reports a net income of €20 million in N and pays a dividend of €8 million to its shareholders in N. In N+1 it reports a net loss of €6 million and pays no dividend. No impairment is necessary."
+      "On 1 January N, Sellier SA acquires 35% of the shares of Tannerie Morel for €42 million in cash. The investment gives Sellier two seats out of seven on the board; Sellier does not control Tannerie Morel. Sellier has no other subsidiaries or associates and prepares IFRS consolidated financial statements because of this investment.",
+      "On 1 January N, Tannerie Morel's identifiable assets and liabilities have a fair value equal to their carrying amount. Tannerie Morel reports a net income of €20 million in N and pays a dividend of €8 million in N (out of its reserves). In N+1 it reports a net loss of €6 million and pays no dividend. No impairment is necessary.",
+      "In its individual financial statements, Sellier carries the investment at cost (€42 million) and recognised the dividend received from Tannerie Morel in N as financial income. Sellier paid a dividend of €20 million to its own shareholders in N+1. Amounts in € millions."
     ],
-    "tables": []
+    "tables": [
+      {
+        "caption": "Sellier SA – individual balance sheet",
+        "head": [
+          "",
+          "31/12/N",
+          "31/12/N+1"
+        ],
+        "rows": [
+          [
+            "Property, plant and equipment",
+            "300",
+            "320"
+          ],
+          [
+            "Investment in Tannerie Morel (at cost)",
+            "42",
+            "42"
+          ],
+          [
+            "Inventories",
+            "80",
+            "90"
+          ],
+          [
+            "Trade receivables",
+            "60",
+            "70"
+          ],
+          [
+            "Cash",
+            "98",
+            "118"
+          ],
+          [
+            "TOTAL ASSETS",
+            "580",
+            "640"
+          ],
+          [
+            "Share capital",
+            "100",
+            "100"
+          ],
+          [
+            "Reserves",
+            "150",
+            "180"
+          ],
+          [
+            "Net income of the year",
+            "50",
+            "60"
+          ],
+          [
+            "Total equity",
+            "300",
+            "340"
+          ],
+          [
+            "Financial debt",
+            "200",
+            "220"
+          ],
+          [
+            "Trade payables",
+            "80",
+            "80"
+          ],
+          [
+            "TOTAL EQUITY AND LIABILITIES",
+            "580",
+            "640"
+          ]
+        ]
+      },
+      {
+        "caption": "Tannerie Morel – balance sheet",
+        "head": [
+          "",
+          "01/01/N",
+          "31/12/N",
+          "31/12/N+1"
+        ],
+        "rows": [
+          [
+            "Non-current assets",
+            "90",
+            "95",
+            "92"
+          ],
+          [
+            "Current assets",
+            "50",
+            "61",
+            "58"
+          ],
+          [
+            "TOTAL ASSETS",
+            "140",
+            "156",
+            "150"
+          ],
+          [
+            "Share capital",
+            "40",
+            "40",
+            "40"
+          ],
+          [
+            "Reserves",
+            "60",
+            "52",
+            "72"
+          ],
+          [
+            "Net income of the year",
+            "—",
+            "20",
+            "(6)"
+          ],
+          [
+            "Total equity",
+            "100",
+            "112",
+            "106"
+          ],
+          [
+            "Liabilities",
+            "40",
+            "44",
+            "44"
+          ],
+          [
+            "TOTAL EQUITY AND LIABILITIES",
+            "140",
+            "156",
+            "150"
+          ]
+        ]
+      }
+    ]
   },
   {
     "id": "boutique-lease",

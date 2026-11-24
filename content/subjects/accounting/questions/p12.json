@@ -130,7 +130,7 @@
     "case": "tannery-equity",
     "difficulty": 2,
     "verb": "explain",
-    "prompt": "How should Sellier account for its investment in Tannerie Morel in its consolidated financial statements? Justify, and calculate the goodwill included in the investment at 1 January N.",
+    "prompt": "How should Sellier account for Tannerie Morel in its consolidated financial statements? Justify, and calculate the goodwill included in the investment at 1 January N.",
     "modelAnswer": "Sellier holds 35% and two of seven board seats but no control → significant influence (presumed between 20% and 50%, IAS 28) → Tannerie Morel is an associate accounted for with the equity method: one line 'investments in associates' on the asset side and one line 'share of net income of associates' in the income statement; no line-by-line consolidation and no non-controlling interests.\nGoodwill included in the investment = cost − share of the fair value of net assets = 42 − 35% × 100 = 42 − 35 = €7 million. It is not shown separately and not amortised; the whole investment is tested for impairment.",
     "keyPoints": [
       "35%, two board seats, no control → significant influence",
@@ -149,7 +149,7 @@
       {
         "kind": "exam",
         "source": "Klausur 2026",
-        "ref": "Equity method N and N+1"
+        "ref": "Equity method – consolidated balance sheet N and N+1"
       }
     ],
     "steps": [
@@ -172,66 +172,319 @@
     "type": "short",
     "id": "sa-p12-05",
     "lecture": "t2",
-    "topic": "Equity method – N and N+1",
+    "topic": "Equity method – consolidated balance sheet at 31/12/N",
     "case": "tannery-equity",
     "difficulty": 2,
     "verb": "calculate",
-    "prompt": "Calculate, for N and N+1, the share of net income of the associate recognised in Sellier's consolidated income statement and the carrying amount of the investment in associates at 31 December. How is the dividend received treated?",
-    "modelAnswer": "N: share of net income = 35% × 20 = 7.0 (income statement). Dividend received = 35% × 8 = 2.8: it is NOT income – it reduces the investment (cash +2.8, investment −2.8).\nInvestment 31/12/N = 42 + 7.0 − 2.8 = 46.2.\nN+1: share of net loss = 35% × (−6) = −2.1 (income statement). No dividend.\nInvestment 31/12/N+1 = 46.2 − 2.1 = 44.1.",
+    "prompt": "Prepare Sellier's consolidated balance sheet at 31 December N (equity method). Show the investment in associates, consolidated reserves, consolidated net income and total assets.",
+    "modelAnswer": "Investment under the equity method = cost + share of post-acquisition profits − dividends received = 42 + 35% × 20 − 35% × 8 = 42 + 7.0 − 2.8 = 46.2 (check: 35% × equity 112 = 39.2 + goodwill 7 = 46.2).\nAdjustment to Sellier's individual figures: investment 42 → 46.2 (+4.2).\nNet income: Sellier's individual income includes the dividend of 2.8 as financial income – eliminated (it reduces the investment instead) – and the share of the associate's net income 7.0 is added: 50 − 2.8 + 7.0 = 54.2.\nConsolidated reserves: 150 (no post-acquisition result yet at the start of N).\nTotal assets 584.2 = equity 304.2 (100 + 150 + 54.2, no non-controlling interests) + liabilities 280. All other lines are Sellier's own: the associate's assets and liabilities are NOT added line by line.",
     "keyPoints": [
-      "Share of net income N = 7.0",
-      "Dividend 2.8 reduces the investment, not income",
-      "Investment end N = 46.2",
-      "Share of loss N+1 = −2.1",
-      "Investment end N+1 = 44.1"
+      "Investment in associates 46.2 (42 + 7.0 − 2.8)",
+      "Dividend 2.8 eliminated from income",
+      "Consolidated net income 54.2",
+      "Consolidated reserves 150",
+      "Total assets 584.2; no line-by-line integration, no NCI"
     ],
     "results": [
       {
-        "label": "Share of net income N (€ m)",
-        "value": 7
-      },
-      {
-        "label": "Investment at 31/12/N (€ m)",
+        "label": "Investments in associates 31/12/N",
         "value": 46.2
       },
       {
-        "label": "Share of net income N+1 (€ m)",
-        "value": -2.1
+        "label": "Consolidated reserves 31/12/N",
+        "value": 150
       },
       {
-        "label": "Investment at 31/12/N+1 (€ m)",
-        "value": 44.1
+        "label": "Consolidated net income N",
+        "value": 54.2
+      },
+      {
+        "label": "Total assets 31/12/N",
+        "value": 584.2
       }
     ],
     "basis": [
       {
         "kind": "exam",
         "source": "Klausur 2026",
-        "ref": "Equity method N and N+1"
+        "ref": "Equity method – consolidated balance sheet N and N+1"
       }
     ],
     "steps": [
       {
-        "title": "Year N",
-        "why": "The investment follows the associate's equity: + share of net income, − dividends received.",
+        "title": "Value of the investment",
+        "why": "Equity method: the investment follows the associate's equity – cost + share of profits − dividends received.",
         "lines": [
-          "Share of net income: 35% × 20 = 7.0 → income statement",
-          "Dividend received: 35% × 8 = 2.8 → reduces the investment",
-          "Investment: 42 + 7.0 − 2.8 = 46.2"
+          "42 + 35% × 20 − 35% × 8 = 42 + 7.0 − 2.8 = 46.2",
+          "Check: 35% × 112 = 39.2 + goodwill 7 = 46.2"
         ]
       },
       {
-        "title": "Year N+1",
+        "title": "Equity of the group",
+        "why": "The dividend received is already in Sellier's individual income; under the equity method it is not income but a reduction of the investment. The share of profit replaces it.",
         "lines": [
-          "Share of net loss: 35% × (−6) = −2.1 → income statement",
-          "Investment: 46.2 − 2.1 = 44.1"
-        ],
-        "result": "N: 7.0 and 46.2; N+1: −2.1 and 44.1"
+          "Net income: 50 − 2.8 + 7.0 = 54.2",
+          "Reserves: 150 (acquisition on 1 January N)"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet",
+        "table": {
+          "caption": "Sellier – consolidated balance sheet at 31/12/N (equity method)",
+          "head": [
+            "",
+            "Individual",
+            "Adjustment",
+            "Consolidated"
+          ],
+          "rows": [
+            [
+              "Property, plant and equipment",
+              "300",
+              "",
+              "300"
+            ],
+            [
+              "Investments in associates",
+              "42",
+              "+4.2",
+              "46.2"
+            ],
+            [
+              "Inventories",
+              "80",
+              "",
+              "80"
+            ],
+            [
+              "Trade receivables",
+              "60",
+              "",
+              "60"
+            ],
+            [
+              "Cash",
+              "98",
+              "",
+              "98"
+            ],
+            [
+              "TOTAL ASSETS",
+              "580",
+              "+4.2",
+              "584.2"
+            ],
+            [
+              "Share capital",
+              "100",
+              "",
+              "100"
+            ],
+            [
+              "Consolidated reserves",
+              "150",
+              "",
+              "150"
+            ],
+            [
+              "Consolidated net income",
+              "50",
+              "−2.8 + 7.0",
+              "54.2"
+            ],
+            [
+              "Total equity (no NCI)",
+              "300",
+              "+4.2",
+              "304.2"
+            ],
+            [
+              "Financial debt",
+              "200",
+              "",
+              "200"
+            ],
+            [
+              "Trade payables",
+              "80",
+              "",
+              "80"
+            ],
+            [
+              "TOTAL EQUITY AND LIABILITIES",
+              "580",
+              "+4.2",
+              "584.2"
+            ]
+          ]
+        },
+        "result": "Total assets 584.2; investment 46.2; net income 54.2"
       }
     ],
     "pitfalls": [
-      "Recognising the dividend as financial income – under the equity method it reduces the investment.",
-      "Consolidating 100% of Tannerie's net income or creating non-controlling interests."
+      "Adding Tannerie's assets and liabilities line by line – that is full consolidation, used only with control.",
+      "Keeping the dividend of 2.8 in consolidated income (it would be counted twice with the share of profit).",
+      "Creating non-controlling interests – the equity method has none."
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p12-11",
+    "lecture": "t2",
+    "topic": "Equity method – consolidated balance sheet at 31/12/N+1",
+    "case": "tannery-equity",
+    "difficulty": 3,
+    "verb": "calculate",
+    "prompt": "Prepare Sellier's consolidated balance sheet at 31 December N+1 (equity method). Show the investment in associates, consolidated reserves, consolidated net income and total assets.",
+    "modelAnswer": "Investment at 31/12/N+1 = 46.2 + 35% × (−6) = 46.2 − 2.1 = 44.1 (check: 35% × 106 = 37.1 + goodwill 7 = 44.1). Adjustment vs cost: +2.1.\nConsolidated reserves = Sellier's individual reserves 180 + Sellier's share of the associate's retained post-acquisition results up to 1 January N+1 (7.0 − 2.8 = 4.2) = 184.2. (Sellier's reserves 180 = 150 + 50 − 20 dividend paid already include the 2.8 dividend received; the consolidated adjustment of N is carried forward: −2.8 + 7.0 = +4.2.)\nConsolidated net income N+1 = 60 + share of loss −2.1 = 57.9 (no dividend from the associate to eliminate).\nTotal assets = 640 + 2.1 = 642.1; equity 100 + 184.2 + 57.9 = 342.1; liabilities 300.",
+    "keyPoints": [
+      "Investment 44.1 (46.2 − 2.1)",
+      "Reserves 184.2 = 180 + 4.2 carried forward from N",
+      "Net income 57.9 = 60 − 2.1",
+      "Total assets 642.1",
+      "Check with 35% of the associate's equity + goodwill"
+    ],
+    "results": [
+      {
+        "label": "Investments in associates 31/12/N+1",
+        "value": 44.1
+      },
+      {
+        "label": "Consolidated reserves 31/12/N+1",
+        "value": 184.2
+      },
+      {
+        "label": "Consolidated net income N+1",
+        "value": 57.9
+      },
+      {
+        "label": "Total assets 31/12/N+1",
+        "value": 642.1
+      }
+    ],
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Klausur 2026",
+        "ref": "Equity method – consolidated balance sheet N and N+1"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Value of the investment",
+        "lines": [
+          "46.2 + 35% × (−6) = 46.2 − 2.1 = 44.1",
+          "Check: 35% × 106 = 37.1 + goodwill 7 = 44.1",
+          "Adjustment vs cost 42: +2.1"
+        ]
+      },
+      {
+        "title": "Split the adjustment between reserves and income",
+        "why": "The part from previous years (N) goes to consolidated reserves; the part of the current year (N+1) to consolidated net income.",
+        "lines": [
+          "Reserves: 180 + (7.0 − 2.8) = 184.2",
+          "Net income: 60 + (−2.1) = 57.9",
+          "Total adjustment: +4.2 − 2.1 = +2.1"
+        ]
+      },
+      {
+        "title": "Consolidated balance sheet",
+        "table": {
+          "caption": "Sellier – consolidated balance sheet at 31/12/N+1 (equity method)",
+          "head": [
+            "",
+            "Individual",
+            "Adjustment",
+            "Consolidated"
+          ],
+          "rows": [
+            [
+              "Property, plant and equipment",
+              "320",
+              "",
+              "320"
+            ],
+            [
+              "Investments in associates",
+              "42",
+              "+2.1",
+              "44.1"
+            ],
+            [
+              "Inventories",
+              "90",
+              "",
+              "90"
+            ],
+            [
+              "Trade receivables",
+              "70",
+              "",
+              "70"
+            ],
+            [
+              "Cash",
+              "118",
+              "",
+              "118"
+            ],
+            [
+              "TOTAL ASSETS",
+              "640",
+              "+2.1",
+              "642.1"
+            ],
+            [
+              "Share capital",
+              "100",
+              "",
+              "100"
+            ],
+            [
+              "Consolidated reserves",
+              "180",
+              "+4.2",
+              "184.2"
+            ],
+            [
+              "Consolidated net income",
+              "60",
+              "−2.1",
+              "57.9"
+            ],
+            [
+              "Total equity (no NCI)",
+              "340",
+              "+2.1",
+              "342.1"
+            ],
+            [
+              "Financial debt",
+              "220",
+              "",
+              "220"
+            ],
+            [
+              "Trade payables",
+              "80",
+              "",
+              "80"
+            ],
+            [
+              "TOTAL EQUITY AND LIABILITIES",
+              "640",
+              "+2.1",
+              "642.1"
+            ]
+          ]
+        },
+        "result": "Total assets 642.1; investment 44.1; reserves 184.2; net income 57.9"
+      }
+    ],
+    "pitfalls": [
+      "Forgetting to carry forward the N adjustment (+4.2) into consolidated reserves.",
+      "Putting the whole +2.1 into net income of N+1.",
+      "Restarting from cost 42 instead of the carrying amount at the end of N."
     ]
   },
   {

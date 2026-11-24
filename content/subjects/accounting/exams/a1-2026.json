@@ -1,8 +1,8 @@
 [
   {
     "id": "exam-2026",
-    "title": "Klausur 2026 (Nachbau)",
-    "subtitle": "Aufbau der Abschlussklausur IFRS 2026 nach Gedächtnisprotokoll: Hermès (direkte oder indirekte Methode, IFRS, konsolidiert), Equity-Methode in N und N+1, Leasing, NOPAT/ROCE mit Margen, vier Instrumente Debt oder Equity, sechs Single-Choice-Fragen und die Einziehung von LVMH-Aktien. Zahlen, Fallangaben und Punkte (60) sind nachgebaut, nicht das Original; Hermès-Abschluss vereinfacht.",
+    "title": "Klausur 2026",
+    "subtitle": "Aufbau der Abschlussklausur IFRS 2026 nach Gedächtnisprotokoll: Hermès (direkte oder indirekte Methode, IFRS, konsolidiert), konsolidierte Bilanz nach der Equity-Methode in N und N+1, Leasing, NOPAT/ROCE mit Margen, vier Instrumente Debt oder Equity, sechs Single-Choice-Fragen und die Einziehung von LVMH-Aktien. Zahlen, Fallangaben und Punkte (60) sind nachgebaut, nicht das Original; Hermès-Abschluss vereinfacht.",
     "origin": {
       "kind": "altklausur",
       "exam": "Abschlussklausur IFRS (CM01) 2026 – Gedächtnisprotokoll",
@@ -35,18 +35,22 @@
       },
       {
         "title": "Part 2 – Equity method",
-        "instructions": "Sellier SA and Tannerie Morel, years N and N+1. [10 points]",
+        "instructions": "Sellier SA and Tannerie Morel – consolidated balance sheet in N and N+1. [10 points]",
         "sections": [
           {
             "title": "Sellier and Tannerie Morel",
             "items": [
               {
                 "q": "sa-p12-04",
-                "points": 4
+                "points": 2
               },
               {
                 "q": "sa-p12-05",
-                "points": 6
+                "points": 4
+              },
+              {
+                "q": "sa-p12-11",
+                "points": 4
               }
             ]
           }
