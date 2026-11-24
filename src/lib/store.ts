@@ -5,6 +5,7 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { addFocusXp, bestFocusXp, focusMultiplier, startFocusRun, type FocusLog } from "./focus";
 import { ACHIEVEMENTS, levelInfo, type AchievementDef } from "./gamification";
+import { claimableXp, completedWeeks, weeklyState } from "./weekly";
 import { mergeSync, totals, type Counter, type ExamDate, type Mark, type SyncData } from "./merge";
 import { review, type ItemState } from "./srs";
 import { addDays, dayKey, itemKey, randomId } from "./utils";
@@ -83,6 +84,8 @@ type Data = {
   examDates: Record<string, ExamDate>;
   /** Fokus-Stunde je Woche (doppelte XP), siehe focus.ts */
   focus: FocusLog;
+  /** Wochen-Challenge: Woche → abgeholte Aufgaben (inkl. "all" für den Wochenbonus), siehe weekly.ts */
+  weekly: Record<string, string[]>;
 };
 
 /** xp: tatsächlich gutgeschriebene XP (in der Fokus-Stunde verdoppelt); boosted: Fokus-Bonus war aktiv */
@@ -121,6 +124,8 @@ type Actions = {
   setExamDate(subjectId: string, date: string): void;
   /** Startet die Fokus-Stunde dieser Woche; false, wenn sie schon genutzt wurde. */
   startFocus(): boolean;
+  /** Holt die Bonus-XP einer erledigten Wochenaufgabe (oder den Wochenbonus "all") ab; null = nichts abzuholen. */
+  claimWeekly(id: string): AnswerEvent | null;
   /** Übernimmt einen zusammengeführten Stand aus der Synchronisation. */
   applySync(data: SyncData<ExamRecord>): void;
   importData(data: unknown): boolean;
@@ -147,6 +152,7 @@ const initial: Data = {
   marks: {},
   examDates: {},
   focus: {},
+  weekly: {},
 };
 
 function nextStreak(streak: Streak, now: number): Streak {
@@ -164,7 +170,7 @@ export function visibleStreak(streak: Streak, now: number): number {
 }
 
 type AchievementInput = Pick<Data, "activity" | "cards" | "items" | "bestCombo" | "dailyGoal" | "streak" | "exams" | "blitzBest" | "xp"> &
-  Partial<Pick<Data, "achievements" | "focus">>;
+  Partial<Pick<Data, "achievements" | "focus" | "weekly">>;
 
 /** Achievements, die die Rangliste freischaltet (nicht aus dem eigenen Lernstand berechenbar). */
 export const BOARD_ACHIEVEMENTS = ["rank-overtake", "rank-podium", "rank-week-podium", "rank-day-1"] as const;
@@ -187,6 +193,23 @@ export function achievementProgress(d: AchievementInput, now: number): Record<st
     "blitz-15": Math.max(0, ...Object.values(d.blitzBest)),
     "level-5": levelInfo(d.xp).level,
     "focus-200": bestFocusXp(d.focus),
+    "focus-3": Object.keys(d.focus ?? {}).length,
+    "streak-14": d.streak.best,
+    "streak-30": d.streak.best,
+    "combo-20": d.bestCombo,
+    "answers-500": Object.values(d.activity).reduce((a, b) => a + b, 0),
+    "answers-2000": Object.values(d.activity).reduce((a, b) => a + b, 0),
+    "goal-days-10": Object.values(d.activity).filter((n) => n >= d.dailyGoal).length,
+    "cards-200": Object.values(d.cards).reduce((a, c) => a + c.correct, 0),
+    "mastered-100": Object.values(d.items).filter((i) => i.box >= 4).length,
+    "blitz-25": Math.max(0, ...Object.values(d.blitzBest)),
+    "exam-5": d.exams.filter((e) => !e.lecture).length,
+    "exam-90": best(d.exams.filter((e) => !e.lecture)),
+    "chapter-tests-10": d.exams.filter((e) => e.lecture).length,
+    "level-10": levelInfo(d.xp).level,
+    "level-15": levelInfo(d.xp).level,
+    "weekly-1": completedWeeks(d.weekly),
+    "weekly-4": completedWeeks(d.weekly),
     ...Object.fromEntries(BOARD_ACHIEVEMENTS.map((id) => [id, d.achievements?.[id] ? 1 : 0])),
   };
 }
@@ -233,6 +256,7 @@ export function syncSnapshot(s: Data): SyncData<ExamRecord> {
     marks: s.marks,
     examDates: s.examDates,
     focus: s.focus,
+    weekly: s.weekly,
   };
 }
 
@@ -280,12 +304,13 @@ export const useApp = create<AppState>()(
   persist(
     (set, get) => {
       /** Gemeinsamer Abschluss jeder Aktivität: XP, Streak, Tagesziel, Achievements. */
-      function commit(patch: Partial<Data>, baseXp: number, activity: number): AnswerEvent {
+      /** boost: false = Fokus-Stunde verdoppelt nicht (z. B. Bonus-XP der Wochen-Challenge) */
+      function commit(patch: Partial<Data>, baseXp: number, activity: number, boost = true): AnswerEvent {
         const now = Date.now();
         const before = withDevice(get());
-        const multiplier = focusMultiplier(before.focus, now);
+        const multiplier = boost ? focusMultiplier(before.focus, now) : 1;
         const xp = baseXp * multiplier;
-        const focus = addFocusXp(before.focus, now, xp) ?? {};
+        const focus = (boost ? addFocusXp(before.focus, now, xp) : before.focus) ?? {};
         const today = dayKey(now);
         const prevToday = before.activity[today] ?? 0;
         const own = before.counters[before.deviceId] ?? { xp: 0, activity: {} };
@@ -406,6 +431,16 @@ export const useApp = create<AppState>()(
           return !!focus;
         },
 
+        claimWeekly(id) {
+          const s = get();
+          const now = Date.now();
+          const state = weeklyState(s, s.weekly, now);
+          const xp = claimableXp(state, id);
+          if (xp === null) return null;
+          const weekly = { ...s.weekly, [state.week]: [...(s.weekly[state.week] ?? []), id].sort() };
+          return commit({ weekly }, xp, 0, false);
+        },
+
         importData(data) {
           if (!data || typeof data !== "object") return false;
           const d = (data as { state?: unknown }).state ?? data;
@@ -420,6 +455,7 @@ export const useApp = create<AppState>()(
             ...data,
             examDates: data.examDates ?? get().examDates,
             focus: data.focus ?? get().focus,
+            weekly: data.weekly ?? get().weekly,
             deviceId: get().deviceId || data.deviceId,
           });
         },

@@ -108,7 +108,7 @@ export function startAutoSync(): () => void {
     if (applying || !signedIn()) return;
     if (s.xp !== prev.xp || s.items !== prev.items || s.cards !== prev.cards || s.exams !== prev.exams ||
       s.achievements !== prev.achievements || s.dailyGoal !== prev.dailyGoal || s.blitzBest !== prev.blitzBest ||
-      s.marks !== prev.marks || s.examDates !== prev.examDates || s.focus !== prev.focus) {
+      s.marks !== prev.marks || s.examDates !== prev.examDates || s.focus !== prev.focus || s.weekly !== prev.weekly) {
       schedule(20_000);
     }
   });

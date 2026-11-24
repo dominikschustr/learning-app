@@ -14,6 +14,7 @@ import { useNow } from "@/lib/useNow";
 import { alpha, cn, dayKey } from "@/lib/utils";
 import { FocusCard } from "./FocusHour";
 import { Heatmap } from "./Heatmap";
+import { WeeklyChallenge } from "./WeeklyChallenge";
 import { Icon } from "./Icon";
 import { ReminderPrompt } from "./ReminderSettings";
 import { Bar, Chip, ProgressRing, Skeleton } from "./ui";
@@ -161,6 +162,8 @@ function DashboardInner({ summaries, calendar }: { summaries: SubjectSummary[]; 
       </section>
 
       <FocusCard href={focusKey ? planOf.get(focusKey)?.href : undefined} />
+
+      <WeeklyChallenge />
 
       <section>
         <div className="mb-3 flex items-baseline justify-between gap-3 sm:mb-4">
@@ -438,7 +441,12 @@ function Achievements({
   return (
     <>
       <div className="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-4">
-        {ACHIEVEMENTS.map((a) => {
+        {/* Freigeschaltete zuerst, dann die, denen am wenigsten fehlt */}
+        {ACHIEVEMENTS.toSorted((a, b) => {
+          const done = (x: typeof a) => (unlocked[x.id] ? 1 : 0);
+          const share = (x: typeof a) => Math.min(1, (progress[x.id] ?? 0) / (targets[x.id] ?? x.target));
+          return done(b) - done(a) || share(b) - share(a);
+        }).map((a) => {
           const got = !!unlocked[a.id];
           const active = a.id === openId;
           return (

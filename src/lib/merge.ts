@@ -11,6 +11,7 @@ import { addDays, dayKey, weekKey } from "./utils";
  * - Lesezeichen: pro Frage/Karte gewinnt das zuletzt gesetzte oder entfernte.
  * - Eigene Klausurtermine: pro Fach gewinnt der zuletzt eingetragene.
  * - Fokus-Stunde: pro Woche gewinnt der frühere Start, damit sie nur einmal läuft.
+ * - Wochen-Challenge: abgeholte Aufgaben je Woche werden vereinigt (nichts doppelt abholbar).
  */
 
 /** xpDays: XP je Tag (seit der Wochenliga; ältere Zähler haben es nicht). */
@@ -43,7 +44,19 @@ export type SyncData<E extends ExamLike = ExamLike> = {
   examDates?: Record<string, ExamDate>;
   /** Fokus-Stunden je Woche; fehlt in älteren Cloud-Ständen */
   focus?: FocusLog;
+  /** Wochen-Challenge: Woche → abgeholte Aufgaben; fehlt in älteren Cloud-Ständen */
+  weekly?: Record<string, string[]>;
 };
+
+/** Abgeholte Aufgaben der Wochen-Challenge je Woche vereinigen. */
+export function mergeWeekly(
+  a: Record<string, string[]> | undefined,
+  b: Record<string, string[]> | undefined,
+): Record<string, string[]> {
+  const out: Record<string, string[]> = { ...a };
+  for (const [week, ids] of Object.entries(b ?? {})) out[week] = [...new Set([...(out[week] ?? []), ...ids])].sort();
+  return out;
+}
 
 function mergeRecord<T>(a: Record<string, T>, b: Record<string, T>, pick: (x: T, y: T) => T): Record<string, T> {
   const out: Record<string, T> = { ...a };
@@ -128,5 +141,6 @@ export function mergeSync<E extends ExamLike>(local: SyncData<E>, remote: SyncDa
     marks: mergeRecord(local.marks ?? {}, remote.marks ?? {}, (x, y) => (y.at > x.at ? y : x)),
     examDates: mergeRecord(local.examDates ?? {}, remote.examDates ?? {}, (x, y) => (y.at > x.at ? y : x)),
     focus: mergeFocus(local.focus, remote.focus),
+    weekly: mergeWeekly(local.weekly, remote.weekly),
   };
 }
