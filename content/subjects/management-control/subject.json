@@ -15,5 +15,5 @@
     { "id": "s34", "title": "S3&4 · Dashboards & KPIs" },
     { "id": "s78", "title": "S7&8 · Analysing results: variance analysis (VMYP)" }
   ],
-  "examFormat": { "name": "Midterm", "minutes": 42, "short": 1, "mc": 13, "tf": 6 }
+  "examFormat": { "name": "Final exam", "minutes": 42, "short": 1, "mc": 13, "tf": 6 }
 }
