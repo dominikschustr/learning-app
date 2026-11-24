@@ -304,7 +304,7 @@ function ChaptersTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
                 <span className="eyebrow block">
                   Kapitel {i + 1} · {code}
                 </span>
-                <span className="block truncate font-semibold sm:text-lg">{rest.join(" · ") || l.title}</span>
+                <span className="block line-clamp-2 font-semibold leading-snug sm:text-lg">{rest.join(" · ") || l.title}</span>
                 <span className="mt-0.5 block truncate text-xs text-muted">{facts.join(" · ")}</span>
               </span>
               <span className="hidden w-28 shrink-0 sm:block">
@@ -734,11 +734,11 @@ function ExamCountdown({
         setDraft(date ?? "");
         setEditing(true);
       }}
-      className="inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs font-semibold text-muted transition hover:bg-surface-2 hover:text-ink"
+      className="-mx-1 inline-flex min-h-9 items-center gap-1.5 rounded-full px-2.5 text-xs font-semibold text-muted transition hover:bg-surface-2 hover:text-ink"
       aria-label={date ? "Klausurtermin ändern" : "Klausurtermin eintragen"}
     >
       <Pencil className="size-3.5" />
-      {date ? <span className="max-sm:hidden">Ändern</span> : "Klausurtermin eintragen"}
+      {date ? "Termin ändern" : "Klausurtermin eintragen"}
     </button>
   );
 
@@ -763,7 +763,7 @@ function ExamCountdown({
   if (!need) pace = `Ziel ${target} % erreicht`;
   else {
     const perDay = ((need / Math.max(1, days)) * 100).toLocaleString("de-DE", { maximumFractionDigits: 1 });
-    pace = `+${perDay} Pkt./Tag bis ${target} %`;
+    pace = `Für ${target} % Readiness: +${perDay} Punkte pro Tag`;
   }
   return (
     <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">

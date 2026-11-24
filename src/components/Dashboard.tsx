@@ -301,7 +301,7 @@ function SubjectTile({
               </span>
             )}
           </div>
-          <h3 className="display mt-2 truncate text-xl sm:mt-3 sm:text-2xl">{subject.name}</h3>
+          <h3 className="display mt-2 line-clamp-2 text-xl sm:mt-3 sm:text-2xl">{subject.name}</h3>
           {/* Desktop: Klausurtermin statt Beschreibung – die steht auf der Fachseite */}
           {days !== undefined && entry ? (
             <p className={cn("mt-1 flex items-center gap-1.5 text-sm max-sm:hidden", soon ? "font-semibold text-bad" : "text-muted")}>
@@ -321,7 +321,10 @@ function SubjectTile({
         </div>
         <ProgressRing value={st.readiness} size={mobile ? 60 : 96} stroke={mobile ? 6 : 8} color={subject.color}>
           <span>
-            <span className="display block text-base tabular-nums sm:text-xl">{Math.round(st.readiness * 100)}</span>
+            <span className="display block text-base tabular-nums sm:text-xl">
+              {Math.round(st.readiness * 100)}
+              <span className="text-[0.6em] font-semibold text-muted"> %</span>
+            </span>
             <span className="hidden text-[11px] font-medium text-muted sm:block">Readiness</span>
           </span>
         </ProgressRing>
@@ -365,7 +368,7 @@ function DoneTile({ summary, st, done, mobile }: { summary: SubjectSummary; st: 
               <Check className="size-3.5" strokeWidth={3} /> Abgeschlossen
             </span>
           </div>
-          <h3 className="display mt-2 truncate text-xl text-ink-2 sm:mt-3 sm:text-2xl">{subject.name}</h3>
+          <h3 className="display mt-2 line-clamp-2 text-xl text-ink-2 sm:mt-3 sm:text-2xl">{subject.name}</h3>
           <p className="mt-1 flex items-center gap-1.5 text-sm text-muted max-sm:text-xs">
             <CalendarClock className="size-3.5 shrink-0 max-sm:hidden" />
             Klausur geschrieben · {fmtExamDate(done.date)}

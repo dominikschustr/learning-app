@@ -28,12 +28,12 @@ export function Header() {
           <span className="display hidden text-xl min-[400px]:inline">Lernwerk</span>
         </Link>
 
-        <div className={cn("ml-auto flex items-center gap-1.5 transition-opacity", hydrated ? "opacity-100" : "opacity-0")}>
+        <div className={cn("ml-auto flex items-center gap-1 transition-opacity sm:gap-1.5", hydrated ? "opacity-100" : "opacity-0")}>
           <FocusPill />
           <span
             title={`${days} Tage Streak`}
             className={cn(
-              "inline-flex h-8 items-center gap-1 rounded-full px-2.5 text-sm font-semibold",
+              "inline-flex h-9 items-center gap-1 rounded-full px-2.5 text-sm font-semibold sm:h-8",
               days > 0 ? "bg-warn-soft text-flame" : "text-muted",
             )}
           >
@@ -42,7 +42,7 @@ export function Header() {
           </span>
           <span
             title={`${lvl.into} / ${lvl.needed} XP bis Level ${lvl.level + 1}`}
-            className="relative inline-flex h-8 items-center gap-2 overflow-hidden rounded-full border border-line bg-surface pl-2.5 pr-3 text-sm font-semibold"
+            className="relative inline-flex h-9 items-center gap-2 overflow-hidden sm:h-8 rounded-full border border-line bg-surface pl-2.5 pr-3 text-sm font-semibold"
           >
             <span className="whitespace-nowrap text-accent">Lv {lvl.level}</span>
             <span className="hidden text-muted sm:inline">{xp} XP</span>
@@ -56,14 +56,14 @@ export function Header() {
             href="/leaderboard"
             aria-label="Rangliste"
             title="Rangliste"
-            className="grid size-8 place-items-center rounded-full text-ink-2 hover:bg-surface-2"
+            className="grid size-9 place-items-center rounded-full sm:size-8 text-ink-2 hover:bg-surface-2"
           >
             <Trophy className="size-4" />
           </Link>
           <Link
             href="/settings"
             aria-label="Einstellungen"
-            className="grid size-8 place-items-center rounded-full text-ink-2 hover:bg-surface-2"
+            className="grid size-9 place-items-center rounded-full sm:size-8 text-ink-2 hover:bg-surface-2"
           >
             <Settings className="size-4" />
           </Link>
@@ -89,7 +89,7 @@ function SyncBadge() {
       title={label}
       aria-label={label}
       className={cn(
-        "grid size-8 place-items-center rounded-full hover:bg-surface-2",
+        "grid size-9 place-items-center rounded-full sm:size-8 hover:bg-surface-2",
         // Auf dem Handy nur zeigen, wenn etwas nicht stimmt – die Leiste ist sonst zu voll
         status === "idle" || status === "syncing" ? "hidden text-ink-2 sm:grid" : "text-warn",
       )}
@@ -137,7 +137,7 @@ function ThemeToggle() {
       onClick={() => applyTheme(next)}
       aria-label={`Farbschema: ${label}`}
       title={`Farbschema: ${label}`}
-      className="grid size-8 place-items-center rounded-full text-ink-2 hover:bg-surface-2"
+      className="grid size-9 place-items-center rounded-full sm:size-8 text-ink-2 hover:bg-surface-2"
     >
       <Icon className="size-4" />
     </button>

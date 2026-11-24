@@ -141,15 +141,15 @@ export function FocusCard({ href }: { href?: string }) {
     <section className="card relative overflow-clip p-5 sm:p-6">
       <div aria-hidden className="focus-gradient focus-glow pointer-events-none absolute -right-24 -top-28 size-64 rounded-full opacity-25 blur-3xl" />
       <div className="relative flex flex-wrap items-center gap-4 sm:gap-5">
-        <div className="focus-gradient grid size-14 shrink-0 place-items-center rounded-2xl text-white shadow-[0_8px_24px_-6px_rgb(176_74_224/0.55)]">
-          <Zap className="size-7" fill="currentColor" />
+        <div className="focus-gradient grid size-12 shrink-0 place-items-center rounded-2xl text-white shadow-[0_8px_24px_-6px_rgb(176_74_224/0.55)] sm:size-14">
+          <Zap className="size-6 sm:size-7" fill="currentColor" />
         </div>
-        <div className="min-w-[14rem] flex-1">
+        <div className="min-w-[12rem] flex-1">
           <p className="eyebrow">Fokus-Stunde · 1× pro Woche</p>
-          <h2 className="display mt-1 text-2xl">
+          <h2 className="display mt-1 text-xl sm:text-2xl">
             60 Minuten <span className="focus-text">doppelte XP</span>
           </h2>
-          <p className="mt-1 text-sm text-muted">
+          <p className="mt-1 text-sm text-muted max-sm:hidden">
             Fragen, Karten, Blitzrunden und Tests zählen doppelt – auch in der Wochenliga.
           </p>
         </div>
@@ -211,7 +211,7 @@ export function FocusPill() {
     <Link
       href="/"
       title={`Fokus-Stunde: doppelte XP bis ${time(f.endsAt)} Uhr`}
-      className="focus-border inline-flex h-8 items-center gap-1 rounded-full px-2.5 text-sm font-bold [--focus-fill:var(--bg)]"
+      className="focus-border inline-flex h-9 items-center sm:h-8 gap-1 rounded-full px-2.5 text-sm font-bold [--focus-fill:var(--bg)]"
     >
       <Zap className="size-3.5 text-flame" fill="currentColor" />
       <span className="focus-text">{FOCUS_MULTIPLIER}×</span>

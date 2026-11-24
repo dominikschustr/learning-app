@@ -71,7 +71,7 @@ export function ProgressRing({
 
 export function Bar({ value, color = "var(--accent)", className }: { value: number; color?: string; className?: string }) {
   return (
-    <div className={cn("h-2 w-full overflow-hidden rounded-full bg-surface-2", className)}>
+    <div className={cn("h-2 w-full overflow-hidden rounded-full bg-line/70", className)}>
       <div
         className="h-full rounded-full"
         style={{
