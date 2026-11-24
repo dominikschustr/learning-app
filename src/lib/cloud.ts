@@ -122,6 +122,8 @@ function fromFields(id: string, f: Record<string, Value>): Entry | null {
     weekXp: f.weekXp ? int("weekXp") : 0,
     week: str("week") ?? null,
     lastWeekXp: f.lastWeekXp ? int("lastWeekXp") : 0,
+    wins: f.wins ? int("wins") || 0 : 0,
+    focusUntil: f.focusUntil ? int("focusUntil") || 0 : 0,
     at: Date.parse(f.at?.timestampValue ?? "") || 0,
   };
   return e.name && [e.xp, e.today, e.goal, e.streak].every(Number.isFinite) ? e : null;
@@ -147,9 +149,9 @@ export async function userList(token: string): Promise<Entry[]> {
 /** Eigenen Eintrag (Name + Stand) schreiben. */
 /**
  * legacy: ohne Wochenfelder melden – für Firestore-Regeln, die sie noch nicht kennen; "lastWeek": nur ohne
- * `lastWeekXp` (Regeln mit Wochenliga, aber noch ohne Vorwoche).
+ * `lastWeekXp` (Regeln mit Wochenliga, aber noch ohne Vorwoche); "extras": ohne `wins`/`focusUntil`.
  */
-export async function userPut(uid: string, token: string, stats: Stats, legacy: boolean | "lastWeek" = false): Promise<void> {
+export async function userPut(uid: string, token: string, stats: Stats, legacy: boolean | "lastWeek" | "extras" = false): Promise<void> {
   const res = await call(token, "POST", `${firebaseSettings().root}:commit`, {}, {
     writes: [
       {
@@ -169,7 +171,10 @@ export async function userPut(uid: string, token: string, stats: Stats, legacy: 
                   weekXp: { integerValue: String(stats.weekXp) },
                   week: stats.week ? { stringValue: stats.week } : { nullValue: null },
                 }),
-            ...(legacy ? {} : { lastWeekXp: { integerValue: String(stats.lastWeekXp) } }),
+            ...(legacy && legacy !== "extras" ? {} : { lastWeekXp: { integerValue: String(stats.lastWeekXp) } }),
+            ...(legacy
+              ? {}
+              : { wins: { integerValue: String(stats.wins) }, focusUntil: { integerValue: String(stats.focusUntil) } }),
           },
         },
         updateTransforms: [{ fieldPath: "at", setToServerValue: "REQUEST_TIME" }],

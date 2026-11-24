@@ -66,15 +66,12 @@ async function publishOnce() {
   const token = await getIdToken();
   // Firestore-Regeln, die neuere Felder noch nicht kennen, lehnen sie ab → schrittweise ohne sie melden
   const denied = (e: unknown) => e instanceof CloudError && e.status === 403;
-  try {
-    await userPut(session.uid, token, stats);
-  } catch (e) {
-    if (!denied(e)) throw e;
+  for (const legacy of [false, "extras", "lastWeek", true] as const) {
     try {
-      await userPut(session.uid, token, stats, "lastWeek");
-    } catch (e2) {
-      if (!denied(e2)) throw e2;
-      await userPut(session.uid, token, stats, true);
+      await userPut(session.uid, token, stats, legacy);
+      break;
+    } catch (e) {
+      if (!denied(e) || legacy === true) throw e;
     }
   }
   writePublished({ uid: session.uid, payload });
@@ -119,6 +116,8 @@ export function startAutoPublish(): () => void {
     if (s.xp !== prev.xp || s.activity !== prev.activity || s.dailyGoal !== prev.dailyGoal || s.streak !== prev.streak) {
       schedule(60_000);
     }
+    // Fokus-Stunde gestartet oder Wochenprämie abgeholt → gleich melden (2×-Abzeichen, Pokale)
+    if (s.focus !== prev.focus || s.weekly !== prev.weekly) schedule(0);
   });
   // Anmelden → erst synchronisieren (sonst würde ein Gerät mit altem Stand die Rangliste zurücksetzen),
   // Umbenennen → gleich melden

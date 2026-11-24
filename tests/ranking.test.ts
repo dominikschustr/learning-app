@@ -1,10 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { lastWeekWinners, rankEntries, StatsSchema, statsFrom, type Entry } from "@/lib/ranking";
+import { lastWeekResult, lastWeekWinners, leagueWins, podiumPrize, rankEntries, StatsSchema, statsFrom, type Entry } from "@/lib/ranking";
+import { FOCUS_MS } from "@/lib/focus";
+import { useApp } from "@/lib/store";
+import { addDays } from "@/lib/utils";
 
 const NOW = new Date(2026, 9, 9, 12).getTime();
 
 function entry(id: string, patch: Partial<Entry> = {}): Entry {
-  return { id, name: id, xp: 0, today: 0, day: "2026-10-09", goal: 30, streak: 0, streakDay: null, weekXp: 0, week: null, lastWeekXp: 0, at: NOW, ...patch };
+  return { id, name: id, xp: 0, today: 0, day: "2026-10-09", goal: 30, streak: 0, streakDay: null, weekXp: 0, week: null, lastWeekXp: 0, wins: 0, focusUntil: 0, at: NOW, ...patch };
 }
 
 describe("rankEntries", () => {
@@ -57,7 +60,7 @@ describe("Ranglisten-Meldung", () => {
       "  Anna ",
       NOW,
     );
-    expect(stats).toEqual({ name: "  Anna ", xp: 123, today: 7, day: "2026-10-09", goal: 20, streak: 4, streakDay: "2026-10-09", weekXp: 0, week: "2026-10-05", lastWeekXp: 0 });
+    expect(stats).toEqual({ name: "  Anna ", xp: 123, today: 7, day: "2026-10-09", goal: 20, streak: 4, streakDay: "2026-10-09", weekXp: 0, week: "2026-10-05", lastWeekXp: 0, wins: 0, focusUntil: 0 });
     expect(StatsSchema.parse(stats).name).toBe("Anna");
   });
 
@@ -171,5 +174,47 @@ describe("Wochenliga", () => {
     expect(result.xp).toBe(300);
     expect(result.winners.map((e) => e.id)).toEqual(["anna"]);
     expect(lastWeekWinners([entry("x", { week: "2026-11-02" })], monday).winners).toEqual([]);
+  });
+});
+
+describe("Wochenprämie", () => {
+  // NOW ist Freitag, 9.10.2026 → Vorwoche beginnt Montag, 28.9.
+  const last = (id: string, xp: number) => entry(id, { week: "2026-09-28", weekXp: xp });
+
+  it("vergibt Prämien nur, wenn hinter dir noch jemand liegt", () => {
+    expect([1, 2, 3, 4].map((p) => podiumPrize(p, 5))).toEqual([150, 100, 50, 0]);
+    expect([1, 2].map((p) => podiumPrize(p, 2))).toEqual([150, 0]);
+    expect(podiumPrize(1, 1)).toBe(0);
+  });
+
+  it("bestimmt den eigenen Platz der Vorwoche, auch aus lastWeekXp und bei Gleichstand", () => {
+    const entries = [last("a", 300), last("b", 200), entry("c", { week: "2026-10-05", weekXp: 50, lastWeekXp: 200 }), last("d", 10)];
+    expect(lastWeekResult(entries, "a", NOW)).toMatchObject({ week: "2026-09-28", place: 1, active: 4, prize: 150 });
+    expect(lastWeekResult(entries, "c", NOW)).toMatchObject({ place: 2, xp: 200, prize: 100 });
+    expect(lastWeekResult(entries, "b", NOW).place).toBe(2);
+    expect(lastWeekResult(entries, "d", NOW)).toMatchObject({ place: 4, prize: 0 });
+    expect(lastWeekResult([...entries, entry("e")], "e", NOW)).toMatchObject({ place: null, prize: 0 });
+  });
+
+  it("meldet Pokale und eine laufende Fokus-Stunde", () => {
+    const base = { xp: 0, activity: {}, dailyGoal: 30, streak: { current: 0, lastDay: null } };
+    const weekly = { "2026-09-21": ["podium-1"], "2026-09-28": ["podium-2"], "2026-10-05": ["all"] };
+    expect(leagueWins(weekly)).toBe(1);
+    const start = NOW - 10 * 60_000;
+    const s = statsFrom({ ...base, weekly, focus: { "2026-10-05": { start, xp: 0 } } }, "A", NOW);
+    expect(s).toMatchObject({ wins: 1, focusUntil: start + FOCUS_MS });
+    expect(statsFrom({ ...base, focus: { "2026-10-05": { start, xp: 0 } } }, "A", start + FOCUS_MS).focusUntil).toBe(0);
+  });
+
+  it("lässt die Prämie nur einmal und nur für die Vorwoche abholen", () => {
+    useApp.getState().reset();
+    const thisWeek = weekKey(Date.now());
+    const week = weekKey(addDays(Date.now(), -7));
+    expect(useApp.getState().claimPodium(thisWeek, 1, 150)).toBeNull();
+    expect(useApp.getState().claimPodium(week, 2, 150)).toBeNull();
+    expect(useApp.getState().claimPodium(week, 1, 150)?.xp).toBe(150);
+    expect(useApp.getState().claimPodium(week, 1, 150)).toBeNull();
+    expect(useApp.getState().weekly[week]).toEqual(["podium-1"]);
+    expect(useApp.getState().achievements["league-win"]).toBeTruthy();
   });
 });

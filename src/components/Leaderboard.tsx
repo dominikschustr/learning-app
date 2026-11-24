@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDown, ArrowUp, CalendarClock, Crown, Flame, Info, RefreshCw, Swords, Trophy, Users } from "lucide-react";
+import { ArrowDown, ArrowUp, CalendarClock, Crown, Flame, Gift, Info, RefreshCw, Swords, Trophy, Users, Zap } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { titleFor } from "@/lib/gamification";
@@ -9,9 +9,13 @@ import { useAuth } from "@/lib/auth";
 import { loadBoard, useBoard } from "@/lib/leaderboard";
 import {
   duel,
+  lastWeekResult,
   leagueFor,
+  LIVE_MS,
   movement,
   overtakes,
+  podiumPrize,
+  PODIUM_PRIZES,
   rankEntries,
   snapshot,
   sortValue,
@@ -27,6 +31,7 @@ import { useApp, useHydrated } from "@/lib/store";
 import { announce, celebrate, useToasts } from "@/lib/toast";
 import { useNow } from "@/lib/useNow";
 import { alpha, cn, dayKey, nextWeekStart, weekKey } from "@/lib/utils";
+import { useFocus } from "./FocusHour";
 import { Bar, Button, Chip, Skeleton } from "./ui";
 
 const SORTS: { id: SortBy; label: string }[] = [
@@ -126,14 +131,19 @@ function LeaderboardInner() {
     writeSeen({ day: dayKey(t), week: weekKey(t), ranks: Object.fromEntries(SORTS.map((o) => [o.id, snapshot(bySort[o.id])])) });
 
     const { push } = useToasts.getState();
-    const { passed, passedBy } = overtakes(prev?.ranks.xp ?? null, bySort.xp, session.uid);
+    // Überholt: zuerst in der Wochenliga (dort wird gerade gekämpft), sonst in der Level-Rangliste
+    const week = overtakes(prev?.ranks.week ?? null, bySort.week, session.uid);
+    const level = overtakes(prev?.ranks.xp ?? null, bySort.xp, session.uid);
+    const [o, list, label] =
+      week.passed.length || week.passedBy.length ? [week, bySort.week, "der Wochenliga"] : [level, bySort.xp, "der Level-Rangliste"];
+    const { passed, passedBy } = o;
     if (passed.length) {
-      const me = bySort.xp.find((r) => r.id === session.uid)!;
-      push({ kind: "rank", icon: "rocket", title: `Du hast ${listNames(passed)} überholt!`, body: `Jetzt Platz ${me.rank} der Level-Rangliste.` });
+      const me = list.find((r) => r.id === session.uid)!;
+      push({ kind: "rank", icon: "rocket", title: `Du hast ${listNames(passed)} überholt!`, body: `Jetzt Platz ${me.rank} ${label}.` });
       celebrate();
     }
     if (passedBy.length) {
-      push({ kind: "rank", icon: "swords", title: `${listNames(passedBy)} ${passedBy.length === 1 ? "hat" : "haben"} dich überholt`, body: "Hol dir deinen Platz zurück – jede richtige Antwort bringt 10 XP." });
+      push({ kind: "rank", icon: "swords", title: `${listNames(passedBy)} ${passedBy.length === 1 ? "hat" : "haben"} dich überholt`, body: `Hol dir deinen Platz ${label} zurück – jede richtige Antwort bringt 10 XP.` });
     }
 
     const unlock: string[] = [];
@@ -148,6 +158,7 @@ function LeaderboardInner() {
     if (fresh.length) announce({ xp: 0, levelUp: null, goalReached: false, achievements: fresh });
   }, [board.loadedAt, board.entries, session]);
 
+  const weekActive = rows.filter((r) => r.weekNow > 0).length;
   const showPodium = rows.length >= 3 && rows.slice(0, 3).some((r) => sortValue(r, by) > 0);
 
   return (
@@ -196,6 +207,7 @@ function LeaderboardInner() {
 
       {board.error && <p className="text-sm text-bad">{board.error}</p>}
 
+      {myId && board.loadedAt && <PrizeCard rows={rows} myId={myId} now={now} />}
       {by === "week" && <WeekCard rows={rows} now={now} myId={myId} />}
       {by === "today" && <TeamCard rows={rows} />}
       {myId && rows.length > 1 && <DuelCard rows={rows} myId={myId} by={by} />}
@@ -219,7 +231,14 @@ function LeaderboardInner() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: Math.min(i, 10) * 0.03 }}
             >
-              <RowView row={r} by={by} me={r.id === myId} now={now} moved={movement(prevSeen?.ranks[by] ?? null, r)} />
+              <RowView
+                row={r}
+                by={by}
+                me={r.id === myId}
+                now={now}
+                moved={movement(prevSeen?.ranks[by] ?? null, r)}
+                prize={by === "week" && r.weekNow > 0 ? podiumPrize(r.rank, weekActive) : 0}
+              />
             </motion.li>
           ))}
         </ol>
@@ -232,6 +251,11 @@ function LeaderboardInner() {
         <ul className="mt-2 max-w-prose list-disc space-y-1 pl-5">
           <li>Heute: Fragen und Karten seit Mitternacht · Streak: Lerntage in Folge</li>
           <li>Woche: XP von Montag bis Sonntag, startet montags neu</li>
+          <li>
+            Wochenprämie: Platz 1–3 bekommen {PODIUM_PRIZES.join(" / ")} Bonus-XP, abzuholen in der Woche danach (hinter dir muss
+            noch jemand liegen) · Pokal = gewonnene Wochenligen
+          </li>
+          <li>Grüner Punkt: hat in den letzten 10 Minuten gelernt · 2×: gerade in der Fokus-Stunde</li>
           <li>Liga nach Level: Bronze 1, Silber 3, Gold 5, Platin 8, Diamant 12, Legende 17</li>
           <li>Pfeile: Auf- und Abstiege seit deinem letzten Besuch</li>
         </ul>
@@ -260,8 +284,10 @@ function lastSeen(at: number, now: number): string | null {
   return days === 1 ? "gestern aktiv" : `vor ${days} Tagen aktiv`;
 }
 
-function RowView({ row, by, me, now, moved }: { row: Row; by: SortBy; me: boolean; now: number; moved?: number }) {
+function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me: boolean; now: number; moved?: number; prize: number }) {
   const seen = me ? null : lastSeen(row.at, now);
+  const live = !me && now - row.at < LIVE_MS;
+  const focus = row.focusUntil > now;
   const goalDone = row.todayNow >= row.goal;
   const league = leagueFor(row.level);
   const milestone = streakMilestone(row.streakNow);
@@ -274,7 +300,13 @@ function RowView({ row, by, me, now, moved }: { row: Row; by: SortBy; me: boolea
       </div>
       <div className="min-w-0 flex-1">
         <p className="flex items-center gap-2">
-          <span className="truncate font-semibold">{row.name}</span>
+          {live && (
+            <span title="Gerade aktiv" aria-label="Gerade aktiv" className="relative flex size-2 shrink-0">
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-good opacity-60" />
+              <span className="relative inline-flex size-2 rounded-full bg-good" />
+            </span>
+          )}
+          <span className="min-w-[3rem] truncate font-semibold">{row.name}</span>
           {me && <Chip className="border-accent/30 text-accent">Du</Chip>}
           {goalDone && (
             <span title="Tagesziel geschafft" aria-label="Tagesziel geschafft" className="text-warn">
@@ -292,6 +324,23 @@ function RowView({ row, by, me, now, moved }: { row: Row; by: SortBy; me: boolea
           )}
         </p>
         <p className="flex items-center gap-1.5 truncate text-xs text-muted">
+          {focus && (
+            <span
+              title="In der Fokus-Stunde: doppelte XP"
+              className="focus-gradient inline-flex shrink-0 items-center gap-0.5 rounded-full px-1.5 py-px text-[11px] font-bold text-white"
+            >
+              <Zap className="size-3" fill="currentColor" />2×
+            </span>
+          )}
+          {row.wins > 0 && (
+            <span
+              title={`${row.wins}× Wochensieger`}
+              className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-warn-soft px-1.5 py-px text-[11px] font-bold tabular-nums text-warn"
+            >
+              <Trophy className="size-3" fill="currentColor" />
+              {row.wins > 1 && row.wins}
+            </span>
+          )}
           <span
             className="inline-flex shrink-0 items-center gap-1 rounded-full px-1.5 py-px text-[11px] font-semibold"
             style={{ background: alpha(league.color, 0.14), color: league.color }}
@@ -308,6 +357,14 @@ function RowView({ row, by, me, now, moved }: { row: Row; by: SortBy; me: boolea
       </div>
 
       <div className="flex shrink-0 items-center gap-3 text-right sm:gap-5">
+        {prize > 0 && (
+          <span
+            title={`Wochenprämie für Platz ${row.rank}, wenn es bis Sonntag so bleibt`}
+            className="hidden shrink-0 items-center gap-1 rounded-full border border-line px-2 py-0.5 text-[11px] font-semibold tabular-nums text-ink-2 min-[420px]:inline-flex"
+          >
+            <Gift className="size-3" />+{prize}
+          </span>
+        )}
         <Stat label="Woche" active={by === "week"} value={String(row.weekNow)} sub="XP Woche" />
         <Stat label="Level" active={by === "xp"} value={`Lv ${row.level}`} sub={`${row.xp} XP`} />
         <Stat
@@ -419,11 +476,15 @@ function Podium({ rows, by, myId }: { rows: Row[]; by: SortBy; myId: string | nu
 
 /** Wer liegt direkt vor dir, wer direkt hinter dir? */
 function DuelCard({ rows, myId, by }: { rows: Row[]; myId: string; by: SortBy }) {
+  const focus = useFocus();
   const d = duel(rows, myId, by);
   const me = rows.find((r) => r.id === myId);
   if (!d || !me) return null;
   const mine = sortValue(me, by);
-  const hint = (by === "xp" || by === "week") && d.ahead ? ` – etwa ${Math.ceil(d.ahead.gap / 10)} richtige Antworten` : "";
+  const xpBased = by === "xp" || by === "week";
+  const boost = focus?.status === "active" ? 2 : 1;
+  const answers = d.ahead ? Math.ceil(d.ahead.gap / (10 * boost)) : 0;
+  const hint = xpBased && d.ahead ? ` – etwa ${answers} richtige Antwort${answers === 1 ? "" : "en"}${boost > 1 ? " mit 2×" : ""}` : "";
   return (
     <section className="card space-y-3 px-5 py-4">
       <p className="eyebrow flex items-center gap-1.5">
@@ -445,6 +506,15 @@ function DuelCard({ rows, myId, by }: { rows: Row[]; myId: string; by: SortBy })
               {" "}Vorsprung <span className="font-bold tabular-nums">{unit(by, d.behind.gap)}</span> vor {d.behind.row.name}.
             </>
           ) : null}
+        </p>
+      )}
+      {xpBased && d.ahead && focus?.status === "ready" && d.ahead.gap > 20 && (
+        <p className="text-xs text-muted">
+          <Zap className="inline size-3 text-flame" fill="currentColor" /> Mit deiner{" "}
+          <Link href="/" className="font-semibold text-ink-2 underline-offset-2 hover:underline">
+            Fokus-Stunde
+          </Link>{" "}
+          reichen etwa {Math.ceil(d.ahead.gap / 20)} richtige Antworten.
         </p>
       )}
       {d.ahead && d.behind && (
@@ -530,6 +600,81 @@ function WeekCard({ rows, now, myId }: { rows: Row[]; now: number; myId: string 
             : "Du hast diese Woche noch keine XP."}
         </p>
       )}
+      <div className="mt-3 flex flex-wrap items-center gap-1.5 text-xs">
+        <span className="text-muted">Prämie am Sonntag:</span>
+        {PODIUM_PRIZES.map((xp, i) => (
+          <span
+            key={xp}
+            className="inline-flex items-center gap-1 rounded-full px-2 py-0.5 font-semibold tabular-nums"
+            style={{ background: alpha(MEDALS[i], 0.16), color: MEDALS[i] }}
+          >
+            {i + 1}. +{xp} XP
+          </span>
+        ))}
+      </div>
     </section>
+  );
+}
+
+/** Prämie der Wochenliga der Vorwoche: Platz 1–3 holen sich hier ihre Bonus-XP ab. */
+function PrizeCard({ rows, myId, now }: { rows: Row[]; myId: string; now: number }) {
+  const weekly = useApp((a) => a.weekly);
+  const r = lastWeekResult(rows, myId, now);
+  const claimed = (weekly[r.week] ?? []).some((id) => id.startsWith("podium-"));
+  if (!r.place || !r.prize || claimed) return null;
+  const color = MEDALS[r.place - 1];
+
+  const claim = () => {
+    const event = useApp.getState().claimPodium(r.week, r.place!, r.prize);
+    if (!event) return;
+    useToasts.getState().push({
+      kind: "goal",
+      eyebrow: "Wochenliga",
+      icon: r.place === 1 ? "trophy" : "medal",
+      title: `+${event.xp} Bonus-XP`,
+      body: r.place === 1 ? "Siegerprämie – der Pokal steht jetzt neben deinem Namen." : `Prämie für Platz ${r.place} der letzten Woche.`,
+    });
+    celebrate(r.place === 1);
+    announce({ ...event, goalReached: false });
+  };
+
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="card relative flex items-center gap-4 overflow-clip px-5 py-4"
+      style={{ borderColor: alpha(color, 0.45) }}
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{ background: `linear-gradient(100deg, ${alpha(color, 0.2)}, ${alpha(color, 0.06)} 45%, transparent 75%)` }}
+      />
+      <motion.span
+        initial={{ rotate: -20, scale: 0.6 }}
+        animate={{ rotate: 0, scale: 1 }}
+        transition={{ type: "spring", stiffness: 260, damping: 14 }}
+        className="relative grid size-12 shrink-0 place-items-center rounded-2xl text-white"
+        style={{ background: color, boxShadow: `0 8px 22px -8px ${alpha(color, 0.8)}` }}
+      >
+        <Trophy className="size-6" fill="currentColor" />
+      </motion.span>
+      <div className="relative min-w-0 flex-1">
+        <p className="eyebrow">Wochenliga letzte Woche</p>
+        <p className="font-semibold">
+          {r.place === 1 ? "Du hast gewonnen!" : `Platz ${r.place} von ${r.active}`}{" "}
+          <span className="font-normal text-muted">· {r.xp.toLocaleString("de-DE")} XP</span>
+        </p>
+      </div>
+      <motion.button
+        type="button"
+        onClick={claim}
+        animate={{ scale: [1, 1.05, 1] }}
+        transition={{ repeat: Infinity, duration: 1.8 }}
+        className="relative h-10 shrink-0 rounded-full bg-ink px-4 text-sm font-semibold text-bg"
+      >
+        +{r.prize} XP holen
+      </motion.button>
+    </motion.section>
   );
 }

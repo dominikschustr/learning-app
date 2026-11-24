@@ -6,9 +6,10 @@ import { createJSONStorage, persist } from "zustand/middleware";
 import { addFocusXp, bestFocusXp, focusMultiplier, startFocusRun, type FocusLog } from "./focus";
 import { ACHIEVEMENTS, levelInfo, type AchievementDef } from "./gamification";
 import { claimableXp, completedWeeks, weeklyState } from "./weekly";
+import { leagueWins, PODIUM_PRIZES, podiumId } from "./ranking";
 import { mergeSync, totals, type Counter, type ExamDate, type Mark, type SyncData } from "./merge";
 import { review, type ItemState } from "./srs";
-import { addDays, dayKey, itemKey, randomId } from "./utils";
+import { addDays, dayKey, itemKey, randomId, weekKey } from "./utils";
 
 export type ExamAnswer =
   | { kind: "mc"; selected: string[] }
@@ -126,6 +127,8 @@ type Actions = {
   startFocus(): boolean;
   /** Holt die Bonus-XP einer erledigten Wochenaufgabe (oder den Wochenbonus "all") ab; null = nichts abzuholen. */
   claimWeekly(id: string): AnswerEvent | null;
+  /** Holt die Prämie der Wochenliga der Vorwoche ab (Platz 1–3); null, wenn schon abgeholt oder ungültig. */
+  claimPodium(week: string, place: number, prize: number): AnswerEvent | null;
   /** Übernimmt einen zusammengeführten Stand aus der Synchronisation. */
   applySync(data: SyncData<ExamRecord>): void;
   importData(data: unknown): boolean;
@@ -210,6 +213,8 @@ export function achievementProgress(d: AchievementInput, now: number): Record<st
     "level-15": levelInfo(d.xp).level,
     "weekly-1": completedWeeks(d.weekly),
     "weekly-4": completedWeeks(d.weekly),
+    "league-win": leagueWins(d.weekly),
+    "league-win-3": leagueWins(d.weekly),
     ...Object.fromEntries(BOARD_ACHIEVEMENTS.map((id) => [id, d.achievements?.[id] ? 1 : 0])),
   };
 }
@@ -439,6 +444,16 @@ export const useApp = create<AppState>()(
           if (xp === null) return null;
           const weekly = { ...s.weekly, [state.week]: [...(s.weekly[state.week] ?? []), id].sort() };
           return commit({ weekly }, xp, 0, false);
+        },
+
+        claimPodium(week, place, prize) {
+          const s = get();
+          const now = Date.now();
+          const max = PODIUM_PRIZES[place - 1];
+          const done = (s.weekly[week] ?? []).some((id) => id.startsWith("podium-"));
+          if (week !== weekKey(addDays(now, -7)) || !max || prize <= 0 || prize > max || done) return null;
+          const weekly = { ...s.weekly, [week]: [...(s.weekly[week] ?? []), podiumId(place)].sort() };
+          return commit({ weekly }, prize, 0, false);
         },
 
         importData(data) {

@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { levelInfo } from "./gamification";
 import { weekXp, type Counter } from "./merge";
+import { activeFocus, FOCUS_MS, type FocusLog } from "./focus";
 import { addDays, dayKey, weekKey } from "./utils";
 
 /**
@@ -29,6 +30,10 @@ export const StatsSchema = z.object({
   week: day.nullable().default(null),
   /** XP der Woche vor `week` – damit der Wochensieger auch feststeht, wenn alle schon in der neuen Woche gemeldet haben */
   lastWeekXp: z.number().int().min(0).max(10_000_000).default(0),
+  /** gewonnene Wochenligen (abgeholte Siegerprämien) */
+  wins: z.number().int().min(0).max(10_000).default(0),
+  /** Ende der laufenden Fokus-Stunde (ms), 0 = keine */
+  focusUntil: z.number().int().min(0).max(1e13).default(0),
 });
 
 export type Stats = z.infer<typeof StatsSchema>;
@@ -55,6 +60,8 @@ export function statsFrom(
     dailyGoal: number;
     streak: { current: number; lastDay: string | null };
     counters?: Record<string, Counter>;
+    focus?: FocusLog;
+    weekly?: Record<string, string[]>;
   },
   name: string,
   now: number,
@@ -71,7 +78,19 @@ export function statsFrom(
     weekXp: weekXp(s.counters ?? {}, now),
     week: weekKey(now),
     lastWeekXp: weekXp(s.counters ?? {}, addDays(now, -7).getTime()),
+    wins: leagueWins(s.weekly),
+    focusUntil: (() => {
+      const f = activeFocus(s.focus, now);
+      return f ? f.run.start + FOCUS_MS : 0;
+    })(),
   };
+}
+
+/** XP einer Person in der Vorwoche von `now` (siehe lastWeekWinners). */
+function lastWeekXp(now: number) {
+  const week = weekKey(addDays(now, -7));
+  const thisWeek = weekKey(now);
+  return { week, xpOf: (e: Entry) => (e.week === week ? e.weekXp : e.week === thisWeek ? e.lastWeekXp : 0) };
 }
 
 /**
@@ -79,12 +98,52 @@ export function statsFrom(
  * Wochen-XP der Vorwoche: aus `weekXp`, wenn jemand zuletzt in der Vorwoche gemeldet hat, sonst aus `lastWeekXp`.
  */
 export function lastWeekWinners(entries: Entry[], now: number): { week: string; xp: number; winners: Entry[] } {
-  const week = weekKey(addDays(now, -7));
-  const thisWeek = weekKey(now);
-  const xpOf = (e: Entry) => (e.week === week ? e.weekXp : e.week === thisWeek ? e.lastWeekXp : 0);
+  const { week, xpOf } = lastWeekXp(now);
   const xp = Math.max(0, ...entries.map(xpOf));
   return { week, xp, winners: xp > 0 ? entries.filter((e) => xpOf(e) === xp).sort((a, b) => a.name.localeCompare(b.name, "de")) : [] };
 }
+
+/** Prämien der Wochenliga für Platz 1, 2, 3 (Bonus-XP, abholbar in der Woche danach). */
+export const PODIUM_PRIZES = [150, 100, 50] as const;
+
+/** Kennung der abgeholten Prämie im Wochen-Log (weekly[Woche]), z. B. "podium-1". */
+export const podiumId = (place: number) => `podium-${place}`;
+
+/**
+ * Prämie für einen Platz der Wochenliga bei `active` Personen mit XP in der Woche. Hinter dir muss
+ * mindestens eine Person liegen – allein gewinnt man nichts; zu zweit gibt es nur Platz 1.
+ */
+export function podiumPrize(place: number, active: number): number {
+  return place >= 1 && place <= Math.min(PODIUM_PRIZES.length, active - 1) ? PODIUM_PRIZES[place - 1] : 0;
+}
+
+/** Gewonnene Wochenligen: Wochen, in denen die Prämie für Platz 1 abgeholt wurde. */
+export function leagueWins(weekly: Record<string, string[]> | undefined): number {
+  return Object.values(weekly ?? {}).filter((ids) => ids.includes(podiumId(1))).length;
+}
+
+export type LastWeekResult = {
+  week: string;
+  /** Platz in der Vorwoche (gleiche XP teilen sich den Platz); null = keine XP in der Vorwoche */
+  place: number | null;
+  xp: number;
+  /** Personen mit XP in der Vorwoche */
+  active: number;
+  prize: number;
+};
+
+/** Eigenes Ergebnis der Wochenliga der Vorwoche – Grundlage für die Prämie. */
+export function lastWeekResult(entries: Entry[], myId: string, now: number): LastWeekResult {
+  const { week, xpOf } = lastWeekXp(now);
+  const xs = entries.map(xpOf).filter((x) => x > 0);
+  const me = entries.find((e) => e.id === myId);
+  const xp = me ? xpOf(me) : 0;
+  const place = xp > 0 ? xs.filter((x) => x > xp).length + 1 : null;
+  return { week, place, xp, active: xs.length, prize: place ? podiumPrize(place, xs.length) : 0 };
+}
+
+/** Kürzlich gemeldet – „gerade aktiv“ (gemeldet wird spätestens eine Minute nach dem Lernen). */
+export const LIVE_MS = 10 * 60_000;
 
 /** Sortiert und nummeriert; gleiche Werte teilen sich den Platz. */
 export function rankEntries(entries: Entry[], by: SortBy, now: number): Row[] {
