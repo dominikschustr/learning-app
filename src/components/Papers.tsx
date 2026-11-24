@@ -63,12 +63,12 @@ function partPoints(paper: Paper) {
   }));
 }
 
-/** „2 Nachbauten von Altklausuren · 3 neue Klausuren“ für die Fach-Übersicht. */
+/** „2 Altklausuren · 3 neue Klausuren“ für die Fach-Übersicht. */
 export function paperCountLabel(papers: { kind: Paper["origin"]["kind"] }[]): string {
   const alt = papers.filter((p) => p.kind === "altklausur").length;
   const neu = papers.length - alt;
   return [
-    alt && `${alt} ${alt === 1 ? "Nachbau einer Altklausur" : "Nachbauten von Altklausuren"}`,
+    alt && `${alt} ${alt === 1 ? "Altklausur" : "Altklausuren"}`,
     neu && `${neu} ${neu === 1 ? "neue Klausur" : "neue Klausuren"}`,
   ]
     .filter(Boolean)
@@ -188,7 +188,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
         if (!group.length) return null;
         return (
           <section key={kind} className="mt-10">
-            <h2 className="display text-2xl">{kind === "altklausur" ? "Nachbauten von Altklausuren" : "Neue Klausuren"}</h2>
+            <h2 className="display text-2xl">{kind === "altklausur" ? "Altklausuren" : "Neue Klausuren"}</h2>
             <p className="mt-1 text-sm text-muted">
               {kind === "altklausur"
                 ? "Gleicher Aufbau, gleiche Aufgaben und Punkte wie die Vorlage – in eigenen Worten."

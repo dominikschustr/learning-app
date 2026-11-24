@@ -1,7 +1,7 @@
 [
   {
     "id": "mock-revision",
-    "title": "Mock exam aus der Revision Session (Nachbau)",
+    "title": "Mock exam aus der Revision Session",
     "subtitle": "Die in der Vorlesung besprochene Probeklausur: A/B-Testing, Shopping-Center-Cluster, H&M-Regression, Conjoint Ralph × Fortnite.",
     "origin": {
       "kind": "altklausur",
