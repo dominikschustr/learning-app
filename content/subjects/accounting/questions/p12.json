@@ -176,8 +176,8 @@
     "case": "tannery-equity",
     "difficulty": 2,
     "verb": "calculate",
-    "prompt": "Prepare Sellier's consolidated balance sheet at 31 December N (equity method). Show the investment in associates, consolidated reserves, consolidated net income and total assets.",
-    "modelAnswer": "Investment under the equity method = cost + share of post-acquisition profits − dividends received = 42 + 35% × 20 − 35% × 8 = 42 + 7.0 − 2.8 = 46.2 (check: 35% × equity 112 = 39.2 + goodwill 7 = 46.2).\nAdjustment to Sellier's individual figures: investment 42 → 46.2 (+4.2).\nNet income: Sellier's individual income includes the dividend of 2.8 as financial income – eliminated (it reduces the investment instead) – and the share of the associate's net income 7.0 is added: 50 − 2.8 + 7.0 = 54.2.\nConsolidated reserves: 150 (no post-acquisition result yet at the start of N).\nTotal assets 584.2 = equity 304.2 (100 + 150 + 54.2, no non-controlling interests) + liabilities 280. All other lines are Sellier's own: the associate's assets and liabilities are NOT added line by line.",
+    "prompt": "Using the two individual balance sheets, prepare the consolidated balance sheet of the Sellier group at 31 December N with the equity method (all lines).",
+    "modelAnswer": "Investment under the equity method = cost + share of post-acquisition profits − dividends received = 42 + 35% × 20 − 35% × 8 = 42 + 7.0 − 2.8 = 46.2 (check: 35% × equity 112 = 39.2 + goodwill 7 = 46.2).\nAdjustment to Sellier's individual figures: investment 42 → 46.2 (+4.2).\nNet income: Sellier's individual income includes the dividend of 2.8 as financial income – eliminated (it reduces the investment instead) – and the share of the associate's net income 7.0 is added: 50 − 2.8 + 7.0 = 54.2.\nConsolidated reserves: 150 (no post-acquisition result yet at the start of N).\nTotal assets 584.2 = equity 304.2 (100 + 150 + 54.2, no non-controlling interests) + liabilities 280. All other lines are Sellier's own: the associate's assets and liabilities are NOT added line by line.\n\nConsolidated balance sheet 31/12/N: PPE 300 · Investments in associates 46.2 · Inventories 80 · Trade receivables 60 · Cash 98 · Total assets 584.2 | Share capital 100 · Consolidated reserves 150 · Consolidated net income 54.2 · Total equity 304.2 · Financial debt 200 · Trade payables 80 · Total 584.2.",
     "keyPoints": [
       "Investment in associates 46.2 (42 + 7.0 − 2.8)",
       "Dividend 2.8 eliminated from income",
@@ -187,11 +187,11 @@
     ],
     "results": [
       {
-        "label": "Investments in associates 31/12/N",
+        "label": "Investments in associates",
         "value": 46.2
       },
       {
-        "label": "Consolidated reserves 31/12/N",
+        "label": "Consolidated reserves",
         "value": 150
       },
       {
@@ -199,7 +199,11 @@
         "value": 54.2
       },
       {
-        "label": "Total assets 31/12/N",
+        "label": "Total equity",
+        "value": 304.2
+      },
+      {
+        "label": "Total assets",
         "value": 584.2
       }
     ],
@@ -322,7 +326,7 @@
       }
     ],
     "pitfalls": [
-      "Adding Tannerie's assets and liabilities line by line – that is full consolidation, used only with control.",
+      "Adding Tannerie's PPE, inventories, cash or debt to the group's lines – with the equity method only ONE line (investments in associates) changes; that is the difference to full consolidation.",
       "Keeping the dividend of 2.8 in consolidated income (it would be counted twice with the share of profit).",
       "Creating non-controlling interests – the equity method has none."
     ]
@@ -335,8 +339,8 @@
     "case": "tannery-equity",
     "difficulty": 3,
     "verb": "calculate",
-    "prompt": "Prepare Sellier's consolidated balance sheet at 31 December N+1 (equity method). Show the investment in associates, consolidated reserves, consolidated net income and total assets.",
-    "modelAnswer": "Investment at 31/12/N+1 = 46.2 + 35% × (−6) = 46.2 − 2.1 = 44.1 (check: 35% × 106 = 37.1 + goodwill 7 = 44.1). Adjustment vs cost: +2.1.\nConsolidated reserves = Sellier's individual reserves 180 + Sellier's share of the associate's retained post-acquisition results up to 1 January N+1 (7.0 − 2.8 = 4.2) = 184.2. (Sellier's reserves 180 = 150 + 50 − 20 dividend paid already include the 2.8 dividend received; the consolidated adjustment of N is carried forward: −2.8 + 7.0 = +4.2.)\nConsolidated net income N+1 = 60 + share of loss −2.1 = 57.9 (no dividend from the associate to eliminate).\nTotal assets = 640 + 2.1 = 642.1; equity 100 + 184.2 + 57.9 = 342.1; liabilities 300.",
+    "prompt": "Using the two individual balance sheets, prepare the consolidated balance sheet of the Sellier group at 31 December N+1 with the equity method (all lines).",
+    "modelAnswer": "Investment at 31/12/N+1 = 46.2 + 35% × (−6) = 46.2 − 2.1 = 44.1 (check: 35% × 106 = 37.1 + goodwill 7 = 44.1). Adjustment vs cost: +2.1.\nConsolidated reserves = Sellier's individual reserves 180 + Sellier's share of the associate's retained post-acquisition results up to 1 January N+1 (7.0 − 2.8 = 4.2) = 184.2. (Sellier's reserves 180 = 150 + 50 − 20 dividend paid already include the 2.8 dividend received; the consolidated adjustment of N is carried forward: −2.8 + 7.0 = +4.2.)\nConsolidated net income N+1 = 60 + share of loss −2.1 = 57.9 (no dividend from the associate to eliminate).\nTotal assets = 640 + 2.1 = 642.1; equity 100 + 184.2 + 57.9 = 342.1; liabilities 300.\n\nConsolidated balance sheet 31/12/N+1: PPE 320 · Investments in associates 44.1 · Inventories 90 · Trade receivables 70 · Cash 118 · Total assets 642.1 | Share capital 100 · Consolidated reserves 184.2 · Consolidated net income 57.9 · Total equity 342.1 · Financial debt 220 · Trade payables 80 · Total 642.1.",
     "keyPoints": [
       "Investment 44.1 (46.2 − 2.1)",
       "Reserves 184.2 = 180 + 4.2 carried forward from N",
@@ -346,11 +350,11 @@
     ],
     "results": [
       {
-        "label": "Investments in associates 31/12/N+1",
+        "label": "Investments in associates",
         "value": 44.1
       },
       {
-        "label": "Consolidated reserves 31/12/N+1",
+        "label": "Consolidated reserves",
         "value": 184.2
       },
       {
@@ -358,7 +362,11 @@
         "value": 57.9
       },
       {
-        "label": "Total assets 31/12/N+1",
+        "label": "Total equity",
+        "value": 342.1
+      },
+      {
+        "label": "Total assets",
         "value": 642.1
       }
     ],
@@ -482,6 +490,7 @@
       }
     ],
     "pitfalls": [
+      "Adding Tannerie's PPE, inventories, cash or debt to the group's lines – with the equity method only ONE line (investments in associates) changes; that is the difference to full consolidation.",
       "Forgetting to carry forward the N adjustment (+4.2) into consolidated reserves.",
       "Putting the whole +2.1 into net income of N+1.",
       "Restarting from cost 42 instead of the carrying amount at the end of N."

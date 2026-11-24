@@ -365,149 +365,159 @@
   },
   {
     "id": "tannery-equity",
-    "title": "Sellier SA and Tannerie Morel – consolidated balance sheet in N and N+1 (equity method)",
+    "title": "Parent and associate – consolidation with the equity method in N and N+1",
     "text": [
-      "On 1 January N, Sellier SA acquires 35% of the shares of Tannerie Morel for €42 million in cash. The investment gives Sellier two seats out of seven on the board; Sellier does not control Tannerie Morel. Sellier has no other subsidiaries or associates and prepares IFRS consolidated financial statements because of this investment.",
-      "On 1 January N, Tannerie Morel's identifiable assets and liabilities have a fair value equal to their carrying amount. Tannerie Morel reports a net income of €20 million in N and pays a dividend of €8 million in N (out of its reserves). In N+1 it reports a net loss of €6 million and pays no dividend. No impairment is necessary.",
-      "In its individual financial statements, Sellier carries the investment at cost (€42 million) and recognised the dividend received from Tannerie Morel in N as financial income. Sellier paid a dividend of €20 million to its own shareholders in N+1. Amounts in € millions."
+      "On 1 January N, the parent company Sellier SA acquires 35% of the shares of Tannerie Morel for €42 million in cash. The investment gives Sellier two seats out of seven on the board; Sellier does not control Tannerie Morel. Sellier has no other subsidiaries or associates.",
+      "On 1 January N, Tannerie Morel's equity amounts to €100 million (share capital 40, reserves 60); the fair value of its identifiable assets and liabilities is equal to their carrying amount. Tannerie Morel reports a net income of €20 million in N and pays a dividend of €8 million in N (out of its reserves). In N+1 it reports a net loss of €6 million and pays no dividend. No impairment is necessary.",
+      "In its individual balance sheet Sellier carries the investment at cost; the dividend received in N is included in Sellier's individual net income of N. Sellier paid a dividend of €20 million to its own shareholders in N+1. The individual balance sheets of both companies are given below (€ millions)."
     ],
     "tables": [
       {
-        "caption": "Sellier SA – individual balance sheet",
+        "caption": "Individual balance sheets at 31 December N",
         "head": [
           "",
-          "31/12/N",
-          "31/12/N+1"
+          "Sellier SA (parent)",
+          "Tannerie Morel (associate, 35%)"
         ],
         "rows": [
           [
             "Property, plant and equipment",
             "300",
-            "320"
+            "95"
           ],
           [
             "Investment in Tannerie Morel (at cost)",
             "42",
-            "42"
+            "—"
           ],
           [
             "Inventories",
             "80",
-            "90"
+            "30"
           ],
           [
             "Trade receivables",
             "60",
-            "70"
+            "20"
           ],
           [
             "Cash",
             "98",
-            "118"
+            "11"
           ],
           [
             "TOTAL ASSETS",
             "580",
-            "640"
+            "156"
           ],
           [
             "Share capital",
             "100",
-            "100"
-          ],
-          [
-            "Reserves",
-            "150",
-            "180"
-          ],
-          [
-            "Net income of the year",
-            "50",
-            "60"
-          ],
-          [
-            "Total equity",
-            "300",
-            "340"
-          ],
-          [
-            "Financial debt",
-            "200",
-            "220"
-          ],
-          [
-            "Trade payables",
-            "80",
-            "80"
-          ],
-          [
-            "TOTAL EQUITY AND LIABILITIES",
-            "580",
-            "640"
-          ]
-        ]
-      },
-      {
-        "caption": "Tannerie Morel – balance sheet",
-        "head": [
-          "",
-          "01/01/N",
-          "31/12/N",
-          "31/12/N+1"
-        ],
-        "rows": [
-          [
-            "Non-current assets",
-            "90",
-            "95",
-            "92"
-          ],
-          [
-            "Current assets",
-            "50",
-            "61",
-            "58"
-          ],
-          [
-            "TOTAL ASSETS",
-            "140",
-            "156",
-            "150"
-          ],
-          [
-            "Share capital",
-            "40",
-            "40",
             "40"
           ],
           [
             "Reserves",
-            "60",
-            "52",
+            "150",
+            "52"
+          ],
+          [
+            "Net income of the year",
+            "50",
+            "20"
+          ],
+          [
+            "Total equity",
+            "300",
+            "112"
+          ],
+          [
+            "Financial debt",
+            "200",
+            "24"
+          ],
+          [
+            "Trade payables",
+            "80",
+            "20"
+          ],
+          [
+            "TOTAL EQUITY AND LIABILITIES",
+            "580",
+            "156"
+          ]
+        ]
+      },
+      {
+        "caption": "Individual balance sheets at 31 December N+1",
+        "head": [
+          "",
+          "Sellier SA (parent)",
+          "Tannerie Morel (associate, 35%)"
+        ],
+        "rows": [
+          [
+            "Property, plant and equipment",
+            "320",
+            "92"
+          ],
+          [
+            "Investment in Tannerie Morel (at cost)",
+            "42",
+            "—"
+          ],
+          [
+            "Inventories",
+            "90",
+            "28"
+          ],
+          [
+            "Trade receivables",
+            "70",
+            "19"
+          ],
+          [
+            "Cash",
+            "118",
+            "11"
+          ],
+          [
+            "TOTAL ASSETS",
+            "640",
+            "150"
+          ],
+          [
+            "Share capital",
+            "100",
+            "40"
+          ],
+          [
+            "Reserves",
+            "180",
             "72"
           ],
           [
             "Net income of the year",
-            "—",
-            "20",
+            "60",
             "(6)"
           ],
           [
             "Total equity",
-            "100",
-            "112",
+            "340",
             "106"
           ],
           [
-            "Liabilities",
-            "40",
-            "44",
-            "44"
+            "Financial debt",
+            "220",
+            "24"
+          ],
+          [
+            "Trade payables",
+            "80",
+            "20"
           ],
           [
             "TOTAL EQUITY AND LIABILITIES",
-            "140",
-            "156",
+            "640",
             "150"
           ]
         ]
