@@ -1,0 +1,323 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p2-01",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Goal vs. line-of-action indicators",
+    "prompt": "The article mentions several indicators. List those related to a goal and those related to a main line of action. You can indicate the arguments or hypotheses justifying your answer. (5 points)",
+    "modelAnswer": "Two goals are clearly stated: growth (\"double-digit\" growth) and return on capital employed (\"a decent return on the capital\"). Indicators related to a goal: sales growth (14%, target ≥ 12%), ROCE (8%, target > 11%); the operating margin (6%) can be accepted as a goal indicator of profitability, or argued as a lever of ROCE (ROCE = margin × asset turnover). Indicators related to lines of action: number of new supermarket listings (lever for growth), food-waste rate (lever for costs/margin), OEE of the new plant (lever for asset utilisation and margin), share of recyclable packaging (lever for the brand/retailer requirements – not presented as a goal). 1 point per correctly classified and justified indicator, max. 5.",
+    "keyPoints": [
+      "Goals: growth and return on capital employed",
+      "Goal indicators: sales growth, ROCE",
+      "Operating margin: goal (profitability) or lever of ROCE – justify",
+      "Line-of-action indicators: new listings, food waste, OEE",
+      "Recyclable packaging: line of action, not a goal in the article"
+    ],
+    "case": "nordhaven",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 1 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-02",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Relevance of the operating margin",
+    "prompt": "The CFO intends to track the return-on-capital objective with the operating margin. Is this indicator well chosen in view of the objective as expressed in the article? Justify your answer. (4 points)",
+    "modelAnswer": "No (or only partially). The objective is a return on capital employed, but the operating margin (operating income / sales) measures profitability on sales and ignores the capital invested. Yet the fall of ROCE comes precisely from the new plant, i.e. from the capital employed (denominator), not only from the margin: ROCE = operating margin × asset turnover (sales / capital employed). The right indicator is ROCE = NOPAT / capital employed (net fixed assets + working capital); the margin and the asset turnover (or OEE) can complement it as levers. 2 points for the inconsistency, 2 points for the correct indicator.",
+    "keyPoints": [
+      "Not consistent with a return-on-capital objective",
+      "Margin ignores capital employed (the new plant)",
+      "ROCE = operating margin × asset turnover (Du Pont)",
+      "Use ROCE = NOPAT / capital employed; margin only as a lever"
+    ],
+    "case": "nordhaven",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 1 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-03",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – objectives",
+    "prompt": "What can you say about the \"objectives\" as they appear in the framework? Comment precisely on 4 different points (positive or negative). (8 points)",
+    "modelAnswer": "Possible points (2 points each): (1) O1 cost-cutting contradicts what was agreed: the savings plan was abandoned as inconsistent with a traditional airline that asks customers to pay more. (2) O4 load factor is not a priority – Mr Hope considers it satisfactory (it can be monitored in another dashboard). (3) Two of the four validated priorities are missing: rationalising the hub (connection times) and the presence on social networks. (4) O2 is neither targeted nor time-bound (e.g. net margin of 4% at the end of n+1) and does not express its purpose (reduce debt). (5) Positive: O3 is specific, measurable, targeted and consistent with the decarbonisation priority (\"net\" emissions), but its three-year horizon does not fit a one-year steering dashboard – an annual milestone is needed (e.g. −3% per PKT by the end of n+1).",
+    "keyPoints": [
+      "O1 cost-cutting contradicts the Board/positioning",
+      "O4 load factor not a priority",
+      "Hub and social-network priorities missing",
+      "O2 not targeted, no horizon, purpose (debt) missing",
+      "O3 SMART and consistent, but 3-year horizon → annual milestone"
+    ],
+    "case": "air-utopia-2024",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q1"
+      },
+      {
+        "kind": "case",
+        "source": "Air Utopia case 2024",
+        "ref": "Part 2 – Board of Directors"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-04",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – CPVs",
+    "prompt": "What can you say about the \"CPVs\" as they appear in the framework? Identify precisely at least two problems. Your answer must be different enough from those of questions 1 and 3. (4 points)",
+    "modelAnswer": "Possible problems (2 points each): some CPVs contradict the Board's decisions (CPV 1: 10 A350s + 5 A320s instead of 8 + 2; CPV 4: hiring terminal staff was rejected – retraining flight attendants is missing); some CPVs have no verb or target (CPV 2 \"Biofuels\" → \"Reach 1% SAF on long- and medium-haul flights\"; CPV 6 \"Eco-piloting\"); CPV 7 Net Promoter Score is an indicator, not a CPV; CPV 12 contains two CPVs (tags and digital content budget); CPV 10 carbon offsetting does not reduce net emissions, so its link with O3 is questionable (it raises customer awareness); CPV 5 (temporary workers/subcontractors) belongs to the abandoned cost-cutting plan.",
+    "keyPoints": [
+      "CPVs 1 and 4 contradict the Board's decisions",
+      "No verb / no target (CPV 2, CPV 6)",
+      "NPS (CPV 7) is an indicator, not a CPV",
+      "CPV 12 = two CPVs",
+      "Offsetting (CPV 10) does not reduce net emissions"
+    ],
+    "case": "air-utopia-2024",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-05",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – framework as a whole",
+    "prompt": "What can you say about the framework as a whole? Comment precisely on 3 different points (positive or negative). (6 points)",
+    "modelAnswer": "Possible points (2 points each): (1) 4 objectives + 12 CPVs = 16 dimensions, compatible with the maximum of 30 indicators (about two per dimension) – positive. (2) The framework is unbalanced: the two non-priority objectives (O1, O4) mobilise many CPVs, whereas the hub and social media priorities have none and the social media team (CPV 9) is only linked to profitability. (3) Crosses hide negative effects: raising ticket prices (CPV 3) has a negative effect on the load factor (O4) and buying aircraft (CPV 1) is negative for profitability in the short term – \"+\" and \"−\" would be more precise. (4) Some cause-and-effect links are questionable (CPV 9 → O2, CPV 10 → O3, CPV 7 → O4). (5) Few CPVs are transversal; CPV 8 (closing routes) is a good example of a transversal lever.",
+    "keyPoints": [
+      "16 dimensions vs max. 30 indicators: coherent",
+      "Imbalance: non-priority objectives over-supported, priorities without CPVs",
+      "Use + / −: price increase negative on load factor, aircraft purchase negative short term",
+      "Questionable causal links (CPV 9, 10, 7)",
+      "Few transversal CPVs (CPV 8 is one)"
+    ],
+    "case": "air-utopia-2024",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q3"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-06",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Responsibility centre – division",
+    "prompt": "What is the most relevant type of responsibility centre to qualify the divisions of Alpenstein? 1) Cost centre 2) Revenue centre 3) Profit centre 4) Investment centre. Explain your answer (2 lines max). (3 points)",
+    "modelAnswer": "Answer 4 – investment centre. The division controls its costs (manufacturing) and revenues (prices, sales), but also its assets: it decides on its investments within an agreed envelope and manages significant short-term assets (seasonal stocks, receivables through payment terms). Only financing is centralised, which does not change the type (it can be evaluated on ROCE or residual income, before financing costs).",
+    "keyPoints": [
+      "Investment centre",
+      "Controls costs and revenues",
+      "Decides capex and manages significant stocks/receivables",
+      "Financing at HQ does not prevent ROCE-type evaluation"
+    ],
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p2-07",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Responsibility centre – sales offices",
+    "prompt": "What is the most relevant type of responsibility centre to qualify the regional sales offices? 1) Cost centre 2) Revenue centre 3) Profit centre 4) Investment centre. Explain your answer (2 lines max). (2 points)",
+    "modelAnswer": "Answer 2 – revenue centre. The offices act on sales volumes (canvassing, order intake) but not on prices (no discounts), not on the cost of the products sold and not on assets (no say in payment terms or stocks); their small travel budget does not make them profit centres – they should be evaluated on sales (volumes/revenues), possibly with a cost budget for travel.",
+    "keyPoints": [
+      "Revenue centre",
+      "Act on volumes only (no discounts)",
+      "No control of product costs or assets (payment terms, stocks)",
+      "Travel budget does not change the type"
+    ],
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p2-01",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales volume sub-variance",
+    "statement": "The sales volume sub-variance is favourable and, on its own, exceeds the overall favourable sales variance.",
+    "answer": true,
+    "explanation": "True. Overall sales variance = 1,758,500 − 1,720,000 = +38,500 € (fav.). Total volume rose from 10,000 to 10,500 units (+5%): volume sub-variance = 4,200 × 250 + 6,300 × 120 − 1,720,000 = +86,000 € (fav.), i.e. more than twice the overall variance (it is offset by the unfavourable mix).",
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p2-02",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales mix vs. price",
+    "statement": "The unfavourable sales mix sub-variance is explained by the decrease in the selling price of sleeping bags.",
+    "answer": false,
+    "explanation": "False. Mix sub-variance = −52,000 € (unfav.), computed at budget prices: tents, the product with the higher budget price (250 vs 120), fell from 40% to 36.2% of the units sold. The lower price of sleeping bags (115 vs 120) affects the price sub-variance (−33,500 € on S).",
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p2-03",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales price sub-variance",
+    "statement": "Overall, the sales price sub-variance is unfavourable, because sleeping bags were sold €5 below the budgeted price.",
+    "answer": false,
+    "explanation": "False. Price sub-variance: tents (260 − 250) × 3,800 = +38,000 €; sleeping bags (115 − 120) × 6,700 = −33,500 €. Overall +4,500 € (fav.).",
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p2-04",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales mix sub-variance",
+    "statement": "The mix sub-variance on tents is unfavourable by more than €90,000.",
+    "answer": true,
+    "explanation": "True. Tents at budget mix: 10,500 × 40% = 4,200 units; actual 3,800. Mix on T = (3,800 − 4,200) × 250 = −100,000 € (unfav.); on S: (6,700 − 6,300) × 120 = +48,000 €; total mix −52,000 €.",
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p2-05",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material yield vs. price (T)",
+    "statement": "For tents, the favourable material price variance more than compensates the unfavourable yield variance.",
+    "answer": true,
+    "explanation": "True. Tents: yield = 3,800 × (3.1 − 3.0) × 12 = +4,560 € (unfav.); price = 3,800 × 3.1 × (11.5 − 12) = −5,890 € (fav.).",
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p2-06",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material volume sub-variance",
+    "statement": "Overall (T + S), the largest material sub-variance is the volume sub-variance – which does not mean that material consumption was badly managed.",
+    "answer": true,
+    "explanation": "True. Volume = +16,200 € (T +7,200, S +9,000), larger than mix (−2,400), yield (−2,140) and price (+3,825). It only reflects the 5% higher activity: an unfavourable volume variance on a cost is the mechanical counterpart of higher sales, not a sign of poor cost management.",
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p2-07",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material sub-variances ranking (S)",
+    "statement": "For sleeping bags, the most unfavourable material sub-variance is the price variance.",
+    "answer": false,
+    "explanation": "False. Sleeping bags: volume +9,000, mix (6,700 − 6,300) × 1.5 × 20 = +12,000, yield 6,700 × (1.45 − 1.5) × 20 = −6,700 (fav.), price 6,700 × 1.45 × (21 − 20) = +9,715. The mix variance (+12,000 €) is the most unfavourable.",
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p2-08",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material yield (total)",
+    "statement": "Overall, the material yield variance is unfavourable, because tents consumed more fabric per unit than budgeted.",
+    "answer": false,
+    "explanation": "False. Tents: +4,560 € (unfav.), but sleeping bags used less fabric per unit: −6,700 € (fav.). Total yield = −2,140 € (fav.).",
+    "case": "alpenstein",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  }
+]

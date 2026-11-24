@@ -1,0 +1,118 @@
+[
+  {
+    "id": "p2",
+    "title": "Konzeptklausur 1 – Nordhaven, Air Utopia 2024, Alpenstein",
+    "subtitle": "Neue Klausur im Aufbau des Mock up exam (40 Punkte, 90 Minuten): fiktiver Artikel Nordhaven Foods (ROCE statt Marge), Kritik eines O/CPV-Frameworks zu Air Utopia (Fall 2024, Mr Hope), Investment Centre vs. Revenue Centre und VMYP mit ungünstigem Mix.",
+    "origin": {
+      "kind": "neu",
+      "exam": "",
+      "faithful": true
+    },
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part 1 – Article",
+        "instructions": "[9/40] Indicative time: 20 min.",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p2-01",
+                "points": 5
+              },
+              {
+                "q": "sa-p2-02",
+                "points": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Air Utopia (case 2024)",
+        "instructions": "[18/40] Indicative time: 30 min. Analyse in detail the proposed O/CPV framework.",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p2-03",
+                "points": 8
+              },
+              {
+                "q": "sa-p2-04",
+                "points": 4
+              },
+              {
+                "q": "sa-p2-05",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 3 – Responsibility centres and variance analysis",
+        "instructions": "[13/40] Indicative time: 40 min. For the true/false statements: calculate the sub-variances first; 1 point per correct answer.",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p2-06",
+                "points": 3
+              },
+              {
+                "q": "sa-p2-07",
+                "points": 2
+              }
+            ]
+          },
+          {
+            "title": "Q3 – Sales sub-variances: true or false?",
+            "items": [
+              {
+                "q": "tf-p2-01",
+                "points": 1
+              },
+              {
+                "q": "tf-p2-02",
+                "points": 1
+              },
+              {
+                "q": "tf-p2-03",
+                "points": 1
+              },
+              {
+                "q": "tf-p2-04",
+                "points": 1
+              }
+            ]
+          },
+          {
+            "title": "Q4 – Material cost sub-variances: true or false?",
+            "items": [
+              {
+                "q": "tf-p2-05",
+                "points": 1
+              },
+              {
+                "q": "tf-p2-06",
+                "points": 1
+              },
+              {
+                "q": "tf-p2-07",
+                "points": 1
+              },
+              {
+                "q": "tf-p2-08",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

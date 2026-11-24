@@ -1,0 +1,638 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-s78-01",
+    "lecture": "s78",
+    "difficulty": 1,
+    "prompt": "What do the letters of the VMYP method stand for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Volume, Mix, Yield, Price/cost"
+      },
+      {
+        "id": "b",
+        "text": "Value, Margin, Yield, Profit"
+      },
+      {
+        "id": "c",
+        "text": "Volume, Margin, Yield, Productivity"
+      },
+      {
+        "id": "d",
+        "text": "Variance, Mix, Yield, Price"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "VMYP splits each variance into Volume, Mix, Yield (productivity) and Price/cost sub-variances.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "Principles of the VMYP method"
+      }
+    ],
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s78-02",
+    "lecture": "s78",
+    "difficulty": 2,
+    "prompt": "What is \"flexible budget 1\" in a VMYP analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The budget adjusted to the actual sales volume, all other amounts (prices included) equal to the budget"
+      },
+      {
+        "id": "b",
+        "text": "The actual results restated at budgeted prices"
+      },
+      {
+        "id": "c",
+        "text": "The budget revised during the year (re-forecast)"
+      },
+      {
+        "id": "d",
+        "text": "The budget of fixed costs only"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Flexible budgets are intermediaries between planned and actual figures. Flexible budget 1 shows what income should have been had the actual volume been anticipated, everything else being equal to the budget.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "Principles of the VMYP method"
+      }
+    ],
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s78-03",
+    "lecture": "s78",
+    "difficulty": 2,
+    "prompt": "Which statements about the VMYP method are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The total variance equals the sum of all sub-variances"
+      },
+      {
+        "id": "b",
+        "text": "It measures the impact of each cause on income, favourable or unfavourable"
+      },
+      {
+        "id": "c",
+        "text": "It assumes that the causes of variances are independent"
+      },
+      {
+        "id": "d",
+        "text": "It can only be applied to a budget-versus-actual comparison"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Sub-variances add up to the total variance and measure the weight of each cause. One limitation is the assumption of independent causes. The method can also compare two periods of time.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "Principles; Benefits and limitations"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s78-04",
+    "lecture": "s78",
+    "difficulty": 2,
+    "prompt": "Costs show an unfavourable volume variance. What does this mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Costs rose mechanically because more units were sold – not necessarily poor cost management"
+      },
+      {
+        "id": "b",
+        "text": "The business unit wasted material"
+      },
+      {
+        "id": "c",
+        "text": "The purchasing department paid higher prices"
+      },
+      {
+        "id": "d",
+        "text": "The fixed costs exceeded the budget"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "A volume variance on a cost reflects activity. A favourable volume variance on a cost (lower sales) does not mean the cost was well managed either.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "Take-aways"
+      }
+    ],
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s78-05",
+    "lecture": "s78",
+    "difficulty": 2,
+    "prompt": "How are variances on fixed costs mostly interpreted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a price (spending) variance"
+      },
+      {
+        "id": "b",
+        "text": "As a volume variance"
+      },
+      {
+        "id": "c",
+        "text": "As a mix variance"
+      },
+      {
+        "id": "d",
+        "text": "As a yield variance"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Fixed costs do not vary with volume; a variance is mostly a price/spending variance. It is treated as a volume variance only if the relevant range of activity is exceeded.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "Take-aways"
+      }
+    ],
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s78-06",
+    "lecture": "s78",
+    "difficulty": 2,
+    "prompt": "Which are benefits of monitoring results with dashboards rather than with a cost-accounting model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It does not rely on the accounting information system"
+      },
+      {
+        "id": "b",
+        "text": "It is more responsive"
+      },
+      {
+        "id": "c",
+        "text": "It offers more flexibility in defining the performance model and facilitates learning"
+      },
+      {
+        "id": "d",
+        "text": "Variances can be summed up to obtain the total variance"
+      }
+    ],
+    "correct": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Dashboards are faster and more flexible, but there is no mathematical relationship between their variances: they cannot be summed, so ranking them is more subjective.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "Results monitoring based on dashboards"
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "mc-s78-07",
+    "lecture": "s78",
+    "difficulty": 2,
+    "prompt": "Planned: 100 units at €50. Actual: 115 units at €48. What is the selling price variance on turnover?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−€230"
+      },
+      {
+        "id": "b",
+        "text": "−€200"
+      },
+      {
+        "id": "c",
+        "text": "+€750"
+      },
+      {
+        "id": "d",
+        "text": "+€520"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "(48 − 50) × 115 actual units = −230 € (unfav.). The volume variance on turnover is (115 − 100) × 50 = +750 €.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "V(M)YP example"
+      }
+    ],
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s78-08",
+    "lecture": "s78",
+    "difficulty": 3,
+    "prompt": "In the slide example (planned 100 units, actual 115; material 3.20 kg/unit planned, 3.10 actual, €8.80/kg), what is the yield variance on material cost?",
+    "options": [
+      {
+        "id": "a",
+        "text": "€101 favourable"
+      },
+      {
+        "id": "b",
+        "text": "€101 unfavourable"
+      },
+      {
+        "id": "c",
+        "text": "€36 unfavourable"
+      },
+      {
+        "id": "d",
+        "text": "€422 unfavourable"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "115 × (3.10 − 3.20) × 8.80 = −101.2 € on cost → +101 on the production margin (fav.). 36 is the material price variance, 422 the volume variance on variable costs.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "V(M)YP example"
+      }
+    ],
+    "single": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-s78-09",
+    "lecture": "s78",
+    "difficulty": 2,
+    "prompt": "A two-product company sells more of its cheaper product than budgeted, total volume unchanged. Which sales sub-variance is affected first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The mix sub-variance – unfavourable"
+      },
+      {
+        "id": "b",
+        "text": "The mix sub-variance – favourable"
+      },
+      {
+        "id": "c",
+        "text": "The volume sub-variance – unfavourable"
+      },
+      {
+        "id": "d",
+        "text": "The price sub-variance – unfavourable"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "The mix sub-variance compares the actual mix with the budget mix at budgeted prices: a higher share of the cheaper product makes it unfavourable.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "Sales mix"
+      }
+    ],
+    "single": true
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-01",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "The sum of all sub-variances equals the overall variance.",
+    "answer": true,
+    "explanation": "Total variance = sum of all sub-variances (volume, mix, yield, price, fixed costs).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-02",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "An overall favourable variance proves that every component of performance was good.",
+    "answer": false,
+    "explanation": "An overall favourable variance does not prevent poor performance on some sub-variances – it must be broken down.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-03",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "The volume sub-variance on sales is valued at actual selling prices.",
+    "answer": false,
+    "explanation": "Volume (and mix) sub-variances are valued at budgeted prices; the difference between actual and budgeted prices is the price sub-variance.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-04",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "Variance analysis always matches the controllability principle.",
+    "answer": false,
+    "explanation": "Responsibility for a variance can be shared between departments (e.g. purchasing price vs. production yield), so variance analysis does not always match controllability.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-05",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "Results analysis can also be applied between two periods of time, not only between budget and actual.",
+    "answer": true,
+    "explanation": "Its general objectives – monitoring objectives (regulation) and confirming/adjusting the performance model (learning) – also apply to a comparison of two periods.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-06",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "A favourable yield variance may be linked to an unfavourable material price variance.",
+    "answer": true,
+    "explanation": "Crossed effects: better-quality (more expensive) material can reduce waste.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-07",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "One limitation of results monitoring based on a cost-accounting model is its slow response time.",
+    "answer": true,
+    "explanation": "Limitations: slow response time, focus on causes whose impact on income can be measured, assumption of independent causes.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-08",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "With dashboards, the variances on the different indicators can be added up to explain the total variance in income.",
+    "answer": false,
+    "explanation": "There is no mathematical relationship between dashboard variances; they cannot be summed and ranking them is more subjective.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-s78-09",
+    "lecture": "s78",
+    "difficulty": 1,
+    "topic": "",
+    "statement": "A favourable volume sub-variance on sales can be linked to an unfavourable selling price sub-variance.",
+    "answer": true,
+    "explanation": "Crossed effect: we may sell more because the selling price is attractive.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s78-01",
+    "lecture": "s78",
+    "difficulty": 2,
+    "verb": "calculate",
+    "topic": "VMYP – slide example",
+    "prompt": "Slide example – planned: 100 units at €50, material 3.20 kg/unit at €8.80/kg, fixed costs €1,000. Actual: 115 units at €48, 3.10 kg/unit at €8.90/kg, fixed costs €1,050. Compute the sub-variances on the production margin (favourable = positive).",
+    "modelAnswer": "Volume +328 (turnover +750, variable costs −422), yield +101, selling price −230, material price −36, fixed costs −50. Overall +113.2 (production margin 1,297.2 vs 1,184).",
+    "keyPoints": [
+      "Volume +328",
+      "Yield +101",
+      "Selling price −230",
+      "Material price −36",
+      "Fixed costs −50"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "V(M)YP example"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Volume (flexible budget 1)",
+        "why": "Actual volume, everything else as budgeted.",
+        "lines": [
+          "Turnover 115 × 50 = 5,750 → +750",
+          "Material 115 × 3.2 × 8.8 = 3,238.4 → −422.4",
+          "Margin 1,511.6 − 1,184 = +327.6"
+        ]
+      },
+      {
+        "title": "Yield (flexible budget 2)",
+        "lines": [
+          "Material 115 × 3.1 × 8.8 = 3,137.2",
+          "Margin 1,612.8 − 1,511.6 = +101.2"
+        ]
+      },
+      {
+        "title": "Selling price (flexible budget 3)",
+        "lines": [
+          "Turnover 115 × 48 = 5,520 → −230"
+        ]
+      },
+      {
+        "title": "Material price (flexible budget 4)",
+        "lines": [
+          "Material 115 × 3.1 × 8.9 = 3,172.9 → −35.7"
+        ]
+      },
+      {
+        "title": "Fixed costs",
+        "lines": [
+          "1,050 − 1,000 → −50"
+        ],
+        "result": "Overall: 1,297.2 − 1,184 = +113.2 (fav.)"
+      }
+    ],
+    "results": [
+      {
+        "label": "Volume",
+        "value": 328,
+        "tol": 1
+      },
+      {
+        "label": "Yield",
+        "value": 101,
+        "tol": 1
+      },
+      {
+        "label": "Selling price",
+        "value": -230,
+        "tol": 1
+      },
+      {
+        "label": "Material price",
+        "value": -36,
+        "tol": 1
+      },
+      {
+        "label": "Fixed costs",
+        "value": -50,
+        "tol": 1
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s78-02",
+    "lecture": "s78",
+    "difficulty": 2,
+    "verb": "calculate",
+    "topic": "VMYP – sales sub-variances",
+    "prompt": "Budget: product A 600 units at €100, product B 400 units at €200. Actual: A 700 units at €98, B 400 units at €205. Compute the volume, mix and price sub-variances on sales.",
+    "modelAnswer": "Budget revenue 140,000; actual 700 × 98 + 400 × 205 = 150,600 → +10,600. Total volume 1,100 (+10%) at the budget mix 60/40 → 660 A, 440 B: volume = 60 × 100 + 40 × 200 = +14,000. Mix = (700 − 660) × 100 + (400 − 440) × 200 = −4,000 (more of the cheaper A). Price = −2 × 700 + 5 × 400 = +600.",
+    "keyPoints": [
+      "Volume +14,000",
+      "Mix −4,000",
+      "Price +600",
+      "Total +10,600"
+    ],
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil von STET Sportswear, Q3"
+      }
+    ],
+    "results": [
+      {
+        "label": "Volume (€)",
+        "value": 14000
+      },
+      {
+        "label": "Mix (€)",
+        "value": -4000
+      },
+      {
+        "label": "Price (€)",
+        "value": 600
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-s78-03",
+    "lecture": "s78",
+    "difficulty": 2,
+    "verb": "explain",
+    "topic": "Interpreting variances",
+    "prompt": "Explain why an overall favourable variance on income still has to be broken down into sub-variances. Give an example.",
+    "modelAnswer": "An overall favourable variance can hide unfavourable sub-variances that offset each other (e.g. a favourable volume variance hiding an unfavourable selling price variance, as in the slide example: +750 volume on turnover vs −230 price). Breaking it down identifies the causes, ranks them, reveals crossed effects (selling more because prices were cut) and makes corrective action possible (market study on prices, negotiation of material prices).",
+    "keyPoints": [
+      "Favourable total can hide unfavourable sub-variances",
+      "Example: volume +750 vs selling price −230",
+      "Identify and rank causes, crossed effects",
+      "Basis for corrective action"
+    ],
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Slides sessions 7-8 – Analysing results",
+        "ref": "Take-aways"
+      }
+    ]
+  }
+]

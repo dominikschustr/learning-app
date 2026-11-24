@@ -1,0 +1,482 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p1-01",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Goal vs. line-of-action indicators",
+    "prompt": "The article mentions several indicators. List those related to a goal and those related to a main line of action. You can indicate the arguments or hypotheses justifying your answer. (5 points)",
+    "modelAnswer": "The article mentions clearly two main goals: sales growth and return on investment. Indicators related to a goal: sales increase, billing (very close to sales), EBITDA margin rate. Indicators related to lines of action: number of damaged products (incidents), customer satisfaction rate (which is not presented as a goal in the article). 1 point per indicator; a relevant comment can rescue a misclassification (0 → 0.5), a contradictory comment can cancel a correct answer.",
+    "keyPoints": [
+      "Goals: sales growth and return on investment",
+      "Goal indicators: sales increase, billings, EBITDA margin rate",
+      "Line-of-action indicators: number of damaged products / incidents",
+      "Line-of-action indicator: % of satisfied customers (not a goal here)"
+    ],
+    "case": "vente-unique",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 1 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-02",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Relevance of the EBITDA margin",
+    "prompt": "Does the EBITDA margin rate seem to you to be well chosen in view of the objectives as they are expressed in the article? Justify your answer. (4 points)",
+    "modelAnswer": "No. The article states an objective in terms of return on investment, but the EBITDA margin rate does not measure a return on investment: it measures profitability (or cash, depending on the sector), because it relates a result to sales and ignores the capital invested. The indicator and the performance to be measured are therefore not consistent; return on investment should be measured with ROCE (NOPAT / capital employed) or ROI. NB: probably the article misuses the term \"return on investment\" – then the indicator would be fine but the label of the performance dimension wrong; that is why the question says \"as formulated\". 2 points for the inconsistency, 2 points for the correct correspondence.",
+    "keyPoints": [
+      "Answer: no – inconsistent with the stated objective",
+      "EBITDA margin measures profitability (or cash), not return on investment",
+      "It ignores the capital invested (no denominator in assets)",
+      "Return on investment → ROCE = NOPAT / capital employed (or ROI)"
+    ],
+    "case": "vente-unique",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 1 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-03",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – objectives",
+    "prompt": "What can you say about the \"objectives\" as they appear in the framework? Comment precisely on 4 different points (positive or negative). (8 points)",
+    "modelAnswer": "Possible points (2 points each): (1) The two goals profitability and growth are well reflected in the objectives, but not the goal of developing online sales. (2) O1 (cost-cutting) is not consistent with the company's corporate goals, strategic positioning and other priorities (hub creation, development of online sales). (3) The wording of O2 and O4 is not precise enough. (4) O4 (customer satisfaction) is not consistent with O1, and the CEO has not identified this performance dimension as a priority. (5) O1, O2 and O4 are not targeted. (6) The time horizon is not clear.",
+    "keyPoints": [
+      "Profitability and growth reflected, but online sales missing",
+      "O1 cost-cutting inconsistent with goals, positioning and priorities",
+      "O2/O4 wording not precise",
+      "O4 not a CEO priority and in tension with O1",
+      "No targets (O1, O2, O4) and no time horizon"
+    ],
+    "case": "air-utopia-mock",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 2 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-04",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – CPVs",
+    "prompt": "What can you say about the \"CPVs\" as they appear in the framework? Identify precisely at least two problems. Your answer must be different enough from those of questions 1 and 3. (4 points)",
+    "modelAnswer": "Possible problems (2 points each): some CPVs are difficult to measure (CPV 1); some CPVs don't contain a verb (CPV 3); the wording of some CPVs is not precise enough (CPV 11 \"Staff training\"); some CPVs are confused with indicators and could be expressed in a more operational way (CPV 6, CPV 15); CPVs and objectives sometimes overlap (CPV 2 and O3); some CPVs do not correspond to the CEO's performance model (CPVs 6 and 14); CPV 12 contains two CPVs. Answers must differ from Q1 and Q3 (e.g. not cost-cutting both in O1 and CPV 8).",
+    "keyPoints": [
+      "Hard to measure (CPV 1)",
+      "No verb (CPV 3)",
+      "Imprecise wording (CPV 11)",
+      "Indicators disguised as CPVs (CPV 6, 15)",
+      "Overlap CPV 2 / O3; CPV 12 = two CPVs; CPVs 6, 14 outside the CEO's model"
+    ],
+    "case": "air-utopia-mock",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 2 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-05",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – framework as a whole",
+    "prompt": "What can you say about the framework as a whole? Comment precisely on 3 different points (positive or negative). (6 points)",
+    "modelAnswer": "Possible points (2 points each): 19 dimensions in total for an expected number of about 20 indicators – coherent, even if it does not allow more than one indicator per dimension; good proportion between objectives and CPVs (4 O, 15 CPVs) – the CPVs implement the objectives into actions; most CPVs are transversal (linked to more than one objective); too many CPVs contribute to O2 and O4; cause-and-effect relationships are sometimes questionable (CPV 3/O3, CPV 6/O2, CPV 7/O2 …); \"+\" and \"−\" instead of crosses would make the cause-and-effect relationships more precise.",
+    "keyPoints": [
+      "19 dimensions vs ~20 indicators: coherent but one indicator per dimension",
+      "Good O/CPV proportion (4/15)",
+      "Most CPVs transversal",
+      "Too many CPVs on O2 and O4",
+      "Questionable causal links; use + / − instead of ×"
+    ],
+    "case": "air-utopia-mock",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 2 – Q3"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-06",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Responsibility centre – division",
+    "prompt": "What is the most relevant type of responsibility centre to qualify the divisions of this company? 1) Cost centre 2) Revenue centre 3) Profit centre 4) Investment centre. Explain your answer (2 lines max). (3 points)",
+    "modelAnswer": "Answer 3 – profit centre. Production (costs) and sales (revenues) are managed at divisional level, but not investment management, which is centralised at headquarters. The amount of inventories and receivables (short-term assets) is limited (no stocks, little latitude on payment terms).",
+    "keyPoints": [
+      "Profit centre",
+      "Costs and revenues controlled by the division",
+      "Investments (and financing) decided at headquarters",
+      "Short-term assets (stocks, receivables) limited"
+    ],
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-07",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Responsibility centre – plant",
+    "prompt": "What is the most relevant type of responsibility centre to qualify the manufacturing plants? 1) Cost centre 2) Hybrid cost centre 3) Profit centre 4) Investment centre. Explain your answer (2 lines max). (2 points)",
+    "modelAnswer": "Answer 1 – cost centre. Production is managed at plant level but not capital expenditure; there are no inventories, and receivables and payables are not managed at plant level, so the plant is a typical cost centre.",
+    "keyPoints": [
+      "Cost centre",
+      "Plant controls production costs only",
+      "No capex, no inventories, no receivables/payables at plant level"
+    ],
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p1-01",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales mix sub-variance",
+    "statement": "The change in the sales mix explains an increase in sales revenues by more than 3%, in comparison to the budget.",
+    "answer": false,
+    "explanation": "False. Mix sub-variance = +23,575 € (fav.). Actual sales are 3.1% higher than budget (+69,915 €), but the mix is not the main cause: it accounts for 34% of the total sales variance, whereas the volume sub-variance (+57,000 €) accounts for 82%.",
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p1-02",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales mix sub-variance",
+    "statement": "The change in the sales mix is favourable, because the overall volumes sold have increased by 2.5% in comparison to the budget.",
+    "answer": false,
+    "explanation": "False. The +2.5% in total volume drives the volume sub-variance, not the mix sub-variance. The mix is favourable because product B, which has the higher budgeted price (525 vs 410), represents a larger share of actual sales (44% vs 40%).",
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p1-03",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales volume sub-variance",
+    "statement": "The favourable volume sub-variance explains more than 80% of the overall variance in sales revenue, in comparison to the budget.",
+    "answer": true,
+    "explanation": "True. Volume sub-variance = 57,000 €; total sales variance = 69,915 € → 81.5% of the total.",
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p1-04",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales price vs. mix",
+    "statement": "The favourable sales mix sub-variance is explained by the increase in the actual selling price of product B, in comparison to the budgeted price.",
+    "answer": false,
+    "explanation": "False. The higher actual price of B (533 vs 525) affects the price sub-variance (+18,040 € on B), not the mix sub-variance, which is computed at budgeted prices.",
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p1-05",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material mix vs. price (A)",
+    "statement": "The change in the mix of products sold is the main factor in the raw material cost variance of product A, and its effect compensates that of the increase in the per-kilogram cost of raw material used.",
+    "answer": true,
+    "explanation": "True. Material cost variance for A = −5,136 € (fav.). The mix sub-variance for A (−13,530 €, fav.) is the largest one and more than compensates the unfavourable price variance of A (+12,054 €).",
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q4 (raw material cost sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p1-06",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material yield vs. price (total)",
+    "statement": "When we look at the variances on the cost of raw material overall (total A + B), the yield variance compensates the price variance.",
+    "answer": true,
+    "explanation": "True. Total yield variance ≈ −2,974 € (fav.); total price variance ≈ +2,809 € (unfav.) – the favourable yield more than offsets it.",
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q4 (raw material cost sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p1-07",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material sub-variances ranking",
+    "statement": "Among all the sub-variances on the cost of raw material, per product (A and B), the most unfavourable one is the price variance related to the production of A.",
+    "answer": false,
+    "explanation": "False. The price variance on A is +12,054 € (unfav.), but the mix variance on B is larger: +20,500 € (unfav.).",
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q4 (raw material cost sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p1-08",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material mix vs. price (B)",
+    "statement": "With regard to the production cost of product B, the favourable price variance does not offset the unfavourable mix variance.",
+    "answer": true,
+    "explanation": "True. Price variance on B = −9,246 € (fav.), not enough to offset the mix variance on B (+20,500 €, unfav.).",
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q4 (raw material cost sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-x1",
+    "lecture": "s78",
+    "difficulty": 3,
+    "verb": "calculate",
+    "topic": "VMYP – sales sub-variances",
+    "prompt": "Division A/B (mock exam, Part 3): break the overall sales variance down into volume, mix and price sub-variances (overall).",
+    "modelAnswer": "Overall +69,915 € = volume +57,000 € + mix +23,575 € − price 10,660 €.",
+    "keyPoints": [
+      "Volume +57,000 € (fav.)",
+      "Mix +23,575 € (fav.)",
+      "Price −10,660 € (unfav.)"
+    ],
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q3 (sales sub-variances)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Overall sales variance",
+        "why": "Actual revenue − budgeted revenue.",
+        "lines": [
+          "Budget: 1,230,000 + 1,050,000 = 2,280,000",
+          "Actual: 1,148,000 + 1,201,915 = 2,349,915",
+          "Overall variance = +69,915 € (fav., +3.1%)"
+        ]
+      },
+      {
+        "title": "Volume sub-variance (budget mix, budget prices)",
+        "why": "Total actual volume 5,125 (+2.5%) split with the budget mix 60% A / 40% B.",
+        "lines": [
+          "Flexible budget 1: 3,075 A × 410 + 2,050 B × 525 = 2,337,000",
+          "Volume = 2,337,000 − 2,280,000 = +57,000 € (fav., 82% of the total)"
+        ]
+      },
+      {
+        "title": "Mix sub-variance (actual mix, budget prices)",
+        "why": "Actual mix 56% A / 44% B; B has the higher budget price.",
+        "lines": [
+          "Flexible budget 2: 2,870 × 410 + 2,255 × 525 = 2,360,575",
+          "Mix = 2,360,575 − 2,337,000 = +23,575 € (fav., 34% of the total)"
+        ]
+      },
+      {
+        "title": "Price sub-variance (actual prices)",
+        "lines": [
+          "A: (400 − 410) × 2,870 = −28,700",
+          "B: (533 − 525) × 2,255 = +18,040",
+          "Price = −10,660 € (unfav.)"
+        ],
+        "result": "57,000 + 23,575 − 10,660 = 69,915 €"
+      }
+    ],
+    "pitfalls": [
+      "Using the actual mix for the volume sub-variance",
+      "Valuing the mix at actual instead of budget prices"
+    ],
+    "paperOnly": true,
+    "extra": true,
+    "results": [
+      {
+        "label": "Volume sub-variance (€)",
+        "value": 57000
+      },
+      {
+        "label": "Mix sub-variance (€)",
+        "value": 23575
+      },
+      {
+        "label": "Price sub-variance (€)",
+        "value": -10660
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p1-x2",
+    "lecture": "s78",
+    "difficulty": 3,
+    "verb": "calculate",
+    "topic": "VMYP – material sub-variances",
+    "prompt": "Division A/B (mock exam, Part 3): compute the raw material cost sub-variances for product A (positive = unfavourable).",
+    "modelAnswer": "Product A: volume +4,950, mix −13,530, yield −8,610, price +12,054 → total −5,136 € (fav.).",
+    "keyPoints": [
+      "Volume +4,950",
+      "Mix −13,530",
+      "Yield −8,610",
+      "Price +12,054"
+    ],
+    "case": "division-ab",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Mock up exam Management Control",
+        "ref": "Part 3 – Q4 (raw material cost sub-variances)"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Volume (budget mix on total actual volume)",
+        "lines": [
+          "A: (3,075 − 3,000) × 2.2 × 30 = +4,950 (unfav.)",
+          "B: (2,050 − 2,000) × 4 × 25 = +5,000 (unfav.)"
+        ]
+      },
+      {
+        "title": "Mix (actual volumes vs. budget mix)",
+        "lines": [
+          "A: (2,870 − 3,075) × 2.2 × 30 = −13,530 (fav.)",
+          "B: (2,255 − 2,050) × 4 × 25 = +20,500 (unfav.)"
+        ]
+      },
+      {
+        "title": "Yield (actual kg/unit vs. budget kg/unit, budget cost)",
+        "lines": [
+          "A: 2,870 × (2.1 − 2.2) × 30 = −8,610 (fav.)",
+          "B: 2,255 × (4.1 − 4) × 25 = +5,637.5 (unfav.)",
+          "Total yield ≈ −2,974 (fav.)"
+        ]
+      },
+      {
+        "title": "Price (actual cost/kg vs. budget cost/kg)",
+        "lines": [
+          "A: 2,870 × 2.1 × (32 − 30) = +12,054 (unfav.)",
+          "B: 2,255 × 4.1 × (24 − 25) = −9,246 (fav.)",
+          "Total price ≈ +2,809 (unfav.)"
+        ]
+      },
+      {
+        "title": "Check",
+        "lines": [
+          "A: 4,950 − 13,530 − 8,610 + 12,054 = −5,136 = 192,864 − 198,000",
+          "B: 5,000 + 20,500 + 5,637.5 − 9,246 = +21,892 = 221,892 − 200,000"
+        ]
+      }
+    ],
+    "pitfalls": [
+      "Mixing up yield (kg per unit) and price (€ per kg)",
+      "Forgetting that a cost increase is unfavourable"
+    ],
+    "paperOnly": true,
+    "extra": true,
+    "results": [
+      {
+        "label": "Volume (€)",
+        "value": 4950
+      },
+      {
+        "label": "Mix (€)",
+        "value": -13530
+      },
+      {
+        "label": "Yield (€)",
+        "value": -8610
+      },
+      {
+        "label": "Price (€)",
+        "value": 12054
+      }
+    ]
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "id": "vente-unique",
+    "title": "Vente-Unique.com (article, Investir, 10 Oct 2020)",
+    "text": [
+      "The \"Covid stocks\", which the stock market has been pampering since the arrival of the pandemic, do not only include biotechs looking for a vaccine. Vente-Unique.com is one of those companies that took advantage of the containment of the population during the coronavirus crisis. The group, a 64% subsidiary of the distribution company Cafom, specializes in the online sale of furniture in Europe. As it does not have stores, like Maisons du Monde or Miliboo, it is a little less known to the public. At a time when many groups are issuing warnings because of the health crisis, Vente-Unique is doing the opposite. Management has just revised upwards its annual revenue and return on investment targets.",
+      "The furniture market in Europe is worth approximately 100 billion euros, with average annual growth of around 2%. But the \"online\" market is growing much faster, at around 10% to 15% per year. In addition, consumers have taken advantage of the confinement to redecorate their interiors and have discovered that it is easy to order online. Vente-Unique has recently invested heavily in the internalization of its logistics, which has reduced the number of incidents (damaged products). The percentage of customers satisfied has increased and the company has improved its return on investment.",
+      "After a 5% increase in sales in the first half of the year (fiscal year ended September), growth accelerated sharply in the third quarter to end June (+45%). For 2020, management is now targeting a 20% increase in billings and an EBITDA margin higher than the 7.1% recorded for the year to end September 2019. In the medium term, management is optimistic: \"Our roadmap is double-digit growth with a level of return on investment that is roughly equivalent, i.e. an EBITDA margin rate of around 7%,\" said CEO Sacha Vigna. (Investir – Le Journal des finances, no. 2440, October 10, 2020)"
+    ]
+  },
+  {
+    "id": "air-utopia-mock",
+    "title": "Air Utopia – O/CPV framework proposed by a group of students",
+    "text": [
+      "Here is an O/CPV framework that a group of students has proposed for the Air Utopia case study (as the performance model to construct the CEO's performance boosting dashboard). Analyse it based on the principles of constructing O/CPV frameworks and on Air Utopia's context, strategy and priorities.",
+      "Context of this (earlier) version of the case, as reflected in the official solution: the CEO, Mr Moullart, focuses on profitability and growth, wants to develop online sales and the hub; customer satisfaction is not one of his priorities, and the dashboard should contain about 20 indicators (case study part 2).",
+      "Objectives of the proposed framework: O1: Cost-cutting; O2: Growth in sales & customers; O3: Creation of a hub; O4: Customer satisfaction."
+    ],
+    "tables": [
+      {
+        "caption": "Proposed O/CPV framework (× = the CPV contributes to the objective)",
+        "head": [
+          "CPV",
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "rows": [
+          [
+            "CPV 1: Establish a system of incentives to prioritize online sales",
+            "×",
+            "×",
+            "",
+            "×"
+          ],
+          [
+            "CPV 2: Creation of a national hub",
+            "",
+            "×",
+            "",
+            "×"
+          ],
+          [
+            "CPV 3: Tags – Factor in customer satisfaction through a grading system available throughout the customer's journey",
+            "",
+            "×",
+            "×",
+            "×"
+          ],
+          [
+            "CPV 4: Buy more fuel efficient planes",
+            "×",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 5: Adjust work force to seasonal activity",
+            "×",
+            "",
+            "",
+            "×"
+          ],
+          [
+            "CPV 6: Improve occupancy rate",
+            "×",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 7: Increase ground support equipment",
+            "",
+            "×",
+            "",
+            "×"
+          ],
+          [
+            "CPV 8: Implement cost-cutting plans for terminal and on-board services",
+            "×",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 9: Promote the use of loyalty cards",
+            "",
+            "×",
+            "",
+            "×"
+          ],
+          [
+            "CPV 10: Reprogram flights routes",
+            "",
+            "×",
+            "×",
+            "×"
+          ],
+          [
+            "CPV 11: Staff training",
+            "",
+            "×",
+            "",
+            "×"
+          ],
+          [
+            "CPV 12: Optimize the company website online search function and improve indexing of the website",
+            "×",
+            "×",
+            "",
+            "×"
+          ],
+          [
+            "CPV 13: Simplify routes for connecting passengers",
+            "",
+            "×",
+            "×",
+            "×"
+          ],
+          [
+            "CPV 14: Outsourcing simple, repetitive tasks",
+            "×",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CPV 15: Reduce the number of missed flights",
+            "×",
+            "×",
+            "",
+            "×"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "division-ab",
+    "title": "Industrial group – division manufacturing products A and B",
+    "text": [
+      "We are part of an industrial group, positioned on quality products of national scope. It is organized by product line. As these are very different, both in terms of manufacturing processes and target markets, operational management is entirely delegated to the divisions. However, following the acquisition of several competitors, the Group has become heavily indebted, which explains why financial management and investment management are handled by headquarters.",
+      "The division of interest to us manufactures and markets two products A and B. Components are purchased from subcontractors located abroad and then assembled in a single plant. Particular attention is paid to the choice of subcontractors and the quality of supplies. The assembly itself requires a great deal of precision, so the workers are highly qualified and the management carefully selected. The marketing of the products is ensured by a sales department: the sales teams are located in a dozen regional offices, from which they canvass customers in a personalized manner.",
+      "The products are adapted to the specific needs of the customers, so that manufacturing orders are launched from order intake; there is no stock of finished products. The factory also operates on a just-in-time basis for supplies, so material stocks are reduced to zero. The sales staff play a key role in anticipating needs and reliably transmitting them to production. In negotiations, they have a range of possible discounts on the price of each product, but little latitude on payment terms due to the Group's delicate financial situation.",
+      "You are the Controller of this division and have the following income statement and information at your disposal (overhead costs = division management costs, prorated to direct labour time)."
+    ],
+    "tables": [
+      {
+        "caption": "Income statement (in €)",
+        "head": [
+          "",
+          "Budget A",
+          "Budget B",
+          "Actual A",
+          "Actual B"
+        ],
+        "rows": [
+          [
+            "Revenues",
+            "1,230,000",
+            "1,050,000",
+            "1,148,000",
+            "1,201,915"
+          ],
+          [
+            "Material costs",
+            "198,000",
+            "200,000",
+            "192,864",
+            "221,892"
+          ],
+          [
+            "Direct labor costs",
+            "877,500",
+            "630,000",
+            "809,340",
+            "720,698"
+          ],
+          [
+            "Indirect manufacturing costs",
+            "70,125",
+            "93,500",
+            "69,741",
+            "97,416"
+          ],
+          [
+            "Overhead costs",
+            "72,761",
+            "52,239",
+            "74,055",
+            "65,945"
+          ],
+          [
+            "Total costs",
+            "1,218,386",
+            "975,739",
+            "1,146,000",
+            "1,105,951"
+          ],
+          [
+            "Net income",
+            "11,614",
+            "74,261",
+            "2,000",
+            "95,964"
+          ]
+        ]
+      },
+      {
+        "caption": "Operating data",
+        "head": [
+          "",
+          "Budget A",
+          "Budget B",
+          "Actual A",
+          "Actual B"
+        ],
+        "rows": [
+          [
+            "Volumes",
+            "3,000",
+            "2,000",
+            "2,870",
+            "2,255"
+          ],
+          [
+            "Unit selling price (€)",
+            "410",
+            "525",
+            "400",
+            "533"
+          ],
+          [
+            "Material/unit",
+            "2.20 kg",
+            "4 kg",
+            "2.10 kg",
+            "4.1 kg"
+          ],
+          [
+            "Labor hours/unit",
+            "6.5 h",
+            "7 h",
+            "6 h",
+            "6.8 h"
+          ],
+          [
+            "Machine time/unit",
+            "1.25 h",
+            "2.5 h",
+            "1.35 h",
+            "2.4 h"
+          ],
+          [
+            "Cost/kg of material",
+            "30 €",
+            "25 €",
+            "32 €",
+            "24 €"
+          ],
+          [
+            "Cost/labor h",
+            "45 €",
+            "45 €",
+            "47 €",
+            "47 €"
+          ],
+          [
+            "Indirect manufacturing costs/machine h",
+            "18.7 €",
+            "18.7 €",
+            "18 €",
+            "18 €"
+          ],
+          [
+            "Overhead costs (division total)",
+            "125,000",
+            "",
+            "140,000",
+            ""
+          ]
+        ]
+      }
+    ]
+  }
+]

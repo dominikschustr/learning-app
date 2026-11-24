@@ -5,15 +5,17 @@ import { FormulaText } from "./FormulaText";
 
 /** Tabelle wie in der Prüfung (Fallbeschreibung oder Lösungsschritt). */
 export function DataTable({ t, compact }: { t: Table; compact?: boolean }) {
+  // Kreuz-Matrix (z. B. O/CPV-Framework): lange Zeilentitel umbrechen, Kreuze mittig – statt endlos breiter Zeilen
+  const matrix = t.rows.every((r) => r.slice(1).every((c) => c.length <= 3)) && t.rows.some((r) => r[0].length > 40);
   return (
     <div>
       {t.caption && <p className="mb-1.5 font-semibold text-ink">{t.caption}</p>}
       <div className="overflow-x-auto rounded-xl border border-line bg-surface">
-        <table className={cn("w-full min-w-max text-left tabular-nums", compact ? "text-[0.78rem]" : "text-[0.8rem]")}>
+        <table className={cn("w-full text-left tabular-nums", !matrix && "min-w-max", compact ? "text-[0.78rem]" : "text-[0.8rem]")}>
           <thead className="bg-accent/10 text-ink">
             <tr>
               {t.head.map((h, j) => (
-                <th key={j} className="px-2.5 py-1.5 font-semibold sm:px-3 sm:py-2">
+                <th key={j} className={cn("px-2.5 py-1.5 font-semibold sm:px-3 sm:py-2", matrix && j > 0 && "w-12 text-center")}>
                   {h}
                 </th>
               ))}
@@ -23,7 +25,10 @@ export function DataTable({ t, compact }: { t: Table; compact?: boolean }) {
             {t.rows.map((r, j) => (
               <tr key={j} className="border-t border-line even:bg-surface-2/50">
                 {r.map((cell, k) => (
-                  <td key={k} className={cn("px-2.5 py-1 sm:px-3 sm:py-1.5", k === 0 && "font-medium text-ink")}>
+                  <td
+                    key={k}
+                    className={cn("px-2.5 py-1 sm:px-3 sm:py-1.5", k === 0 && "font-medium text-ink", matrix && k > 0 && "text-center")}
+                  >
                     {cell}
                   </td>
                 ))}

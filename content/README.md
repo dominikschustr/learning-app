@@ -119,6 +119,10 @@ True/False und Multiple Choice ganz oder gar nicht, Kurzantworten anteilig nach 
 
 Aufgaben mit mehreren Fragen werden a), b), … nummeriert, Aussagen ohne Aufgabentitel 1), 2), ….
 
+**Kreuz-Matrizen** (z. B. ein O/CPV-Framework): Enthält eine Falltabelle nur kurze Zellen (höchstens 3 Zeichen, etwa „×“)
+neben langen Zeilentiteln, brechen die Zeilentitel um und die Kreuze stehen mittig. Spaltenköpfe dann kurz halten
+(„O1“, „O2“ …) und die ausgeschriebenen Ziele in den Falltext schreiben. Beispiel: Management Control, `cases/p2.json`.
+
 Die Reihenfolge der Teile im zufälligen Abschlusstest legt `examFormat.order` fest (Standard `["short", "mc", "tf"]`,
 Marketing z. B. `["tf", "mc", "short"]` wie die echte Klausur).
 

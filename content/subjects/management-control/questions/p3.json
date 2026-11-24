@@ -1,0 +1,322 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p3-01",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Goal vs. line-of-action indicators",
+    "prompt": "The article mentions several indicators. List those related to a goal and those related to a main line of action. You can indicate the arguments or hypotheses justifying your answer. (5 points)",
+    "modelAnswer": "The two goals are debt reduction (leverage below 3× EBITDA) and growth faster than the market. Indicators related to a goal: net debt / EBITDA (4.1×, target < 3×), revenue growth (+9%), RevPAR growth (+6%, accepted as a growth indicator; can also be argued as a lever since it combines price and occupancy); the EBITDA margin rate is presented by the CFO as the goal indicator for debt reduction (see Q2). Indicators related to lines of action: occupancy rate (78%), share of direct bookings (38% – lever to cut commissions and improve margin), guest satisfaction (8.7/10 – not presented as a goal), energy consumption per room night (−12% – cost lever). 1 point per correctly classified and justified indicator, max. 5.",
+    "keyPoints": [
+      "Goals: debt reduction and growth",
+      "Goal indicators: net debt/EBITDA, revenue (and RevPAR) growth",
+      "Line-of-action indicators: occupancy rate, share of direct bookings",
+      "Line-of-action indicators: guest satisfaction, energy per room night",
+      "Justification can rescue a debatable classification (RevPAR, EBITDA margin)"
+    ],
+    "case": "kestrel",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 1 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-02",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Relevance of the EBITDA margin for debt reduction",
+    "prompt": "Does the EBITDA margin rate seem to you to be well chosen to steer the debt-reduction objective as expressed in the article? Justify your answer. (4 points)",
+    "modelAnswer": "Only partially – rather no. EBITDA can be used as a proxy of operating cash flow, and leverage is expressed as net debt / EBITDA, so the choice is not absurd. But (1) a margin rate measures profitability relative to sales, not the cash actually available to repay debt; (2) debt is repaid with free cash flow, i.e. after capital expenditure (the €40m renovation programme!), working capital, taxes and interest, which EBITDA ignores; (3) the objective is itself expressed as a ratio (net debt / EBITDA < 3), which should be the goal indicator. Better: net debt / EBITDA and free cash flow (or change in net debt). 2 points for the inconsistency, 2 points for the right indicators.",
+    "keyPoints": [
+      "EBITDA is a cash proxy – but a margin rate measures profitability",
+      "Debt is repaid from free cash flow (after capex, WC, taxes, interest)",
+      "€40m renovation capex ignored by EBITDA",
+      "Use net debt/EBITDA and free cash flow"
+    ],
+    "case": "kestrel",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 1 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-03",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – objectives",
+    "prompt": "What can you say about the \"objectives\" as they appear in the framework? Comment precisely on 4 different points (positive or negative). (8 points)",
+    "modelAnswer": "Possible points (2 points each): (1) Positive: O2 is specific, measurable, targeted (18%) and time-bound (20n+1) and translates the managing director's main goal. (2) O4 is not an objective but a line of action (how to get there), and it contradicts both the medium-range positioning with little room on prices and O2 (lower prices reduce the margin). (3) O1 is vague: no target, no horizon, and growth in revenue is not a goal in itself for the MD – it is only a means if it is profitable; it overlaps with O3. (4) O3 is targeted but has no time horizon and is the only market-share target: the agreed targets for Bermuda shorts (25%) and sweatsuits (20%) appear as a CPV (CPV 5) instead of an objective. (5) The hierarchy is unclear: the main goal (margin) should be at the top, the others subordinated to it.",
+    "keyPoints": [
+      "O2 SMART and consistent with the MD's goal (+)",
+      "O4 is a line of action and contradicts positioning/margin",
+      "O1 vague, not targeted, overlaps with O3",
+      "O3 without horizon; other market-share targets misplaced in CPV 5",
+      "Main goal (margin) not placed above the others"
+    ],
+    "case": "stet-ocpv",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q1"
+      },
+      {
+        "kind": "case",
+        "source": "STET Sportswear",
+        "ref": "Context and action plans"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-04",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – CPVs",
+    "prompt": "What can you say about the \"CPVs\" as they appear in the framework? Identify precisely at least two problems. Your answer must be different enough from those of questions 1 and 3. (4 points)",
+    "modelAnswer": "Possible problems (2 points each): some CPVs are indicators, not performance variables (CPV 4 fabric consumption per parka, CPV 7 number of customer visits); CPV 1 describes an incentive scheme (a control mechanism) rather than an action variable, and it rewards sales, not margin – it can push salespeople towards volume and discounts; CPV 5 is an objective (market shares) placed among the CPVs (overlap of levels); CPV 6 (absenteeism in the cutting workshop) is not related to the agreed priorities and action plans; CPV 10 (summer parka collection) is not part of the agreed action plans and adds risk to the newest product line.",
+    "keyPoints": [
+      "Indicators disguised as CPVs (CPV 4, CPV 7)",
+      "CPV 1 = incentive scheme rewarding sales, not margin",
+      "CPV 5 is an objective, not a CPV",
+      "CPV 6 and CPV 10 outside the agreed priorities/action plans"
+    ],
+    "case": "stet-ocpv",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-05",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – framework as a whole",
+    "prompt": "What can you say about the framework as a whole? Comment precisely on 3 different points (positive or negative). (6 points)",
+    "modelAnswer": "Possible points (2 points each): (1) 4 objectives and 10 CPVs = 14 dimensions: a manageable size for a steering dashboard (+). (2) The main goal (O2, margin) is supported only by production/purchasing levers, while the sales levers point at volume (O1, O3); no CPV deals with price discipline or the contribution margin, although price is the risk in a medium-range positioning. (3) Crosses hide negative effects: the 2.2% bonus and the two hires increase selling costs (− on O2), outsourcing has a cost (− or ? on O2) – \"+\" and \"−\" would show the trade-offs. (4) Some causal links are questionable: outsourcing parka assembly is mainly a capacity lever for growth (O1/O3), not only a margin lever; subcontractor lead times (CPV 9) matter for all sales, not just market share. (5) Most CPVs are linked to one or two objectives only; few are truly transversal.",
+    "keyPoints": [
+      "14 dimensions: manageable (+)",
+      "Margin goal supported only by production levers; no price/contribution lever",
+      "Use + / −: bonus and hires cost money, outsourcing trade-off",
+      "Questionable causal links (CPV 3, CPV 9)",
+      "Few transversal CPVs"
+    ],
+    "case": "stet-ocpv",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q3"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-06",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Responsibility centre – plant",
+    "prompt": "What is the most relevant type of responsibility centre to qualify the roasting plant? 1) Cost centre 2) Revenue centre 3) Profit centre 4) Investment centre. Explain your answer (2 lines max). (3 points)",
+    "modelAnswer": "Answer 1 – cost centre. The plant controls its production costs (staff, energy, maintenance, green coffee consumption per bag) but not revenues (it roasts to order for the agencies), not its investments and not the purchase price of green coffee (central purchasing). It holds no finished stock. Its cost indicator should therefore exclude the price of green coffee (controllability principle).",
+    "keyPoints": [
+      "Cost centre",
+      "Controls production costs and consumption, not revenues",
+      "No investments, no finished stock",
+      "Green coffee price not controllable → exclude price effects"
+    ],
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p3-07",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Responsibility centre – agencies",
+    "prompt": "What is the most relevant type of responsibility centre to qualify the regional agencies? 1) Cost centre 2) Revenue centre 3) Profit centre 4) Investment centre. Explain your answer (2 lines max). (2 points)",
+    "modelAnswer": "Answer 3 – profit centre. Agencies act on revenues (volumes, discounts) and on their direct costs (staff, vans, premises), but not on investments, which are decided at headquarters. Nuances: they do not control production costs (their indicator should be a contribution after their own costs), but they do control short-term assets (stocks, receivables through payment terms) – a charge on working capital should be considered.",
+    "keyPoints": [
+      "Profit centre",
+      "Control revenues (discounts) and direct costs",
+      "No investments; production cost unknown/uncontrolled",
+      "Nuance: they manage stocks and receivables → charge on working capital"
+    ],
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p3-01",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales volume sub-variance",
+    "statement": "Actual revenue is about 1.6% above budget, and the volume sub-variance alone represents more than 150% of this overall variance.",
+    "answer": true,
+    "explanation": "True. Overall = 1,340,600 − 1,320,000 = +20,600 € (+1.56%). Volume: total 82,000 bags at the budget mix (62.5% / 37.5%) → 51,250 E and 30,750 F; volume = 1,250 × 18 + 750 × 14 = +33,000 € = 160% of the overall variance.",
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p3-02",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales mix sub-variance",
+    "statement": "The mix sub-variance is unfavourable because Filter, the blend with the lower budgeted price, represents a larger share of actual sales than in the budget.",
+    "answer": true,
+    "explanation": "True. Filter rose from 37.5% to 43.9% of the bags sold. Mix: E (46,000 − 51,250) × 18 = −94,500; F (36,000 − 30,750) × 14 = +73,500 → −21,000 € (unfav.).",
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p3-03",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales price sub-variance",
+    "statement": "The favourable price sub-variance on Espresso (+€23,000) is explained by the fact that more Espresso bags were sold than budgeted.",
+    "answer": false,
+    "explanation": "False. Fewer Espresso bags were sold (46,000 vs 50,000). The price sub-variance comes from the higher selling price: (18.5 − 18) × 46,000 = +23,000 €. Volumes affect the volume and mix sub-variances.",
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p3-04",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales sub-variances",
+    "statement": "Without the price sub-variance, actual revenue would have been below budget.",
+    "answer": false,
+    "explanation": "False. Volume + mix = 33,000 − 21,000 = +12,000 € (fav.): revenue would still be above budget. The price sub-variance (+8,600 €: E +23,000, F −14,400) adds to it.",
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p3-05",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material price variance & controllability",
+    "statement": "Overall, the green coffee price variance is the main cause of the unfavourable material cost variance – and the plant manager cannot be held responsible for it.",
+    "answer": true,
+    "explanation": "True. Total material variance = 537,600 − 508,400 = +29,200 € (unfav.), of which price = +26,912 € (E 46,000 × 1.22 × 0.40 = 22,448; F 36,000 × 1.24 × 0.10 = 4,464). Green coffee is bought by central purchasing, so under the controllability principle the price variance is not the plant's responsibility.",
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p3-06",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material mix vs. price (E)",
+    "statement": "For Espresso, the favourable mix variance more than offsets the unfavourable price variance.",
+    "answer": true,
+    "explanation": "True. Espresso: mix (46,000 − 51,250) × 1.25 × 5.6 = −36,750 € (fav.) vs price +22,448 € (unfav.).",
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p3-07",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material sub-variances (F)",
+    "statement": "For Filter, all four material sub-variances (volume, mix, yield, price) are unfavourable.",
+    "answer": true,
+    "explanation": "True. Filter: volume 750 × 1.2 × 4.4 = +3,960; mix 5,250 × 1.2 × 4.4 = +27,720; yield 36,000 × (1.24 − 1.2) × 4.4 = +6,336; price 36,000 × 1.24 × 0.1 = +4,464 – all unfavourable (total +42,480 €).",
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p3-08",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material yield (total)",
+    "statement": "Overall, the yield variance is unfavourable: the plant used more green coffee per bag than budgeted.",
+    "answer": false,
+    "explanation": "False. Espresso used less (1.22 vs 1.25 kg): −7,728 € (fav.); Filter more (1.24 vs 1.2 kg): +6,336 € (unfav.). Total yield = −1,392 € (fav.).",
+    "case": "lacroix",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "p4",
+    "title": "Konzeptklausur 3 – Maison Arlo, Ecomove, Veloria",
+    "subtitle": "Neue Klausur im Aufbau des Mock up exam (40 Punkte, 90 Minuten): fiktiver Artikel Maison Arlo (Nettogewinn vs. Wertschaffung/EVA), Kritik eines O/CPV-Frameworks zu Ecomove, Profit Centre vs. Discretionary Cost Centre und VMYP mit stark ungünstigem Mix.",
+    "origin": {
+      "kind": "neu",
+      "exam": "",
+      "faithful": true
+    },
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part 1 – Article",
+        "instructions": "[9/40] Indicative time: 20 min.",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p4-01",
+                "points": 5
+              },
+              {
+                "q": "sa-p4-02",
+                "points": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Ecomove",
+        "instructions": "[18/40] Indicative time: 30 min. Analyse in detail the proposed O/CPV framework.",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p4-03",
+                "points": 8
+              },
+              {
+                "q": "sa-p4-04",
+                "points": 4
+              },
+              {
+                "q": "sa-p4-05",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 3 – Responsibility centres and variance analysis",
+        "instructions": "[13/40] Indicative time: 40 min. For the true/false statements: calculate the sub-variances first; 1 point per correct answer.",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p4-06",
+                "points": 3
+              },
+              {
+                "q": "sa-p4-07",
+                "points": 2
+              }
+            ]
+          },
+          {
+            "title": "Q3 – Sales sub-variances: true or false?",
+            "items": [
+              {
+                "q": "tf-p4-01",
+                "points": 1
+              },
+              {
+                "q": "tf-p4-02",
+                "points": 1
+              },
+              {
+                "q": "tf-p4-03",
+                "points": 1
+              },
+              {
+                "q": "tf-p4-04",
+                "points": 1
+              }
+            ]
+          },
+          {
+            "title": "Q4 – Material cost sub-variances: true or false?",
+            "items": [
+              {
+                "q": "tf-p4-05",
+                "points": 1
+              },
+              {
+                "q": "tf-p4-06",
+                "points": 1
+              },
+              {
+                "q": "tf-p4-07",
+                "points": 1
+              },
+              {
+                "q": "tf-p4-08",
+                "points": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,144 @@
+{
+  "lecture": "s78",
+  "title": "Sessions 7-8 – Analysing results: variance analysis",
+  "source": "Slides session 7-8.pptx",
+  "sections": [
+    {
+      "heading": "Key messages",
+      "blocks": [
+        {
+          "kind": "para",
+          "text": "Results analysis is the downstream phase of the control cycle. It has two general objectives:"
+        },
+        {
+          "kind": "item",
+          "text": "Monitoring the achievement of objectives (regulation)."
+        },
+        {
+          "kind": "item",
+          "text": "Confirming or adjusting the performance model (learning). It can also be applied to compare results between two periods of time."
+        },
+        {
+          "kind": "para",
+          "text": "Results monitoring is framed by the underlying performance model. Two families of methods exist: methods based on cost-accounting models (e.g. the VMYP method) and methods based on more diversified performance models (e.g. monitoring dashboard indicators)."
+        },
+        {
+          "kind": "para",
+          "text": "Principles of the VMYP method:"
+        },
+        {
+          "kind": "item",
+          "text": "The income variance (actual income − standard/planned income) is broken down per accounting item (sales, costs) and per product."
+        },
+        {
+          "kind": "item",
+          "text": "Each variance is split into sub-variances: Volume, Mix, Yield (productivity, etc.) and Price/cost."
+        },
+        {
+          "kind": "item",
+          "text": "Flexible budgets are intermediaries between planned and actual figures. Flexible budget 1, adjusted to the actual sales volume, shows what income should have been had the actual volume been anticipated, all other amounts (selling price included) being equal to the budget."
+        },
+        {
+          "kind": "item",
+          "text": "The total variance equals the sum of all sub-variances; each sub-variance measures the impact of one cause on income (favourable or unfavourable) to support the identification of corrective actions."
+        },
+        {
+          "kind": "para",
+          "text": "Take-aways:"
+        },
+        {
+          "kind": "item",
+          "text": "An overall favourable variance does not prevent poor performance on certain sub-variances: a favourable variance on any income component needs to be broken down to understand its causes."
+        },
+        {
+          "kind": "item",
+          "text": "A favourable volume variance on a given cost does not mean that this cost has been well managed (it may only reflect lower sales volumes)."
+        },
+        {
+          "kind": "item",
+          "text": "Sub-variances may be linked (crossed effects): more volume because of an attractive selling price; better yield thanks to better-quality, more expensive material."
+        },
+        {
+          "kind": "item",
+          "text": "Variance analysis does not always match the controllability principle (responsibility for a variance can be shared)."
+        },
+        {
+          "kind": "item",
+          "text": "Variances on fixed costs are mostly interpreted as price variances, and as volume variances only if the relevant range of activity is exceeded."
+        },
+        {
+          "kind": "para",
+          "text": "Results monitoring based on a cost-accounting model – benefits: a structured and systematic approach (first level of diagnosis), measurement of variances in monetary terms, ranking of variances from largest to smallest. Limitations: slow response time, focus on causes whose impact on income can be measured, assumption that causes are independent."
+        },
+        {
+          "kind": "para",
+          "text": "Results monitoring based on dashboards – benefits: no reliance on the accounting information system, more responsive, more flexibility in defining the performance model, facilitates learning. Limitations: no mathematical relationship between variances; they cannot be summed up to the total variance, so ranking them is more subjective."
+        }
+      ]
+    },
+    {
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "kind": "item",
+          "term": "VMYP method",
+          "text": "a way of structuring income variances based on cost accounting that highlights four distinct causes – volume, mix, yield and price/cost – and computes their respective weight in the overall variance."
+        },
+        {
+          "kind": "item",
+          "term": "Flexible budget",
+          "text": "an intermediate budget in which some parameters are set at their actual values (e.g. volume) and the others at their budgeted values, used to isolate the effect of each cause."
+        },
+        {
+          "kind": "item",
+          "term": "Sales volume sub-variance",
+          "text": "effect of the change in total volume sold, valued with the budget mix and budget prices."
+        },
+        {
+          "kind": "item",
+          "term": "Sales mix sub-variance",
+          "text": "effect of the change in the proportion of each product in total sales, valued at budget prices."
+        },
+        {
+          "kind": "item",
+          "term": "Price sub-variance",
+          "text": "effect of the difference between actual and budgeted prices (selling price, or cost per unit of input), valued on actual quantities."
+        },
+        {
+          "kind": "item",
+          "term": "Yield sub-variance",
+          "text": "effect of the difference between actual and budgeted consumption of an input per unit produced, valued at the budgeted input cost."
+        }
+      ]
+    },
+    {
+      "heading": "Worked example (slides)",
+      "blocks": [
+        {
+          "kind": "para",
+          "text": "Planned: 100 units at €50, material 3.20 kg/unit at €8.80/kg, fixed costs €1,000 → production margin 1,184. Actual: 115 units at €48, 3.10 kg/unit at €8.90/kg, fixed costs €1,050 → production margin 1,297.2."
+        },
+        {
+          "kind": "item",
+          "text": "Volume: +750 on turnover, −422 on variable costs → +328 (fav.)"
+        },
+        {
+          "kind": "item",
+          "text": "Yield: +101 (fav.)"
+        },
+        {
+          "kind": "item",
+          "text": "Selling price: −230 (unfav.)"
+        },
+        {
+          "kind": "item",
+          "text": "Material price: −36 (unfav.); fixed costs: −50 (unfav.)"
+        },
+        {
+          "kind": "para",
+          "text": "Overall variance on the production margin: +113.2 (fav.). Possible crossed effects: we sell more because of an attractive price; less waste thanks to better-quality material. Corrective actions: market study on the decreasing selling price; purchasing to negotiate lower material prices."
+        }
+      ]
+    }
+  ]
+}

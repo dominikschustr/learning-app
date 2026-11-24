@@ -1,0 +1,74 @@
+[
+  {
+    "id": "c-s78-01",
+    "lecture": "s78",
+    "front": "VMYP method",
+    "back": "Breaks the income variance (actual − budget) down per item and product into Volume, Mix, Yield (productivity) and Price/cost sub-variances."
+  },
+  {
+    "id": "c-s78-02",
+    "lecture": "s78",
+    "front": "Flexible budget",
+    "back": "Intermediate budget between planned and actual: some parameters at actual values (e.g. volume), the others at budget – used to isolate each cause."
+  },
+  {
+    "id": "c-s78-03",
+    "lecture": "s78",
+    "front": "Sales volume sub-variance",
+    "back": "(Total actual volume × budget mix − budget volume) × budget price, per product."
+  },
+  {
+    "id": "c-s78-04",
+    "lecture": "s78",
+    "front": "Sales mix sub-variance",
+    "back": "(Actual volume − total actual volume × budget mix) × budget price. Favourable if the share of products with a high budget price rises."
+  },
+  {
+    "id": "c-s78-05",
+    "lecture": "s78",
+    "front": "Sales price sub-variance",
+    "back": "(Actual price − budget price) × actual volume."
+  },
+  {
+    "id": "c-s78-06",
+    "lecture": "s78",
+    "front": "Material yield sub-variance",
+    "back": "Actual volume × (actual qty per unit − budget qty per unit) × budget cost per unit of material."
+  },
+  {
+    "id": "c-s78-07",
+    "lecture": "s78",
+    "front": "Material price sub-variance",
+    "back": "Actual volume × actual qty per unit × (actual − budget cost per unit of material). Responsibility usually lies with purchasing."
+  },
+  {
+    "id": "c-s78-08",
+    "lecture": "s78",
+    "front": "Fixed-cost variance",
+    "back": "Mostly interpreted as a price/spending variance; a volume effect only if the relevant range of activity is exceeded."
+  },
+  {
+    "id": "c-s78-09",
+    "lecture": "s78",
+    "front": "Crossed effects",
+    "back": "Sub-variances may be linked: more volume because of lower prices; better yield thanks to more expensive material."
+  },
+  {
+    "id": "c-s78-10",
+    "lecture": "s78",
+    "front": "Limits of the cost-accounting approach",
+    "back": "Slow response time, only causes measurable in income, assumes independent causes; does not always match controllability."
+  },
+  {
+    "id": "c-s78-11",
+    "lecture": "s78",
+    "front": "Dashboards for results monitoring",
+    "back": "Faster, independent of the accounting system, flexible, facilitate learning – but variances cannot be summed; ranking is subjective."
+  },
+  {
+    "id": "c-s78-12",
+    "lecture": "s78",
+    "front": "Goals of results analysis",
+    "back": "Monitor the achievement of objectives (regulation) and confirm/adjust the performance model (learning)."
+  }
+]

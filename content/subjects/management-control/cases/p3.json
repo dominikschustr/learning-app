@@ -1,0 +1,186 @@
+[
+  {
+    "id": "kestrel",
+    "title": "Kestrel Hotels (fictional press article)",
+    "text": [
+      "Kestrel Hotels, which operates 64 four-star city hotels in France, Belgium and Spain, has come out of the post-Covid years with a heavy debt burden: its net debt still represents 4.1 times its EBITDA. CEO Hélène Marchetti made her priorities clear at the annual results meeting: \"Our first goal is to bring our leverage below 3 times EBITDA within two years. Our second goal is to keep growing faster than the market.\"",
+      "Revenue rose by 9% to €486 million, and revenue per available room (RevPAR) by 6%. The occupancy rate reached 78%, two points above the sector average. The group has pushed direct bookings on its own website and app, which now account for 38% of nights sold (31% a year ago) and save on the commissions paid to online travel agencies. Guest satisfaction, measured after each stay, stands at 8.7/10. A programme of LED lighting and smart thermostats cut energy consumption per room night by 12%.",
+      "The group nevertheless plans a €40 million renovation programme for its oldest hotels over the next two years. \"To steer our debt reduction, we will watch our EBITDA margin rate, which should rise from 24% to 27%,\" added CFO Paul Imbert. (Fictional article, written for this practice exam.)"
+    ]
+  },
+  {
+    "id": "stet-ocpv",
+    "title": "STET Sportswear – O/CPV framework proposed by a junior controller",
+    "text": [
+      "Reminder of the case: STET makes sweatsuits, Bermuda shorts and – since 20n-1 – parkas made of a high-tech waterproof fabric, sold to sporting goods stores across France. It is positioned on the medium-range segment, with little room for manoeuvre on prices. After a very bad year 20n (operating margin of 14.4%), the managing director's main goal for 20n+1 is to raise the operating margin to 18%. Top management and the sales department agreed to maintain market shares of 25% for Bermuda shorts and 20% for sweatsuits, and to raise the market share of parkas from 10% to 12%.",
+      "Two action plans were decided: (1) a new incentive system for the salesforce – basic salaries −8%, two additional salespeople, and a bonus of 2.2% of sales (1.4% in the past); (2) outsourcing of parka assembly, so that the assembly workshop's capacity can be dedicated to Bermuda shorts and sweatsuits. Managers pay close attention to production costs (fabric) and want to monitor the contribution margin month by month.",
+      "A junior controller has proposed the following O/CPV framework as the basis of the managing director's steering dashboard for 20n+1.",
+      "Objectives of the proposed framework: O1: Increase sales revenue; O2: Reach an operating margin of 18% in 20n+1; O3: Increase the market share of parkas to 12%; O4: Cut selling prices to win market share."
+    ],
+    "tables": [
+      {
+        "caption": "Proposed O/CPV framework (× = the CPV contributes to the objective)",
+        "head": [
+          "CPV",
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "rows": [
+          [
+            "CPV 1: Bonus of 2.2% of sales for the salesforce",
+            "×",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 2: Hire two additional salespeople",
+            "×",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 3: Outsource parka assembly",
+            "",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 4: Fabric consumption per parka",
+            "",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 5: Maintain a market share of 25% for Bermuda shorts and 20% for sweatsuits",
+            "×",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CPV 6: Reduce staff absenteeism in the cutting workshop",
+            "",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 7: Number of customer visits per salesperson",
+            "×",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 8: Negotiate fabric purchase prices",
+            "",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 9: Monitor the subcontractor's delivery lead times and quality",
+            "",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 10: Launch a summer parka collection",
+            "×",
+            "",
+            "×",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lacroix",
+    "title": "Cafés Lacroix – roasting plant and regional agencies",
+    "text": [
+      "Cafés Lacroix sells roasted coffee in 1-kg bags to cafés, hotels and offices. The group has one roasting plant, which produces two blends: Espresso (E) and Filter (F). Green coffee is bought by the central purchasing department at headquarters, which also manages price hedging on the coffee markets. The plant roasts to order, within 48 hours of the orders transmitted by the agencies, so it holds no stock of finished products; the green coffee it uses is delivered every week by headquarters. The plant manager is responsible for the roasting staff, energy and maintenance, and for the quantity of green coffee used per bag (roasting losses). Investments in roasters are decided and financed by headquarters.",
+      "Sales are made by twelve regional agencies. Each agency manager sets discounts within a range of 0 to 15% of the catalogue price, negotiates payment terms with customers (up to 45 days), holds a local stock of bags and coffee machines lent to customers, and manages the agency's staff, vans and premises. The agencies do not know the production cost of the coffee they sell. Agency investments (premises, vans) are decided by headquarters.",
+      "You are the controller of the coffee business and have the following figures for the year (material = green coffee, in kg per bag)."
+    ],
+    "tables": [
+      {
+        "caption": "Income statement (in €)",
+        "head": [
+          "",
+          "Budget E+F",
+          "Actual E+F"
+        ],
+        "rows": [
+          [
+            "Revenues",
+            "1,320,000",
+            "1,340,600"
+          ],
+          [
+            "Material costs",
+            "508,400",
+            "537,600"
+          ],
+          [
+            "Other operating costs",
+            "640,000",
+            "652,000"
+          ],
+          [
+            "Operating income",
+            "171,600",
+            "151,000"
+          ]
+        ]
+      },
+      {
+        "caption": "Operating data",
+        "head": [
+          "",
+          "Budget E",
+          "Budget F",
+          "Actual E",
+          "Actual F"
+        ],
+        "rows": [
+          [
+            "Volumes (units)",
+            "50,000",
+            "30,000",
+            "46,000",
+            "36,000"
+          ],
+          [
+            "Unit selling price (€)",
+            "18",
+            "14",
+            "18.5",
+            "13.6"
+          ],
+          [
+            "Material per unit (kg)",
+            "1.25",
+            "1.2",
+            "1.22",
+            "1.24"
+          ],
+          [
+            "Cost per kg of material (€)",
+            "5.6",
+            "4.4",
+            "6",
+            "4.5"
+          ]
+        ]
+      }
+    ]
+  }
+]

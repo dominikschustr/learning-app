@@ -3,7 +3,7 @@
   "name": "Management Control",
   "short": "MC",
   "color": "#2F5BEA",
-  "description": "Midterm: Control-Zyklus, Responsibility Centres, finanzielle Indikatoren, Performance-Modelle, Dashboards & OVAR.",
+  "description": "Control-Zyklus, Responsibility Centres, finanzielle Indikatoren, Performance-Modelle, Dashboards & OVAR, Abweichungsanalyse (VMYP). Probeklausuren: Mock up exam (Original mit Lösung) und drei Konzeptklausuren im selben Aufbau.",
   "examDate": "2026-12-17",
   "demo": false,
   "lectures": [
@@ -12,7 +12,8 @@
     { "id": "s1c", "title": "S1c · Financial performance & indicators" },
     { "id": "s2a", "title": "S2a · Evaluating financial-type indicators" },
     { "id": "s2b", "title": "S2b · Defining & modelling performance" },
-    { "id": "s34", "title": "S3&4 · Dashboards & KPIs" }
+    { "id": "s34", "title": "S3&4 · Dashboards & KPIs" },
+    { "id": "s78", "title": "S7&8 · Analysing results: variance analysis (VMYP)" }
   ],
   "examFormat": { "name": "Midterm", "minutes": 42, "short": 1, "mc": 13, "tf": 6 }
 }

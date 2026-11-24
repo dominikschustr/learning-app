@@ -1,0 +1,322 @@
+[
+  {
+    "type": "short",
+    "id": "sa-p4-01",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Goal vs. line-of-action indicators",
+    "prompt": "The article mentions several indicators. List those related to a goal and those related to a main line of action. You can indicate the arguments or hypotheses justifying your answer. (5 points)",
+    "modelAnswer": "The two goals are value creation for shareholders and becoming an international brand. Indicators related to a goal: share of sales outside France (46%) and sales growth (+11%) for the international/growth goal; net income growth (+18%), presented by the chairwoman as the measure of value creation (see Q2). Indicators related to lines of action: share of direct online sales (27%), number of brand stores opened abroad (9), product return rate (4.2% – lever for online profitability and customer experience), Net Promoter Score (61 – brand lever, not presented as a goal). 1 point per correctly classified and justified indicator, max. 5.",
+    "keyPoints": [
+      "Goals: shareholder value creation and internationalisation",
+      "Goal indicators: share of sales abroad, sales growth (net income as stated by management)",
+      "Line-of-action indicators: direct online sales share, stores opened abroad",
+      "Line-of-action indicators: return rate, NPS",
+      "Justification can rescue a debatable classification"
+    ],
+    "case": "maison-arlo",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 1 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-02",
+    "lecture": "s1c",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Net income vs. value creation",
+    "prompt": "Does net income growth seem to you to be well chosen to measure the value-creation objective as expressed in the article? Justify your answer. (4 points)",
+    "modelAnswer": "No. Net income is an accounting profitability measure: it ignores the cost of the capital used to generate it (equity has a cost) and the capital invested – here €25m in a new foundry, partly financed by debt. Net income can grow while value is destroyed if the return on capital stays below its cost. Value creation should be measured internally by EVA = NOPAT − WACC × capital employed (or ROCE compared with WACC), externally by MVA or TSR. Using net income for bonuses may also push managers to over-invest. 2 points for the inconsistency, 2 points for the correct indicators.",
+    "keyPoints": [
+      "Not consistent: net income ≠ value creation",
+      "Ignores the cost of capital and the capital invested (€25m foundry)",
+      "Value created only if return on capital > cost of capital",
+      "EVA = NOPAT − WACC × CE (internal), MVA/TSR (external)"
+    ],
+    "case": "maison-arlo",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 1 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-03",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – objectives",
+    "prompt": "What can you say about the \"objectives\" as they appear in the framework? Comment precisely on 4 different points (positive or negative). (8 points)",
+    "modelAnswer": "Possible points (2 points each): (1) O2 \"develop the SME segment\" is the strategic goal of the decentralisation, but it is neither measurable nor targeted (e.g. SMEs = 20% of new contracts by year end). (2) O1 is targeted (+15%) but focuses on total turnover: growth has already been reached and has come with lower income and higher finance costs – growth is not a goal in itself, and total turnover does not distinguish SMEs from large clients. (3) O3 is relevant for profit centres but, as the contribution is computed, it ignores the finance costs of receivables and inventories: the objective should be a contribution after a charge on working capital. (4) O4 (motivation) is a means, not a performance objective for the company, and cannot be measured as such. (5) An objective on cash/working capital (receivables, finance costs) is missing, although it is the main problem revealed in Part 2. (6) No time horizon except for O1.",
+    "keyPoints": [
+      "O2 = core goal but not measurable/targeted",
+      "O1 targeted but total turnover is not the goal (growth already reached, income down)",
+      "O3 ignores finance costs of WC as currently computed",
+      "O4 motivation is a means, not an objective",
+      "Missing cash / working-capital objective; horizons unclear"
+    ],
+    "case": "ecomove-ocpv",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q1"
+      },
+      {
+        "kind": "case",
+        "source": "Ecomove case 2025",
+        "ref": "Parts 1 and 2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-04",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – CPVs",
+    "prompt": "What can you say about the \"CPVs\" as they appear in the framework? Identify precisely at least two problems. Your answer must be different enough from those of questions 1 and 3. (4 points)",
+    "modelAnswer": "Possible problems (2 points each): CPVs 1 and 2 are formulated as permissions given to the agencies, not as oriented performance variables – they should say how the lever is to be used (e.g. \"Target discounts on new SME customers only\", \"Keep average payment terms below 45 days\"); CPV 7 (DSO) and CPV 10 (customer satisfaction) are indicators or vague labels, not action variables; CPV 4 has no verb; CPV 6 (bonus) is a control mechanism, not a performance variable; CPV 8 is not precise enough (how many SMEs, which territories?).",
+    "keyPoints": [
+      "CPVs 1–2 = permissions, not oriented levers",
+      "CPV 7 DSO is an indicator; CPV 10 vague",
+      "CPV 4 without verb; CPV 8 imprecise",
+      "CPV 6 bonus = control mechanism, not a CPV"
+    ],
+    "case": "ecomove-ocpv",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-05",
+    "lecture": "s34",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "O/CPV – framework as a whole",
+    "prompt": "What can you say about the framework as a whole? Comment precisely on 3 different points (positive or negative). (6 points)",
+    "modelAnswer": "Possible points (2 points each): (1) 14 dimensions: a reasonable size for a dashboard (+). (2) The framework is biased towards growth: most CPVs are linked to O1/O2, few to the contribution, none to cash – it reproduces the problem observed in Part 2. (3) Crosses hide negative effects: discounts and longer payment terms help sales but are negative for the contribution and for finance costs (\"−\" on O3, and on a missing cash objective); local inventories increase working capital. (4) The framework is inconsistent with the measurement system: DSO is linked to O3, but the contribution as computed does not include any finance cost, so improving DSO does not improve it. (5) CPV 5 (third-party services) is a good transversal lever, but it can cannibalise core offers.",
+    "keyPoints": [
+      "14 dimensions: manageable (+)",
+      "Growth bias: little on contribution, nothing on cash",
+      "Use + / −: discounts, payment terms and stocks hurt contribution/finance costs",
+      "Inconsistency: DSO linked to a contribution that ignores finance costs",
+      "CPV 5 transversal but risk of cannibalisation"
+    ],
+    "case": "ecomove-ocpv",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 2 – Q3"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-06",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Responsibility centre – subsidiaries",
+    "prompt": "What is the most relevant type of responsibility centre to qualify the country subsidiaries? 1) Cost centre 2) Revenue centre 3) Profit centre 4) Investment centre. Explain your answer (2 lines max). (3 points)",
+    "modelAnswer": "Answer 3 – profit centre. The subsidiaries act on revenues (retail prices, promotions, dealers) and on their costs (stores' staff, rent, local marketing; the bikes at a transfer price), but not on assets: store openings, stocks (central warehouse) and payment terms are decided by headquarters. Their indicator should be a contribution/operating profit after the transfer price.",
+    "keyPoints": [
+      "Profit centre",
+      "Control prices/revenues and store costs",
+      "No control of investments, stocks or payment terms",
+      "Indicator: profit after transfer price"
+    ],
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q1"
+      }
+    ]
+  },
+  {
+    "type": "short",
+    "id": "sa-p4-07",
+    "lecture": "s1b",
+    "difficulty": 3,
+    "verb": "explain",
+    "topic": "Responsibility centre – R&D",
+    "prompt": "What is the most relevant type of responsibility centre to qualify the central R&D department? 1) Cost centre 2) Revenue centre 3) Profit centre 4) Investment centre. Explain your answer (2 lines max). (2 points)",
+    "modelAnswer": "Answer 1 – cost centre (a discretionary-cost centre). R&D only incurs costs, within a budget set by the executive committee; it generates no revenue and does not decide on investments. Because there is no clear input–output relationship, it is evaluated on respecting its budget, complemented by non-financial indicators (projects delivered, time-to-market).",
+    "keyPoints": [
+      "Cost centre (discretionary)",
+      "Only costs, budget set by the executive committee",
+      "No revenues, no investment decisions",
+      "Complement with non-financial indicators"
+    ],
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-01",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales mix sub-variance",
+    "statement": "The overall sales variance is favourable, which shows that the sales mix developed in line with the budget.",
+    "answer": false,
+    "explanation": "False. Overall = 2,253,000 − 2,240,000 = +13,000 € (fav.), but the mix sub-variance is strongly unfavourable: e-bikes (higher budget price) fell from 40% to 35.7% of the units sold. Mix: C (1,350 − 1,260) × 600 = +54,000; E (750 − 840) × 1,900 = −171,000 → −117,000 €.",
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-02",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales volume vs. mix",
+    "statement": "In absolute value, the unfavourable mix sub-variance is larger than the favourable volume sub-variance.",
+    "answer": true,
+    "explanation": "True. Volume: 2,100 bikes at the budget mix → 1,260 C and 840 E; volume = 60 × 600 + 40 × 1,900 = +112,000 €. Mix = −117,000 €, i.e. larger in absolute value.",
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-03",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales price sub-variance",
+    "statement": "The price sub-variance is favourable overall, although city bikes were sold €20 below the budgeted price.",
+    "answer": true,
+    "explanation": "True. City bikes: (580 − 600) × 1,350 = −27,000 €; e-bikes: (1,960 − 1,900) × 750 = +45,000 €. Overall +18,000 € (fav.).",
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-04",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Sales volume sub-variance",
+    "statement": "The favourable volume sub-variance (+€112,000) means that both products sold more units than budgeted.",
+    "answer": false,
+    "explanation": "False. The volume sub-variance is computed on total volume (+5%) at the budget mix. E-bikes actually sold fewer units (750 vs 800); the shift between products is captured by the mix sub-variance.",
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q3 (sales sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-05",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material sub-variances (E)",
+    "statement": "For e-bikes, the material variance is close to zero (+€580), so none of its sub-variances is significant.",
+    "answer": false,
+    "explanation": "False. E-bikes: volume +3,040, mix (750 − 840) × 19 × 4 = −6,840 (fav.), yield 750 × (18.6 − 19) × 4 = −1,200 (fav.), price 750 × 18.6 × 0.4 = +5,580 (unfav.). Significant sub-variances offset each other – an overall variance close to zero must still be broken down.",
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-06",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material price variance",
+    "statement": "Overall, the aluminium price variance explains more than two thirds of the unfavourable material cost variance.",
+    "answer": true,
+    "explanation": "True. Total material variance = 147,510 − 128,000 = +19,510 € (unfav.). Price = 1,350 × 14.5 × 0.4 + 750 × 18.6 × 0.4 = 7,830 + 5,580 = +13,410 € = 69%.",
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-07",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material sub-variances (C)",
+    "statement": "For city bikes, all four material sub-variances are unfavourable.",
+    "answer": true,
+    "explanation": "True. City bikes: volume 60 × 14 × 4 = +3,360; mix 90 × 14 × 4 = +5,040; yield 1,350 × 0.5 × 4 = +2,700; price 1,350 × 14.5 × 0.4 = +7,830 – total +18,930 € (unfav.).",
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "tf-p4-08",
+    "lecture": "s78",
+    "difficulty": 2,
+    "topic": "Material mix vs. price",
+    "statement": "The favourable material mix variance shows that the purchasing department negotiated better aluminium prices.",
+    "answer": false,
+    "explanation": "False. The mix variance (−1,800 € overall) only reflects the change in the product mix sold (fewer e-bikes, which use more aluminium). Purchasing performance appears in the price variance, which is unfavourable (+13,410 €: 4.40 € instead of 4.00 € per kg).",
+    "case": "veloria",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Eigene Aufgabe",
+        "ref": "im Stil des Mock up exam, Part 3 – Q4 (material sub-variances)"
+      }
+    ]
+  }
+]

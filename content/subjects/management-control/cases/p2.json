@@ -1,0 +1,201 @@
+[
+  {
+    "id": "nordhaven",
+    "title": "Nordhaven Foods (fictional press article)",
+    "text": [
+      "Nordhaven Foods, a mid-cap listed in Amsterdam, makes chilled plant-based ready meals sold in supermarkets in six European countries. While the food sector is struggling with weak volumes, the group has just published a solid set of annual results: sales rose by 14% to €212 million, driven by Germany and the Nordic countries. The market for plant-based meals is growing by around 8% a year, but competition from retailers' private labels is intensifying.",
+      "The opening of a second plant in Poland last year weighed on the group's return on capital employed, which fell from 13% to 8%. Management has therefore made it clear that growth must not come at any price: \"We want to keep growing at double-digit rates, but we must also earn a decent return on the capital our shareholders have entrusted to us,\" said CEO Ingrid Halvorsen.",
+      "The group obtained 340 new supermarket listings over the year and cut food waste in its plants from 6% to 4% of volumes thanks to a new production planning tool. The share of recyclable packaging reached 70%. The overall equipment effectiveness (OEE) of the new plant, still at 71%, is expected to reach 80% within eighteen months.",
+      "For next year, CFO Marc Delaunay targets sales growth of at least 12% and a return on capital employed above 11%. \"To track our return on capital, we will focus on our operating margin, which should return to 6%,\" he added. Capital expenditure will be kept at around €15 million. (Fictional article, written for this practice exam.)"
+    ]
+  },
+  {
+    "id": "air-utopia-2024",
+    "title": "Air Utopia (case 2024) – O/CPV framework proposed by a group of students",
+    "text": [
+      "Reminder of the case (version 2024, CEO Mr Hope): after the Board meeting, four priorities were validated for the coming year: (1) decarbonisation – reduce net kerosene-related CO2 emissions by 10% within three years (biofuel: 1% SAF on long- and medium-haul flights, eco-piloting, re-programming of trajectories, carbon offsetting for frequent flyers); (2) improve profitability in the short term in order to reduce debt in the medium term (ticket prices +15% long-haul, +10% medium-haul); (3) rationalise the hub, first by reducing connection times; (4) develop the presence on social networks (dedicated team of 1 director and 8 community managers, €1m budget).",
+      "The Board rejected the hiring of airport terminal staff (flight attendants of the 8 closed medium-haul routes will be retrained instead) and limited the fleet renewal to 8 A350s and 2 A320s. The cost-cutting plan on ground handling and on-board services has been abandoned as inconsistent with a traditional airline asking its customers to pay more. Load factors and on-board service levels are considered satisfactory and are not priorities. The steering dashboard must contain at most 30 indicators.",
+      "Here is the O/CPV framework a group of students has proposed for Mr Hope's steering dashboard.",
+      "Objectives of the proposed framework: O1: Cost-cutting in ground handling and on-board services; O2: Improve profitability; O3: Reduce net kerosene-related CO2 emissions by 10% within three years; O4: Increase the aircraft load factor."
+    ],
+    "tables": [
+      {
+        "caption": "Proposed O/CPV framework (× = the CPV contributes to the objective)",
+        "head": [
+          "CPV",
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "rows": [
+          [
+            "CPV 1: Buy 10 Airbus A350s and 5 A320s",
+            "",
+            "×",
+            "×",
+            ""
+          ],
+          [
+            "CPV 2: Biofuels",
+            "",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 3: Increase ticket prices (+15% long-haul, +10% medium-haul)",
+            "",
+            "×",
+            "",
+            "×"
+          ],
+          [
+            "CPV 4: Hire airport terminal staff on permanent contracts",
+            "",
+            "",
+            "",
+            "×"
+          ],
+          [
+            "CPV 5: Use temporary workers and subcontractors in ground handling",
+            "×",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 6: Eco-piloting",
+            "×",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 7: Net Promoter Score",
+            "",
+            "",
+            "",
+            "×"
+          ],
+          [
+            "CPV 8: Close the 8 least profitable medium-haul routes from the hub",
+            "",
+            "×",
+            "×",
+            "×"
+          ],
+          [
+            "CPV 9: Hire a digital marketing team (1 director, 8 community managers)",
+            "",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 10: Offer carbon offsetting to frequent flyers",
+            "",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 11: Re-program flight trajectories with EUROCONTROL",
+            "×",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 12: Install satisfaction tags along the customer journey and spend €1m on digital content",
+            "",
+            "",
+            "",
+            "×"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alpenstein",
+    "title": "Alpenstein Outdoor – tents and sleeping bags division",
+    "text": [
+      "Alpenstein is a group producing outdoor equipment, organised in three divisions by product line (camping, climbing, clothing). Each division designs, manufactures and sells its products. Since the group's stock-exchange listing, headquarters only keeps the management of financing (debt and equity) and the treasury. Each division manager decides on the division's investments (new production lines, warehouses) within a multi-year envelope agreed with the group, manages the division's stocks of fabric and finished goods – which are significant, because sales are very seasonal – and negotiates payment terms with retailers.",
+      "The camping division makes tents (T) and sleeping bags (S) in two plants. Its products are sold to sports retailers by eight regional sales offices. Sales representatives canvass retailers and take orders on the basis of the division's price list: they are not allowed to grant discounts and have no say in delivery dates or payment terms, which are set by the division's customer service. Each regional office has a small travel and entertainment budget.",
+      "You are the controller of the camping division and have the following figures for the year (material = technical fabric, measured in kg)."
+    ],
+    "tables": [
+      {
+        "caption": "Income statement (in €)",
+        "head": [
+          "",
+          "Budget T+S",
+          "Actual T+S"
+        ],
+        "rows": [
+          [
+            "Revenues",
+            "1,720,000",
+            "1,758,500"
+          ],
+          [
+            "Material costs",
+            "324,000",
+            "339,485"
+          ],
+          [
+            "Other operating costs",
+            "1,150,000",
+            "1,182,000"
+          ],
+          [
+            "Operating income",
+            "246,000",
+            "237,015"
+          ]
+        ]
+      },
+      {
+        "caption": "Operating data",
+        "head": [
+          "",
+          "Budget T",
+          "Budget S",
+          "Actual T",
+          "Actual S"
+        ],
+        "rows": [
+          [
+            "Volumes (units)",
+            "4,000",
+            "6,000",
+            "3,800",
+            "6,700"
+          ],
+          [
+            "Unit selling price (€)",
+            "250",
+            "120",
+            "260",
+            "115"
+          ],
+          [
+            "Material per unit (kg)",
+            "3",
+            "1.5",
+            "3.1",
+            "1.45"
+          ],
+          [
+            "Cost per kg of material (€)",
+            "12",
+            "20",
+            "11.5",
+            "21"
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "maison-arlo",
+    "title": "Maison Arlo (fictional press article)",
+    "text": [
+      "Maison Arlo, the French maker of premium cast-iron and copper cookware, has published its annual results. Sales rose by 11% to €148 million, of which 46% now come from outside France, against 39% two years ago. Chairwoman Claire Devaux reaffirmed the two goals set at the IPO: \"to create value for our shareholders\" and \"to become a truly international brand\".",
+      "To get there, the company is betting on its own channels: direct online sales now account for 27% of revenue, and nine brand stores were opened abroad during the year (Tokyo, Seoul, New York…). The product return rate, a long-standing weakness of online sales, fell from 6.5% to 4.2% after the redesign of the packaging. The Net Promoter Score of the brand reached 61.",
+      "Net income grew by 18% to €12.4 million. \"Our net income growth shows that we are creating value: that is the indicator on which our executives' bonuses will be based from next year,\" Ms Devaux said, while announcing €25 million of investment in a new foundry, financed partly by new debt. (Fictional article, written for this practice exam.)"
+    ]
+  },
+  {
+    "id": "ecomove-ocpv",
+    "title": "Ecomove – O/CPV framework proposed for the sales director",
+    "text": [
+      "Reminder of the case: Ecomove leases fleets of small electric utility vehicles to professional customers. Its main goal is to strengthen its presence in the SME segment, where it is almost absent (historical clients: public administrations and large corporations). To motivate agency managers, the sales network was decentralised: agencies now decide discounts (5% to 22% of the catalogue price), negotiate payment terms (up to 60 days), may complement the offer with third-party services, manage their warehouse, have a promotional budget and almost full control over their direct costs. The agency's contribution (total sales − direct costs − promotional costs) is reported monthly; the managers' bonus is 6% of it. Invoicing, cash collection and financial costs remain at headquarters.",
+      "A few months later: turnover +15%, receivables +20%, finance costs have risen sharply, and income before finance costs is expected to be lower than in previous semesters. The sales director fears that discounts are not only used to conquer SMEs.",
+      "A trainee has proposed the following O/CPV framework for the sales director's dashboard for next year.",
+      "Objectives of the proposed framework: O1: Grow turnover by 15% over the year; O2: Develop the SME segment; O3: Increase the agencies' contribution; O4: Motivate agency managers."
+    ],
+    "tables": [
+      {
+        "caption": "Proposed O/CPV framework (× = the CPV contributes to the objective)",
+        "head": [
+          "CPV",
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "rows": [
+          [
+            "CPV 1: Grant discounts of 5% to 22%",
+            "×",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 2: Negotiate payment terms of up to 60 days",
+            "×",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 3: Manage agency inventories locally",
+            "×",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 4: Local promotional budget",
+            "",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 5: Complement the offer with third-party services",
+            "×",
+            "×",
+            "×",
+            ""
+          ],
+          [
+            "CPV 6: Bonus of 6% of the agency's contribution",
+            "",
+            "",
+            "×",
+            "×"
+          ],
+          [
+            "CPV 7: Days sales outstanding (DSO)",
+            "",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 8: Prospect SMEs",
+            "",
+            "×",
+            "",
+            ""
+          ],
+          [
+            "CPV 9: Reduce agencies' direct costs (staff, rent, maintenance)",
+            "",
+            "",
+            "×",
+            ""
+          ],
+          [
+            "CPV 10: Customer satisfaction",
+            "",
+            "",
+            "",
+            "×"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "veloria",
+    "title": "Veloria – bicycle group",
+    "text": [
+      "Veloria designs and assembles city bikes (C) and e-bikes (E) in one plant in Portugal and sells them in five European countries through distribution subsidiaries. A central R&D department develops new models and motors; its budget is set each year by the executive committee.",
+      "Each country subsidiary buys the bikes from the plant at a transfer price set by headquarters. The subsidiary manager sets retail prices and promotions within the group's brand guidelines, runs the network of brand stores (staff, rent, local marketing) and negotiates with local dealers. Store openings and closures are decided and financed by headquarters, which also manages a central warehouse: subsidiaries hold no stock and customers pay at purchase (stores) or within 30 days set by the group (dealers).",
+      "You are the controller of the bike business line and have the following figures for the year (material = aluminium, in kg per bike)."
+    ],
+    "tables": [
+      {
+        "caption": "Income statement (in €)",
+        "head": [
+          "",
+          "Budget C+E",
+          "Actual C+E"
+        ],
+        "rows": [
+          [
+            "Revenues",
+            "2,240,000",
+            "2,253,000"
+          ],
+          [
+            "Material costs",
+            "128,000",
+            "147,510"
+          ],
+          [
+            "Other operating costs",
+            "1,890,000",
+            "1,935,000"
+          ],
+          [
+            "Operating income",
+            "222,000",
+            "170,490"
+          ]
+        ]
+      },
+      {
+        "caption": "Operating data",
+        "head": [
+          "",
+          "Budget C",
+          "Budget E",
+          "Actual C",
+          "Actual E"
+        ],
+        "rows": [
+          [
+            "Volumes (units)",
+            "1,200",
+            "800",
+            "1,350",
+            "750"
+          ],
+          [
+            "Unit selling price (€)",
+            "600",
+            "1,900",
+            "580",
+            "1,960"
+          ],
+          [
+            "Material per unit (kg)",
+            "14",
+            "19",
+            "14.5",
+            "18.6"
+          ],
+          [
+            "Cost per kg of material (€)",
+            "4",
+            "4",
+            "4.4",
+            "4.4"
+          ]
+        ]
+      }
+    ]
+  }
+]
