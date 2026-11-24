@@ -279,7 +279,6 @@ function SubjectTile({
       href={`/s/${subject.id}`}
       className="card group relative block overflow-hidden p-4 transition hover:-translate-y-0.5 sm:p-6"
     >
-      <div className="absolute inset-x-0 top-0 h-1.5" style={{ background: subject.color }} aria-hidden />
       <div className="flex items-center gap-4 sm:items-start sm:gap-5">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
@@ -358,14 +357,6 @@ function DoneTile({ summary, st, done, mobile }: { summary: SubjectSummary; st: 
       href={`/s/${subject.id}`}
       className="card group relative block overflow-hidden bg-surface-2/50 p-4 transition hover:-translate-y-0.5 sm:p-6"
     >
-      <div
-        className="absolute inset-x-0 top-0 h-1.5 opacity-60"
-        style={{
-          background: `repeating-linear-gradient(135deg, ${subject.color} 0 8px, transparent 8px 14px)`,
-          filter: "grayscale(1)",
-        }}
-        aria-hidden
-      />
       <div className="flex items-center gap-4 sm:items-start sm:gap-5">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">

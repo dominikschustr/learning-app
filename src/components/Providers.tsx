@@ -73,7 +73,7 @@ function Toaster() {
                 (t.kind === "level"
                   ? "bg-accent text-white"
                   : t.kind === "focus"
-                    ? "focus-gradient text-white"
+                    ? "bg-accent text-white"
                   : t.kind === "goal"
                     ? "bg-good-soft text-good"
                     : "bg-warn-soft text-warn")
