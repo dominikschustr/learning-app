@@ -255,7 +255,7 @@ function LeaderboardInner() {
             Wochenprämie: Platz 1–3 bekommen {PODIUM_PRIZES.join(" / ")} Bonus-XP, abzuholen in der Woche danach (hinter dir muss
             noch jemand liegen) · Pokal = gewonnene Wochenligen
           </li>
-          <li>Grüner Punkt: hat in den letzten 10 Minuten gelernt · 2×: gerade in der Fokus-Stunde</li>
+          <li>Grüner Punkt: lernt gerade (letzte 10 Minuten) · roter Punkt: heute noch nicht gelernt · 2×: gerade in der Fokus-Stunde</li>
           <li>Liga nach Level: Bronze 1, Silber 3, Gold 5, Platin 8, Diamant 12, Legende 17</li>
           <li>Pfeile: Auf- und Abstiege seit deinem letzten Besuch</li>
         </ul>
@@ -287,6 +287,7 @@ function lastSeen(at: number, now: number): string | null {
 function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me: boolean; now: number; moved?: number; prize: number }) {
   const seen = me ? null : lastSeen(row.at, now);
   const live = !me && now - row.at < LIVE_MS;
+  const idle = !live && row.todayNow === 0;
   const focus = row.focusUntil > now;
   const goalDone = row.todayNow >= row.goal;
   const league = leagueFor(row.level);
@@ -305,6 +306,13 @@ function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me:
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-good opacity-60" />
               <span className="relative inline-flex size-2 rounded-full bg-good" />
             </span>
+          )}
+          {idle && (
+            <span
+              title="Heute noch nicht gelernt"
+              aria-label="Heute noch nicht gelernt"
+              className="inline-flex size-2 shrink-0 rounded-full bg-bad"
+            />
           )}
           <span className="min-w-[3rem] truncate font-semibold">{row.name}</span>
           {me && <Chip className="border-accent/30 text-accent">Du</Chip>}

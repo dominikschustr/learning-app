@@ -134,7 +134,7 @@ noch in der Vorwoche gemeldet hat, zählt mit `weekXp`. Gemerkt wird pro Gerät 
 danach (hinter einem muss noch jemand liegen). Abgeholt wird im Wochen-Log (`weekly[Woche]`, `podium-N`) und damit
 synchronisiert; die Zahl gewonnener Wochenligen meldet jedes Konto als `wins` (Pokal neben dem Namen). Außerdem meldet
 es `focusUntil` (Ende der laufenden Fokus-Stunde) für das 2×-Abzeichen; ein grüner Punkt zeigt, wer in den letzten
-10 Minuten gelernt hat. Überhol-Meldungen kommen zuerst aus der Wochenliga, sonst aus der Level-Rangliste.
+10 Minuten gelernt hat, ein roter, wer heute noch gar nicht gelernt hat. Überhol-Meldungen kommen zuerst aus der Wochenliga, sonst aus der Level-Rangliste.
 
 **Aufgaben je Klausur:** Unter *Ganze Klausuren* zeigt jede Karte je Teil einen Punkt pro Aufgabe in der Farbe ihres
 Stands und eine aufklappbare Aufgabenliste wie in der Aufgaben-Tabelle – auswählen, einzeln oder als Auswahl üben.
