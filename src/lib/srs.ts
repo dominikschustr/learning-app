@@ -22,8 +22,11 @@ const DAY = 24 * 60 * MINUTE;
 /** Wartezeit bis zur nächsten Wiederholung je Box. Box 1 kommt noch in derselben Sitzung wieder. */
 export const BOX_INTERVALS = [0, 10 * MINUTE, 1 * DAY, 3 * DAY, 7 * DAY, 14 * DAY];
 
-/** Wie sicher ein Item sitzt (0–1). Ungesehen zählt als 0. */
-export const BOX_MASTERY = [0, 0.1, 0.4, 0.65, 0.85, 1];
+/**
+ * Wie sicher ein Item sitzt (0–1). Ungesehen zählt als 0.
+ * Schon die erste richtige Antwort bringt viel (Box 2 = 0,7), Wiederholungen festigen bis 1.
+ */
+export const BOX_MASTERY = [0, 0.2, 0.7, 0.85, 0.95, 1];
 
 export const MAX_BOX = 5;
 

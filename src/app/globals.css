@@ -291,15 +291,14 @@ p {
   background: var(--slide-gold);
   border: 1.5px solid var(--slide-frame);
   color: var(--slide-frame);
-  font-family: var(--font-montserrat), var(--font-inter), sans-serif;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   padding: 0.35rem 1rem;
   text-wrap: balance;
 }
 
-/* Titelfolie: lila Fläche, goldene Serifen-Überschrift */
+/* Titelfolie: lila Fläche, goldene Überschrift */
 .slide-cover {
   background: #3a2082;
   color: #ffffff;
@@ -308,9 +307,8 @@ p {
 }
 .slide-cover-title {
   color: var(--slide-gold, #fec33f);
-  font-family: "Didot", "Bodoni 72", Georgia, "Times New Roman", serif;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   line-height: 1.1;
   text-wrap: balance;
 }

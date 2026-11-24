@@ -1,18 +1,18 @@
 import type { QuestionType, SubjectSummary } from "./schema";
-import { examReadiness } from "./scoring";
+import { practiceReadiness } from "./scoring";
 import { isDue, mastery, type ItemState } from "./srs";
 import { itemKey } from "./utils";
 
 export type SubjectStats = {
   /** Gesamtstand des Fachs (0–1): Prognose aus den Übungsfragen, bei Fächern mit Probeklausuren zusammen mit den bearbeiteten Klausuren */
   readiness: number;
-  /** Prognose für die Prüfung allein aus den Übungsfragen (Sicherheit je Fragetyp, gewichtet mit dem Prüfungsformat) */
+  /** Stand allein aus den Übungsfragen (Sicherheit je Fragetyp, Prüfungsformat plus Extra-Gewicht für MC, siehe practiceReadiness) */
   questionReadiness: number;
   /** Probeklausuren: Anteil bearbeiteter Aufgaben je Klausur (0–1) */
   papers: { id: string; progress: number }[];
   /** Anteil der Probeklausuren am Gesamtstand (0, wenn das Fach keine hat) */
   paperWeight: number;
-  /** Fortschritt über alle Probeklausuren (0–1) */
+  /** Fortschritt über alle Probeklausuren (0–1); Altklausuren zählen doppelt */
   paperProgress: number;
   /** vollständig bearbeitete Probeklausuren */
   papersDone: number;
@@ -33,7 +33,7 @@ export type ChapterStats = {
   mastery: number;
   /** Sicherheit der Karteikarten (0–1) */
   cardMastery: number;
-  /** kombiniert: 80 % Fragen, 20 % Karten */
+  /** kombiniert: 90 % Fragen, 10 % Karten */
   combined: number;
   seen: number;
   total: number;
@@ -77,7 +77,11 @@ export function chapterLevel(combined: number, testBest: number): ChapterLevel {
 }
 
 /** Anteil der Probeklausuren (Altklausuren und neue Klausuren) am Gesamtstand eines Fachs */
-export const PAPER_WEIGHT = 0.3;
+export const PAPER_WEIGHT = 0.5;
+/** Gewicht einer echten Altklausur gegenüber anderen Probeklausuren im Klausurfortschritt */
+export const ALTKLAUSUR_WEIGHT = 2;
+/** Anteil der Karteikarten an der Sicherheit eines Kapitels – bewusst klein */
+export const CARD_WEIGHT = 0.1;
 
 const avg = (xs: number[]) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0);
 
@@ -99,14 +103,18 @@ export function subjectStats(
   const seen = summary.items.filter((i) => state(i.id)).length;
   const cardStates = summary.cards.map((c) => cards[itemKey(subject.id, c.id)]);
 
-  const questionReadiness = examReadiness(subject.examFormat, masteryByType);
+  const available = {} as Record<QuestionType, number>;
+  for (const t of ["short", "mc", "tf"] as QuestionType[]) available[t] = summary.items.filter((i) => i.type === t).length;
+  const questionReadiness = practiceReadiness(subject.examFormat, masteryByType, available);
   // Probeklausuren: bearbeitet = Aufgabe beantwortet, egal ob in der ganzen Klausur oder einzeln unter „Klausuraufgaben“
   const papers = summary.papers.map((p) => ({
     id: p.id,
     progress: p.questions.length ? p.questions.filter((id) => state(id)).length / p.questions.length : 0,
   }));
   const paperWeight = papers.length ? PAPER_WEIGHT : 0;
-  const paperProgress = avg(papers.map((p) => p.progress));
+  const pw = (kind: string) => (kind === "altklausur" ? ALTKLAUSUR_WEIGHT : 1);
+  const pwTotal = summary.papers.reduce((s, p) => s + pw(p.kind), 0);
+  const paperProgress = pwTotal ? summary.papers.reduce((s, p, i) => s + pw(p.kind) * papers[i].progress, 0) / pwTotal : 0;
 
   return {
     readiness: (1 - paperWeight) * questionReadiness + paperWeight * paperProgress,
@@ -127,7 +135,7 @@ export function subjectStats(
       const cs = summary.cards.filter((c) => c.lecture === l.id);
       const m = avg(ls.map((i) => mastery(state(i.id))));
       const cm = avg(cs.map((c) => mastery(cards[itemKey(subject.id, c.id)])));
-      const combined = cs.length ? m * 0.8 + cm * 0.2 : m;
+      const combined = cs.length ? m * (1 - CARD_WEIGHT) + cm * CARD_WEIGHT : m;
       const testBest = chapterTestBest[l.id] ?? 0;
       return {
         id: l.id,

@@ -232,7 +232,7 @@ function StandBreakdown({ st, color }: { st: SubjectStats; color: string }) {
       label: "Übungsfragen",
       value: st.questionReadiness,
       right: `${Math.round(st.questionReadiness * 100)} %`,
-      hint: "Sicherheit je Fragetyp, gewichtet wie in der Prüfung",
+      hint: "Sicherheit je Fragetyp – Multiple Choice zählt extra; ab 80 % Sicherheit im Schnitt voll",
     },
     ...(st.paperWeight
       ? [
@@ -240,7 +240,7 @@ function StandBreakdown({ st, color }: { st: SubjectStats; color: string }) {
             label: "Probeklausuren",
             value: st.paperProgress,
             right: `${st.papersDone}/${st.papers.length}`,
-            hint: "Anteil bearbeiteter Aufgaben – ganze Klausur oder einzeln",
+            hint: "Anteil bearbeiteter Aufgaben – ganze Klausur oder einzeln; Altklausuren zählen doppelt",
           },
         ]
       : []),
@@ -259,7 +259,7 @@ function StandBreakdown({ st, color }: { st: SubjectStats; color: string }) {
       {st.paperWeight > 0 && (
         <p className="mt-2 text-xs text-muted">
           Gesamt = {Math.round((1 - st.paperWeight) * 100)} % Übungsfragen + {Math.round(st.paperWeight * 100)} %
-          Probeklausuren
+          Probeklausuren (Altklausuren doppelt). Karteikarten zählen nicht.
         </p>
       )}
     </div>

@@ -42,6 +42,34 @@ export function shortPassed(g: { score: number; source: string }): boolean {
   return g.source === "auto" ? g.score === 100 : g.score >= SHORT_PASS;
 }
 
+/**
+ * Zusatzgewicht je Fragetyp, sobald es im Fach Übungsfragen dieses Typs gibt – auch wenn er in der Prüfung
+ * nicht vorkommt. Multiple Choice zählt am meisten, damit sich das Üben damit deutlich im Stand zeigt.
+ */
+export const PRACTICE_BOOST: Record<QuestionType, number> = { mc: 1, short: 0.25, tf: 0.25 };
+
+/** Ab diesem Durchschnitt (Sicherheit) gelten die Übungsfragen als voll – nicht jede Frage muss perfekt sitzen. */
+export const PRACTICE_FULL = 0.8;
+
+/**
+ * Stand aus den Übungsfragen (0–1): Sicherheit je Fragetyp, gewichtet mit dem Prüfungsformat plus PRACTICE_BOOST
+ * für jeden geübten Typ; ab PRACTICE_FULL zählt es als 100 %.
+ */
+export function practiceReadiness(
+  format: Pick<ExamFormat, QuestionType>,
+  masteryByType: Partial<Record<QuestionType, number>>,
+  available: Partial<Record<QuestionType, number>>,
+): number {
+  const types: QuestionType[] = ["short", "mc", "tf"];
+  const formatTotal = types.reduce((s, t) => s + format[t], 0);
+  const weight = (t: QuestionType) =>
+    (formatTotal ? format[t] / formatTotal : 0) + ((available[t] ?? 0) > 0 ? PRACTICE_BOOST[t] : 0);
+  const total = types.reduce((s, t) => s + weight(t), 0);
+  if (!total) return 0;
+  const raw = types.reduce((s, t) => s + weight(t) * (masteryByType[t] ?? 0), 0) / total;
+  return Math.min(1, raw / PRACTICE_FULL);
+}
+
 /** Prognostizierter Prüfungs-Score: Mastery je Fragetyp, gewichtet mit dem Prüfungsformat. */
 export function examReadiness(
   format: Pick<ExamFormat, QuestionType>,

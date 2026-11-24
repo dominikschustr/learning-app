@@ -516,7 +516,7 @@ function Block({ b, color }: { b: SummaryBlock; color: string }) {
                 {b.steps.map((s, i) => (
                   <li key={i} className="flex gap-3 text-sm leading-relaxed text-ink-2">
                     <span className="w-4 shrink-0 text-right font-bold tabular-nums text-muted">{i + 1}</span>
-                    <span className="font-mono text-[0.82rem] sm:text-sm">
+                    <span className="tabular-nums">
                       <Rich text={s} />
                     </span>
                   </li>
