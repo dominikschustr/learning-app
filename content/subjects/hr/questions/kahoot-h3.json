@@ -1,0 +1,41 @@
+[
+  {
+    "type": "mc",
+    "id": "kh-h3-01",
+    "lecture": "h3",
+    "topic": "Selection tests – physical skills",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Alex requires job applicants for the loading dock to show proficiency in using tools such as the forklift. He tests for",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cognitive abilities"
+      },
+      {
+        "id": "b",
+        "text": "Well-being"
+      },
+      {
+        "id": "c",
+        "text": "Physical skills"
+      },
+      {
+        "id": "d",
+        "text": "Personality and interest"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Den Gabelstapler bedienen zu können ist eine praktische, körperliche Fertigkeit – ein Physical-skills-Test (Arbeitsprobe), kein kognitiver oder Persönlichkeitstest.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  }
+]

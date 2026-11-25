@@ -1,0 +1,470 @@
+[
+  {
+    "type": "mc",
+    "id": "kh-h5-01",
+    "lecture": "h5",
+    "topic": "Trends in PM",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What is NOT a modern trend in performance management?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focusing on development"
+      },
+      {
+        "id": "b",
+        "text": "Focusing on a variety of objectives"
+      },
+      {
+        "id": "c",
+        "text": "Focusing on rankings"
+      },
+      {
+        "id": "d",
+        "text": "Frequent employee-supervisor discussions"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Rankings (Forced Distribution) sind das alte Modell, das viele Firmen gerade abschaffen. Trends: Entwicklung, häufige Gespräche, vielfältige Ziele (Cappelli & Tavis, 2016).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-02",
+    "lecture": "h5",
+    "topic": "Forced distribution",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What is false about forced distribution systems?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They assign a percentage of employees to a set of performance categories"
+      },
+      {
+        "id": "b",
+        "text": "A growing number of organizations are discarding them"
+      },
+      {
+        "id": "c",
+        "text": "They are highly motivating for top performers"
+      },
+      {
+        "id": "d",
+        "text": "They are highly motivating for mid-level performers"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Falsch: Forced Distribution demotiviert gerade die Mitte („Demotivation of the majority in the middle“). Für Top-Performer kann es motivierend sein.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-03",
+    "lecture": "h5",
+    "topic": "Cappelli & Tavis",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "According to Cappelli and Tavis (2016), what is the current focus of performance management?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accountability"
+      },
+      {
+        "id": "b",
+        "text": "Development"
+      },
+      {
+        "id": "c",
+        "text": "Hybrid"
+      },
+      {
+        "id": "d",
+        "text": "None of the answers are correct"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Cappelli & Tavis: der Fokus verschiebt sich von Accountability zu Development – getrieben von Mitarbeiterentwicklung, Agilität und Teamarbeit.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-04",
+    "lecture": "h5",
+    "topic": "PM and strategy",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Why should performance management be designed with the organisation's strategy at its core?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To align individual behaviours with unit & organizational goals"
+      },
+      {
+        "id": "b",
+        "text": "To avoid alienation"
+      },
+      {
+        "id": "c",
+        "text": "To improve employee well-being"
+      },
+      {
+        "id": "d",
+        "text": "To increase the company's stock value"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Strategischer Zweck von PM: das Verhalten der Einzelnen mit den Zielen von Einheit und Organisation verbinden.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-05",
+    "lecture": "h5",
+    "topic": "Validity errors",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What two mistakes in a PM system reduce the system's validity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pollution and lack of trust"
+      },
+      {
+        "id": "b",
+        "text": "Deficiency and excess"
+      },
+      {
+        "id": "c",
+        "text": "Contamination and deficiency"
+      },
+      {
+        "id": "d",
+        "text": "Informality and lack of structure"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Contamination (Dinge messen, die nicht zur Leistung gehören) und Deficiency (wichtige Teile der Leistung nicht messen) senken die Validität.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-06",
+    "lecture": "h5",
+    "topic": "Contamination",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What does contamination mean in a PM context?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Measuring factors outside of employee control"
+      },
+      {
+        "id": "b",
+        "text": "Measuring factors unrelated to performance"
+      },
+      {
+        "id": "c",
+        "text": "Gathering irrelevant information for performance"
+      },
+      {
+        "id": "d",
+        "text": "All the other answers are correct"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Contamination = alles in die Bewertung einfließen lassen, was nicht zur Leistung gehört oder außerhalb der Kontrolle der Person liegt – alle drei Beschreibungen treffen zu.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-07",
+    "lecture": "h5",
+    "topic": "Inter-rater reliability",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "If two supervisors provide evaluations for the same employee, what is it advisable to check to ensure reliability?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That they do the evaluation together"
+      },
+      {
+        "id": "b",
+        "text": "Inter-rater reliability"
+      },
+      {
+        "id": "c",
+        "text": "That they never discuss the results with one another"
+      },
+      {
+        "id": "d",
+        "text": "Random allocations"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Reliabilität bei mehreren Bewertenden = Inter-rater reliability: kommen beide unabhängig zu ähnlichen Ergebnissen?",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-08",
+    "lecture": "h5",
+    "topic": "Procedural justice",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What factor does not contribute to increasing procedural justice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Employee impact on the process"
+      },
+      {
+        "id": "b",
+        "text": "A knowledgeable evaluator"
+      },
+      {
+        "id": "c",
+        "text": "A clear set of criteria"
+      },
+      {
+        "id": "d",
+        "text": "High rewards"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Prozedurale Gerechtigkeit betrifft den Prozess (Mitsprache, kompetente Bewertende, klare Kriterien) – die Höhe der Belohnung betrifft die Ergebnis- (distributive) Gerechtigkeit.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-09",
+    "lecture": "h5",
+    "topic": "Behaviour-based appraisal",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Nicole is rating her employees on ___ when she assigns them scores on “cooperation” and “organizational citizenship”.",
+    "options": [
+      {
+        "id": "a",
+        "text": "traits"
+      },
+      {
+        "id": "b",
+        "text": "behaviours"
+      },
+      {
+        "id": "c",
+        "text": "incidents"
+      },
+      {
+        "id": "d",
+        "text": "results"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Kooperation und Organizational Citizenship sind beobachtbares Verhalten → verhaltensbasierte Bewertung.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-10",
+    "lecture": "h5",
+    "topic": "Results-based appraisal",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Nicole is rating her employees on ___ when she assigns them scores on items such as “sales” and “new clients”.",
+    "options": [
+      {
+        "id": "a",
+        "text": "traits"
+      },
+      {
+        "id": "b",
+        "text": "behaviours"
+      },
+      {
+        "id": "c",
+        "text": "incidents"
+      },
+      {
+        "id": "d",
+        "text": "results"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Umsatz und Neukunden sind Ergebnisse → ergebnisbasierte Bewertung.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-11",
+    "lecture": "h5",
+    "topic": "Who appraises",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Performance appraisals are typically conducted by",
+    "options": [
+      {
+        "id": "a",
+        "text": "HR professionals"
+      },
+      {
+        "id": "b",
+        "text": "senior managers"
+      },
+      {
+        "id": "c",
+        "text": "line managers"
+      },
+      {
+        "id": "d",
+        "text": "clients"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Die direkte Führungskraft (Line Manager) beurteilt – HR gestaltet das System („HRM is done by all managers“).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h5-12",
+    "lecture": "h5",
+    "topic": "PM process – first step",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "The first step in the performance management process is",
+    "options": [
+      {
+        "id": "a",
+        "text": "develop standards and measurement methods"
+      },
+      {
+        "id": "b",
+        "text": "informal coaching"
+      },
+      {
+        "id": "c",
+        "text": "prepare and conduct formal performance appraisals"
+      },
+      {
+        "id": "d",
+        "text": "Analyse organizational objectives"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Zuerst klären, was erreicht werden soll (Ziele der Organisation und Anforderungen der Stelle); danach Standards und Messmethoden → informelles Coaching → formale Beurteilung.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "type": "mc",
+    "id": "kh-h8-01",
+    "lecture": "h8",
+    "topic": "Psychological contract",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "When does psychological contract breach happen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When salaries are below market level"
+      },
+      {
+        "id": "b",
+        "text": "When employees' well-being is affected"
+      },
+      {
+        "id": "c",
+        "text": "When employers don't meet employee expectations"
+      },
+      {
+        "id": "d",
+        "text": "When employees don't meet the requirements of their jobs"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Der psychologische Vertrag sind die Erwartungen der Mitarbeitenden an das Arbeitsverhältnis – er wird verletzt, wenn der Arbeitgeber diese (oft durch Employer Branding geweckten) Erwartungen nicht erfüllt.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h8-02",
+    "lecture": "h8",
+    "topic": "EVP",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What should an employee value proposition strive to be?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Valuable"
+      },
+      {
+        "id": "b",
+        "text": "Sustainable"
+      },
+      {
+        "id": "c",
+        "text": "Performing"
+      },
+      {
+        "id": "d",
+        "text": "Distinctive"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Die EVP soll unverwechselbar (distinctive) sein – sie muss den Arbeitgeber von Wettbewerbern abheben (Schritt 4 des Employer-Branding-Modells).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  }
+]

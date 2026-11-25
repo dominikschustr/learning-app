@@ -1,0 +1,119 @@
+[
+  {
+    "type": "mc",
+    "id": "kh-h7-01",
+    "lecture": "h7",
+    "topic": "Intrinsic motivation",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which one of the following is not a source of intrinsic motivation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Interest in the job"
+      },
+      {
+        "id": "b",
+        "text": "Learning"
+      },
+      {
+        "id": "c",
+        "text": "Job well done"
+      },
+      {
+        "id": "d",
+        "text": "Being praised by others"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Lob von anderen ist eine äußere (extrinsische) Belohnung. Interesse, Lernen und das Gefühl guter Arbeit kommen aus der Tätigkeit selbst (Herzbergs Motivatoren).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h7-02",
+    "lecture": "h7",
+    "topic": "Collective PFP – examples",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which one of the following is NOT an example of collective pay-for-performance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Profit sharing"
+      },
+      {
+        "id": "b",
+        "text": "External competitiveness"
+      },
+      {
+        "id": "c",
+        "text": "Stock options"
+      },
+      {
+        "id": "d",
+        "text": "Team-based bonuses"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "External competitiveness ist eine Logik, wofür man bezahlt (Marktvergleich), kein Vergütungsinstrument. Profit sharing, Stock options und Team-Boni sind kollektive PFP (Nyberg et al., 2020).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h7-03",
+    "lecture": "h7",
+    "topic": "Collective PFP – drawbacks",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What is a possible drawback of collective pay for performance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perceived unfairness"
+      },
+      {
+        "id": "b",
+        "text": "Cost"
+      },
+      {
+        "id": "c",
+        "text": "Time spent by managers"
+      },
+      {
+        "id": "d",
+        "text": "Evidence shows it does not increase performance"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Folien: Free riding, wahrgenommene Ungerechtigkeit, Konflikte zwischen Einzel- und Teamanreizen. Die Evidenz zeigt einen positiven Effekt (ρ = .11), also ist d falsch.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  }
+]

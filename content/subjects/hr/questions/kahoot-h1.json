@@ -1,0 +1,119 @@
+[
+  {
+    "type": "mc",
+    "id": "kh-h1-01",
+    "lecture": "h1",
+    "topic": "Walton – control",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which strategic HRM approach (Walton, 1985) is associated with the new algorithmic approaches to work organisation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Control"
+      },
+      {
+        "id": "b",
+        "text": "Commitment"
+      },
+      {
+        "id": "c",
+        "text": "High performance HRM"
+      },
+      {
+        "id": "d",
+        "text": "Best practices"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Richtig ist Control: algorithmisches Management überwacht, taktet und bewertet Arbeit eng – die Kontrolllogik (Panopticon, Fließband, Callcenter) statt Commitment.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h1-02",
+    "lecture": "h1",
+    "topic": "Human capital",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "What is human capital?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The knowledge and information that individuals have"
+      },
+      {
+        "id": "b",
+        "text": "The health of individuals"
+      },
+      {
+        "id": "c",
+        "text": "A collection of traits, talents, abilities, experiences"
+      },
+      {
+        "id": "d",
+        "text": "All answers are correct"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Human capital umfasst Wissen, Fähigkeiten, Erfahrungen und auch Gesundheit – alles, was die Produktivität einer Person ausmacht (Human Capital Theory).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h1-03",
+    "lecture": "h1",
+    "topic": "Objectives of HRM",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which of the following statements about HRM is false?",
+    "options": [
+      {
+        "id": "a",
+        "text": "HRM has an impact on human capital and behaviors of employees"
+      },
+      {
+        "id": "b",
+        "text": "HRM practices have efficiency as their main objective"
+      },
+      {
+        "id": "c",
+        "text": "HRM contributes to the achievement of corporate goals"
+      },
+      {
+        "id": "d",
+        "text": "HRM can contribute to employee job satisfaction"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Falsch ist „Effizienz als Hauptziel“: HRM verfolgt mehrere Ziele – Leistung, Wohlbefinden, Fairness, Nachhaltigkeit (Harvard-Modell, Sustainable HRM), nicht nur Effizienz.",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  }
+]

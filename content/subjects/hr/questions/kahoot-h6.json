@@ -1,0 +1,80 @@
+[
+  {
+    "type": "mc",
+    "id": "kh-h6-01",
+    "lecture": "h6",
+    "topic": "Expectancy theory",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Following expectancy theory, if I work very hard but my performance does not grow, I lack…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy"
+      },
+      {
+        "id": "b",
+        "text": "Instrumentality"
+      },
+      {
+        "id": "c",
+        "text": "Valence"
+      },
+      {
+        "id": "d",
+        "text": "Motivation"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Expectancy = Glaube, dass Anstrengung zu Leistung führt. Fehlt der Zusammenhang Effort → Performance, fehlt Expectancy (Instrumentality wäre Performance → Reward).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  },
+  {
+    "type": "mc",
+    "id": "kh-h6-02",
+    "lecture": "h6",
+    "topic": "External competitiveness",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which one of the following is NOT an example of an external competitiveness reason to pay differently?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cost of living"
+      },
+      {
+        "id": "b",
+        "text": "Capabilities"
+      },
+      {
+        "id": "c",
+        "text": "Profitability"
+      },
+      {
+        "id": "d",
+        "text": "Industry"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Fähigkeiten (Capabilities/Abilities) sind ein Grund der Internal Consistency bzw. Individual Contribution. Cost of living, Profitability und Industry sind External-Competitiveness-Gründe (Renard, 2008).",
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "Kahoot der Vorlesung",
+        "ref": ""
+      }
+    ]
+  }
+]
