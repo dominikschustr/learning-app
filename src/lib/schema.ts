@@ -262,6 +262,38 @@ export const FrameworkSchema = z.object({
     .optional(),
 });
 
+/**
+ * Case-Study-Sammlung eines Fachs (casebook.json, optional): alle Fälle aus der Vorlesung und den Altklausuren,
+ * gruppiert nach Vorlesung, je Fall mit Situation, Fragen, Musterantwort und den passenden Frameworks.
+ */
+export const CasebookSchema = z.array(
+  z.object({
+    id,
+    title: z.string().min(1),
+    subtitle: z.string().default(""),
+    cases: z
+      .array(
+        z.object({
+          id,
+          title: z.string().min(1),
+          /** class = Übung/Fall im Unterricht, prep = Vorbereitungslektüre, exam = Fall aus einer Altklausur */
+          kind: z.enum(["class", "prep", "exam"]),
+          /** kurze Marke, z. B. „Ex. 2.1“ oder „Exam 2020“ */
+          tag: z.string().default(""),
+          situation: z.array(z.string().min(1)).default([]),
+          questions: z
+            .array(z.object({ q: z.string().min(1), points: z.number().positive().optional(), answer: z.array(z.string().min(1)).min(1) }))
+            .min(1),
+          /** Framework-ids (werden verlinkt) oder freie Namen */
+          frameworks: z.array(z.string().min(1)).default([]),
+          /** der eine Satz, den man sich merken muss */
+          takeaway: z.string().default(""),
+        }),
+      )
+      .min(1),
+  }),
+);
+
 /** Formel mit Einsatzzweck für die Formelübersicht (formulas/<kapitel>.json, optional). */
 export const FormulaSchema = z.object({
   id,
@@ -295,6 +327,7 @@ export type Paper = z.infer<typeof PaperSchema>;
 export type LectureText = z.infer<typeof TextSchema>;
 export type Framework = z.infer<typeof FrameworkSchema>;
 export type Formula = z.infer<typeof FormulaSchema>;
+export type Casebook = z.infer<typeof CasebookSchema>;
 export type CalendarEntry = z.infer<typeof CalendarEntrySchema>;
 export type CalcResult = z.infer<typeof CalcResultSchema>;
 export type Basis = z.infer<typeof BasisSchema>;
@@ -321,6 +354,8 @@ export type SubjectSummary = {
   frameworks: string[];
   /** Kapitel, für die eine Formelübersicht hinterlegt ist */
   formulas: string[];
+  /** Anzahl der Fälle in der Case-Study-Sammlung (casebook.json) */
+  casebook: number;
   /** Probeklausuren (nur Kopfdaten) */
   papers: { id: string; title: string; points: number; kind: Paper["origin"]["kind"]; minutes: number; questions: string[] }[];
   /** Fragen aus den Probeklausuren (auch paperOnly), je einmal – für „Klausuraufgaben“ je Kapitel */

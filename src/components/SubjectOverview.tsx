@@ -4,6 +4,7 @@ import {
   ArrowLeft,
   ArrowRight,
   Bookmark,
+  Briefcase,
   Brain,
   CalendarClock,
   Check,
@@ -588,6 +589,7 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
   const links = [
     ...(summary.formulas.length ? [{ href: `${base}/formulas`, icon: Sigma, label: "Formelübersicht" }] : []),
     ...(summary.frameworks.length ? [{ href: `${base}/frameworks`, icon: LayoutGrid, label: "Framework-Übersicht" }] : []),
+    ...(summary.casebook ? [{ href: `${base}/cases`, icon: Briefcase, label: "Case Studies" }] : []),
     ...(markedC
       ? [{ href: `${base}/cards?marked=1`, icon: Bookmark, label: `${markedC} ${markedC === 1 ? "markierte Karte" : "markierte Karten"}` }]
       : []),

@@ -22,6 +22,7 @@ const summary = (papers: SubjectSummary["papers"]): SubjectSummary => ({
   texts: [],
   frameworks: [],
   formulas: [],
+  casebook: 0,
   papers,
   paperItems: [],
 });

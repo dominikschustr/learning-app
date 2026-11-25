@@ -1,0 +1,918 @@
+[
+  {
+    "id": "l1",
+    "title": "L1 · Introduction to HRM & sustainable HRM",
+    "subtitle": "Session 1 – what HRM is, sustainable HRM, control vs. commitment",
+    "cases": [
+      {
+        "id": "fast-fashion",
+        "title": "The HR Director's dilemma (fast fashion)",
+        "kind": "class",
+        "tag": "Ex. 1.2",
+        "situation": [
+          "Fast-fashion company, 10,000 employees. The CEO announces: “We need to reduce labour costs by 12 % this year while becoming an industry leader in sustainability.”",
+          "Six options – you may implement only two: freeze recruitment and increase workloads · living-wage commitment throughout the supply chain · link executive bonuses to carbon reduction and employee well-being · AI-based recruitment to cut recruitment costs · invest €5m in reskilling · replace some European jobs with lower-cost contractors."
+        ],
+        "questions": [
+          {
+            "q": "Which two options do you choose, and why?",
+            "answer": [
+              "Score each option on the triple bottom line: freeze/workloads (financial + short term, social − −: sin of commission, burnout, turnover) · living wage (financial −, social + + outside the firm) · executive bonuses on carbon & well-being (≈ 0 cost, social +, ecological +) · AI recruitment (financial +, social − bias risk) · €5m reskilling (− now, + later, social + +) · contractors (financial + +, social − −: precarious contracts).",
+              "Defensible pair: executive bonuses linked to carbon and well-being (cheap, steers top management – TBL incentives, Stahl et al.) + reskilling (long-term human-capital investment, avoids the omission “not developing workers threatened by AI”).",
+              "Be honest about the trade-off: the 12 % cut is not reached this year → negotiate the time horizon (sustainable HRM = long term). If the cost target is binding: bonus link + AI recruitment with bias audits and human review.",
+              "Avoid pure cost-cutting at people's expense – they are sins of commission and contradict the sustainability claim. Watch Kerr: bonus measures can be gamed (rewarding A while hoping for B)."
+            ]
+          }
+        ],
+        "frameworks": [
+          "tbl",
+          "sustainable-hrm",
+          "sins",
+          "reasons-sustainable",
+          "sustainable-practices"
+        ],
+        "takeaway": "No single right pair – marks come from making the trade-off explicit."
+      },
+      {
+        "id": "tbl-brainstorm",
+        "title": "Brainstorm: HR practices with a sustainability trade-off",
+        "kind": "class",
+        "tag": "Ex. 1.3",
+        "situation": [
+          "Group work: build a list of 3 HR practices that create a sustainability trade-off between the social, ecological and financial dimension."
+        ],
+        "questions": [
+          {
+            "q": "Name three practices and the dimensions that conflict.",
+            "answer": [
+              "Remote/hybrid work: ecological + (less commuting), financial + (less office space) vs. social − (isolation, blurred boundaries, weaker team learning).",
+              "High individual PRP: financial + (direction, effort) vs. social − (stress, burnout, competition – Sayre et al.).",
+              "Living wage / no child labour in the supply chain: social + vs. financial − (higher cost).",
+              "Business-travel limits: ecological + vs. financial − (client relationships). Outsourcing to cheap contractors: financial + vs. social − (precarious contracts)."
+            ]
+          }
+        ],
+        "frameworks": [
+          "tbl",
+          "sustainable-practices"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "control-today",
+        "title": "Modern control systems (call centre, chicken factory)",
+        "kind": "class",
+        "tag": "Ex. 1.4",
+        "situation": [
+          "After Bentham's Panopticon and Ford's assembly line the slides ask: “More modern examples of control systems?” – a call centre and a chicken factory (BBC report) – “But the problem is…”"
+        ],
+        "questions": [
+          {
+            "q": "Give modern examples of control and explain the problem with them.",
+            "answer": [
+              "Examples: call-centre scripts and call-time tracking, warehouse scanners and algorithmic management, piece rates in food processing, keystroke monitoring.",
+              "Control logic: value from minimizing labour cost and maximizing output – close monitoring, narrow jobs, precise evaluation, reward per piece.",
+              "The problem: no discretionary effort (“not my job”), stress and burnout, high turnover, low trust, quality only where measured (Kerr) – and no ideas for improvement.",
+              "Alternative: commitment – trust, teams, development; the Japanese production model (Womack et al., 1990) shows it can also be more productive."
+            ]
+          }
+        ],
+        "frameworks": [
+          "control-commitment",
+          "best-practice",
+          "sins"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "hrm-pictures",
+        "title": "“What is HRM?” – the picture approaches",
+        "kind": "class",
+        "tag": "Ex. 1.1",
+        "situation": [
+          "Each student brought a picture of HRM: functional, zoom into one practice, people focus/support, team, a system (chess), nurturer (gardener), strategic organizer, “invisible hand” (iceberg), what HR is not, several approaches in one."
+        ],
+        "questions": [
+          {
+            "q": "What do the pictures show about HR's role?",
+            "answer": [
+              "Each picture captures one true side; the exam-relevant version is the tension between strategic business partner and employee advocate (yin-yang).",
+              "Evolution of roles: administrative → operational → transformational (strategic HRM) → data analytics. And: HRM is done by ALL managers."
+            ]
+          }
+        ],
+        "frameworks": [
+          "hr-roles",
+          "hr-cycle"
+        ],
+        "takeaway": ""
+      }
+    ]
+  },
+  {
+    "id": "l2",
+    "title": "L2–3 · Recruitment & selection",
+    "subtitle": "Sessions 2–3 – Inditex, CIPD data, Spoiled for choice, bias and inclusion",
+    "cases": [
+      {
+        "id": "inditex",
+        "title": "Inditex: recruitment & selection strategy",
+        "kind": "class",
+        "tag": "Ex. 2.1",
+        "situation": [
+          "Inditex has two open positions in different countries (groups 1–3: position 1, groups 4–6: position 2). Develop a recruitment strategy (attract the right pool) and a selection strategy (valid, reliable, practicable techniques).",
+          "Build a strong case considering person–organisation fit, the country context, why the methods are valid, reliable and practicable, and cost-effectiveness."
+        ],
+        "questions": [
+          {
+            "q": "Develop a recruitment and a selection strategy for one position.",
+            "answer": [
+              "1. Job analysis first: pull 3–5 key requirements (tasks, competencies, values) out of the job description – every later choice is justified against them.",
+              "2. Recruitment: consider internal candidates first (talent pool, promotion); channels that reach the target group in that country (website, job boards, LinkedIn, universities, agencies – CIPD); a message that informs (realistic job preview → self-selection) AND attracts (EVP).",
+              "3. Selection: a sequence of methods, each linked to a requirement – CV/application screen (essential criteria) → test or work sample (technical skills) → structured competency interview (behaviours, P–O fit) → final interview/assessment exercise for senior roles.",
+              "4. Justify each method on validity, reliability, practicability; explain how methods work together, whether overlaps are worth their cost, and that all requirements are covered.",
+              "5. Adapt channels, language and legal limits to the country; match the cost to the importance of the role."
+            ]
+          }
+        ],
+        "frameworks": [
+          "rs-process",
+          "vrp",
+          "recruitment-strategy",
+          "cipd-labour-market",
+          "cultural-fit"
+        ],
+        "takeaway": "Every method must say which requirement of the job description it measures."
+      },
+      {
+        "id": "cipd-data",
+        "title": "Reading the CIPD labour-market data",
+        "kind": "class",
+        "tag": "Ex. 2.2",
+        "situation": [
+          "CIPD Resourcing and Talent Planning Report 2026: 58 % of employers saw more applications, only 33 % more suitable candidates; 53 % had difficulties attracting candidates; top attraction methods (own website 40 %, job boards 35 %, internal advertising 32 %); median cost per hire £3,500 (senior) and £2,000 (other)."
+        ],
+        "questions": [
+          {
+            "q": "What is happening in the labour market – and what does it mean for HR?",
+            "answer": [
+              "Volume ≠ quality: easy online applications flood firms with unsuitable candidates → clear criteria and screening matter more.",
+              "Skills shortages make attraction (employer brand, L7) and internal talent more important.",
+              "Every hire costs thousands of pounds → validity of selection is a financial issue, not only a fairness issue."
+            ]
+          }
+        ],
+        "frameworks": [
+          "cipd-labour-market",
+          "recruitment-strategy"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "spoiled",
+        "title": "Spoiled for choice: John or Peter?",
+        "kind": "class",
+        "tag": "Ex. 2.3 · 3.1–3.4",
+        "situation": [
+          "Chris Sands at Esky International Consultants (EIC) must choose between two final candidates, John and Peter – childhood friends who both match EIC's culture. Part A: the two CVs and the job description. Part B: the candidates' back stories, which reveal very different life trajectories shaped by social class (reading: Ingram, 2021)."
+        ],
+        "questions": [
+          {
+            "q": "(A) Whom would you hire, and why?",
+            "answer": [
+              "Most students rely on CV signals (degree, school prestige, internships, employers). The debrief shows these signals partly reflect each candidate's economic, social and cultural capital – not only ability.",
+              "Decide against the job-relevant capabilities in the job description, not against the prestige of the signals."
+            ]
+          },
+          {
+            "q": "(B) What skills might Peter have acquired that John may not – and vice versa? Which events shaped their trajectories?",
+            "answer": [
+              "Conventional, prestigious path: strong signals (elite education, polished internships, networks) produced by economic capital (could afford unpaid/abroad experiences), social capital (contacts opened doors) and cultural capital (knew the “rules”, high expectations). Skills: formal analytical training, professional polish, comfort in elite settings.",
+              "Less conventional path: fewer prestige signals, but early responsibility – working while studying, setbacks, dealing with very different people → resilience, practical problem solving, empathy, ability to bridge cultural divides (Ingram's “class transitioners”).",
+              "Key events: family resources, school choice, who gave advice, chance and constraints – context, not only ability or effort → “IQ + effort = merit” is too simple."
+            ]
+          },
+          {
+            "q": "What does “social class origin” mean for Ingram, and what looks like merit on a CV?",
+            "answer": [
+              "Class origin = early access to money, contacts and cultural know-how (parents' income, education, occupation) with a lasting imprint; lower class origin → 32 % less likely to become a manager (more than gender 27 % or race 25 %).",
+              "Merit appears as signals – useful because costly, screened and requiring learning (Baron & Kreps, 1999) – but produced unequally by the three capitals (Bourdieu). Weight them with that in mind."
+            ]
+          },
+          {
+            "q": "Can the search for “fit” reproduce inequality?",
+            "answer": [
+              "Yes, when fit means similarity (hobbies, background, “would I have a beer with them?”) → in-group favouritism, similar-to-me bias, filtering on cultural capital.",
+              "No, when fit is defined in advance as job-relevant values and competencies and assessed in a structured way by several assessors. The problem is the definition and assessment of fit, not the idea."
+            ]
+          }
+        ],
+        "frameworks": [
+          "meritocracy",
+          "bourdieu",
+          "signaling",
+          "cultural-fit",
+          "biases"
+        ],
+        "takeaway": "HR challenge: distinguish the signal from the underlying job-relevant capability."
+      },
+      {
+        "id": "eic-inclusive",
+        "title": "EIC: a more inclusive selection process",
+        "kind": "class",
+        "tag": "Ex. 3.5",
+        "situation": [
+          "Follow-up to Spoiled for choice: how can EIC (and other organizations) improve candidate selection and ensure a more inclusive process?"
+        ],
+        "questions": [
+          {
+            "q": "Propose measures along the process.",
+            "answer": [
+              "Criteria: job analysis → explicit, job-relevant criteria fixed in advance; drop unnecessary requirements (degree inflation, “first-class degree”); define fit as values/competencies.",
+              "Recruitment: gender-neutral wording (Gaucher et al., 2011); channels beyond elite universities and referrals; partnerships for under-represented groups; advertise flexible working.",
+              "Screening: remove biographical details (name, age, university); weigh signals against how they were produced; look for transferable capabilities.",
+              "Selection: structured interviews with scoring; work samples that measure capability directly; diverse, trained panels; adjustments for neurodiverse and disabled candidates (Austin & Pisano, 2017).",
+              "Accountability: monitor data incl. social class, set targets, report results. → raises validity, reliability and fairness and widens the talent pool (RBV, Mohammadi et al., 2017)."
+            ]
+          }
+        ],
+        "frameworks": [
+          "inclusive-selection",
+          "unconscious-bias",
+          "diversity-case",
+          "vrp"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "discrimination-evidence",
+        "title": "How do we know it is discrimination?",
+        "kind": "class",
+        "tag": "Ex. 3.4 · surgeon riddle",
+        "situation": [
+          "Suppose members of one group are hired less often. How do we know this is discrimination rather than differences between candidates? (Quillian et al., 2019). Warm-up: the surgeon riddle – “I cannot operate on this boy, he is my son.”"
+        ],
+        "questions": [
+          {
+            "q": "Explain the difference and the evidence.",
+            "answer": [
+              "Inequality = unequal outcomes; discrimination = differential treatment by group; bias = cognitive process. Not interchangeable – an outcome gap can come from real differences between applicants.",
+              "Field experiments hold job-relevant characteristics constant and vary only the group cue (e.g. names) → a callback gap is caused by the cue = causal inference. 97 experiments, 200,000+ applications, 9 countries; highest in France, lowest in Germany.",
+              "Surgeon riddle: the surgeon is the mother – an automatic stereotype, not a conscious belief. In R&S such associations shape who “looks right”: halo, horns, similar-to-me, stereotyping, self-delusion."
+            ]
+          }
+        ],
+        "frameworks": [
+          "ineq-disc-bias",
+          "field-experiments",
+          "biases",
+          "unconscious-bias"
+        ],
+        "takeaway": ""
+      }
+    ]
+  },
+  {
+    "id": "l4",
+    "title": "L4 · Performance management",
+    "subtitle": "Sessions 4–5 – role play, evaluation systems, Cappelli & Tavis, Beach House",
+    "cases": [
+      {
+        "id": "beach-house",
+        "title": "Beach House: design a performance management system",
+        "kind": "class",
+        "tag": "Ex. 4.4",
+        "situation": [
+          "Beach House suffers from a lack of innovation. It has different employee groups – a creative “A Team” and the “Tweakers” who improve existing products. In groups, design a new performance appraisal system that helps solve the problems (PowerPoint on BB).",
+          "Key feedback points: what are value-adding activities? Purpose of the system (accountability, development, communication – Lussier & Hendon)? Autonomy vs. control and structure? Can the A Team be managed like the Tweakers? Qualitative vs. quantitative indicators? Externalities?"
+        ],
+        "questions": [
+          {
+            "q": "Design a new performance management system for Beach House.",
+            "answer": [
+              "Diagnosis: the core problem is lack of innovation → reward the activities behind innovation (experimenting, idea generation, collaboration), not only output.",
+              "Purpose: mainly development and communication; keep accountability in the background or separate from pay, so people dare to take risks.",
+              "Differentiate: A Team – autonomy, longer horizons, behaviour- and milestone-based indicators, peer/360° input; Tweakers – more structure, clearer quantitative targets (improvements implemented, quality).",
+              "Indicators: mix quantitative (projects, launches) and qualitative (creativity, knowledge sharing); avoid contamination and deficiency.",
+              "Process: frequent check-ins, real-time feedback, short goal cycles (Cappelli & Tavis); absolute, not relative standards to protect teamwork.",
+              "Externalities: what can be gamed? (counting ideas → many low-quality ideas; individual targets → no sharing) – name the risk and the safeguard."
+            ]
+          }
+        ],
+        "frameworks": [
+          "pm-design",
+          "pm-purpose",
+          "performance-theory",
+          "cappelli-tavis",
+          "Kerr: rewarding A while hoping for B"
+        ],
+        "takeaway": "Innovators measured on output targets stop innovating – design from the purpose and the type of work."
+      },
+      {
+        "id": "role-play",
+        "title": "Role play: manager vs. employee",
+        "kind": "class",
+        "tag": "Ex. 4.1",
+        "situation": [
+          "In pairs (1 manager, 1 employee) discuss an appraisal situation and try to agree. Reflective question: what is the key issue?"
+        ],
+        "questions": [
+          {
+            "q": "What is the key issue?",
+            "answer": [
+              "There is no shared definition of performance: they weigh different dimensions (results vs. effort, quantity vs. quality), use different standards and disagree whether situational constraints count.",
+              "A performance theory must be agreed before evaluating (Latham et al., 2007): dimensions, standards, constraints, number of levels, absolute vs. relative. The same issue reappears in the financial-sector PRP case."
+            ]
+          }
+        ],
+        "frameworks": [
+          "performance-theory"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "eval-systems",
+        "title": "Which behaviours do evaluation systems encourage?",
+        "kind": "class",
+        "tag": "Ex. 4.2",
+        "situation": [
+          "Four systems: team evaluation on a case study · individual exam · individual with ranking (normal distribution) · individual exam but team grades."
+        ],
+        "questions": [
+          {
+            "q": "What behaviour does each system encourage?",
+            "answer": [
+              "Team evaluation: cooperation and knowledge sharing – but free riding.",
+              "Individual exam: individual effort and accountability – no incentive to help.",
+              "Ranking: competition, no sharing, possibly sabotage.",
+              "Individual work, team grade: peer teaching and peer pressure – perceived unfairness.",
+              "Rule (Kerr): people do what is measured and rewarded."
+            ]
+          }
+        ],
+        "frameworks": [
+          "evaluation-behaviour",
+          "forced-distribution"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "drop-appraisals",
+        "title": "Why drop traditional appraisals? · Limits of PM",
+        "kind": "class",
+        "tag": "Ex. 4.3 · 4.5",
+        "situation": [
+          "Reflection on Cappelli & Tavis (2016), CIPD video and Kahoot: what pushes organizations to drop traditional appraisals? Plus the video “Humanize”: are there limits to performance management?"
+        ],
+        "questions": [
+          {
+            "q": "What pushes firms to drop traditional appraisals?",
+            "answer": [
+              "Cappelli & Tavis: return of people development, need for agility, centrality of teamwork – plus the disadvantages of forced distribution (demotivation, infighting, cost, horse-trading, no diversity, short-termism).",
+              "Alternatives: frequent check-ins, real-time and peer feedback, short-term goals, development separated from pay."
+            ]
+          },
+          {
+            "q": "Are there limits to performance management?",
+            "answer": [
+              "Yes: measurement cannot capture everything (deficiency), invites gaming (Kerr), and constant tracking reduces people to numbers – the control logic of L1. Use measurement to support conversations, not to replace judgement and trust."
+            ]
+          }
+        ],
+        "frameworks": [
+          "cappelli-tavis",
+          "forced-distribution",
+          "control-commitment"
+        ],
+        "takeaway": ""
+      }
+    ]
+  },
+  {
+    "id": "l5",
+    "title": "L5 · Rewards I: what to pay for & PRP",
+    "subtitle": "Session 6 – Chris vs. Pat and the PRP case studies (Safelite, City, Vatican)",
+    "cases": [
+      {
+        "id": "chris-pat",
+        "title": "Chris vs. Pat: 20 reasons for different pay",
+        "kind": "class",
+        "tag": "Ex. 5.1",
+        "situation": [
+          "Chris and Pat are both computer programmers. Chris earns €40,820, Pat €52,890. Find the reasons for the difference (Renard, 2008)."
+        ],
+        "questions": [
+          {
+            "q": "Explain the pay difference.",
+            "answer": [
+              "Internal consistency: abilities, duties, education, experience, job complexity, job level (Pat: more languages, beta testing and QC, Master's, 4 years, more autonomy, Programmer II).",
+              "External competitiveness: ability to pay, cost of living, industry, market, profitability, size, unions, supply and demand.",
+              "Individual contributions: pay for skills or performance. Differences based on gender, age or origin are unwise or illegal.",
+              "Exam tip: always say which logic a pay decision follows and whether the three are balanced (e.g. Netflix pays everyone at market rate → external competitiveness up, internal consistency down)."
+            ]
+          }
+        ],
+        "frameworks": [
+          "what-to-pay-for",
+          "pat-chris",
+          "salary-structure"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "safelite",
+        "title": "PRP case: Safelite Glass",
+        "kind": "class",
+        "tag": "Ex. 5.2 · Q1",
+        "situation": [
+          "Safelite switched windscreen installers from an hourly wage to piece rates (per unit installed), with a guaranteed minimum of $11 per hour. Defective work had to be redone without pay (Lazear, 2000)."
+        ],
+        "questions": [
+          {
+            "q": "Why was performance-related pay successful at Safelite?",
+            "answer": [
+              "Measurement was cheap: the inventory system already tracked units per worker.",
+              "Control: installing glass is a countable individual task – effort shows up in output (expectancy link holds).",
+              "Incentive and sorting: output rose about 36 % and pay 9 %, labour cost per unit fell about 20 %; roughly two-thirds from existing workers working harder, the rest from better workers joining and staying.",
+              "Quality protected: unpaid rework stopped workers trading quality for speed.",
+              "Low risk: the $11 floor limited the downside (fits Sayre et al.)."
+            ]
+          }
+        ],
+        "frameworks": [
+          "why-prp",
+          "expectancy",
+          "prp-evidence",
+          "prp-conditions"
+        ],
+        "takeaway": "PRP works when the measure fits the goal, the worker controls the result and failure costs the one who caused it."
+      },
+      {
+        "id": "stiglitz-city",
+        "title": "PRP case: Stiglitz and City bonuses",
+        "kind": "class",
+        "tag": "Ex. 5.3 · Q2",
+        "situation": [
+          "Joseph Stiglitz argues that bankers' bonuses contributed to the financial crisis. Average bonuses were very large (e.g. ~£300,000 at Goldman Sachs)."
+        ],
+        "questions": [
+          {
+            "q": "(a) What is Stiglitz's argument?",
+            "answer": [
+              "Bonuses “paid them to gamble”: bankers shared gains but not losses, risked other people's money, taxpayers backstopped failures. Remedy: hold bonuses in escrow (~10 years) and cut them if losses emerge – not a cap. Pay is one cause, with weak regulation and poor risk assessment."
+            ]
+          },
+          {
+            "q": "(b) Did the financial sector rely too much on performance pay?",
+            "answer": [
+              "Partly – but design was the bigger fault. Huge bonuses amplified flaws in the measure and drew attention from unmeasured tasks like risk control (multitasking). Pay stood in for risk management and regulation."
+            ]
+          },
+          {
+            "q": "(c) Were the rewards tied to the wrong kinds of performance?",
+            "answer": [
+              "Yes: short-term results without risk adjustment, while the bank needed long-term risk-adjusted value – rewarding A while hoping for B (Kerr). Contingency and contiguity violated: losses appear years later. Escrow = the financial version of Safelite's unpaid rework."
+            ]
+          }
+        ],
+        "frameworks": [
+          "prp-problems",
+          "agency",
+          "prp-conditions",
+          "Kerr: rewarding A while hoping for B"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "vatican",
+        "title": "PRP case: the Vatican",
+        "kind": "class",
+        "tag": "Ex. 5.4 · Q3",
+        "situation": [
+          "The Vatican introduced PRP for its lay staff, rewarding “dedication, professionalism, productivity and politeness”."
+        ],
+        "questions": [
+          {
+            "q": "(a) Was PRP the right approach?",
+            "answer": [
+              "Only in a modest form for lay staff, varied by job. Subjective criteria risk favouritism, external rewards may crowd out mission-driven motivation, much of the work earns no revenue to fund bonuses – and there is a cultural clash."
+            ]
+          },
+          {
+            "q": "(b) How would you reward “dedication, professionalism, productivity and politeness”?",
+            "answer": [
+              "Dedication: rating against described behaviours → recognition and development.",
+              "Professionalism: qualifications, audits, error rates → skill-based pay steps.",
+              "Productivity: countable output with quality check (post office, supermarket) → team bonus; none for police, courts, fire service.",
+              "Politeness: visitor feedback, mystery visits → threshold for bonus eligibility, not a graded scale. Keep base pay secure, several raters, published criteria."
+            ]
+          },
+          {
+            "q": "(c) Should there be rewards for priests, monks or nuns?",
+            "answer": [
+              "No financial rewards: a vocation is intrinsically motivated and pay could weaken it; spiritual work has no meaningful output measure; bonuses conflict with vows of poverty. Better: appointments, responsibility, recognition (Herzberg's motivators)."
+            ]
+          }
+        ],
+        "frameworks": [
+          "prp-problems",
+          "herzberg",
+          "expectancy",
+          "prp-conditions"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "when-prp",
+        "title": "When and how might PRP work? · The candle problem",
+        "kind": "class",
+        "tag": "Ex. 5.5 · 5.6",
+        "situation": [
+          "Extra question to the PRP case studies: build an argument for when and how PRP might work. Food for thought: the candle problem (Dan Pink) – offering money made people slower at a creative task."
+        ],
+        "questions": [
+          {
+            "q": "When and how might performance-related pay work?",
+            "answer": [
+              "PRP makes people do more of what is measured and attracts people who like that deal – so it works only when the measure matches the real goal.",
+              "Conditions: measure matches the goal · employee controls the result · results known before payment · employee bears the cost of failure · fits motivation and culture (Safelite yes; City no; Vatican doubtful).",
+              "Design: measure quantity and quality · match incentive strength to measure quality · match payment horizon to when results are known (defer with clawback) · share gains, protect a floor, phase in.",
+              "Candle problem: incentives narrow focus – good for mechanical tasks, harmful for creative ones (Beach House, Herzberg, Sayre's “tunnel vision”)."
+            ]
+          }
+        ],
+        "frameworks": [
+          "prp-conditions",
+          "prp-problems",
+          "why-prp"
+        ],
+        "takeaway": ""
+      }
+    ]
+  },
+  {
+    "id": "l6",
+    "title": "L6 · Rewards II: how to pay",
+    "subtitle": "Session 7 – pay transparency and National Office Supplies",
+    "cases": [
+      {
+        "id": "nos",
+        "title": "National Office Supplies",
+        "kind": "class",
+        "tag": "Ex. 6.2 · Wilton (2021)",
+        "situation": [
+          "The firm wants a “performance culture” and standard practices. Nowhere are there written criteria for the bonus.",
+          "London (Jeff): £250 a month to the top seller by volume; an annual pot that goes mostly to the top seller and that persuasion can sway; the pot exists “in lieu of” a London allowance; Jeff can withhold the prize and roll £500 over. Most profitable office – but complaints about hard selling, an administrator who is job-hunting, a rep calling it “a great motivator if all you care about is money”.",
+          "Scotland (Nicola): annual pot split equally across reps, part unofficially to the administrator; mid-table results; “great boss”, regular contact, recognition and get-togethers for a remote team."
+        ],
+        "questions": [
+          {
+            "q": "Analyse the reward practices with the course frameworks.",
+            "answer": [
+              "What to pay for: London rewards individual contribution but only volume, and turned the London allowance (external competitiveness) into a contest; Scotland – equal shares. Same job, two reward logics → no internal consistency.",
+              "Direction: London strong but wrong (volume → hard selling = rewarding A while hoping for B); Scotland weak (free riding). Fairness: London low (discretion, winner-takes-all, administrator excluded); Scotland equal but not equitable for top performers. Workability: both simple.",
+              "Expectancy: London – E weakened (depends on rivals), I uncertain (Jeff's judgement, rollover), V modest (£250); Scotland – I ≈ 0.",
+              "Herzberg: London money only (hygiene); Scotland recognition, contact, team events (motivators). Equity: administrator and non-winners feel under-rewarded → job-hunting.",
+              "Sayre et al.: London = pay for performance without certainty; Scotland = certainty without pay for performance."
+            ]
+          },
+          {
+            "q": "Recommend two specific changes and justify them.",
+            "answer": [
+              "1. Clear company-wide bonus rules: written criteria agreed in advance, paid if the target is met; add customer quality to volume; include administrators and managers → fixes direction, fairness, instrumentality and internal consistency.",
+              "2. Smooth and secure: replace the monthly winner and rollover with annual/averaged results plus an office team share; turn Jeff's pot back into a real London allowance; benchmark the package; keep Scotland's recognition everywhere → less uncertainty (Sayre), more cooperation (Nyberg); keep an individual element against free riding.",
+              "Critical points: the sums are small, Sayre's experiments used simple tasks, London is also the largest office, Scotland is no ideal either."
+            ]
+          }
+        ],
+        "frameworks": [
+          "what-to-pay-for",
+          "comp-tradeoffs",
+          "expectancy",
+          "herzberg",
+          "equity-theory",
+          "pfp-uncertainty",
+          "clear-smooth-secure",
+          "collective-pfp"
+        ],
+        "takeaway": "Keep London's focus on performance and Scotland's recognition – and add clear rules."
+      },
+      {
+        "id": "transparency",
+        "title": "Pay transparency: what should employees have a right to know?",
+        "kind": "class",
+        "tag": "Ex. 6.1",
+        "situation": [
+          "Pay transparency ranges from low (pay confidential) to process, outcome and full transparency. The EU pay transparency directive requires pay ranges before hiring, bans salary-history questions, gives a right to pay information and requires gap reporting (100+ employees)."
+        ],
+        "questions": [
+          {
+            "q": "What should employees have a right to know?",
+            "answer": [
+              "For more transparency: procedural justice and trust, fewer unexplained (gender) gaps, clearer link performance → pay (instrumentality), legal duty under the EU directive.",
+              "Against full transparency: privacy, envy and equity comparisons (Adams), less managerial flexibility, pressure to compress pay.",
+              "Defensible position: process transparency for everyone (how jobs are valued, ranges, criteria, progression) plus the outcome information the directive requires; individual salaries stay private."
+            ]
+          }
+        ],
+        "frameworks": [
+          "pay-transparency",
+          "eu-directive",
+          "equity-theory"
+        ],
+        "takeaway": ""
+      }
+    ]
+  },
+  {
+    "id": "l7",
+    "title": "L7 · Employer branding",
+    "subtitle": "Session 8 – dream employer, Lombard Odier, McDonald's (never asked in past exams – a good candidate)",
+    "cases": [
+      {
+        "id": "lombard-odier",
+        "title": "Lombard Odier: Louise's resignation",
+        "kind": "class",
+        "tag": "Ex. 7.2",
+        "situation": [
+          "Louise, a mid-career woman, resigns from the private bank Lombard Odier. The case details are not on the slides – use your class notes.",
+          "Questions in class: what does the resignation signal beyond the individual case? Which EVP dimensions are strong, which fragile or under-evidenced? Trade-offs? A coherent EVP for mid-career women? How to redesign it (steps 1–3)?"
+        ],
+        "questions": [
+          {
+            "q": "What does Louise's resignation signal beyond the individual case?",
+            "answer": [
+              "A pattern, not an anecdote: a “leaky pipeline” where the EVP works for juniors or men but not for mid-career women – a broken psychological contract (promise ≠ experience)."
+            ]
+          },
+          {
+            "q": "Which EVP dimensions are strong, which fragile – and how would you redesign the EVP?",
+            "answer": [
+              "EVP check for this target group (Mortensen & Edmondson): material (pay, flexibility – gender pay gap, transparency), growth (promotion after parental leave?), connection (sponsors, networks, role models), meaning (purpose of a long-term, values-driven bank). Mark each strong, fragile or not backed by evidence.",
+              "Step 1 – who am I? Identity (what Louise experienced) vs. image (what the bank promises).",
+              "Step 2 – customers: ask mid-career women (surveys, exit interviews); Randstad: work-life balance ranks first for women. Step 3 – competitors: what do other private banks offer this group?",
+              "Trade-offs: flexibility vs. client availability; long-hours culture vs. work-life balance; prestige vs. inclusion.",
+              "Redesign: concrete promises that are kept (consistency) – transparent promotion criteria, flexible career paths, sponsorship, pay-gap audits; measure retention of mid-career women."
+            ]
+          }
+        ],
+        "frameworks": [
+          "Employer branding: 6 steps",
+          "EVP (Mortensen & Edmondson)",
+          "Identity vs. image",
+          "Psychological contract",
+          "eu-directive"
+        ],
+        "takeaway": "An EVP must be true for each target group – one resignation can reveal that it isn't."
+      },
+      {
+        "id": "mcdonalds",
+        "title": "McDonald's (preparation reading)",
+        "kind": "prep",
+        "tag": "Ex. 7.3",
+        "situation": [
+          "Assigned with Mortensen & Edmondson (2023); the content is not on the slides. A strong product brand with a difficult employer image in low-wage, high-turnover jobs."
+        ],
+        "questions": [
+          {
+            "q": "How could McDonald's build a distinctive employer brand?",
+            "answer": [
+              "Apply the 6 steps: who am I (identity vs. image), customers (young first-job seekers, students, parents needing flexibility), competitors (other fast-food and retail employers).",
+              "Distinctive EVP parts: flexibility (material), first-job training and growth into management (growth), team community (connection) – meaning is harder to claim.",
+              "Check coherence: corporate and product brand vs. the real employee experience; strong brand = insightful, clear, distinctive, consistent; evaluate impact (turnover, applications, offer acceptance)."
+            ]
+          }
+        ],
+        "frameworks": [
+          "Employer branding: 6 steps",
+          "EVP (Mortensen & Edmondson)",
+          "Identity vs. image"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "dream-employer",
+        "title": "Your dream employer",
+        "kind": "class",
+        "tag": "Ex. 7.1",
+        "situation": [
+          "Pick your company of choice: what is their EVP, and how is it distinctive from your perspective?"
+        ],
+        "questions": [
+          {
+            "q": "Describe the EVP and what makes it distinctive.",
+            "answer": [
+              "Name the employer and your target group (e.g. business-school graduates).",
+              "Describe the EVP along material offerings, growth & development, connection & community, meaning & purpose.",
+              "Say what is distinctive vs. direct competitors (not “good pay”, which everyone claims).",
+              "Identity vs. image: is your picture based on the firm's communication or on employees' experience (Glassdoor, alumni)? A gap = risk of a broken psychological contract."
+            ]
+          }
+        ],
+        "frameworks": [
+          "EVP (Mortensen & Edmondson)",
+          "Identity vs. image"
+        ],
+        "takeaway": ""
+      }
+    ]
+  },
+  {
+    "id": "exams",
+    "title": "Exams · Cases from past exams",
+    "subtitle": "Each exam: one case, 2–4 open questions. Recipe: frame → point → theory + author → case facts → so what.",
+    "cases": [
+      {
+        "id": "exam-2024",
+        "title": "TechSoft succession planning",
+        "kind": "exam",
+        "tag": "Exam 2024",
+        "situation": [
+          "TechSoft, a software company, must replace its CFO; no internal candidate is ready. The CEO also wants to rank five young employees competing over three years for the role of Head of Product Development."
+        ],
+        "questions": [
+          {
+            "q": "Propose a selection strategy to hire a new CFO; justify with the course criteria.",
+            "answer": [
+              "Job analysis: financial expertise, trusted strategic advisor to the CEO, investor confidence, knowledge of the firm.",
+              "Recruitment: external closed search (executive search – high cost per hire justified); plan a handover with the current CFO.",
+              "Selection: structured competency interviews with CEO and board, a case/work sample (financial strategy presentation), thorough reference and track-record checks.",
+              "Justify: validity (methods match requirements), reliability (structured, several assessors), practicability (costly, but a wrong CFO costs more). Watch similar-to-me bias in “fit” with the CEO."
+            ],
+            "points": 5
+          },
+          {
+            "q": "The CEO wants to rank 5 young employees competing over 3 years. Drawbacks?",
+            "answer": [
+              "Like forced distribution: competition, infighting, less collaboration in the same department; horse-trading and politics; short-termism; Kerr – hopes for the best leader, rewards self-promotion.",
+              "Four “losers” are demotivated and may leave → the firm loses talent; uncertainty creates stress (Sayre et al.).",
+              "Better: development-focused approach (Cappelli & Tavis) – clear criteria, feedback, mentoring by the current head, several raters, career paths for all five."
+            ],
+            "points": 5
+          }
+        ],
+        "frameworks": [
+          "rs-process",
+          "vrp",
+          "cultural-fit",
+          "forced-distribution",
+          "cappelli-tavis"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "exam-2021",
+        "title": "Personality tests · Safelite piece rates",
+        "kind": "exam",
+        "tag": "Exam 2020/21",
+        "situation": [
+          "Case 1: a company considers personality tests as a selection tool. Case 2: Safelite pays installers per window – but their work depends on the call centre, scheduling and the warehouse, and demand depends on weather (hail) and miles driven."
+        ],
+        "questions": [
+          {
+            "q": "Pros and cons of personality tests as a selection tool. Would you recommend them?",
+            "answer": [
+              "Pros: practicable (cheap, fast, many candidates), reliable (standardised scoring), some validity for some traits and jobs.",
+              "Cons: faking lowers validity; self-description, not behaviour; must be linked to job analysis; can screen out neurodiverse people (Austin & Pisano); acceptance and privacy.",
+              "Recommendation: only as one element in a combination, never as a knock-out criterion."
+            ],
+            "points": 5
+          },
+          {
+            "q": "Which selection methods would you recommend instead to ensure P–O fit?",
+            "answer": [
+              "Structured behavioural/situational interviews on company values; work samples or trial days with the team; realistic job previews (self-selection); assessment centre for key roles.",
+              "Define fit by job-relevant values, not similarity, and use several assessors – otherwise fit reproduces inequality (“cloning”)."
+            ],
+            "points": 5
+          },
+          {
+            "q": "Three reasons why piece-rate pay may not be ideal for Safelite installers.",
+            "answer": [
+              "Expectancy breaks: work is interdependent – wrong glass or delays are not the installer's fault.",
+              "External factors (weather, miles) → earnings fluctuate → insecurity and stress (Sayre et al.).",
+              "Wrong direction: quantity over quality (Kerr); competition instead of cooperation; measurement and contingency problems."
+            ],
+            "points": 5
+          },
+          {
+            "q": "As Head of HR, which incentive plan would you introduce instead?",
+            "answer": [
+              "Base pay + team or branch bonus/gainsharing (fits interdependent work, Nyberg et al.) with quality metrics (customer satisfaction, rework).",
+              "Sayre: clear rules, longer periods, higher base share. Herzberg: recognition and development. Check direction, fairness, workability; mention free riding."
+            ],
+            "points": 5
+          }
+        ],
+        "frameworks": [
+          "vrp",
+          "cultural-fit",
+          "expectancy",
+          "pfp-uncertainty",
+          "collective-pfp",
+          "comp-tradeoffs"
+        ],
+        "takeaway": "Safelite appears twice: in class as a PRP success, in the exam as a case where piece rates fail – the conditions decide."
+      },
+      {
+        "id": "exam-2020",
+        "title": "Netflix “dream team”",
+        "kind": "exam",
+        "tag": "Exam December 2020",
+        "situation": [
+          "Netflix wants a “dream team” of stars: managers apply the “keeper test” (would I fight to keep this person?) for retention decisions, pay everyone at the top of their personal market, and make inclusion and diversity central to the culture."
+        ],
+        "questions": [
+          {
+            "q": "What HR problems come with the keeper test? Use purposes, types and criteria of PM.",
+            "answer": [
+              "Purpose: purely accountability (keep or fire) – no development or communication. Type: one global, subjective, relative judgement by one manager.",
+              "Criteria: low reliability, questionable validity (contaminated by market value and liking), bias (similar-to-me, halo), low specificity, low acceptability → fear, risk aversion, less collaboration."
+            ],
+            "points": 5
+          },
+          {
+            "q": "Which Cappelli & Tavis imperatives would push Netflix to drop it? If kept, what else is needed?",
+            "answer": [
+              "Development (no feedback to grow), teamwork (individual judgement vs. collaborative dream team), agility.",
+              "If kept: frequent check-ins, clear criteria in advance, several raters/calibration, separate development conversations, bias training, documentation."
+            ],
+            "points": 5
+          },
+          {
+            "q": "Why might Netflix make inclusion and diversity central to its culture?",
+            "answer": [
+              "Innovation, especially radical – vital for creative content (Mohammadi et al.); a global audience reflected in the workforce; better decisions.",
+              "Reduces bias (“focus on talent, not similarity”); avoids fit reproducing inequality; social class (Ingram); employer brand; sustainable HRM."
+            ],
+            "points": 5
+          },
+          {
+            "q": "Pros and cons of paying everyone at the top of their personal market.",
+            "answer": [
+              "This is external competitiveness. Pros: attract and retain top talent, sorting, easy to explain, fits the dream-team culture.",
+              "Cons: expensive (workability); ignores internal consistency → perceived unfairness (equity theory); market data is judgement-based; pays for outside options, not contribution (weak direction); pay is hygiene (Herzberg); market may carry gender gaps → hard to justify under pay transparency."
+            ],
+            "points": 5
+          }
+        ],
+        "frameworks": [
+          "pm-purpose",
+          "cappelli-tavis",
+          "diversity-case",
+          "cultural-fit",
+          "what-to-pay-for",
+          "equity-theory",
+          "herzberg"
+        ],
+        "takeaway": ""
+      },
+      {
+        "id": "exam-2019",
+        "title": "Disability inclusion · forced distribution · well-being",
+        "kind": "exam",
+        "tag": "Exam December 2019",
+        "situation": [
+          "Part A: a company must attract and recruit people with disabilities (legal 7 % target). Part B: Jack Welch's forced distribution at GE and new types of appraisal. Part C: employee well-being at Callahan Packaging (repetitive work, high pace, 12-hour shifts; measures: seminars, gym, healthy food, counselling) – not in the current lectures."
+        ],
+        "questions": [
+          {
+            "q": "Why may companies need to recruit people with disabilities? Why is it still a challenge? Two practices to increase it.",
+            "answer": [
+              "Why: RBV/human capital – an untapped talent pool with overlooked strengths (Austin & Pisano); diversity → innovation (Mohammadi et al.); sustainable HRM – social dimension; motives compliance (7 % target), strategic, values (Stahl et al.).",
+              "Challenge: seen as cost/risk (only compliance); biases (stereotyping, horns, similar-to-me, narrow fit); standardised methods screen out capable people; CV gaps misread; channels don't reach candidates.",
+              "Practices: recruitment – partner with disability organisations, inclusive wording, accessible career site; selection – criteria in advance, adjustments (work trials), trained diverse panels, fairness checks, targets and monitoring."
+            ],
+            "points": 6
+          },
+          {
+            "q": "Explain forced distribution and its disadvantages. Which imperatives push firms to abandon traditional appraisals? Compare a new type with a traditional one.",
+            "answer": [
+              "Forced distribution: rank on a fixed curve (20 % top / 70 % middle / 10 % bottom, bottom let go). Disadvantages: demotivation of the middle, infighting, cost, horse-trading, ignores diversity, short-termism; Kerr – hopes for teamwork, rewards competition.",
+              "Cappelli & Tavis: people development, agility, teamwork.",
+              "New type: frequent check-ins (Adobe, Deloitte, GE) vs. annual rating – compare on purpose and criteria: strategic congruence, validity, reliability (risk: less standardised), acceptability, specificity."
+            ],
+            "points": 8
+          },
+          {
+            "q": "Well-being at Callahan (not on the current slides).",
+            "answer": [
+              "Clarke & Cooper: Callahan's measures are secondary (seminars, gym) and tertiary (counselling) – the primary causes (repetitive work, pace, 12-hour shifts) are untouched.",
+              "Job Demands–Resources: high demands, low resources → recommend job rotation/enrichment, revised shifts, employee voice."
+            ],
+            "points": 6
+          }
+        ],
+        "frameworks": [
+          "diversity-case",
+          "unconscious-bias",
+          "inclusive-selection",
+          "reasons-sustainable",
+          "forced-distribution",
+          "cappelli-tavis"
+        ],
+        "takeaway": ""
+      }
+    ]
+  }
+]

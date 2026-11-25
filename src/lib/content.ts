@@ -6,6 +6,7 @@ import { z } from "zod";
 import {
   CalendarEntrySchema,
   CardSchema,
+  CasebookSchema,
   CaseSchema,
   FormulaSchema,
   FrameworkSchema,
@@ -16,6 +17,7 @@ import {
   checkContent,
   paperItems,
   type CalendarEntry,
+  type Casebook,
   type Formula,
   type Framework,
   type LectureText,
@@ -126,6 +128,17 @@ export const getFrameworks = cache((subjectId: string): Framework[] => {
   return list.toSorted((a, b) => order.get(a.lecture)! - order.get(b.lecture)!);
 });
 
+/** Case-Study-Sammlung: casebook.json (optional), Gruppen in Dateireihenfolge. */
+export const getCasebook = cache((subjectId: string): Casebook => {
+  const file = path.join(ROOT, subjectId, "casebook.json");
+  if (!fs.existsSync(file)) return [];
+  const result = CasebookSchema.safeParse(readJson(file));
+  if (!result.success) throw new Error(`Content: ${path.relative(process.cwd(), file)}\n${z.prettifyError(result.error)}`);
+  const ids = result.data.flatMap((g) => g.cases.map((c) => c.id));
+  if (new Set(ids).size !== ids.length) throw new Error(`Content "${subjectId}": doppelte Fall-ids in casebook.json`);
+  return result.data;
+});
+
 /** Formelübersicht: formulas/<kapitel>.json, in Kapitelreihenfolge. */
 export const getFormulas = cache((subjectId: string): Formula[] => {
   const subject = loadAllContent().find((c) => c.subject.id === subjectId)?.subject;
@@ -211,6 +224,7 @@ function summaryOf({ subject, questions, cards, papers }: SubjectContent): Omit<
     texts: getTexts(subject.id).map((t) => t.lecture),
     frameworks: [...new Set(getFrameworks(subject.id).map((f) => f.lecture))],
     formulas: [...new Set(getFormulas(subject.id).map((f) => f.lecture))],
+    casebook: getCasebook(subject.id).reduce((n, g) => n + g.cases.length, 0),
     papers: papers.map((p) => ({
       id: p.id,
       title: p.title,
