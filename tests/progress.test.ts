@@ -14,6 +14,7 @@ const summary = (papers: SubjectSummary["papers"]): SubjectSummary => ({
     demo: false,
     draft: false,
     look: "default",
+    quizLabel: "Quiz",
     lectures: [{ id: "a", title: "A" }],
     examFormat: { name: "Exam", minutes: 60, short: 0, mc: 0, tf: 2, order: ["short", "mc", "tf"] },
   },

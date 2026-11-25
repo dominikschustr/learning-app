@@ -53,5 +53,7 @@
       "short",
       "tf"
     ]
-  }
+  },
+  "quizLabel": "Kahoot",
+  "quizNote": "Fragen aus den Kahoots der Vorlesung"
 }

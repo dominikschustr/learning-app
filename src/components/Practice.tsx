@@ -409,7 +409,7 @@ function Session({
 
       <div className="mb-4 flex items-center justify-between gap-3 text-xs text-muted">
         <span className="min-w-0 truncate">
-          {only ? "Fehler wiederholen" : MODE_TITLE[mode]} · {lectureTitle}
+          {only ? "Fehler wiederholen" : mode === "quiz" ? subject.quizLabel : MODE_TITLE[mode]} · {lectureTitle}
         </span>
         <span className="flex shrink-0 items-center gap-2">
           <span className="tabular-nums">

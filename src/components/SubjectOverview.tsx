@@ -565,7 +565,7 @@ function TrainingTab({ summary, st }: { summary: SubjectSummary; st: SubjectStat
       title: "Aus der Vorlesung",
       modes: [
         ...(quiz.n
-          ? [{ href: `${base}/practice?mode=quiz`, icon: MessageCircleQuestion, title: "Quiz", meta: quiz.meta, note: subject.quizNote }]
+          ? [{ href: `${base}/practice?mode=quiz`, icon: MessageCircleQuestion, title: subject.quizLabel, meta: quiz.meta, note: subject.quizNote }]
           : []),
         ...(checkup.n
           ? [{ href: `${base}/practice?mode=checkup`, icon: ClipboardCheck, title: "Check-up-Fragen", meta: checkup.meta }]

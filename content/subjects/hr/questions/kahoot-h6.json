@@ -36,7 +36,8 @@
         "source": "Kahoot der Vorlesung",
         "ref": ""
       }
-    ]
+    ],
+    "quiz": true
   },
   {
     "type": "mc",
@@ -75,6 +76,7 @@
         "source": "Kahoot der Vorlesung",
         "ref": ""
       }
-    ]
+    ],
+    "quiz": true
   }
 ]

@@ -145,7 +145,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           {
             href: `${base}/practice?mode=quiz&lecture=${chapterId}`,
             icon: MessageCircleQuestion,
-            title: "Quiz",
+            title: subject.quizLabel,
             meta: `${quizStatus.first + quizStatus.recovered}/${quiz.length} richtig`,
             note: subject.quizNote,
           },

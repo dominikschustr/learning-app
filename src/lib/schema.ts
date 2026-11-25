@@ -34,6 +34,8 @@ export const SubjectSchema = z.object({
   accent: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
   /** Zusatzzeile auf der Quiz-Kachel (Fach- und Kapitelseite), z. B. woher die Quizfragen stammen */
   quizNote: z.string().optional(),
+  /** Titel des Quiz-Modus (Kacheln und Übung), z. B. „Kahoot“ */
+  quizLabel: z.string().min(1).default("Quiz"),
   lectures: z.array(LectureSchema).min(1),
   examFormat: ExamFormatSchema,
 });
