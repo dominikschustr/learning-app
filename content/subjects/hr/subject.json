@@ -55,5 +55,6 @@
     ]
   },
   "quizLabel": "Kahoot",
-  "quizNote": "Fragen aus den Kahoots der Vorlesung"
+  "quizNote": "Alle Fragen aus den Kahoots der Vorlesung in einem Durchgang",
+  "quizScope": "subject"
 }

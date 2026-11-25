@@ -36,6 +36,8 @@ export const SubjectSchema = z.object({
   quizNote: z.string().optional(),
   /** Titel des Quiz-Modus (Kacheln und Übung), z. B. „Kahoot“ */
   quizLabel: z.string().min(1).default("Quiz"),
+  /** „subject“: das Quiz nur als eine gemeinsame Übung des Fachs, keine Quiz-Kacheln auf den Kapitelseiten */
+  quizScope: z.enum(["chapter", "subject"]).default("chapter"),
   lectures: z.array(LectureSchema).min(1),
   examFormat: ExamFormatSchema,
 });

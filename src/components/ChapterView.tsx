@@ -140,7 +140,7 @@ function Inner({ summary, chapterId }: { summary: SubjectSummary; chapterId: str
           },
         ]
       : []),
-    ...(quiz.length
+    ...(quiz.length && subject.quizScope === "chapter"
       ? [
           {
             href: `${base}/practice?mode=quiz&lecture=${chapterId}`,
