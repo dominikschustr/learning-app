@@ -489,7 +489,8 @@ function Session({
         </motion.div>
       </AnimatePresence>
 
-      <div className="sticky bottom-[calc(1rem+env(safe-area-inset-bottom))] mt-8 flex items-center justify-end gap-2">
+      {/* Verlauf in Seitenfarbe hinter der Leiste: lange Fragen scrollen sonst sichtbar hinter „Überspringen“ durch */}
+      <div className="sticky bottom-[calc(1rem+env(safe-area-inset-bottom))] z-10 mt-8 flex items-center justify-end gap-2 before:pointer-events-none before:absolute before:-inset-x-4 before:-top-6 before:-bottom-[calc(1rem+env(safe-area-inset-bottom))] before:-z-10 before:bg-linear-to-t before:from-bg before:from-60% before:to-bg/0 before:content-['']">
         {index > 0 && (
           <Button
             variant="ghost"

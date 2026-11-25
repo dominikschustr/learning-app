@@ -32,7 +32,7 @@ import { announce, celebrate, useToasts } from "@/lib/toast";
 import { useNow } from "@/lib/useNow";
 import { alpha, cn, dayKey, nextWeekStart, weekKey } from "@/lib/utils";
 import { useFocus } from "./FocusHour";
-import { Bar, Button, Chip, Skeleton } from "./ui";
+import { Bar, Button, Skeleton } from "./ui";
 
 const SORTS: { id: SortBy; label: string }[] = [
   { id: "week", label: "Woche" },
@@ -394,37 +394,36 @@ function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me:
   const league = leagueFor(row.level);
   const milestone = streakMilestone(row.streakNow);
 
+  // Kleine Abzeichen in fester Höhe, damit umbrechende Zeilen gleichmäßig aussehen
+  // (ohne display- und font-Klasse: `cn` führt Tailwind-Klassen nicht zusammen, „hidden“ muss sich durchsetzen können)
+  const pill = "h-[18px] shrink-0 items-center gap-0.5 rounded-full px-1.5 text-[11px] leading-none";
+
   return (
-    <div className={cn("flex items-center gap-3 px-4 py-3 sm:px-5", me && "bg-accent/5")}>
+    <div className={cn("flex items-center gap-2.5 px-3.5 py-3 sm:gap-3 sm:px-5", me && "bg-accent/5")}>
       <div className="flex w-9 shrink-0 flex-col items-center">
         <RankBadge rank={row.rank} />
         <Moved n={moved} />
       </div>
       <Avatar row={row} state={status.state} />
       <div className="min-w-0 flex-1">
-        <p className="flex items-center gap-2">
-          <span className="min-w-[3rem] truncate font-semibold">{row.name}</span>
-          {me && <Chip className="border-accent/30 text-accent">Du</Chip>}
+        {/* Zeile 1: Name hat Vorrang und wird gekürzt; daneben nur „Du“ und die Krone (feste Breite) */}
+        <p className="flex min-w-0 items-center gap-1.5">
+          <span className="min-w-0 truncate font-semibold" title={row.name}>
+            {row.name}
+          </span>
+          {me && <span className={cn(pill, "inline-flex border border-accent/30 bg-surface font-semibold text-accent")}>Du</span>}
           {goalDone && (
-            <span title="Tagesziel geschafft" aria-label="Tagesziel geschafft" className="text-warn">
+            <span title="Tagesziel geschafft" aria-label="Tagesziel geschafft" className="shrink-0 text-warn">
               <Crown className="size-3.5" fill="currentColor" />
             </span>
           )}
-          {milestone && (
-            <span
-              title={`${milestone}-Tage-Streak`}
-              className="inline-flex items-center gap-0.5 rounded-full bg-flame/10 px-1.5 text-[11px] font-bold text-flame"
-            >
-              <Flame className="size-3" fill="currentColor" />
-              {milestone}+
-            </span>
-          )}
         </p>
-        <p className="flex items-center gap-1.5 truncate text-xs text-muted">
+        {/* Zeile 2: Status und Abzeichen; bricht um statt zu überlappen, der Titel wird zuletzt gekürzt */}
+        <div className="mt-0.5 flex min-w-0 flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-muted">
           {status.text && (
             <span
               className={cn(
-                "shrink-0 font-semibold",
+                "max-w-full truncate font-semibold",
                 status.state === "online" ? "text-good" : status.state === "idle" ? "text-bad" : "font-normal",
               )}
             >
@@ -432,25 +431,35 @@ function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me:
             </span>
           )}
           {focus && (
-            <span
-              title="In der Fokus-Stunde: doppelte XP"
-              className="focus-gradient inline-flex shrink-0 items-center gap-0.5 rounded-full px-1.5 py-px text-[11px] font-bold text-white"
-            >
+            <span title="In der Fokus-Stunde: doppelte XP" className={cn(pill, "inline-flex font-bold focus-gradient text-white")}>
               <Zap className="size-3" fill="currentColor" />2×
             </span>
           )}
+          {milestone && (
+            <span title={`${milestone}-Tage-Streak`} className={cn(pill, "inline-flex font-bold bg-flame/10 text-flame")}>
+              <Flame className="size-3" fill="currentColor" />
+              {milestone}+
+            </span>
+          )}
           {row.wins > 0 && (
-            <span
-              title={`${row.wins}× Wochensieger`}
-              className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-warn-soft px-1.5 py-px text-[11px] font-bold tabular-nums text-warn"
-            >
+            <span title={`${row.wins}× Wochensieger`} className={cn(pill, "inline-flex font-bold bg-warn-soft tabular-nums text-warn")}>
               <Trophy className="size-3" fill="currentColor" />
               {row.wins > 1 && row.wins}
             </span>
           )}
+          {prize > 0 && (
+            <span
+              title={`Wochenprämie für Platz ${row.rank}, wenn es bis Sonntag so bleibt`}
+              aria-label={`Wochenprämie +${prize} XP`}
+              className={cn(pill, "inline-flex border border-line font-semibold tabular-nums text-ink-2")}
+            >
+              <Gift className="size-3" />+{prize}
+            </span>
+          )}
           <span
             className={cn(
-              "shrink-0 items-center gap-1 rounded-full px-1.5 py-px text-[11px] font-semibold",
+              pill,
+              "gap-1 font-semibold",
               // Auf dem Handy hat der Status Vorrang vor der Liga
               status.text ? "hidden sm:inline-flex" : "inline-flex",
             )}
@@ -459,20 +468,13 @@ function RowView({ row, by, me, now, moved, prize }: { row: Row; by: SortBy; me:
             <span className="size-1.5 rounded-full" style={{ background: league.color }} />
             {league.name}
           </span>
-          <span className="truncate">{titleFor(row.level)}</span>
-        </p>
+          {/* Titel nur, wo Platz ist: auf dem Handy wäre er fast immer abgeschnitten */}
+          <span className="hidden min-w-0 max-w-full truncate sm:inline">{titleFor(row.level)}</span>
+        </div>
         {by === "today" && <Bar value={row.todayNow / row.goal} color="var(--good)" className="mt-2 h-1.5" />}
       </div>
 
-      <div className="flex shrink-0 items-center gap-3 text-right sm:gap-5">
-        {prize > 0 && (
-          <span
-            title={`Wochenprämie für Platz ${row.rank}, wenn es bis Sonntag so bleibt`}
-            className="hidden shrink-0 items-center gap-1 rounded-full border border-line px-2 py-0.5 text-[11px] font-semibold tabular-nums text-ink-2 min-[420px]:inline-flex"
-          >
-            <Gift className="size-3" />+{prize}
-          </span>
-        )}
+      <div className="flex shrink-0 items-center gap-3 text-right sm:gap-4">
         <Stat label="Woche" active={by === "week"} value={String(row.weekNow)} sub="XP Woche" />
         <Stat label="Level" active={by === "xp"} value={`Lv ${row.level}`} sub={`${row.xp} XP`} />
         <Stat
@@ -512,7 +514,8 @@ function Stat({
   subClass?: string;
 }) {
   return (
-    <div className={cn("w-12 sm:w-16", !active && "hidden sm:block")} aria-label={label}>
+    // Mindestbreite statt fester Breite: fünfstellige Werte schieben die Spalte, statt über den Rand zu laufen
+    <div className={cn("min-w-12 whitespace-nowrap sm:min-w-16", !active && "hidden sm:block")} aria-label={label}>
       <p className={cn("tabular-nums", active ? "text-lg font-bold" : "text-sm font-semibold text-ink-2")}>{value}</p>
       <p className={cn("text-[11px] tabular-nums text-muted", subClass)}>{sub}</p>
     </div>

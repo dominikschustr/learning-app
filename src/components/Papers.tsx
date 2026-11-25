@@ -231,9 +231,10 @@ export function PaperList({ content }: { content: SubjectContent }) {
               </div>
               <div className="mt-4 grid gap-1.5 text-sm">
                 {parts.map((x, pi) => (
-                  <div key={x.title} className="flex min-w-0 items-center justify-between gap-4 text-ink-2">
-                    <span className="min-w-0 truncate">{x.title}</span>
-                    <span className="ml-auto flex shrink-0 gap-1" aria-hidden>
+                  // Handy: Titel in eigener Zeile, darunter Punkte (dürfen umbrechen) und Fragenzahl – 20 Punkte passen nicht neben den Titel
+                  <div key={x.title} className="flex min-w-0 flex-wrap items-center gap-x-4 gap-y-1 text-ink-2 sm:flex-nowrap">
+                    <span className="min-w-0 basis-full truncate sm:basis-auto">{x.title}</span>
+                    <span className="flex min-w-0 flex-wrap gap-1 sm:ml-auto sm:shrink-0 sm:flex-nowrap" aria-hidden>
                       {partRows(pi).map((q) => (
                         <span
                           key={q.id}
@@ -243,7 +244,7 @@ export function PaperList({ content }: { content: SubjectContent }) {
                         />
                       ))}
                     </span>
-                    <span className="shrink-0 tabular-nums text-muted">
+                    <span className="ml-auto shrink-0 tabular-nums text-muted sm:ml-0">
                       {x.count} {x.count === 1 ? "Frage" : "Fragen"} · {fmtPoints(x.points)} P.
                     </span>
                   </div>
