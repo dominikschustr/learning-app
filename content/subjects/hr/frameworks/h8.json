@@ -1,0 +1,227 @@
+[
+  {
+    "id": "eb-business-case",
+    "lecture": "h8",
+    "name": "Why employer branding? The business case",
+    "origin": "Sparrow & Otaye (2015)",
+    "purpose": "Why should a firm invest in its employer brand when talent is scarce?",
+    "parts": [
+      {
+        "label": "Manage the psychological contract",
+        "points": [
+          "The brand shapes expectations about the employment deal",
+          "Promises must match experience"
+        ]
+      },
+      {
+        "label": "Signal values and prestige",
+        "points": [
+          "Signalling to job seekers: what it is like to work here, how people are treated"
+        ]
+      },
+      {
+        "label": "Create common identity",
+        "points": [
+          "A source of shared identity for current employees"
+        ]
+      }
+    ],
+    "apply": [
+      "Name which of the three functions the case firm's brand fails at",
+      "Check whether the brand promise matches the employee experience (exit interviews, Glassdoor)"
+    ],
+    "pitfalls": [
+      "Treating employer branding as advertising only – it is about the employment deal and its delivery"
+    ],
+    "example": "Increasing labour-market competition for key talent makes the employer brand a strategic issue.",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "eb-six-steps",
+    "lecture": "h8",
+    "name": "How to build an employer brand: 6 steps",
+    "origin": "Session 8",
+    "purpose": "Which steps lead from self-analysis to a distinctive, measured employer brand?",
+    "parts": [
+      {
+        "label": "1. Who am I?",
+        "points": [
+          "Identity vs image",
+          "Corporate, product and employer brand aligned"
+        ]
+      },
+      {
+        "label": "2. Customers",
+        "points": [
+          "Ask employees, survey the target population (Randstad)"
+        ]
+      },
+      {
+        "label": "3. Competitors",
+        "points": [
+          "Map rivals by attribute: projects, career, learning, WLB, CSR, diversity…"
+        ]
+      },
+      {
+        "label": "4. Distinctive EVP",
+        "points": [
+          "Attributes you most want to be associated with"
+        ]
+      },
+      {
+        "label": "5. Create & communicate",
+        "points": [
+          "Insightful, clear, distinctive, consistent",
+          "Social networks, universities, job sites, media"
+        ]
+      },
+      {
+        "label": "6. Evaluate impact",
+        "points": [
+          "Baseline, volume & exposure, engagement (Brandon Hall)",
+          "External recognition"
+        ]
+      }
+    ],
+    "apply": [
+      "Walk through the steps with case facts; steps 1–3 are the analysis, 4–6 the design",
+      "Spot the skipped step (often: no customer or competitor analysis)"
+    ],
+    "pitfalls": [
+      "Jumping to step 5 (a campaign) without steps 1–4",
+      "Promising what the identity cannot deliver"
+    ],
+    "example": "Lombard Odier: redesign the EVP for mid-career women starting from steps 1–3.",
+    "visual": {
+      "type": "flow"
+    }
+  },
+  {
+    "id": "eb-identity-image",
+    "lecture": "h8",
+    "name": "Identity vs image",
+    "origin": "Sparrow & Otaye (2015), adapted from Mokina (2014)",
+    "purpose": "Is the employer brand what we are – or what others see?",
+    "parts": [
+      {
+        "label": "Identity – who I am",
+        "points": [
+          "The real employee experience",
+          "Corporate brand: vision, mission, values"
+        ]
+      },
+      {
+        "label": "Image – what others see",
+        "points": [
+          "Perception of candidates and the market",
+          "Shaped by campaigns, media, reviews"
+        ]
+      },
+      {
+        "label": "Employer brand = the overlap",
+        "points": [
+          "Product brand (USP) ↔ employer brand (EVP)",
+          "Customer experience ↔ candidate/employee experience"
+        ]
+      }
+    ],
+    "apply": [
+      "Compare the case firm's message (image) with what employees report (identity)",
+      "A gap = broken psychological contract → turnover"
+    ],
+    "pitfalls": [
+      "Fixing an identity problem with more marketing"
+    ],
+    "example": "A tech firm advertises “innovative and employee-centric” but exit interviews cite poor career progression – fix the experience, not the ads (exam 2025/26, MC 18).",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "eb-evp",
+    "lecture": "h8",
+    "name": "Employee value proposition (EVP)",
+    "origin": "Mortensen & Edmondson (2023)",
+    "purpose": "What value do employees get from working here? A holistic EVP has four parts.",
+    "parts": [
+      {
+        "label": "Material offerings",
+        "points": [
+          "Pay, benefits, flexibility, location"
+        ]
+      },
+      {
+        "label": "Growth & development",
+        "points": [
+          "Learning, careers, mobility"
+        ]
+      },
+      {
+        "label": "Connection & community",
+        "points": [
+          "Belonging, colleagues, managers"
+        ]
+      },
+      {
+        "label": "Meaning & purpose",
+        "points": [
+          "Mission, impact, values"
+        ]
+      }
+    ],
+    "apply": [
+      "Rate the case firm's EVP on all four parts for its target group",
+      "Find what is distinctive vs competitors – “good pay” is not distinctive"
+    ],
+    "pitfalls": [
+      "An EVP that is true for one group (juniors, men) but not for another (mid-career women)"
+    ],
+    "example": "Randstad 2026: work-life balance ranks first for many groups; career progression remains a key reason to leave.",
+    "visual": {
+      "type": "pillars"
+    }
+  },
+  {
+    "id": "eb-strong-brand",
+    "lecture": "h8",
+    "name": "What makes a strong employer brand?",
+    "origin": "Session 8",
+    "purpose": "Four tests for the brand and its communication.",
+    "parts": [
+      {
+        "label": "Insightful",
+        "points": [
+          "Connects with rational and emotional needs"
+        ]
+      },
+      {
+        "label": "Clear",
+        "points": [
+          "Clear about what it offers"
+        ]
+      },
+      {
+        "label": "Distinctive",
+        "points": [
+          "Cuts through – different from rivals"
+        ]
+      },
+      {
+        "label": "Consistent",
+        "points": [
+          "Delivers against its promises"
+        ]
+      }
+    ],
+    "apply": [
+      "Test the case campaign on all four; consistency (promise = experience) is the most common failure"
+    ],
+    "pitfalls": [],
+    "example": "",
+    "visual": {
+      "type": "letters"
+    }
+  }
+]

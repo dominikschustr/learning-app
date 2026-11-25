@@ -1,0 +1,13 @@
+[
+  {
+    "id": "velora",
+    "title": "Case: Velora",
+    "text": [
+      "Velora is a European e-commerce logistics company with around 3,500 employees, running warehouses in Lyon, Rotterdam and Poznań and a data & technology hub in Amsterdam. Growth has been fast, but margins are under pressure and several large clients have complained about delivery errors.",
+      "Two years ago Velora introduced a monthly bonus for warehouse team leaders. Each site manager ranks his or her team leaders on parcels shipped per hour; the top three receive a bonus of up to 20 % of monthly pay, the others receive nothing. Site managers may adjust the ranking “to reward attitude”, and the criteria are not written down. Parcels per hour vary strongly with the season, the client mix and the number of temporary workers assigned by head office. Since the bonus was introduced, error rates have increased, team leaders no longer lend staff to other teams at peak times, and two experienced team leaders have left, saying the system is “a lottery”. An internal survey also shows that women team leaders earn on average 11 % less than men in the same grade, which nobody in HR can explain.",
+      "At the same time, Velora is struggling to staff its Amsterdam hub. Hiring managers recruit mainly through employee referrals and recruiters screen CVs by university prestige. Interviews are informal conversations about “fit with the team”. Last year an AI tool was introduced to shortlist candidates by similarity to the CVs of current top performers. The hub's engineers are almost all men in their twenties from three technical universities, and one in three new hires leaves within a year, often saying the job was “not what was described”.",
+      "Velora's board has asked HR to fix the reward problems in the warehouses and to redesign recruitment and selection for the hub."
+    ],
+    "tables": []
+  }
+]

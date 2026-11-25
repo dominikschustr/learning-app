@@ -1,0 +1,1202 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-h8-01",
+    "lecture": "h8",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Employer branding mainly helps a firm to…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cut its recruitment budget"
+      },
+      {
+        "id": "b",
+        "text": "Become the employer of choice for a desired target group"
+      },
+      {
+        "id": "c",
+        "text": "Replace selection methods"
+      },
+      {
+        "id": "d",
+        "text": "Avoid paying market salaries"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Employer brand = attributes that make the firm distinctive and the employer of choice for a target group.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-02",
+    "lecture": "h8",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which is NOT part of the business case for employer branding (Sparrow & Otaye, 2015)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Managing the psychological contract"
+      },
+      {
+        "id": "b",
+        "text": "Signalling values and prestige"
+      },
+      {
+        "id": "c",
+        "text": "Creating a common identity for employees"
+      },
+      {
+        "id": "d",
+        "text": "Guaranteeing lower wage costs"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "The three functions: psychological contract, signals of values and prestige, common identity.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-03",
+    "lecture": "h8",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "The employer brand is best described as the overlap of…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Product price and quality"
+      },
+      {
+        "id": "b",
+        "text": "Identity (who I am) and image (what others see)"
+      },
+      {
+        "id": "c",
+        "text": "Wages and benefits"
+      },
+      {
+        "id": "d",
+        "text": "Recruitment and selection"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Identity vs image – the brand works when they match.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-04",
+    "lecture": "h8",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which is the FIRST step of building an employer brand?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Create a campaign on social media"
+      },
+      {
+        "id": "b",
+        "text": "Who am I? – analyse identity and image"
+      },
+      {
+        "id": "c",
+        "text": "Evaluate impact"
+      },
+      {
+        "id": "d",
+        "text": "Define the EVP"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Steps: who am I → customers → competitors → EVP → create & communicate → evaluate.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-05",
+    "lecture": "h8",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "An employee value proposition (EVP) is…",
+    "options": [
+      {
+        "id": "a",
+        "text": "The salary offered to a candidate"
+      },
+      {
+        "id": "b",
+        "text": "The set of attributes employees perceive as the value they gain from employment"
+      },
+      {
+        "id": "c",
+        "text": "The firm's product USP"
+      },
+      {
+        "id": "d",
+        "text": "The job description"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "EVP definition from the slides.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-06",
+    "lecture": "h8",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which is NOT one of Mortensen & Edmondson's (2023) four EVP elements?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Material offerings"
+      },
+      {
+        "id": "b",
+        "text": "Growth & development"
+      },
+      {
+        "id": "c",
+        "text": "Connection & community"
+      },
+      {
+        "id": "d",
+        "text": "Market share & profitability"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Four parts: material, growth, connection, meaning & purpose.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-07",
+    "lecture": "h8",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A strong employer brand is described as…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cheap, fast, broad, loud"
+      },
+      {
+        "id": "b",
+        "text": "Insightful, clear, distinctive, consistent"
+      },
+      {
+        "id": "c",
+        "text": "Short, generic, frequent, viral"
+      },
+      {
+        "id": "d",
+        "text": "Legal, valid, reliable, practicable"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Validity/reliability/practicability are selection criteria, not brand criteria.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-08",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A firm's campaign promises “flexibility for all”, but most employees must be in the office five days a week. The main risk is…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Too much authenticity"
+      },
+      {
+        "id": "b",
+        "text": "A broken psychological contract and early turnover"
+      },
+      {
+        "id": "c",
+        "text": "Lower recruitment costs"
+      },
+      {
+        "id": "d",
+        "text": "Higher validity of selection"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Promise ≠ experience → misalignment, broken psychological contract.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-09",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "To analyse competitors (step 3), a firm should…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Copy the most famous employer's campaign"
+      },
+      {
+        "id": "b",
+        "text": "Map rival employers on attributes such as career, learning, WLB and CSR to find a distinctive gap"
+      },
+      {
+        "id": "c",
+        "text": "Ignore competitors and focus on product ads"
+      },
+      {
+        "id": "d",
+        "text": "Only compare salaries"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Competitor mapping by attribute (example from a consulting firm in Spain).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-10",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which indicator best evaluates the impact of an employer brand?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Number of slides in the campaign"
+      },
+      {
+        "id": "b",
+        "text": "Offer acceptance rate and new-hire retention against a baseline"
+      },
+      {
+        "id": "c",
+        "text": "The CEO's opinion"
+      },
+      {
+        "id": "d",
+        "text": "Share price on the day of the campaign"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Evaluate impact: baseline, volume & exposure, engagement + external recognition.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-11",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Lombard Odier loses a mid-career woman. Why does this matter beyond the individual case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It does not – resignations are random"
+      },
+      {
+        "id": "b",
+        "text": "It may signal that the EVP is not coherent for this target group (leaky pipeline)"
+      },
+      {
+        "id": "c",
+        "text": "It proves pay is too high"
+      },
+      {
+        "id": "d",
+        "text": "It shows the brand is too distinctive"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "One resignation can reveal that the EVP does not hold for a specific group.",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "id": "mc-h8-12",
+    "lecture": "h8",
+    "difficulty": 1,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Getting to know “customers” (step 2) in employer branding means…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Surveying product buyers only"
+      },
+      {
+        "id": "b",
+        "text": "Asking employees and surveying the target population of candidates"
+      },
+      {
+        "id": "c",
+        "text": "Hiring a new marketing agency"
+      },
+      {
+        "id": "d",
+        "text": "Benchmarking the share price"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Customers of the employer brand = current and potential employees (Randstad data).",
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding"
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-13",
+    "prompt": "Why has employer branding become more important (Session 8)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Labour markets are less competitive"
+      },
+      {
+        "id": "b",
+        "text": "Competition for key talent in the labour market is increasing"
+      },
+      {
+        "id": "c",
+        "text": "Selection methods have become illegal"
+      },
+      {
+        "id": "d",
+        "text": "Pay transparency forbids recruitment ads"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Increasing labour-market competition for key talent.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-14",
+    "prompt": "The corporate brand consists mainly of…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vision, mission and values"
+      },
+      {
+        "id": "b",
+        "text": "Salary bands"
+      },
+      {
+        "id": "c",
+        "text": "Job descriptions"
+      },
+      {
+        "id": "d",
+        "text": "Selection methods"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Corporate brand = vision, mission, values; product brand = what people buy; employer brand = what people work for.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-15",
+    "prompt": "The product brand relates to the unique selling proposition in the same way as the employer brand relates to…",
+    "options": [
+      {
+        "id": "a",
+        "text": "The share price"
+      },
+      {
+        "id": "b",
+        "text": "The employee value proposition"
+      },
+      {
+        "id": "c",
+        "text": "The job analysis"
+      },
+      {
+        "id": "d",
+        "text": "The psychological test"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "USP ↔ EVP (Sparrow & Otaye, adapted from Mokina).",
+    "difficulty": 2
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-16",
+    "prompt": "The employer brand is experienced mainly by…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clients and customers"
+      },
+      {
+        "id": "b",
+        "text": "Candidates and employees"
+      },
+      {
+        "id": "c",
+        "text": "Shareholders only"
+      },
+      {
+        "id": "d",
+        "text": "Suppliers"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Customer experience ↔ product brand; candidate/employee experience ↔ employer brand.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-17",
+    "prompt": "“Identity” in employer branding refers to…",
+    "options": [
+      {
+        "id": "a",
+        "text": "What others see from outside"
+      },
+      {
+        "id": "b",
+        "text": "Who the organisation really is – the experience of its employees"
+      },
+      {
+        "id": "c",
+        "text": "The logo and colours"
+      },
+      {
+        "id": "d",
+        "text": "Competitors' perception"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Identity = who I am; image = what others see.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-18",
+    "prompt": "An EVP should describe…",
+    "options": [
+      {
+        "id": "a",
+        "text": "The attributes the firm most wants to be associated with in the future and that employees value"
+      },
+      {
+        "id": "b",
+        "text": "Only the current salary level"
+      },
+      {
+        "id": "c",
+        "text": "Every benefit in legal detail"
+      },
+      {
+        "id": "d",
+        "text": "The firm's product prices"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Distinctive EVP: the defining qualities the firm wants to be associated with.",
+    "difficulty": 2
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-19",
+    "prompt": "Which EVP element do purpose-driven projects (e.g. sustainability work) mainly address?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Material offerings"
+      },
+      {
+        "id": "b",
+        "text": "Growth & development"
+      },
+      {
+        "id": "c",
+        "text": "Connection & community"
+      },
+      {
+        "id": "d",
+        "text": "Meaning & purpose"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Purpose and impact = meaning & purpose.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-20",
+    "prompt": "Team events, mentors and a strong sense of belonging belong to which EVP element?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Material offerings"
+      },
+      {
+        "id": "b",
+        "text": "Growth & development"
+      },
+      {
+        "id": "c",
+        "text": "Connection & community"
+      },
+      {
+        "id": "d",
+        "text": "Meaning & purpose"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Belonging and relationships = connection & community.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-21",
+    "prompt": "Remote-work options and competitive pay belong to which EVP element?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Material offerings"
+      },
+      {
+        "id": "b",
+        "text": "Growth & development"
+      },
+      {
+        "id": "c",
+        "text": "Connection & community"
+      },
+      {
+        "id": "d",
+        "text": "Meaning & purpose"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Pay, benefits, flexibility = material offerings.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-22",
+    "prompt": "Why is “we pay well” usually a weak EVP statement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pay is illegal to mention"
+      },
+      {
+        "id": "b",
+        "text": "Most competitors claim it, so it is not distinctive"
+      },
+      {
+        "id": "c",
+        "text": "Employees do not care about pay"
+      },
+      {
+        "id": "d",
+        "text": "It violates the psychological contract"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Distinctiveness requires something rivals cannot easily claim.",
+    "difficulty": 2
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-23",
+    "prompt": "Which channel list matches the slides for communicating an employer brand?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Social networks, universities, job sites, mass media"
+      },
+      {
+        "id": "b",
+        "text": "Only print newspapers"
+      },
+      {
+        "id": "c",
+        "text": "Only internal intranet"
+      },
+      {
+        "id": "d",
+        "text": "Only product packaging"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Step 5: social networks, universities, job sites, mass media.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-24",
+    "prompt": "A brand that is “insightful” is one that…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Connects powerfully with candidates' rational and emotional needs"
+      },
+      {
+        "id": "b",
+        "text": "Uses the most data"
+      },
+      {
+        "id": "c",
+        "text": "Is cheapest to run"
+      },
+      {
+        "id": "d",
+        "text": "Changes every month"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Insightful = rational and emotional connection.",
+    "difficulty": 2
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-25",
+    "prompt": "Which source did the course use for data on what employees and candidates want (step 2)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Randstad Employer Brand Research (2026)"
+      },
+      {
+        "id": "b",
+        "text": "Quillian et al. (2019)"
+      },
+      {
+        "id": "c",
+        "text": "Lazear (2000)"
+      },
+      {
+        "id": "d",
+        "text": "Latham et al. (2007)"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Randstad (2026) – e.g. work-life balance ranks high.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-26",
+    "prompt": "In Lombard Odier, which redesign is most consistent with the 6-step model?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Launch a new ad campaign immediately"
+      },
+      {
+        "id": "b",
+        "text": "Start with steps 1–3: identity vs image for mid-career women, ask them, compare competitors – then redesign the EVP"
+      },
+      {
+        "id": "c",
+        "text": "Raise all salaries by 10 %"
+      },
+      {
+        "id": "d",
+        "text": "Stop hiring women"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Analysis (steps 1–3) before EVP and communication.",
+    "difficulty": 2
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-27",
+    "prompt": "A firm promises fast careers but promotions take twice as long as at rivals. Which outcome is most likely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher engagement"
+      },
+      {
+        "id": "b",
+        "text": "Broken psychological contract and higher early turnover"
+      },
+      {
+        "id": "c",
+        "text": "Better selection validity"
+      },
+      {
+        "id": "d",
+        "text": "Lower cost per hire"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Promise ≠ experience → broken psychological contract.",
+    "difficulty": 2
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-28",
+    "prompt": "Employer branding links to recruitment because…",
+    "options": [
+      {
+        "id": "a",
+        "text": "It replaces the need to select candidates"
+      },
+      {
+        "id": "b",
+        "text": "It shapes who applies – which pool recruitment can reach and attract"
+      },
+      {
+        "id": "c",
+        "text": "It sets the legal minimum wage"
+      },
+      {
+        "id": "d",
+        "text": "It measures job performance"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Recruitment attracts the pool; the brand influences who self-selects in.",
+    "difficulty": 2
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-29",
+    "prompt": "Which statement about evaluating an employer brand is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Impact cannot be measured"
+      },
+      {
+        "id": "b",
+        "text": "Firms should set a baseline and track volume & exposure, engagement and external recognition"
+      },
+      {
+        "id": "c",
+        "text": "Only the marketing budget matters"
+      },
+      {
+        "id": "d",
+        "text": "Awards are the only measure"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Brandon Hall (2014) + external recognition.",
+    "difficulty": 1
+  },
+  {
+    "type": "mc",
+    "lecture": "h8",
+    "single": true,
+    "shuffle": false,
+    "basis": [
+      {
+        "kind": "slides",
+        "source": "Employer branding",
+        "ref": ""
+      }
+    ],
+    "mcSet": true,
+    "topic": "Employer branding",
+    "id": "mc-h8-30",
+    "prompt": "A firm's brand is built on “discipline and long hours”. From a diversity perspective this mainly risks…",
+    "options": [
+      {
+        "id": "a",
+        "text": "Attracting a broader talent pool"
+      },
+      {
+        "id": "b",
+        "text": "Signalling a narrow ideal worker and deterring candidates with other needs (e.g. carers)"
+      },
+      {
+        "id": "c",
+        "text": "Improving reliability of selection"
+      },
+      {
+        "id": "d",
+        "text": "Reducing cost per hire to zero"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Brand signals shape self-selection; narrow signals → homogeneous pool (cf. NovaConsulting).",
+    "difficulty": 3
+  }
+]

@@ -1,0 +1,833 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-p8-01",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "In signalling theory, employer branding messages primarily:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reduce recruitment costs automatically"
+      },
+      {
+        "id": "b",
+        "text": "Communicate prestige, values, and expected treatment to job seekers"
+      },
+      {
+        "id": "c",
+        "text": "Guarantee employee loyalty"
+      },
+      {
+        "id": "d",
+        "text": "Eliminate decision-making biases"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Signals tell job seekers what it is like to work here – prestige, values, how people are treated (Sparrow & Otaye). They guarantee nothing.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-02",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "The psychological contract perspective on employer branding highlights that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recruitment adverts shape expectations about the employment deal"
+      },
+      {
+        "id": "b",
+        "text": "Branding only affects customers, not employees"
+      },
+      {
+        "id": "c",
+        "text": "The employer brand has no impact once the employee is hired"
+      },
+      {
+        "id": "d",
+        "text": "Employees ignore branding once they enter the firm"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Recruitment messages create expectations; if experience does not match, the psychological contract breaks.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-03",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A common risk of employer branding is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Overemphasising authenticity and transparency"
+      },
+      {
+        "id": "b",
+        "text": "Misalignment between external promises and internal employee experience"
+      },
+      {
+        "id": "c",
+        "text": "Focusing on diversity in recruitment"
+      },
+      {
+        "id": "d",
+        "text": "Using too many communication channels"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Image ≠ identity: the brand promises what the employee experience does not deliver (strong brands are consistent).",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-04",
+    "lecture": "h4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which recruitment practice is most likely to limit diversity in the talent pool?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Partnering with a variety of universities"
+      },
+      {
+        "id": "b",
+        "text": "Hiring only through employee referrals"
+      },
+      {
+        "id": "c",
+        "text": "Posting jobs on open-access job boards"
+      },
+      {
+        "id": "d",
+        "text": "Running targeted outreach campaigns"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Referrals reproduce the networks of current employees (social capital, in-group favouritism) → homogeneous pool.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-05",
+    "lecture": "h3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A recruitment strategy focused on internal candidates",
+    "options": [
+      {
+        "id": "a",
+        "text": "Is always cheaper and faster than external hiring"
+      },
+      {
+        "id": "b",
+        "text": "Can support retention but may limit fresh ideas and innovation"
+      },
+      {
+        "id": "c",
+        "text": "Completely eliminates selection bias"
+      },
+      {
+        "id": "d",
+        "text": "Is incompatible with employer branding"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Internal recruitment: known performers, motivation, retention – but a smaller pool and fewer new ideas. “Always” and “completely” are red flags.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-06",
+    "lecture": "h4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which of the following is an error in selection that can bias decisions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy effect"
+      },
+      {
+        "id": "b",
+        "text": "Validity effect"
+      },
+      {
+        "id": "c",
+        "text": "Similar-to-me bias"
+      },
+      {
+        "id": "d",
+        "text": "Performance-related bias"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Similar-to-me bias (Weston & Woods, Box 6.1): the recruiter uses him-/herself as the gold standard. „Validity effect“ and „performance-related bias“ are not selection errors.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-07",
+    "lecture": "h3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which of the following is not a criterion for evaluating selection methods?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Validity"
+      },
+      {
+        "id": "b",
+        "text": "Reliability"
+      },
+      {
+        "id": "c",
+        "text": "Legality"
+      },
+      {
+        "id": "d",
+        "text": "Profitability"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Selection methods are judged on validity, reliability, practicability (cost, acceptance) and legality – not on profitability.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-08",
+    "lecture": "h3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "In the context of selection methods, validity refers to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The degree to which a method consistently produces the same results"
+      },
+      {
+        "id": "b",
+        "text": "The degree to which a method accurately measures what it is intended to predict (e.g., job performance)"
+      },
+      {
+        "id": "c",
+        "text": "The legal acceptability of a method in the labour market"
+      },
+      {
+        "id": "d",
+        "text": "The cost-effectiveness of a method compared to alternatives"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "a = reliability, c = legality, d = practicability.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-09",
+    "lecture": "h5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "One of the three main business reasons companies dropped traditional appraisals was:",
+    "options": [
+      {
+        "id": "a",
+        "text": "To reduce HR budgets"
+      },
+      {
+        "id": "b",
+        "text": "To make HR's role more relevant for board decisions"
+      },
+      {
+        "id": "c",
+        "text": "To strengthen teamwork and agility"
+      },
+      {
+        "id": "d",
+        "text": "To focus more on pay fairness"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Cappelli & Tavis (2016): return of people development, need for agility, centrality of teamwork.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-10",
+    "lecture": "h5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A relative performance management system (e.g., forced ranking)",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reduces bias and improves collaboration"
+      },
+      {
+        "id": "b",
+        "text": "Classifies employees into categories compared to peers"
+      },
+      {
+        "id": "c",
+        "text": "Focuses on long-term developmental feedback"
+      },
+      {
+        "id": "d",
+        "text": "Is preferred in team-based organisations"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Relative = comparison with peers (ranking, forced distribution); it tends to harm collaboration.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-11",
+    "lecture": "h5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which is a potential drawback of forced distribution systems?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They motivate everyone equally"
+      },
+      {
+        "id": "b",
+        "text": "They tend to reduce collaboration and morale"
+      },
+      {
+        "id": "c",
+        "text": "They are cost-free to implement"
+      },
+      {
+        "id": "d",
+        "text": "They avoid all bias"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Demotivation of the middle, infighting, horse-trading, cost, no diversity, short-termism.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-12",
+    "lecture": "h5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A shift from accountability to learning in performance management implies:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focus on sanctioning low performers"
+      },
+      {
+        "id": "b",
+        "text": "Emphasis on continuous feedback and development"
+      },
+      {
+        "id": "c",
+        "text": "Avoiding any evaluation at all"
+      },
+      {
+        "id": "d",
+        "text": "Eliminating performance conversations"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Cappelli & Tavis: frequent check-ins and coaching replace the annual rating – evaluation does not disappear.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-13",
+    "lecture": "h7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "According to equity theory, employees evaluate fairness by comparing:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pay levels across countries"
+      },
+      {
+        "id": "b",
+        "text": "Their input/output ratio with referent others"
+      },
+      {
+        "id": "c",
+        "text": "Their bonus size to last year's profits"
+      },
+      {
+        "id": "d",
+        "text": "HR policies across industries"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Adams: own outcomes/inputs vs a referent's outcomes/inputs.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-14",
+    "lecture": "h6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which of the following is an intended effect of performance-related pay (PRP)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aligning employee efforts with organisational goals"
+      },
+      {
+        "id": "b",
+        "text": "Undermining cooperation"
+      },
+      {
+        "id": "c",
+        "text": "Increasing turnover"
+      },
+      {
+        "id": "d",
+        "text": "Encouraging short-termism"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Intended: direction of effort (agency theory), motivation, sorting. b–d are unintended side effects.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-15",
+    "lecture": "h6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Paying employees more because their jobs require higher responsibility and skills reflects which principle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internal consistency"
+      },
+      {
+        "id": "b",
+        "text": "External competitiveness"
+      },
+      {
+        "id": "c",
+        "text": "Agency alignment"
+      },
+      {
+        "id": "d",
+        "text": "Equity of effort"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Valuing jobs relative to one another (responsibility, complexity, skills) = internal consistency (Renard, 2008).",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-16",
+    "lecture": "h3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which of the following criteria would not be valid to select a laboratory technician in a medical testing facility?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They demonstrate attention to detail and accuracy in their work"
+      },
+      {
+        "id": "b",
+        "text": "They possess strong laboratory safety awareness"
+      },
+      {
+        "id": "c",
+        "text": "They show outstanding team-leadership and strategic management"
+      },
+      {
+        "id": "d",
+        "text": "They adhere to ethical standards in handling data"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Validity = linked to the job's requirements. Strategic management is not part of a technician's job → not a valid criterion.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-17",
+    "lecture": "h6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Two senior managers perform equally complex roles, but one manages multiple high-risk, high-impact projects while the other oversees a single stable project. From the standpoint of internal consistency and strategic reward management, which approach is most defensible?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maintain equal pay to signal equity and minimize internal conflict"
+      },
+      {
+        "id": "b",
+        "text": "Offer higher compensation to the manager overseeing multiple projects, reflecting the greater scope and value of responsibility"
+      },
+      {
+        "id": "c",
+        "text": "Adjust pay based on external benchmarking only, ignoring internal comparisons"
+      },
+      {
+        "id": "d",
+        "text": "Provide identical base pay but variable bonuses linked solely to company-wide profit"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Internal consistency values jobs by scope, responsibility and risk; a greater scope justifies higher pay (and is explainable under pay transparency).",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-18",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A technology firm facing high turnover among skilled engineers invests heavily in social media campaigns portraying itself as an “innovative and employee-centric” employer. However, exit interviews reveal that employees leave primarily due to limited career progression and inconsistent leadership practices. Which action would most effectively strengthen the firm's employer brand?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase marketing expenditure to enhance the company's visibility on professional networking platforms"
+      },
+      {
+        "id": "b",
+        "text": "Develop internal talent management and leadership development initiatives that align the employee experience with the brand promise"
+      },
+      {
+        "id": "c",
+        "text": "Introduce higher sign-on bonuses and referral incentives to attract new applicants more quickly"
+      },
+      {
+        "id": "d",
+        "text": "Rebrand externally by emphasizing short-term perks such as remote work and flexible hours"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "The problem is identity, not image: fix the experience (growth & development in the EVP) so the brand is consistent.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-19",
+    "lecture": "h6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "According to Expectancy Theory, which aspect of motivation is lacking in the following situation? An employee believes that no matter how hard they work or how well they perform, their manager will not grant the promised bonus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expectancy"
+      },
+      {
+        "id": "b",
+        "text": "Valence"
+      },
+      {
+        "id": "c",
+        "text": "Instrumentality"
+      },
+      {
+        "id": "d",
+        "text": "Self-efficacy"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Instrumentality = belief that performance leads to the reward. Expectancy would be effort → performance.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p8-20",
+    "lecture": "h4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A multinational firm adopts an AI-driven recruitment system to screen applicants. After implementation, managers notice that candidates from certain demographic groups are consistently ranked lower, despite equivalent qualifications. From a strategic HRM perspective, which action best reflects an evidence-based and ethical response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Retain the system but retrain it on historical data to ensure consistency with past hiring outcomes"
+      },
+      {
+        "id": "b",
+        "text": "Replace the AI tool with human screening to eliminate bias completely"
+      },
+      {
+        "id": "c",
+        "text": "Conduct a validity and bias audit of the algorithm, adjust data inputs, and integrate human judgment into final selection decisions"
+      },
+      {
+        "id": "d",
+        "text": "Accept the system's output as objective, as it minimizes human subjectivity"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Historical data reproduces past bias (a); humans are biased too (b – “completely”); d ignores evidence of discrimination. Audit + human judgement.",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "sa-p8-01",
+    "lecture": "h8",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "NovaConsulting's recruitment efforts are failing to attract enough young and diverse candidates. Based on the theories and concepts studied in class, explain why the current employer branding strategy may not be effective.",
+    "modelAnswer": "Identity vs image and the EVP: the campaign sells history, prestigious clients and “excellence and discipline” – an image that confirms exactly what young candidates dislike (“traditional”). It ignores what the target group values (Randstad: work-life balance, flexibility, well-being, purpose; Mortensen & Edmondson: material offerings such as flexibility, growth, connection, meaning). Steps 2–3 were skipped: no analysis of the customers (young, diverse professionals) or of competitors that emphasise flexibility and sustainability – so the EVP is not distinctive. Signalling and the psychological contract: “long hours, discipline” signals the treatment to expect; candidates self-select out, and those who join may find long hours and up-or-out pressure – rejection of offers and turnover. Consistency: the campaign does not change the experience (identity), so it cannot fix turnover. Diversity: channels are elite universities only and selection favours the “classic consultant profile” (cognitive tests, individual case interviews) – signals produced by economic, social and cultural capital (Bourdieu, Ingram), similar-to-me bias and fit as cloning → homogeneous pool; the brand reinforces this. Conclusion: redesign the EVP from steps 1–3 (flexibility, development, mentoring, purpose such as sustainability projects), widen channels and make selection criteria job-relevant.",
+    "keyPoints": [
+      "Image “traditional” reinforced instead of changed",
+      "EVP does not match target group (Randstad/Mortensen & Edmondson)",
+      "Steps 2–3 skipped, not distinctive",
+      "Signalling/psychological contract: long hours",
+      "Narrow channels + classic profile → homogeneity (capitals, similar-to-me)"
+    ],
+    "case": "nova",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "sa-p8-02",
+    "lecture": "h5",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "The company's traditional “up-or-out” performance management model is increasingly questioned, especially in a hybrid work environment. Drawing on at least two theoretical frameworks, discuss the potential drawbacks of this model and propose alternative approaches that could ensure both fairness and motivation.",
+    "modelAnswer": "Drawbacks: (1) Purpose and type – up-or-out serves accountability only (promote, keep, exit), annual, relative (a form of forced distribution): competition, infighting, less cooperation and mentoring, stress, turnover, short-termism; it ignores development and communication. (2) Kerr – rewarding A while hoping for B: it rewards visibility, billable hours and long hours while the firm hopes for collaboration, innovation and mentoring. (3) Criteria of PM: validity is low (contaminated by visibility and presence, deficient on teamwork), reliability is low (subjective partner judgements, team-based work), acceptability and procedural justice are low – remote consultants are disadvantaged (proximity bias, similar-to-me, halo). (4) Cappelli & Tavis: development, agility and teamwork all argue against the annual up-or-out rating. (5) Expectancy/equity: remote staff doubt that effort leads to a good rating (expectancy) and compare their treatment with office colleagues (equity) → demotivation. Alternatives: frequent check-ins and project-end feedback from several raters (managers, peers, clients) with calibration; clear criteria set in advance that include collaboration, mentoring and innovation, outcome-based rather than presence-based; absolute standards instead of rankings, development separated from promotion decisions; team goals for project work; flexible career paths (e.g. expert tracks) instead of strict up-or-out; train managers on bias in hybrid work. Trade-off: more time for managers (workability), but higher fairness, motivation and retention.",
+    "keyPoints": [
+      "Accountability-only, relative system → competition, stress, turnover",
+      "Kerr: visibility/hours vs collaboration",
+      "Validity, reliability, acceptability – remote bias",
+      "Cappelli & Tavis / expectancy or equity",
+      "Concrete alternatives with justification",
+      "Trade-off"
+    ],
+    "case": "nova",
+    "basis": [
+      {
+        "kind": "exam",
+        "source": "Final exam HM01, 18.12.2025",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  }
+]

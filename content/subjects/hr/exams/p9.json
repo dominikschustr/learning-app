@@ -1,0 +1,123 @@
+[
+  {
+    "id": "mock-2526-velora",
+    "title": "Probeklausur im Format 2025/26 – Velora",
+    "subtitle": "Neue Klausur im Aufbau der Klausur vom 18.12.2025: 20 Multiple-Choice-Fragen über alle Kapitel und ein fiktiver Case (Velora) mit zwei Fragen zu Vergütung und Recruitment & Selection.",
+    "origin": {
+      "kind": "neu"
+    },
+    "minutes": 90,
+    "parts": [
+      {
+        "title": "Part 1 – Multiple-choice questionnaire",
+        "instructions": "One correct answer per question. [10 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "mc-p9-01",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-02",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-03",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-04",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-05",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-06",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-07",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-08",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-09",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-10",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-11",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-12",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-13",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-14",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-15",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-16",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-17",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-18",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-19",
+                "points": 0.5
+              },
+              {
+                "q": "mc-p9-20",
+                "points": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Part 2 – Case study: Velora",
+        "instructions": "Answer concisely and in a structured way. Use theoretical references (including the articles read for the sessions) and examples from class case studies. [10 points]",
+        "sections": [
+          {
+            "title": "",
+            "items": [
+              {
+                "q": "sa-p9-01",
+                "points": 4
+              },
+              {
+                "q": "sa-p9-02",
+                "points": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

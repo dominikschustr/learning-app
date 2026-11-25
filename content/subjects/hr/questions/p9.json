@@ -1,0 +1,833 @@
+[
+  {
+    "type": "mc",
+    "id": "mc-p9-01",
+    "lecture": "h2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "According to Ehnert et al. (2016), sustainable HRM differs from strategic HRM mainly because it:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Focuses only on environmental goals"
+      },
+      {
+        "id": "b",
+        "text": "Pursues financial, social and ecological goals over a long-term horizon, inside and outside the firm"
+      },
+      {
+        "id": "c",
+        "text": "Replaces financial goals with social goals"
+      },
+      {
+        "id": "d",
+        "text": "Is the responsibility of the HR department only"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Triple goals, inside and outside, long term, controlling side effects.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-02",
+    "lecture": "h2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A company introduces a living-wage commitment for all suppliers although no law requires it, because it fits its values. This is an example of which motive (Stahl et al., 2020)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compliance-related"
+      },
+      {
+        "id": "b",
+        "text": "Instrumental/strategic"
+      },
+      {
+        "id": "c",
+        "text": "Mission-led/values-driven"
+      },
+      {
+        "id": "d",
+        "text": "Cost-driven"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "Beyond the law and driven by the firm's values = mission-led.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-03",
+    "lecture": "h2",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "An HR department ignores repeated harassment complaints in one plant. In Brewster & Brookes' (2024) terms this is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sin of commission"
+      },
+      {
+        "id": "b",
+        "text": "A sin of omission"
+      },
+      {
+        "id": "c",
+        "text": "Best practice"
+      },
+      {
+        "id": "d",
+        "text": "A transformational activity"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "HR fails to prevent a problem = omission.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-04",
+    "lecture": "h1",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "In the Harvard Model (Beer et al., 1984), commitment, competence, congruence and cost-effectiveness are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stakeholder interests"
+      },
+      {
+        "id": "b",
+        "text": "Situational factors"
+      },
+      {
+        "id": "c",
+        "text": "HR outcomes"
+      },
+      {
+        "id": "d",
+        "text": "Long-term consequences"
+      }
+    ],
+    "correct": [
+      "c"
+    ],
+    "explanation": "The 4 Cs are HR outcomes; long-term consequences are individual, organisational and societal well-being.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-05",
+    "lecture": "h1",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "The best-fit (contingency) approach argues that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "One bundle of HR practices works in every firm"
+      },
+      {
+        "id": "b",
+        "text": "HR practices must match the organisation's strategy and context"
+      },
+      {
+        "id": "c",
+        "text": "HR should copy industry leaders"
+      },
+      {
+        "id": "d",
+        "text": "Control is always better than commitment"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Matching model (Jackson & Schuler, 1984).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-06",
+    "lecture": "h4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Two candidates have equal grades, but one completed unpaid internships abroad arranged by family contacts. In Bourdieu's terms, these experiences mainly reflect:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only individual effort"
+      },
+      {
+        "id": "b",
+        "text": "Economic and social capital"
+      },
+      {
+        "id": "c",
+        "text": "Validity of the selection method"
+      },
+      {
+        "id": "d",
+        "text": "Reliability of the interview"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Unpaid internships = money (economic capital); family contacts = networks (social capital).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-07",
+    "lecture": "h4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "According to signalling theory (Baron & Kreps, 1999), degrees are useful signals because they are:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Free and available to everyone"
+      },
+      {
+        "id": "b",
+        "text": "Expensive to obtain, granted by screening institutions and require learning"
+      },
+      {
+        "id": "c",
+        "text": "Always unbiased indicators of ability"
+      },
+      {
+        "id": "d",
+        "text": "Legally required"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "But signals can be biased – weight them by how they were produced.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-08",
+    "lecture": "h4",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Why do field experiments (Quillian et al., 2019) allow conclusions about discrimination that data on real applicants cannot?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They use larger samples"
+      },
+      {
+        "id": "b",
+        "text": "Applications are equivalent except for the group cue, so callback gaps are caused by the cue"
+      },
+      {
+        "id": "c",
+        "text": "They interview recruiters"
+      },
+      {
+        "id": "d",
+        "text": "They only study one country"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Causal inference: only the cue differs.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-09",
+    "lecture": "h3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A structured interview with a scoring rubric used by all interviewers mainly improves:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reliability"
+      },
+      {
+        "id": "b",
+        "text": "Practicability"
+      },
+      {
+        "id": "c",
+        "text": "Employer brand"
+      },
+      {
+        "id": "d",
+        "text": "External competitiveness"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Same questions and scoring → consistent results across raters (reliability); it also supports validity.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-10",
+    "lecture": "h3",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Assessment centres for 3,000 applicants to seasonal shop jobs are problematic mainly because of low:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Validity"
+      },
+      {
+        "id": "b",
+        "text": "Practicability"
+      },
+      {
+        "id": "c",
+        "text": "Legality"
+      },
+      {
+        "id": "d",
+        "text": "Reliability"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Too costly and slow for the volume and the job – practicability.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-11",
+    "lecture": "h5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Kerr's “On the folly of rewarding A, while hoping for B” warns that organisations often:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pay too little"
+      },
+      {
+        "id": "b",
+        "text": "Reward behaviours that differ from the ones they actually want"
+      },
+      {
+        "id": "c",
+        "text": "Use too many raters"
+      },
+      {
+        "id": "d",
+        "text": "Measure performance too often"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "E.g. rewarding billable hours while hoping for collaboration.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-12",
+    "lecture": "h5",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Which element must a performance theory specify according to Latham, Sulsky & Macdonald (2007)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The company's share price"
+      },
+      {
+        "id": "b",
+        "text": "Whether performance is compared with absolute standards or with peers"
+      },
+      {
+        "id": "c",
+        "text": "The employer brand"
+      },
+      {
+        "id": "d",
+        "text": "The number of recruitment channels"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Dimensions, standards, situational constraints, number of levels, absolute vs relative.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-13",
+    "lecture": "h6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Paying a software engineer more because few engineers are available on the labour market reflects:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internal consistency"
+      },
+      {
+        "id": "b",
+        "text": "External competitiveness"
+      },
+      {
+        "id": "c",
+        "text": "Individual contribution"
+      },
+      {
+        "id": "d",
+        "text": "Equity theory"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Supply and demand / market pricing = external competitiveness (Renard, 2008).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-14",
+    "lecture": "h6",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "At Safelite, piece rates increased productivity. Which condition helped most?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Output was easy to measure per worker and defects had to be fixed without pay"
+      },
+      {
+        "id": "b",
+        "text": "Workers were rewarded for team results only"
+      },
+      {
+        "id": "c",
+        "text": "Bonuses were paid ten years later"
+      },
+      {
+        "id": "d",
+        "text": "Managers decided bonuses at their discretion"
+      }
+    ],
+    "correct": [
+      "a"
+    ],
+    "explanation": "Cheap measurement, individual control, quality protected by unpaid rework (Lazear, 2000).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-15",
+    "lecture": "h7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "According to Sayre et al. (2026), the main source of harm in pay-for-performance schemes is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The existence of a base salary"
+      },
+      {
+        "id": "b",
+        "text": "Uncertainty about what is rewarded and how much employees will earn"
+      },
+      {
+        "id": "c",
+        "text": "Too much recognition"
+      },
+      {
+        "id": "d",
+        "text": "Pay transparency laws"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Uncertainty → insecurity → overwork → stress and burnout.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-16",
+    "lecture": "h7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A collective bonus based on the whole company's profit mainly risks weakening:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alignment around common goals"
+      },
+      {
+        "id": "b",
+        "text": "Line of sight between individual effort and reward"
+      },
+      {
+        "id": "c",
+        "text": "Knowledge sharing"
+      },
+      {
+        "id": "d",
+        "text": "Cooperation"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Trade-off alignment vs line of sight (expectancy); also free riding.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-17",
+    "lecture": "h7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "In Herzberg's two-factor model, compensation is a:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Motivator that creates satisfaction"
+      },
+      {
+        "id": "b",
+        "text": "Hygiene factor whose absence creates dissatisfaction"
+      },
+      {
+        "id": "c",
+        "text": "Measure of validity"
+      },
+      {
+        "id": "d",
+        "text": "Long-term consequence"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Pay prevents dissatisfaction; motivators are achievement, recognition, work itself, responsibility, growth.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-18",
+    "lecture": "h7",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "Under the EU pay transparency directive, an employer may NOT:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give applicants a pay range before employment"
+      },
+      {
+        "id": "b",
+        "text": "Ask candidates about their salary history"
+      },
+      {
+        "id": "c",
+        "text": "Report its gender pay gap"
+      },
+      {
+        "id": "d",
+        "text": "Publish pay-progression criteria"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Salary-history questions are banned; the others are required or allowed.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-19",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "In Mortensen & Edmondson's (2023) holistic EVP, offering mentoring and clear career paths belongs to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Material offerings"
+      },
+      {
+        "id": "b",
+        "text": "Growth & development"
+      },
+      {
+        "id": "c",
+        "text": "Connection & community"
+      },
+      {
+        "id": "d",
+        "text": "Meaning & purpose"
+      }
+    ],
+    "correct": [
+      "b"
+    ],
+    "explanation": "Learning and careers = growth & development.",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "mc",
+    "id": "mc-p9-20",
+    "lecture": "h8",
+    "difficulty": 2,
+    "single": true,
+    "shuffle": false,
+    "prompt": "A retailer's employer-brand campaign shows happy, diverse teams, but employees describe high pressure and little support. Which brand quality is violated most?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Insightful"
+      },
+      {
+        "id": "b",
+        "text": "Clear"
+      },
+      {
+        "id": "c",
+        "text": "Distinctive"
+      },
+      {
+        "id": "d",
+        "text": "Consistent"
+      }
+    ],
+    "correct": [
+      "d"
+    ],
+    "explanation": "Consistent = the brand delivers against its promises (identity ≠ image).",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-01",
+    "lecture": "h7",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Velora's bonus for warehouse team leaders is not producing the expected results. Based on the theories and concepts studied in class, explain why the scheme fails to motivate and is perceived as unfair.",
+    "modelAnswer": "Expectancy theory: expectancy is weak because parcels per hour depend on season, client mix and the temporary staff head office assigns – not mainly on the team leader's effort; instrumentality is weak because the ranking can be adjusted “for attitude” and criteria are unwritten; valence is high (20 %) but only for three people. Sayre et al. (2026): relative, monthly, discretionary pay creates high uncertainty about what is rewarded and how much → insecurity, stress, “a lottery”, exits. Kerr / direction: rewarding speed while hoping for quality and cooperation → error rates rise and team leaders stop lending staff (forced-distribution effects: infighting, no collaboration, short-termism). Groysberg: direction wrong, fairness low (discretion, winner-takes-all), workability simple but costly through errors and turnover. Equity theory and pay transparency: team leaders compare outcomes/inputs with peers who win through luck or the manager's favour; the unexplained 11 % gender gap breaks internal consistency and cannot be justified under the EU pay transparency directive (≥ 5 % unexplained gap → joint pay assessment).",
+    "keyPoints": [
+      "Expectancy and instrumentality broken with case facts",
+      "Uncertainty (Sayre)",
+      "Kerr/direction: speed vs quality, no cooperation",
+      "Fairness: discretion, ranking, equity",
+      "Gender gap & EU directive"
+    ],
+    "case": "velora",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  },
+  {
+    "type": "short",
+    "id": "sa-p9-02",
+    "lecture": "h4",
+    "difficulty": 3,
+    "verb": "explain",
+    "prompt": "Drawing on at least two theoretical frameworks, discuss the drawbacks of recruitment and selection at Velora's Amsterdam hub and propose an alternative approach that is both valid and inclusive.",
+    "modelAnswer": "Drawbacks: (1) Signals and capitals – screening by university prestige relies on signals produced by economic, social and cultural capital (Bourdieu, Baron & Kreps) and misses job-relevant capability. (2) Bias – referrals and “fit with the team” = in-group favouritism and similar-to-me bias; the AI tool trained on current top performers reproduces past homogeneity (algorithmically biased recruitment = sin of commission); the outcome (young men from three universities) is inequality and possibly discrimination – testable with a field-experiment logic. (3) Validity, reliability, practicability – informal interviews have low reliability and validity; the AI shortlist is practicable but of unproven validity. (4) Psychological contract / realistic preview – one in three hires leaves because the job was “not what was described”. Alternative: job analysis → explicit criteria set in advance; recruitment through wider channels (several universities, bootcamps, communities, targeted outreach to under-represented groups), gender-neutral ads, a realistic job preview and an EVP the hub can deliver; selection with a work sample/technical test, structured competency interviews scored by diverse trained panels, fit defined as job-relevant values; audit the AI tool for validity and bias and keep human judgement; monitor diversity and retention data. Trade-off: more cost and time per hire, but better validity, diversity (innovation, Mohammadi et al.) and lower turnover.",
+    "keyPoints": [
+      "Signals/capitals critique",
+      "Biases: referrals, fit, AI → inequality",
+      "V/R/P of current methods",
+      "Realistic preview / psychological contract",
+      "Concrete valid and inclusive alternative",
+      "Trade-off"
+    ],
+    "case": "velora",
+    "basis": [
+      {
+        "kind": "own",
+        "source": "Konzeptklausur im Format 2025/26",
+        "ref": ""
+      }
+    ],
+    "paperOnly": true
+  }
+]

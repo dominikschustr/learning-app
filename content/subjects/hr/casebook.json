@@ -657,10 +657,10 @@
           }
         ],
         "frameworks": [
-          "Employer branding: 6 steps",
-          "EVP (Mortensen & Edmondson)",
-          "Identity vs. image",
-          "Psychological contract",
+          "eb-six-steps",
+          "eb-evp",
+          "eb-identity-image",
+          "eb-business-case",
           "eu-directive"
         ],
         "takeaway": "An EVP must be true for each target group – one resignation can reveal that it isn't."
@@ -684,9 +684,9 @@
           }
         ],
         "frameworks": [
-          "Employer branding: 6 steps",
-          "EVP (Mortensen & Edmondson)",
-          "Identity vs. image"
+          "eb-six-steps",
+          "eb-evp",
+          "eb-identity-image"
         ],
         "takeaway": ""
       },
@@ -710,8 +710,8 @@
           }
         ],
         "frameworks": [
-          "EVP (Mortensen & Edmondson)",
-          "Identity vs. image"
+          "eb-evp",
+          "eb-identity-image"
         ],
         "takeaway": ""
       }
@@ -722,6 +722,47 @@
     "title": "Exams · Cases from past exams",
     "subtitle": "Each exam: one case, 2–4 open questions. Recipe: frame → point → theory + author → case facts → so what.",
     "cases": [
+      {
+        "id": "exam-2526",
+        "title": "NovaConsulting: employer branding & up-or-out",
+        "kind": "exam",
+        "tag": "Exam December 2025",
+        "situation": [
+          "European consultancy (~2,000 employees, Paris, Berlin, Madrid) struggles to attract and retain young professionals; seen as “traditional”. Its branding campaign stresses history, prestigious clients and “excellence and discipline”; recruitment from a few elite universities, cognitive tests and individual case interviews for the “classic consultant profile” → homogeneous workforce.",
+          "Performance management: annual “up-or-out” based on partner feedback, billable hours and client satisfaction; rewards visibility and long hours; remote consultants feel disadvantaged; stress, low cooperation, high turnover."
+        ],
+        "questions": [
+          {
+            "q": "Why may the current employer branding strategy not be effective?",
+            "points": 4,
+            "answer": [
+              "Image reinforces “traditional”; EVP ignores what the target group values (flexibility, well-being, purpose – Randstad, Mortensen & Edmondson).",
+              "Steps 2–3 (customers, competitors) skipped → not distinctive; signals of long hours shape the psychological contract → offers rejected, turnover.",
+              "Campaign cannot fix identity (consistency); elite channels + classic profile → homogeneity (capitals, similar-to-me, fit as cloning)."
+            ]
+          },
+          {
+            "q": "Drawbacks of up-or-out in a hybrid workplace and fair, motivating alternatives (≥ 2 frameworks).",
+            "points": 6,
+            "answer": [
+              "Accountability-only, relative, annual → competition, stress, turnover (forced-distribution logic); Kerr: rewards visibility and hours, hopes for collaboration and mentoring.",
+              "Low validity, reliability, acceptability; remote bias; Cappelli & Tavis (development, agility, teamwork); expectancy/equity for remote staff.",
+              "Alternatives: frequent check-ins, multi-rater feedback with calibration, criteria incl. collaboration and mentoring, absolute standards, team goals, flexible career tracks, bias training – trade-off: manager time."
+            ]
+          }
+        ],
+        "frameworks": [
+          "eb-identity-image",
+          "eb-evp",
+          "eb-six-steps",
+          "cultural-fit",
+          "pm-purpose",
+          "forced-distribution",
+          "cappelli-tavis",
+          "Kerr: rewarding A while hoping for B"
+        ],
+        "takeaway": "The 2025/26 exam asked employer branding (new topic) and PM – fix the experience, not only the message."
+      },
       {
         "id": "exam-2024",
         "title": "TechSoft succession planning",
