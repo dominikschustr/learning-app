@@ -1,0 +1,128 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s06-01",
+    "lecture": "s06",
+    "topic": "A/B testing – chi-square test",
+    "difficulty": 2,
+    "statement": "A Chi Square-test can be used in A/B testing if the variable of interest is categorically scaled.",
+    "answer": true,
+    "explanation": "Richtig. Ist die Zielgröße kategorial (z. B. Kauf ja/nein, Wahl A oder B), vergleicht man beobachtete mit erwarteten Häufigkeiten – das ist der Chi-Quadrat-Test (Unabhängigkeit). Bei einer metrischen Zielgröße (z. B. Zahlungsbereitschaft in €) nimmt man den t-Test.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 8"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s06-02",
+    "lecture": "s06",
+    "topic": "Value-in-use – what it measures",
+    "difficulty": 2,
+    "statement": "Value-in-use assesses the price of a product or service.",
+    "answer": false,
+    "explanation": "Laut Quiz falsch. Value-in-use misst den Wert des Angebots für den Kunden – also die maximale Zahlungsbereitschaft aus Kundensicht (alte Jahreskosten = neue Einheiten × VIU + übrige Kosten), nicht den Preis. Der Preis wird danach festgelegt: liegt er unter dem VIU, lohnt sich der Kauf. Leicht unsicher, weil der VIU als Preisobergrenze dient.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 9"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s06-03",
+    "lecture": "s06",
+    "topic": "Customer value – role of costs",
+    "difficulty": 1,
+    "statement": "The higher the perception of (product-related) costs, the higher customer value.",
+    "answer": false,
+    "explanation": "Falsch. Kundenwert = Nutzen − Kosten (Lilien et al.). Höher wahrgenommene Kosten – monetär, Risiko, Zeit, Aufwand – senken den Kundenwert.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 10"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s06-04",
+    "lecture": "s06",
+    "topic": "Customer value equation",
+    "difficulty": 2,
+    "statement": "Customer value is benefits divided by costs.",
+    "answer": false,
+    "explanation": "Laut Folie falsch: Net customer value = benefits − costs (Differenz, kein Quotient). Nutzen: funktional, psychologisch, ökonomisch; Kosten: monetär, wahrgenommenes Risiko, Zeit und Aufwand. Leicht unsicher, weil es in der Literatur auch ein Quotientenmodell gibt – in der Klausur gilt die Folie.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 11"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s06-05",
+    "lecture": "s06",
+    "topic": "A/B testing – t-test",
+    "difficulty": 2,
+    "statement": "A t-test can be used in A/B testing if the variable of interest is categorically scaled.",
+    "answer": false,
+    "explanation": "Falsch. Der t-Test vergleicht Mittelwerte und braucht deshalb eine metrische Zielgröße (z. B. Zahlungsbereitschaft). Für kategoriale Zielgrößen (Kauf ja/nein, Wahl A/B) nimmt man den Chi-Quadrat-Test.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 12"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s06-06",
+    "lecture": "s06",
+    "topic": "Customer acquisition funnel – last stage",
+    "difficulty": 1,
+    "statement": "In the customer funnel, “evaluation” is the last stage.",
+    "answer": false,
+    "explanation": "Falsch. Der Funnel lautet Awareness → Interest → Consideration → Intent → Evaluation → Purchase. Die letzte Stufe ist der Kauf (Purchase), Evaluation steht davor.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 13"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s06-07",
+    "lecture": "s06",
+    "topic": "Customer acquisition funnel – order",
+    "difficulty": 1,
+    "statement": "In the customer funnel, “intent” comes before “consideration”.",
+    "answer": false,
+    "explanation": "Falsch. Erst wird ein Angebot in Betracht gezogen (Consideration), dann entsteht die Kaufabsicht (Intent): Awareness → Interest → Consideration → Intent → Evaluation → Purchase.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 14"
+      }
+    ]
+  }
+]

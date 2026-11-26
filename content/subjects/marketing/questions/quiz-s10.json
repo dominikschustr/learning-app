@@ -1,0 +1,56 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s10-01",
+    "lecture": "s10",
+    "topic": "Intercept – estimated, not observed",
+    "difficulty": 2,
+    "statement": "In a simple regression analysis, the intercept indicates the observed value of the dependent variable when the independent variable is equal to zero.",
+    "answer": false,
+    "explanation": "Falsch – Achtung, Fangwort „observed“. Der Achsenabschnitt b0 ist der geschätzte (estimated) Wert der abhängigen Variable, wenn die unabhängige Variable null ist, nicht der beobachtete.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 25"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s10-02",
+    "lecture": "s10",
+    "topic": "Interpreting a significant coefficient",
+    "difficulty": 2,
+    "statement": "Based on the table (Advertising b = 0.03, p = 0.04): If advertising increases by $1, sales increase by 0.03 units.",
+    "answer": true,
+    "explanation": "Laut Quiz richtig. p = 0,04 < 0,05 → signifikant, also steigt der Absatz pro zusätzlichem $ Werbung um 0,03 Einheiten. Leicht unsicher, weil der Satz „im Durchschnitt / ceteris paribus“ weglässt – genau formuliert: Sales steigen erwartet um 0,03 Einheiten, wenn alle anderen Variablen gleich bleiben.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 26"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s10-03",
+    "lecture": "s10",
+    "topic": "Significance at 95 % confidence",
+    "difficulty": 2,
+    "statement": "Based on the table (Advertising p = 0.04, Price p = 0.09, Sponsoring p = 0.16): Advertising is the only variable significantly related to sales using a 95% confidence interval.",
+    "answer": true,
+    "explanation": "Richtig. Bei 95 % Konfidenz gilt p < 0,05 als signifikant. Nur Advertising (0,04) liegt darunter; Price (0,09) und Sponsoring (0,16) sind nicht signifikant – deren Koeffizienten interpretiert man nicht, egal wie groß sie aussehen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 27"
+      }
+    ]
+  }
+]

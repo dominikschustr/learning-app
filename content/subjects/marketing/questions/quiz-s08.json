@@ -1,0 +1,128 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s08-01",
+    "lecture": "s08",
+    "topic": "CRM – definition",
+    "difficulty": 2,
+    "statement": "CRM is the practice of analysing and using marketing databases and leveraging communication technologies to assess how value a customer has been in the past.",
+    "answer": false,
+    "explanation": "Falsch. CRM nutzt Marketingdatenbanken und Kommunikationstechnologien, um den (künftigen) Wert jedes Kunden zu maximieren – es geht um Lifetime Value und die Beziehung nach vorn, nicht darum, wie wertvoll ein Kunde in der Vergangenheit war.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 1"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s08-02",
+    "lecture": "s08",
+    "topic": "CRM – loyalty and profitability",
+    "difficulty": 1,
+    "statement": "CRM allows the company to identify how loyalty is linked to customer profitability.",
+    "answer": true,
+    "explanation": "Richtig. CRM macht die Kette Zufriedenheit → Loyalität → Profitabilität sichtbar und zeigt, welche treuen Kunden sich wirklich lohnen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 2"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s08-03",
+    "lecture": "s08",
+    "topic": "Retention rate – definition",
+    "difficulty": 1,
+    "statement": "Retention rate reflects the average likelihood that a customer purchases from the focal firm in a period t, given that this customer has also purchased in the period t-1.",
+    "answer": true,
+    "explanation": "Richtig. Rr = Kunden, die in t kaufen ÷ Kunden aus t−1 (Nenner sind immer die Kunden der Vorperiode). Attrition = 1 − Rr.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 3"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s08-04",
+    "lecture": "s08",
+    "topic": "Average lifetime duration",
+    "difficulty": 1,
+    "statement": "If we assume that the retention rate is constant, then the average lifetime duration can be calculated as 1 divided by (1 minus retention rate).",
+    "answer": true,
+    "explanation": "Richtig. Bei konstanter Retention Rate gilt: durchschnittliche Lebensdauer = 1 / (1 − Rr). Beispiel: Rr = 80 % → 1 / 0,2 = 5 Perioden.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 4"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s08-05",
+    "lecture": "s08",
+    "topic": "CLV – orientation",
+    "difficulty": 1,
+    "statement": "CLV is a backward-looking measure.",
+    "answer": false,
+    "explanation": "Falsch. Der Customer Lifetime Value ist vorausschauend (forward-looking): Er schätzt den künftigen Wert eines Kunden – prognostisch statt exakt und je nach Kontext unterschiedlich berechnet.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 5"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s08-06",
+    "lecture": "s08",
+    "topic": "Metrics to assess CLV",
+    "difficulty": 1,
+    "statement": "To assess customer lifetime value, companies can use a combination of traditional metrics, customer acquisition metrics and customer activity metrics.",
+    "answer": true,
+    "explanation": "Richtig. Traditionell: Marktanteil, Umsatzwachstum. Akquisition: Akquisitionsrate, Akquisitionskosten. Aktivität: durchschnittliche Zeit zwischen Käufen, Retention- und Attrition-Rate, Überlebensrate, Lebensdauer.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 6"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s08-07",
+    "lecture": "s08",
+    "topic": "Market share – metric type",
+    "difficulty": 1,
+    "statement": "Market share is a customer acquisition metric.",
+    "answer": false,
+    "explanation": "Falsch. Marktanteil (wie Umsatzwachstum) ist eine traditionelle Kennzahl. Akquisitionskennzahlen sind Akquisitionsrate und Akquisitionskosten.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 7"
+      }
+    ]
+  }
+]

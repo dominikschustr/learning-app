@@ -18,5 +18,6 @@
     { "id": "s09", "title": "S9 · Regression analysis: fundamentals" },
     { "id": "s10", "title": "S10 · Regression in practice & causality" }
   ],
-  "examFormat": { "name": "Final Exam", "minutes": 90, "short": 4, "mc": 16, "tf": 10, "order": ["tf", "mc", "short"] }
+  "examFormat": { "name": "Final Exam", "minutes": 90, "short": 4, "mc": 16, "tf": 10, "order": ["tf", "mc", "short"] },
+  "quizNote": "True/False-Fragen aus den beiden Vorlesungs-Quizzes (Session 1–5 und 6–10)"
 }

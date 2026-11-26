@@ -1,0 +1,110 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s09-01",
+    "lecture": "s09",
+    "topic": "Regression – model fit",
+    "difficulty": 1,
+    "statement": "R-Squared is the only model fit metric in regression analysis.",
+    "answer": false,
+    "explanation": "Falsch. Neben R² gibt es u. a. das adjusted R² (bestraft zusätzliche, irrelevante Variablen – R² sinkt nie, wenn man Variablen hinzufügt) und den F-Test für die Gesamtfunktion.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 22"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s09-02",
+    "lecture": "s09",
+    "topic": "Marketing planning – resource allocation",
+    "difficulty": 1,
+    "statement": "Resource allocation is part of the marketing planning process.",
+    "answer": true,
+    "explanation": "Richtig. Marketingplanung = Analyse → Ziele → Strategie → Umsetzung (Marketing-Mix und Budget) → Kontrolle. Die Ressourcenallokation gehört dazu – und die Regression quantifiziert, was jeder Euro bewirkt (Mix-Modellierung, Budgetoptimierung).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 23"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s09-03",
+    "lecture": "s09",
+    "topic": "Regression – number of variables",
+    "difficulty": 1,
+    "statement": "Regression analysis requires at least two variables.",
+    "answer": true,
+    "explanation": "Richtig. Man braucht mindestens eine abhängige Variable (DV) und eine unabhängige Variable (IV) – das ist die einfache Regression ŷ = b0 + b1·x.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 24"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s09-04",
+    "lecture": "s09",
+    "topic": "R-squared – meaning",
+    "difficulty": 1,
+    "statement": "R-Squared is a goodness-of-fit metric to assess how \"close\" the empirical relationship between independent variable(s) and a dependent variable is to the fitted regression model.",
+    "answer": true,
+    "explanation": "Richtig. R² ist der Anteil der Varianz der abhängigen Variable, den das Modell erklärt – also ein Maß dafür, wie gut die Regressionsgerade zu den Daten passt.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 28"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s09-05",
+    "lecture": "s09",
+    "topic": "Regression – allowed scales",
+    "difficulty": 2,
+    "statement": "Ordinal, interval, and ratio variables can all be used for traditional multiple regression analysis.",
+    "answer": false,
+    "explanation": "Falsch. Ordinale Variablen sind in der klassischen Regression weder als DV noch als IV erlaubt. Intervall- und Verhältnisskalen gehen als DV und IV; nominale Variablen nur als IV in Form von Dummys (0/1).",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 29"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s09-06",
+    "lecture": "s09",
+    "topic": "Regression coefficients – systematic part",
+    "difficulty": 2,
+    "statement": "The estimated b-regression coefficients in a regression model capture the unsystematic part of the relationship between X and Y.",
+    "answer": false,
+    "explanation": "Falsch. Die Koeffizienten b0, b1, … beschreiben den systematischen Teil des Zusammenhangs. Der unsystematische Teil steckt im Fehlerterm bzw. in den Residuen (beobachtet − geschätzt), deren Quadratsumme OLS minimiert.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 30"
+      }
+    ]
+  }
+]

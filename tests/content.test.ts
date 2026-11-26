@@ -150,12 +150,15 @@ describe("Marketing", () => {
     for (const q of mk.questions) expect(q.basis.length, q.id).toBeGreaterThan(0);
   });
 
-  it("hat das DDM-Quiz zu Session 1–5 (beide Listen, ohne Dopplungen) als eigenen Quiz-Modus", () => {
+  it("hat beide DDM-Quizzes (Session 1–5 ohne Dopplungen, Session 6–10) als eigenen Quiz-Modus", () => {
     const quiz = mk.questions.filter((q) => q.quiz);
     const per = Object.fromEntries(mk.subject.lectures.map((l) => [l.id, quiz.filter((q) => q.lecture === l.id).length]));
-    expect(per).toMatchObject({ s01: 10, s02: 13, s03: 8, s04: 10, s05: 10, s06: 0 });
+    expect(per).toEqual({ s01: 10, s02: 13, s03: 8, s04: 10, s05: 10, s06: 7, s07: 7, s08: 7, s09: 6, s10: 3 });
     const statements = quiz.map((q) => (q.type === "tf" ? q.statement : ""));
-    expect(new Set(statements).size).toBe(51);
+    expect(new Set(statements).size).toBe(81);
+    // Session 6–10: alle 30 Fragen des Quiz, jede genau einmal
+    const refs = quiz.filter((q) => q.basis[0]?.source === "DDM-Quiz Session 6–10").map((q) => q.basis[0]?.ref);
+    expect(new Set(refs)).toEqual(new Set(Array.from({ length: 30 }, (_, i) => `Nr. ${i + 1}`)));
     for (const q of quiz) {
       expect(q.type, q.id).toBe("tf");
       expect(q.basis[0]?.kind, q.id).toBe("quiz");

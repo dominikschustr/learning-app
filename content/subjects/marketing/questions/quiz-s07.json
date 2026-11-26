@@ -1,0 +1,128 @@
+[
+  {
+    "type": "tf",
+    "id": "qz-s07-01",
+    "lecture": "s07",
+    "topic": "Conjoint analysis – relevance",
+    "difficulty": 1,
+    "statement": "The conjoint analysis is a particularly widespread instrument of market research.",
+    "answer": true,
+    "explanation": "Richtig. Die Conjoint-Analyse ist eines der am weitesten verbreiteten Instrumente der Marktforschung – v. a. für Produktgestaltung, Preisfindung und Marktanteilssimulation.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 15"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s07-02",
+    "lecture": "s07",
+    "topic": "Portfolio review – why",
+    "difficulty": 2,
+    "statement": "Companies review their product offerings mainly because they seek to identify unprofitable elements of their portfolio.",
+    "answer": false,
+    "explanation": "Falsch. Schwache Produkte zu finden ist nur ein Teil. Hauptgrund: Niemand kann Hunderte Produkte einzeln managen, und jedes Produkt für sich zu optimieren verfehlt die Unternehmensziele. Die Portfolio-Analyse richtet Investitionen an den Zielen aus, zeigt starke und schwache Produkte für die Ressourcenallokation und verbessert die Abstimmung.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 16"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s07-03",
+    "lecture": "s07",
+    "topic": "Conjoint – decompositional vs. compositional",
+    "difficulty": 3,
+    "statement": "In conjoint analysis, the overall attitude (or preference) towards an object is measured as the weighted sum of the importance of attributes and the scores of the object on various attributes.",
+    "answer": false,
+    "explanation": "Falsch. Das beschreibt den kompositionellen Ansatz (Multiattributmodell: Gewicht × Bewertung je Attribut, aufsummiert). Die Conjoint-Analyse ist dekompositionell: Befragte bewerten bzw. wählen ganze Produktprofile, und daraus werden die Teilnutzen der einzelnen Ausprägungen zurückgerechnet.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 17"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s07-04",
+    "lecture": "s07",
+    "topic": "Conjoint – input vs. result",
+    "difficulty": 2,
+    "statement": "The result of each conjoint analysis is the attributes relevant from the customer’s point of view and their characteristics (so-called “attribute levels”).",
+    "answer": false,
+    "explanation": "Falsch. Attribute und Ausprägungen sind der Input: Sie werden vor der Befragung festgelegt. Das Ergebnis sind die Teilnutzen (part-worths) je Ausprägung, daraus die relative Wichtigkeit der Attribute, der Gesamtnutzen von Profilen und simulierte Marktanteile.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 18"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s07-05",
+    "lecture": "s07",
+    "topic": "Conjoint – who defines attributes",
+    "difficulty": 2,
+    "statement": "In a traditional conjoint analysis, the consumer determines the attributes and attribute levels.",
+    "answer": false,
+    "explanation": "Falsch. Der Forscher bzw. Manager legt Attribute und Ausprägungen fest (oft auf Basis von Vorstudien) und baut daraus systematisch variierte Profile. Der Konsument bewertet oder wählt nur diese vorgegebenen Profile.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 19"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s07-06",
+    "lecture": "s07",
+    "topic": "Conjoint – objective",
+    "difficulty": 2,
+    "statement": "The objective of any conjoint analysis is to decompose the total evaluation (“perceived value”) into component scores (“partworth utilities / partial benefits”), imputable to each attribute level or combination of attribute levels.",
+    "answer": true,
+    "explanation": "Richtig. Genau das ist das Ziel: Die Gesamtbewertung eines Profils wird in Teilnutzen je Attributausprägung zerlegt. Gesamtnutzen = Summe der Teilnutzen der gewählten Ausprägungen.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 20"
+      }
+    ]
+  },
+  {
+    "type": "tf",
+    "id": "qz-s07-07",
+    "lecture": "s07",
+    "topic": "Conjoint – definition",
+    "difficulty": 2,
+    "statement": "Conjoint analysis refers to any decompositional method that estimates the structure of a consumer’s preferences in terms of the levels of attributes of the alternatives.",
+    "answer": true,
+    "explanation": "Richtig. Definition nach Rao: Conjoint ist jede dekompositionelle Methode, die die Präferenzstruktur eines Konsumenten über die Ausprägungen der Attribute der Alternativen schätzt.",
+    "quiz": true,
+    "basis": [
+      {
+        "kind": "quiz",
+        "source": "DDM-Quiz Session 6–10",
+        "ref": "Nr. 21"
+      }
+    ]
+  }
+]
